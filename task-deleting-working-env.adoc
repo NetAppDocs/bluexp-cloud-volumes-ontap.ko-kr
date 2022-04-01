@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: task-deleting-working-env.html 
+keywords: terminate, delete, working environment, remove, cloudformation, terminate working environment, terminate instance, delete cloud volumes ontap, delete instance, delete working environment, delete backups 
+summary: 클라우드 공급자의 콘솔이 아닌 Cloud Manager에서 Cloud Volumes ONTAP 시스템을 항상 삭제해야 합니다. 예를 들어, 클라우드 공급자로부터 라이센스가 부여된 Cloud Volumes ONTAP 인스턴스를 종료하는 경우 다른 인스턴스에 대해 라이센스 키를 사용할 수 없습니다. 라이센스를 릴리즈하려면 Cloud Manager에서 작업 환경을 삭제해야 합니다. 
+---
+= Cloud Volumes ONTAP 시스템 삭제
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+클라우드 공급자의 콘솔이 아닌 Cloud Manager에서 Cloud Volumes ONTAP 시스템을 항상 삭제해야 합니다. 예를 들어, 클라우드 공급자로부터 라이센스가 부여된 Cloud Volumes ONTAP 인스턴스를 종료하는 경우 다른 인스턴스에 대해 라이센스 키를 사용할 수 없습니다. 라이센스를 릴리즈하려면 Cloud Manager에서 작업 환경을 삭제해야 합니다.
+
+작업 환경을 삭제하면 Cloud Manager에서 Cloud Volumes ONTAP 인스턴스를 종료하고 디스크 및 스냅샷을 삭제합니다.
+
+클라우드 백업을 위한 백업 및 클라우드 데이터 감지 및 모니터링을 위한 인스턴스 등과 같은 다른 서비스에서 관리하는 리소스는 작업 환경을 삭제할 때 삭제되지 않습니다. 수동으로 삭제해야 합니다. 그렇지 않으면 이러한 리소스에 대한 비용을 계속 받게 됩니다.
+
+
+NOTE: Cloud Manager가 클라우드 공급자에 Cloud Volumes ONTAP을 배포하면 인스턴스에 대해 종료 보호를 제공할 수 있습니다. 이 옵션은 우발적인 종료를 방지하는 데 도움이 됩니다.
+
+.단계
+. 작업 환경에서 Cloud Backup을 활성화한 경우 백업된 데이터가 여전히 필요한지 여부를 확인한 다음 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-managing-backups.html#deleting-backups["필요한 경우 백업을 삭제합니다"^].
++
+클라우드 백업은 설계상 Cloud Volumes ONTAP와 별개입니다. 클라우드 백업은 Cloud Volumes ONTAP 시스템을 삭제할 때 백업을 자동으로 삭제하지 않으며, 시스템이 삭제된 후 백업을 삭제할 수 있도록 UI에 현재 지원이 없습니다.
+
+. 이 작업 환경에서 Cloud Data Sense 또는 모니터링을 활성화했고 다른 작업 환경에서 이러한 서비스를 사용하지 않는 경우 해당 서비스의 인스턴스를 삭제해야 합니다.
++
+** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#the-cloud-data-sense-instance["Cloud Data Sense 인스턴스에 대해 자세히 알아보십시오"^].
+** https://docs.netapp.com/us-en/cloud-manager-monitoring/concept-monitoring.html#the-acquisition-unit["모니터링 획득 장치에 대해 자세히 알아보십시오"^].
+
+
+. Cloud Volumes ONTAP 작업 환경을 삭제합니다.
++
+.. Canvas 페이지에서 삭제할 Cloud Volumes ONTAP 작업 환경의 이름을 두 번 클릭합니다.
+.. 메뉴 아이콘을 클릭한 다음 * 삭제 * 를 클릭합니다.
++
+image:screenshot_delete_cloud_volumes_ontap.gif["삭제 작업이 포함된 작업 환경에서 사용할 수 있는 메뉴를 보여 주는 스크린샷"]
+
+.. 작업 환경의 이름을 입력한 다음 * 삭제 * 를 클릭합니다.
++
+작업 환경을 삭제하는 데 최대 5분이 걸릴 수 있습니다.
+
+
+
+

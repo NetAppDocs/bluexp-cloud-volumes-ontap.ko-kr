@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: concept-cvo-aiq-digital-advisor.html 
+keywords: concepts, active iq digital advisor, cloud volumes ontap 
+summary: Active IQ 디지털 어드바이저가 클라우드 관리자 UI에 통합되어 단일 창에서 ONTAP 클러스터의 운영, 보안, 성능을 최적화할 수 있습니다. 
+---
+= Active IQ 디지털 자문업체 를 사용하여 Cloud Volumes ONTAP 시스템을 최적화하십시오
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+https://www.netapp.com/services/support/active-iq/["Active IQ 디지털 자문업체"] 가 Cloud Manager UI에 통합되어 단일 창에서 Cloud Volumes ONTAP 시스템의 운영, 보안 및 성능을 최적화할 수 있습니다.
+
+
+
+== 피처
+
+Active IQ 디지털 자문업체 를 사용하여 관심 목록 수준에서 스토리지 시스템의 전반적인 상태, 시스템 상태에 대한 상위 수준 정보, 인벤토리, 계획 및 중요한 통찰력을 확인할 수 있습니다.
+
+* 스토리지 시스템의 상태 분석 및 최적화
+* 스토리지 시스템의 모든 위험과 위험 완화를 위한 조치에 대한 통찰력을 확보할 수 있습니다
+* 성능 데이터의 그래픽 형식을 확인하여 스토리지 디바이스의 성능을 분석할 수 있습니다
+* 90% 용량을 초과하거나 90% 용량에 근접하는 시스템에 대한 세부 정보를 확인하십시오
+
+
+
+
+== 지원되는 ONTAP 시스템
+
+Active IQ 디지털 어드바이저는 NSS 계정 내의 모든 사내 ONTAP 시스템 및 Cloud Volumes ONTAP 시스템에 대한 정보를 제공합니다.
+
+
+
+== 비용
+
+Cloud Manager를 통해 이 서비스를 무료로 사용할 수 있습니다.
+
+
+
+== Active IQ 디지털 조언이 클라우드 매니저와 어떻게 연동되는지 알아보십시오
+
+Active IQ 디지털 자문업체 사용자 인터페이스는 Cloud Manager에 완전히 통합되어 있습니다.
+
+Cloud Manager에서 * Active IQ * 서비스를 클릭합니다.
+
+* Cloud Manager에 기존 NSS 계정을 이미 등록한 경우 Active IQ 디지털 어드바이저 UI는 의 독립 실행형 구현에서 보이는 것과 같이 표시됩니다 https://activeiq.netapp.com/[].
++
+image:screenshot_aiq_digital_advisor.png["Cloud Manager의 Active IQ 디지털 자문업체 사용자 인터페이스 스크린샷"]
+
+* Cloud Manager에 NSS 계정을 등록하지 않은 경우 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NSS 계정을 지금 등록하십시오"^] 그런 다음 Active IQ 디지털 자문 UI가 나타납니다.
+
+
+
+NOTE: 2021년 12월 3일 현재 NetApp은 NSS 계정에 대한 자격 증명을 등록하는 새로운 방법론으로 전환했습니다. https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["자세한 내용은 이 FAQ를 참조하십시오"]. NSS 계정이 이전 자격 증명 세트를 사용하는 경우 계정을 새 자격 증명으로 업데이트해야 합니다.
+
+
+
+== 다음 단계
+
+를 참조하십시오 https://docs.netapp.com/us-en/active-iq/index.html["Active IQ 디지털 자문 문서"] 를 참조하십시오.

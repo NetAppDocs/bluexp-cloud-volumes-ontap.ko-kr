@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, flexgroup, ontap s3, s3 configuration, svm dr, svm disaster recovery, disaster recovery, storage vm dr 
+summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오. 
+---
+= 알려진 제한 사항
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오.
+
+이러한 제한은 Cloud Manager의 Cloud Volumes ONTAP 관리에만 적용됩니다.
+
+
+
+== Cloud Manager는 FlexGroup 볼륨을 지원하지 않습니다
+
+Cloud Volumes ONTAP는 FlexGroup 볼륨을 지원하지만 Cloud Manager는 지원하지 않습니다. System Manager 또는 CLI에서 FlexGroup 볼륨을 생성하는 경우 Cloud Manager의 용량 관리 모드를 수동으로 설정해야 합니다. FlexGroup 볼륨에서 자동 모드가 제대로 작동하지 않을 수 있습니다.
+
+
+
+== Cloud Manager는 ONTAP S3를 지원하지 않습니다
+
+Azure의 Cloud Volumes ONTAP는 S3를 사용하는 오브젝트를 지원하지만 Cloud Manager는 이 기능에 대한 관리 기능을 제공하지 않습니다. CLI를 사용하는 것이 Cloud Volumes ONTAP에서 S3 클라이언트 액세스를 구성하는 모범 사례입니다. 자세한 내용은 를 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["S3 구성 전원 가이드"^].
+
+
+
+== Cloud Manager는 스토리지 VM의 재해 복구를 지원하지 않습니다
+
+Cloud Manager는 스토리지 VM 재해 복구에 대한 설정 또는 오케스트레이션 지원을 제공하지 않습니다. System Manager 또는 CLI를 사용해야 합니다.
+
+* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 재해 복구 준비 Express 가이드"^]
+* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM 재해 복구 익스프레스 가이드 를 참조하십시오"^]
+

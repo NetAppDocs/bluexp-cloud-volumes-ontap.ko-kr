@@ -1,0 +1,282 @@
+---
+sidebar: sidebar 
+permalink: reference-networking-aws.html 
+keywords: networking, network, requirements, connection, connections, vpc, security group, security groups, subnets, vpn, internet, nat, s3, dns, ad, active directory, az, availability zone, floating IP, floating, SVM, management LIF, route, route tables, proxy, HTTP, private, tier, s3 endpoint, tiering, storage tier, storage tiering, proxy server, nat device, vpn, snapmanager, snapcenter, iscsi, nfs, cifs, nas, san, outbound, inbound, connections, autosupport, ha, ha pair, high availability 
+summary: Cloud Manager는 IP 주소, 넷마스크, 경로 등과 같은 Cloud Volumes ONTAP용 네트워킹 구성 요소 설정을 처리합니다. 아웃바운드 인터넷 액세스를 사용할 수 있는지, 충분한 전용 IP 주소를 사용할 수 있는지, 올바른 연결이 있는지 등을 확인해야 합니다. 
+---
+= AWS의 Cloud Volumes ONTAP에 대한 네트워킹 요구사항
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager는 IP 주소, 넷마스크, 경로 등과 같은 Cloud Volumes ONTAP용 네트워킹 구성 요소 설정을 처리합니다. 아웃바운드 인터넷 액세스를 사용할 수 있는지, 충분한 전용 IP 주소를 사용할 수 있는지, 올바른 연결이 있는지 등을 확인해야 합니다.
+
+
+
+== 일반 요구 사항
+
+AWS에서 다음 요구사항을 충족해야 합니다.
+
+
+
+=== Cloud Volumes ONTAP 노드에 대한 아웃바운드 인터넷 액세스
+
+Cloud Volumes ONTAP 노드를 사용하려면 스토리지 상태를 사전에 모니터링하는 NetApp AutoSupport에 메시지를 보내기 위해 아웃바운드 인터넷 액세스가 필요합니다.
+
+라우팅 및 방화벽 정책은 Cloud Volumes ONTAP가 AutoSupport 메시지를 전송할 수 있도록 다음 엔드포인트로 AWS HTTP/HTTPS 트래픽을 허용해야 합니다.
+
+* https://support.netapp.com/aods/asupmessage 으로 문의하십시오
+* https://support.netapp.com/asupprod/post/1.0/postAsup 으로 문의하십시오
+
+
+NAT 인스턴스가 있는 경우 개인 서브넷에서 인터넷으로 HTTPS 트래픽을 허용하는 인바운드 보안 그룹 규칙을 정의해야 합니다.
+
+link:task-verify-autosupport.html["AutoSupport 구성 방법을 알아보십시오"].
+
+
+
+=== HA 중재자를 위한 아웃바운드 인터넷 액세스
+
+HA 중재자 인스턴스는 스토리지 페일오버를 지원할 수 있도록 AWS EC2 서비스에 대한 아웃바운드 연결이 있어야 합니다. 연결을 제공하기 위해 공용 IP 주소를 추가하거나 프록시 서버를 지정하거나 수동 옵션을 사용할 수 있습니다.
+
+수동 옵션은 대상 서브넷에서 AWS EC2 서비스로 연결되는 NAT 게이트웨이 또는 인터페이스 VPC 엔드포인트일 수 있습니다. VPC 엔드포인트에 대한 자세한 내용은 을 참조하십시오 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["AWS 문서:인터페이스 VPC 엔드포인트(AWS PrivateLink)"^].
+
+
+
+=== 전용 IP 주소
+
+Cloud Manager는 필요한 수의 프라이빗 IP 주소를 Cloud Volumes ONTAP에 자동으로 할당합니다. 네트워킹에 사용 가능한 개인 IP 주소가 충분한지 확인해야 합니다.
+
+Cloud Manager가 Cloud Volumes ONTAP에 할당하는 LIF 수는 단일 노드 시스템을 구축하든 HA 쌍을 구축하든 관계없이 달라집니다. LIF는 물리적 포트와 연결된 IP 주소입니다.
+
+
+
+==== 단일 노드 시스템의 IP 주소입니다
+
+Cloud Manager는 단일 노드 시스템에 6개의 IP 주소를 할당합니다.
+
+* 클러스터 관리 LIF
+* 노드 관리 LIF
+* 인터클러스터 LIF
+* NAS 데이터 LIF
+* iSCSI 데이터 LIF
+* 스토리지 VM 관리 LIF
++
+스토리지 VM 관리 LIF는 SnapCenter와 같은 관리 툴과 함께 사용됩니다.
+
+
+
+
+
+==== HA 쌍의 IP 주소
+
+HA Pair의 경우 단일 노드 시스템보다 더 많은 IP 주소가 필요합니다. 이러한 IP 주소는 다음 이미지와 같이 서로 다른 이더넷 인터페이스에 분산됩니다.
+
+image:diagram_cvo_aws_networking_ha.png["AWS의 Cloud Volumes ONTAP HA 구성에서 eth0, eth1, eth2를 보여 주는 다이어그램"]
+
+HA 쌍에 필요한 사설 IP 주소의 수는 선택한 구축 모델에 따라 다릅니다. AZ(Single_AWS Availability Zone)에 구축된 HA 쌍에는 15개의 프라이빗 IP 주소가 필요하고, _multiple_AZs에 구축된 HA 쌍에는 13개의 프라이빗 IP 주소가 필요합니다.
+
+다음 표에는 각 프라이빗 IP 주소와 연결된 LIF에 대한 자세한 정보가 나와 있습니다.
+
+
+
+===== 단일 AZ에서 HA 쌍을 지원하는 LIF
+
+[cols="20,20,20,40"]
+|===
+| LIF | 인터페이스 | 노드 | 목적 
+
+
+| 클러스터 관리 | eth0 | 노드 1 | 전체 클러스터(HA 쌍)의 관리 
+
+
+| 노드 관리 | eth0 | 노드 1 및 노드 2 | 노드의 관리. 
+
+
+| 인터클러스터 | eth0 | 노드 1 및 노드 2 | 클러스터 간 통신, 백업 및 복제 
+
+
+| NAS 데이터 | eth0 | 노드 1 | NAS 프로토콜을 통한 클라이언트 액세스 
+
+
+| iSCSI 데이터 | eth0 | 노드 1 및 노드 2 | iSCSI 프로토콜을 통한 클라이언트 액세스. 
+
+
+| 클러스터 연결 | eth1 | 노드 1 및 노드 2 | 노드가 서로 통신하고 클러스터 내에서 데이터를 이동할 수 있도록 지원합니다. 
+
+
+| HA 연결 | eth2 | 노드 1 및 노드 2 | 페일오버 시 두 노드 간의 통신. 
+
+
+| RSM iSCSI 트래픽입니다 | eth3 | 노드 1 및 노드 2 | RAID SyncMirror iSCSI 트래픽과 두 Cloud Volumes ONTAP 노드 및 중재자 간의 통신 
+
+
+| 중재자 | eth0 | 중재자 | 스토리지 테이크오버 및 반환 프로세스를 지원하는 노드와 중재자 간의 통신 채널 
+|===
+
+
+===== 여러 AZs의 HA 쌍에 대한 LIF
+
+[cols="20,20,20,40"]
+|===
+| LIF | 인터페이스 | 노드 | 목적 
+
+
+| 노드 관리 | eth0 | 노드 1 및 노드 2 | 노드의 관리. 
+
+
+| 인터클러스터 | eth0 | 노드 1 및 노드 2 | 클러스터 간 통신, 백업 및 복제 
+
+
+| iSCSI 데이터 | eth0 | 노드 1 및 노드 2 | iSCSI 프로토콜을 통한 클라이언트 액세스. 이 LIF는 노드 간 부동 IP 주소의 마이그레이션도 관리합니다. 
+
+
+| 클러스터 연결 | eth1 | 노드 1 및 노드 2 | 노드가 서로 통신하고 클러스터 내에서 데이터를 이동할 수 있도록 지원합니다. 
+
+
+| HA 연결 | eth2 | 노드 1 및 노드 2 | 페일오버 시 두 노드 간의 통신. 
+
+
+| RSM iSCSI 트래픽입니다 | eth3 | 노드 1 및 노드 2 | RAID SyncMirror iSCSI 트래픽과 두 Cloud Volumes ONTAP 노드 및 중재자 간의 통신 
+
+
+| 중재자 | eth0 | 중재자 | 스토리지 테이크오버 및 반환 프로세스를 지원하는 노드와 중재자 간의 통신 채널 
+|===
+
+TIP: 여러 가용성 영역에 구축된 경우 여러 LIF가 에 연결됩니다 link:reference-networking-aws.html#floatingips["유동 IP 주소"]이는 AWS 프라이빗 IP 제한에 계산되지 않습니다.
+
+
+
+=== 보안 그룹
+
+Cloud Manager에서 보안 그룹을 생성할 수 있으므로 보안 그룹을 생성할 필요가 없습니다. 직접 사용해야 하는 경우 을 참조하십시오 link:reference-security-groups.html["보안 그룹 규칙"].
+
+
+
+=== 데이터 계층화를 위한 연결
+
+EBS를 성능 계층으로 사용하고 AWS S3를 용량 계층으로 사용하려면 Cloud Volumes ONTAP이 S3에 연결되어 있는지 확인해야 합니다. 이 연결을 제공하는 가장 좋은 방법은 S3 서비스에 VPC 엔드포인트를 생성하는 것입니다. 자세한 내용은 을 참조하십시오 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 설명서: 게이트웨이 엔드포인트 생성"^].
+
+VPC 끝점을 만들 때 Cloud Volumes ONTAP 인스턴스에 해당하는 영역, VPC 및 라우팅 테이블을 선택해야 합니다. 또한 S3 엔드포인트에 대한 트래픽을 활성화하는 아웃바운드 HTTPS 규칙을 추가하려면 보안 그룹을 수정해야 합니다. 그렇지 않으면 Cloud Volumes ONTAP에서 S3 서비스에 연결할 수 없습니다.
+
+문제가 발생하면 을 참조하십시오 https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS 지원 지식 센터: 게이트웨이 VPC 엔드포인트를 사용하여 S3 버킷에 연결할 수 없는 이유는 무엇입니까?"^]
+
+
+
+=== ONTAP 시스템에 대한 연결
+
+AWS의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 AWS VPC와 다른 네트워크(예: Azure VNET 또는 회사 네트워크) 간에 VPN 연결이 있어야 합니다. 자세한 내용은 을 참조하십시오 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/SetUpVPNConnections.html["AWS 설명서: AWS VPN 연결 설정"^].
+
+
+
+=== CIFS용 DNS 및 Active Directory
+
+CIFS 스토리지를 프로비저닝하려면 AWS에서 DNS 및 Active Directory를 설정하거나 사내 설정을 AWS로 확장해야 합니다.
+
+DNS 서버는 Active Directory 환경에 대한 이름 확인 서비스를 제공해야 합니다. Active Directory 환경에서 사용되는 DNS 서버가 아니어야 하는 기본 EC2 DNS 서버를 사용하도록 DHCP 옵션 집합을 구성할 수 있습니다.
+
+자세한 지침은 을 참조하십시오 https://docs.aws.amazon.com/quickstart/latest/active-directory-ds/welcome.html["AWS 설명서: AWS 클라우드의 Active Directory 도메인 서비스: 빠른 시작 참조 배포"^].
+
+
+
+== 여러 대의 AZs에서 HA 쌍에 대한 요구 사항
+
+추가 AWS 네트워킹 요구사항은 ZS(Multiple Availability Zones)를 사용하는 Cloud Volumes ONTAP HA 구성에 적용됩니다. 작업 환경을 생성할 때 Cloud Manager에 네트워킹 세부 정보를 입력해야 하므로 HA 쌍을 실행하기 전에 이러한 요구사항을 검토해야 합니다.
+
+HA 쌍의 작동 방식을 이해하려면 를 참조하십시오 link:concept-ha.html["고가용성 쌍"].
+
+가용성 영역:: 이 HA 구축 모델은 여러 대의 AZs를 사용하여 데이터의 고가용성을 보장합니다. 각 Cloud Volumes ONTAP 인스턴스와 중재자 인스턴스에 전용 AZ를 사용해야 하며 HA 쌍 간의 통신 채널을 제공합니다.
+
+
+각 가용성 영역에서 서브넷을 사용할 수 있어야 합니다.
+
+[[floatingips]]
+NAS 데이터 및 클러스터/SVM 관리를 위한 부동 IP 주소:: 여러 AZs의 HA 구성에서는 장애가 발생할 경우 노드 간에 이동하는 부동 IP 주소를 사용합니다. 고객이 아니라면 VPC 외부에서 기본적으로 액세스할 수 없습니다 link:task-setting-up-transit-gateway.html["AWS 전송 게이트웨이를 설정합니다"].
++
+--
+하나의 부동 IP 주소는 클러스터 관리용, 하나는 노드 1의 NFS/CIFS 데이터용으로, 다른 하나는 노드 2의 NFS/CIFS 데이터용으로 사용됩니다. SVM 관리를 위한 네 번째 유동 IP 주소는 선택 사항입니다.
+
+
+NOTE: Windows용 SnapDrive 또는 HA 쌍을 지원하는 SnapCenter를 사용하는 경우 SVM 관리 LIF에는 부동 IP 주소가 필요합니다.
+
+Cloud Volumes ONTAP HA 작업 환경을 생성할 때 Cloud Manager에 부동 IP 주소를 입력해야 합니다. Cloud Manager는 시스템을 시작할 때 HA 쌍에 IP 주소를 할당합니다.
+
+부동 IP 주소는 HA 구성을 배포하는 AWS 지역의 모든 VPC에 대한 CIDR 블록 외부에 있어야 합니다. 유동 IP 주소를 해당 지역의 VPC 외부에 있는 논리적 서브넷으로 생각해 보십시오.
+
+다음 예에서는 AWS 영역에 있는 VPC와 유동 IP 주소 간의 관계를 보여 줍니다. 부동 IP 주소는 모든 VPC에 대한 CIDR 블록 외부에 있지만 라우팅 테이블을 통해 서브넷으로 라우팅할 수 있습니다.
+
+image:diagram_ha_floating_ips.png["AWS 지역에 있는 5대의 VPC에 대한 CIDR 블록과 VPC의 CIDR 블록 외부에 있는 3개의 부동 IP 주소를 보여주는 개념적 이미지."]
+
+
+NOTE: Cloud Manager는 VPC 외부의 클라이언트에서 iSCSI 액세스 및 NAS 액세스를 위한 정적 IP 주소를 자동으로 생성합니다. 이러한 유형의 IP 주소에 대한 요구 사항을 충족할 필요는 없습니다.
+
+--
+VPC 외부에서 유동 IP 액세스를 지원하는 전송 게이트웨이:: 필요한 경우 link:task-setting-up-transit-gateway.html["AWS 전송 게이트웨이를 설정합니다"] HA 쌍이 상주하는 VPC 외부에서 HA 쌍의 부동 IP 주소에 액세스할 수 있도록 합니다.
+배관 테이블:: Cloud Manager에서 부동 IP 주소를 지정한 후 부동 IP 주소에 대한 라우트를 포함해야 하는 라우팅 테이블을 선택하라는 메시지가 표시됩니다. 이렇게 하면 클라이언트가 HA 쌍에 액세스할 수 있습니다.
++
+--
+VPC(기본 경로 테이블)에 있는 서브넷에 대해 하나의 라우팅 테이블만 있는 경우 Cloud Manager는 해당 라우팅 테이블에 부동 IP 주소를 자동으로 추가합니다. 둘 이상의 라우트 테이블이 있는 경우 HA 쌍을 시작할 때 올바른 라우트 테이블을 선택하는 것이 매우 중요합니다. 그렇지 않으면 일부 클라이언트가 Cloud Volumes ONTAP에 액세스하지 못할 수 있습니다.
+
+예를 들어, 서로 다른 라우팅 테이블에 연결된 두 개의 서브넷이 있을 수 있습니다. 라우트 테이블 A를 선택했지만 라우트 테이블 B는 선택하지 않은 경우, 라우트 테이블 A와 연결된 서브넷에 있는 클라이언트는 HA 쌍에 액세스할 수 있지만, 라우트 테이블 B와 연결된 서브넷에 있는 클라이언트는 액세스할 수 없습니다.
+
+라우팅 테이블에 대한 자세한 내용은 을 참조하십시오 http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["AWS 설명서: 경로 테이블"^].
+
+--
+NetApp 관리 툴에 연결:: 여러 AZs에 있는 HA 구성에서 NetApp 관리 툴을 사용하려면 다음 두 가지 연결 옵션을 사용할 수 있습니다.
++
+--
+. NetApp 관리 툴을 다른 VPC 및 에 구축할 수 있습니다 link:task-setting-up-transit-gateway.html["AWS 전송 게이트웨이를 설정합니다"]. 게이트웨이를 사용하면 VPC 외부에서 클러스터 관리 인터페이스의 부동 IP 주소에 액세스할 수 있습니다.
+. NAS 클라이언트와 비슷한 라우팅 구성을 사용하여 동일한 VPC에 NetApp 관리 툴을 구축합니다.
+
+
+--
+
+
+
+
+=== HA 구성의 예
+
+다음 그림에서는 여러 AZs의 HA 쌍, 즉 가용성 영역 3개, 서브넷 3개, 부동 IP 주소 및 라우팅 테이블과 같은 네트워크 구성 요소를 보여 줍니다.
+
+image:diagram_ha_networking.png["Cloud Volumes ONTAP HA 아키텍처의 구성 요소를 보여 주는 개념적 이미지: 2개의 Cloud Volumes ONTAP 노드와 개별 가용성 영역에 있는 중재자 인스턴스"]
+
+
+
+== 커넥터 요구 사항
+
+Connector가 공용 클라우드 환경 내에서 리소스와 프로세스를 관리할 수 있도록 네트워킹을 설정합니다. 가장 중요한 단계는 다양한 엔드포인트에 대한 아웃바운드 인터넷 액세스를 보장하는 것입니다.
+
+
+TIP: 네트워크에서 인터넷에 대한 모든 통신에 프록시 서버를 사용하는 경우 설정 페이지에서 프록시 서버를 지정할 수 있습니다. 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html["프록시 서버를 사용하도록 Connector 구성"^].
+
+
+
+=== 대상 네트워크에 연결
+
+커넥터를 사용하려면 Cloud Volumes ONTAP를 배포할 VPC 및 VNets에 대한 네트워크 연결이 필요합니다.
+
+예를 들어 회사 네트워크에 커넥터를 설치하는 경우 Cloud Volumes ONTAP를 실행하는 VPC 또는 VNET에 대한 VPN 연결을 설정해야 합니다.
+
+
+
+=== 아웃바운드 인터넷 액세스
+
+Connector를 사용하려면 공용 클라우드 환경 내의 리소스와 프로세스를 관리하기 위한 아웃바운드 인터넷 액세스가 필요합니다.
+
+[cols="2*"]
+|===
+| 엔드포인트 | 목적 
+
+
+| https://support.netapp.com 으로 문의하십시오 | 라이센스 정보를 얻고 AutoSupport 메시지를 NetApp 지원 팀에 전송합니다. 
+
+
+| https://*.cloudmanager.cloud.netapp.com 으로 문의하십시오 | Cloud Manager 내에서 SaaS 기능 및 서비스를 제공합니다. 
+
+
+| https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net 으로 문의하십시오 | Connector 및 해당 Docker 구성 요소를 업그레이드합니다. 
+|===

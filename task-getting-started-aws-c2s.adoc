@@ -1,0 +1,640 @@
+---
+sidebar: sidebar 
+permalink: task-getting-started-aws-c2s.html 
+keywords: commercial cloud services, c2s, secret region, aws secret region 
+summary: '표준 AWS 지역과 마찬가지로, AWS C2S(Commercial Cloud Services) 환경에서 Cloud Manager를 사용하여 클라우드 스토리지에 엔터프라이즈급 기능을 제공하는 Cloud Volumes ONTAP를 구축할 수 있습니다. AWS C2S는 미국 고유의 폐쇄된 지역입니다 Intelligence Community - 이 페이지의 지침은 AWS C2S 지역 사용자에게만 적용됩니다.' 
+---
+= AWS C2S 환경에서 Cloud Volumes ONTAP를 시작하십시오
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+표준 AWS 지역과 마찬가지로, 에서 Cloud Manager를 사용할 수 있습니다 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S(Commercial Cloud Services)"] 구축할 환경: 클라우드 스토리지에 엔터프라이즈급 기능을 제공하는 Cloud Volumes ONTAP AWS C2S는 미국 고유의 폐쇄된 지역입니다 Intelligence Community - 이 페이지의 지침은 AWS C2S 지역 사용자에게만 적용됩니다.
+
+
+
+== C2S에서 지원되는 기능
+
+C2S 환경의 Cloud Manager에서 사용할 수 있는 기능은 다음과 같습니다.
+
+* Cloud Volumes ONTAP
+* 데이터 복제
+* 감사 시간 표시 막대입니다
+
+
+Cloud Volumes ONTAP의 경우 단일 노드 시스템 또는 HA 쌍을 생성할 수 있습니다. 두 가지 라이센스 옵션 모두 사용 가능: 용량제 및 BYOL(Bring Your Own License)
+
+C2S의 Cloud Volumes ONTAP에서는 S3에 대한 데이터 계층화도 지원됩니다.
+
+
+
+== 제한 사항
+
+Cloud Manager에서 제공되는 NetApp 클라우드 서비스가 없습니다.
+
+C2S 환경에는 인터넷 액세스가 없으므로 다음 기능을 사용할 수 없습니다.
+
+* NetApp Cloud Central과 통합
+* Cloud Manager에서 소프트웨어 업그레이드 자동화
+* NetApp AutoSupport를 참조하십시오
+* Cloud Volumes ONTAP 리소스에 대한 AWS 비용 정보입니다
+
+
+
+
+== 구축 개요
+
+C2S에서 Cloud Volumes ONTAP 시작하기 에는 몇 가지 단계가 포함되어 있습니다.
+
+. AWS 환경 준비
++
+여기에는 네트워킹 설정, Cloud Volumes ONTAP 가입, 권한 설정 및 AWS KMS 설정 옵션이 포함됩니다.
+
+. Connector 설치 및 Cloud Manager 설정
++
+Cloud Manager를 사용하여 Cloud Volumes ONTAP를 구축하기 전에 _Connector_를 작성해야 합니다. Connector를 사용하면 Cloud Manager에서 퍼블릭 클라우드 환경(Cloud Volumes ONTAP 포함)의 리소스와 프로세스를 관리할 수 있습니다.
+
++
+Connector 인스턴스에 설치되는 소프트웨어에서 Cloud Manager에 로그인합니다.
+
+. Cloud Manager에서 Cloud Volumes ONTAP 실행:
+
+
+이러한 각 단계는 아래에 설명되어 있습니다.
+
+
+
+== AWS 환경을 준비하십시오
+
+AWS 환경은 몇 가지 요구사항을 충족해야 합니다.
+
+
+
+=== 네트워크 설정
+
+Cloud Volumes ONTAP가 제대로 작동할 수 있도록 AWS 네트워킹을 설정합니다.
+
+.단계
+. 커넥터 인스턴스 및 Cloud Volumes ONTAP 인스턴스를 시작할 VPC 및 서브넷을 선택합니다.
+. VPC와 서브넷이 커넥터와 Cloud Volumes ONTAP 간의 연결을 지원하는지 확인합니다.
+. VPC 엔드포인트를 S3 서비스로 설정합니다.
++
+Cloud Volumes ONTAP의 콜드 데이터를 저비용 오브젝트 스토리지로 계층화하려는 경우 VPC 엔드포인트가 필요합니다.
+
+
+
+
+
+=== Cloud Volumes ONTAP에 가입하십시오
+
+Cloud Manager에서 Cloud Volumes ONTAP를 구축하려면 Marketplace에 가입해야 합니다.
+
+.단계
+. AWS 인텔리전스 커뮤니티 마켓플레이스로 이동하여 Cloud Volumes ONTAP를 검색합니다.
+. 구축할 오퍼링을 선택합니다.
+. 약관을 검토하고 * Accept * (수락 *)를 클릭합니다.
+. 다른 서비스를 배포하려는 경우 해당 서비스에 대해 이 단계를 반복합니다.
++
+Cloud Volumes ONTAP 인스턴스를 시작하려면 Cloud Manager를 사용해야 합니다. EC2 콘솔에서 Cloud Volumes ONTAP 인스턴스를 시작하면 안 됩니다.
+
+
+
+
+
+=== 권한 설정
+
+AWS 상용 클라우드 서비스 환경에서 작업을 수행하는 데 필요한 권한을 Cloud Manager 및 Cloud Volumes ONTAP에 제공하는 IAM 정책 및 역할을 설정합니다.
+
+다음 각 항목에 대해 IAM 정책 및 IAM 역할이 필요합니다.
+
+* 커넥터 인스턴스
+* Cloud Volumes ONTAP 인스턴스
+* Cloud Volumes ONTAP HA 중재자 인스턴스(HA 쌍을 구축하려는 경우)
+
+
+.단계
+. AWS IAM 콘솔로 이동하여 * Policies * 를 클릭합니다.
+. Connector 인스턴스에 대한 정책을 만듭니다.
++
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:ModifyVolumeAttribute",
+                "ec2:DeleteVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DeleteSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets",
+                "kms:List*",
+                "kms:Describe*",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:CreatePlacementGroup",
+                "ec2:DeletePlacementGroup"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "fabricPoolPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions"
+            ],
+            "Resource": [
+                "arn:aws-iso:s3:::fabric-pool*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws-iso:ec2:*:*:instance/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws-iso:ec2:*:*:volume/*"
+            ]
+        }
+    ]
+}
+----
+. Cloud Volumes ONTAP에 대한 정책을 생성합니다.
++
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Action": "s3:ListAllMyBuckets",
+        "Resource": "arn:aws-iso:s3:::*",
+        "Effect": "Allow"
+    }, {
+        "Action": [
+            "s3:ListBucket",
+            "s3:GetBucketLocation"
+        ],
+        "Resource": "arn:aws-iso:s3:::fabric-pool-*",
+        "Effect": "Allow"
+    }, {
+        "Action": [
+            "s3:GetObject",
+            "s3:PutObject",
+            "s3:DeleteObject"
+        ],
+        "Resource": "arn:aws-iso:s3:::fabric-pool-*",
+        "Effect": "Allow"
+    }]
+}
+----
+. Cloud Volumes ONTAP HA 쌍을 구축하려는 경우 HA 중재자를 위한 정책을 생성합니다.
++
+[source, json]
+----
+{
+	"Version": "2012-10-17",
+	"Statement": [{
+			"Effect": "Allow",
+			"Action": [
+				"ec2:AssignPrivateIpAddresses",
+				"ec2:CreateRoute",
+				"ec2:DeleteRoute",
+				"ec2:DescribeNetworkInterfaces",
+				"ec2:DescribeRouteTables",
+				"ec2:DescribeVpcs",
+				"ec2:ReplaceRoute",
+				"ec2:UnassignPrivateIpAddresses"
+			],
+			"Resource": "*"
+		}
+	]
+}
+----
+. Amazon EC2 역할 유형으로 IAM 역할을 생성하고 이전 단계에서 생성한 정책을 첨부합니다.
++
+정책과 마찬가지로, Connector에 IAM 역할 1개, Cloud Volumes ONTAP 노드에 대해 1개, HA 중재자를 위한 IAM 역할 1개가 있어야 합니다(HA 쌍을 구축하려는 경우).
+
++
+Connector 인스턴스를 실행할 때 Connector IAM 역할을 선택해야 합니다.
+
++
+Cloud Manager에서 Cloud Volumes ONTAP 작업 환경을 생성할 때 Cloud Volumes ONTAP의 IAM 역할과 HA 중재자를 선택할 수 있습니다.
+
+
+
+
+
+=== AWS KMS를 설정합니다
+
+Cloud Volumes ONTAP에서 Amazon 암호화를 사용하려면 AWS 키 관리 서비스에 대한 요구 사항이 충족되는지 확인합니다.
+
+.단계
+. 사용자 계정 또는 다른 AWS 계정에 활성 CMK(Customer Master Key)가 있는지 확인합니다.
++
+CMK는 AWS로 관리되는 CMK 또는 고객이 관리하는 CMK가 될 수 있습니다.
+
+. CMK가 Cloud Volumes ONTAP를 배포할 계정과 별도로 AWS 계정에 있는 경우 해당 키의 ARN을 얻어야 합니다.
++
+Cloud Volumes ONTAP 시스템을 생성할 때 클라우드 관리자에게 ARN을 제공해야 합니다.
+
+. Cloud Manager 인스턴스의 IAM 역할을 CMK의 주요 사용자 목록에 추가합니다.
++
+이렇게 하면 Cloud Volumes ONTAP에서 CMK를 사용할 수 있는 클라우드 관리자 권한이 부여됩니다.
+
+
+
+
+
+== Cloud Manager 설치 및 설정
+
+AWS에서 Cloud Volumes ONTAP 시스템을 시작하려면 먼저 AWS Marketplace에서 Connector 인스턴스를 시작한 다음 로그인하고 Cloud Manager를 설정해야 합니다.
+
+.단계
+. PEM(Privacy Enhanced Mail) Base-64로 인코딩된 X.509 형식으로 CA(인증 기관)에서 서명한 루트 인증서를 받습니다. 인증서를 얻으려면 조직의 정책 및 절차를 참조하십시오.
++
+설치 프로세스 중에 인증서를 업로드해야 합니다. Cloud Manager는 HTTPS를 통해 AWS로 요청을 보낼 때 신뢰할 수 있는 인증서를 사용합니다.
+
+. 커넥터 인스턴스를 시작합니다.
++
+.. Cloud Manager의 AWS Intelligence Community Marketplace 페이지로 이동합니다.
+.. Custom Launch 탭에서 EC2 콘솔에서 인스턴스를 시작하는 옵션을 선택합니다.
+.. 프롬프트에 따라 인스턴스를 구성합니다.
++
+인스턴스를 구성할 때 다음 사항에 유의하십시오.
+
++
+*** T3.xLarge를 권장합니다.
+*** AWS 환경을 준비할 때 생성한 IAM 역할을 선택해야 합니다.
+*** 기본 스토리지 옵션을 유지해야 합니다.
+*** Connector에 필요한 연결 방법은 SSH, HTTP, HTTPS입니다.
+
+
+
+
+. Connector 인스턴스에 연결된 호스트에서 Cloud Manager를 설정합니다.
++
+.. 웹 브라우저를 열고 다음 URL을 입력합니다. http://ipaddress:80[]
+.. AWS 서비스 연결을 위한 프록시 서버를 지정합니다.
+.. 1단계에서 얻은 인증서를 업로드합니다.
+.. 설정 마법사의 단계를 완료하여 Cloud Manager를 설정합니다.
++
+*** * 시스템 세부 정보 *: 이 Cloud Manager 인스턴스의 이름을 입력하고 회사 이름을 입력합니다.
+*** * 사용자 생성 *: Cloud Manager 관리에 사용할 관리자 사용자를 생성합니다.
+*** * 검토 *: 세부 정보를 검토하고 최종 사용자 사용권 계약을 승인합니다.
+
+
+.. CA 서명 인증서의 설치를 완료하려면 EC2 콘솔에서 Connector 인스턴스를 다시 시작합니다.
+
+
+. Connector가 다시 시작된 후 설치 마법사에서 만든 관리자 사용자 계정을 사용하여 로그인합니다.
+
+
+
+
+== Cloud Volumes ONTAP를 시작합니다
+
+Cloud Manager에서 새로운 작업 환경을 생성하여 AWS 상용 클라우드 서비스 환경에서 Cloud Volumes ONTAP 인스턴스를 시작할 수 있습니다.
+
+.무엇을 &#8217;필요로 할거야
+* 라이센스를 구입한 경우 NetApp에서 받은 라이센스 파일이 있어야 합니다. 라이센스 파일은 JSON 형식의 .NLF 파일입니다.
+* HA 중재자가 키 기반 SSH 인증을 사용할 수 있도록 키 쌍이 필요합니다.
+
+
+.단계
+. 작업 환경 페이지에서 * 작업 환경 추가 * 를 클릭합니다.
+. 생성 아래에서 Cloud Volumes ONTAP 또는 Cloud Volumes ONTAP HA를 선택합니다.
+. 마법사의 단계를 완료하여 Cloud Volumes ONTAP 시스템을 시작합니다.
++
+마법사를 완료하면 다음 사항에 유의하십시오.
+
++
+** 여러 가용성 영역에 Cloud Volumes ONTAP HA를 배포하려는 경우 게시 시점에 AWS 상용 클라우드 서비스 환경에서 AZs를 두 개만 사용할 수 있으므로 다음과 같이 구성을 구축합니다.
++
+*** 노드 1: 가용성 영역 A
+*** 노드 2: 가용성 영역 B
+*** 중재자: 가용성 영역 A 또는 B
+
+
+** 생성된 보안 그룹을 사용하려면 기본 옵션을 그대로 두어야 합니다.
++
+미리 정의된 보안 그룹에는 Cloud Volumes ONTAP가 제대로 작동하는 데 필요한 규칙이 포함됩니다. 사용자 고유의 사용이 필요한 경우 아래의 보안 그룹 섹션을 참조할 수 있습니다.
+
+** AWS 환경을 준비할 때 생성한 IAM 역할을 선택해야 합니다.
+** 기본 AWS 디스크 유형은 초기 Cloud Volumes ONTAP 볼륨에 사용됩니다.
++
+이후 볼륨에 대해 다른 디스크 유형을 선택할 수 있습니다.
+
+** AWS 디스크의 성능은 디스크 크기와 관련이 있습니다.
++
+필요한 일관된 성능을 제공하는 디스크 크기를 선택해야 합니다. EBS 성능에 대한 자세한 내용은 AWS 설명서를 참조하십시오.
+
+** 디스크 크기는 시스템의 모든 디스크에 대한 기본 크기입니다.
++
+
+NOTE: 나중에 다른 크기가 필요한 경우 고급 할당 옵션을 사용하여 특정 크기의 디스크를 사용하는 Aggregate를 생성할 수 있습니다.
+
+** 스토리지 효율성 기능을 사용하면 스토리지 활용률을 개선하고 필요한 총 스토리지 양을 줄일 수 있습니다.
+
+
+
+
+Cloud Manager가 Cloud Volumes ONTAP 인스턴스를 시작합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.
+
+
+
+== 보안 그룹 규칙
+
+Cloud Manager는 Cloud Manager와 Cloud Volumes ONTAP가 클라우드에서 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.
+
+
+
+=== 커넥터의 보안 그룹
+
+Connector의 보안 그룹에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.
+
+
+
+==== 인바운드 규칙
+
+[cols="10,10,80"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| SSH를 클릭합니다 | 22 | 커넥터 호스트에 대한 SSH 액세스를 제공합니다 
+
+
+| HTTP | 80 | 클라이언트 웹 브라우저에서 로컬 사용자 인터페이스로 HTTP 액세스를 제공합니다 
+
+
+| HTTPS | 443 | 클라이언트 웹 브라우저에서 로컬 사용자 인터페이스로 HTTPS 액세스를 제공합니다 
+|===
+
+
+==== 아웃바운드 규칙
+
+Connector에 대해 미리 정의된 보안 그룹에는 다음과 같은 아웃바운드 규칙이 포함됩니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 TCP | 모두 | 모든 아웃바운드 트래픽 
+
+
+| 모든 UDP | 모두 | 모든 아웃바운드 트래픽 
+|===
+
+
+=== Cloud Volumes ONTAP의 보안 그룹입니다
+
+Cloud Volumes ONTAP 노드의 보안 그룹에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.
+
+
+
+==== 인바운드 규칙
+
+미리 정의된 보안 그룹의 인바운드 규칙 소스는 0.0.0.0/0입니다.
+
+[cols="10,10,80"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 ICMP | 모두 | 인스턴스에 Ping을 수행 중입니다 
+
+
+| HTTP | 80 | 클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 HTTP 액세스 
+
+
+| HTTPS | 443 | 클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 HTTPS 액세스 
+
+
+| SSH를 클릭합니다 | 22 | 클러스터 관리 LIF 또는 노드 관리 LIF의 IP 주소에 SSH를 액세스할 수 있습니다 
+
+
+| TCP | 111 | NFS에 대한 원격 프로시저 호출 
+
+
+| TCP | 139 | CIFS에 대한 NetBIOS 서비스 세션입니다 
+
+
+| TCP | 161-162 | 단순한 네트워크 관리 프로토콜 
+
+
+| TCP | 445 | Microsoft SMB/CIFS over TCP 및 NetBIOS 프레임 
+
+
+| TCP | 635 | NFS 마운트 
+
+
+| TCP | 749 | Kerberos 
+
+
+| TCP | 2049 | NFS 서버 데몬 
+
+
+| TCP | 3260 | iSCSI 데이터 LIF를 통한 iSCSI 액세스 
+
+
+| TCP | 4045 | NFS 잠금 데몬 
+
+
+| TCP | 4046 | NFS에 대한 네트워크 상태 모니터 
+
+
+| TCP | 10000입니다 | NDMP를 사용한 백업 
+
+
+| TCP | 11104 | SnapMirror에 대한 인터클러스터 통신 세션의 관리 
+
+
+| TCP | 11105 | 인터클러스터 LIF를 사용하여 SnapMirror 데이터 전송 
+
+
+| UDP입니다 | 111 | NFS에 대한 원격 프로시저 호출 
+
+
+| UDP입니다 | 161-162 | 단순한 네트워크 관리 프로토콜 
+
+
+| UDP입니다 | 635 | NFS 마운트 
+
+
+| UDP입니다 | 2049 | NFS 서버 데몬 
+
+
+| UDP입니다 | 4045 | NFS 잠금 데몬 
+
+
+| UDP입니다 | 4046 | NFS에 대한 네트워크 상태 모니터 
+
+
+| UDP입니다 | 4049 | NFS rquotad 프로토콜 
+|===
+
+
+==== 아웃바운드 규칙
+
+Cloud Volumes ONTAP에 대해 미리 정의된 보안 그룹에는 다음과 같은 아웃바운드 규칙이 포함됩니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 ICMP | 모두 | 모든 아웃바운드 트래픽 
+
+
+| 모든 TCP | 모두 | 모든 아웃바운드 트래픽 
+
+
+| 모든 UDP | 모두 | 모든 아웃바운드 트래픽 
+|===
+
+
+=== HA 중재자를 위한 외부 보안 그룹
+
+Cloud Volumes ONTAP HA 중재자를 위해 미리 정의된 외부 보안 그룹에는 다음과 같은 인바운드 및 아웃바운드 규칙이 포함됩니다.
+
+
+
+==== 인바운드 규칙
+
+인바운드 규칙의 소스는 Connector가 상주하는 VPC의 트래픽입니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| SSH를 클릭합니다 | 22 | HA 중재자로 SSH 연결 
+
+
+| TCP | 3000입니다 | Connector에서 Restful API 액세스 
+|===
+
+
+==== 아웃바운드 규칙
+
+HA 중재자를 위해 미리 정의된 보안 그룹에는 다음과 같은 아웃바운드 규칙이 포함됩니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 TCP | 모두 | 모든 아웃바운드 트래픽 
+
+
+| 모든 UDP | 모두 | 모든 아웃바운드 트래픽 
+|===
+
+
+=== HA 중재자를 위한 내부 보안 그룹
+
+Cloud Volumes ONTAP HA 중재자를 위해 미리 정의된 내부 보안 그룹에는 다음 규칙이 포함됩니다. Cloud Manager는 항상 이 보안 그룹을 생성합니다. 자체 옵션을 사용할 수 없습니다.
+
+
+
+==== 인바운드 규칙
+
+미리 정의된 보안 그룹에는 다음과 같은 인바운드 규칙이 포함됩니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 교통 정보 | 모두 | HA 중재자 및 HA 노드 간 통신 
+|===
+
+
+==== 아웃바운드 규칙
+
+미리 정의된 보안 그룹에는 다음과 같은 아웃바운드 규칙이 포함됩니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 교통 정보 | 모두 | HA 중재자 및 HA 노드 간 통신 
+|===

@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: concept-active-iq.html 
+keywords: autosupport, active iq, digital advisor, active iq digital advisor, telemetry 
+summary: ONTAP의 AutoSupport 구성 요소는 원격 측정을 수집하여 분석을 위해 전송합니다. Active IQ 디지털 어드바이저는 AutoSupport의 데이터를 분석하고 능동적인 관리 및 최적화를 제공합니다. Active IQ은 인공 지능을 사용하여 잠재적인 문제를 파악하고 비즈니스에 영향을 미치기 전에 이를 해결하도록 지원합니다. 
+---
+= AutoSupport 및 Active IQ 디지털 자문업체
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP의 AutoSupport 구성 요소는 원격 측정을 수집하여 분석을 위해 전송합니다. Active IQ 디지털 어드바이저는 AutoSupport의 데이터를 분석하고 능동적인 관리 및 최적화를 제공합니다. Active IQ은 인공 지능을 사용하여 잠재적인 문제를 파악하고 비즈니스에 영향을 미치기 전에 이를 해결하도록 지원합니다.
+
+Active IQ을 사용하면 클라우드 기반 포털 및 모바일 앱을 통해 실행 가능한 예측 분석과 능동적 지원을 제공하여 글로벌 하이브리드 클라우드 전반에서 데이터 인프라를 최적화할 수 있습니다. SupportEdge의 데이터 중심 인사이트와 권장사항은 Active IQ 계약이 체결된 모든 NetApp 고객(기능은 제품 및 지원 계층에 따라 다름)에게 제공됩니다.
+
+다음은 Active IQ에서 수행할 수 있는 몇 가지 사항입니다.
+
+* 업그레이드 계획
++
+Active IQ는 사용자 환경에서 최신 버전의 ONTAP로 업그레이드하여 해결할 수 있는 문제를 식별하며, 업그레이드 관리자 구성 요소는 성공적인 업그레이드를 계획하는 데 도움이 됩니다.
+
+* 시스템 상태 보기
++
+Active IQ 대시보드에서 웰빙과 관련된 모든 문제를 보고하고 문제를 해결할 수 있습니다. 시스템 용량을 모니터링하여 스토리지 공간이 부족하지 않도록 하십시오. 시스템에 대한 지원 케이스를 봅니다.
+
+* 성능 관리
++
+Active IQ는 ONTAP System Manager에서 볼 수 있는 것보다 더 오랜 기간 동안의 시스템 성능을 보여 줍니다. 성능에 영향을 주는 구성 및 시스템 문제를 식별합니다. 효율성 극대화 스토리지 효율성 메트릭을 확인하고 더 적은 공간에 더 많은 데이터를 저장하는 방법을 알아보십시오.
+
+* 인벤토리 및 구성을 봅니다.
++
+Active IQ는 전체 인벤토리 및 소프트웨어 및 하드웨어 구성 정보를 표시합니다. 서비스 계약이 만료되는 시기를 확인하고 서비스 계약을 갱신하여 계속 지원을 받을 수 있도록 합니다.
+
+
+
+.관련 정보
+* https://docs.netapp.com/us-en/active-iq/["NetApp 설명서: Active IQ 디지털 자문업체"^]
+* https://aiq.netapp.com/custom-dashboard/search["Active IQ를 시작합니다"^]
+* https://www.netapp.com/us/services/support-edge.aspx["SupportEdge 서비스"^]
+

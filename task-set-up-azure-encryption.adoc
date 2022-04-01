@@ -1,0 +1,185 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-azure-encryption.html 
+keywords: customer-managed key, customer key, azure storage service encryption, azure encryption, encryption key, azure encryption key 
+summary: Microsoft 관리 키가 있는 Azure 스토리지 서비스 암호화를 사용하여 Azure의 Cloud Volumes ONTAP에서 데이터를 자동으로 암호화합니다. 그러나 이 페이지의 단계를 따르면 사용자 고유의 암호화 키를 사용할 수 있습니다. 
+---
+= Azure에서 고객이 관리하는 키를 사용하도록 Cloud Volumes ONTAP를 설정합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azure의 Cloud Volumes ONTAP에서 를 사용하여 데이터가 자동으로 암호화됩니다 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 스토리지 서비스 암호화"] Microsoft 관리 키를 사용합니다. 그러나 이 페이지의 단계를 따르면 사용자 고유의 암호화 키를 사용할 수 있습니다.
+
+
+
+== 데이터 암호화 개요
+
+Cloud Volumes ONTAP 데이터는 를 사용하여 Azure에서 자동으로 암호화됩니다 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 스토리지 서비스 암호화"^]. 기본 구현에는 Microsoft 관리 키가 사용됩니다. 설정이 필요하지 않습니다.
+
+Cloud Volumes ONTAP에서 고객 관리 키를 사용하려면 다음 단계를 완료해야 합니다.
+
+. Azure에서 키 볼트를 작성한 다음 해당 볼트에 키를 생성합니다
+. Cloud Manager에서 API를 사용하여 키를 사용하는 Cloud Volumes ONTAP 작업 환경을 생성합니다
+
+
+
+
+=== 키 회전
+
+새 버전의 키를 만들면 Cloud Volumes ONTAP에서 자동으로 최신 키 버전을 사용합니다.
+
+
+
+=== 데이터 암호화 방법
+
+고객이 관리하는 키를 사용하도록 구성된 Cloud Volumes ONTAP 작업 환경을 생성한 후 Cloud Volumes ONTAP 데이터는 다음과 같이 암호화됩니다.
+
+HA 쌍::
++
+--
+* Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다.
+* 디스크 또는 애그리게이트를 추가하는 경우와 같이 새로운 스토리지 계정에서도 동일한 키를 사용합니다.
+
+
+--
+단일 노드::
++
+--
+* Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다.
+* 루트, 부팅 및 데이터 디스크의 경우 Cloud Manager는 를 사용합니다 https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["디스크 암호화가 설정되었습니다"^]관리 디스크를 사용하여 암호화 키를 관리할 수 있습니다.
+* 새 데이터 디스크도 동일한 디스크 암호화 세트를 사용합니다.
+* NVRAM과 코어 디스크는 고객이 관리하는 키 대신 Microsoft 관리 키를 사용하여 암호화됩니다.
+
+
+--
+
+
+
+
+== 키 볼트를 작성하고 키를 생성합니다
+
+키 볼트는 Cloud Volumes ONTAP 시스템을 생성하려는 Azure 가입 및 지역에 있어야 합니다.
+
+.단계
+. https://docs.microsoft.com/en-us/azure/key-vault/general/quick-create-portal["Azure 구독에서 키 볼트를 작성합니다"^].
++
+키 볼트에 대한 다음 요구 사항을 확인합니다.
+
++
+** 키 볼트는 Cloud Volumes ONTAP 시스템과 동일한 영역에 있어야 합니다.
+** 다음 옵션을 활성화해야 합니다.
++
+*** * soft-delete * (이 옵션은 기본적으로 활성화되어 있지만 반드시 _not_사용하지 않아야 함)
+*** * 퍼지 보호 *
+*** * 볼륨 암호화를 위한 Azure 디스크 암호화 * (단일 노드 Cloud Volumes ONTAP 시스템에만 해당)
+
+
+
+
+. https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault["키 볼트에 키를 생성합니다"^].
++
+키에 대한 다음 요구 사항을 확인합니다.
+
++
+** 키 유형은 * rsa * 여야 합니다.
+** 권장되는 RSA 키 크기는 * 2048 * 이지만 다른 크기가 지원됩니다.
+
+
+
+
+
+
+== 암호화 키를 사용하는 작업 환경을 만듭니다
+
+키 볼트를 작성하고 암호화 키를 생성한 후 키를 사용하도록 구성된 새 Cloud Volumes ONTAP 시스템을 작성할 수 있습니다. 이러한 단계는 Cloud Manager API를 사용하여 지원됩니다.
+
+단일 노드 Cloud Volumes ONTAP 시스템에서 고객 관리 키를 사용하려면 Cloud Manager Connector에 다음 권한이 있는지 확인합니다.
+
+[source, json]
+----
+"Microsoft.Compute/diskEncryptionSets/read"
+"Microsoft.Compute/diskEncryptionSets/write",
+"Microsoft.Compute/diskEncryptionSets/delete"
+"Microsoft.KeyVault/vaults/deploy/action",
+"Microsoft.KeyVault/vaults/read",
+"Microsoft.KeyVault/vaults/accessPolicies/write"
+----
+에서 최신 사용 권한 목록을 찾을 수 있습니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 정책 페이지"^].
+
+HA 쌍에는 이러한 권한이 필요하지 않습니다.
+
+.단계
+. 다음 Cloud Manager API 호출을 사용하여 Azure 구독의 키 볼트 목록을 가져옵니다.
++
+HA 쌍의 경우: 'get/Azure/ha/metadata/vaults'
+
++
+단일 노드의 경우: 'get/Azure/VSA/metadata/vaults'
+
++
+이름 * 과 * resourceGroup * 을 기록해 둡니다. 다음 단계에서 이러한 값을 지정해야 합니다.
+
++
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["이 API 호출에 대해 자세히 알아보십시오"^].
+
+. 다음 Cloud Manager API 호출을 사용하여 볼트 내의 키 목록을 가져옵니다.
++
+HA 쌍의 경우: 'get/Azure/ha/metadata/keys-vault'
+
++
+단일 노드의 경우: 'get/Azure/VSA/metadata/keys-vault
+
++
+keyName * 을 기록해 두십시오. 다음 단계에서 해당 값을 볼트 이름과 함께 지정해야 합니다.
+
++
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["이 API 호출에 대해 자세히 알아보십시오"^].
+
+. 다음 Cloud Manager API 호출을 사용하여 Cloud Volumes ONTAP 시스템을 생성합니다.
++
+.. HA 쌍:
++
+'POST/Azure/ha/Working-Environments(POST/Azure/ha/Working-Environments
+
++
+요청 본문에는 다음 필드가 포함되어야 합니다.
+
++
+[source, json]
+----
+"azureEncryptionParameters": {
+       "key": "keyName",
+       "vaultName": "vaultName"
+}
+----
++
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-haworking-environments["이 API 호출에 대해 자세히 알아보십시오"^].
+
+.. 단일 노드 시스템의 경우:
++
+'POST/Azure/VSA/Working-Environments(POST/Azure/VSA/작업 환경)
+
++
+요청 본문에는 다음 필드가 포함되어야 합니다.
+
++
+[source, json]
+----
+"azureEncryptionParameters": {
+       "key": "keyName",
+       "vaultName": "vaultName"
+}
+----
++
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-vsaworking-environments["이 API 호출에 대해 자세히 알아보십시오"^].
+
+
+
+
+
+데이터 암호화에 고객 관리 키를 사용하도록 구성된 새 Cloud Volumes ONTAP 시스템이 있습니다.

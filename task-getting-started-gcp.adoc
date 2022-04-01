@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: task-getting-started-gcp.html 
+keywords: google cloud platform, gcp, deploy cloud manager, launch cloud manager, create cloud manager, getting started, networking, gcp networking, service account, tiering, data tiering, bucket, fabricpool, cloud backup, storage access key, gcp role, role, iam role, permissions, gcp permissions 
+summary: 몇 가지 단계를 통해 Cloud Volumes ONTAP for GCP를 시작해 보십시오. 
+---
+= Google Cloud에서 Cloud Volumes ONTAP를 빠르게 시작합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+몇 가지 단계를 통해 Cloud Volumes ONTAP for GCP를 시작해 보십시오.
+
+[role="quick-margin-para"]
+가 없는 경우 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["커넥터"^] 그러나 계정 관리자는 계정을 만들어야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["GCP에서 커넥터를 생성하는 방법을 알아보십시오"^].
+
+[role="quick-margin-para"]
+첫 번째 Cloud Volumes ONTAP 작업 환경을 생성할 때 아직 커넥터가 없는 경우 Cloud Manager에서 커넥터를 배포할지 묻는 메시지를 표시합니다.
+
+[role="quick-margin-para"]
+Cloud Manager는 워크로드 요구사항에 맞게 사전 구성된 패키지를 제공하거나 자체 구성을 생성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다.
+
+[role="quick-margin-para"]
+link:task-planning-your-config-gcp.html["구성 계획에 대해 자세히 알아보십시오"].
+
+.span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] Alt="3"></span>네트워크 설정
+. VPC와 서브넷이 커넥터와 Cloud Volumes ONTAP 간의 연결을 지원하는지 확인합니다.
+. 데이터 계층화를 사용할 계획이라면 https://cloud.google.com/vpc/docs/configure-private-google-access["개인 Google 액세스를 위한 Cloud Volumes ONTAP 서브넷을 구성합니다"^].
+. HA 쌍을 구축하는 경우 각각 고유한 서브넷이 있는 4개의 VPC가 있는지 확인합니다.
+. 공유 VPC를 사용하는 경우 Connector 서비스 계정에 _Compute Network User_역할을 제공합니다.
+. 커넥터 및 Cloud Volumes ONTAP가 여러 엔드포인트에 연결할 수 있도록 타겟 VPC에서 아웃바운드 인터넷 액세스를 활성화합니다.
++
+이 단계는 커넥터가 아웃바운드 인터넷 액세스 없이 Cloud Volumes ONTAP를 관리할 수 없기 때문에 중요합니다. 아웃바운드 연결을 제한해야 하는 경우 의 끝점 목록을 참조하십시오 link:reference-networking-gcp.html["커넥터 및 Cloud Volumes ONTAP"].
+
+
+
+[role="quick-margin-para"]
+link:reference-networking-gcp.html["네트워킹 요구 사항에 대해 자세히 알아보십시오"].
+
+[role="quick-margin-para"]
+Cloud Volumes ONTAP를 사용하려면 Google Cloud 서비스 계정이 두 가지 용도로 필요합니다. 첫 번째는 를 활성화하는 것입니다 link:concept-data-tiering.html["데이터 계층화"] Google Cloud에서 콜드 데이터를 저비용 오브젝트 스토리지로 계층화합니다. 두 번째는 를 활성화하는 것입니다 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup Service"^] 볼륨을 저렴한 오브젝트 스토리지에 백업
+
+[role="quick-margin-para"]
+하나의 서비스 계정을 설정하고 두 가지 용도로 사용할 수 있습니다. 서비스 계정에는 * 스토리지 관리자 * 역할이 있어야 합니다.
+
+[role="quick-margin-para"]
+link:task-creating-gcp-service-account.html["단계별 지침을 읽습니다"].
+
+[role="quick-margin-para"]
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["프로젝트에서 다음 Google Cloud API를 활성화합니다"^]. 이러한 API는 Connector 및 Cloud Volumes ONTAP를 구축하는 데 필요합니다.
+
+* Cloud Deployment Manager V2 API
+* 클라우드 로깅 API
+* Cloud Resource Manager API를 참조하십시오
+* 컴퓨팅 엔진 API
+* IAM(Identity and Access Management) API
+
+
+[role="quick-margin-para"]
+작업 환경 추가 * 를 클릭하고 배포할 시스템 유형을 선택한 다음 마법사의 단계를 완료합니다. link:task-deploying-gcp.html["단계별 지침을 읽습니다"].
+
+.관련 링크
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Cloud Manager에서 커넥터 생성"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Linux 호스트에 Connector 소프트웨어 설치"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Cloud Manager에서 GCP 권한으로 수행하는 권한입니다"^]
+

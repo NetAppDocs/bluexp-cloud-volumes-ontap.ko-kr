@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: task-change-ec2-instance.html 
+keywords: ec2 instance type, change ec2 instance type, change instance type, modify instance type, modify ec2 instance, amazon ec2 
+summary: AWS에서 Cloud Volumes ONTAP를 시작할 때 여러 인스턴스 또는 유형 중에서 선택할 수 있습니다. 필요에 따라 크기가 작거나 크기 초과로 결정되면 언제든지 인스턴스 유형을 변경할 수 있습니다. 
+---
+= Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+AWS에서 Cloud Volumes ONTAP를 시작할 때 여러 인스턴스 또는 유형 중에서 선택할 수 있습니다. 필요에 따라 크기가 작거나 크기 초과로 결정되면 언제든지 인스턴스 유형을 변경할 수 있습니다.
+
+.이 작업에 대해
+* Cloud Volumes ONTAP HA 쌍(기본 설정)에서 자동 반환이 활성화되어 있어야 합니다. 그렇지 않으면 작업이 실패합니다.
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["ONTAP 9 설명서: 자동 반환 구성을 위한 명령입니다"^]
+
+* 인스턴스 유형을 변경하면 AWS 서비스 요금에 영향을 줄 수 있습니다.
+* Cloud Volumes ONTAP가 다시 시작됩니다.
++
+단일 노드 시스템의 경우 입출력이 중단됩니다.
+
++
+HA 쌍의 경우 변경은 무중단 것입니다. HA 쌍이 계속해서 데이터를 제공합니다.
+
++
+
+TIP: Cloud Manager는 테이크오버를 시작하고 Giveback을 기다리면서 한 번에 하나의 노드를 정상적으로 변경합니다. NetApp의 QA 팀은 이 프로세스 중에 파일 쓰기와 읽기를 모두 테스트했지만 클라이언트 측에서는 문제가 발생하지 않았습니다. 접속이 변경됨에 따라 입출력 레벨에서 재시도 횟수가 확인되었지만 애플리케이션 계층은 NFS/CIFS 연결의 이러한 짧은 "재연결"을 극복했습니다.
+
+
+
+.단계
+. 작업 환경에서 메뉴 아이콘을 클릭한 다음 * 인스턴스 변경 * 을 선택합니다.
+. 노드 기반 PAYGO 라이센스를 사용하는 경우 선택적으로 다른 라이센스를 선택할 수 있습니다.
+. 인스턴스 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해했는지 확인한 다음 * 확인 * 을 클릭합니다.
+
+
+Cloud Volumes ONTAP가 새 구성으로 재부팅됩니다.

@@ -1,0 +1,18 @@
+---
+sidebar: sidebar 
+permalink: whats-new-ontap.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, cloud volumes ontap' 
+summary: Cloud Volumes ONTAP용 릴리스 정보 에서는 릴리스별 정보를 제공합니다. 이번 릴리즈의 새로운 기능, 지원되는 구성, 스토리지 제한, 제품 기능에 영향을 줄 수 있는 알려진 제한 사항 또는 문제 
+---
+= Cloud Volumes ONTAP 릴리즈 노트
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP용 릴리스 정보 에서는 릴리스별 정보를 제공합니다. 이번 릴리즈의 새로운 기능, 지원되는 구성, 스토리지 제한, 제품 기능에 영향을 줄 수 있는 알려진 제한 사항 또는 문제
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트 로 이동합니다"^]

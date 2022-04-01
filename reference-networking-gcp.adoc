@@ -1,0 +1,553 @@
+---
+sidebar: sidebar 
+permalink: reference-networking-gcp.html 
+keywords: networking, network, requirements, connection, connections, subnet, vpn, internet, proxy, HTTP, private, proxy server, routing, firewall, autosupport, connection, jump host, outbound, ports, tiering, data tiering, bucket, private google access, set up data tiering, data tiering requirement, gcp networking, google networking, shared vpc, host project, service project 
+summary: Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Google 클라우드 플랫폼 네트워킹을 설정합니다. 여기에는 커넥터 및 Cloud Volumes ONTAP에 대한 네트워킹이 포함됩니다. 
+---
+= GCP의 Cloud Volumes ONTAP에 대한 네트워킹 요구 사항
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Google 클라우드 플랫폼 네트워킹을 설정합니다. 여기에는 커넥터 및 Cloud Volumes ONTAP에 대한 네트워킹이 포함됩니다.
+
+HA 쌍을 구축하려는 경우 link:concept-ha-google-cloud.html["GCP에서 HA Pair의 작동 방식에 대해 알아보십시오"].
+
+
+
+== Cloud Volumes ONTAP에 대한 요구사항
+
+GCP에서 다음 요구사항을 충족해야 합니다.
+
+내부 로드 밸런서:: Cloud Manager는 Cloud Volumes ONTAP HA 쌍에 대한 들어오는 트래픽을 관리하는 4개의 Google Cloud 내부 로드 밸런서(TCP/UDP)를 자동으로 생성합니다. 설정을 마칠 필요가 없습니다 이를 단순히 네트워크 트래픽을 알리고 보안 문제를 완화하기 위한 요구 사항으로 나열했습니다.
++
+--
+로드 밸런싱 장치 하나는 클러스터 관리이고, 하나는 SVM(스토리지 VM) 관리이고, 하나는 노드 1에 대한 NAS 트래픽이고, 나머지 하나는 노드 2에 대한 NAS 트래픽입니다.
+
+각 부하 분산 장치에 대한 설정은 다음과 같습니다.
+
+* 공유 개인 IP 주소 1개
+* 글로벌 상태 점검 1회
++
+기본적으로 상태 확인에 사용되는 포트는 63001, 63002 및 63003입니다.
+
+* 지역 TCP 백엔드 서비스 1개
+* 지역 UDP 백엔드 서비스 1개
+* 하나의 TCP 전달 규칙
+* UDP 포워딩 규칙 1개
+* 전역 액세스가 비활성화되었습니다
++
+전역 액세스는 기본적으로 해제되어 있지만 사후 배포를 사용하도록 설정하는 것이 지원됩니다. 지역 간 트래픽의 지연 시간이 훨씬 더 길기 때문에 이 기능을 비활성화했습니다. 우발적인 교차 부위 장착으로 인해 부정적인 경험을 하지 않으려 했습니다. 이 옵션의 활성화는 비즈니스 요구 사항에 따라 다릅니다.
+
+
+
+--
+HA 쌍을 위한 하나 이상의 영역:: 여러 영역 또는 단일 영역에 HA 구성을 배포하여 데이터의 고가용성을 보장할 수 있습니다. HA 쌍을 생성할 때 Cloud Manager에서 여러 존 또는 단일 존을 선택하라는 메시지를 표시합니다.
++
+--
+* 다중 영역(권장)
++
+3개 존에 HA 구성을 구축하면 존 내에서 장애가 발생하더라도 지속적인 데이터 가용성을 보장할 수 있습니다. 쓰기 성능은 단일 존을 사용할 때보다 약간 낮지만, 이는 최소화됩니다.
+
+* 단일 영역
++
+단일 영역에 배포되면 Cloud Volumes ONTAP HA 구성에서 분산 배치 정책을 사용합니다. 이 정책은 별도의 존을 사용하여 장애를 격리하지 않고도 존 내의 단일 장애 지점으로부터 HA 구성을 보호합니다.
+
++
+이 구축 모델은 구역 간 데이터 유출 비용이 없으므로 비용이 절감됩니다.
+
+
+
+--
+HA 쌍을 위한 4가지 가상 프라이빗 클라우드:: HA 구성을 위해서는 4개의 가상 프라이빗 클라우드(VPC)가 필요합니다. GCP가 각 네트워크 인터페이스가 별도의 VPC 네트워크에 상주하도록 요구하기 때문에 4개의 VPC가 필요합니다.
++
+--
+HA 쌍을 생성할 때 Cloud Manager에서 4개의 VPC를 선택하라는 메시지가 표시됩니다.
+
+* 데이터 및 노드에 대한 인바운드 연결을 위한 VPC-0
+* 노드와 HA 중재자 간의 내부 통신을 위한 VPC-1, VPC-2 및 VPC-3
++
+image:diagram_gcp_ha.png[""]
+
+
+
+--
+HA 쌍을 위한 서브넷:: 각 VPC에 전용 서브넷이 필요합니다.
++
+--
+Connector를 VPC-0에 배치한 경우 서브넷에서 Private Google Access를 활성화하여 API에 액세스하고 데이터 계층화를 활성화해야 합니다.
+
+이러한 VPC에 있는 서브넷에는 고유한 CIDR 범위가 있어야 합니다. CIDR 범위가 중복될 수 없습니다.
+
+--
+단일 노드 시스템을 위한 단일 가상 프라이빗 클라우드:: 단일 노드 시스템에는 VPC 1개가 필요합니다.
+공유 VPC:: Cloud Volumes ONTAP 및 Connector는 Google Cloud 공유 VPC 및 독립 실행형 VPC에서도 지원됩니다.
++
+--
+단일 노드 시스템의 경우 VPC는 공유 VPC 또는 독립형 VPC가 될 수 있습니다.
+
+HA 쌍의 경우 4개의 VPC가 필요합니다. 각 VPC는 공유 또는 독립 실행형으로 사용할 수 있습니다. 예를 들어 VPC-0은 공유 VPC가 될 수 있고 VPC-1, VPC-2 및 VPC-3은 독립 실행형 VPC가 될 수 있습니다.
+
+공유 VPC를 사용하면 여러 프로젝트에서 가상 네트워크를 구성하고 중앙에서 관리할 수 있습니다. _host project_에서 공유 VPC 네트워크를 설정하고 _service project_에서 Connector 및 Cloud Volumes ONTAP 가상 머신 인스턴스를 배포할 수 있습니다. https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud 설명서: 공유 VPC 개요"^].
+
+link:task-creating-connectors-gcp.html#shared-vpc-permissions["Connector 구축에서 적용되는 필수 공유 VPC 사용 권한을 검토합니다"].
+
+--
+VPC의 패킷 미러링:: https://cloud.google.com/vpc/docs/packet-mirroring["패킷 미러링"^] Cloud Volumes ONTAP를 구축하는 Google Cloud VPC에서 비활성화되어야 합니다. 패킷 미러링이 활성화된 경우 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.
+Cloud Volumes ONTAP에 대한 아웃바운드 인터넷 액세스:: Cloud Volumes ONTAP에서 스토리지 상태를 능동적으로 모니터링하는 NetApp AutoSupport에 메시지를 보내려면 아웃바운드 인터넷 액세스가 필요합니다.
++
+--
+라우팅 및 방화벽 정책은 Cloud Volumes ONTAP가 AutoSupport 메시지를 보낼 수 있도록 다음 엔드포인트에 대한 HTTP/HTTPS 트래픽을 허용해야 합니다.
+
+* https://support.netapp.com/aods/asupmessage 으로 문의하십시오
+* https://support.netapp.com/asupprod/post/1.0/postAsup 으로 문의하십시오
++
+link:task-verify-autosupport.html["AutoSupport 확인 방법을 알아보십시오"].
+
++
+
+TIP: HA 쌍을 사용하는 경우 HA 중재자가 아웃바운드 인터넷 액세스를 요구하지 않습니다.
+
+
+
+--
+전용 IP 주소:: Cloud Manager는 GCP의 Cloud Volumes ONTAP에 다음과 같은 수의 프라이빗 IP 주소를 할당합니다.
++
+--
+* * 단일 노드 *: 3개 또는 4개의 전용 IP 주소
++
+API를 사용하여 Cloud Volumes ONTAP를 구축하고 다음 플래그를 지정한 경우 SVM(스토리지 VM) 관리 LIF의 생성을 건너뛸 수 있습니다.
+
++
+'스킵스만트관리면: TRUE'
+
++
+LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 스토리지 VM(SVM) 관리 LIF가 필요합니다.
+
+* * HA 쌍 *: 14 또는 15개의 전용 IP 주소
++
+** VPC-0용 전용 IP 주소 7개 또는 8개
++
+API를 사용하여 Cloud Volumes ONTAP를 구축하고 다음 플래그를 지정한 경우 SVM(스토리지 VM) 관리 LIF의 생성을 건너뛸 수 있습니다.
+
++
+'스킵스만트관리면: TRUE'
+
+** VPC-1용 사설 IP 주소 2개
+** VPC-2용 사설 IP 주소 2개
+** VPC-3용 사설 IP 주소 3개
+
+
+
+
+--
+방화벽 규칙:: Cloud Manager에서 방화벽 규칙을 생성할 수 있으므로 이 규칙을 생성할 필요가 없습니다. 직접 사용해야 하는 경우 아래 나열된 방화벽 규칙을 참조하십시오.
++
+--
+HA 구성에는 두 가지 방화벽 규칙 세트가 필요합니다.
+
+* VPC-0의 HA 구성 요소에 대한 하나의 규칙 세트 이러한 규칙을 통해 Cloud Volumes ONTAP에 대한 데이터 액세스가 가능합니다. <<Firewall rules for Cloud Volumes ONTAP,자세한 정보>>.
+* VPC-1, VPC-2 및 VPC-3의 HA 구성 요소에 대한 또 다른 규칙 세트 이러한 규칙은 HA 구성 요소 간의 인바운드 및 아웃바운드 통신에 대해 개방됩니다. <<Firewall rules for Cloud Volumes ONTAP,자세한 정보>>.
+
+
+--
+데이터 계층화를 위해 Cloud Volumes ONTAP에서 Google 클라우드 스토리지로 연결:: 콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷이 프라이빗 Google 액세스용으로 구성되어야 합니다(HA 쌍을 사용하는 경우 VPC-0의 서브넷임). 자세한 지침은 을 참조하십시오 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 설명서: 개인 Google Access 구성"^].
++
+--
+Cloud Manager에서 데이터 계층화를 설정하는 데 필요한 추가 단계는 를 참조하십시오 link:task-tiering.html["콜드 데이터를 저비용 오브젝트 스토리지로 계층화"].
+
+--
+다른 네트워크의 ONTAP 시스템에 대한 연결:: GCP의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 VPC와 기업 네트워크 같은 다른 네트워크 간에 VPN 연결이 있어야 합니다.
++
+--
+자세한 지침은 을 참조하십시오 https://cloud.google.com/vpn/docs/concepts/overview["Google Cloud 설명서: Cloud VPN 개요"^].
+
+--
+
+
+
+
+== 커넥터 요구 사항
+
+Connector가 공용 클라우드 환경 내에서 리소스와 프로세스를 관리할 수 있도록 네트워킹을 설정합니다. 가장 중요한 단계는 다양한 엔드포인트에 대한 아웃바운드 인터넷 액세스를 보장하는 것입니다.
+
+
+TIP: 네트워크에서 인터넷에 대한 모든 통신에 프록시 서버를 사용하는 경우 설정 페이지에서 프록시 서버를 지정할 수 있습니다. 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html["프록시 서버를 사용하도록 Connector 구성"^].
+
+
+
+=== 대상 네트워크에 연결
+
+커넥터를 사용하려면 Cloud Volumes ONTAP를 배포하려는 VPC에 대한 네트워크 연결이 필요합니다. HA 쌍을 구축하는 경우 Connector는 VPC-0에만 연결해야 합니다.
+
+
+
+=== 아웃바운드 인터넷 액세스
+
+Connector를 사용하려면 공용 클라우드 환경 내의 리소스와 프로세스를 관리하기 위한 아웃바운드 인터넷 액세스가 필요합니다.
+
+[cols="2*"]
+|===
+| 엔드포인트 | 목적 
+
+
+| https://support.netapp.com 으로 문의하십시오 | 라이센스 정보를 얻고 AutoSupport 메시지를 NetApp 지원 팀에 전송합니다. 
+
+
+| https://*.cloudmanager.cloud.netapp.com 으로 문의하십시오 | Cloud Manager 내에서 SaaS 기능 및 서비스를 제공합니다. 
+
+
+| https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net 으로 문의하십시오 | Connector 및 해당 Docker 구성 요소를 업그레이드합니다. 
+|===
+
+
+== Cloud Volumes ONTAP의 방화벽 규칙
+
+Cloud Manager는 Cloud Volumes ONTAP이 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 GCP 방화벽 규칙을 생성합니다. 테스트 목적으로 또는 자체 방화벽 규칙을 사용하려는 경우 포트를 참조할 수 있습니다.
+
+Cloud Volumes ONTAP의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.
+
+HA 구성을 구축할 경우 VPC-0의 Cloud Volumes ONTAP에 대한 방화벽 규칙입니다.
+
+
+
+=== 인바운드 규칙
+
+사전 정의된 방화벽에서 인바운드 규칙의 소스는 0.0.0.0/0입니다.
+
+자체 방화벽을 만들려면 Cloud Volumes ONTAP와 통신해야 하는 모든 네트워크를 추가해야 하지만 내부 Google 로드 밸런서가 올바르게 작동할 수 있도록 두 주소 범위를 모두 추가해야 합니다. 이러한 주소는 130.211.0.0/22 및 35.191.0.0/16입니다. 자세한 내용은 을 참조하십시오 https://cloud.google.com/load-balancing/docs/tcp#firewall_rules["Google Cloud 설명서: 부하 분산 방화벽 규칙"^].
+
+[cols="10,10,80"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 ICMP | 모두 | 인스턴스에 Ping을 수행 중입니다 
+
+
+| HTTP | 80 | 클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 HTTP 액세스 
+
+
+| HTTPS | 443 | 클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 HTTPS 액세스 
+
+
+| SSH를 클릭합니다 | 22 | 클러스터 관리 LIF 또는 노드 관리 LIF의 IP 주소에 SSH를 액세스할 수 있습니다 
+
+
+| TCP | 111 | NFS에 대한 원격 프로시저 호출 
+
+
+| TCP | 139 | CIFS에 대한 NetBIOS 서비스 세션입니다 
+
+
+| TCP | 161-162 | 단순한 네트워크 관리 프로토콜 
+
+
+| TCP | 445 | Microsoft SMB/CIFS over TCP 및 NetBIOS 프레임 
+
+
+| TCP | 635 | NFS 마운트 
+
+
+| TCP | 749 | Kerberos 
+
+
+| TCP | 2049 | NFS 서버 데몬 
+
+
+| TCP | 3260 | iSCSI 데이터 LIF를 통한 iSCSI 액세스 
+
+
+| TCP | 4045 | NFS 잠금 데몬 
+
+
+| TCP | 4046 | NFS에 대한 네트워크 상태 모니터 
+
+
+| TCP | 10000입니다 | NDMP를 사용한 백업 
+
+
+| TCP | 11104 | SnapMirror에 대한 인터클러스터 통신 세션의 관리 
+
+
+| TCP | 11105 | 인터클러스터 LIF를 사용하여 SnapMirror 데이터 전송 
+
+
+| TCP | 63001-63050 | 로드 밸런싱 프로브 포트를 통해 어떤 노드가 정상 상태인지 확인(HA 쌍에만 필요) 
+
+
+| UDP입니다 | 111 | NFS에 대한 원격 프로시저 호출 
+
+
+| UDP입니다 | 161-162 | 단순한 네트워크 관리 프로토콜 
+
+
+| UDP입니다 | 635 | NFS 마운트 
+
+
+| UDP입니다 | 2049 | NFS 서버 데몬 
+
+
+| UDP입니다 | 4045 | NFS 잠금 데몬 
+
+
+| UDP입니다 | 4046 | NFS에 대한 네트워크 상태 모니터 
+
+
+| UDP입니다 | 4049 | NFS rquotad 프로토콜 
+|===
+
+
+=== 아웃바운드 규칙
+
+Cloud Volumes ONTAP에 대해 미리 정의된 보안 그룹은 모든 아웃바운드 트래픽을 엽니다. 허용 가능한 경우 기본 아웃바운드 규칙을 따릅니다. 더 엄격한 규칙이 필요한 경우 고급 아웃바운드 규칙을 사용합니다.
+
+
+
+==== 기본 아웃바운드 규칙
+
+Cloud Volumes ONTAP에 대해 미리 정의된 보안 그룹에는 다음과 같은 아웃바운드 규칙이 포함됩니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 ICMP | 모두 | 모든 아웃바운드 트래픽 
+
+
+| 모든 TCP | 모두 | 모든 아웃바운드 트래픽 
+
+
+| 모든 UDP | 모두 | 모든 아웃바운드 트래픽 
+|===
+
+
+==== 고급 아웃바운드 규칙
+
+아웃바운드 트래픽에 대해 엄격한 규칙이 필요한 경우 다음 정보를 사용하여 Cloud Volumes ONTAP의 아웃바운드 통신에 필요한 포트만 열 수 있습니다.
+
+
+NOTE: 소스는 Cloud Volumes ONTAP 시스템의 인터페이스(IP 주소)입니다.
+
+[cols="10,10,6,20,20,34"]
+|===
+| 서비스 | 프로토콜 | 포트 | 출처 | 목적지 | 목적 
+
+
+.18+| Active Directory를 클릭합니다 | TCP | 88 | 노드 관리 LIF | Active Directory 포리스트입니다 | Kerberos V 인증 
+
+
+| UDP입니다 | 137 | 노드 관리 LIF | Active Directory 포리스트입니다 | NetBIOS 이름 서비스입니다 
+
+
+| UDP입니다 | 138 | 노드 관리 LIF | Active Directory 포리스트입니다 | NetBIOS 데이터그램 서비스 
+
+
+| TCP | 139 | 노드 관리 LIF | Active Directory 포리스트입니다 | NetBIOS 서비스 세션입니다 
+
+
+| TCP 및 UDP | 389 | 노드 관리 LIF | Active Directory 포리스트입니다 | LDAP를 지원합니다 
+
+
+| TCP | 445 | 노드 관리 LIF | Active Directory 포리스트입니다 | Microsoft SMB/CIFS over TCP 및 NetBIOS 프레임 
+
+
+| TCP | 464 | 노드 관리 LIF | Active Directory 포리스트입니다 | Kerberos V 변경 및 암호 설정(set_change) 
+
+
+| UDP입니다 | 464 | 노드 관리 LIF | Active Directory 포리스트입니다 | Kerberos 키 관리 
+
+
+| TCP | 749 | 노드 관리 LIF | Active Directory 포리스트입니다 | Kerberos V 변경 및 암호 설정(RPCSEC_GSS) 
+
+
+| TCP | 88 | 데이터 LIF(NFS, CIFS, iSCSI) | Active Directory 포리스트입니다 | Kerberos V 인증 
+
+
+| UDP입니다 | 137 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | NetBIOS 이름 서비스입니다 
+
+
+| UDP입니다 | 138 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | NetBIOS 데이터그램 서비스 
+
+
+| TCP | 139 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | NetBIOS 서비스 세션입니다 
+
+
+| TCP 및 UDP | 389 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | LDAP를 지원합니다 
+
+
+| TCP | 445 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | Microsoft SMB/CIFS over TCP 및 NetBIOS 프레임 
+
+
+| TCP | 464 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | Kerberos V 변경 및 암호 설정(set_change) 
+
+
+| UDP입니다 | 464 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | Kerberos 키 관리 
+
+
+| TCP | 749 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | Kerberos V 변경 및 암호 설정(RPCSEC_GSS) 
+
+
+.2+| AutoSupport | HTTPS | 443 | 노드 관리 LIF | support.netapp.com | AutoSupport(기본값은 HTTPS) 
+
+
+| HTTP | 80 | 노드 관리 LIF | support.netapp.com | AutoSupport(전송 프로토콜이 HTTPS에서 HTTP로 변경된 경우에만 해당) 
+
+
+| 클러스터 | 모든 교통 정보 | 모든 교통 정보 | 모든 LIF가 하나의 노드에 있습니다 | 다른 노드의 모든 LIF | 인터클러스터 통신(Cloud Volumes ONTAP HA에만 해당) 
+
+
+| UDP입니다 | 68 | 노드 관리 LIF | DHCP를 선택합니다 | 처음으로 설정하는 DHCP 클라이언트 | DHCPS 
+
+
+| UDP입니다 | 67 | 노드 관리 LIF | DHCP를 선택합니다 | DHCP 서버 | DNS 
+
+
+| UDP입니다 | 53 | 노드 관리 LIF 및 데이터 LIF(NFS, CIFS) | DNS | DNS | NDMP 
+
+
+| TCP | 18600–18699 | 노드 관리 LIF | 대상 서버 | NDMP 복제 | SMTP 
+
+
+| TCP | 25 | 노드 관리 LIF | 메일 서버 | AutoSupport에 사용할 수 있는 SMTP 경고 .4+| SNMP를 선택합니다 
+
+
+| TCP | 161 | 노드 관리 LIF | 서버 모니터링 | SNMP 트랩으로 모니터링 
+
+
+| UDP입니다 | 161 | 노드 관리 LIF | 서버 모니터링 | SNMP 트랩으로 모니터링 
+
+
+| TCP | 162 | 노드 관리 LIF | 서버 모니터링 | SNMP 트랩으로 모니터링 
+
+
+| UDP입니다 | 162 | 노드 관리 LIF | 서버 모니터링 | SNMP 트랩으로 모니터링 .2+| SnapMirror를 참조하십시오 
+
+
+| TCP | 11104 | 인터클러스터 LIF | ONTAP 인터클러스터 LIF | SnapMirror에 대한 인터클러스터 통신 세션의 관리 
+
+
+| TCP | 11105 | 인터클러스터 LIF | ONTAP 인터클러스터 LIF | SnapMirror 데이터 전송 | Syslog를 클릭합니다 
+|===
+
+
+== VPC-1, VPC-2 및 VPC-3의 방화벽 규칙
+
+GCP에서 HA 구성은 네 대의 VPC에 구축됩니다. VPC-0의 HA 구성에 필요한 방화벽 규칙은 입니다 <<Firewall rules for Cloud Volumes ONTAP,Cloud Volumes ONTAP에 대해 위에 나열되어 있습니다>>.
+
+한편, Cloud Manager가 VPC-1, VPC-2 및 VPC-3의 인스턴스에 대해 생성하는 사전 정의된 방화벽 규칙은 _ALL_PROTOCOLS 및 PORT를 통한 수신 통신을 지원합니다. 이 규칙은 HA 노드 간 통신을 지원합니다.
+
+HA 노드와 HA 중재자의 통신은 포트 3260(iSCSI)을 통해 이루어집니다.
+
+
+
+=== VPC에서 자체 방화벽 규칙 사용 1-3
+
+HA 쌍을 생성하는 경우 Cloud Manager에서 사전 정의된 방화벽 규칙을 사용하거나 각 VPC에 대한 기존 규칙을 사용할 수 있습니다. VPC 1-3에 대해 고유한 방화벽 규칙을 사용하고 여러 Google Cloud 영역에 HA 쌍을 배포하는 경우 방화벽 규칙에 대해 _target tag_를 설정해야 합니다. 대상 태그를 설정하지 않으면 배포 중에 오류가 발생합니다.
+
+. Google Cloud에서 방화벽 규칙을 만들 때 * Targets * 필드로 이동하여 * 지정된 대상 태그 * 를 선택하고 태그를 입력합니다.
++
+이 값은 원하는 텍스트 문자열일 수 있습니다.
+
+. Cloud Manager에서 HA 쌍을 생성하는 경우 * Connectivity * 페이지에서 기존 방화벽 규칙을 선택합니다.
++
+방화벽 규칙이 Cloud Volumes ONTAP에 연결되면 대상 태그가 Cloud Volumes ONTAP 노드에 _network tags_로 자동으로 추가됩니다.
+
+
+
+
+
+== 커넥터의 방화벽 규칙
+
+Connector의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.
+
+
+
+=== 인바운드 규칙
+
+[cols="10,10,80"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| SSH를 클릭합니다 | 22 | 커넥터 호스트에 대한 SSH 액세스를 제공합니다 
+
+
+| HTTP | 80 | 클라이언트 웹 브라우저에서 로컬 사용자 인터페이스로 HTTP 액세스를 제공합니다 
+
+
+| HTTPS | 443 | 클라이언트 웹 브라우저에서 로컬 사용자 인터페이스로 HTTPS 액세스를 제공합니다 
+|===
+
+
+=== 아웃바운드 규칙
+
+Connector에 대해 미리 정의된 방화벽 규칙은 모든 아웃바운드 트래픽을 엽니다. 허용 가능한 경우 기본 아웃바운드 규칙을 따릅니다. 더 엄격한 규칙이 필요한 경우 고급 아웃바운드 규칙을 사용합니다.
+
+
+
+==== 기본 아웃바운드 규칙
+
+Connector에 대해 미리 정의된 방화벽 규칙에는 다음과 같은 아웃바운드 규칙이 포함됩니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 TCP | 모두 | 모든 아웃바운드 트래픽 
+
+
+| 모든 UDP | 모두 | 모든 아웃바운드 트래픽 
+|===
+
+
+==== 고급 아웃바운드 규칙
+
+아웃바운드 트래픽에 대해 엄격한 규칙이 필요한 경우 다음 정보를 사용하여 Connector의 아웃바운드 통신에 필요한 포트만 열 수 있습니다.
+
+
+NOTE: 소스 IP 주소는 커넥터 호스트입니다.
+
+[cols="5*"]
+|===
+| 서비스 | 프로토콜 | 포트 | 목적지 | 목적 
+
+
+.9+| Active Directory를 클릭합니다 | TCP | 88 | Active Directory 포리스트입니다 | Kerberos V 인증 
+
+
+| TCP | 139 | Active Directory 포리스트입니다 | NetBIOS 서비스 세션입니다 
+
+
+| TCP | 389 | Active Directory 포리스트입니다 | LDAP를 지원합니다 
+
+
+| TCP | 445 | Active Directory 포리스트입니다 | Microsoft SMB/CIFS over TCP 및 NetBIOS 프레임 
+
+
+| TCP | 464 | Active Directory 포리스트입니다 | Kerberos V 변경 및 암호 설정(set_change) 
+
+
+| TCP | 749 | Active Directory 포리스트입니다 | Active Directory Kerberos V 변경 및 암호 설정(RPCSEC_GSS) 
+
+
+| UDP입니다 | 137 | Active Directory 포리스트입니다 | NetBIOS 이름 서비스입니다 
+
+
+| UDP입니다 | 138 | Active Directory 포리스트입니다 | NetBIOS 데이터그램 서비스 
+
+
+| UDP입니다 | 464 | Active Directory 포리스트입니다 | Kerberos 키 관리 
+
+
+| API 호출 및 AutoSupport | HTTPS | 443 | 아웃바운드 인터넷 및 ONTAP 클러스터 관리 LIF | API는 GCP 및 ONTAP를 호출하고 AutoSupport 메시지를 NetApp에 보냅니다 
+
+
+| DNS | UDP입니다 | 53 | DNS | Cloud Manager에서 DNS Resolve에 사용됩니다 
+|===

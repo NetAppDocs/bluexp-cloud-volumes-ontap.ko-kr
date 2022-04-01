@@ -1,0 +1,250 @@
+---
+sidebar: sidebar 
+permalink: concept-licensing.html 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
+summary: Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 옵션을 사용하여 요구 사항에 맞는 구성을 선택할 수 있습니다. 
+---
+= Cloud Volumes ONTAP 라이센스
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 옵션을 사용하여 요구사항에 맞는 소비 모델을 선택할 수 있습니다.
+
+
+
+== 라이센스 개요
+
+신규 고객은 다음과 같은 라이선스 옵션을 사용할 수 있습니다.
+
+Freemium 제공:: 라이센스 또는 계약을 구입하지 않고 프로비저닝된 용량을 최대 500GiB까지 무료로 사용할 수 있습니다. 제한된 지원 포함.
+Essentials 패키지를 선택합니다:: 다양한 구성의 Cloud Volumes ONTAP에 대한 용량 기준 지불
+프로페셔널 패키지:: 모든 유형의 Cloud Volumes ONTAP 구성에 대한 용량 지불 Cloud Backup을 통한 무제한 백업 포함.
+유연한 Keystone 구독:: HA 쌍에 대한 원활한 하이브리드 클라우드 경험을 제공하는 용량제 구독 기반 서비스입니다.
+
+
+이전 by-node 라이센스 모델은 이미 라이선스를 구입했거나 현재 마켓플레이스 서브스크립션을 보유하고 있는 기존 고객에게도 계속 사용할 수 있습니다.
+
+다음 섹션에서는 이러한 각 옵션에 대해 자세히 설명합니다.
+
+
+
+== Freemium 제공
+
+NetApp에서 무료로 모든 Cloud Volumes ONTAP 기능을 제공합니다(클라우드 공급자 요금은 여전히 적용됨).
+
+* 라이센스 또는 계약이 필요하지 않습니다.
+* NetApp의 지원은 포함되지 않습니다.
+* Cloud Volumes ONTAP 시스템당 프로비저닝된 용량 500GiB로 제한됩니다.
+* 모든 클라우드 공급자가 NetApp 계정 하나당 Freemium 제품을 사용하면 최대 10대의 Cloud Volumes ONTAP 시스템을 사용할 수 있습니다.
+* Cloud Volumes ONTAP 시스템에 대해 프로비저닝된 용량이 500GiB를 초과하면 Cloud Manager가 시스템을 Essentials 패키지(용량 기반 라이센스)로 변환합니다.
++
+프로비저닝된 용량이 500GiB 미만인 다른 모든 시스템은 Freemium에 그대로 유지됩니다(Freemium 제품을 사용하여 구축한 경우).
+
+
+
+Freemium 제품을 시작하려면 새로운 Cloud Volumes ONTAP 작업 환경을 만들고 충전 방법을 선택하라는 메시지가 나타나면 * Freemium * 을 선택합니다.
+
+* link:task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP 실행"]
+* link:task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP 실행"]
+* link:task-deploying-gcp.html["Google Cloud에서 Cloud Volumes ONTAP 실행"]
+
+
+
+
+== 용량 기반 라이센스 패키지
+
+용량 기반 라이센스를 통해 Cloud Volumes ONTAP 1TiB 용량 단위로 비용을 지불할 수 있습니다. 라이센스는 NetApp 계정에 연결되며, 라이센스를 통해 사용할 수 있는 용량이 충분한 경우 라이센스에 대해 여러 시스템을 청구할 수 있습니다.
+
+예를 들어, 20TiB 라이센스 1개를 구입하고 Cloud Volumes ONTAP 시스템 4개를 배포한 다음 각 시스템에 5TiB 볼륨을 할당하여 총 20TiB를 할당할 수 있습니다. 용량은 해당 계정에 구축된 각 Cloud Volumes ONTAP 시스템의 볼륨에 사용할 수 있습니다.
+
+용량 기반 라이센스는 _package_ 형식으로 제공됩니다. Cloud Volumes ONTAP 시스템을 배포할 때 _Essentials_패키지나 _Professional_ 패키지를 선택할 수 있습니다.
+
+Essentials 패키지를 선택합니다::
++
+--
+* Cloud Volumes ONTAP 구성 선택:
++
+** 단일 노드 또는 HA 시스템
+** DR(재해 복구)을 위한 파일 및 블록 스토리지 또는 보조 데이터
+
+
+* NetApp의 클라우드 데이터 서비스를 추가 비용으로 이용할 수 있습니다
+
+
+--
+프로페셔널 패키지::
++
+--
+* 모든 Cloud Volumes ONTAP 구성에 대한 라이센스 제공(스토리지 유형에 상관없이 단일 노드 또는 HA)
+* Cloud Backup을 사용한 볼륨 백업 포함(이 라이센스에 대해 청구된 볼륨에만 해당)
+* NetApp의 클라우드 데이터 서비스를 추가 비용으로 이용할 수 있습니다
+
+
+--
+
+
+
+
+=== 소비 모델
+
+Essentials 및 Professional 패키지는 다음 소비 모델과 함께 제공됩니다.
+
+* NetApp에서 BYOL(라이센스)을 구매하여 모든 클라우드 공급자가 Cloud Volumes ONTAP를 구축할 수 있습니다.
++
+라이센스는 단일 클라우드 공급자에 제한되지 않습니다.
+
+* 클라우드 공급자 마켓플레이스(AWS 및 Google Cloud만 해당)로부터 연간 계약을 체결합니다.
+* 클라우드 공급자 시장에서 시간별 구독(PAYGO)
+
+
+다음 사항에 유의하십시오.
+
+* NetApp(BYOL)에서 라이센스를 구입하는 경우 클라우드 공급자 마켓플레이스의 PAYGO 오퍼링을 구독해야 합니다.
++
+라이센스는 항상 먼저 부과되지만 다음과 같은 경우 마켓플레이스의 시간당 요율로 비용이 청구됩니다.
+
++
+** 라이센스 용량을 초과하는 경우
+** 라이센스 기간이 만료된 경우
+
+
+* 마켓플레이스로부터 연간 계약을 체결한 경우 _ All_Cloud Volumes ONTAP 시스템에 해당 계약이 적용됩니다. BYOL은 연간 마켓플레이스 계약을 혼합하여 사용할 수 없습니다.
+
+
+
+
+=== 가격
+
+가격에 대한 자세한 내용은 를 참조하십시오 https://cloud.netapp.com/ontap-cloud["NetApp Cloud Central에서"^].
+
+
+
+=== 무료 평가판
+
+클라우드 공급자 마켓플레이스의 용량제 구독을 통해 30일 무료 평가판을 사용할 수 있습니다. 무료 평가판은 Cloud Volumes ONTAP 및 클라우드 백업을 포함하며 시장 목록에 등록할 때 시작됩니다.
+
+인스턴스에 대해 시간별 소프트웨어 라이센스 비용이 발생하지 않지만, 클라우드 공급자의 인프라 비용은 계속 적용됩니다.
+
+무료 평가판은 만료 시 유료 시간별 구독으로 자동 변환됩니다. 시간 제한 내에 인스턴스를 종료하는 경우, 배포한 다음 인스턴스가 무료 평가판의 일부가 아닙니다(30일 이내에 배포된 경우에도).
+
+지급인 계정에 첫 번째 Cloud Volumes ONTAP 시스템을 만들어 Cloud Manager에서 Cloud Volumes ONTAP 30일 무료 평가판을 시작할 수 있습니다.
+
+클라우드 공급자를 통해 선불 종량제 평가판을 받을 수 있으며 어떤 방법으로도 확장할 수 없습니다.
+
+
+
+=== 지원되는 구성
+
+용량 기반 라이센스 패키지는 Cloud Volumes ONTAP 9.7 이상에서 사용할 수 있습니다.
+
+
+
+=== 용량 제한
+
+이 라이센스 모델을 통해 각 개별 Cloud Volumes ONTAP 시스템은 디스크를 통해 최대 2개의 PiB 용량을 지원하고 오브젝트 스토리지로 계층화합니다.
+
+라이센스 자체에는 최대 용량 제한이 없습니다.
+
+
+
+=== 충전 관련 참고 사항
+
+* BYOL 용량을 초과하거나 라이센스가 만료된 경우, 마켓플레이스 가입을 기준으로 시간당 요금이 초과됩니다.
+* 각 패키지에는 최소 4TiB 용량 비용이 청구됩니다. 용량이 4TiB 미만인 Cloud Volumes ONTAP 인스턴스는 4TiB의 속도로 청구됩니다.
+* SVM(스토리지 VM)을 지원하는 추가 데이터에 대한 추가 라이센스 비용은 없지만 SVM당 최소 용량 비용은 4TiB입니다.
+* HA 쌍의 경우 노드의 프로비저닝된 용량에 대해서만 비용이 청구됩니다. 파트너 노드에 동기식으로 미러링되는 데이터에 대해서는 비용이 청구되지 않습니다.
+* FlexClone 볼륨에 사용된 용량에 대해서는 비용이 청구되지 않습니다.
+* 소스 및 타겟 FlexCache 볼륨은 프로비저닝된 공간에 따라 운영 데이터로 간주되고 충전됩니다.
+
+
+
+
+=== 시작하는 방법
+
+. https://cloud.netapp.com/contact-cds["라이센스를 획득하려면 NetApp 세일즈 팀에 문의하십시오"^]
+. link:task-manage-capacity-licenses.html["Cloud Manager에 라이센스를 추가합니다"]
+. Cloud Volumes ONTAP 시스템을 생성할 때 용량 기반 BYOL 충전 방법을 선택하십시오
++
+** link:task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP 실행"]
+** link:task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP 실행"]
+** link:task-deploying-gcp.html["Google Cloud에서 Cloud Volumes ONTAP 실행"]
+
+
+
+
+
+
+== 유연한 Keystone 구독
+
+OpEx 소비 모델을 선호하는 투자자들에게 원활한 하이브리드 클라우드 경험을 제공하여 선불 CapEx 또는 임대를 지불하는 종량제 구독 기반 서비스입니다.
+
+충전은 Keystone 유연한 구독에서 하나 이상의 Cloud Volumes ONTAP HA 쌍에 대한 확정된 용량 크기를 기준으로 합니다.
+
+각 볼륨에 대해 프로비저닝된 용량이 Keystone Flex 구독의 확정된 용량과 주기적으로 집계되며, Keystone Flex 구독에 대한 급증으로 초과 요금이 부과됩니다.
+
+https://www.netapp.com/services/subscriptions/keystone/flex-subscription/["Keystone Flex 구독에 대해 자세히 알아보십시오"^].
+
+
+
+=== 지원되는 구성
+
+Keystone Flex 구독은 HA 쌍으로 지원됩니다. 현재 단일 노드 시스템에서는 이 라이센스 옵션이 지원되지 않습니다.
+
+
+
+=== 용량 제한
+
+각 개별 Cloud Volumes ONTAP 시스템은 디스크를 통해 최대 2개의 PiB 용량을 지원하고 오브젝트 스토리지로 계층화합니다.
+
+
+
+=== 시작하는 방법
+
+. 아직 구독이 없는 경우 https://www.netapp.com/forms/keystone-sales-contact/["NetApp에 문의하십시오"^].
+. mailto:ng-keystone-success@netapp.com [Contact NetApp]: 하나 이상의 Keystone Flex 구독으로 Cloud Manager 사용자 계정을 인증하십시오.
+. NetApp이 사용자 계정을 승인한 후 link:task-manage-keystone.html#link-a-subscription["Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 연결합니다"].
+. Cloud Volumes ONTAP 시스템을 생성할 때 Keystone 유연한 구독 충전 방법을 선택하십시오.
++
+** link:task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP 실행"]
+** link:task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP 실행"]
+** link:task-deploying-gcp.html["Google Cloud에서 Cloud Volumes ONTAP 실행"]
+
+
+
+
+
+
+== 노드 기반 라이센스
+
+노드 기반 라이센스는 이전 세대 라이센스 모델로, 노드별로 Cloud Volumes ONTAP에 대한 라이센스를 부여할 수 있도록 지원합니다. 이 라이센스 모델은 신규 고객에는 제공되지 않으며 무료 평가판을 사용할 수 없습니다. 노드별 충전은 위에서 설명한 용량 기준 충전 방법으로 대체되었습니다.
+
+기존 고객은 노드 기반 라이센스를 계속 사용할 수 있습니다.
+
+* 활성 라이센스가 있는 경우 BYOL은 라이센스 갱신에만 사용할 수 있습니다.
+* 유효한 마켓플레이스 가입이 있는 경우에도 해당 구독을 통해 충전할 수 있습니다.
+
+
+
+
+== 라이선스 변환
+
+기존 Cloud Volumes ONTAP 시스템을 다른 라이센스 방식으로 변환하는 것은 지원되지 않습니다. 현재 세 가지 라이센스 방법은 용량 기반 라이센스, Keystone Flex 가입 및 노드 기반 라이센싱입니다. 예를 들어, 시스템을 노드 기반 라이센싱에서 용량 기반 라이센싱으로 전환할 수 없습니다. 반대의 경우도 마찬가지입니다.
+
+다른 라이센스 방법으로 이전하려는 경우 라이센스를 구입하고 해당 라이센스를 사용하여 새 Cloud Volumes ONTAP 시스템을 배포한 다음 데이터를 새 시스템으로 복제할 수 있습니다.
+
+
+
+== 최대 시스템 수
+
+사용 중인 라이센스 모델에 관계없이 Cloud Volumes ONTAP 시스템의 최대 수는 NetApp 계정당 20개로 제한됩니다.
+
+a_system_은 HA 쌍 또는 단일 노드 시스템입니다. 예를 들어, 2개의 Cloud Volumes ONTAP HA 쌍과 2개의 단일 노드 시스템이 있다면 총 4개의 시스템이 있고 고객 계정에 16개의 추가 시스템을 위한 공간이 있을 것입니다.
+
+궁금한 사항이 있으면 어카운트 담당자 또는 세일즈 팀에 문의하십시오.
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["NetApp 계정 에 대해 자세히 알아보십시오"^].

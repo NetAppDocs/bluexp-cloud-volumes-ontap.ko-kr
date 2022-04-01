@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: task-modify-write-speed.html 
+keywords: write speed, high write speed, normal write speed, change write speed 
+summary: 스토리지 요구사항이 변경됨에 따라 Cloud Volumes ONTAP 시스템의 구성을 변경해야 할 수도 있습니다. 예를 들어, 선불 종량제 구성 간에 변경하거나 인스턴스 또는 VM 유형을 변경할 수 있습니다. 
+---
+= 시스템 쓰기 속도를 수정합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager를 사용하면 Cloud Volumes ONTAP에 대해 일반 또는 고속 쓰기 속도를 선택할 수 있습니다. 기본 쓰기 속도는 정상입니다. 워크로드에 빠른 쓰기 성능이 필요한 경우 빠른 쓰기 속도로 변경할 수 있습니다.
+
+모든 유형의 단일 노드 시스템에서는 높은 쓰기 속도가 지원됩니다. 특정 인스턴스 또는 VM 유형을 사용할 때는 AWS 및 Azure의 HA 쌍으로도 지원됩니다. GCP의 HA 쌍에서는 빠른 쓰기 속도가 지원되지 않습니다. https://docs.netapp.com/us-en/cloud-volumes-ontap/["자세한 내용은 Cloud Volumes ONTAP 릴리즈 노트 를 참조하십시오"^].
+
+쓰기 속도를 변경하려면 먼저 해야 합니다 link:concept-write-speed.html["정상 설정과 높음 설정의 차이를 이해합니다"].
+
+.이 작업에 대해
+* 볼륨 또는 애그리게이트 생성과 같은 작업이 진행 중이 아닌지 확인합니다.
+* 이 변경 사항은 Cloud Volumes ONTAP 시스템을 다시 시작합니다. 이는 전체 시스템의 다운타임이 필요한 업무 중단입니다.
+
+
+.단계
+. 작업 환경에서 메뉴 아이콘을 클릭한 다음 * 고급 > 작성 속도 * 를 클릭합니다.
+. Normal * (정상 *) 또는 * High * (높음 *)를 선택합니다.
++
+높음 을 선택한 경우 "이해했습니다..." 문장을 읽고 확인란을 선택하여 확인해야 합니다.
+
+. 저장 * 을 클릭하고 확인 메시지를 검토한 다음 * 진행 * 을 클릭합니다.
+

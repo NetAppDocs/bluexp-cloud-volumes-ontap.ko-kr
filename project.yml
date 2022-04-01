@@ -1,0 +1,285 @@
+---
+settings:
+  name: Cloud Volumes ONTAP
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: ko-kr,us-en,ja-jp,zh-cn
+sidebar:
+  entries:
+  - title: 모든 Cloud Manager 설명서
+    url: https://docs.netapp.com/us-en/cloud-manager-family
+  - title: Cloud Volumes ONTAP 문서
+    url: "/index.html"
+  - title: 릴리스 정보
+    entries:
+    - title: 새로운 소식
+      url: "/whats-new.html"
+    - title: 알려진 제한 사항
+      url: "/reference-limitations.html"
+    - title: Cloud Volumes ONTAP 릴리즈 노트
+      url: "/whats-new-ontap.html"
+  - title: 시작하십시오
+    entries:
+    - title: Cloud Volumes ONTAP에 대해 자세히 알아보십시오
+      url: "/concept-overview-cvo.html"
+    - title: Amazon Web Services에서 시작하십시오
+      entries:
+      - title: 빠른 시작
+        url: "/task-getting-started-aws.html"
+      - title: 구성을 계획합니다
+        url: "/task-planning-your-config.html"
+      - title: 네트워크 설정
+        entries:
+        - title: 네트워킹 요구 사항
+          url: "/reference-networking-aws.html"
+        - title: AWS 전송 게이트웨이를 설정합니다
+          url: "/task-setting-up-transit-gateway.html"
+        - title: AWS의 보안 그룹 규칙
+          url: "/reference-security-groups.html"
+      - title: AWS KMS를 설정합니다
+        url: "/task-setting-up-kms.html"
+      - title: AWS에서 시스템을 시작합니다
+        url: "/task-deploying-otc-aws.html"
+      - title: AWS C2S에서 시작하십시오
+        url: "/task-getting-started-aws-c2s.html"
+    - title: Microsoft Azure에서 시작하십시오
+      entries:
+      - title: 빠른 시작
+        url: "/task-getting-started-azure.html"
+      - title: 구성을 계획합니다
+        url: "/task-planning-your-config-azure.html"
+      - title: 네트워크 설정
+        url: "/reference-networking-azure.html"
+      - title: 키를 사용하여 암호화를 설정합니다
+        url: "/task-set-up-azure-encryption.html"
+      - title: Azure에서 시스템을 시작합니다
+        url: "/task-deploying-otc-azure.html"
+    - title: Google Cloud에서 시작하십시오
+      entries:
+      - title: 빠른 시작
+        url: "/task-getting-started-gcp.html"
+      - title: 구성을 계획합니다
+        url: "/task-planning-your-config-gcp.html"
+      - title: 네트워크 설정
+        url: "/reference-networking-gcp.html"
+      - title: VPC 서비스 제어 계획
+        url: "/reference-vpc-service-controls-gcp.html"
+      - title: 서비스 계정을 생성합니다
+        url: "/task-creating-gcp-service-account.html"
+      - title: 고객이 관리하는 암호화 키를 사용합니다
+        url: "/task-setting-up-gcp-encryption.html"
+      - title: GCP에서 시스템을 시작합니다
+        url: "/task-deploying-gcp.html"
+  - title: Cloud Volumes ONTAP를 사용합니다
+    entries:
+    - title: 라이센스 관리
+      entries:
+      - title: 용량 기반 라이센스 관리
+        url: "/task-manage-capacity-licenses.html"
+      - title: Keystone Flex 구독 관리
+        url: "/task-manage-keystone.html"
+      - title: 노드 기반 라이센스 관리
+        url: "/task-manage-node-licenses.html"
+    - title: 볼륨 및 LUN 관리
+      entries:
+      - title: 볼륨 생성
+        url: "/task-create-volumes.html"
+      - title: 기존 볼륨 관리
+        url: "/task-manage-volumes.html"
+      - title: 비활성 데이터를 오브젝트 스토리지에 계층화합니다
+        url: "/task-tiering.html"
+      - title: LUN을 호스트에 연결합니다
+        url: "/task-connect-lun.html"
+      - title: FlexCache을 통해 데이터에 더 빠르게 액세스
+        url: "/task-accelerate-data-access.html"
+      - title: ONTAP를 영구 스토리지로 사용합니다
+        url: "/task-connecting-kubernetes.html"
+    - title: 통합 관리
+      entries:
+      - title: 애그리게이트 생성
+        url: "/task-create-aggregates.html"
+      - title: 기존 애그리게이트를 관리합니다
+        url: "/task-manage-aggregates.html"
+    - title: 스토리지 VM 관리
+      entries:
+      - title: Cloud Manager에서 스토리지 VM과 작업
+        url: "/task-managing-svms.html"
+      - title: AWS에서 스토리지 VM을 생성합니다
+        url: "/task-managing-svms-aws.html"
+      - title: Azure에서 스토리지 VM을 생성합니다
+        url: "/task-managing-svms-azure.html"
+    - title: 보안 및 데이터 암호화
+      entries:
+      - title: NetApp 암호화로 볼륨 암호화
+        url: "/task-encrypting-volumes.html"
+      - title: 랜섬웨어 보호 향상
+        url: "/task-protecting-ransomware.html"
+    - title: 시스템 관리
+      entries:
+      - title: Cloud Volumes ONTAP를 업그레이드합니다
+        url: "/task-updating-ontap-cloud.html"
+      - title: 선불 종량제 시스템을 등록합니다
+        url: "/task-registering.html"
+      - title: 시스템을 중지하고 시작합니다
+        url: "/task-managing-state.html"
+      - title: 시스템 시간을 동기화합니다
+        url: "/task-sync-time.html"
+      - title: 시스템 쓰기 속도를 수정합니다
+        url: "/task-modify-write-speed.html"
+      - title: 시스템 암호를 변경합니다
+        url: "/task-change-password.html"
+      - title: 시스템을 추가, 제거 또는 삭제합니다
+        entries:
+        - title: 기존 시스템을 추가합니다
+          url: "/task-adding-systems.html"
+        - title: 작업 환경을 제거합니다
+          url: "/task-removing.html"
+        - title: 시스템을 삭제합니다
+          url: "/task-deleting-working-env.html"
+      - title: AWS에서 관리
+        entries:
+        - title: EC2 인스턴스 유형을 변경합니다
+          url: "/task-change-ec2-instance.html"
+        - title: HA 쌍의 경로 테이블을 변경합니다
+          url: "/task-change-route-tables.html"
+        - title: AWS 비용 모니터링
+          url: "/task-monitoring-costs.html"
+      - title: Azure에서 관리
+        entries:
+        - title: Azure VM 유형을 변경합니다
+          url: "/task-change-azure-vm.html"
+        - title: CIFS 잠금을 재정의합니다
+          url: "/task-overriding-cifs-locks.html"
+        - title: Azure Private Link를 사용합니다
+          url: "/task-enabling-private-link.html"
+      - title: Google Cloud에서 관리
+        entries:
+        - title: 기계 유형을 변경합니다
+          url: "/task-change-gcp-machine.html"
+      - title: System Manager 또는 CLI에서 관리
+        url: "/task-connecting-to-otc.html"
+    - title: 시스템 상태 및 이벤트입니다
+      entries:
+      - title: AutoSupport 설정을 확인합니다
+        url: "/task-verify-autosupport.html"
+      - title: EMS를 설정한다
+        url: "/task-configure-ems.html"
+  - title: 개념
+    entries:
+    - title: 스토리지
+      entries:
+      - title: 디스크와 애그리게이트
+        url: "/concept-storage.html"
+      - title: 데이터 계층화
+        url: "/concept-data-tiering.html"
+      - title: 스토리지 관리
+        url: "/concept-storage-management.html"
+      - title: 쓰기 속도
+        url: "/concept-write-speed.html"
+      - title: Flash Cache를 참조하십시오
+        url: "/concept-flash-cache.html"
+      - title: WORM 스토리지
+        url: "/concept-worm.html"
+    - title: 고가용성 쌍
+      entries:
+      - title: AWS의 HA 쌍
+        url: "/concept-ha.html"
+      - title: Azure의 HA 쌍
+        url: "/concept-ha-azure.html"
+      - title: GCP의 HA 쌍
+        url: "/concept-ha-google-cloud.html"
+      - title: 스토리지 테이크오버 중 동작
+        url: "/concept-degraded-ha-pair.html"
+    - title: 라이센싱
+      url: "/concept-licensing.html"
+    - title: 노드 기반 BYOL 관리
+      url: "/concept-license-management.html"
+    - title: 보안
+      url: "/concept-security.html"
+    - title: 성능
+      url: "/concept-performance.html"
+    - title: AutoSupport 및 Active IQ 디지털 자문업체
+      url: "/concept-active-iq.html"
+    - title: 기본 구성
+      url: "/reference-default-configs.html"
+  - title: 지식 및 지원
+    entries:
+    - title: 지원을 위해 등록하십시오
+      url: "/task-support-registration.html"
+    - title: 도움을 받으십시오
+      url: "/task-get-help.html"
+  - title: 법적 고지
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: Cloud Volumes ONTAP에 대해 자세히 알아보십시오
+      url: concept-overview-cvo.html
+    - title: AWS를 위한 빠른 시작
+      url: task-getting-started-aws.html
+    - title: Azure를 빠르게 시작합니다
+      url: task-getting-started-azure.html
+    - title: Google Cloud를 빠르게 시작합니다
+      url: task-getting-started-gcp.html
+  - title: 라이센싱
+    links:
+    - title: 라이센스 개요
+      url: concept-licensing.html
+    - title: 용량 기반 라이센스 관리
+      url: task-manage-capacity-licenses.html
+    - title: Keystone Flex 구독 관리
+      url: task-manage-keystone.html
+  - title: 스토리지 관리
+    links:
+    - title: 볼륨 생성
+      url: task-create-volumes.html
+    - title: 비활성 데이터를 오브젝트 스토리지에 계층화합니다
+      url: task-tiering.html
+    - title: FlexCache을 통해 데이터에 더 빠르게 액세스
+      url: task-accelerate-data-access.html
+  - title: 시스템 관리
+    links:
+    - title: Cloud Volumes ONTAP를 업그레이드합니다
+      url: task-updating-ontap-cloud.html
+    - title: Cloud Volumes ONTAP를 중지하고 시작합니다
+      url: task-managing-state.html
+  - title: 보안
+    links:
+    - title: NetApp 암호화로 볼륨 암호화
+      url: task-encrypting-volumes.html
+    - title: 랜섬웨어 보호 향상
+      url: task-protecting-ransomware.html
+  - title: API를 참조하십시오
+    links:
+    - title: Cloud Volumes ONTAP API 개요
+      url: https://docs.netapp.com/us-en/cloud-manager-automation/cm/overview.html
+    - title: API 사용을 준비합니다
+      url: https://docs.netapp.com/us-en/cloud-manager-automation/cm/prepare.html
+    - title: API 참조입니다
+      url: https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
+  - title: 문제 해결
+    links:
+    - title: NetApp 기술 자료
+      url: https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Volumes_ONTAP_(CVO)
+  - title: 참조하십시오
+    links:
+    - title: 지원되는 구성
+      url: https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html
+    - title: 지원되는 클라우드 영역
+      url: https://cloud.netapp.com/cloud-volumes-global-regions
+    - title: 계산기
+      url: https://cloud.netapp.com/calculator-hub
+  - title: 블로그 커뮤니티
+    links:
+    - title: NetApp 커뮤니티
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central 블로그
+      url: https://cloud.netapp.com/blog
+    - title: 클라우드 웨비나
+      url: https://cloud.netapp.com/events
+product-family: {}

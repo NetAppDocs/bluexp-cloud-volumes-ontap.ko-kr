@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: task-sync-time.html 
+keywords: set up, setting up, ntp, time, synch 
+summary: NTP 서버를 지정하면 네트워크 시스템 간의 시간이 동기화되어 시간 차이로 인한 문제를 방지할 수 있습니다. 
+---
+= NTP를 사용하여 시스템 시간을 동기화합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NTP 서버를 지정하면 네트워크 시스템 간의 시간이 동기화되어 시간 차이로 인한 문제를 방지할 수 있습니다.
+
+CIFS 서버를 설정할 때 Cloud Manager API를 사용하거나 사용자 인터페이스에서 NTP 서버를 지정합니다.
+
+* link:task-manage-volumes.html#modifying-the-cifs-server["CIFS 서버 수정"]
+* https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager 자동화 문서"^]
+
+
+예를 들어, AWS의 단일 노드 시스템에 대한 API는 다음과 같습니다.
+
+image:screenshot_ntp_server_api.gif["NTP API 호출을 보여 주는 Swagger 인터페이스의 스크린샷입니다."]

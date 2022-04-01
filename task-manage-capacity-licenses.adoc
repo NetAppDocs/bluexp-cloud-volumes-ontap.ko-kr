@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: task-manage-capacity-licenses.html 
+keywords: license, licensing, capacity license, capacity based license, add license, install license, digital wallet 
+summary: Digital Wallet에서 용량 기반 라이센스를 관리하여 NetApp 계정이 Cloud Volumes ONTAP 시스템에 필요한 용량을 확보하도록 하십시오. 
+---
+= 용량 기반 라이센스 관리
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Digital Wallet에서 용량 기반 라이센스를 관리하여 NetApp 계정이 Cloud Volumes ONTAP 시스템에 필요한 용량을 확보하도록 하십시오.
+
+_용량 기반 라이센스_Cloud Volumes ONTAP/TiB 용량 비용을 지불할 수 있습니다.
+
+디지털 지갑 _ 을(를) 사용하면 단일 위치에서 Cloud Volumes ONTAP에 대한 라이선스를 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.
+
+link:concept-licensing.html["Cloud Volumes ONTAP 라이센스에 대해 자세히 알아보십시오"].
+
+
+
+== 계정의 용량을 봅니다
+
+패키지별로 라이센스가 부여된 용량 및 프로비저닝된 용량을 확인하여 데이터 볼륨에 충분한 공간을 확보할 수 있도록 합니다.
+
+.단계
+. 모든 서비스 > 디지털 지갑 > Cloud Volumes ONTAP * 를 클릭합니다.
+. Capacity Based Licenses * 를 선택한 상태에서 각 패키지에 대해 라이센스가 부여된 용량 및 프로비저닝된 용량을 확인합니다.
++
+image:screenshot_capacity-based-licenses.png["프로페셔널 패키지 및 필수 패키지에 대해 프로비저닝된 용량과 라이센스가 부여된 용량의 양을 보여 주는 스크린샷"]
+
+. 필요한 경우 라이센스를 추가로 구입한 다음 계정에 라이센스를 추가합니다.
+
+
+
+
+== 구입한 라이센스를 계정에 추가합니다
+
+NetApp 계정의 라이센스를 구입한 후 Cloud Volumes ONTAP에 사용할 수 있는 용량을 위해 라이센스를 Cloud Manager에 추가해야 합니다.
+
+.무엇을 &#8217;필요로 할거야
+* 라이센스 또는 라이센스 파일의 일련 번호를 Cloud Manager에 제공해야 합니다.
+* 일련 번호를 입력하려면 먼저 해야 합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Cloud Manager에 NetApp Support 사이트 계정을 추가합니다"^]. 일련 번호에 액세스할 수 있는 권한이 있는 NetApp Support 사이트 계정입니다.
+
+
+.단계
+. 모든 서비스 > 디지털 지갑 > Cloud Volumes ONTAP * 를 클릭합니다.
+. 라이선스 추가 * 를 클릭합니다.
+. 용량 기반 라이센스의 일련 번호를 입력하거나 라이센스 파일을 업로드하십시오.
++
+일련 번호를 입력한 경우 일련 번호에 액세스할 수 있는 권한이 있는 NetApp Support 사이트 계정도 선택해야 합니다.
+
+. 라이선스 추가 * 를 클릭합니다.
+
+
+
+
+== 용량 기반 라이센스를 업데이트합니다
+
+추가 용량을 구매하거나 라이센스 기간을 연장한 경우 Cloud Manager는 Digital Wallet에서 라이센스를 자동으로 업데이트합니다. 당신이 해야 할 일은 아무것도 없습니다.
+
+그러나 인터넷에 액세스할 수 없는 위치에 Cloud Manager를 구축한 경우 Cloud Manager에서 라이센스를 수동으로 업데이트해야 합니다.
+
+라이센스 파일(또는 HA 쌍이 있는 경우 _ 파일 _).
+
+.단계
+. 모든 서비스 > 디지털 지갑 > Cloud Volumes ONTAP * 를 클릭합니다.
+. 라이센스 옆에 있는 작업 메뉴를 클릭하고 * 라이센스 업데이트 * 를 선택합니다.
+. 라이센스 파일을 업로드합니다.
+. 라이센스 업로드 * 를 클릭합니다.
+
+
+
+
+== 용량 기반 라이센스를 제거합니다
+
+용량 기반 라이센스가 만료되어 더 이상 사용되지 않는 경우 언제든지 라이센스를 제거할 수 있습니다.
+
+.단계
+. 모든 서비스 > 디지털 지갑 > Cloud Volumes ONTAP * 를 클릭합니다.
+. 라이센스 옆에 있는 작업 메뉴를 클릭하고 * 라이센스 제거 * 를 선택합니다.
+. 확인하려면 * 제거 * 를 클릭합니다.
+

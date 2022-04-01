@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: concept-flash-cache.html 
+keywords: cloud volumes ontap, aws, ec2, flash cache, read-intensive, read, random, databases, email, file services, c5d.4xlarge, c5d.9xlarge, r5d.2xlarge, compression, performance, azure, nvme, standard, l8s, vm type, virtual machine, m5d.8xlarge, m5d.12xlarge, c5d.18xlarge 
+summary: AWS 및 Azure의 일부 Cloud Volumes ONTAP 구성에는 Cloud Volumes ONTAP이 성능 향상을 위해 Flash Cache로 사용하는 로컬 NVMe 스토리지가 포함됩니다. 
+---
+= Flash Cache를 참조하십시오
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+AWS 및 Azure의 일부 Cloud Volumes ONTAP 구성에는 Cloud Volumes ONTAP이 성능 향상을 위해 _ Flash Cache _ 로 사용하는 로컬 NVMe 스토리지가 포함됩니다.
+
+
+
+== Flash Cache란 무엇입니까?
+
+Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다.
+
+
+
+== AWS에서 지원되는 인스턴스
+
+새로운 또는 기존 Cloud Volumes ONTAP 프리미엄 또는 BYOL 시스템을 포함하는 다음 EC2 인스턴스 유형 중 하나를 선택합니다.
+
+* c5d.4xLarge
+* c5d.9xLarge
+* c5d.18xLarge
+* m5d.8xLarge
+* m5d.12xLarge
+* r5d.2xLarge
+
+
+
+
+== Azure에서 지원되는 VM 유형입니다
+
+Azure에서 단일 노드 Cloud Volumes ONTAP BYOL 시스템을 사용하는 Standard_L8s_v2 VM 유형을 선택합니다.
+
+
+
+== 제한 사항
+
+* Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다.
++
+Cloud Manager에서 볼륨을 생성할 때 스토리지 효율성을 선택하지 않거나, 볼륨을 생성한 다음 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["CLI를 사용하여 데이터 압축을 비활성화합니다"^].
+
+* 재부팅 후 캐시 재가기는 Cloud Volumes ONTAP에서 지원되지 않습니다.
+

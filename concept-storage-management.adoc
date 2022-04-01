@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: concept-storage-management.html 
+keywords: provisioning, capacity management, storage provisioning, manual, automatic, advanced allocation, aggregates, thin provisioning, free space, mode 
+summary: Cloud Manager는 Cloud Volumes ONTAP 스토리지를 간편하고 효율적으로 관리합니다. 
+---
+= 스토리지 관리
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager는 Cloud Volumes ONTAP 스토리지를 간편하고 효율적으로 관리합니다.
+
+
+CAUTION: 모든 디스크와 애그리게이트는 Cloud Manager에서 직접 생성 및 삭제해야 합니다. 다른 관리 도구에서 이러한 작업을 수행해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 주고 향후 디스크를 추가할 수 없도록 하며 중복 클라우드 공급자 비용을 생성할 수 있습니다.
+
+
+
+== 스토리지 프로비저닝
+
+Cloud Manager를 사용하면 디스크를 구매하고 애그리게이트를 관리하여 Cloud Volumes ONTAP를 위한 스토리지 프로비저닝을 간편하게 수행할 수 있습니다. 볼륨을 생성하기만 하면 됩니다. 필요한 경우 고급 할당 옵션을 사용하여 애그리게이트를 직접 프로비저닝할 수 있습니다.
+
+
+
+=== 간소화된 프로비저닝
+
+애그리게이트는 볼륨에 클라우드 스토리지를 제공합니다. 인스턴스를 시작할 때와 추가 볼륨을 프로비저닝할 때 Cloud Manager에서 애그리게이트를 생성합니다.
+
+볼륨을 생성할 때 Cloud Manager는 다음 세 가지 중 하나를 수행합니다.
+
+* 여유 공간이 충분한 기존 애그리게이트에 볼륨을 배치합니다.
+* 이 Aggregate에 사용할 디스크를 더 많이 구입하여 기존 Aggregate에 볼륨을 배치합니다.
+* 새로운 애그리게이트를 위해 디스크를 구매하고 애그리게이트에 볼륨을 배치했습니다.
+
+
+Cloud Manager에서는 애그리게이트의 최대 크기, 씬 프로비저닝 활성화 여부 및 애그리게이트의 여유 공간 임계값 등 여러 요소를 확인하여 새 볼륨을 배치할 위치를 결정합니다.
+
+
+TIP: 계정 관리자는 * 설정 * 페이지에서 여유 공간 임계값을 수정할 수 있습니다.
+
+
+
+==== AWS에서 Aggregate를 위한 디스크 크기 선택
+
+Cloud Manager에서 AWS에 Cloud Volumes ONTAP용 새 애그리게이트를 생성할 경우, 시스템 내 애그리게이트 수가 증가함에 따라 애그리게이트의 디스크 크기가 점차적으로 증가합니다. Cloud Manager를 사용하면 AWS에서 허용하는 최대 데이터 디스크 수에 도달하기 전에 시스템의 최대 용량을 활용할 수 있습니다.
+
+예를 들어, Cloud Manager는 Cloud Volumes ONTAP 프리미엄 또는 BYOL 시스템에서 다음의 애그리게이트 디스크 크기를 선택할 수 있습니다.
+
+[cols="3*"]
+|===
+| 집계 번호 | 디스크 크기입니다 | 최대 애그리게이트 용량입니다 
+
+
+| 1 | 500GiB | 3TiB 
+
+
+| 4 | 1TiB | 6TiB 
+
+
+| 6 | 2TiB | 12TiB 
+|===
+고급 할당 옵션을 사용하여 디스크 크기를 직접 선택할 수 있습니다.
+
+
+
+=== 고급 할당
+
+Cloud Manager로 애그리게이트를 관리할 수 있다는 것이 아니라, 자신이 직접 애그리게이트를 관리할 수 있습니다. link:task-create-aggregates.html["고급 할당 * 페이지에서 선택합니다"]특정 수의 디스크를 포함하는 새 애그리게이트를 생성하고, 기존 애그리게이트에 디스크를 추가하고, 특정 애그리게이트에서 볼륨을 생성할 수 있습니다.
+
+
+
+== 용량 관리
+
+계정 관리자는 Cloud Manager에서 스토리지 용량 결정에 대해 통지할지 또는 Cloud Manager가 자동으로 용량 요구사항을 관리할지 여부를 선택할 수 있습니다. 이러한 모드의 작동 방식을 이해하는 데 도움이 될 수 있습니다.
+
+
+
+=== 자동 용량 관리
+
+Capacity Management Mode(용량 관리 모드)는 기본적으로 Automatic(자동)으로 설정됩니다. 이 모드에서 Cloud Manager는 더 많은 용량이 필요할 때 Cloud Volumes ONTAP 인스턴스에 대해 새 디스크를 자동으로 구매하고, 사용되지 않는 디스크 컬렉션(애그리게이트)을 삭제하고, 필요할 때 애그리게이트 간에 볼륨을 이동하며, 디스크 장애를 해제하려고 시도합니다.
+
+다음 예제에서는 이 모드가 작동하는 방식을 보여 줍니다.
+
+* EBS 디스크가 5개 이하인 aggregate가 용량 임계값에 도달하면 Cloud Manager가 자동으로 해당 aggregate에 대한 새 디스크를 구매하여 볼륨을 계속 확장할 수 있습니다.
++
+Cloud Manager는 15분마다 여유 공간 비율을 확인하여 추가 디스크를 구입해야 하는지 확인합니다.
+
+* 12개의 Azure 디스크가 있는 애그리게이트는 용량 임계값에 도달하면 Cloud Manager가 자동으로 볼륨을 해당 애그리게이트의 볼륨을 가용 용량이 있는 애그리게이트로 이동하거나 새 애그리게이트로 이동합니다.
++
+Cloud Manager가 볼륨에 대한 새 애그리게이트를 만들 경우, 해당 볼륨의 크기를 수용하는 디스크 크기를 선택합니다.
+
++
+이제 원래 aggregate에서 여유 공간을 사용할 수 있습니다. 기존 볼륨 또는 새 볼륨에서 해당 공간을 사용할 수 있습니다. 이 시나리오에서는 공간을 AWS, Azure 또는 GCP로 반환할 수 없습니다.
+
+* Aggregate에 12시간 이상 볼륨이 포함되어 있지 않으면 Cloud Manager에서 해당 볼륨을 삭제합니다.
+
+
+
+
+==== 자동 용량 관리를 통한 LUN 관리
+
+Cloud Manager의 자동 용량 관리는 LUN에 적용되지 않습니다. Cloud Manager에서 LUN을 생성하면 자동 확장 기능이 해제됩니다.
+
+
+
+=== 수동 용량 관리
+
+계정 관리자가 용량 관리 모드를 수동으로 설정한 경우, 용량 결정을 내려야 할 때 Cloud Manager에 작업 필요 메시지가 표시됩니다. 자동 모드에서 설명한 것과 동일한 예가 수동 모드에 적용되지만 사용자는 이 작업을 수락할 수 있습니다.

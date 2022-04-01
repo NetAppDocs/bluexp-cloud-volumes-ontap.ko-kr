@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: task-setting-up-gcp-encryption.html 
+keywords: encryption, gcp, encryption key, permissions, customer-managed, gcpencryption 
+summary: Google 클라우드 스토리지는 디스크에 데이터를 쓰기 전에 항상 데이터를 암호화하지만, Cloud Manager API를 사용하여 고객이 관리하는 암호화 키를 사용하는 Cloud Volumes ONTAP 시스템을 만들 수 있습니다. 클라우드 키 관리 서비스를 사용하여 GCP에서 생성하고 관리하는 키입니다. 
+---
+= Cloud Volumes ONTAP에서 고객이 관리하는 암호화 키 사용
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Google 클라우드 스토리지는 디스크에 데이터를 쓰기 전에 항상 데이터를 암호화하지만, Cloud Manager API를 사용하여 _고객이 관리하는 암호화 키_ 를 사용하는 Cloud Volumes ONTAP 시스템을 생성할 수 있습니다. 클라우드 키 관리 서비스를 사용하여 GCP에서 생성하고 관리하는 키입니다.
+
+.단계
+. 키가 저장된 프로젝트의 Cloud Manager Connector 서비스 계정에 프로젝트 수준에서 올바른 권한이 있는지 확인합니다.
++
+권한은 에서 제공합니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager YAML 파일"^] 기본적으로 클라우드 키 관리 서비스에 대체 프로젝트를 사용하는 경우에는 적용되지 않을 수 있습니다.
+
++
+사용 권한은 다음과 같습니다.
+
++
+[source, yaml]
+----
+- cloudkms.cryptoKeyVersions.list
+- cloudkms.cryptoKeys.get
+- cloudkms.cryptoKeys.list
+- cloudkms.keyRings.list
+----
+. 에 대한 서비스 계정이 있는지 확인합니다 https://cloud.google.com/iam/docs/service-agents["Google Compute Engine 서비스 에이전트입니다"^] Cloud KMS Encrypter/Decrypter 권한이 키에 있습니다.
++
+서비스 계정 이름은 "service-[service_project_number]@compute-system.iam.gserviceaccount.com" 형식을 사용합니다.
+
++
+https://cloud.google.com/kms/docs/iam#granting_roles_on_a_resource["Google Cloud 설명서: IAM을 Cloud KMS-Granting 역할과 함께 리소스에 사용"]
+
+. "/GCP/VSA/metadata/GCP-encryption-keys" API 호출에 대한 get 명령을 호출하거나 GCP 콘솔의 키에 있는 "Copy Resource Name"을 선택하여 키의 "id"를 얻습니다.
+. 고객이 관리하는 암호화 키를 사용하고 데이터를 오브젝트 스토리지에 계층화하는 경우 Cloud Manager는 영구 디스크를 암호화하는 데 사용된 것과 동일한 키를 사용하려 합니다. 하지만 먼저 Google Cloud Storage 버킷을 활성화하여 키를 사용해야 합니다.
++
+.. 에 따라 Google Cloud Storage 서비스 에이전트를 찾습니다 https://cloud.google.com/storage/docs/getting-service-agent["Google Cloud 설명서: 클라우드 스토리지 서비스 에이전트 얻기"^].
+.. 암호화 키로 이동하여 Cloud KMS Encrypter/Decrypter 권한이 있는 Google Cloud Storage 서비스 에이전트를 할당합니다.
+
+
++
+자세한 내용은 을 참조하십시오 https://cloud.google.com/storage/docs/encryption/using-customer-managed-keys["Google Cloud 설명서: 고객이 관리하는 암호화 키 사용"^]
+
+. 작업 환경을 만들 때 API 요청과 함께 "GcpEncryption" 매개 변수를 사용합니다.
++
+* 예 *
+
++
+[source, json]
+----
+"gcpEncryptionParameters": {
+    "key": "projects/project-1/locations/us-east4/keyRings/keyring-1/cryptoKeys/generatedkey1"
+  }
+----
+
+
+을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager 자동화 문서"^] "GcpEncryption" 매개 변수 사용에 대한 자세한 내용은 를 참조하십시오.

@@ -1,0 +1,66 @@
+---
+sidebar: sidebar 
+permalink: task-managing-svms.html 
+keywords: storage virtual machine, vserver, svm, storage vm, supported number, number supported 
+summary: 스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, 클라이언트에 스토리지 및 데이터 서비스를 제공합니다. SVM 또는 가상 서버로서 이를 알 수 있습니다. Cloud Volumes ONTAP는 기본적으로 하나의 스토리지 VM으로 구성되지만 일부 구성에서는 추가 스토리지 VM을 지원합니다. 
+---
+= Cloud Manager에서 스토리지 VM을 관리합니다
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, 클라이언트에 스토리지 및 데이터 서비스를 제공합니다. 이를 _SVM_ 또는 _vserver_로 알고 있을 수 있습니다. Cloud Volumes ONTAP는 기본적으로 하나의 스토리지 VM으로 구성되지만 일부 구성에서는 추가 스토리지 VM을 지원합니다.
+
+
+
+== 지원되는 스토리지 VM 수입니다
+
+AWS의 Cloud Volumes ONTAP와 특정 구성의 Azure에서 여러 스토리지 VM이 지원됩니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap/index.html["Cloud Volumes ONTAP 릴리즈 노트"^] 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.
+
+
+
+== 여러 스토리지 VM과 함께 작업
+
+Cloud Manager는 System Manager 또는 CLI에서 생성하는 추가 스토리지 VM을 지원합니다.
+
+예를 들어, 다음 이미지는 볼륨을 생성할 때 스토리지 VM을 선택하는 방법을 보여줍니다.
+
+image:screenshot_create_volume_svm.gif["볼륨을 생성할 스토리지 VM을 선택할 수 있는 기능을 보여 주는 스크린샷"]
+
+다음 이미지는 다른 시스템으로 볼륨을 복제할 때 스토리지 VM을 선택하는 방법을 보여 줍니다.
+
+image:screenshot_replicate_volume_svm.gif["볼륨을 복제할 스토리지 VM을 선택할 수 있는 기능을 보여 주는 스크린샷"]
+
+
+
+== 기본 스토리지 VM의 이름을 수정합니다
+
+Cloud Manager에서 Cloud Volumes ONTAP에 대해 생성한 단일 스토리지 VM의 이름을 자동으로 지정합니다. 엄격한 명명 규칙이 있는 경우 스토리지 VM 이름을 수정할 수 있습니다. 예를 들어, 이름이 ONTAP 클러스터에 대한 스토리지 VM의 이름을 지정하는 방법과 일치할 수 있습니다.
+
+Cloud Volumes ONTAP용 추가 스토리지 VM을 생성한 경우 Cloud Manager에서 스토리지 VM의 이름을 바꿀 수 없습니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP에서 직접 변경해야 합니다.
+
+.단계
+. 작업 환경에서 메뉴 아이콘을 클릭한 다음 * 정보 * 를 클릭합니다.
+. 스토리지 VM 이름 오른쪽에 있는 편집 아이콘을 클릭합니다.
++
+image:screenshot_svm.gif["스크린샷: SVM 이름 필드를 표시하고 SVM 이름을 수정하려면 클릭해야 하는 편집 아이콘을 표시합니다."]
+
+. Modify SVM Name(SVM 이름 수정) 대화 상자에서 이름을 변경한 다음 * Save * (저장 *)를 클릭합니다.
+
+
+
+
+== 재해 복구를 위한 스토리지 VM 관리
+
+Cloud Manager는 스토리지 VM 재해 복구에 대한 설정 또는 오케스트레이션 지원을 제공하지 않습니다. System Manager 또는 CLI를 사용해야 합니다.
+
+* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 재해 복구 준비 Express 가이드"^]
+* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM 재해 복구 익스프레스 가이드 를 참조하십시오"^]
+

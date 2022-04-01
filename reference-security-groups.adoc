@@ -1,0 +1,452 @@
+---
+sidebar: sidebar 
+permalink: reference-security-groups.html 
+keywords: security group, security groups, rules, ports, aws, inbound, outbound, rules 
+summary: Cloud Manager는 Cloud Manager와 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함한 AWS 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 포트를 사용해야 하는 경우 포트를 참조할 수 있습니다. 
+---
+= AWS의 보안 그룹 규칙
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager는 Connector와 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 AWS 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.
+
+
+
+== Cloud Volumes ONTAP 규칙
+
+Cloud Volumes ONTAP의 보안 그룹에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.
+
+
+
+=== 인바운드 규칙
+
+미리 정의된 보안 그룹의 인바운드 규칙 소스는 0.0.0.0/0입니다.
+
+[cols="10,10,80"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 ICMP | 모두 | 인스턴스에 Ping을 수행 중입니다 
+
+
+| HTTP | 80 | 클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 HTTP 액세스 
+
+
+| HTTPS | 443 | 클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 HTTPS 액세스 
+
+
+| SSH를 클릭합니다 | 22 | 클러스터 관리 LIF 또는 노드 관리 LIF의 IP 주소에 SSH를 액세스할 수 있습니다 
+
+
+| TCP | 111 | NFS에 대한 원격 프로시저 호출 
+
+
+| TCP | 139 | CIFS에 대한 NetBIOS 서비스 세션입니다 
+
+
+| TCP | 161-162 | 단순한 네트워크 관리 프로토콜 
+
+
+| TCP | 445 | Microsoft SMB/CIFS over TCP 및 NetBIOS 프레임 
+
+
+| TCP | 635 | NFS 마운트 
+
+
+| TCP | 749 | Kerberos 
+
+
+| TCP | 2049 | NFS 서버 데몬 
+
+
+| TCP | 3260 | iSCSI 데이터 LIF를 통한 iSCSI 액세스 
+
+
+| TCP | 4045 | NFS 잠금 데몬 
+
+
+| TCP | 4046 | NFS에 대한 네트워크 상태 모니터 
+
+
+| TCP | 10000입니다 | NDMP를 사용한 백업 
+
+
+| TCP | 11104 | SnapMirror에 대한 인터클러스터 통신 세션의 관리 
+
+
+| TCP | 11105 | 인터클러스터 LIF를 사용하여 SnapMirror 데이터 전송 
+
+
+| UDP입니다 | 111 | NFS에 대한 원격 프로시저 호출 
+
+
+| UDP입니다 | 161-162 | 단순한 네트워크 관리 프로토콜 
+
+
+| UDP입니다 | 635 | NFS 마운트 
+
+
+| UDP입니다 | 2049 | NFS 서버 데몬 
+
+
+| UDP입니다 | 4045 | NFS 잠금 데몬 
+
+
+| UDP입니다 | 4046 | NFS에 대한 네트워크 상태 모니터 
+
+
+| UDP입니다 | 4049 | NFS rquotad 프로토콜 
+|===
+
+
+=== 아웃바운드 규칙
+
+Cloud Volumes ONTAP에 대해 미리 정의된 보안 그룹은 모든 아웃바운드 트래픽을 엽니다. 허용 가능한 경우 기본 아웃바운드 규칙을 따릅니다. 더 엄격한 규칙이 필요한 경우 고급 아웃바운드 규칙을 사용합니다.
+
+
+
+==== 기본 아웃바운드 규칙
+
+Cloud Volumes ONTAP에 대해 미리 정의된 보안 그룹에는 다음과 같은 아웃바운드 규칙이 포함됩니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 ICMP | 모두 | 모든 아웃바운드 트래픽 
+
+
+| 모든 TCP | 모두 | 모든 아웃바운드 트래픽 
+
+
+| 모든 UDP | 모두 | 모든 아웃바운드 트래픽 
+|===
+
+
+==== 고급 아웃바운드 규칙
+
+아웃바운드 트래픽에 대해 엄격한 규칙이 필요한 경우 다음 정보를 사용하여 Cloud Volumes ONTAP의 아웃바운드 통신에 필요한 포트만 열 수 있습니다.
+
+
+NOTE: 소스는 Cloud Volumes ONTAP 시스템의 인터페이스(IP 주소)입니다.
+
+[cols="10,10,6,20,20,34"]
+|===
+| 서비스 | 프로토콜 | 포트 | 출처 | 목적지 | 목적 
+
+
+.18+| Active Directory를 클릭합니다 | TCP | 88 | 노드 관리 LIF | Active Directory 포리스트입니다 | Kerberos V 인증 
+
+
+| UDP입니다 | 137 | 노드 관리 LIF | Active Directory 포리스트입니다 | NetBIOS 이름 서비스입니다 
+
+
+| UDP입니다 | 138 | 노드 관리 LIF | Active Directory 포리스트입니다 | NetBIOS 데이터그램 서비스 
+
+
+| TCP | 139 | 노드 관리 LIF | Active Directory 포리스트입니다 | NetBIOS 서비스 세션입니다 
+
+
+| TCP 및 UDP | 389 | 노드 관리 LIF | Active Directory 포리스트입니다 | LDAP를 지원합니다 
+
+
+| TCP | 445 | 노드 관리 LIF | Active Directory 포리스트입니다 | Microsoft SMB/CIFS over TCP 및 NetBIOS 프레임 
+
+
+| TCP | 464 | 노드 관리 LIF | Active Directory 포리스트입니다 | Kerberos V 변경 및 암호 설정(set_change) 
+
+
+| UDP입니다 | 464 | 노드 관리 LIF | Active Directory 포리스트입니다 | Kerberos 키 관리 
+
+
+| TCP | 749 | 노드 관리 LIF | Active Directory 포리스트입니다 | Kerberos V 변경 및 암호 설정(RPCSEC_GSS) 
+
+
+| TCP | 88 | 데이터 LIF(NFS, CIFS, iSCSI) | Active Directory 포리스트입니다 | Kerberos V 인증 
+
+
+| UDP입니다 | 137 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | NetBIOS 이름 서비스입니다 
+
+
+| UDP입니다 | 138 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | NetBIOS 데이터그램 서비스 
+
+
+| TCP | 139 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | NetBIOS 서비스 세션입니다 
+
+
+| TCP 및 UDP | 389 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | LDAP를 지원합니다 
+
+
+| TCP | 445 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | Microsoft SMB/CIFS over TCP 및 NetBIOS 프레임 
+
+
+| TCP | 464 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | Kerberos V 변경 및 암호 설정(set_change) 
+
+
+| UDP입니다 | 464 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | Kerberos 키 관리 
+
+
+| TCP | 749 | 데이터 LIF(NFS, CIFS) | Active Directory 포리스트입니다 | Kerberos V 변경 및 암호 설정(RPCSEC_GSS) 
+
+
+.2+| AutoSupport | HTTPS | 443 | 노드 관리 LIF | support.netapp.com | AutoSupport(기본값은 HTTPS) 
+
+
+| HTTP | 80 | 노드 관리 LIF | support.netapp.com | AutoSupport(전송 프로토콜이 HTTPS에서 HTTP로 변경된 경우에만 해당) 
+
+
+| S3로 백업 | TCP | 5010 | 인터클러스터 LIF | 엔드포인트 백업 또는 복원 | S3로 백업 기능의 백업 및 복원 작업 
+
+
+.3+| 클러스터 | 모든 교통 정보 | 모든 교통 정보 | 모든 LIF가 하나의 노드에 있습니다 | 다른 노드의 모든 LIF | 인터클러스터 통신(Cloud Volumes ONTAP HA에만 해당) 
+
+
+| TCP | 3000입니다 | 노드 관리 LIF | HA 중재자 | ZAPI 호출(Cloud Volumes ONTAP HA 전용) 
+
+
+| ICMP | 1 | 노드 관리 LIF | HA 중재자 | 활성 상태 유지(Cloud Volumes ONTAP HA만 해당) 
+
+
+| DHCP를 선택합니다 | UDP입니다 | 68 | 노드 관리 LIF | DHCP를 선택합니다 | 처음으로 설정하는 DHCP 클라이언트 
+
+
+| DHCPS | UDP입니다 | 67 | 노드 관리 LIF | DHCP를 선택합니다 | DHCP 서버 
+
+
+| DNS | UDP입니다 | 53 | 노드 관리 LIF 및 데이터 LIF(NFS, CIFS) | DNS | DNS 
+
+
+| NDMP | TCP | 18600–18699 | 노드 관리 LIF | 대상 서버 | NDMP 복제 
+
+
+| SMTP | TCP | 25 | 노드 관리 LIF | 메일 서버 | AutoSupport에 사용할 수 있는 SMTP 경고 
+
+
+.4+| SNMP를 선택합니다 | TCP | 161 | 노드 관리 LIF | 서버 모니터링 | SNMP 트랩으로 모니터링 
+
+
+| UDP입니다 | 161 | 노드 관리 LIF | 서버 모니터링 | SNMP 트랩으로 모니터링 
+
+
+| TCP | 162 | 노드 관리 LIF | 서버 모니터링 | SNMP 트랩으로 모니터링 
+
+
+| UDP입니다 | 162 | 노드 관리 LIF | 서버 모니터링 | SNMP 트랩으로 모니터링 
+
+
+.2+| SnapMirror를 참조하십시오 | TCP | 11104 | 인터클러스터 LIF | ONTAP 인터클러스터 LIF | SnapMirror에 대한 인터클러스터 통신 세션의 관리 
+
+
+| TCP | 11105 | 인터클러스터 LIF | ONTAP 인터클러스터 LIF | SnapMirror 데이터 전송 
+
+
+| Syslog를 클릭합니다 | UDP입니다 | 514 | 노드 관리 LIF | Syslog 서버 | Syslog 메시지를 전달합니다 
+|===
+
+
+== 외부 보안 그룹의 HA 중재자를 위한 규칙
+
+Cloud Volumes ONTAP HA 중재자를 위해 미리 정의된 외부 보안 그룹에는 다음과 같은 인바운드 및 아웃바운드 규칙이 포함됩니다.
+
+
+
+=== 인바운드 규칙
+
+인바운드 규칙의 소스는 0.0.0.0/0입니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| SSH를 클릭합니다 | 22 | HA 중재자로 SSH 연결 
+
+
+| TCP | 3000입니다 | Connector에서 Restful API 액세스 
+|===
+
+
+=== 아웃바운드 규칙
+
+HA 중재자를 위한 사전 정의된 보안 그룹은 모든 아웃바운드 트래픽을 엽니다. 허용 가능한 경우 기본 아웃바운드 규칙을 따릅니다. 더 엄격한 규칙이 필요한 경우 고급 아웃바운드 규칙을 사용합니다.
+
+
+
+==== 기본 아웃바운드 규칙
+
+HA 중재자를 위해 미리 정의된 보안 그룹에는 다음과 같은 아웃바운드 규칙이 포함됩니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 TCP | 모두 | 모든 아웃바운드 트래픽 
+
+
+| 모든 UDP | 모두 | 모든 아웃바운드 트래픽 
+|===
+
+
+==== 고급 아웃바운드 규칙
+
+아웃바운드 트래픽에 대한 엄격한 규칙이 필요한 경우 다음 정보를 사용하여 HA 중재자의 아웃바운드 통신에 필요한 포트만 열 수 있습니다.
+
+[cols="10,10,30,40"]
+|===
+| 프로토콜 | 포트 | 목적지 | 목적 
+
+
+| HTTP | 80 | 커넥터 IP 주소입니다 | 중재자를 위한 업그레이드 다운로드 
+
+
+| HTTPS | 443 | AWS API 서비스 | 스토리지 페일오버 지원 
+
+
+| UDP입니다 | 53 | AWS API 서비스 | 스토리지 페일오버 지원 
+|===
+
+NOTE: 포트 443과 53을 열지 않고 타겟 서브넷에서 AWS EC2 서비스로 인터페이스 VPC 엔드포인트를 생성할 수 있습니다.
+
+
+
+== HA 중재자 내부 보안 그룹의 규칙
+
+Cloud Volumes ONTAP HA 중재자를 위해 미리 정의된 내부 보안 그룹에는 다음 규칙이 포함됩니다. Cloud Manager는 항상 이 보안 그룹을 생성합니다. 자신의 을(를) 사용할 수 있는 옵션이 없습니다.
+
+
+
+=== 인바운드 규칙
+
+미리 정의된 보안 그룹에는 다음과 같은 인바운드 규칙이 포함됩니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 교통 정보 | 모두 | HA 중재자 및 HA 노드 간 통신 
+|===
+
+
+=== 아웃바운드 규칙
+
+미리 정의된 보안 그룹에는 다음과 같은 아웃바운드 규칙이 포함됩니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 교통 정보 | 모두 | HA 중재자 및 HA 노드 간 통신 
+|===
+
+
+== 커넥터 규칙
+
+Connector의 보안 그룹에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.
+
+
+
+=== 인바운드 규칙
+
+[cols="10,10,80"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| SSH를 클릭합니다 | 22 | 커넥터 호스트에 대한 SSH 액세스를 제공합니다 
+
+
+| HTTP | 80 | 클라이언트 웹 브라우저에서 로컬 사용자 인터페이스로 HTTP 액세스를 제공하고 Cloud Data Sense에서 연결을 제공합니다 
+
+
+| HTTPS | 443 | 클라이언트 웹 브라우저에서 로컬 사용자 인터페이스로 HTTPS 액세스를 제공합니다 
+
+
+| TCP | 3128 | AWS 네트워크에서 NAT 또는 프록시를 사용하지 않는 경우 인터넷 액세스가 가능한 클라우드 데이터 감지 인스턴스를 제공합니다 
+|===
+
+
+=== 아웃바운드 규칙
+
+Connector에 대해 미리 정의된 보안 그룹은 모든 아웃바운드 트래픽을 엽니다. 허용 가능한 경우 기본 아웃바운드 규칙을 따릅니다. 더 엄격한 규칙이 필요한 경우 고급 아웃바운드 규칙을 사용합니다.
+
+
+
+==== 기본 아웃바운드 규칙
+
+Connector에 대해 미리 정의된 보안 그룹에는 다음과 같은 아웃바운드 규칙이 포함됩니다.
+
+[cols="20,20,60"]
+|===
+| 프로토콜 | 포트 | 목적 
+
+
+| 모든 TCP | 모두 | 모든 아웃바운드 트래픽 
+
+
+| 모든 UDP | 모두 | 모든 아웃바운드 트래픽 
+|===
+
+
+==== 고급 아웃바운드 규칙
+
+아웃바운드 트래픽에 대해 엄격한 규칙이 필요한 경우 다음 정보를 사용하여 Connector의 아웃바운드 통신에 필요한 포트만 열 수 있습니다.
+
+
+NOTE: 소스 IP 주소는 커넥터 호스트입니다.
+
+[cols="5*"]
+|===
+| 서비스 | 프로토콜 | 포트 | 목적지 | 목적 
+
+
+.9+| Active Directory를 클릭합니다 | TCP | 88 | Active Directory 포리스트입니다 | Kerberos V 인증 
+
+
+| TCP | 139 | Active Directory 포리스트입니다 | NetBIOS 서비스 세션입니다 
+
+
+| TCP | 389 | Active Directory 포리스트입니다 | LDAP를 지원합니다 
+
+
+| TCP | 445 | Active Directory 포리스트입니다 | Microsoft SMB/CIFS over TCP 및 NetBIOS 프레임 
+
+
+| TCP | 464 | Active Directory 포리스트입니다 | Kerberos V 변경 및 암호 설정(set_change) 
+
+
+| TCP | 749 | Active Directory 포리스트입니다 | Active Directory Kerberos V 변경 및 암호 설정(RPCSEC_GSS) 
+
+
+| UDP입니다 | 137 | Active Directory 포리스트입니다 | NetBIOS 이름 서비스입니다 
+
+
+| UDP입니다 | 138 | Active Directory 포리스트입니다 | NetBIOS 데이터그램 서비스 
+
+
+| UDP입니다 | 464 | Active Directory 포리스트입니다 | Kerberos 키 관리 
+
+
+| API 호출 및 AutoSupport | HTTPS | 443 | 아웃바운드 인터넷 및 ONTAP 클러스터 관리 LIF | API는 AWS 및 ONTAP를 호출하고 AutoSupport 메시지를 NetApp에 보냅니다 
+
+
+.2+| API 호출 | TCP | 3000입니다 | ONTAP HA 중재자 | ONTAP HA 중재인과의 커뮤니케이션 
+
+
+| TCP | 8088 | S3로 백업 | API에서 S3로 백업을 호출합니다 
+
+
+| DNS | UDP입니다 | 53 | DNS | Cloud Manager에서 DNS Resolve에 사용됩니다 
+
+
+| 클라우드 데이터 감지 | HTTP | 80 | 클라우드 데이터 감지 인스턴스 | Cloud Volumes ONTAP에 대한 클라우드 데이터 감지 
+|===

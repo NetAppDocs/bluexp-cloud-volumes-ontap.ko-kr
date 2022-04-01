@@ -1,0 +1,121 @@
+---
+sidebar: sidebar 
+permalink: concept-write-speed.html 
+keywords: write speed, high write speed, normal write speed, nvfail, writing speed, ldm, low durability mode 
+summary: Cloud Manager를 사용하면 Cloud Volumes ONTAP에 대해 일반 또는 고속 쓰기 속도를 선택할 수 있습니다. 쓰기 속도를 선택하기 전에 고속 쓰기 속도를 사용할 때 정상 및 높음 설정의 차이점과 위험 및 권장 사항을 이해해야 합니다. 
+---
+= 쓰기 속도
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Manager를 사용하면 Cloud Volumes ONTAP에 대해 일반 또는 고속 쓰기 속도를 선택할 수 있습니다. 쓰기 속도를 선택하기 전에 고속 쓰기 속도를 사용할 때 정상 및 높음 설정의 차이점과 위험 및 권장 사항을 이해해야 합니다.
+
+모든 유형의 단일 노드 시스템에서는 높은 쓰기 속도가 지원됩니다. 또한 특정 인스턴스 또는 VM 유형을 사용할 경우 AWS 및 Azure의 HA 쌍에서도 지원됩니다(지원되는 인스턴스 및 VM 유형 목록은 아래 섹션 참조). GCP의 HA 쌍에서는 빠른 쓰기 속도가 지원되지 않습니다.
+
+
+
+== 정상적인 쓰기 속도
+
+일반적인 쓰기 속도를 선택하면 데이터가 디스크에 직접 기록됩니다. 데이터를 디스크에 직접 쓸 경우 계획되지 않은 시스템 중단 시 데이터 손실 가능성 또는 계획되지 않은 시스템 중단 시 계단식 오류 발생 가능성(HA 쌍만 해당)을 줄입니다.
+
+기본 옵션은 일반 쓰기 속도입니다.
+
+
+
+== 빠른 쓰기 속도
+
+빠른 쓰기 속도를 선택하면 데이터가 디스크에 쓰기 전에 메모리에 버퍼링되어 쓰기 성능이 향상됩니다. 이 캐싱으로 인해 계획되지 않은 시스템 중단이 발생할 경우 데이터 손실이 발생할 수 있습니다.
+
+계획되지 않은 시스템 중단 시 손실될 수 있는 데이터 양은 마지막 두 정합성 보장 지점의 스팬입니다. 정합성 보장 지점은 버퍼링된 데이터를 디스크에 쓰는 작업을 가리킵니다. 정합성 보장 지점은 쓰기 로그가 꽉 찼거나 10초 후에(둘 중 먼저 도래하는 시점)에 발생합니다. 그러나 클라우드 공급자가 제공하는 스토리지의 성능은 정합성 보장 지점 처리 시간에 영향을 줄 수 있습니다.
+
+
+
+=== 빠른 쓰기 속도 사용 시기
+
+빠른 쓰기 성능이 워크로드에 필요한 경우, 계획되지 않은 시스템 중단 시 데이터 손실 위험이나 계획되지 않은 시스템 중단 시 계단식 장애(HA 쌍만 해당)를 견딜 수 있는 경우, 빠른 쓰기 속도가 가장 좋습니다.
+
+
+
+=== 빠른 쓰기 속도 사용 시 권장 사항
+
+빠른 쓰기 속도를 사용하는 경우 응용 프로그램 계층에서 쓰기 보호를 수행하거나 데이터 손실이 발생할 경우 응용 프로그램이 데이터 손실을 허용할 수 있는지 확인해야 합니다.
+
+
+
+=== AWS의 HA 쌍을 통한 빠른 쓰기 속도
+
+AWS의 HA 쌍에서 고속 쓰기 속도를 사용하려는 경우 AZ(다중 가용성 영역) 구축과 AZ 단일 구축 간의 보호 수준 차이를 이해해야 합니다. 여러 AZs에 HA 쌍을 구축하면 더 뛰어난 복원력을 제공할 뿐만 아니라 데이터 손실 가능성을 줄일 수 있습니다.
+
+link:concept-ha.html["AWS의 HA 쌍 에 대해 자세히 알아보십시오"].
+
+
+
+=== 빠른 쓰기 속도를 지원하는 구성
+
+모든 Cloud Volumes ONTAP 구성에서 고속 쓰기 속도를 지원하는 것은 아닙니다. 이러한 구성은 기본적으로 일반 쓰기 속도를 사용합니다.
+
+
+
+==== 설치하고
+
+단일 노드 시스템을 사용하는 경우 Cloud Volumes ONTAP는 모든 인스턴스 유형에서 빠른 쓰기 속도를 지원합니다.
+
+9.8 릴리즈부터 Cloud Volumes ONTAP는 지원되는 EC2 인스턴스 유형 중 M5.xLarge 및 R5.xLarge를 제외한 거의 모든 유형을 사용할 때 HA 쌍을 포함한 고속 쓰기 속도를 지원합니다.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_configs_aws_9101.html["Cloud Volumes ONTAP가 지원하는 Amazon EC2 인스턴스에 대해 자세히 알아보십시오"^].
+
+
+
+==== Azure를 지원합니다
+
+단일 노드 시스템을 사용하는 경우 Cloud Volumes ONTAP는 모든 VM 유형에 대해 고속 쓰기 속도를 지원합니다.
+
+HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.8 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_configs_azure_9101.html["Cloud Volumes ONTAP 릴리즈 노트"^] 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.
+
+
+
+==== Google 클라우드
+
+단일 노드 시스템을 사용하는 경우 Cloud Volumes ONTAP는 모든 시스템 유형에 대해 고속 쓰기 속도를 지원합니다.
+
+Cloud Volumes ONTAP는 Google Cloud에서 HA 쌍을 통한 빠른 쓰기 속도를 지원하지 않습니다.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_configs_gcp_9101.html["Cloud Volumes ONTAP가 지원하는 Google 클라우드 머신 유형에 대해 자세히 알아보십시오"^].
+
+
+
+== 쓰기 속도를 선택하는 방법
+
+새 작업 환경을 만들 때 쓰기 속도를 선택할 수 있으며, 이 경우 쓰기 속도를 선택할 수 있습니다 link:task-modify-write-speed.html["기존 시스템의 쓰기 속도를 변경합니다"].
+
+
+
+== 데이터 손실이 발생할 경우 예상되는 상황
+
+빠른 쓰기 속도를 선택하면 데이터 손실이 발생하면 시스템을 부팅하여 사용자 개입 없이 데이터를 계속 제공할 수 있습니다. 노드가 데이터 손실로 실행되면 두 개의 EMS 메시지가 보고됩니다. 한 가지 방법은 wafl.root.content.changed 이고, 다른 하나는 디버그 심각도 수준 이벤트가 있는 nv.check.failed 입니다. 두 메시지 모두 데이터 손실을 나타내는 것으로 표시되어야 합니다.
+
+
+
+== 데이터 손실이 발생할 경우 데이터 액세스를 중지하는 방법
+
+데이터 손실이 걱정되고 데이터 손실 문제가 적절하게 해결되면 애플리케이션 실행이 중지되고 데이터 액세스가 재개되기를 원할 경우 CLI의 NVFAIL 옵션을 사용하여 해당 목표를 달성할 수 있습니다.
+
+NVFAIL 옵션을 활성화합니다:: 'vol modify -volume <vol-name> - nvfail on'(볼륨 수정 - 볼륨 <vol-name> - nvfail 켜짐)
+NVFAIL 설정을 확인합니다:: 'vol show-volume <vol-name> - fields nvfail
+NVFAIL 옵션을 비활성화합니다:: 'vol modify -volume <vol-name> - nvfail off'(볼륨 수정 - 볼륨 <vol-name> - nvfail 꺼짐)
+
+
+데이터 손실이 발생하면 NVFAIL을 사용하는 NFS 또는 iSCSI 볼륨에서 데이터 서비스를 중지해야 합니다(상태 비저장 프로토콜인 CIFS에는 영향을 주지 않음). 자세한 내용은 을 참조하십시오 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-mgmt-dr/GUID-40D04B8A-01F7-4E87-8161-E30BD80F5B7F.html["NVFAIL이 NFS 볼륨 또는 LUN에 대한 액세스에 미치는 영향"^].
+
+NVFAIL 상태를 확인합니다:: 'vol show-fields in-nvfailed-state'
+
+
+데이터 손실 문제가 적절하게 해결된 후에는 NVFAIL 상태를 지울 수 있으며 데이터 액세스를 위해 볼륨을 사용할 수 있습니다.
+
+NVFAIL 상태를 지우려면:: 'vol modify-volume <vol-name>-in-nvfailed-state false'
+

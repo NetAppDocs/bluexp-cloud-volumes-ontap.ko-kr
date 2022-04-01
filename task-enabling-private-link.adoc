@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task-enabling-private-link.html 
+keywords: azure private link, private link connection, private link to storage 
+summary: 기본적으로 Cloud Manager는 Cloud Volumes ONTAP과 관련 스토리지 계정 간의 Azure 프라이빗 링크 연결을 지원합니다. 전용 링크는 Azure의 엔드포인트 간 연결을 보호합니다. 
+---
+= Cloud Volumes ONTAP에 Azure 전용 링크 사용
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+기본적으로 Cloud Manager는 Cloud Volumes ONTAP과 관련 스토리지 계정 간의 Azure 프라이빗 링크 연결을 지원합니다. 프라이빗 링크는 Azure의 엔드포인트 간 연결을 보호하고 성능상의 이점을 제공합니다. https://docs.microsoft.com/en-us/azure/private-link/private-link-overview["자세한 정보"^].
+
+대부분의 경우 Cloud Manager는 Azure Private Link를 관리합니다. 그러나 Azure Private DNS를 사용하는 경우에는 구성 파일을 편집해야 합니다. 필요한 경우 비공개 링크 연결을 비활성화할 수도 있습니다.
+
+
+
+== Azure의 커넥터 위치
+
+커넥터는 해당 커넥터가 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 영역에 배포하거나 에 배포되어야 합니다 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] Cloud Volumes ONTAP 시스템의 경우 이 요구 사항은 Cloud Volumes ONTAP와 연결된 스토리지 계정 간에 Azure 전용 링크 연결이 사용되도록 합니다. link:task-enabling-private-link.html["Cloud Volumes ONTAP에서 Azure 프라이빗 링크를 사용하는 방법에 대해 알아보십시오"].
+
+
+
+== Cloud Volumes ONTAP에서 개별 링크 연결이 작동하는 방식
+
+Cloud Manager는 Azure에 Cloud Volumes ONTAP를 구축할 때 리소스 그룹에 프라이빗 엔드포인트를 생성합니다. 전용 엔드포인트는 Cloud Volumes ONTAP의 스토리지 계정과 연결됩니다. 따라서 Cloud Volumes ONTAP 스토리지에 대한 액세스는 Microsoft 백본 네트워크를 통해 이루어집니다.
+
+클라이언트가 Cloud Volumes ONTAP와 동일한 VNET 내에 있거나, 피어링된 VNets 내에 있거나, VNET에 대한 전용 VPN 또는 ExpressRoute 연결을 사용할 때 사내 네트워크에 있는 경우 클라이언트 액세스는 개인 링크를 통해 이루어집니다.
+
+이 예에서는 동일한 VNET 내의 전용 링크와 전용 VPN 또는 ExpressRoute 연결이 있는 온프레미스 네트워크에서 클라이언트 액세스를 보여 줍니다.
+
+image:diagram_azure_private_link.png["Cloud Volumes ONTAP로 이동하는 데이터 액세스와 스토리지 계정에 대한 개인 끝점 및 개인 링크를 통한 데이터 액세스를 보여 주는 개념적 이미지입니다."]
+
+
+
+== Cloud Manager에 Azure 프라이빗 DNS에 대한 세부 정보를 제공합니다
+
+를 사용하는 경우 https://docs.microsoft.com/en-us/azure/dns/private-dns-overview["Azure 프라이빗 DNS"^]그런 다음 각 Connector에서 설정 파일을 수정해야 합니다. 그렇지 않으면 Cloud Manager에서 Cloud Volumes ONTAP 및 관련 스토리지 계정 간에 Azure 프라이빗 링크 연결을 설정할 수 없습니다.
+
+DNS 이름은 Azure DNS 명명 요구 사항과 일치해야 합니다 https://docs.microsoft.com/en-us/azure/storage/common/storage-private-endpoints#dns-changes-for-private-endpoints["Azure 설명서에 나와 있는 대로 적용됩니다"^].
+
+.단계
+. 커넥터 호스트에 SSH로 접속하고 로그인합니다.
+. /opt/application/netapp/cloudmanager/docker_occm/data 디렉토리로 이동합니다
+. 다음과 같이 다음 매개 변수를 수정하여 app.conf를 편집합니다.
++
+....
+"user-private-dns-zone-settings": {
+   "use-existing": true,
+   "resource-group": "<resource group name of the DNS zone>",
+   "subscription": "<subscription ID>"
+  }
+....
++
+전용 DNS 영역이 Connector와 다른 구독에 있는 경우에만 구독 매개 변수가 필요합니다.
+
+. 파일을 저장하고 Connector를 로그오프합니다.
++
+재부팅할 필요는 없습니다.
+
+
+
+
+
+== 장애 시 롤백 사용
+
+Cloud Manager가 특정 작업의 일부로 Azure Private Link를 생성하지 못할 경우 Azure Private Link 연결이 없어도 작업이 완료됩니다. 이는 새 작업 환경(단일 노드 또는 HA 쌍)을 생성하거나 HA 쌍에서 다음 작업이 발생하는 경우, 즉 새 애그리게이트 생성, 기존 애그리게이트에 디스크 추가, 32TiB 이상으로 진행할 때 발생할 수 있습니다.
+
+Cloud Manager가 Azure Private Link를 생성하지 못하는 경우 롤백을 활성화하여 이 기본 동작을 변경할 수 있습니다. 이를 통해 회사의 보안 규정을 완벽하게 준수할 수 있습니다.
+
+롤백을 활성화하면 Cloud Manager가 작업을 중지하고 작업의 일부로 생성된 모든 리소스를 롤백합니다.
+
+롤백 활성화는 API를 통해서만 지원됩니다.
+
+.단계
+. 다음 요청 본문과 함께 'Put/occm/config' API 호출 사용:
++
+[source, json]
+----
+{ "rollbackOnAzurePrivateLinkFailure": true }
+----
+
+
+
+
+== Azure Private Link 연결을 비활성화합니다
+
+Azure 구성에 필요한 경우 Cloud Volumes ONTAP 및 저장소 계정 간의 Azure 개인 링크 연결을 비활성화할 수 있습니다.
+
+.단계
+. Cloud Manager 콘솔의 오른쪽 상단에서 설정 아이콘을 클릭하고 * 커넥터 설정 * 을 선택합니다.
+. Azure * 에서 * Azure Private Link * 를 클릭합니다.
+. Cloud Volumes ONTAP 및 스토리지 계정 간 * 프라이빗 링크 연결을 선택 취소합니다.
+. 저장 * 을 클릭합니다.
+

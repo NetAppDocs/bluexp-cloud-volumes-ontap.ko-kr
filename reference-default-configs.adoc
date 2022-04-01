@@ -1,0 +1,189 @@
+---
+sidebar: sidebar 
+permalink: reference-default-configs.html 
+keywords: svm, LIF, LIFs, configuration backups, attributes, autosize, security style, space guarantee, unix permissions, NTFS, UNIX, boot, root, disks, aggr0, aggr1, svm, svms, storage virtual machine, LIF failover, failover, attributes, volume attributes, boot disk, root disk, licenses, feature licenses, default licenses, ontap licenses, ontap features 
+summary: Cloud Volumes ONTAP가 기본적으로 어떻게 구성되어 있는지 이해하면 시스템을 설정하고 관리하는 데 도움이 됩니다. 특히 ONTAP에 익숙한 경우 Cloud Volumes ONTAP의 기본 설정은 ONTAP와 다르기 때문입니다. 
+---
+= Cloud Volumes ONTAP의 기본 구성입니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP가 기본적으로 어떻게 구성되어 있는지 이해하면 시스템을 설정하고 관리하는 데 도움이 됩니다. 특히 ONTAP에 익숙한 경우 Cloud Volumes ONTAP의 기본 설정은 ONTAP와 다르기 때문입니다.
+
+
+
+== 기본값
+
+* Cloud Volumes ONTAP는 단일 노드 시스템으로, AWS, Azure 및 GCP에서 HA 쌍으로 제공됩니다.
+* Cloud Volumes ONTAP를 구축할 때 Cloud Manager가 단일 데이터 서비스 스토리지 VM을 생성합니다. 일부 구성은 추가 스토리지 VM을 지원합니다. link:task-managing-svms.html["스토리지 VM 관리에 대해 자세히 알아보십시오"].
++
+Cloud Manager 3.9.5 릴리즈부터는 초기 스토리지 VM에서 논리적 공간 보고가 활성화됩니다. 공간이 논리적으로 보고되면 ONTAP에서는 스토리지 효율성 기능으로 절약된 모든 물리적 공간이 사용된 것으로 보고하도록 볼륨 공간을 보고합니다.
+
+* Cloud Manager는 Cloud Volumes ONTAP에 다음과 같은 ONTAP 기능 라이센스를 자동으로 설치합니다.
++
+** CIFS를 선택합니다
+** FlexCache
+** 플랙스클론
+** iSCSI
+** NetApp 볼륨 암호화(BYOL 또는 등록 PAYGO 시스템에만 해당)
+** NFS 를 참조하십시오
+** SnapMirror를 참조하십시오
+** SnapRestore
+** SnapVault
+
+
+* 기본적으로 여러 네트워크 인터페이스가 생성됩니다.
++
+** 클러스터 관리 LIF
+** 인터클러스터 LIF
+** Azure 및 GCP의 HA 시스템, AWS의 단일 노드 시스템 및 여러 AWS Availability Zone의 HA 시스템에서 SVM 관리 LIF를 사용할 수 있습니다
+** 노드 관리 LIF(GCP에서 이 LIF는 인터클러스터 LIF와 결합됨)
+** iSCSI 데이터 LIF
+** CIFS 및 NFS 데이터 LIF
++
+
+NOTE: EC2 요구사항으로 인해 LIF 페일오버가 Cloud Volumes ONTAP에 대해 기본적으로 비활성화되어 있습니다. LIF를 다른 포트로 마이그레이션하면 IP 주소와 인스턴스 네트워크 인터페이스 간의 외부 매핑이 분리되므로 LIF에 액세스할 수 없습니다.
+
+
+
+* Cloud Volumes ONTAP는 HTTPS를 사용하여 구성 백업을 커넥터로 보냅니다.
++
+백업은 에서 액세스할 수 있습니다 https://ipaddress/occm/offboxconfig/[] 여기서 _ipaddress_는 커넥터 호스트의 IP 주소입니다.
+
+* Cloud Manager에서는 다른 관리 툴(예: System Manager 또는 CLI)과 몇 가지 볼륨 특성을 다르게 설정합니다.
++
+다음 표에는 Cloud Manager가 기본값과 다르게 설정하는 볼륨 특성이 나열되어 있습니다.
+
++
+[cols="15,85"]
+|===
+| 속성 | Cloud Manager에서 설정한 값입니다 
+
+
+| 자동 크기 조정 모드입니다 | 성장 
+
+
+| 최대 자동 크기 조정  a| 
+1,000%
+
+
+NOTE: 계정 관리자는 설정 페이지에서 이 값을 수정할 수 있습니다.
+
+
+
+| 보안 스타일 | CIFS 볼륨용 NTFS NFS 볼륨용 UNIX 
+
+
+| 공간 보장 스타일 | 없음 
+
+
+| UNIX 권한(NFS에만 해당) | 777 
+|===
++
+이러한 속성에 대한 자세한 내용은 _volume create_man 페이지를 참조하십시오.
+
+
+
+
+
+== 시스템 데이터용 내부 디스크
+
+Cloud Manager는 사용자 데이터를 위한 스토리지 외에 시스템 데이터를 위한 클라우드 스토리지도 구매합니다.
+
+
+
+=== 설치하고
+
+* 부팅, 루트 및 코어 데이터를 위한 노드당 디스크 3개:
++
+** 부팅 데이터용 45GiB io1 디스크
+** 루트 데이터용 140GiB GP3 디스크
+** 핵심 데이터용 540GiB GP2 디스크
+
+
+* 각 부팅 디스크 및 루트 디스크마다 하나의 EBS 스냅샷
+* HA 쌍의 경우 중재자 인스턴스를 위한 하나의 EBS 볼륨, 약 8GiB입니다
+
+
+
+TIP: AWS에서 NVRAM은 부팅 디스크에 있습니다.
+
+
+
+=== Azure(단일 노드)
+
+* 3개의 프리미엄 SSD 디스크:
++
+** 부팅 데이터용 10GiB 디스크 1개
+** 루트 데이터용 140GiB 디스크 1개
+** NVRAM에 512MB 디스크 1개
++
+Cloud Volumes ONTAP에 대해 선택한 가상 시스템이 Ultra SSD를 지원하는 경우 시스템은 프리미엄 SSD가 아닌 NVRAM에 32GiB Ultra SSD를 사용합니다.
+
+
+
+* 코어 절약을 위한 1024GiB 표준 HDD 디스크 1개
+* 각 부팅 디스크 및 루트 디스크에 대해 Azure 스냅샷 1개
+
+
+
+
+=== Azure(HA 쌍,
+
+* 부팅 볼륨용 10GiB 프리미엄 SSD 디스크 2개(노드당 1개)
+* 루트 볼륨에 대해 140GiB 프리미엄 스토리지 페이지 Blob 2개(노드당 1개)
+* 코어 저장용 1024GiB 표준 HDD 디스크 2개(노드당 1개)
+* NVRAM을 위한 512GiB 프리미엄 SSD 디스크 2개(노드당 1개)
+* 각 부팅 디스크 및 루트 디스크에 대해 Azure 스냅샷 1개
+
+
+
+
+=== Google Cloud(단일 노드)
+
+* 부팅 데이터용 10GiB SSD 영구 디스크 1개
+* 루트 데이터용 64GiB SSD 영구 디스크 1개
+* NVRAM에 대해 500GiB SSD 영구 디스크 1개
+* 코어 절약을 위한 315GiB 표준 영구 디스크 1개
+* 부팅 및 루트 데이터용 스냅샷입니다
+
+
+
+
+=== Google Cloud(HA 쌍,
+
+* 부팅 데이터를 위한 10GiB SSD 영구 디스크 2개
+* 루트 데이터를 위한 64GiB SSD 영구 디스크 4개
+* NVRAM에 대해 500GiB SSD 영구 디스크 2개
+* 코어 절약을 위한 315GiB 표준 영구 디스크 2개
+* 중재자 데이터를 위한 10GiB 표준 영구 디스크 1개
+* 부팅 및 루트 데이터용 스냅샷입니다
+
+
+
+
+=== 디스크가 상주하는 위치입니다
+
+Cloud Manager에서는 스토리지를 다음과 같이 레이아웃합니다.
+
+* 부팅 데이터는 인스턴스 또는 가상 머신에 연결된 디스크에 있습니다.
++
+부팅 이미지가 포함된 이 디스크는 Cloud Volumes ONTAP에서 사용할 수 없습니다.
+
+* 시스템 구성 및 로그가 포함된 루트 데이터는 aggr0에 상주합니다.
+* 스토리지 가상 시스템(SVM) 루트 볼륨은 aggr1에 있습니다.
+* 데이터 볼륨은 aggr1에도 상주합니다.
+
+
+
+
+=== 암호화
+
+Azure 및 Google Cloud Platform에서 부트 및 루트 디스크는 항상 암호화되므로 이러한 클라우드 공급자는 기본적으로 암호화를 사용합니다.
+
+KMS(키 관리 서비스)를 사용하여 AWS에서 데이터 암호화를 설정하면 Cloud Volumes ONTAP의 부팅 및 루트 디스크도 암호화됩니다. 여기에는 HA 쌍의 중재자 인스턴스를 위한 부팅 디스크가 포함됩니다. 디스크는 작업 환경을 생성할 때 선택한 CMK를 사용하여 암호화됩니다.

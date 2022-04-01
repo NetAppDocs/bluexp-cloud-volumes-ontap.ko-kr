@@ -1,0 +1,210 @@
+---
+sidebar: sidebar 
+permalink: task-manage-node-licenses.html 
+keywords: license, licensing, install, updating license, system license, add system license, adding a system license, byol license, add byol license, update byol license, nlf, license generator 
+summary: 디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다. 
+---
+= 노드 기반 라이센스 관리
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.
+
+_ 노드 기반 라이센스 _ 은(는) 이전 세대 라이센스 모델입니다(신규 고객은 사용할 수 없습니다).
+
+* NetApp에서 BYOL 라이센스를 구입함
+* 클라우드 공급자 마켓플레이스에서 시간별 PAYGO(Pay-as-you-go) 구독을 지원합니다
+
+
+디지털 지갑 _ 을(를) 사용하면 단일 위치에서 Cloud Volumes ONTAP에 대한 라이선스를 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.
+
+link:concept-licensing.html["Cloud Volumes ONTAP 라이센스에 대해 자세히 알아보십시오"].
+
+
+
+== PAYGO 라이센스를 관리합니다
+
+Digital Wallet 페이지에서 일련 번호 및 PAYGO 라이센스 유형을 비롯한 각 PAYGO Cloud Volumes ONTAP 시스템에 대한 세부 정보를 볼 수 있습니다.
+
+.단계
+. 모든 서비스 > 디지털 지갑 > Cloud Volumes ONTAP * 를 클릭합니다.
+. 드롭다운에서 * 노드 기반 라이선스 * 를 선택합니다.
+. PAYGO * 를 클릭합니다.
+. 각 PAYGO 라이센스에 대한 자세한 내용은 표에서 확인하십시오.
++
+image:screenshot_paygo_licenses.png["세 개의 PAYGO 라이센스가 있는 Digital Wallet 페이지의 테이블을 보여 주는 스크린샷 각 행에는 이름, 시스템 유형, 일련 번호, 패키지 및 라이센스 관리 링크가 표시됩니다."]
+
+. 필요한 경우 * PAYGO 라이센스 관리 * 를 클릭하여 PAYGO 라이센스를 변경하거나 인스턴스 유형을 변경합니다.
+
+
+
+
+== BYOL 라이센스 관리
+
+시스템 라이센스 및 추가 용량 라이센스를 추가 및 제거하여 NetApp에서 직접 구매한 라이센스를 관리합니다.
+
+
+
+=== 할당되지 않은 라이센스를 추가합니다
+
+새 Cloud Volumes ONTAP 시스템을 만들 때 라이센스를 선택할 수 있도록 디지털 지갑에 노드 기반 라이센스를 추가합니다. Digital Wallet은 이러한 라이센스를 _unassigned_로 식별합니다.
+
+.단계
+. 모든 서비스 > 디지털 지갑 > Cloud Volumes ONTAP * 를 클릭합니다.
+. 드롭다운에서 * 노드 기반 라이선스 * 를 선택합니다.
+. 할당되지 않음 * 을 클릭합니다.
+. 할당되지 않은 라이센스 추가 * 를 클릭합니다.
+. 라이센스의 일련 번호를 입력하거나 라이센스 파일을 업로드하십시오.
++
+라이센스 파일이 아직 없는 경우 아래 섹션을 참조하십시오.
+
+. 라이선스 추가 * 를 클릭합니다.
+
+
+Cloud Manager는 라이센스를 Digital Wallet에 추가합니다. 라이센스는 새 Cloud Volumes ONTAP 시스템에 연결할 때까지 할당되지 않은 것으로 식별됩니다. 이 경우 라이센스는 Digital Wallet의 * BYOL * 탭으로 이동합니다.
+
+
+
+=== 할당되지 않은 Exchange 노드 기반 라이센스
+
+아직 사용하지 않은 Cloud Volumes ONTAP에 대해 할당되지 않은 노드 기반 라이센스가 있는 경우 Cloud Backup 라이센스, Cloud Data Sense 라이센스 또는 Cloud Tiering 라이센스로 변환하여 라이센스를 교환할 수 있습니다.
+
+라이센스 교환은 Cloud Volumes ONTAP 라이센스를 해지하고 서비스에 대해 달러 상당 라이센스를 생성합니다.
+
+* Cloud Volumes ONTAP HA 쌍의 라이센스는 51TiB 데이터 서비스 라이센스로 변환됩니다
+* Cloud Volumes ONTAP 단일 노드의 라이센스는 32TiB 데이터 서비스 라이센스로 변환됩니다
+
+
+변환된 라이센스의 만료일은 Cloud Volumes ONTAP 라이센스와 동일합니다.
+
+.단계
+. 모든 서비스 > 디지털 지갑 > Cloud Volumes ONTAP * 를 클릭합니다.
+. 드롭다운에서 * 노드 기반 라이선스 * 를 선택합니다.
+. 할당되지 않음 * 을 클릭합니다.
+. Exchange 라이센스 * 를 클릭합니다.
++
+image:screenshot-exchange-license.png["할당되지 않은 라이센스 페이지에 나타나는 Exchange 라이센스 옵션 스크린샷"]
+
+. 라이센스를 교환할 서비스를 선택합니다.
+. 메시지가 표시되면 HA 쌍에 대한 추가 라이센스를 선택합니다.
+. 법적 동의를 읽고 * 동의 * 를 클릭합니다.
+
+
+Cloud Manager는 할당되지 않은 라이센스를 선택한 서비스로 변환합니다. 데이터 서비스 라이센스 * 탭에서 새 라이센스를 볼 수 있습니다.
+
+
+
+=== 시스템 라이센스 파일을 얻습니다
+
+대부분의 경우 Cloud Manager는 NetApp Support 사이트 계정을 사용하여 라이센스 파일을 자동으로 가져올 수 있습니다. 그러나 그렇지 않으면 라이센스 파일을 수동으로 업로드해야 합니다. 라이센스 파일이 없는 경우 netapp.com 에서 얻을 수 있습니다.
+
+.단계
+. 로 이동합니다 https://register.netapp.com/register/getlicensefile["NetApp 라이센스 파일 생성기"^] 를 입력하고 NetApp Support 사이트 자격 증명을 사용하여 로그인합니다.
+. 비밀번호를 입력하고 제품을 선택한 다음 일련 번호를 입력하고 개인정보 보호정책을 읽고 동의했는지 확인한 다음 * 제출 * 을 클릭합니다.
++
+* 예 *
+
++
+image:screenshot_license_generator.gif["스크린샷: 암호, 제품(NetApp Cloud Volumes ONTAP BYOL for AWS) 및 제품 일련 번호를 포함하여 NetApp 라이센스 파일 생성기 웹 페이지의 예를 보여줍니다."]
+
+. 이메일 또는 직접 다운로드를 통해 serialnumber.nlf JSON 파일을 수신할지 여부를 선택합니다.
+
+
+
+
+=== 시스템 라이센스를 업데이트합니다
+
+NetApp 담당자에게 연락하여 BYOL 구독을 갱신하면 Cloud Manager는 NetApp에서 새 라이센스를 자동으로 얻어 Cloud Volumes ONTAP 시스템에 설치합니다.
+
+Cloud Manager가 보안 인터넷 연결을 통해 라이센스 파일에 액세스할 수 없는 경우 직접 파일을 얻은 다음 파일을 Cloud Manager에 수동으로 업로드할 수 있습니다.
+
+.단계
+. 모든 서비스 > 디지털 지갑 > Cloud Volumes ONTAP * 를 클릭합니다.
+. 드롭다운에서 * 노드 기반 라이선스 * 를 선택합니다.
+. BYOL * 탭에서 Cloud Volumes ONTAP 시스템의 세부 정보를 확장합니다.
+. 시스템 라이센스 옆에 있는 작업 메뉴를 클릭하고 * 라이센스 업데이트 * 를 선택합니다.
+. 라이센스 파일(또는 HA 쌍이 있는 경우 파일)을 업로드합니다.
+. Update License * 를 클릭합니다.
+
+
+Cloud Manager는 Cloud Volumes ONTAP 시스템에서 라이센스를 업데이트합니다.
+
+
+
+=== 추가 용량 라이센스 관리
+
+Cloud Volumes ONTAP BYOL 시스템용 추가 용량 라이센스를 구입하여 368TiB 이상의 용량을 BYOL 시스템 라이센스와 함께 할당할 수 있습니다. 예를 들어, 라이센스 용량을 하나 더 구매하여 Cloud Volumes ONTAP에 최대 736TiB의 용량을 할당할 수 있습니다. 또는 최대 1.4PiB까지 추가 용량 라이센스를 3개 구매할 수 있습니다.
+
+단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다.
+
+
+
+==== 용량 라이센스 추가
+
+Cloud Manager 오른쪽 하단에 있는 채팅 아이콘을 통해 연락하여 추가 용량 라이센스를 구매하십시오. 라이센스를 구입한 후 Cloud Volumes ONTAP 시스템에 적용할 수 있습니다.
+
+.단계
+. 모든 서비스 > 디지털 지갑 > Cloud Volumes ONTAP * 를 클릭합니다.
+. 드롭다운에서 * 노드 기반 라이선스 * 를 선택합니다.
+. BYOL * 탭에서 Cloud Volumes ONTAP 시스템의 세부 정보를 확장합니다.
+. 용량 라이센스 추가 * 를 클릭합니다.
+. 일련 번호를 입력하거나 라이센스 파일(또는 HA 쌍이 있는 경우 파일)을 업로드합니다.
+. 용량 라이센스 추가 * 를 클릭합니다.
+
+
+
+
+==== 용량 라이센스를 업데이트합니다
+
+추가 용량 라이센스의 기간을 연장한 경우 Cloud Manager에서 라이센스를 업데이트해야 합니다.
+
+.단계
+. 모든 서비스 > 디지털 지갑 > Cloud Volumes ONTAP * 를 클릭합니다.
+. 드롭다운에서 * 노드 기반 라이선스 * 를 선택합니다.
+. BYOL * 탭에서 Cloud Volumes ONTAP 시스템의 세부 정보를 확장합니다.
+. 용량 라이센스 옆에 있는 작업 메뉴를 클릭하고 * 라이센스 업데이트 * 를 선택합니다.
+. 라이센스 파일(또는 HA 쌍이 있는 경우 파일)을 업로드합니다.
+. Update License * 를 클릭합니다.
+
+
+
+
+==== 용량 라이센스를 제거합니다
+
+추가 용량 라이센스가 만료되어 더 이상 사용되지 않는 경우 언제든지 라이센스를 제거할 수 있습니다.
+
+.단계
+. 모든 서비스 > 디지털 지갑 > Cloud Volumes ONTAP * 를 클릭합니다.
+. 드롭다운에서 * 노드 기반 라이선스 * 를 선택합니다.
+. BYOL * 탭에서 Cloud Volumes ONTAP 시스템의 세부 정보를 확장합니다.
+. 용량 라이센스 옆에 있는 작업 메뉴를 클릭하고 * 라이센스 제거 * 를 선택합니다.
+. 제거 * 를 클릭합니다.
+
+
+
+
+=== Eval 라이센스를 BYOL로 변환합니다
+
+평가판 라이센스는 30일간 사용할 수 있습니다. 현재 위치 업그레이드에 대한 평가 라이센스 위에 새로운 BYOL 라이센스를 적용할 수 있습니다.
+
+평가판 라이센스를 BYOL로 변환하면 Cloud Manager가 Cloud Volumes ONTAP 시스템을 재시작합니다.
+
+* 단일 노드 시스템의 경우 재시작 시 재부팅 프로세스 중에 I/O가 중단됩니다.
+* HA 쌍의 경우, 재시작은 테이크오버 및 반환을 시작하여 클라이언트에 계속 I/O를 제공합니다.
+
+
+.단계
+. 모든 서비스 > 디지털 지갑 > Cloud Volumes ONTAP * 를 클릭합니다.
+. 드롭다운에서 * 노드 기반 라이선스 * 를 선택합니다.
+. Eval * 을 클릭합니다.
+. 표에서 Cloud Volumes ONTAP 시스템용 BYOL 라이센스 * 로 변환 을 클릭합니다.
+. 일련 번호를 입력하거나 라이센스 파일을 업로드하십시오.
+. 사용권 변환 * 을 클릭합니다.
+
+
+Cloud Manager가 변환 프로세스를 시작합니다. 이 프로세스의 일부로 Cloud Volumes ONTAP가 자동으로 다시 시작됩니다. 백업하는 경우 라이센스 정보에 새 라이센스가 반영됩니다.

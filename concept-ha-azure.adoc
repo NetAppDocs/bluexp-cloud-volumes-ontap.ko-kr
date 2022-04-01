@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: concept-ha-azure.html 
+keywords: high availability, HA, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, recovery point objective, recovery time objective, nas, nfs, cifs, iscsi, mpio, alua, failover, failure, azure, shared storage, active, passive, load balancer, availability set, storage accounts, page blobs 
+summary: 'Cloud Volumes ONTAP HA(고가용성) 쌍은 클라우드 환경에서 장애가 발생할 경우 엔터프라이즈급 안정성과 지속적인 운영을 제공합니다. Azure에서 스토리지는 두 노드 간에 공유됩니다.' 
+---
+= Azure의 고가용성 쌍
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP HA(고가용성) 쌍은 클라우드 환경에서 장애가 발생할 경우 엔터프라이즈급 안정성과 지속적인 운영을 제공합니다. Azure에서 스토리지는 두 노드 간에 공유됩니다.
+
+
+
+== HA 구성 요소
+
+Azure의 Cloud Volumes ONTAP HA 구성에는 다음과 같은 구성요소가 포함됩니다.
+
+image:diagram_ha_azure.png["Cloud Manager 및 클라이언트에서 들어오는 트래픽을 관리하는 로드 밸런서, 가용성 세트의 Cloud Volumes ONTAP 노드 2개, 부팅 데이터의 SSD 디스크, 고객 데이터를 위한 페이지 Blob 등을 보여 주는 개념적 이미지입니다."]
+
+Cloud Manager가 사용자를 위해 배포하는 Azure 구성요소에 대한 다음 정보를 확인하십시오.
+
+Azure 표준 로드 밸런서:: 로드 밸런서는 Cloud Volumes ONTAP HA 쌍에 대한 들어오는 트래픽을 관리합니다.
+가용성 설정:: Azure 가용성 집합은 Cloud Volumes ONTAP 노드의 논리적 그룹입니다. Availability Set는 노드가 서로 다른 장애 상태를 유지하도록 하고 도메인을 업데이트하여 이중화 및 가용성을 제공합니다. https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["Azure 문서의 가용성 집합에 대해 자세히 알아보십시오"^].
+디스크:: 고객 데이터는 프리미엄 스토리지 페이지 Blob에 있습니다. 각 노드는 다른 노드의 스토리지에 액세스할 수 있습니다. 의 경우 추가 스토리지도 필요합니다 link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["부팅, 루트 및 코어 데이터"].
+스토리지 계정::
++
+--
+* 관리되는 디스크에는 하나의 스토리지 계정이 필요합니다.
+* 스토리지 계정당 디스크 용량 제한에 도달했으므로 프리미엄 스토리지 페이지 Blob에 하나 이상의 스토리지 계정이 필요합니다.
++
+https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-targets["Azure 문서: 스토리지 계정의 Azure 스토리지 확장성 및 성능 목표"^].
+
+* Azure Blob 저장소에 데이터를 계층화하려면 하나의 스토리지 계정이 필요합니다.
+* Cloud Volumes ONTAP 9.7부터 Cloud Manager가 HA Pair용으로 생성하는 스토리지 계정은 범용 v2 스토리지 계정입니다.
+* 작업 환경을 생성할 때 Cloud Volumes ONTAP 9.7 HA 쌍에서 Azure 스토리지 계정으로 HTTPS 연결을 설정할 수 있습니다. 이 옵션을 설정하면 쓰기 성능에 영향을 줄 수 있습니다. 작업 환경을 만든 후에는 설정을 변경할 수 없습니다.
+
+
+--
+
+
+
+
+== RPO 및 RTO
+
+HA 구성을 사용하면 다음과 같이 데이터의 고가용성을 유지할 수 있습니다.
+
+* 복구 지점 목표(RPO)는 0초입니다. 데이터는 데이터 손실 없이 트랜잭션 측면에서 일관적입니다.
+* 복구 시간 목표(RTO)는 60초입니다. 정전이 발생할 경우 60초 이내에 데이터를 사용할 수 있어야 합니다.
+
+
+
+
+== 스토리지 테이크오버 및 반환
+
+물리적 ONTAP 클러스터와 마찬가지로 Azure HA 쌍의 스토리지가 노드 간에 공유됩니다. 파트너의 스토리지에 연결하면 각 노드가 _Takeover_가 발생한 경우 다른 노드의 스토리지에 액세스할 수 있습니다. 네트워크 경로 페일오버 메커니즘을 통해 클라이언트 및 호스트가 정상 작동하는 노드와 계속 통신할 수 있습니다. 노드가 다시 온라인 상태가 되면 PARTNER_에서 BACK_STORAGE를 제공합니다.
+
+NAS 구성의 경우 장애가 발생할 경우 데이터 IP 주소가 HA 노드 간에 자동으로 마이그레이션됩니다.
+
+iSCSI의 경우 Cloud Volumes ONTAP는 다중 경로 I/O(MPIO) 및 ALUA(Asymmetric Logical Unit Access)를 사용하여 능동 최적화 경로와 최적화되지 않은 경로 간의 경로 페일오버를 관리합니다.
+
+
+NOTE: ALUA를 지원하는 특정 호스트 구성에 대한 자세한 내용은 를 참조하십시오 http://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"^] 및 호스트 운영 체제용 Host Utilities 설치 및 설정 설명서를 참조하십시오.
+
+스토리지 테이크오버, 재동기화 및 반환은 기본적으로 모두 자동으로 수행됩니다. 사용자 작업이 필요하지 않습니다.
+
+
+
+== 구성의 스토리지
+
+HA 쌍을 액티브-액티브 구성으로 사용할 수 있으며, 두 노드에서 클라이언트에 데이터를 제공하거나 액티브-패시브 구성으로 사용할 수 있습니다. 이 구성에서는 패시브 노드가 액티브 노드의 스토리지를 인계받은 경우에만 데이터 요청에 응답합니다.

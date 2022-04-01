@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: task-connect-lun.html 
+keywords: lun, connect lun, iscsi lun, target iqn, iqn 
+summary: iSCSI 볼륨을 생성할 때 Cloud Manager에서 자동으로 LUN을 생성합니다. NetApp은 볼륨당 하나의 LUN만 생성하므로 관리가 필요하지 않습니다. 볼륨을 생성한 후 IQN을 사용하여 호스트에서 LUN에 연결합니다. 
+---
+= LUN을 호스트에 연결합니다
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+iSCSI 볼륨을 생성할 때 Cloud Manager에서 자동으로 LUN을 생성합니다. NetApp은 볼륨당 하나의 LUN만 생성하므로 관리가 필요하지 않습니다. 볼륨을 생성한 후 IQN을 사용하여 호스트에서 LUN에 연결합니다.
+
+다음 사항에 유의하십시오.
+
+* Cloud Manager의 자동 용량 관리는 LUN에 적용되지 않습니다. Cloud Manager에서 LUN을 생성하면 자동 확장 기능이 해제됩니다.
+* System Manager 또는 CLI에서 추가 LUN을 생성할 수 있습니다.
+
+
+.단계
+. Canvas 페이지에서 볼륨을 관리할 Cloud Volumes ONTAP 작업 환경을 두 번 클릭합니다.
+. 볼륨을 선택한 다음 * 대상 IQN * 을 클릭합니다.
+. IQN 이름을 복사하려면 * Copy * 를 클릭합니다.
+. 호스트에서 LUN으로의 iSCSI 접속을 설정합니다.
++
+** http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-iscsi-rhel-cg/GUID-15E8C226-BED5-46D0-BAED-379EA4311340.html["Red Hat Enterprise Linux용 ONTAP 9 iSCSI Express 구성: 대상으로 iSCSI 세션 시작"^]
+** http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-iscsi-cpg/GUID-857453EC-90E9-4AB6-B543-83827CF374BF.html["Windows용 ONTAP 9 iSCSI Express 구성: 타겟으로 iSCSI 세션 시작"^]
+
+
+

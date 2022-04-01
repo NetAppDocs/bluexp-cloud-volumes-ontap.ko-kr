@@ -1,0 +1,110 @@
+---
+sidebar: sidebar 
+permalink: concept-storage.html 
+keywords: storage, capacity, volumes, aggregates, raw capacity, usable capacity, aws, azure 
+summary: Cloud Volumes ONTAP에서 클라우드 스토리지를 사용하는 방법을 이해하면 스토리지 비용을 이해하는 데 도움이 됩니다. 
+---
+= 디스크와 애그리게이트
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP에서 클라우드 스토리지를 사용하는 방법을 이해하면 스토리지 비용을 이해하는 데 도움이 됩니다.
+
+
+CAUTION: 모든 디스크와 애그리게이트는 Cloud Manager에서 직접 생성 및 삭제해야 합니다. 다른 관리 도구에서 이러한 작업을 수행해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 주고 향후 디스크를 추가할 수 없도록 하며 중복 클라우드 공급자 비용을 생성할 수 있습니다.
+
+
+
+== 개요
+
+Cloud Volumes ONTAP은 클라우드 공급자 스토리지를 디스크로 사용하고 이러한 스토리지를 하나 이상의 애그리게이트로 그룹화합니다. 애그리게이트는 하나 이상의 볼륨에 스토리지를 제공합니다.
+
+image:diagram_storage.png["이 그림에서는 디스크로 구성된 애그리게이트와 Cloud Volumes ONTAP이 호스트에서 사용할 수 있도록 하는 데이터 볼륨을 보여 줍니다."]
+
+여러 유형의 클라우드 디스크가 지원됩니다. Cloud Volumes ONTAP를 배포할 때 볼륨을 생성할 때 디스크 유형을 선택하고 기본 디스크 크기를 선택합니다.
+
+
+TIP: 클라우드 공급자로부터 구입한 총 스토리지 양은 _raw capacity_입니다. 가용 용량은 약 12~14%가 Cloud Volumes ONTAP용으로 예약된 오버헤드이므로 _ 이(가) 적습니다. 예를 들어 Cloud Manager가 500GiB 애그리게이트를 생성할 경우 사용 가능 용량은 442.94GiB입니다.
+
+
+
+== 설치하고
+
+AWS에서 Cloud Volumes ONTAP는 사용자 데이터에 EBS 스토리지를 사용하고, 일부 EC2 인스턴스 유형에서 로컬 NVMe 스토리지를 Flash Cache로 사용합니다.
+
+EBS 스토리지:: AWS에서는 aggregate에 동일한 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 최대 디스크 크기는 16TiB입니다.
++
+--
+기본 EBS 디스크 유형은 범용 SSD(GP3 또는 GP2), 프로비저닝된 IOPS SSD(i1) 또는 처리량 최적화 HDD(st1)일 수 있습니다. EBS 디스크를 Amazon S3와 에 페어링할 수 있습니다 link:concept-data-tiering.html["비활성 데이터를 저비용 오브젝트 스토리지로 계층화합니다"].
+
+
+NOTE: 처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오브젝트 스토리지에 계층화하지 않는 것이 좋습니다.
+
+--
+로컬 NVMe 스토리지:: 일부 EC2 인스턴스 유형에는 Cloud Volumes ONTAP이 사용하는 로컬 NVMe 스토리지가 있습니다 link:concept-flash-cache.html["Flash Cache를 참조하십시오"].
+
+
+* 관련 링크 *
+
+* http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 설명서:EBS 볼륨 유형"^]
+* link:task-planning-your-config.html["AWS에서 시스템의 디스크 유형 및 디스크 크기를 선택하는 방법에 대해 알아보십시오"]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_limits_aws_9101.html["AWS의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다"^]
+* http://docs.netapp.com/us-en/cloud-volumes-ontap/reference_configs_aws_9101.html["AWS에서 지원되는 Cloud Volumes ONTAP 구성 검토"^]
+
+
+
+
+== Azure 스토리지
+
+Azure에서는 aggregate가 동일한 크기의 디스크를 최대 12개까지 포함할 수 있습니다. 디스크 유형과 최대 디스크 크기는 단일 노드 시스템을 사용하는지 HA 쌍을 사용하는지에 따라 달라집니다.
+
+단일 노드 시스템:: 단일 노드 시스템에서는 세 가지 유형의 Azure 관리 디스크를 사용할 수 있습니다.
++
+--
+* _Premium SSD 관리 디스크_ 높은 비용으로 I/O 집약적인 작업 부하에 높은 성능을 제공합니다.
+* _Standard SSD Managed Disks_는 낮은 IOPS가 필요한 워크로드에 일관된 성능을 제공합니다.
+* _표준 HDD 관리 디스크 _ 는 높은 IOPS가 필요하지 않고 비용을 절감하려는 경우에 적합합니다.
++
+관리되는 각 디스크 유형의 최대 디스크 크기는 32TiB입니다.
+
++
+Azure Blob 저장소와 관리되는 디스크를 에 페어링할 수 있습니다 link:concept-data-tiering.html["비활성 데이터를 저비용 오브젝트 스토리지로 계층화합니다"].
+
+
+
+--
+HA 쌍:: HA 쌍에서는 최대 디스크 크기가 8TiB인 프리미엄 페이지 Blob을 사용합니다.
+
+
+* 관련 링크 *
+
+* https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure 설명서: Azure 관리 디스크 유형"^]
+* https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Microsoft Azure 설명서: Azure 페이지 Blob의 개요"^]
+* link:task-planning-your-config-azure.html["Azure에서 시스템의 디스크 유형 및 디스크 크기를 선택하는 방법에 대해 알아보십시오"]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_limits_azure_9101.html["Azure의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다"^]
+
+
+
+
+== GCP 스토리지
+
+GCP에서 애그리게이트에는 동일한 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 최대 디스크 크기는 64TiB입니다.
+
+디스크 유형은 _ Zonal SSD 영구 디스크 _, _ 균형 조정 영구 디스크 _ 또는 _ Zonal 표준 영구 디스크 _ 일 수 있습니다. 영구 디스크를 Google Storage 버킷과 에 페어링할 수 있습니다 link:concept-data-tiering.html["비활성 데이터를 저비용 오브젝트 스토리지로 계층화합니다"].
+
+* 관련 링크 *
+
+* https://cloud.google.com/compute/docs/disks/["Google Cloud Platform 설명서: 스토리지 옵션"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_limits_gcp_9101.html["GCP의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다"^]
+
+
+
+
+== RAID 유형입니다
+
+각 Cloud Volumes ONTAP 애그리게이트의 RAID 유형은 RAID0(스트라이핑)입니다. 다른 RAID 유형은 지원되지 않습니다. Cloud Volumes ONTAP은 클라우드 공급자에 의존하여 디스크 가용성 및 내구성을 제공합니다.

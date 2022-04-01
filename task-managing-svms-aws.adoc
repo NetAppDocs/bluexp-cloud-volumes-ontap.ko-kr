@@ -1,0 +1,234 @@
+---
+sidebar: sidebar 
+permalink: task-managing-svms-aws.html 
+keywords: storage virtual machine, vserver, svm, storage vm, supported number, number supported 
+summary: 스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, 클라이언트에 스토리지 및 데이터 서비스를 제공합니다. SVM 또는 가상 서버로서 이를 알 수 있습니다. Cloud Volumes ONTAP는 기본적으로 하나의 스토리지 VM으로 구성되지만 일부 구성에서는 추가 스토리지 VM을 지원합니다. 
+---
+= AWS에서 Cloud Volumes ONTAP를 위한 데이터 서비스 스토리지 VM을 생성합니다
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, 클라이언트에 스토리지 및 데이터 서비스를 제공합니다. 이를 _SVM_ 또는 _vserver_로 알고 있을 수 있습니다. Cloud Volumes ONTAP는 기본적으로 하나의 스토리지 VM으로 구성되지만 일부 구성에서는 추가 스토리지 VM을 지원합니다.
+
+추가 데이터 서비스 스토리지 VM을 생성하려면 AWS에서 IP 주소를 할당한 다음 Cloud Volumes ONTAP 구성에 따라 ONTAP 명령을 실행해야 합니다.
+
+
+
+== 지원되는 스토리지 VM 수입니다
+
+9.7 릴리즈부터 애드온 라이센스가 포함된 AWS에서 Cloud Volumes ONTAP BYOL 방식으로 여러 스토리지 VM이 지원됩니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap/index.html["Cloud Volumes ONTAP 릴리즈 노트"^] 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.
+
+다른 모든 Cloud Volumes ONTAP 구성에서는 재해 복구에 사용되는 1개의 데이터 서비스 스토리지 VM과 1개의 대상 스토리지 VM을 지원합니다. 소스 스토리지 VM에 중단이 발생할 경우 데이터 액세스를 위해 대상 스토리지 VM을 활성화할 수 있습니다.
+
+
+
+== 구성에 대한 제한을 확인합니다
+
+각 EC2 인스턴스는 네트워크 인터페이스당 최대 수의 전용 IPv4 주소를 지원합니다. 새 스토리지 VM에 대해 AWS에서 IP 주소를 할당하기 전에 한도를 확인해야 합니다.
+
+.단계
+. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_limits_aws_9101.html["Cloud Volumes ONTAP 릴리즈 노트 의 스토리지 제한 사항 섹션을 참조하십시오"^].
+. 인스턴스 유형에 대한 인터페이스당 최대 IP 주소 수를 식별합니다.
+. AWS에서 IP 주소를 할당할 때 다음 섹션에서 필요하므로 이 번호를 기록해 두십시오.
+
+
+
+
+== AWS에서 IP 주소를 할당합니다
+
+새 스토리지 VM에 대한 LIF를 생성하기 전에 AWS의 포트 e0a에 프라이빗 IPv4 주소를 할당해야 합니다.
+
+스토리지 VM을 위한 선택적 관리 LIF는 단일 노드 시스템과 단일 AZ의 HA 쌍에서 프라이빗 IP 주소를 필요로 합니다. 이 관리 LIF는 SnapCenter과 같은 관리 툴에 연결할 수 있습니다.
+
+.단계
+. AWS에 로그인하고 EC2 서비스를 엽니다.
+. Cloud Volumes ONTAP 인스턴스를 선택하고 * 네트워킹 * 을 클릭합니다.
++
+HA 쌍에서 스토리지 VM을 생성하는 경우 노드 1을 선택합니다.
+
+. 아래로 * 네트워크 인터페이스 * 로 스크롤하고 포트 e0a의 * 인터페이스 ID * 를 클릭합니다.
++
+image:screenshot_aws_e0a.gif["네트워크 인터페이스에서 포트 e0a를 표시하는 AWS 콘솔의 스크린 샷"]
+
+. 네트워크 인터페이스를 선택하고 * 작업 > IP 주소 관리 * 를 클릭합니다.
+. e0a의 IP 주소 목록을 확장합니다.
+. IP 주소 확인:
++
+.. 할당된 IP 주소의 수를 세어하여 포트에 추가 IP를 위한 공간이 있는지 확인합니다.
++
+이 페이지의 이전 섹션에서 인터페이스당 지원되는 최대 IP 주소 수를 확인해야 합니다.
+
+.. 선택 사항: Cloud Volumes ONTAP용 CLI로 이동하여 * network interface show * 를 실행하여 각 IP 주소가 사용 중인지 확인합니다.
++
+IP 주소를 사용하지 않는 경우 새 스토리지 VM에서 사용할 수 있습니다.
+
+
+
+. AWS 콘솔로 돌아가서 * Assign new IP address * 를 클릭하여 새 스토리지 VM에 필요한 양에 따라 추가 IP 주소를 할당합니다.
++
+** 단일 노드 시스템: 사용되지 않는 1개의 보조 전용 IP가 필요합니다.
++
+스토리지 VM에 관리 LIF를 생성하려면 선택적인 보조 프라이빗 IP가 필요합니다.
+
+** 단일 AZ의 HA 쌍: 노드 1에 사용되지 않는 2차 프라이빗 IP가 1개 필요합니다.
++
+스토리지 VM에 관리 LIF를 생성하려면 선택적인 보조 프라이빗 IP가 필요합니다.
+
+** 여러 AZs의 HA 쌍: 각 노드에 사용하지 않는 2차 프라이빗 IP가 1개 필요합니다.
+
+
+. 단일 AZ의 HA 쌍에서 IP 주소를 할당하는 경우 * Allow secondary private IPv4 address to be reassign되도록 * 를 활성화합니다.
+. 저장 * 을 클릭합니다.
+. 여러 AZs에 HA 쌍이 있는 경우 노드 2에 대해 이 단계를 반복해야 합니다.
+
+
+
+
+== 단일 노드 시스템에 스토리지 VM을 생성합니다
+
+다음 단계에서는 단일 노드 시스템에 새 스토리지 VM을 생성합니다. NAS LIF를 생성하려면 하나의 프라이빗 IP 주소가 필요하며, 관리 LIF를 생성하려면 또 다른 선택적 프라이빗 IP 주소가 필요합니다.
+
+.단계
+. 스토리지 VM을 생성하고 스토리지 VM으로 가는 경로를 생성합니다.
++
+[source, cli]
+----
+vserver create -rootvolume-security-style unix -rootvolume root_svm_2 -snapshot-policy default -vserver svm_2 -aggregate aggr1
+----
++
+[source, cli]
+----
+network route create -destination 0.0.0.0/0 -vserver svm_2 -gateway subnet_gateway
+----
+. NAS LIF를 생성합니다.
++
+[source, cli]
+----
+network interface create -auto-revert true -vserver svm_2 -service-policy default-data-files -home-port e0a -address private_ip_x -netmask node1Mask -lif ip_nas_2 -home-node cvo-node
+----
++
+여기서 _private_ip_x_는 e0a에서 사용되지 않는 보조 전용 IP입니다.
+
+. 선택 사항: 스토리지 VM 관리 LIF를 생성합니다.
++
+[source, cli]
+----
+network interface create -auto-revert true -vserver svm_2 -service-policy default-management -home-port e0a -address private_ip_y -netmask node1Mask -lif ip_svm_mgmt_2 -home-node cvo-node
+----
++
+여기서 _private_ip_y_는 e0a에서 사용되지 않는 또 다른 보조 전용 IP입니다.
+
+
+
+
+
+== 단일 AZ에서 HA 쌍에 스토리지 VM을 생성합니다
+
+다음 단계에서는 단일 AZ의 HA 쌍에서 새 스토리지 VM을 생성합니다. NAS LIF를 생성하려면 하나의 프라이빗 IP 주소가 필요하며, 관리 LIF를 생성하려면 또 다른 선택적 프라이빗 IP 주소가 필요합니다.
+
+이 두 LIF는 모두 노드 1에 할당됩니다. 장애가 발생할 경우 전용 IP 주소를 노드 간에 이동할 수 있습니다.
+
+.단계
+. 스토리지 VM을 생성하고 스토리지 VM으로 가는 경로를 생성합니다.
++
+[source, cli]
+----
+vserver create -rootvolume-security-style unix -rootvolume root_svm_2 -snapshot-policy default -vserver svm_2 -aggregate aggr1
+----
++
+[source, cli]
+----
+network route create -destination 0.0.0.0/0 -vserver svm_2 -gateway subnet_gateway
+----
+. 노드 1에 NAS LIF를 생성합니다.
++
+[source, cli]
+----
+network interface create -auto-revert true -vserver svm_2 -service-policy default-data-files -home-port e0a -address private_ip_x -netmask node1Mask -lif ip_nas_2 -home-node cvo-node1
+----
++
+여기서 _private_ip_x_는 cvo-node1의 e0a에서 사용되지 않는 보조 전용 IP입니다. 서비스 정책 default-data-files는 IP가 파트너 노드로 마이그레이션할 수 있음을 나타내므로 테이크오버의 경우 이 IP 주소를 cvo-node2의 e0a로 재배치할 수 있습니다.
+
+. 선택 사항: 노드 1에 스토리지 VM 관리 LIF를 생성합니다.
++
+[source, cli]
+----
+network interface create -auto-revert true -vserver svm_2 -service-policy default-management -home-port e0a -address private_ip_y -netmask node1Mask -lif ip_svm_mgmt_2 -home-node cvo-node1
+----
++
+여기서 _private_ip_y_는 e0a에서 사용되지 않는 또 다른 보조 전용 IP입니다.
+
+
+
+
+
+== 여러 AZs의 HA 쌍에서 스토리지 VM을 생성합니다
+
+다음 단계에서는 여러 AZs의 HA 쌍에서 새 스토리지 VM을 생성합니다.
+
+NAS LIF에는 _floating_IP 주소가 필요하며 관리 LIF에는 선택 사항입니다. 이러한 부동 IP 주소는 AWS에서 전용 IP를 할당할 필요가 없습니다. 대신, 동일한 VPC에서 특정 노드의 ENI를 가리키도록 AWS 라우트 테이블에 유동 IP가 자동으로 구성됩니다.
+
+유동 IP가 ONTAP와 연동하려면 각 노드의 모든 스토리지 VM에 전용 IP 주소를 구성해야 합니다. 이 내용은 아래 단계에서 iSCSI LIF가 노드 1과 노드 2에 생성되는 것으로 반영됩니다.
+
+.단계
+. 스토리지 VM을 생성하고 스토리지 VM으로 가는 경로를 생성합니다.
++
+[source, cli]
+----
+vserver create -rootvolume-security-style unix -rootvolume root_svm_2 -snapshot-policy default -vserver svm_2 -aggregate aggr1
+----
++
+[source, cli]
+----
+network route create -destination 0.0.0.0/0 -vserver svm_2 -gateway subnet_gateway
+----
+. 노드 1에 NAS LIF를 생성합니다.
++
+[source, cli]
+----
+network interface create -auto-revert true -vserver svm_2 -service-policy default-data-files -home-port e0a -address floating_ip -netmask node1Mask -lif ip_nas_floating_2 -home-node cvo-node1
+----
++
+** 유동 IP 주소는 HA 구성을 배포하는 AWS 지역의 모든 VPC에 대한 CIDR 블록 외부에 있어야 합니다. 192.168.209.27은 부동 IP 주소의 예입니다. link:reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["부동 IP 주소 선택에 대해 자세히 알아보십시오"].
+** '-service-policy default-data-files'는 IP가 파트너 노드로 마이그레이션될 수 있음을 나타낸다.
+
+
+. 선택 사항: 노드 1에 스토리지 VM 관리 LIF를 생성합니다.
++
+[source, cli]
+----
+network interface create -auto-revert true -vserver svm_2 -service-policy default-management -home-port e0a -address floating_ip -netmask node1Mask -lif ip_svm_mgmt_2 -home-node cvo-node1
+----
+. 노드 1에 iSCSI LIF를 생성합니다.
++
+[source, cli]
+----
+network interface create -vserver svm_2 -service-policy default-data-blocks -home-port e0a -address private_ip -netmask nodei1Mask -lif ip_node1_iscsi_2 -home-node cvo-node1
+----
++
+** 이 iSCSI LIF는 스토리지 VM에 있는 유동 IP의 LIF 마이그레이션을 지원하는 데 필요합니다. iSCSI LIF가 될 필요는 없지만 노드 간에 마이그레이션하도록 구성할 수는 없습니다.
+** '-service-policy default-data-block'은 노드 간에 IP 주소가 마이그레이션되지 않음을 의미한다.
+** _private_ip_은 cvo_node1의 eth0(e0a)에서 사용되지 않는 보조 전용 IP 주소입니다.
+
+
+. 노드 2에 iSCSI LIF를 생성합니다.
++
+[source, cli]
+----
+network interface create -vserver svm_2 -service-policy default-data-blocks -home-port e0a -address private_ip -netmaskNode2Mask -lif ip_node2_iscsi_2 -home-node cvo-node2
+----
++
+** 이 iSCSI LIF는 스토리지 VM에 있는 유동 IP의 LIF 마이그레이션을 지원하는 데 필요합니다. iSCSI LIF가 될 필요는 없지만 노드 간에 마이그레이션하도록 구성할 수는 없습니다.
+** '-service-policy default-data-block'은 노드 간에 IP 주소가 마이그레이션되지 않음을 의미한다.
+** _private_ip_는 cvo_node2의 eth0(e0a)에서 사용되지 않는 보조 전용 IP 주소입니다.
+
+
+

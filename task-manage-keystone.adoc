@@ -1,0 +1,93 @@
+---
+sidebar: sidebar 
+permalink: task-manage-keystone.html 
+keywords: license, licensing, install, updating license, system license, add system license, adding a system license, byol license, add byol license, update byol license, nlf, license generator 
+summary: 디지털 지갑 페이지에서는 Cloud Volumes ONTAP에 대한 라이선스를 한 곳에서 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다. 
+---
+= Keystone Flex 구독 관리
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 활성화하여 디지털 지갑에서 Keystone Flex 구독을 관리하십시오. 또한 커밋된 용량에 대한 변경 내용을 요청하고 구독 연결을 해제할 수 있습니다.
+
+Keystone Flex Subscription_ 은 NetApp에서 제공하는 성장에 따른 지불 스토리지 서비스입니다.
+
+디지털 지갑 _ 을(를) 사용하면 단일 위치에서 Cloud Volumes ONTAP에 대한 라이선스를 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.
+
+link:concept-licensing.html["Cloud Volumes ONTAP 라이센스에 대해 자세히 알아보십시오"].
+
+
+
+== 계정을 인증합니다
+
+Cloud Manager에서 Keystone Flex 서브스크립션을 사용하고 관리하기 전에 NetApp에 문의하여 Keystone Flex 구독으로 Cloud Manager 사용자 계정을 인증해야 합니다.
+
+.단계
+. 모든 서비스 > 디지털 지갑 * 을 클릭합니다.
+. Keystone 유연한 구독 * 을 클릭합니다.
+. NetApp Keystone* 시작 페이지가 나타나면 페이지에 나열된 주소로 이메일을 보냅니다.
++
+NetApp 담당자가 사용자 계정에 구독 액세스를 승인하여 요청을 처리합니다.
+
+. 가입을 보려면 * Keystone Flex 가입 * 으로 되돌아오십시오.
++
+image:screenshot-keystone-overview.png["Keystone Flex 가입 목록을 보여주는 스크린샷"]
+
+
+
+Cloud Volumes ONTAP에 사용할 구독을 연결합니다.
+
+
+
+== 구독 링크
+
+NetApp에서 사용자 계정을 승인한 후 Cloud Volumes ONTAP에 사용할 수 있도록 Keystone 유연한 구독을 연결해야 합니다. 이 작업을 통해 사용자는 새 Cloud Volumes ONTAP 시스템의 충전 방법으로 구독을 선택할 수 있습니다.
+
+.단계
+. 모든 서비스 > 디지털 지갑 * 을 클릭합니다.
+. Keystone 유연한 구독 * 을 클릭합니다.
+. 연결할 구독의 경우 을 클릭합니다 image:icon-action.png["세 개의 나란히 점이 있는 아이콘입니다"] 링크 * 를 선택합니다.
++
+image:screenshot-keystone-link.png["구독에 대한 링크 옵션을 보여 주는 스크린샷"]
+
+
+
+이제 구독이 Cloud Manager 계정에 연결되어 Cloud Volumes ONTAP 작업 환경을 생성할 때 선택할 수 있습니다.
+
+
+
+== 커밋된 용량을 더 많이 또는 적게 요청합니다
+
+구독의 약정 용량을 조정해야 하는 경우 Cloud Manager 인터페이스에서 직접 요청을 보낼 수 있습니다.
+
+.단계
+. 모든 서비스 > 디지털 지갑 * 을 클릭합니다.
+. Keystone 유연한 구독 * 을 클릭합니다.
+. 용량을 조정하려는 구독의 경우 을 클릭합니다 image:icon-action.png["세 개의 나란히 점이 있는 아이콘입니다"] 를 선택하고 * 상세 정보 보기 및 편집 * 을 선택합니다.
+. 하나 이상의 구독에 대해 요청된 커밋 용량을 입력합니다.
++
+image:screenshot-keystone-request.png["구독에 대해 커밋된 용량 변경을 요청할 수 있는 기능을 보여 주는 스크린샷입니다."]
+
+. 아래로 스크롤하여 요청에 대한 추가 세부 정보를 입력한 다음 * 제출 * 을 클릭합니다.
+
+
+요청이 NetApp의 시스템에서 처리를 위한 티켓을 생성합니다.
+
+
+
+== 구독 연결을 해제합니다
+
+새 Cloud Volumes ONTAP 시스템에 Keystone Flex 서브스크립션을 더 이상 사용하지 않으려면 가입을 연결 해제할 수 있습니다. 기존 Cloud Volumes ONTAP 구독에 연결되지 않은 구독만 연결 해제할 수 있습니다.
+
+.단계
+. 모든 서비스 > 디지털 지갑 * 을 클릭합니다.
+. Keystone 유연한 구독 * 을 클릭합니다.
+. 연결을 해제할 구독의 경우 을 클릭합니다 image:icon-action.png["세 개의 나란히 점이 있는 아이콘입니다"] 를 클릭하고 * 연결 해제 * 를 선택합니다.
+
+
+서브스크립션은 Cloud Manager 계정에서 링크 해제되고 Cloud Volumes ONTAP 작업 환경을 생성할 때 더 이상 선택할 수 없습니다.
