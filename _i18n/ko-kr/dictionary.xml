@@ -2,11 +2,7 @@
 <blocks>
   <block id="29e5950813e59366056c85a091ad2206" category="summary">NTP 서버를 지정하면 네트워크 시스템 간의 시간이 동기화되어 시간 차이로 인한 문제를 방지할 수 있습니다.</block>
   <block id="8b3aeec8c25c17c966b0b882195c6050" category="doc">NTP를 사용하여 시스템 시간을 동기화합니다</block>
-  <block id="583771bc3fbbc02d314407a92769ef62" category="paragraph">CIFS 서버를 설정할 때 Cloud Manager API를 사용하거나 사용자 인터페이스에서 NTP 서버를 지정합니다.</block>
-  <block id="2bef8d9c4ca19169a987d6de800c38d8" category="inline-link-macro">CIFS 서버 수정</block>
-  <block id="babd17328e643798fbc635a48fbbd153" category="list-text"><block ref="babd17328e643798fbc635a48fbbd153" category="inline-link-macro-rx"></block></block>
   <block id="339d2db752bad623389940365590a650" category="inline-link">Cloud Manager 자동화 문서</block>
-  <block id="b61d2b4f1e4e1c7b7a6dda6b118d8c20" category="list-text"><block ref="b61d2b4f1e4e1c7b7a6dda6b118d8c20" category="inline-link-rx"></block></block>
   <block id="09c2d588c3e592f299dad8547672e4db" category="paragraph">예를 들어, AWS의 단일 노드 시스템에 대한 API는 다음과 같습니다.</block>
   <block id="ed7ec64f50d9b2deb6fa30e3baa1c74a" category="inline-image-macro">NTP API 호출을 보여 주는 Swagger 인터페이스의 스크린샷입니다.</block>
   <block id="4e5cb490ddc195f42366f47cba576aa2" category="paragraph"><block ref="4e5cb490ddc195f42366f47cba576aa2" category="inline-image-macro-rx" type="image"></block></block>
@@ -895,13 +891,9 @@
   <block id="e7cfd9476b70a39fe06e26c19f27e8d4" category="summary">service&gt;의 새로운 기능에 대해 알아보십시오.</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">새로운 기능</block>
   <block id="f2f463c5dd86d093007a370bdac1ee4e" category="paragraph">Cloud Manager에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보십시오.</block>
-  <block id="110e6abdd06281368088348ee9f6b06b" category="paragraph">이 페이지에 설명된 향상된 기능은 Cloud Volumes ONTAP 관리를 지원하는 Cloud Manager 기능에만 적용됩니다. 별도의 릴리즈 노트에서는 Cloud Volumes ONTAP 소프트웨어 자체의 새로운 기능에 대해 설명합니다.</block>
-  <block id="62e5cbd8225037095ff7d2605cde92ce" category="section-title">2022년 2월 27일(커넥터 3.9.16)</block>
   <block id="06a685f653628719e2e70fedf9b250a9" category="section-title">볼륨 마법사를 다시 설계했습니다</block>
   <block id="dd787088b52e69b3d8bf590e16c8413c" category="paragraph">최근에 도입된 새 볼륨 생성 마법사는 * 고급 할당 * 옵션에서 특정 애그리게이트에 볼륨을 생성할 때 사용할 수 있습니다.</block>
   <block id="c4abca012bce01614c5a65c5b0e6ecd6" category="inline-link-macro">특정 애그리게이트에서 볼륨을 생성하는 방법에 대해 알아보십시오</block>
-  <block id="567bd4707a89e21a3bfde8b0a474b587" category="paragraph"><block ref="f748de2d6397be35d9bf1c72e9ecbca5" category="inline-link-macro-rx"></block>.</block>
-  <block id="9fe54dabf8677a2dd216b421ca613a20" category="section-title">2022년 2월 9일</block>
   <block id="b1894f3de88322c422613dce3ce8f4cd" category="section-title">마켓플레이스 업데이트</block>
   <block id="376dea476fe87cb9b0aae288d191c1cc" category="list-text">이제 Essentials 패키지와 Professional 패키지를 AWS 및 Google Cloud 마켓플레이스에서 사용할 수 있습니다.</block>
   <block id="8b5bbca61d06a4ab0106010904673191" category="paragraph">이러한 용량을 기준으로 비용을 지불할 수 있으며, 연간 계약을 클라우드 공급자로부터 직접 구매할 수 있습니다. NetApp에서 직접 용량 라이센스를 구매할 수 있습니다.</block>
@@ -910,14 +902,10 @@
   <block id="0395ddea3013558664b640709c4005e0" category="list-text">AWS 및 Google Cloud 마켓플레이스를 통한 노드 라이센싱은 더 이상 사용되지 않으며 새 가입자에게 제공되지 않습니다. 여기에는 연간 계약 및 시간별 가입(탐색, 표준, 프리미엄)이 포함됩니다.</block>
   <block id="b353203eeb0af0c192ef9706121d7227" category="paragraph">이 충전 방법은 활성 서브스크립션을 보유한 기존 고객에게도 계속 사용할 수 있습니다.</block>
   <block id="ad66e158a2e414eee17bb2c5185f011a" category="inline-link-macro">Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오</block>
-  <block id="3fcf12dcb6c72aec4434fa4f3789fc52" category="paragraph"><block ref="07995a3dc55aacf94321b688970cb4b0" category="inline-link-macro-rx"></block>.</block>
-  <block id="be6dee2c6f768e88adbcb8dc45f0aa47" category="section-title">2022년 2월 6일</block>
   <block id="089a91d1490be155439f7062afd61de6" category="section-title">할당되지 않은 라이센스 교환</block>
   <block id="7d01c1cc395e0cffba4499f340107e1a" category="paragraph">아직 사용하지 않은 Cloud Volumes ONTAP에 대해 할당되지 않은 노드 기반 라이센스가 있는 경우 Cloud Backup 라이센스, Cloud Data Sense 라이센스 또는 Cloud Tiering 라이센스로 변환하여 라이센스를 교환할 수 있습니다.</block>
   <block id="cc326b8fcf3d9827bf4c76a2355d4982" category="paragraph">이 작업은 Cloud Volumes ONTAP 라이센스를 해지하고 만료 날짜가 동일한 서비스에 대해 달러 상당 라이센스를 생성합니다.</block>
   <block id="d3a00eb246f944956b374b24dba964fa" category="inline-link-macro">할당되지 않은 노드 기반 라이센스를 교환하는 방법에 대해 알아보십시오</block>
-  <block id="9773f2c5ef59f0f6a0d089fe4b8e3f0b" category="paragraph"><block ref="26cec6922476e2c52040dae734cb884f" category="inline-link-macro-rx"></block>.</block>
-  <block id="e0e56e93173ee70e32687d6287121379" category="section-title">2022년 1월 30일(커넥터 3.9.15)</block>
   <block id="a2948bb2c0954938fc7f75cbf81a308b" category="section-title">재설계된 라이선스 선택</block>
   <block id="cc3717c29172e7c4beafc5f30f3639ac" category="paragraph">새로운 Cloud Volumes ONTAP 작업 환경을 만들 때 라이센스 선택 화면을 다시 설계했습니다. 이 변경 사항은 2021년 7월에 소개된 용량 기준 과금 방법을 강조하며, 클라우드 공급자 마켓플레이스를 통해 예정된 오퍼링을 지원합니다.</block>
   <block id="cb859e966c34323b5da18c0c77998603" category="section-title">디지털 지갑 업데이트</block>
@@ -928,7 +916,6 @@
   <block id="a259bb127cd2a1cd02edf6a3a2484f33" category="paragraph">궁금한 사항이 있으면 어카운트 담당자 또는 세일즈 팀에 문의하십시오.</block>
   <block id="fc2be74c7bf9f46e12967c2298a899ba" category="inline-link-macro">NetApp 계정 에 대해 자세히 알아보십시오</block>
   <block id="b1c11f104149c330a596bcfca05619de" category="paragraph"><block ref="3186c16f77793c8a282d8b22bfef6617" category="inline-link-macro-rx"></block>.</block>
-  <block id="705a32e6b332460f5c2f6f97bcb56819" category="section-title">2022년 1월 2일(커넥터 3.9.14)</block>
   <block id="2a1a89ba5e012b27da809d07c186942f" category="section-title">추가 VM 유형 지원</block>
   <block id="bbbee7961ccb9cea5bdfe8ab78e43452" category="paragraph">Cloud Volumes ONTAP는 이제 Microsoft Azure에서 9.10.1 릴리즈부터 다음 VM 유형으로 지원됩니다.</block>
   <block id="aafab9b991240605f56b3df780360449" category="list-text">E4ds_v4</block>
@@ -954,7 +941,6 @@
   <block id="69582189d37c402edf59b0f133df7c09" category="list-text">이제 NFS에 대한 사용자 지정 엑스포트 정책을 선택할 수 있습니다.</block>
   <block id="7ab20d098d6605f542bfe595351b4d64" category="inline-image-macro">새 볼륨을 생성할 때 프로토콜 페이지를 보여 주는 스크린샷.</block>
   <block id="7aece74ebc88a7e88e14656ceaecf9cf" category="paragraph"><block ref="7aece74ebc88a7e88e14656ceaecf9cf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d2bf15efa3f15c62d362aa16ea679954" category="section-title">2021년 11월 28일(커넥터 3.9.13)</block>
   <block id="793e5668f96fd622a2b0f0f5b056d9f1" category="section-title">Cloud Volumes ONTAP 9.10.1</block>
   <block id="8baf16305e1b4a602be4e87a3f1f5af7" category="paragraph">이제 Cloud Manager에서 Cloud Volumes ONTAP 9.10.1을 배포 및 관리할 수 있습니다.</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오</block>
@@ -972,13 +958,11 @@
   <block id="81e5e1bf62f444795eff3721d2872fb5" category="section-title">포트 감소</block>
   <block id="0cc520b9133a409c63dec80a3107fdda" category="paragraph">포트 8023 및 4900은 단일 노드 시스템과 HA 쌍 모두에 대해 Azure의 Cloud Volumes ONTAP 시스템에서 더 이상 열리지 않습니다.</block>
   <block id="524d299ea985e3a42c95b0980478eba1" category="paragraph">이 변경 사항은 커넥터의 3.9.13 릴리스부터 _NEW_Cloud Volumes ONTAP 시스템에 적용됩니다.</block>
-  <block id="0a5a72f64ebedc78cb9eb8e26e4daf34" category="section-title">2021년 10월 4일(커넥터 3.9.11)</block>
   <block id="1217a2d42a5d039798ff2ec7be351708" category="section-title">Cloud Volumes ONTAP 9.10.0</block>
   <block id="9626d137fffc72f724082f7d85bf9865" category="paragraph">Cloud Manager는 이제 Cloud Volumes ONTAP 9.10.0을 배포 및 관리할 수 있습니다.</block>
   <block id="32f35594134f3fdc6f434e91ec798f50" category="paragraph"><block ref="adde97be46da5fda88041fd113726d44" category="inline-link-rx"></block>.</block>
   <block id="9cc2b6cdaf0b50459353a2d67c0baa80" category="section-title">구축 시간 단축</block>
   <block id="66d5639668d7c3e585771304940a252b" category="paragraph">일반 쓰기 속도를 사용하도록 설정한 경우 Microsoft Azure 또는 Google Cloud에서 Cloud Volumes ONTAP 작업 환경을 구축하는 데 걸리는 시간을 단축했습니다. 배포 시간은 이제 평균 3-4분 더 짧습니다.</block>
-  <block id="19b803d2d375ddb2e6b6fba5abf518c5" category="section-title">2021년 9월 2일(커넥터 3.9.10)</block>
   <block id="e272f662e26b78ec82fb7603aa62b559" category="section-title">Azure에서 고객이 관리하는 암호화 키</block>
   <block id="aee0c7bd7ef514bde14e9b9748f71cdb" category="paragraph">Azure의 Cloud Volumes ONTAP에서 를 사용하여 데이터가 자동으로 암호화됩니다<block ref="7c6c7ca9180a9433e704ac02b33a8ed3" category="inline-link-rx"></block> Microsoft 관리 키를 사용합니다. 그러나 이제 다음 단계를 완료하여 고객이 관리하는 암호화 키를 사용할 수 있습니다.</block>
   <block id="a89c0ff0556e15cdcfdad2e0435e60a8" category="list-text">Azure에서 키 볼트를 작성한 다음 해당 볼트에 키를 생성합니다.</block>
@@ -1001,7 +985,6 @@
   <block id="00d49b73dec766d5bc6218641c9a5a8a" category="paragraph">이제 Cloud Volumes ONTAP는 9.9.1 릴리스부터 PAYGO Premium, BYOL(Bring Your Own License) 및 Freemium과 같은 충전 방법을 사용하여 m5dn.24xLarge 인스턴스 유형을 지원합니다.</block>
   <block id="848f9c28f44b52e1b52cd70a11b0e4ef" category="inline-link">AWS에서 지원되는 Cloud Volumes ONTAP 구성 보기</block>
   <block id="55941b5f51f9a2c13dcc42739dc5d4c9" category="paragraph"><block ref="325ad59680664bb3bc1759e5df16e142" category="inline-link-rx"></block>.</block>
-  <block id="3579e14e0674c90c5798623386108cc6" category="section-title">기존 Azure 리소스 그룹</block>
   <block id="9e6ec92516b72180109e61ff34cc07d1" category="paragraph">Azure에서 Cloud Volumes ONTAP 시스템을 생성할 때 이제 VM 및 관련 리소스에 대한 기존 리소스 그룹을 선택할 수 있습니다.</block>
   <block id="1b267f21193669a66008c34cc479a4fc" category="inline-image-macro">기존 자원 그룹을 선택할 수 있는 작업 환경 만들기 마법사 스크린샷</block>
   <block id="cad0012f66cb2f1cfe9fddf03895f77e" category="paragraph"><block ref="cad0012f66cb2f1cfe9fddf03895f77e" category="inline-image-macro-rx" type="image"></block></block>
@@ -1118,7 +1101,6 @@
   <block id="a4a6f068d81ff1afeac110af2570a8ab" category="paragraph">파일이 WORM 스토리지에 커밋되면 보존 기간이 만료된 후에도 수정할 수 없습니다. 변조 방지 시계는 WORM 파일의 보존 기간이 경과된 시점을 결정합니다.</block>
   <block id="487d92711c834ef6ed6c245a4ade969b" category="paragraph">보존 기간이 경과한 후에는 더 이상 필요하지 않은 파일을 삭제해야 합니다.</block>
   <block id="d7b54fc61b65b19c4694a29b6044aacd" category="section-title">충전 중</block>
-  <block id="06f06d012a2cbcc622f07b98883083ea" category="paragraph">WORM 스토리지는 현재 출시 특별 요금이며 2022년 4월 1일까지 무료로 제공됩니다. 이 시간 이후에는 이 기능을 계속 사용할 수 있으며, 이 경우 추가 요금이 부과됩니다.</block>
   <block id="74f13d97ea448b8140308bf35c78920e" category="section-title">WORM 스토리지를 활성화하는 중입니다</block>
   <block id="82389b2fd96eb0a8c75af9a934cf690c" category="paragraph">새로운 작업 환경을 생성할 때 Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화할 수 있습니다. 여기에는 파일의 기본 보존 기간 설정이 포함됩니다.</block>
   <block id="99726e6dac736d4f262968c3400fc895" category="admonition">개별 볼륨에서 WORM 스토리지를 활성화할 수 없음 -- WORM은 시스템 레벨에서 활성화해야 합니다.</block>
@@ -3014,7 +2996,6 @@
   <block id="25827e83a178b9b140976a356e0ea48a" category="section-title">충전 관련 참고 사항</block>
   <block id="c1092325501599c6dcc90500081a2184" category="list-text">BYOL 용량을 초과하거나 라이센스가 만료된 경우, 마켓플레이스 가입을 기준으로 시간당 요금이 초과됩니다.</block>
   <block id="caa54273e5fb3b700fad994050e4dde4" category="list-text">각 패키지에는 최소 4TiB 용량 비용이 청구됩니다. 용량이 4TiB 미만인 Cloud Volumes ONTAP 인스턴스는 4TiB의 속도로 청구됩니다.</block>
-  <block id="c44f1d716d7612886617d980c0523196" category="list-text">SVM(스토리지 VM)을 지원하는 추가 데이터에 대한 추가 라이센스 비용은 없지만 SVM당 최소 용량 비용은 4TiB입니다.</block>
   <block id="55675f6a5328a3c661aa2daa971f7c76" category="list-text">HA 쌍의 경우 노드의 프로비저닝된 용량에 대해서만 비용이 청구됩니다. 파트너 노드에 동기식으로 미러링되는 데이터에 대해서는 비용이 청구되지 않습니다.</block>
   <block id="e61eacf9a2b260a46a8935478c8a063d" category="list-text">FlexClone 볼륨에 사용된 용량에 대해서는 비용이 청구되지 않습니다.</block>
   <block id="529bcec2b9675b3cb0a81186e626a92b" category="list-text">소스 및 타겟 FlexCache 볼륨은 프로비저닝된 공간에 따라 운영 데이터로 간주되고 충전됩니다.</block>
@@ -3636,4 +3617,32 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 블로그</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
+  <block id="801caea7574977976b69eba4142742d5" category="inline-link">Cloud Manager API</block>
+  <block id="eb6af55ec97d39baf95e6c3351e05033" category="paragraph">를 사용하여 NTP 서버를 지정합니다<block ref="bdf6617265a65c254cce57819a969697" category="inline-link-rx"></block> 또는 CIFS 서버를 생성할 때 사용자 인터페이스에서</block>
+  <block id="2a78c747c7c403eb351149aacb4255b0" category="cell">Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오<block ref="42b82f9ba6c1ea0d7f3f7e3fde7e922d" category="inline-link-rx"></block> 를 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.</block>
+  <block id="15b547deddcdfd8bf2fb3a23397e7833" category="list-text">스토리지 VM에 하나 이상의 애그리게이트를 할당합니다.</block>
+  <block id="d6f0e34ef668049ec1996dc9805ae695" category="paragraph">스토리지 VM에서 볼륨을 생성하기 전에 새 스토리지 VM이 적어도 하나의 애그리게이트에 액세스해야 하기 때문에 이 단계가 필요합니다.</block>
+  <block id="23ba60a40ef8778d57147aad46997917" category="inline-link">Cloud Volumes ONTAP 릴리즈 노트를 참조하십시오</block>
+  <block id="37f6145500352f5c01d4de415efe57f0" category="paragraph">이 페이지에 설명된 향상된 기능은 Cloud Volumes ONTAP 관리를 지원하는 Cloud Manager 기능에만 적용됩니다.<block ref="017f5a752a7f075df16d48b9a482c0c4" category="inline-link-rx"></block> Cloud Volumes ONTAP 소프트웨어의 새로운 기능에 대해 알아봅니다.</block>
+  <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022년 4월 3일</block>
+  <block id="0f132f66e81cbab588044405a33dc058" category="section-title">WORM 스토리지에 대한 충전 중</block>
+  <block id="89e51b22871a787913c4aa90cf856626" category="paragraph">출시 특별 요금이 만료되었으므로 이제 WORM 스토리지 사용 요금이 부과됩니다. 충전은 볼륨의 총 프로비저닝 용량에 따라 매시간 제공됩니다. 이는 신규 및 기존 Cloud Volumes ONTAP 시스템에 적용됩니다.</block>
+  <block id="10142c9d88b9419ee393574e858e86c8" category="inline-link">WORM 스토리지 가격에 대해 자세히 알아보십시오</block>
+  <block id="074dbf8cc93ccd34e86e3e2e8f2a1e3a" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block>.</block>
+  <block id="32215461c426d2e6cd125109ca715d8f" category="section-title">2022년 2월 27일(커넥터 3.9.16)</block>
+  <block id="1c6f86b67d4150db2b816bc084d4c069" category="paragraph"><block ref="525dd47105081fbda31ba7a2793ca879" category="inline-link-rx"></block>.</block>
+  <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022년 2월 9일</block>
+  <block id="41fe6a9591d04d2b5dc40ba59fd15df9" category="paragraph"><block ref="e22d1e33878d70a72f20edc19056d016" category="inline-link-rx"></block>.</block>
+  <block id="5c46bd67ae4b5c23f9c243b5f396c088" category="section-title">2022년 2월 6일</block>
+  <block id="e186d5095e3d6d1b5247bef6646ae005" category="paragraph"><block ref="ef3979f2f1932fd482bb464a3e7d984f" category="inline-link-rx"></block>.</block>
+  <block id="2b9fafb77808b816392633fe1036ceb4" category="section-title">2022년 1월 30일(커넥터 3.9.15)</block>
+  <block id="305f98fa0d49873a77484c14f71bfec4" category="section-title">2022년 1월 2일(커넥터 3.9.14)</block>
+  <block id="35e4cbbe7120f5a106048c84199b5c38" category="section-title">2021년 11월 28일(커넥터 3.9.13)</block>
+  <block id="01b6222a6fdfe753189cb7e0753ef51a" category="section-title">2021년 10월 4일(커넥터 3.9.11)</block>
+  <block id="2e88f3ae6e50f5f0bbc46ea8158b71ea" category="section-title">2021년 9월 2일(커넥터 3.9.10)</block>
+  <block id="96ce026f2bc7496743369db3f0e33981" category="section-title">기존 Azure 리소스 그룹을 선택합니다</block>
+  <block id="6f2d75bffb91c65e98a19f69305c5cb4" category="paragraph">WORM 스토리지에 대한 충전은 볼륨의 총 프로비저닝 용량에 따라 매시간 가능합니다.</block>
+  <block id="96b2257b99d74387ccf906445ab11df4" category="paragraph">CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.</block>
+  <block id="ee095a2fd0990ba785c303c6524d8145" category="list-text">추가 SVM(Data-Serving Storage VM)에 대한 추가 라이센스 비용은 없지만, 데이터 서비스 SVM당 최소 용량 비용은 4TiB입니다.</block>
+  <block id="cc331a0f761602982769cdbb99e71272" category="list-text">재해 복구 SVM은 프로비저닝된 용량에 따라 충전됩니다.</block>
 </blocks>

@@ -126,6 +126,15 @@ network interface create -auto-revert true -vserver svm_2 -service-policy defaul
 +
 여기서 _private_ip_y_는 e0a에서 사용되지 않는 또 다른 보조 전용 IP입니다.
 
+. 스토리지 VM에 하나 이상의 애그리게이트를 할당합니다.
++
+[source, cli]
+----
+vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
+----
++
+스토리지 VM에서 볼륨을 생성하기 전에 새 스토리지 VM이 적어도 하나의 애그리게이트에 액세스해야 하기 때문에 이 단계가 필요합니다.
+
 
 
 
@@ -165,6 +174,15 @@ network interface create -auto-revert true -vserver svm_2 -service-policy defaul
 ----
 +
 여기서 _private_ip_y_는 e0a에서 사용되지 않는 또 다른 보조 전용 IP입니다.
+
+. 스토리지 VM에 하나 이상의 애그리게이트를 할당합니다.
++
+[source, cli]
+----
+vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
+----
++
+스토리지 VM에서 볼륨을 생성하기 전에 새 스토리지 VM이 적어도 하나의 애그리게이트에 액세스해야 하기 때문에 이 단계가 필요합니다.
 
 
 
@@ -230,5 +248,14 @@ network interface create -vserver svm_2 -service-policy default-data-blocks -hom
 ** '-service-policy default-data-block'은 노드 간에 IP 주소가 마이그레이션되지 않음을 의미한다.
 ** _private_ip_는 cvo_node2의 eth0(e0a)에서 사용되지 않는 보조 전용 IP 주소입니다.
 
+
+. 스토리지 VM에 하나 이상의 애그리게이트를 할당합니다.
++
+[source, cli]
+----
+vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
+----
++
+스토리지 VM에서 볼륨을 생성하기 전에 새 스토리지 VM이 적어도 하나의 애그리게이트에 액세스해야 하기 때문에 이 단계가 필요합니다.
 
 

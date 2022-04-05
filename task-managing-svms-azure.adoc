@@ -202,6 +202,15 @@ network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-a
 ----
 network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node node1 -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default -probe-port <port-number-for-azure-health-probe3>
 ----
+. 스토리지 VM에 하나 이상의 애그리게이트를 할당합니다.
++
+[source, cli]
+----
+vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
+----
++
+스토리지 VM에서 볼륨을 생성하기 전에 새 스토리지 VM이 적어도 하나의 애그리게이트에 액세스해야 하기 때문에 이 단계가 필요합니다.
+
 
 
 HA 쌍에서 스토리지 VM을 생성하면 해당 SVM에서 스토리지를 프로비저닝하기 전에 12시간을 기다리는 것이 좋습니다. Cloud Volumes ONTAP 9.10.1 릴리즈부터 Cloud Manager가 12시간 간격으로 HA 쌍의 로드 밸런서에 대한 설정을 검색합니다. 새로운 SVM이 있을 경우 Cloud Manager에서 짧은 계획되지 않은 페일오버를 제공하는 설정을 지원합니다.

@@ -27,7 +27,9 @@ Cloud Volumes ONTAP 시스템에서 WORM(Write Once, Read Many) 스토리지를 
 
 == 충전 중
 
-WORM 스토리지는 현재 출시 특별 요금이며 2022년 4월 1일까지 무료로 제공됩니다. 이 시간 이후에는 이 기능을 계속 사용할 수 있으며, 이 경우 추가 요금이 부과됩니다.
+WORM 스토리지에 대한 충전은 볼륨의 총 프로비저닝 용량에 따라 매시간 가능합니다.
+
+https://cloud.netapp.com/pricing["WORM 스토리지 가격에 대해 자세히 알아보십시오"^].
 
 
 

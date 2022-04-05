@@ -15,7 +15,19 @@ summary: service>의 새로운 기능에 대해 알아보십시오.
 [role="lead"]
 Cloud Manager에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보십시오.
 
-이 페이지에 설명된 향상된 기능은 Cloud Volumes ONTAP 관리를 지원하는 Cloud Manager 기능에만 적용됩니다. 별도의 릴리즈 노트에서는 Cloud Volumes ONTAP 소프트웨어 자체의 새로운 기능에 대해 설명합니다.
+이 페이지에 설명된 향상된 기능은 Cloud Volumes ONTAP 관리를 지원하는 Cloud Manager 기능에만 적용됩니다. https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트를 참조하십시오"^] Cloud Volumes ONTAP 소프트웨어의 새로운 기능에 대해 알아봅니다.
+
+
+
+== 2022년 4월 3일
+
+
+
+=== WORM 스토리지에 대한 충전 중
+
+출시 특별 요금이 만료되었으므로 이제 WORM 스토리지 사용 요금이 부과됩니다. 충전은 볼륨의 총 프로비저닝 용량에 따라 매시간 제공됩니다. 이는 신규 및 기존 Cloud Volumes ONTAP 시스템에 적용됩니다.
+
+https://cloud.netapp.com/pricing["WORM 스토리지 가격에 대해 자세히 알아보십시오"^].
 
 
 
@@ -27,7 +39,7 @@ Cloud Manager에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알
 
 최근에 도입된 새 볼륨 생성 마법사는 * 고급 할당 * 옵션에서 특정 애그리게이트에 볼륨을 생성할 때 사용할 수 있습니다.
 
-link:task-create-volumes.html["특정 애그리게이트에서 볼륨을 생성하는 방법에 대해 알아보십시오"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html["특정 애그리게이트에서 볼륨을 생성하는 방법에 대해 알아보십시오"].
 
 
 
@@ -53,7 +65,7 @@ link:task-create-volumes.html["특정 애그리게이트에서 볼륨을 생성�
 
 
 
-link:concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오"].
 
 
 
@@ -67,7 +79,7 @@ link:concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대�
 
 이 작업은 Cloud Volumes ONTAP 라이센스를 해지하고 만료 날짜가 동일한 서비스에 대해 달러 상당 라이센스를 생성합니다.
 
-link:task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["할당되지 않은 노드 기반 라이센스를 교환하는 방법에 대해 알아보십시오"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["할당되지 않은 노드 기반 라이센스를 교환하는 방법에 대해 알아보십시오"].
 
 
 
@@ -263,7 +275,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["AWS에서 지원되�
 
 
 
-=== 기존 Azure 리소스 그룹
+=== 기존 Azure 리소스 그룹을 선택합니다
 
 Azure에서 Cloud Volumes ONTAP 시스템을 생성할 때 이제 VM 및 관련 리소스에 대한 기존 리소스 그룹을 선택할 수 있습니다.
 
