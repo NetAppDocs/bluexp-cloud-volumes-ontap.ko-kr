@@ -33,7 +33,7 @@ Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 �
 
 Cloud Volumes ONTAP는 선택한 라이센스 유형에 따라 여러 가지 시스템 유형을 지원합니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_configs_gcp_9101.html["GCP에서 Cloud Volumes ONTAP에 지원되는 구성입니다"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["GCP에서 Cloud Volumes ONTAP에 지원되는 구성입니다"^]
 
 
 
@@ -41,7 +41,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_configs_gcp_9101.htm
 
 Cloud Volumes ONTAP 시스템의 물리적 용량 제한은 라이센스에 연결되어 있습니다. 추가 제한은 애그리게이트 및 볼륨 크기에 영향을 줍니다. 구성을 계획할 때 이러한 제한 사항을 숙지해야 합니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_limits_gcp_9101.html["GCP의 Cloud Volumes ONTAP에 대한 스토리지 제한입니다"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html["GCP의 Cloud Volumes ONTAP에 대한 스토리지 제한입니다"^]
 
 
 

@@ -33,7 +33,7 @@ Cloud Volumes ONTAP BYOL 시스템에 여러 개의 라이센스를 구매하여
 
 NOTE: 구입한 일부 사내 ONTAP 스토리지 시스템에는 무료 Cloud Volumes ONTAP 라이센스가 포함되어 있을 수 있습니다. 라이센스를 사용하여 새 Cloud Volumes ONTAP 시스템을 생성하거나 기존 Cloud Volumes ONTAP 시스템에 라이센스를 적용하여 용량을 확장할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-managing-ontap.html#viewing-unused-cloud-volumes-ontap-licenses["사용할 수 있는 라이센스가 있는지 확인합니다"^].
 
-디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 link:concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"]. 디스크 제한에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/cloud-volumes-ontap/["Cloud Volumes ONTAP 릴리즈 노트의 저장 용량 제한"^].
+디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 link:concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"]. 디스크 제한에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Cloud Volumes ONTAP 릴리즈 노트의 저장 용량 제한"^].
 
 
 

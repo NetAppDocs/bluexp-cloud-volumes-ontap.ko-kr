@@ -53,8 +53,8 @@ NOTE: 처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오
 
 * http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 설명서:EBS 볼륨 유형"^]
 * link:task-planning-your-config.html["AWS에서 시스템의 디스크 유형 및 디스크 크기를 선택하는 방법에 대해 알아보십시오"]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_limits_aws_9101.html["AWS의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다"^]
-* http://docs.netapp.com/us-en/cloud-volumes-ontap/reference_configs_aws_9101.html["AWS에서 지원되는 Cloud Volumes ONTAP 구성 검토"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["AWS의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다"^]
+* http://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["AWS에서 지원되는 Cloud Volumes ONTAP 구성 검토"^]
 
 
 
@@ -86,7 +86,7 @@ HA 쌍:: HA 쌍에서는 최대 디스크 크기가 8TiB인 프리미엄 페이�
 * https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure 설명서: Azure 관리 디스크 유형"^]
 * https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Microsoft Azure 설명서: Azure 페이지 Blob의 개요"^]
 * link:task-planning-your-config-azure.html["Azure에서 시스템의 디스크 유형 및 디스크 크기를 선택하는 방법에 대해 알아보십시오"]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_limits_azure_9101.html["Azure의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Azure의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다"^]
 
 
 
@@ -100,7 +100,7 @@ GCP에서 애그리게이트에는 동일한 크기의 디스크를 최대 6개�
 * 관련 링크 *
 
 * https://cloud.google.com/compute/docs/disks/["Google Cloud Platform 설명서: 스토리지 옵션"^]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_limits_gcp_9101.html["GCP의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html["GCP의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다"^]
 
 
 

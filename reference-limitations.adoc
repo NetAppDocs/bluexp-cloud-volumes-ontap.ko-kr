@@ -15,7 +15,7 @@ summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않�
 [role="lead"]
 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오.
 
-이러한 제한은 Cloud Manager의 Cloud Volumes ONTAP 관리에만 적용됩니다.
+이러한 제한은 Cloud Manager의 Cloud Volumes ONTAP 관리에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어 자체의 제한 사항을 보려면 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limitations.html["Cloud Volumes ONTAP 릴리즈 노트 로 이동합니다"^]
 
 
 

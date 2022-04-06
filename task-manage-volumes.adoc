@@ -118,7 +118,7 @@ NOTE: Cloud Manager에서 선택한 디스크 유형을 사용하는 기존 애�
 
 기본적으로, 공간이 부족할 때 볼륨이 자동으로 최대 크기로 커집니다. 기본값은 1,000이며 이는 볼륨이 크기가 11배로 커질 수 있음을 의미합니다. 이 값은 커넥터 설정에서 구성할 수 있습니다.
 
-볼륨 크기를 조정해야 하는 경우 에서 조정할 수 있습니다 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP 시스템 관리자"^]. 볼륨 크기를 조정할 때 시스템의 용량 제한을 고려해야 합니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap/index.html["Cloud Volumes ONTAP 릴리즈 노트"^] 를 참조하십시오.
+볼륨 크기를 조정해야 하는 경우 에서 조정할 수 있습니다 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP 시스템 관리자"^]. 볼륨 크기를 조정할 때 시스템의 용량 제한을 고려해야 합니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트"^] 를 참조하십시오.
 
 
 

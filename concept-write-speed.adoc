@@ -67,7 +67,7 @@ link:concept-ha.html["AWS의 HA 쌍 에 대해 자세히 알아보십시오"].
 
 9.8 릴리즈부터 Cloud Volumes ONTAP는 지원되는 EC2 인스턴스 유형 중 M5.xLarge 및 R5.xLarge를 제외한 거의 모든 유형을 사용할 때 HA 쌍을 포함한 고속 쓰기 속도를 지원합니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_configs_aws_9101.html["Cloud Volumes ONTAP가 지원하는 Amazon EC2 인스턴스에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["Cloud Volumes ONTAP가 지원하는 Amazon EC2 인스턴스에 대해 자세히 알아보십시오"^].
 
 
 
@@ -75,7 +75,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_configs_aws_9101.htm
 
 단일 노드 시스템을 사용하는 경우 Cloud Volumes ONTAP는 모든 VM 유형에 대해 고속 쓰기 속도를 지원합니다.
 
-HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.8 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_configs_azure_9101.html["Cloud Volumes ONTAP 릴리즈 노트"^] 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.
+HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.8 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Cloud Volumes ONTAP 릴리즈 노트"^] 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.
 
 
 
@@ -85,7 +85,7 @@ HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.8 릴리즈부터 시작�
 
 Cloud Volumes ONTAP는 Google Cloud에서 HA 쌍을 통한 빠른 쓰기 속도를 지원하지 않습니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_configs_gcp_9101.html["Cloud Volumes ONTAP가 지원하는 Google 클라우드 머신 유형에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Cloud Volumes ONTAP가 지원하는 Google 클라우드 머신 유형에 대해 자세히 알아보십시오"^].
 
 
 

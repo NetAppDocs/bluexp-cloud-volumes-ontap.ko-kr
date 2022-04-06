@@ -46,16 +46,13 @@
   <block id="a8acc7de0893c2c2f8404c6e10839d65" category="paragraph">단일 노드 시스템을 사용하는 경우 Cloud Volumes ONTAP는 모든 인스턴스 유형에서 빠른 쓰기 속도를 지원합니다.</block>
   <block id="4d000cb814de0483d25aa949e7104787" category="paragraph">9.8 릴리즈부터 Cloud Volumes ONTAP는 지원되는 EC2 인스턴스 유형 중 M5.xLarge 및 R5.xLarge를 제외한 거의 모든 유형을 사용할 때 HA 쌍을 포함한 고속 쓰기 속도를 지원합니다.</block>
   <block id="d483e21ce7d44495d45b5b10d0a92f33" category="inline-link">Cloud Volumes ONTAP가 지원하는 Amazon EC2 인스턴스에 대해 자세히 알아보십시오</block>
-  <block id="c516ed26741c741a857296fc0b90d63c" category="paragraph"><block ref="580781b7719bfa23e431ce11f6fd3590" category="inline-link-rx"></block>.</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="section-title">Azure를 지원합니다</block>
   <block id="89347e425902e735637e8fa0c5aaea49" category="paragraph">단일 노드 시스템을 사용하는 경우 Cloud Volumes ONTAP는 모든 VM 유형에 대해 고속 쓰기 속도를 지원합니다.</block>
   <block id="bc2d1afe4b7b88784be36363245bd652" category="inline-link">Cloud Volumes ONTAP 릴리즈 노트</block>
-  <block id="99499548d7f02b69b85069cb0d3f5a75" category="paragraph">HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.8 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다<block ref="46791f5d4d72f2105039759045a29107" category="inline-link-rx"></block> 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.</block>
   <block id="56ef2682280ac110060b881925a87b80" category="section-title">Google 클라우드</block>
   <block id="543bcb76d6487a8515a8a34178160fca" category="paragraph">단일 노드 시스템을 사용하는 경우 Cloud Volumes ONTAP는 모든 시스템 유형에 대해 고속 쓰기 속도를 지원합니다.</block>
   <block id="a5feb10e04fddec4318f091f70667b36" category="paragraph">Cloud Volumes ONTAP는 Google Cloud에서 HA 쌍을 통한 빠른 쓰기 속도를 지원하지 않습니다.</block>
   <block id="e4e959caff2c6b1635b2a3bea64b35f7" category="inline-link">Cloud Volumes ONTAP가 지원하는 Google 클라우드 머신 유형에 대해 자세히 알아보십시오</block>
-  <block id="02b1a55800c790f4b39f526ea1efded2" category="paragraph"><block ref="4bd6f63cdb968b917dd10c94baadecc2" category="inline-link-rx"></block>.</block>
   <block id="5859fb81f0cd1fbd6824d86c16923404" category="section-title">쓰기 속도를 선택하는 방법</block>
   <block id="3d64d0d43e2b3f4726dd94ece523a44b" category="inline-link-macro">기존 시스템의 쓰기 속도를 변경합니다</block>
   <block id="f7ccf02d84fa210180071ca2470f84e9" category="paragraph">새 작업 환경을 만들 때 쓰기 속도를 선택할 수 있으며, 이 경우 쓰기 속도를 선택할 수 있습니다 <block ref="bb09c850cc1f480d84d76846ade7e379" category="inline-link-macro-rx"></block>.</block>
@@ -269,7 +266,6 @@
   <block id="d5777fa0c0510a8e0af55b024f765d10" category="admonition">구입한 일부 사내 ONTAP 스토리지 시스템에는 무료 Cloud Volumes ONTAP 라이센스가 포함되어 있을 수 있습니다. 라이센스를 사용하여 새 Cloud Volumes ONTAP 시스템을 생성하거나 기존 Cloud Volumes ONTAP 시스템에 라이센스를 적용하여 용량을 확장할 수 있습니다.<block ref="e219f91c05893e1e7e9c773a8103d487" category="inline-link-rx"></block>.</block>
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link-macro">비활성 데이터를 오브젝트 스토리지로 계층화</block>
   <block id="255a885478279e7778252b0fbb8e555b" category="inline-link">Cloud Volumes ONTAP 릴리즈 노트의 저장 용량 제한</block>
-  <block id="2895b022669520a60104977ea224b998" category="paragraph">디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 <block ref="c80d06c6bbd06cbbb7b267be96c5b90c" category="inline-link-macro-rx"></block>. 디스크 제한에 대한 자세한 내용은 를 참조하십시오<block ref="04199d0183db84c6a3e942a3b1a9629a" category="inline-link-rx"></block>.</block>
   <block id="2b1ca4265fcc8a110e4539b4d9a23ffe" category="section-title">새 시스템의 라이센스 관리</block>
   <block id="61ef6cb885dfa3a5cf6f33b6a7316754" category="paragraph">노드 기반 BYOL 시스템을 생성하는 경우 Cloud Manager에서는 라이센스 및 NetApp Support 사이트 계정의 일련 번호를 묻는 메시지를 표시합니다. Cloud Manager는 이 계정을 사용하여 NetApp에서 라이센스 파일을 다운로드하고 Cloud Volumes ONTAP 시스템에 설치합니다.</block>
   <block id="f5f5988698b949e49e36702f4fc7df36" category="inline-link">NetApp Support 사이트 계정을 Cloud Manager에 추가하는 방법을 알아보십시오</block>
@@ -304,11 +300,9 @@
   <block id="bdffec98e6d23168e67ec60edb566516" category="section-title">지원되는 장비 유형</block>
   <block id="64efea6517490623e51052b533085d96" category="paragraph">Cloud Volumes ONTAP는 선택한 라이센스 유형에 따라 여러 가지 시스템 유형을 지원합니다.</block>
   <block id="9ee8a2504ba9f03aae4b30973ea35ad4" category="inline-link">GCP에서 Cloud Volumes ONTAP에 지원되는 구성입니다</block>
-  <block id="e0111d0bbd123438a709c03936001b9a" category="paragraph"><block ref="e0111d0bbd123438a709c03936001b9a" category="inline-link-rx"></block></block>
   <block id="d8f4a27859ff4e352b2a9c267685cc52" category="section-title">스토리지 제한 이해</block>
   <block id="5356346579bd6c821def647592378a8a" category="paragraph">Cloud Volumes ONTAP 시스템의 물리적 용량 제한은 라이센스에 연결되어 있습니다. 추가 제한은 애그리게이트 및 볼륨 크기에 영향을 줍니다. 구성을 계획할 때 이러한 제한 사항을 숙지해야 합니다.</block>
   <block id="9265447fe548064ca54a98dd4a111bc0" category="inline-link">GCP의 Cloud Volumes ONTAP에 대한 스토리지 제한입니다</block>
-  <block id="dd355b5788c3385f5d63013a53bca742" category="paragraph"><block ref="dd355b5788c3385f5d63013a53bca742" category="inline-link-rx"></block></block>
   <block id="a15ee6cc62f2676af04c7221ef99fc86" category="section-title">GCP에서 시스템 사이징</block>
   <block id="d1d964d1db8731b3b8174fa845b85de0" category="paragraph">Cloud Volumes ONTAP 시스템을 사이징하면 성능 및 용량 요구사항을 충족하는 데 도움이 될 수 있습니다. 시스템 유형, 디스크 유형 및 디스크 크기를 선택할 때 몇 가지 주요 사항을 알고 있어야 합니다.</block>
   <block id="3ea4bf9da7622edeeae1bf80e9c5cded" category="list-text">기계 유형</block>
@@ -561,7 +555,6 @@
   <block id="479c3296d54e6f4715be2e37ee57edf1" category="paragraph">스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, 클라이언트에 스토리지 및 데이터 서비스를 제공합니다. 이를 _SVM_ 또는 _vserver_로 알고 있을 수 있습니다. Cloud Volumes ONTAP는 기본적으로 하나의 스토리지 VM으로 구성되지만 Azure에서 Cloud Volumes ONTAP를 실행할 때 추가 스토리지 VM이 지원됩니다.</block>
   <block id="a58a1a73a0fc2d46b2c8d3212a81b76b" category="paragraph">데이터를 지원하는 스토리지 VM을 추가로 생성하려면 Azure에서 IP 주소를 할당한 다음 ONTAP 명령을 실행하여 스토리지 VM 및 데이터 LIF를 생성해야 합니다.</block>
   <block id="bbf8762fd7719517f7567e338ea9aa0b" category="section-title">지원되는 스토리지 VM 수입니다</block>
-  <block id="ae5f213fca7c5e02c1b131b458ebdf56" category="paragraph">Azure에서 여러 스토리지 VM이 Cloud Volumes ONTAP BYOL 방식으로 지원되며 9.9.0 릴리즈부터 애드온 라이센스가 제공됩니다. 로 이동합니다<block ref="2d263dae336e0068be8cd497ccc05381" category="inline-link-rx"></block> 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.</block>
   <block id="61a207d9bd50b686e92d93d0f36e5fd4" category="paragraph">다른 모든 Cloud Volumes ONTAP 구성에서는 재해 복구에 사용되는 1개의 데이터 서비스 스토리지 VM과 1개의 대상 스토리지 VM을 지원합니다. 소스 스토리지 VM에 중단이 발생할 경우 데이터 액세스를 위해 대상 스토리지 VM을 활성화할 수 있습니다.</block>
   <block id="bc2d82be5ce2a751775a44460f5f36ae" category="section-title">Azure에서 IP 주소를 할당합니다</block>
   <block id="ec1961021d4275205f590654d3717686" category="paragraph">아래 구성 단계를 따르십시오. 단일 노드 시스템, iSCSI를 사용하는 HA 쌍 또는 NFS/SMB를 사용하는 HA 쌍</block>
@@ -630,7 +623,6 @@
   <block id="c2c088d1045cc3d76d132b248c4445c1" category="doc">시스템 쓰기 속도를 수정합니다</block>
   <block id="943ca59639840c47d866964287bbae5d" category="paragraph">Cloud Manager를 사용하면 Cloud Volumes ONTAP에 대해 일반 또는 고속 쓰기 속도를 선택할 수 있습니다. 기본 쓰기 속도는 정상입니다. 워크로드에 빠른 쓰기 성능이 필요한 경우 빠른 쓰기 속도로 변경할 수 있습니다.</block>
   <block id="58a44ed5e23f3838a4097a7234a6cd19" category="inline-link">자세한 내용은 Cloud Volumes ONTAP 릴리즈 노트 를 참조하십시오</block>
-  <block id="ab858020f18780b8b12325bc97de3a1f" category="paragraph">모든 유형의 단일 노드 시스템에서는 높은 쓰기 속도가 지원됩니다. 특정 인스턴스 또는 VM 유형을 사용할 때는 AWS 및 Azure의 HA 쌍으로도 지원됩니다. GCP의 HA 쌍에서는 빠른 쓰기 속도가 지원되지 않습니다.<block ref="16a9849004e08c979cab375cb0965c77" category="inline-link-rx"></block>.</block>
   <block id="8334ca2b5f457a41a987d1633cb5c214" category="inline-link-macro">정상 설정과 높음 설정의 차이를 이해합니다</block>
   <block id="69e28a1ba6bc5233cc60dd248c362636" category="paragraph">쓰기 속도를 변경하려면 먼저 해야 합니다 <block ref="eb987e41d6a04bba64a9af2bb235fccb" category="inline-link-macro-rx"></block>.</block>
   <block id="d9072539538ac46d98e04043ff27fe64" category="list-text">볼륨 또는 애그리게이트 생성과 같은 작업이 진행 중이 아닌지 확인합니다.</block>
@@ -686,7 +678,6 @@
   <block id="f003f3d16df55f060f81ad4dddd2fbf9" category="section-title">볼륨 크기를 조정합니다</block>
   <block id="983731c4568a7ed436142da8a63f9442" category="paragraph">기본적으로, 공간이 부족할 때 볼륨이 자동으로 최대 크기로 커집니다. 기본값은 1,000이며 이는 볼륨이 크기가 11배로 커질 수 있음을 의미합니다. 이 값은 커넥터 설정에서 구성할 수 있습니다.</block>
   <block id="6ad5e0a20f49ad6a370454bb3afc9a9e" category="inline-link">ONTAP 시스템 관리자</block>
-  <block id="748a09b63a7a950a7b15467848ed51a5" category="paragraph">볼륨 크기를 조정해야 하는 경우 에서 조정할 수 있습니다<block ref="bfb8b856b98909d9b8eda9fe0698d61f" category="inline-link-rx"></block>. 볼륨 크기를 조정할 때 시스템의 용량 제한을 고려해야 합니다. 로 이동합니다<block ref="2d263dae336e0068be8cd497ccc05381" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="6b851ed63a549d28a80d2c974afcec80" category="section-title">CIFS 서버를 수정합니다</block>
   <block id="fd549a6bcd2d53b8accb49a7225fcfa0" category="paragraph">DNS 서버 또는 Active Directory 도메인을 변경하는 경우 Cloud Volumes ONTAP에서 CIFS 서버를 수정하여 스토리지에서 클라이언트로 계속 서비스를 제공할 수 있도록 해야 합니다.</block>
   <block id="26eb89266cb77257e69e50bb61b2da4e" category="list-text">작업 환경에서 메뉴 아이콘을 클릭한 다음 * 고급 &gt; CIFS 설정 * 을 클릭합니다.</block>
@@ -775,7 +766,6 @@
   <block id="5f8e217f50c261f6778e55f5dc048bc9" category="paragraph"><block ref="5f8e217f50c261f6778e55f5dc048bc9" category="inline-link-rx"></block></block>
   <block id="167a4d140aee71fa6487d8b30bfac7ea" category="doc">Cloud Manager에서 스토리지 VM을 관리합니다</block>
   <block id="129ebe82fb349647f39c555285fb6251" category="paragraph">스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, 클라이언트에 스토리지 및 데이터 서비스를 제공합니다. 이를 _SVM_ 또는 _vserver_로 알고 있을 수 있습니다. Cloud Volumes ONTAP는 기본적으로 하나의 스토리지 VM으로 구성되지만 일부 구성에서는 추가 스토리지 VM을 지원합니다.</block>
-  <block id="8ab223aa79ff21a82acaead4e0ac4e87" category="paragraph">AWS의 Cloud Volumes ONTAP와 특정 구성의 Azure에서 여러 스토리지 VM이 지원됩니다. 로 이동합니다<block ref="2d263dae336e0068be8cd497ccc05381" category="inline-link-rx"></block> 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.</block>
   <block id="d7a22fd9c17e5a9e3b614b52df2bcf96" category="section-title">여러 스토리지 VM과 함께 작업</block>
   <block id="b37b70cc2038e532c1baf69a91a7b12e" category="paragraph">Cloud Manager는 System Manager 또는 CLI에서 생성하는 추가 스토리지 VM을 지원합니다.</block>
   <block id="ff3b711176ea253389bb97ff46d7f05c" category="paragraph">예를 들어, 다음 이미지는 볼륨을 생성할 때 스토리지 VM을 선택하는 방법을 보여줍니다.</block>
@@ -888,7 +878,6 @@
   <block id="c9c1fe399a016eb71ef77b98d9d3908c" category="list-text">제거할 Cloud Volumes ONTAP 작업 환경을 선택합니다.</block>
   <block id="844581166f3d6c9fef0c12b72220bb3d" category="list-text">검토 및 승인 페이지에서 * 이동 * 을 클릭합니다.</block>
   <block id="640e0b5c90b1757e9061cec9ae9f5fb5" category="paragraph">Cloud Manager는 작업 환경을 제거합니다. 사용자는 언제든지 Canvas 페이지에서 이 작업 환경을 다시 검색할 수 있습니다.</block>
-  <block id="e7cfd9476b70a39fe06e26c19f27e8d4" category="summary">service&gt;의 새로운 기능에 대해 알아보십시오.</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">새로운 기능</block>
   <block id="f2f463c5dd86d093007a370bdac1ee4e" category="paragraph">Cloud Manager에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보십시오.</block>
   <block id="06a685f653628719e2e70fedf9b250a9" category="section-title">볼륨 마법사를 다시 설계했습니다</block>
@@ -915,7 +904,6 @@
   <block id="5908d4e5a438659ba844464125f51abe" category="paragraph">a_system_은 HA 쌍 또는 단일 노드 시스템입니다. 예를 들어, 2개의 Cloud Volumes ONTAP HA 쌍과 2개의 단일 노드 시스템이 있다면 총 4개의 시스템이 있고 고객 계정에 16개의 추가 시스템을 위한 공간이 있을 것입니다.</block>
   <block id="a259bb127cd2a1cd02edf6a3a2484f33" category="paragraph">궁금한 사항이 있으면 어카운트 담당자 또는 세일즈 팀에 문의하십시오.</block>
   <block id="fc2be74c7bf9f46e12967c2298a899ba" category="inline-link-macro">NetApp 계정 에 대해 자세히 알아보십시오</block>
-  <block id="b1c11f104149c330a596bcfca05619de" category="paragraph"><block ref="3186c16f77793c8a282d8b22bfef6617" category="inline-link-macro-rx"></block>.</block>
   <block id="2a1a89ba5e012b27da809d07c186942f" category="section-title">추가 VM 유형 지원</block>
   <block id="bbbee7961ccb9cea5bdfe8ab78e43452" category="paragraph">Cloud Volumes ONTAP는 이제 Microsoft Azure에서 9.10.1 릴리즈부터 다음 VM 유형으로 지원됩니다.</block>
   <block id="aafab9b991240605f56b3df780360449" category="list-text">E4ds_v4</block>
@@ -984,7 +972,6 @@
   <block id="5f4bbb7ac76f9f86e72af68d5fb6cf67" category="section-title">AWS에서 m5dn.24xlarge 지원</block>
   <block id="00d49b73dec766d5bc6218641c9a5a8a" category="paragraph">이제 Cloud Volumes ONTAP는 9.9.1 릴리스부터 PAYGO Premium, BYOL(Bring Your Own License) 및 Freemium과 같은 충전 방법을 사용하여 m5dn.24xLarge 인스턴스 유형을 지원합니다.</block>
   <block id="848f9c28f44b52e1b52cd70a11b0e4ef" category="inline-link">AWS에서 지원되는 Cloud Volumes ONTAP 구성 보기</block>
-  <block id="55941b5f51f9a2c13dcc42739dc5d4c9" category="paragraph"><block ref="325ad59680664bb3bc1759e5df16e142" category="inline-link-rx"></block>.</block>
   <block id="9e6ec92516b72180109e61ff34cc07d1" category="paragraph">Azure에서 Cloud Volumes ONTAP 시스템을 생성할 때 이제 VM 및 관련 리소스에 대한 기존 리소스 그룹을 선택할 수 있습니다.</block>
   <block id="1b267f21193669a66008c34cc479a4fc" category="inline-image-macro">기존 자원 그룹을 선택할 수 있는 작업 환경 만들기 마법사 스크린샷</block>
   <block id="cad0012f66cb2f1cfe9fddf03895f77e" category="paragraph"><block ref="cad0012f66cb2f1cfe9fddf03895f77e" category="inline-image-macro-rx" type="image"></block></block>
@@ -1005,7 +992,6 @@
   <block id="46e869bc0f7a5fcdc09df010e1f48b25" category="paragraph">CUSTOM-4-16384 시스템 유형은 새로운 Cloud Volumes ONTAP 시스템에서 더 이상 지원되지 않습니다.</block>
   <block id="0e3cb01898d99d0091e2a6f5a7572390" category="paragraph">이 기계 유형에서 실행 중인 기존 시스템이 있는 경우 계속 사용할 수 있지만 n2-standard-4 기계 유형으로 전환하는 것이 좋습니다.</block>
   <block id="346b156b62b438feb8aca3c528a7173c" category="inline-link">GCP에서 Cloud Volumes ONTAP에 대해 지원되는 구성을 봅니다</block>
-  <block id="d813b475b5e4df1042c9a7451c53281a" category="paragraph"><block ref="d05ab0d15ee1d1d7bb961b1e2b95db78" category="inline-link-rx"></block>.</block>
   <block id="6a1f13645a93d26a01a89ba45e08d6bb" category="section-title">2021년 5월 30일(커넥터 3.9.7)</block>
   <block id="29edc853696ed1638805579b54eb4028" category="section-title">AWS의 새로운 프로페셔널 패키지</block>
   <block id="e7ef0d5bcd1ca0f8f5763e59e8a0fd1b" category="paragraph">새로운 프로페셔널 패키지를 이용하면 AWS 마켓플레이스의 연간 계약을 활용하여 Cloud Volumes ONTAP와 Cloud Backup Service를 번들로 제공할 수 있습니다. 지급은 TiB당. 이 구독을 통해 온프레미스 데이터를 백업할 수 없습니다.</block>
@@ -1197,8 +1183,6 @@
   <block id="f9fb39421cb5c84a9897e58b19c84510" category="paragraph"><block ref="f9fb39421cb5c84a9897e58b19c84510" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c5ebc721265bff6f5891df31595f9db9" category="admonition">해당 매개 변수의 값을 보려면 * 읽기 전용 매개 변수 표시 * 확인란을 클릭하여 템플릿에 의해 잠긴 모든 필드를 표시할 수 있습니다. 기본적으로 이러한 미리 정의된 필드는 숨겨지고 완료해야 하는 필드만 표시됩니다.</block>
   <block id="f916a27cf580c1cb72d910a796827151" category="list-text">context_area에서 작업 환경은 처음 시작한 작업 환경의 이름으로 채워집니다. 볼륨을 생성할 * 스토리지 VM * 을 선택해야 합니다.</block>
-  <block id="b4798c3f6907cfb67d2e44f900cd8761" category="inline-xref">볼륨 생성 중</block>
-  <block id="e070ef927dfcc7c541214925d06b5c21" category="list-text">템플릿에서 하드 코딩되지 않은 모든 매개변수에 대한 값을 추가합니다. 을 참조하십시오 <block ref="b4e4942fcd652618acae4c222d2ab87f" category="inline-xref-macro-rx"></block> Cloud Volumes ONTAP 볼륨을 구축하기 위해 완료해야 하는 모든 매개 변수에 대한 자세한 내용은 를 참조하십시오.</block>
   <block id="7c40758a149a5a65989345e1641d496d" category="list-text">정의해야 하는 다른 작업이 없는 경우(예: 클라우드 백업 구성) * 템플릿 실행 * 을 클릭합니다.</block>
   <block id="db382d688e4cb3e09b6e7a743ce00edb" category="paragraph">다른 작업이 있는 경우 왼쪽 창에서 작업을 클릭하여 완료해야 하는 매개 변수를 표시합니다.</block>
   <block id="a31e4f2aa7f454321015e4c5b02bae97" category="inline-image-macro">완료해야 하는 추가 작업을 선택하는 방법을 보여 주는 스크린샷</block>
@@ -1463,14 +1447,12 @@
   <block id="2d51420db26e68ce07b81103e73ac40f" category="list-text">애플리케이션 정합성</block>
   <block id="39cc8f8f6f1d13bb434a4ddc5d57b61b" category="paragraph">NetApp SnapCenter를 사용하여 NetApp Snapshot 복사본의 일관성을 보장합니다.</block>
   <block id="b130d62b437f2a119198feb1466a4c3b" category="inline-link">SnapCenter에 대해 자세히 알아보십시오</block>
-  <block id="46322d3de7f4d223f1b2b4f3495ff59b" category="paragraph"><block ref="46322d3de7f4d223f1b2b4f3495ff59b" category="inline-link-rx"></block></block>
   <block id="4c5d94eb4dc4bff93f6a96a08ab7b244" category="list-text">데이터 보안</block>
   <block id="7bf338973426a289a345974f4910386c" category="list-text">개인 정보 보호 규정 준수 관리</block>
   <block id="263abbafbe140ca10e57e519da88e057" category="paragraph">클라우드 데이터 센스와 통합되어 데이터 컨텍스트를 이해하고 중요한 데이터를 식별할 수 있습니다.</block>
   <block id="3af0f3d8f43764595483a67930d47716" category="paragraph"><block ref="3af0f3d8f43764595483a67930d47716" category="inline-link-rx"></block></block>
   <block id="81a04b1e875d3a2de5542007c35718a3" category="admonition">ONTAP 기능에 대한 라이센스는 Cloud Volumes ONTAP에 포함되어 있습니다.</block>
   <block id="48df723a306cd6c57aedad219f454d85" category="inline-link">지원되는 Cloud Volumes ONTAP 구성을 봅니다</block>
-  <block id="674f1ac7c2851c820991142183f76c0a" category="paragraph"><block ref="674f1ac7c2851c820991142183f76c0a" category="inline-link-rx"></block></block>
   <block id="cf0a6f286be266af220bb56bf7b6365c" category="inline-link">Cloud Volumes ONTAP에 대해 자세히 알아보십시오</block>
   <block id="5a2555dcf0776f4107419f613e0a9582" category="paragraph"><block ref="5a2555dcf0776f4107419f613e0a9582" category="inline-link-rx"></block></block>
   <block id="dfd4955ec9706a8b05865bd0aa3ab14f" category="summary">콜드 데이터를 저비용 오브젝트 스토리지로 자동 계층화하여 스토리지 비용을 절감하십시오.</block>
@@ -2059,7 +2041,6 @@
   <block id="6c2cb081b1161ce73c770ac95d951118" category="paragraph">CIFS 스토리지를 프로비저닝하려면 AWS에서 DNS 및 Active Directory를 설정하거나 사내 설정을 AWS로 확장해야 합니다.</block>
   <block id="3264b3c2c9f6a32009744275b9eaf225" category="paragraph">DNS 서버는 Active Directory 환경에 대한 이름 확인 서비스를 제공해야 합니다. Active Directory 환경에서 사용되는 DNS 서버가 아니어야 하는 기본 EC2 DNS 서버를 사용하도록 DHCP 옵션 집합을 구성할 수 있습니다.</block>
   <block id="534ff9c6998bb65a0e9e27f521321400" category="inline-link">AWS 설명서: AWS 클라우드의 Active Directory 도메인 서비스: 빠른 시작 참조 배포</block>
-  <block id="443602df667a9470400bcc1cdc3640bf" category="paragraph">자세한 지침은 을 참조하십시오<block ref="39d9034e503372ac4e5ff1321bf485b6" category="inline-link-rx"></block>.</block>
   <block id="23dbc3077af5ddb88717d0b8e7e58a7a" category="section-title">여러 대의 AZs에서 HA 쌍에 대한 요구 사항</block>
   <block id="6608b43e664c9bfe00bce79442f763da" category="paragraph">추가 AWS 네트워킹 요구사항은 ZS(Multiple Availability Zones)를 사용하는 Cloud Volumes ONTAP HA 구성에 적용됩니다. 작업 환경을 생성할 때 Cloud Manager에 네트워킹 세부 정보를 입력해야 하므로 HA 쌍을 실행하기 전에 이러한 요구사항을 검토해야 합니다.</block>
   <block id="4af96df4614eefb04e7fbcb0409095fb" category="inline-link-macro">고가용성 쌍</block>
@@ -2290,7 +2271,6 @@
   <block id="c8a8f302f21fc7d1accf5a0eb3025496" category="list-text">애그리게이트를 선택한 다음 * 추가 작업 &gt; 상태 &gt; 온라인 * 을 클릭합니다.</block>
   <block id="3a3843b2672bd389702bef2d50b13ac2" category="section-title">Cloud Volumes ONTAP를 업그레이드합니다</block>
   <block id="f8aa9c90d0c72036c8f619ad865310cf" category="paragraph">Cloud Manager는 새 버전을 업그레이드할 수 있을 때 사용자에게 알립니다. 이 알림에서 업그레이드 프로세스를 시작할 수 있습니다. 자세한 내용은 을 참조하십시오 <block ref="cd21ce4435c0ed7f1fe81d697829e656" category="inline-xref-macro-rx"></block>.</block>
-  <block id="8f69e1042566a89902e9d9fee3ae1c04" category="paragraph">외부 URL의 이미지를 사용하여 소프트웨어 업그레이드를 수행하는 또 다른 방법입니다. 이 옵션은 Cloud Manager가 S3 버킷에 액세스하여 소프트웨어를 업그레이드할 수 없거나 패치가 제공된 경우에 유용합니다. 자세한 내용은 을 참조하십시오 <block ref="340e0498f0745831f9dec5d4cc8678ef" category="inline-xref-macro-rx"></block>.</block>
   <block id="e73555e28e84f2d5c847740628840c4f" category="section-title">Cloud Manager 알림에서 업그레이드합니다</block>
   <block id="76b471f09d7ca8022b4f6235eb1e0c77" category="paragraph">새 버전의 Cloud Volumes ONTAP를 사용할 수 있는 경우 Cloud Manager에서 Cloud Volumes ONTAP 작업 환경에 알림을 표시합니다.</block>
   <block id="31d167cba5cdd422c65657c793b962dc" category="inline-image-macro">스크린샷: 작업 환경을 선택한 후 Canvas 페이지에 표시되는 새 버전 사용 가능 알림을 표시합니다.</block>
@@ -2389,9 +2369,7 @@
   <block id="5441fd25158748acf6319013a05ddcf8" category="inline-link-macro">AWS에서 시스템의 디스크 유형 및 디스크 크기를 선택하는 방법에 대해 알아보십시오</block>
   <block id="b321a038eb76e1b8399300e20164af04" category="list-text"><block ref="b321a038eb76e1b8399300e20164af04" category="inline-link-macro-rx"></block></block>
   <block id="78212f9c3d46510a02f480b7b2fab214" category="inline-link">AWS의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다</block>
-  <block id="ab4b37e1ec5e3c3f921cbe20eaa34088" category="list-text"><block ref="ab4b37e1ec5e3c3f921cbe20eaa34088" category="inline-link-rx"></block></block>
   <block id="4cb081c6302f68531ee29c8a8f6984e5" category="inline-link">AWS에서 지원되는 Cloud Volumes ONTAP 구성 검토</block>
-  <block id="a468be9df90ada5cd45de507a2ed4a66" category="list-text"><block ref="a468be9df90ada5cd45de507a2ed4a66" category="inline-link-rx"></block></block>
   <block id="f590584761ef1824250681bcc6312099" category="section-title">Azure 스토리지</block>
   <block id="0ff787698f3679f43f5b00772fb3fe70" category="paragraph">Azure에서는 aggregate가 동일한 크기의 디스크를 최대 12개까지 포함할 수 있습니다. 디스크 유형과 최대 디스크 크기는 단일 노드 시스템을 사용하는지 HA 쌍을 사용하는지에 따라 달라집니다.</block>
   <block id="078325cc35a9c8c9290e445f32bd1855" category="list-text">단일 노드 시스템</block>
@@ -2410,19 +2388,16 @@
   <block id="54239851395044f4ec26756a8da66c66" category="inline-link-macro">Azure에서 시스템의 디스크 유형 및 디스크 크기를 선택하는 방법에 대해 알아보십시오</block>
   <block id="97c5e7276e2eb176107d121083f55cb9" category="list-text"><block ref="97c5e7276e2eb176107d121083f55cb9" category="inline-link-macro-rx"></block></block>
   <block id="7d190e1289a34549215a87ba75ca22b3" category="inline-link">Azure의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다</block>
-  <block id="8b10010171fe93cf89ef8361a17b3251" category="list-text"><block ref="8b10010171fe93cf89ef8361a17b3251" category="inline-link-rx"></block></block>
   <block id="006edaa900ad651a7dd0c1eb38b6614d" category="section-title">GCP 스토리지</block>
   <block id="fc39c40aef519fc5c54be48ccdf0826d" category="paragraph">GCP에서 애그리게이트에는 동일한 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 최대 디스크 크기는 64TiB입니다.</block>
   <block id="e261e4463ca8a8d53b2ed70156b40345" category="paragraph">디스크 유형은 _ Zonal SSD 영구 디스크 _, _ 균형 조정 영구 디스크 _ 또는 _ Zonal 표준 영구 디스크 _ 일 수 있습니다. 영구 디스크를 Google Storage 버킷과 에 페어링할 수 있습니다 <block ref="767b2bdd82880da72a9a5d87e1fd40da" category="inline-link-macro-rx"></block>.</block>
   <block id="0416ce495febee3cb703076585799d35" category="inline-link">Google Cloud Platform 설명서: 스토리지 옵션</block>
   <block id="9070b67413002bc5263a680bd85ea608" category="list-text"><block ref="9070b67413002bc5263a680bd85ea608" category="inline-link-rx"></block></block>
   <block id="e46688fddd94642d62f18d83f9d39b65" category="inline-link">GCP의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다</block>
-  <block id="8f76d69b0e08538dacf46bcad0491218" category="list-text"><block ref="8f76d69b0e08538dacf46bcad0491218" category="inline-link-rx"></block></block>
   <block id="6371ae3dff33e72574b28de08b0185ce" category="section-title">RAID 유형입니다</block>
   <block id="337815266d268b4471616e4585c27ced" category="paragraph">각 Cloud Volumes ONTAP 애그리게이트의 RAID 유형은 RAID0(스트라이핑)입니다. 다른 RAID 유형은 지원되지 않습니다. Cloud Volumes ONTAP은 클라우드 공급자에 의존하여 디스크 가용성 및 내구성을 제공합니다.</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오.</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">알려진 제한 사항</block>
-  <block id="34cf41977ed5b1416aab2890d78706ab" category="paragraph">이러한 제한은 Cloud Manager의 Cloud Volumes ONTAP 관리에만 적용됩니다.</block>
   <block id="ffaadeb23249c6bcd3f9798d9d77ceed" category="section-title">Cloud Manager는 FlexGroup 볼륨을 지원하지 않습니다</block>
   <block id="454141982f16f1a99dd6d00bdd4ad62c" category="paragraph">Cloud Volumes ONTAP는 FlexGroup 볼륨을 지원하지만 Cloud Manager는 지원하지 않습니다. System Manager 또는 CLI에서 FlexGroup 볼륨을 생성하는 경우 Cloud Manager의 용량 관리 모드를 수동으로 설정해야 합니다. FlexGroup 볼륨에서 자동 모드가 제대로 작동하지 않을 수 있습니다.</block>
   <block id="bad6c02700d31ece20defc3ac35d1492" category="section-title">Cloud Manager는 ONTAP S3를 지원하지 않습니다</block>
@@ -2435,9 +2410,7 @@
   <block id="a74f2ae17c4a444095b6545be6fc64c0" category="section-title">지원되는 VM 유형입니다</block>
   <block id="00d6f59010ef5b4445142547ef7725f2" category="paragraph">Cloud Volumes ONTAP는 선택한 라이센스 유형에 따라 여러 VM 유형을 지원합니다.</block>
   <block id="a09c3a7be8e7dc42776a7b03793d536c" category="inline-link">Azure에서 Cloud Volumes ONTAP에 대해 지원되는 구성입니다</block>
-  <block id="f83ce7c92561f31500978ed0ba157a33" category="paragraph"><block ref="f83ce7c92561f31500978ed0ba157a33" category="inline-link-rx"></block></block>
   <block id="9f8b4558b07e0b8fb83871b783e78430" category="inline-link">Azure의 Cloud Volumes ONTAP에 대한 스토리지 제한</block>
-  <block id="57d43b0cc7e55ee35974f83d51af4348" category="paragraph"><block ref="57d43b0cc7e55ee35974f83d51af4348" category="inline-link-rx"></block></block>
   <block id="803d8f94a55b7915e4d09ac9d6ca5588" category="paragraph">Cloud Volumes ONTAP 시스템을 사이징하면 성능 및 용량 요구사항을 충족하는 데 도움이 될 수 있습니다. VM 유형, 디스크 유형 및 디스크 크기를 선택할 때 고려해야 할 몇 가지 주요 사항은 다음과 같습니다.</block>
   <block id="c9b46e5d3304a0f098a9b6c39d3c78cc" category="list-text">가상 머신 유형입니다</block>
   <block id="c31555ebab3cc6d019fa007862395153" category="list-text">에서 지원되는 가상 머신 유형을 확인합니다<block ref="f922a7787320953a33ee2591f979f78c" category="inline-link-rx"></block> 지원되는 각 VM 유형에 대한 세부 정보를 검토합니다. 각 VM 유형은 특정 수의 데이터 디스크를 지원합니다.</block>
@@ -2533,11 +2506,9 @@
   <block id="391642837451179291d9fd13ff003fec" category="paragraph"><block ref="391642837451179291d9fd13ff003fec" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0daeee03840a908c7a9d415a97549f99" category="doc">AWS에서 Cloud Volumes ONTAP를 위한 데이터 서비스 스토리지 VM을 생성합니다</block>
   <block id="cec354b08dcbe847db5c3affb7ef61d9" category="paragraph">추가 데이터 서비스 스토리지 VM을 생성하려면 AWS에서 IP 주소를 할당한 다음 Cloud Volumes ONTAP 구성에 따라 ONTAP 명령을 실행해야 합니다.</block>
-  <block id="548be132e53cd4fa2f9dd293d8d89511" category="paragraph">9.7 릴리즈부터 애드온 라이센스가 포함된 AWS에서 Cloud Volumes ONTAP BYOL 방식으로 여러 스토리지 VM이 지원됩니다. 로 이동합니다<block ref="2d263dae336e0068be8cd497ccc05381" category="inline-link-rx"></block> 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.</block>
   <block id="de46d59a02fe19ad1b544dca44f92e5f" category="section-title">구성에 대한 제한을 확인합니다</block>
   <block id="88543976e7398b72c1b340809002ebef" category="paragraph">각 EC2 인스턴스는 네트워크 인터페이스당 최대 수의 전용 IPv4 주소를 지원합니다. 새 스토리지 VM에 대해 AWS에서 IP 주소를 할당하기 전에 한도를 확인해야 합니다.</block>
   <block id="c23b6fdd13d6c39bb0af0f361b0c8003" category="inline-link">Cloud Volumes ONTAP 릴리즈 노트 의 스토리지 제한 사항 섹션을 참조하십시오</block>
-  <block id="793dd58456f29885f9b371ee7f606ff4" category="list-text">로 이동합니다<block ref="7453bba0b15230efaa2b97e5ac5b334b" category="inline-link-rx"></block>.</block>
   <block id="df9d132f781b81a5db9ff607b40006ea" category="list-text">인스턴스 유형에 대한 인터페이스당 최대 IP 주소 수를 식별합니다.</block>
   <block id="8dd4560f4596618815de91dd18e711e1" category="list-text">AWS에서 IP 주소를 할당할 때 다음 섹션에서 필요하므로 이 번호를 기록해 두십시오.</block>
   <block id="935712c749bf1c78e33ff9015ecebf46" category="section-title">AWS에서 IP 주소를 할당합니다</block>
@@ -3342,10 +3313,8 @@
   <block id="cd90992fc6cbd0d892984dd5302bf5d2" category="section-title">지원되는 인스턴스 선택</block>
   <block id="63c78fe4096c032cda667cb626771016" category="paragraph">Cloud Volumes ONTAP는 선택한 라이센스 유형에 따라 여러 인스턴스 유형을 지원합니다.</block>
   <block id="d4f1750ecbae7aeb8e4608c6adadf1b3" category="inline-link">AWS에서 Cloud Volumes ONTAP가 지원되는 구성입니다</block>
-  <block id="774575a17eb61b53e658372f1237b81c" category="paragraph"><block ref="774575a17eb61b53e658372f1237b81c" category="inline-link-rx"></block></block>
   <block id="4ee5a8547aa7c7947c6129c3654d9b84" category="paragraph">AWS의 일부 Cloud Volumes ONTAP 구성에는 Cloud Volumes ONTAP이 성능 향상을 위해 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. <block ref="1574eec793654b59b67dc35ae24f18a5" category="inline-link-macro-rx"></block>.</block>
   <block id="22cb0da70aef15be2f870ac70af6492c" category="inline-link">AWS의 Cloud Volumes ONTAP에 대한 스토리지 제한</block>
-  <block id="a9a88654969669466920d09cfec4271c" category="paragraph"><block ref="a9a88654969669466920d09cfec4271c" category="inline-link-rx"></block></block>
   <block id="003bf13b1a7f0c15d6b9f97e39f79cba" category="paragraph">Cloud Volumes ONTAP 시스템을 사이징하면 성능 및 용량 요구사항을 충족하는 데 도움이 될 수 있습니다. 인스턴스 유형, 디스크 유형 및 디스크 크기를 선택할 때 몇 가지 주요 사항을 알고 있어야 합니다.</block>
   <block id="8fd9387e6259d520afc10025d4c66e64" category="list-text">각 EC2 인스턴스 유형별 최대 처리량과 IOPS에 맞춰 워크로드 요구사항을 충족합니다.</block>
   <block id="46a0c1c64208198d62e72175cd2f755b" category="list-text">여러 사용자가 동시에 시스템에 쓸 경우 요청을 관리할 CPU가 충분한 인스턴스 유형을 선택합니다.</block>
@@ -3486,7 +3455,6 @@
   <block id="1a523ba4ece9125275b92ebb41e3cf23" category="doc">Cloud Volumes ONTAP 설명서</block>
   <block id="f71bca1a74e3009d7cff4912558ab628" category="summary">Cloud Volumes ONTAP가 상주하는 VPC 외부에서 NAS 클라이언트가 부동 IP 주소에 액세스할 수 있도록 AWS 전송 게이트웨이를 설정합니다. 이는 장애가 발생할 경우 유동 IP가 노드 간에 자동으로 마이그레이션되기 때문에 유용합니다.</block>
   <block id="d2a72b7b5a38468116ebf74213d0a809" category="doc">여러 AZs에서 HA 쌍에 대한 AWS 전송 게이트웨이 설정</block>
-  <block id="8b33c060e7de4f121350fd5fd5abfe2b" category="paragraph">HA 쌍에 대한 액세스를 지원하는 AWS 전송 게이트웨이를 설정합니다 <block ref="57b356a7cdfe39e13d80393998d18580" category="inline-link-macro-rx"></block> HA 쌍이 상주하는 VPC 외부에서</block>
   <block id="3ff5b1c89b5d16ccd4334e837046b7f5" category="paragraph">Cloud Volumes ONTAP HA 구성이 여러 AWS 가용성 영역에 분산되면 VPC 내에서 NAS 데이터 액세스에 유동 IP 주소가 필요합니다. 이러한 부동 IP 주소는 장애가 발생할 때 노드 간에 마이그레이션할 수 있지만 VPC 외부에서 기본적으로 액세스할 수 없습니다. 별도의 프라이빗 IP 주소를 통해 VPC 외부에서 데이터에 액세스할 수 있지만 자동 페일오버를 제공하지 않습니다.</block>
   <block id="241d70a75eb5d661a8828f65cd4e9d26" category="paragraph">클러스터 관리 인터페이스와 선택적 SVM 관리 LIF에도 부동 IP 주소가 필요합니다.</block>
   <block id="d3d3abbe2493275b166373e96277e54a" category="paragraph">AWS 전송 게이트웨이를 설정한 경우 HA 쌍이 상주하는 VPC 외부의 유동 IP 주소에 액세스할 수 있습니다. 즉, VPC 외부에 있는 NAS 클라이언트와 NetApp 관리 툴이 유동 IP에 액세스할 수 있습니다.</block>
@@ -3618,12 +3586,9 @@
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 블로그</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
   <block id="801caea7574977976b69eba4142742d5" category="inline-link">Cloud Manager API</block>
-  <block id="eb6af55ec97d39baf95e6c3351e05033" category="paragraph">를 사용하여 NTP 서버를 지정합니다<block ref="bdf6617265a65c254cce57819a969697" category="inline-link-rx"></block> 또는 CIFS 서버를 생성할 때 사용자 인터페이스에서</block>
   <block id="2a78c747c7c403eb351149aacb4255b0" category="cell">Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오<block ref="42b82f9ba6c1ea0d7f3f7e3fde7e922d" category="inline-link-rx"></block> 를 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.</block>
   <block id="15b547deddcdfd8bf2fb3a23397e7833" category="list-text">스토리지 VM에 하나 이상의 애그리게이트를 할당합니다.</block>
   <block id="d6f0e34ef668049ec1996dc9805ae695" category="paragraph">스토리지 VM에서 볼륨을 생성하기 전에 새 스토리지 VM이 적어도 하나의 애그리게이트에 액세스해야 하기 때문에 이 단계가 필요합니다.</block>
-  <block id="23ba60a40ef8778d57147aad46997917" category="inline-link">Cloud Volumes ONTAP 릴리즈 노트를 참조하십시오</block>
-  <block id="37f6145500352f5c01d4de415efe57f0" category="paragraph">이 페이지에 설명된 향상된 기능은 Cloud Volumes ONTAP 관리를 지원하는 Cloud Manager 기능에만 적용됩니다.<block ref="017f5a752a7f075df16d48b9a482c0c4" category="inline-link-rx"></block> Cloud Volumes ONTAP 소프트웨어의 새로운 기능에 대해 알아봅니다.</block>
   <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022년 4월 3일</block>
   <block id="0f132f66e81cbab588044405a33dc058" category="section-title">WORM 스토리지에 대한 충전 중</block>
   <block id="89e51b22871a787913c4aa90cf856626" category="paragraph">출시 특별 요금이 만료되었으므로 이제 WORM 스토리지 사용 요금이 부과됩니다. 충전은 볼륨의 총 프로비저닝 용량에 따라 매시간 제공됩니다. 이는 신규 및 기존 Cloud Volumes ONTAP 시스템에 적용됩니다.</block>
@@ -3645,4 +3610,38 @@
   <block id="96b2257b99d74387ccf906445ab11df4" category="paragraph">CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.</block>
   <block id="ee095a2fd0990ba785c303c6524d8145" category="list-text">추가 SVM(Data-Serving Storage VM)에 대한 추가 라이센스 비용은 없지만, 데이터 서비스 SVM당 최소 용량 비용은 4TiB입니다.</block>
   <block id="cc331a0f761602982769cdbb99e71272" category="list-text">재해 복구 SVM은 프로비저닝된 용량에 따라 충전됩니다.</block>
+  <block id="ebf12fa39becba02eecf5cb8886fab60" category="inline-link-macro">CIFS 서버를 생성합니다</block>
+  <block id="dc845b28338320935ddb2744e8c6e97b" category="paragraph">를 사용하여 NTP 서버를 지정합니다<block ref="bdf6617265a65c254cce57819a969697" category="inline-link-rx"></block> 또는 사용자 인터페이스에서 <block ref="f63e013edf4f3da2f43cd797b99d909b" category="inline-link-macro-rx"></block>.</block>
+  <block id="21793edfa155319a271d33a5dc984cb2" category="paragraph"><block ref="a158a044b7464112e4aeefe5eeacf9f9" category="inline-link-rx"></block>.</block>
+  <block id="19efe5a9cd2387e8587c05321062a095" category="paragraph">HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.8 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다<block ref="2c91cb4d7bbd40d1a3efe8602ebb4273" category="inline-link-rx"></block> 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.</block>
+  <block id="f3e658b45576241d792ccaccc236fc48" category="paragraph"><block ref="a8ee7ccc97f8f155aa3297d287b2257a" category="inline-link-rx"></block>.</block>
+  <block id="b64442e22e4baecde15d6214c922aa65" category="paragraph">디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 <block ref="c80d06c6bbd06cbbb7b267be96c5b90c" category="inline-link-macro-rx"></block>. 디스크 제한에 대한 자세한 내용은 를 참조하십시오<block ref="02f1a1c120ffb5f37ea9d7c14b5f1158" category="inline-link-rx"></block>.</block>
+  <block id="9402e8f13b9c1b7b1bbcad4d4c4eb4a9" category="paragraph"><block ref="9402e8f13b9c1b7b1bbcad4d4c4eb4a9" category="inline-link-rx"></block></block>
+  <block id="2dcb300e9b01e5d98962a7e0c6eee87e" category="paragraph"><block ref="2dcb300e9b01e5d98962a7e0c6eee87e" category="inline-link-rx"></block></block>
+  <block id="08115db3513c03dc43fad61ef9de1776" category="paragraph">Azure에서 여러 스토리지 VM이 Cloud Volumes ONTAP BYOL 방식으로 지원되며 9.9.0 릴리즈부터 애드온 라이센스가 제공됩니다. 로 이동합니다<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.</block>
+  <block id="ea03e008412c5794c43fdb2384bcb567" category="paragraph">모든 유형의 단일 노드 시스템에서는 높은 쓰기 속도가 지원됩니다. 특정 인스턴스 또는 VM 유형을 사용할 때는 AWS 및 Azure의 HA 쌍으로도 지원됩니다. GCP의 HA 쌍에서는 빠른 쓰기 속도가 지원되지 않습니다.<block ref="af635009e2e9e5e8e83bc1e8e043f24c" category="inline-link-rx"></block>.</block>
+  <block id="506e74c9262ca17fcd45f9fc1bb03b87" category="paragraph">볼륨 크기를 조정해야 하는 경우 에서 조정할 수 있습니다<block ref="bfb8b856b98909d9b8eda9fe0698d61f" category="inline-link-rx"></block>. 볼륨 크기를 조정할 때 시스템의 용량 제한을 고려해야 합니다. 로 이동합니다<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 를 참조하십시오.</block>
+  <block id="3a08b0ef34be7d1bdbd1691c198e8824" category="paragraph">AWS의 Cloud Volumes ONTAP와 특정 구성의 Azure에서 여러 스토리지 VM이 지원됩니다. 로 이동합니다<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.</block>
+  <block id="06c86f2b2f40c7b5ae916f820dace6f3" category="inline-link">Cloud Volumes ONTAP 릴리즈 노트 로 이동합니다</block>
+  <block id="65e42190c099391692bcdbf38f75b3dc" category="paragraph">이 페이지에 설명된 향상된 기능은 Cloud Volumes ONTAP 관리를 지원하는 Cloud Manager 기능에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어 자체의 새로운 기능에 대해 알아보려면<block ref="708e09e3f2783926556b9c6d77f63a27" category="inline-link-rx"></block></block>
+  <block id="e0109745edea3dd07561e6ef24e031b3" category="paragraph"><block ref="e0109745edea3dd07561e6ef24e031b3" category="inline-link-rx"></block></block>
+  <block id="eaae0996b48caf454deb2608523a1af2" category="paragraph"><block ref="a3830f1e68e521753c115aa90de96c67" category="inline-link-rx"></block>.</block>
+  <block id="cd46020b2ca09f66f5c79bd35fe2da2e" category="paragraph"><block ref="4107f790de2a45bc9a00a9b75db49bc5" category="inline-link-rx"></block>.</block>
+  <block id="0149fd22e5722b132cbafe2d3e86e10b" category="list-text">템플릿에서 하드 코딩되지 않은 모든 매개변수에 대한 값을 추가합니다. 을 참조하십시오 <block ref="c4711ce582f4a278fe266c32d7e1a70b" category="inline-xref-macro-rx"></block> Cloud Volumes ONTAP 볼륨을 구축하기 위해 완료해야 하는 모든 매개 변수에 대한 자세한 내용은 를 참조하십시오.</block>
+  <block id="17f0fae3c5e44f9a095562194f423343" category="paragraph"><block ref="17f0fae3c5e44f9a095562194f423343" category="inline-link-rx"></block></block>
+  <block id="82defe4f45724f0ce17f1a11c6980420" category="paragraph"><block ref="82defe4f45724f0ce17f1a11c6980420" category="inline-link-rx"></block></block>
+  <block id="cc88253744d31e3bf2a7ccc252a7265a" category="paragraph">자세한 지침은 을 참조하십시오<block ref="6317d940bb63c8479a9b48e6dec2fde3" category="inline-link-rx"></block>.</block>
+  <block id="fc45a2885da4a9737eb95fa3b0a34e31" category="paragraph">외부 URL의 이미지를 사용하여 소프트웨어 업그레이드를 수행하는 또 다른 방법입니다. 이 옵션은 Cloud Manager가 S3 버킷에 액세스하여 소프트웨어를 업그레이드할 수 없거나 패치가 제공된 경우에 유용합니다. 자세한 내용은 을 참조하십시오 <block ref="11936cfcb7aa35edec2f453984eea0f6" category="inline-xref-macro-rx"></block>.</block>
+  <block id="96e9eb313ea17571fd2fc456a82b6862" category="list-text"><block ref="96e9eb313ea17571fd2fc456a82b6862" category="inline-link-rx"></block></block>
+  <block id="ff9c48728746d281c6db8cc1fcc3bbc0" category="list-text"><block ref="ff9c48728746d281c6db8cc1fcc3bbc0" category="inline-link-rx"></block></block>
+  <block id="b40a553e51c475509749f5fbf966ca80" category="list-text"><block ref="b40a553e51c475509749f5fbf966ca80" category="inline-link-rx"></block></block>
+  <block id="0e042c43c721f1712a7e25ff5c262262" category="list-text"><block ref="0e042c43c721f1712a7e25ff5c262262" category="inline-link-rx"></block></block>
+  <block id="95cb432951e690caaf3364033a849ac6" category="paragraph">이러한 제한은 Cloud Manager의 Cloud Volumes ONTAP 관리에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어 자체의 제한 사항을 보려면<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
+  <block id="374b69ed8baae6c10fc401a5f23dfabf" category="paragraph"><block ref="374b69ed8baae6c10fc401a5f23dfabf" category="inline-link-rx"></block></block>
+  <block id="ce3a671f0219e5e11c7063a6ad822e79" category="paragraph"><block ref="ce3a671f0219e5e11c7063a6ad822e79" category="inline-link-rx"></block></block>
+  <block id="6b41bd25883d4b9d3fc620ddc9e20114" category="paragraph">9.7 릴리즈부터 애드온 라이센스가 포함된 AWS에서 Cloud Volumes ONTAP BYOL 방식으로 여러 스토리지 VM이 지원됩니다. 로 이동합니다<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.</block>
+  <block id="46a458ccb12155fe64d1df81ec5ab17f" category="list-text">로 이동합니다<block ref="39149cc0a92530a12be08de697a6a796" category="inline-link-rx"></block>.</block>
+  <block id="986760502c5f72b9233b40b1621b0e4c" category="paragraph"><block ref="986760502c5f72b9233b40b1621b0e4c" category="inline-link-rx"></block></block>
+  <block id="28d1200478fccc009b0e5ac11ab32501" category="paragraph"><block ref="28d1200478fccc009b0e5ac11ab32501" category="inline-link-rx"></block></block>
+  <block id="74800c4b0c4f7420856e108da469e4d7" category="paragraph">HA 쌍에 대한 액세스를 지원하는 AWS 전송 게이트웨이를 설정합니다 <block ref="b4592641b260566283cc706f7ca397da" category="inline-link-macro-rx"></block> HA 쌍이 상주하는 VPC 외부에서</block>
 </blocks>

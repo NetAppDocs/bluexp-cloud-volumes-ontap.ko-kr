@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes' 
-summary: service>의 새로운 기능에 대해 알아보십시오. 
+summary: Cloud Manager에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보십시오. 
 ---
 = 새로운 기능
 :hardbreaks:
@@ -15,7 +15,7 @@ summary: service>의 새로운 기능에 대해 알아보십시오.
 [role="lead"]
 Cloud Manager에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보십시오.
 
-이 페이지에 설명된 향상된 기능은 Cloud Volumes ONTAP 관리를 지원하는 Cloud Manager 기능에만 적용됩니다. https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트를 참조하십시오"^] Cloud Volumes ONTAP 소프트웨어의 새로운 기능에 대해 알아봅니다.
+이 페이지에 설명된 향상된 기능은 Cloud Volumes ONTAP 관리를 지원하는 Cloud Manager 기능에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어 자체의 새로운 기능에 대해 알아보려면 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트 로 이동합니다"^]
 
 
 
@@ -107,7 +107,7 @@ a_system_은 HA 쌍 또는 단일 노드 시스템입니다. 예를 들어, 2개
 
 궁금한 사항이 있으면 어카운트 담당자 또는 세일즈 팀에 문의하십시오.
 
-link:concept-netapp-accounts.html["NetApp 계정 에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["NetApp 계정 에 대해 자세히 알아보십시오"^]
 
 
 
@@ -271,7 +271,7 @@ WORM(Write Once, Read Many) 스토리지는 더 이상 미리 보기에 표시�
 
 이제 Cloud Volumes ONTAP는 9.9.1 릴리스부터 PAYGO Premium, BYOL(Bring Your Own License) 및 Freemium과 같은 충전 방법을 사용하여 m5dn.24xLarge 인스턴스 유형을 지원합니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["AWS에서 지원되는 Cloud Volumes ONTAP 구성 보기"^].
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["AWS에서 지원되는 Cloud Volumes ONTAP 구성 보기"^].
 
 
 
@@ -322,7 +322,7 @@ CUSTOM-4-16384 시스템 유형은 새로운 Cloud Volumes ONTAP 시스템에서
 
 이 기계 유형에서 실행 중인 기존 시스템이 있는 경우 계속 사용할 수 있지만 n2-standard-4 기계 유형으로 전환하는 것이 좋습니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["GCP에서 Cloud Volumes ONTAP에 대해 지원되는 구성을 봅니다"^].
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["GCP에서 Cloud Volumes ONTAP에 대해 지원되는 구성을 봅니다"^].
 
 
 

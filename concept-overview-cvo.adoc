@@ -44,7 +44,7 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-clo
 NetApp SnapCenter를 사용하여 NetApp Snapshot 복사본의 일관성을 보장합니다.
 
 +
-https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenter에 대해 자세히 알아보십시오"^]
+https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html["SnapCenter에 대해 자세히 알아보십시오"^]
 
 * 데이터 보안
 +
@@ -62,6 +62,6 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.
 
 NOTE: ONTAP 기능에 대한 라이센스는 Cloud Volumes ONTAP에 포함되어 있습니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap/index.html["지원되는 Cloud Volumes ONTAP 구성을 봅니다"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["지원되는 Cloud Volumes ONTAP 구성을 봅니다"^]
 
 https://cloud.netapp.com/ontap-cloud["Cloud Volumes ONTAP에 대해 자세히 알아보십시오"^]
