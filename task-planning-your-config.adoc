@@ -138,7 +138,7 @@ AWS에서 Cloud Volumes ONTAP를 시작할 때 VPC 네트워크에 대한 세부
 
 
 
-==== Cloud Volumes ONTAP에 대한 네트워크 정보입니다
+=== Cloud Volumes ONTAP에 대한 네트워크 정보입니다
 
 [cols="30,70"]
 |===
@@ -158,7 +158,7 @@ AWS에서 Cloud Volumes ONTAP를 시작할 때 VPC 네트워크에 대한 세부
 |===
 
 
-==== 여러 AZs의 HA 쌍에 대한 네트워크 정보
+=== 여러 AZs의 HA 쌍에 대한 네트워크 정보
 
 [cols="30,70"]
 |===

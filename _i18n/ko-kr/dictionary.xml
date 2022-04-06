@@ -183,7 +183,6 @@
   <block id="02c690c7e2df5602e590fab55c30a15e" category="paragraph">HTTPS 연결은 Cloud Volumes ONTAP 9.7 HA 쌍에서 Azure 스토리지 계정에 연결됩니다. 이 옵션을 설정하면 쓰기 성능에 영향을 줄 수 있습니다. 작업 환경을 만든 후에는 설정을 변경할 수 없습니다.</block>
   <block id="7fd530af1ffbe88c56d08b069efeba9e" category="list-text">* 볼륨 생성 *: 새 볼륨에 대한 세부 정보를 입력하거나 * 건너뛰기 * 를 클릭합니다.</block>
   <block id="09eb13e81cc007418ee8fa04feb8088f" category="paragraph">이 페이지의 일부 필드는 설명이 필요 없습니다. 다음 표에서는 지침이 필요한 필드를 설명합니다.</block>
-  <block id="4019d9e3e500c8109fa424a39c08d94b" category="paragraph">stdin&gt;의 확인되지 않은 지시문 - include::::_include/create_volume.adoc [ ]</block>
   <block id="2047d66d7f84aebbeede37060dd241ac" category="paragraph">다음 이미지는 CIFS 프로토콜에 대해 작성된 볼륨 페이지를 보여 줍니다.</block>
   <block id="ffa93c03fe02e87d998cd9a350ece595" category="inline-image-macro">스크린샷: Cloud Volumes ONTAP 인스턴스에 대해 작성된 볼륨 페이지를 표시합니다.</block>
   <block id="9cd65b9992efcafc37377a9fe9dc45f4" category="paragraph"><block ref="9cd65b9992efcafc37377a9fe9dc45f4" category="inline-image-macro-rx" type="image"></block></block>
@@ -3644,4 +3643,13 @@
   <block id="986760502c5f72b9233b40b1621b0e4c" category="paragraph"><block ref="986760502c5f72b9233b40b1621b0e4c" category="inline-link-rx"></block></block>
   <block id="28d1200478fccc009b0e5ac11ab32501" category="paragraph"><block ref="28d1200478fccc009b0e5ac11ab32501" category="inline-link-rx"></block></block>
   <block id="74800c4b0c4f7420856e108da469e4d7" category="paragraph">HA 쌍에 대한 액세스를 지원하는 AWS 전송 게이트웨이를 설정합니다 <block ref="b4592641b260566283cc706f7ca397da" category="inline-link-macro-rx"></block> HA 쌍이 상주하는 VPC 외부에서</block>
+  <block id="6f6cb72d544962fa333e2e34ce64f719" category="cell">크기</block>
+  <block id="bcdd7ef73721b892a492bf27fa634f7e" category="cell">액세스 제어(NFS에만 해당)</block>
+  <block id="a53068405a66e58d1a070c4ff3c1b272" category="cell">엑스포트 정책은 볼륨에 액세스할 수 있는 서브넷의 클라이언트를 정의합니다. 기본적으로 Cloud Manager는 서브넷의 모든 인스턴스에 대한 액세스를 제공하는 값을 입력합니다.</block>
+  <block id="8764e88b56cc40b94d30a67dfbf91d43" category="cell">권한 및 사용자/그룹(CIFS 전용)</block>
+  <block id="ec32b0289b4c5e86e48f585b24563ec1" category="cell">이러한 필드를 사용하면 사용자 및 그룹의 공유에 대한 액세스 수준(액세스 제어 목록 또는 ACL라고도 함)을 제어할 수 있습니다. 로컬 또는 도메인 Windows 사용자 또는 그룹, UNIX 사용자 또는 그룹을 지정할 수 있습니다. 도메인 Windows 사용자 이름을 지정하는 경우 domain\username 형식을 사용하여 사용자의 도메인을 포함해야 합니다.</block>
+  <block id="67aa713de67c8b70e0a8d714e4ea7dc6" category="cell">고급 옵션(NFS에만 해당)</block>
+  <block id="b50c0b33e57b5c9ee115739c46632fb7" category="cell">볼륨의 NFS 버전 선택: NFSv3 또는 NFSv4</block>
+  <block id="18f1f9ca3b7402c1f840aba2c56d18c7" category="cell">이니시에이터 그룹 및 IQN(iSCSI 전용)</block>
+  <block id="7a45d8b3ab8b6621427f532caad57a5f" category="cell">iSCSI 스토리지 타겟을 LUN(논리 유닛)이라고 하며 호스트에 표준 블록 디바이스로 표시됩니다. 이니시에이터 그룹은 iSCSI 호스트 노드 이름의 테이블이며 어떤 이니시에이터가 어떤 LUN을 액세스할 수 있는지 제어합니다. iSCSI 대상은 표준 이더넷 네트워크 어댑터(NIC), 소프트웨어 이니시에이터가 있는 TCP 오프로드 엔진(TOE) 카드, 통합 네트워크 어댑터(CNA) 또는 전용 호스트 파스트 어댑터(HBA)를 통해 네트워크에 연결되며 iSCSI 공인 이름(IQN)으로 식별됩니다. iSCSI 볼륨을 생성할 때 Cloud Manager에서 자동으로 LUN을 생성합니다. 볼륨 당 하나의 LUN만 생성하므로 관리가 필요 없습니다. 볼륨을 생성한 후 <block ref="a56ae12401d3846252ee1d7537583dde" category="inline-link-macro-rx"></block>.</block>
 </blocks>
