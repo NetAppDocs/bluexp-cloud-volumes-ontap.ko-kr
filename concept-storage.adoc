@@ -107,7 +107,7 @@ GCP에서 애그리게이트에는 동일한 크기의 디스크를 최대 6개�
 
 == RAID 유형입니다
 
-각 Cloud Volumes ONTAP 애그리게이트의 RAID 유형은 RAID0(스트라이핑)입니다. 다른 RAID 유형은 지원되지 않습니다. Cloud Volumes ONTAP은 클라우드 공급자에 의존하여 디스크 가용성 및 내구성을 제공합니다.
+각 Cloud Volumes ONTAP 애그리게이트의 RAID 유형은 RAID0(스트라이핑)입니다. Cloud Volumes ONTAP은 클라우드 공급자에 의존하여 디스크 가용성 및 내구성을 제공합니다. 다른 RAID 유형은 지원되지 않습니다.
 
 
 

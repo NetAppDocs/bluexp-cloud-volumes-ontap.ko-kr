@@ -2394,7 +2394,6 @@
   <block id="9070b67413002bc5263a680bd85ea608" category="list-text"><block ref="9070b67413002bc5263a680bd85ea608" category="inline-link-rx"></block></block>
   <block id="e46688fddd94642d62f18d83f9d39b65" category="inline-link">GCP의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다</block>
   <block id="6371ae3dff33e72574b28de08b0185ce" category="section-title">RAID 유형입니다</block>
-  <block id="337815266d268b4471616e4585c27ced" category="paragraph">각 Cloud Volumes ONTAP 애그리게이트의 RAID 유형은 RAID0(스트라이핑)입니다. 다른 RAID 유형은 지원되지 않습니다. Cloud Volumes ONTAP은 클라우드 공급자에 의존하여 디스크 가용성 및 내구성을 제공합니다.</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오.</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">알려진 제한 사항</block>
   <block id="ffaadeb23249c6bcd3f9798d9d77ceed" category="section-title">Cloud Manager는 FlexGroup 볼륨을 지원하지 않습니다</block>
@@ -3655,4 +3654,5 @@
   <block id="c29624d8ee4ab92b4fe9010d8067a290" category="section-title">핫 스페어</block>
   <block id="7546f1896fe746593fe39c57ea23bd23" category="paragraph">RAID0은 중복성을 위해 핫 스페어 사용을 지원하지 않습니다.</block>
   <block id="ee9bdabf55f98e793b6a92484c2f5bb5" category="paragraph">Cloud Volumes ONTAP 인스턴스에 연결된 사용하지 않는 디스크(핫 스페어)를 생성하는 것은 불필요한 비용이며 필요에 따라 추가 공간을 프로비저닝하지 못할 수 있습니다. 따라서 권장되지 않습니다.</block>
+  <block id="d30ed55a4efaa85c9be23afd54902f99" category="paragraph">각 Cloud Volumes ONTAP 애그리게이트의 RAID 유형은 RAID0(스트라이핑)입니다. Cloud Volumes ONTAP은 클라우드 공급자에 의존하여 디스크 가용성 및 내구성을 제공합니다. 다른 RAID 유형은 지원되지 않습니다.</block>
 </blocks>
