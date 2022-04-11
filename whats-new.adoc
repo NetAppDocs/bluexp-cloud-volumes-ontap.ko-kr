@@ -25,7 +25,7 @@ Cloud Manager에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알
 
 === WORM 스토리지에 대한 충전 중
 
-출시 특별 요금이 만료되었으므로 이제 WORM 스토리지 사용 요금이 부과됩니다. 충전은 볼륨의 총 프로비저닝 용량에 따라 매시간 제공됩니다. 이는 신규 및 기존 Cloud Volumes ONTAP 시스템에 적용됩니다.
+출시 특별 요금이 만료되었으므로 이제 WORM 스토리지 사용 요금이 부과됩니다. WORM 볼륨의 총 프로비저닝 용량에 따라 매시간 충전됩니다. 이는 신규 및 기존 Cloud Volumes ONTAP 시스템에 적용됩니다.
 
 https://cloud.netapp.com/pricing["WORM 스토리지 가격에 대해 자세히 알아보십시오"^].
 

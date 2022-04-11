@@ -169,6 +169,7 @@ AWS 상용 클라우드 서비스 환경에서 작업을 수행하는 데 필요
                 "iam:CreateRole",
                 "iam:DeleteRole",
                 "iam:PutRolePolicy",
+                "iam:ListInstanceProfiles",
                 "iam:CreateInstanceProfile",
                 "iam:DeleteRolePolicy",
                 "iam:AddRoleToInstanceProfile",

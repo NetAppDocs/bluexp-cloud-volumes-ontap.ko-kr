@@ -3589,7 +3589,6 @@
   <block id="d6f0e34ef668049ec1996dc9805ae695" category="paragraph">스토리지 VM에서 볼륨을 생성하기 전에 새 스토리지 VM이 적어도 하나의 애그리게이트에 액세스해야 하기 때문에 이 단계가 필요합니다.</block>
   <block id="5e16db4c47abe8cb1c5bd746df2fd94a" category="section-title">2022년 4월 3일</block>
   <block id="0f132f66e81cbab588044405a33dc058" category="section-title">WORM 스토리지에 대한 충전 중</block>
-  <block id="89e51b22871a787913c4aa90cf856626" category="paragraph">출시 특별 요금이 만료되었으므로 이제 WORM 스토리지 사용 요금이 부과됩니다. 충전은 볼륨의 총 프로비저닝 용량에 따라 매시간 제공됩니다. 이는 신규 및 기존 Cloud Volumes ONTAP 시스템에 적용됩니다.</block>
   <block id="10142c9d88b9419ee393574e858e86c8" category="inline-link">WORM 스토리지 가격에 대해 자세히 알아보십시오</block>
   <block id="074dbf8cc93ccd34e86e3e2e8f2a1e3a" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block>.</block>
   <block id="32215461c426d2e6cd125109ca715d8f" category="section-title">2022년 2월 27일(커넥터 3.9.16)</block>
@@ -3604,7 +3603,6 @@
   <block id="01b6222a6fdfe753189cb7e0753ef51a" category="section-title">2021년 10월 4일(커넥터 3.9.11)</block>
   <block id="2e88f3ae6e50f5f0bbc46ea8158b71ea" category="section-title">2021년 9월 2일(커넥터 3.9.10)</block>
   <block id="96ce026f2bc7496743369db3f0e33981" category="section-title">기존 Azure 리소스 그룹을 선택합니다</block>
-  <block id="6f2d75bffb91c65e98a19f69305c5cb4" category="paragraph">WORM 스토리지에 대한 충전은 볼륨의 총 프로비저닝 용량에 따라 매시간 가능합니다.</block>
   <block id="96b2257b99d74387ccf906445ab11df4" category="paragraph">CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.</block>
   <block id="ee095a2fd0990ba785c303c6524d8145" category="list-text">추가 SVM(Data-Serving Storage VM)에 대한 추가 라이센스 비용은 없지만, 데이터 서비스 SVM당 최소 용량 비용은 4TiB입니다.</block>
   <block id="cc331a0f761602982769cdbb99e71272" category="list-text">재해 복구 SVM은 프로비저닝된 용량에 따라 충전됩니다.</block>
@@ -3655,4 +3653,6 @@
   <block id="7546f1896fe746593fe39c57ea23bd23" category="paragraph">RAID0은 중복성을 위해 핫 스페어 사용을 지원하지 않습니다.</block>
   <block id="ee9bdabf55f98e793b6a92484c2f5bb5" category="paragraph">Cloud Volumes ONTAP 인스턴스에 연결된 사용하지 않는 디스크(핫 스페어)를 생성하는 것은 불필요한 비용이며 필요에 따라 추가 공간을 프로비저닝하지 못할 수 있습니다. 따라서 권장되지 않습니다.</block>
   <block id="d30ed55a4efaa85c9be23afd54902f99" category="paragraph">각 Cloud Volumes ONTAP 애그리게이트의 RAID 유형은 RAID0(스트라이핑)입니다. Cloud Volumes ONTAP은 클라우드 공급자에 의존하여 디스크 가용성 및 내구성을 제공합니다. 다른 RAID 유형은 지원되지 않습니다.</block>
+  <block id="e85cd480a7048786255eb3e2a749e48d" category="paragraph">WORM 볼륨의 총 프로비저닝 용량에 따라 WORM 스토리지에 대한 충전이 매시간 가능합니다.</block>
+  <block id="d87a373c29bad4362e9f6515cb3a6927" category="paragraph">출시 특별 요금이 만료되었으므로 이제 WORM 스토리지 사용 요금이 부과됩니다. WORM 볼륨의 총 프로비저닝 용량에 따라 매시간 충전됩니다. 이는 신규 및 기존 Cloud Volumes ONTAP 시스템에 적용됩니다.</block>
 </blocks>

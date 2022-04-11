@@ -27,7 +27,7 @@ Cloud Volumes ONTAP 시스템에서 WORM(Write Once, Read Many) 스토리지를 
 
 == 충전 중
 
-WORM 스토리지에 대한 충전은 볼륨의 총 프로비저닝 용량에 따라 매시간 가능합니다.
+WORM 볼륨의 총 프로비저닝 용량에 따라 WORM 스토리지에 대한 충전이 매시간 가능합니다.
 
 https://cloud.netapp.com/pricing["WORM 스토리지 가격에 대해 자세히 알아보십시오"^].
 
