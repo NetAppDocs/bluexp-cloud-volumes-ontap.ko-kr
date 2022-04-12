@@ -172,6 +172,8 @@ sidebar:
     entries:
     - title: 스토리지
       entries:
+      - title: 클라이언트 프로토콜
+        url: "/concept-client-protocols.html"
       - title: 디스크와 애그리게이트
         url: "/concept-storage.html"
       - title: 데이터 계층화
