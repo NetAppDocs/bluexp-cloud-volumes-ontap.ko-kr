@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP를 Cloud Manager에서 중지하고 시작하여 �
 ---
 = Cloud Volumes ONTAP의 상태 관리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

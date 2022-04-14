@@ -6,6 +6,7 @@ summary: Azure에서 Cloud Volumes ONTAP를 구축할 때 워크로드 요구사
 ---
 = Azure에서 Cloud Volumes ONTAP 구성 계획
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

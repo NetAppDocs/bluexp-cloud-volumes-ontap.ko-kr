@@ -6,6 +6,7 @@ summary: 'Cloud Volumes ONTAP 시스템에서 WORM(Write Once, Read Many) 스토
 ---
 = WORM 스토리지
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

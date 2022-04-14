@@ -7,6 +7,7 @@ summary: 스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, �
 = Cloud Manager에서 스토리지 VM을 관리합니다
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

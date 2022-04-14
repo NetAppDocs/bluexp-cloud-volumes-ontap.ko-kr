@@ -6,6 +6,7 @@ summary: 볼륨을 직접 생성하거나 Cloud Manager에서 볼륨을 생성�
 ---
 = 애그리게이트 생성
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

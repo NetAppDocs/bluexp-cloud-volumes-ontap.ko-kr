@@ -6,6 +6,7 @@ summary: ONTAP의 AutoSupport 구성 요소는 원격 측정을 수집하여 분
 ---
 = AutoSupport 및 Active IQ 디지털 자문업체
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Cloud Manager를 사용하면 Cloud Volumes ONTAP에 대해 일반 또�
 ---
 = 쓰기 속도
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

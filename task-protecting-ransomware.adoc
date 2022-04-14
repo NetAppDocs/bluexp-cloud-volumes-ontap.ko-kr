@@ -6,6 +6,7 @@ summary: 랜섬웨어 공격은 비즈니스 시간, 리소스 및 평판에 악
 ---
 = 랜섬웨어에 대한 보호 개선
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

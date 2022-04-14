@@ -6,6 +6,7 @@ summary: Cloud Manager를 사용하면 Kubernetes 클러스터에 NetApp Trident
 ---
 = Kubernetes용 영구 스토리지로 Cloud Volumes ONTAP 사용
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

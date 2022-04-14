@@ -6,6 +6,7 @@ summary: 디지털 지갑에서 노드 기반 라이센스를 관리하여 각 C
 ---
 = 노드 기반 라이센스 관리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

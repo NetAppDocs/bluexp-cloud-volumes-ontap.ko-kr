@@ -6,6 +6,7 @@ summary: Microsoft 관리 키가 있는 Azure 스토리지 서비스 암호화�
 ---
 = Azure에서 고객이 관리하는 키를 사용하도록 Cloud Volumes ONTAP를 설정합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

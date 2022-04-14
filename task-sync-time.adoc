@@ -6,6 +6,7 @@ summary: NTP 서버를 지정하면 네트워크 시스템 간의 시간이 동�
 ---
 = NTP를 사용하여 시스템 시간을 동기화합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 콜드 데이터를 저비용 오브젝트 스토리지로 자동 계�
 ---
 = 데이터 계층화 개요
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

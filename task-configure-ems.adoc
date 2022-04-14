@@ -6,6 +6,7 @@ summary: 이벤트 관리 시스템은 ONTAP 시스템에서 발생하는 이벤
 ---
 = EMS를 설정한다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

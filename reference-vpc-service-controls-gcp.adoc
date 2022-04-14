@@ -6,6 +6,7 @@ summary: VPC 서비스 컨트롤로 Google 환경을 잠그려면 Cloud Manager 
 ---
 = GCP에서 VPC 서비스 제어 계획
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

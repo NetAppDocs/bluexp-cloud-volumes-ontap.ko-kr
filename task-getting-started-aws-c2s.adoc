@@ -6,6 +6,7 @@ summary: '표준 AWS 지역과 마찬가지로, AWS C2S(Commercial Cloud Service
 ---
 = AWS C2S 환경에서 Cloud Volumes ONTAP를 시작하십시오
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

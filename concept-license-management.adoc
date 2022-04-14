@@ -6,6 +6,7 @@ summary: 노드 기반 BYOL을 사용하는 각 Cloud Volumes ONTAP 시스템에
 ---
 = 노드 기반 BYOL의 라이센스 관리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 클라우드 공급자의 콘솔이 아닌 Cloud Manager에서 Cloud Vo
 ---
 = Cloud Volumes ONTAP 시스템 삭제
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

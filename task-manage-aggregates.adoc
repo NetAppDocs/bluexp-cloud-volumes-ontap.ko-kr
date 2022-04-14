@@ -6,6 +6,7 @@ summary: 디스크를 추가하고, 애그리게이트에 대한 정보를 확�
 ---
 = 애그리게이트 관리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

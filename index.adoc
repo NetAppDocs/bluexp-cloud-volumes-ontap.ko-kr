@@ -7,6 +7,7 @@ summary: Cloud Volumes ONTAP를 사용하면 클라우드 스토리지 비용과
 ---
 = Cloud Volumes ONTAP 설명서
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

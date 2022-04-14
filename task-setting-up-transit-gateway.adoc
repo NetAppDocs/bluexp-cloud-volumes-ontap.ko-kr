@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP가 상주하는 VPC 외부에서 NAS 클라이언�
 ---
 = 여러 AZs에서 HA 쌍에 대한 AWS 전송 게이트웨이 설정
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 여러 AWS 가용성 영역에 구축된 HA 쌍의 부동 IP 주소에 
 ---
 = 여러 AZs에서 HA 쌍의 경로 테이블을 변경합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

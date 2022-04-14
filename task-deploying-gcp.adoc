@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP를 단일 시스템 구성으로 실행하거나 Go
 ---
 = GCP에서 Cloud Volumes ONTAP를 시작합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 기존 Cloud Volumes ONTAP 시스템을 검색하고 Cloud Manager에 �
 ---
 = Cloud Manager에 기존 Cloud Volumes ONTAP 시스템 추가
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

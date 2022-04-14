@@ -6,6 +6,7 @@ summary: 'Cloud Volumes ONTAP HA(고가용성) 쌍은 클라우드 환경에서 
 ---
 = Azure의 고가용성 쌍
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

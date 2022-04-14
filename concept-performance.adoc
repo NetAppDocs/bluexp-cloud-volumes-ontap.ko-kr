@@ -6,6 +6,7 @@ summary: 성능 결과를 검토하여 Cloud Volumes ONTAP에 적합한 워크�
 ---
 = 성능
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

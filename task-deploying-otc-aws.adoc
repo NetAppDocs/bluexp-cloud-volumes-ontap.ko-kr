@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP 인스턴스를 단일 시스템 구성으로 실�
 ---
 = AWS에서 Cloud Volumes ONTAP 실행
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

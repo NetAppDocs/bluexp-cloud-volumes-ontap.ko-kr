@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP를 구축하면 워크로드 요구사항에 맞게
 ---
 = Google Cloud에서 Cloud Volumes ONTAP 구성 계획
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

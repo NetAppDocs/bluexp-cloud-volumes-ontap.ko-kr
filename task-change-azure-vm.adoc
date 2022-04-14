@@ -6,6 +6,7 @@ summary: Microsoft Azure에서 Cloud Volumes ONTAP를 시작할 때 여러 VM �
 ---
 = Cloud Volumes ONTAP의 Azure VM 유형을 변경합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

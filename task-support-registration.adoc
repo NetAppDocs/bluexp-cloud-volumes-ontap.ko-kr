@@ -5,8 +5,50 @@ keywords: support registration, register for support, support, nss account, add 
 summary: NetApp 기술 지원으로 지원 케이스를 생성하기 전에 NetApp Support 사이트 계정을 Cloud Manager에 추가한 다음 지원을 위해 등록해야 합니다. 
 ---
 = 지원을 위해 등록하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
-link:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/_include/support-registration.adoc[""]
+NetApp 기술 지원으로 지원 케이스를 생성하기 전에 NetApp Support 사이트 계정을 Cloud Manager에 추가한 다음 지원을 위해 등록해야 합니다.
+
+
+
+== NSS 계정을 추가합니다
+
+지원 대시보드를 이용하면 모든 NetApp Support 사이트 계정을 단일 위치에서 추가 및 관리할 수 있습니다.
+
+.단계
+. 아직 NetApp Support 사이트 계정이 없는 경우 https://register.netapp.com/register/start["1인 등록"^].
+. Cloud Manager 콘솔의 오른쪽 상단에서 도움말 아이콘을 클릭하고 * 지원 * 을 선택합니다.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다"]
+
+. NSS 관리 > NSS 계정 추가 * 를 클릭합니다.
+. 메시지가 표시되면 * 계속 * 을 클릭하여 Microsoft 로그인 페이지로 리디렉션됩니다.
++
+NetApp은 Microsoft Azure Active Directory를 지원 및 라이선싱과 관련된 인증 서비스의 ID 공급자로 사용합니다.
+
+. 로그인 페이지에서 인증 프로세스를 수행할 수 있도록 NetApp Support 사이트의 등록 이메일 주소와 암호를 제공합니다.
++
+이 작업을 수행하면 Cloud Manager에서 NSS 계정을 사용할 수 있습니다.
+
++
+참고 계정은 고객 수준 계정이어야 합니다(게스트 또는 임시 계정이 아님).
+
+
+
+
+
+== 계정을 등록하여 지원을 받을 수 있습니다
+
+지원 등록은 지원 대시보드의 Cloud Manager에서 가능합니다.
+
+.단계
+. Cloud Manager 콘솔의 오른쪽 상단에서 도움말 아이콘을 클릭하고 * 지원 * 을 선택합니다.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다"]
+
+. Resources * 탭에서 * Register for Support * 를 클릭합니다.
+. 등록할 NSS 자격 증명을 선택한 다음 * 등록 * 을 클릭합니다.
+

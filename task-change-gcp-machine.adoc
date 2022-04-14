@@ -6,6 +6,7 @@ summary: Google Cloud에서 Cloud Volumes ONTAP를 시작할 때 여러 컴퓨�
 ---
 = Cloud Volumes ONTAP의 Google Cloud 컴퓨터 유형을 변경합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

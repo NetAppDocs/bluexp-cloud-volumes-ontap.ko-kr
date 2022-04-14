@@ -7,6 +7,7 @@ summary: 'Cloud Volumes ONTAP는 외부 키 관리자로 NVE(NetApp Volume Encry
 = NetApp 암호화 솔루션으로 볼륨 암호화
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

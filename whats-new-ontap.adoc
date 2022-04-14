@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP용 릴리스 정보 에서는 릴리스별 정보�
 ---
 = Cloud Volumes ONTAP 릴리즈 노트
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

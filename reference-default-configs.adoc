@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP가 기본적으로 어떻게 구성되어 있는지
 ---
 = Cloud Volumes ONTAP의 기본 구성입니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

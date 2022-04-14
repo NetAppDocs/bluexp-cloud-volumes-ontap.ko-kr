@@ -6,6 +6,7 @@ summary: Cloud Manager에서 Cloud Volumes ONTAP을 업그레이드하여 최신
 ---
 = Cloud Volumes ONTAP 소프트웨어를 업그레이드합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

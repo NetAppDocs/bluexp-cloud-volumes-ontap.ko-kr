@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP에서 Amazon 암호화를 사용하려면 AWS 키 �
 ---
 = AWS KMS 설정
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

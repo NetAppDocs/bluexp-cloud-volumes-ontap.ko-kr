@@ -6,6 +6,7 @@ summary: 기본적으로 Cloud Manager는 Cloud Volumes ONTAP과 관련 스토�
 ---
 = Cloud Volumes ONTAP에 Azure 전용 링크 사용
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

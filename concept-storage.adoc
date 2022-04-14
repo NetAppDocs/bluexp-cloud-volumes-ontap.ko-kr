@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP에서 클라우드 스토리지를 사용하는 방
 ---
 = 디스크와 애그리게이트
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

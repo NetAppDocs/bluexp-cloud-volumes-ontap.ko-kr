@@ -1579,7 +1579,6 @@
   <block id="9b8b2e85183289a4a4216aa166d35dd6" category="paragraph">서브스크립션은 Cloud Manager 계정에서 링크 해제되고 Cloud Volumes ONTAP 작업 환경을 생성할 때 더 이상 선택할 수 없습니다.</block>
   <block id="ce21e7ae4271271294ccbf54c8fd6864" category="summary">NetApp은 다양한 방법으로 Cloud Manager를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">도움을 받으십시오</block>
-  <block id="7ccaf84febc0ed633fbdbadb8d488a7e" category="paragraph"><block ref="7ccaf84febc0ed633fbdbadb8d488a7e" category="inline-link-macro-rx"></block></block>
   <block id="4252853a5eb66c313d7d3de27294178a" category="summary">기존 Cloud Volumes ONTAP 시스템을 검색하고 Cloud Manager에 추가할 수 있습니다. 새로운 Cloud Manager 시스템을 구축한 경우 이 작업을 수행할 수 있습니다.</block>
   <block id="58ca1b02b8fdf23f7b4d0f26922f86ed" category="doc">Cloud Manager에 기존 Cloud Volumes ONTAP 시스템 추가</block>
   <block id="ddf67437a4757d7231aaedf4fdf85f02" category="paragraph">Cloud Volumes ONTAP admin 사용자 계정의 암호를 알아야 합니다.</block>
@@ -2320,8 +2319,6 @@
   <block id="7eeac5ac06af86bf7a05d8897d8f378c" category="list-text"><block ref="7eeac5ac06af86bf7a05d8897d8f378c" category="inline-link-rx"></block></block>
   <block id="0566b6e2df4ff947b8313e081a6e1f8f" category="paragraph">3.7.2 릴리스부터는 Cloud Manager에서 모든 새 Cloud Volumes ONTAP 시스템에 대한 FlexCache 라이센스를 생성합니다. 이 라이센스에는 500GiB 사용 제한이 포함됩니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
-  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
-  <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
   <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9에 대한 고지 사항</block>
   <block id="c069fcc68c5dfa73ccc99924c836cae9" category="paragraph"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
   <block id="7a0f0cbfb576252735561bf366791b09" category="summary">몇 가지 단계를 통해 Cloud Volumes ONTAP for GCP를 시작해 보십시오.</block>
@@ -2732,10 +2729,8 @@
   <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">Connector에 대해 미리 정의된 보안 그룹은 모든 아웃바운드 트래픽을 엽니다. 허용 가능한 경우 기본 아웃바운드 규칙을 따릅니다. 더 엄격한 규칙이 필요한 경우 고급 아웃바운드 규칙을 사용합니다.</block>
   <block id="4c7e4350b2ac4e79ecdf1d8f33b2d41e" category="paragraph">아웃바운드 트래픽에 대해 엄격한 규칙이 필요한 경우 다음 정보를 사용하여 Connector의 아웃바운드 통신에 필요한 포트만 열 수 있습니다.</block>
   <block id="a94c44d83136ca0aa23c397adb28b116" category="admonition">소스 IP 주소는 커넥터 호스트입니다.</block>
-  <block id="03b9930526cd7e3fa4aafa64244d7957" category="cell">Active Directory Kerberos V 변경 및 암호 설정(RPCSEC_GSS)</block>
   <block id="241b5fab8e737eaa79c543efe7307059" category="cell">API 호출 및 AutoSupport</block>
   <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">아웃바운드 인터넷 및 ONTAP 클러스터 관리 LIF</block>
-  <block id="756da060e5d58870fc2d28d4b7bc9a45" category="cell">API는 AWS 및 ONTAP를 호출하고 AutoSupport 메시지를 NetApp에 보냅니다</block>
   <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">API 호출</block>
   <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">ONTAP HA 중재자</block>
   <block id="ad4167f20adb487bdfdd71a56ab00120" category="cell">ONTAP HA 중재인과의 커뮤니케이션</block>
@@ -3092,7 +3087,6 @@
   <block id="5ea521a799e1cf043cd101ec326044f6" category="paragraph">Connector의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.</block>
   <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">Connector에 대해 미리 정의된 방화벽 규칙은 모든 아웃바운드 트래픽을 엽니다. 허용 가능한 경우 기본 아웃바운드 규칙을 따릅니다. 더 엄격한 규칙이 필요한 경우 고급 아웃바운드 규칙을 사용합니다.</block>
   <block id="bd83f7d2350eb6b777b2622dfd275ab6" category="paragraph">Connector에 대해 미리 정의된 방화벽 규칙에는 다음과 같은 아웃바운드 규칙이 포함됩니다.</block>
-  <block id="6bd5daa8c1323951490934f949fd7f78" category="cell">API는 GCP 및 ONTAP를 호출하고 AutoSupport 메시지를 NetApp에 보냅니다</block>
   <block id="aef294321c5e9daca32778610304f081" category="summary">몇 가지 단계를 통해 Azure용 Cloud Volumes ONTAP를 시작하십시오.</block>
   <block id="6b9ec885733dcee16db8c4d8dde6312a" category="doc">Azure에서 Cloud Volumes ONTAP를 빠르게 시작합니다</block>
   <block id="019fd7c8c6395aedf9e4d8fe995febee" category="inline-link">Azure에서 커넥터를 만드는 방법에 대해 알아봅니다</block>
@@ -3499,7 +3493,6 @@
   <block id="611a1fa2f8a37527bbcb1f0228321b4d" category="list-text">VM 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해하고 있는지 확인한 다음 * OK * 를 클릭합니다.</block>
   <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">NetApp 기술 지원으로 지원 케이스를 생성하기 전에 NetApp Support 사이트 계정을 Cloud Manager에 추가한 다음 지원을 위해 등록해야 합니다.</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">지원을 위해 등록하십시오</block>
-  <block id="d53e2559d6ace0e907fc57192bf286b6" category="paragraph"><block ref="d53e2559d6ace0e907fc57192bf286b6" category="inline-link-macro-rx"></block></block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
   <block id="2971acb1ab572cfb61b7c86d49e2b300" category="sidebar">Cloud Volumes ONTAP 문서</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
@@ -3669,4 +3662,56 @@
   <block id="75081fb4982f7b843e702079b35f0ed4" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block>.</block>
   <block id="cad02caeb4ee636c87f28b0bb1263080" category="inline-link-macro">지원되는 클라이언트 프로토콜 및 버전에 대해 알아보십시오</block>
   <block id="f0ddee23dd0d83f105bbdaa15ff5d87a" category="paragraph"><block ref="43c09f3d08ec80b50648a2a905bca06c" category="inline-link-macro-rx"></block>.</block>
+  <block id="a6a8d3a613b6b7ece18f688d168e5cda" category="cell">API는 AWS 및 ONTAP, 클라우드 데이터 감지, 랜섬웨어 서비스 요청, AutoSupport 메시지를 NetApp에 전송합니다</block>
+  <block id="aeaeee19a7c393222e407a525cf01991" category="section-title">NSS 계정을 추가합니다</block>
+  <block id="de2241fea60d98698faaa196ff73ee80" category="paragraph">지원 대시보드를 이용하면 모든 NetApp Support 사이트 계정을 단일 위치에서 추가 및 관리할 수 있습니다.</block>
+  <block id="5be2593b5948f30a15179a32daa73ee2" category="inline-link">1인 등록</block>
+  <block id="14b05cf61f1aba58d38b393e69b69538" category="list-text">아직 NetApp Support 사이트 계정이 없는 경우<block ref="0a8e82436ea73fe635862cfba3acf101" category="inline-link-rx"></block>.</block>
+  <block id="0046efb3377274ff3215d4b30269809e" category="list-text">Cloud Manager 콘솔의 오른쪽 상단에서 도움말 아이콘을 클릭하고 * 지원 * 을 선택합니다.</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다</block>
+  <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">NSS 관리 &gt; NSS 계정 추가 * 를 클릭합니다.</block>
+  <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">메시지가 표시되면 * 계속 * 을 클릭하여 Microsoft 로그인 페이지로 리디렉션됩니다.</block>
+  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp은 Microsoft Azure Active Directory를 지원 및 라이선싱과 관련된 인증 서비스의 ID 공급자로 사용합니다.</block>
+  <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">로그인 페이지에서 인증 프로세스를 수행할 수 있도록 NetApp Support 사이트의 등록 이메일 주소와 암호를 제공합니다.</block>
+  <block id="f5fb4199485234c409525f430b737010" category="paragraph">이 작업을 수행하면 Cloud Manager에서 NSS 계정을 사용할 수 있습니다.</block>
+  <block id="b4c6a2f33e7b2a38495546b8d5cd8e84" category="paragraph">참고 계정은 고객 수준 계정이어야 합니다(게스트 또는 임시 계정이 아님).</block>
+  <block id="fc65ebd4739f2f8ca46062a8280faea9" category="section-title">계정을 등록하여 지원을 받을 수 있습니다</block>
+  <block id="3e080914efe0d0ca025439fbb68d437f" category="paragraph">지원 등록은 지원 대시보드의 Cloud Manager에서 가능합니다.</block>
+  <block id="fb07bf6b7698dbe934b8b2164d915484" category="list-text">Resources * 탭에서 * Register for Support * 를 클릭합니다.</block>
+  <block id="392fb0270d0d84dbc3fdf8c67da1e5ad" category="list-text">등록할 NSS 자격 증명을 선택한 다음 * 등록 * 을 클릭합니다.</block>
+  <block id="6dabf2a1195c84bdf3b7bf30e5ddf080" category="cell">API는 GCP 및 ONTAP, 클라우드 데이터 센스, 랜섬웨어 서비스 요청 및 AutoSupport 메시지를 NetApp에 전송합니다</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">상표</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, NetApp 로고, NetApp 상표 페이지에 나열된 마크는 NetApp Inc.의 상표입니다. 기타 회사 및 제품 이름은 해당 소유자의 상표일 수 있습니다.</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">특허</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 소유 특허 목록은 다음 사이트에서 확인할 수 있습니다.</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
+  <block id="51719eefc68685ac0e2a11057a44b8be" category="paragraph">NetApp은 다양한 방법으로 Cloud Manager 및 클라우드 서비스를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
+  <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">자체 지원</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">이 옵션은 하루 24시간, 주 7일 동안 무료로 사용할 수 있습니다.</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">기술 자료</block>
+  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
+  <block id="76b571fb5edea1c1994fa0ff01f7b1e2" category="paragraph">Cloud Manager 기술 자료를 검색하여 문제를 해결할 수 있는 유용한 문서를 찾습니다.</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">커뮤니티</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="7f3490343cad8dc3bfdb72dd5d957e8d" category="paragraph">Cloud Manager 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 새 토론을 만들어보십시오.</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">문서화</block>
+  <block id="3c313458d6e15dd2c4336e47118d0a8f" category="paragraph">현재 보고 있는 Cloud Manager 문서입니다.</block>
+  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto:ng-cloudmanager-feedback@netapp.com [피드백 이메일]</block>
+  <block id="bff60abbc46aceed0f73a3a4f6cfb123" category="paragraph">저희는 귀하의 의견을 소중하게 생각합니다. 클라우드 관리자 개선에 도움이 되는 피드백을 제출해 주십시오.</block>
+  <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp 지원</block>
+  <block id="c91b5a63849b8d2db01014ed33192735" category="paragraph">위의 자체 지원 옵션 외에도 NetApp 지원 엔지니어와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.</block>
+  <block id="6c08c57e382a25a778455184cd9b1a4a" category="list-text">Cloud Manager에서 * 도움말 &gt; 지원 * 을 클릭합니다.</block>
+  <block id="f5052c65917d7341726235d4d4941461" category="list-text">기술 지원 아래에서 사용 가능한 옵션 중 하나를 선택합니다.</block>
+  <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">NetApp 기술 지원을 위한 전화 번호를 찾으려면 * 문의하다</block>
+  <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">문제 열기 * 를 클릭하고 옵션 중 하나를 선택한 다음 * 보내기 * 를 클릭합니다.</block>
+  <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 담당자가 귀하의 케이스를 검토하고 곧 다시 귀하에 연락을 드릴 것입니다.</block>
 </blocks>

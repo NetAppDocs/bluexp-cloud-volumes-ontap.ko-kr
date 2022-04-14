@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니�
 ---
 = Cloud Volumes ONTAP 라이센스
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

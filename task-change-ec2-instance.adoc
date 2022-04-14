@@ -6,6 +6,7 @@ summary: AWS에서 Cloud Volumes ONTAP를 시작할 때 여러 인스턴스 또�
 ---
 = Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

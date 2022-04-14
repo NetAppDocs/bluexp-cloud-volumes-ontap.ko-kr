@@ -6,6 +6,7 @@ summary: Active IQ 디지털 어드바이저가 클라우드 관리자 UI에 통
 ---
 = Active IQ 디지털 자문업체 를 사용하여 Cloud Volumes ONTAP 시스템을 최적화하십시오
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

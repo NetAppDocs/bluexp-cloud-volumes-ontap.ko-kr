@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP는 데이터 암호화를 지원하고 바이러스
 ---
 = 보안
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

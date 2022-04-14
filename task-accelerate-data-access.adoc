@@ -6,6 +6,7 @@ summary: FlexCache 볼륨은 원본 또는 소스 볼륨에서 NFS 읽기 데이
 ---
 = FlexCache 볼륨을 사용하여 데이터 액세스 가속화
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

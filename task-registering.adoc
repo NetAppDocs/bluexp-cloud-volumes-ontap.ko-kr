@@ -6,6 +6,7 @@ summary: NetApp의 지원은 Cloud Volumes ONTAP PAYGO 시스템에 포함되어
 ---
 = 선불 종량제 시스템을 등록하는 중입니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

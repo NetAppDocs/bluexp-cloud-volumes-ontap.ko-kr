@@ -6,6 +6,7 @@ summary: 몇 가지 단계를 통해 Cloud Volumes ONTAP for GCP를 시작해 �
 ---
 = Google Cloud에서 Cloud Volumes ONTAP를 빠르게 시작합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

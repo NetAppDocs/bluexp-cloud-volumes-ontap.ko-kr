@@ -6,6 +6,7 @@ summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않�
 ---
 = 알려진 제한 사항
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

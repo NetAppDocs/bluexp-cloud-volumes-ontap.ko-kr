@@ -6,6 +6,7 @@ summary: 초기 Cloud Volumes ONTAP 시스템을 시작한 후 더 많은 스토
 ---
 = FlexVol 볼륨을 생성합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

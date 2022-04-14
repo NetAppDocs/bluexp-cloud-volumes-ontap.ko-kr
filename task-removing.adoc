@@ -6,6 +6,7 @@ summary: 계정 관리자는 Cloud Volumes ONTAP 작업 환경을 제거하여 �
 ---
 = Cloud Volumes ONTAP 작업 환경 제거
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

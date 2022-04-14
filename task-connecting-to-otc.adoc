@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우 ONTA
 ---
 = Cloud Volumes ONTAP에 연결 중입니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

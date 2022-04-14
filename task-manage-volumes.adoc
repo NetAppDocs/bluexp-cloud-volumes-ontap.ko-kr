@@ -6,6 +6,7 @@ summary: Cloud Manager를 사용하면 볼륨 및 CIFS 서버를 관리할 수 �
 ---
 = 기존 볼륨 관리
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

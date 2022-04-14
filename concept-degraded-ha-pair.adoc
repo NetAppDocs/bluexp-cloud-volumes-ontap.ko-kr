@@ -6,6 +6,7 @@ summary: HA 쌍의 노드를 사용할 수 없는 경우 다른 노드는 파트
 ---
 = 테이크오버 중에 작업을 사용할 수 없습니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

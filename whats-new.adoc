@@ -6,6 +6,7 @@ summary: Cloud Manager에서 Cloud Volumes ONTAP 관리의 새로운 기능에 �
 ---
 = 새로운 기능
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

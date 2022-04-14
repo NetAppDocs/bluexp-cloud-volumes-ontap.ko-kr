@@ -6,6 +6,7 @@ summary: Cloud Manager는 IP 주소, 넷마스크, 경로 등과 같은 Cloud Vo
 ---
 = AWS의 Cloud Volumes ONTAP에 대한 네트워킹 요구사항
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

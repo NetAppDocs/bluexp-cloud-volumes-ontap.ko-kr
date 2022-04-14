@@ -6,6 +6,7 @@ summary: iSCSI 볼륨을 생성할 때 Cloud Manager에서 자동으로 LUN을 �
 ---
 = LUN을 호스트에 연결합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

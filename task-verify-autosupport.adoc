@@ -6,6 +6,7 @@ summary: AutoSupport은 능동적으로 시스템 상태를 모니터링하고 N
 ---
 = AutoSupport 설정을 확인합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

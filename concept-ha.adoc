@@ -6,6 +6,7 @@ summary: 'Cloud Volumes ONTAP HA(고가용성) 구성은 무중단 운영 및 �
 ---
 = AWS의 고가용성 쌍
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

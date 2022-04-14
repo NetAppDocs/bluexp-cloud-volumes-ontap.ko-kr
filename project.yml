@@ -216,9 +216,6 @@ sidebar:
       url: "/task-get-help.html"
   - title: 법적 고지
     url: "/legal-notices.html"
-product-family:
-  name: Cloud Manager
-  repo: cloud-manager-family
 homepage:
   tiles:
   - title: 시작하십시오
@@ -289,3 +286,4 @@ homepage:
       url: https://cloud.netapp.com/blog/topic/cloud-volumes-ontap
     - title: 클라우드 웨비나
       url: https://cloud.netapp.com/events
+product-family: {}

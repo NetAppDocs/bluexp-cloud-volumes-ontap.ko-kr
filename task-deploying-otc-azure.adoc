@@ -6,6 +6,7 @@ summary: Cloud Manager에서 Cloud Volumes ONTAP 작업 환경을 생성하여 A
 ---
 = Azure에서 Cloud Volumes ONTAP 실행
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

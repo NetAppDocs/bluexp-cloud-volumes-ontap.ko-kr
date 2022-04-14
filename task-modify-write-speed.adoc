@@ -6,6 +6,7 @@ summary: 스토리지 요구사항이 변경됨에 따라 Cloud Volumes ONTAP �
 ---
 = 시스템 쓰기 속도를 수정합니다
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

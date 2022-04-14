@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 G
 ---
 = GCP의 Cloud Volumes ONTAP에 대한 네트워킹 요구 사항
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -519,34 +520,7 @@ NOTE: 소스 IP 주소는 커넥터 호스트입니다.
 | 서비스 | 프로토콜 | 포트 | 목적지 | 목적 
 
 
-.9+| Active Directory를 클릭합니다 | TCP | 88 | Active Directory 포리스트입니다 | Kerberos V 인증 
-
-
-| TCP | 139 | Active Directory 포리스트입니다 | NetBIOS 서비스 세션입니다 
-
-
-| TCP | 389 | Active Directory 포리스트입니다 | LDAP를 지원합니다 
-
-
-| TCP | 445 | Active Directory 포리스트입니다 | Microsoft SMB/CIFS over TCP 및 NetBIOS 프레임 
-
-
-| TCP | 464 | Active Directory 포리스트입니다 | Kerberos V 변경 및 암호 설정(set_change) 
-
-
-| TCP | 749 | Active Directory 포리스트입니다 | Active Directory Kerberos V 변경 및 암호 설정(RPCSEC_GSS) 
-
-
-| UDP입니다 | 137 | Active Directory 포리스트입니다 | NetBIOS 이름 서비스입니다 
-
-
-| UDP입니다 | 138 | Active Directory 포리스트입니다 | NetBIOS 데이터그램 서비스 
-
-
-| UDP입니다 | 464 | Active Directory 포리스트입니다 | Kerberos 키 관리 
-
-
-| API 호출 및 AutoSupport | HTTPS | 443 | 아웃바운드 인터넷 및 ONTAP 클러스터 관리 LIF | API는 GCP 및 ONTAP를 호출하고 AutoSupport 메시지를 NetApp에 보냅니다 
+| API 호출 및 AutoSupport | HTTPS | 443 | 아웃바운드 인터넷 및 ONTAP 클러스터 관리 LIF | API는 GCP 및 ONTAP, 클라우드 데이터 센스, 랜섬웨어 서비스 요청 및 AutoSupport 메시지를 NetApp에 전송합니다 
 
 
 | DNS | UDP입니다 | 53 | DNS | Cloud Manager에서 DNS Resolve에 사용됩니다 

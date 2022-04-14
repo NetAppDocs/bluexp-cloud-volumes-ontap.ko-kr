@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP는 iSCSI, NFS, SMB 및 S3 클라이언트 프로토
 ---
 = 클라이언트 프로토콜
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

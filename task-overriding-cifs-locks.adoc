@@ -6,6 +6,7 @@ summary: 계정 관리자는 Azure 유지 관리 이벤트 중에 Cloud Volumes 
 ---
 = Azure에서 Cloud Volumes ONTAP HA의 CIFS 잠금 재정의
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

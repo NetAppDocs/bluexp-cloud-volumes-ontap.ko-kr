@@ -6,6 +6,7 @@ summary: Google 클라우드 스토리지는 디스크에 데이터를 쓰기 �
 ---
 = Cloud Volumes ONTAP에서 고객이 관리하는 암호화 키 사용
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
