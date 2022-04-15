@@ -96,7 +96,7 @@ image:screenshot_cmk_add_accounts_dialog.gif["이 스크린샷은 AWS KMS 콘솔
 }
 ----
 +
-이 프로세스에 대한 자세한 내용은 을 참조하십시오 https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying.html#key-policy-modifying-external-accounts["AWS 설명서: CMK에 외부 AWS 계정 액세스 허용"^].
+이 프로세스에 대한 자세한 내용은 을 참조하십시오 https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html["AWS 설명서: 다른 계정의 사용자가 KMS 키를 사용할 수 있도록 허용합니다"^].
 
 
 
