@@ -681,7 +681,6 @@
   <block id="fd549a6bcd2d53b8accb49a7225fcfa0" category="paragraph">DNS 서버 또는 Active Directory 도메인을 변경하는 경우 Cloud Volumes ONTAP에서 CIFS 서버를 수정하여 스토리지에서 클라이언트로 계속 서비스를 제공할 수 있도록 해야 합니다.</block>
   <block id="26eb89266cb77257e69e50bb61b2da4e" category="list-text">작업 환경에서 메뉴 아이콘을 클릭한 다음 * 고급 &gt; CIFS 설정 * 을 클릭합니다.</block>
   <block id="47839a059e385e1317a08bc188364e78" category="list-text">CIFS 서버에 대한 설정을 지정합니다.</block>
-  <block id="ce8072a497c516b7feafdc7f85189540" category="cell">CIFS 서버에 대한 이름 확인을 제공하는 DNS 서버의 IP 주소입니다. 나열된 DNS 서버에는 CIFS 서버가 연결할 도메인의 Active Directory LDAP 서버 및 도메인 컨트롤러를 찾는 데 필요한 서비스 위치 레코드(SRV)가 포함되어 있어야 합니다.</block>
   <block id="fb0f1ebb01626c50d4db72222f7f93b8" category="cell">CIFS 서버와 연결할 AD 도메인 내의 조직 단위입니다. 기본값은 CN=Computers입니다. AWS 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하는 경우 이 필드에 * OU=Computers, OU=Corp * 를 입력해야 합니다.</block>
   <block id="d72f7fe99597ed8f22050ed88031cb7e" category="paragraph">Cloud Volumes ONTAP는 CIFS 서버를 변경 사항으로 업데이트합니다.</block>
   <block id="3fa1556429ab2d5c82bf33695eafd79b" category="section-title">볼륨을 이동합니다</block>
@@ -1147,8 +1146,6 @@
   <block id="400ffb1399d3b8d7d41dacde44c9a555" category="list-text">권한 및 사용자/그룹</block>
   <block id="5f5586468344265a0b77d8d95679c505" category="list-text">사용자 및 그룹(액세스 제어 목록 또는 ACL라고도 함)에서 SMB 공유에 대한 액세스 수준을 제어할 수 있습니다. 로컬 또는 도메인 Windows 사용자 또는 그룹, UNIX 사용자 또는 그룹을 지정할 수 있습니다. 도메인 Windows 사용자 이름을 지정하는 경우 domain\username 형식을 사용하여 사용자의 도메인을 포함해야 합니다.</block>
   <block id="e04aef302973ec752f06497862924bbd" category="list-text">CIFS 서버에 대한 이름 확인을 제공하는 DNS 서버의 IP 주소입니다. 나열된 DNS 서버에는 CIFS 서버가 연결할 도메인의 Active Directory LDAP 서버 및 도메인 컨트롤러를 찾는 데 필요한 서비스 위치 레코드(SRV)가 포함되어 있어야 합니다.</block>
-  <block id="2859714529b3c97d804c63700416d382" category="list-text">AWS 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=Computers, OU=Corp * 를 입력해야 합니다.</block>
-  <block id="0b65283ddb7514110dc1b43564c71fdc" category="list-text">Azure AD 도메인 서비스를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=ADDC 컴퓨터 * 또는 * OU=ADDC 사용자 * 를 입력해야 합니다.<block ref="c77116dc5056757dacd34253f40507d7" category="inline-link-rx"></block></block>
   <block id="e4e1c13bb0b14f6cb7608cbecea948ef" category="open-title">iSCSI</block>
   <block id="b26e74ed6e2892c7e2bb95e414d460c6" category="list-text">LUN을 클릭합니다</block>
   <block id="e27b0c58e0eb09abee401a5c059fae69" category="list-text">iSCSI 스토리지 타겟을 LUN(논리 유닛)이라고 하며 호스트에 표준 블록 디바이스로 표시됩니다. iSCSI 볼륨을 생성할 때 Cloud Manager에서 자동으로 LUN을 생성합니다. 우리는 볼륨당 하나의 LUN만 생성하므로 관리가 필요하지 않습니다. 볼륨을 생성한 후 <block ref="a56ae12401d3846252ee1d7537583dde" category="inline-link-macro-rx"></block>.</block>
@@ -3714,4 +3711,12 @@
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 담당자가 귀하의 케이스를 검토하고 곧 다시 귀하에 연락을 드릴 것입니다.</block>
   <block id="c2a34cad77f0451e7d0f58a7e0e6e450" category="inline-link">AWS 설명서: 다른 계정의 사용자가 KMS 키를 사용할 수 있도록 허용합니다</block>
   <block id="21adb1598ef7a554ecf87a6c0bffbd4c" category="paragraph">이 프로세스에 대한 자세한 내용은 을 참조하십시오<block ref="9601f431d0df2b9877da4b65b53342b6" category="inline-link-rx"></block>.</block>
+  <block id="21daef3fadb3dd64defa83d39be31db2" category="paragraph">Google Managed Active Directory를 구성하는 경우 기본적으로 169.254.169.254 IP 주소를 사용하여 AD에 액세스할 수 있습니다.</block>
+  <block id="42c3be7fd8f6754b6276a788fafb5c2a" category="list-text">AWS 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=Computers, OU=Corp * 를 입력합니다.</block>
+  <block id="c6889b0f09506ef266562788f0e045c4" category="list-text">Azure AD 도메인 서비스를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=ADDC 컴퓨터 * 또는 * OU=ADDC 사용자 * 를 입력합니다.<block ref="c77116dc5056757dacd34253f40507d7" category="inline-link-rx"></block></block>
+  <block id="dd1469e83233ef1220eabf5ed3052e71" category="inline-link">Google 클라우드 문서: Google Managed Microsoft AD의 조직 단위</block>
+  <block id="574cb50e267b71a9b98541218b0def7d" category="list-text">Google 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=Computers, OU=Cloud * 를 입력합니다.<block ref="8e7507132642e39310c024b1b990cf52" category="inline-link-rx"></block></block>
+  <block id="74fcd5478f5518e9bba0d4231bc72033" category="cell">CIFS 서버에 대한 이름 확인을 제공하는 DNS 서버의 IP 주소입니다. 나열된 DNS 서버에는 CIFS 서버가 연결할 도메인의 Active Directory LDAP 서버 및 도메인 컨트롤러를 찾는 데 필요한 서비스 위치 레코드(SRV)가 포함되어 있어야 합니다. Google Managed Active Directory를 구성하는 경우 기본적으로 169.254.169.254 IP 주소를 사용하여 AD에 액세스할 수 있습니다.</block>
+  <block id="61406b1bdfba5a7d3fd5d0089edfe238" category="cell">CIFS 서버에 대한 이름 확인을 제공하는 DNS 서버의 IP 주소입니다. 나열된 DNS 서버에는 CIFS 서버가 연결할 도메인의 Active Directory LDAP 서버 및 도메인 컨트롤러를 찾는 데 필요한 서비스 위치 레코드(SRV)가 포함되어 있어야 합니다. Google Managed Active Directory를 구성하는 경우 기본적으로 169.254.169.254 IP 주소를 사용하여 AD에 액세스할 수 있습니다.</block>
+  <block id="40bf45be09da9df22806f3324816106f" category="cell">CIFS 서버와 연결할 AD 도메인 내의 조직 단위입니다. 기본값은 CN=Computers입니다. Google 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=Computers, OU=Cloud * 를 입력합니다.<block ref="8e7507132642e39310c024b1b990cf52" category="inline-link-rx"></block></block>
 </blocks>
