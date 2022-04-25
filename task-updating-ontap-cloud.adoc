@@ -162,7 +162,14 @@ NOTE: Cloud Backup은 SnapMirror 구현을 사용하여 백업 파일(SnapMirror
 다음 단계에서는 버전 9.3 이상에서 System Manager를 사용하는 방법을 설명합니다.
 
 .단계
-. link:task-connecting-to-otc.html["System Manager에 로그인합니다"] 를 대상 시스템에서 선택합니다.
+. 대상 시스템에서 System Manager에 로그인합니다.
++
+웹 브라우저에서 클러스터 관리 LIF의 IP 주소를 지정하면 System Manager에 로그인할 수 있습니다. Cloud Volumes ONTAP 작업 환경에서 IP 주소를 찾을 수 있습니다.
+
++
+
+NOTE: Cloud Manager에 액세스하는 컴퓨터는 Cloud Volumes ONTAP에 대한 네트워크 연결이 있어야 합니다. 예를 들어, 클라우드 공급자 네트워크에 있는 점프 호스트에서 Cloud Manager에 로그인해야 할 수 있습니다.
+
 . 보호 > 관계 * 를 클릭합니다.
 . 관계를 선택하고 * 작업 > 정지 * 를 클릭합니다.
 
@@ -183,7 +190,6 @@ image:screenshot_aggr_state.gif["스크린샷: 집계에 대한 정보를 볼 �
 
 . 애그리게이트는 오프라인 상태인 경우 System Manager를 사용하여 애그리게이트를 온라인 상태로 전환합니다.
 +
-.. link:task-connecting-to-otc.html["System Manager에 로그인합니다"].
 .. 스토리지 > 애그리게이트 및 디스크 > 애그리게이트 * 를 클릭합니다.
 .. 애그리게이트를 선택한 다음 * 추가 작업 > 상태 > 온라인 * 을 클릭합니다.
 
