@@ -24,6 +24,14 @@ Cloud Manager에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알
 
 
 
+=== System Manager 링크가 제거되었습니다
+
+이전에 Cloud Volumes ONTAP 작업 환경 내에서 사용할 수 있었던 시스템 관리자 링크가 제거되었습니다.
+
+Cloud Volumes ONTAP 시스템에 연결된 웹 브라우저에 클러스터 관리 IP 주소를 입력하여 System Manager에 연결할 수도 있습니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connecting-to-otc.html["System Manager에 연결하는 방법에 대해 자세히 알아보십시오"].
+
+
+
 === WORM 스토리지에 대한 충전 중
 
 출시 특별 요금이 만료되었으므로 이제 WORM 스토리지 사용 요금이 부과됩니다. WORM 볼륨의 총 프로비저닝 용량에 따라 매시간 충전됩니다. 이는 신규 및 기존 Cloud Volumes ONTAP 시스템에 적용됩니다.

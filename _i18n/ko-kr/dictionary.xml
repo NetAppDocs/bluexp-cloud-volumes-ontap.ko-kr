@@ -3719,4 +3719,8 @@
   <block id="209dd9c5f51e29f38bd51ffe692ab25b" category="inline-image-macro">Cloud Volumes ONTAP 작업 환경의 Canvas에 표시되는 정보 아이콘의 스크린샷</block>
   <block id="508479659d1c4cbd35007e03e8274c60" category="paragraph"><block ref="508479659d1c4cbd35007e03e8274c60" category="inline-image-macro-rx" type="image"></block></block>
   <block id="46d765dd07540dedc3fb62a81ca5191e" category="list-text">Cloud Volumes ONTAP에 대한 네트워크 연결이 있는 컴퓨터에서 웹 브라우저를 열고 IP 주소를 입력합니다.</block>
+  <block id="97106e7449f4966fc1e4b3b78d425110" category="section-title">System Manager 링크가 제거되었습니다</block>
+  <block id="249f6fd27ec465f7b6af7dc12178a1ea" category="paragraph">이전에 Cloud Volumes ONTAP 작업 환경 내에서 사용할 수 있었던 시스템 관리자 링크가 제거되었습니다.</block>
+  <block id="1979125e36e7d7c49ca297e15301d908" category="inline-link">System Manager에 연결하는 방법에 대해 자세히 알아보십시오</block>
+  <block id="bbf60c789b26c6dcc40b75262425eac7" category="paragraph">Cloud Volumes ONTAP 시스템에 연결된 웹 브라우저에 클러스터 관리 IP 주소를 입력하여 System Manager에 연결할 수도 있습니다.<block ref="c343c10570bfa751089c9639f87b6a1f" category="inline-link-rx"></block>.</block>
 </blocks>
