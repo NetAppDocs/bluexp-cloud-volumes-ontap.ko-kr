@@ -449,9 +449,7 @@
   <block id="0b6a93a12e94b586f0634222ff996760" category="inline-link">Marketplace 구독을 GCP 자격 증명과 연결합니다</block>
   <block id="c6183bf47ae03a5fca3043b995daf4ad" category="paragraph">다음 비디오에서는 용량제 마켓플레이스 서브스크립션을 GCP 프로젝트에 연결하는 방법을 보여줍니다. 또는 에 있는 구독 단계를 따릅니다<block ref="1ca5652e3bd427104a4f5f3fa595cbd8" category="inline-link-rx"></block> 섹션을 참조하십시오.</block>
   <block id="440dfcc60c7c21a1c797e881b2dd7646" category="list-text">* 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. Cloud Backup을 선택하거나 Tiering을 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.</block>
-  <block id="d97b17805dcf3cf9f4cf72ede32d7451" category="list-text">* 위치 및 연결 *: 위치를 선택하고 방화벽 정책을 선택한 다음 확인란을 선택하여 데이터 계층화를 위해 Google Cloud 스토리지에 대한 네트워크 연결을 확인합니다.</block>
   <block id="2e5f3aa65f18453c5c51b5ffcf2214d5" category="inline-link">Google Cloud 설명서: 개인 Google Access 구성</block>
-  <block id="0a95fced5ba38d44285304107ca13819" category="paragraph">콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷이 프라이빗 Google 액세스용으로 구성되어야 합니다. 자세한 지침은 을 참조하십시오<block ref="46bdb5a1fb51df5eb32e2147ea91e6d8" category="inline-link-rx"></block>.</block>
   <block id="189e842cd43a685a483fb378026a9caf" category="list-text"><block ref="3ab5a6c8f366a38af6d09759fc586206" category="inline-link-macro-rx"></block>.</block>
   <block id="c05ba15abbb9e0a060b98aa13dc7640d" category="paragraph"><block ref="c05ba15abbb9e0a060b98aa13dc7640d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f72d7e736d5c07e6650c7c59c1d4beae" category="list-text">* 기본 스토리지 리소스 *: 초기 집계에 대한 설정(디스크 유형 및 각 디스크의 크기)을 선택합니다.</block>
@@ -942,7 +940,6 @@
   <block id="f085e7d5cf39e2e8b2d0e12e8784718b" category="list-text">Cloud Manager에서 API를 사용하여 키를 사용하는 Cloud Volumes ONTAP 작업 환경을 생성합니다.</block>
   <block id="25fb98f9fcb3127bfe7be5f0a105ca99" category="inline-link-macro">이 단계에 대해 자세히 알아보십시오</block>
   <block id="750fb0c917d909f89ff3aa09a16d9e2e" category="paragraph"><block ref="a8a8a730877a18513c7f6dc517396422" category="inline-link-macro-rx"></block>.</block>
-  <block id="711dc2b1ebcdb25c5e47a2beba0748aa" category="section-title">2021년 7월 7일(커넥터 3.9.8)</block>
   <block id="438f6ef2e21494cd9b1748584c8803b6" category="section-title">새로운 충전 방법</block>
   <block id="561845a67258d27b2238c95a99e36fe6" category="paragraph">Cloud Volumes ONTAP에 새로운 충전 방법을 사용할 수 있습니다.</block>
   <block id="e4641a8086323f3e0769020094c353cc" category="list-text">* 용량 기반 BYOL *: 용량 기반 라이센스를 통해 Cloud Volumes ONTAP/TiB 용량 단위로 비용을 지불할 수 있습니다. 라이센스는 NetApp 계정에 연결되어 있으며 라이센스를 통해 사용할 수 있는 용량이 충분한 경우 여러 Cloud Volumes ONTAP 시스템을 생성할 수 있도록 지원합니다. 용량 기반 라이센스는 패키지 형태인 _Essentials_나 _Professional_로 제공됩니다.</block>
@@ -977,7 +974,6 @@
   <block id="46e869bc0f7a5fcdc09df010e1f48b25" category="paragraph">CUSTOM-4-16384 시스템 유형은 새로운 Cloud Volumes ONTAP 시스템에서 더 이상 지원되지 않습니다.</block>
   <block id="0e3cb01898d99d0091e2a6f5a7572390" category="paragraph">이 기계 유형에서 실행 중인 기존 시스템이 있는 경우 계속 사용할 수 있지만 n2-standard-4 기계 유형으로 전환하는 것이 좋습니다.</block>
   <block id="346b156b62b438feb8aca3c528a7173c" category="inline-link">GCP에서 Cloud Volumes ONTAP에 대해 지원되는 구성을 봅니다</block>
-  <block id="6a1f13645a93d26a01a89ba45e08d6bb" category="section-title">2021년 5월 30일(커넥터 3.9.7)</block>
   <block id="29edc853696ed1638805579b54eb4028" category="section-title">AWS의 새로운 프로페셔널 패키지</block>
   <block id="e7ef0d5bcd1ca0f8f5763e59e8a0fd1b" category="paragraph">새로운 프로페셔널 패키지를 이용하면 AWS 마켓플레이스의 연간 계약을 활용하여 Cloud Volumes ONTAP와 Cloud Backup Service를 번들로 제공할 수 있습니다. 지급은 TiB당. 이 구독을 통해 온프레미스 데이터를 백업할 수 없습니다.</block>
   <block id="1827d61b158ce26d89c3b3ae6638d1a7" category="paragraph">이 지불 옵션을 선택하면 EBS 디스크를 통해 Cloud Volumes ONTAP 시스템당 최대 2개의 PiB를 프로비저닝하고 S3 오브젝트 스토리지(단일 노드 또는 HA)로 계층화할 수 있습니다.</block>
@@ -1001,7 +997,6 @@
   <block id="910d8975bd41857a0103e9a8657ea7d9" category="section-title">Cloud Volumes ONTAP 9.9.1</block>
   <block id="c863fcd8d7f3278495a83acff7ce4871" category="paragraph">Cloud Manager는 이제 Cloud Volumes ONTAP 9.9.1을 구축 및 관리할 수 있습니다.</block>
   <block id="ff5aef392e0c3c8d6643cf958981ad2c" category="paragraph"><block ref="85c91e5c6d1101b81071bd014b8bb2a2" category="inline-link-rx"></block>.</block>
-  <block id="4b9aaec4d7fc7a4db2b3d7d2ec4b06dd" category="section-title">2021년 4월 11일(커넥터 3.9.5)</block>
   <block id="6b1163e1ffd3116806b1ea3d6e5dd2a6" category="section-title">논리적 공간 보고</block>
   <block id="4a58d4cba9d6842c85d3f188f064f33b" category="paragraph">이제 Cloud Manager에서 Cloud Volumes ONTAP에 대해 생성한 초기 스토리지 VM에 대한 논리적 공간 리포팅을 사용할 수 있습니다.</block>
   <block id="996cecdf052a5053c603e4964cacdc77" category="paragraph">공간이 논리적으로 보고되면 ONTAP에서는 스토리지 효율성 기능으로 절약된 모든 물리적 공간이 사용된 것으로 보고하도록 볼륨 공간을 보고합니다.</block>
@@ -1013,7 +1008,6 @@
   <block id="46d98c0abb13a137de84cc92dabaf4ee" category="paragraph">Cloud Volumes ONTAP는 더 이상 콜드 HDD(SC1) 디스크를 지원하지 않습니다.</block>
   <block id="bdbf3117384807375f6bdb241cc66adc" category="section-title">Azure 저장소 계정용 TLS 1.2</block>
   <block id="851eb27d4309b9464287beb296ce1020" category="paragraph">Cloud Manager가 Azure for Cloud Volumes ONTAP에서 저장소 계정을 만들 때 저장소 계정에 대한 TLS 버전은 이제 버전 1.2입니다.</block>
-  <block id="6fd4f37978967bd89efab5f375c8fada" category="section-title">2021년 3월 8일(커넥터 3.9.4)</block>
   <block id="4e9e74671f654c298cca727d225f4898" category="section-title">Cloud Volumes ONTAP 9.9.0</block>
   <block id="ab2fea55ae9697fcfeae223bb8d1a161" category="paragraph">Cloud Manager는 이제 Cloud Volumes ONTAP 9.9.0을 구축하고 관리할 수 있습니다.</block>
   <block id="b38d7682cd8a88f280fda1c1ba685832" category="paragraph"><block ref="c246253b93a97e012810d343101490b9" category="inline-link-rx"></block>.</block>
@@ -1036,7 +1030,6 @@
   <block id="933d399c3cb0f03992675d49630ab818" category="paragraph">Google Cloud에 Cloud Volumes ONTAP HA 쌍을 구축하면 VPC-1, VPC-2 및 VPC-3용 공유 VPC를 선택할 수 있습니다. 이전에는 VPC-0만 공유 VPC가 될 수 있었습니다. 이 변경 사항은 Cloud Volumes ONTAP 9.8 이상에서 지원됩니다.</block>
   <block id="fcc0572bd798a75498f99e20a8093f04" category="inline-link-macro">Google Cloud 네트워킹 요구 사항에 대해 자세히 알아보십시오</block>
   <block id="99fa02269259e5dcef8a656b05035f0b" category="paragraph"><block ref="d1535c614e0b55f0efec64a1451d07fb" category="inline-link-macro-rx"></block>.</block>
-  <block id="8444e6334bc020a2ff837421babf8f42" category="section-title">2021년 1월 4일(커넥터 3.9.2)</block>
   <block id="712a05ea9972d967387ea5a160a19a21" category="section-title">AWS 아웃포스트</block>
   <block id="cfdb898195dcd98defc426026e35f8d1" category="paragraph">몇 개월 전, Cloud Volumes ONTAP은 AWS(Amazon Web Services) out포스트 준비 지정을 달성했다고 발표했습니다. 오늘, AWS 아웃포스트를 통해 Cloud Manager 및 Cloud Volumes ONTAP을 검증했다는 소식을 알려드립니다.</block>
   <block id="996af92ade7f6e5af3be3c265f31fd2c" category="paragraph">AWS 아웃포스트가 있는 경우 작업 환경 마법사에서 아웃포스트 VPC를 선택하여 해당 아웃포스트에 Cloud Volumes ONTAP를 구축할 수 있습니다. 이러한 경험은 AWS에 상주하는 다른 VPC와 동일합니다. 먼저 AWS Outpost에 Connector를 구축해야 합니다.</block>
@@ -1060,7 +1053,6 @@
   <block id="1ac4c5bf1cc05cf3d4aa859843ec87b4" category="list-text">N2-standard-4(Explore 라이센스와 BYOL 포함</block>
   <block id="e73d4d7c476b6b18ed15adb41d3ea1b2" category="list-text">표준 라이센스와 BYOL의 N2-Standard-8</block>
   <block id="08ce51aefda2c98505d3ef29ab430caf" category="list-text">프리미엄 라이센스가 있고 BYOL이 있는 N2-STANDARD-32</block>
-  <block id="97ac4a7ecac7dd41000ad4cf105adf24" category="section-title">2020년 11월 3일(커넥터 3.9.0)</block>
   <block id="d9bdad4a2680b0998135ed5fd46e50e3" category="section-title">Cloud Volumes ONTAP용 Azure 프라이빗 링크</block>
   <block id="5645ab0bc464340b6b63fb2195594856" category="paragraph">기본적으로 Cloud Manager에서는 이제 Cloud Volumes ONTAP 및 관련 스토리지 계정 간에 Azure 프라이빗 링크 연결을 설정할 수 있습니다. 전용 링크는 Azure의 엔드포인트 간 연결을 보호합니다.</block>
   <block id="8f7830ddfb4c3be4f076516f4856d257" category="inline-link">Azure 프라이빗 링크에 대해 자세히 알아보십시오</block>
@@ -1199,7 +1191,6 @@
   <block id="b50c158eaf466db16b58f00ceffdc6e1" category="cell">특정 Aggregate에 볼륨을 생성합니다</block>
   <block id="90f1a1f2730a3abc2245b4a979df10f4" category="cell">애그리게이트를 선택하고 * 볼륨 생성 * 을 클릭합니다.</block>
   <block id="ee1ffb740641bd768beada794d582fc1" category="cell">Aggregate에 디스크를 추가합니다</block>
-  <block id="5f5aff78d8d23e3085886222de09d89c" category="list-text">애그리게이트를 선택하고 * AWS 디스크 추가 * 또는 * Azure 디스크 추가 * 를 클릭합니다.</block>
   <block id="b98fc1f56f56b03e2525b90a45df7e45" category="list-text">추가할 디스크 수를 선택하고 * 추가 * 를 클릭합니다.</block>
   <block id="8ce62ed0fdfe7abb736c3597956922c2" category="cell">애그리게이트 삭제</block>
   <block id="55acf40831b2a6bbebbb0948c51c7dad" category="list-text">볼륨이 없는 Aggregate를 선택하고 * Delete * 를 클릭합니다.</block>
@@ -1208,100 +1199,7 @@
   <block id="ae72beb81d5834d2f01cddc522f75aab" category="paragraph">EMS(이벤트 관리 시스템)는 ONTAP 시스템에서 발생하는 이벤트에 대한 정보를 수집하고 표시합니다. 이벤트 알림을 수신하려면 이벤트 대상(이메일 주소, SNMP 트랩 호스트 또는 syslog 서버)과 이벤트 경로를 특정 이벤트 심각도에 대해 설정할 수 있습니다.</block>
   <block id="46925fd4c2b4930c3863c62cca684413" category="inline-link">ONTAP 문서: EMS 구성 개요</block>
   <block id="bdc1026c750da5883d7bee46c7156d32" category="paragraph">CLI를 이용하여 EMS를 구성할 수 있다. 자세한 지침은 을 참조하십시오<block ref="cfa65ffd4dc12651fc66d20e17906b5f" category="inline-link-rx"></block>.</block>
-  <block id="92ccf06142dc33dc8b3944ae9fcd513b" category="summary">Cloud Manager를 사용하면 Kubernetes 클러스터에 NetApp Trident 구축을 자동화하여 컨테이너용 영구 스토리지로 Cloud Volumes ONTAP를 사용할 수 있습니다.</block>
-  <block id="181f8947596130f543a8812355a5a792" category="doc">Kubernetes용 영구 스토리지로 Cloud Volumes ONTAP 사용</block>
-  <block id="0cdf65a4b95cd749c412fd640f01dade" category="admonition">이 기능은 더 이상 사용되지 않으며 향후 릴리즈에서 제거될 예정입니다. 고급 데이터 관리를 위한 작업 환경으로 관리 Kubernetes 클러스터를 Canvas에 추가하는 기능으로 대체되었습니다.<block ref="1738d64f5d1a42ad206025a23cfcf284" category="inline-link-rx"></block>.</block>
-  <block id="d202d8021b40bfbe11235a5a65c0fe8c" category="inline-link">Trident에 대해 자세히 알아보십시오</block>
-  <block id="4272c70c15d6dbaad262853f7847bead" category="paragraph">Trident는 NetApp에서 관리하며 완벽한 지원이 제공되는 오픈 소스 프로젝트입니다. Trident는 Kubernetes 및 영구 볼륨 프레임워크와 기본적으로 통합되어 NetApp의 스토리지 플랫폼을 실행하는 시스템에서 볼륨을 원활하게 프로비저닝 및 관리합니다.<block ref="8f1593831c6eb1f5af4cabdfeaa8b8ff" category="inline-link-rx"></block>.</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">빠른 시작</block>
-  <block id="2433628c53fed80ea9d352a1bcd9ce45" category="paragraph">다음 단계를 따라 빠르게 시작하거나 나머지 섹션으로 스크롤하여 자세한 내용을 확인하십시오.</block>
-  <block id="259ae55ab8dda4624f19d41ec0f1fb11" category="inline-xref">전체 목록을 참조하십시오</block>
-  <block id="862dc153087687c59f8f0e5557334a93" category="paragraph">Kubernetes 클러스터와 Cloud Volumes ONTAP 간의 연결, Kubernetes 클러스터와 Connector 간 연결, 1.14의 최소 Kubernetes 버전, 클러스터에 최소 1개의 작업자 노드 등 전제 조건을 충족할 수 있어야 합니다. <block ref="b4daa5ef39b091baf7fa2ac3acaf6a75" category="inline-xref-macro-rx"></block>.</block>
-  <block id="24e1cdb2e707aca4c4fb386a0f2584fd" category="paragraph">Cloud Manager에서 * K8s * 를 클릭하여 클라우드 공급자의 관리 서비스에서 직접 클러스터를 검색하고 kubeconfig 파일을 제공하여 클러스터를 가져옵니다.</block>
-  <block id="ed10e82b70c8870cbc66e299150d450b" category="paragraph">Kubernetes 클러스터를 추가한 후 * 작업 환경에 연결 * 을 클릭하여 클러스터를 하나 이상의 Cloud Volumes ONTAP 시스템에 연결합니다.</block>
-  <block id="c5ea1d5f2f35adec1d872ec686a8c040" category="paragraph">네이티브 Kubernetes 인터페이스 및 구조를 사용하여 영구 볼륨을 요청 및 관리합니다. Cloud Manager는 영구 볼륨을 프로비저닝할 때 사용할 수 있는 NFS 및 iSCSI 스토리지 클래스를 생성합니다.</block>
-  <block id="02cc5fd16c59479a0130566a88ade673" category="inline-link">Kubernetes용 Trident를 사용하여 첫 번째 볼륨을 프로비저닝하는 방법에 대해 자세히 알아보십시오</block>
-  <block id="b74e632fe213e6a2cd41d58fc6a3f9f4" category="paragraph"><block ref="d2c3102c16ee7ee6f7e5a01248fa7b5b" category="inline-link-rx"></block>.</block>
-  <block id="636fc171536ff74e5a90b2da701bb09c" category="section-title">사전 요구 사항 검토</block>
-  <block id="f698522e1acd0964c9baa1030aa59100" category="paragraph">시작하기 전에 Kubernetes 클러스터 및 Connector가 특정 요구사항을 충족하는지 확인하십시오.</block>
-  <block id="722cdb9316b3fa8ce17714d9c3e2710c" category="section-title">Kubernetes 클러스터 요구사항</block>
-  <block id="27a7f5bc233512b000e9c0890f8a0da7" category="list-text">Kubernetes 클러스터와 Connector 간, Kubernetes 클러스터와 Cloud Volumes ONTAP 사이에 네트워크 연결이 필요합니다.</block>
-  <block id="69e0c439fc36ae7c7c9d2e14aaac95c1" category="paragraph">Connector와 Cloud Volumes ONTAP 모두 Kubernetes API 엔드포인트에 연결해야 함:</block>
-  <block id="9b0f7f6d454dc3a3fda124ad8c64ddae" category="list-text">관리 클러스터의 경우, Connector와 Cloud Volumes ONTAP가 상주하는 클러스터의 VPC와 VPC 간에 경로를 설정합니다.</block>
-  <block id="f44a520984d104f448a4dfa65c732c6b" category="list-text">다른 클러스터의 경우 커넥터 및 Cloud Volumes ONTAP를 통해 기본 노드 또는 로드 밸런서의 IP 주소(kubecon무화과 파일에 나와 있음)에 연결할 수 있어야 하며 유효한 TLS 인증서를 제공해야 합니다.</block>
-  <block id="17c0f0477410148b22df11cc699e514d" category="list-text">Kubernetes 클러스터는 위에 나열된 네트워크 연결이 있는 모든 위치에 있을 수 있습니다.</block>
-  <block id="bdd9fcbc22d0c897febfda2780343126" category="list-text">Kubernetes 클러스터는 버전 1.14 이상을 실행해야 합니다.</block>
-  <block id="22e5cf36be220d8185438465670c10a0" category="inline-link">지원되는 최대 Kubernetes 버전을 보려면 여기를 클릭하십시오</block>
-  <block id="919344d59d5a54d3e0edd39f3ade1826" category="paragraph">지원되는 최대 버전은 Trident에서 정의합니다.<block ref="4364b9b5a569c1974ecbe79919415242" category="inline-link-rx"></block>.</block>
-  <block id="78568f626fe7e8947b59df3d51633e2a" category="list-text">Kubernetes 클러스터에는 작업자 노드가 하나 이상 있어야 합니다.</block>
-  <block id="7b2aaa17eab1dc7832e079d7ff34fcaf" category="list-text">Amazon EKS(Amazon Elastic Kubernetes Service)에서 실행되는 클러스터의 경우, 권한 오류를 해결하려면 각 클러스터에 IAM 역할이 추가해야 합니다. 클러스터를 추가하면 Cloud Manager에서 오류를 해결할 수 있는 정확한 eksctl 명령을 프롬프트합니다.</block>
-  <block id="131e86a2d96d1eb234979b9344f13721" category="inline-link">IAM 사용 권한 경계에 대해 알아봅니다</block>
-  <block id="ebc07db5d40d8568356aa7f0703d09dd" category="paragraph"><block ref="77373c7491963fa088f4a02cadd051c0" category="inline-link-rx"></block>.</block>
-  <block id="b0c3cef04e70448818bc54ce1d6a7781" category="list-text">Azure Kubernetes Service(AKS)에서 실행 중인 클러스터의 경우 이러한 클러스터에는 _ Azure Kubernetes Service RBAC Cluster Admin_role이 할당되어야 합니다. Cloud Manager가 Trident를 설치하고 클러스터에서 스토리지 클래스를 구성하려면 이 작업이 필요합니다.</block>
-  <block id="608448c2576128ccc8c2f959d59e20b4" category="section-title">커넥터 요구 사항</block>
-  <block id="657016ad1736f3daa19cd41340165309" category="paragraph">Connector에 대해 다음 권한이 있는지 확인합니다.</block>
-  <block id="ccfb5c2209f6688e8d0f7cbcdbf89f70" category="section-title">EKS 클러스터를 검색하고 관리하는 데 필요한 권한입니다</block>
-  <block id="df0867f3b310e032813f995525ba12e6" category="paragraph">Connector는 Amazon Elastic Kubernetes Service(EKS)에서 실행 중인 Kubernetes 클러스터를 검색하고 관리하기 위한 관리자 권한이 필요합니다.</block>
-  <block id="9dc5a9b1a6d7bcb89b68a5b8af2f3d9d" category="section-title">GKE 클러스터를 검색하고 관리하는 데 필요한 권한</block>
-  <block id="94b91905ef6393459229709e2831b933" category="paragraph">Connector는 GKE(Google Kubernetes Engine)에서 실행 중인 Kubernetes 클러스터를 검색하고 관리하기 위해 다음과 같은 권한이 필요합니다.</block>
-  <block id="3ee2de4187bbc3464c963e80daa5d7c0" category="section-title">설정 예</block>
-  <block id="95d48eaf4f096975a232f030f62bb786" category="paragraph">다음 이미지는 Amazon EKS(Amazon Elastic Kubernetes Service)에서 실행되는 Kubernetes 클러스터 및 커넥터 및 Cloud Volumes ONTAP에 대한 연결을 보여 줍니다. 이 예에서 VPC 피어링은 EKS 클러스터용 VPC와 커넥터 및 Cloud Volumes ONTAP용 VPC 간에 연결을 제공합니다.</block>
-  <block id="1547099886e6b7ac1281503829845612" category="inline-image-macro">AWS에서 실행되는 Kubernetes 클러스터의 아키텍처 다이어그램과 AWS에서 실행 중인 커넥터 및 Cloud Volumes ONTAP에 대한 연결</block>
-  <block id="87fe77f64de696c0dc8c282dc7e7e04c" category="paragraph"><block ref="87fe77f64de696c0dc8c282dc7e7e04c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="63893b71ff0d8c47377febdd8dcc5da0" category="section-title">Kubernetes 클러스터 추가</block>
-  <block id="9b7b2efefef41ff1632789719a7a7ac4" category="paragraph">클라우드 공급자의 관리되는 Kubernetes 서비스에서 실행 중인 클러스터를 검색하거나 클러스터의 kubecononfig 파일을 가져와 Kubernetes 클러스터를 Cloud Manager에 추가합니다.</block>
-  <block id="4909cd680231b3ced986709e54382764" category="list-text">Cloud Manager 맨 위에서 * K8s * 를 클릭합니다.</block>
-  <block id="8ed2e6681098ba3e585ceb37b3ee1e15" category="list-text">Add Cluster * 를 클릭합니다.</block>
-  <block id="59772cd45fd7de7bdf8d9834ebca71e7" category="list-text">사용 가능한 옵션 중 하나를 선택합니다.</block>
-  <block id="e179189d03e54c4446ccc4f03c6ac563" category="list-text">Cloud Manager가 Connector에 제공한 권한에 따라 액세스할 수 있는 관리되는 클러스터를 검색하려면 * 클러스터 검색 * 을 클릭합니다.</block>
-  <block id="4009608ddd522abfa96007d9d542ccb3" category="paragraph">예를 들어, Connector가 Google Cloud에서 실행 중인 경우 Cloud Manager는 Connector의 서비스 계정의 권한을 사용하여 GKE(Google Kubernetes Engine)에서 실행 중인 클러스터를 검색합니다.</block>
-  <block id="263232c5b7e9eb99df6b8475d43e1d45" category="list-text">kubecononfig 파일을 사용하여 클러스터를 가져오려면 * 클러스터 가져오기 * 를 클릭합니다.</block>
-  <block id="02aa04882d788b791f659f307169bfd8" category="paragraph">파일을 업로드하면 Cloud Manager가 클러스터에 대한 연결을 확인하고 kubecon무화파일의 암호화된 복사본을 저장합니다.</block>
-  <block id="170a4a52938ac79f65200c3bf0e6b51d" category="paragraph">Cloud Manager는 Kubernetes 클러스터를 추가합니다. 이제 클러스터를 Cloud Volumes ONTAP에 연결할 수 있습니다.</block>
-  <block id="e8f0429464762c99303852d0ee48f1b3" category="section-title">Cloud Volumes ONTAP에 클러스터 연결</block>
-  <block id="f68c9a3a74a9fa83b27a0710eb1fafe6" category="paragraph">Kubernetes 클러스터를 Cloud Volumes ONTAP에 연결하면 Cloud Volumes ONTAP를 컨테이너용 영구 스토리지로 사용할 수 있습니다.</block>
-  <block id="96ba100b561ad23be57aa3635bb7602b" category="list-text">방금 추가한 클러스터의 * 작업 환경에 연결 * 을 클릭합니다.</block>
-  <block id="a3e58e2bca9be24eec570bef9d888cb1" category="inline-image-macro">작업 환경에 연결을 클릭할 수 있는 Kubernetes 클러스터 목록의 스크린샷</block>
-  <block id="006930634d18e565776e96ff250efdf8" category="paragraph"><block ref="006930634d18e565776e96ff250efdf8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a9d20280cbf615f86652a6adad41aa55" category="list-text">작업 환경을 선택하고 * 계속 * 을 클릭합니다.</block>
-  <block id="526684efa2ce983db145c21e9f793888" category="list-text">Kubernetes 클러스터의 기본 스토리지 클래스로 사용할 NetApp 스토리지 클래스를 선택하고 * Continue * 를 클릭합니다.</block>
-  <block id="8f80c033c31a319fe853bbcc49c27274" category="paragraph">사용자가 영구 볼륨을 생성할 때 Kubernetes 클러스터는 이 스토리지 클래스를 기본적으로 백엔드 스토리지로 사용할 수 있습니다.</block>
-  <block id="24df9f89b31b8b338f662e0c4cc03d09" category="list-text">기본 자동 내보내기 정책을 사용할지 또는 사용자 지정 CIDR 블록을 추가할지 여부를 선택합니다.</block>
-  <block id="63452910f38ddb716c4708b06e106754" category="inline-image-macro">옵션을 검토하고 엑스포트 정책을 설정한 확인 페이지의 스크린샷</block>
-  <block id="36d07b5aa552d4c36c07ba7e9d1e47d2" category="paragraph"><block ref="36d07b5aa552d4c36c07ba7e9d1e47d2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="aa8af91e5428a9ebec0674a12beb38a8" category="list-text">작업 환경 추가 * 를 클릭합니다.</block>
-  <block id="5632ca30e37d3f1b4ef0b734696bb85f" category="paragraph">Cloud Manager를 사용하면 작업 환경을 클러스터에 연결할 수 있으며 이는 최대 15분이 걸릴 수 있습니다.</block>
-  <block id="2fe3de53fc0542a06cd444e7e344be33" category="section-title">클러스터 관리</block>
-  <block id="db8c0eeed2b6b581825366136b98d00f" category="paragraph">Cloud Manager를 사용하면 기본 스토리지 클래스, 업그레이드 Trident 등을 변경하여 Kubernetes 클러스터를 관리할 수 있습니다.</block>
-  <block id="afe72a6bd36ba1c83fc3766b009712a5" category="section-title">기본 스토리지 클래스 변경</block>
-  <block id="4b316065292525e254f85ac3cb9db3bd" category="paragraph">클러스터가 Cloud Volumes ONTAP를 백엔드 스토리지로 사용하도록 Cloud Volumes ONTAP 스토리지 클래스를 기본 스토리지 클래스로 설정했는지 확인합니다.</block>
-  <block id="8654d56365a2d6f47ae9ff5fe3d1b69b" category="list-text">Kubernetes 클러스터의 이름을 클릭합니다.</block>
-  <block id="d2d9870f04bbe86aed068815b8e92d55" category="list-text">스토리지 클래스 * 표에서 기본값으로 설정할 스토리지 클래스의 맨 오른쪽에 있는 작업 메뉴를 클릭합니다.</block>
-  <block id="24bf9701de1dfdca35fbf35d5ffc17c8" category="inline-image-macro">작업 메뉴를 클릭하고 기본값으로 설정을 선택할 수 있는 스토리지 클래스 테이블의 스크린 샷</block>
-  <block id="a6736a58e0776f13ed249272461eb3ec" category="paragraph"><block ref="a6736a58e0776f13ed249272461eb3ec" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="29b1fd86a1f06a011446b6f139180d87" category="list-text">기본값으로 설정 * 을 클릭합니다.</block>
-  <block id="3d7bae662f9623856b864b9abd8c6209" category="section-title">Trident 업그레이드</block>
-  <block id="a352215b3bd79d7212670c889f8a249b" category="paragraph">새로운 버전의 Trident가 제공되는 경우 Cloud Manager에서 Trident를 업그레이드할 수 있습니다.</block>
-  <block id="70770d071d7d3de1517023000c04d130" category="list-text">새 버전을 사용할 수 있는 경우 Trident 버전 옆의 * 업그레이드 * 를 클릭합니다.</block>
-  <block id="1aae0005ec065145d40df2a8d0419b60" category="inline-image-macro">Trident 버전 옆에 업그레이드 단추가 표시되는 클러스터 세부 정보 페이지의 스크린샷</block>
-  <block id="c638f47ea43bc7f031634bbdee3e4698" category="paragraph"><block ref="c638f47ea43bc7f031634bbdee3e4698" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c4324414a07d4ce4fb535de4690f73bc" category="section-title">kubecononfig 파일을 업데이트합니다</block>
-  <block id="e717e40bc576bfd8f162b06a88d7c317" category="paragraph">kubecononfig 파일을 가져와 Cloud Manager에 클러스터를 추가한 경우 언제든지 최신 kubeconfig 파일을 Cloud Manager에 업로드할 수 있습니다. 자격 증명을 업데이트했거나 사용자 또는 역할을 변경한 경우 또는 클러스터, 사용자, 네임스페이스 또는 인증에 영향을 미치는 변경 사항이 있는 경우 이 작업을 수행할 수 있습니다.</block>
-  <block id="8fd4aa22d14532c76b8a6154e52df218" category="list-text">Update Kubecononfig * 를 클릭합니다.</block>
-  <block id="d58eb5e3571f6d5f008dac27a893fdd4" category="list-text">웹 브라우저에서 메시지가 표시되면 업데이트된 kubecononfig 파일을 선택하고 * Open * 을 클릭합니다.</block>
-  <block id="4140cbb72b17c31e98eb9b6b9d0403bf" category="paragraph">Cloud Manager는 최신 kubecononfig 파일을 기반으로 Kubernetes 클러스터에 대한 정보를 업데이트합니다.</block>
-  <block id="9f3764322ceddf8766334f86e8205f59" category="section-title">클러스터 연결을 끊는 중입니다</block>
-  <block id="f3baf7beaa9acfc76c643519adb50555" category="paragraph">Cloud Volumes ONTAP에서 클러스터의 연결을 끊을 경우 해당 Cloud Volumes ONTAP 시스템을 컨테이너용 영구 스토리지로 더 이상 사용할 수 없습니다. 기존 영구 볼륨은 삭제되지 않습니다.</block>
-  <block id="2e868662ef9beee6c1ee4282bb85af84" category="list-text">Working Environments* 테이블에서 연결을 끊을 작업 환경에 대한 맨 오른쪽의 작업 메뉴를 클릭합니다.</block>
-  <block id="e2a1129a39f1ab16784a827a64ecdeaf" category="inline-image-macro">테이블 오른쪽 끝에 있는 메뉴를 클릭한 후 연결 끊기 작업이 표시되는 작업 환경 테이블의 스크린 샷</block>
-  <block id="4010305b0fe8e3ef71301229c58c9c33" category="paragraph"><block ref="4010305b0fe8e3ef71301229c58c9c33" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3a1413ccffadd023b736396892fc3e82" category="list-text">연결 해제 * 를 클릭합니다.</block>
-  <block id="24ac0a83d210afd70856200fa1a3bf1b" category="paragraph">Cloud Manager는 Cloud Volumes ONTAP 시스템에서 클러스터의 연결을 끊습니다.</block>
-  <block id="563e32f468bf8948056b1be1d7251e20" category="section-title">클러스터를 제거하는 중입니다</block>
-  <block id="33537c19debe9015654dca47bd7ca179" category="paragraph">클러스터에서 모든 작업 환경을 분리한 후 Cloud Manager에서 사용 중지된 클러스터를 제거합니다.</block>
-  <block id="a7ab6ac831e4d397740d4a05915674a5" category="list-text">클러스터 제거 * 를 클릭합니다.</block>
-  <block id="47475fc9b052eeb295cfa73500f8dc4f" category="inline-image-macro">클러스터 세부 정보 페이지 위쪽에 표시되는 클러스터 제거 단추의 스크린샷</block>
-  <block id="a5db9739febaffad0d71bf0b522e2e63" category="paragraph"><block ref="a5db9739febaffad0d71bf0b522e2e63" category="inline-image-macro-rx" type="image"></block></block>
   <block id="627dbb600651aad7173ae13133dfe740" category="summary">NetApp의 지원은 Cloud Volumes ONTAP PAYGO 시스템에 포함되어 있지만 먼저 NetApp에 시스템을 등록하여 지원을 활성화해야 합니다.</block>
   <block id="a37ea04c3e1568f7c0e8e6abc9104d40" category="doc">선불 종량제 시스템을 등록하는 중입니다</block>
   <block id="969ea14c5bc8e5c519f2569d0b7e4ead" category="inline-link-macro">이 페이지에 설명되어 있습니다</block>
@@ -2437,7 +2335,6 @@
   <block id="a67c1e3fa166897e8cc4f860ff4aa0c5" category="paragraph"><block ref="a67c1e3fa166897e8cc4f860ff4aa0c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dce5019f9c2e14a57d05767b06b4b81a" category="list-text">필요한 경우 라이센스를 추가로 구입한 다음 계정에 라이센스를 추가합니다.</block>
   <block id="b2dfe525c9a6bec7392826fba889fe07" category="section-title">구입한 라이센스를 계정에 추가합니다</block>
-  <block id="9b0a940130596000d45be341e6c1b0ec" category="paragraph">NetApp 계정의 라이센스를 구입한 후 Cloud Volumes ONTAP에 사용할 수 있는 용량을 위해 라이센스를 Cloud Manager에 추가해야 합니다.</block>
   <block id="a2426434bd2755150443a72dbf29878b" category="list-text">라이센스 또는 라이센스 파일의 일련 번호를 Cloud Manager에 제공해야 합니다.</block>
   <block id="eb1c981bc4eb3233c26c34546542d338" category="inline-link">Cloud Manager에 NetApp Support 사이트 계정을 추가합니다</block>
   <block id="f16ff9a2f29f3126c120ed27df35ef94" category="list-text">일련 번호를 입력하려면 먼저 해야 합니다<block ref="c470c70606743035aa91358ee6f57b26" category="inline-link-rx"></block>. 일련 번호에 액세스할 수 있는 권한이 있는 NetApp Support 사이트 계정입니다.</block>
@@ -2910,7 +2807,6 @@
   <block id="3cc132ecf0523f86195d2baf263bfdba" category="paragraph">Essentials 및 Professional 패키지는 다음 소비 모델과 함께 제공됩니다.</block>
   <block id="f0c74524bf1dcc2586975c7d2fab30aa" category="list-text">NetApp에서 BYOL(라이센스)을 구매하여 모든 클라우드 공급자가 Cloud Volumes ONTAP를 구축할 수 있습니다.</block>
   <block id="c603e0cd8afdb5636238d7d652481a08" category="paragraph">라이센스는 단일 클라우드 공급자에 제한되지 않습니다.</block>
-  <block id="0a042d8bd5f070de6995ada78bbc5818" category="list-text">클라우드 공급자 마켓플레이스(AWS 및 Google Cloud만 해당)로부터 연간 계약을 체결합니다.</block>
   <block id="f28f2c679b3208af9d5fe292ad6356b8" category="list-text">클라우드 공급자 시장에서 시간별 구독(PAYGO)</block>
   <block id="743cd9f94465042cc1367604dce1ec22" category="list-text">NetApp(BYOL)에서 라이센스를 구입하는 경우 클라우드 공급자 마켓플레이스의 PAYGO 오퍼링을 구독해야 합니다.</block>
   <block id="0956d25698d6ea6e452e1cd574ab1eea" category="paragraph">라이센스는 항상 먼저 부과되지만 다음과 같은 경우 마켓플레이스의 시간당 요율로 비용이 청구됩니다.</block>
@@ -3041,9 +2937,7 @@
   <block id="fe49f2913a4b13b0a1c8c251eba351ed" category="paragraph">Cloud Manager는 Cloud Volumes ONTAP이 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 GCP 방화벽 규칙을 생성합니다. 테스트 목적으로 또는 자체 방화벽 규칙을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="4907f0fb8777892173f7e34fa56bfcdb" category="paragraph">Cloud Volumes ONTAP의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.</block>
   <block id="bcf66fd73f27e271725271d68f4723a9" category="paragraph">HA 구성을 구축할 경우 VPC-0의 Cloud Volumes ONTAP에 대한 방화벽 규칙입니다.</block>
-  <block id="1acde187c6f2fd217dac5eaa58444173" category="paragraph">사전 정의된 방화벽에서 인바운드 규칙의 소스는 0.0.0.0/0입니다.</block>
   <block id="1147a9bceab35dc98b14493a462a8f27" category="inline-link">Google Cloud 설명서: 부하 분산 방화벽 규칙</block>
-  <block id="4922e003940e56d05842b6e74ae211fb" category="paragraph">자체 방화벽을 만들려면 Cloud Volumes ONTAP와 통신해야 하는 모든 네트워크를 추가해야 하지만 내부 Google 로드 밸런서가 올바르게 작동할 수 있도록 두 주소 범위를 모두 추가해야 합니다. 이러한 주소는 130.211.0.0/22 및 35.191.0.0/16입니다. 자세한 내용은 을 참조하십시오<block ref="ec02114a2c39456710780c7d788390e7" category="inline-link-rx"></block>.</block>
   <block id="1395d3dc336eac468612e7bbe8281f7a" category="cell">63001-63050</block>
   <block id="06fb5a0f91eb3d073524ac0c7e590c54" category="cell">로드 밸런싱 프로브 포트를 통해 어떤 노드가 정상 상태인지 확인(HA 쌍에만 필요)</block>
   <block id="9fda35946418ee004d3cdc93c12473b4" category="section-title">VPC-1, VPC-2 및 VPC-3의 방화벽 규칙</block>
@@ -3051,12 +2945,6 @@
   <block id="8ab03e4616af1a81bd7e097e2a865c29" category="paragraph">GCP에서 HA 구성은 네 대의 VPC에 구축됩니다. VPC-0의 HA 구성에 필요한 방화벽 규칙은 입니다 <block ref="6696339384f87dfedda2136f4a028ff0" category="inline-xref-macro-rx"></block>.</block>
   <block id="9b215825e4e7c346c52a957a68adf4cb" category="paragraph">한편, Cloud Manager가 VPC-1, VPC-2 및 VPC-3의 인스턴스에 대해 생성하는 사전 정의된 방화벽 규칙은 _ALL_PROTOCOLS 및 PORT를 통한 수신 통신을 지원합니다. 이 규칙은 HA 노드 간 통신을 지원합니다.</block>
   <block id="e83b31d42852ca12480d330a3385214f" category="paragraph">HA 노드와 HA 중재자의 통신은 포트 3260(iSCSI)을 통해 이루어집니다.</block>
-  <block id="1008a7e5067aee5eb98176fc494fab20" category="section-title">VPC에서 자체 방화벽 규칙 사용 1-3</block>
-  <block id="77f479b49565633ac18fea920ecad0e6" category="paragraph">HA 쌍을 생성하는 경우 Cloud Manager에서 사전 정의된 방화벽 규칙을 사용하거나 각 VPC에 대한 기존 규칙을 사용할 수 있습니다. VPC 1-3에 대해 고유한 방화벽 규칙을 사용하고 여러 Google Cloud 영역에 HA 쌍을 배포하는 경우 방화벽 규칙에 대해 _target tag_를 설정해야 합니다. 대상 태그를 설정하지 않으면 배포 중에 오류가 발생합니다.</block>
-  <block id="3a196fb0b8644eb4705060d601f3190f" category="list-text">Google Cloud에서 방화벽 규칙을 만들 때 * Targets * 필드로 이동하여 * 지정된 대상 태그 * 를 선택하고 태그를 입력합니다.</block>
-  <block id="ea2f0986a422e2e7716f25e393e93d2f" category="paragraph">이 값은 원하는 텍스트 문자열일 수 있습니다.</block>
-  <block id="f96a45994fa9c7f93941593f44593807" category="list-text">Cloud Manager에서 HA 쌍을 생성하는 경우 * Connectivity * 페이지에서 기존 방화벽 규칙을 선택합니다.</block>
-  <block id="7b8bae0470d950ff06ed48ecc057a3dd" category="paragraph">방화벽 규칙이 Cloud Volumes ONTAP에 연결되면 대상 태그가 Cloud Volumes ONTAP 노드에 _network tags_로 자동으로 추가됩니다.</block>
   <block id="fa6661c729382092acdf9b6930de105e" category="section-title">커넥터의 방화벽 규칙</block>
   <block id="5ea521a799e1cf043cd101ec326044f6" category="paragraph">Connector의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.</block>
   <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">Connector에 대해 미리 정의된 방화벽 규칙은 모든 아웃바운드 트래픽을 엽니다. 허용 가능한 경우 기본 아웃바운드 규칙을 따릅니다. 더 엄격한 규칙이 필요한 경우 고급 아웃바운드 규칙을 사용합니다.</block>
@@ -3492,7 +3380,6 @@
   <block id="1c27e11c5e65b93611e6f5ce640f8184" category="sidebar">볼륨 생성</block>
   <block id="a30f8bec41e1f3d9a742515da10df16c" category="sidebar">비활성 데이터를 오브젝트 스토리지에 계층화합니다</block>
   <block id="70bcbcd32eaaac8441910e5d4e5f5a79" category="sidebar">FlexCache을 통해 데이터에 더 빠르게 액세스</block>
-  <block id="a2dddf94fc6ecd8f3d07cc5247fc6781" category="sidebar">ONTAP를 영구 스토리지로 사용합니다</block>
   <block id="ef30733ef9c11950550b941e42eb12ee" category="sidebar">통합 관리</block>
   <block id="a3b2fca1fd4e5f7a29fc618d28e362b5" category="sidebar">기존 애그리게이트를 관리합니다</block>
   <block id="bf36a77b5166293d07ef75b2861c69ad" category="sidebar">스토리지 VM 관리</block>
@@ -3558,17 +3445,11 @@
   <block id="0f132f66e81cbab588044405a33dc058" category="section-title">WORM 스토리지에 대한 충전 중</block>
   <block id="10142c9d88b9419ee393574e858e86c8" category="inline-link">WORM 스토리지 가격에 대해 자세히 알아보십시오</block>
   <block id="074dbf8cc93ccd34e86e3e2e8f2a1e3a" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block>.</block>
-  <block id="32215461c426d2e6cd125109ca715d8f" category="section-title">2022년 2월 27일(커넥터 3.9.16)</block>
   <block id="1c6f86b67d4150db2b816bc084d4c069" category="paragraph"><block ref="525dd47105081fbda31ba7a2793ca879" category="inline-link-rx"></block>.</block>
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022년 2월 9일</block>
   <block id="41fe6a9591d04d2b5dc40ba59fd15df9" category="paragraph"><block ref="e22d1e33878d70a72f20edc19056d016" category="inline-link-rx"></block>.</block>
   <block id="5c46bd67ae4b5c23f9c243b5f396c088" category="section-title">2022년 2월 6일</block>
   <block id="e186d5095e3d6d1b5247bef6646ae005" category="paragraph"><block ref="ef3979f2f1932fd482bb464a3e7d984f" category="inline-link-rx"></block>.</block>
-  <block id="2b9fafb77808b816392633fe1036ceb4" category="section-title">2022년 1월 30일(커넥터 3.9.15)</block>
-  <block id="305f98fa0d49873a77484c14f71bfec4" category="section-title">2022년 1월 2일(커넥터 3.9.14)</block>
-  <block id="35e4cbbe7120f5a106048c84199b5c38" category="section-title">2021년 11월 28일(커넥터 3.9.13)</block>
-  <block id="01b6222a6fdfe753189cb7e0753ef51a" category="section-title">2021년 10월 4일(커넥터 3.9.11)</block>
-  <block id="2e88f3ae6e50f5f0bbc46ea8158b71ea" category="section-title">2021년 9월 2일(커넥터 3.9.10)</block>
   <block id="96ce026f2bc7496743369db3f0e33981" category="section-title">기존 Azure 리소스 그룹을 선택합니다</block>
   <block id="96b2257b99d74387ccf906445ab11df4" category="paragraph">CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.</block>
   <block id="ee095a2fd0990ba785c303c6524d8145" category="list-text">추가 SVM(Data-Serving Storage VM)에 대한 추가 라이센스 비용은 없지만, 데이터 서비스 SVM당 최소 용량 비용은 4TiB입니다.</block>
@@ -3745,4 +3626,100 @@
   <block id="6c6c472de3f0cea0f21c8e31be81490c" category="list-text">NAS 데이터 LIF 생성:</block>
   <block id="477dc9bfd99f5e3ed09c8dbdc76a2c7c" category="list-text">iSCSI LIF를 생성하여 DNS 및 SMB 통신 제공:</block>
   <block id="1d690a933c240dda520f6527f56da475" category="paragraph">9.7 릴리즈부터 특정 Cloud Volumes ONTAP 구성에서 여러 스토리지 VM이 지원됩니다. 로 이동합니다<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.</block>
+  <block id="7c631216018c939fdeeed5e8807fc718" category="paragraph">HA 쌍의 경우 사전 정의된 방화벽 정책의 인바운드 트래픽에 대한 소스 필터는 0.0.0.0/0입니다.</block>
+  <block id="cd2edcd7e3c4d8236b1a1ff235d1b803" category="paragraph">단일 노드 시스템의 경우 배포 중에 미리 정의된 방화벽 정책에 대한 소스 필터를 선택할 수 있습니다.</block>
+  <block id="62978cf670cdcd284392400fa0cb70a9" category="list-text">* 선택한 VPC만 해당 *: 인바운드 트래픽의 소스 필터는 Cloud Volumes ONTAP 시스템용 VPC의 서브넷 범위와 커넥터가 상주하는 VPC의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.</block>
+  <block id="ba2e1bf50371835f50d77c05a977d80c" category="list-text">* 모든 VPC *: 인바운드 트래픽의 소스 필터는 0.0.0.0/0 IP 범위입니다.</block>
+  <block id="4fa4c5ae842db9adb7911d016ca19362" category="paragraph">자체 방화벽 정책을 사용하는 경우 Cloud Volumes ONTAP와 통신해야 하는 모든 네트워크를 추가해야 하지만 내부 Google 로드 밸런서가 올바르게 작동할 수 있도록 두 주소 범위를 모두 추가해야 합니다. 이러한 주소는 130.211.0.0/22 및 35.191.0.0/16입니다. 자세한 내용은 을 참조하십시오<block ref="ec02114a2c39456710780c7d788390e7" category="inline-link-rx"></block>.</block>
+  <block id="612b1fa388e719e990cb953520986784" category="list-text">클라우드 공급자 마켓플레이스로부터 연간 계약을 체결합니다.</block>
+  <block id="7012cf86c42fb3eec6343900832f1d08" category="list-text">AWS에서는 AWS 마켓플레이스의 퍼블릭 오퍼에서 연간 계약을 이용할 수 있습니다. Cloud Volumes ONTAP 작업 환경을 구축할 때 Cloud Manager에서 구독을 신청하라는 메시지를 표시합니다.</block>
+  <block id="1ce7e5f92b8c11b96a7b6fea0435803d" category="list-text">Azure에서는 NetApp 세일즈 담당자와 협력하여 연간 계약을 구입해야 합니다. 이 계약은 Azure 마켓플레이스에서 프라이빗 오퍼로 제공됩니다.</block>
+  <block id="51606c7b614cdc7ab9e0489981838dfa" category="paragraph">NetApp이 프라이빗 오퍼를 공유하면 작업 환경을 생성하는 동안 Azure 마켓플레이스에서 구독할 때 연간 계획을 선택할 수 있습니다.</block>
+  <block id="d3ef010be2a71bc188b8cf2beb05ac32" category="list-text">Google Cloud에서는 NetApp 세일즈 담당자와 협력하여 연간 계약을 구입해야 합니다. 이 계약은 Google Cloud Marketplace에서 프라이빗 오퍼로 제공됩니다.</block>
+  <block id="f96723ecb29e40ca9b9fb042ab6ff4ef" category="paragraph">NetApp이 프라이빗 오퍼를 공유하면 근무 환경을 생성하는 동안 Google Cloud Marketplace에서 가입할 때 연간 계획을 선택할 수 있습니다.</block>
+  <block id="49644953fd4e9612a9842d17bef5e79b" category="section-title">2022년 5월 2일</block>
+  <block id="e76164b285bb635d604e86db0ddefffb" category="paragraph">다음 변경 사항은 커넥터의 3.9.18 릴리스에 도입되었습니다.</block>
+  <block id="44521137c9499dbef6a006058d0d9127" category="section-title">Cloud Volumes ONTAP 9.11.0</block>
+  <block id="f5820273186d8dafc3fd2a4b4a00f3ab" category="paragraph">이제 Cloud Manager에서 Cloud Volumes ONTAP 9.11.0을 배포 및 관리할 수 있습니다.</block>
+  <block id="a0834297e8b28b9a51d59500441c7351" category="section-title">중재자 업그레이드 개선</block>
+  <block id="b1001d52fd68a717e647b035c7ba64fe" category="paragraph">Cloud Manager에서 HA 쌍의 중재자를 업그레이드할 때 이 중재자가 부팅 디스크를 삭제하기 전에 새 중재자 이미지를 사용할 수 있는지 검증합니다. 이 변경 사항은 업그레이드 프로세스가 실패할 경우 중재자가 계속해서 성공적으로 작동할 수 있도록 합니다.</block>
+  <block id="e6e5b99786bfefd88e32c940b7547ab3" category="section-title">K8s 탭이 제거되었습니다</block>
+  <block id="6eb7d1343cce33ec7d31b57edd9f3aef" category="paragraph">K8s 탭은 이전 버전에서 사용되지 않으며 이제 제거되었습니다. Kubernetes를 Cloud Volumes ONTAP와 함께 사용하려면 고급 데이터 관리를 위한 작업 환경으로 관리 Kubernetes 클러스터를 Canvas에 추가할 수 있습니다.</block>
+  <block id="75b200b4f9a63bca2792f985693a22c8" category="inline-link">Cloud Manager의 Kubernetes 데이터 관리에 대해 자세히 알아보십시오</block>
+  <block id="97bbe1f6bede29b64e2101d03c2362cb" category="paragraph"><block ref="97bbe1f6bede29b64e2101d03c2362cb" category="inline-link-rx"></block></block>
+  <block id="7475abfb4039c00bb03fd05d6d792b3d" category="section-title">Azure에서 연간 계약</block>
+  <block id="52b398f13b1acf3e73584a9cb106e989" category="paragraph">이제 Essentials 및 Professional 패키지는 Azure에서 연간 계약을 통해 제공됩니다. NetApp 세일즈 담당자에게 문의하여 연간 계약을 구매할 수 있습니다. 이 계약은 Azure 마켓플레이스에서 프라이빗 오퍼로 제공됩니다.</block>
+  <block id="ba089edca33f314482ad946ae680f1eb" category="inline-link">라이센스에 대해 자세히 알아보십시오</block>
+  <block id="bd2a7f63a398b5af0c64c2d07409b38c" category="paragraph"><block ref="fa67dcc1253d6ef7da36dd244bfe620f" category="inline-link-rx"></block>.</block>
+  <block id="57ae56f77d278076fb394799067eb3ef" category="section-title">S3 빙하 즉시 검색</block>
+  <block id="465771d8890531f2527e09ef3f1b4f68" category="paragraph">이제 Amazon S3 Glacier Instant Retrieval 저장소 클래스에 계층화된 데이터를 저장할 수 있습니다.</block>
+  <block id="6d4822148bad6fb79e6d92864dde8771" category="inline-link">계층화된 데이터에 대한 스토리지 클래스를 변경하는 방법에 대해 알아보십시오</block>
+  <block id="e6eb181abe02ab22f2df966da6c0669d" category="paragraph"><block ref="5ae2503a0985d77718c9fe3da8dbc989" category="inline-link-rx"></block>.</block>
+  <block id="ef8e1d8f242a7ee4d109deb44db1b252" category="section-title">Connector에 새로운 AWS 권한이 필요합니다</block>
+  <block id="bfd761a70b5f9cd277ef7c878344df38" category="paragraph">이제 AZ(단일 가용성 영역)에 HA 쌍을 구축할 때 AWS 분산 배치 그룹을 생성하려면 다음 권한이 필요합니다.</block>
+  <block id="0080f4096e51a12d4256890c125c5c46" category="paragraph">이제 Cloud Manager에서 배치 그룹을 만드는 방법을 최적화하려면 이러한 권한이 필요합니다.</block>
+  <block id="26dd25d183752a9f37249174f3d3ff89" category="paragraph">Cloud Manager에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. 에서 최신 사용 권한 목록을 찾을 수 있습니다<block ref="0e92ab1ca454f31f07a6e5fba6519a3a" category="inline-link-rx"></block>.</block>
+  <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">새로운 Google Cloud 지역 지원</block>
+  <block id="6b071f4257d8badb0aeb96e6b0547800" category="paragraph">Cloud Volumes ONTAP는 이제 9.10.1 릴리스부터 다음 Google 클라우드 영역에서 지원됩니다.</block>
+  <block id="b11df59ba05c25c3a8734d54b7501ae7" category="list-text">델리(아시아 - 남쪽 2)</block>
+  <block id="68fb6cfeb81e52feef062b88d7037b7e" category="list-text">멜번(호주 - 수테스토2)</block>
+  <block id="986ef6cfb21ad2831a7ae053e3f0506e" category="list-text">Milan (Europe-west8) - 단일 노드만 해당</block>
+  <block id="00f803da9ac7d98ccbfd2178a95625ee" category="list-text">산티아고(사우스메리카-west1) - 단일 노드만 해당</block>
+  <block id="d1ce20099e22fd96c2217da218a20a9e" category="inline-link">Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다</block>
+  <block id="efb1786cdf88244f9480e15cb039f942" category="paragraph"><block ref="efb1786cdf88244f9480e15cb039f942" category="inline-link-rx"></block></block>
+  <block id="8184a89f6d67aafd228ddc002e159ce5" category="section-title">Google Cloud에서 n2-standard-16을 지원합니다</block>
+  <block id="86a3a073b385c5ae85e4523282be3124" category="paragraph">이제 Google Cloud의 Cloud Volumes ONTAP에서 9.10.1 릴리즈부터 n2-standard-16 머신 유형이 지원됩니다.</block>
+  <block id="4994b2bf1bd5c0153c9dc0077a84b5a7" category="inline-link">Google Cloud에서 Cloud Volumes ONTAP에 지원되는 구성을 봅니다</block>
+  <block id="528aaaafbacf255285f844e94403a43f" category="paragraph"><block ref="528aaaafbacf255285f844e94403a43f" category="inline-link-rx"></block></block>
+  <block id="291a5c22c8cb78fe8ec363d61830f63e" category="section-title">Google Cloud 방화벽 정책의 개선 사항</block>
+  <block id="73d44bfa5f20953f5799b7072e1f9dc7" category="list-text">Google Cloud에서 Cloud Volumes ONTAP HA 쌍을 생성하면 Cloud Manager가 VPC에 기존 방화벽 정책을 모두 표시합니다.</block>
+  <block id="5e1082179426bea32e466fe447cc5f2e" category="paragraph">이전에는 Cloud Manager에서 타겟 태그가 없는 VPC-1, VPC-2 또는 VPC-3에 정책을 표시하지 않았습니다.</block>
+  <block id="880f67f103405f29628ff848182ca330" category="list-text">Google Cloud에서 Cloud Volumes ONTAP 단일 노드 시스템을 생성할 때, 이제 선택한 VPC 전용(권장) 또는 모든 VPC 내의 트래픽을 허용하도록 사전 정의된 방화벽 정책을 선택할 수 있습니다.</block>
+  <block id="5c4a95a56d4b5bfef734aeab388618c0" category="section-title">Google Cloud 서비스 계정 개선</block>
+  <block id="06fa5bb865f711b645e1f86dd8711d63" category="paragraph">Cloud Volumes ONTAP에서 사용할 Google Cloud 서비스 계정을 선택하면 Cloud Manager에서 이제 각 서비스 계정과 연결된 이메일 주소를 표시합니다. 이메일 주소를 보면 동일한 이름을 공유하는 서비스 계정을 쉽게 구별할 수 있습니다.</block>
+  <block id="898d465c80c6b6783418f6fa71db0946" category="inline-image-macro">서비스 계정 필드의 스크린샷</block>
+  <block id="92a991ca375ee56317f82c3a30f16fff" category="paragraph"><block ref="92a991ca375ee56317f82c3a30f16fff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022년 2월 27일</block>
+  <block id="eb1bf021e05707d1f69722b4d550c310" category="paragraph">다음 변경 사항은 커넥터의 3.9.16 릴리스에 도입되었습니다.</block>
+  <block id="3ac47455b10c6fb4061a70a91fdbfde2" category="section-title">2022년 1월 30일</block>
+  <block id="e1a7ea4670ce179c62807533bd08ccae" category="paragraph">다음 변경 사항은 커넥터의 3.9.15 릴리스에 도입되었습니다.</block>
+  <block id="586301717819197e24001cac47efdaaa" category="section-title">2022년 1월 2일</block>
+  <block id="424543ac82fbe709685dcec8b007bf63" category="paragraph">다음 변경 사항은 커넥터의 3.9.14 릴리스에 도입되었습니다.</block>
+  <block id="f61163b681442ac500a8018c87241770" category="section-title">2021년 11월 28일</block>
+  <block id="d10c1ac2edf70d0711330d4a227b70de" category="paragraph">다음 변경 사항은 커넥터의 3.9.13 릴리스에 도입되었습니다.</block>
+  <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">2021년 10월 4일</block>
+  <block id="190323ddb2d35098aa0adb62b3b4fb4c" category="paragraph">Connector의 3.9.11 릴리스에는 다음과 같은 변경 사항이 도입되었습니다.</block>
+  <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021년 9월 2일</block>
+  <block id="d1ef4823428a4819165321552b0897ec" category="paragraph">다음 변경 사항은 커넥터의 3.9.10 릴리스에 도입되었습니다.</block>
+  <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">2021년 7월 7일</block>
+  <block id="5378cd3122f1a8d3bcbde490c71a0f72" category="paragraph">커넥터 3.9.8 릴리스에는 다음과 같은 변경 사항이 도입되었습니다.</block>
+  <block id="84e52d98abcbe81e8699e5833406f2e8" category="section-title">2021년 5월 30일</block>
+  <block id="356b234ec5c21cc28a1a5ae1dd7d3d5f" category="paragraph">커넥터 3.9.7 릴리스에는 다음과 같은 변경 사항이 도입되었습니다.</block>
+  <block id="13c380d451c296cda1d1289b9dc25114" category="section-title">2021년 4월 11일</block>
+  <block id="46a093bac120f76470b6d910e374e3fe" category="paragraph">커넥터의 3.9.5 릴리스와 함께 다음과 같은 변경 사항이 도입되었습니다.</block>
+  <block id="1758589feb07955b2d0a7b0b09d739c8" category="section-title">2021년 3월 8일</block>
+  <block id="2d1fda237e9c9e24215e9d1450991976" category="paragraph">다음 변경 사항은 커넥터의 3.9.4 릴리스에 도입되었습니다.</block>
+  <block id="450eec7ccd07d2edbfc01a9a848e5c25" category="section-title">2021년 1월 4일</block>
+  <block id="5a93c02f6d4fbb65f4f91aed3ecc5f9a" category="paragraph">다음 변경 사항은 커넥터의 3.9.2 릴리스에 도입되었습니다.</block>
+  <block id="998eefc7687a412e9a842ebf95b04347" category="section-title">2020년 11월 3일</block>
+  <block id="908acbbcae243fd1f200e44e637db120" category="paragraph">다음 변경 사항은 Connector의 3.9.0 릴리스에 도입되었습니다.</block>
+  <block id="3b293ff829865b6388ad03ef6b96c846" category="cell">9.11.0</block>
+  <block id="331320477ecac4cca1b63e686d99f8d3" category="section-title">디지털 지갑에 라이센스를 추가하는 방법</block>
+  <block id="792eeb7f686f2ad37b664f6478d40bed" category="paragraph">NetApp 세일즈 담당자로부터 라이센스를 구입하면 일련 번호와 추가 라이센스 세부 정보가 포함된 이메일이 전송됩니다.</block>
+  <block id="4e85798464067990a260920303c6ad56" category="paragraph">그 동안 Cloud Manager는 NetApp 라이센스 서비스에 대해 자동으로 쿼리하여 NetApp Support 사이트 계정과 연결된 라이센스에 대한 자세한 정보를 제공합니다. 오류가 없는 경우 Cloud Manager는 디지털 지갑에 라이센스를 자동으로 추가합니다.</block>
+  <block id="ad0be4bc913a8026a3f5e42fc7656d23" category="inline-xref">구입한 라이센스를 계정에 추가하는 방법에 대해 알아봅니다</block>
+  <block id="7d2ae233484b0c37afe70cfe2db6a56b" category="paragraph">Cloud Manager에서 라이센스를 추가할 수 없는 경우 직접 디지털 지갑에 라이센스를 추가해야 합니다. <block ref="2b377ff52574668221716136185f8476" category="inline-xref-macro-rx"></block>.</block>
+  <block id="59278e406900d98dfbf804d3447c186c" category="paragraph">디지털 지갑에 구입한 라이센스가 없으면 Cloud Volumes ONTAP에 사용할 수 있는 용량을 위해 라이센스를 Cloud Manager에 추가해야 합니다.</block>
+  <block id="0558557eddde3c400b73684dfb49fdbb" category="list-text">Aggregate를 선택하고 * Add disks * 를 클릭합니다.</block>
+  <block id="3e385957b42bff8380e99a914d474fb1" category="list-text">* 세부 정보 및 자격 증명 *: 프로젝트를 선택하고 클러스터 이름을 지정한 다음 서비스 계정을 선택하고 선택적으로 레이블을 추가한 다음 자격 증명을 지정합니다.</block>
+  <block id="1adb02ac235ed181f81480b00aa116f6" category="list-text">* 위치 및 연결 *: 위치를 선택하고 방화벽 정책을 선택한 다음 데이터 계층화를 위해 Google Cloud 스토리지에 대한 네트워크 연결을 확인합니다.</block>
+  <block id="3450bc9327f985ff43682b683cb1eee9" category="cell">연결 검증</block>
+  <block id="13b0618617ce48b8c5ef64094a5be02f" category="cell">콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷을 프라이빗 Google 액세스용으로 구성해야 합니다. 자세한 지침은 을 참조하십시오<block ref="46bdb5a1fb51df5eb32e2147ea91e6d8" category="inline-link-rx"></block>.</block>
+  <block id="433aa0e54183d61d7dbfe714eebbe532" category="cell">방화벽 정책을 생성했습니다</block>
+  <block id="44b71ba9f3984ca3e3fbc4f874ed6e55" category="paragraph">Cloud Manager에서 방화벽 정책을 생성하도록 허용할 경우 트래픽을 허용하는 방법을 선택해야 합니다.</block>
+  <block id="537e6055fd3e93e23e2cb903ef1297e5" category="list-text">선택한 VPC 전용 * 을 선택한 경우 인바운드 트래픽에 대한 소스 필터는 선택한 VPC의 서브넷 범위와 커넥터가 있는 VPC의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.</block>
+  <block id="32a5902f8095b03e8e2060198dc00577" category="list-text">모든 VPC * 를 선택한 경우 인바운드 트래픽의 소스 필터는 0.0.0.0/0 IP 범위입니다.</block>
+  <block id="fc4876ca61d1c336e1f17141c7227b6e" category="cell">기존 방화벽 정책을 사용합니다</block>
+  <block id="7f6be0499fe67271d3c198bd726fe0c0" category="inline-link-macro">Cloud Volumes ONTAP의 방화벽 규칙에 대해 알아보십시오</block>
+  <block id="154e9c61180206ef2d8b605b639fb35f" category="cell">기존 방화벽 정책을 사용하는 경우 필수 규칙이 포함되어 있는지 확인합니다. <block ref="c3fbed15c1fb154b840fdb8b5504f098" category="inline-link-macro-rx"></block>.</block>
 </blocks>

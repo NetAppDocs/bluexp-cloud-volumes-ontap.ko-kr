@@ -119,10 +119,30 @@ NOTE: Cloud Manager에 대해 설정한 서비스 계정입니다. link:task-cre
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
 . * 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. Cloud Backup을 선택하거나 Tiering을 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.
-. * 위치 및 연결 *: 위치를 선택하고 방화벽 정책을 선택한 다음 확인란을 선택하여 데이터 계층화를 위해 Google Cloud 스토리지에 대한 네트워크 연결을 확인합니다.
+. * 위치 및 연결 *: 위치를 선택하고 방화벽 정책을 선택한 다음 데이터 계층화를 위해 Google Cloud 스토리지에 대한 네트워크 연결을 확인합니다.
 +
-콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷이 프라이빗 Google 액세스용으로 구성되어야 합니다. 자세한 지침은 을 참조하십시오 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 설명서: 개인 Google Access 구성"^].
+다음 표에서는 지침이 필요한 필드를 설명합니다.
 
++
+[cols="25,75"]
+|===
+| 필드에 입력합니다 | 설명 
+
+
+| 연결 검증 | 콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷을 프라이빗 Google 액세스용으로 구성해야 합니다. 자세한 지침은 을 참조하십시오 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 설명서: 개인 Google Access 구성"^]. 
+
+
+| 방화벽 정책을 생성했습니다  a| 
+Cloud Manager에서 방화벽 정책을 생성하도록 허용할 경우 트래픽을 허용하는 방법을 선택해야 합니다.
+
+** 선택한 VPC 전용 * 을 선택한 경우 인바운드 트래픽에 대한 소스 필터는 선택한 VPC의 서브넷 범위와 커넥터가 있는 VPC의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.
+** 모든 VPC * 를 선택한 경우 인바운드 트래픽의 소스 필터는 0.0.0.0/0 IP 범위입니다.
+
+
+
+
+| 기존 방화벽 정책을 사용합니다 | 기존 방화벽 정책을 사용하는 경우 필수 규칙이 포함되어 있는지 확인합니다. link:reference-networking-gcp.html#firewall-rules-for-cloud-volumes-ontap["Cloud Volumes ONTAP의 방화벽 규칙에 대해 알아보십시오"]. 
+|===
 . * 충전 방법 및 NSS 계정 *: 이 시스템에서 사용할 충전 옵션을 지정한 다음 NetApp Support 사이트 계정을 지정합니다.
 +
 ** link:concept-licensing.html["이러한 충전 방법에 대해 자세히 알아보십시오"].

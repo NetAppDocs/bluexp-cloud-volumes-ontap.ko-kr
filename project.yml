@@ -96,8 +96,6 @@ sidebar:
         url: "/task-connect-lun.html"
       - title: FlexCache을 통해 데이터에 더 빠르게 액세스
         url: "/task-accelerate-data-access.html"
-      - title: ONTAP를 영구 스토리지로 사용합니다
-        url: "/task-connecting-kubernetes.html"
     - title: 통합 관리
       entries:
       - title: 애그리게이트 생성

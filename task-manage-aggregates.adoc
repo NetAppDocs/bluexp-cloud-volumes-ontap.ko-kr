@@ -40,7 +40,7 @@ Aggregate에 공간이 부족할 경우 System Manager를 사용하여 볼륨을
 
 
 | Aggregate에 디스크를 추가합니다  a| 
-.. 애그리게이트를 선택하고 * AWS 디스크 추가 * 또는 * Azure 디스크 추가 * 를 클릭합니다.
+.. Aggregate를 선택하고 * Add disks * 를 클릭합니다.
 .. 추가할 디스크 수를 선택하고 * 추가 * 를 클릭합니다.
 +
 
