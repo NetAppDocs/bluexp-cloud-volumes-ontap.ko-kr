@@ -1344,7 +1344,6 @@
   <block id="25ecc9395604e745b655dbcb6eed23bc" category="list-text">Cloud Volumes ONTAP 시스템은 _Standard_storage 클래스를 사용하여 비활성 데이터를 단일 S3 버킷에 계층화합니다. 표준은 여러 가용성 영역에 걸쳐 자주 액세스하는 데이터에 적합합니다.</block>
   <block id="b162acd76f83f99ac24045020f8e1c25" category="admonition">Cloud Manager에서 각 작업 환경에 대해 단일 S3 버킷을 생성하고 이를 Fabric-pool-_cluster unique identifier_로 지정합니다. 각 볼륨에 대해 다른 S3 버킷이 생성되지 않습니다.</block>
   <block id="7672a092783c4348b96b40ea2dcf6681" category="list-text">스토리지 클래스</block>
-  <block id="6711770262164538f1923cc482f7d399" category="list-text">AWS의 계층형 데이터에 대한 기본 스토리지 클래스는 _Standard_입니다. 비활성 데이터에 액세스할 계획이 없는 경우 스토리지 클래스를 _Intelligent Tiering_, _One-Zone Infrequent Access_ 또는 _Standard - Infrequent Access_ 중 하나로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 클래스를 변경하면 비활성 데이터가 표준 스토리지 클래스에서 시작되어 30일 후에 액세스하지 않는 경우 선택한 스토리지 클래스로 전환됩니다.</block>
   <block id="20831024dd0b150380212ea26b281613" category="inline-link">Amazon S3 스토리지 클래스에 대해 자세히 알아보십시오</block>
   <block id="e401c2b474cb7d11a68d9e90b0a09307" category="paragraph">데이터에 액세스하는 경우 액세스 비용이 더 높아지므로 스토리지 클래스를 변경하기 전에 이 점을 고려해야 합니다.<block ref="640a0192f14cf6137ba20e6c02d1ae81" category="inline-link-rx"></block>.</block>
   <block id="31089fb1bcdba9204af0a200bd8dcfab" category="inline-link-macro">비활성 데이터를 저비용 오브젝트 스토리지로 계층화</block>
@@ -3722,4 +3721,5 @@
   <block id="fc4876ca61d1c336e1f17141c7227b6e" category="cell">기존 방화벽 정책을 사용합니다</block>
   <block id="7f6be0499fe67271d3c198bd726fe0c0" category="inline-link-macro">Cloud Volumes ONTAP의 방화벽 규칙에 대해 알아보십시오</block>
   <block id="154e9c61180206ef2d8b605b639fb35f" category="cell">기존 방화벽 정책을 사용하는 경우 필수 규칙이 포함되어 있는지 확인합니다. <block ref="c3fbed15c1fb154b840fdb8b5504f098" category="inline-link-macro-rx"></block>.</block>
+  <block id="d84251a0fd530f03ffc5b24f87e0f907" category="list-text">AWS의 계층형 데이터에 대한 기본 스토리지 클래스는 _Standard_입니다. 비활성 데이터에 액세스할 계획이 없는 경우 스토리지 클래스를 _Intelligent Tiering_, _One-Zone Infrequent Access_, _Standard - Infrequent Access_ 또는 _S3 Glacier Instant Retrieval_ 중 하나로 변경하여 저장소 비용을 줄일 수 있습니다. 스토리지 클래스를 변경하면 비활성 데이터가 표준 스토리지 클래스에서 시작되어 30일 후에 액세스하지 않는 경우 선택한 스토리지 클래스로 전환됩니다.</block>
 </blocks>
