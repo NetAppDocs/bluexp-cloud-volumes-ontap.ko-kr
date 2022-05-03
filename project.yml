@@ -7,7 +7,7 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
-  langs: ko-kr,us-en,ja-jp,zh-cn
+  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
   - title: 모든 Cloud Manager 설명서
