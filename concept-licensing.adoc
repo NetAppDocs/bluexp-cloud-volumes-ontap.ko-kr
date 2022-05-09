@@ -50,10 +50,26 @@ NetApp에서 무료로 모든 Cloud Volumes ONTAP 기능을 제공합니다(클�
 
 Freemium 제품을 시작하려면 새로운 Cloud Volumes ONTAP 작업 환경을 만들고 충전 방법을 선택하라는 메시지가 나타나면 * Freemium * 을 선택합니다.
 
+ifdef::aws[]
+
 * link:task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP 실행"]
+
+
+endif::aws[]
+
+ifdef::azure[]
+
 * link:task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP 실행"]
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
 * link:task-deploying-gcp.html["Google Cloud에서 Cloud Volumes ONTAP 실행"]
 
+
+endif::gcp[]
 
 
 
@@ -101,19 +117,34 @@ Essentials 및 Professional 패키지는 다음 소비 모델과 함께 제공�
 
 * 클라우드 공급자 시장에서 시간별 구독(PAYGO)
 * 클라우드 공급자 마켓플레이스로부터 연간 계약을 체결합니다.
-+
-** AWS에서는 AWS 마켓플레이스의 퍼블릭 오퍼에서 연간 계약을 이용할 수 있습니다. Cloud Volumes ONTAP 작업 환경을 구축할 때 Cloud Manager에서 구독을 신청하라는 메시지를 표시합니다.
-** Azure에서는 NetApp 세일즈 담당자와 협력하여 연간 계약을 구입해야 합니다. 이 계약은 Azure 마켓플레이스에서 프라이빗 오퍼로 제공됩니다.
+
+
+ifdef::aws[]
+
+* AWS에서는 AWS 마켓플레이스의 퍼블릭 오퍼에서 연간 계약을 이용할 수 있습니다. Cloud Volumes ONTAP 작업 환경을 배포할 때 Cloud Manager에서 세부 정보 및 자격 증명 페이지를 구독하라는 메시지를 표시합니다.
+
+
+endif::aws[]
+
+ifdef::azure[]
+
+* Azure에서는 NetApp 세일즈 담당자와 협력하여 연간 계약을 구입해야 합니다. 이 계약은 Azure 마켓플레이스에서 프라이빗 오퍼로 제공됩니다.
 +
 NetApp이 프라이빗 오퍼를 공유하면 작업 환경을 생성하는 동안 Azure 마켓플레이스에서 구독할 때 연간 계획을 선택할 수 있습니다.
 
-** Google Cloud에서는 NetApp 세일즈 담당자와 협력하여 연간 계약을 구입해야 합니다. 이 계약은 Google Cloud Marketplace에서 프라이빗 오퍼로 제공됩니다.
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloud에서는 NetApp 세일즈 담당자와 협력하여 연간 계약을 구입해야 합니다. 이 계약은 Google Cloud Marketplace에서 프라이빗 오퍼로 제공됩니다.
 +
 NetApp이 프라이빗 오퍼를 공유하면 근무 환경을 생성하는 동안 Google Cloud Marketplace에서 가입할 때 연간 계획을 선택할 수 있습니다.
 
 
 
-
+endif::gcp[]
 
 다음 사항에 유의하십시오.
 
@@ -139,15 +170,11 @@ NetApp이 프라이빗 오퍼를 공유하면 근무 환경을 생성하는 동�
 
 === 무료 평가판
 
-클라우드 공급자 마켓플레이스의 용량제 구독을 통해 30일 무료 평가판을 사용할 수 있습니다. 무료 평가판은 Cloud Volumes ONTAP 및 클라우드 백업을 포함하며 시장 목록에 등록할 때 시작됩니다.
+클라우드 공급자 마켓플레이스의 용량제 구독을 통해 30일 무료 평가판을 사용할 수 있습니다. 무료 평가판에 Cloud Volumes ONTAP 및 클라우드 백업이 포함되어 있습니다. 이 평가판은 사용자가 마켓플레이스의 서비스에 가입할 때 시작됩니다.
 
-인스턴스에 대해 시간별 소프트웨어 라이센스 비용이 발생하지 않지만, 클라우드 공급자의 인프라 비용은 계속 적용됩니다.
+인스턴스 또는 용량 제한은 없습니다. 원하는 만큼 Cloud Volumes ONTAP 시스템을 구축하고 30일 동안 무료로 필요한 용량을 할당할 수 있습니다. 무료 평가판은 30일 후에 자동으로 유료 시간별 구독으로 변환됩니다.
 
-무료 평가판은 만료 시 유료 시간별 구독으로 자동 변환됩니다. 시간 제한 내에 인스턴스를 종료하는 경우, 배포한 다음 인스턴스가 무료 평가판의 일부가 아닙니다(30일 이내에 배포된 경우에도).
-
-지급인 계정에 첫 번째 Cloud Volumes ONTAP 시스템을 만들어 Cloud Manager에서 Cloud Volumes ONTAP 30일 무료 평가판을 시작할 수 있습니다.
-
-클라우드 공급자를 통해 선불 종량제 평가판을 받을 수 있으며 어떤 방법으로도 확장할 수 없습니다.
+Cloud Volumes ONTAP에는 시간당 소프트웨어 라이센스 비용이 부과되지 않지만, 클라우드 공급자의 인프라 비용이 여전히 적용됩니다.
 
 
 
@@ -184,12 +211,29 @@ NetApp이 프라이빗 오퍼를 공유하면 근무 환경을 생성하는 동�
 . link:task-manage-capacity-licenses.html["Cloud Manager에 라이센스를 추가합니다"]
 . Cloud Volumes ONTAP 시스템을 생성할 때 용량 기반 BYOL 충전 방법을 선택하십시오
 +
+ifdef::aws[]
+
++
 ** link:task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP 실행"]
-** link:task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP 실행"]
-** link:task-deploying-gcp.html["Google Cloud에서 Cloud Volumes ONTAP 실행"]
 
 
 
+
+endif::aws[]
+
+ifdef::azure[]
+
+* link:task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP 실행"]
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* link:task-deploying-gcp.html["Google Cloud에서 Cloud Volumes ONTAP 실행"]
+
+
+endif::gcp[]
 
 
 
@@ -224,12 +268,29 @@ Keystone Flex 구독은 HA 쌍으로 지원됩니다. 현재 단일 노드 시�
 . NetApp이 사용자 계정을 승인한 후 link:task-manage-keystone.html#link-a-subscription["Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 연결합니다"].
 . Cloud Volumes ONTAP 시스템을 생성할 때 Keystone 유연한 구독 충전 방법을 선택하십시오.
 +
+ifdef::aws[]
+
++
 ** link:task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP 실행"]
-** link:task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP 실행"]
-** link:task-deploying-gcp.html["Google Cloud에서 Cloud Volumes ONTAP 실행"]
 
 
 
+
+endif::aws[]
+
+ifdef::azure[]
+
+* link:task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP 실행"]
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* link:task-deploying-gcp.html["Google Cloud에서 Cloud Volumes ONTAP 실행"]
+
+
+endif::gcp[]
 
 
 

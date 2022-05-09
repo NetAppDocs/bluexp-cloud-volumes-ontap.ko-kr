@@ -86,7 +86,7 @@ link:task-enabling-private-link.html["Cloud Volumes ONTAP에서 Azure 프라이�
 
 === 다른 ONTAP 시스템에 대한 연결
 
-Azure의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 Azure VNET와 다른 네트워크(예: AWS VPC 또는 기업 네트워크) 간에 VPN 연결이 있어야 합니다.
+Azure의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 Azure VNET와 다른 네트워크(예: 기업 네트워크) 간에 VPN 연결이 있어야 합니다.
 
 자세한 지침은 을 참조하십시오 https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal["Microsoft Azure 문서: Azure 포털에서 사이트 간 연결을 만듭니다"^].
 
@@ -465,7 +465,7 @@ NOTE: 소스 IP 주소는 커넥터 호스트입니다.
 | 서비스 | 포트 | 프로토콜 | 목적지 | 목적 
 
 
-| API 호출 및 AutoSupport | 443 | HTTPS | 아웃바운드 인터넷 및 ONTAP 클러스터 관리 LIF | API는 AWS 및 ONTAP, 클라우드 데이터 감지, 랜섬웨어 서비스 요청, AutoSupport 메시지를 NetApp에 전송합니다 
+| API 호출 및 AutoSupport | 443 | HTTPS | 아웃바운드 인터넷 및 ONTAP 클러스터 관리 LIF | API는 Azure 및 ONTAP, 클라우드 데이터 감지, 랜섬웨어 서비스 요청, AutoSupport 메시지를 NetApp에 전송합니다 
 
 
 | DNS | 53 | UDP입니다 | DNS | Cloud Manager에서 DNS Resolve에 사용됩니다 

@@ -19,7 +19,15 @@ summary: 'Cloud Volumes ONTAP는 외부 키 관리자로 NVE(NetApp Volume Encry
 [role="lead"]
 Cloud Volumes ONTAP는 NVE(NetApp Volume Encryption) 및 NAE(NetApp Aggregate Encryption)를 지원합니다. NVE와 NAE는 볼륨의 유휴 데이터 암호화를 FIPS(140-2를 준수하는 소프트웨어 기반 솔루션입니다. link:concept-security.html["이러한 암호화 솔루션에 대해 자세히 알아보십시오"].
 
-NVE와 NAE는 모두 외부 키 관리자로 지원됩니다. NVE를 사용하는 경우 AKV(Azure Key Vault) 또는 Google Cloud 키 관리 서비스를 사용하여 ONTAP 암호화 키를 보호할 수 있습니다.
+NVE와 NAE는 모두 외부 키 관리자로 지원됩니다.
+
+ifdef::azure[]
+
+endif::azure[]
+
+ifdef::gcp[]
+
+endif::gcp[]
 
 외부 키 관리자를 설정한 후 새 애그리게이트에 NAE가 기본적으로 사용하도록 설정됩니다. NAE 애그리게이트에 속하지 않는 새로운 볼륨은 기본적으로 NVE를 사용하도록 설정됩니다(예: 외부 키 관리자를 설정하기 전에 생성된 기존 애그리게이트가 있는 경우).
 

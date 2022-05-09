@@ -7,6 +7,19 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
+  filter:
+    label: 클라우드 공급자
+    default: 모든 클라우드 공급자
+    options:
+    - name: Amazon Web Services에서 직접 지원합니다
+      alias: 설치하고
+      id: aws
+    - name: Google 클라우드
+      alias: Google 클라우드
+      id: gcp
+    - name: Microsoft Azure를 참조하십시오
+      alias: Azure를 지원합니다
+      id: azure
   langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
@@ -27,6 +40,7 @@ sidebar:
     - title: Cloud Volumes ONTAP에 대해 자세히 알아보십시오
       url: "/concept-overview-cvo.html"
     - title: Amazon Web Services에서 시작하십시오
+      flavor: aws
       entries:
       - title: 빠른 시작
         url: "/task-getting-started-aws.html"
@@ -47,6 +61,7 @@ sidebar:
       - title: AWS C2S에서 시작하십시오
         url: "/task-getting-started-aws-c2s.html"
     - title: Microsoft Azure에서 시작하십시오
+      flavor: azure
       entries:
       - title: 빠른 시작
         url: "/task-getting-started-azure.html"
@@ -59,6 +74,7 @@ sidebar:
       - title: Azure에서 시스템을 시작합니다
         url: "/task-deploying-otc-azure.html"
     - title: Google Cloud에서 시작하십시오
+      flavor: gcp
       entries:
       - title: 빠른 시작
         url: "/task-getting-started-gcp.html"
@@ -107,8 +123,10 @@ sidebar:
       - title: Cloud Manager에서 스토리지 VM과 작업
         url: "/task-managing-svms.html"
       - title: AWS에서 스토리지 VM을 생성합니다
+        flavor: aws
         url: "/task-managing-svms-aws.html"
       - title: Azure에서 스토리지 VM을 생성합니다
+        flavor: azure
         url: "/task-managing-svms-azure.html"
     - title: 보안 및 데이터 암호화
       entries:
@@ -139,6 +157,7 @@ sidebar:
         - title: 시스템을 삭제합니다
           url: "/task-deleting-working-env.html"
       - title: AWS에서 관리
+        flavor: aws
         entries:
         - title: EC2 인스턴스 유형을 변경합니다
           url: "/task-change-ec2-instance.html"
@@ -147,6 +166,7 @@ sidebar:
         - title: AWS 비용 모니터링
           url: "/task-monitoring-costs.html"
       - title: Azure에서 관리
+        flavor: azure
         entries:
         - title: Azure VM 유형을 변경합니다
           url: "/task-change-azure-vm.html"
@@ -155,6 +175,7 @@ sidebar:
         - title: Azure Private Link를 사용합니다
           url: "/task-enabling-private-link.html"
       - title: Google Cloud에서 관리
+        flavor: gcp
         entries:
         - title: 기계 유형을 변경합니다
           url: "/task-change-gcp-machine.html"
@@ -187,10 +208,13 @@ sidebar:
     - title: 고가용성 쌍
       entries:
       - title: AWS의 HA 쌍
+        flavor: aws
         url: "/concept-ha.html"
       - title: Azure의 HA 쌍
+        flavor: azure
         url: "/concept-ha-azure.html"
       - title: GCP의 HA 쌍
+        flavor: gcp
         url: "/concept-ha-google-cloud.html"
       - title: 스토리지 테이크오버 중 동작
         url: "/concept-degraded-ha-pair.html"
@@ -222,10 +246,13 @@ homepage:
       url: concept-overview-cvo.html
     - title: AWS를 위한 빠른 시작
       url: task-getting-started-aws.html
+      flavor: aws
     - title: Azure를 빠르게 시작합니다
       url: task-getting-started-azure.html
+      flavor: azure
     - title: Google Cloud를 빠르게 시작합니다
       url: task-getting-started-gcp.html
+      flavor: gcp
   - title: 라이센싱
     links:
     - title: 라이센스 개요

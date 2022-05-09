@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-flash-cache.html 
-keywords: cloud volumes ontap, aws, ec2, flash cache, read-intensive, read, random, databases, email, file services, c5d.4xlarge, c5d.9xlarge, r5d.2xlarge, compression, performance, azure, nvme, standard, l8s, vm type, virtual machine, m5d.8xlarge, m5d.12xlarge, c5d.18xlarge 
-summary: AWS 및 Azure의 일부 Cloud Volumes ONTAP 구성에는 Cloud Volumes ONTAP이 성능 향상을 위해 Flash Cache로 사용하는 로컬 NVMe 스토리지가 포함됩니다. 
+keywords: cloud volumes ontap, flash cache, read-intensive, read, random, databases, email, file services, compression, performance, nvme 
+summary: 일부 Cloud Volumes ONTAP 구성에는 Cloud Volumes ONTAP이 성능 향상을 위해 Flash Cache로 사용하는 로컬 NVMe 스토리지가 포함됩니다. 
 ---
 = Flash Cache를 참조하십시오
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: AWS 및 Azure의 일부 Cloud Volumes ONTAP 구성에는 Cloud Volumes 
 
 
 [role="lead"]
-AWS 및 Azure의 일부 Cloud Volumes ONTAP 구성에는 Cloud Volumes ONTAP이 성능 향상을 위해 _ Flash Cache _ 로 사용하는 로컬 NVMe 스토리지가 포함됩니다.
+일부 Cloud Volumes ONTAP 구성에는 성능을 높이기 위해 Cloud Volumes ONTAP이 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다.
 
 
 
@@ -24,23 +24,9 @@ Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의
 
 
 
-== AWS에서 지원되는 인스턴스
+== 지원되는 구성
 
-새로운 또는 기존 Cloud Volumes ONTAP 프리미엄 또는 BYOL 시스템을 포함하는 다음 EC2 인스턴스 유형 중 하나를 선택합니다.
-
-* c5d.4xLarge
-* c5d.9xLarge
-* c5d.18xLarge
-* m5d.8xLarge
-* m5d.12xLarge
-* r5d.2xLarge
-
-
-
-
-== Azure에서 지원되는 VM 유형입니다
-
-Azure에서 단일 노드 Cloud Volumes ONTAP BYOL 시스템을 사용하는 Standard_L8s_v2 VM 유형을 선택합니다.
+Flash Cache는 특정 Cloud Volumes ONTAP 구성에서 지원됩니다. 에서 지원되는 구성을 봅니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트"^]
 
 
 

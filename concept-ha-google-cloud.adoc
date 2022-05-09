@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-ha-google-cloud.html 
 keywords: high availability, HA, mediator, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, synchronous, resync, recovery point objective, recovery time objective, failover, mount, remount, failure, data access, access, ip address, performance, gcp, gcp ha, google cloud ha, ha in google cloud 
-summary: Cloud Volumes ONTAP 고가용성 구성은 무중단 운영과 내결함성을 제공합니다. Google Cloud Platform에서는 두 노드 간에 데이터가 동기식으로 미러링됩니다. 
+summary: Cloud Volumes ONTAP 고가용성 구성은 무중단 운영과 내결함성을 제공합니다. Google Cloud에서는 두 노드 간에 데이터를 동기식으로 미러링합니다. 
 ---
-= Google Cloud Platform의 고가용성 쌍
+= Google Cloud의 고가용성 쌍
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: Cloud Volumes ONTAP 고가용성 구성은 무중단 운영과 내결�
 
 
 [role="lead"]
-Cloud Volumes ONTAP HA(고가용성) 구성은 무중단 운영 및 내결함성을 제공합니다. Google Cloud Platform에서는 두 노드 간에 데이터가 동기식으로 미러링됩니다.
+Cloud Volumes ONTAP HA(고가용성) 구성은 무중단 운영 및 내결함성을 제공합니다. Google Cloud에서는 두 노드 간에 데이터를 동기식으로 미러링합니다.
 
 
 
 == HA 구성 요소
 
-GCP의 Cloud Volumes ONTAP HA 구성에는 다음과 같은 구성요소가 포함됩니다.
+Google Cloud의 Cloud Volumes ONTAP HA 구성에는 다음과 같은 구성요소가 포함됩니다.
 
 * 데이터가 서로 동기식으로 미러링되는 2개의 Cloud Volumes ONTAP 노드
 * 스토리지 테이크오버 및 반환 프로세스를 지원하는 노드 간 통신 채널을 제공하는 중재자 인스턴스

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-storage.html 
-keywords: storage, capacity, volumes, aggregates, raw capacity, usable capacity, aws, azure 
+keywords: storage, capacity, volumes, aggregates, raw capacity, usable capacity 
 summary: Cloud Volumes ONTAP에서 클라우드 스토리지를 사용하는 방법을 이해하면 스토리지 비용을 이해하는 데 도움이 됩니다. 
 ---
 = 디스크와 애그리게이트
@@ -32,6 +32,8 @@ image:diagram_storage.png["이 그림에서는 디스크로 구성된 애그리�
 
 TIP: 클라우드 공급자로부터 구입한 총 스토리지 양은 _raw capacity_입니다. 가용 용량은 약 12~14%가 Cloud Volumes ONTAP용으로 예약된 오버헤드이므로 _ 이(가) 적습니다. 예를 들어 Cloud Manager가 500GiB 애그리게이트를 생성할 경우 사용 가능 용량은 442.94GiB입니다.
 
+ifdef::aws[]
+
 
 
 == 설치하고
@@ -57,6 +59,10 @@ NOTE: 처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["AWS의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다"^]
 * http://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["AWS에서 지원되는 Cloud Volumes ONTAP 구성 검토"^]
 
+
+endif::aws[]
+
+ifdef::azure[]
 
 
 
@@ -90,19 +96,25 @@ HA 쌍:: HA 쌍에서는 최대 디스크 크기가 8TiB인 프리미엄 페이�
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Azure의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다"^]
 
 
+endif::azure[]
+
+ifdef::gcp[]
 
 
-== GCP 스토리지
 
-GCP에서 애그리게이트에는 동일한 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 최대 디스크 크기는 64TiB입니다.
+== Google Cloud 스토리지
+
+Google Cloud에서는 aggregate에 동일한 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 최대 디스크 크기는 64TiB입니다.
 
 디스크 유형은 _ Zonal SSD 영구 디스크 _, _ 균형 조정 영구 디스크 _ 또는 _ Zonal 표준 영구 디스크 _ 일 수 있습니다. 영구 디스크를 Google Storage 버킷과 에 페어링할 수 있습니다 link:concept-data-tiering.html["비활성 데이터를 저비용 오브젝트 스토리지로 계층화합니다"].
 
 * 관련 링크 *
 
-* https://cloud.google.com/compute/docs/disks/["Google Cloud Platform 설명서: 스토리지 옵션"^]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html["GCP의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다"^]
+* https://cloud.google.com/compute/docs/disks/["Google Cloud 설명서: 스토리지 옵션"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html["Google Cloud의 Cloud Volumes ONTAP에 대한 스토리지 제한사항을 검토하십시오"^]
 
+
+endif::gcp[]
 
 
 

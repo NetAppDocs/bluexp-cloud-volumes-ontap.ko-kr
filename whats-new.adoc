@@ -46,6 +46,8 @@ K8s 탭은 이전 버전에서 사용되지 않으며 이제 제거되었습니�
 
 https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["Cloud Manager의 Kubernetes 데이터 관리에 대해 자세히 알아보십시오"^]
 
+ifdef::azure[]
+
 
 
 === Azure에서 연간 계약
@@ -55,6 +57,10 @@ https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["
 NetApp이 프라이빗 오퍼를 공유하면 작업 환경을 생성하는 동안 Azure 마켓플레이스에서 구독할 때 연간 계획을 선택할 수 있습니다.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["라이센스에 대해 자세히 알아보십시오"].
+
+endif::azure[]
+
+ifdef::aws[]
 
 
 
@@ -78,6 +84,10 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.htm
 이제 Cloud Manager에서 배치 그룹을 만드는 방법을 최적화하려면 이러한 권한이 필요합니다.
 
 Cloud Manager에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. 에서 최신 사용 권한 목록을 찾을 수 있습니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 정책 페이지"^].
+
+endif::aws[]
+
+ifdef::gcp[]
 
 
 
@@ -119,6 +129,8 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 Cloud Volumes ONTAP에서 사용할 Google Cloud 서비스 계정을 선택하면 Cloud Manager에서 이제 각 서비스 계정과 연결된 이메일 주소를 표시합니다. 이메일 주소를 보면 동일한 이름을 공유하는 서비스 계정을 쉽게 구별할 수 있습니다.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["서비스 계정 필드의 스크린샷"]
+
+endif::gcp[]
 
 
 
@@ -162,7 +174,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volu
 
 === 마켓플레이스 업데이트
 
-* 이제 Essentials 패키지와 Professional 패키지를 AWS 및 Google Cloud 마켓플레이스에서 사용할 수 있습니다.
+* 이제 Essentials 패키지와 Professional 패키지를 모든 클라우드 공급자 마켓플레이스에서 사용할 수 있습니다.
 +
 이러한 용량을 기준으로 비용을 지불할 수 있으며, 연간 계약을 클라우드 공급자로부터 직접 구매할 수 있습니다. NetApp에서 직접 용량 라이센스를 구매할 수 있습니다.
 
@@ -172,7 +184,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volu
 +
 신규 고객인 경우 새 작업 환경을 생성할 때 Cloud Manager에서 구독을 신청하라는 메시지가 표시됩니다.
 
-* AWS 및 Google Cloud 마켓플레이스를 통한 노드 라이센싱은 더 이상 사용되지 않으며 새 가입자에게 제공되지 않습니다. 여기에는 연간 계약 및 시간별 가입(탐색, 표준, 프리미엄)이 포함됩니다.
+* 모든 클라우드 공급자 마켓플레이스의 노드별 라이센스는 더 이상 사용되지 않으며 새 가입자에게 더 이상 제공되지 않습니다. 여기에는 연간 계약 및 시간별 가입(탐색, 표준, 프리미엄)이 포함됩니다.
 +
 이 충전 방법은 활성 서브스크립션을 보유한 기존 고객에게도 계속 사용할 수 있습니다.
 
@@ -230,9 +242,11 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.
 
 다음 변경 사항은 커넥터의 3.9.14 릴리스에 도입되었습니다.
 
+ifdef::azure[]
 
 
-=== 추가 VM 유형 지원
+
+=== 추가 Azure VM 유형 지원
 
 Cloud Volumes ONTAP는 이제 Microsoft Azure에서 9.10.1 릴리즈부터 다음 VM 유형으로 지원됩니다.
 
@@ -243,6 +257,8 @@ Cloud Volumes ONTAP는 이제 Microsoft Azure에서 9.10.1 릴리즈부터 다�
 
 
 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Cloud Volumes ONTAP 릴리즈 노트"^] 지원되는 구성에 대한 자세한 내용은 를 참조하십시오.
+
+endif::azure[]
 
 
 
@@ -307,11 +323,17 @@ Keystone 유연한 가입은 Cloud Manager에서 구축할 수 있는 모든 새
 * link:task-manage-keystone.html["Cloud Manager에서 Keystone Flex 구독을 시작하는 방법을 알아보십시오"].
 
 
+ifdef::aws[]
+
 
 
 === 새로운 AWS 지역 지원
 
 Cloud Volumes ONTAP는 현재 AWS 아시아 태평양(Osaka) 지역(AP-북동부-3)에서 지원됩니다.
+
+endif::aws[]
+
+ifdef::azure[]
 
 
 
@@ -320,6 +342,8 @@ Cloud Volumes ONTAP는 현재 AWS 아시아 태평양(Osaka) 지역(AP-북동부
 포트 8023 및 4900은 단일 노드 시스템과 HA 쌍 모두에 대해 Azure의 Cloud Volumes ONTAP 시스템에서 더 이상 열리지 않습니다.
 
 이 변경 사항은 커넥터의 3.9.13 릴리스부터 _NEW_Cloud Volumes ONTAP 시스템에 적용됩니다.
+
+endif::azure[]
 
 
 
@@ -335,11 +359,7 @@ Cloud Manager는 이제 Cloud Volumes ONTAP 9.10.0을 배포 및 관리할 수 �
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-9100-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
 
-
-
-=== 구축 시간 단축
-
-일반 쓰기 속도를 사용하도록 설정한 경우 Microsoft Azure 또는 Google Cloud에서 Cloud Volumes ONTAP 작업 환경을 구축하는 데 걸리는 시간을 단축했습니다. 배포 시간은 이제 평균 3-4분 더 짧습니다.
+ifdef::azure[]
 
 
 
@@ -359,6 +379,8 @@ Azure의 Cloud Volumes ONTAP에서 를 사용하여 데이터가 자동으로 �
 
 link:task-set-up-azure-encryption.html["이 단계에 대해 자세히 알아보십시오"].
 
+endif::azure[]
+
 
 
 == 2021년 7월 7일
@@ -377,7 +399,7 @@ Cloud Volumes ONTAP에 새로운 충전 방법을 사용할 수 있습니다.
 link:concept-licensing.html["이러한 라이센스 옵션에 대해 자세히 알아보십시오"].
 
 +
-다음은 Azure에서 새로운 Cloud Volumes ONTAP 시스템을 구축할 때 선택할 수 있는 충전 방법의 예입니다.
+다음은 선택할 수 있는 충전 방법의 예입니다.
 
 +
 image:screenshot_cvo_charging_methods.png["충전 방법을 선택할 수 있는 Cloud Volumes ONTAP 작업 환경 마법사 스크린샷"]
@@ -390,6 +412,8 @@ image:screenshot_cvo_charging_methods.png["충전 방법을 선택할 수 있는
 
 WORM(Write Once, Read Many) 스토리지는 더 이상 미리 보기에 표시되지 않으며 Cloud Volumes ONTAP에서 일반적으로 사용할 수 있습니다. link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"].
 
+ifdef::aws[]
+
 
 
 === AWS에서 m5dn.24xlarge 지원
@@ -397,6 +421,10 @@ WORM(Write Once, Read Many) 스토리지는 더 이상 미리 보기에 표시�
 이제 Cloud Volumes ONTAP는 9.9.1 릴리스부터 PAYGO Premium, BYOL(Bring Your Own License) 및 Freemium과 같은 충전 방법을 사용하여 m5dn.24xLarge 인스턴스 유형을 지원합니다.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["AWS에서 지원되는 Cloud Volumes ONTAP 구성 보기"^].
+
+endif::aws[]
+
+ifdef::azure[]
 
 
 
@@ -431,6 +459,10 @@ Cloud Manager에 추가한 각 Azure 자격 증명 세트에 이러한 권한을
 
 link:task-enabling-private-link.html["Cloud Volumes ONTAP에서 Azure 프라이빗 링크를 사용하는 방법에 대해 자세히 알아보십시오"].
 
+endif::azure[]
+
+ifdef::gcp[]
+
 
 
 === Google Cloud에서 균형 잡힌 영구 디스크
@@ -449,11 +481,15 @@ CUSTOM-4-16384 시스템 유형은 새로운 Cloud Volumes ONTAP 시스템에서
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["GCP에서 Cloud Volumes ONTAP에 대해 지원되는 구성을 봅니다"^].
 
+endif::gcp[]
+
 
 
 == 2021년 5월 30일
 
 커넥터 3.9.7 릴리스에는 다음과 같은 변경 사항이 도입되었습니다.
+
+ifdef::aws[]
 
 
 
@@ -472,6 +508,8 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 이제 Cloud Manager에서 새 Cloud Volumes ONTAP 작업 환경을 생성할 때 EBS 볼륨에 태그를 추가합니다. 이 태그는 Cloud Volumes ONTAP를 배포한 후에 이미 생성되었습니다.
 
 조직에서 SCP(서비스 제어 정책)를 사용하여 사용 권한을 관리하는 경우 이 변경 사항이 도움이 될 수 있습니다.
+
+endif::aws[]
 
 
 
@@ -495,12 +533,16 @@ Cloud Manager는 이제 Cloud Volumes ONTAP 시스템이 구축될 때와 전원
 
 이러한 기능 향상으로 더 이상 필요하지 않은 스냅샷을 제거하여 클라우드 공급자 비용을 절감할 수 있습니다.
 
+ifdef::azure[]
+
 Connector에는 Azure 스냅샷을 삭제할 수 있는 새로운 권한이 필요합니다. https://mysupport.netapp.com/site/info/cloud-manager-policies["Azure에 대한 최신 Cloud Manager 정책을 확인하십시오"^].
 
 [source, json]
 ----
 "Microsoft.Compute/snapshots/delete"
 ----
+endif::azure[]
+
 
 
 == 2021년 5월 24일
@@ -527,6 +569,8 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-991-relnotes["이 Cloud Volume
 
 공간이 논리적으로 보고되면 ONTAP에서는 스토리지 효율성 기능으로 절약된 모든 물리적 공간이 사용된 것으로 보고하도록 볼륨 공간을 보고합니다.
 
+ifdef::aws[]
+
 
 
 === AWS에서 GP3 디스크 지원
@@ -541,11 +585,17 @@ link:task-planning-your-config.html#sizing-your-system-in-aws["Cloud Volumes ONT
 
 Cloud Volumes ONTAP는 더 이상 콜드 HDD(SC1) 디스크를 지원하지 않습니다.
 
+endif::aws[]
+
+ifdef::azure[]
+
 
 
 === Azure 저장소 계정용 TLS 1.2
 
 Cloud Manager가 Azure for Cloud Volumes ONTAP에서 저장소 계정을 만들 때 저장소 계정에 대한 TLS 버전은 이제 버전 1.2입니다.
+
+endif::azure[]
 
 
 
@@ -560,6 +610,8 @@ Cloud Manager가 Azure for Cloud Volumes ONTAP에서 저장소 계정을 만들 
 Cloud Manager는 이제 Cloud Volumes ONTAP 9.9.0을 구축하고 관리할 수 있습니다.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-990-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
+
+ifdef::aws[]
 
 
 
@@ -579,11 +631,19 @@ CMK를 사용하려면 Cloud Volumes ONTAP IAM 역할을 제공해야 합니다.
 
 link:task-setting-up-kms.html["Cloud Volumes ONTAP를 사용하여 AWS KMS를 설정하는 방법에 대해 자세히 알아보십시오"].
 
+endif::aws[]
+
+ifdef::azure[]
+
 
 
 === Azure DoD 지원
 
 이제 Azure 국방부(DoD) Impact Level 6(IL6)에 Cloud Volumes ONTAP 9.8을 배포할 수 있습니다.
+
+endif::azure[]
+
+ifdef::gcp[]
 
 
 
@@ -601,11 +661,15 @@ Google Cloud에 Cloud Volumes ONTAP HA 쌍을 구축하면 VPC-1, VPC-2 및 VPC-
 
 link:reference-networking-gcp.html["Google Cloud 네트워킹 요구 사항에 대해 자세히 알아보십시오"].
 
+endif::gcp[]
+
 
 
 == 2021년 1월 4일
 
 다음 변경 사항은 커넥터의 3.9.2 릴리스에 도입되었습니다.
+
+ifdef::aws[]
 
 
 
@@ -622,6 +686,10 @@ AWS 아웃포스트가 있는 경우 작업 환경 마법사에서 아웃포스�
 * 현재 GP2(범용 SSD)만 지원됩니다
 
 
+endif::aws[]
+
+ifdef::azure[]
+
 
 
 === 지원되는 Azure 지역의 Ultra SSD VNVRAM
@@ -637,6 +705,10 @@ VNVRAM은 향상된 쓰기 성능을 제공합니다.
 이제 단일 노드 Cloud Volumes ONTAP 시스템을 구축할 가용성 영역을 선택할 수 있습니다. AZ를 선택하지 않으면 Cloud Manager에서 자동으로 AZ를 선택합니다.
 
 image:screenshot_azure_az.gif["지역을 선택한 후 사용할 수 있는 가용성 영역 드롭다운 목록의 스크린샷"]
+
+endif::azure[]
+
+ifdef::gcp[]
 
 
 
@@ -658,6 +730,10 @@ Cloud Volumes ONTAP는 이제 다음과 같은 기계 유형을 지원합니다.
 * 프리미엄 라이센스가 있고 BYOL이 있는 N2-STANDARD-32
 
 
+endif::gcp[]
+
+ifdef::azure[]
+
 
 
 == 2020년 11월 3일
@@ -673,3 +749,5 @@ Cloud Volumes ONTAP는 이제 다음과 같은 기계 유형을 지원합니다.
 * https://docs.microsoft.com/en-us/azure/private-link/private-link-overview["Azure 프라이빗 링크에 대해 자세히 알아보십시오"^]
 * link:task-enabling-private-link.html["Cloud Volumes ONTAP에서 Azure 프라이빗 링크를 사용하는 방법에 대해 자세히 알아보십시오"]
 
+
+endif::azure[]

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-manage-keystone.html 
-keywords: license, licensing, install, updating license, system license, add system license, adding a system license, byol license, add byol license, update byol license, nlf, license generator 
+keywords: license, licensing, install, keystone, requst capacity, link subscription, add keystone subscription, keystone subscription 
 summary: 디지털 지갑 페이지에서는 Cloud Volumes ONTAP에 대한 라이선스를 한 곳에서 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다. 
 ---
 = Keystone Flex 구독 관리

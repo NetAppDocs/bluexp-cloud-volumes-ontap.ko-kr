@@ -170,7 +170,7 @@ VPC 끝점을 만들 때 Cloud Volumes ONTAP 인스턴스에 해당하는 영역
 
 === ONTAP 시스템에 대한 연결
 
-AWS의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 AWS VPC와 다른 네트워크(예: Azure VNET 또는 회사 네트워크) 간에 VPN 연결이 있어야 합니다. 자세한 내용은 을 참조하십시오 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/SetUpVPNConnections.html["AWS 설명서: AWS VPN 연결 설정"^].
+AWS의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 AWS VPC와 회사 네트워크 같은 다른 네트워크 간에 VPN 연결을 설정해야 합니다. 자세한 내용은 을 참조하십시오 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/SetUpVPNConnections.html["AWS 설명서: AWS VPN 연결 설정"^].
 
 
 

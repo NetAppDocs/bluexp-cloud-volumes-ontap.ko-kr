@@ -14,9 +14,7 @@ summary: Cloud Manager를 사용하면 Cloud Volumes ONTAP에 대해 일반 또�
 
 
 [role="lead"]
-Cloud Manager를 사용하면 Cloud Volumes ONTAP에 대해 일반 또는 고속 쓰기 속도를 선택할 수 있습니다. 쓰기 속도를 선택하기 전에 고속 쓰기 속도를 사용할 때 정상 및 높음 설정의 차이점과 위험 및 권장 사항을 이해해야 합니다.
-
-모든 유형의 단일 노드 시스템에서는 높은 쓰기 속도가 지원됩니다. 또한 특정 인스턴스 또는 VM 유형을 사용할 경우 AWS 및 Azure의 HA 쌍에서도 지원됩니다(지원되는 인스턴스 및 VM 유형 목록은 아래 섹션 참조). GCP의 HA 쌍에서는 빠른 쓰기 속도가 지원되지 않습니다.
+Cloud Manager를 사용하면 대부분의 Cloud Volumes ONTAP 구성에서 일반 또는 고속 쓰기 속도를 선택할 수 있습니다. 쓰기 속도를 선택하기 전에 고속 쓰기 속도를 사용할 때 정상 및 높음 설정의 차이점과 위험 및 권장 사항을 이해해야 합니다.
 
 
 
@@ -46,6 +44,8 @@ Cloud Manager를 사용하면 Cloud Volumes ONTAP에 대해 일반 또는 고속
 
 빠른 쓰기 속도를 사용하는 경우 응용 프로그램 계층에서 쓰기 보호를 수행하거나 데이터 손실이 발생할 경우 응용 프로그램이 데이터 손실을 허용할 수 있는지 확인해야 합니다.
 
+ifdef::aws[]
+
 
 
 === AWS의 HA 쌍을 통한 빠른 쓰기 속도
@@ -54,11 +54,15 @@ AWS의 HA 쌍에서 고속 쓰기 속도를 사용하려는 경우 AZ(다중 가
 
 link:concept-ha.html["AWS의 HA 쌍 에 대해 자세히 알아보십시오"].
 
+endif::aws[]
+
 
 
 === 빠른 쓰기 속도를 지원하는 구성
 
 모든 Cloud Volumes ONTAP 구성에서 고속 쓰기 속도를 지원하는 것은 아닙니다. 이러한 구성은 기본적으로 일반 쓰기 속도를 사용합니다.
+
+ifdef::aws[]
 
 
 
@@ -70,6 +74,10 @@ link:concept-ha.html["AWS의 HA 쌍 에 대해 자세히 알아보십시오"].
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["Cloud Volumes ONTAP가 지원하는 Amazon EC2 인스턴스에 대해 자세히 알아보십시오"^].
 
+endif::aws[]
+
+ifdef::azure[]
+
 
 
 ==== Azure를 지원합니다
@@ -77,6 +85,10 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws
 단일 노드 시스템을 사용하는 경우 Cloud Volumes ONTAP는 모든 VM 유형에 대해 고속 쓰기 속도를 지원합니다.
 
 HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.8 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Cloud Volumes ONTAP 릴리즈 노트"^] 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.
+
+endif::azure[]
+
+ifdef::gcp[]
 
 
 
@@ -87,6 +99,8 @@ HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.8 릴리즈부터 시작�
 Cloud Volumes ONTAP는 Google Cloud에서 HA 쌍을 통한 빠른 쓰기 속도를 지원하지 않습니다.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Cloud Volumes ONTAP가 지원하는 Google 클라우드 머신 유형에 대해 자세히 알아보십시오"^].
+
+endif::gcp[]
 
 
 

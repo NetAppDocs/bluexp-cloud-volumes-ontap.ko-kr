@@ -36,12 +36,14 @@ NFS는 UNIX 및 Linux 시스템을 위한 기존 파일 액세스 프로토콜�
 
 SMB는 Windows 시스템을 위한 기존 파일 액세스 프로토콜입니다. 클라이언트는 SMB 2.0, SMB 2.1, SMB 3.0 및 SMB 3.1.1 프로토콜을 사용하여 ONTAP 볼륨의 파일에 액세스할 수 있습니다. NFS와 마찬가지로 사용 권한 스타일의 조합이 지원됩니다.
 
+ifdef::azure[]
+
 
 
 == S3
 
 Cloud Volumes ONTAP은 S3를 Microsoft Azure의 스케일아웃 스토리지 옵션으로 지원합니다. S3 프로토콜 지원을 통해 SVM의 버킷에 포함된 오브젝트에 대한 S3 클라이언트 액세스를 구성할 수 있습니다.
 
-현재 AWS나 Google Cloud에서는 S3 프로토콜이 Cloud Volumes ONTAP에서 지원되지 않습니다.
-
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오"^].
+
+endif::azure[]

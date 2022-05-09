@@ -18,10 +18,12 @@ summary: 콜드 데이터를 저비용 오브젝트 스토리지로 자동 계�
 
 image:diagram_data_tiering.png["이것은 EBS 스토리지로 이동하는 핫 데이터와 S3 스토리지로 이동하는 비활성 데이터를 보여주는 개념적 이미지입니다."]
 
-Cloud Volumes ONTAP는 AWS, Azure 및 Google 클라우드 플랫폼에서 데이터 계층화를 지원합니다. 데이터 계층화는 FabricPool 기술을 기반으로 합니다.
+데이터 계층화는 FabricPool 기술을 기반으로 합니다.
 
 
 NOTE: FabricPool(데이터 계층화)를 사용하기 위해 기능 라이센스를 설치할 필요가 없습니다.
+
+ifdef::aws[]
 
 
 
@@ -55,6 +57,10 @@ NOTE: Cloud Manager에서 각 작업 환경에 대해 단일 S3 버킷을 생성
 --
 
 
+endif::aws[]
+
+ifdef::azure[]
+
 
 
 == Azure의 데이터 계층화
@@ -81,11 +87,15 @@ NOTE: Cloud Manager에서 각 Cloud Volumes ONTAP 작업 환경에 대한 단일
 --
 
 
+endif::azure[]
+
+ifdef::gcp[]
 
 
-== GCP의 데이터 계층화
 
-GCP에서 데이터 계층화를 활성화하면 Cloud Volumes ONTAP는 영구 디스크를 핫 데이터의 성능 계층으로, Google Cloud Storage 버킷을 비활성 데이터의 용량 계층으로 사용합니다.
+== Google Cloud의 데이터 계층화
+
+Google Cloud에서 데이터 계층화를 활성화하면 Cloud Volumes ONTAP은 핫 데이터를 위한 성능 계층으로 영구 디스크를 사용하고 비활성 데이터를 위한 용량 계층으로 Google Cloud Storage 버킷을 사용합니다.
 
 성능 계층:: 성능 계층은 SSD 영구 디스크, 균형 잡힌 영구 디스크 또는 표준 영구 디스크일 수 있습니다.
 용량 계층:: Cloud Volumes ONTAP 시스템은 _Regional_storage 클래스를 사용하여 비활성 데이터를 단일 Google Cloud 스토리지 버킷에 계층화합니다.
@@ -106,6 +116,8 @@ NOTE: Cloud Manager에서 각 작업 환경에 대해 단일 버킷을 생성하
 
 --
 
+
+endif::gcp[]
 
 
 

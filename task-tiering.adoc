@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-tiering.html 
-keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, S3 tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, azure tiering, blob tiering, azure blob, container, inactive, gcp, tiering in gcp, tiering requirements 
+keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements 
 summary: 사용 빈도가 높은 데이터를 위한 SSD 또는 HDD 성능 계층과 비활성 데이터를 위한 오브젝트 스토리지 용량 계층을 결합하여 Cloud Volumes ONTAP의 스토리지 비용을 절감할 수 있습니다. 데이터 계층화는 FabricPool 기술을 기반으로 합니다. 
 ---
 = 비활성 데이터를 저비용 오브젝트 스토리지로 계층화
@@ -21,11 +21,27 @@ summary: 사용 빈도가 높은 데이터를 위한 SSD 또는 HDD 성능 계�
 [role="quick-margin-para"]
 대부분의 구성은 지원됩니다. 최신 버전을 실행하는 Cloud Volumes ONTAP 시스템이 있는 경우 실행하는 것이 좋습니다. link:task-tiering.html#configurations-that-support-data-tiering["자세한 정보"].
 
-.span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png"[] Alt="Two"></span> Cloud Volumes ONTAP와 오브젝트 스토리지 간의 연결을 확인합니다
-* AWS의 경우 S3에 VPC 엔드 포인트가 필요합니다. <<Requirements to tier cold data to AWS S3,자세한 정보>>.
-* Azure의 경우 Cloud Manager에 필요한 권한이 있으면 작업을 수행할 필요가 없습니다. <<Requirements to tier cold data to Azure Blob storage,자세한 정보>>.
-* GCP의 경우, 전용 Google Access의 서브넷을 구성하고 서비스 계정을 설정해야 합니다. <<Requirements to tier cold data to a Google Cloud Storage bucket,자세한 정보>>.
+[role="quick-margin-list"]
+ifdef::aws[]
 
+* AWS의 경우 S3에 VPC 엔드 포인트가 필요합니다. <<Requirements to tier cold data to AWS S3,자세한 정보>>.
+
+
+endif::aws[]
+
+ifdef::azure[]
+
+* Azure의 경우 Cloud Manager에 필요한 권한이 있으면 작업을 수행할 필요가 없습니다. <<Requirements to tier cold data to Azure Blob storage,자세한 정보>>.
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloud의 경우, 전용 Google Access에 대한 서브넷을 구성하고 서비스 계정을 설정해야 합니다. <<Requirements to tier cold data to a Google Cloud Storage bucket,자세한 정보>>.
+
+
+endif::gcp[]
 
 [role="quick-margin-para"]
 볼륨에서 데이터 계층화를 사용하려면 애그리게이트에서 데이터 계층화를 활성화해야 합니다. 새 볼륨 및 기존 볼륨에 대한 요구사항을 알고 있어야 합니다. <<Ensuring that tiering is enabled on aggregates,자세한 정보>>.
@@ -41,7 +57,7 @@ summary: 사용 빈도가 높은 데이터를 위한 SSD 또는 HDD 성능 계�
 .데이터 계층화에 필요하지 않은&#8217;은 무엇입니까?
 ====
 * 데이터 계층화를 사용하기 위해 기능 라이센스를 설치할 필요가 없습니다.
-* 용량 계층(S3 버킷, Azure Blob 컨테이너 또는 GCP 버킷)을 생성할 필요가 없습니다. Cloud Manager가 이 작업을 수행합니다.
+* 용량 계층에 대해 오브젝트 저장소를 생성할 필요가 없습니다. Cloud Manager가 이 작업을 수행합니다.
 * 시스템 레벨에서 데이터 계층화를 설정할 필요가 없습니다.
 +
 Cloud Manager는 시스템이 생성될 때 콜드 데이터용 오브젝트 저장소를 생성합니다. <<Enabling data tiering after implementing the requirements,연결 또는 사용 권한 문제가 없는 경우>>. 그런 다음 볼륨에 대해 데이터 계층화를 활성화해야 합니다. 경우에 따라 <<Ensuring that tiering is enabled on aggregates,애그리게이트>>)를 클릭합니다.
@@ -55,21 +71,55 @@ Cloud Manager는 시스템이 생성될 때 콜드 데이터용 오브젝트 저
 
 특정 구성 및 기능을 사용할 때 데이터 계층화를 설정할 수 있습니다.
 
-* 데이터 계층화는 다음 버전부터 Cloud Volumes ONTAP에서 지원됩니다.
-+
-** AWS 버전 9.2
-** 단일 노드 시스템이 있는 Azure의 버전 9.4
-** HA 쌍이 있는 Azure의 버전 9.6
-** GCP의 버전 9.6
+ifdef::aws[]
 
 
-* AWS에서 성능 계층은 범용 SSD(GP3 또는 GP2) 또는 프로비저닝된 IOPS SSD(io1)일 수 있습니다.
+
+=== AWS 지원
+
+* Cloud Volumes ONTAP 9.2부터 AWS에서 데이터 계층화가 지원됩니다.
+* 성능 계층은 범용 SSD(GP3 또는 GP2) 또는 프로비저닝된 IOPS SSD(io1)일 수 있습니다.
 +
 
 NOTE: 처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오브젝트 스토리지에 계층화하지 않는 것이 좋습니다.
 
-* Azure에서 성능 계층은 프리미엄 SSD 관리 디스크, 표준 SSD 관리 디스크 또는 표준 HDD 관리 디스크일 수 있습니다.
-* GCP에서 성능 계층은 SSD 영구 디스크, 균형 잡힌 영구 디스크 또는 표준 영구 디스크일 수 있습니다.
+
+
+endif::aws[]
+
+ifdef::azure[]
+
+
+
+=== Azure에서 지원
+
+* 데이터 계층화는 다음과 같이 Azure에서 지원됩니다.
++
+** 단일 노드 시스템의 경우 버전 9.4인치
+** HA 쌍이 포함된 버전 9.6인치
+
+
+* 성능 계층은 프리미엄 SSD 관리 디스크, 표준 SSD 관리 디스크 또는 표준 HDD 관리 디스크일 수 있습니다.
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+
+
+=== Google Cloud 지원
+
+* 데이터 계층화는 Cloud Volumes ONTAP 9.6부터 Google Cloud에서 지원됩니다.
+* 성능 계층은 SSD 영구 디스크, 균형 잡힌 영구 디스크 또는 표준 영구 디스크일 수 있습니다.
+
+
+endif::gcp[]
+
+
+
+=== 기능 상호 운용성
+
 * 데이터 계층화는 암호화 기술을 통해 지원됩니다.
 * 볼륨에 씬 프로비저닝이 설정되어 있어야 합니다.
 
@@ -80,6 +130,8 @@ NOTE: 처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오
 
 클라우드 공급자에 따라 Cloud Volumes ONTAP에서 콜드 데이터를 오브젝트 스토리지에 계층화할 수 있도록 특정 연결과 사용 권한을 설정해야 합니다.
 
+ifdef::aws[]
+
 
 
 === 콜드 데이터를 AWS S3에 계층화해야 하는 요구 사항
@@ -89,6 +141,10 @@ Cloud Volumes ONTAP가 S3에 연결되어 있는지 확인합니다. 이 연결�
 VPC 끝점을 만들 때 Cloud Volumes ONTAP 인스턴스에 해당하는 영역, VPC 및 라우팅 테이블을 선택해야 합니다. 또한 S3 엔드포인트에 대한 트래픽을 활성화하는 아웃바운드 HTTPS 규칙을 추가하려면 보안 그룹을 수정해야 합니다. 그렇지 않으면 Cloud Volumes ONTAP에서 S3 서비스에 연결할 수 없습니다.
 
 문제가 발생하면 을 참조하십시오 https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS 지원 지식 센터: 게이트웨이 VPC 엔드포인트를 사용하여 S3 버킷에 연결할 수 없는 이유는 무엇입니까?"^].
+
+endif::aws[]
+
+ifdef::azure[]
 
 
 
@@ -102,6 +158,10 @@ Cloud Manager에 필요한 권한이 있는 경우 성능 계층과 용량 계�
 "Microsoft.Network/routeTables/join/action",
 ----
 사용 권한은 최신 에 포함되어 있습니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 정책"].
+
+endif::azure[]
+
+ifdef::gcp[]
 
 
 
@@ -122,6 +182,8 @@ link:task-setting-up-gcp-encryption.html["Cloud Volumes ONTAP에서 고객이 �
 
 
 
+
+endif::gcp[]
 
 
 

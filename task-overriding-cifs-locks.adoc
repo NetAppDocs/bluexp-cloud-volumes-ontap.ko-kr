@@ -4,7 +4,7 @@ permalink: task-overriding-cifs-locks.html
 keywords: CIFS locks, azure maintenance, maintenance events, cifs sessions, storage failover, storage giveback, giveback 
 summary: 계정 관리자는 Azure 유지 관리 이벤트 중에 Cloud Volumes ONTAP 스토리지 반환과 관련된 문제를 방지하는 Cloud Manager 설정을 활성화할 수 있습니다. 이 설정을 활성화하면 Cloud Volumes ONTAP가 CIFS 잠금을 확인하고 활성 CIFS 세션을 재설정합니다. 
 ---
-= Azure에서 Cloud Volumes ONTAP HA의 CIFS 잠금 재정의
+= Azure의 Cloud Volumes ONTAP HA 쌍에 대한 CIFS 잠금 재정의
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
