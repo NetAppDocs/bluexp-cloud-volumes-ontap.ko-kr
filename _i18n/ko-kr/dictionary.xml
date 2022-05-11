@@ -1317,7 +1317,6 @@
   <block id="aaf6f41e4241a55e6a363b9c414d4feb" category="list-text">성능 계층은 범용 SSD(GP3 또는 GP2) 또는 프로비저닝된 IOPS SSD(io1)일 수 있습니다.</block>
   <block id="907c78338365697be8fd8d4a130503c8" category="admonition">처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오브젝트 스토리지에 계층화하지 않는 것이 좋습니다.</block>
   <block id="f7c94a9d0c1e0feee8c2687a0f8fa5ad" category="list-text">용량 계층</block>
-  <block id="25ecc9395604e745b655dbcb6eed23bc" category="list-text">Cloud Volumes ONTAP 시스템은 _Standard_storage 클래스를 사용하여 비활성 데이터를 단일 S3 버킷에 계층화합니다. 표준은 여러 가용성 영역에 걸쳐 자주 액세스하는 데이터에 적합합니다.</block>
   <block id="b162acd76f83f99ac24045020f8e1c25" category="admonition">Cloud Manager에서 각 작업 환경에 대해 단일 S3 버킷을 생성하고 이를 Fabric-pool-_cluster unique identifier_로 지정합니다. 각 볼륨에 대해 다른 S3 버킷이 생성되지 않습니다.</block>
   <block id="7672a092783c4348b96b40ea2dcf6681" category="list-text">스토리지 클래스</block>
   <block id="20831024dd0b150380212ea26b281613" category="inline-link">Amazon S3 스토리지 클래스에 대해 자세히 알아보십시오</block>
@@ -1328,17 +1327,12 @@
   <block id="176cd61977ca55fd13eff7c7ba3659f5" category="section-title">Azure의 데이터 계층화</block>
   <block id="9f5e7587dc37b317df0faf00f072c5b5" category="paragraph">Azure에서 데이터 계층화를 활성화하면 Cloud Volumes ONTAP는 Azure 관리 디스크를 핫 데이터의 성능 계층으로, Azure Blob 스토리지를 비활성 데이터의 용량 계층으로 사용합니다.</block>
   <block id="567479f8818b026e7e5b2c6b0656e651" category="list-text">성능 계층은 SSD 또는 HDD가 될 수 있습니다.</block>
-  <block id="92e2e0d1f9d0c33f6291e87d9139fd1a" category="list-text">Cloud Volumes ONTAP 시스템은 Azure_hot_storage 계층을 사용하여 비활성 데이터를 단일 Blob 컨테이너에 계층화합니다. 핫 계층은 자주 액세스하는 데이터에 적합합니다.</block>
-  <block id="e7f09232d4ae69ba91d69de18e74a87c" category="admonition">Cloud Manager에서 각 Cloud Volumes ONTAP 작업 환경에 대한 단일 컨테이너로 새 스토리지 계정을 생성할 수 있습니다. 스토리지 계정의 이름은 임의로 지정됩니다. 각 볼륨에 대해 다른 컨테이너가 생성되지 않습니다.</block>
   <block id="11b35c3a4f0107e2f78651baa7b32bd0" category="list-text">스토리지 액세스 계층</block>
-  <block id="dc879879343c48a51de170640097bfd2" category="list-text">Azure의 계층화된 데이터에 대한 기본 스토리지 액세스 계층은 _hot_tier입니다. 비활성 데이터에 액세스할 계획이 없는 경우 _cool_storage 계층으로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 계층을 변경하면 비활성 데이터가 핫 스토리지 계층에서 시작되어 30일 후에 데이터에 액세스하지 않는 경우 냉각 스토리지 계층으로 전환됩니다.</block>
   <block id="8b2d7f1ae50962ecff6863b4b3359c61" category="inline-link">Azure Blob 스토리지 액세스 계층에 대해 자세히 알아보십시오</block>
   <block id="68fe4c8de4747fa77a5d46c70cf18294" category="paragraph">데이터에 액세스하는 경우 액세스 비용이 더 높아지므로 스토리지 계층을 변경하기 전에 이 점을 고려해야 합니다.<block ref="b972df3be971ae20a5e41fb28c27dcfc" category="inline-link-rx"></block>.</block>
   <block id="98fdd008687283335edf23e9e287cb83" category="paragraph">작업 환경을 생성할 때 스토리지 계층을 선택할 수 있으며 그 후에는 언제든지 변경할 수 있습니다. 스토리지 계층 변경에 대한 자세한 내용은 를 참조하십시오 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>.</block>
   <block id="a38b9b490932e9d5b5db3e24784ec656" category="paragraph">데이터 계층화를 위한 스토리지 액세스 계층은 볼륨 단위로 표시되지 않고 시스템 전체에 적용됩니다.</block>
   <block id="3b8940895816a07ee6f7b4cd2d7353e3" category="list-text">성능 계층은 SSD 영구 디스크, 균형 잡힌 영구 디스크 또는 표준 영구 디스크일 수 있습니다.</block>
-  <block id="b15506ba0795b6263dd1128d8ab2f4b9" category="list-text">Cloud Volumes ONTAP 시스템은 _Regional_storage 클래스를 사용하여 비활성 데이터를 단일 Google Cloud 스토리지 버킷에 계층화합니다.</block>
-  <block id="ce0ff5d3338a785151c757f957271280" category="admonition">Cloud Manager에서 각 작업 환경에 대해 단일 버킷을 생성하고 이를 Fabric-pool-_cluster unique identifier_로 지정합니다. 각 볼륨에 대해 다른 버킷이 생성되지 않습니다.</block>
   <block id="56fcb51b5b1e4760266f6a808fa6396a" category="list-text">계층화된 데이터에 대한 기본 스토리지 클래스는 _Standard Storage_class입니다. 데이터에 자주 액세스하지 않는 경우 _Nearline Storage_ 또는 _Coldline Storage_ 로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 클래스를 변경하면 비활성 데이터가 표준 스토리지 클래스에서 시작되어 30일 후에 데이터에 액세스하지 않는 경우 선택한 스토리지 클래스로 전환됩니다.</block>
   <block id="5097a121ff5ccfae7cb78986b23616f8" category="inline-link">Google Cloud Storage용 스토리지 클래스에 대해 자세히 알아보십시오</block>
   <block id="3f1b0a674f5325ee098ce0196eda6d56" category="paragraph">데이터에 액세스하는 경우 액세스 비용이 더 높아지므로 스토리지 클래스를 변경하기 전에 이 점을 고려해야 합니다.<block ref="12bb21ea227f99e4e5df122704c6f379" category="inline-link-rx"></block>.</block>
@@ -3633,7 +3627,6 @@
   <block id="fc4876ca61d1c336e1f17141c7227b6e" category="cell">기존 방화벽 정책을 사용합니다</block>
   <block id="7f6be0499fe67271d3c198bd726fe0c0" category="inline-link-macro">Cloud Volumes ONTAP의 방화벽 규칙에 대해 알아보십시오</block>
   <block id="154e9c61180206ef2d8b605b639fb35f" category="cell">기존 방화벽 정책을 사용하는 경우 필수 규칙이 포함되어 있는지 확인합니다. <block ref="c3fbed15c1fb154b840fdb8b5504f098" category="inline-link-macro-rx"></block>.</block>
-  <block id="d84251a0fd530f03ffc5b24f87e0f907" category="list-text">AWS의 계층형 데이터에 대한 기본 스토리지 클래스는 _Standard_입니다. 비활성 데이터에 액세스할 계획이 없는 경우 스토리지 클래스를 _Intelligent Tiering_, _One-Zone Infrequent Access_, _Standard - Infrequent Access_ 또는 _S3 Glacier Instant Retrieval_ 중 하나로 변경하여 저장소 비용을 줄일 수 있습니다. 스토리지 클래스를 변경하면 비활성 데이터가 표준 스토리지 클래스에서 시작되어 30일 후에 액세스하지 않는 경우 선택한 스토리지 클래스로 전환됩니다.</block>
   <block id="ba6a8b64123c5bbe5d7d30c1bd941cc0" category="section-title">기본 설정</block>
   <block id="aa98b7df0a0a0f2af69cbff3dcbe620e" category="list-text">Azure의 HA 시스템에서 SVM 관리 LIF</block>
   <block id="97c3d7abfc75b002edd7cf58c0502788" category="list-text">Google Cloud의 HA 시스템에서 SVM 관리 LIF</block>
@@ -3721,4 +3714,35 @@
   <block id="310c228207a0f8446bbe4c5d16978cb7" category="paragraph">endif::gcp[]</block>
   <block id="5a81378cdc7edd9ea960cf02d6ca78d2" category="paragraph">ifdef::aws[]</block>
   <block id="6beb2fa01dc121194547db1bfbe03408" category="paragraph">endif::aws[]</block>
+  <block id="f231e5c51143720c4b3e48ce40d467d4" category="list-text">Cloud Volumes ONTAP 시스템은 비활성 데이터를 단일 S3 버킷에 계층화합니다.</block>
+  <block id="572f86fb369e26ce9ca46b6d18b46c21" category="paragraph">Cloud Manager에서 S3 버킷을 생성할 때 사용되는 기본 설정은 다음과 같습니다.</block>
+  <block id="2d29df35288e7a898c064fc1c04fd451" category="list-text">스토리지 클래스: 표준</block>
+  <block id="804c8e3fcbb38fef4b1f66be12d7a74f" category="list-text">기본 암호화: 사용 안 함</block>
+  <block id="dd0ae3a0377d592bbcaeba23fcd7e7ff" category="list-text">공용 액세스 차단: 모든 공용 액세스를 차단합니다</block>
+  <block id="a4f41197b4619463f389cc696d0ea81b" category="list-text">객체 소유권: ACL이 설정되었습니다</block>
+  <block id="873465357929232f09ebfe53751fc108" category="list-text">버킷 버전 관리: 비활성화됨</block>
+  <block id="b788a91f4e53009b26bcc89d69b0482f" category="list-text">개체 잠금: 사용 안 함</block>
+  <block id="ed08534aa63de5b03527a0bbb1320085" category="list-text">AWS의 계층형 데이터에 대한 기본 스토리지 클래스는 _Standard_입니다. 표준은 여러 가용성 영역에 걸쳐 자주 액세스하는 데이터에 적합합니다.</block>
+  <block id="12a66087f2f58411b20b387be417b6af" category="paragraph">비활성 데이터에 액세스할 계획이 없는 경우 스토리지 클래스를 _Intelligent Tiering_, _One-Zone Infrequent Access_, _Standard - Infrequent Access_ 또는 _S3 Glacier Instant Retrieval_ 중 하나로 변경하여 저장소 비용을 줄일 수 있습니다. 스토리지 클래스를 변경하면 비활성 데이터가 표준 스토리지 클래스에서 시작되어 30일 후에 액세스하지 않는 경우 선택한 스토리지 클래스로 전환됩니다.</block>
+  <block id="98084fb337b1b2cf4cb9e5af0b0ef9b1" category="list-text">Cloud Volumes ONTAP 시스템은 비활성 데이터를 단일 Blob 컨테이너에 계층화합니다.</block>
+  <block id="6fc2bc840d9eab00fcc83925bc6de35b" category="paragraph">Cloud Manager에서 각 Cloud Volumes ONTAP 작업 환경의 컨테이너로 새 스토리지 계정을 생성할 수 있습니다. 스토리지 계정의 이름은 임의로 지정됩니다. 각 볼륨에 대해 다른 컨테이너가 생성되지 않습니다.</block>
+  <block id="def3a5d7bc75bdc76a426a74d092179f" category="paragraph">Cloud Manager에서 다음 설정으로 스토리지 계정을 생성합니다.</block>
+  <block id="f7c5c3f829ba75eb23b7c60381fd4f74" category="list-text">액세스 계층: 핫</block>
+  <block id="c89729007f1266a456e5a1133a9f58e9" category="list-text">성능: 표준</block>
+  <block id="dc4d23da133e198d425564262ad6976b" category="list-text">이중화: LRS(Locally-Redundant Storage)</block>
+  <block id="2f546189dda4bc24c6d8f6ed71c57a36" category="list-text">계정:StorageV2(범용 v2)</block>
+  <block id="e0d679a04a2c140c65cff67ffbfd8444" category="list-text">REST API 작업을 위한 보안 전송 필요: 사용</block>
+  <block id="4fbd5770a6fd5de01bbbcf2a407118d7" category="list-text">스토리지 계정 키 액세스: 사용</block>
+  <block id="c826704ed8ef326581305fef2036bfb6" category="list-text">최소 TLS 버전: 버전 1.2</block>
+  <block id="276a9219319519ae3ee8b320e4458068" category="list-text">인프라 암호화: 사용 안 함</block>
+  <block id="fb3bd9a69b565a8866ad383666b98f8c" category="list-text">Azure의 계층화된 데이터에 대한 기본 스토리지 액세스 계층은 _hot_tier입니다. 핫 계층은 자주 액세스하는 데이터에 적합합니다.</block>
+  <block id="45c06cdb409b9857a0b2089bf2cff7a0" category="paragraph">비활성 데이터에 액세스할 계획이 없는 경우 _cool_storage 계층으로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 계층을 변경하면 비활성 데이터가 핫 스토리지 계층에서 시작되어 30일 후에 데이터에 액세스하지 않는 경우 냉각 스토리지 계층으로 전환됩니다.</block>
+  <block id="f2bc66356d174d95b97b4e9b8b873540" category="list-text">Cloud Volumes ONTAP 시스템은 단일 Google 클라우드 스토리지 버킷에 비활성 데이터를 계층화합니다.</block>
+  <block id="be7745616b03b282d0a3277eb8d1298c" category="paragraph">Cloud Manager에서 각 작업 환경에 대한 버킷을 생성하여 fabric-pool-_cluster unique identifier_로 지정합니다. 각 볼륨에 대해 다른 버킷이 생성되지 않습니다.</block>
+  <block id="8017782df4a8330f5df324c1dfbeaf59" category="paragraph">Cloud Manager에서 버킷을 생성할 때 사용하는 기본 설정은 다음과 같습니다.</block>
+  <block id="bd15f9947281cda8b8713ff72eb007f8" category="list-text">위치 유형: 지역</block>
+  <block id="95e66c145ec5a9c6db0940e3c8b89f10" category="list-text">공용 액세스: 개체 ACL의 영향을 받습니다</block>
+  <block id="ed2bfa2a7df130888132e9df08fe91a7" category="list-text">액세스 제어: 미세</block>
+  <block id="59ec9a96a05b9ff668ebee36565638b7" category="list-text">보호: 없음</block>
+  <block id="77d680745644d1c19a022cc0a306f88b" category="list-text">데이터 암호화: Google에서 관리하는 키입니다</block>
 </blocks>

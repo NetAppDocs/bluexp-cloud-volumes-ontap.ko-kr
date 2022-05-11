@@ -34,20 +34,30 @@ AWS에서 데이터 계층화를 활성화하면 Cloud Volumes ONTAP은 EBS를 �
 성능 계층:: 성능 계층은 범용 SSD(GP3 또는 GP2) 또는 프로비저닝된 IOPS SSD(io1)일 수 있습니다.
 +
 --
-
-NOTE: 처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오브젝트 스토리지에 계층화하지 않는 것이 좋습니다.
+처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오브젝트 스토리지에 계층화하지 않는 것이 좋습니다.
 
 --
-용량 계층:: Cloud Volumes ONTAP 시스템은 _Standard_storage 클래스를 사용하여 비활성 데이터를 단일 S3 버킷에 계층화합니다. 표준은 여러 가용성 영역에 걸쳐 자주 액세스하는 데이터에 적합합니다.
+용량 계층:: Cloud Volumes ONTAP 시스템은 비활성 데이터를 단일 S3 버킷에 계층화합니다.
 +
 --
+Cloud Manager에서 각 작업 환경에 대해 단일 S3 버킷을 생성하고 이를 Fabric-pool-_cluster unique identifier_로 지정합니다. 각 볼륨에 대해 다른 S3 버킷이 생성되지 않습니다.
 
-NOTE: Cloud Manager에서 각 작업 환경에 대해 단일 S3 버킷을 생성하고 이를 Fabric-pool-_cluster unique identifier_로 지정합니다. 각 볼륨에 대해 다른 S3 버킷이 생성되지 않습니다.
+Cloud Manager에서 S3 버킷을 생성할 때 사용되는 기본 설정은 다음과 같습니다.
+
+* 스토리지 클래스: 표준
+* 기본 암호화: 사용 안 함
+* 공용 액세스 차단: 모든 공용 액세스를 차단합니다
+* 객체 소유권: ACL이 설정되었습니다
+* 버킷 버전 관리: 비활성화됨
+* 개체 잠금: 사용 안 함
+
 
 --
-스토리지 클래스:: AWS의 계층형 데이터에 대한 기본 스토리지 클래스는 _Standard_입니다. 비활성 데이터에 액세스할 계획이 없는 경우 스토리지 클래스를 _Intelligent Tiering_, _One-Zone Infrequent Access_, _Standard - Infrequent Access_ 또는 _S3 Glacier Instant Retrieval_ 중 하나로 변경하여 저장소 비용을 줄일 수 있습니다. 스토리지 클래스를 변경하면 비활성 데이터가 표준 스토리지 클래스에서 시작되어 30일 후에 액세스하지 않는 경우 선택한 스토리지 클래스로 전환됩니다.
+스토리지 클래스:: AWS의 계층형 데이터에 대한 기본 스토리지 클래스는 _Standard_입니다. 표준은 여러 가용성 영역에 걸쳐 자주 액세스하는 데이터에 적합합니다.
 +
 --
+비활성 데이터에 액세스할 계획이 없는 경우 스토리지 클래스를 _Intelligent Tiering_, _One-Zone Infrequent Access_, _Standard - Infrequent Access_ 또는 _S3 Glacier Instant Retrieval_ 중 하나로 변경하여 저장소 비용을 줄일 수 있습니다. 스토리지 클래스를 변경하면 비활성 데이터가 표준 스토리지 클래스에서 시작되어 30일 후에 액세스하지 않는 경우 선택한 스토리지 클래스로 전환됩니다.
+
 데이터에 액세스하는 경우 액세스 비용이 더 높아지므로 스토리지 클래스를 변경하기 전에 이 점을 고려해야 합니다. https://aws.amazon.com/s3/storage-classes["Amazon S3 스토리지 클래스에 대해 자세히 알아보십시오"^].
 
 작업 환경을 생성할 때 스토리지 클래스를 선택하면 이후에 언제든지 변경할 수 있습니다. 스토리지 클래스 변경에 대한 자세한 내용은 을 참조하십시오 link:task-tiering.html["비활성 데이터를 저비용 오브젝트 스토리지로 계층화"].
@@ -68,16 +78,29 @@ ifdef::azure[]
 Azure에서 데이터 계층화를 활성화하면 Cloud Volumes ONTAP는 Azure 관리 디스크를 핫 데이터의 성능 계층으로, Azure Blob 스토리지를 비활성 데이터의 용량 계층으로 사용합니다.
 
 성능 계층:: 성능 계층은 SSD 또는 HDD가 될 수 있습니다.
-용량 계층:: Cloud Volumes ONTAP 시스템은 Azure_hot_storage 계층을 사용하여 비활성 데이터를 단일 Blob 컨테이너에 계층화합니다. 핫 계층은 자주 액세스하는 데이터에 적합합니다.
+용량 계층:: Cloud Volumes ONTAP 시스템은 비활성 데이터를 단일 Blob 컨테이너에 계층화합니다.
 +
 --
+Cloud Manager에서 각 Cloud Volumes ONTAP 작업 환경의 컨테이너로 새 스토리지 계정을 생성할 수 있습니다. 스토리지 계정의 이름은 임의로 지정됩니다. 각 볼륨에 대해 다른 컨테이너가 생성되지 않습니다.
 
-NOTE: Cloud Manager에서 각 Cloud Volumes ONTAP 작업 환경에 대한 단일 컨테이너로 새 스토리지 계정을 생성할 수 있습니다. 스토리지 계정의 이름은 임의로 지정됩니다. 각 볼륨에 대해 다른 컨테이너가 생성되지 않습니다.
+Cloud Manager에서 다음 설정으로 스토리지 계정을 생성합니다.
+
+* 액세스 계층: 핫
+* 성능: 표준
+* 이중화: LRS(Locally-Redundant Storage)
+* 계정:StorageV2(범용 v2)
+* REST API 작업을 위한 보안 전송 필요: 사용
+* 스토리지 계정 키 액세스: 사용
+* 최소 TLS 버전: 버전 1.2
+* 인프라 암호화: 사용 안 함
+
 
 --
-스토리지 액세스 계층:: Azure의 계층화된 데이터에 대한 기본 스토리지 액세스 계층은 _hot_tier입니다. 비활성 데이터에 액세스할 계획이 없는 경우 _cool_storage 계층으로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 계층을 변경하면 비활성 데이터가 핫 스토리지 계층에서 시작되어 30일 후에 데이터에 액세스하지 않는 경우 냉각 스토리지 계층으로 전환됩니다.
+스토리지 액세스 계층:: Azure의 계층화된 데이터에 대한 기본 스토리지 액세스 계층은 _hot_tier입니다. 핫 계층은 자주 액세스하는 데이터에 적합합니다.
 +
 --
+비활성 데이터에 액세스할 계획이 없는 경우 _cool_storage 계층으로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 계층을 변경하면 비활성 데이터가 핫 스토리지 계층에서 시작되어 30일 후에 데이터에 액세스하지 않는 경우 냉각 스토리지 계층으로 전환됩니다.
+
 데이터에 액세스하는 경우 액세스 비용이 더 높아지므로 스토리지 계층을 변경하기 전에 이 점을 고려해야 합니다. https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["Azure Blob 스토리지 액세스 계층에 대해 자세히 알아보십시오"^].
 
 작업 환경을 생성할 때 스토리지 계층을 선택할 수 있으며 그 후에는 언제든지 변경할 수 있습니다. 스토리지 계층 변경에 대한 자세한 내용은 를 참조하십시오 link:task-tiering.html["비활성 데이터를 저비용 오브젝트 스토리지로 계층화"].
@@ -98,11 +121,20 @@ ifdef::gcp[]
 Google Cloud에서 데이터 계층화를 활성화하면 Cloud Volumes ONTAP은 핫 데이터를 위한 성능 계층으로 영구 디스크를 사용하고 비활성 데이터를 위한 용량 계층으로 Google Cloud Storage 버킷을 사용합니다.
 
 성능 계층:: 성능 계층은 SSD 영구 디스크, 균형 잡힌 영구 디스크 또는 표준 영구 디스크일 수 있습니다.
-용량 계층:: Cloud Volumes ONTAP 시스템은 _Regional_storage 클래스를 사용하여 비활성 데이터를 단일 Google Cloud 스토리지 버킷에 계층화합니다.
+용량 계층:: Cloud Volumes ONTAP 시스템은 단일 Google 클라우드 스토리지 버킷에 비활성 데이터를 계층화합니다.
 +
 --
+Cloud Manager에서 각 작업 환경에 대한 버킷을 생성하여 fabric-pool-_cluster unique identifier_로 지정합니다. 각 볼륨에 대해 다른 버킷이 생성되지 않습니다.
 
-NOTE: Cloud Manager에서 각 작업 환경에 대해 단일 버킷을 생성하고 이를 Fabric-pool-_cluster unique identifier_로 지정합니다. 각 볼륨에 대해 다른 버킷이 생성되지 않습니다.
+Cloud Manager에서 버킷을 생성할 때 사용하는 기본 설정은 다음과 같습니다.
+
+* 위치 유형: 지역
+* 스토리지 클래스: 표준
+* 공용 액세스: 개체 ACL의 영향을 받습니다
+* 액세스 제어: 미세
+* 보호: 없음
+* 데이터 암호화: Google에서 관리하는 키입니다
+
 
 --
 스토리지 클래스:: 계층화된 데이터에 대한 기본 스토리지 클래스는 _Standard Storage_class입니다. 데이터에 자주 액세스하지 않는 경우 _Nearline Storage_ 또는 _Coldline Storage_ 로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 클래스를 변경하면 비활성 데이터가 표준 스토리지 클래스에서 시작되어 30일 후에 데이터에 액세스하지 않는 경우 선택한 스토리지 클래스로 전환됩니다.
