@@ -1,0 +1,26 @@
+= S3 빙하 즉시 검색
+:allow-uri-read: 
+
+
+
+
+=== S3 빙하 즉시 검색
+
+이제 Amazon S3 Glacier Instant Retrieval 저장소 클래스에 계층화된 데이터를 저장할 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["계층화된 데이터에 대한 스토리지 클래스를 변경하는 방법에 대해 알아보십시오"].
+
+
+
+=== Connector에 새로운 AWS 권한이 필요합니다
+
+이제 AZ(단일 가용성 영역)에 HA 쌍을 구축할 때 AWS 분산 배치 그룹을 생성하려면 다음 권한이 필요합니다.
+
+[source, json]
+----
+"ec2:DescribePlacementGroups",
+"iam:GetRolePolicy",
+----
+이제 Cloud Manager에서 배치 그룹을 만드는 방법을 최적화하려면 이러한 권한이 필요합니다.
+
+Cloud Manager에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. 에서 최신 사용 권한 목록을 찾을 수 있습니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 정책 페이지"^].

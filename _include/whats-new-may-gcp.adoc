@@ -1,0 +1,44 @@
+= 새로운 Google Cloud 지역 지원
+:allow-uri-read: 
+
+
+
+
+=== 새로운 Google Cloud 지역 지원
+
+Cloud Volumes ONTAP는 이제 9.10.1 릴리스부터 다음 Google 클라우드 영역에서 지원됩니다.
+
+* 델리(아시아 - 남쪽 2)
+* 멜번(호주 - 수테스토2)
+* Milan (Europe-west8) - 단일 노드만 해당
+* 산티아고(사우스메리카-west1) - 단일 노드만 해당
+
+
+https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
+
+
+
+=== Google Cloud에서 n2-standard-16을 지원합니다
+
+이제 Google Cloud의 Cloud Volumes ONTAP에서 9.10.1 릴리즈부터 n2-standard-16 머신 유형이 지원됩니다.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud에서 Cloud Volumes ONTAP에 지원되는 구성을 봅니다"^]
+
+
+
+=== Google Cloud 방화벽 정책의 개선 사항
+
+* Google Cloud에서 Cloud Volumes ONTAP HA 쌍을 생성하면 Cloud Manager가 VPC에 기존 방화벽 정책을 모두 표시합니다.
++
+이전에는 Cloud Manager에서 타겟 태그가 없는 VPC-1, VPC-2 또는 VPC-3에 정책을 표시하지 않았습니다.
+
+* Google Cloud에서 Cloud Volumes ONTAP 단일 노드 시스템을 생성할 때, 이제 선택한 VPC 전용(권장) 또는 모든 VPC 내의 트래픽을 허용하도록 사전 정의된 방화벽 정책을 선택할 수 있습니다.
+
+
+
+
+=== Google Cloud 서비스 계정 개선
+
+Cloud Volumes ONTAP에서 사용할 Google Cloud 서비스 계정을 선택하면 Cloud Manager에서 이제 각 서비스 계정과 연결된 이메일 주소를 표시합니다. 이메일 주소를 보면 동일한 이름을 공유하는 서비스 계정을 쉽게 구별할 수 있습니다.
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["서비스 계정 필드의 스크린샷"]
