@@ -29,29 +29,10 @@ Cloud Manager에서 Cloud Volumes ONTAP 작업 환경을 생성하여 Azure에�
 +
 구성을 선택하고 관리자로부터 Azure 네트워킹 정보를 받아야 합니다. 자세한 내용은 을 참조하십시오 link:task-planning-your-config-azure.html["Cloud Volumes ONTAP 구성 계획"].
 
-* 작업 환경 추가 마법사에서 특정 라이센스 옵션을 선택하는 데 필요한 사항을 이해합니다. link:concept-licensing.html["Cloud Volumes ONTAP 라이센스에 대해 자세히 알아보십시오"].
+* Cloud Volumes ONTAP에 대한 라이센스 설정에 필요한 사항을 이해합니다.
 +
-[cols="20,40,40"]
-|===
-| 라이센스 옵션 | 요구 사항 | 요구 사항을 충족하는 방법 
+link:task-set-up-licensing-azure.html["라이센스 설정 방법에 대해 알아보십시오"].
 
-
-| 프리모늄 | 마켓플레이스 구독 또는 NSS(NetApp Support Site) 계정이 필요합니다. | 세부 정보 및 자격 증명 * 페이지에서 클라우드 공급자의 마켓플레이스를 구독할 수 있습니다. 충전 방법 및 NSS 계정 * 페이지에서 NSS 계정을 입력할 수 있습니다. 
-
-
-| Professional 또는 Essential 패키지 | BYOL(Marketplace Subscription 또는 용량 기반 라이센스)이 필요합니다. 계정에 유효한 용량 기반 라이센스가 없거나 프로비저닝된 용량이 라이센스 용량을 초과하는 경우 용량 기반 충전을 위해 Marketplace 구독을 사용하는 것이 좋습니다. | 세부 정보 및 자격 증명 * 페이지에서 클라우드 공급자의 마켓플레이스를 구독할 수 있습니다. NetApp에서 구매한 용량 기반 라이센스(BYOL)를 사용하려면 먼저 * Digital Wallet * 에 추가해야 합니다. link:task-manage-capacity-licenses.html["용량 기반 BYOL 라이센스를 추가하는 방법에 대해 알아보십시오"]. 
-
-
-| 유연한 Keystone 구독 | 계정이 인증되어야 하며 Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 활성화해야 합니다.  a| 
-.. mailto:ng-keystone-success@netapp.com [Contact NetApp]: 하나 이상의 Keystone Flex 구독으로 Cloud Manager 사용자 계정을 인증하십시오.
-.. NetApp이 사용자 계정을 승인한 후 link:task-manage-keystone.html#link-a-subscription["Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 연결합니다"].
-.. Cloud Volumes ONTAP HA 쌍을 생성할 때 Keystone 유연한 구독 충전 방법을 선택하십시오.
-
-
-
-
-| 노드당 라이센스 | Marketplace 구독이 필요하거나 BYOL(Bring Your Own License)을 사용해야 합니다. 이 옵션은 기존 구독 또는 기존 라이선스를 보유한 고객에게 제공됩니다. 신규 고객은 사용할 수 없습니다. | NetApp에서 구매한 노드 기반 라이센스(BYOL)를 사용하려면 먼저 * Digital Wallet * 에 추가해야 합니다. link:task-manage-node-licenses.html#obtain-a-system-license-file["노드 기반 BYOL 라이센스를 추가하는 방법에 대해 알아보십시오"]. 충전 방법 및 NSS 계정 * 페이지에서 NSS 계정을 입력할 수 있습니다. 
-|===
 
 
 Cloud Manager는 Azure에서 Cloud Volumes ONTAP 시스템을 생성할 때 리소스 그룹, 네트워크 인터페이스, 스토리지 계정 등과 같은 여러 Azure 개체를 생성합니다. 마법사 마지막에서 리소스 요약을 검토할 수 있습니다.
@@ -128,8 +109,8 @@ TIP: 사용 중인 Azure 계정에 가 있는 경우 https://mysupport.netapp.co
 |===
 . * 충전 방법 및 NSS 계정 *: 이 시스템에서 사용할 충전 옵션을 지정한 다음 NetApp Support 사이트 계정을 지정합니다.
 +
-** link:concept-licensing.html["이러한 충전 방법에 대해 자세히 알아보십시오"].
-** link:task-deploying-otc-azure.html#licensing["마법사에서 사용하려는 라이센스 방법에 필요한 사항을 알아봅니다"].
+** link:concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오"].
+** link:task-set-up-licensing-azure.html["라이센스 설정 방법에 대해 알아보십시오"].
 
 
 . * 사전 구성된 패키지 *: 패키지 중 하나를 선택하여 Cloud Volumes ONTAP 시스템을 신속하게 배포하거나 * 고유한 구성 만들기 * 를 클릭합니다.

@@ -18,7 +18,17 @@ AWS에 Cloud Volumes ONTAP를 구축할 때 워크로드 요구사항에 맞게 
 
 
 
-== 지원되는 영역 보기
+== Cloud Volumes ONTAP 라이센스를 선택합니다
+
+Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 옵션을 사용하여 요구사항에 맞는 소비 모델을 선택할 수 있습니다.
+
+* link:concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오"]
+* link:task-set-up-licensing-aws.html["라이센스 설정 방법에 대해 알아보십시오"]
+
+
+
+
+== 지원되는 지역을 선택하십시오
 
 Cloud Volumes ONTAP는 대부분의 AWS 지역에서 지원됩니다. https://cloud.netapp.com/cloud-volumes-global-regions["지원되는 영역의 전체 목록을 봅니다"^].
 
@@ -26,13 +36,7 @@ Cloud Volumes ONTAP는 대부분의 AWS 지역에서 지원됩니다. https://cl
 
 
 
-== 라이센스 선택
-
-Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 옵션을 사용하여 요구사항에 맞는 소비 모델을 선택할 수 있습니다. link:concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오"].
-
-
-
-== 지원되는 인스턴스 선택
+== 지원되는 인스턴스를 선택합니다
 
 Cloud Volumes ONTAP는 선택한 라이센스 유형에 따라 여러 인스턴스 유형을 지원합니다.
 
@@ -40,13 +44,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws
 
 
 
-== Flash Cache를 지원하는 구성 선택
-
-AWS의 일부 Cloud Volumes ONTAP 구성에는 Cloud Volumes ONTAP이 성능 향상을 위해 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. link:concept-flash-cache.html["Flash Cache에 대해 자세히 알아보십시오"].
-
-
-
-== 스토리지 제한 이해
+== 스토리지 제한사항을 파악합니다
 
 Cloud Volumes ONTAP 시스템의 물리적 용량 제한은 라이센스에 연결되어 있습니다. 추가 제한은 애그리게이트 및 볼륨 크기에 영향을 줍니다. 구성을 계획할 때 이러한 제한 사항을 숙지해야 합니다.
 
@@ -54,7 +52,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.
 
 
 
-== AWS에서 시스템 사이징
+== AWS에서 시스템 크기 조정
 
 Cloud Volumes ONTAP 시스템을 사이징하면 성능 및 용량 요구사항을 충족하는 데 도움이 될 수 있습니다. 인스턴스 유형, 디스크 유형 및 디스크 크기를 선택할 때 몇 가지 주요 사항을 알고 있어야 합니다.
 
@@ -133,13 +131,13 @@ AWS 아웃포스트가 있는 경우 작업 환경 마법사에서 아웃포스�
 
 
 
-== AWS 네트워크 정보 워크시트
+== 네트워킹 정보를 수집합니다
 
 AWS에서 Cloud Volumes ONTAP를 시작할 때 VPC 네트워크에 대한 세부 정보를 지정해야 합니다. 워크시트를 사용하여 관리자로부터 정보를 수집할 수 있습니다.
 
 
 
-=== Cloud Volumes ONTAP에 대한 네트워크 정보입니다
+=== 단일 노드 또는 HA 2노드 AZ
 
 [cols="30,70"]
 |===
@@ -159,7 +157,7 @@ AWS에서 Cloud Volumes ONTAP를 시작할 때 VPC 네트워크에 대한 세부
 |===
 
 
-=== 여러 AZs의 HA 쌍에 대한 네트워크 정보
+=== 여러 대의 AZs에서 HA 쌍
 
 [cols="30,70"]
 |===
@@ -209,13 +207,13 @@ AWS에서 Cloud Volumes ONTAP를 시작할 때 VPC 네트워크에 대한 세부
 |===
 
 
-== 쓰기 속도 선택
+== 쓰기 속도를 선택합니다
 
 Cloud Manager를 사용하면 Cloud Volumes ONTAP의 쓰기 속도 설정을 선택할 수 있습니다. 쓰기 속도를 선택하기 전에 고속 쓰기 속도를 사용할 때 정상 및 높음 설정의 차이점과 위험 및 권장 사항을 이해해야 합니다. link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시오"].
 
 
 
-== 볼륨 사용 프로필 선택
+== 볼륨 사용 프로필을 선택합니다
 
 ONTAP에는 필요한 총 스토리지 양을 줄일 수 있는 몇 가지 스토리지 효율성 기능이 포함되어 있습니다. Cloud Manager에서 볼륨을 생성할 때 이러한 기능을 사용하도록 설정하는 프로필이나 기능을 사용하지 않도록 설정하는 프로필을 선택할 수 있습니다. 사용할 프로파일을 결정하는 데 도움이 되도록 이러한 기능에 대해 자세히 알아 두어야 합니다.
 

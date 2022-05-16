@@ -56,7 +56,9 @@ sidebar:
           url: "/reference-security-groups.html"
       - title: AWS KMS를 설정합니다
         url: "/task-setting-up-kms.html"
-      - title: AWS에서 시스템을 시작합니다
+      - title: 라이센스를 설정합니다
+        url: "/task-set-up-licensing-aws.html"
+      - title: AWS에서 Cloud Volumes ONTAP를 시작합니다
         url: "/task-deploying-otc-aws.html"
       - title: AWS C2S에서 시작하십시오
         url: "/task-getting-started-aws-c2s.html"
@@ -71,7 +73,9 @@ sidebar:
         url: "/reference-networking-azure.html"
       - title: 키를 사용하여 암호화를 설정합니다
         url: "/task-set-up-azure-encryption.html"
-      - title: Azure에서 시스템을 시작합니다
+      - title: 라이센스를 설정합니다
+        url: "/task-set-up-licensing-azure.html"
+      - title: Azure에서 Cloud Volumes ONTAP를 실행합니다
         url: "/task-deploying-otc-azure.html"
     - title: Google Cloud에서 시작하십시오
       flavor: gcp
@@ -88,7 +92,9 @@ sidebar:
         url: "/task-creating-gcp-service-account.html"
       - title: 고객이 관리하는 암호화 키를 사용합니다
         url: "/task-setting-up-gcp-encryption.html"
-      - title: GCP에서 시스템을 시작합니다
+      - title: 라이센스를 설정합니다
+        url: "/task-set-up-licensing-google.html"
+      - title: Google Cloud에서 Cloud Volumes ONTAP를 실행합니다
         url: "/task-deploying-gcp.html"
   - title: Cloud Volumes ONTAP를 사용합니다
     entries:
@@ -189,6 +195,8 @@ sidebar:
         url: "/task-configure-ems.html"
   - title: 개념
     entries:
+    - title: 라이센싱
+      url: "/concept-licensing.html"
     - title: 스토리지
       entries:
       - title: 클라이언트 프로토콜
@@ -218,17 +226,15 @@ sidebar:
         url: "/concept-ha-google-cloud.html"
       - title: 스토리지 테이크오버 중 동작
         url: "/concept-degraded-ha-pair.html"
-    - title: 라이센싱
-      url: "/concept-licensing.html"
-    - title: 노드 기반 BYOL 관리
-      url: "/concept-license-management.html"
     - title: 보안
       url: "/concept-security.html"
     - title: 성능
       url: "/concept-performance.html"
+    - title: 노드 기반 BYOL 관리
+      url: "/concept-license-management.html"
     - title: AutoSupport 및 Active IQ 디지털 자문업체
       url: "/concept-active-iq.html"
-    - title: 기본 구성
+    - title: 기본 설정
       url: "/reference-default-configs.html"
   - title: 지식 및 지원
     entries:
@@ -311,4 +317,6 @@ homepage:
       url: https://cloud.netapp.com/blog/topic/cloud-volumes-ontap
     - title: 클라우드 웨비나
       url: https://cloud.netapp.com/events
-product-family: {}
+product-family:
+  name: Cloud Manager
+  repo: cloud-manager-family
