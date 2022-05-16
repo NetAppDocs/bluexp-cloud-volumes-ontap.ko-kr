@@ -3766,9 +3766,7 @@
   <block id="848ba74632f2d95512e41c0283190dc5" category="section-title">볼륨 사용 프로필을 선택합니다</block>
   <block id="e83e6938f82d96149155f11617a3f4b6" category="paragraph">Freemium 제품을 시작하는 방법을 알아보십시오.</block>
   <block id="d0e9f6e752e409a4224686569c7ed7f7" category="list-text"><block ref="d0e9f6e752e409a4224686569c7ed7f7" category="inline-link-macro-rx"></block></block>
-  <block id="717274b88b6d91b24b7da7830ec7dc31" category="list-text"><block ref="717274b88b6d91b24b7da7830ec7dc31" category="inline-link-macro-rx"></block></block>
   <block id="8f0a98314b48214c48339998c2fc4f5a" category="inline-link-macro">Google Cloud에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다</block>
-  <block id="17b1da78f4ea2d6d32ebdce24f550dc0" category="list-text"><block ref="17b1da78f4ea2d6d32ebdce24f550dc0" category="inline-link-macro-rx"></block></block>
   <block id="a24ad69dba38b7a2ce7bc133c0c71859" category="inline-image-macro">무료 평가판이 7일 남았을 뿐이라는 Cloud Manager 인터페이스의 알림 스크린샷</block>
   <block id="c11bddd3f0b5c0f09e3ca02ff6bb72d5" category="admonition">무료 평가판이 시작될 때, 7일 남았습니다. 1일이 남았을 때, Cloud Manager에서 알림을 받게 됩니다. 예를 들면 다음과 같습니다.<block ref="d18f5bf648a43ba5347efa3c8515f511" category="inline-image-macro-rx" type="image"></block></block>
   <block id="451e7fc5df78c19113abdb3f6a0dc54e" category="paragraph">용량 기반 라이센스를 시작하는 방법에 대해 알아보십시오.</block>
@@ -3799,4 +3797,6 @@
   <block id="70c84621a7336f391b4b7df86b5f1396" category="sidebar">Azure에서 Cloud Volumes ONTAP를 실행합니다</block>
   <block id="5195e4b472b1871018c47fface61dc40" category="sidebar">Google Cloud에서 Cloud Volumes ONTAP를 실행합니다</block>
   <block id="45d5eeea4210bb57cc495f10379b4966" category="sidebar">기본 설정</block>
+  <block id="7f8900b9e3a03c9f7c08ccd4062c4d03" category="list-text"><block ref="7f8900b9e3a03c9f7c08ccd4062c4d03" category="inline-link-macro-rx"></block></block>
+  <block id="1455e8ac365afc8611ea8516bddd1769" category="list-text"><block ref="1455e8ac365afc8611ea8516bddd1769" category="inline-link-macro-rx"></block></block>
 </blocks>

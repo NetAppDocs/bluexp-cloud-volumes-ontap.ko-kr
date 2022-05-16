@@ -59,14 +59,14 @@ endif::aws[]
 
 ifdef::azure[]
 
-* link:task-set-up-licensing-aws.html["Azure에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다"]
+* link:task-set-up-licensing-azure.html["Azure에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다"]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* link:task-set-up-licensing-aws.html["Google Cloud에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다"]
+* link:task-set-up-licensing-google.html["Google Cloud에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다"]
 
 
 endif::gcp[]
@@ -194,14 +194,14 @@ endif::aws[]
 
 ifdef::azure[]
 
-* link:task-set-up-licensing-aws.html["Azure에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다"]
+* link:task-set-up-licensing-azure.html["Azure에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다"]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* link:task-set-up-licensing-aws.html["Google Cloud에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다"]
+* link:task-set-up-licensing-google.html["Google Cloud에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다"]
 
 
 endif::gcp[]
@@ -245,14 +245,14 @@ endif::aws[]
 
 ifdef::azure[]
 
-* link:task-set-up-licensing-aws.html["Azure에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다"]
+* link:task-set-up-licensing-azure.html["Azure에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다"]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* link:task-set-up-licensing-aws.html["Google Cloud에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다"]
+* link:task-set-up-licensing-google.html["Google Cloud에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다"]
 
 
 endif::gcp[]
