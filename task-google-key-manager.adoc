@@ -64,4 +64,8 @@ gcloud iam roles create kmsCustomRole
 
 == 문제 해결
 
-문제를 해결해야 하는 경우 위의 마지막 두 단계에서 원시 REST API 로그를 지정할 수 있습니다. '세트 d'. 'systemshell-node_node_-command tail -f /mroot /etc/log/mlog/kmip2_client.log'
+문제를 해결해야 하는 경우 위의 마지막 두 단계에서 원시 REST API 로그를 지정할 수 있습니다.
+
+. '세트 d'
+. 'systemshell-node_node_-command tail -f /mroot /etc/log/mlog/kmip2_client.log'
+
