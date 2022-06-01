@@ -35,14 +35,16 @@ C2S의 Cloud Volumes ONTAP에서는 S3에 대한 데이터 계층화도 지원�
 
 == 제한 사항
 
-Cloud Manager에서 제공되는 NetApp 클라우드 서비스가 없습니다.
+* Cloud Manager에서 제공되는 NetApp 클라우드 서비스가 없습니다.
+* C2S 환경에는 인터넷 액세스가 없으므로 다음 기능을 사용할 수 없습니다.
++
+** NetApp Cloud Central과 통합
+** Cloud Manager에서 소프트웨어 업그레이드 자동화
+** NetApp AutoSupport를 참조하십시오
+** Cloud Volumes ONTAP 리소스에 대한 AWS 비용 정보입니다
 
-C2S 환경에는 인터넷 액세스가 없으므로 다음 기능을 사용할 수 없습니다.
 
-* NetApp Cloud Central과 통합
-* Cloud Manager에서 소프트웨어 업그레이드 자동화
-* NetApp AutoSupport를 참조하십시오
-* Cloud Volumes ONTAP 리소스에 대한 AWS 비용 정보입니다
+* C2S 환경에서는 Freemium 라이센스가 지원되지 않습니다.
 
 
 

@@ -138,6 +138,12 @@ sidebar:
       entries:
       - title: NetApp 암호화로 볼륨 암호화
         url: "/task-encrypting-volumes.html"
+      - title: Azure Key Vault를 사용하여 키를 관리합니다
+        flavor: azure
+        url: "/task-azure-key-vault.html"
+      - title: Google Cloud Key Manager Service로 키를 관리합니다
+        flavor: gcp
+        url: "/task-google-key-manager.html"
       - title: 랜섬웨어 보호 향상
         url: "/task-protecting-ransomware.html"
       - title: Azure 키 저장소를 활성화합니다
