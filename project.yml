@@ -140,6 +140,10 @@ sidebar:
         url: "/task-encrypting-volumes.html"
       - title: 랜섬웨어 보호 향상
         url: "/task-protecting-ransomware.html"
+      - title: Azure 키 저장소를 활성화합니다
+        url: "/task-azure-key-vault.html"
+      - title: Google Cloud Key Manager 서비스를 활성화합니다
+        url: "/task-google-key-manager.html"
     - title: 시스템 관리
       entries:
       - title: Cloud Volumes ONTAP를 업그레이드합니다

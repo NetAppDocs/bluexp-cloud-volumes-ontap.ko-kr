@@ -3799,4 +3799,61 @@
   <block id="45d5eeea4210bb57cc495f10379b4966" category="sidebar">기본 설정</block>
   <block id="7f8900b9e3a03c9f7c08ccd4062c4d03" category="list-text"><block ref="7f8900b9e3a03c9f7c08ccd4062c4d03" category="inline-link-macro-rx"></block></block>
   <block id="1455e8ac365afc8611ea8516bddd1769" category="list-text"><block ref="1455e8ac365afc8611ea8516bddd1769" category="inline-link-macro-rx"></block></block>
+  <block id="7ed9c1f7193f7727cfac5a7b6f0c1266" category="summary">타사 키 관리 서비스에 Azure Key Vault를 사용합니다.</block>
+  <block id="d3c0e82fe05c62b621815b706b024e29" category="doc">Azure Key Vault를 사용하여 키를 관리합니다</block>
+  <block id="35b16ddf568bd70f42e0bcb19f2a533c" category="inline-link-macro">Azure 키 저장소(AKV)</block>
+  <block id="2f8fe9f0bb3ca6b63c1111b1fd670f9e" category="paragraph">을 사용할 수 있습니다 <block ref="9061d13c3fae693003c080b827f91c1c" category="inline-link-macro-rx"></block> Azure로 배포된 응용 프로그램에서 ONTAP 암호화 키를 보호합니다.</block>
+  <block id="4294aa58822f061e77d8da0c76ebf94d" category="inline-link-macro">NVE(NetApp Volume Encryption) 키</block>
+  <block id="b60a27a8ca201f4faf5778905a1e1105" category="paragraph">AKV 및 Cloud KMS를 사용하여 보호할 수 있습니다 <block ref="ce6d7ffd7c6719de501e205deb3bb075" category="inline-link-macro-rx"></block> 데이터 SVM에만 해당.</block>
+  <block id="b80b61bef9c57d9979c8a0a11310d79b" category="paragraph">AKV를 사용한 키 관리는 CLI 또는 ONTAP REST API를 사용하여 활성화할 수 있습니다.</block>
+  <block id="e99dab450e193aa16ab181a9cbb70701" category="paragraph">AKV를 사용할 때는 기본적으로 데이터 SVM LIF가 클라우드 키 관리 엔드포인트와 통신하는 데 사용됩니다. 노드 관리 네트워크는 클라우드 공급자의 인증 서비스(login.microsoftonline.com 통신하는 데 사용됩니다. 클러스터 네트워크가 올바르게 구성되지 않은 경우 클러스터는 키 관리 서비스를 제대로 사용하지 않습니다.</block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="list-title">필수 구성 요소</block>
+  <block id="0dbc3b305b67f45cc077782f1bde33be" category="list-text">Cloud Volumes ONTAP에서 버전 9.10.1 이상을 실행해야 합니다</block>
+  <block id="80175ad1c15d028f67b3376a45b8e3c0" category="list-text">Cloud Volumes ONTAP 클러스터 노드는 NVE를 지원해야 합니다</block>
+  <block id="3db7729c3f93b51e237e9f64f77736ce" category="list-text">VE(Volume Encryption) 라이센스가 설치되었습니다</block>
+  <block id="1343117a59836c5996c8be9e9914ce4b" category="list-text">MTEKM(멀티 테넌트 암호화 키 관리) 라이센스가 설치되었습니다</block>
+  <block id="941d09f50e1c95a1d21454ff759fc757" category="list-text">클러스터 또는 SVM 관리자여야 합니다</block>
+  <block id="4da5254130066f3f3262c3aa07f10759" category="list-text">Active Azure 구독</block>
+  <block id="88f2fb0102e3b959940686651a664a37" category="list-text">NSE 및 NAE 키에는 AKV를 사용할 수 없습니다</block>
+  <block id="7db8ff26e5e9d7fc031772044154257b" category="list-text">MetroCluster 구성에는 AKV를 사용할 수 없습니다.</block>
+  <block id="0c7af18d6ac0bf65ef1d6aec6f629263" category="list-text">AKV는 데이터 SVM에서만 구성할 수 있습니다</block>
+  <block id="72bf37dc916a5b7107e5555c05e6deba" category="section-title">구성 프로세스</block>
+  <block id="0353522b39b87d54d40d3f09ec668851" category="list-title">ONTAP 구성</block>
+  <block id="29c35caadd576a358e25cf276cf3f5c4" category="list-text">기본 SSH 클라이언트를 사용하여 클러스터 관리 LIF에 연결합니다.</block>
+  <block id="04cf2d7d95d7d1c9ab9dbd7dbf46710c" category="list-text">ONTAP에서 고급 권한 모드 '고급 모드 해제'로 진입합니다</block>
+  <block id="d25bc3e2f3cccb27b01b1088c349f1eb" category="list-text">원하는 데이터 SVM을 식별하고 DNS 구성 'vserver services name-service dns show'를 확인합니다</block>
+  <block id="fe0e659383af9bbfb75708c240c256f8" category="list-text">원하는 데이터 SVM에 대한 DNS 항목이 있고 Azure DNS에 대한 항목이 포함된 경우 별도의 조치가 필요하지 않습니다. 그렇지 않으면 Azure DNS, 프라이빗 DNS 또는 사내 서버를 가리키는 데이터 SVM용 DNS 서버 항목을 추가합니다. 클러스터 관리 SVM의 항목과 일치해야 합니다. 'vserver services name-service dns create-vserver_SVM_name_-domain_domain_-name-servers_ip_address_'</block>
+  <block id="e4919e440eb9972cf98c256c8354da12" category="list-text">SVM을 위해 DNS 서비스가 생성되었는지 확인합니다. 'vserver services name-service dns show'</block>
+  <block id="9d98aca60e70c6f5397deb1970b8afc4" category="list-text">응용 프로그램 등록 후 저장된 클라이언트 ID와 테넌트 ID를 사용하여 Azure 키 볼트를 활성화합니다. '보안 키 관리자 외부 Azure enable - vserver_SVM_name_-client-id_Azure_client_ID_-tenant-id_Azure_tenant_ID_-name_Azure_key_name_-key-id_Azure_key_ID_</block>
+  <block id="5ac6ffb19ceb9619fe5f2fb10414c629" category="list-text">Key Manager 설정 'Security key-manager external Azure show'를 확인한다</block>
+  <block id="68f0035d3c55f26e0ec12ed454908a6e" category="list-text">Key Manager의 상태를 확인한다. '보안 Key-manager external Azure check' 출력 내용은 다음과 같다.</block>
+  <block id="558f8f17a0bbaa44eeaadc7095d4ec67" category="paragraph">만약 'service_reachability' 상태가 'OK'가 아닌 경우, SVM은 필요한 모든 접속 및 권한으로 Azure Key Vault 서비스에 연결할 수 없습니다. 초기구성 시 kms_Wrapped_key_status가 unknown을 보고합니다. 첫 볼륨을 암호화하면 상태가 OK로 바뀝니다.</block>
+  <block id="9b613c987763946434ad3660edb163a2" category="list-text">선택 사항: 테스트 볼륨을 생성하여 AKV의 기능을 확인합니다. 'vol create-vserver_SVM_name_-volume_volume_name_-aggregate_aggr_-size_size_-state online-policy default'가 올바르게 구성된 경우 ONTAP는 자동으로 볼륨을 생성하고 볼륨 암호화를 활성화합니다.</block>
+  <block id="776c67d51f3f1c503c9062c9d812c2b7" category="list-text">볼륨이 올바르게 생성되고 암호화되었는지 확인합니다. 이 경우 암호화된 매개 변수는 true로 표시됩니다. 'vol show-vserver_SVM_name_-fields is-encrypted'</block>
+  <block id="0741b6c1237f126924ebdaa3fe6dbc4e" category="doc">Google의 클라우드 키 관리 서비스로 키를 관리합니다</block>
+  <block id="0dbdff8ed1ef0e78c4dc84ace48205d6" category="inline-link-macro">Google Cloud Platform의 키 관리 서비스(Cloud KMS)</block>
+  <block id="2f7905ac71167519792d73f964942175" category="paragraph">을 사용할 수 있습니다 <block ref="4ef7b266bd9680469191a283388836d8" category="inline-link-macro-rx"></block> Google Cloud Platform에서 구축한 응용 프로그램에서 ONTAP 암호화 키를 보호합니다.</block>
+  <block id="129c939af8813551a6b88e23f4048ae2" category="paragraph">키 관리 Cloud KMS는 CLI 또는 ONTAP REST API를 통해 활성화할 수 있습니다. Cloud Volumes ONTAP용 Cloud KMS를 구성하려면 먼저 을(를) 구성해야 합니다</block>
+  <block id="effd05555235b0681857f0aff356bf2f" category="paragraph">Cloud KMS를 사용할 때는 기본적으로 데이터 SVM LIF가 클라우드 키 관리 엔드포인트와 통신하는 데 사용됩니다. 노드 관리 네트워크는 클라우드 공급자의 인증 서비스(oauth2.googleapis.com 통신하는 데 사용됩니다. 클러스터 네트워크가 올바르게 구성되지 않은 경우 클러스터는 키 관리 서비스를 제대로 사용하지 않습니다.</block>
+  <block id="724742e5865d00ce8408ff6e4aa5aef6" category="list-text">NSE 및 NAE는 클라우드 KMS를 사용할 수 없습니다.</block>
+  <block id="375e2f9b2984ac77600d156b668dda93" category="list-text">Cloud KMS는 MetroCluster 구성에 사용할 수 없습니다.</block>
+  <block id="41a2c826f6f02a44a93533524c99b84e" category="list-text">클라우드 KMS는 데이터 SVM에서만 구성할 수 있습니다</block>
+  <block id="105e3d12938c631bc5d8ab6f6b628e1c" category="list-text">Google Cloud Platform의 활성 서브스크립션입니다</block>
+  <block id="2faec1f9f8cc7f8f40d521c4dd574f49" category="list-title">활성화</block>
+  <block id="b5413d5b20431bb65856ee65caf2f8e8" category="list-text">Google Cloud 환경:</block>
+  <block id="a956ae27fe26e73f40b74bac5ab8d818" category="list-text">대칭 GCP 키 링 및 키 생성:</block>
+  <block id="fb3ec58b16a722e2682f46b80c3f11e8" category="list-text">Cloud Volumes ONTAP 서비스 계정에 대한 사용자 지정 역할 만들기: "gcloud iam role create kmsCustomRole--project=_project_id_- title=_kms_custom_role_name_--description=_custom_role_description_--permissions=cloudkms.cryptoKeyVersions.get, cloudkms.cryptokms.list, cloudkms.cryptoKeyVersions.useToDecrypt,cloudkms.cryptoKeyVersions.useToEncrypt,cloudkms.cryptoKeys.get,cloudkms.keyRings.get,cloudkms.locations.get,cloudkms.locations.list,resourcemanager.projects.get -- stage= GA/GA가 있습니까?</block>
+  <block id="35257e0a7fdf990e79516f14d54b9688" category="list-text">사용자 지정 역할을 클라우드 KMS 키 및 Cloud Volumes ONTAP 서비스 계정에 할당합니다. "gcloud kms keys add-iam-policy-binding${_key_name_}--keyring${_key_ring_name_}--location ${_key_location_}- 멤버 ServiceAccount:${_service_account_Name_}-- 역할 프로젝트/_Role_Customprojects</block>
+  <block id="d21cbe89c10e8cddec31594493146dcf" category="list-text">서비스 계정 JSON 키 다운로드:'gcloud iam service-accounts key create key-file --iam-account=_sa-name_@_project-id_.iam.gserviceaccount.com</block>
+  <block id="43db0fe1ea4bbf51b29da7ede3c389c8" category="list-text">Cloud Volumes ONTAP 환경으로 전환:</block>
+  <block id="82e39d2f55f4956d1929bbcff0b210aa" category="list-text">고급 권한 수준 설정 고급 으로 전환합니다</block>
+  <block id="a035687f65cfa8cf7e7c82084b7e145b" category="list-text">데이터 SVM을 위한 DNS를 생성합니다. dns create-domain C. _<block ref="03b54379e1d996c88e31bd360eab170a" category="inline-xref-macro-rx"></block>_.internal -name-servers_server_address_-vserver_SVM_name_'입니다</block>
+  <block id="6deefebfd83493611afe8675c6d1ce7b" category="list-text">CMEK 항목 생성:'Security key-manager external GCP enable-vserver_SVM_name_-project-id_project_-key-ring-name_key_ring_name_-key-ring-location_location_-key-name_key_key_key_key_name_'입니다</block>
+  <block id="53521a13e927a2d5286f3433c692ed71" category="list-text">메시지가 표시되면 GCP 계정의 서비스 계정 JSON 키를 입력합니다.</block>
+  <block id="b20c482c85ecfd221cc2a8a8ac33d883" category="list-text">활성화된 프로세스가 성공했는지 확인합니다. '보안 키 - 관리자 외부 GCP 검사 - vserver_svm_name_'</block>
+  <block id="43272767051c3ae3332c7d5065d40829" category="list-text">선택 사항: 암호화 'vol create_volume_name_&gt;-aggregate_aggregate_-vserver_vserver_name_-size 10G'를 테스트할 볼륨을 생성합니다</block>
+  <block id="d60c463bb4096f3ed4bd1618626dfe10" category="section-title">문제 해결</block>
+  <block id="6a81e96ba72f086fbc1fce60f448b1bb" category="paragraph">문제를 해결해야 하는 경우 위의 마지막 두 단계에서 원시 REST API 로그를 지정할 수 있습니다. '세트 d'. 'systemshell-node_node_-command tail -f /mroot /etc/log/mlog/kmip2_client.log'</block>
+  <block id="90ffa83e68ae5e0cbf95a61d80d4f2bc" category="sidebar">Azure 키 저장소를 활성화합니다</block>
+  <block id="ea549d1febacd44f10ba966e5d89a261" category="sidebar">Google Cloud Key Manager 서비스를 활성화합니다</block>
 </blocks>

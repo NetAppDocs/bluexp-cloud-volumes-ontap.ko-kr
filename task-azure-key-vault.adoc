@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-azure-key-vault.html 
+keywords: azure, encryption, NVE, NetApp volume encryption, KMIP, azure key vault 
+summary: 타사 키 관리 서비스에 Azure Key Vault를 사용합니다. 
+---
+= Azure Key Vault를 사용하여 키를 관리합니다
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+을 사용할 수 있습니다 link:https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts["Azure 키 저장소(AKV)"^] Azure로 배포된 응용 프로그램에서 ONTAP 암호화 키를 보호합니다.
+
+AKV 및 Cloud KMS를 사용하여 보호할 수 있습니다 link:configure-netapp-volume-encryption-concept.html["NVE(NetApp Volume Encryption) 키"] 데이터 SVM에만 해당.
+
+AKV를 사용한 키 관리는 CLI 또는 ONTAP REST API를 사용하여 활성화할 수 있습니다.
+
+AKV를 사용할 때는 기본적으로 데이터 SVM LIF가 클라우드 키 관리 엔드포인트와 통신하는 데 사용됩니다. 노드 관리 네트워크는 클라우드 공급자의 인증 서비스(login.microsoftonline.com 통신하는 데 사용됩니다. 클러스터 네트워크가 올바르게 구성되지 않은 경우 클러스터는 키 관리 서비스를 제대로 사용하지 않습니다.
+
+.필수 구성 요소
+* Cloud Volumes ONTAP에서 버전 9.10.1 이상을 실행해야 합니다
+* Cloud Volumes ONTAP 클러스터 노드는 NVE를 지원해야 합니다
+* VE(Volume Encryption) 라이센스가 설치되었습니다
+* MTEKM(멀티 테넌트 암호화 키 관리) 라이센스가 설치되었습니다
+* 클러스터 또는 SVM 관리자여야 합니다
+* Active Azure 구독
+
+
+.제한 사항
+* NSE 및 NAE 키에는 AKV를 사용할 수 없습니다
+* MetroCluster 구성에는 AKV를 사용할 수 없습니다.
+* AKV는 데이터 SVM에서만 구성할 수 있습니다
+
+
+
+
+== 구성 프로세스
+
+.ONTAP 구성
+. 기본 SSH 클라이언트를 사용하여 클러스터 관리 LIF에 연결합니다.
+. ONTAP에서 고급 권한 모드 '고급 모드 해제'로 진입합니다
+. 원하는 데이터 SVM을 식별하고 DNS 구성 'vserver services name-service dns show'를 확인합니다
++
+.. 원하는 데이터 SVM에 대한 DNS 항목이 있고 Azure DNS에 대한 항목이 포함된 경우 별도의 조치가 필요하지 않습니다. 그렇지 않으면 Azure DNS, 프라이빗 DNS 또는 사내 서버를 가리키는 데이터 SVM용 DNS 서버 항목을 추가합니다. 클러스터 관리 SVM의 항목과 일치해야 합니다. 'vserver services name-service dns create-vserver_SVM_name_-domain_domain_-name-servers_ip_address_'
+.. SVM을 위해 DNS 서비스가 생성되었는지 확인합니다. 'vserver services name-service dns show'
+
+
+. 응용 프로그램 등록 후 저장된 클라이언트 ID와 테넌트 ID를 사용하여 Azure 키 볼트를 활성화합니다. '보안 키 관리자 외부 Azure enable - vserver_SVM_name_-client-id_Azure_client_ID_-tenant-id_Azure_tenant_ID_-name_Azure_key_name_-key-id_Azure_key_ID_
+. Key Manager 설정 'Security key-manager external Azure show'를 확인한다
+. Key Manager의 상태를 확인한다. '보안 Key-manager external Azure check' 출력 내용은 다음과 같다.
++
+[source]
+----
+::*> security key-manager external azure check
+
+Vserver: data_svm_name
+Node: akvlab01-01
+
+Category: service_reachability
+    Status: OK
+
+Category: ekmip_server
+    Status: OK
+
+Category: kms_wrapped_key_status
+    Status: UNKNOWN
+    Details: No volumes created yet for the vserver. Wrapped KEK status will be available after creating encrypted volumes.
+
+3 entries were displayed.
+----
++
+만약 'service_reachability' 상태가 'OK'가 아닌 경우, SVM은 필요한 모든 접속 및 권한으로 Azure Key Vault 서비스에 연결할 수 없습니다. 초기구성 시 kms_Wrapped_key_status가 unknown을 보고합니다. 첫 볼륨을 암호화하면 상태가 OK로 바뀝니다.
+
+. 선택 사항: 테스트 볼륨을 생성하여 AKV의 기능을 확인합니다. 'vol create-vserver_SVM_name_-volume_volume_name_-aggregate_aggr_-size_size_-state online-policy default'가 올바르게 구성된 경우 ONTAP는 자동으로 볼륨을 생성하고 볼륨 암호화를 활성화합니다.
+. 볼륨이 올바르게 생성되고 암호화되었는지 확인합니다. 이 경우 암호화된 매개 변수는 true로 표시됩니다. 'vol show-vserver_SVM_name_-fields is-encrypted'
+

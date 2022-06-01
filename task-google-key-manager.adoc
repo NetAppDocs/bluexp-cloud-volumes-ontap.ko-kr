@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: task-google-key-manager.html 
+keywords: google cloud, encryption, NVE, NetApp volume encryption, KMIP, GCP, GCP KMS, key manager service, encryption 
+summary: 타사 키 관리 서비스에 Azure Key Vault를 사용합니다. 
+---
+= Google의 클라우드 키 관리 서비스로 키를 관리합니다
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+을 사용할 수 있습니다 link:https://cloud.google.com/kms/docs["Google Cloud Platform의 키 관리 서비스(Cloud KMS)"^] Google Cloud Platform에서 구축한 응용 프로그램에서 ONTAP 암호화 키를 보호합니다.
+
+키 관리 Cloud KMS는 CLI 또는 ONTAP REST API를 통해 활성화할 수 있습니다. Cloud Volumes ONTAP용 Cloud KMS를 구성하려면 먼저 을(를) 구성해야 합니다
+
+Cloud KMS를 사용할 때는 기본적으로 데이터 SVM LIF가 클라우드 키 관리 엔드포인트와 통신하는 데 사용됩니다. 노드 관리 네트워크는 클라우드 공급자의 인증 서비스(oauth2.googleapis.com 통신하는 데 사용됩니다. 클러스터 네트워크가 올바르게 구성되지 않은 경우 클러스터는 키 관리 서비스를 제대로 사용하지 않습니다.
+
+.필수 구성 요소
+* Cloud Volumes ONTAP 클러스터 노드는 NVE를 지원해야 합니다
+* VE(Volume Encryption) 라이센스가 설치되었습니다
+* MTEKM(멀티 테넌트 암호화 키 관리) 라이센스가 설치되었습니다
+* 클러스터 또는 SVM 관리자여야 합니다
+
+
+.제한 사항
+* Cloud Volumes ONTAP에서 버전 9.10.1 이상을 실행해야 합니다
+* NSE 및 NAE는 클라우드 KMS를 사용할 수 없습니다.
+* Cloud KMS는 MetroCluster 구성에 사용할 수 없습니다.
+* 클라우드 KMS는 데이터 SVM에서만 구성할 수 있습니다
+* Google Cloud Platform의 활성 서브스크립션입니다
+
+
+.활성화
+. Google Cloud 환경:
++
+.. 대칭 GCP 키 링 및 키 생성:
+.. Cloud Volumes ONTAP 서비스 계정에 대한 사용자 지정 역할 만들기: "gcloud iam role create kmsCustomRole--project=_project_id_- title=_kms_custom_role_name_--description=_custom_role_description_--permissions=cloudkms.cryptoKeyVersions.get, cloudkms.cryptokms.list, cloudkms.cryptoKeyVersions.useToDecrypt,cloudkms.cryptoKeyVersions.useToEncrypt,cloudkms.cryptoKeys.get,cloudkms.keyRings.get,cloudkms.locations.get,cloudkms.locations.list,resourcemanager.projects.get -- stage= GA/GA가 있습니까?
+.. 사용자 지정 역할을 클라우드 KMS 키 및 Cloud Volumes ONTAP 서비스 계정에 할당합니다. "gcloud kms keys add-iam-policy-binding${_key_name_}--keyring${_key_ring_name_}--location ${_key_location_}- 멤버 ServiceAccount:${_service_account_Name_}-- 역할 프로젝트/_Role_Customprojects
+.. 서비스 계정 JSON 키 다운로드:'gcloud iam service-accounts key create key-file --iam-account=_sa-name_@_project-id_.iam.gserviceaccount.com
+
+
+. Cloud Volumes ONTAP 환경으로 전환:
++
+.. 고급 권한 수준 설정 고급 으로 전환합니다
+.. 데이터 SVM을 위한 DNS를 생성합니다. dns create-domain C. _<<project>>_.internal -name-servers_server_address_-vserver_SVM_name_'입니다
+.. CMEK 항목 생성:'Security key-manager external GCP enable-vserver_SVM_name_-project-id_project_-key-ring-name_key_ring_name_-key-ring-location_location_-key-name_key_key_key_key_name_'입니다
+.. 메시지가 표시되면 GCP 계정의 서비스 계정 JSON 키를 입력합니다.
+.. 활성화된 프로세스가 성공했는지 확인합니다. '보안 키 - 관리자 외부 GCP 검사 - vserver_svm_name_'
+.. 선택 사항: 암호화 'vol create_volume_name_>-aggregate_aggregate_-vserver_vserver_name_-size 10G'를 테스트할 볼륨을 생성합니다
+
+
+
+
+
+
+== 문제 해결
+
+문제를 해결해야 하는 경우 위의 마지막 두 단계에서 원시 REST API 로그를 지정할 수 있습니다. '세트 d'. 'systemshell-node_node_-command tail -f /mroot /etc/log/mlog/kmip2_client.log'
