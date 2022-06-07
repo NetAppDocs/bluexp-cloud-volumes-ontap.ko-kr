@@ -31,13 +31,13 @@ summary: 스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, �
 
 == 스토리지 VM을 생성합니다
 
-단일 노드 시스템 또는 HA 쌍에서 여러 스토리지 VM을 생성할 수 있습니다. CLI 또는 System Manager를 사용하여 단일 노드 시스템에서 스토리지 VM을 생성할 수 있지만, Cloud Manager API를 사용하여 HA 쌍에서 스토리지 VM을 생성해야 합니다.
+라이센스로 지원되는 경우 단일 노드 시스템 또는 HA 쌍에서 여러 스토리지 VM을 생성할 수 있습니다. CLI 또는 System Manager를 사용하여 단일 노드 시스템에서 스토리지 VM을 생성할 수 있지만, Cloud Manager API를 사용하여 HA 쌍에서 스토리지 VM을 생성해야 합니다.
 
 
 
 === 단일 노드 시스템
 
-다음 단계에서는 CLI를 사용하여 단일 노드 시스템에 새 스토리지 VM을 생성합니다. NAS LIF를 생성하려면 하나의 프라이빗 IP 주소가 필요하며, 관리 LIF를 생성하려면 또 다른 선택적 프라이빗 IP 주소가 필요합니다.
+다음 단계에서는 CLI를 사용하여 단일 노드 시스템에 새 스토리지 VM을 생성합니다. 데이터 LIF를 생성하려면 하나의 프라이빗 IP 주소가 필요하며, 관리 LIF를 생성하려면 또 다른 선택적 프라이빗 IP 주소가 필요합니다.
 
 .단계
 . Google Cloud에서 Cloud Volumes ONTAP 인스턴스로 이동하고 각 LIF에 대한 IP 범위를 nic0으로 추가합니다.
@@ -90,7 +90,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -role data -data-pr
 +
 [source, cli]
 ----
-vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
+vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 ----
 +
 스토리지 VM에서 볼륨을 생성하기 전에 새 스토리지 VM이 적어도 하나의 애그리게이트에 액세스해야 하기 때문에 이 단계가 필요합니다.
@@ -133,7 +133,7 @@ Cloud Manager는 Google Cloud에서 필요한 IP 주소를 할당합니다.
 
 == HA 쌍에서 스토리지 VM 관리
 
-Cloud Manager API는 스토리지 VM의 이름 변경 및 삭제도 지원합니다.
+Cloud Manager API는 또한 HA 쌍에서 스토리지 VM의 이름 바꾸기 및 삭제를 지원합니다.
 
 
 

@@ -3858,9 +3858,7 @@
   <block id="d8787bda3ae35a469afc376610816a6a" category="list-text">데이터 SVM을 위한 DNS를 생성합니다. dns create-domain c._&lt;project&gt;_.internal -name-servers_server_address_-vserver_SVM_name_'을 선택합니다</block>
   <block id="1601dadf3d75da8ab487484480cbf4ef" category="list-text">선택 사항: 암호화 'vol create_volume_name_-aggregate_aggregate_-vserver_vserver_name_-size 10G'를 테스트할 볼륨을 생성합니다</block>
   <block id="401a8aaa330fe64d45395192c047e1ed" category="paragraph">Cloud Volumes ONTAP는 NVE(NetApp Volume Encryption) 및 NAE(NetApp Aggregate Encryption)를 지원합니다. NVE와 NAE는 FIPS 140-2를 준수하는 볼륨 유휴 데이터 암호화를 지원하는 소프트웨어 기반 솔루션입니다. <block ref="d36456219fc3d98cd4133816e30fd33f" category="inline-link-macro-rx"></block>.</block>
-  <block id="a8e451d7a52ebee36c6527d684d09cd7" category="list-text"><block ref="a8e451d7a52ebee36c6527d684d09cd7" category="inline-link-macro-rx"></block></block>
   <block id="f0daa22edb6ee8b88bae0e5a21b552ec" category="inline-link-macro">Google Cloud 키 관리 서비스</block>
-  <block id="7cf27d24396a294ecbe07a4a35a715e6" category="list-text"><block ref="7cf27d24396a294ecbe07a4a35a715e6" category="inline-link-macro-rx"></block></block>
   <block id="8c01e5151cb74437e444454be784333c" category="list-text">설치된 볼륨 암호화(VE) 라이센스(NetApp 볼륨 암호화 라이센스는 NetApp Support에 등록된 각 Cloud Volumes ONTAP 시스템에 자동으로 설치됨)</block>
   <block id="8c2e4fec68d3b8906dcb334bbfe418bf" category="paragraph">이 단계에서는 Azure에 Cloud Volumes ONTAP 구성을 등록하는 방법과 Azure 키 저장소 및 키를 생성하는 방법을 설명합니다. 이 단계를 이미 완료한 경우, 특히 에서 올바른 구성 설정이 있는지 확인하십시오 <block ref="b6cee0c01f8bf1f1cd6348c49fbde2b0" category="inline-xref-macro-rx"></block>을 클릭한 다음 로 진행합니다 <block ref="0d835ce531ec9eb78a13d9e8f120db62" category="inline-xref-macro-rx"></block>.</block>
   <block id="04b2bf8e8c9915aa61da3721f209d407" category="list-text"><block ref="cdef42bd73f4820f7c1e1f3c23ba776b" category="inline-xref-macro-rx"></block></block>
@@ -3954,7 +3952,6 @@
   <block id="a09b01c7001d3eb80404765be4eb61c9" category="list-text">Cloud Volumes ONTAP 구성에서 Amazon EBS Elastic Volumes 기능을 지원하는 경우 원하는 대로 구성할 수 있습니다 <block ref="15950bbc5dd5b213dd93808f9892a1c5" category="inline-link-macro-rx"></block>.</block>
   <block id="1cbde96d4494f1d0a0cc701b14f4979e" category="list-text">AWS에서는 aggregate에 동일한 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 하지만 Amazon EBS Elastic Volumes 기능을 지원하는 구성이 있는 경우 aggregate에 디스크를 최대 8개까지 포함할 수 있습니다. <block ref="e64e49a1cded5f4109adae46b4faa045" category="inline-link-macro-rx"></block>.</block>
   <block id="b8dd8c06193176beb2ad15367f7a1a0d" category="paragraph">최대 디스크 크기는 16TiB입니다.</block>
-  <block id="3635902b03ef6f329f7d82d346770acc" category="summary">Cloud Volumes ONTAP HA 쌍이 VPC 공유를 지원하는 AWS에서 지원됩니다. VPC 공유를 사용하면 서브넷을 다른 AWS 계정과 공유할 수 있습니다. 이 구성을 사용하려면 AWS 환경을 설정한 다음 API를 사용하여 HA 쌍을 구축해야 합니다.</block>
   <block id="1ddb0e5b328575796533c1e7f5b1f802" category="doc">공유 서브넷에 HA 쌍 구축</block>
   <block id="18520da6851f84ab4d7ab3d88d237cd9" category="inline-link">VPC 공유</block>
   <block id="c81d796f0d5c668dfa8d68823f479c90" category="paragraph">와 함께<block ref="93089d0988badd859f8a3f19acd5c989" category="inline-link-rx"></block>Cloud Volumes ONTAP HA 구성은 다음 두 계정에 분산됩니다.</block>
@@ -4003,8 +4000,6 @@
   <block id="a22063e6d541a4b1d385c3d940e03996" category="doc">Google Cloud에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 생성합니다</block>
   <block id="77701b3d3cb3179bddf053dbed6e2e43" category="paragraph">9.11.1 릴리즈부터 Google Cloud의 특정 Cloud Volumes ONTAP 구성에서 여러 스토리지 VM이 지원됩니다. 로 이동합니다<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.</block>
   <block id="8272f5b23e79d0ee33bd5151dcddc454" category="section-title">스토리지 VM을 생성합니다</block>
-  <block id="944ec8ab61e0f52a9d2d97f0e9d3f8a8" category="paragraph">단일 노드 시스템 또는 HA 쌍에서 여러 스토리지 VM을 생성할 수 있습니다. CLI 또는 System Manager를 사용하여 단일 노드 시스템에서 스토리지 VM을 생성할 수 있지만, Cloud Manager API를 사용하여 HA 쌍에서 스토리지 VM을 생성해야 합니다.</block>
-  <block id="58bbad78237dfd7483b5391557d6f009" category="paragraph">다음 단계에서는 CLI를 사용하여 단일 노드 시스템에 새 스토리지 VM을 생성합니다. NAS LIF를 생성하려면 하나의 프라이빗 IP 주소가 필요하며, 관리 LIF를 생성하려면 또 다른 선택적 프라이빗 IP 주소가 필요합니다.</block>
   <block id="379013863d5e971d00b46819c677a99b" category="list-text">Google Cloud에서 Cloud Volumes ONTAP 인스턴스로 이동하고 각 LIF에 대한 IP 범위를 nic0으로 추가합니다.</block>
   <block id="a0ffc61dcb224c763f02ac751ef98179" category="inline-image-macro">IP 범위를 추가하여 Cloud Volumes ONTAP의 네트워크 인터페이스를 편집할 수 있는 Google Cloud 콘솔의 스크린샷.</block>
   <block id="fd22fa73f7ee3c6c4da641ee4618201b" category="paragraph"><block ref="fd22fa73f7ee3c6c4da641ee4618201b" category="inline-image-macro-rx" type="image"></block></block>
@@ -4023,7 +4018,6 @@
   <block id="78beb47b48fe8b17a288b32a8942a187" category="paragraph">'POST/occm/api/GCP/ha/working-Environments/{we_ID}/svm/'</block>
   <block id="995ddfd1247131c9653edbf829fa6e28" category="paragraph">요청 본문에는 다음이 포함되어야 합니다.</block>
   <block id="b93afa1b577022f0769bc7e27b5bcd75" category="section-title">HA 쌍에서 스토리지 VM 관리</block>
-  <block id="cf65cf1a7e9ad5d29b30934568abc52f" category="paragraph">Cloud Manager API는 스토리지 VM의 이름 변경 및 삭제도 지원합니다.</block>
   <block id="c97c5ffc330239a3245482bb4881877a" category="section-title">스토리지 VM의 이름을 바꿉니다</block>
   <block id="e0867a20bdb8328df5da5826abffd2f7" category="paragraph">필요한 경우 언제든지 스토리지 VM의 이름을 변경할 수 있습니다.</block>
   <block id="369a2d15e783c13b71dafb712d78bd30" category="list-text">다음 API 호출을 사용하여 스토리지 VM의 이름을 바꿉니다.</block>
@@ -4126,4 +4120,12 @@
   <block id="c871aaf8a95c147d6774c7ccaf68c0eb" category="sidebar">Google Cloud 관리</block>
   <block id="cb993f96a433ab0d99c7a6a17a1ddc9c" category="sidebar">System Manager에서 관리</block>
   <block id="fab7a3813da88237a3633c0b925bf6d0" category="sidebar">CLI에서 관리</block>
+  <block id="383f69885998c1a12752a714d0112637" category="summary">9.11.1 릴리즈부터 VPC 공유를 지원하는 AWS에서 Cloud Volumes ONTAP HA 쌍이 지원됩니다. VPC 공유를 사용하면 서브넷을 다른 AWS 계정과 공유할 수 있습니다. 이 구성을 사용하려면 AWS 환경을 설정한 다음 API를 사용하여 HA 쌍을 구축해야 합니다.</block>
+  <block id="443c7475fd3a991d78da491115e21872" category="paragraph">라이센스로 지원되는 경우 단일 노드 시스템 또는 HA 쌍에서 여러 스토리지 VM을 생성할 수 있습니다. CLI 또는 System Manager를 사용하여 단일 노드 시스템에서 스토리지 VM을 생성할 수 있지만, Cloud Manager API를 사용하여 HA 쌍에서 스토리지 VM을 생성해야 합니다.</block>
+  <block id="9a21580c09403b622f0f8cb3f190a88c" category="paragraph">다음 단계에서는 CLI를 사용하여 단일 노드 시스템에 새 스토리지 VM을 생성합니다. 데이터 LIF를 생성하려면 하나의 프라이빗 IP 주소가 필요하며, 관리 LIF를 생성하려면 또 다른 선택적 프라이빗 IP 주소가 필요합니다.</block>
+  <block id="985cafc0296caf519b1775b871b1e80a" category="paragraph">Cloud Manager API는 또한 HA 쌍에서 스토리지 VM의 이름 바꾸기 및 삭제를 지원합니다.</block>
+  <block id="fd821d5714ebcc986157929dd866f41c" category="inline-link">자세한 내용은 ONTAP 설명서를 참조하십시오</block>
+  <block id="780234ea39261cf819a32f7b1f62cacd" category="list-text">AWS:<block ref="f103b81da9a8e5be0e2af29f647d4fa3" category="inline-link-rx"></block></block>
+  <block id="80b607f58d83b6d6aea68e10d7e615ad" category="list-text">Azure(Azure): <block ref="a8e451d7a52ebee36c6527d684d09cd7" category="inline-link-macro-rx"></block></block>
+  <block id="c06321d34601f3b5366ec101222f76b5" category="list-text">Google 클라우드: <block ref="7cf27d24396a294ecbe07a4a35a715e6" category="inline-link-macro-rx"></block></block>
 </blocks>

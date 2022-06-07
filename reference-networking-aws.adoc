@@ -184,6 +184,14 @@ DNS 서버는 Active Directory 환경에 대한 이름 확인 서비스를 제�
 
 
 
+=== VPC 공유
+
+9.11.1 릴리즈부터 VPC 공유를 지원하는 AWS에서 Cloud Volumes ONTAP HA 쌍이 지원됩니다. VPC 공유를 사용하면 서브넷을 다른 AWS 계정과 공유할 수 있습니다. 이 구성을 사용하려면 AWS 환경을 설정한 다음 API를 사용하여 HA 쌍을 구축해야 합니다.
+
+link:task-deploy-aws-shared-vpc.html["공유 서브넷에 HA 쌍을 구축하는 방법을 알아보십시오"].
+
+
+
 == 여러 대의 AZs에서 HA 쌍에 대한 요구 사항
 
 추가 AWS 네트워킹 요구사항은 ZS(Multiple Availability Zones)를 사용하는 Cloud Volumes ONTAP HA 구성에 적용됩니다. 작업 환경을 생성할 때 Cloud Manager에 네트워킹 세부 정보를 입력해야 하므로 HA 쌍을 실행하기 전에 이러한 요구사항을 검토해야 합니다.
