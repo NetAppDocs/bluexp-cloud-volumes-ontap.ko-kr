@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-connecting-to-otc.html 
-keywords: system manager, connecting, cli, command, command line, connect, shell, interface 
-summary: Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우 ONTAP System Manager 또는 명령줄 인터페이스를 사용하여 관리할 수 있습니다. 
+keywords: connecting, cli, command, command line, connect, shell, interface 
+summary: Cloud Volumes ONTAP CLI를 사용하면 모든 관리 명령을 실행할 수 있으며 고급 작업에 이상적이고 CLI를 사용하는 것이 더 편할 경우 적합합니다. SSH를 사용하여 CLI에 연결할 수 있습니다. 
 ---
-= System Manager 또는 CLI를 사용합니다
+= CLI에서 Cloud Volumes ONTAP를 관리합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -13,39 +13,7 @@ summary: Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우 ONTA
 :imagesdir: ./media/
 
 
-Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우 ONTAP System Manager 또는 명령줄 인터페이스를 사용하여 관리할 수 있습니다.
-
-
-
-== System Manager에 연결 중
-
-Cloud Volumes ONTAP 시스템에서 실행되는 브라우저 기반 관리 툴인 System Manager에서 일부 Cloud Volumes ONTAP 작업을 수행해야 할 수 있습니다. 예를 들어, LUN을 생성하려면 System Manager를 사용해야 합니다.
-
-Cloud Manager에 액세스하는 컴퓨터는 Cloud Volumes ONTAP에 대한 네트워크 연결이 있어야 합니다. 예를 들어, 클라우드 공급자 네트워크에 있는 점프 호스트에서 Cloud Manager에 로그인해야 할 수 있습니다.
-
-ifdef::aws[]
-
-
-NOTE: 여러 AWS 가용성 영역에 구축된 Cloud Volumes ONTAP HA 구성에서는 클러스터 관리 인터페이스에 부동 IP 주소를 사용합니다. 즉, 외부 라우팅을 사용할 수 없습니다. 동일한 라우팅 도메인의 일부인 호스트에서 접속해야 합니다.
-
-endif::aws[]
-
-.단계
-. Canvas에서 Cloud Volumes ONTAP 작업 환경을 선택합니다.
-. 오른쪽 창에서 정보 아이콘을 클릭하고 클러스터 관리 IP를 복사합니다.
-+
-image:screenshot-cvo-info.png["Cloud Volumes ONTAP 작업 환경의 Canvas에 표시되는 정보 아이콘의 스크린샷"]
-
-. Cloud Volumes ONTAP에 대한 네트워크 연결이 있는 컴퓨터에서 웹 브라우저를 열고 IP 주소를 입력합니다.
-. 로그인 화면에서 사용자 이름 필드에 * admin * 을 입력하고 작업 환경을 만들 때 지정한 암호를 입력한 다음 * 로그인 * 을 클릭합니다.
-
-
-System Manager 콘솔이 로드됩니다. 이제 이 기능을 사용하여 Cloud Volumes ONTAP를 관리할 수 있습니다.
-
-
-
-== Cloud Volumes ONTAP CLI에 연결 중
-
+[role="lead"]
 Cloud Volumes ONTAP CLI를 사용하면 모든 관리 명령을 실행할 수 있으며 고급 작업에 이상적이고 CLI를 사용하는 것이 더 편할 경우 적합합니다. SSH(Secure Shell)를 사용하여 CLI에 연결할 수 있습니다.
 
 Cloud Volumes ONTAP에 연결하기 위해 SSH를 사용하는 호스트에는 Cloud Volumes ONTAP에 대한 네트워크 연결이 있어야 합니다. 예를 들어, 클라우드 공급자 네트워크에 있는 점프 호스트에서 SSH를 사용해야 할 수 있습니다.

@@ -23,8 +23,6 @@ settings:
   langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: 모든 Cloud Manager 설명서
-    url: https://docs.netapp.com/us-en/cloud-manager-family
   - title: Cloud Volumes ONTAP 문서
     url: "/index.html"
   - title: 릴리스 정보
@@ -52,6 +50,8 @@ sidebar:
           url: "/reference-networking-aws.html"
         - title: AWS 전송 게이트웨이를 설정합니다
           url: "/task-setting-up-transit-gateway.html"
+        - title: 공유 서브넷에 HA 쌍 구축
+          url: "/task-deploy-aws-shared-vpc.html"
         - title: AWS의 보안 그룹 규칙
           url: "/reference-security-groups.html"
       - title: AWS KMS를 설정합니다
@@ -134,6 +134,9 @@ sidebar:
       - title: Azure에서 스토리지 VM을 생성합니다
         flavor: azure
         url: "/task-managing-svms-azure.html"
+      - title: Google Cloud에서 스토리지 VM을 생성합니다
+        flavor: gcp
+        url: "/task-managing-svms-gcp.html"
     - title: 보안 및 데이터 암호화
       entries:
       - title: NetApp 암호화로 볼륨 암호화
@@ -168,7 +171,7 @@ sidebar:
           url: "/task-removing.html"
         - title: 시스템을 삭제합니다
           url: "/task-deleting-working-env.html"
-      - title: AWS에서 관리
+      - title: 설치하고
         flavor: aws
         entries:
         - title: EC2 인스턴스 유형을 변경합니다
@@ -177,7 +180,7 @@ sidebar:
           url: "/task-change-route-tables.html"
         - title: AWS 비용 모니터링
           url: "/task-monitoring-costs.html"
-      - title: Azure에서 관리
+      - title: Azure 관리
         flavor: azure
         entries:
         - title: Azure VM 유형을 변경합니다
@@ -186,12 +189,14 @@ sidebar:
           url: "/task-overriding-cifs-locks.html"
         - title: Azure Private Link를 사용합니다
           url: "/task-enabling-private-link.html"
-      - title: Google Cloud에서 관리
+      - title: Google Cloud 관리
         flavor: gcp
         entries:
         - title: 기계 유형을 변경합니다
           url: "/task-change-gcp-machine.html"
-      - title: System Manager 또는 CLI에서 관리
+      - title: System Manager에서 관리
+        url: "/task-administer-advanced-view.html"
+      - title: CLI에서 관리
         url: "/task-connecting-to-otc.html"
     - title: 시스템 상태 및 이벤트입니다
       entries:
@@ -209,6 +214,9 @@ sidebar:
         url: "/concept-client-protocols.html"
       - title: 디스크와 애그리게이트
         url: "/concept-storage.html"
+      - title: AWS의 탄력적인 볼륨
+        flavor: aws
+        url: "/concept-aws-elastic-volumes.html"
       - title: 데이터 계층화
         url: "/concept-data-tiering.html"
       - title: 스토리지 관리
@@ -326,3 +334,4 @@ homepage:
 product-family:
   name: Cloud Manager
   repo: cloud-manager-family
+  sidebar_label: All Cloud Manager documentation

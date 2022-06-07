@@ -22,7 +22,7 @@ summary: 기본적으로 Cloud Manager는 Cloud Volumes ONTAP과 관련 스토�
 
 == Azure의 커넥터 위치
 
-커넥터는 해당 커넥터가 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 영역에 배포하거나 에 배포되어야 합니다 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] Cloud Volumes ONTAP 시스템의 경우 이 요구 사항은 Cloud Volumes ONTAP와 연결된 스토리지 계정 간에 Azure 전용 링크 연결이 사용되도록 합니다. link:task-enabling-private-link.html["Cloud Volumes ONTAP에서 Azure 프라이빗 링크를 사용하는 방법에 대해 알아보십시오"].
+커넥터는 해당 커넥터가 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 영역에 배포하거나 에 배포되어야 합니다 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] Cloud Volumes ONTAP 시스템의 경우 이 요구 사항은 Cloud Volumes ONTAP와 연결된 스토리지 계정 간에 Azure 전용 링크 연결이 사용되도록 합니다.
 
 
 
@@ -91,6 +91,8 @@ Cloud Manager가 Azure Private Link를 생성하지 못하는 경우 롤백을 �
 == Azure Private Link 연결을 비활성화합니다
 
 Azure 구성에 필요한 경우 Cloud Volumes ONTAP 및 저장소 계정 간의 Azure 개인 링크 연결을 비활성화할 수 있습니다.
+
+Azure Private Link 연결을 사용하지 않도록 설정하면 Cloud Manager에서 서비스 끝점을 대신 사용합니다. 서비스 엔드포인트에서도 Cloud Manager는 Cloud Volumes ONTAP가 구축된 VNET와 커넥터가 구축된 VNET에 대한 스토리지 계정 액세스를 제한합니다.
 
 .단계
 . Cloud Manager 콘솔의 오른쪽 상단에서 설정 아이콘을 클릭하고 * 커넥터 설정 * 을 선택합니다.

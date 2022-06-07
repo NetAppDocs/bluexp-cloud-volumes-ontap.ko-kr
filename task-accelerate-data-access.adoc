@@ -26,4 +26,4 @@ Cloud Manager에서는 현재 FlexCache 볼륨을 관리할 수 없지만 ONTAP 
 
 3.7.2 릴리스부터는 Cloud Manager에서 모든 새 Cloud Volumes ONTAP 시스템에 대한 FlexCache 라이센스를 생성합니다. 이 라이센스에는 500GiB 사용 제한이 포함됩니다.
 
-video::PBNPVRUeT1o[youtube, width=848,height=480]
+video::PBNPVRUeT1o[youtube,width=848,height=480]

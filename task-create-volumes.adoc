@@ -37,6 +37,7 @@ Cloud Manager에서 다양한 방법으로 새 볼륨을 생성할 수 있습니
 ifdef::aws[]
 
 * AWS에서 CIFS를 사용하려면 DNS와 Active Directory를 설정해야 합니다. 자세한 내용은 을 참조하십시오 link:reference-networking-aws.html["Cloud Volumes ONTAP for AWS의 네트워킹 요구사항"].
+* Cloud Volumes ONTAP 구성에서 Amazon EBS Elastic Volumes 기능을 지원하는 경우 원하는 대로 구성할 수 있습니다 link:concept-aws-elastic-volumes.html["볼륨을 생성할 때 발생하는 상황에 대해 자세히 알아보십시오"].
 
 
 endif::aws[]

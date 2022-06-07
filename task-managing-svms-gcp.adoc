@@ -1,0 +1,173 @@
+---
+sidebar: sidebar 
+permalink: task-managing-svms-gcp.html 
+keywords: storage virtual machine, vserver, svm, storage vm, supported number, number supported, create svm, create storage vm, create vserver 
+summary: 스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, 클라이언트에 스토리지 및 데이터 서비스를 제공합니다. SVM 또는 가상 서버로서 이를 알 수 있습니다. Cloud Volumes ONTAP는 기본적으로 하나의 스토리지 VM으로 구성되지만 일부 구성에서는 추가 스토리지 VM을 지원합니다. 
+---
+= Google Cloud에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 생성합니다
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, 클라이언트에 스토리지 및 데이터 서비스를 제공합니다. 이를 _SVM_ 또는 _vserver_로 알고 있을 수 있습니다. Cloud Volumes ONTAP는 기본적으로 하나의 스토리지 VM으로 구성되지만 일부 구성에서는 추가 스토리지 VM을 지원합니다.
+
+
+
+== 지원되는 스토리지 VM 수입니다
+
+9.11.1 릴리즈부터 Google Cloud의 특정 Cloud Volumes ONTAP 구성에서 여러 스토리지 VM이 지원됩니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트"^] 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.
+
+다른 모든 Cloud Volumes ONTAP 구성에서는 재해 복구에 사용되는 1개의 데이터 서비스 스토리지 VM과 1개의 대상 스토리지 VM을 지원합니다. 소스 스토리지 VM에 중단이 발생할 경우 데이터 액세스를 위해 대상 스토리지 VM을 활성화할 수 있습니다.
+
+
+
+== 스토리지 VM을 생성합니다
+
+단일 노드 시스템 또는 HA 쌍에서 여러 스토리지 VM을 생성할 수 있습니다. CLI 또는 System Manager를 사용하여 단일 노드 시스템에서 스토리지 VM을 생성할 수 있지만, Cloud Manager API를 사용하여 HA 쌍에서 스토리지 VM을 생성해야 합니다.
+
+
+
+=== 단일 노드 시스템
+
+다음 단계에서는 CLI를 사용하여 단일 노드 시스템에 새 스토리지 VM을 생성합니다. NAS LIF를 생성하려면 하나의 프라이빗 IP 주소가 필요하며, 관리 LIF를 생성하려면 또 다른 선택적 프라이빗 IP 주소가 필요합니다.
+
+.단계
+. Google Cloud에서 Cloud Volumes ONTAP 인스턴스로 이동하고 각 LIF에 대한 IP 범위를 nic0으로 추가합니다.
++
+image:screenshot-gcp-add-ip-range.png["IP 범위를 추가하여 Cloud Volumes ONTAP의 네트워크 인터페이스를 편집할 수 있는 Google Cloud 콘솔의 스크린샷."]
+
++
+스토리지 VM에서 관리 LIF를 생성하려면 데이터 LIF에 하나의 IP 주소와 다른 선택적 IP 주소가 필요합니다.
+
++
+https://cloud.google.com/vpc/docs/configure-alias-ip-ranges#adding_alias_ip_ranges_to_an_existing_instance["Google Cloud 설명서: 기존 인스턴스에 별칭 IP 범위 추가"^]
+
+. 스토리지 VM을 생성하고 스토리지 VM으로 가는 경로를 생성합니다.
++
+[source, cli]
+----
+vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-name> -rootvolume-security-style unix
+----
++
+[source, cli]
+----
+network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
+----
+. Google Cloud에 추가한 IP 주소를 지정하여 데이터 LIF를 생성합니다.
++
+[role="tabbed-block"]
+====
+.iSCSI
+--
+[source, cli]
+----
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
+----
+--
+.NFS 또는 SMB
+--
+[source, cli]
+----
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
+----
+--
+====
+. 선택 사항: Google Cloud에 추가한 IP 주소를 지정하여 스토리지 VM 관리 LIF를 생성합니다.
++
+[source, cli]
+----
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node node1 -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
+----
+. 스토리지 VM에 하나 이상의 애그리게이트를 할당합니다.
++
+[source, cli]
+----
+vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
+----
++
+스토리지 VM에서 볼륨을 생성하기 전에 새 스토리지 VM이 적어도 하나의 애그리게이트에 액세스해야 하기 때문에 이 단계가 필요합니다.
+
+
+
+
+
+=== HA 쌍
+
+Cloud Manager API를 사용하여 Google Cloud의 Cloud Volumes ONTAP 시스템에서 스토리지 VM을 생성해야 합니다. Cloud Manager는 아웃바운드 SMB/CIFS 통신에 필요한 HA 쌍을 위한 iSCSI LIF뿐만 아니라 필요한 LIF 서비스로 스토리지 VM을 구성하기 때문에 System Manager 또는 CLI가 아닌 API를 사용해야 합니다.
+
+Cloud Manager는 Google Cloud에서 필요한 IP 주소를 할당합니다.
+
+3.9.19 릴리즈부터 Cloud Volumes ONTAP HA 쌍에 대한 스토리지 VM을 생성하고 관리하기 위해 커넥터에는 다음 권한이 필요합니다.
+
+[source, yaml]
+----
+- compute.instanceGroups.get
+- compute.addresses.get
+----
+이러한 권한은 에 포함되어 있습니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["NetApp에서 제공하는 정책"^]
+
+.단계
+. 다음 API 호출을 사용하여 스토리지 VM을 생성합니다.
++
+'POST/occm/api/GCP/ha/working-Environments/{we_ID}/svm/'
+
++
+요청 본문에는 다음이 포함되어야 합니다.
+
++
+[source, json]
+----
+{ "svmName": "myNewSvm1" }
+----
+
+
+
+
+== HA 쌍에서 스토리지 VM 관리
+
+Cloud Manager API는 스토리지 VM의 이름 변경 및 삭제도 지원합니다.
+
+
+
+=== 스토리지 VM의 이름을 바꿉니다
+
+필요한 경우 언제든지 스토리지 VM의 이름을 변경할 수 있습니다.
+
+.단계
+. 다음 API 호출을 사용하여 스토리지 VM의 이름을 바꿉니다.
++
+'Put/occm/api/GCP/ha/working-Environments/{we_ID}/svm'
+
++
+요청 본문에는 다음이 포함되어야 합니다.
+
++
+[source, json]
+----
+{
+"svmNewName": "newSvmName",
+"svmName": "oldSvmName"
+}
+----
+
+
+
+
+=== 스토리지 VM을 삭제합니다
+
+스토리지 VM이 더 이상 필요하지 않은 경우 Cloud Volumes ONTAP에서 삭제할 수 있습니다.
+
+.단계
+. 다음 API 호출을 사용하여 스토리지 VM을 삭제합니다.
++
+삭제/occm/api/GCP/ha/working-Environments/{we_ID}/svm/{SVM_name}'
+
+

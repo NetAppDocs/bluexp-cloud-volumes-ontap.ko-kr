@@ -40,9 +40,11 @@ ifdef::aws[]
 
 AWS에서 Cloud Volumes ONTAP는 사용자 데이터에 EBS 스토리지를 사용하고, 일부 EC2 인스턴스 유형에서 로컬 NVMe 스토리지를 Flash Cache로 사용합니다.
 
-EBS 스토리지:: AWS에서는 aggregate에 동일한 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 최대 디스크 크기는 16TiB입니다.
+EBS 스토리지:: AWS에서는 aggregate에 동일한 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 하지만 Amazon EBS Elastic Volumes 기능을 지원하는 구성이 있는 경우 aggregate에 디스크를 최대 8개까지 포함할 수 있습니다. link:concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].
 +
 --
+최대 디스크 크기는 16TiB입니다.
+
 기본 EBS 디스크 유형은 범용 SSD(GP3 또는 GP2), 프로비저닝된 IOPS SSD(i1) 또는 처리량 최적화 HDD(st1)일 수 있습니다. EBS 디스크를 Amazon S3와 에 페어링할 수 있습니다 link:concept-data-tiering.html["비활성 데이터를 저비용 오브젝트 스토리지로 계층화합니다"].
 
 

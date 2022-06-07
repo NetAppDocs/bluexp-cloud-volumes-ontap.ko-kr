@@ -77,8 +77,14 @@ EBS 디스크 유형입니다:: EBS 디스크 유형의 차이점은 다음과 �
 +
 GP3 디스크를 선택하면 Cloud Manager가 기본 IOPS 및 처리량 값을 채워 선택한 디스크 크기를 기준으로 GP2 디스크와 동일한 성능을 제공합니다. 더 높은 비용으로 더 나은 성능을 얻기 위해 값을 늘릴 수 있지만 성능이 저하될 수 있으므로 더 낮은 값을 지원하지 않습니다. 즉, 기본값을 그대로 사용하거나 값을 늘립니다. 낮추지 마십시오. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["GP3 디스크 및 성능에 대해 자세히 알아보십시오"^].
 
++
+Cloud Volumes ONTAP는 GP3 디스크를 사용하는 Amazon EBS Elastic Volumes 기능을 지원합니다. link:concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].
+
 * _GP2(General Purpose SSD)_디스크는 광범위한 워크로드에 대해 비용과 성능의 균형을 맞춥니다. 성능은 IOPS 측면에서 정의됩니다.
 * _provisioned IOPS ssd(i1)_disk는 높은 비용으로 최고의 성능을 요구하는 중요한 응용 프로그램을 위한 것입니다.
++
+Cloud Volumes ONTAP는 iio1 디스크에서 Amazon EBS Elastic Volumes 기능을 지원합니다. link:concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].
+
 * _Throughput Optimized HDD(st1)_디스크는 낮은 가격으로 빠르고 일관된 처리량을 필요로 하는 자주 액세스되는 워크로드에 적합합니다.
 +
 
@@ -87,7 +93,7 @@ NOTE: 처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오
 
 
 --
-EBS 디스크 크기입니다:: Cloud Volumes ONTAP 시스템을 시작할 때 초기 디스크 크기를 선택해야 합니다. 그 이후에는 가능합니다 link:concept-storage-management.html["Cloud Manager로 시스템 용량을 관리할 수 있습니다"]하지만 원하는 경우 link:task-create-aggregates.html["스스로 애그리게이트를 생성합니다"]다음 사항에 유의하십시오.
+EBS 디스크 크기입니다:: 를 지원하지 않는 구성을 선택하는 경우 link:concept-aws-elastic-volumes.html["Amazon EBS Elastic Volumes 기능"]그런 다음 Cloud Volumes ONTAP 시스템을 시작할 때 초기 디스크 크기를 선택해야 합니다. 그 이후에는 가능합니다 link:concept-storage-management.html["Cloud Manager로 시스템 용량을 관리할 수 있습니다"]하지만 원하는 경우 link:task-create-aggregates.html["스스로 애그리게이트를 생성합니다"]다음 사항에 유의하십시오.
 +
 --
 * Aggregate의 모든 디스크는 동일한 크기여야 합니다.
@@ -97,6 +103,9 @@ EBS 디스크 크기입니다:: Cloud Volumes ONTAP 시스템을 시작할 때 �
 +
 EBS 디스크 성능에 대한 자세한 내용은 을 참조하십시오 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 설명서:EBS 볼륨 유형"^].
 
++
+위에서 설명한 것처럼, Amazon EBS Elastic Volumes 기능을 지원하는 Cloud Volumes ONTAP 구성에서는 디스크 크기를 선택할 수 없습니다. link:concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].
+
 
 
 --
@@ -104,7 +113,7 @@ EBS 디스크 성능에 대한 자세한 내용은 을 참조하십시오 http:/
 
 AWS에서 Cloud Volumes ONTAP 시스템 사이징에 대한 자세한 내용은 다음 비디오에서 확인하십시오.
 
-video::GELcXmOuYPw[youtube, width=848,height=480]
+video::GELcXmOuYPw[youtube,width=848,height=480]
 
 
 == 기본 시스템 디스크를 봅니다

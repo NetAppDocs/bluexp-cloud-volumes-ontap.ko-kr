@@ -1,0 +1,202 @@
+---
+sidebar: sidebar 
+permalink: concept-aws-elastic-volumes.html 
+keywords: elastic volumes, ev, ebs elastic volumes, ebs, amazon ebs, disk growth 
+summary: Cloud Volumes ONTAP 애그리게이트에서 Amazon EBS Elastic Volumes 기능을 지원하여 더 나은 성능과 추가 용량을 제공하는 동시에 Cloud Manager가 필요에 따라 기본 디스크 용량을 자동으로 늘릴 수 있습니다. 
+---
+= AWS의 탄력적인 볼륨
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 애그리게이트에서 Amazon EBS Elastic Volumes 기능을 지원하여 더 나은 성능과 추가 용량을 제공하는 동시에 Cloud Manager가 필요에 따라 기본 디스크 용량을 자동으로 늘릴 수 있습니다.
+
+
+
+== 이점
+
+* 동적 디스크 확장
++
+Cloud Volumes ONTAP가 실행 중이고 디스크가 아직 연결된 상태에서 Cloud Manager를 사용하면 디스크 크기를 동적으로 늘릴 수 있습니다.
+
+* 더 뛰어난 성능
++
+Elastic Volumes에서 설정된 애그리게이트에는 2개의 RAID 그룹에 걸쳐 동일한 활용의 최대 8개의 디스크를 포함할 수 있습니다. 이 구성은 더 많은 처리량과 일관된 성능을 제공합니다.
+
+* 더 커진 애그리게이트
++
+8개의 디스크를 지원하여 최대 128TiB의 애그리게이트 용량을 제공합니다. 이러한 제한은 Elastic Volumes 기능을 사용할 수 없는 애그리게이트에 대해 6개의 디스크 한계 및 96TiB 제한보다 높습니다.
+
++
+총 시스템 용량 제한은 동일하게 유지됩니다.
+
+
+
+https://aws.amazon.com/ebs/features/["AWS의 Elastic Volumes에 대해 자세히 알아보십시오"^]
+
+
+
+== 지원되는 구성
+
+Amazon EBS Elastic Volumes 기능은 특정 Cloud Volumes ONTAP 버전 및 특정 EBS 디스크 유형에서 지원됩니다.
+
+
+
+=== Cloud Volumes ONTAP 버전입니다
+
+탄성 볼륨 기능은 버전 9.11.0 이상에서 생성된 _NEW_Cloud Volumes ONTAP 시스템에서 지원됩니다. 이 기능은 9.11.0 이전에 배포된 기존 Cloud Volumes ONTAP 시스템에서 _NOT_지원됨 입니다.
+
+예를 들어, Cloud Volumes ONTAP 9.9.0 시스템을 만든 다음 나중에 이 시스템을 버전 9.11.0으로 업그레이드한 경우에는 탄성 볼륨 기능이 지원되지 않습니다. 버전 9.11.0 이상을 사용하여 배포된 새 시스템이어야 합니다.
+
+
+
+=== EBS 디스크 유형
+
+GP3(General Purpose SSD) 또는 ios1(Provisioned IOPS SSD)을 사용하는 경우 Elastic Volumes 기능이 애그리게이트 레벨에서 자동으로 활성화됩니다. Elastic Volumes 기능은 다른 디스크 유형을 사용하는 애그리게이트에서는 지원되지 않습니다.
+
+
+
+== 필수 AWS 권한
+
+3.9.19 릴리즈부터 Cloud Volumes ONTAP 애그리게이트에서 탄성 볼륨 기능을 활성화하고 관리하려면 다음 권한이 필요합니다.
+
+* EC2: 볼륨 수정 설명
+* EC2: ModifyVolume(수정 볼륨)
+
+
+이러한 권한은 에 포함되어 있습니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["NetApp에서 제공하는 정책"^]
+
+
+
+== Elastic Volumes의 지원 방식
+
+Elastic Volumes 기능이 설정된 애그리게이트는 하나 또는 두 개의 RAID 그룹으로 구성됩니다. 각 RAID 그룹에는 동일한 용량을 가진 4개의 동일한 디스크가 있습니다. 다음은 각각 2.5TiB인 디스크 4개가 있는 10TiB 애그리게이트의 예입니다.
+
+image:diagram-aws-elastic-volumes-one-raid-group.png["같은 크기의 디스크 4개로 구성된 RAID 그룹과 애그리게이트를 보여 주는 개념적 이미지입니다."]
+
+Cloud Manager에서 Aggregate는 하나의 RAID 그룹으로 시작됩니다. 추가 용량이 필요한 경우 Cloud Manager는 RAID 그룹의 모든 디스크 용량을 동일한 용량으로 늘려 애그리게이트를 확장할 수 있습니다. 용량 증가는 애그리게이트 크기의 최소 256GiB 또는 10%입니다.
+
+예를 들어, 1TiB Aggregate가 있는 경우 각 디스크는 250GiB입니다. 총 용량의 10%는 100GiB입니다. 이 값이 256GiB보다 낮으므로 애그리게이트의 크기가 최소 256GiB(각 디스크의 경우 64GiB)까지 증가합니다.
+
+Cloud Volumes ONTAP 시스템이 실행 중이고 디스크가 아직 연결된 상태에서 Cloud Manager를 사용하면 디스크 크기가 증가합니다. 이러한 변경은 무중단으로 제공됩니다.
+
+Aggregate가 64TiB(또는 각 디스크의 16TiB)에 도달하면 Cloud Manager가 추가 용량을 위해 두 번째 RAID 그룹을 생성합니다. 두 번째 RAID 그룹은 첫 번째 RAID 그룹과 동일하게 작동합니다. 네 개의 디스크가 정확히 동일한 용량으로 최대 64TiB까지 증가할 수 있습니다. 즉, Aggregate의 최대 용량은 128TiB입니다.
+
+다음은 두 개의 RAID 그룹이 있는 애그리게이트의 예입니다. 첫 번째 RAID 그룹의 용량 제한에 도달했으며 두 번째 RAID 그룹의 디스크에 여유 공간이 충분합니다.
+
+image:diagram-aws-elastic-volumes-two-raid-groups.png["4개의 같은 크기의 디스크로 구성된 Aggregate와 2개의 RAID 그룹을 보여주는 개념적 이미지입니다."]
+
+
+
+=== 볼륨을 생성할 때 수행되는 작업
+
+GP3 또는 io1 디스크를 사용하는 볼륨을 생성하는 경우 Cloud Manager는 다음과 같이 aggregate에 볼륨을 생성합니다.
+
+* Elastic Volumes가 설정된 기존 GP3 또는 io1 애그리게이트는 Cloud Manager가 해당 애그리게이트에 볼륨을 생성합니다.
+* Elastic Volumes가 설정된 GP3 또는 io1 애그리게이트가 여러 개 있는 경우 Cloud Manager는 최소한의 리소스가 필요한 애그리게이트에 볼륨을 생성합니다.
+* 시스템에 Elastic Volumes에 대해 활성화되지 않은 GP3 또는 ios1 애그리게이트만 있는 경우 해당 애그리게이트에 볼륨이 생성됩니다.
++
+[NOTE]
+====
+이 시나리오는 가능성이 낮지만 다음 두 가지 경우에 가능합니다.
+
+** API에서 Aggregate를 생성할 때 Elastic Volumes 기능을 명시적으로 비활성화했습니다.
+** 사용자 인터페이스에서 새 Cloud Volumes ONTAP 시스템을 생성했습니다. 이 경우 초기 애그리게이트에 탄성 볼륨 기능이 비활성화됩니다. 검토 <<Limitations>> 을 참조하십시오.
+
+
+====
+* 기존 Aggregate의 용량이 충분한 경우 Cloud Manager는 Elastic Volumes가 설정된 애그리게이트를 생성한 다음 해당 새 애그리게이트에 볼륨을 생성합니다.
++
+Aggregate의 크기는 요청된 볼륨 크기와 추가 10% 용량을 기준으로 합니다.
+
+
+
+
+
+=== 용량 관리 모드
+
+Connector의 용량 관리 모드는 다른 유형의 집선과 유사한 방식으로 Elastic Volumes와 작동합니다.
+
+* 자동 모드를 설정(기본 설정)하면 추가 용량이 필요한 경우 Cloud Manager에서 자동으로 애그리게이트 크기를 늘립니다.
+* 용량 관리 모드를 수동으로 변경하면 Cloud Manager에서 추가 용량 구매 승인을 요청합니다.
+
+
+link:concept-storage-management.html#capacity-management["용량 관리 모드에 대해 자세히 알아보십시오"].
+
+
+
+== 제한 사항
+
+* 애그리게이트 크기를 늘리는 데 최대 6시간이 걸릴 수 있습니다. 이 시간 동안에는 Cloud Manager가 해당 애그리게이트에 대한 추가 용량을 요청할 수 없습니다.
+* 이때 초기 애그리게이트에 Elastic Volumes가 설정된 새 Cloud Volumes ONTAP 시스템을 생성하는 작업은 API에서만 지원됩니다. 이 작업은 Cloud Manager 사용자 인터페이스에서 지원되지 않습니다. 사용자 인터페이스에서 새 Cloud Volumes ONTAP 9.11.0 이상 시스템을 생성할 경우 초기 애그리게이트에 탄성 볼륨이 활성화되지 않습니다.
++
+사용자 인터페이스에서 다른 모든 작업(예: 새 집계 만들기)이 지원됩니다.
+
+
+
+
+
+== 탄성 볼륨 작업 방법
+
+다음과 같이 Cloud Manager에서 Elastic Volumes를 사용할 수 있습니다.
+
+* 초기 애그리게이트에 Elastic Volumes가 설정된 새 시스템을 생성합니다
++
+에 설명된 대로 <<Limitations>>이 작업은 현재 API에서만 지원됩니다. 사용자 인터페이스에서 지원되지 않습니다.
+
++
+API 호출을 시작하면 초기 집계에서 Elastic Volumes 기능이 기본적으로 활성화됩니다.
+
++
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/overview.html["API를 사용하여 Cloud Volumes ONTAP를 생성하는 방법을 알아보십시오"^]
+
+* Elastic Volumes가 설정된 Aggregate에 새 볼륨을 생성합니다
++
+GP3 또는 io1 디스크를 사용하는 볼륨을 생성하는 경우 Cloud Manager는 Elastic Volumes가 설정된 애그리게이트에 볼륨을 자동으로 생성합니다. 자세한 내용은 을 참조하십시오 <<What happens when you create a volume>>.
+
++
+link:task-create-volumes.html["볼륨을 생성하는 방법에 대해 알아보십시오"].
+
+* Elastic Volumes가 설정된 새 Aggregate를 생성합니다
++
+Cloud Volumes ONTAP 시스템이 버전 9.11.0 이상에서 생성된 경우 GP3 또는 ios1 디스크를 사용하는 새 애그리게이트에 탄력적인 볼륨이 자동으로 활성화됩니다.
+
++
+Aggregate를 작성하면 Cloud Manager에서 Aggregate의 용량 크기를 묻는 메시지를 표시합니다. 이는 디스크 크기 및 디스크 수를 선택하는 다른 구성과 다릅니다.
+
++
+다음 스크린샷은 GP3 디스크로 구성된 새로운 Aggregate의 예를 보여줍니다.
+
++
+image:screenshot-aggregate-size-ev.png["애그리게이트 크기를 TiB로 입력하는 GP3 디스크의 Aggregate Disks 화면 스크린샷"]
+
++
+link:task-create-aggregates.html["Aggregate를 생성하는 방법을 알아보십시오"].
+
+* Elastic Volumes가 설정된 애그리게이트를 식별합니다
++
+고급 할당 페이지로 이동하면 애그리게이트에 Elastic Volumes 기능이 설정되어 있는지 확인할 수 있습니다. 다음 예에서는 aggr2에 Elastic Volumes가 활성화되어 있는 반면 aggr1은 활성화되어 있지 않습니다.
+
++
+image:screenshot-elastic-volumes-enabled.png["Elastic Volumes Enabled라는 텍스트가 있는 필드가 있는 두 개의 집계를 보여 주는 스크린샷"]
+
+* Aggregate에 용량을 추가합니다
++
+Cloud Manager는 필요에 따라 Aggregate에 용량을 자동으로 추가하지만 용량을 직접 수동으로 늘릴 수 있습니다.
+
++
+link:task-manage-aggregates.html["애그리게이트 용량을 늘리는 방법에 대해 알아보십시오"].
+
+* Elastic Volumes가 설정된 Aggregate에 데이터를 복제합니다
++
+대상 Cloud Volumes ONTAP 시스템이 Elastic Volumes를 지원하는 경우, GP3 또는 ios1 디스크를 선택하면 대상 볼륨이 활성화된 Aggregate에 배치됩니다.
+
++
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["데이터 복제를 설정하는 방법에 대해 알아보십시오"^]
+
+

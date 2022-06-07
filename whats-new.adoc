@@ -20,6 +20,96 @@ Cloud Manager에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알
 
 
 
+== 2022년 6월 7일
+
+다음 변경 사항은 커넥터의 3.9.19 릴리스에 도입되었습니다.
+
+
+
+=== Cloud Volumes ONTAP 9.11.1
+
+이제 Cloud Manager는 새로운 기능 및 추가 클라우드 공급자 지역을 지원하는 Cloud Volumes ONTAP 9.11.1을 배포 및 관리할 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^]
+
+
+
+=== 새 고급 보기
+
+Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우 ONTAP 시스템과 함께 제공되는 관리 인터페이스인 ONTAP 시스템 관리자를 사용하여 이 작업을 수행할 수 있습니다. Cloud Manager에 System Manager 인터페이스를 직접 포함하므로 고급 관리를 위해 Cloud Manager를 그대로 둘 필요가 없습니다.
+
+이 고급 보기는 Cloud Volumes ONTAP 9.10.0 이상에서 미리 보기로 사용할 수 있습니다. NetApp은 이 경험을 개선하고 다음 릴리즈에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 사용하여 피드백을 보내주십시오.
+
+link:task-administer-advanced-view.html["고급 보기에 대해 자세히 알아보십시오"].
+
+ifdef::aws[]
+
+
+
+=== Amazon EBS Elastic Volumes 지원
+
+Cloud Volumes ONTAP 애그리게이트에서 Amazon EBS Elastic Volumes 기능을 지원하여 더 나은 성능과 추가 용량을 제공하는 동시에 Cloud Manager가 필요에 따라 기본 디스크 용량을 자동으로 늘릴 수 있습니다.
+
+Elastic Volumes에 대한 지원은 _new_Cloud Volumes ONTAP 9.11.0 시스템과 GP3 및 ios1 EBS 디스크 유형으로 시작됩니다.
+
+link:concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].
+
+Elastic Volumes를 지원하려면 Connector에 대한 새로운 AWS 권한이 필요합니다.
+
+[source, json]
+----
+"ec2:DescribeVolumesModifications",
+"ec2:ModifyVolume",
+----
+Cloud Manager에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. 에서 최신 사용 권한 목록을 찾을 수 있습니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 정책 페이지"^].
+
+
+
+=== 공유 AWS 서브넷에 HA 쌍 구축 지원
+
+Cloud Volumes ONTAP 9.11.1에는 AWS VPC 공유에 대한 지원이 포함되어 있습니다. 이번 릴리즈의 Connector에서는 API를 사용할 때 AWS 공유 서브넷에 HA 쌍을 구축할 수 있습니다.
+
+link:task-deploy-aws-shared-vpc.html["공유 서브넷에 HA 쌍을 구축하는 방법을 알아보십시오"].
+
+endif::aws[]
+
+ifdef::azure[]
+
+
+
+=== 서비스 엔드포인트를 사용할 경우 네트워크 액세스가 제한됩니다
+
+이제 Cloud Volumes ONTAP와 스토리지 계정 간의 연결에 VNET 서비스 끝점을 사용할 때 클라우드 관리자가 네트워크 액세스를 제한합니다. Azure Private Link 연결을 사용하지 않도록 설정하면 Cloud Manager에서 서비스 끝점을 사용합니다.
+
+link:task-enabling-private-link.html["Cloud Volumes ONTAP를 사용한 Azure 전용 링크 연결에 대해 자세히 알아보십시오"].
+
+endif::azure[]
+
+ifdef::gcp[]
+
+
+
+=== Google Cloud에서 스토리지 VM 생성 지원
+
+이제 Google Cloud의 Cloud Volumes ONTAP에서 9.11.1 릴리즈부터 여러 스토리지 VM이 지원됩니다. 이번 커넥터 릴리즈부터 Cloud Manager를 사용하면 API를 사용하여 Google Cloud의 Cloud Volumes ONTAP HA 쌍에서 스토리지 VM을 생성할 수 있습니다.
+
+스토리지 VM 생성을 지원하려면 Connector에 대한 새로운 Google Cloud 권한이 필요합니다.
+
+[source, yaml]
+----
+- compute.instanceGroups.get
+- compute.addresses.get
+----
+ONTAP CLI 또는 System Manager를 사용하여 단일 노드 시스템에 스토리지 VM을 생성해야 합니다.
+
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["Google Cloud의 스토리지 VM 제한에 대해 자세히 알아보십시오"^]
+* link:task-managing-svms-gcp.html["Google Cloud에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 생성하는 방법을 알아보십시오"]
+
+
+endif::gcp[]
+
+
+
 == 2022년 5월 2일
 
 다음 변경 사항은 커넥터의 3.9.18 릴리스에 도입되었습니다.

@@ -1,0 +1,108 @@
+---
+sidebar: sidebar 
+permalink: task-administer-advanced-view.html 
+keywords: system manager, advanced view, access system manager, load system manager, use system manager 
+summary: Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우, ONTAP 시스템과 함께 제공되는 관리 인터페이스인 ONTAP System Manager를 사용하면 됩니다. Cloud Manager 인터페이스에 Cloud Manager 인터페이스가 포함되어 있으므로 고급 관리를 위해 Cloud Manager에서 그대로 둘 필요가 없습니다. 
+---
+= 고급 보기를 사용하여 Cloud Volumes ONTAP를 관리합니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우, ONTAP 시스템과 함께 제공되는 관리 인터페이스인 ONTAP System Manager를 사용하면 됩니다. Cloud Manager 인터페이스에 Cloud Manager 인터페이스가 포함되어 있으므로 고급 관리를 위해 Cloud Manager에서 그대로 둘 필요가 없습니다.
+
+이 고급 보기는 미리 보기로 사용할 수 있습니다. NetApp은 이 경험을 개선하고 다음 릴리즈에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 사용하여 피드백을 보내주십시오.
+
+
+
+== 피처
+
+Cloud Manager의 고급 보기에서는 다음과 같은 추가 관리 기능에 액세스할 수 있습니다.
+
+* 고급 스토리지 관리
++
+일관성 그룹, 공유, Qtree, 할당량 및 스토리지 VM을 관리합니다.
+
+* 네트워킹 관리
++
+IPspace, 네트워크 인터페이스, 포트 세트 및 이더넷 포트 관리
+
+* 이벤트 및 작업
++
+이벤트 로그, 시스템 경고, 작업 및 감사 로그를 봅니다.
+
+* 고급 데이터 보호
++
+스토리지 VM, LUN 및 일관성 그룹을 보호합니다.
+
+* 호스트 관리
++
+SAN 이니시에이터 그룹 및 NFS 클라이언트를 설정합니다.
+
+
+
+
+
+== 지원되는 구성
+
+System Manager를 통한 고급 관리는 표준 클라우드 지역에서 Cloud Volumes ONTAP 9.10.0 이상에서 지원됩니다.
+
+GovCloud 지역 또는 아웃바운드 인터넷 액세스가 없는 지역에서는 System Manager 통합이 지원되지 않습니다.
+
+
+
+== 제한 사항
+
+Cloud Volumes ONTAP에서는 System Manager 인터페이스에 표시되는 몇 가지 기능을 지원하지 않습니다.
+
+* 클라우드 계층화
++
+Cloud Volumes ONTAP에서는 Cloud Tiering 서비스가 지원되지 않습니다. 오브젝트 스토리지에 데이터를 계층화하는 것은 볼륨을 생성할 때 Cloud Manager의 표준 보기에서 직접 설정해야 합니다.
+
+* 계층
++
+System Manager에서는 애그리게이트 관리(로컬 계층 및 클라우드 계층 포함)가 지원되지 않습니다. Cloud Manager의 표준 보기에서 애그리게이트를 직접 관리해야 합니다.
+
+* 펌웨어 업그레이드
++
+Cloud Volumes ONTAP에서는 * 클러스터 > 설정 * 페이지의 자동 펌웨어 업데이트가 지원되지 않습니다.
+
+
+
+또한 System Manager의 역할 기반 액세스 제어가 지원되지 않습니다.
+
+
+
+== 시작하는 방법
+
+Cloud Volumes ONTAP 작업 환경을 열고 고급 보기 옵션을 클릭합니다.
+
+.단계
+. Canvas 페이지에서 Cloud Volumes ONTAP 시스템의 이름을 두 번 클릭합니다.
+. 오른쪽 상단에서 * 고급 보기로 전환 * 을 클릭합니다.
++
+image:screenshot-cvo-advanced-view.png["고급 보기로 전환 옵션을 보여 주는 Cloud Volumes ONTAP 작업 환경의 스크린샷"]
+
+. 확인 메시지가 나타나면 메시지를 읽고 * 닫기 * 를 클릭합니다.
+. 시스템 관리자를 사용하여 Cloud Volumes ONTAP를 관리합니다.
+. 필요한 경우 * 표준 보기로 전환 * 을 클릭하여 Cloud Manager를 통해 표준 관리로 돌아갑니다.
++
+image:screenshot-cvo-standard-view.png["표준 보기로 전환 옵션을 보여 주는 Cloud Volumes ONTAP 작업 환경의 스크린샷"]
+
+
+
+
+
+== System Manager 사용에 대한 도움말
+
+Cloud Volumes ONTAP에서 System Manager를 사용하는 데 도움이 필요한 경우 을 참조하십시오 https://docs.netapp.com/us-en/ontap/index.html["ONTAP 설명서"^] 을 참조하십시오. 다음은 도움이 될 수 있는 몇 가지 링크입니다.
+
+* https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["볼륨 및 LUN 관리"^]
+* https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["네트워크 관리"^]
+* https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["데이터 보호"^]
+
