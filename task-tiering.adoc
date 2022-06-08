@@ -168,18 +168,19 @@ ifdef::gcp[]
 === 콜드 데이터를 Google Cloud Storage 버킷에 계층화해야 하는 요구 사항
 
 * Cloud Volumes ONTAP가 상주하는 서브넷은 개인 Google 액세스용으로 구성해야 합니다. 자세한 지침은 을 참조하십시오 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 설명서: 개인 Google Access 구성"^].
-* 다음 요구 사항을 충족하는 서비스 계정이 필요합니다.
+* 서비스 계정을 Cloud Volumes ONTAP에 연결해야 합니다.
 +
-** 사전 정의된 스토리지 관리자 역할이 있어야 합니다.
-** Connector 서비스 계정은 이 계층화 서비스 계정의 _ 서비스 계정 사용자 _ 여야 합니다.
-+
-link:task-creating-gcp-service-account.html["서비스 계정 설정 방법에 대해 알아보십시오"].
+link:task-creating-gcp-service-account.html["이 서비스 계정을 설정하는 방법에 대해 알아보십시오"].
 
-** 고객이 관리하는 암호화 키로 버킷을 암호화하려면 Google Cloud 스토리지 버킷에서 키를 사용할 수 있습니다.
++
+Cloud Volumes ONTAP 작업 환경을 생성할 때 이 서비스 계정을 선택하라는 메시지가 표시됩니다.
+
++
+배포 중에 서비스 계정을 선택하지 않으면 Cloud Volumes ONTAP를 종료하고 Google Cloud 콘솔로 이동한 다음 Cloud Volumes ONTAP 인스턴스에 서비스 계정을 연결해야 합니다. 그런 다음 다음 다음 섹션에 설명된 대로 데이터 계층화를 설정할 수 있습니다.
+
+* 고객이 관리하는 암호화 키로 버킷을 암호화하려면 Google Cloud 스토리지 버킷에서 키를 사용할 수 있습니다.
 +
 link:task-setting-up-gcp-encryption.html["Cloud Volumes ONTAP에서 고객이 관리하는 암호화 키를 사용하는 방법에 대해 알아보십시오"].
-
-
 
 
 
@@ -199,8 +200,10 @@ endif::gcp[]
 image:screenshot_enable_capacity_tiering.gif["Cloud Manager에서 데이터 계층화를 설정하려고 할 때 문제가 발생한 경우 작업 환경 메뉴에서 사용 가능한 용량 계층화 옵션 스크린샷"]
 
 +
+Cloud Manager에서 시스템을 생성할 때 데이터 계층화를 설정할 수 없는 경우에만 이 옵션이 표시됩니다.
 
-NOTE: Cloud Manager에서 시스템을 생성할 때 데이터 계층화를 설정할 수 없는 경우에만 이 옵션이 표시됩니다.
++
+Google Cloud에서는 이 옵션이 나타나기 전에 서비스 계정을 Cloud Volumes ONTAP에 연결해야 합니다. <<Requirements,모든 요구 사항을 충족하는지 확인합니다>>.
 
 . 클라우드 관리자가 이 Cloud Volumes ONTAP 시스템이 계층형 데이터에 사용할 오브젝트 저장소를 만들 수 있도록 * 활성화 * 를 클릭합니다.
 

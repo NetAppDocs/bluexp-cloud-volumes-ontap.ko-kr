@@ -40,7 +40,7 @@ summary: 스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, �
 다음 단계에서는 CLI를 사용하여 단일 노드 시스템에 새 스토리지 VM을 생성합니다. 데이터 LIF를 생성하려면 하나의 프라이빗 IP 주소가 필요하며, 관리 LIF를 생성하려면 또 다른 선택적 프라이빗 IP 주소가 필요합니다.
 
 .단계
-. Google Cloud에서 Cloud Volumes ONTAP 인스턴스로 이동하고 각 LIF에 대한 IP 범위를 nic0으로 추가합니다.
+. Google Cloud에서 Cloud Volumes ONTAP 인스턴스로 이동하고 각 LIF에 대한 IP 주소를 nic0에 추가합니다.
 +
 image:screenshot-gcp-add-ip-range.png["IP 범위를 추가하여 Cloud Volumes ONTAP의 네트워크 인터페이스를 편집할 수 있는 Google Cloud 콘솔의 스크린샷."]
 
@@ -101,9 +101,9 @@ vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
 
 === HA 쌍
 
-Cloud Manager API를 사용하여 Google Cloud의 Cloud Volumes ONTAP 시스템에서 스토리지 VM을 생성해야 합니다. Cloud Manager는 아웃바운드 SMB/CIFS 통신에 필요한 HA 쌍을 위한 iSCSI LIF뿐만 아니라 필요한 LIF 서비스로 스토리지 VM을 구성하기 때문에 System Manager 또는 CLI가 아닌 API를 사용해야 합니다.
+Cloud Manager API를 사용하여 Google Cloud의 Cloud Volumes ONTAP 시스템에서 스토리지 VM을 생성해야 합니다. Cloud Manager는 아웃바운드 SMB/CIFS 통신에 필요한 iSCSI LIF와 필요한 LIF 서비스를 사용하여 스토리지 VM을 구성하기 때문에 System Manager 또는 CLI가 아닌 API를 사용해야 합니다.
 
-Cloud Manager는 Google Cloud에서 필요한 IP 주소를 할당합니다.
+Cloud Manager는 Google Cloud에서 필요한 IP 주소를 할당하고 SMB/NFS 액세스를 위한 데이터 LIF와 아웃바운드 SMB 통신을 위한 iSCSI LIF를 사용하여 스토리지 VM을 생성합니다.
 
 3.9.19 릴리즈부터 Cloud Volumes ONTAP HA 쌍에 대한 스토리지 VM을 생성하고 관리하기 위해 커넥터에는 다음 권한이 필요합니다.
 
