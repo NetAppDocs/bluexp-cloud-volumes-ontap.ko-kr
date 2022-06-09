@@ -277,6 +277,8 @@ endif::gcp[]
 
 다른 라이센스 방법으로 이전하려는 경우 라이센스를 구입하고 해당 라이센스를 사용하여 새 Cloud Volumes ONTAP 시스템을 배포한 다음 데이터를 새 시스템으로 복제할 수 있습니다.
 
+시스템을 PAYGO by-node 라이센싱에서 BYOL by-node 라이센싱으로 변환하는 기능은 지원되지 않습니다. 새 시스템을 구축한 다음 데이터를 해당 시스템으로 복제해야 합니다. link:task-manage-node-licenses.html["PAYGO와 BYOL 간 전환 방법에 대해 알아보십시오"].
+
 
 
 == 최대 시스템 수

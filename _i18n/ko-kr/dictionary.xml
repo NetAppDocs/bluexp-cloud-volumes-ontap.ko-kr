@@ -526,9 +526,7 @@
   <block id="7be0ecb9e73595d673d5fbaed0cb6378" category="list-text">Azure 포털에서 * 로드 밸런서 * 서비스를 엽니다.</block>
   <block id="8097feb21f6c4186704bf26f92131fe0" category="list-text">HA 쌍에 대한 로드 밸런싱 장치의 이름을 클릭합니다.</block>
   <block id="91755019ec4f9b4503c2abd1e2018220" category="list-text">Settings * 에서 * Frontend IP configuration * 을 클릭합니다.</block>
-  <block id="7edcf3b7dac7218c74f45badfcadf54c" category="list-text">프런트엔드 IP의 이름을 입력하고 Cloud Volumes ONTAP HA 쌍의 서브넷을 선택한 다음 * Dynamic * 을 선택된 상태로 둡니다.</block>
   <block id="fde48a87720c7f4a7b3fe579cf70ce21" category="inline-image-macro">이름과 서브넷이 선택된 Azure 포털에서 프런트엔드 IP 주소를 추가하는 스크린샷</block>
-  <block id="624bf1221024c93616a16790392b5131" category="paragraph"><block ref="624bf1221024c93616a16790392b5131" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0da801a9d3d38ccf39fc77f357cbd875" category="list-text">방금 만든 프런트엔드 IP 구성의 이름을 클릭하고 * Assignment * 를 * Static * 으로 변경하고 * Save * 를 클릭합니다.</block>
   <block id="0f21ca89d8c8b745954f3d9e19a0dd80" category="list-text">방금 생성한 각 프런트엔드 IP에 대해 상태 탐침을 추가합니다.</block>
   <block id="1b45149e0b23a41687b2084ae6d33a48" category="list-text">부하 분산 장치의 * 설정 * 에서 * 상태 프로브 * 를 클릭합니다.</block>
@@ -4129,4 +4127,19 @@
   <block id="870789b9d0beec538c84e00432400091" category="list-text">Google Cloud에서 Cloud Volumes ONTAP 인스턴스로 이동하고 각 LIF에 대한 IP 주소를 nic0에 추가합니다.</block>
   <block id="71ab72fd4554a8b53d36a4e2687c3235" category="paragraph">Cloud Manager API를 사용하여 Google Cloud의 Cloud Volumes ONTAP 시스템에서 스토리지 VM을 생성해야 합니다. Cloud Manager는 아웃바운드 SMB/CIFS 통신에 필요한 iSCSI LIF와 필요한 LIF 서비스를 사용하여 스토리지 VM을 구성하기 때문에 System Manager 또는 CLI가 아닌 API를 사용해야 합니다.</block>
   <block id="fb806393c7f698f410dd00705de40f9b" category="paragraph">Cloud Manager는 Google Cloud에서 필요한 IP 주소를 할당하고 SMB/NFS 액세스를 위한 데이터 LIF와 아웃바운드 SMB 통신을 위한 iSCSI LIF를 사용하여 스토리지 VM을 생성합니다.</block>
+  <block id="8ad37a38e1be1cd56ba8016e897e15c5" category="inline-link">VPC 네트워크 피어링에 대해 자세히 알아보십시오</block>
+  <block id="3af417bcb28902bf6e018910cab4b830" category="paragraph">커넥터와 별도로 VPC에 Cloud Volumes ONTAP를 배포하려는 경우 VPC 네트워크 피어링을 설정해야 합니다.<block ref="7da1fe3c3eb485cc3c06acb3359fc320" category="inline-link-rx"></block></block>
+  <block id="b961ba228f0253598e8fe47f55865219" category="list-text">프런트엔드 IP의 이름을 입력하고, Cloud Volumes ONTAP HA 쌍의 서브넷을 선택하고, * Dynamic * 을 선택한 상태로 두고, 가용성 영역이 있는 지역에서는 * Zone-Redundant * 를 선택된 상태로 두어 존이 실패하는 경우 IP 주소를 계속 사용할 수 있도록 합니다.</block>
+  <block id="c00e2d19af360558425fe43036ba7057" category="paragraph"><block ref="c00e2d19af360558425fe43036ba7057" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5505ffcb759fb1c9c3793b2dd386cd82" category="inline-link-macro">PAYGO와 BYOL 간 전환 방법에 대해 알아보십시오</block>
+  <block id="b71c93cf4431b3a81c64a35fe6dbe9cf" category="paragraph">시스템을 PAYGO by-node 라이센싱에서 BYOL by-node 라이센싱으로 변환하는 기능은 지원되지 않습니다. 새 시스템을 구축한 다음 데이터를 해당 시스템으로 복제해야 합니다. <block ref="d81e4230804422351d525c6f4d42f594" category="inline-link-macro-rx"></block>.</block>
+  <block id="594cb44c6500d8855ad820b0653e02c7" category="section-title">PAYGO와 BYOL 간 변경</block>
+  <block id="a704128156d562fe5860508e9584ee34" category="paragraph">시스템을 PAYGO by-node 라이센싱에서 BYOL by-node 라이센싱으로 변환하는 것은 지원되지 않으며 그 반대의 경우도 마찬가지입니다. 사용한 만큼만 지불하는 가입과 BYOL 가입형 간에 전환하려면 새 시스템을 구축하고 기존 시스템에서 새 시스템으로 데이터를 복제해야 합니다.</block>
+  <block id="7f7c7e70efe0e6e29f5d0b207145f30e" category="list-text">새 Cloud Volumes ONTAP 작업 환경을 만듭니다.</block>
+  <block id="9bd20ffd5e91ec2bb61bc593be38bb13" category="list-text">복제해야 하는 각 볼륨에 대해 시스템 간에 일회성 데이터 복제를 설정합니다.</block>
+  <block id="95b10ad2ca24b4c8bd5673b7383531a2" category="inline-link">시스템 간에 데이터를 복제하는 방법에 대해 알아보십시오</block>
+  <block id="0f1f7d0cff1734f943c2503c9febec73" category="paragraph"><block ref="0f1f7d0cff1734f943c2503c9febec73" category="inline-link-rx"></block></block>
+  <block id="2dd15870a87ceaf45f31f08d066afaeb" category="list-text">원래 작업 환경을 삭제하여 더 이상 필요하지 않은 Cloud Volumes ONTAP 시스템을 종료합니다.</block>
+  <block id="2464ba8f7f97ce117f749b75a1c60906" category="inline-link-macro">Cloud Volumes ONTAP 작업 환경을 삭제하는 방법에 대해 알아봅니다</block>
+  <block id="4397e74dad93d251efd7f65b1756f22b" category="paragraph"><block ref="8170ae40f603808099e16014cfba3f00" category="inline-link-macro-rx"></block>.</block>
 </blocks>

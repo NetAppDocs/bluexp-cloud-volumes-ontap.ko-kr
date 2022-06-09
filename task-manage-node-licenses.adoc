@@ -209,3 +209,21 @@ Cloud Manager 오른쪽 하단에 있는 채팅 아이콘을 통해 연락하여
 
 
 Cloud Manager가 변환 프로세스를 시작합니다. 이 프로세스의 일부로 Cloud Volumes ONTAP가 자동으로 다시 시작됩니다. 백업하는 경우 라이센스 정보에 새 라이센스가 반영됩니다.
+
+
+
+== PAYGO와 BYOL 간 변경
+
+시스템을 PAYGO by-node 라이센싱에서 BYOL by-node 라이센싱으로 변환하는 것은 지원되지 않으며 그 반대의 경우도 마찬가지입니다. 사용한 만큼만 지불하는 가입과 BYOL 가입형 간에 전환하려면 새 시스템을 구축하고 기존 시스템에서 새 시스템으로 데이터를 복제해야 합니다.
+
+.단계
+. 새 Cloud Volumes ONTAP 작업 환경을 만듭니다.
+. 복제해야 하는 각 볼륨에 대해 시스템 간에 일회성 데이터 복제를 설정합니다.
++
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["시스템 간에 데이터를 복제하는 방법에 대해 알아보십시오"^]
+
+. 원래 작업 환경을 삭제하여 더 이상 필요하지 않은 Cloud Volumes ONTAP 시스템을 종료합니다.
++
+link:task-deleting-working-env.html["Cloud Volumes ONTAP 작업 환경을 삭제하는 방법에 대해 알아봅니다"].
+
+

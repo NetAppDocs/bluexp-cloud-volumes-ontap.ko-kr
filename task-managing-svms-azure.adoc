@@ -121,9 +121,9 @@ NFS에 사용하는 IP 주소는 로드 밸런싱 장치에 할당되어 페일�
 +
 .. Settings * 에서 * Frontend IP configuration * 을 클릭합니다.
 .. 추가 * 를 클릭합니다.
-.. 프런트엔드 IP의 이름을 입력하고 Cloud Volumes ONTAP HA 쌍의 서브넷을 선택한 다음 * Dynamic * 을 선택된 상태로 둡니다.
+.. 프런트엔드 IP의 이름을 입력하고, Cloud Volumes ONTAP HA 쌍의 서브넷을 선택하고, * Dynamic * 을 선택한 상태로 두고, 가용성 영역이 있는 지역에서는 * Zone-Redundant * 를 선택된 상태로 두어 존이 실패하는 경우 IP 주소를 계속 사용할 수 있도록 합니다.
 +
-image:screenshot_azure_frontend_ip.gif["이름과 서브넷이 선택된 Azure 포털에서 프런트엔드 IP 주소를 추가하는 스크린샷"]
+image:screenshot_azure_frontend_ip.png["이름과 서브넷이 선택된 Azure 포털에서 프런트엔드 IP 주소를 추가하는 스크린샷"]
 
 .. 방금 만든 프런트엔드 IP 구성의 이름을 클릭하고 * Assignment * 를 * Static * 으로 변경하고 * Save * 를 클릭합니다.
 +
@@ -194,9 +194,9 @@ iSCSI LIF는 DNS 및 SMB 통신에 필요합니다. iSCSI LIF는 페일오버 �
 +
 .. Settings * 에서 * Frontend IP configuration * 을 클릭합니다.
 .. 추가 * 를 클릭합니다.
-.. 프런트엔드 IP의 이름을 입력하고 Cloud Volumes ONTAP HA 쌍의 서브넷을 선택한 다음 * Dynamic * 을 선택된 상태로 둡니다.
+.. 프런트엔드 IP의 이름을 입력하고, Cloud Volumes ONTAP HA 쌍의 서브넷을 선택하고, * Dynamic * 을 선택한 상태로 두고, 가용성 영역이 있는 지역에서는 * Zone-Redundant * 를 선택된 상태로 두어 존이 실패하는 경우 IP 주소를 계속 사용할 수 있도록 합니다.
 +
-image:screenshot_azure_frontend_ip.gif["이름과 서브넷이 선택된 Azure 포털에서 프런트엔드 IP 주소를 추가하는 스크린샷"]
+image:screenshot_azure_frontend_ip.png["이름과 서브넷이 선택된 Azure 포털에서 프런트엔드 IP 주소를 추가하는 스크린샷"]
 
 .. 방금 만든 프런트엔드 IP 구성의 이름을 클릭하고 * Assignment * 를 * Static * 으로 변경하고 * Save * 를 클릭합니다.
 +
