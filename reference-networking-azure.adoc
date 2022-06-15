@@ -55,7 +55,7 @@ TIP: LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같�
 
 === Azure 서비스에 대한 보안 연결
 
-기본적으로 Cloud Manager는 Cloud Volumes ONTAP 리소스와 Azure 리소스 간의 연결을 위해 Azure 프라이빗 링크를 활성화합니다.
+기본적으로 Cloud Manager는 Cloud Volumes ONTAP 및 Azure 스토리지 계정 간의 연결을 위해 Azure 프라이빗 링크를 활성화합니다.
 
 대부분의 경우, 수행해야 할 작업은 없습니다. 즉, Cloud Manager는 Azure Private Link를 관리합니다. 그러나 Azure Private DNS를 사용하는 경우에는 구성 파일을 편집해야 합니다. Azure의 커넥터 위치에 대한 요구 사항도 알고 있어야 합니다.
 

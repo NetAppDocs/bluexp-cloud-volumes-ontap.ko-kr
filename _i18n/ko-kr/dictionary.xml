@@ -3941,8 +3941,6 @@
   <block id="e1a3d580d5cb42904b96dc05c0e0903d" category="paragraph">다음을 수행하십시오.</block>
   <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">신뢰할 수 있는 엔터티 유형 * 에서 * AWS 계정 * 을 선택합니다.</block>
   <block id="a4977642f2eb92080375e1160904c3a7" category="list-text">다른 AWS 계정 * 을 선택하고 VPC 소유자 계정의 ID를 입력합니다.</block>
-  <block id="4aaa495471a5ae62d8384762205bf782" category="inline-link">Cloud Manager 정책 페이지</block>
-  <block id="123f2e62fb6e53ac1b3fd91d12e190e0" category="list-text">Cloud Manager IAM 정책을 사용하여 정책을 생성합니다. 이 정책은 에서 사용할 수 있습니다<block ref="685f869a0580bc1af63188a3b940f7ac" category="inline-link-rx"></block>.</block>
   <block id="fe1f47d50f78d0e14014e50d690720d7" category="list-text">HA Pair를 배포할 때 API 요청에 붙여넣을 수 있도록 IAM 역할의 Role ARN을 복사합니다.</block>
   <block id="fd3149c0644c605d917aeebea557d6d6" category="list-text">VPC 소유자 계정의 서브넷을 참가자 계정과 공유합니다.</block>
   <block id="fa9fe3d94968b5f037653d41700dcd70" category="paragraph">이 단계는 공유 서브넷에 HA 쌍을 구축하는 데 필요합니다.</block>
@@ -4124,25 +4122,24 @@
   <block id="2dd15870a87ceaf45f31f08d066afaeb" category="list-text">원래 작업 환경을 삭제하여 더 이상 필요하지 않은 Cloud Volumes ONTAP 시스템을 종료합니다.</block>
   <block id="2464ba8f7f97ce117f749b75a1c60906" category="inline-link-macro">Cloud Volumes ONTAP 작업 환경을 삭제하는 방법에 대해 알아봅니다</block>
   <block id="4397e74dad93d251efd7f65b1756f22b" category="paragraph"><block ref="8170ae40f603808099e16014cfba3f00" category="inline-link-macro-rx"></block>.</block>
-  <block id="673fb65cee00fe66ec1474b9f688f4c2" category="summary">기본적으로 Cloud Manager는 Cloud Volumes ONTAP 리소스와 Azure 리소스 간의 연결을 위해 Azure 프라이빗 링크를 활성화합니다. 필요한 경우 Azure Private Links를 비활성화하고 서비스 끝점을 대신 사용할 수 있습니다.</block>
   <block id="998afd8cfe6da6d00c47dc7bb4b8a5b1" category="doc">Azure Private Link 또는 서비스 끝점을 사용합니다</block>
-  <block id="97216da93bcb058c62f9d5625e19efd5" category="paragraph">Cloud Manager를 사용하면 Cloud Volumes ONTAP 노드와 다음 Azure 리소스 간의 연결을 위해 Azure 프라이빗 링크를 사용할 수 있습니다.</block>
-  <block id="eeb456eab9a026938804e503c901565b" category="list-text">Cloud Volumes ONTAP 및 관련 스토리지 계정 간의 접속</block>
-  <block id="09c946d1864e85a234bc9a00d2cb6b22" category="list-text">백업 및 데이터 계층화를 위한 Cloud Volumes ONTAP 및 Azure Blob 스토리지 간 연결</block>
-  <block id="695ee985c6df8d6f4b802e115d761173" category="paragraph">Azure Private Link는 Azure의 엔드포인트 간 연결을 보호하고 성능상의 이점을 제공합니다.</block>
   <block id="c9a73222b35c741b31b116efb4cefa73" category="paragraph">필요한 경우 Azure 프라이빗 링크 대신 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성할 수 있습니다.</block>
   <block id="39bc8cdccd900055ab16b607c68dd5c6" category="paragraph">어떤 구성에서든 Cloud Manager는 항상 Cloud Volumes ONTAP와 스토리지 계정 간의 연결을 위해 네트워크 액세스를 제한합니다. 네트워크 액세스는 Cloud Volumes ONTAP가 배포된 VNET와 커넥터가 배포된 VNET로 제한됩니다.</block>
   <block id="e44ebdbfa162690dea44b66cf5d816f9" category="section-title">대신 Azure 전용 링크를 비활성화하고 서비스 끝점을 사용합니다</block>
   <block id="c8ef59607dc21f79e8bf4c7303cf19c4" category="paragraph">회사에서 요구하는 경우, Azure Private Link 대신 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성하도록 Cloud Manager의 설정을 변경할 수 있습니다. 이 설정을 변경하면 새로 만든 Cloud Volumes ONTAP 시스템에 적용됩니다.</block>
   <block id="14c6e9ce4cfa25dc1cfa02fe401deed1" category="section-title">Azure 개인 링크 사용</block>
   <block id="347431c5a9e1d410f530ec93c187d045" category="paragraph">대부분의 경우 Cloud Volumes ONTAP를 사용하여 Azure 개인 링크를 설정하는 데 필요한 작업은 없습니다. Cloud Manager는 Azure 프라이빗 링크를 관리합니다. 그러나 Azure Private DNS를 사용하는 경우에는 구성 파일을 편집해야 합니다. Azure의 커넥터 위치에 대한 요구 사항도 알고 있어야 합니다.</block>
-  <block id="c43284f37b3ed2984e5681226605e6da" category="section-title">Cloud Volumes ONTAP 스토리지 계정에서 전용 링크 연결이 작동하는 방식</block>
   <block id="1a4c6839ae7b3d4de45f275929539d1b" category="paragraph">Cloud Manager는 Azure에 Cloud Volumes ONTAP를 구축할 때 리소스 그룹에 프라이빗 엔드포인트를 생성합니다. 프라이빗 엔드포인트는 Cloud Volumes ONTAP의 스토리지 계정과 연결되어 있습니다. 따라서 Cloud Volumes ONTAP 스토리지에 대한 액세스는 Microsoft 백본 네트워크를 통해 이루어집니다.</block>
   <block id="fe133d1f6db8d046e4b328c0d9a967a1" category="paragraph">사용 중인 라이센스 모델에 관계없이 Cloud Volumes ONTAP 시스템의 최대 수는 NetApp 계정당 50개로 제한됩니다.</block>
   <block id="ae5034ae6657395ba1fc2a16d2c55db3" category="paragraph">a_system_은 HA 쌍 또는 단일 노드 시스템입니다. 예를 들어, 8개의 Cloud Volumes ONTAP HA 쌍과 4개의 단일 노드 시스템이 있다면 총 12개의 시스템이 있고 고객 시스템에 38개의 추가 시스템이 있을 것입니다.</block>
-  <block id="373b4a65c4968402d43a79bd35032a29" category="paragraph">기본적으로 Cloud Manager는 Cloud Volumes ONTAP 리소스와 Azure 리소스 간의 연결을 위해 Azure 프라이빗 링크를 활성화합니다.</block>
-  <block id="0a83c0c787d0c267bcca3d5c6bcc2caa" category="paragraph">대부분의 경우, 수행해야 할 작업은 없습니다. 즉, Cloud Manager는 Azure Private Link를 관리합니다. 그러나 Azure Private DNS를 사용하는 경우에는 구성 파일을 편집해야 합니다. Azure의 커넥터 위치에 대한 요구 사항도 알고 있어야 합니다.</block>
   <block id="11e5ec6a6dd579034180a34f735c57ee" category="paragraph">비즈니스 요구 사항에 따라 필요한 경우 비공개 링크 연결을 비활성화할 수도 있습니다. 링크를 사용하지 않도록 설정하면 Cloud Manager에서 서비스 엔드포인트를 대신 사용하도록 Cloud Volumes ONTAP를 구성합니다.</block>
   <block id="4ff3b739a9573101f05111dd5136fe72" category="inline-link-macro">Cloud Volumes ONTAP에서 Azure 프라이빗 링크 또는 서비스 엔드포인트를 사용하는 방법에 대해 자세히 알아보십시오</block>
   <block id="47d9f4d696319d2e54439849e1a532f3" category="paragraph"><block ref="c666fc2bdc96ffeac9aa956ec79d2d3c" category="inline-link-macro-rx"></block>.</block>
+  <block id="ed383a2427feead2979d4dff111c8a81" category="list-text">"STS:AssumeRole" 권한이 포함된 IAM 역할에 정책을 첨부합니다.</block>
+  <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">예를 들면 다음과 같습니다.</block>
+  <block id="4803d974c37e8a3895fbff420f579823" category="summary">Cloud Volumes ONTAP는 Azure 프라이빗 링크를 사용하여 연결된 저장소 계정에 연결합니다. 필요한 경우 Azure Private Links를 비활성화하고 서비스 끝점을 대신 사용할 수 있습니다.</block>
+  <block id="48230385876daffc7535fc6eab05f805" category="paragraph">기본적으로 Cloud Manager는 Cloud Volumes ONTAP와 연결된 스토리지 계정 간의 연결을 위해 Azure 프라이빗 링크를 활성화합니다. Azure Private Link는 Azure의 엔드포인트 간 연결을 보호하고 성능상의 이점을 제공합니다.</block>
+  <block id="3b7d5a44ee60c424b0f9531a36f99994" category="section-title">개별 링크 연결의 작동 방식</block>
+  <block id="cd14dd2b5bd666f4fd9008fa68836b01" category="paragraph">기본적으로 Cloud Manager는 Cloud Volumes ONTAP 및 Azure 스토리지 계정 간의 연결을 위해 Azure 프라이빗 링크를 활성화합니다.</block>
+  <block id="44fbda76f93db897942a813a2ca722df" category="paragraph">대부분의 경우, 수행해야 할 작업은 없습니다. 즉, Cloud Manager는 Azure Private Link를 관리합니다. 그러나 Azure Private DNS를 사용하는 경우에는 구성 파일을 편집해야 합니다. Azure의 커넥터 위치에 대한 요구 사항도 알고 있어야 합니다.</block>
 </blocks>
