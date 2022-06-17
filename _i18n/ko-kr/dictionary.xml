@@ -490,7 +490,6 @@
   <block id="24ccc997472d0e30221fe39df91aa347" category="inline-link-macro">고급 할당 * 페이지에서 선택합니다</block>
   <block id="0ea918acc7a4eddfe90aa3982fd4332c" category="paragraph">Cloud Manager로 애그리게이트를 관리할 수 있다는 것이 아니라, 자신이 직접 애그리게이트를 관리할 수 있습니다. <block ref="2414ef63108c7ecff38292e17ac61802" category="inline-link-macro-rx"></block>특정 수의 디스크를 포함하는 새 애그리게이트를 생성하고, 기존 애그리게이트에 디스크를 추가하고, 특정 애그리게이트에서 볼륨을 생성할 수 있습니다.</block>
   <block id="1d19e21de0f93b11f5ceb8b535a3afc2" category="section-title">용량 관리</block>
-  <block id="3b63d4ec434de86415bca73f12d741a3" category="paragraph">계정 관리자는 Cloud Manager에서 스토리지 용량 결정에 대해 통지할지 또는 Cloud Manager가 자동으로 용량 요구사항을 관리할지 여부를 선택할 수 있습니다. 이러한 모드의 작동 방식을 이해하는 데 도움이 될 수 있습니다.</block>
   <block id="f2be69b635c39988351f6636a52c66bd" category="section-title">자동 용량 관리</block>
   <block id="f40e552fce5b2f183c035526f1c7bde9" category="paragraph">Capacity Management Mode(용량 관리 모드)는 기본적으로 Automatic(자동)으로 설정됩니다. 이 모드에서 Cloud Manager는 더 많은 용량이 필요할 때 Cloud Volumes ONTAP 인스턴스에 대해 새 디스크를 자동으로 구매하고, 사용되지 않는 디스크 컬렉션(애그리게이트)을 삭제하고, 필요할 때 애그리게이트 간에 볼륨을 이동하며, 디스크 장애를 해제하려고 시도합니다.</block>
   <block id="4ecae3c28a5b318997a02fa69a0d0950" category="paragraph">다음 예제에서는 이 모드가 작동하는 방식을 보여 줍니다.</block>
@@ -4142,4 +4141,24 @@
   <block id="3b7d5a44ee60c424b0f9531a36f99994" category="section-title">개별 링크 연결의 작동 방식</block>
   <block id="cd14dd2b5bd666f4fd9008fa68836b01" category="paragraph">기본적으로 Cloud Manager는 Cloud Volumes ONTAP 및 Azure 스토리지 계정 간의 연결을 위해 Azure 프라이빗 링크를 활성화합니다.</block>
   <block id="44fbda76f93db897942a813a2ca722df" category="paragraph">대부분의 경우, 수행해야 할 작업은 없습니다. 즉, Cloud Manager는 Azure Private Link를 관리합니다. 그러나 Azure Private DNS를 사용하는 경우에는 구성 파일을 편집해야 합니다. Azure의 커넥터 위치에 대한 요구 사항도 알고 있어야 합니다.</block>
+  <block id="ae271afdca3c7d6785a9aefa74e6c80e" category="doc">커넥터의 용량 설정을 관리합니다</block>
+  <block id="b62aaf3fb48f9f8f103dc68c41211be5" category="paragraph">각 커넥터에는 Cloud Volumes ONTAP의 총 용량을 관리하는 방법을 결정하는 설정이 있습니다.</block>
+  <block id="4edc935aeaaf3923beb2e4249e6c56f3" category="paragraph">이러한 설정은 커넥터에 의해 관리되는 모든 Cloud Volumes ONTAP 시스템에 영향을 줍니다. 다른 커넥터가 있는 경우 다르게 구성할 수 있습니다.</block>
+  <block id="4f85ddd6337c9d7a3f7f9955945eece1" category="paragraph">커넥터 설정을 수정하려면 계정 관리자 권한이 필요합니다.</block>
+  <block id="03c93da41831d72dcea5fc724b2b4658" category="list-text">Capacity * 에서 다음 설정을 수정합니다.</block>
+  <block id="6b4ff0efcdf107fc68c01f001273f945" category="list-text">Cloud Manager에서 스토리지 용량에 대한 결정을 내리거나 Cloud Manager에서 자동으로 용량 요구사항을 관리하는지 여부를 선택합니다.</block>
+  <block id="af1f64d74440547a71a0dfdd077d8a15" category="inline-link-macro">용량 관리 모드의 작동 방식에 대해 알아보십시오</block>
+  <block id="46e6171a2e84c75269ac8bcb3c5004d8" category="paragraph"><block ref="f8a3c55f9fa8638c083e126aaf830b07" category="inline-link-macro-rx"></block>.</block>
+  <block id="562e73580c466cead324e6a17fbfe1c8" category="list-text">여유 공간 비율</block>
+  <block id="314b05c3387324c9621b3b3cd58816d4" category="list-text">Aggregate의 여유 공간 비율이 지정된 임계값 아래로 떨어지면 알림을 트리거합니다.</block>
+  <block id="a27b16792f86cfcc4c0f28d5d58e43f4" category="paragraph">여유 공간 비율은 다음과 같이 계산됩니다.</block>
+  <block id="b9fbc310908f08e909d0f601f964b6d5" category="paragraph">(Aggregate capacity - 애그리게이트에서 사용하는 총 용량입니다.)/애그리게이트 용량입니다</block>
+  <block id="1bf0c6edc1ff4a9b211fcdf6bda9cef9" category="list-text">데이터 계층화에 대한 여유 공간 비율</block>
+  <block id="0bc3c683bdb3389ca9d8d2211fce0878" category="list-text">데이터를 용량 계층(오브젝트 스토리지)으로 계층화할 때 성능 계층(디스크)에 필요한 여유 공간을 정의합니다.</block>
+  <block id="3e230a58ba269a917d314abcc623818e" category="paragraph">이 비율은 재해 복구 시나리오에 중요합니다. 용량 계층에서 데이터를 읽으면 Cloud Volumes ONTAP는 더 나은 성능을 제공하기 위해 데이터를 성능 계층으로 이동합니다. 공간이 부족하면 Cloud Volumes ONTAP에서 데이터를 이동할 수 없습니다.</block>
+  <block id="a8511ef1eba750b782198f5ec3686faa" category="paragraph">계정 관리자는 Cloud Manager에서 스토리지 용량 결정에 대해 통지할지 또는 Cloud Manager가 자동으로 용량 요구사항을 관리할지 여부를 선택할 수 있습니다.</block>
+  <block id="99a583bf10de030bdac538c8b15f5b45" category="paragraph">이 동작은 커넥터의 _용량 관리 모드_에 의해 결정됩니다. 용량 관리 모드는 해당 커넥터가 관리하는 모든 Cloud Volumes ONTAP 시스템에 영향을 줍니다. 다른 커넥터가 있는 경우 다르게 구성할 수 있습니다.</block>
+  <block id="825ccc8f97f155807b31877cfd383216" category="inline-link-macro">용량 관리 모드를 수정하는 방법을 알아보십시오</block>
+  <block id="bb4793d3293acae6810aa94d7a19444b" category="paragraph"><block ref="efe15a4f6f400360bbcb54034c690ce4" category="inline-link-macro-rx"></block>.</block>
+  <block id="278a1c52ea1d5d6936facc457046eea4" category="sidebar">용량 설정을 관리합니다</block>
 </blocks>

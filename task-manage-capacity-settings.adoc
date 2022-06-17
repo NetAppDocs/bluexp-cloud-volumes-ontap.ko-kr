@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: task-manage-capacity-settings.html 
+keywords: aggregates, delete aggregates, add disks, view aggregates 
+summary: 디스크를 추가하고, 애그리게이트에 대한 정보를 확인하고, 삭제하여 애그리게이트를 직접 관리하십시오. 
+---
+= 커넥터의 용량 설정을 관리합니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+각 커넥터에는 Cloud Volumes ONTAP의 총 용량을 관리하는 방법을 결정하는 설정이 있습니다.
+
+이러한 설정은 커넥터에 의해 관리되는 모든 Cloud Volumes ONTAP 시스템에 영향을 줍니다. 다른 커넥터가 있는 경우 다르게 구성할 수 있습니다.
+
+커넥터 설정을 수정하려면 계정 관리자 권한이 필요합니다.
+
+.단계
+. Cloud Manager 콘솔의 오른쪽 상단에서 설정 아이콘을 클릭하고 * 커넥터 설정 * 을 선택합니다.
+. Capacity * 에서 다음 설정을 수정합니다.
++
+용량 관리 모드:: Cloud Manager에서 스토리지 용량에 대한 결정을 내리거나 Cloud Manager에서 자동으로 용량 요구사항을 관리하는지 여부를 선택합니다.
++
+--
+link:concept-storage-management.html#capacity-management["용량 관리 모드의 작동 방식에 대해 알아보십시오"].
+
+--
+여유 공간 비율:: Aggregate의 여유 공간 비율이 지정된 임계값 아래로 떨어지면 알림을 트리거합니다.
++
+--
+여유 공간 비율은 다음과 같이 계산됩니다.
+
+(Aggregate capacity - 애그리게이트에서 사용하는 총 용량입니다.)/애그리게이트 용량입니다
+
+--
+데이터 계층화에 대한 여유 공간 비율:: 데이터를 용량 계층(오브젝트 스토리지)으로 계층화할 때 성능 계층(디스크)에 필요한 여유 공간을 정의합니다.
++
+--
+이 비율은 재해 복구 시나리오에 중요합니다. 용량 계층에서 데이터를 읽으면 Cloud Volumes ONTAP는 더 나은 성능을 제공하기 위해 데이터를 성능 계층으로 이동합니다. 공간이 부족하면 Cloud Volumes ONTAP에서 데이터를 이동할 수 없습니다.
+
+--
+
+
+. 저장 * 을 클릭합니다.
+

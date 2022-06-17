@@ -124,6 +124,8 @@ sidebar:
         url: "/task-create-aggregates.html"
       - title: 기존 애그리게이트를 관리합니다
         url: "/task-manage-aggregates.html"
+      - title: 용량 설정을 관리합니다
+        url: "/task-manage-capacity-settings.html"
     - title: 스토리지 VM 관리
       entries:
       - title: Cloud Manager에서 스토리지 VM과 작업
