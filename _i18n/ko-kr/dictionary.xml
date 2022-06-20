@@ -3931,7 +3931,6 @@
   <block id="1ddb0e5b328575796533c1e7f5b1f802" category="doc">공유 서브넷에 HA 쌍 구축</block>
   <block id="18520da6851f84ab4d7ab3d88d237cd9" category="inline-link">VPC 공유</block>
   <block id="c81d796f0d5c668dfa8d68823f479c90" category="paragraph">와 함께<block ref="93089d0988badd859f8a3f19acd5c989" category="inline-link-rx"></block>Cloud Volumes ONTAP HA 구성은 다음 두 계정에 분산됩니다.</block>
-  <block id="77af655ba582e54e6d4578b31231fed3" category="list-text">네트워킹을 소유하는 VPC 소유자 계정(VPC, 서브넷 및 경로 테이블)</block>
   <block id="276a017110af33316f598f585486bc29" category="list-text">참가자 계정으로, EC2 인스턴스가 공유 서브넷에 구축됩니다(여기에는 2개의 HA 노드와 중재자가 포함됨).</block>
   <block id="123682af03421de2f290c8c127ad313b" category="paragraph">여러 가용성 영역에 배포된 Cloud Volumes ONTAP HA 구성의 경우 HA 중재자가 VPC 소유자 계정의 라우트 테이블에 쓸 수 있는 특정 권한이 필요합니다. 중재자가 추정할 수 있는 IAM 역할을 설정하여 이러한 권한을 제공해야 합니다.</block>
   <block id="d0ddf69c5f314ee3119f1732980d427e" category="list-text">IAM 역할을 생성합니다.</block>
@@ -4161,4 +4160,5 @@
   <block id="825ccc8f97f155807b31877cfd383216" category="inline-link-macro">용량 관리 모드를 수정하는 방법을 알아보십시오</block>
   <block id="bb4793d3293acae6810aa94d7a19444b" category="paragraph"><block ref="efe15a4f6f400360bbcb54034c690ce4" category="inline-link-macro-rx"></block>.</block>
   <block id="278a1c52ea1d5d6936facc457046eea4" category="sidebar">용량 설정을 관리합니다</block>
+  <block id="3b00b6cf71c2bc89f160c57b7ec5696c" category="list-text">네트워킹을 소유하는 VPC 소유자 계정(VPC, 서브넷, 라우팅 테이블 및 보안 그룹)</block>
 </blocks>
