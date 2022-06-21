@@ -128,11 +128,6 @@
   <block id="045ab321baf13520d6d643ff584cda4b" category="list-text">* 충전 방법 및 NSS 계정 *: 이 시스템에서 사용할 충전 옵션을 지정한 다음 NetApp Support 사이트 계정을 지정합니다.</block>
   <block id="7fb89373a84cc62fc3eab535be59da09" category="list-text">* 사전 구성된 패키지 *: 패키지 중 하나를 선택하여 Cloud Volumes ONTAP 시스템을 신속하게 배포하거나 * 고유한 구성 만들기 * 를 클릭합니다.</block>
   <block id="07745782b2f663acabec45bb85011c26" category="paragraph">패키지 중 하나를 선택하는 경우 볼륨을 지정한 다음 구성을 검토 및 승인하기만 하면 됩니다.</block>
-  <block id="090041ff6b386423b91a6f359f34c7a2" category="list-text">* 라이선스 *: 필요에 따라 Cloud Volumes ONTAP 버전을 변경하고 라이선스를 선택한 다음 가상 머신 유형을 선택합니다.</block>
-  <block id="961a3dc58d6b4932fbfb799cf73445a6" category="inline-image-macro">라이선스 페이지의 스크린샷</block>
-  <block id="2d9dc9b1e8b055a671f0cb08f39f75dd" category="paragraph"><block ref="2d9dc9b1e8b055a671f0cb08f39f75dd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0399cb832c73a2a455b4ca61f7f988a1" category="paragraph">시스템을 시작한 후 요구 사항이 변경되는 경우 나중에 라이센스 또는 가상 시스템 유형을 수정할 수 있습니다.</block>
-  <block id="60dcda39366965c05bec61422da6d825" category="admonition">선택한 버전에 대해 새로운 출시 후보, 일반 가용성 또는 패치 릴리스를 사용할 수 있는 경우, Cloud Manager는 작업 환경을 생성할 때 시스템을 해당 버전으로 업데이트합니다. 예를 들어, Cloud Volumes ONTAP 9.6 RC1 및 9.6 GA를 사용할 수 있는 경우 업데이트가 발생합니다. 업데이트는 한 릴리즈에서 다른 릴리즈로 발생하지 않습니다(예: 9.6에서 9.7로).</block>
   <block id="ea98b8a2a594dc7f210eacab023097af" category="list-text">* Azure Marketplace * 구독: Cloud Manager가 Cloud Volumes ONTAP의 프로그래밍 방식 배포를 활성화할 수 없는 경우 다음 단계를 따르십시오.</block>
   <block id="bd654b1ac9bc9d096a99f6a154fac99e" category="list-text">* 기본 스토리지 리소스 *: 초기 애그리게이트의 설정(디스크 유형, 각 디스크의 크기, Blob 스토리지까지 데이터 계층화 활성화 여부)을 선택합니다.</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">다음 사항에 유의하십시오.</block>
@@ -409,7 +404,6 @@
   <block id="c6183bf47ae03a5fca3043b995daf4ad" category="paragraph">다음 비디오에서는 용량제 마켓플레이스 서브스크립션을 GCP 프로젝트에 연결하는 방법을 보여줍니다. 또는 에 있는 구독 단계를 따릅니다<block ref="1ca5652e3bd427104a4f5f3fa595cbd8" category="inline-link-rx"></block> 섹션을 참조하십시오.</block>
   <block id="440dfcc60c7c21a1c797e881b2dd7646" category="list-text">* 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. Cloud Backup을 선택하거나 Tiering을 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.</block>
   <block id="2e5f3aa65f18453c5c51b5ffcf2214d5" category="inline-link">Google Cloud 설명서: 개인 Google Access 구성</block>
-  <block id="c05ba15abbb9e0a060b98aa13dc7640d" category="paragraph"><block ref="c05ba15abbb9e0a060b98aa13dc7640d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f72d7e736d5c07e6650c7c59c1d4beae" category="list-text">* 기본 스토리지 리소스 *: 초기 집계에 대한 설정(디스크 유형 및 각 디스크의 크기)을 선택합니다.</block>
   <block id="46c8ec27dde6a17388de3058e4f90f1b" category="paragraph">디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 <block ref="648252a904437aee014f01faec9e87c4" category="inline-link-macro-rx"></block>.</block>
   <block id="8ee28f71a3913c6cd38d72baee984fef" category="list-text">* 쓰기 속도 및 WORM *: * 일반 * 또는 * 고속 * 쓰기 속도를 선택하고 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.</block>
@@ -434,7 +428,6 @@
   <block id="74c223c0ac10d19fc933bf44bdfae707" category="list-text">* 연결 *: HA 구성을 위한 4개의 서로 다른 VPC, 각 VPC의 서브넷을 선택한 다음 방화벽 정책을 선택합니다.</block>
   <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">네트워킹 요구 사항에 대해 자세히 알아보십시오</block>
   <block id="7e1b099e8ddd48733a860e9dc84718f9" category="paragraph"><block ref="81d7ec58de725abfb78667b4f46a89ab" category="inline-link-macro-rx"></block>.</block>
-  <block id="9d2dc9c2bfbc24565be563cfd9e81ee4" category="admonition">선택한 버전에 대해 새로운 출시 후보, 일반 가용성 또는 패치 릴리스를 사용할 수 있는 경우, Cloud Manager는 작업 환경을 생성할 때 시스템을 해당 버전으로 업데이트합니다. 예를 들어, Cloud Volumes ONTAP 9.8 RC1 및 9.8 GA를 선택하면 업데이트가 발생합니다. 업데이트는 9.7에서 9.8까지 한 릴리스에서 다른 릴리스로 수행되지 않습니다.</block>
   <block id="09c7f0ffca918d21158d7ea36691dcf2" category="list-text">* WORM *: 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.</block>
   <block id="279b45ef0c8a71337da715b526ec30ed" category="paragraph">데이터 계층화가 설정된 경우 WORM을 설정할 수 없습니다. <block ref="b8e9389aa16366d8b675fc0ac72edf2e" category="inline-link-macro-rx"></block>.</block>
   <block id="5a491f1bb01a92203592595fdf6ce353" category="list-text">* Google Cloud Platform * 의 데이터 계층화: 초기 애그리게이트에 데이터 계층화를 사용할 것인지, 계층형 데이터에 대한 스토리지 클래스를 선택한 다음 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택합니다.</block>
@@ -3076,9 +3069,6 @@
   <block id="c449e34e5848c75cf2ae5048d97482c1" category="list-text">* IAM Role *: Cloud Manager가 역할을 생성할 수 있도록 기본 옵션을 유지하는 것이 가장 좋습니다.</block>
   <block id="bef2f3bc1b5f6b5fc3eaabff818b8b07" category="inline-link">Cloud Volumes ONTAP 노드의 정책 요구사항</block>
   <block id="28df6ca63a931a73e42bb1a5832f842b" category="paragraph">자체 정책을 사용하려면 이 정책이 충족해야 합니다<block ref="e6af531133ecd89e70d5f32cb2437c92" category="inline-link-rx"></block>.</block>
-  <block id="f897dd944b67f372edf158d00528750c" category="list-text">* 라이선스 *: 필요에 따라 Cloud Volumes ONTAP 버전을 변경하고 라이선스, 인스턴스 유형 및 인스턴스 테넌시를 선택합니다.</block>
-  <block id="b2b43dc9372f31503324940c387fefa7" category="paragraph"><block ref="b2b43dc9372f31503324940c387fefa7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="897d3de4f4ba89a73d1ab8718eae7186" category="paragraph">인스턴스를 시작한 후 필요한 사항이 변경되면 나중에 라이센스 또는 인스턴스 유형을 수정할 수 있습니다.</block>
   <block id="47d8aa01ec2403f7d2bfb83097302616" category="list-text">* 기본 스토리지 리소스 *: 초기 애그리게이트의 설정(디스크 유형, 각 디스크의 크기, 데이터 계층화 활성화 여부)을 선택합니다.</block>
   <block id="ffc7a29a080fe8de84db524d17f3f56d" category="paragraph">디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 <block ref="f64204a2336539d9a8e0dc0a2e1a572b" category="inline-link-macro-rx"></block>.</block>
   <block id="a6fcc094aa2aa8328784bade825b168a" category="inline-link-macro">데이터 계층화의 작동 방식에 대해 알아보십시오</block>
@@ -3108,7 +3098,6 @@
   <block id="5e2b7cebb4bf10923692995c621e2e85" category="paragraph">둘 이상의 라우팅 테이블이 있는 경우 올바른 라우팅 테이블을 선택하는 것이 매우 중요합니다. 그렇지 않으면 일부 클라이언트가 Cloud Volumes ONTAP HA 쌍에 액세스하지 못할 수 있습니다. 라우팅 테이블에 대한 자세한 내용은 을 참조하십시오<block ref="8ed06851f50fcdbded65cb78f986bfa5" category="inline-link-rx"></block>.</block>
   <block id="b2bb3f64fb5b828b17cb684f3c44b684" category="inline-link">Cloud Volumes ONTAP 노드 및 HA 중재자의 정책 요구사항</block>
   <block id="75b4ad07a93bd884b4cecba578453c90" category="paragraph">자체 정책을 사용하려면 이 정책이 충족해야 합니다<block ref="a2de7a18595694bfdf2d090235d628ca" category="inline-link-rx"></block>.</block>
-  <block id="bcb01838b65b85f35ba0eb30aab65df6" category="paragraph">인스턴스를 시작한 후 요구 사항이 변경되는 경우 나중에 라이센스 또는 인스턴스 유형을 수정할 수 있습니다.</block>
   <block id="e33d0575f3a1479ae00cc2fb1764511c" category="list-text">* CIFS 설정 *: CIFS 프로토콜을 선택한 경우 CIFS 서버를 설정합니다.</block>
   <block id="b687eeea7d6170a303a1764ea5284467" category="paragraph">Cloud Manager가 Cloud Volumes ONTAP HA 쌍을 시작합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.</block>
   <block id="63f5b3a996af84469a7cccd34a9a29c0" category="paragraph">HA 쌍 실행에 문제가 있는 경우 장애 메시지를 검토하십시오. 작업 환경을 선택하고 환경 다시 생성 을 클릭할 수도 있습니다.</block>
@@ -3933,13 +3922,6 @@
   <block id="c81d796f0d5c668dfa8d68823f479c90" category="paragraph">와 함께<block ref="93089d0988badd859f8a3f19acd5c989" category="inline-link-rx"></block>Cloud Volumes ONTAP HA 구성은 다음 두 계정에 분산됩니다.</block>
   <block id="276a017110af33316f598f585486bc29" category="list-text">참가자 계정으로, EC2 인스턴스가 공유 서브넷에 구축됩니다(여기에는 2개의 HA 노드와 중재자가 포함됨).</block>
   <block id="123682af03421de2f290c8c127ad313b" category="paragraph">여러 가용성 영역에 배포된 Cloud Volumes ONTAP HA 구성의 경우 HA 중재자가 VPC 소유자 계정의 라우트 테이블에 쓸 수 있는 특정 권한이 필요합니다. 중재자가 추정할 수 있는 IAM 역할을 설정하여 이러한 권한을 제공해야 합니다.</block>
-  <block id="d0ddf69c5f314ee3119f1732980d427e" category="list-text">IAM 역할을 생성합니다.</block>
-  <block id="83f73296b842a17b957ac45fce64df7a" category="list-text">Cloud Volumes ONTAP용 EC2 인스턴스를 배포하려는 참가자 계정의 IAM 콘솔로 이동합니다.</block>
-  <block id="7f4640b00b5df83a54d4aaaa51f7d6ab" category="list-text">액세스 관리에서 * 역할 &gt; 역할 만들기 * 를 클릭하고 단계를 따라 역할을 만듭니다.</block>
-  <block id="e1a3d580d5cb42904b96dc05c0e0903d" category="paragraph">다음을 수행하십시오.</block>
-  <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">신뢰할 수 있는 엔터티 유형 * 에서 * AWS 계정 * 을 선택합니다.</block>
-  <block id="a4977642f2eb92080375e1160904c3a7" category="list-text">다른 AWS 계정 * 을 선택하고 VPC 소유자 계정의 ID를 입력합니다.</block>
-  <block id="fe1f47d50f78d0e14014e50d690720d7" category="list-text">HA Pair를 배포할 때 API 요청에 붙여넣을 수 있도록 IAM 역할의 Role ARN을 복사합니다.</block>
   <block id="fd3149c0644c605d917aeebea557d6d6" category="list-text">VPC 소유자 계정의 서브넷을 참가자 계정과 공유합니다.</block>
   <block id="fa9fe3d94968b5f037653d41700dcd70" category="paragraph">이 단계는 공유 서브넷에 HA 쌍을 구축하는 데 필요합니다.</block>
   <block id="d948aef27d8dea6efce2392f04bd6c9b" category="inline-link">AWS 설명서: 서브넷을 공유합니다</block>
@@ -4133,7 +4115,6 @@
   <block id="11e5ec6a6dd579034180a34f735c57ee" category="paragraph">비즈니스 요구 사항에 따라 필요한 경우 비공개 링크 연결을 비활성화할 수도 있습니다. 링크를 사용하지 않도록 설정하면 Cloud Manager에서 서비스 엔드포인트를 대신 사용하도록 Cloud Volumes ONTAP를 구성합니다.</block>
   <block id="4ff3b739a9573101f05111dd5136fe72" category="inline-link-macro">Cloud Volumes ONTAP에서 Azure 프라이빗 링크 또는 서비스 엔드포인트를 사용하는 방법에 대해 자세히 알아보십시오</block>
   <block id="47d9f4d696319d2e54439849e1a532f3" category="paragraph"><block ref="c666fc2bdc96ffeac9aa956ec79d2d3c" category="inline-link-macro-rx"></block>.</block>
-  <block id="ed383a2427feead2979d4dff111c8a81" category="list-text">"STS:AssumeRole" 권한이 포함된 IAM 역할에 정책을 첨부합니다.</block>
   <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">예를 들면 다음과 같습니다.</block>
   <block id="4803d974c37e8a3895fbff420f579823" category="summary">Cloud Volumes ONTAP는 Azure 프라이빗 링크를 사용하여 연결된 저장소 계정에 연결합니다. 필요한 경우 Azure Private Links를 비활성화하고 서비스 끝점을 대신 사용할 수 있습니다.</block>
   <block id="48230385876daffc7535fc6eab05f805" category="paragraph">기본적으로 Cloud Manager는 Cloud Volumes ONTAP와 연결된 스토리지 계정 간의 연결을 위해 Azure 프라이빗 링크를 활성화합니다. Azure Private Link는 Azure의 엔드포인트 간 연결을 보호하고 성능상의 이점을 제공합니다.</block>
@@ -4160,5 +4141,17 @@
   <block id="825ccc8f97f155807b31877cfd383216" category="inline-link-macro">용량 관리 모드를 수정하는 방법을 알아보십시오</block>
   <block id="bb4793d3293acae6810aa94d7a19444b" category="paragraph"><block ref="efe15a4f6f400360bbcb54034c690ce4" category="inline-link-macro-rx"></block>.</block>
   <block id="278a1c52ea1d5d6936facc457046eea4" category="sidebar">용량 설정을 관리합니다</block>
-  <block id="3b00b6cf71c2bc89f160c57b7ec5696c" category="list-text">네트워킹을 소유하는 VPC 소유자 계정(VPC, 서브넷, 라우팅 테이블 및 보안 그룹)</block>
+  <block id="ae3f5f74ff8afbb3ad6f13ea4d94e15d" category="list-text">네트워킹을 소유하는 VPC 소유자 계정(VPC, 서브넷, 라우팅 테이블 및 Cloud Volumes ONTAP 보안 그룹)</block>
+  <block id="0865af5fc69f0406a42513125c01665a" category="paragraph">다음 이미지는 이 구축과 관련된 구성 요소를 보여줍니다.</block>
+  <block id="05d8998343446d031d9ffecece202f16" category="inline-image-macro">공유 VPC의 Cloud Volumes ONTAP HA 구축 개념 이미지 VPC 소유자 계정 및 참가자 계정에서 사용할 수 있는 공유 VPC가 표시됩니다. 공유 VPC에는 IAM 역할, 라우트 테이블, 보안 그룹 및 세 개의 공유 서브넷이 포함됩니다. 참가자 계정에는 Cloud Volumes ONTAP HA 구성 및 중재자에 연결된 IAM 역할이 포함됩니다.</block>
+  <block id="16022b60738c83c139d9100fc4c374e2" category="paragraph"><block ref="16022b60738c83c139d9100fc4c374e2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="34bd4baaa8e789d8aa61d0d0b260be50" category="paragraph">아래 단계에 설명된 대로 참가자 계정과 서브넷을 공유하고 VPC 소유자 계정에서 IAM 역할 및 보안 그룹을 만들어야 합니다.</block>
+  <block id="aa347c470687b77239d8705da5f3b6e7" category="paragraph">Cloud Volumes ONTAP 작업 환경을 생성하면 Cloud Manager가 IAM 역할을 자동으로 생성하고 중재자를 연결합니다. 이 역할은 HA 쌍과 연결된 경로 테이블을 변경하기 위해 VPC 소유자 계정에서 생성한 IAM 역할을 가정합니다.</block>
+  <block id="df6af46022c06219948aa835c1aa9bd1" category="list-text">VPC 소유자 계정에서 다음 권한이 포함된 IAM 역할을 생성합니다.</block>
+  <block id="35a6ff89d93b3f8ced78a209f40a6fb8" category="paragraph">"assumeRoleArn" 필드에는 VPC 소유자 계정에서 만든 IAM 역할의 ARN이 포함되어야 합니다(이전 단계 참조).</block>
+  <block id="1b62d05ab80fd74978b4a253c3257fa1" category="list-text">* 사전 구성된 패키지 *: 패키지 중 하나를 선택하여 Cloud Volumes ONTAP를 빠르게 시작하거나 * 구성 변경 * 을 클릭하여 원하는 구성을 선택합니다.</block>
+  <block id="49cb8e71867f9230b520a22b06c895b3" category="list-text">* 라이선스 *: 필요에 따라 Cloud Volumes ONTAP 버전을 변경하고 인스턴스 유형 및 인스턴스 테넌시를 선택합니다.</block>
+  <block id="845890c0fdcdd139e39faf76168b5176" category="admonition">선택한 버전에 대해 새로운 출시 후보, 일반 가용성 또는 패치 릴리스를 사용할 수 있는 경우, Cloud Manager는 작업 환경을 생성할 때 시스템을 해당 버전으로 업데이트합니다. 예를 들어, Cloud Volumes ONTAP 9.10.1 및 9.10.1 P4를 사용할 수 있는 경우 업데이트가 발생합니다. 업데이트는 한 릴리즈에서 다른 릴리즈로 발생하지 않습니다(예: 9.6에서 9.7로).</block>
+  <block id="fcfee66b6a37b4d1d3f3f47bfadde72b" category="list-text">* 라이선스 *: 필요에 따라 Cloud Volumes ONTAP 버전을 변경하고 시스템 유형을 선택합니다.</block>
+  <block id="43646453993899617208d29ad5415e87" category="list-text">* 라이선스 *: 필요에 따라 Cloud Volumes ONTAP 버전을 변경하고 가상 머신 유형을 선택합니다.</block>
 </blocks>

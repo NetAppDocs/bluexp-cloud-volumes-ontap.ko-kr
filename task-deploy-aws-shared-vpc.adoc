@@ -18,44 +18,21 @@ summary: 9.11.1 릴리즈부터 VPC 공유를 지원하는 AWS에서 Cloud Volum
 
 와 함께 https://aws.amazon.com/blogs/networking-and-content-delivery/vpc-sharing-a-new-approach-to-multiple-accounts-and-vpc-management/["VPC 공유"^]Cloud Volumes ONTAP HA 구성은 다음 두 계정에 분산됩니다.
 
-* 네트워킹을 소유하는 VPC 소유자 계정(VPC, 서브넷, 라우팅 테이블 및 보안 그룹)
+* 네트워킹을 소유하는 VPC 소유자 계정(VPC, 서브넷, 라우팅 테이블 및 Cloud Volumes ONTAP 보안 그룹)
 * 참가자 계정으로, EC2 인스턴스가 공유 서브넷에 구축됩니다(여기에는 2개의 HA 노드와 중재자가 포함됨).
 
 
 여러 가용성 영역에 배포된 Cloud Volumes ONTAP HA 구성의 경우 HA 중재자가 VPC 소유자 계정의 라우트 테이블에 쓸 수 있는 특정 권한이 필요합니다. 중재자가 추정할 수 있는 IAM 역할을 설정하여 이러한 권한을 제공해야 합니다.
 
+다음 이미지는 이 구축과 관련된 구성 요소를 보여줍니다.
+
+image:diagram-aws-vpc-sharing.png["공유 VPC의 Cloud Volumes ONTAP HA 구축 개념 이미지 VPC 소유자 계정 및 참가자 계정에서 사용할 수 있는 공유 VPC가 표시됩니다. 공유 VPC에는 IAM 역할, 라우트 테이블, 보안 그룹 및 세 개의 공유 서브넷이 포함됩니다. 참가자 계정에는 Cloud Volumes ONTAP HA 구성 및 중재자에 연결된 IAM 역할이 포함됩니다."]
+
+아래 단계에 설명된 대로 참가자 계정과 서브넷을 공유하고 VPC 소유자 계정에서 IAM 역할 및 보안 그룹을 만들어야 합니다.
+
+Cloud Volumes ONTAP 작업 환경을 생성하면 Cloud Manager가 IAM 역할을 자동으로 생성하고 중재자를 연결합니다. 이 역할은 HA 쌍과 연결된 경로 테이블을 변경하기 위해 VPC 소유자 계정에서 생성한 IAM 역할을 가정합니다.
+
 .단계
-. IAM 역할을 생성합니다.
-+
-.. Cloud Volumes ONTAP용 EC2 인스턴스를 배포하려는 참가자 계정의 IAM 콘솔로 이동합니다.
-.. 액세스 관리에서 * 역할 > 역할 만들기 * 를 클릭하고 단계를 따라 역할을 만듭니다.
-+
-다음을 수행하십시오.
-
-+
-*** 신뢰할 수 있는 엔터티 유형 * 에서 * AWS 계정 * 을 선택합니다.
-*** 다른 AWS 계정 * 을 선택하고 VPC 소유자 계정의 ID를 입력합니다.
-*** "STS:AssumeRole" 권한이 포함된 IAM 역할에 정책을 첨부합니다.
-+
-예를 들면 다음과 같습니다.
-
-+
-[source, json]
-----
-{
-  "Version": "2012-10-17",
-  "Statement": {
-    "Effect": "Allow",
-    "Action": "sts:AssumeRole",
-    "Resource": "arn:aws:iam::account-id:role/Test*"
-  }
-}
-----
-
-
-.. HA Pair를 배포할 때 API 요청에 붙여넣을 수 있도록 IAM 역할의 Role ARN을 복사합니다.
-
-
 . VPC 소유자 계정의 서브넷을 참가자 계정과 공유합니다.
 +
 이 단계는 공유 서브넷에 HA 쌍을 구축하는 데 필요합니다.
@@ -67,7 +44,24 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-sh
 +
 link:reference-security-groups.html["Cloud Volumes ONTAP의 보안 그룹 규칙을 참조하십시오"]. HA 중재자를 위한 보안 그룹을 만들 필요는 없습니다. Cloud Manager가 이 작업을 수행합니다.
 
+. VPC 소유자 계정에서 다음 권한이 포함된 IAM 역할을 생성합니다.
++
+[source, json]
+----
+Action": [
+                "ec2:AssignPrivateIpAddresses",
+                "ec2:CreateRoute",
+                "ec2:DeleteRoute",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeVpcs",
+                "ec2:ReplaceRoute",
+                "ec2:UnassignPrivateIpAddresses"
+----
 . API를 사용하여 새 Cloud Volumes ONTAP 작업 환경을 만들고 "haParams" 개체의 "assumeRoleArn" 필드를 전달합니다.
++
+"assumeRoleArn" 필드에는 VPC 소유자 계정에서 만든 IAM 역할의 ARN이 포함되어야 합니다(이전 단계 참조).
+
 +
 예를 들면 다음과 같습니다.
 
