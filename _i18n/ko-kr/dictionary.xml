@@ -4109,8 +4109,6 @@
   <block id="14c6e9ce4cfa25dc1cfa02fe401deed1" category="section-title">Azure 개인 링크 사용</block>
   <block id="347431c5a9e1d410f530ec93c187d045" category="paragraph">대부분의 경우 Cloud Volumes ONTAP를 사용하여 Azure 개인 링크를 설정하는 데 필요한 작업은 없습니다. Cloud Manager는 Azure 프라이빗 링크를 관리합니다. 그러나 Azure Private DNS를 사용하는 경우에는 구성 파일을 편집해야 합니다. Azure의 커넥터 위치에 대한 요구 사항도 알고 있어야 합니다.</block>
   <block id="1a4c6839ae7b3d4de45f275929539d1b" category="paragraph">Cloud Manager는 Azure에 Cloud Volumes ONTAP를 구축할 때 리소스 그룹에 프라이빗 엔드포인트를 생성합니다. 프라이빗 엔드포인트는 Cloud Volumes ONTAP의 스토리지 계정과 연결되어 있습니다. 따라서 Cloud Volumes ONTAP 스토리지에 대한 액세스는 Microsoft 백본 네트워크를 통해 이루어집니다.</block>
-  <block id="fe133d1f6db8d046e4b328c0d9a967a1" category="paragraph">사용 중인 라이센스 모델에 관계없이 Cloud Volumes ONTAP 시스템의 최대 수는 NetApp 계정당 50개로 제한됩니다.</block>
-  <block id="ae5034ae6657395ba1fc2a16d2c55db3" category="paragraph">a_system_은 HA 쌍 또는 단일 노드 시스템입니다. 예를 들어, 8개의 Cloud Volumes ONTAP HA 쌍과 4개의 단일 노드 시스템이 있다면 총 12개의 시스템이 있고 고객 시스템에 38개의 추가 시스템이 있을 것입니다.</block>
   <block id="11e5ec6a6dd579034180a34f735c57ee" category="paragraph">비즈니스 요구 사항에 따라 필요한 경우 비공개 링크 연결을 비활성화할 수도 있습니다. 링크를 사용하지 않도록 설정하면 Cloud Manager에서 서비스 엔드포인트를 대신 사용하도록 Cloud Volumes ONTAP를 구성합니다.</block>
   <block id="4ff3b739a9573101f05111dd5136fe72" category="inline-link-macro">Cloud Volumes ONTAP에서 Azure 프라이빗 링크 또는 서비스 엔드포인트를 사용하는 방법에 대해 자세히 알아보십시오</block>
   <block id="47d9f4d696319d2e54439849e1a532f3" category="paragraph"><block ref="c666fc2bdc96ffeac9aa956ec79d2d3c" category="inline-link-macro-rx"></block>.</block>
@@ -4158,4 +4156,19 @@
   <block id="2bce87c6b4b3176bac40c2e0439a5737" category="paragraph">"securityGroupId" 필드는 VPC 소유자 계정에서 만든 보안 그룹을 지정해야 합니다(위의 2단계 참조).</block>
   <block id="b11fdc24b5ec8e29c24abb5b80715fc3" category="list-text">"haParams" 개체의 "assumeRoleArn</block>
   <block id="d02c51c501566fb6b3f4693ca83b01ea" category="paragraph">"assumeRoleArn" 필드에는 VPC 소유자 계정에서 만든 IAM 역할의 ARN이 포함되어야 합니다(위의 3단계 참조).</block>
+  <block id="f4cf4636284848695d07f7eb4c75e531" category="summary">계획되지 않은 페일오버 시간을 줄이고 Cloud Volumes ONTAP에 대한 NFSv4 지원을 활성화하려면 Microsoft Azure의 고가용성 모드를 활성화해야 합니다.</block>
+  <block id="e50998a44626779ff3f707014e804bb6" category="doc">Azure에서 고가용성 모드를 활성화합니다</block>
+  <block id="8c3a857138568ac83d0c9e6b5e13c75e" category="paragraph">Cloud Volumes ONTAP 9.10.1 릴리즈부터 Microsoft Azure에서 실행되는 Cloud Volumes ONTAP HA 쌍의 계획되지 않은 페일오버 시간을 줄이고 NFSv4에 대한 지원을 추가했습니다. Cloud Volumes ONTAP에서 이러한 향상된 기능을 사용하려면 Azure 구독에서 고가용성 기능을 활성화해야 합니다.</block>
+  <block id="f962fda902f28c365c71973532fe62d2" category="paragraph">Azure 구독에서 이 기능을 활성화해야 할 경우 Cloud Manager에서 작업 필요 메시지에 이러한 세부 정보를 표시합니다.</block>
+  <block id="4b86a9bfe35da8d5b3e1175b8664656d" category="list-text">Cloud Volumes ONTAP HA 쌍의 고가용성에는 문제가 없습니다. 이 Azure 기능은 ONTAP와 함께 작동하여 계획되지 않은 페일오버 이벤트로 인해 NFS 프로토콜에 대해 클라이언트에서 관측된 애플리케이션 중단 시간을 줄입니다.</block>
+  <block id="74c86f2714a033254b4bc8058a066937" category="list-text">이 기능을 사용하도록 설정하는 것은 Cloud Volumes ONTAP HA 쌍의 무중단 기능입니다.</block>
+  <block id="7dbbac252a198b9c7c543b30ca9455a6" category="list-text">Azure 구독에서 이 기능을 활성화해도 다른 VM에 문제가 발생하지 않습니다.</block>
+  <block id="3a3aee537f8eb946ce95b303a0b0cde6" category="paragraph">"소유자" 권한이 있는 Azure 사용자는 Azure CLI에서 이 기능을 활성화할 수 있습니다.</block>
+  <block id="dede8f1d754e5872747fd6fdd219a9da" category="inline-link">Azure Portal에서 Azure Cloud Shell에 액세스합니다</block>
+  <block id="826fb3564b49a63adcbf5c36eec58144" category="list-text"><block ref="826fb3564b49a63adcbf5c36eec58144" category="inline-link-rx"></block></block>
+  <block id="17cecf34f6070ab2eecf2740c05f04fb" category="list-text">고가용성 모드 기능 등록:</block>
+  <block id="f2c8cae480fd1319bed5bc6dad61485e" category="list-text">필요한 경우 기능이 지금 등록되었는지 확인합니다.</block>
+  <block id="3f8d6716204225738a12373603bece28" category="paragraph">Azure CLI는 다음과 유사한 결과를 반환해야 합니다.</block>
+  <block id="b730a5e05a41eebeb51f5aee7c746386" category="paragraph">a_system_은 HA 쌍 또는 단일 노드 시스템입니다. 예를 들어, 2개의 Cloud Volumes ONTAP HA 쌍과 2개의 단일 노드 시스템이 있다면 총 4개의 시스템이 있고 고객 계정에 16개의 추가 시스템을 위한 공간이 있을 것입니다.</block>
+  <block id="0b6cbfb7fa10ae2ac77ae5d3273ea95e" category="sidebar">고가용성 모드를 활성화합니다</block>
 </blocks>
