@@ -3929,7 +3929,6 @@
   <block id="b5efff410bfe210c5df187773e0e0617" category="list-text">VPC 소유자 계정에서 Cloud Volumes ONTAP용 보안 그룹을 생성합니다.</block>
   <block id="fd399fa27d12a21d9e3844eda1427121" category="inline-link-macro">Cloud Volumes ONTAP의 보안 그룹 규칙을 참조하십시오</block>
   <block id="7ce51495a198d32b13be229abbde5e69" category="paragraph"><block ref="42b118f18012057fcf20af94d08351c2" category="inline-link-macro-rx"></block>. HA 중재자를 위한 보안 그룹을 만들 필요는 없습니다. Cloud Manager가 이 작업을 수행합니다.</block>
-  <block id="eb89b60e2a67c0ee5e8d70c5078468fc" category="list-text">API를 사용하여 새 Cloud Volumes ONTAP 작업 환경을 만들고 "haParams" 개체의 "assumeRoleArn" 필드를 전달합니다.</block>
   <block id="b1dde3304edf68afb6be3819b52b7152" category="inline-link">Cloud Volumes ONTAP API에 대해 자세히 알아보십시오</block>
   <block id="45d56c7397375528eb877ce509812ff1" category="paragraph"><block ref="45d56c7397375528eb877ce509812ff1" category="inline-link-rx"></block></block>
   <block id="73e4e3a380b383c5159ac72a69294ef7" category="paragraph">+ Elastic Volumes를 지원하는 AWS의 Aggregate의 경우 Cloud Manager는 RAID 그룹의 디스크 크기도 증가시킵니다. <block ref="e64e49a1cded5f4109adae46b4faa045" category="inline-link-macro-rx"></block>.</block>
@@ -4148,10 +4147,15 @@
   <block id="34bd4baaa8e789d8aa61d0d0b260be50" category="paragraph">아래 단계에 설명된 대로 참가자 계정과 서브넷을 공유하고 VPC 소유자 계정에서 IAM 역할 및 보안 그룹을 만들어야 합니다.</block>
   <block id="aa347c470687b77239d8705da5f3b6e7" category="paragraph">Cloud Volumes ONTAP 작업 환경을 생성하면 Cloud Manager가 IAM 역할을 자동으로 생성하고 중재자를 연결합니다. 이 역할은 HA 쌍과 연결된 경로 테이블을 변경하기 위해 VPC 소유자 계정에서 생성한 IAM 역할을 가정합니다.</block>
   <block id="df6af46022c06219948aa835c1aa9bd1" category="list-text">VPC 소유자 계정에서 다음 권한이 포함된 IAM 역할을 생성합니다.</block>
-  <block id="35a6ff89d93b3f8ced78a209f40a6fb8" category="paragraph">"assumeRoleArn" 필드에는 VPC 소유자 계정에서 만든 IAM 역할의 ARN이 포함되어야 합니다(이전 단계 참조).</block>
   <block id="1b62d05ab80fd74978b4a253c3257fa1" category="list-text">* 사전 구성된 패키지 *: 패키지 중 하나를 선택하여 Cloud Volumes ONTAP를 빠르게 시작하거나 * 구성 변경 * 을 클릭하여 원하는 구성을 선택합니다.</block>
   <block id="49cb8e71867f9230b520a22b06c895b3" category="list-text">* 라이선스 *: 필요에 따라 Cloud Volumes ONTAP 버전을 변경하고 인스턴스 유형 및 인스턴스 테넌시를 선택합니다.</block>
   <block id="845890c0fdcdd139e39faf76168b5176" category="admonition">선택한 버전에 대해 새로운 출시 후보, 일반 가용성 또는 패치 릴리스를 사용할 수 있는 경우, Cloud Manager는 작업 환경을 생성할 때 시스템을 해당 버전으로 업데이트합니다. 예를 들어, Cloud Volumes ONTAP 9.10.1 및 9.10.1 P4를 사용할 수 있는 경우 업데이트가 발생합니다. 업데이트는 한 릴리즈에서 다른 릴리즈로 발생하지 않습니다(예: 9.6에서 9.7로).</block>
   <block id="fcfee66b6a37b4d1d3f3f47bfadde72b" category="list-text">* 라이선스 *: 필요에 따라 Cloud Volumes ONTAP 버전을 변경하고 시스템 유형을 선택합니다.</block>
   <block id="43646453993899617208d29ad5415e87" category="list-text">* 라이선스 *: 필요에 따라 Cloud Volumes ONTAP 버전을 변경하고 가상 머신 유형을 선택합니다.</block>
+  <block id="04eed4721c5f78efad9f2d87630c7b66" category="list-text">Cloud Manager API를 사용하여 새로운 Cloud Volumes ONTAP 작업 환경을 생성합니다.</block>
+  <block id="c5cdf23cc70d2bf39915c7d9fde1882f" category="paragraph">다음 필드를 지정해야 합니다.</block>
+  <block id="6c88dc45fe96a9d02c1b075cc76a48c7" category="list-text">"보안 그룹 ID"</block>
+  <block id="2bce87c6b4b3176bac40c2e0439a5737" category="paragraph">"securityGroupId" 필드는 VPC 소유자 계정에서 만든 보안 그룹을 지정해야 합니다(위의 2단계 참조).</block>
+  <block id="b11fdc24b5ec8e29c24abb5b80715fc3" category="list-text">"haParams" 개체의 "assumeRoleArn</block>
+  <block id="d02c51c501566fb6b3f4693ca83b01ea" category="paragraph">"assumeRoleArn" 필드에는 VPC 소유자 계정에서 만든 IAM 역할의 ARN이 포함되어야 합니다(위의 3단계 참조).</block>
 </blocks>

@@ -58,9 +58,18 @@ Action": [
                 "ec2:ReplaceRoute",
                 "ec2:UnassignPrivateIpAddresses"
 ----
-. API를 사용하여 새 Cloud Volumes ONTAP 작업 환경을 만들고 "haParams" 개체의 "assumeRoleArn" 필드를 전달합니다.
+. Cloud Manager API를 사용하여 새로운 Cloud Volumes ONTAP 작업 환경을 생성합니다.
 +
-"assumeRoleArn" 필드에는 VPC 소유자 계정에서 만든 IAM 역할의 ARN이 포함되어야 합니다(이전 단계 참조).
+다음 필드를 지정해야 합니다.
+
++
+** "보안 그룹 ID"
++
+"securityGroupId" 필드는 VPC 소유자 계정에서 만든 보안 그룹을 지정해야 합니다(위의 2단계 참조).
+
+** "haParams" 개체의 "assumeRoleArn
++
+"assumeRoleArn" 필드에는 VPC 소유자 계정에서 만든 IAM 역할의 ARN이 포함되어야 합니다(위의 3단계 참조).
 
 +
 예를 들면 다음과 같습니다.
@@ -74,5 +83,7 @@ Action": [
 ----
 +
 https://docs.netapp.com/us-en/cloud-manager-automation/cm/overview.html["Cloud Volumes ONTAP API에 대해 자세히 알아보십시오"^]
+
+
 
 
