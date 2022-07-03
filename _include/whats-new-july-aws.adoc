@@ -1,0 +1,19 @@
+= 탄성 볼륨 개선
+:allow-uri-read: 
+
+
+
+
+=== 탄성 볼륨 개선
+
+이제 Cloud Manager는 사용자 인터페이스에서 Cloud Volumes ONTAP 작업 환경을 생성할 때 Amazon EBS Elastic Volumes 기능을 지원합니다. GP3 또는 ios1 디스크를 사용하는 경우 Elastic Volumes 기능이 기본적으로 활성화됩니다. 스토리지 요구사항에 따라 초기 용량을 선택하고 Cloud Volumes ONTAP를 구축한 후 수정할 수 있습니다.
+
+link:concept-aws-elastic-volumes.html["AWS의 Elastic Volumes 지원에 대해 자세히 알아보십시오"].
+
+
+
+=== AWS의 ONTAP S3 라이센스
+
+Cloud Manager는 이제 ONTAP에서 버전 9.11.0 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 S3 라이센스를 자동으로 설치합니다.
+
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오"^].

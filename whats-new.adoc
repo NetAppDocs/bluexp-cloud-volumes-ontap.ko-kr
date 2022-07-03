@@ -20,6 +20,77 @@ Cloud Manager에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알
 
 
 
+== 2022년 7월 3일
+
+다음 변경 사항은 커넥터의 3.9.20 릴리스에 도입되었습니다.
+
+
+
+=== 디지털 지갑
+
+이제 Digital Wallet은 사용자 계정의 총 소비된 용량과 라이센스 패키지별 소비된 용량을 표시합니다. 이를 통해 비용이 청구되는 방식 및 추가 용량을 구입해야 하는지 여부를 파악할 수 있습니다.
+
+image:screenshot-digital-wallet-summary.png["용량 기반 라이센스에 대한 Digital Wallet 페이지를 보여 주는 스크린샷 이 페이지에서는 계정에서 사용된 용량에 대한 개요를 제공하고 라이센스 패키지를 통해 사용된 용량을 나눕니다."]
+
+ifdef::aws[]
+
+
+
+=== 탄성 볼륨 개선
+
+이제 Cloud Manager는 사용자 인터페이스에서 Cloud Volumes ONTAP 작업 환경을 생성할 때 Amazon EBS Elastic Volumes 기능을 지원합니다. GP3 또는 ios1 디스크를 사용하는 경우 Elastic Volumes 기능이 기본적으로 활성화됩니다. 스토리지 요구사항에 따라 초기 용량을 선택하고 Cloud Volumes ONTAP를 구축한 후 수정할 수 있습니다.
+
+link:concept-aws-elastic-volumes.html["AWS의 Elastic Volumes 지원에 대해 자세히 알아보십시오"].
+
+
+
+=== AWS의 ONTAP S3 라이센스
+
+Cloud Manager는 이제 ONTAP에서 버전 9.11.0 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 S3 라이센스를 자동으로 설치합니다.
+
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오"^].
+
+endif::aws[]
+
+ifdef::azure[]
+
+
+
+=== 새로운 Azure Cloud 지역 지원
+
+9.10.1 릴리스부터는 Cloud Volumes ONTAP가 이제 Azure West US 3 지역에서 지원됩니다.
+
+https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
+
+
+
+=== Azure의 ONTAP S3 라이센스
+
+Cloud Manager는 이제 Azure에서 버전 9.9.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 ONTAP S3 라이센스를 자동으로 설치합니다.
+
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오"^].
+
+endif::azure[]
+
+ifdef::gcp[]
+
+
+
+=== 새로운 Google Cloud 지역 지원
+
+Cloud Volumes ONTAP는 이제 9.10.1 릴리스부터 다음 Google 클라우드 영역에서 지원됩니다.
+
+* 마드리드(유럽 - 남서쪽1)
+* 파리(유럽 - west9)
+* 바르샤바(유럽-중중심2)
+
+
+https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
+
+endif::gcp[]
+
+
+
 == 2022년 6월 7일
 
 다음 변경 사항은 커넥터의 3.9.19 릴리스에 도입되었습니다.

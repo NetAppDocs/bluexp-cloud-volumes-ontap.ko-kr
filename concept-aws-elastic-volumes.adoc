@@ -132,12 +132,7 @@ link:concept-storage-management.html#capacity-management["용량 관리 모드�
 
 == 제한 사항
 
-* 애그리게이트 크기를 늘리는 데 최대 6시간이 걸릴 수 있습니다. 이 시간 동안에는 Cloud Manager가 해당 애그리게이트에 대한 추가 용량을 요청할 수 없습니다.
-* 이때 초기 애그리게이트에 Elastic Volumes가 설정된 새 Cloud Volumes ONTAP 시스템을 생성하는 작업은 API에서만 지원됩니다. 이 작업은 Cloud Manager 사용자 인터페이스에서 지원되지 않습니다. 사용자 인터페이스에서 새 Cloud Volumes ONTAP 9.11.0 이상 시스템을 생성할 경우 초기 애그리게이트에 탄성 볼륨이 활성화되지 않습니다.
-+
-사용자 인터페이스에서 다른 모든 작업(예: 새 집계 만들기)이 지원됩니다.
-
-
+애그리게이트 크기를 늘리는 데 최대 6시간이 걸릴 수 있습니다. 이 시간 동안에는 Cloud Manager가 해당 애그리게이트에 대한 추가 용량을 요청할 수 없습니다.
 
 
 
@@ -145,15 +140,9 @@ link:concept-storage-management.html#capacity-management["용량 관리 모드�
 
 다음과 같이 Cloud Manager에서 Elastic Volumes를 사용할 수 있습니다.
 
-* 초기 애그리게이트에 Elastic Volumes가 설정된 새 시스템을 생성합니다
+* GP3 또는 io1 디스크를 사용할 때 초기 애그리게이트에 Elastic Volumes가 설정된 새 시스템을 생성합니다
 +
-에 설명된 대로 <<Limitations>>이 작업은 현재 API에서만 지원됩니다. 사용자 인터페이스에서 지원되지 않습니다.
-
-+
-API 호출을 시작하면 초기 집계에서 Elastic Volumes 기능이 기본적으로 활성화됩니다.
-
-+
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/overview.html["API를 사용하여 Cloud Volumes ONTAP를 생성하는 방법을 알아보십시오"^]
+link:task-deploying-otc-aws.html["Cloud Volumes ONTAP 시스템을 생성하는 방법을 알아보십시오"]
 
 * Elastic Volumes가 설정된 Aggregate에 새 볼륨을 생성합니다
 +
