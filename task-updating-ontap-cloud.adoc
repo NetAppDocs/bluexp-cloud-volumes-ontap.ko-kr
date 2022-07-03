@@ -226,7 +226,7 @@ image:screenshot_cot_upgrade.gif["스크린샷: 작업 환경을 선택한 후 C
 Cloud Volumes ONTAP 시스템에서 볼륨 또는 애그리게이트 생성과 같은 Cloud Manager 작업이 진행 중이지 않아야 합니다.
 
 .단계
-. Canvas * 를 클릭합니다.
+. 왼쪽 탐색 메뉴에서 * Canvas * 를 선택합니다.
 . 작업 환경을 선택합니다.
 +
 새 버전을 사용할 수 있는 경우 오른쪽 창에 알림이 나타납니다.

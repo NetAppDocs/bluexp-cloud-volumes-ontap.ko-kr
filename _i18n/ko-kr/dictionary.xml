@@ -1332,7 +1332,6 @@
   <block id="6cfeec56d62104397ed8dc01e81de3ba" category="paragraph"><block ref="2ccb396125a12f708cc5bb17905b5f90" category="inline-link-macro-rx"></block>.</block>
   <block id="4edb70089cdbc18de22fa9ead5189bc8" category="section-title">계정을 인증합니다</block>
   <block id="1c41d8404a680acdfbd1135446677d69" category="paragraph">Cloud Manager에서 Keystone Flex 서브스크립션을 사용하고 관리하기 전에 NetApp에 문의하여 Keystone Flex 구독으로 Cloud Manager 사용자 계정을 인증해야 합니다.</block>
-  <block id="2dd472e5849f2d63d198abee4211faf1" category="list-text">모든 서비스 &gt; 디지털 지갑 * 을 클릭합니다.</block>
   <block id="34050b9fba3323c4ec7fb2d89aa95a36" category="list-text">Keystone 유연한 구독 * 을 클릭합니다.</block>
   <block id="daf4ae396784c74ec2cbf002eaaa25f4" category="list-text">NetApp Keystone* 시작 페이지가 나타나면 페이지에 나열된 주소로 이메일을 보냅니다.</block>
   <block id="16692c26ca4528e651bbb36d93c465c7" category="paragraph">NetApp 담당자가 사용자 계정에 구독 액세스를 승인하여 요청을 처리합니다.</block>
@@ -2025,7 +2024,6 @@
   <block id="93e69b27c99652c72cf49fd51a487813" category="paragraph"><block ref="93e69b27c99652c72cf49fd51a487813" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1e565fae8cb8375a73df9abf2e99667a" category="paragraph">이 알림에서 업그레이드 프로세스를 시작하여 S3 버킷에서 소프트웨어 이미지를 가져온 다음 이미지를 설치한 다음 시스템을 다시 시작하여 프로세스를 자동화할 수 있습니다.</block>
   <block id="d898e4d722776933e5dbfe89668ef31e" category="paragraph">Cloud Volumes ONTAP 시스템에서 볼륨 또는 애그리게이트 생성과 같은 Cloud Manager 작업이 진행 중이지 않아야 합니다.</block>
-  <block id="e17d9d52c8208dfce3fde1af20447264" category="list-text">Canvas * 를 클릭합니다.</block>
   <block id="d51a07decbe601cbb24e543eb1a87686" category="list-text">작업 환경을 선택합니다.</block>
   <block id="253804b3f61f30ff9abeb479b2c10701" category="paragraph">새 버전을 사용할 수 있는 경우 오른쪽 창에 알림이 나타납니다.</block>
   <block id="3ff5bd4f7d1ec1b55544ace7c0a77dbc" category="list-text">새 버전을 사용할 수 있는 경우 * 업그레이드 * 를 클릭합니다.</block>
@@ -2191,7 +2189,6 @@
   <block id="3346762ff8f7a33c4ab0e7fa6f5ae4bf" category="summary">Digital Wallet에서 용량 기반 라이센스를 관리하여 NetApp 계정이 Cloud Volumes ONTAP 시스템에 필요한 용량을 확보하도록 하십시오.</block>
   <block id="56a50532d8da2bebb09d6190c126140c" category="doc">용량 기반 라이센스 관리</block>
   <block id="93ed65a89f306426be7980ddc22595e8" category="paragraph">_용량 기반 라이센스_Cloud Volumes ONTAP/TiB 용량 비용을 지불할 수 있습니다.</block>
-  <block id="0abf972ae04f5fd460eb8fb37920a7e2" category="list-text">모든 서비스 &gt; 디지털 지갑 &gt; Cloud Volumes ONTAP * 를 클릭합니다.</block>
   <block id="8881e3192df3d6a5d7efc284f0e0beee" category="inline-image-macro">프로페셔널 패키지 및 필수 패키지에 대해 프로비저닝된 용량과 라이센스가 부여된 용량의 양을 보여 주는 스크린샷</block>
   <block id="a67c1e3fa166897e8cc4f860ff4aa0c5" category="paragraph"><block ref="a67c1e3fa166897e8cc4f860ff4aa0c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b2dfe525c9a6bec7392826fba889fe07" category="section-title">구입한 라이센스를 계정에 추가합니다</block>
@@ -2205,12 +2202,10 @@
   <block id="bf78c4658c1ace314410495dc10c0ba1" category="paragraph">추가 용량을 구매하거나 라이센스 기간을 연장한 경우 Cloud Manager는 Digital Wallet에서 라이센스를 자동으로 업데이트합니다. 당신이 해야 할 일은 아무것도 없습니다.</block>
   <block id="3782253c295a20f84aac6d9de87d5256" category="paragraph">그러나 인터넷에 액세스할 수 없는 위치에 Cloud Manager를 구축한 경우 Cloud Manager에서 라이센스를 수동으로 업데이트해야 합니다.</block>
   <block id="e02250fabfba9f2d7325403663479a43" category="paragraph">라이센스 파일(또는 HA 쌍이 있는 경우 _ 파일 _).</block>
-  <block id="d4737869e4d4dc07c6bb7c4c990d49f2" category="list-text">라이센스 옆에 있는 작업 메뉴를 클릭하고 * 라이센스 업데이트 * 를 선택합니다.</block>
   <block id="f591dbc4232b149ea0792178559405f9" category="list-text">라이센스 파일을 업로드합니다.</block>
   <block id="034f6db5181ab87d962e69b9b7b5a995" category="list-text">라이센스 업로드 * 를 클릭합니다.</block>
   <block id="8f79a5bc1b9725ce4036eb2d94c60de9" category="section-title">용량 기반 라이센스를 제거합니다</block>
   <block id="78a946dc090d511b993ffbe9803dff06" category="paragraph">용량 기반 라이센스가 만료되어 더 이상 사용되지 않는 경우 언제든지 라이센스를 제거할 수 있습니다.</block>
-  <block id="f079c14c88dca42fef3c7cb092bd6831" category="list-text">라이센스 옆에 있는 작업 메뉴를 클릭하고 * 라이센스 제거 * 를 선택합니다.</block>
   <block id="40b851aafab82c78484c46169f816fd2" category="list-text">확인하려면 * 제거 * 를 클릭합니다.</block>
   <block id="742dad1976d10fd0a81cc360e7f1bde4" category="summary">Cloud Volumes ONTAP를 사용하려면 Google Cloud 서비스 계정이 두 가지 용도로 필요합니다. 첫 번째는 데이터 계층화를 통해 콜드 데이터를 Google Cloud의 저비용 오브젝트 스토리지로 계층화할 수 있는 때입니다. 두 번째는 Cloud Backup Service에서 볼륨을 저렴한 오브젝트 스토리지에 백업할 때 사용하는 것입니다.</block>
   <block id="d39a322c0902d3bf2bf75781b1e1c8ab" category="doc">데이터 계층화 및 백업을 위한 서비스 계정을 생성합니다</block>
@@ -2292,7 +2287,6 @@
   <block id="17ac9e85cf5b6f7b77acf61fb7721242" category="list-text">클라우드 공급자 마켓플레이스에서 시간별 PAYGO(Pay-as-you-go) 구독을 지원합니다</block>
   <block id="9426b05d2fc423b761e34f9d75b4066d" category="section-title">PAYGO 라이센스를 관리합니다</block>
   <block id="39489bc3468be0f9c30ed41b5ac89051" category="paragraph">Digital Wallet 페이지에서 일련 번호 및 PAYGO 라이센스 유형을 비롯한 각 PAYGO Cloud Volumes ONTAP 시스템에 대한 세부 정보를 볼 수 있습니다.</block>
-  <block id="343c7ed77049523f4d99e8d4c436a330" category="list-text">드롭다운에서 * 노드 기반 라이선스 * 를 선택합니다.</block>
   <block id="87089bacab591352ad6ad6579e34d93e" category="list-text">PAYGO * 를 클릭합니다.</block>
   <block id="82be8e06ac169a3de0fce42cd01f5760" category="list-text">각 PAYGO 라이센스에 대한 자세한 내용은 표에서 확인하십시오.</block>
   <block id="76e10a0df08439afad301bff55b0ae58" category="inline-image-macro">세 개의 PAYGO 라이센스가 있는 Digital Wallet 페이지의 테이블을 보여 주는 스크린샷 각 행에는 이름, 시스템 유형, 일련 번호, 패키지 및 라이센스 관리 링크가 표시됩니다.</block>
@@ -3278,7 +3272,6 @@
   <block id="b4fdd997b1f33e0d4c6964444c2bf399" category="section-title">중소기업</block>
   <block id="11b07e87cde6233c7e410399ad203deb" category="paragraph">SMB는 Windows 시스템을 위한 기존 파일 액세스 프로토콜입니다. 클라이언트는 SMB 2.0, SMB 2.1, SMB 3.0 및 SMB 3.1.1 프로토콜을 사용하여 ONTAP 볼륨의 파일에 액세스할 수 있습니다. NFS와 마찬가지로 사용 권한 스타일의 조합이 지원됩니다.</block>
   <block id="6958464059ef304c59d06fcb948ccafd" category="inline-link">ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오</block>
-  <block id="75081fb4982f7b843e702079b35f0ed4" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block>.</block>
   <block id="cad02caeb4ee636c87f28b0bb1263080" category="inline-link-macro">지원되는 클라이언트 프로토콜 및 버전에 대해 알아보십시오</block>
   <block id="f0ddee23dd0d83f105bbdaa15ff5d87a" category="paragraph"><block ref="43c09f3d08ec80b50648a2a905bca06c" category="inline-link-macro-rx"></block>.</block>
   <block id="a6a8d3a613b6b7ece18f688d168e5cda" category="cell">API는 AWS 및 ONTAP, 클라우드 데이터 감지, 랜섬웨어 서비스 요청, AutoSupport 메시지를 NetApp에 전송합니다</block>
@@ -4144,7 +4137,6 @@
   <block id="986e1f3279b4d74444bd32d4f833afbd" category="section-title">디지털 지갑</block>
   <block id="d5503d6062daaaa4326462970164cbac" category="paragraph">이제 Digital Wallet은 사용자 계정의 총 소비된 용량과 라이센스 패키지별 소비된 용량을 표시합니다. 이를 통해 비용이 청구되는 방식 및 추가 용량을 구입해야 하는지 여부를 파악할 수 있습니다.</block>
   <block id="232ac716fdabb7e9b9ba7c3a108574a7" category="inline-image-macro">용량 기반 라이센스에 대한 Digital Wallet 페이지를 보여 주는 스크린샷 이 페이지에서는 계정에서 사용된 용량에 대한 개요를 제공하고 라이센스 패키지를 통해 사용된 용량을 나눕니다.</block>
-  <block id="25151b376af0a0b205be15ab92b4cd97" category="paragraph"><block ref="25151b376af0a0b205be15ab92b4cd97" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9c05beb7c27c53dc1cb952afddea3ac" category="section-title">탄성 볼륨 개선</block>
   <block id="119ffefd11e6681de49e316bc16a471d" category="paragraph">이제 Cloud Manager는 사용자 인터페이스에서 Cloud Volumes ONTAP 작업 환경을 생성할 때 Amazon EBS Elastic Volumes 기능을 지원합니다. GP3 또는 ios1 디스크를 사용하는 경우 Elastic Volumes 기능이 기본적으로 활성화됩니다. 스토리지 요구사항에 따라 초기 용량을 선택하고 Cloud Volumes ONTAP를 구축한 후 수정할 수 있습니다.</block>
   <block id="0c5741d0ec0127a10c28f7c82579da32" category="inline-link-macro">AWS의 Elastic Volumes 지원에 대해 자세히 알아보십시오</block>
@@ -4155,9 +4147,6 @@
   <block id="c55cc410beff8f86afc3ba8027b681f7" category="paragraph">9.10.1 릴리스부터는 Cloud Volumes ONTAP가 이제 Azure West US 3 지역에서 지원됩니다.</block>
   <block id="1a3362a1b5304a4e1e1112496974b9ae" category="section-title">Azure의 ONTAP S3 라이센스</block>
   <block id="e29ddfe6afa32fb2c96c8682f4ca73e8" category="paragraph">Cloud Manager는 이제 Azure에서 버전 9.9.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 ONTAP S3 라이센스를 자동으로 설치합니다.</block>
-  <block id="82e8338c73d6540f48f2e0cc8d035511" category="list-text">마드리드(유럽 - 남서쪽1)</block>
-  <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">파리(유럽 - west9)</block>
-  <block id="eb4cae07e62b958e999eaa4c0d9b254b" category="list-text">바르샤바(유럽-중중심2)</block>
   <block id="1cea3dd4ff4ec3b14e8632bf82e14041" category="list-text">GP3 또는 io1 디스크를 사용할 때 초기 애그리게이트에 Elastic Volumes가 설정된 새 시스템을 생성합니다</block>
   <block id="99ef8dc541c558ff343420594d6dcb5c" category="inline-link-macro">Cloud Volumes ONTAP 시스템을 생성하는 방법을 알아보십시오</block>
   <block id="f56c72fa8323042cbff6cb92648345ca" category="paragraph"><block ref="f56c72fa8323042cbff6cb92648345ca" category="inline-link-macro-rx"></block></block>
@@ -4223,4 +4212,13 @@
   <block id="bbb170bfbf4105204b0dbe4292724d6e" category="paragraph">다음은 여러 라이센스 패키지가 있는 계정의 예입니다.</block>
   <block id="9dbb08096054a8593f55c8cd3e2863d6" category="inline-image-macro">전문가, 최적화 및 필수 패키지에 대해 사용된 용량을 보여 주는 스크린샷.</block>
   <block id="943b03ddb77b543ab329dfed996ad4ac" category="paragraph"><block ref="943b03ddb77b543ab329dfed996ad4ac" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
+  <block id="e101009414989b26a668aca3a341820c" category="paragraph">stdin&gt;의 해결되지 않은 지시문 - include::: _ include/whats-new-July-GCP.adoc [ ]</block>
+  <block id="c0d3ce4ea1bcde455d433b9182cdde33" category="list-text">왼쪽 탐색 메뉴에서 * Digital Wallet * 을 선택합니다.</block>
+  <block id="5844b24c31c1897efda5443d984702f8" category="list-text">Cloud Volumes ONTAP * 탭의 드롭다운에서 * 노드 기반 라이센스 * 를 선택합니다.</block>
+  <block id="f3ea3c5e0bf5262dea3ca4f879eccdc7" category="list-text">왼쪽 탐색 메뉴에서 * Canvas * 를 선택합니다.</block>
+  <block id="666ac747a8d5a1aa317496f8add413a6" category="list-text">Cloud Volumes ONTAP * 탭에서 * 용량 기반 라이센스 * 를 선택한 상태로 두고 * 라이센스 추가 * 를 클릭합니다.</block>
+  <block id="ecdf6ba3b837de5910abdabc360df552" category="list-text">Cloud Volumes ONTAP* 탭에서 사용권 옆에 있는 작업 메뉴를 클릭하고 * 사용권 업데이트 * 를 선택합니다.</block>
+  <block id="5ca97f84ee577fbacf355fc75d23921d" category="list-text">Cloud Volumes ONTAP* 탭에서 사용권 옆에 있는 작업 메뉴를 클릭하고 * 사용권 제거 * 를 선택합니다.</block>
 </blocks>
