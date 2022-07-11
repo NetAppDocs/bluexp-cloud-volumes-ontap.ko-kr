@@ -74,17 +74,25 @@ DNS 이름은 Azure DNS 명명 요구 사항과 일치해야 합니다 https://d
 .단계
 . 커넥터 호스트에 SSH로 접속하고 로그인합니다.
 . /opt/application/netapp/cloudmanager/docker_occm/data 디렉토리로 이동합니다
-. 다음과 같이 다음 매개 변수를 수정하여 app.conf를 편집합니다.
+. "user-private-dns-zone-settings" 매개 변수를 다음 키워드 값 쌍으로 추가하여 app.conf를 편집합니다.
 +
 ....
-"user-private-dns-zone-settings": {
-   "use-existing": true,
-   "resource-group": "<resource group name of the DNS zone>",
-   "subscription": "<subscription ID>"
-  }
+"user-private-dns-zone-settings" : {
+   "resource-group" : "<resource group name of the DNS zone>",
+   "subscription" : "<subscription ID>",
+   "use-existing" : true
+}
 ....
 +
-전용 DNS 영역이 Connector와 다른 구독에 있는 경우에만 구독 매개 변수가 필요합니다.
+아래와 같이 "system-id"와 동일한 수준으로 매개 변수를 입력해야 합니다.
+
++
+....
+"system-id" : "<system ID>",
+"user-private-dns-zone-settings" : {
+....
++
+전용 DNS 영역이 Connector와 다른 구독에 있는 경우에만 subscription 키워드가 필요합니다.
 
 . 파일을 저장하고 Connector를 로그오프합니다.
 +

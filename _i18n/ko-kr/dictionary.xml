@@ -1180,8 +1180,6 @@
   <block id="9cc699a3c9c133d094ca124626325568" category="paragraph">DNS 이름은 Azure DNS 명명 요구 사항과 일치해야 합니다<block ref="6fc4fbd803a50e88fc639ed7537b302d" category="inline-link-rx"></block>.</block>
   <block id="a06cf36058872986abd7f3dd286084e3" category="list-text">커넥터 호스트에 SSH로 접속하고 로그인합니다.</block>
   <block id="fccc9b1aa20f1188588a2827e62fa40a" category="list-text">/opt/application/netapp/cloudmanager/docker_occm/data 디렉토리로 이동합니다</block>
-  <block id="47ea64e6173d0ab4cda577e25a2d608b" category="list-text">다음과 같이 다음 매개 변수를 수정하여 app.conf를 편집합니다.</block>
-  <block id="03df5ed990dc79c8e6e9d61bc890ac4f" category="paragraph">전용 DNS 영역이 Connector와 다른 구독에 있는 경우에만 구독 매개 변수가 필요합니다.</block>
   <block id="6f35ba1af4056628e6fc10196137fc15" category="list-text">파일을 저장하고 Connector를 로그오프합니다.</block>
   <block id="4dbd1699313f9a246cfb29418554adf1" category="paragraph">재부팅할 필요는 없습니다.</block>
   <block id="65d4f53995ffa0759f8e9ed896c6e68e" category="section-title">장애 시 롤백 사용</block>
@@ -4223,4 +4221,7 @@
   <block id="f225a4f57ea32da8b983d7bffd20b6eb" category="paragraph">ONTAP S3 라이센스는 이제 Azure에서 버전 9.9.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 포함됩니다.</block>
   <block id="809e3658d55a8182673968a51f763bd4" category="inline-link">ONTAP의 랜섬웨어 방지 기능</block>
   <block id="286a15f897b0ea49a39300795dbb689e" category="paragraph">이 기능을 사용하여 랜섬웨어에 대한 보호를 향상하면 에서 제공하는 별도의 사용 사례가 적용됩니다<block ref="4212bad7bd1fb5a7b1b9d017fd36eeae" category="inline-link-rx"></block> ONTAP CLI 또는 System Manager를 통해 사용하도록 설정할 수 있습니다.</block>
+  <block id="21f6d246225534dc3444037c83f109c3" category="list-text">"user-private-dns-zone-settings" 매개 변수를 다음 키워드 값 쌍으로 추가하여 app.conf를 편집합니다.</block>
+  <block id="b5544a18e847192d0e5a82658b3e0f92" category="paragraph">아래와 같이 "system-id"와 동일한 수준으로 매개 변수를 입력해야 합니다.</block>
+  <block id="ff9fcf498a74a638ff2a01da3cae4468" category="paragraph">전용 DNS 영역이 Connector와 다른 구독에 있는 경우에만 subscription 키워드가 필요합니다.</block>
 </blocks>
