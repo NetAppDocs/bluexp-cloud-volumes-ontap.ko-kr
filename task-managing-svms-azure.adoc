@@ -284,7 +284,7 @@ network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-a
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node node1 -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
 ----
 . 스토리지 VM에 하나 이상의 애그리게이트를 할당합니다.
 +
@@ -324,7 +324,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -role data -data-pr
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node node1 -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
 ----
 . 스토리지 VM에 하나 이상의 애그리게이트를 할당합니다.
 +
@@ -364,7 +364,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -role data -data-pr
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node node1 -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
 ----
 . 스토리지 VM에 하나 이상의 애그리게이트를 할당합니다.
 +
@@ -423,7 +423,7 @@ network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-a
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node node1 -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
 ----
 +
 이 관리 LIF는 SnapCenter과 같은 관리 툴에 연결할 수 있습니다.
@@ -499,7 +499,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -role data -data-pr
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node node1 -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default -probe-port <port-number-for-azure-health-probe3>
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default -probe-port <port-number-for-azure-health-probe3>
 ----
 +
 이 관리 LIF는 SnapCenter과 같은 관리 툴에 연결할 수 있습니다.
@@ -591,7 +591,7 @@ network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-a
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node node1 -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default -probe-port <port-number-for-azure-health-probe3>
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default -probe-port <port-number-for-azure-health-probe3>
 ----
 +
 이 관리 LIF는 SnapCenter과 같은 관리 툴에 연결할 수 있습니다.

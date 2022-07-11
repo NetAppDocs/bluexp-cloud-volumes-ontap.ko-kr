@@ -14,6 +14,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 �
 
 === Azure의 ONTAP S3 라이센스
 
-Cloud Manager는 이제 Azure에서 버전 9.9.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 ONTAP S3 라이센스를 자동으로 설치합니다.
+ONTAP S3 라이센스는 이제 Azure에서 버전 9.9.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 포함됩니다.
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오"^]

@@ -4142,11 +4142,9 @@
   <block id="0c5741d0ec0127a10c28f7c82579da32" category="inline-link-macro">AWS의 Elastic Volumes 지원에 대해 자세히 알아보십시오</block>
   <block id="3cc8cd9bef921086f444d55cf1ea25c6" category="paragraph"><block ref="a2865c7bad4b206df6582ad55cba915e" category="inline-link-macro-rx"></block>.</block>
   <block id="7fb4d101a5e000398c4d5b4c48b802a6" category="section-title">AWS의 ONTAP S3 라이센스</block>
-  <block id="e1d7a3ee89947f3549d385865ef27dda" category="paragraph">Cloud Manager는 이제 ONTAP에서 버전 9.11.0 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 S3 라이센스를 자동으로 설치합니다.</block>
   <block id="c86d179c90248acd6ebdba05bd94320c" category="section-title">새로운 Azure Cloud 지역 지원</block>
   <block id="c55cc410beff8f86afc3ba8027b681f7" category="paragraph">9.10.1 릴리스부터는 Cloud Volumes ONTAP가 이제 Azure West US 3 지역에서 지원됩니다.</block>
   <block id="1a3362a1b5304a4e1e1112496974b9ae" category="section-title">Azure의 ONTAP S3 라이센스</block>
-  <block id="e29ddfe6afa32fb2c96c8682f4ca73e8" category="paragraph">Cloud Manager는 이제 Azure에서 버전 9.9.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 ONTAP S3 라이센스를 자동으로 설치합니다.</block>
   <block id="1cea3dd4ff4ec3b14e8632bf82e14041" category="list-text">GP3 또는 io1 디스크를 사용할 때 초기 애그리게이트에 Elastic Volumes가 설정된 새 시스템을 생성합니다</block>
   <block id="99ef8dc541c558ff343420594d6dcb5c" category="inline-link-macro">Cloud Volumes ONTAP 시스템을 생성하는 방법을 알아보십시오</block>
   <block id="f56c72fa8323042cbff6cb92648345ca" category="paragraph"><block ref="f56c72fa8323042cbff6cb92648345ca" category="inline-link-macro-rx"></block></block>
@@ -4221,4 +4219,8 @@
   <block id="666ac747a8d5a1aa317496f8add413a6" category="list-text">Cloud Volumes ONTAP * 탭에서 * 용량 기반 라이센스 * 를 선택한 상태로 두고 * 라이센스 추가 * 를 클릭합니다.</block>
   <block id="ecdf6ba3b837de5910abdabc360df552" category="list-text">Cloud Volumes ONTAP* 탭에서 사용권 옆에 있는 작업 메뉴를 클릭하고 * 사용권 업데이트 * 를 선택합니다.</block>
   <block id="5ca97f84ee577fbacf355fc75d23921d" category="list-text">Cloud Volumes ONTAP* 탭에서 사용권 옆에 있는 작업 메뉴를 클릭하고 * 사용권 제거 * 를 선택합니다.</block>
+  <block id="8152540df51584ebf79193211a381d46" category="paragraph">ONTAP S3 라이센스는 이제 AWS 버전 9.11.0 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 포함되어 있습니다.</block>
+  <block id="f225a4f57ea32da8b983d7bffd20b6eb" category="paragraph">ONTAP S3 라이센스는 이제 Azure에서 버전 9.9.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 포함됩니다.</block>
+  <block id="809e3658d55a8182673968a51f763bd4" category="inline-link">ONTAP의 랜섬웨어 방지 기능</block>
+  <block id="286a15f897b0ea49a39300795dbb689e" category="paragraph">이 기능을 사용하여 랜섬웨어에 대한 보호를 향상하면 에서 제공하는 별도의 사용 사례가 적용됩니다<block ref="4212bad7bd1fb5a7b1b9d017fd36eeae" category="inline-link-rx"></block> ONTAP CLI 또는 System Manager를 통해 사용하도록 설정할 수 있습니다.</block>
 </blocks>
