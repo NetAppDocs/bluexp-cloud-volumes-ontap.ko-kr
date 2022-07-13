@@ -49,7 +49,6 @@
   <block id="3d64d0d43e2b3f4726dd94ece523a44b" category="inline-link-macro">기존 시스템의 쓰기 속도를 변경합니다</block>
   <block id="f7ccf02d84fa210180071ca2470f84e9" category="paragraph">새 작업 환경을 만들 때 쓰기 속도를 선택할 수 있으며, 이 경우 쓰기 속도를 선택할 수 있습니다 <block ref="bb09c850cc1f480d84d76846ade7e379" category="inline-link-macro-rx"></block>.</block>
   <block id="a6b5c3b6343acd9e9c252b6734e21729" category="section-title">데이터 손실이 발생할 경우 예상되는 상황</block>
-  <block id="c2bed051015327a0fbd183fa026d6072" category="paragraph">빠른 쓰기 속도를 선택하면 데이터 손실이 발생하면 시스템을 부팅하여 사용자 개입 없이 데이터를 계속 제공할 수 있습니다. 노드가 데이터 손실로 실행되면 두 개의 EMS 메시지가 보고됩니다. 한 가지 방법은 wafl.root.content.changed 이고, 다른 하나는 디버그 심각도 수준 이벤트가 있는 nv.check.failed 입니다. 두 메시지 모두 데이터 손실을 나타내는 것으로 표시되어야 합니다.</block>
   <block id="ccd6abf00ee311d6ee0fe0cfa658d4af" category="section-title">데이터 손실이 발생할 경우 데이터 액세스를 중지하는 방법</block>
   <block id="3c88118331e31a974e72f747b05eac91" category="paragraph">데이터 손실이 걱정되고 데이터 손실 문제가 적절하게 해결되면 애플리케이션 실행이 중지되고 데이터 액세스가 재개되기를 원할 경우 CLI의 NVFAIL 옵션을 사용하여 해당 목표를 달성할 수 있습니다.</block>
   <block id="da40cbf3df02166f4e0befe0ef32dcce" category="list-text">NVFAIL 옵션을 활성화합니다</block>
@@ -822,10 +821,6 @@
   <block id="cc3717c29172e7c4beafc5f30f3639ac" category="paragraph">새로운 Cloud Volumes ONTAP 작업 환경을 만들 때 라이센스 선택 화면을 다시 설계했습니다. 이 변경 사항은 2021년 7월에 소개된 용량 기준 과금 방법을 강조하며, 클라우드 공급자 마켓플레이스를 통해 예정된 오퍼링을 지원합니다.</block>
   <block id="cb859e966c34323b5da18c0c77998603" category="section-title">디지털 지갑 업데이트</block>
   <block id="912b97680395d2b9dfdd2d9fcfded8bf" category="paragraph">Cloud Volumes ONTAP 라이선스를 단일 탭에 통합하여 * Digital Wallet * 을 업데이트했습니다.</block>
-  <block id="6040922a9492ff1a6966cd9d9d73a9f9" category="section-title">NetApp 계정당 20개 시스템</block>
-  <block id="3ac6338087c4180b5cbb359584abab3a" category="paragraph">사용 중인 라이센스 모델에 관계없이 Cloud Volumes ONTAP 시스템의 최대 수는 NetApp 계정당 20개로 제한됩니다.</block>
-  <block id="5908d4e5a438659ba844464125f51abe" category="paragraph">a_system_은 HA 쌍 또는 단일 노드 시스템입니다. 예를 들어, 2개의 Cloud Volumes ONTAP HA 쌍과 2개의 단일 노드 시스템이 있다면 총 4개의 시스템이 있고 고객 계정에 16개의 추가 시스템을 위한 공간이 있을 것입니다.</block>
-  <block id="a259bb127cd2a1cd02edf6a3a2484f33" category="paragraph">궁금한 사항이 있으면 어카운트 담당자 또는 세일즈 팀에 문의하십시오.</block>
   <block id="fc2be74c7bf9f46e12967c2298a899ba" category="inline-link-macro">NetApp 계정 에 대해 자세히 알아보십시오</block>
   <block id="bbbee7961ccb9cea5bdfe8ab78e43452" category="paragraph">Cloud Volumes ONTAP는 이제 Microsoft Azure에서 9.10.1 릴리즈부터 다음 VM 유형으로 지원됩니다.</block>
   <block id="aafab9b991240605f56b3df780360449" category="list-text">E4ds_v4</block>
@@ -3229,7 +3224,6 @@
   <block id="506e74c9262ca17fcd45f9fc1bb03b87" category="paragraph">볼륨 크기를 조정해야 하는 경우 에서 조정할 수 있습니다<block ref="bfb8b856b98909d9b8eda9fe0698d61f" category="inline-link-rx"></block>. 볼륨 크기를 조정할 때 시스템의 용량 제한을 고려해야 합니다. 로 이동합니다<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="06c86f2b2f40c7b5ae916f820dace6f3" category="inline-link">Cloud Volumes ONTAP 릴리즈 노트 로 이동합니다</block>
   <block id="65e42190c099391692bcdbf38f75b3dc" category="paragraph">이 페이지에 설명된 향상된 기능은 Cloud Volumes ONTAP 관리를 지원하는 Cloud Manager 기능에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어 자체의 새로운 기능에 대해 알아보려면<block ref="708e09e3f2783926556b9c6d77f63a27" category="inline-link-rx"></block></block>
-  <block id="e0109745edea3dd07561e6ef24e031b3" category="paragraph"><block ref="e0109745edea3dd07561e6ef24e031b3" category="inline-link-rx"></block></block>
   <block id="eaae0996b48caf454deb2608523a1af2" category="paragraph"><block ref="a3830f1e68e521753c115aa90de96c67" category="inline-link-rx"></block>.</block>
   <block id="cd46020b2ca09f66f5c79bd35fe2da2e" category="paragraph"><block ref="4107f790de2a45bc9a00a9b75db49bc5" category="inline-link-rx"></block>.</block>
   <block id="0149fd22e5722b132cbafe2d3e86e10b" category="list-text">템플릿에서 하드 코딩되지 않은 모든 매개변수에 대한 값을 추가합니다. 을 참조하십시오 <block ref="c4711ce582f4a278fe266c32d7e1a70b" category="inline-xref-macro-rx"></block> Cloud Volumes ONTAP 볼륨을 구축하기 위해 완료해야 하는 모든 매개 변수에 대한 자세한 내용은 를 참조하십시오.</block>
@@ -4184,7 +4178,6 @@
   <block id="2ba3f057b3f441a58c358dd4703ea556" category="paragraph">Digital Wallet에서 50TiB가 _Essentials Single Node_license에 대해 청구된 것으로 표시됩니다.</block>
   <block id="2204b0f79985b7b0565114e8305937a5" category="section-title">스토리지 VM</block>
   <block id="ea2d4d2ac58be22179ef1e523d4602b4" category="section-title">FlexClone 및 FlexCache 볼륨</block>
-  <block id="c0a01aae03aec488789ec9662cb472bb" category="paragraph">Cloud Volumes ONTAP 시스템의 최대 수는 NetApp 계정당 20개로 제한됩니다. system_은 Cloud Volumes ONTAP HA 쌍, Cloud Volumes ONTAP 단일 노드 시스템 또는 사용자가 생성하는 추가 스토리지 VM입니다. 기본 스토리지 VM은 제한에 대해 계산되지 않습니다. 이 제한은 모든 라이센스 모델에 적용됩니다.</block>
   <block id="ee39f25358b04b9ab4c35e9b485d2797" category="paragraph">예를 들어, 다음과 같은 세 가지 작업 환경이 있다고 가정해 보겠습니다.</block>
   <block id="35851ad4214e2cb5358ee8d010fd31e9" category="list-text">스토리지 VM이 1개인 단일 노드 Cloud Volumes ONTAP 시스템(Cloud Volumes ONTAP 구축 시 생성되는 기본 스토리지 VM)</block>
   <block id="75a89431d9d36de5dedb4018f6ca3cbe" category="paragraph">이 작업 환경은 하나의 시스템으로 간주됩니다.</block>
@@ -4204,7 +4197,6 @@
   <block id="39d8821e12869173bcc44d49a6c82619" category="list-text">_Consumed capacity_는 해당 패키지에 대한 볼륨의 총 용량을 보여 줍니다. 특정 패키지에 대한 자세한 내용을 보려면 도구 설명 위로 마우스를 가져갑니다.</block>
   <block id="d30bc4bd5cee7ac23a1df54311d1f4b3" category="inline-link-macro">Essentials 패키지 충전 방법에 대해 알아봅니다</block>
   <block id="33b4838dec7acdb2df64d13961f0a255" category="paragraph">Essentials 패키지에 표시되는 용량을 더 잘 이해하려면 충전 작동 방식에 익숙해야 합니다. <block ref="eee0a6ebb632d7e4c34635f35e9b54cf" category="inline-link-macro-rx"></block>.</block>
-  <block id="da1c54b789cbe5eb82490a61a1240bdc" category="list-text">BYOL_and_PAYGO_CAPAURATION은 라이센스 소비 모델별 총 소비 용량을 보여 줍니다.</block>
   <block id="bbb170bfbf4105204b0dbe4292724d6e" category="paragraph">다음은 여러 라이센스 패키지가 있는 계정의 예입니다.</block>
   <block id="9dbb08096054a8593f55c8cd3e2863d6" category="inline-image-macro">전문가, 최적화 및 필수 패키지에 대해 사용된 용량을 보여 주는 스크린샷.</block>
   <block id="943b03ddb77b543ab329dfed996ad4ac" category="paragraph"><block ref="943b03ddb77b543ab329dfed996ad4ac" category="inline-image-macro-rx" type="image"></block></block>
@@ -4224,4 +4216,12 @@
   <block id="21f6d246225534dc3444037c83f109c3" category="list-text">"user-private-dns-zone-settings" 매개 변수를 다음 키워드 값 쌍으로 추가하여 app.conf를 편집합니다.</block>
   <block id="b5544a18e847192d0e5a82658b3e0f92" category="paragraph">아래와 같이 "system-id"와 동일한 수준으로 매개 변수를 입력해야 합니다.</block>
   <block id="ff9fcf498a74a638ff2a01da3cae4468" category="paragraph">전용 DNS 영역이 Connector와 다른 구독에 있는 경우에만 subscription 키워드가 필요합니다.</block>
+  <block id="34010f1e0d61721ccadb44d47c32e547" category="paragraph">용량 기반 라이센스는 Cloud Volumes ONTAP 시스템의 최대 수를 NetApp 계정당 20개로 제한합니다. system_은 Cloud Volumes ONTAP HA 쌍, Cloud Volumes ONTAP 단일 노드 시스템 또는 사용자가 생성하는 추가 스토리지 VM입니다. 기본 스토리지 VM은 제한에 대해 계산되지 않습니다. 이 제한은 모든 라이센스 모델에 적용됩니다.</block>
+  <block id="b4c7b5de587c69b61237e13a2d37bbf1" category="paragraph">20대 이상의 시스템이 필요한 대규모 구축 환경의 경우 고객 담당자 또는 세일즈 팀에 문의하십시오.</block>
+  <block id="3bc8827b2b8b4b47a25fb21994526d52" category="paragraph">빠른 쓰기 속도로 인해 데이터가 손실되면 EMS(Event Management System)에서 다음 두 이벤트를 보고합니다.</block>
+  <block id="be98a72c550adaac0016c02f579ae8d6" category="list-text">Cloud Volumes ONTAP 9.11.0 이상</block>
+  <block id="7cd42532925d5e610a9d3694b57652da" category="list-text">Cloud Volumes ONTAP 9.8 ~ 9.10.1</block>
+  <block id="deae9d093dee266b166a3693474231a9" category="paragraph">이 경우 Cloud Volumes ONTAP는 사용자 개입 없이 부팅하여 데이터를 계속 제공할 수 있어야 합니다.</block>
+  <block id="4f68f7a47531b2df7b7a4db5225d57b5" category="list-text">_BYOL_은 NetApp에서 구입한 라이센스 용량을 보여 줍니다.</block>
+  <block id="0c27ea3454ff74c09bafc9361752d263" category="list-text">_PAYGO_는 라이센스 소비 모델별 총 사용 용량을 표시합니다.</block>
 </blocks>

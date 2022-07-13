@@ -112,7 +112,21 @@ endif::gcp[]
 
 == 데이터 손실이 발생할 경우 예상되는 상황
 
-빠른 쓰기 속도를 선택하면 데이터 손실이 발생하면 시스템을 부팅하여 사용자 개입 없이 데이터를 계속 제공할 수 있습니다. 노드가 데이터 손실로 실행되면 두 개의 EMS 메시지가 보고됩니다. 한 가지 방법은 wafl.root.content.changed 이고, 다른 하나는 디버그 심각도 수준 이벤트가 있는 nv.check.failed 입니다. 두 메시지 모두 데이터 손실을 나타내는 것으로 표시되어야 합니다.
+빠른 쓰기 속도로 인해 데이터가 손실되면 EMS(Event Management System)에서 다음 두 이벤트를 보고합니다.
+
+* Cloud Volumes ONTAP 9.11.0 이상
++
+ DEBUG nv.check.failed: NVRAM check failed with error "NVRAM disabled due to dirty shutdown with High Write Speed mode"
++
+ ERROR wafl.root.content.changed: Contents of the root volume '' might have changed. Verify that all recent configuration changes are still in effect.
+* Cloud Volumes ONTAP 9.8 ~ 9.10.1
++
+ DEBUG nv.check.failed: NVRAM check failed with error "NVRAM disabled due to dirty shutdown"
++
+ ERROR wafl.root.content.changed: Contents of the root volume '' might have changed. Verify that all recent configuration changes are still in effect.
+
+
+이 경우 Cloud Volumes ONTAP는 사용자 개입 없이 부팅하여 데이터를 계속 제공할 수 있어야 합니다.
 
 
 

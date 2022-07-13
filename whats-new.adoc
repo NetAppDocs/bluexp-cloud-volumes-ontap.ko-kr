@@ -376,18 +376,6 @@ Cloud Volumes ONTAP 라이선스를 단일 탭에 통합하여 * Digital Wallet 
 
 
 
-=== NetApp 계정당 20개 시스템
-
-사용 중인 라이센스 모델에 관계없이 Cloud Volumes ONTAP 시스템의 최대 수는 NetApp 계정당 20개로 제한됩니다.
-
-a_system_은 HA 쌍 또는 단일 노드 시스템입니다. 예를 들어, 2개의 Cloud Volumes ONTAP HA 쌍과 2개의 단일 노드 시스템이 있다면 총 4개의 시스템이 있고 고객 계정에 16개의 추가 시스템을 위한 공간이 있을 것입니다.
-
-궁금한 사항이 있으면 어카운트 담당자 또는 세일즈 팀에 문의하십시오.
-
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["NetApp 계정 에 대해 자세히 알아보십시오"^]
-
-
-
 == 2022년 1월 2일
 
 다음 변경 사항은 커넥터의 3.9.14 릴리스에 도입되었습니다.
