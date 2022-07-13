@@ -101,7 +101,7 @@ Cloud Volumes ONTAP에 대한 새 리소스 그룹을 만들거나 기존 리소
 Azure에 구축하는 각 Cloud Volumes ONTAP HA 쌍에 대해 전용 리소스 그룹을 사용해야 합니다. 리소스 그룹에서는 하나의 HA 쌍만 지원됩니다. Azure 리소스 그룹에 두 번째 Cloud Volumes ONTAP HA 쌍을 구축하려고 하면 Cloud Manager에서 연결 문제가 발생합니다.
 
 
-TIP: 사용 중인 Azure 계정에 가 있는 경우 https://mysupport.netapp.com/site/info/cloud-manager-policies["필수 권한"^], Cloud Manager는 배포 실패 또는 삭제 시 리소스 그룹에서 Cloud Volumes ONTAP 리소스를 제거합니다.
+TIP: 사용 중인 Azure 계정에 가 있는 경우 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["필수 권한"^], Cloud Manager는 배포 실패 또는 삭제 시 리소스 그룹에서 Cloud Volumes ONTAP 리소스를 제거합니다.
 
 
 

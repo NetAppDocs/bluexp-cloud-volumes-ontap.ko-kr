@@ -27,7 +27,7 @@ summary: Cloud Volumes ONTAP를 단일 시스템 구성으로 실행하거나 Go
 +
 ** 가 있어야 합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["작업 영역과 연결된 커넥터입니다"^].
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["항상 Connector를 실행 상태로 둘 준비가 되어 있어야 합니다"^].
-** Connector와 연결된 서비스 계정입니다 link:https://occm-sample-policies.s3.amazonaws.com/Policy_for_Cloud_Manager_3.9.10_GCP.yaml["최신 권한이 있어야 합니다"^].
+** Connector와 연결된 서비스 계정입니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["필요한 권한이 있어야 합니다"^]
 
 
 * 사용하려는 구성에 대한 이해.

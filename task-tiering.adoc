@@ -150,14 +150,14 @@ ifdef::azure[]
 
 === 콜드 데이터를 Azure Blob 저장소에 계층화하기 위한 요구사항
 
-Cloud Manager에 필요한 권한이 있는 경우 성능 계층과 용량 계층 간의 연결을 설정할 필요가 없습니다. Cloud Manager 정책에 다음과 같은 권한이 있는 경우 Cloud Manager를 통해 VNET 서비스 엔드포인트를 사용할 수 있습니다.
+Cloud Manager에 필요한 권한이 있는 경우 성능 계층과 용량 계층 간의 연결을 설정할 필요가 없습니다. Connector의 사용자 지정 역할에 다음 권한이 있는 경우 Cloud Manager를 통해 VNET 서비스 끝점을 사용할 수 있습니다.
 
 [source, json]
 ----
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-사용 권한은 최신 에 포함되어 있습니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 정책"].
+사용 권한은 기본적으로 사용자 지정 역할에 포함됩니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Connector에 대한 Azure 권한을 봅니다"^]
 
 endif::azure[]
 

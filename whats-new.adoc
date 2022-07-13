@@ -121,7 +121,7 @@ Elastic Volumes를 지원하려면 Connector에 대한 새로운 AWS 권한이 �
 "ec2:DescribeVolumesModifications",
 "ec2:ModifyVolume",
 ----
-Cloud Manager에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. 에서 최신 사용 권한 목록을 찾을 수 있습니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 정책 페이지"^].
+Cloud Manager에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["AWS에 대한 최신 커넥터 정책을 봅니다"^].
 
 
 
@@ -233,7 +233,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.htm
 ----
 이제 Cloud Manager에서 배치 그룹을 만드는 방법을 최적화하려면 이러한 권한이 필요합니다.
 
-Cloud Manager에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. 에서 최신 사용 권한 목록을 찾을 수 있습니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 정책 페이지"^].
+Cloud Manager에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["AWS에 대한 최신 커넥터 정책을 봅니다"^].
 
 endif::aws[]
 
@@ -579,7 +579,7 @@ image:screenshot_azure_resource_group.png["기존 자원 그룹을 선택할 수
 "Microsoft.Network/privateEndpoints/delete",
 "Microsoft.Compute/availabilitySets/delete",
 ----
-Cloud Manager에 추가한 각 Azure 자격 증명 세트에 이러한 권한을 제공해야 합니다. 에서 최신 사용 권한 목록을 찾을 수 있습니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Manager 정책 페이지"^].
+Cloud Manager에 추가한 각 Azure 자격 증명 세트에 이러한 권한을 제공해야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Azure의 최신 커넥터 정책을 봅니다"^].
 
 
 
@@ -673,7 +673,7 @@ Cloud Manager는 이제 Cloud Volumes ONTAP 시스템이 구축될 때와 전원
 
 ifdef::azure[]
 
-Connector에는 Azure 스냅샷을 삭제할 수 있는 새로운 권한이 필요합니다. https://mysupport.netapp.com/site/info/cloud-manager-policies["Azure에 대한 최신 Cloud Manager 정책을 확인하십시오"^].
+Connector에는 Azure 스냅샷을 삭제할 수 있는 새로운 권한이 필요합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Azure의 최신 커넥터 정책을 봅니다"^].
 
 [source, json]
 ----

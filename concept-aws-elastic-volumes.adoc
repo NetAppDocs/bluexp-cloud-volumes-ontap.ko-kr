@@ -69,7 +69,7 @@ GP3(General Purpose SSD) 또는 ios1(Provisioned IOPS SSD)을 사용하는 경�
 * EC2: ModifyVolume(수정 볼륨)
 
 
-이러한 권한은 에 포함되어 있습니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["NetApp에서 제공하는 정책"^]
+이러한 권한은 에 포함되어 있습니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["NetApp에서 제공하는 정책"^]
 
 
 

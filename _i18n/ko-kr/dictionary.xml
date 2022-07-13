@@ -120,7 +120,6 @@
   <block id="2d6e88c43d1b87d3d042cce1773371b7" category="paragraph">Cloud Volumes ONTAP에 대한 새 리소스 그룹을 만들거나 기존 리소스 그룹을 사용합니다. 모범 사례는 Cloud Volumes ONTAP에 대한 새로운 전용 리소스 그룹을 사용하는 것입니다. 기존 공유 리소스 그룹에 Cloud Volumes ONTAP를 배포할 수는 있지만 데이터 손실 위험 때문에 권장되지 않습니다. 자세한 내용은 위의 경고를 참조하십시오.</block>
   <block id="c9187ee1a002f195f99a19e00d1b9596" category="paragraph">Azure에 구축하는 각 Cloud Volumes ONTAP HA 쌍에 대해 전용 리소스 그룹을 사용해야 합니다. 리소스 그룹에서는 하나의 HA 쌍만 지원됩니다. Azure 리소스 그룹에 두 번째 Cloud Volumes ONTAP HA 쌍을 구축하려고 하면 Cloud Manager에서 연결 문제가 발생합니다.</block>
   <block id="21c199e82e474a9a5607a2b9ccb8e66f" category="inline-link">필수 권한</block>
-  <block id="24890578d550dfd7eafc2569059f89e2" category="admonition">사용 중인 Azure 계정에 가 있는 경우<block ref="a18b1518901620e43c44c260945ff7cb" category="inline-link-rx"></block>, Cloud Manager는 배포 실패 또는 삭제 시 리소스 그룹에서 Cloud Volumes ONTAP 리소스를 제거합니다.</block>
   <block id="338578acf7e0dc54ebcd8c3592f0b022" category="cell">보안 그룹</block>
   <block id="aeba611d332bf85ad8d5a14dd92fa935" category="inline-link-macro">기본 보안 그룹을 봅니다</block>
   <block id="44651ffc55fe78607ad39789f43eab9b" category="cell">기존 보안 그룹을 선택하는 경우 Cloud Volumes ONTAP 요구 사항을 충족해야 합니다. <block ref="f88b68abd6e0fcb97b26739e6dccf3c6" category="inline-link-macro-rx"></block>.</block>
@@ -368,8 +367,6 @@
   <block id="74b0825a91f70136708bc63f9253e89c" category="paragraph">단일 노드 구성에서 Cloud Volumes ONTAP를 실행하거나 Google 클라우드 플랫폼에서 HA 쌍으로 실행할 수 있습니다.</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">시작하기 전에</block>
   <block id="3a2e3bd3692b5b10d4e8d1876ea764e4" category="list-text">가 있어야 합니다<block ref="31efb472d9740ae4bd5b3185af479587" category="inline-link-rx"></block>.</block>
-  <block id="bd6c369240f89bf86e4b626364f908e2" category="inline-link-macro">최신 권한이 있어야 합니다</block>
-  <block id="3321bc090ceb16b6084591444ef6cd3a" category="list-text">Connector와 연결된 서비스 계정입니다 <block ref="64a8bbbeae7df623fa565fb7d6d95fe1" category="inline-link-macro-rx"></block>.</block>
   <block id="af2fe545c466e4cd2bff03fb7e3dd4f2" category="paragraph">구성을 선택하고 관리자로부터 GCP 네트워킹 정보를 받아 준비해야 합니다. 자세한 내용은 을 참조하십시오 <block ref="7c40283f4f533a5903d1033c57ef27f4" category="inline-link-macro-rx"></block>.</block>
   <block id="fb387d3403e9d0f4168631a5c1e65d3d" category="inline-link">프로젝트에서 활성화됩니다</block>
   <block id="3f7dd317abe229076594c229e96f375d" category="list-text">Google Cloud API는 입니다<block ref="2bf1d71c4d11fe94040400dbdd9bbe2e" category="inline-link-rx"></block>:</block>
@@ -889,8 +886,6 @@
   <block id="1b267f21193669a66008c34cc479a4fc" category="inline-image-macro">기존 자원 그룹을 선택할 수 있는 작업 환경 만들기 마법사 스크린샷</block>
   <block id="cad0012f66cb2f1cfe9fddf03895f77e" category="paragraph"><block ref="cad0012f66cb2f1cfe9fddf03895f77e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ea2f95cd186ab87bca1dcce34b32534a" category="paragraph">배포 실패 또는 삭제 시 Cloud Manager에서 리소스 그룹에서 Cloud Volumes ONTAP 리소스를 제거할 수 있는 권한은 다음과 같습니다.</block>
-  <block id="eaf263597aafb24c99ce4e16af420ae8" category="inline-link">Cloud Manager 정책 페이지</block>
-  <block id="5a0c4362aa70d1aeb52c4b022fd88361" category="paragraph">Cloud Manager에 추가한 각 Azure 자격 증명 세트에 이러한 권한을 제공해야 합니다. 에서 최신 사용 권한 목록을 찾을 수 있습니다<block ref="0e92ab1ca454f31f07a6e5fba6519a3a" category="inline-link-rx"></block>.</block>
   <block id="0a3c5ad9f109853d264fbf6240883bfe" category="section-title">이제 Azure에서 BLOB 공용 액세스가 비활성화되었습니다</block>
   <block id="3d0f1890147e4cb614f14a676c8ef588" category="paragraph">보안을 강화하기 위해 Cloud Manager는 이제 Cloud Volumes ONTAP용 스토리지 계정을 만들 때 * Blob 공용 액세스 * 를 비활성화합니다.</block>
   <block id="aef1ee9aa40596fa2f356372bd8af7d5" category="section-title">Azure Private Link 기능 향상</block>
@@ -922,8 +917,6 @@
   <block id="bf3fded166c9420fbd66b824ce9bbc0b" category="section-title">이전 클라우드 스냅샷 삭제</block>
   <block id="63c06d07a1fa7b849380de0fd3b1183b" category="paragraph">Cloud Manager는 이제 Cloud Volumes ONTAP 시스템이 구축될 때와 전원이 꺼졌을 때 생성되는 루트 및 부팅 디스크의 이전 클라우드 스냅샷을 삭제합니다. 가장 최근의 두 스냅샷만 루트 볼륨과 부팅 볼륨 모두에 대해 보존됩니다.</block>
   <block id="f39a950236a2ad655637cfc92f42e08a" category="paragraph">이러한 기능 향상으로 더 이상 필요하지 않은 스냅샷을 제거하여 클라우드 공급자 비용을 절감할 수 있습니다.</block>
-  <block id="c6864fba0c63991f673104f8962961a0" category="inline-link">Azure에 대한 최신 Cloud Manager 정책을 확인하십시오</block>
-  <block id="39a27239d032dc234fdb9bf37df2907f" category="paragraph">Connector에는 Azure 스냅샷을 삭제할 수 있는 새로운 권한이 필요합니다.<block ref="a2c3d86df958bba3f2cf61370f533f94" category="inline-link-rx"></block>.</block>
   <block id="838ebd02c4e75e1a01b87638b45ee617" category="section-title">2021년 5월 24일</block>
   <block id="910d8975bd41857a0103e9a8657ea7d9" category="section-title">Cloud Volumes ONTAP 9.9.1</block>
   <block id="c863fcd8d7f3278495a83acff7ce4871" category="paragraph">Cloud Manager는 이제 Cloud Volumes ONTAP 9.9.1을 구축 및 관리할 수 있습니다.</block>
@@ -1305,9 +1298,6 @@
   <block id="35e4967d2a2e90d7bfa5caff34b2036e" category="paragraph">Cloud Manager를 사용하면 AWS에서 Cloud Volumes ONTAP를 실행하는 데 따른 리소스 비용을 확인할 수 있습니다. 또한 스토리지 비용을 줄일 수 있는 NetApp 기능을 사용하여 얼마나 많은 비용을 절감할 수 있는지도 확인할 수 있습니다.</block>
   <block id="a5d977ba36574331e6fac69ee299d352" category="paragraph">페이지를 새로 고치면 Cloud Manager에서 비용이 업데이트됩니다. 최종 비용 세부정보를 보려면 AWS를 참조해야 합니다.</block>
   <block id="ef6804a71d4dc1bde5a7f23c03679def" category="list-text">Cloud Manager가 AWS에서 비용 정보를 얻을 수 있는지 확인:</block>
-  <block id="54656853d86488021d6d7dbdb510aa1d" category="list-text">Cloud Manager에 권한을 제공하는 IAM 정책에 다음 작업이 포함되어 있는지 확인합니다.</block>
-  <block id="d76af3fd99bc3d655a1c7ebb39340b6f" category="inline-link">Cloud Manager 정책</block>
-  <block id="387b1d5a0d67dbd2eb72b8f47d9d96c2" category="paragraph">이러한 작업은 최신 에 포함되어 있습니다<block ref="0dc063d42cd9e31c0e2c7df9df595c9f" category="inline-link-rx"></block>. NetApp Cloud Central에서 구축한 새 시스템에 이러한 사용 권한이 자동으로 포함됩니다.</block>
   <block id="de4e4bb6bc85c14c6a8601fd20afdca3" category="inline-link">WorkingEnvironmentId* 태그를 활성화합니다</block>
   <block id="ee0050b628db7de40e04e661d528d91f" category="list-text"><block ref="541edff71c56eae6d36d5f7a463cfcca" category="inline-link-rx"></block>.</block>
   <block id="2a8cdc8078be7ba49f8cc84255ed8462" category="paragraph">AWS 비용을 추적하기 위해 Cloud Manager에서 Cloud Volumes ONTAP 인스턴스에 비용 할당 태그를 할당합니다. 첫 번째 작업 환경을 만든 후 * WorkingEnvironmentId * 태그를 활성화합니다. 사용자 정의 태그는 청구 및 비용 관리 콘솔에서 활성화할 때까지 AWS 청구 보고서에 나타나지 않습니다.</block>
@@ -2481,8 +2471,6 @@
   <block id="d9483fef78159e6b7c5c069f6308ec9e" category="doc">Cloud Volumes ONTAP에서 고객이 관리하는 암호화 키 사용</block>
   <block id="769b2b29e604b8ed7cfb5dd3f4866402" category="paragraph">Google 클라우드 스토리지는 디스크에 데이터를 쓰기 전에 항상 데이터를 암호화하지만, Cloud Manager API를 사용하여 _고객이 관리하는 암호화 키_ 를 사용하는 Cloud Volumes ONTAP 시스템을 생성할 수 있습니다. 클라우드 키 관리 서비스를 사용하여 GCP에서 생성하고 관리하는 키입니다.</block>
   <block id="b9619c1148373a636c12c8213eddff6c" category="list-text">키가 저장된 프로젝트의 Cloud Manager Connector 서비스 계정에 프로젝트 수준에서 올바른 권한이 있는지 확인합니다.</block>
-  <block id="ba4d50b593a64cf3bc09099137fea857" category="inline-link">Cloud Manager YAML 파일</block>
-  <block id="26acc058d297ac8811f53111c6405f4c" category="paragraph">권한은 에서 제공합니다<block ref="1c047ede583bccd8d55f27e40850ab68" category="inline-link-rx"></block> 기본적으로 클라우드 키 관리 서비스에 대체 프로젝트를 사용하는 경우에는 적용되지 않을 수 있습니다.</block>
   <block id="8d6f8ae15f085c0f77796ef25c3e542f" category="paragraph">사용 권한은 다음과 같습니다.</block>
   <block id="e58a4fe969b25e78703eca19dbe150f4" category="inline-link">Google Compute Engine 서비스 에이전트입니다</block>
   <block id="f83957d35ae58c124cdefecdb0acb6d2" category="list-text">에 대한 서비스 계정이 있는지 확인합니다<block ref="20c753a1b4fa297bc9e2c3ab9d93174c" category="inline-link-rx"></block> Cloud KMS Encrypter/Decrypter 권한이 키에 있습니다.</block>
@@ -2796,8 +2784,6 @@
   <block id="389b4752108a2a4a55739697be41dad2" category="paragraph">Cloud Volumes ONTAP가 S3에 연결되어 있는지 확인합니다. 이 연결을 제공하는 가장 좋은 방법은 S3 서비스에 VPC 엔드포인트를 생성하는 것입니다. 자세한 내용은 을 참조하십시오<block ref="739944581ddd86bd6d09f3841372a69b" category="inline-link-rx"></block>.</block>
   <block id="9daf3764d930a69c2d6feecf1143803d" category="paragraph">문제가 발생하면 을 참조하십시오<block ref="133eaae00ad88e811386070963e01d00" category="inline-link-rx"></block>.</block>
   <block id="9937c497b7ba5b93c4e025e7034a6ab2" category="section-title">콜드 데이터를 Azure Blob 저장소에 계층화하기 위한 요구사항</block>
-  <block id="69fc3aa126fc7a09511fee14d2ec37b4" category="paragraph">Cloud Manager에 필요한 권한이 있는 경우 성능 계층과 용량 계층 간의 연결을 설정할 필요가 없습니다. Cloud Manager 정책에 다음과 같은 권한이 있는 경우 Cloud Manager를 통해 VNET 서비스 엔드포인트를 사용할 수 있습니다.</block>
-  <block id="aaf6c9386307243e0c7f006a0f97bb52" category="paragraph">사용 권한은 최신 에 포함되어 있습니다<block ref="7fc49a88d4bedbc1252c1f5516a8dc2a" category="inline-link-rx"></block>.</block>
   <block id="fa1042438bed47a60c15908b94fd42c4" category="section-title">콜드 데이터를 Google Cloud Storage 버킷에 계층화해야 하는 요구 사항</block>
   <block id="5a73034af6b91167e9ba69ce44d86e8f" category="list-text">Cloud Volumes ONTAP가 상주하는 서브넷은 개인 Google 액세스용으로 구성해야 합니다. 자세한 지침은 을 참조하십시오<block ref="46bdb5a1fb51df5eb32e2147ea91e6d8" category="inline-link-rx"></block>.</block>
   <block id="afe7022770dc53fd2a2de81727d4343a" category="list-text">고객이 관리하는 암호화 키로 버킷을 암호화하려면 Google Cloud 스토리지 버킷에서 키를 사용할 수 있습니다.</block>
@@ -2913,7 +2899,6 @@
   <block id="ee838eedbc836643e82292aaec35e9bd" category="section-title">암호화 키를 사용하는 작업 환경을 만듭니다</block>
   <block id="b182b79adc6d3d917ce345097c4ccd53" category="paragraph">키 볼트를 작성하고 암호화 키를 생성한 후 키를 사용하도록 구성된 새 Cloud Volumes ONTAP 시스템을 작성할 수 있습니다. 이러한 단계는 Cloud Manager API를 사용하여 지원됩니다.</block>
   <block id="60caa3723d35318302867d5f5c093f4a" category="paragraph">단일 노드 Cloud Volumes ONTAP 시스템에서 고객 관리 키를 사용하려면 Cloud Manager Connector에 다음 권한이 있는지 확인합니다.</block>
-  <block id="9de255345c89e4a84f3125ff96e9f3ed" category="paragraph">에서 최신 사용 권한 목록을 찾을 수 있습니다<block ref="0e92ab1ca454f31f07a6e5fba6519a3a" category="inline-link-rx"></block>.</block>
   <block id="c4e08114666cf6bc480ea8458e1dd083" category="list-text">다음 Cloud Manager API 호출을 사용하여 Azure 구독의 키 볼트 목록을 가져옵니다.</block>
   <block id="b5bc96f48f2241c984568df161fa1a37" category="paragraph">HA 쌍의 경우: 'get/Azure/ha/metadata/vaults'</block>
   <block id="ac20be2c156e351d08e2cd3c7c63b584" category="paragraph">단일 노드의 경우: 'get/Azure/VSA/metadata/vaults'</block>
@@ -3037,7 +3022,6 @@
   <block id="aa1a1dda4b1ade9ea7484b8f180091ba" category="paragraph">패키지 중 하나를 선택하는 경우 볼륨을 지정한 다음 구성을 검토 및 승인하기만 하면 됩니다.</block>
   <block id="c449e34e5848c75cf2ae5048d97482c1" category="list-text">* IAM Role *: Cloud Manager가 역할을 생성할 수 있도록 기본 옵션을 유지하는 것이 가장 좋습니다.</block>
   <block id="bef2f3bc1b5f6b5fc3eaabff818b8b07" category="inline-link">Cloud Volumes ONTAP 노드의 정책 요구사항</block>
-  <block id="28df6ca63a931a73e42bb1a5832f842b" category="paragraph">자체 정책을 사용하려면 이 정책이 충족해야 합니다<block ref="e6af531133ecd89e70d5f32cb2437c92" category="inline-link-rx"></block>.</block>
   <block id="a6fcc094aa2aa8328784bade825b168a" category="inline-link-macro">데이터 계층화의 작동 방식에 대해 알아보십시오</block>
   <block id="e3d16ce79bcead59781233b93cb58009" category="paragraph"><block ref="204d09224c7e7513a2d3fc955e6c2d5a" category="inline-link-macro-rx"></block>.</block>
   <block id="92a1203fc5511fdb287e0ca1b80062ce" category="list-text">* Usage Profile, Disk Type 및 Tiering Policy *: 스토리지 효율성 기능을 사용하도록 설정하고 필요한 경우 볼륨 계층화 정책을 편집할지 여부를 선택합니다.</block>
@@ -3064,7 +3048,6 @@
   <block id="0d27f0f1131dc607258f48d5dc5dcf14" category="list-text">* 루트 테이블 *: 여러 AZs를 선택한 경우 부동 IP 주소에 대한 라우트를 포함해야 하는 라우팅 테이블을 선택합니다.</block>
   <block id="5e2b7cebb4bf10923692995c621e2e85" category="paragraph">둘 이상의 라우팅 테이블이 있는 경우 올바른 라우팅 테이블을 선택하는 것이 매우 중요합니다. 그렇지 않으면 일부 클라이언트가 Cloud Volumes ONTAP HA 쌍에 액세스하지 못할 수 있습니다. 라우팅 테이블에 대한 자세한 내용은 을 참조하십시오<block ref="8ed06851f50fcdbded65cb78f986bfa5" category="inline-link-rx"></block>.</block>
   <block id="b2bb3f64fb5b828b17cb684f3c44b684" category="inline-link">Cloud Volumes ONTAP 노드 및 HA 중재자의 정책 요구사항</block>
-  <block id="75b4ad07a93bd884b4cecba578453c90" category="paragraph">자체 정책을 사용하려면 이 정책이 충족해야 합니다<block ref="a2de7a18595694bfdf2d090235d628ca" category="inline-link-rx"></block>.</block>
   <block id="e33d0575f3a1479ae00cc2fb1764511c" category="list-text">* CIFS 설정 *: CIFS 프로토콜을 선택한 경우 CIFS 서버를 설정합니다.</block>
   <block id="b687eeea7d6170a303a1764ea5284467" category="paragraph">Cloud Manager가 Cloud Volumes ONTAP HA 쌍을 시작합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.</block>
   <block id="63f5b3a996af84469a7cccd34a9a29c0" category="paragraph">HA 쌍 실행에 문제가 있는 경우 장애 메시지를 검토하십시오. 작업 환경을 선택하고 환경 다시 생성 을 클릭할 수도 있습니다.</block>
@@ -3391,7 +3374,6 @@
   <block id="ef8e1d8f242a7ee4d109deb44db1b252" category="section-title">Connector에 새로운 AWS 권한이 필요합니다</block>
   <block id="bfd761a70b5f9cd277ef7c878344df38" category="paragraph">이제 AZ(단일 가용성 영역)에 HA 쌍을 구축할 때 AWS 분산 배치 그룹을 생성하려면 다음 권한이 필요합니다.</block>
   <block id="0080f4096e51a12d4256890c125c5c46" category="paragraph">이제 Cloud Manager에서 배치 그룹을 만드는 방법을 최적화하려면 이러한 권한이 필요합니다.</block>
-  <block id="26dd25d183752a9f37249174f3d3ff89" category="paragraph">Cloud Manager에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. 에서 최신 사용 권한 목록을 찾을 수 있습니다<block ref="0e92ab1ca454f31f07a6e5fba6519a3a" category="inline-link-rx"></block>.</block>
   <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">새로운 Google Cloud 지역 지원</block>
   <block id="6b071f4257d8badb0aeb96e6b0547800" category="paragraph">Cloud Volumes ONTAP는 이제 9.10.1 릴리스부터 다음 Google 클라우드 영역에서 지원됩니다.</block>
   <block id="b11df59ba05c25c3a8734d54b7501ae7" category="list-text">델리(아시아 - 남쪽 2)</block>
@@ -3924,7 +3906,6 @@
   <block id="29788364ff656936651870f4b1c88537" category="list-text">선택 사항: Google Cloud에 추가한 IP 주소를 지정하여 스토리지 VM 관리 LIF를 생성합니다.</block>
   <block id="4bd46f200c4c3391a3b00fc9aa8af7dd" category="paragraph">3.9.19 릴리즈부터 Cloud Volumes ONTAP HA 쌍에 대한 스토리지 VM을 생성하고 관리하기 위해 커넥터에는 다음 권한이 필요합니다.</block>
   <block id="9edd86f763fc6d21418429b5c63134af" category="inline-link">NetApp에서 제공하는 정책</block>
-  <block id="e32789b345ccbe1107de29d5684f39a3" category="paragraph">이러한 권한은 에 포함되어 있습니다<block ref="d2f8d77175d2dd5e5ed1a096c2593510" category="inline-link-rx"></block></block>
   <block id="8786838db6c83df6feac856057d2e141" category="list-text">다음 API 호출을 사용하여 스토리지 VM을 생성합니다.</block>
   <block id="78beb47b48fe8b17a288b32a8942a187" category="paragraph">'POST/occm/api/GCP/ha/working-Environments/{we_ID}/svm/'</block>
   <block id="995ddfd1247131c9653edbf829fa6e28" category="paragraph">요청 본문에는 다음이 포함되어야 합니다.</block>
@@ -4224,4 +4205,46 @@
   <block id="deae9d093dee266b166a3693474231a9" category="paragraph">이 경우 Cloud Volumes ONTAP는 사용자 개입 없이 부팅하여 데이터를 계속 제공할 수 있어야 합니다.</block>
   <block id="4f68f7a47531b2df7b7a4db5225d57b5" category="list-text">_BYOL_은 NetApp에서 구입한 라이센스 용량을 보여 줍니다.</block>
   <block id="0c27ea3454ff74c09bafc9361752d263" category="list-text">_PAYGO_는 라이센스 소비 모델별 총 사용 용량을 표시합니다.</block>
+  <block id="37bd0d8d0efdd824ed9e36094f3c2c1c" category="paragraph">이러한 권한은 에 포함되어 있습니다<block ref="98fe8f9430f05dddae3f56358643ae7b" category="inline-link-rx"></block></block>
+  <block id="ae80bc88aef0110098f23957532726a9" category="list-text">Cloud Manager에 권한을 제공하는 IAM 정책에 필요한 권한이 포함되어 있는지 확인합니다.</block>
+  <block id="d0cc9b5d406e02bdbb6a1a9848e6af5f" category="inline-link">필요한 권한을 봅니다</block>
+  <block id="0fcac0fe9e3d9ae4416e83b6bf0316d1" category="paragraph"><block ref="0fcac0fe9e3d9ae4416e83b6bf0316d1" category="inline-link-rx"></block></block>
+  <block id="63e4eec15ba75260d01771611989182b" category="inline-link">AWS에 대한 최신 커넥터 정책을 봅니다</block>
+  <block id="3f5180c6dfc0906c58f04ff000c41a28" category="paragraph">Cloud Manager에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다.<block ref="68d3de9f2b18269a91b4a95ab6a0f18b" category="inline-link-rx"></block>.</block>
+  <block id="ea03ff7045a27cd5d2c4f32dcc1e5c1a" category="inline-link">Azure의 최신 커넥터 정책을 봅니다</block>
+  <block id="295513df08c7c28471bdab48a5e355ca" category="paragraph">Cloud Manager에 추가한 각 Azure 자격 증명 세트에 이러한 권한을 제공해야 합니다.<block ref="574207c2ae4659a179501fd348865e04" category="inline-link-rx"></block>.</block>
+  <block id="a8871b0f5e2060375f5d22d7b732e703" category="paragraph">Connector에는 Azure 스냅샷을 삭제할 수 있는 새로운 권한이 필요합니다.<block ref="574207c2ae4659a179501fd348865e04" category="inline-link-rx"></block>.</block>
+  <block id="5df454c08487b25ef7ed689e20bbb85b" category="admonition">사용 중인 Azure 계정에 가 있는 경우<block ref="cd2b97a09fd9df6a215a5b6e4e80bd0b" category="inline-link-rx"></block>, Cloud Manager는 배포 실패 또는 삭제 시 리소스 그룹에서 Cloud Volumes ONTAP 리소스를 제거합니다.</block>
+  <block id="2976866d443a54a1d677044dcbde1667" category="paragraph">Cloud Manager에 필요한 권한이 있는 경우 성능 계층과 용량 계층 간의 연결을 설정할 필요가 없습니다. Connector의 사용자 지정 역할에 다음 권한이 있는 경우 Cloud Manager를 통해 VNET 서비스 끝점을 사용할 수 있습니다.</block>
+  <block id="0f0088348e85cdf82b3a00d88879bc4d" category="inline-link">Connector에 대한 Azure 권한을 봅니다</block>
+  <block id="8ddf671701dec41bed133165068f79cf" category="paragraph">사용 권한은 기본적으로 사용자 지정 역할에 포함됩니다.<block ref="02023942a78dd9e7d6b9acab278574c6" category="inline-link-rx"></block></block>
+  <block id="50e6df40fd4046e3d4cba1fe6794893f" category="summary">각 Cloud Volumes ONTAP 노드에는 필요한 권한을 제공하는 IAM 역할이 연결되어 있어야 합니다. HA 중재자의 경우도 마찬가지입니다. Cloud Manager가 IAM 역할을 생성하도록 하는 것이 가장 쉽지만 자신의 역할을 사용할 수 있습니다.</block>
+  <block id="75c41138bbd7704a1e0b806bef4b58ac" category="doc">Cloud Volumes ONTAP에 대한 IAM 역할을 설정합니다</block>
+  <block id="e8d7c2539c0a4191d2d2e9716d9aa611" category="paragraph">필요한 권한이 있는 IAM 역할을 각 Cloud Volumes ONTAP 노드에 연결해야 합니다. HA 중재자의 경우도 마찬가지입니다. Cloud Manager가 IAM 역할을 생성하도록 하는 것이 가장 쉽지만 자신의 역할을 사용할 수 있습니다.</block>
+  <block id="beb54b15eed37770fdbcb3e343aab17f" category="paragraph">이 작업은 선택 사항입니다. Cloud Volumes ONTAP 작업 환경을 생성할 때 기본 옵션은 Cloud Manager에서 IAM 역할을 생성할 수 있도록 하는 것입니다. 보안 정책에 따라 IAM 역할을 직접 생성해야 하는 경우 다음 단계를 따르십시오.</block>
+  <block id="07561162983a030769cc8563b6143a06" category="inline-link-macro">C2S에 Cloud Volumes ONTAP를 배포하는 방법을 알아보십시오</block>
+  <block id="f6fe0c003ae0bc360a2c1d722f423983" category="admonition">AWS 상용 클라우드 서비스 환경에서는 IAM의 역할을 직접 제공해야 합니다. <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>.</block>
+  <block id="1e71ce7defc90d8f5a2c46c08ba968df" category="list-text">AWS IAM 콘솔로 이동합니다.</block>
+  <block id="2be2a83dff352bbae732dfe827629b52" category="list-text">다음 권한을 포함하는 IAM 정책을 생성합니다.</block>
+  <block id="f671db25e387df2f231d7d414ac6e1ba" category="list-text">Cloud Volumes ONTAP 노드</block>
+  <block id="222ddb2f355a49f64fb3858123f2b97b" category="open-title">표준 영역</block>
+  <block id="1411debdb32e6b128ca27ec92a708cbd" category="open-title">GovCloud(미국) 지역</block>
+  <block id="a8416eae2db8c97eb943559351fab358" category="open-title">C2S 환경</block>
+  <block id="3e5c966a065f647b413d08592c0e466d" category="list-text">IAM 역할을 생성하고 이전 단계에서 생성한 정책을 역할에 연결합니다.</block>
+  <block id="a640e21419d545eaa2be7040f35bcbde" category="paragraph">이제 새로운 Cloud Volumes ONTAP 작업 환경을 생성할 때 선택할 수 있는 IAM 역할이 있습니다.</block>
+  <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="list-title">추가 정보</block>
+  <block id="0eab25f343df3cb0d26a483c0c7e529f" category="inline-link">AWS 설명서: IAM 정책 생성</block>
+  <block id="45e9fc9038e8db14384b82fa67d6e96c" category="list-text"><block ref="45e9fc9038e8db14384b82fa67d6e96c" category="inline-link-rx"></block></block>
+  <block id="c6239bda161ac0e2a3f3a7f04121192f" category="inline-link">AWS 설명서: IAM 역할 생성</block>
+  <block id="a617d64955af268e6cf6dcbbd1b9c7a2" category="list-text"><block ref="a617d64955af268e6cf6dcbbd1b9c7a2" category="inline-link-rx"></block></block>
+  <block id="9bbbccce6014d45ac8f43e7614d2a34c" category="paragraph">이러한 권한은 에 포함되어 있습니다<block ref="4e2f5782ef353f7277cd9ba2163caaf1" category="inline-link-rx"></block>.</block>
+  <block id="67e53d36a1474a1493554aa780f091dd" category="inline-link">기본적으로 커넥터 서비스 계정 권한이 있습니다</block>
+  <block id="30770411d4576ecdafaa756fb5a82328" category="paragraph">사용 권한은 에 제공됩니다<block ref="296035bc3f3b9b7f4150059e833c4544" category="inline-link-rx"></block>, 그러나 클라우드 키 관리 서비스에 대체 프로젝트를 사용하는 경우에는 적용되지 않을 수 있습니다.</block>
+  <block id="791fab48bebea2a79a35d70b5cc07227" category="inline-link">최신 사용 권한 목록을 봅니다</block>
+  <block id="ba7ae0204894b3edc44a2f0822ad2da8" category="paragraph"><block ref="ba7ae0204894b3edc44a2f0822ad2da8" category="inline-link-rx"></block></block>
+  <block id="9e1dbaa97d16ff9bc20f90cb1663f522" category="inline-link">필요한 권한이 있어야 합니다</block>
+  <block id="acbe60cca2f08e7905a3283a0c9d7b09" category="list-text">Connector와 연결된 서비스 계정입니다<block ref="9efb82dd4baa51f3442d848d3fff4260" category="inline-link-rx"></block></block>
+  <block id="ca28d9f44067f5a160cea063e474fc37" category="paragraph">자체 정책을 사용하려면 이 정책이 충족해야 합니다 <block ref="a89eb99c31d3fd4d78e3bc9ddfb0dc20" category="inline-link-macro-rx"></block>.</block>
+  <block id="6459a9ada2e38351f8beba8f79c30a5f" category="paragraph">자체 정책을 사용하려면 이 정책이 충족해야 합니다 <block ref="f5cab54abdefb42b27e2bac59f2262c2" category="inline-link-macro-rx"></block>.</block>
+  <block id="e26c5d07fc30848902a99c95897441b4" category="sidebar">IAM 역할을 설정합니다</block>
 </blocks>

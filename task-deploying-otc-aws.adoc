@@ -132,7 +132,7 @@ link:concept-security.html#encryption-of-data-at-rest["지원되는 암호화 �
 
 . * IAM Role *: Cloud Manager가 역할을 생성할 수 있도록 기본 옵션을 유지하는 것이 가장 좋습니다.
 +
-자체 정책을 사용하려면 이 정책이 충족해야 합니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Volumes ONTAP 노드의 정책 요구사항"^].
+자체 정책을 사용하려면 이 정책이 충족해야 합니다 link:task-set-up-iam-roles.html["Cloud Volumes ONTAP 노드의 정책 요구사항"].
 
 . * 라이선스 *: 필요에 따라 Cloud Volumes ONTAP 버전을 변경하고 인스턴스 유형 및 인스턴스 테넌시를 선택합니다.
 +
@@ -355,7 +355,7 @@ link:concept-security.html#encryption-of-data-at-rest["지원되는 암호화 �
 
 . * IAM Role *: Cloud Manager가 역할을 생성할 수 있도록 기본 옵션을 유지하는 것이 가장 좋습니다.
 +
-자체 정책을 사용하려면 이 정책이 충족해야 합니다 https://mysupport.netapp.com/site/info/cloud-manager-policies["Cloud Volumes ONTAP 노드 및 HA 중재자의 정책 요구사항"^].
+자체 정책을 사용하려면 이 정책이 충족해야 합니다 link:task-set-up-iam-roles.html["Cloud Volumes ONTAP 노드 및 HA 중재자의 정책 요구사항"].
 
 . * 라이선스 *: 필요에 따라 Cloud Volumes ONTAP 버전을 변경하고 인스턴스 유형 및 인스턴스 테넌시를 선택합니다.
 +
