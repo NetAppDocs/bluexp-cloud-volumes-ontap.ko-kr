@@ -140,7 +140,6 @@
   <block id="5f785ef412cf3ae3f3656054cca2d342" category="list-text">* 쓰기 속도 및 WORM * (단일 노드 시스템만 해당): * 일반 * 또는 * 고속 * 쓰기 속도를 선택하고 원하는 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.</block>
   <block id="7e747f6f397a13c9ddfd3cf35ed0a063" category="inline-link-macro">쓰기 속도에 대해 자세히 알아보십시오</block>
   <block id="154182f595466ead49f0896392c37343" category="paragraph"><block ref="12222f10612c9f092ca31c9e99478649" category="inline-link-macro-rx"></block>.</block>
-  <block id="aaba9ed07f65bdca98f42e38431e1fa9" category="paragraph">Cloud Backup이 활성화되었거나 데이터 계층화가 활성화된 경우 WORM을 설정할 수 없습니다.</block>
   <block id="750f81869269b4f604a849fb2104a6b3" category="inline-link-macro">WORM 스토리지에 대해 자세히 알아보십시오</block>
   <block id="9fbcc7d5f14bd49b571c1a321923fd19" category="paragraph"><block ref="b8e9389aa16366d8b675fc0ac72edf2e" category="inline-link-macro-rx"></block>.</block>
   <block id="99933c51e50b7da9dbe73f3421397211" category="list-text">* 스토리지와 WORM * (HA만 해당) 보안 통신: Azure 스토리지 계정에 대한 HTTPS 연결을 사용하도록 설정하고 원하는 경우 WORM(Write Once, Read Many) 스토리지를 활성화할지 여부를 선택합니다.</block>
@@ -1002,7 +1001,6 @@
   <block id="e2d4a517cbcae1c0966d5e478d743531" category="list-text">Cloud Volumes ONTAP의 WORM 스토리지는 "신뢰할 수 있는 스토리지 관리자" 모델로 운영됩니다. WORM 파일은 변경 또는 수정으로부터 보호되지만, 만료되지 않은 WORM 데이터가 포함된 볼륨에도 클러스터 관리자가 볼륨을 삭제할 수 있습니다.</block>
   <block id="6d0cc0f6b100bdce8cb06276811faff9" category="list-text">신뢰할 수 있는 스토리지 관리자 모델 외에도 Cloud Volumes ONTAP의 WORM 스토리지는 "신뢰할 수 있는 클라우드 관리자" 모델에서도 암시적으로 작동합니다. 클라우드 관리자는 클라우드 공급자에서 직접 클라우드 스토리지를 제거 또는 편집하여 만료 날짜 이전에 WORM 데이터를 삭제할 수 있습니다.</block>
   <block id="eb57ade58504f4d5c09cb5e8cd78ae55" category="list-text">WORM 스토리지가 활성화된 경우 오브젝트 스토리지에 대한 데이터 계층화를 설정할 수 없습니다.</block>
-  <block id="d9054c47c3f9c235104ce71c08d03270" category="list-text">WORM 스토리지를 활성화하려면 Cloud Backup Service를 비활성화해야 합니다.</block>
   <block id="098ced68694df35d5e0943a0cad2fb8f" category="summary">초기 Cloud Volumes ONTAP 시스템을 시작한 후 더 많은 스토리지가 필요한 경우 Cloud Manager에서 NFS, CIFS 또는 iSCSI용 새 FlexVol 볼륨을 생성할 수 있습니다.</block>
   <block id="c65544a3678422a2d15f8bc1a12dec12" category="doc">FlexVol 볼륨을 생성합니다</block>
   <block id="f5452253eae7fb5f36ff2e68cd8aa5ae" category="paragraph">Cloud Manager에서 다양한 방법으로 새 볼륨을 생성할 수 있습니다.</block>
@@ -4247,4 +4245,5 @@
   <block id="ca28d9f44067f5a160cea063e474fc37" category="paragraph">자체 정책을 사용하려면 이 정책이 충족해야 합니다 <block ref="a89eb99c31d3fd4d78e3bc9ddfb0dc20" category="inline-link-macro-rx"></block>.</block>
   <block id="6459a9ada2e38351f8beba8f79c30a5f" category="paragraph">자체 정책을 사용하려면 이 정책이 충족해야 합니다 <block ref="f5cab54abdefb42b27e2bac59f2262c2" category="inline-link-macro-rx"></block>.</block>
   <block id="e26c5d07fc30848902a99c95897441b4" category="sidebar">IAM 역할을 설정합니다</block>
+  <block id="15cbb1f16ecbbcee7df3dcd252b9d2ef" category="paragraph">데이터 계층화가 설정된 경우 WORM을 설정할 수 없습니다.</block>
 </blocks>
