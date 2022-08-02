@@ -20,6 +20,68 @@ Cloud Manager에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알
 
 
 
+== 2022년 7월 31일
+
+다음 변경 사항은 커넥터의 3.9.21 릴리스에 도입되었습니다.
+
+
+
+=== MTEKM 라이센스
+
+이제 MTEKM(멀티 테넌트 암호화 키 관리) 라이센스가 버전 9.11.1 이상을 실행하는 새로운 기존 Cloud Volumes ONTAP 시스템과 함께 포함됩니다.
+
+멀티 테넌트 외부 키 관리를 통해 NetApp Volume Encryption을 사용할 때 개별 스토리지 VM(SVM)이 KMIP 서버를 통해 자체 키를 유지할 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["NetApp 암호화 솔루션으로 볼륨을 암호화하는 방법을 알아보십시오"].
+
+
+
+=== 프록시 서버
+
+이제 AutoSupport 메시지를 보내는 데 아웃바운드 인터넷 연결을 사용할 수 없는 경우 Cloud Manager는 Cloud Volumes ONTAP 시스템이 커넥터를 프록시 서버로 사용하도록 자동으로 구성합니다.
+
+AutoSupport은 능동적으로 시스템 상태를 모니터링하고 NetApp 기술 지원 팀에 메시지를 보냅니다.
+
+유일한 요구 사항은 커넥터의 보안 그룹이 포트 3128을 통한 _IN인바운드_연결을 허용하는지 확인하는 것입니다. Connector를 배포한 후 이 포트를 열어야 합니다.
+
+
+
+=== 충전 방법을 변경하십시오
+
+이제 용량 기반 라이센스를 사용하는 Cloud Volumes ONTAP 시스템의 충전 방법을 변경할 수 있습니다. 예를 들어, Essentials 패키지와 함께 Cloud Volumes ONTAP 시스템을 배포한 경우 비즈니스 요구사항이 변경되면 이를 Professional 패키지로 변경할 수 있습니다. 이 기능은 Digital Wallet에서 사용할 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["충전 방법을 변경하는 방법에 대해 알아보십시오"].
+
+
+
+=== 보안 그룹 강화
+
+Cloud Volumes ONTAP 작업 환경을 만들면 사용자 인터페이스를 통해 미리 정의된 보안 그룹이 선택한 네트워크 내에서만(권장) 또는 모든 네트워크 내의 트래픽을 허용할지 여부를 선택할 수 있습니다.
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["보안 그룹을 선택할 때 작업 환경 마법사에서 사용할 수 있는 트래픽 허용 옵션을 보여 주는 스크린샷"]
+
+ifdef::azure[]
+
+
+
+== 2022년 7월 18일
+
+
+
+=== Azure의 새로운 라이센스 패키지
+
+Azure Marketplace 구독을 통해 비용을 지불하는 Azure에서는 Cloud Volumes ONTAP에 대해 2가지 새로운 용량 기반 라이센스 패키지를 사용할 수 있습니다.
+
+* * 최적화 *: 프로비저닝된 용량과 I/O 작업에 대해 별도로 비용을 지불합니다
+* * Edge Cache *: 라이센스 https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge 캐시"^]
+
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["이러한 라이센스 패키지에 대해 자세히 알아보십시오"].
+
+endif::azure[]
+
+
+
 == 2022년 7월 3일
 
 다음 변경 사항은 커넥터의 3.9.20 릴리스에 도입되었습니다.
@@ -40,7 +102,7 @@ ifdef::aws[]
 
 이제 Cloud Manager는 사용자 인터페이스에서 Cloud Volumes ONTAP 작업 환경을 생성할 때 Amazon EBS Elastic Volumes 기능을 지원합니다. GP3 또는 ios1 디스크를 사용하는 경우 Elastic Volumes 기능이 기본적으로 활성화됩니다. 스토리지 요구사항에 따라 초기 용량을 선택하고 Cloud Volumes ONTAP를 구축한 후 수정할 수 있습니다.
 
-link:concept-aws-elastic-volumes.html["AWS의 Elastic Volumes 지원에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["AWS의 Elastic Volumes 지원에 대해 자세히 알아보십시오"].
 
 
 
@@ -100,7 +162,7 @@ Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우 ONTAP 시스�
 
 이 고급 보기는 Cloud Volumes ONTAP 9.10.0 이상에서 미리 보기로 사용할 수 있습니다. NetApp은 이 경험을 개선하고 다음 릴리즈에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 사용하여 피드백을 보내주십시오.
 
-link:task-administer-advanced-view.html["고급 보기에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["고급 보기에 대해 자세히 알아보십시오"].
 
 ifdef::aws[]
 
@@ -112,7 +174,7 @@ Cloud Volumes ONTAP 애그리게이트에서 Amazon EBS Elastic Volumes 기능�
 
 Elastic Volumes에 대한 지원은 _new_Cloud Volumes ONTAP 9.11.0 시스템과 GP3 및 ios1 EBS 디스크 유형으로 시작됩니다.
 
-link:concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].
 
 Elastic Volumes를 지원하려면 Connector에 대한 새로운 AWS 권한이 필요합니다.
 
@@ -141,7 +203,7 @@ ifdef::azure[]
 
 이제 Cloud Volumes ONTAP와 스토리지 계정 간의 연결에 VNET 서비스 끝점을 사용할 때 클라우드 관리자가 네트워크 액세스를 제한합니다. Azure Private Link 연결을 사용하지 않도록 설정하면 Cloud Manager에서 서비스 끝점을 사용합니다.
 
-link:task-enabling-private-link.html["Cloud Volumes ONTAP를 사용한 Azure 전용 링크 연결에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP를 사용한 Azure 전용 링크 연결에 대해 자세히 알아보십시오"].
 
 endif::azure[]
 
@@ -163,7 +225,7 @@ ifdef::gcp[]
 ONTAP CLI 또는 System Manager를 사용하여 단일 노드 시스템에 스토리지 VM을 생성해야 합니다.
 
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["Google Cloud의 스토리지 VM 제한에 대해 자세히 알아보십시오"^]
-* link:task-managing-svms-gcp.html["Google Cloud에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 생성하는 방법을 알아보십시오"]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["Google Cloud에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 생성하는 방법을 알아보십시오"]
 
 
 endif::gcp[]

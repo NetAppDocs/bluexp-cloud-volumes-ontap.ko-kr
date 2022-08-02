@@ -262,7 +262,7 @@ Cloud Volumes ONTAP 시스템에서 볼륨 또는 애그리게이트 생성과 �
 
 NOTE: 미리 정의된 Cloud Volumes ONTAP 보안 그룹은 기본적으로 아웃바운드 HTTP 연결을 허용합니다.
 
-. 에서 소프트웨어 이미지를 가져옵니다 https://mysupport.netapp.com/products/p/cloud_ontap.html["NetApp Support 사이트"^].
+. 에서 소프트웨어 이미지를 가져옵니다 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NetApp Support 사이트"^].
 . 파일을 제공할 Connector 또는 HTTP 서버의 디렉토리에 소프트웨어 이미지를 복사합니다.
 +
 예를 들어 소프트웨어 이미지를 Connector의 다음 경로에 복사할 수 있습니다.

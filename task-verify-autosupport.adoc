@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-verify-autosupport.html 
 keywords: autosupport, set up autosupport, test autosupport, asup, test asup 
-summary: AutoSupport은 능동적으로 시스템 상태를 모니터링하고 NetApp 기술 지원 팀에 메시지를 보냅니다. 기본적으로 AutoSupport는 각 노드에서 HTTPS 전송 프로토콜을 사용하여 기술 지원 부서에 메시지를 보내도록 설정됩니다. 
+summary: AutoSupport은 능동적으로 시스템 상태를 모니터링하고 NetApp 기술 지원 팀에 메시지를 보냅니다. 기본적으로 AutoSupport는 각 노드에서 HTTPS 전송 프로토콜을 사용하여 기술 지원 부서에 메시지를 보내도록 설정됩니다. AutoSupport에서 이러한 메시지를 보낼 수 있는지 확인하는 것이 가장 좋습니다. 
 ---
 = AutoSupport 설정을 확인합니다
 :hardbreaks:
@@ -16,9 +16,7 @@ summary: AutoSupport은 능동적으로 시스템 상태를 모니터링하고 N
 [role="lead"]
 AutoSupport은 능동적으로 시스템 상태를 모니터링하고 NetApp 기술 지원 팀에 메시지를 보냅니다. 기본적으로 AutoSupport는 각 노드에서 HTTPS 전송 프로토콜을 사용하여 기술 지원 부서에 메시지를 보내도록 설정됩니다. AutoSupport에서 이러한 메시지를 보낼 수 있는지 확인하는 것이 가장 좋습니다.
 
-인스턴스를 시작하기 전에 Cloud Manager 계정 관리자가 프록시 서버를 Cloud Manager에 추가한 경우 Cloud Volumes ONTAP은 해당 프록시 서버를 AutoSupport 메시지에 사용하도록 구성됩니다.
-
-유일하게 필요한 구성 단계는 Cloud Volumes ONTAP가 NAT 인스턴스 또는 환경의 프록시 서비스를 통해 아웃바운드 인터넷 연결을 가지도록 하는 것입니다. 자세한 내용은 해당 클라우드 공급자의 네트워킹 요구 사항을 참조하십시오.
+필요한 유일한 구성 단계는 Cloud Volumes ONTAP가 아웃바운드 인터넷 연결을 사용할 수 있도록 하는 것입니다. 자세한 내용은 해당 클라우드 공급자의 네트워킹 요구 사항을 참조하십시오.
 
 ifdef::aws[]
 

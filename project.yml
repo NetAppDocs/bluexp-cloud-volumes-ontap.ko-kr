@@ -7,6 +7,7 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
+  rss_page: whats-new.html
   filter:
     label: 클라우드 공급자
     default: 모든 클라우드 공급자

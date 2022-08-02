@@ -18,4 +18,4 @@ Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우 ONTAP 시스�
 
 이 고급 보기는 Cloud Volumes ONTAP 9.10.0 이상에서 미리 보기로 사용할 수 있습니다. NetApp은 이 경험을 개선하고 다음 릴리즈에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 사용하여 피드백을 보내주십시오.
 
-link:task-administer-advanced-view.html["고급 보기에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["고급 보기에 대해 자세히 알아보십시오"].

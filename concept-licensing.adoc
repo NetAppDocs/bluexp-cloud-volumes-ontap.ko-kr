@@ -65,6 +65,26 @@ NetApp에서 무료로 모든 Cloud Volumes ONTAP 기능을 제공합니다(클�
 
 
 
+ifdef::azure[]
+
+
+
+==== 최적화
+
+프로비저닝된 용량 및 I/O 작업에 대해 별도로 비용을 지불합니다.
+
+* Cloud Volumes ONTAP 단일 노드 또는 HA
+* 충전은 스토리지와 용도(I/O)의 두 가지 비용 구성 요소를 기반으로 합니다.
++
+데이터 복제를 위한 입출력은 충전된 입출력 사용량으로 계산되지 않습니다.
+
+* Azure 마켓플레이스에서만 용량제 오퍼링이나 연간 계약으로 사용할 수 있습니다
+* 선택한 VM 유형(E4s_v3, E4ds_v4, DS4_v2, DS13_v2, E8s_v3)에서 지원됨 및 E8ds_v4를 참조하십시오
+* NetApp의 클라우드 데이터 서비스를 추가 비용으로 이용할 수 있습니다
+
+
+endif::azure[]
+
 
 
 ==== 필수 요소
@@ -94,6 +114,25 @@ NetApp에서 무료로 모든 Cloud Volumes ONTAP 기능을 제공합니다(클�
 * NetApp의 클라우드 데이터 서비스를 추가 비용으로 이용할 수 있습니다
 
 
+ifdef::azure[]
+
+
+
+==== 에지 캐시
+
+Cloud Volumes Edge Cache에 대한 라이센스를 제공합니다.
+
+* 분산 엔터프라이즈를 위한 비즈니스 연속성 및 데이터 보호 기능을 제공하는 Professional 패키지와 동일한 기능입니다
+* 각 위치에서 설치 공간이 작은 Windows VM을 통한 지능형 에지 캐싱
+* 최소 30TiB와 6개의 에지 노드 포함
+* 추가 용량을 구매할 때마다 3개의 TiB에 1개의 에지 노드가 제공됩니다
+* Azure 마켓플레이스에서만 용량제 오퍼링이나 연간 계약으로 사용할 수 있습니다
+
+
+https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge Cache를 통해 비즈니스를 지원하는 방법에 대해 자세히 알아보십시오"^]
+
+endif::azure[]
+
 
 
 === 소비 모델
@@ -101,6 +140,14 @@ NetApp에서 무료로 모든 Cloud Volumes ONTAP 기능을 제공합니다(클�
 용량 기반 라이센스 패키지는 다음 소비 모델에서 사용할 수 있습니다.
 
 * * BYOL *: NetApp에서 구입한 라이센스로 클라우드 공급자에 상관없이 Cloud Volumes ONTAP를 구축할 수 있습니다.
+
+
+ifdef::azure[]
+
++ 최적화된 및 Edge Cache 패키지는 BYOL에서 사용할 수 없습니다.
+
+endif::azure[]
+
 * * PAYGO *: 클라우드 공급자 마켓플레이스의 시간별 구독입니다.
 * * 연간 *: 클라우드 공급자 마켓플레이스로부터 연간 계약을 체결합니다.
 
@@ -121,9 +168,17 @@ NetApp에서 무료로 모든 Cloud Volumes ONTAP 기능을 제공합니다(클�
 
 
 
+=== 패키지를 변경하는 중입니다
+
+배포 후에는 용량 기반 라이센스를 사용하는 Cloud Volumes ONTAP 시스템의 패키지를 변경할 수 있습니다. 예를 들어, Essentials 패키지와 함께 Cloud Volumes ONTAP 시스템을 배포한 경우 비즈니스 요구사항이 변경되면 이를 Professional 패키지로 변경할 수 있습니다.
+
+link:task-manage-capacity-licenses.html["충전 방법을 변경하는 방법에 대해 알아보십시오"].
+
+
+
 === 가격
 
-가격에 대한 자세한 내용은 를 참조하십시오 https://cloud.netapp.com/ontap-cloud["NetApp Cloud Central에서"^].
+가격에 대한 자세한 내용은 를 참조하십시오 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp Cloud Central에서"^].
 
 
 
