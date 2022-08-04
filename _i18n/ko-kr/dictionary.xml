@@ -429,7 +429,6 @@
   <block id="1b044bb64b9bbe28f6c0512f65cdaa86" category="paragraph">클라우드 백업을 위한 백업 및 클라우드 데이터 감지 및 모니터링을 위한 인스턴스 등과 같은 다른 서비스에서 관리하는 리소스는 작업 환경을 삭제할 때 삭제되지 않습니다. 수동으로 삭제해야 합니다. 그렇지 않으면 이러한 리소스에 대한 비용을 계속 받게 됩니다.</block>
   <block id="a4b6dd7a7574be8d2cc8a2fe53d10bd1" category="admonition">Cloud Manager가 클라우드 공급자에 Cloud Volumes ONTAP을 배포하면 인스턴스에 대해 종료 보호를 제공할 수 있습니다. 이 옵션은 우발적인 종료를 방지하는 데 도움이 됩니다.</block>
   <block id="ab3fdba113c7d85bf4272c78761ef0b8" category="inline-link">필요한 경우 백업을 삭제합니다</block>
-  <block id="8e7b1963d43e3f3ba3b7bfa84c9d8060" category="list-text">작업 환경에서 Cloud Backup을 활성화한 경우 백업된 데이터가 여전히 필요한지 여부를 확인한 다음<block ref="05162ddbcf131729dac461924d397f23" category="inline-link-rx"></block>.</block>
   <block id="a06dfc814bad1cf7d8af36ecb8d7caf2" category="paragraph">클라우드 백업은 설계상 Cloud Volumes ONTAP와 별개입니다. 클라우드 백업은 Cloud Volumes ONTAP 시스템을 삭제할 때 백업을 자동으로 삭제하지 않으며, 시스템이 삭제된 후 백업을 삭제할 수 있도록 UI에 현재 지원이 없습니다.</block>
   <block id="953135468f926ef23950412ea3483834" category="list-text">이 작업 환경에서 Cloud Data Sense 또는 모니터링을 활성화했고 다른 작업 환경에서 이러한 서비스를 사용하지 않는 경우 해당 서비스의 인스턴스를 삭제해야 합니다.</block>
   <block id="7121e7b9f702c61fbd2b509d05e53715" category="inline-link">Cloud Data Sense 인스턴스에 대해 자세히 알아보십시오</block>
@@ -4308,4 +4307,5 @@
   <block id="ee76810836e6a3bb9dd07dfba26221a1" category="paragraph"><block ref="ddf7de7bfe14bcbf78a072c21440c1a8" category="inline-link-rx"></block>.</block>
   <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">* 선택한 VNET만 해당 *: 인바운드 트래픽의 소스는 Cloud Volumes ONTAP 시스템에 대한 VNET의 서브넷 범위와 커넥터가 상주하는 VNET의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.</block>
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">* All VNets *: 인바운드 트래픽의 소스는 0.0.0.0/0 IP 범위입니다.</block>
+  <block id="4c6b5df3fe9b762b973dc2bdcbd77ada" category="list-text">작업 환경에서 Cloud Backup을 활성화한 경우 백업된 데이터가 여전히 필요한지 여부를 확인한 다음<block ref="a63fe511bda1d904c92110dce9e2b88b" category="inline-link-rx"></block>.</block>
 </blocks>
