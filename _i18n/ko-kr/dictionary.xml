@@ -4233,7 +4233,6 @@
   <block id="3ae1886c49dab0e65e020c2758daff67" category="paragraph"><block ref="6f81c4ca34877706a163afe91c466abd" category="inline-link-rx"></block>.</block>
   <block id="662442d32a5fd91298fcf8b6391fdf17" category="section-title">충전 방법을 변경합니다</block>
   <block id="a117b4a94f6f90aef089573b1f002d26" category="paragraph">용량 기반 라이센스를 사용하는 Cloud Volumes ONTAP 시스템의 충전 방법을 변경할 수 있습니다. 예를 들어, Essentials 패키지와 함께 Cloud Volumes ONTAP 시스템을 배포한 경우 비즈니스 요구사항이 변경되면 이를 Professional 패키지로 변경할 수 있습니다.</block>
-  <block id="856fccc2c5d9211dbd784e97c60dd9bc" category="paragraph">현재 최적화된 충전 방법으로 변경할 수 없습니다.</block>
   <block id="3397777d22d2d5f746157ca31f0d8460" category="list-text">Cloud Volumes ONTAP * 탭에서 * 충전 방법 변경 * 을 클릭합니다.</block>
   <block id="731d5463e4c6962d26d5b5d4b345930e" category="inline-image-macro">충전 방법 변경 단추가 표 바로 위에 있는 디지털 지갑의 Cloud Volumes ONTAP 페이지 스크린샷</block>
   <block id="e98a6fb0343d664e817b1f922b7a92f1" category="paragraph"><block ref="e98a6fb0343d664e817b1f922b7a92f1" category="inline-image-macro-rx" type="image"></block></block>
@@ -4258,7 +4257,6 @@
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">프로비저닝된 용량 및 I/O 작업에 대해 별도로 비용을 지불합니다.</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP 단일 노드 또는 HA</block>
   <block id="ac8875b922d75fca71aa495c421855a6" category="list-text">충전은 스토리지와 용도(I/O)의 두 가지 비용 구성 요소를 기반으로 합니다.</block>
-  <block id="5bf349d9a4df0ebb199c8dedb951539e" category="paragraph">데이터 복제를 위한 입출력은 충전된 입출력 사용량으로 계산되지 않습니다.</block>
   <block id="050a8b75e1382967bf1140508c5b62b6" category="list-text">Azure 마켓플레이스에서만 용량제 오퍼링이나 연간 계약으로 사용할 수 있습니다</block>
   <block id="cd709b16b7a535f5ecfcfbe3f849b353" category="list-text">선택한 VM 유형(E4s_v3, E4ds_v4, DS4_v2, DS13_v2, E8s_v3)에서 지원됨 및 E8ds_v4를 참조하십시오</block>
   <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">에지 캐시</block>
@@ -4308,4 +4306,8 @@
   <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">* 선택한 VNET만 해당 *: 인바운드 트래픽의 소스는 Cloud Volumes ONTAP 시스템에 대한 VNET의 서브넷 범위와 커넥터가 상주하는 VNET의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.</block>
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">* All VNets *: 인바운드 트래픽의 소스는 0.0.0.0/0 IP 범위입니다.</block>
   <block id="4c6b5df3fe9b762b973dc2bdcbd77ada" category="list-text">작업 환경에서 Cloud Backup을 활성화한 경우 백업된 데이터가 여전히 필요한지 여부를 확인한 다음<block ref="a63fe511bda1d904c92110dce9e2b88b" category="inline-link-rx"></block>.</block>
+  <block id="af54c7f362b7672b7ad2b66397fd230c" category="list-text">최적화된 충전 방법으로 변경할 수 없습니다.</block>
+  <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">Edge Cache 라이센스로 변경하거나 변경하는 것은 지원되지 않습니다.</block>
+  <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">클라우드 공급자 마켓플레이스에서 프라이빗 오퍼 또는 계약을 체결한 경우, 계약에 포함되지 않은 충전 방법으로 변경하면 BYOL(NetApp에서 라이센스를 구매한 경우) 또는 PAYGO에 대해 충전이 생성됩니다.</block>
+  <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">데이터 복제(SnapMirror) 또는 NDMP와 관련된 입출력에는 비용이 청구되지 않습니다.</block>
 </blocks>
