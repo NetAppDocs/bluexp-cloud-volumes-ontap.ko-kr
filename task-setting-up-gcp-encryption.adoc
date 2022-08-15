@@ -27,7 +27,7 @@ Google 클라우드 스토리지는 디스크에 데이터를 쓰기 전에 항�
 +
 [source, yaml]
 ----
-- cloudkms.cryptoKeyVersions.list
+- cloudkms.cryptoKeyVersions.useToEncrypt
 - cloudkms.cryptoKeys.get
 - cloudkms.cryptoKeys.list
 - cloudkms.keyRings.list
