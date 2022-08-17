@@ -4310,4 +4310,5 @@
   <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">Edge Cache 라이센스로 변경하거나 변경하는 것은 지원되지 않습니다.</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">클라우드 공급자 마켓플레이스에서 프라이빗 오퍼 또는 계약을 체결한 경우, 계약에 포함되지 않은 충전 방법으로 변경하면 BYOL(NetApp에서 라이센스를 구매한 경우) 또는 PAYGO에 대해 충전이 생성됩니다.</block>
   <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">데이터 복제(SnapMirror) 또는 NDMP와 관련된 입출력에는 비용이 청구되지 않습니다.</block>
+  <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 커넥터 및 HTTPS 액세스와의 연결</block>
 </blocks>

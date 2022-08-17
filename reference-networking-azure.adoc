@@ -141,7 +141,7 @@ Cloud Volumes ONTAP의 보안 그룹에는 인바운드 및 아웃바운드 규�
 | 1006 inbound_161-162_udp | 161-162 UDP | 모두 해당 | 단순한 네트워크 관리 프로토콜 
 
 
-| 1007 인바운드_443 | 443 TCP | 모두 해당 | 클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 HTTPS 액세스 
+| 1007 인바운드_443 | 443 TCP | 모두 해당 | 클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 커넥터 및 HTTPS 액세스와의 연결 
 
 
 | 1008 인바운드_445 | 445 TCP | 모두 해당 | Microsoft SMB/CIFS over TCP 및 NetBIOS 프레임 
@@ -209,7 +209,7 @@ NOTE: 인바운드 데이터 트래픽이 Azure 표준 로드 밸런서를 통�
 | 우선 순위 및 이름 | 포트 및 프로토콜 | 소스 및 대상 | 설명 
 
 
-| 100 inbound_443 | 443 모든 프로토콜 | 모두 해당 | 클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 HTTPS 액세스 
+| 100 inbound_443 | 443 모든 프로토콜 | 모두 해당 | 클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 커넥터 및 HTTPS 액세스와의 연결 
 
 
 | 101 inbound_111_tcp | 111 모든 프로토콜 | 모두 해당 | NFS에 대한 원격 프로시저 호출 
