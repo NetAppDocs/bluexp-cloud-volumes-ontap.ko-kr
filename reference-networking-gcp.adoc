@@ -72,7 +72,7 @@ HA 쌍을 생성할 때 Cloud Manager에서 4개의 VPC를 선택하라는 메�
 * 데이터 및 노드에 대한 인바운드 연결을 위한 VPC-0
 * 노드와 HA 중재자 간의 내부 통신을 위한 VPC-1, VPC-2 및 VPC-3
 +
-image:diagram_gcp_ha.png[""]
+image:diagram_gcp_ha.png["Cloud Volume HA 쌍 및 구성에 필요한 4개의 VPC를 보여주는 개념적 이미지."]
 
 
 

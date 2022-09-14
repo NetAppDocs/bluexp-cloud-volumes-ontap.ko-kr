@@ -1061,7 +1061,6 @@
   <block id="bc41c927b050313fabe4e7bfa9c82224" category="paragraph">템플릿에 디스크 유형, 크기, 프로토콜, 스냅샷 정책, 클라우드 공급자 등 특정 볼륨 매개 변수가 이미 정의되어 있기 때문에 템플릿을 사용하면 작업을 보다 쉽게 수행할 수 있습니다. 있습니다. 매개 변수가 이미 미리 정의된 경우 다음 볼륨 매개 변수로 건너뛸 수 있습니다.</block>
   <block id="395f4870d887a81edabc6ad40f5a84f0" category="admonition">템플릿을 사용하는 경우에만 NFS 또는 CIFS 볼륨을 생성할 수 있습니다.</block>
   <block id="3464a6536597fb17300e864f33f6b63d" category="list-text">Canvas 페이지에서 볼륨을 프로비저닝할 Cloud Volumes ONTAP 시스템의 이름을 클릭합니다.</block>
-  <block id="5bc96ba8ddc4433dd0df94e6350c496e" category="list-text">을 클릭합니다 <block ref="a5c9b85c9e509567688aed8106bc419c" category="inline-image-macro-rx" type="image"></block> &gt; * 템플릿에서 볼륨 추가 *.</block>
   <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">템플릿에서 새 볼륨을 추가하는 방법을 보여 주는 스크린샷</block>
   <block id="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="paragraph"><block ref="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">Select Template_page에서 볼륨을 생성하는 데 사용할 템플릿을 선택하고 * Next * 를 클릭합니다.</block>
@@ -1851,7 +1850,6 @@
   <block id="b66539d8d1c1e3f97e751ce32b201932" category="inline-link-macro">네트워킹 요구 사항에 대해 알아보십시오</block>
   <block id="fa82d38edfafbee1bb2495dc75783c94" category="paragraph"><block ref="55406c74e90bdab2257c25eee887aa79" category="inline-link-macro-rx"></block>부하 분산 장치, VPC, 내부 IP 주소, 서브넷 등에 대한 자세한 정보를 제공합니다.</block>
   <block id="b176654c993f9caf39e56971d244d457" category="paragraph">다음 개념적 이미지에는 Cloud Volumes ONTAP HA 쌍 및 구성 요소가 나와 있습니다.</block>
-  <block id="e957cab16552d6fdb00d1af0f33ad800" category="paragraph"><block ref="e957cab16552d6fdb00d1af0f33ad800" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ed4ce2b9693ec306d333d8aa7807aa9" category="paragraph">다음은 Google Cloud의 중재자 인스턴스에 대한 몇 가지 주요 세부 사항입니다.</block>
   <block id="48c4b347a69acc97f71ef6775bf6260d" category="list-text">Debian의 경우 기본 클라우드 사용자는 "admin"입니다. Google Cloud 콘솔 또는 gcloud 명령줄을 통해 SSH 액세스가 요청될 때 "admin" 사용자의 인증서를 생성하고 추가합니다. 루트 권한을 얻기 위해 'SUDO'를 지정할 수 있습니다.</block>
   <block id="b9c7a6d43bec359b40ab04efb944c7c4" category="list-text">복구 지점 목표(RPO)는 0초입니다.</block>
@@ -4311,4 +4309,10 @@
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">클라우드 공급자 마켓플레이스에서 프라이빗 오퍼 또는 계약을 체결한 경우, 계약에 포함되지 않은 충전 방법으로 변경하면 BYOL(NetApp에서 라이센스를 구매한 경우) 또는 PAYGO에 대해 충전이 생성됩니다.</block>
   <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">데이터 복제(SnapMirror) 또는 NDMP와 관련된 입출력에는 비용이 청구되지 않습니다.</block>
   <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 커넥터 및 HTTPS 액세스와의 연결</block>
+  <block id="9de6e01935c802f21691e7efbefa9680" category="inline-image-macro">세 개의 나란히 점이 있는 아이콘입니다.</block>
+  <block id="4cd7acfcbb86932901020185b1df1ec0" category="list-text">을 클릭합니다 <block ref="231de61ef434abbab90a4356a7d32c83" category="inline-image-macro-rx" type="image"></block> &gt; * 템플릿에서 볼륨 추가 *.</block>
+  <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">Cloud Volumes ONTAP HA 쌍 및 구성 요소의 개념적 이미지</block>
+  <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="59d7031e8dd126031d49f14da3eb9662" category="inline-image-macro">Cloud Volume HA 쌍 및 구성에 필요한 4개의 VPC를 보여주는 개념적 이미지.</block>
+  <block id="5f244177e38ddb1ab2243352007aaca2" category="paragraph"><block ref="5f244177e38ddb1ab2243352007aaca2" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

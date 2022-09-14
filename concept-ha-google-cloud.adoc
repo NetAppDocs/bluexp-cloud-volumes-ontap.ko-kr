@@ -39,7 +39,7 @@ link:reference-networking-gcp.html["네트워킹 요구 사항에 대해 알아�
 
 다음 개념적 이미지에는 Cloud Volumes ONTAP HA 쌍 및 구성 요소가 나와 있습니다.
 
-image:diagram_gcp_ha.png[""]
+image:diagram_gcp_ha.png["Cloud Volumes ONTAP HA 쌍 및 구성 요소의 개념적 이미지"]
 
 
 
