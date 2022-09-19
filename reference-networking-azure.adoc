@@ -40,6 +40,8 @@ Cloud Volumes ONTAP에 대해 엄격한 아웃바운드 규칙을 정의한 경�
 
 아웃바운드 인터넷 액세스가 가능한지 확인한 후 AutoSupport를 테스트하여 메시지를 보낼 수 있는지 확인할 수 있습니다. 자세한 지침은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 문서: AutoSupport 설정"^].
 
+Cloud Manager에서 AutoSupport 메시지를 보낼 수 없다고 통지하면 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 구성 문제를 해결합니다"].
+
 
 
 === IP 주소

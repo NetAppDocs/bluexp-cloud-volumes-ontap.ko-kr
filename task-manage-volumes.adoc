@@ -209,11 +209,11 @@ Cloud Volumes ONTAP는 CIFS 서버를 변경 사항으로 업데이트합니다.
 TIP: Cloud Manager는 Aggregate가 90% 사용된 용량에 도달하면 이러한 작업 필요 메시지를 표시합니다. 데이터 계층화를 사용할 경우 aggregate가 80% 사용 용량에 도달하면 메시지가 표시됩니다. 기본적으로 10%의 여유 공간은 데이터 계층화용으로 예약되어 있습니다. link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["데이터 계층화를 위한 여유 공간 비율에 대해 자세히 알아보십시오"].
 
 .단계
-. <<Identify how to correct capacity issues,문제를 해결하는 방법을 식별합니다>>.
+.  how to correct capacity issues,문제를 해결하는 방법을 식별합니다.
 . 분석을 기초로 용량 문제를 방지하려면 볼륨을 이동하십시오.
 +
-** <<Move volumes to another system to avoid capacity issues,볼륨을 다른 시스템으로 이동합니다>>.
-** <<Move volumes to another aggregate to avoid capacity issues,동일한 시스템에서 다른 애그리게이트로 볼륨 이동>>.
+**  volumes to another system to avoid capacity issues,볼륨을 다른 시스템으로 이동합니다.
+**  volumes to another aggregate to avoid capacity issues,동일한 시스템에서 다른 애그리게이트로 볼륨 이동.
 
 
 

@@ -137,10 +137,10 @@ TIP: 지원이 등록되지 않은 시스템에서는 새 버전이 사용 가�
 
 업그레이드를 수행하기 전에 시스템이 준비되어 있는지 확인하고 필요한 구성을 변경해야 합니다.
 
-* <<Plan for downtime>>
-* <<Verify that automatic giveback is still enabled>>
-* <<Suspend SnapMirror transfers>>
-* <<Verify that aggregates are online>>
+*  for downtime
+*  that automatic giveback is still enabled
+*  SnapMirror transfers
+*  that aggregates are online
 
 
 
@@ -209,9 +209,9 @@ image:screenshot_aggr_state.gif["스크린샷: 집계에 대한 정보를 볼 �
 
 == Cloud Volumes ONTAP를 업그레이드합니다
 
-Cloud Manager는 새 버전을 업그레이드할 수 있을 때 사용자에게 알립니다. 이 알림에서 업그레이드 프로세스를 시작할 수 있습니다. 자세한 내용은 을 참조하십시오 <<Upgrade from Cloud Manager notifications>>.
+Cloud Manager는 새 버전을 업그레이드할 수 있을 때 사용자에게 알립니다. 이 알림에서 업그레이드 프로세스를 시작할 수 있습니다. 자세한 내용은 을 참조하십시오  from Cloud Manager notifications.
 
-외부 URL의 이미지를 사용하여 소프트웨어 업그레이드를 수행하는 또 다른 방법입니다. 이 옵션은 Cloud Manager가 S3 버킷에 액세스하여 소프트웨어를 업그레이드할 수 없거나 패치가 제공된 경우에 유용합니다. 자세한 내용은 을 참조하십시오 <<Upgrade from an image available at a URL>>.
+외부 URL의 이미지를 사용하여 소프트웨어 업그레이드를 수행하는 또 다른 방법입니다. 이 옵션은 Cloud Manager가 S3 버킷에 액세스하여 소프트웨어를 업그레이드할 수 없거나 패치가 제공된 경우에 유용합니다. 자세한 내용은 을 참조하십시오  from an image available at a URL.
 
 
 
@@ -250,7 +250,16 @@ SnapMirror 전송을 일시 중지한 경우 System Manager를 사용하여 전�
 
 Cloud Volumes ONTAP 소프트웨어 이미지를 커넥터 또는 HTTP 서버에 배치한 다음 Cloud Manager에서 소프트웨어 업그레이드를 시작할 수 있습니다. Cloud Manager가 S3 버킷에 액세스하여 소프트웨어를 업그레이드할 수 없는 경우 이 옵션을 사용할 수 있습니다.
 
-Cloud Volumes ONTAP 시스템에서 볼륨 또는 애그리게이트 생성과 같은 Cloud Manager 작업이 진행 중이지 않아야 합니다.
+.시작하기 전에
+* Cloud Volumes ONTAP 시스템에서 볼륨 또는 애그리게이트 생성과 같은 Cloud Manager 작업이 진행 중이지 않아야 합니다.
+* HTTPS를 사용하여 ONTAP 이미지를 호스팅하는 경우 인증서 누락으로 인한 SSL 인증 문제로 인해 업그레이드가 실패할 수 있습니다. 해결 방법은 ONTAP와 클라우드 관리자 간의 인증에 사용할 CA 서명 인증서를 생성하고 설치하는 것입니다.
++
+NetApp 기술 문서로 이동하여 단계별 지침을 확인하십시오.
+
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["NetApp KB: 업그레이드 이미지를 호스팅하기 위해 Cloud Manager를 HTTPS 서버로 구성하는 방법"^]
+
+
 
 .단계
 . 선택 사항: Cloud Volumes ONTAP 소프트웨어 이미지를 호스팅할 수 있는 HTTP 서버를 설정합니다.

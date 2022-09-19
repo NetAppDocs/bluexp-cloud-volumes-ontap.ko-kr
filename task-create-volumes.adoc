@@ -18,10 +18,10 @@ summary: 초기 Cloud Volumes ONTAP 시스템을 시작한 후 더 많은 스토
 
 Cloud Manager에서 다양한 방법으로 새 볼륨을 생성할 수 있습니다.
 
-* 새 볼륨에 대한 세부 정보를 지정하고 Cloud Manager에서 기본 데이터 애그리게이트를 처리하도록 합니다. <<Create a volume,자세한 정보>>.
-* 선택한 데이터 애그리게이트에 볼륨을 생성합니다. <<Create a volume,자세한 정보>>.
-* 템플릿에서 볼륨을 생성하여 데이터베이스 또는 스트리밍 서비스와 같은 특정 애플리케이션의 워크로드 요구사항에 맞게 볼륨을 최적화합니다. <<Create a volume from a template,자세한 정보>>.
-* HA 구성의 두 번째 노드에 볼륨을 생성합니다. <<Create a volume on the second node in an HA configuration,자세한 정보>>.
+* 새 볼륨에 대한 세부 정보를 지정하고 Cloud Manager에서 기본 데이터 애그리게이트를 처리하도록 합니다.  a volume,자세한 정보.
+* 선택한 데이터 애그리게이트에 볼륨을 생성합니다.  a volume,자세한 정보.
+* 템플릿에서 볼륨을 생성하여 데이터베이스 또는 스트리밍 서비스와 같은 특정 애플리케이션의 워크로드 요구사항에 맞게 볼륨을 최적화합니다.  a volume from a template,자세한 정보.
+* HA 구성의 두 번째 노드에 볼륨을 생성합니다.  a volume on the second node in an HA configuration,자세한 정보.
 
 
 
@@ -30,7 +30,7 @@ Cloud Manager에서 다양한 방법으로 새 볼륨을 생성할 수 있습니
 
 볼륨 프로비저닝에 대한 몇 가지 참고 사항:
 
-* iSCSI 볼륨을 생성할 때 Cloud Manager에서 자동으로 LUN을 생성합니다. 볼륨 당 하나의 LUN만 생성하므로 관리가 필요 없습니다. 볼륨을 생성한 후 <<Connect a LUN to a host,IQN을 사용하여 호스트에서 LUN에 연결합니다>>.
+* iSCSI 볼륨을 생성할 때 Cloud Manager에서 자동으로 LUN을 생성합니다. 볼륨 당 하나의 LUN만 생성하므로 관리가 필요 없습니다. 볼륨을 생성한 후  a LUN to a host,IQN을 사용하여 호스트에서 LUN에 연결합니다.
 * System Manager 또는 CLI에서 추가 LUN을 생성할 수 있습니다.
 
 
@@ -247,7 +247,7 @@ image:screenshot_define_cvo_vol_from_template.png["볼륨을 생성하기 위해
 NOTE: 해당 매개 변수의 값을 보려면 * 읽기 전용 매개 변수 표시 * 확인란을 클릭하여 템플릿에 의해 잠긴 모든 필드를 표시할 수 있습니다. 기본적으로 이러한 미리 정의된 필드는 숨겨지고 완료해야 하는 필드만 표시됩니다.
 
 . context_area에서 작업 환경은 처음 시작한 작업 환경의 이름으로 채워집니다. 볼륨을 생성할 * 스토리지 VM * 을 선택해야 합니다.
-. 템플릿에서 하드 코딩되지 않은 모든 매개변수에 대한 값을 추가합니다. 을 참조하십시오 <<create a volume,볼륨을 생성합니다>> Cloud Volumes ONTAP 볼륨을 구축하기 위해 완료해야 하는 모든 매개 변수에 대한 자세한 내용은 를 참조하십시오.
+. 템플릿에서 하드 코딩되지 않은 모든 매개변수에 대한 값을 추가합니다. 을 참조하십시오  a volume,볼륨을 생성합니다 Cloud Volumes ONTAP 볼륨을 구축하기 위해 완료해야 하는 모든 매개 변수에 대한 자세한 내용은 를 참조하십시오.
 . 정의해야 하는 다른 작업이 없는 경우(예: 클라우드 백업 구성) * 템플릿 실행 * 을 클릭합니다.
 +
 다른 작업이 있는 경우 왼쪽 창에서 작업을 클릭하여 완료해야 하는 매개 변수를 표시합니다.

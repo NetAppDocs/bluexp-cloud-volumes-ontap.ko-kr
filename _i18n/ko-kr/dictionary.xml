@@ -733,18 +733,11 @@
   <block id="e8fafc5515dbe922c9cd7f7101d3a661" category="paragraph">단일 노드 시스템의 경우 입출력이 중단됩니다.</block>
   <block id="0da5cbb23a0a7d13b0f40ce06d29d3b4" category="paragraph">HA 쌍의 경우 변경은 무중단 것입니다. HA 쌍이 계속해서 데이터를 제공합니다.</block>
   <block id="1e6be8af8c824580878577d3981c77b8" category="admonition">Cloud Manager는 테이크오버를 시작하고 Giveback을 기다리면서 한 번에 하나의 노드를 정상적으로 변경합니다. NetApp의 QA 팀은 이 프로세스 중에 파일 쓰기와 읽기를 모두 테스트했지만 클라이언트 측에서는 문제가 발생하지 않았습니다. 접속이 변경됨에 따라 입출력 레벨에서 재시도 횟수가 확인되었지만 애플리케이션 계층은 NFS/CIFS 연결의 이러한 짧은 "재연결"을 극복했습니다.</block>
-  <block id="146a1e1080c6590cd795b888b9e18362" category="list-text">작업 환경에서 메뉴 아이콘을 클릭한 다음 * 시스템 변경 * 을 선택합니다.</block>
   <block id="7ad9575195738d8c7f1b3ae6cea26ee2" category="list-text">노드 기반 PAYGO 라이센스를 사용하는 경우 선택적으로 다른 라이센스를 선택할 수 있습니다.</block>
   <block id="124da972831d8567648a5d865ca52285" category="list-text">시스템 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해했는지 확인한 다음 * 확인 * 을 클릭합니다.</block>
   <block id="a8e111d8043785d9d556635c64194b73" category="paragraph">Cloud Volumes ONTAP가 새 구성으로 재부팅됩니다.</block>
   <block id="f6e43df1ac65ed84364d47e2313ea212" category="doc">AutoSupport 설정을 확인합니다</block>
   <block id="57f882d4d9318a77bccc1fe367a42ab5" category="paragraph">AutoSupport은 능동적으로 시스템 상태를 모니터링하고 NetApp 기술 지원 팀에 메시지를 보냅니다. 기본적으로 AutoSupport는 각 노드에서 HTTPS 전송 프로토콜을 사용하여 기술 지원 부서에 메시지를 보내도록 설정됩니다. AutoSupport에서 이러한 메시지를 보낼 수 있는지 확인하는 것이 가장 좋습니다.</block>
-  <block id="abf5b5a005179d4c9f5ca821865c42bc" category="inline-link-macro">AWS 네트워킹 요구사항</block>
-  <block id="68f8afb64bf315ecd826b59e29a3471b" category="list-text"><block ref="68f8afb64bf315ecd826b59e29a3471b" category="inline-link-macro-rx"></block></block>
-  <block id="daf41a49145010c540b7cc18af1c579b" category="inline-link-macro">Azure 네트워킹 요구사항</block>
-  <block id="9864989b819219fa6fbd00dc406eece0" category="list-text"><block ref="9864989b819219fa6fbd00dc406eece0" category="inline-link-macro-rx"></block></block>
-  <block id="e5b3af72a0fc8a6bd4dbf61962be4d44" category="inline-link-macro">Google Cloud 네트워킹 요구 사항</block>
-  <block id="9d3bbf2ccdd6f52ad395140552d33304" category="list-text"><block ref="9d3bbf2ccdd6f52ad395140552d33304" category="inline-link-macro-rx"></block></block>
   <block id="c02079af34ef1373b8c0dab638269666" category="inline-link">ONTAP 문서: AutoSupport 설정</block>
   <block id="da66c21006cc6190b5b7b0242c6631b6" category="paragraph">아웃바운드 인터넷 액세스가 가능한지 확인한 후 AutoSupport를 테스트하여 메시지를 보낼 수 있는지 확인할 수 있습니다. 자세한 지침은 을 참조하십시오<block ref="f07c60ff969cb7b0a1c8ac04b7cc5791" category="inline-link-rx"></block>.</block>
   <block id="e0cf1dade4ee353c804f8364105cd492" category="summary">VPC 서비스 컨트롤로 Google 환경을 잠그려면 Cloud Manager 및 Cloud Volumes ONTAP가 Google API와 상호 작용하는 방식과 Cloud Manager 및 Cloud Volumes ONTAP를 구축하기 위해 서비스 매개 변수를 구성하는 방법을 이해해야 합니다.</block>
@@ -775,7 +768,6 @@
   <block id="4df04bd818b4ec915902bb9d71d89e11" category="summary">AWS에서 Cloud Volumes ONTAP를 시작할 때 여러 인스턴스 또는 유형 중에서 선택할 수 있습니다. 필요에 따라 크기가 작거나 크기 초과로 결정되면 언제든지 인스턴스 유형을 변경할 수 있습니다.</block>
   <block id="58cfda201064f1899f15aad3e019b071" category="doc">Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경합니다</block>
   <block id="64001104830dfdff90f2cf316af055f4" category="list-text">인스턴스 유형을 변경하면 AWS 서비스 요금에 영향을 줄 수 있습니다.</block>
-  <block id="2cd1337a60bd4e0f25091f244da189d5" category="list-text">작업 환경에서 메뉴 아이콘을 클릭한 다음 * 인스턴스 변경 * 을 선택합니다.</block>
   <block id="ba1aa64af19fe534f8edf051425fc04d" category="list-text">인스턴스 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해했는지 확인한 다음 * 확인 * 을 클릭합니다.</block>
   <block id="f9ca6b49a548c69b9daaf623a10c70fe" category="summary">계정 관리자는 Cloud Volumes ONTAP 작업 환경을 제거하여 다른 시스템으로 이동하거나 검색 문제를 해결할 수 있습니다.</block>
   <block id="345811bf0383d75dd95a07e487d8b29b" category="doc">Cloud Volumes ONTAP 작업 환경 제거</block>
@@ -3069,7 +3061,6 @@
   <block id="282267afd7416dee4eb19ac3837e1b47" category="summary">Microsoft Azure에서 Cloud Volumes ONTAP를 시작할 때 여러 VM 유형 중에서 선택할 수 있습니다. 필요에 따라 크기가 작거나 특대형 것으로 판단될 경우 언제든지 VM 유형을 변경할 수 있습니다.</block>
   <block id="a03c706f9aecdf2cb0f407d0f08a1656" category="doc">Cloud Volumes ONTAP의 Azure VM 유형을 변경합니다</block>
   <block id="9f257b11a56fb0990bae90687da210c7" category="list-text">VM 유형을 변경하면 Microsoft Azure 서비스 요금에 영향을 줄 수 있습니다.</block>
-  <block id="fc3be5473631705fb790d4fb3162c1d0" category="list-text">작업 환경에서 메뉴 아이콘을 클릭한 다음 * VM 변경 * 을 선택합니다.</block>
   <block id="611a1fa2f8a37527bbcb1f0228321b4d" category="list-text">VM 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해하고 있는지 확인한 다음 * OK * 를 클릭합니다.</block>
   <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">NetApp 기술 지원으로 지원 케이스를 생성하기 전에 NetApp Support 사이트 계정을 Cloud Manager에 추가한 다음 지원을 위해 등록해야 합니다.</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">지원을 위해 등록하십시오</block>
@@ -3260,12 +3251,8 @@
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto:ng-cloudmanager-feedback@netapp.com [피드백 이메일]</block>
   <block id="bff60abbc46aceed0f73a3a4f6cfb123" category="paragraph">저희는 귀하의 의견을 소중하게 생각합니다. 클라우드 관리자 개선에 도움이 되는 피드백을 제출해 주십시오.</block>
   <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp 지원</block>
-  <block id="c91b5a63849b8d2db01014ed33192735" category="paragraph">위의 자체 지원 옵션 외에도 NetApp 지원 엔지니어와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.</block>
   <block id="6c08c57e382a25a778455184cd9b1a4a" category="list-text">Cloud Manager에서 * 도움말 &gt; 지원 * 을 클릭합니다.</block>
   <block id="f5052c65917d7341726235d4d4941461" category="list-text">기술 지원 아래에서 사용 가능한 옵션 중 하나를 선택합니다.</block>
-  <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">NetApp 기술 지원을 위한 전화 번호를 찾으려면 * 문의하다</block>
-  <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">문제 열기 * 를 클릭하고 옵션 중 하나를 선택한 다음 * 보내기 * 를 클릭합니다.</block>
-  <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 담당자가 귀하의 케이스를 검토하고 곧 다시 귀하에 연락을 드릴 것입니다.</block>
   <block id="c2a34cad77f0451e7d0f58a7e0e6e450" category="inline-link">AWS 설명서: 다른 계정의 사용자가 KMS 키를 사용할 수 있도록 허용합니다</block>
   <block id="21adb1598ef7a554ecf87a6c0bffbd4c" category="paragraph">이 프로세스에 대한 자세한 내용은 을 참조하십시오<block ref="9601f431d0df2b9877da4b65b53342b6" category="inline-link-rx"></block>.</block>
   <block id="21daef3fadb3dd64defa83d39be31db2" category="paragraph">Google Managed Active Directory를 구성하는 경우 기본적으로 169.254.169.254 IP 주소를 사용하여 AD에 액세스할 수 있습니다.</block>
@@ -4304,7 +4291,6 @@
   <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">* 선택한 VNET만 해당 *: 인바운드 트래픽의 소스는 Cloud Volumes ONTAP 시스템에 대한 VNET의 서브넷 범위와 커넥터가 상주하는 VNET의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.</block>
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">* All VNets *: 인바운드 트래픽의 소스는 0.0.0.0/0 IP 범위입니다.</block>
   <block id="4c6b5df3fe9b762b973dc2bdcbd77ada" category="list-text">작업 환경에서 Cloud Backup을 활성화한 경우 백업된 데이터가 여전히 필요한지 여부를 확인한 다음<block ref="a63fe511bda1d904c92110dce9e2b88b" category="inline-link-rx"></block>.</block>
-  <block id="af54c7f362b7672b7ad2b66397fd230c" category="list-text">최적화된 충전 방법으로 변경할 수 없습니다.</block>
   <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">Edge Cache 라이센스로 변경하거나 변경하는 것은 지원되지 않습니다.</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">클라우드 공급자 마켓플레이스에서 프라이빗 오퍼 또는 계약을 체결한 경우, 계약에 포함되지 않은 충전 방법으로 변경하면 BYOL(NetApp에서 라이센스를 구매한 경우) 또는 PAYGO에 대해 충전이 생성됩니다.</block>
   <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">데이터 복제(SnapMirror) 또는 NDMP와 관련된 입출력에는 비용이 청구되지 않습니다.</block>
@@ -4315,4 +4301,90 @@
   <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="59d7031e8dd126031d49f14da3eb9662" category="inline-image-macro">Cloud Volume HA 쌍 및 구성에 필요한 4개의 VPC를 보여주는 개념적 이미지.</block>
   <block id="5f244177e38ddb1ab2243352007aaca2" category="paragraph"><block ref="5f244177e38ddb1ab2243352007aaca2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2963bb3da6cd2f26e6b000d48fda5b9c" category="inline-link-macro">AutoSupport 구성 문제를 해결합니다</block>
+  <block id="da8ad53a19f1cf5272cf082ff8483cbf" category="paragraph">Cloud Manager에서 AutoSupport 메시지를 보낼 수 없다고 통지하면 <block ref="b6432223d87858d9cd4e446578247e88" category="inline-link-macro-rx"></block>.</block>
+  <block id="10b7e2e8f5f0b89386db5d8f54c2583a" category="list-text">Canvas에서 작업 환경을 선택합니다.</block>
+  <block id="26adcf62b4b0748e28f414b46e0ad443" category="list-text">오른쪽 창에서 메뉴 아이콘을 클릭하고 * 비용 및 성능 최적화 * 를 선택합니다.</block>
+  <block id="bbcd7b9a3e132961d93ea08d77eb732e" category="inline-image-macro">Canvas에서 사용할 수 있는 Optimize Cost &amp; amp; Performance 옵션의 스크린샷.</block>
+  <block id="84fb9846fd45aafb7e227dceba2bf483" category="paragraph"><block ref="41ee20c5926363ecd6aaed7cd5cd1cdd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d0e6517b6c0b570b620f706f71cb176c" category="admonition">이 옵션은 작업 환경을 입력하고 작업 메뉴를 연 다음 * VM 변경 * 을 선택하여 사용할 수도 있습니다.</block>
+  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022년 9월 18일</block>
+  <block id="440be74a67502f9c3d55890782329328" category="paragraph">다음 변경 사항은 커넥터의 3.9.22 릴리스에 도입되었습니다.</block>
+  <block id="83bad7a989a8ab61893e9cfb7497cefd" category="section-title">디지털 지갑 기능 향상</block>
+  <block id="e1de90a0937196074c7abb9f8b5e5edf" category="list-text">이제 디지털 지갑에 최적화된 I/O 라이센스 패키지 및 사용자 계정의 Cloud Volumes ONTAP 시스템에 대해 프로비저닝된 WORM 용량에 대한 요약이 표시됩니다.</block>
+  <block id="c3304f9cf1f523f219fc4a936bde8242" category="paragraph">이러한 세부 정보를 통해 청구 방식 및 추가 용량 구매 여부를 보다 잘 파악할 수 있습니다.</block>
+  <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">계정에서 사용된 용량을 확인하는 방법에 대해 알아봅니다</block>
+  <block id="41ed2f596edd466ead9a03a4cdcb3b22" category="paragraph"><block ref="5faaec1089d682f6bad43c9cd2141819" category="inline-link-rx"></block>.</block>
+  <block id="d856c8d1b60bfdfc68a63422c7fcb64b" category="list-text">이제 하나의 충전 방법을 최적화된 충전 방법으로 변경할 수 있습니다.</block>
+  <block id="e0d7db06679f0c176c93ed71de107638" category="section-title">비용 및 성능 최적화</block>
+  <block id="fa1ea7bc2d84f11eddfeed9a160282bb" category="paragraph">이제 Canvas에서 직접 Cloud Volumes ONTAP 시스템의 비용과 성능을 최적화할 수 있습니다.</block>
+  <block id="cab7023844edf677ae51645d16f02f4c" category="paragraph">작업 환경을 선택한 후 * 비용 및 성능 최적화 * 옵션을 선택하여 Cloud Volumes ONTAP의 인스턴스 유형을 변경할 수 있습니다. 더 작은 크기의 인스턴스를 선택하면 비용을 절감하고 더 큰 인스턴스로 변경하면 성능을 최적화할 수 있습니다.</block>
+  <block id="f929bd53055100ea5034e258d5828a45" category="inline-image-macro">작업 환경을 선택한 후 Canvas에서 사용할 수 있는 Optimize Cost &amp; amp; Performance 옵션의 스크린샷.</block>
+  <block id="b04af3108aa064fb53015f188d417418" category="paragraph"><block ref="740982637064d815add45193172173b0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fa5f0abcdf06ead83ea7fc11be56d19a" category="section-title">AutoSupport 알림</block>
+  <block id="72e6a4a100fd0ef72da9bbbef31477d2" category="paragraph">Cloud Volumes ONTAP 시스템에서 AutoSupport 메시지를 보낼 수 없는 경우 Cloud Manager에서 알림을 생성합니다. 이 알림에는 네트워킹 문제를 해결하는 데 사용할 수 있는 지침 링크가 포함되어 있습니다.</block>
+  <block id="5ed78720df0a22827c77c0f200597bec" category="admonition">이 옵션은 작업 환경으로 들어가서 작업 메뉴를 열고 * 컴퓨터 변경 * 을 선택하여 사용할 수도 있습니다.</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">위의 자체 지원 옵션 외에도 NetApp 지원 전문가와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.</block>
+  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">지원 등록 방법을 알아보십시오</block>
+  <block id="09651e14b46d7e8697d32de90d0deacb" category="paragraph">케이스 생성 * 기능을 사용하려면 먼저 Cloud Manager 계정 ID 일련 번호(예: 960xxxx) NetApp 포함 <block ref="3349e4b3d05f646f2f1421bee7c2ad26" category="inline-link-macro-rx"></block>.</block>
+  <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">전화로 통화하려면 * 전화 * 를 클릭하십시오. 전화를 걸 수 있는 전화 번호가 나열된 netapp.com 페이지로 연결됩니다.</block>
+  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">케이스 생성 * 을 클릭하여 NetApp 지원 전문가와 함께 티켓을 엽니다.</block>
+  <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">* NetApp Support 사이트 계정 *: 지원 케이스를 여는 사람과 관련된 해당 NSS 계정을 선택합니다. 이 담당자는 아래에 제공된 추가 이메일 외에 NetApp에 연락할 수 있는 기본 담당자가 됩니다.</block>
+  <block id="ec65cc87efda54741062da1fce99ff76" category="paragraph">NSS 계정이 표시되지 않으면 Cloud Manager의 지원 섹션 내의 * NSS 관리 * 탭으로 이동하여 해당 계정을 추가할 수 있습니다.</block>
+  <block id="b3144caf7d928b7954447c757b3ed77b" category="list-text">* 서비스 *: 문제와 관련된 서비스를 선택합니다. 예를 들어, Cloud Manager가 서비스 내의 워크플로우 또는 기능과 관련된 기술 지원 문제를 해결할 수 있는 경우에 해당합니다.</block>
+  <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">* 작업 환경 *: 스토리지에 적용 가능한 경우 * Cloud Volumes ONTAP * 또는 * On-Premise * 를 선택한 다음 관련 작업 환경을 선택합니다.</block>
+  <block id="1e38219c106fb9d07d173c027b8911c7" category="paragraph">작업 환경 목록은 서비스의 상단 배너에서 선택한 Cloud Manager 계정, 작업 공간 및 커넥터의 범위 내에 있습니다.</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">* 케이스 우선 순위 *: 케이스의 우선 순위를 선택합니다. 우선 순위는 낮음, 중간, 높음 또는 긴급입니다.</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">이러한 우선 순위에 대한 자세한 내용을 보려면 필드 이름 옆에 있는 정보 아이콘 위로 마우스를 가져갑니다.</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">* 문제 설명 * : 해당 오류 메시지 또는 수행한 문제 해결 단계를 포함하여 문제에 대한 자세한 설명을 제공합니다.</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">* 추가 이메일 주소 *: 다른 사람에게 이 문제를 알고자 할 경우 추가 이메일 주소를 입력하십시오.</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">NetApp Support로 케이스를 생성할 수 있는 케이스 생성 양식 스크린샷</block>
+  <block id="a2ff30886e1baf1e7d5045b5fc24f5b9" category="paragraph"><block ref="a2ff30886e1baf1e7d5045b5fc24f5b9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">지원 케이스 번호와 함께 팝업이 나타납니다. NetApp 지원 전문가가 귀사의 사례를 검토하고 곧 다시 연결해 드릴 것입니다.</block>
+  <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">지원 케이스 내역을 보려면 * 설정 &gt; 일정 * 을 클릭하고 "지원 케이스 생성"이라는 이름의 작업을 찾습니다. 오른쪽 끝에 있는 버튼을 사용하여 작업을 확장하여 세부 정보를 볼 수 있습니다.</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">케이스를 생성하려고 할 때 다음과 같은 오류 메시지가 나타날 수 있습니다.</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"선택한 서비스에 대해 케이스를 생성할 권한이 없습니다."</block>
+  <block id="148f13242c3e296dc276821cdc574921" category="paragraph">이 오류는 NSS 계정과 연결된 레코드 회사가 Cloud Manager 계정 일련 번호( 960xxxx) 또는 작동 환경 일련 번호 케이스 생성 * 양식 상단의 NSS 계정 목록을 확인하여 올바른 일치 항목을 찾거나 다음 옵션 중 하나를 사용하여 지원을 요청할 수 있습니다.</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">제품 내 채팅을 사용합니다</block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">에서 비기술 케이스를 제출하십시오<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="9097b7003d9efcc9b19c4d5073cdcd3b" category="admonition">이 옵션은 작업 환경을 입력하고 작업 메뉴를 연 다음 * 인스턴스 변경 * 을 선택하여 사용할 수도 있습니다.</block>
+  <block id="ad6a05badd8d020ceea1ccb2534365ab" category="section-title">AutoSupport 요구 사항</block>
+  <block id="295477dc121353b83198c98d83f89695" category="section-title">AutoSupport 구성 문제를 해결합니다</block>
+  <block id="33331247a14ff40c85bdf7fe60779672" category="paragraph">아웃바운드 연결을 사용할 수 없고 Cloud Manager에서 커넥터를 프록시 서버로 사용하도록 Cloud Volumes ONTAP 시스템을 구성할 수 없는 경우 Cloud Manager에서 "&lt;작업 환경 이름&gt;이(가) AutoSupport 메시지를 보낼 수 없습니다"라는 알림을 받게 됩니다.</block>
+  <block id="db5287528bed608802655c082c0e89b3" category="paragraph">네트워킹 문제로 인해 이 메시지가 표시될 가능성이 높습니다.</block>
+  <block id="dde3c8b1dec7c8e74a01b666f1bf5eb8" category="paragraph">이 문제를 해결하려면 다음 단계를 수행하십시오.</block>
+  <block id="b019e5e15a90562208227f72f5b8c686" category="list-text">Cloud Volumes ONTAP 시스템에 SSH를 사용하여 CLI에서 시스템을 관리할 수 있습니다.</block>
+  <block id="aaacc29944816e45aadf00dcf2b06295" category="inline-link-macro">Cloud Volumes ONTAP에 SSH를 사용하는 방법에 대해 알아보십시오</block>
+  <block id="16ed58a43f5928920b01b4d3f2ffe1e7" category="paragraph"><block ref="881a093612fe18cf624d7327d89e776b" category="inline-link-macro-rx"></block>.</block>
+  <block id="cbd751aef187f8ce08c4f421fa7a69b0" category="list-text">AutoSupport 하위 시스템의 세부 상태를 표시합니다.</block>
+  <block id="c107ec2f22978848d28bc9ad31ef0dfb" category="paragraph">AutoSupport check show-details를 선택합니다</block>
+  <block id="c104f1b6e67db66325fd6e3b3c15d6df" category="paragraph">응답은 다음과 비슷해야 합니다.</block>
+  <block id="ed81107a25dc0eeca0e3233e60698b7a" category="paragraph">http-https 범주의 상태가 "ok"이면 AutoSupport가 올바르게 구성되어 메시지를 보낼 수 있음을 의미합니다.</block>
+  <block id="9f59ad83e7de9eb9a77d34e134c77c4e" category="list-text">상태가 정상이 아닌 경우 각 Cloud Volumes ONTAP 노드의 프록시 URL을 확인합니다.</block>
+  <block id="f19476ab2e2055c09d74472c7f8de866" category="paragraph">AutoSupport show-fields proxy-url</block>
+  <block id="d8b363c90c73973a28a4442bffc85b2f" category="list-text">프록시 URL 매개 변수가 비어 있는 경우 Cloud Volumes ONTAP에서 커넥터를 프록시로 사용하도록 구성합니다.</block>
+  <block id="d49856b68cffdc53cd83788467151aa7" category="paragraph">AutoSupport modify-proxy-url\http://&lt;connector private ip&gt;:3128</block>
+  <block id="eb137357f3d5b1a66652db0bfbe38072" category="list-text">AutoSupport 상태 다시 확인:</block>
+  <block id="f7b7d1040dd9009f304f4dbc6b5674b4" category="list-text">상태가 여전히 FAILED인 경우 Cloud Volumes ONTAP와 포트 3128을 통한 커넥터 사이에 연결이 있는지 확인합니다.</block>
+  <block id="a2fb6b9f09e88b2d05ae2de5f6368c2c" category="list-text">연결이 있는지 확인한 후에도 상태 ID가 계속 실패하면 커넥터에 SSH를 연결합니다.</block>
+  <block id="f9ae844ed32677f4c2b3d355086804be" category="inline-link">Connector용 Linux VM에 연결하는 방법에 대해 자세히 알아보십시오</block>
+  <block id="6ded1e8a515e1285387017e3e314ccf9" category="paragraph"><block ref="6ded1e8a515e1285387017e3e314ccf9" category="inline-link-rx"></block></block>
+  <block id="6663d276bb03698e23e1c8571b15a0ec" category="list-text">'/opt/application/netapp/cloudmanager/docker_occm/data/'로 이동합니다</block>
+  <block id="82d78a22685306ed68bbf81d14a33e4d" category="list-text">프록시 구성 파일 'quid.conf'를 엽니다</block>
+  <block id="a6b5e6b211bf426f61152c5d404a1ccd" category="paragraph">파일의 기본 구조는 다음과 같습니다.</block>
+  <block id="7e886757743abb700fa9af0ded4353cc" category="paragraph">localnet src 값은 Cloud Volumes ONTAP 시스템의 CIDR입니다.</block>
+  <block id="ba11a8c68a86c1c549117e7fed736b67" category="list-text">Cloud Volumes ONTAP 시스템의 CIDR 블록이 파일에 지정된 범위에 있지 않으면 다음과 같이 값을 업데이트하거나 새 항목을 추가합니다.</block>
+  <block id="e53e86f49fbf31d6404a832e79d30758" category="paragraph">'ACL cvonet src &lt;CIDR&gt;'</block>
+  <block id="56fb36ada37785127def214dd30a1607" category="paragraph">이 새 항목을 추가하는 경우 허용 항목도 추가해야 합니다.</block>
+  <block id="3e454df771adc9ead6632eefa975b41b" category="paragraph">http_access allow cvonet'입니다</block>
+  <block id="4d947fe0b5c4693f487f4fd1a4295c99" category="paragraph">예를 들면 다음과 같습니다.</block>
+  <block id="bb1d35cbbb58724ffea0d2f36a9f993a" category="list-text">구성 파일을 편집한 후 프록시 컨테이너를 sudo로 다시 시작합니다.</block>
+  <block id="5bec21ecbe2e3a86d7d4ed6908def9b1" category="paragraph">'오징어 재가동</block>
+  <block id="ea92910b55077f3c4e27aa9df66efbf8" category="list-text">Cloud Volumes ONTAP CLI로 돌아가서 Cloud Volumes ONTAP가 AutoSupport 메시지를 보낼 수 있는지 확인합니다.</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">시작하기 전에</block>
+  <block id="daff9ea3cb26196c1ea9ac9a22af2063" category="list-text">HTTPS를 사용하여 ONTAP 이미지를 호스팅하는 경우 인증서 누락으로 인한 SSL 인증 문제로 인해 업그레이드가 실패할 수 있습니다. 해결 방법은 ONTAP와 클라우드 관리자 간의 인증에 사용할 CA 서명 인증서를 생성하고 설치하는 것입니다.</block>
+  <block id="434256b12ce281ef5e4d73836f3321d4" category="paragraph">NetApp 기술 문서로 이동하여 단계별 지침을 확인하십시오.</block>
+  <block id="cb5d65dde5ba628055d30cfdbb698a3d" category="inline-link">NetApp KB: 업그레이드 이미지를 호스팅하기 위해 Cloud Manager를 HTTPS 서버로 구성하는 방법</block>
+  <block id="ab7e8c89ebea2d737c45db6eb8a87508" category="paragraph"><block ref="ab7e8c89ebea2d737c45db6eb8a87508" category="inline-link-rx"></block></block>
+  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
 </blocks>
