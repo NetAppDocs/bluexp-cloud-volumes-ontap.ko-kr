@@ -23,8 +23,13 @@ Cloud Volumes ONTAP admin 사용자 계정의 암호를 알아야 합니다.
 . 시스템이 상주하는 클라우드 공급자를 선택합니다.
 . Cloud Volumes ONTAP 시스템의 유형을 선택합니다.
 . 기존 시스템을 검색하려면 링크를 클릭하십시오.
-+
-image:screenshot_discover.gif["기존 Cloud Volumes ONTAP 시스템을 검색하는 링크를 보여 주는 스크린샷"]
+
+
+ifdef::aws[]
+
+를 누릅니다image:screenshot_discover.gif["기존 Cloud Volumes ONTAP 시스템을 검색하는 링크를 보여 주는 스크린샷"]
+
+endif::aws[]
 
 . 영역 페이지에서 인스턴스가 실행 중인 영역을 선택한 다음 인스턴스를 선택합니다.
 . 자격 증명 페이지에서 Cloud Volumes ONTAP 관리자 사용자의 암호를 입력한 다음 * GO * 를 클릭합니다.

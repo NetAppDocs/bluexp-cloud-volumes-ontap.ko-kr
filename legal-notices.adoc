@@ -47,4 +47,4 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.
 
-link:media/notice_cloud_manager_3.9.pdf["Cloud Manager 3.9에 대한 고지 사항"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/media/notice.pdf["Cloud Manager에 대한 알림"^]

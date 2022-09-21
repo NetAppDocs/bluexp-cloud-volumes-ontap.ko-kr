@@ -439,7 +439,6 @@
   <block id="deacec910b77251dad4f11490aa93221" category="list-text">Canvas 페이지에서 삭제할 Cloud Volumes ONTAP 작업 환경의 이름을 두 번 클릭합니다.</block>
   <block id="ce57c223c9772471dcabe8db7fec79ea" category="list-text">메뉴 아이콘을 클릭한 다음 * 삭제 * 를 클릭합니다.</block>
   <block id="4a9ee4aa88ebf38223ea447fe291d222" category="inline-image-macro">삭제 작업이 포함된 작업 환경에서 사용할 수 있는 메뉴를 보여 주는 스크린샷</block>
-  <block id="67b59933503284b540d89d3f2ae03808" category="paragraph"><block ref="67b59933503284b540d89d3f2ae03808" category="inline-image-macro-rx" type="image"></block></block>
   <block id="27bf96ea2dd4c98f397498424680c167" category="list-text">작업 환경의 이름을 입력한 다음 * 삭제 * 를 클릭합니다.</block>
   <block id="7d73be13421466d5cf5d832329f74c79" category="paragraph">작업 환경을 삭제하는 데 최대 5분이 걸릴 수 있습니다.</block>
   <block id="db92c6272e176121a6764c57a49a7cf2" category="summary">Cloud Manager는 Cloud Volumes ONTAP 스토리지를 간편하고 효율적으로 관리합니다.</block>
@@ -1333,7 +1332,6 @@
   <block id="4dbaad4c9dc389d54a40700cf043efae" category="list-text">Cloud Volumes ONTAP 시스템의 유형을 선택합니다.</block>
   <block id="e5274090bc4227c2e22055ba915c593c" category="list-text">기존 시스템을 검색하려면 링크를 클릭하십시오.</block>
   <block id="40017add8025d214a0f7daaa7b0901e1" category="inline-image-macro">기존 Cloud Volumes ONTAP 시스템을 검색하는 링크를 보여 주는 스크린샷</block>
-  <block id="d4324b56e309570d8b82ab9a959b9228" category="paragraph"><block ref="d4324b56e309570d8b82ab9a959b9228" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ff41b305e511b8485cd86e974b8b33c3" category="list-text">영역 페이지에서 인스턴스가 실행 중인 영역을 선택한 다음 인스턴스를 선택합니다.</block>
   <block id="3e46ae3398c8487fda843885c6277e38" category="list-text">자격 증명 페이지에서 Cloud Volumes ONTAP 관리자 사용자의 암호를 입력한 다음 * GO * 를 클릭합니다.</block>
   <block id="aa048985cab469f3a8d3545c3be61fab" category="paragraph">Cloud Manager는 Cloud Volumes ONTAP 인스턴스를 작업 공간에 추가합니다.</block>
@@ -1731,7 +1729,6 @@
   <block id="4e1072c8d03d554d91c9ea5beb4a0a35" category="cell">NAS 데이터</block>
   <block id="0bd553a2f6a75cf87e90b66a190b1601" category="cell">NAS 프로토콜을 통한 클라이언트 액세스</block>
   <block id="2b5d2bf6818bd886c073127322cc2693" category="cell">iSCSI 데이터</block>
-  <block id="9a21ebc65d84ea40bda91a7e1c5849b5" category="cell">iSCSI 프로토콜을 통한 클라이언트 액세스.</block>
   <block id="44ad9619101b8a07619c995d81024ea9" category="cell">클러스터 연결</block>
   <block id="6f1799c861ef34376e02156b71030428" category="cell">eth1</block>
   <block id="583e4b5135a301f1049902ce637a4b4c" category="cell">노드가 서로 통신하고 클러스터 내에서 데이터를 이동할 수 있도록 지원합니다.</block>
@@ -2022,8 +2019,6 @@
   <block id="7eeac5ac06af86bf7a05d8897d8f378c" category="list-text"><block ref="7eeac5ac06af86bf7a05d8897d8f378c" category="inline-link-rx"></block></block>
   <block id="0566b6e2df4ff947b8313e081a6e1f8f" category="paragraph">3.7.2 릴리스부터는 Cloud Manager에서 모든 새 Cloud Volumes ONTAP 시스템에 대한 FlexCache 라이센스를 생성합니다. 이 라이센스에는 500GiB 사용 제한이 포함됩니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
-  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9에 대한 고지 사항</block>
-  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="paragraph"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
   <block id="7a0f0cbfb576252735561bf366791b09" category="summary">몇 가지 단계를 통해 Cloud Volumes ONTAP for GCP를 시작해 보십시오.</block>
   <block id="c816d65f45a034b0842bc039567fcb6b" category="doc">Google Cloud에서 Cloud Volumes ONTAP를 빠르게 시작합니다</block>
   <block id="b1602fa6fa97985ef68ff003c11124ae" category="inline-link">GCP에서 커넥터를 생성하는 방법을 알아보십시오</block>
@@ -4387,4 +4382,9 @@
   <block id="cb5d65dde5ba628055d30cfdbb698a3d" category="inline-link">NetApp KB: 업그레이드 이미지를 호스팅하기 위해 Cloud Manager를 HTTPS 서버로 구성하는 방법</block>
   <block id="ab7e8c89ebea2d737c45db6eb8a87508" category="paragraph"><block ref="ab7e8c89ebea2d737c45db6eb8a87508" category="inline-link-rx"></block></block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
+  <block id="d38645c03f986a35ce2fbd6c505f7cb1" category="cell">iSCSI 프로토콜을 통한 클라이언트 액세스 및 중요한 네트워킹 워크플로우에 대한 시스템 사용. 이러한 LIF는 필수 항목이므로 삭제할 수 없습니다.</block>
+  <block id="2d3838f6845c3ac0398071b3ad7e14f5" category="paragraph"><block ref="2d3838f6845c3ac0398071b3ad7e14f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="99c8d21234f18ca8a3a220793fea2262" category="paragraph">를 누릅니다<block ref="d4324b56e309570d8b82ab9a959b9228" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d14a27b37d19411318313c75f11baf13" category="inline-link">Cloud Manager에 대한 알림</block>
+  <block id="8f4eecef1c8abf547a153a1486d48ab2" category="paragraph"><block ref="8f4eecef1c8abf547a153a1486d48ab2" category="inline-link-rx"></block></block>
 </blocks>
