@@ -99,8 +99,6 @@ Cloud Volumes ONTAP 작업 환경을 만들면 사용자 인터페이스를 통�
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["보안 그룹을 선택할 때 작업 환경 마법사에서 사용할 수 있는 트래픽 허용 옵션을 보여 주는 스크린샷"]
 
-ifdef::azure[]
-
 
 
 == 2022년 7월 18일
@@ -117,8 +115,6 @@ Azure Marketplace 구독을 통해 비용을 지불하는 Azure에서는 Cloud V
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["이러한 라이센스 패키지에 대해 자세히 알아보십시오"].
 
-endif::azure[]
-
 
 
 == 2022년 7월 3일
@@ -132,8 +128,6 @@ endif::azure[]
 이제 Digital Wallet은 사용자 계정의 총 소비된 용량과 라이센스 패키지별 소비된 용량을 표시합니다. 이를 통해 비용이 청구되는 방식 및 추가 용량을 구입해야 하는지 여부를 파악할 수 있습니다.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["용량 기반 라이센스에 대한 Digital Wallet 페이지를 보여 주는 스크린샷 이 페이지에서는 계정에서 사용된 용량에 대한 개요를 제공하고 라이센스 패키지를 통해 사용된 용량을 나눕니다."]
-
-ifdef::aws[]
 
 
 
@@ -151,10 +145,6 @@ ONTAP S3 라이센스는 이제 AWS 버전 9.11.0 이상을 실행하는 신규 
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오"^]
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === 새로운 Azure Cloud 지역 지원
@@ -170,14 +160,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 �
 ONTAP S3 라이센스는 이제 Azure에서 버전 9.9.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 포함됩니다.
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오"^]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-stdin>의 해결되지 않은 지시문 - include::: _ include/whats-new-July-GCP.adoc [ ]
-
-endif::gcp[]
 
 
 
@@ -202,8 +184,6 @@ Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우 ONTAP 시스�
 이 고급 보기는 Cloud Volumes ONTAP 9.10.0 이상에서 미리 보기로 사용할 수 있습니다. NetApp은 이 경험을 개선하고 다음 릴리즈에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 사용하여 피드백을 보내주십시오.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["고급 보기에 대해 자세히 알아보십시오"].
-
-ifdef::aws[]
 
 
 
@@ -232,10 +212,6 @@ Cloud Volumes ONTAP 9.11.1에는 AWS VPC 공유에 대한 지원이 포함되어
 
 link:task-deploy-aws-shared-vpc.html["공유 서브넷에 HA 쌍을 구축하는 방법을 알아보십시오"].
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === 서비스 엔드포인트를 사용할 경우 네트워크 액세스가 제한됩니다
@@ -243,10 +219,6 @@ ifdef::azure[]
 이제 Cloud Volumes ONTAP와 스토리지 계정 간의 연결에 VNET 서비스 끝점을 사용할 때 클라우드 관리자가 네트워크 액세스를 제한합니다. Azure Private Link 연결을 사용하지 않도록 설정하면 Cloud Manager에서 서비스 끝점을 사용합니다.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP를 사용한 Azure 전용 링크 연결에 대해 자세히 알아보십시오"].
-
-endif::azure[]
-
-ifdef::gcp[]
 
 
 
@@ -266,8 +238,6 @@ ONTAP CLI 또는 System Manager를 사용하여 단일 노드 시스템에 스�
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["Google Cloud의 스토리지 VM 제한에 대해 자세히 알아보십시오"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["Google Cloud에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 생성하는 방법을 알아보십시오"]
 
-
-endif::gcp[]
 
 
 
@@ -297,8 +267,6 @@ K8s 탭은 이전 버전에서 사용되지 않으며 이제 제거되었습니�
 
 https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["Cloud Manager의 Kubernetes 데이터 관리에 대해 자세히 알아보십시오"^]
 
-ifdef::azure[]
-
 
 
 === Azure에서 연간 계약
@@ -308,10 +276,6 @@ ifdef::azure[]
 NetApp이 프라이빗 오퍼를 공유하면 작업 환경을 생성하는 동안 Azure 마켓플레이스에서 구독할 때 연간 계획을 선택할 수 있습니다.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["라이센스에 대해 자세히 알아보십시오"].
-
-endif::azure[]
-
-ifdef::aws[]
 
 
 
@@ -335,10 +299,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.htm
 이제 Cloud Manager에서 배치 그룹을 만드는 방법을 최적화하려면 이러한 권한이 필요합니다.
 
 Cloud Manager에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["AWS에 대한 최신 커넥터 정책을 봅니다"^].
-
-endif::aws[]
-
-ifdef::gcp[]
 
 
 
@@ -380,8 +340,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 Cloud Volumes ONTAP에서 사용할 Google Cloud 서비스 계정을 선택하면 Cloud Manager에서 이제 각 서비스 계정과 연결된 이메일 주소를 표시합니다. 이메일 주소를 보면 동일한 이름을 공유하는 서비스 계정을 쉽게 구별할 수 있습니다.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["서비스 계정 필드의 스크린샷"]
-
-endif::gcp[]
 
 
 
