@@ -4387,4 +4387,8 @@
   <block id="99c8d21234f18ca8a3a220793fea2262" category="paragraph">를 누릅니다<block ref="d4324b56e309570d8b82ab9a959b9228" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d14a27b37d19411318313c75f11baf13" category="inline-link">Cloud Manager에 대한 알림</block>
   <block id="8f4eecef1c8abf547a153a1486d48ab2" category="paragraph"><block ref="8f4eecef1c8abf547a153a1486d48ab2" category="inline-link-rx"></block></block>
+  <block id="6a8bfe07e1e703ed3692dbea8b2a81de" category="inline-link">Cloud Volumes ONTAP 중재자를 위한 고지 사항</block>
+  <block id="b8a867ef3334c621e08f3cfef506f53b" category="list-text"><block ref="b8a867ef3334c621e08f3cfef506f53b" category="inline-link-rx"></block></block>
+  <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">ONTAP에 대한 고지 사항</block>
+  <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
 </blocks>
