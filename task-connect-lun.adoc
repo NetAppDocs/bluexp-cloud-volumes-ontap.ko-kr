@@ -30,6 +30,7 @@ iSCSI 볼륨을 생성할 때 Cloud Manager에서 자동으로 LUN을 생성합�
 +
 ** http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-iscsi-rhel-cg/GUID-15E8C226-BED5-46D0-BAED-379EA4311340.html["Red Hat Enterprise Linux용 ONTAP 9 iSCSI Express 구성: 대상으로 iSCSI 세션 시작"^]
 ** http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-iscsi-cpg/GUID-857453EC-90E9-4AB6-B543-83827CF374BF.html["Windows용 ONTAP 9 iSCSI Express 구성: 타겟으로 iSCSI 세션 시작"^]
+** https://docs.netapp.com/us-en/ontap-sanhost/["ONTAP SAN 호스트 구성"^]
 
 
 
