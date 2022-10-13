@@ -1571,7 +1571,6 @@
   <block id="47ef31752bdcdd73b07b1fe8976c82a6" category="list-text">기본 스토리지 옵션을 유지해야 합니다.</block>
   <block id="b901bc33967dc36bebafa77250edd08b" category="list-text">Connector에 필요한 연결 방법은 SSH, HTTP, HTTPS입니다.</block>
   <block id="2a74a4ca6ca91fb8d3c6b38fc9233a4f" category="list-text">Connector 인스턴스에 연결된 호스트에서 Cloud Manager를 설정합니다.</block>
-  <block id="7ad92db9fd68840a78d3bc935cff8f64" category="list-text">웹 브라우저를 열고 다음 URL을 입력합니다.<block ref="17a92846c731483b51192cc0d49cf97e" category="inline-link-rx"></block></block>
   <block id="4d0564ff4d1bbd71234a0838722dfc93" category="list-text">AWS 서비스 연결을 위한 프록시 서버를 지정합니다.</block>
   <block id="c3e84141ad53b58cc86262388ac9e4a6" category="list-text">1단계에서 얻은 인증서를 업로드합니다.</block>
   <block id="2d354fadd521725ccc56833965bb4440" category="list-text">설정 마법사의 단계를 완료하여 Cloud Manager를 설정합니다.</block>
@@ -1802,7 +1801,6 @@
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">엔드포인트</block>
   <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">https://support.netapp.com 으로 문의하십시오</block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">라이센스 정보를 얻고 AutoSupport 메시지를 NetApp 지원 팀에 전송합니다.</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">https://*.cloudmanager.cloud.netapp.com 으로 문의하십시오</block>
   <block id="6021edb3dc94e2b4496476a9e46f9e38" category="cell">Cloud Manager 내에서 SaaS 기능 및 서비스를 제공합니다.</block>
   <block id="554841a7559bd190d883de523464d1d1" category="cell">https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net 으로 문의하십시오</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">Connector 및 해당 Docker 구성 요소를 업그레이드합니다.</block>
@@ -4434,4 +4432,6 @@
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">이 과정에서 NetApp이 연락을 드릴 것입니다. 신규 사용자를 위한 일회성 온보딩 연습입니다.</block>
   <block id="cc7175a084ebd6e004cb2c751c162569" category="paragraph">NetApp Support 사이트 계정이 있으면 Cloud Manager로 이동하여 향후 등록을 위해 이 NSS 계정을 추가할 수 있습니다.</block>
   <block id="49265e8ef749144b85748114012266a8" category="cell">iSCSI 프로토콜을 통한 클라이언트 액세스. 또한 시스템에서 다른 중요한 네트워킹 워크플로우에 사용됩니다. 이러한 LIF는 필수 항목이므로 삭제할 수 없습니다.</block>
+  <block id="f61e4d929e921b5a3ae0bb6f78fe9b6c" category="cell">https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com 으로 문의하십시오</block>
+  <block id="4df8bb837bc00b990bb9e359a33c532c" category="list-text">웹 브라우저를 열고 다음 URL을 입력합니다.<block ref="484de961b6aa06a7131bf90e9cc3be46" category="inline-link-rx"></block></block>
 </blocks>

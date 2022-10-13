@@ -353,7 +353,7 @@ AWS에서 Cloud Volumes ONTAP 시스템을 시작하려면 먼저 AWS Marketplac
 
 . Connector 인스턴스에 연결된 호스트에서 Cloud Manager를 설정합니다.
 +
-.. 웹 브라우저를 열고 다음 URL을 입력합니다. http://ipaddress:80[]
+.. 웹 브라우저를 열고 다음 URL을 입력합니다. http://ipaddress[]
 .. AWS 서비스 연결을 위한 프록시 서버를 지정합니다.
 .. 1단계에서 얻은 인증서를 업로드합니다.
 .. 설정 마법사의 단계를 완료하여 Cloud Manager를 설정합니다.
