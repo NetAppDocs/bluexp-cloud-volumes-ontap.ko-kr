@@ -1991,7 +1991,6 @@
   <block id="f5de24cfcd33a2271ffc824aa8782176" category="admonition">미리 정의된 Cloud Volumes ONTAP 보안 그룹은 기본적으로 아웃바운드 HTTP 연결을 허용합니다.</block>
   <block id="a0b1807d647c5ece7bc49bd539f7dcc6" category="inline-link">NetApp Support 사이트</block>
   <block id="3e3318ff6382b95c2c0c29be3a83b97d" category="list-text">파일을 제공할 Connector 또는 HTTP 서버의 디렉토리에 소프트웨어 이미지를 복사합니다.</block>
-  <block id="622d340226a193aeab33f4890e2110c9" category="paragraph">예를 들어 소프트웨어 이미지를 Connector의 다음 경로에 복사할 수 있습니다.</block>
   <block id="1b19ae48e0693419e1e905991459c290" category="paragraph">'/opt/application/netapp/cloudmanager/docker/data/ONTAP/images/'</block>
   <block id="8919f7617af870f4013e0e66ecfec431" category="list-text">Cloud Manager의 작업 환경에서 메뉴 아이콘을 클릭한 다음 * 고급 &gt; Cloud Volumes ONTAP 업데이트 * 를 클릭합니다.</block>
   <block id="593130e23abb8f92a3863f44a5070ba6" category="list-text">소프트웨어 업데이트 페이지에서 URL을 입력한 다음 * 이미지 변경 * 을 클릭합니다.</block>
@@ -4436,4 +4435,6 @@
   <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">지원 대시보드를 통해 NetApp Support 사이트 계정을 추가하고 관리하여 Cloud Manager와 함께 사용할 수 있습니다.</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">고객 수준 계정이 있는 경우 하나 이상의 NSS 계정을 추가할 수 있습니다.</block>
   <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">파트너 또는 리셀러 계정이 있는 경우 NSS 계정을 하나 이상 추가할 수 있지만 고객 수준 계정과 함께 추가할 수는 없습니다.</block>
+  <block id="752a2c1ba3bb227b061216ee70132a08" category="paragraph">두 개의 경로를 사용할 수 있습니다. 올바른 경로는 커넥터 버전에 따라 다릅니다.</block>
+  <block id="93f9a2aa0331918bf3f1a44fb42f791e" category="list-text">'/opt/application/netapp/cloudmanager/ontap/images/'</block>
 </blocks>
