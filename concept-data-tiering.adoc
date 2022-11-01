@@ -40,9 +40,9 @@ AWS에서 데이터 계층화를 활성화하면 Cloud Volumes ONTAP은 EBS를 �
 용량 계층:: Cloud Volumes ONTAP 시스템은 비활성 데이터를 단일 S3 버킷에 계층화합니다.
 +
 --
-Cloud Manager에서 각 작업 환경에 대해 단일 S3 버킷을 생성하고 이를 Fabric-pool-_cluster unique identifier_로 지정합니다. 각 볼륨에 대해 다른 S3 버킷이 생성되지 않습니다.
+BlueXP는 각 작업 환경에 대해 단일 S3 버킷을 생성하고 Fabric-pool-_cluster unique identifier_라는 이름을 지정합니다. 각 볼륨에 대해 다른 S3 버킷이 생성되지 않습니다.
 
-Cloud Manager에서 S3 버킷을 생성할 때 사용되는 기본 설정은 다음과 같습니다.
+BlueXP에서 S3 버킷을 생성할 때 다음 기본 설정을 사용합니다.
 
 * 스토리지 클래스: 표준
 * 기본 암호화: 사용 안 함
@@ -81,9 +81,9 @@ Azure에서 데이터 계층화를 활성화하면 Cloud Volumes ONTAP는 Azure 
 용량 계층:: Cloud Volumes ONTAP 시스템은 비활성 데이터를 단일 Blob 컨테이너에 계층화합니다.
 +
 --
-Cloud Manager에서 각 Cloud Volumes ONTAP 작업 환경의 컨테이너로 새 스토리지 계정을 생성할 수 있습니다. 스토리지 계정의 이름은 임의로 지정됩니다. 각 볼륨에 대해 다른 컨테이너가 생성되지 않습니다.
+BlueXP는 각 Cloud Volumes ONTAP 작업 환경에 대한 컨테이너로 새 저장소 계정을 만듭니다. 스토리지 계정의 이름은 임의로 지정됩니다. 각 볼륨에 대해 다른 컨테이너가 생성되지 않습니다.
 
-Cloud Manager에서 다음 설정으로 스토리지 계정을 생성합니다.
+BlueXP는 다음과 같은 설정으로 저장소 계정을 만듭니다.
 
 * 액세스 계층: 핫
 * 성능: 표준
@@ -124,9 +124,9 @@ Google Cloud에서 데이터 계층화를 활성화하면 Cloud Volumes ONTAP은
 용량 계층:: Cloud Volumes ONTAP 시스템은 단일 Google 클라우드 스토리지 버킷에 비활성 데이터를 계층화합니다.
 +
 --
-Cloud Manager에서 각 작업 환경에 대한 버킷을 생성하여 fabric-pool-_cluster unique identifier_로 지정합니다. 각 볼륨에 대해 다른 버킷이 생성되지 않습니다.
+BlueXP는 각 작업 환경에 대한 버킷을 생성하여 Fabric-pool-_cluster unique identifier_로 명명합니다. 각 볼륨에 대해 다른 버킷이 생성되지 않습니다.
 
-Cloud Manager에서 버킷을 생성할 때 사용하는 기본 설정은 다음과 같습니다.
+BlueXP에서 버킷을 생성할 때 다음 기본 설정을 사용합니다.
 
 * 위치 유형: 지역
 * 스토리지 클래스: 표준
@@ -168,7 +168,7 @@ endif::gcp[]
 
 TIP: 최소 냉각 기간 및 기본 집계 임계값을 50%로 변경할 수 있습니다(아래 참조). http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-AD522711-01F9-4413-A254-929EAE871EBF.html["냉각 기간을 변경하는 방법에 대해 알아보십시오"^] 및 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-8FC4BFD5-F258-4AA6-9FCB-663D42D92CAA.html["임계값을 변경하는 방법에 대해 알아봅니다"^].
 
-볼륨을 생성 또는 수정할 때 Cloud Manager를 사용하여 다음 볼륨 계층화 정책 중에서 선택할 수 있습니다.
+BlueXP에서는 볼륨을 생성하거나 수정할 때 다음 볼륨 계층화 정책 중에서 선택할 수 있습니다.
 
 스냅샷만:: Aggregate가 50% 용량에 도달하면 Cloud Volumes ONTAP는 활성 파일 시스템과 연결되지 않은 스냅샷 복사본의 콜드 사용자 데이터를 용량 계층으로 이동합니다. 냉각 기간은 약 2일입니다.
 +
@@ -193,7 +193,7 @@ TIP: 최소 냉각 기간 및 기본 집계 임계값을 50%로 변경할 수 �
 없음:: 볼륨의 데이터를 성능 계층에 유지하여 용량 계층으로 이동하지 않도록 합니다.
 
 
-볼륨을 복제할 때 데이터를 오브젝트 스토리지에 계층화할지 여부를 선택할 수 있습니다. 이 경우 Cloud Manager는 데이터 보호 볼륨에 * 백업 * 정책을 적용합니다. Cloud Volumes ONTAP 9.6부터 * All * 계층화 정책은 백업 정책을 대체합니다.
+볼륨을 복제할 때 데이터를 오브젝트 스토리지에 계층화할지 여부를 선택할 수 있습니다. BlueXP는 데이터 보호 볼륨에 * 백업 * 정책을 적용합니다. Cloud Volumes ONTAP 9.6부터 * All * 계층화 정책은 백업 정책을 대체합니다.
 
 
 

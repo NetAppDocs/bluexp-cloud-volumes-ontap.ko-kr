@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-get-help.html 
 keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
-summary: 'NetApp은 다양한 방법으로 Cloud Manager를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.' 
+summary: 'NetApp은 다양한 방법으로 BlueXP를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.' 
 ---
 = 도움을 받으십시오
 :allow-uri-read: 
@@ -10,7 +10,7 @@ summary: 'NetApp은 다양한 방법으로 Cloud Manager를 지원합니다. 기
 :imagesdir: ../media/
 
 
-NetApp은 다양한 방법으로 Cloud Manager 및 클라우드 서비스를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.
+NetApp은 다양한 방법으로 BlueXP 및 클라우드 서비스를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.
 
 
 
@@ -20,19 +20,19 @@ NetApp은 다양한 방법으로 Cloud Manager 및 클라우드 서비스를 지
 
 * https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services["기술 자료"^]
 +
-Cloud Manager 기술 자료를 검색하여 문제를 해결할 수 있는 유용한 문서를 찾습니다.
+문제를 해결하는 데 도움이 되는 문서를 찾으려면 BlueXP 기술 자료를 검색하십시오.
 
 * http://community.netapp.com/["커뮤니티"^]
 +
-Cloud Manager 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 새 토론을 만들어보십시오.
+BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 새 토론을 만드십시오.
 
 * 문서화
 +
-현재 보고 있는 Cloud Manager 문서입니다.
+현재 보고 있는 BlueXP 문서입니다.
 
 * mailto:ng-cloudmanager-feedback@netapp.com [피드백 이메일]
 +
-저희는 귀하의 의견을 소중하게 생각합니다. 클라우드 관리자 개선에 도움이 되는 피드백을 제출해 주십시오.
+저희는 귀하의 의견을 소중하게 생각합니다. BlueXP 개선에 도움이 되는 피드백을 제출하십시오.
 
 
 
@@ -42,10 +42,10 @@ Cloud Manager 커뮤니티에 가입하여 진행 중인 토론을 팔로우하�
 
 위의 자체 지원 옵션 외에도 NetApp 지원 전문가와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.
 
-케이스 생성 * 기능을 사용하려면 먼저 Cloud Manager 계정 ID 일련 번호(예: 960xxxx) NetApp 포함 link:task-support-registration.html["지원 등록 방법을 알아보십시오"].
+케이스 생성* 기능을 사용하려면 먼저 BlueXP 계정 ID 일련 번호( 960xxxx) NetApp 포함 link:task-support-registration.html["지원 등록 방법을 알아보십시오"].
 
 .단계
-. Cloud Manager에서 * 도움말 > 지원 * 을 클릭합니다.
+. BlueXP에서 * 도움말 > 지원 * 을 클릭합니다.
 . 기술 지원 아래에서 사용 가능한 옵션 중 하나를 선택합니다.
 +
 .. 전화로 통화하려면 * 전화 * 를 클릭하십시오. 전화를 걸 수 있는 전화 번호가 나열된 netapp.com 페이지로 연결됩니다.
@@ -53,12 +53,12 @@ Cloud Manager 커뮤니티에 가입하여 진행 중인 토론을 팔로우하�
 +
 *** * NetApp Support 사이트 계정 *: 지원 케이스를 여는 사람과 관련된 해당 NSS 계정을 선택합니다. 이 담당자는 아래에 제공된 추가 이메일 외에 NetApp에 연락할 수 있는 기본 담당자가 됩니다.
 +
-NSS 계정이 표시되지 않으면 Cloud Manager의 지원 섹션 내의 * NSS 관리 * 탭으로 이동하여 해당 계정을 추가할 수 있습니다.
+NSS 계정이 표시되지 않으면 BlueXP의 지원 섹션에서 * NSS 관리 * 탭으로 이동하여 추가할 수 있습니다.
 
-*** * 서비스 *: 문제와 관련된 서비스를 선택합니다. 예를 들어, Cloud Manager가 서비스 내의 워크플로우 또는 기능과 관련된 기술 지원 문제를 해결할 수 있는 경우에 해당합니다.
+*** * 서비스 *: 문제와 관련된 서비스를 선택합니다. 예를 들어, 서비스 내의 워크플로우 또는 기능과 관련된 기술 지원 문제에 해당하는 BlueXP를 예로 들 수 있습니다.
 *** * 작업 환경 *: 스토리지에 적용 가능한 경우 * Cloud Volumes ONTAP * 또는 * On-Premise * 를 선택한 다음 관련 작업 환경을 선택합니다.
 +
-작업 환경 목록은 서비스의 상단 배너에서 선택한 Cloud Manager 계정, 작업 공간 및 커넥터의 범위 내에 있습니다.
+작업 환경 목록은 서비스의 상단 배너에서 선택한 BlueXP 계정, 작업 영역 및 커넥터의 범위 내에 있습니다.
 
 *** * 케이스 우선 순위 *: 케이스의 우선 순위를 선택합니다. 우선 순위는 낮음, 중간, 높음 또는 긴급입니다.
 +
@@ -83,7 +83,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 "선택한 서비스에 대해 케이스를 생성할 권한이 없습니다."
 
-이 오류는 NSS 계정과 연결된 레코드 회사가 Cloud Manager 계정 일련 번호( 960xxxx) 또는 작동 환경 일련 번호 케이스 생성 * 양식 상단의 NSS 계정 목록을 확인하여 올바른 일치 항목을 찾거나 다음 옵션 중 하나를 사용하여 지원을 요청할 수 있습니다.
+이 오류는 NSS 계정과 연결된 레코드 회사가 BlueXP 계정 일련 번호( 960xxxx) 또는 작동 환경 일련 번호 케이스 생성 * 양식 상단의 NSS 계정 목록을 확인하여 올바른 일치 항목을 찾거나 다음 옵션 중 하나를 사용하여 지원을 요청할 수 있습니다.
 
 * 제품 내 채팅을 사용합니다
 * 에서 비기술 케이스를 제출하십시오 https://mysupport.netapp.com/site/help[]

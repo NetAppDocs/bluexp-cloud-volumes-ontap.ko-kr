@@ -23,13 +23,14 @@ Cloud Volumes ONTAP에서 사용할 라이센스 옵션을 결정한 후에는 �
 최대 500GiB의 용량을 제공하는 Cloud Volumes ONTAP를 무료로 사용할 수 있는 Freemium 오퍼링을 선택하십시오. link:concept-licensing.html#freemium-offering["Freemium 제품에 대해 자세히 알아보십시오"].
 
 .단계
-. Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 Cloud Manager의 단계를 따릅니다.
+. 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
+. Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 BlueXP의 단계를 따릅니다.
 +
 .. 상세 정보 및 자격 증명 * 페이지에서 * 자격 증명 편집 > 구독 추가 * 를 클릭한 다음 화면의 지시에 따라 Google Cloud Marketplace에서 선불 종량제 서비스를 구독합니다.
 +
 프로비저닝된 용량 500GiB를 초과하지 않는 한, 마켓플레이스 구독을 통해 비용이 청구되지 않으며, 이 경우 시스템이 으로 자동으로 변환됩니다 link:concept-licensing.html#capacity-based-licensing-packages["Essentials 패키지를 선택합니다"].
 
-.. Cloud Manager로 돌아간 후 충전 방법 페이지에 도달하면 * Freemium * 을 선택합니다.
+.. BlueXP로 돌아온 후 충전 방법 페이지에 도달하면 * Freemium * 을 선택합니다.
 +
 image:screenshot-freemium.png["Cloud Volumes ONTAP 작업 환경을 생성할 때 Freemium 옵션 스크린샷"]
 
@@ -64,20 +65,20 @@ NetApp에서 BYOL(License)을 구매하여 모든 클라우드 공급자를 통�
 
 .단계
 . https://cloud.netapp.com/contact-cds["라이센스를 획득하려면 NetApp 세일즈 팀에 문의하십시오"^]
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["Cloud Manager에 NetApp Support 사이트 계정을 추가합니다"^]
+. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["NetApp Support 사이트 계정을 BlueXP에 추가합니다"^]
 +
-Cloud Manager에서 NetApp의 라이센스 서비스에 대해 자동으로 쿼리하여 NetApp Support 사이트 계정과 연결된 라이센스에 대한 자세한 정보를 가져옵니다. 오류가 없는 경우 Cloud Manager는 디지털 지갑에 라이센스를 자동으로 추가합니다.
+BlueXP는 NetApp의 라이센스 서비스에 자동으로 쿼리하여 NetApp Support 사이트 계정과 관련된 라이센스에 대한 자세한 정보를 확인합니다. 오류가 없으면 BlueXP에서 자동으로 디지털 지갑에 라이센스를 추가합니다.
 
 +
 Cloud Volumes ONTAP에서 사용하기 전에 디지털 지갑에서 라이센스를 사용할 수 있어야 합니다. 필요한 경우, 할 수 있습니다 link:task-manage-capacity-licenses.html#add-purchased-licenses-to-your-account["디지털 지갑에 라이센스를 수동으로 추가합니다"].
 
-. Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 Cloud Manager의 단계를 따릅니다.
+. Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 BlueXP의 단계를 따릅니다.
 +
 .. 상세 정보 및 자격 증명 * 페이지에서 * 자격 증명 편집 > 구독 추가 * 를 클릭한 다음 화면의 지시에 따라 Google Cloud Marketplace에서 선불 종량제 서비스를 구독합니다.
 +
 NetApp에서 구매한 라이센스는 항상 먼저 부과되지만, 라이센스 용량을 초과하거나 라이센스 기간이 만료되면 마켓플레이스의 시간당 요율로 비용이 청구됩니다.
 
-.. Cloud Manager로 돌아간 후 충전 방법 페이지가 표시되면 용량 기반 패키지를 선택합니다.
+.. BlueXP로 돌아온 후 충전 방법 페이지에 도달하면 용량 기반 패키지를 선택합니다.
 +
 image:screenshot-professional.png["Cloud Volumes ONTAP 작업 환경을 만들 때 Professional 옵션의 스크린샷."]
 
@@ -93,13 +94,14 @@ link:task-deploying-gcp.html["Google Cloud에서 Cloud Volumes ONTAP를 실행�
 
 클라우드 공급자 마켓플레이스의 서비스에 가입하여 시간별 비용 지불
 
-Cloud Volumes ONTAP 작업 환경을 생성할 때 Cloud Manager에서 Google Cloud Marketplace에서 사용 가능한 계약을 구독하라는 메시지를 표시합니다. 그러면 해당 구독이 충전을 위한 작업 환경과 연결됩니다. 추가 작업 환경에 동일한 서브스크립션을 사용할 수 있습니다.
+Cloud Volumes ONTAP 작업 환경을 만들 때 BlueXP는 Google Cloud Marketplace에서 사용 가능한 계약을 구독하라는 메시지를 표시합니다. 그러면 해당 구독이 충전을 위한 작업 환경과 연결됩니다. 추가 작업 환경에 동일한 서브스크립션을 사용할 수 있습니다.
 
 .단계
-. Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 Cloud Manager의 단계를 따릅니다.
+. 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
+. Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 BlueXP의 단계를 따릅니다.
 +
 .. 상세 정보 및 자격 증명 * 페이지에서 * 자격 증명 편집 > 구독 추가 * 를 클릭한 다음 화면의 지시에 따라 Google Cloud Marketplace에서 선불 종량제 서비스를 구독합니다.
-.. Cloud Manager로 돌아간 후 충전 방법 페이지가 표시되면 용량 기반 패키지를 선택합니다.
+.. BlueXP로 돌아온 후 충전 방법 페이지에 도달하면 용량 기반 패키지를 선택합니다.
 +
 image:screenshot-professional.png["Cloud Volumes ONTAP 작업 환경을 만들 때 Professional 옵션의 스크린샷."]
 
@@ -126,11 +128,11 @@ TIP: 설정 > 자격 증명 페이지에서 계정과 연결된 Google Cloud Mar
 +
 NetApp이 프라이빗 오퍼를 공유하면 근무 환경을 생성하는 동안 Google Cloud Marketplace에서 가입할 때 연간 계획을 선택할 수 있습니다.
 
-. Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 Cloud Manager의 단계를 따릅니다.
+. Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 BlueXP의 단계를 따릅니다.
 +
 .. 세부 정보 및 자격 증명 * 페이지에서 * 자격 증명 편집 > 구독 추가 * 를 클릭한 다음 표시되는 메시지에 따라 Google Cloud Marketplace에서 연간 계획을 구독합니다.
 .. Google Cloud에서 계정과 공유된 연간 계획을 선택한 다음 * 구독 * 을 클릭합니다.
-.. Cloud Manager로 돌아간 후 충전 방법 페이지가 표시되면 용량 기반 패키지를 선택합니다.
+.. BlueXP로 돌아온 후 충전 방법 페이지에 도달하면 용량 기반 패키지를 선택합니다.
 +
 image:screenshot-professional.png["Cloud Volumes ONTAP 작업 환경을 만들 때 Professional 옵션의 스크린샷."]
 
@@ -148,9 +150,9 @@ Keystone Flex 가입은 종량제 구독 기반 서비스입니다. link:concept
 
 .단계
 . 아직 구독이 없는 경우 https://www.netapp.com/forms/keystone-sales-contact/["NetApp에 문의하십시오"^]
-. mailto:ng-keystone-success@netapp.com [Contact NetApp]: 하나 이상의 Keystone Flex 구독으로 Cloud Manager 사용자 계정을 인증하십시오.
+. mailto:ng-keystone-success@netapp.com [NetApp에 문의]하여 하나 이상의 Keystone Flex 구독으로 BlueXP 사용자 계정을 인증하십시오.
 . NetApp이 사용자 계정을 승인한 후 link:task-manage-keystone.html#link-a-subscription["Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 연결합니다"].
-. Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 Cloud Manager의 단계를 따릅니다.
+. Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 BlueXP의 단계를 따릅니다.
 +
 .. 충전 방법을 선택하라는 메시지가 표시되면 Keystone Flex 가입 충전 방법을 선택합니다.
 +

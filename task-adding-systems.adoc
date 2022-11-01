@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-systems.html 
 keywords: discover, discovering, add, adding, existing 
-summary: 기존 Cloud Volumes ONTAP 시스템을 검색하고 Cloud Manager에 추가할 수 있습니다. 새로운 Cloud Manager 시스템을 구축한 경우 이 작업을 수행할 수 있습니다. 
+summary: 기존 Cloud Volumes ONTAP 시스템을 검색하고 BlueXP에 추가할 수 있습니다. 새 BlueXP 시스템을 배포한 경우 이 작업을 수행할 수 있습니다. 
 ---
-= Cloud Manager에 기존 Cloud Volumes ONTAP 시스템 추가
+= 기존 Cloud Volumes ONTAP 시스템을 BlueXP에 추가
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,12 @@ summary: 기존 Cloud Volumes ONTAP 시스템을 검색하고 Cloud Manager에 �
 
 
 [role="lead"]
-기존 Cloud Volumes ONTAP 시스템을 검색하고 Cloud Manager에 추가할 수 있습니다. 새로운 Cloud Manager 시스템을 구축한 경우 이 작업을 수행할 수 있습니다.
+기존 Cloud Volumes ONTAP 시스템을 검색하고 BlueXP에 추가할 수 있습니다. 새 BlueXP 시스템을 배포한 경우 이 작업을 수행할 수 있습니다.
 
 Cloud Volumes ONTAP admin 사용자 계정의 암호를 알아야 합니다.
 
 .단계
+. 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . Canvas 페이지에서 * 작업 환경 추가 * 를 클릭합니다.
 . 시스템이 상주하는 클라우드 공급자를 선택합니다.
 . Cloud Volumes ONTAP 시스템의 유형을 선택합니다.
@@ -35,4 +36,4 @@ endif::aws[]
 . 자격 증명 페이지에서 Cloud Volumes ONTAP 관리자 사용자의 암호를 입력한 다음 * GO * 를 클릭합니다.
 
 
-Cloud Manager는 Cloud Volumes ONTAP 인스턴스를 작업 공간에 추가합니다.
+BlueXP는 Cloud Volumes ONTAP 인스턴스를 작업 영역에 추가합니다.

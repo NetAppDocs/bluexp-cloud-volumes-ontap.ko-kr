@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-state.html 
 keywords: schedule, schedules, scheduling, shutdowns, shut down, restart, stop, stopping, turn off, weekday, weekend 
-summary: Cloud Volumes ONTAP를 Cloud Manager에서 중지하고 시작하여 클라우드 컴퓨팅 비용을 관리할 수 있습니다. 
+summary: BlueXP에서 Cloud Volumes ONTAP를 중지하고 시작하여 클라우드 컴퓨팅 비용을 관리할 수 있습니다. 
 ---
 = Cloud Volumes ONTAP의 상태 관리
 :hardbreaks:
@@ -14,18 +14,18 @@ summary: Cloud Volumes ONTAP를 Cloud Manager에서 중지하고 시작하여 �
 
 
 [role="lead"]
-Cloud Volumes ONTAP를 Cloud Manager에서 중지하고 시작하여 클라우드 컴퓨팅 비용을 관리할 수 있습니다.
+BlueXP에서 Cloud Volumes ONTAP를 중지하고 시작하여 클라우드 컴퓨팅 비용을 관리할 수 있습니다.
 
 
 
 == Cloud Volumes ONTAP의 자동 종료 예약
 
-특정 시간 간격 동안 Cloud Volumes ONTAP를 종료하여 컴퓨팅 비용을 낮출 수 있습니다. 이 작업을 수동으로 수행하는 대신 Cloud Manager를 구성하여 시스템을 자동으로 종료한 다음 특정 시간에 다시 시작할 수 있습니다.
+특정 시간 간격 동안 Cloud Volumes ONTAP를 종료하여 컴퓨팅 비용을 낮출 수 있습니다. 이 작업을 수동으로 수행하는 대신 특정 시간에 시스템이 자동으로 종료된 후 다시 시작하도록 BlueXP를 구성할 수 있습니다.
 
 .이 작업에 대해
-* Cloud Volumes ONTAP 시스템의 자동 종료를 예약하면, Cloud Manager가 활성 데이터 전송이 진행 중인 경우 종료를 연기합니다.
+* Cloud Volumes ONTAP 시스템의 자동 종료를 예약하면 활성 데이터 전송이 진행 중인 경우 BlueXP가 종료를 연기합니다.
 +
-전송이 완료된 후 Cloud Manager가 시스템을 종료합니다.
+전송이 완료된 후 BlueXP가 시스템을 종료합니다.
 
 * 이 작업은 HA 2노드에서 두 노드의 자동 종료를 예약합니다.
 * 예약된 종료를 통해 Cloud Volumes ONTAP를 끌 때 부팅 및 루트 디스크의 스냅샷이 생성되지 않습니다.
@@ -47,7 +47,7 @@ image:screenshot_shutdown_icon.gif["스크린샷: 자동 종료 페이지를 로
 * 예 *
 
 +
-다음 이미지는 토요일 오전 12시에 Cloud Manager가 시스템을 종료하도록 지시하는 스케줄을 보여줍니다 48시간 동안 Cloud Manager는 매주 월요일 오전 12시에 시스템을 재시작합니다
+다음 이미지는 매주 토요일 오전 12시에 BlueXP가 시스템을 종료하도록 지시하는 스케줄을 보여줍니다 48시간 동안 BlueXP는 매주 월요일 오전 12시에 시스템을 다시 시작합니다
 
 +
 image:screenshot_shutdown.gif["스크린샷: 48시간 동안 매주 주말 오전 12시에 Cloud Volumes ONTAP를 종료하는 종료 일정을 보여 줍니다."]
@@ -57,7 +57,7 @@ image:screenshot_shutdown.gif["스크린샷: 48시간 동안 매주 주말 오�
 . 저장 * 을 클릭합니다.
 
 
-Cloud Manager가 일정을 저장합니다. 일정이 설정되었음을 나타내기 위해 시계 아이콘이 변경됩니다. image:screenshot_shutdown_icon_scheduled.gif["스크린샷: 일정이 정의된 후 자동 종료 아이콘을 표시합니다."]
+BlueXP는 일정을 저장합니다. 일정이 설정되었음을 나타내기 위해 시계 아이콘이 변경됩니다. image:screenshot_shutdown_icon_scheduled.gif["스크린샷: 일정이 정의된 후 자동 종료 아이콘을 표시합니다."]
 
 
 
@@ -66,9 +66,9 @@ Cloud Manager가 일정을 저장합니다. 일정이 설정되었음을 나타�
 Cloud Volumes ONTAP를 중지하면 계산 비용이 절약되고 루트 및 부팅 디스크의 스냅샷이 생성되므로 문제 해결에 도움이 됩니다.
 
 
-NOTE: 비용을 줄이기 위해 Cloud Manager는 루트 및 부팅 디스크의 이전 스냅샷을 정기적으로 삭제합니다. 루트와 부팅 디스크 모두에 대해 가장 최근의 두 스냅샷만 보존됩니다.
+NOTE: 비용을 줄이기 위해 BlueXP는 루트 및 부팅 디스크의 이전 스냅샷을 주기적으로 삭제합니다. 루트와 부팅 디스크 모두에 대해 가장 최근의 두 스냅샷만 보존됩니다.
 
-HA 쌍을 중지하면 Cloud Manager가 두 노드를 모두 종료합니다.
+HA 쌍을 중지하면 BlueXP가 두 노드를 모두 종료합니다.
 
 .단계
 . 작업 환경에서 * 끄기 * 아이콘을 클릭합니다.

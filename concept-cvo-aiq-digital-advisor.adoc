@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-cvo-aiq-digital-advisor.html 
 keywords: concepts, active iq digital advisor, cloud volumes ontap 
-summary: Active IQ 디지털 어드바이저가 클라우드 관리자 UI에 통합되어 단일 창에서 ONTAP 클러스터의 운영, 보안, 성능을 최적화할 수 있습니다. 
+summary: Active IQ 디지털 어드바이저는 BlueXP UI에 통합되어 단일 창에서 ONTAP 클러스터의 운영, 보안 및 성능을 최적화할 수 있습니다. 
 ---
 = Active IQ 디지털 자문업체 를 사용하여 Cloud Volumes ONTAP 시스템을 최적화하십시오
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Active IQ 디지털 어드바이저가 클라우드 관리자 UI에 통
 
 
 [role="lead"]
-https://www.netapp.com/services/support/active-iq/["Active IQ 디지털 자문업체"] 가 Cloud Manager UI에 통합되어 단일 창에서 Cloud Volumes ONTAP 시스템의 운영, 보안 및 성능을 최적화할 수 있습니다.
+https://www.netapp.com/services/support/active-iq/["Active IQ 디지털 자문업체"] BlueXP(이전의 Cloud Manager) UI에 통합되어 단일 창에서 Cloud Volumes ONTAP 시스템의 운영, 보안 및 성능을 최적화할 수 있습니다.
 
 
 
@@ -38,21 +38,21 @@ Active IQ 디지털 어드바이저는 NSS 계정 내의 모든 사내 ONTAP 시
 
 == 비용
 
-Cloud Manager를 통해 이 서비스를 무료로 사용할 수 있습니다.
+BlueXP를 통해 이 서비스를 무료로 사용할 수 있습니다.
 
 
 
-== Active IQ 디지털 조언이 클라우드 매니저와 어떻게 연동되는지 알아보십시오
+== Active IQ 디지털 어드바이저가 BlueXP에서 작동하는 방식
 
-Active IQ 디지털 자문업체 사용자 인터페이스는 Cloud Manager에 완전히 통합되어 있습니다.
+Active IQ 디지털 어드바이저 사용자 인터페이스는 BlueXP에 완벽하게 통합되어 있습니다.
 
-Cloud Manager에서 * Active IQ * 서비스를 클릭합니다.
+BlueXP에서 * Active IQ * 서비스를 클릭합니다.
 
-* Cloud Manager에 기존 NSS 계정을 이미 등록한 경우 Active IQ 디지털 어드바이저 UI는 의 독립 실행형 구현에서 보이는 것과 같이 표시됩니다 https://activeiq.netapp.com/[].
+* BlueXP에 기존 NSS 계정을 이미 등록한 경우 Active IQ 디지털 어드바이저 UI는 의 독립 실행에서와 같이 나타납니다 https://activeiq.netapp.com/[].
 +
-image:screenshot_aiq_digital_advisor.png["Cloud Manager의 Active IQ 디지털 자문업체 사용자 인터페이스 스크린샷"]
+image:screenshot_aiq_digital_advisor.png["BlueXP의 Active IQ 디지털 자문업체 사용자 인터페이스 스크린샷"]
 
-* Cloud Manager에 NSS 계정을 등록하지 않은 경우 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NSS 계정을 지금 등록하십시오"^] 그런 다음 Active IQ 디지털 자문 UI가 나타납니다.
+* BlueXP에 NSS 계정을 등록하지 않은 경우 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NSS 계정을 지금 등록하십시오"^] 그런 다음 Active IQ 디지털 자문 UI가 나타납니다.
 
 
 

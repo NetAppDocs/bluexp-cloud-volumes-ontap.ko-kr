@@ -41,8 +41,8 @@ AWS에서 Cloud Volumes ONTAP HA 구성에는 다음과 같은 구성요소가 �
 NOTE: Cloud Volumes ONTAP 9.10.0 이전 버전에서는 데비안 10이 중재자위에 설치되었습니다.
 
 --
-업그레이드:: Cloud Volumes ONTAP를 업그레이드하면 Cloud Manager가 필요에 따라 중재자 인스턴스도 업데이트합니다.
-인스턴스에 대한 액세스:: Cloud Manager에서 Cloud Volumes ONTAP HA 쌍을 생성하는 경우 중재자 인스턴스에 대한 키 쌍을 제공하라는 메시지가 표시됩니다. "admin" 사용자를 사용하여 SSH 액세스에 해당 키 쌍을 사용할 수 있습니다.
+업그레이드:: Cloud Volumes ONTAP를 업그레이드할 때 BlueXP는 필요에 따라 중재자 인스턴스도 업데이트합니다.
+인스턴스에 대한 액세스:: BlueXP에서 Cloud Volumes ONTAP HA 쌍을 만들면 중재자 인스턴스에 대한 키 쌍을 제공하라는 메시지가 표시됩니다. 를 사용하여 SSH 액세스에 이 키 쌍을 사용할 수 있습니다 `admin` 사용자.
 제3자 에이전트:: 타사 에이전트 또는 VM 확장은 중재자 인스턴스에서 지원되지 않습니다.
 
 
@@ -86,7 +86,7 @@ HA 구성이 여러 가용성 영역 간에 분산되면 _floating IP addresses_
 
 전송 게이트웨이를 설정할 수 없는 경우 VPC 외부에 있는 NAS 클라이언트에서 전용 IP 주소를 사용할 수 있습니다. 그러나 이러한 IP 주소는 정적이며 노드 간에 페일오버할 수 없습니다.
 
-여러 가용성 영역에 HA 구성을 배포하기 전에 부동 IP 주소 및 라우팅 테이블에 대한 요구 사항을 검토해야 합니다. 구성을 배포할 때 부동 IP 주소를 지정해야 합니다. 프라이빗 IP 주소는 Cloud Manager에서 자동으로 생성합니다.
+여러 가용성 영역에 HA 구성을 배포하기 전에 부동 IP 주소 및 라우팅 테이블에 대한 요구 사항을 검토해야 합니다. 구성을 배포할 때 부동 IP 주소를 지정해야 합니다. BlueXP에서 개인 IP 주소를 자동으로 생성합니다.
 
 자세한 내용은 을 참조하십시오 link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["여러 AZs에서 Cloud Volumes ONTAP HA를 위한 AWS 네트워킹 요구사항"].
 
@@ -117,7 +117,7 @@ image:diagram_takeover_giveback.png["Cloud Volumes ONTAP HA 쌍의 스토리지 
 
 장애가 발생한 노드가 다시 온라인 상태가 되면 원래 IP 주소를 사용하여 클라이언트를 볼륨에 다시 마운트합니다. 이 단계는 두 HA 노드 간에 불필요한 데이터를 전송하지 않아야 하므로 성능에 중대한 영향을 미칠 수 있습니다.
 
-볼륨을 선택하고 * 탑재 명령 * 을 클릭하여 Cloud Manager에서 올바른 IP 주소를 쉽게 식별할 수 있습니다.
+볼륨을 선택하고 * 탑재 명령 * 을 클릭하여 BlueXP에서 올바른 IP 주소를 쉽게 식별할 수 있습니다.
 
 
 
@@ -126,7 +126,7 @@ image:diagram_takeover_giveback.png["Cloud Volumes ONTAP HA 쌍의 스토리지 
 AZ(단일 가용성 영역)에 HA 구성을 구축하면 Cloud Volumes ONTAP 노드를 실행하는 인스턴스에 장애가 발생할 경우 데이터의 고가용성을 보장할 수 있습니다. 모든 데이터는 VPC 외부에서 기본적으로 액세스할 수 있습니다.
 
 
-NOTE: Cloud Manager에서 을 생성합니다 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 배치 그룹 분산"^] 그런 다음 해당 배치 그룹에서 2개의 HA 노드를 시작합니다. 배치 그룹은 서로 다른 기본 하드웨어에 인스턴스를 분산하여 동시 오류 위험을 줄입니다. 이 기능은 디스크 장애 관점이 아니라 컴퓨팅 측면에서 중복성을 향상시킵니다.
+NOTE: BlueXP는 을 생성합니다 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 배치 그룹 분산"^] 그런 다음 해당 배치 그룹에서 2개의 HA 노드를 시작합니다. 배치 그룹은 서로 다른 기본 하드웨어에 인스턴스를 분산하여 동시 오류 위험을 줄입니다. 이 기능은 디스크 장애 관점이 아니라 컴퓨팅 측면에서 중복성을 향상시킵니다.
 
 
 
@@ -159,7 +159,7 @@ ONTAP 클러스터와 달리 Cloud Volumes ONTAP HA 쌍의 스토리지는 노�
 
 === 스토리지 할당
 
-새 볼륨을 생성하고 추가 디스크가 필요하면 Cloud Manager에서 두 노드에 동일한 수의 디스크를 할당하고 미러링된 애그리게이트를 생성한 다음 새 볼륨을 생성합니다. 예를 들어, 볼륨에 2개의 디스크가 필요한 경우 Cloud Manager는 노드당 총 4개의 디스크에 2개의 디스크를 할당합니다.
+새 볼륨을 생성하고 추가 디스크가 필요한 경우 BlueXP는 두 노드에 동일한 수의 디스크를 할당하고 미러링된 애그리게이트를 생성한 다음 새 볼륨을 생성합니다. 예를 들어, 볼륨에 두 개의 디스크가 필요한 경우 BlueXP는 노드당 두 개의 디스크를 총 4개의 디스크에 할당합니다.
 
 
 
@@ -168,7 +168,7 @@ ONTAP 클러스터와 달리 Cloud Volumes ONTAP HA 쌍의 스토리지는 노�
 HA 쌍을 액티브-액티브 구성으로 사용할 수 있으며, 두 노드에서 클라이언트에 데이터를 제공하거나 액티브-패시브 구성으로 사용할 수 있습니다. 이 구성에서는 패시브 노드가 액티브 노드의 스토리지를 인계받은 경우에만 데이터 요청에 응답합니다.
 
 
-NOTE: 스토리지 시스템 보기에서 Cloud Manager를 사용하는 경우에만 액티브-액티브 구성을 설정할 수 있습니다.
+NOTE: 스토리지 시스템 보기에서 BlueXP를 사용하는 경우에만 활성-활성 구성을 설정할 수 있습니다.
 
 
 
@@ -191,6 +191,6 @@ Cloud Volumes ONTAP 성능에 대한 자세한 내용은 를 참조하십시오 
 
 TIP: HA 쌍에서 노드 간에 볼륨을 이동하는 경우 다른 노드의 IP 주소를 사용하여 볼륨을 다시 마운트해야 합니다. 그렇지 않으면 성능이 저하될 수 있습니다. 클라이언트가 CIFS에 대한 NFSv4 참조 또는 폴더 리디렉션을 지원하는 경우 Cloud Volumes ONTAP 시스템에서 이러한 기능을 설정하여 볼륨을 다시 마운트하지 않도록 할 수 있습니다. 자세한 내용은 ONTAP 설명서를 참조하십시오.
 
-Cloud Manager에서 올바른 IP 주소를 쉽게 식별할 수 있습니다.
+BlueXP에서 올바른 IP 주소를 쉽게 식별할 수 있습니다.
 
 image:screenshot_mount.gif["스크린샷: 볼륨을 선택할 때 사용할 수 있는 마운트 명령을 표시합니다."]

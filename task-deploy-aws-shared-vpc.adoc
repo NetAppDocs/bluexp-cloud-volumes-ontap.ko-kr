@@ -30,7 +30,7 @@ image:diagram-aws-vpc-sharing.png["공유 VPC의 Cloud Volumes ONTAP HA 구축 �
 
 아래 단계에 설명된 대로 참가자 계정과 서브넷을 공유하고 VPC 소유자 계정에서 IAM 역할 및 보안 그룹을 만들어야 합니다.
 
-Cloud Volumes ONTAP 작업 환경을 생성하면 Cloud Manager가 IAM 역할을 자동으로 생성하고 중재자를 연결합니다. 이 역할은 HA 쌍과 연결된 경로 테이블을 변경하기 위해 VPC 소유자 계정에서 생성한 IAM 역할을 가정합니다.
+Cloud Volumes ONTAP 작업 환경을 만들면 BlueXP는 자동으로 IAM 역할을 생성하여 중재자에 연결합니다. 이 역할은 HA 쌍과 연결된 경로 테이블을 변경하기 위해 VPC 소유자 계정에서 생성한 IAM 역할을 가정합니다.
 
 .단계
 . VPC 소유자 계정의 서브넷을 참가자 계정과 공유합니다.
@@ -42,7 +42,7 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-sh
 
 . VPC 소유자 계정에서 Cloud Volumes ONTAP용 보안 그룹을 생성합니다.
 +
-link:reference-security-groups.html["Cloud Volumes ONTAP의 보안 그룹 규칙을 참조하십시오"]. HA 중재자를 위한 보안 그룹을 만들 필요는 없습니다. Cloud Manager가 이 작업을 수행합니다.
+link:reference-security-groups.html["Cloud Volumes ONTAP의 보안 그룹 규칙을 참조하십시오"]. HA 중재자를 위한 보안 그룹을 만들 필요는 없습니다. BlueXP가 이러한 작업을 수행합니다.
 
 . VPC 소유자 계정에서 다음 권한이 포함된 IAM 역할을 생성합니다.
 +
@@ -58,7 +58,7 @@ Action": [
                 "ec2:ReplaceRoute",
                 "ec2:UnassignPrivateIpAddresses"
 ----
-. Cloud Manager API를 사용하여 새로운 Cloud Volumes ONTAP 작업 환경을 생성합니다.
+. BlueXP API를 사용하여 새로운 Cloud Volumes ONTAP 작업 환경을 만듭니다.
 +
 다음 필드를 지정해야 합니다.
 

@@ -632,4 +632,4 @@ network interface service-policy add-service -vserver <svm-name> -policy default
 
 --
 ====
-HA 쌍에서 스토리지 VM을 생성하면 해당 SVM에서 스토리지를 프로비저닝하기 전에 12시간을 기다리는 것이 좋습니다. Cloud Volumes ONTAP 9.10.1 릴리즈부터 Cloud Manager가 12시간 간격으로 HA 쌍의 로드 밸런서에 대한 설정을 검색합니다. 새로운 SVM이 있을 경우 Cloud Manager에서 짧은 계획되지 않은 페일오버를 제공하는 설정을 지원합니다.
+HA 쌍에서 스토리지 VM을 생성하면 해당 SVM에서 스토리지를 프로비저닝하기 전에 12시간을 기다리는 것이 좋습니다. Cloud Volumes ONTAP 9.10.1 릴리즈부터 BlueXP는 12시간 간격으로 HA 쌍의 로드 밸런서에 대한 설정을 검색합니다. 새로운 SVM이 있는 경우 BlueXP에서 계획되지 않은 페일오버 시간을 단축해 주는 설정을 사용할 수 있습니다.

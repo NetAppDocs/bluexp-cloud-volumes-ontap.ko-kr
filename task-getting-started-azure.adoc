@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-getting-started-azure.html 
-keywords: microsoft, azure, netapp, data fabric, hybrid cloud, cloud, public cloud, networking, marketplace, virtual machine, vnet, quick, getting started, install, installing, deploy, deploying, setup, setting up, launching, requirements, prerequisites, cloud central, permissions, custom role, role, json, permissions, virtual machine, video, connectivity, internet, outbound, endpoint, connection, networks, vpn, replicating, policy, iam, setupasservice, sign up, cloud manager, cloud volumes ontap, cloud ontap, subscription, create 
+keywords: microsoft, azure, netapp, data fabric, hybrid cloud, cloud, public cloud, networking, marketplace, virtual machine, vnet, quick, getting started, install, installing, deploy, deploying, setup, setting up, launching, requirements, prerequisites, cloud central, permissions, custom role, role, json, permissions, virtual machine, video, connectivity, internet, outbound, endpoint, connection, networks, vpn, replicating, policy, iam, setupasservice, sign up, cloud manager, BlueXP, cloud volumes ontap, cloud ontap, subscription, create 
 summary: 몇 가지 단계를 통해 Azure용 Cloud Volumes ONTAP를 시작하십시오. 
 ---
 = Azure에서 Cloud Volumes ONTAP를 빠르게 시작합니다
@@ -20,10 +20,10 @@ summary: 몇 가지 단계를 통해 Azure용 Cloud Volumes ONTAP를 시작하�
 가 없는 경우 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["커넥터"^] 그러나 계정 관리자는 계정을 만들어야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Azure에서 커넥터를 만드는 방법에 대해 알아봅니다"^].
 
 [role="quick-margin-para"]
-첫 번째 Cloud Volumes ONTAP 작업 환경을 생성할 때 아직 커넥터가 없는 경우 Cloud Manager에서 커넥터를 배포할지 묻는 메시지를 표시합니다.
+첫 번째 Cloud Volumes ONTAP 작업 환경을 만들 때 BlueXP(이전 Cloud Manager)에서 아직 커넥터가 없으면 커넥터를 배포하라는 메시지를 표시합니다.
 
 [role="quick-margin-para"]
-Cloud Manager는 워크로드 요구사항에 맞게 사전 구성된 패키지를 제공하거나 자체 구성을 생성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다. link:task-planning-your-config-azure.html["자세한 정보"].
+BlueXP는 워크로드 요구 사항에 맞는 사전 구성된 패키지를 제공하거나 사용자가 직접 구성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다. link:task-planning-your-config-azure.html["자세한 정보"].
 
 .span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] Alt="3"></span>네트워크 설정
 . VNET와 서브넷이 커넥터와 Cloud Volumes ONTAP 간의 연결을 지원하는지 확인합니다.
@@ -40,8 +40,8 @@ link:reference-networking-azure.html["네트워킹 요구 사항에 대해 자�
 작업 환경 추가 * 를 클릭하고 배포할 시스템 유형을 선택한 다음 마법사의 단계를 완료합니다. link:task-deploying-otc-azure.html["단계별 지침을 읽습니다"].
 
 .관련 링크
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Cloud Manager에서 커넥터 생성"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["BlueXP에서 커넥터 만들기"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-azure-mktp.html["Azure Marketplace에서 커넥터 만들기"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Linux 호스트에 Connector 소프트웨어 설치"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Cloud Manager가 권한을 가지고 하는 일"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["권한을 가진 BlueXP의 기능"^]
 

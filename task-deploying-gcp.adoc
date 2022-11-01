@@ -53,9 +53,10 @@ link:task-set-up-licensing-gcp.html["라이센스 설정 방법에 대해 알아
 
 == GCP에서 단일 노드 시스템 시작
 
-Cloud Manager에서 작업 환경을 생성하여 GCP에서 Cloud Volumes ONTAP를 실행합니다.
+BlueXP에서 작업 환경을 만들어 GCP에서 Cloud Volumes ONTAP를 실행합니다.
 
 .단계
+. 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . [[subscribe]] Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 화면의 지시를 따릅니다.
 . * 위치 선택 *: * Google Cloud * 및 * Cloud Volumes ONTAP * 를 선택합니다.
 . 메시지가 표시되면 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["커넥터를 작성합니다"^].
@@ -69,25 +70,25 @@ Cloud Manager에서 작업 환경을 생성하여 GCP에서 Cloud Volumes ONTAP�
 | 필드에 입력합니다 | 설명 
 
 
-| 작업 환경 이름 | Cloud Manager에서는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 GCP VM 인스턴스 모두에 이름을 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다. 
+| 작업 환경 이름 | BlueXP는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 GCP VM 인스턴스 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다. 
 
 
 | 서비스 계정 이름입니다 | 를 사용할 계획인 경우 link:concept-data-tiering.html["데이터 계층화"] 또는 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["클라우드 백업"^] Cloud Volumes ONTAP를 사용하는 경우 * 서비스 계정 * 을 활성화하고 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택해야 합니다. link:task-creating-gcp-service-account.html["서비스 계정을 만드는 방법에 대해 알아봅니다"]. 
 
 
-| 레이블 추가 | 레이블은 GCP 리소스에 대한 메타데이터입니다. Cloud Manager는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 GCP 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 설명서: 라벨 리소스"^]. 
+| 레이블 추가 | 레이블은 GCP 리소스에 대한 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 GCP 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 설명서: 라벨 리소스"^]. 
 
 
 | 사용자 이름 및 암호 | Cloud Volumes ONTAP 클러스터 관리자 계정의 자격 증명입니다. 이러한 자격 증명을 사용하여 System Manager 또는 CLI를 통해 Cloud Volumes ONTAP에 연결할 수 있습니다. default_admin_user 이름을 유지하거나 사용자 지정 사용자 이름으로 변경합니다. 
 
 
 | 프로젝트 편집  a| 
-Cloud Volumes ONTAP가 상주할 프로젝트를 선택합니다. 기본 프로젝트는 Cloud Manager가 상주하는 프로젝트입니다.
+Cloud Volumes ONTAP가 상주할 프로젝트를 선택합니다. 기본 프로젝트는 BlueXP가 있는 프로젝트입니다.
 
-드롭다운 목록에 추가 프로젝트가 표시되지 않으면 Cloud Manager 서비스 계정을 다른 프로젝트와 연결하지 않은 것입니다. Google Cloud 콘솔로 이동하여 IAM 서비스를 열고 프로젝트를 선택합니다. Cloud Manager 역할이 있는 서비스 계정을 해당 프로젝트에 추가합니다. 각 프로젝트에 대해 이 단계를 반복해야 합니다.
+드롭다운 목록에 추가 프로젝트가 표시되지 않으면 BlueXP 서비스 계정을 다른 프로젝트와 연결하지 않은 것입니다. Google Cloud 콘솔로 이동하여 IAM 서비스를 열고 프로젝트를 선택합니다. BlueXP 역할이 있는 서비스 계정을 해당 프로젝트에 추가합니다. 각 프로젝트에 대해 이 단계를 반복해야 합니다.
 
 
-NOTE: Cloud Manager에 대해 설정한 서비스 계정입니다. link:task-creating-gcp-service-account.html["이 페이지에 설명되어 있습니다"].
+NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:task-creating-gcp-service-account.html["이 페이지에 설명되어 있습니다"].
 
 선택한 자격 증명을 구독과 연결하려면 * 구독 추가 * 를 클릭합니다.
 
@@ -114,7 +115,7 @@ video::video_subscribing_gcp.mp4[width=848,height=480]
 
 
 | 방화벽 정책을 생성했습니다  a| 
-Cloud Manager에서 방화벽 정책을 생성하도록 허용할 경우 트래픽을 허용하는 방법을 선택해야 합니다.
+BlueXP에서 방화벽 정책을 생성하도록 허용할 경우 트래픽을 허용하는 방법을 선택해야 합니다.
 
 ** 선택한 VPC 전용 * 을 선택한 경우 인바운드 트래픽에 대한 소스 필터는 선택한 VPC의 서브넷 범위와 커넥터가 있는 VPC의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.
 ** 모든 VPC * 를 선택한 경우 인바운드 트래픽의 소스 필터는 0.0.0.0/0 IP 범위입니다.
@@ -137,14 +138,14 @@ Cloud Manager에서 방화벽 정책을 생성하도록 허용할 경우 트래�
 . * 라이선스 *: 필요에 따라 Cloud Volumes ONTAP 버전을 변경하고 시스템 유형을 선택합니다.
 +
 
-NOTE: 선택한 버전에 대해 새로운 출시 후보, 일반 가용성 또는 패치 릴리스를 사용할 수 있는 경우, Cloud Manager는 작업 환경을 생성할 때 시스템을 해당 버전으로 업데이트합니다. 예를 들어, Cloud Volumes ONTAP 9.10.1 및 9.10.1 P4를 사용할 수 있는 경우 업데이트가 발생합니다. 업데이트는 한 릴리즈에서 다른 릴리즈로 발생하지 않습니다(예: 9.6에서 9.7로).
+NOTE: 선택한 버전에 대해 최신 출시 후보, 일반 가용성 또는 패치 릴리스를 사용할 수 있는 경우 BlueXP는 작업 환경을 만들 때 시스템을 해당 버전으로 업데이트합니다. 예를 들어, Cloud Volumes ONTAP 9.10.1 및 9.10.1 P4를 사용할 수 있는 경우 업데이트가 발생합니다. 업데이트는 한 릴리즈에서 다른 릴리즈로 발생하지 않습니다(예: 9.6에서 9.7로).
 
 . * 기본 스토리지 리소스 *: 초기 집계에 대한 설정(디스크 유형 및 각 디스크의 크기)을 선택합니다.
 +
 디스크 유형은 초기 볼륨입니다. 이후 볼륨에 대해 다른 디스크 유형을 선택할 수 있습니다.
 
 +
-디스크 크기는 초기 애그리게이트의 모든 디스크와 단순 프로비저닝 옵션을 사용할 때 Cloud Manager가 생성하는 추가 애그리게이트의 경우 모두 사용됩니다. 고급 할당 옵션을 사용하여 다른 디스크 크기를 사용하는 애그리게이트를 생성할 수 있습니다.
+디스크 크기는 초기 애그리게이트의 모든 디스크와 간단한 프로비저닝 옵션을 사용할 때 BlueXP가 생성하는 추가 애그리게이트에서 사용됩니다. 고급 할당 옵션을 사용하여 다른 디스크 크기를 사용하는 애그리게이트를 생성할 수 있습니다.
 
 +
 디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["GCP에서 시스템 사이징"].
@@ -167,7 +168,7 @@ link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오
 다음 사항에 유의하십시오.
 
 +
-** Cloud Manager는 Cloud Volumes ONTAP 인스턴스에서 서비스 계정을 설정합니다. 이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. Connector 서비스 계정을 계층화 서비스 계정의 사용자로 추가해야 합니다. 그렇지 않으면 Cloud Manager에서 선택할 수 없습니다.
+** BlueXP는 Cloud Volumes ONTAP 인스턴스에 서비스 계정을 설정합니다. 이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. Connector 서비스 계정을 계층화 서비스 계정의 사용자로 추가해야 합니다. 그렇지 않으면 BlueXP에서 선택할 수 없습니다
 ** GCP 계정 추가에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["9.6으로 데이터 계층화를 위해 GCP 계정 설정 및 추가"^].
 ** 볼륨을 생성하거나 편집할 때 특정 볼륨 계층화 정책을 선택할 수 있습니다.
 ** 데이터 계층화를 사용하지 않는 경우, 후속 애그리게이트에서 사용하도록 설정할 수 있지만 시스템을 끄고 GCP 콘솔에서 서비스 계정을 추가해야 합니다.
@@ -192,7 +193,7 @@ link:concept-client-protocols.html["지원되는 클라이언트 프로토콜 �
 | 크기 | 입력할 수 있는 최대 크기는 씬 프로비저닝의 사용 여부에 따라 크게 달라집니다. 이를 통해 현재 사용 가능한 물리적 스토리지보다 더 큰 볼륨을 생성할 수 있습니다. 
 
 
-| 액세스 제어(NFS에만 해당) | 엑스포트 정책은 볼륨에 액세스할 수 있는 서브넷의 클라이언트를 정의합니다. 기본적으로 Cloud Manager는 서브넷의 모든 인스턴스에 대한 액세스를 제공하는 값을 입력합니다. 
+| 액세스 제어(NFS에만 해당) | 엑스포트 정책은 볼륨에 액세스할 수 있는 서브넷의 클라이언트를 정의합니다. 기본적으로 BlueXP는 서브넷의 모든 인스턴스에 대한 액세스를 제공하는 값을 입력합니다. 
 
 
 | 권한 및 사용자/그룹(CIFS 전용) | 이러한 필드를 사용하면 사용자 및 그룹의 공유에 대한 액세스 수준(액세스 제어 목록 또는 ACL라고도 함)을 제어할 수 있습니다. 로컬 또는 도메인 Windows 사용자 또는 그룹, UNIX 사용자 또는 그룹을 지정할 수 있습니다. 도메인 Windows 사용자 이름을 지정하는 경우 domain\username 형식을 사용하여 사용자의 도메인을 포함해야 합니다. 
@@ -204,7 +205,7 @@ link:concept-client-protocols.html["지원되는 클라이언트 프로토콜 �
 | 고급 옵션(NFS에만 해당) | 볼륨의 NFS 버전 선택: NFSv3 또는 NFSv4 
 
 
-| 이니시에이터 그룹 및 IQN(iSCSI 전용) | iSCSI 스토리지 타겟을 LUN(논리 유닛)이라고 하며 호스트에 표준 블록 디바이스로 표시됩니다. 이니시에이터 그룹은 iSCSI 호스트 노드 이름의 테이블이며 어떤 이니시에이터가 어떤 LUN을 액세스할 수 있는지 제어합니다. iSCSI 대상은 표준 이더넷 네트워크 어댑터(NIC), 소프트웨어 이니시에이터가 있는 TCP 오프로드 엔진(TOE) 카드, 통합 네트워크 어댑터(CNA) 또는 전용 호스트 파스트 어댑터(HBA)를 통해 네트워크에 연결되며 iSCSI 공인 이름(IQN)으로 식별됩니다. iSCSI 볼륨을 생성할 때 Cloud Manager에서 자동으로 LUN을 생성합니다. 볼륨 당 하나의 LUN만 생성하므로 관리가 필요 없습니다. 볼륨을 생성한 후 link:task-connect-lun.html["IQN을 사용하여 호스트에서 LUN에 연결합니다"]. 
+| 이니시에이터 그룹 및 IQN(iSCSI 전용) | iSCSI 스토리지 타겟을 LUN(논리 유닛)이라고 하며 호스트에 표준 블록 디바이스로 표시됩니다. 이니시에이터 그룹은 iSCSI 호스트 노드 이름의 테이블이며 어떤 이니시에이터가 어떤 LUN을 액세스할 수 있는지 제어합니다. iSCSI 대상은 표준 이더넷 네트워크 어댑터(NIC), 소프트웨어 이니시에이터가 있는 TCP 오프로드 엔진(TOE) 카드, 통합 네트워크 어댑터(CNA) 또는 전용 호스트 파스트 어댑터(HBA)를 통해 네트워크에 연결되며 iSCSI 공인 이름(IQN)으로 식별됩니다. iSCSI 볼륨을 생성할 때 BlueXP에서 자동으로 LUN을 생성합니다. 볼륨 당 하나의 LUN만 생성하므로 관리가 필요 없습니다. 볼륨을 생성한 후 link:task-connect-lun.html["IQN을 사용하여 호스트에서 LUN에 연결합니다"]. 
 |===
 +
 다음 이미지는 CIFS 프로토콜에 대해 작성된 볼륨 페이지를 보여 줍니다.
@@ -237,7 +238,7 @@ image:screenshot_cot_vol.gif["스크린샷: Cloud Volumes ONTAP 인스턴스에 
 | DNS 도메인 | SVM(Cloud Volumes ONTAP 스토리지 가상 머신)용 DNS 도메인 대부분의 경우 도메인은 AD 도메인과 동일합니다. 
 
 
-| NTP 서버 | Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager 자동화 문서"^] 를 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다. 
+| NTP 서버 | Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP 자동화 문서"^] 를 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다. 
 |===
 . * Usage Profile, Disk Type, Tiering Policy *: 스토리지 효율성 기능을 사용하도록 설정하고 필요한 경우 볼륨 계층화 정책을 변경할 것인지 선택합니다.
 +
@@ -246,14 +247,14 @@ image:screenshot_cot_vol.gif["스크린샷: Cloud Volumes ONTAP 인스턴스에 
 . * 검토 및 승인 *: 선택 사항을 검토 및 확인합니다.
 +
 .. 구성에 대한 세부 정보를 검토합니다.
-.. Cloud Manager가 구매할 지원 및 GCP 리소스에 대한 세부 정보를 검토하려면 * 자세히 정보 * 를 클릭합니다.
+.. BlueXP에서 구매할 지원 및 GCP 리소스에 대한 세부 정보를 검토하려면 * 추가 정보 * 를 클릭합니다.
 .. 이해함... * 확인란을 선택합니다.
 .. Go * 를 클릭합니다.
 
 
 
 
-Cloud Manager는 Cloud Volumes ONTAP 시스템을 구축합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.
+BlueXP는 Cloud Volumes ONTAP 시스템을 구축합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.
 
 Cloud Volumes ONTAP 시스템을 배포하는 데 문제가 있으면 오류 메시지를 검토합니다. 작업 환경을 선택하고 * 환경 다시 작성 * 을 클릭할 수도 있습니다.
 
@@ -271,9 +272,10 @@ Cloud Volumes ONTAP 시스템을 배포하는 데 문제가 있으면 오류 메
 
 == GCP에서 HA 쌍 시작
 
-Cloud Manager에서 작업 환경을 생성하여 GCP에서 Cloud Volumes ONTAP를 실행합니다.
+BlueXP에서 작업 환경을 만들어 GCP에서 Cloud Volumes ONTAP를 실행합니다.
 
 .단계
+. 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 화면의 지시를 따릅니다.
 . * 위치 선택 *: * Google Cloud * 및 * Cloud Volumes ONTAP HA * 를 선택합니다.
 . * 세부 정보 및 자격 증명 *: 프로젝트를 선택하고 클러스터 이름을 지정한 다음 서비스 계정을 선택하고 선택적으로 레이블을 추가한 다음 자격 증명을 지정합니다.
@@ -286,25 +288,25 @@ Cloud Manager에서 작업 환경을 생성하여 GCP에서 Cloud Volumes ONTAP�
 | 필드에 입력합니다 | 설명 
 
 
-| 작업 환경 이름 | Cloud Manager에서는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 GCP VM 인스턴스 모두에 이름을 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다. 
+| 작업 환경 이름 | BlueXP는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 GCP VM 인스턴스 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다. 
 
 
 | 서비스 계정 이름입니다 | 를 사용할 계획인 경우 link:concept-data-tiering.html["계층화"] 또는 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["클라우드 백업"^] 서비스를 사용하려면 * 서비스 계정 * 스위치를 활성화한 다음 미리 정의된 스토리지 관리자 역할이 있는 서비스 계정을 선택해야 합니다. 
 
 
-| 레이블 추가 | 레이블은 GCP 리소스에 대한 메타데이터입니다. Cloud Manager는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 GCP 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 설명서: 라벨 리소스"^]. 
+| 레이블 추가 | 레이블은 GCP 리소스에 대한 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 GCP 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 설명서: 라벨 리소스"^]. 
 
 
 | 사용자 이름 및 암호 | Cloud Volumes ONTAP 클러스터 관리자 계정의 자격 증명입니다. 이러한 자격 증명을 사용하여 System Manager 또는 CLI를 통해 Cloud Volumes ONTAP에 연결할 수 있습니다. default_admin_user 이름을 유지하거나 사용자 지정 사용자 이름으로 변경합니다. 
 
 
 | 프로젝트 편집  a| 
-Cloud Volumes ONTAP가 상주할 프로젝트를 선택합니다. 기본 프로젝트는 Cloud Manager가 상주하는 프로젝트입니다.
+Cloud Volumes ONTAP가 상주할 프로젝트를 선택합니다. 기본 프로젝트는 BlueXP가 있는 프로젝트입니다.
 
-드롭다운 목록에 추가 프로젝트가 표시되지 않으면 Cloud Manager 서비스 계정을 다른 프로젝트와 연결하지 않은 것입니다. Google Cloud 콘솔로 이동하여 IAM 서비스를 열고 프로젝트를 선택합니다. Cloud Manager 역할이 있는 서비스 계정을 해당 프로젝트에 추가합니다. 각 프로젝트에 대해 이 단계를 반복해야 합니다.
+드롭다운 목록에 추가 프로젝트가 표시되지 않으면 BlueXP 서비스 계정을 다른 프로젝트와 연결하지 않은 것입니다. Google Cloud 콘솔로 이동하여 IAM 서비스를 열고 프로젝트를 선택합니다. BlueXP 역할이 있는 서비스 계정을 해당 프로젝트에 추가합니다. 각 프로젝트에 대해 이 단계를 반복해야 합니다.
 
 
-NOTE: Cloud Manager에 대해 설정한 서비스 계정입니다. link:task-creating-gcp-service-account.html["이 페이지에 설명되어 있습니다"].
+NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:task-creating-gcp-service-account.html["이 페이지에 설명되어 있습니다"].
 
 선택한 자격 증명을 구독과 연결하려면 * 구독 추가 * 를 클릭합니다.
 
@@ -335,7 +337,7 @@ link:reference-networking-gcp.html["네트워킹 요구 사항에 대해 자세�
 
 
 | 생성된 정책  a| 
-Cloud Manager에서 방화벽 정책을 생성하도록 허용할 경우 트래픽을 허용하는 방법을 선택해야 합니다.
+BlueXP에서 방화벽 정책을 생성하도록 허용할 경우 트래픽을 허용하는 방법을 선택해야 합니다.
 
 ** 선택한 VPC 전용 * 을 선택한 경우 인바운드 트래픽에 대한 소스 필터는 선택한 VPC의 서브넷 범위와 커넥터가 있는 VPC의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.
 ** 모든 VPC * 를 선택한 경우 인바운드 트래픽의 소스 필터는 0.0.0.0/0 IP 범위입니다.
@@ -358,14 +360,14 @@ Cloud Manager에서 방화벽 정책을 생성하도록 허용할 경우 트래�
 . * 라이선스 *: 필요에 따라 Cloud Volumes ONTAP 버전을 변경하고 시스템 유형을 선택합니다.
 +
 
-NOTE: 선택한 버전에 대해 새로운 출시 후보, 일반 가용성 또는 패치 릴리스를 사용할 수 있는 경우, Cloud Manager는 작업 환경을 생성할 때 시스템을 해당 버전으로 업데이트합니다. 예를 들어, Cloud Volumes ONTAP 9.10.1 및 9.10.1 P4를 사용할 수 있는 경우 업데이트가 발생합니다. 업데이트는 한 릴리즈에서 다른 릴리즈로 발생하지 않습니다(예: 9.6에서 9.7로).
+NOTE: 선택한 버전에 대해 최신 출시 후보, 일반 가용성 또는 패치 릴리스를 사용할 수 있는 경우 BlueXP는 작업 환경을 만들 때 시스템을 해당 버전으로 업데이트합니다. 예를 들어, Cloud Volumes ONTAP 9.10.1 및 9.10.1 P4를 사용할 수 있는 경우 업데이트가 발생합니다. 업데이트는 한 릴리즈에서 다른 릴리즈로 발생하지 않습니다(예: 9.6에서 9.7로).
 
 . * 기본 스토리지 리소스 *: 초기 집계에 대한 설정(디스크 유형 및 각 디스크의 크기)을 선택합니다.
 +
 디스크 유형은 초기 볼륨입니다. 이후 볼륨에 대해 다른 디스크 유형을 선택할 수 있습니다.
 
 +
-디스크 크기는 초기 애그리게이트의 모든 디스크와 단순 프로비저닝 옵션을 사용할 때 Cloud Manager가 생성하는 추가 애그리게이트의 경우 모두 사용됩니다. 고급 할당 옵션을 사용하여 다른 디스크 크기를 사용하는 애그리게이트를 생성할 수 있습니다.
+디스크 크기는 초기 애그리게이트의 모든 디스크와 간단한 프로비저닝 옵션을 사용할 때 BlueXP가 생성하는 추가 애그리게이트에서 사용됩니다. 고급 할당 옵션을 사용하여 다른 디스크 크기를 사용하는 애그리게이트를 생성할 수 있습니다.
 
 +
 디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["GCP에서 시스템 사이징"].
@@ -379,7 +381,7 @@ NOTE: 선택한 버전에 대해 새로운 출시 후보, 일반 가용성 또�
 다음 사항에 유의하십시오.
 
 +
-** Cloud Manager는 Cloud Volumes ONTAP 인스턴스에서 서비스 계정을 설정합니다. 이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. Connector 서비스 계정을 계층화 서비스 계정의 사용자로 추가해야 합니다. 그렇지 않으면 Cloud Manager에서 선택할 수 없습니다.
+** BlueXP는 Cloud Volumes ONTAP 인스턴스에 서비스 계정을 설정합니다. 이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. Connector 서비스 계정을 계층화 서비스 계정의 사용자로 추가해야 합니다. 그렇지 않으면 BlueXP에서 선택할 수 없습니다.
 ** 볼륨을 생성하거나 편집할 때 특정 볼륨 계층화 정책을 선택할 수 있습니다.
 ** 데이터 계층화를 사용하지 않는 경우, 후속 애그리게이트에서 사용하도록 설정할 수 있지만 시스템을 끄고 GCP 콘솔에서 서비스 계정을 추가해야 합니다.
 +
@@ -403,7 +405,7 @@ link:concept-client-protocols.html["지원되는 클라이언트 프로토콜 �
 | 크기 | 입력할 수 있는 최대 크기는 씬 프로비저닝의 사용 여부에 따라 크게 달라집니다. 이를 통해 현재 사용 가능한 물리적 스토리지보다 더 큰 볼륨을 생성할 수 있습니다. 
 
 
-| 액세스 제어(NFS에만 해당) | 엑스포트 정책은 볼륨에 액세스할 수 있는 서브넷의 클라이언트를 정의합니다. 기본적으로 Cloud Manager는 서브넷의 모든 인스턴스에 대한 액세스를 제공하는 값을 입력합니다. 
+| 액세스 제어(NFS에만 해당) | 엑스포트 정책은 볼륨에 액세스할 수 있는 서브넷의 클라이언트를 정의합니다. 기본적으로 BlueXP는 서브넷의 모든 인스턴스에 대한 액세스를 제공하는 값을 입력합니다. 
 
 
 | 권한 및 사용자/그룹(CIFS 전용) | 이러한 필드를 사용하면 사용자 및 그룹의 공유에 대한 액세스 수준(액세스 제어 목록 또는 ACL라고도 함)을 제어할 수 있습니다. 로컬 또는 도메인 Windows 사용자 또는 그룹, UNIX 사용자 또는 그룹을 지정할 수 있습니다. 도메인 Windows 사용자 이름을 지정하는 경우 domain\username 형식을 사용하여 사용자의 도메인을 포함해야 합니다. 
@@ -415,7 +417,7 @@ link:concept-client-protocols.html["지원되는 클라이언트 프로토콜 �
 | 고급 옵션(NFS에만 해당) | 볼륨의 NFS 버전 선택: NFSv3 또는 NFSv4 
 
 
-| 이니시에이터 그룹 및 IQN(iSCSI 전용) | iSCSI 스토리지 타겟을 LUN(논리 유닛)이라고 하며 호스트에 표준 블록 디바이스로 표시됩니다. 이니시에이터 그룹은 iSCSI 호스트 노드 이름의 테이블이며 어떤 이니시에이터가 어떤 LUN을 액세스할 수 있는지 제어합니다. iSCSI 대상은 표준 이더넷 네트워크 어댑터(NIC), 소프트웨어 이니시에이터가 있는 TCP 오프로드 엔진(TOE) 카드, 통합 네트워크 어댑터(CNA) 또는 전용 호스트 파스트 어댑터(HBA)를 통해 네트워크에 연결되며 iSCSI 공인 이름(IQN)으로 식별됩니다. iSCSI 볼륨을 생성할 때 Cloud Manager에서 자동으로 LUN을 생성합니다. 볼륨 당 하나의 LUN만 생성하므로 관리가 필요 없습니다. 볼륨을 생성한 후 link:task-connect-lun.html["IQN을 사용하여 호스트에서 LUN에 연결합니다"]. 
+| 이니시에이터 그룹 및 IQN(iSCSI 전용) | iSCSI 스토리지 타겟을 LUN(논리 유닛)이라고 하며 호스트에 표준 블록 디바이스로 표시됩니다. 이니시에이터 그룹은 iSCSI 호스트 노드 이름의 테이블이며 어떤 이니시에이터가 어떤 LUN을 액세스할 수 있는지 제어합니다. iSCSI 대상은 표준 이더넷 네트워크 어댑터(NIC), 소프트웨어 이니시에이터가 있는 TCP 오프로드 엔진(TOE) 카드, 통합 네트워크 어댑터(CNA) 또는 전용 호스트 파스트 어댑터(HBA)를 통해 네트워크에 연결되며 iSCSI 공인 이름(IQN)으로 식별됩니다. iSCSI 볼륨을 생성할 때 BlueXP에서 자동으로 LUN을 생성합니다. 볼륨 당 하나의 LUN만 생성하므로 관리가 필요 없습니다. 볼륨을 생성한 후 link:task-connect-lun.html["IQN을 사용하여 호스트에서 LUN에 연결합니다"]. 
 |===
 +
 다음 이미지는 CIFS 프로토콜에 대해 작성된 볼륨 페이지를 보여 줍니다.
@@ -448,7 +450,7 @@ image:screenshot_cot_vol.gif["스크린샷: Cloud Volumes ONTAP 인스턴스에 
 | DNS 도메인 | SVM(Cloud Volumes ONTAP 스토리지 가상 머신)용 DNS 도메인 대부분의 경우 도메인은 AD 도메인과 동일합니다. 
 
 
-| NTP 서버 | Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager 자동화 문서"^] 를 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다. 
+| NTP 서버 | Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP 자동화 문서"^] 를 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다. 
 |===
 . * Usage Profile, Disk Type, Tiering Policy *: 스토리지 효율성 기능을 사용하도록 설정하고 필요한 경우 볼륨 계층화 정책을 변경할 것인지 선택합니다.
 +
@@ -457,14 +459,14 @@ image:screenshot_cot_vol.gif["스크린샷: Cloud Volumes ONTAP 인스턴스에 
 . * 검토 및 승인 *: 선택 사항을 검토 및 확인합니다.
 +
 .. 구성에 대한 세부 정보를 검토합니다.
-.. Cloud Manager가 구매할 지원 및 GCP 리소스에 대한 세부 정보를 검토하려면 * 자세히 정보 * 를 클릭합니다.
+.. BlueXP에서 구매할 지원 및 GCP 리소스에 대한 세부 정보를 검토하려면 * 추가 정보 * 를 클릭합니다.
 .. 이해함... * 확인란을 선택합니다.
 .. Go * 를 클릭합니다.
 
 
 
 
-Cloud Manager는 Cloud Volumes ONTAP 시스템을 구축합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.
+BlueXP는 Cloud Volumes ONTAP 시스템을 구축합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.
 
 Cloud Volumes ONTAP 시스템을 배포하는 데 문제가 있으면 오류 메시지를 검토합니다. 작업 환경을 선택하고 * 환경 다시 작성 * 을 클릭할 수도 있습니다.
 

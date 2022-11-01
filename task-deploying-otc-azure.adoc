@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploying-otc-azure.html 
 keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, azure, BYOL, license key, serial number, tags, azure tags, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, HA pair, associate subscription, azure marketplace, marketplace subscription 
-summary: Cloud Manager에서 Cloud Volumes ONTAP 작업 환경을 생성하여 Azure에서 단일 Cloud Volumes ONTAP 시스템을 시작할 수 있습니다. 
+summary: BlueXP에서 Cloud Volumes ONTAP 작업 환경을 만들어 Azure에서 단일 Cloud Volumes ONTAP 시스템을 실행할 수 있습니다. 
 ---
 = Azure에서 Cloud Volumes ONTAP 실행
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager에서 Cloud Volumes ONTAP 작업 환경을 생성하여 A
 
 
 [role="lead"]
-Cloud Manager에서 Cloud Volumes ONTAP 작업 환경을 생성하여 Azure에서 단일 노드 시스템 또는 HA 쌍을 시작할 수 있습니다.
+BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성하여 Azure에서 단일 노드 시스템 또는 HA 쌍을 시작할 수 있습니다.
 
 작업 환경을 만들려면 다음이 필요합니다.
 
@@ -35,17 +35,18 @@ link:task-set-up-licensing-azure.html["라이센스 설정 방법에 대해 알�
 
 
 
-Cloud Manager는 Azure에서 Cloud Volumes ONTAP 시스템을 생성할 때 리소스 그룹, 네트워크 인터페이스, 스토리지 계정 등과 같은 여러 Azure 개체를 생성합니다. 마법사 마지막에서 리소스 요약을 검토할 수 있습니다.
+BlueXP는 Azure에서 Cloud Volumes ONTAP 시스템을 생성할 때 리소스 그룹, 네트워크 인터페이스 및 스토리지 계정과 같은 여러 Azure 개체를 생성합니다. 마법사 마지막에서 리소스 요약을 검토할 수 있습니다.
 
 [WARNING]
 .데이터 손실 가능성
 ====
 모범 사례는 각 Cloud Volumes ONTAP 시스템에 새로운 전용 리소스 그룹을 사용하는 것입니다.
 
-기존 공유 리소스 그룹에 Cloud Volumes ONTAP를 배포하는 것은 데이터 손실 위험이 있기 때문에 권장되지 않습니다. Cloud Manager는 배포 실패 또는 삭제 시 공유 리소스 그룹에서 Cloud Volumes ONTAP 리소스를 제거할 수 있지만 Azure 사용자는 실수로 공유 리소스 그룹에서 Cloud Volumes ONTAP 리소스를 삭제할 수 있습니다.
+기존 공유 리소스 그룹에 Cloud Volumes ONTAP를 배포하는 것은 데이터 손실 위험이 있기 때문에 권장되지 않습니다. BlueXP는 배포 실패 또는 삭제 시 공유 리소스 그룹에서 Cloud Volumes ONTAP 리소스를 제거할 수 있지만 Azure 사용자는 실수로 공유 리소스 그룹에서 Cloud Volumes ONTAP 리소스를 삭제할 수 있습니다.
 
 ====
 .단계
+. 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . [[subscribe]] Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 화면의 지시를 따릅니다.
 . * 위치 선택 *: * Microsoft Azure * 및 * Cloud Volumes ONTAP 단일 노드 * 또는 * Cloud Volumes ONTAP 고가용성 * 을 선택합니다.
 . 메시지가 표시되면 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["커넥터를 작성합니다"^].
@@ -59,10 +60,10 @@ Cloud Manager는 Azure에서 Cloud Volumes ONTAP 시스템을 생성할 때 리�
 | 필드에 입력합니다 | 설명 
 
 
-| 작업 환경 이름 | Cloud Manager에서는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 Azure 가상 머신 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다. 
+| 작업 환경 이름 | BlueXP는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 Azure 가상 시스템 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다. 
 
 
-| 리소스 그룹 태그 | 태그는 Azure 리소스에 대한 메타데이터입니다. 이 필드에 태그를 입력하면 Cloud Manager가 Cloud Volumes ONTAP 시스템과 연결된 리소스 그룹에 태그를 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 태그를 추가할 수 있으며, 생성된 후에는 더 많은 태그를 추가할 수 있습니다. API는 작업 환경을 생성할 때 태그를 4개로 제한하지 않습니다. 태그에 대한 자세한 내용은 을 참조하십시오 https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Microsoft Azure 문서: 태그를 사용하여 Azure 리소스를 구성합니다"^]. 
+| 리소스 그룹 태그 | 태그는 Azure 리소스에 대한 메타데이터입니다. 이 필드에 태그를 입력하면 BlueXP가 Cloud Volumes ONTAP 시스템과 연결된 리소스 그룹에 태그를 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 태그를 추가할 수 있으며, 생성된 후에는 더 많은 태그를 추가할 수 있습니다. API는 작업 환경을 생성할 때 태그를 4개로 제한하지 않습니다. 태그에 대한 자세한 내용은 을 참조하십시오 https://azure.microsoft.com/documentation/articles/resource-group-using-tags/["Microsoft Azure 문서: 태그를 사용하여 Azure 리소스를 구성합니다"^]. 
 
 
 | 사용자 이름 및 암호 | Cloud Volumes ONTAP 클러스터 관리자 계정의 자격 증명입니다. 이러한 자격 증명을 사용하여 System Manager 또는 CLI를 통해 Cloud Volumes ONTAP에 연결할 수 있습니다. default_admin_user 이름을 유지하거나 사용자 지정 사용자 이름으로 변경합니다. 
@@ -77,14 +78,13 @@ Cloud Manager는 Azure에서 Cloud Volumes ONTAP 시스템을 생성할 때 리�
 video::video_subscribing_azure.mp4[width=848,height=480]
 . * 서비스 *: Cloud Volumes ONTAP에서 사용하지 않을 개별 서비스를 활성화 또는 비활성화합니다.
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["클라우드 데이터 센스에 대해 자세히 알아보십시오"^].
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup에 대해 자세히 알아보십시오"^].
-** https://docs.netapp.com/us-en/cloud-manager-monitoring/concept-monitoring.html["모니터링 서비스에 대해 자세히 알아보십시오"^].
+** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["클라우드 데이터 센스에 대해 자세히 알아보십시오"^]
+** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup에 대해 자세히 알아보십시오"^]
 
 
 . * Location *: 지역, 가용성 영역, VNET 및 서브넷을 선택한 다음 확인란을 선택하여 Connector와 대상 위치 간의 네트워크 연결을 확인합니다.
 +
-단일 노드 시스템의 경우 Cloud Volumes ONTAP를 구축할 가용성 영역을 선택할 수 있습니다. AZ를 선택하지 않으면 Cloud Manager에서 자동으로 AZ를 선택합니다.
+단일 노드 시스템의 경우 Cloud Volumes ONTAP를 구축할 가용성 영역을 선택할 수 있습니다. AZ를 선택하지 않으면 BlueXP가 사용자를 위해 하나를 선택합니다.
 
 . * 연결 *: 새 리소스 그룹 또는 기존 리소스 그룹을 선택한 다음 미리 정의된 보안 그룹을 사용할지 아니면 직접 사용할 것인지 선택합니다.
 +
@@ -96,21 +96,21 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 | 필드에 입력합니다 | 설명 
 
 
-| 가용성 영역 | 단일 노드 시스템의 경우 Cloud Volumes ONTAP를 구축할 가용성 영역을 선택할 수 있습니다. AZ를 선택하지 않으면 Cloud Manager에서 자동으로 AZ를 선택합니다. 
+| 가용성 영역 | 단일 노드 시스템의 경우 Cloud Volumes ONTAP를 구축할 가용성 영역을 선택할 수 있습니다. AZ를 선택하지 않으면 BlueXP가 사용자를 위해 하나를 선택합니다. 
 
 
 | 리소스 그룹  a| 
 Cloud Volumes ONTAP에 대한 새 리소스 그룹을 만들거나 기존 리소스 그룹을 사용합니다. 모범 사례는 Cloud Volumes ONTAP에 대한 새로운 전용 리소스 그룹을 사용하는 것입니다. 기존 공유 리소스 그룹에 Cloud Volumes ONTAP를 배포할 수는 있지만 데이터 손실 위험 때문에 권장되지 않습니다. 자세한 내용은 위의 경고를 참조하십시오.
 
-Azure에 구축하는 각 Cloud Volumes ONTAP HA 쌍에 대해 전용 리소스 그룹을 사용해야 합니다. 리소스 그룹에서는 하나의 HA 쌍만 지원됩니다. Azure 리소스 그룹에 두 번째 Cloud Volumes ONTAP HA 쌍을 구축하려고 하면 Cloud Manager에서 연결 문제가 발생합니다.
+Azure에 구축하는 각 Cloud Volumes ONTAP HA 쌍에 대해 전용 리소스 그룹을 사용해야 합니다. 리소스 그룹에서는 하나의 HA 쌍만 지원됩니다. Azure 리소스 그룹에 두 번째 Cloud Volumes ONTAP HA 쌍을 배포하려고 하면 BlueXP에서 연결 문제가 발생합니다.
 
 
-TIP: 사용 중인 Azure 계정에 가 있는 경우 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["필수 권한"^], Cloud Manager는 배포 실패 또는 삭제 시 리소스 그룹에서 Cloud Volumes ONTAP 리소스를 제거합니다.
+TIP: 사용 중인 Azure 계정에 가 있는 경우 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["필수 권한"^], BlueXP는 배포 실패 또는 삭제 시 리소스 그룹에서 Cloud Volumes ONTAP 리소스를 제거합니다.
 
 
 
 | 보안 그룹을 생성했습니다  a| 
-Cloud Manager에서 보안 그룹을 생성하도록 허용하는 경우 트래픽을 허용하는 방법을 선택해야 합니다.
+BlueXP에서 보안 그룹을 생성하도록 하면 트래픽을 허용하는 방법을 선택해야 합니다.
 
 ** 선택한 VNET만 * 을 선택한 경우 인바운드 트래픽의 소스는 선택한 VNET의 서브넷 범위와 커넥터가 상주하는 VNET의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.
 ** All VNets * 를 선택한 경우 인바운드 트래픽의 소스는 0.0.0.0/0 IP 범위입니다.
@@ -133,16 +133,16 @@ Cloud Manager에서 보안 그룹을 생성하도록 허용하는 경우 트래�
 . * 라이선스 *: 필요에 따라 Cloud Volumes ONTAP 버전을 변경하고 가상 머신 유형을 선택합니다.
 +
 
-NOTE: 선택한 버전에 대해 새로운 출시 후보, 일반 가용성 또는 패치 릴리스를 사용할 수 있는 경우, Cloud Manager는 작업 환경을 생성할 때 시스템을 해당 버전으로 업데이트합니다. 예를 들어, Cloud Volumes ONTAP 9.10.1 및 9.10.1 P4를 사용할 수 있는 경우 업데이트가 발생합니다. 업데이트는 한 릴리즈에서 다른 릴리즈로 발생하지 않습니다(예: 9.6에서 9.7로).
+NOTE: 선택한 버전에 대해 최신 출시 후보, 일반 가용성 또는 패치 릴리스를 사용할 수 있는 경우 BlueXP는 작업 환경을 만들 때 시스템을 해당 버전으로 업데이트합니다. 예를 들어, Cloud Volumes ONTAP 9.10.1 및 9.10.1 P4를 사용할 수 있는 경우 업데이트가 발생합니다. 업데이트는 한 릴리즈에서 다른 릴리즈로 발생하지 않습니다(예: 9.6에서 9.7로).
 
-. * Azure Marketplace * 구독: Cloud Manager가 Cloud Volumes ONTAP의 프로그래밍 방식 배포를 활성화할 수 없는 경우 다음 단계를 따르십시오.
+. * Azure Marketplace * 구독: BlueXP가 Cloud Volumes ONTAP의 프로그래밍 방식 배포를 활성화할 수 없는 경우 다음 단계를 따르십시오.
 . * 기본 스토리지 리소스 *: 초기 애그리게이트의 설정(디스크 유형, 각 디스크의 크기, Blob 스토리지까지 데이터 계층화 활성화 여부)을 선택합니다.
 +
 다음 사항에 유의하십시오.
 
 +
 ** 디스크 유형은 초기 볼륨입니다. 이후 볼륨에 대해 다른 디스크 유형을 선택할 수 있습니다.
-** 디스크 크기는 초기 애그리게이트의 모든 디스크와 단순 프로비저닝 옵션을 사용할 때 Cloud Manager가 생성하는 추가 애그리게이트의 경우 모두 사용됩니다. 고급 할당 옵션을 사용하여 다른 디스크 크기를 사용하는 애그리게이트를 생성할 수 있습니다.
+** 디스크 크기는 초기 애그리게이트의 모든 디스크와 간단한 프로비저닝 옵션을 사용할 때 BlueXP가 생성하는 추가 애그리게이트에서 사용됩니다. 고급 할당 옵션을 사용하여 다른 디스크 크기를 사용하는 애그리게이트를 생성할 수 있습니다.
 +
 디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 link:task-planning-your-config-azure.html#sizing-your-system-in-azure["Azure에서 시스템 사이징"].
 
@@ -186,7 +186,7 @@ link:concept-client-protocols.html["지원되는 클라이언트 프로토콜 �
 | 크기 | 입력할 수 있는 최대 크기는 씬 프로비저닝의 사용 여부에 따라 크게 달라집니다. 이를 통해 현재 사용 가능한 물리적 스토리지보다 더 큰 볼륨을 생성할 수 있습니다. 
 
 
-| 액세스 제어(NFS에만 해당) | 엑스포트 정책은 볼륨에 액세스할 수 있는 서브넷의 클라이언트를 정의합니다. 기본적으로 Cloud Manager는 서브넷의 모든 인스턴스에 대한 액세스를 제공하는 값을 입력합니다. 
+| 액세스 제어(NFS에만 해당) | 엑스포트 정책은 볼륨에 액세스할 수 있는 서브넷의 클라이언트를 정의합니다. 기본적으로 BlueXP는 서브넷의 모든 인스턴스에 대한 액세스를 제공하는 값을 입력합니다. 
 
 
 | 권한 및 사용자/그룹(CIFS 전용) | 이러한 필드를 사용하면 사용자 및 그룹의 공유에 대한 액세스 수준(액세스 제어 목록 또는 ACL라고도 함)을 제어할 수 있습니다. 로컬 또는 도메인 Windows 사용자 또는 그룹, UNIX 사용자 또는 그룹을 지정할 수 있습니다. 도메인 Windows 사용자 이름을 지정하는 경우 domain\username 형식을 사용하여 사용자의 도메인을 포함해야 합니다. 
@@ -198,7 +198,7 @@ link:concept-client-protocols.html["지원되는 클라이언트 프로토콜 �
 | 고급 옵션(NFS에만 해당) | 볼륨의 NFS 버전 선택: NFSv3 또는 NFSv4 
 
 
-| 이니시에이터 그룹 및 IQN(iSCSI 전용) | iSCSI 스토리지 타겟을 LUN(논리 유닛)이라고 하며 호스트에 표준 블록 디바이스로 표시됩니다. 이니시에이터 그룹은 iSCSI 호스트 노드 이름의 테이블이며 어떤 이니시에이터가 어떤 LUN을 액세스할 수 있는지 제어합니다. iSCSI 대상은 표준 이더넷 네트워크 어댑터(NIC), 소프트웨어 이니시에이터가 있는 TCP 오프로드 엔진(TOE) 카드, 통합 네트워크 어댑터(CNA) 또는 전용 호스트 파스트 어댑터(HBA)를 통해 네트워크에 연결되며 iSCSI 공인 이름(IQN)으로 식별됩니다. iSCSI 볼륨을 생성할 때 Cloud Manager에서 자동으로 LUN을 생성합니다. 볼륨 당 하나의 LUN만 생성하므로 관리가 필요 없습니다. 볼륨을 생성한 후 link:task-connect-lun.html["IQN을 사용하여 호스트에서 LUN에 연결합니다"]. 
+| 이니시에이터 그룹 및 IQN(iSCSI 전용) | iSCSI 스토리지 타겟을 LUN(논리 유닛)이라고 하며 호스트에 표준 블록 디바이스로 표시됩니다. 이니시에이터 그룹은 iSCSI 호스트 노드 이름의 테이블이며 어떤 이니시에이터가 어떤 LUN을 액세스할 수 있는지 제어합니다. iSCSI 대상은 표준 이더넷 네트워크 어댑터(NIC), 소프트웨어 이니시에이터가 있는 TCP 오프로드 엔진(TOE) 카드, 통합 네트워크 어댑터(CNA) 또는 전용 호스트 파스트 어댑터(HBA)를 통해 네트워크에 연결되며 iSCSI 공인 이름(IQN)으로 식별됩니다. iSCSI 볼륨을 생성할 때 BlueXP에서 자동으로 LUN을 생성합니다. 볼륨 당 하나의 LUN만 생성하므로 관리가 필요 없습니다. 볼륨을 생성한 후 link:task-connect-lun.html["IQN을 사용하여 호스트에서 LUN에 연결합니다"]. 
 |===
 +
 다음 이미지는 CIFS 프로토콜에 대해 작성된 볼륨 페이지를 보여 줍니다.
@@ -231,7 +231,7 @@ image:screenshot_cot_vol.gif["스크린샷: Cloud Volumes ONTAP 인스턴스에 
 | DNS 도메인 | SVM(Cloud Volumes ONTAP 스토리지 가상 머신)용 DNS 도메인 대부분의 경우 도메인은 AD 도메인과 동일합니다. 
 
 
-| NTP 서버 | Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager 자동화 문서"^] 를 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다. 
+| NTP 서버 | Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP 자동화 문서"^] 를 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다. 
 |===
 . * Usage Profile, Disk Type, Tiering Policy *: 스토리지 효율성 기능을 사용하도록 설정하고 필요한 경우 볼륨 계층화 정책을 변경할 것인지 선택합니다.
 +
@@ -240,14 +240,14 @@ image:screenshot_cot_vol.gif["스크린샷: Cloud Volumes ONTAP 인스턴스에 
 . * 검토 및 승인 *: 선택 사항을 검토 및 확인합니다.
 +
 .. 구성에 대한 세부 정보를 검토합니다.
-.. Cloud Manager가 구매할 지원 및 Azure 리소스에 대한 세부 정보를 검토하려면 * 추가 정보 * 를 클릭합니다.
+.. BlueXP가 구매할 지원 및 Azure 리소스에 대한 세부 정보를 검토하려면 * 추가 정보 * 를 클릭합니다.
 .. 이해함... * 확인란을 선택합니다.
 .. Go * 를 클릭합니다.
 
 
 
 
-Cloud Manager는 Cloud Volumes ONTAP 시스템을 구축합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.
+BlueXP는 Cloud Volumes ONTAP 시스템을 구축합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.
 
 Cloud Volumes ONTAP 시스템을 배포하는 데 문제가 있으면 오류 메시지를 검토합니다. 작업 환경을 선택하고 * 환경 다시 작성 * 을 클릭할 수도 있습니다.
 

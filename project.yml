@@ -133,7 +133,7 @@ sidebar:
         url: "/task-manage-capacity-settings.html"
     - title: 스토리지 VM 관리
       entries:
-      - title: Cloud Manager에서 스토리지 VM과 작업
+      - title: BlueXP에서 스토리지 VM과 작업합니다
         url: "/task-managing-svms.html"
       - title: AWS에서 스토리지 VM을 생성합니다
         flavor: aws
@@ -336,11 +336,11 @@ homepage:
     links:
     - title: NetApp 커뮤니티
       url: https://community.netapp.com/t5/Cloud-Volumes-ONTAP/bd-p/CloudVolumes
-    - title: Cloud Central 블로그
+    - title: BlueXP 웹 사이트 블로그
       url: https://cloud.netapp.com/blog/topic/cloud-volumes-ontap
     - title: 클라우드 웨비나
       url: https://cloud.netapp.com/events
 product-family:
-  name: Cloud Manager
+  name: BlueXP
   repo: cloud-manager-family
-  sidebar_label: 모든 Cloud Manager 설명서
+  sidebar_label: 모든 BlueXP 설명서

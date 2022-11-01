@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-networking-aws.html 
 keywords: networking, network, requirements, connection, connections, vpc, security group, security groups, subnets, vpn, internet, nat, s3, dns, ad, active directory, az, availability zone, floating IP, floating, SVM, management LIF, route, route tables, proxy, HTTP, private, tier, s3 endpoint, tiering, storage tier, storage tiering, proxy server, nat device, vpn, snapmanager, snapcenter, iscsi, nfs, cifs, nas, san, outbound, inbound, connections, autosupport, ha, ha pair, high availability 
-summary: Cloud Manager는 IP 주소, 넷마스크, 경로 등과 같은 Cloud Volumes ONTAP용 네트워킹 구성 요소 설정을 처리합니다. 아웃바운드 인터넷 액세스를 사용할 수 있는지, 충분한 전용 IP 주소를 사용할 수 있는지, 올바른 연결이 있는지 등을 확인해야 합니다. 
+summary: BlueXP는 IP 주소, 넷마스크 및 라우트와 같은 Cloud Volumes ONTAP용 네트워킹 구성 요소 설정을 처리합니다. 아웃바운드 인터넷 액세스를 사용할 수 있는지, 충분한 전용 IP 주소를 사용할 수 있는지, 올바른 연결이 있는지 등을 확인해야 합니다. 
 ---
 = AWS의 Cloud Volumes ONTAP에 대한 네트워킹 요구사항
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager는 IP 주소, 넷마스크, 경로 등과 같은 Cloud Vo
 
 
 [role="lead"]
-Cloud Manager는 IP 주소, 넷마스크, 경로 등과 같은 Cloud Volumes ONTAP용 네트워킹 구성 요소 설정을 처리합니다. 아웃바운드 인터넷 액세스를 사용할 수 있는지, 충분한 전용 IP 주소를 사용할 수 있는지, 올바른 연결이 있는지 등을 확인해야 합니다.
+BlueXP(이전의 Cloud Manager)는 IP 주소, 넷마스크 및 라우트와 같은 Cloud Volumes ONTAP용 네트워킹 구성 요소의 설정을 처리합니다. 아웃바운드 인터넷 액세스를 사용할 수 있는지, 충분한 전용 IP 주소를 사용할 수 있는지, 올바른 연결이 있는지 등을 확인해야 합니다.
 
 
 
@@ -36,13 +36,13 @@ Cloud Volumes ONTAP 노드를 사용하려면 NetApp AutoSupport에 대한 아�
 
 NAT 인스턴스가 있는 경우 개인 서브넷에서 인터넷으로 HTTPS 트래픽을 허용하는 인바운드 보안 그룹 규칙을 정의해야 합니다.
 
-AutoSupport 메시지를 보내는 데 아웃바운드 인터넷 연결을 사용할 수 없는 경우 Cloud Manager는 자동으로 Cloud Volumes ONTAP 시스템에서 커넥터를 프록시 서버로 사용하도록 구성합니다. 유일한 요구 사항은 커넥터의 보안 그룹이 포트 3128을 통한 _IN인바운드_연결을 허용하는지 확인하는 것입니다. Connector를 배포한 후 이 포트를 열어야 합니다.
+AutoSupport 메시지를 보내는 데 아웃바운드 인터넷 연결을 사용할 수 없는 경우 BlueXP는 자동으로 Cloud Volumes ONTAP 시스템에서 커넥터를 프록시 서버로 사용하도록 구성합니다. 유일한 요구 사항은 커넥터의 보안 그룹이 포트 3128을 통한 _IN인바운드_연결을 허용하는지 확인하는 것입니다. Connector를 배포한 후 이 포트를 열어야 합니다.
 
 Cloud Volumes ONTAP에 대해 엄격한 아웃바운드 규칙을 정의한 경우 Cloud Volumes ONTAP 보안 그룹이 포트 3128을 통한 _outbound_connection을 허용하는지 확인해야 합니다.
 
 아웃바운드 인터넷 액세스가 가능한지 확인한 후 AutoSupport를 테스트하여 메시지를 보낼 수 있는지 확인할 수 있습니다. 자세한 지침은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 문서: AutoSupport 설정"^].
 
-Cloud Manager에서 AutoSupport 메시지를 보낼 수 없다고 통지하면 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 구성 문제를 해결합니다"].
+BlueXP에서 AutoSupport 메시지를 보낼 수 없다고 알리는 경우 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 구성 문제를 해결합니다"].
 
 
 
@@ -56,15 +56,15 @@ HA 중재자 인스턴스는 스토리지 페일오버를 지원할 수 있도�
 
 === 전용 IP 주소
 
-Cloud Manager는 필요한 수의 프라이빗 IP 주소를 Cloud Volumes ONTAP에 자동으로 할당합니다. 네트워킹에 사용 가능한 개인 IP 주소가 충분한지 확인해야 합니다.
+BlueXP는 필요한 수의 전용 IP 주소를 Cloud Volumes ONTAP에 자동으로 할당합니다. 네트워킹에 사용 가능한 개인 IP 주소가 충분한지 확인해야 합니다.
 
-Cloud Manager가 Cloud Volumes ONTAP에 할당하는 LIF 수는 단일 노드 시스템을 구축하든 HA 쌍을 구축하든 관계없이 달라집니다. LIF는 물리적 포트와 연결된 IP 주소입니다.
+BlueXP에서 Cloud Volumes ONTAP에 할당하는 LIF 수는 단일 노드 시스템을 배포할지 HA 쌍을 구축하는지에 따라 달라집니다. LIF는 물리적 포트와 연결된 IP 주소입니다.
 
 
 
 ==== 단일 노드 시스템의 IP 주소입니다
 
-Cloud Manager는 단일 노드 시스템에 6개의 IP 주소를 할당합니다.
+BlueXP는 단일 노드 시스템에 6개의 IP 주소를 할당합니다.
 
 * 클러스터 관리 LIF
 * 노드 관리 LIF
@@ -160,7 +160,7 @@ TIP: 여러 가용성 영역에 구축된 경우 여러 LIF가 에 연결됩니�
 
 === 보안 그룹
 
-Cloud Manager에서 보안 그룹을 생성할 수 있으므로 보안 그룹을 생성할 필요가 없습니다. 직접 사용해야 하는 경우 을 참조하십시오 link:reference-security-groups.html["보안 그룹 규칙"].
+BlueXP에서는 보안 그룹을 만들 필요가 없습니다. 직접 사용해야 하는 경우 을 참조하십시오 link:reference-security-groups.html["보안 그룹 규칙"].
 
 
 
@@ -200,7 +200,7 @@ link:task-deploy-aws-shared-vpc.html["공유 서브넷에 HA 쌍을 구축하는
 
 == 여러 대의 AZs에서 HA 쌍에 대한 요구 사항
 
-추가 AWS 네트워킹 요구사항은 ZS(Multiple Availability Zones)를 사용하는 Cloud Volumes ONTAP HA 구성에 적용됩니다. 작업 환경을 생성할 때 Cloud Manager에 네트워킹 세부 정보를 입력해야 하므로 HA 쌍을 실행하기 전에 이러한 요구사항을 검토해야 합니다.
+추가 AWS 네트워킹 요구사항은 ZS(Multiple Availability Zones)를 사용하는 Cloud Volumes ONTAP HA 구성에 적용됩니다. 작업 환경을 생성할 때 BlueXP에 네트워킹 세부 정보를 입력해야 하므로 HA 쌍을 실행하기 전에 이러한 요구 사항을 검토해야 합니다.
 
 HA 쌍의 작동 방식을 이해하려면 를 참조하십시오 link:concept-ha.html["고가용성 쌍"].
 
@@ -218,7 +218,7 @@ NAS 데이터 및 클러스터/SVM 관리를 위한 부동 IP 주소:: 여러 AZ
 
 NOTE: Windows용 SnapDrive 또는 HA 쌍을 지원하는 SnapCenter를 사용하는 경우 SVM 관리 LIF에는 부동 IP 주소가 필요합니다.
 
-Cloud Volumes ONTAP HA 작업 환경을 생성할 때 Cloud Manager에 부동 IP 주소를 입력해야 합니다. Cloud Manager는 시스템을 시작할 때 HA 쌍에 IP 주소를 할당합니다.
+Cloud Volumes ONTAP HA 작업 환경을 생성할 때 BlueXP에서 부동 IP 주소를 입력해야 합니다. BlueXP는 시스템을 시작할 때 HA 쌍에 IP 주소를 할당합니다.
 
 부동 IP 주소는 HA 구성을 배포하는 AWS 지역의 모든 VPC에 대한 CIDR 블록 외부에 있어야 합니다. 유동 IP 주소를 해당 지역의 VPC 외부에 있는 논리적 서브넷으로 생각해 보십시오.
 
@@ -227,14 +227,14 @@ Cloud Volumes ONTAP HA 작업 환경을 생성할 때 Cloud Manager에 부동 IP
 image:diagram_ha_floating_ips.png["AWS 지역에 있는 5대의 VPC에 대한 CIDR 블록과 VPC의 CIDR 블록 외부에 있는 3개의 부동 IP 주소를 보여주는 개념적 이미지."]
 
 
-NOTE: Cloud Manager는 VPC 외부의 클라이언트에서 iSCSI 액세스 및 NAS 액세스를 위한 정적 IP 주소를 자동으로 생성합니다. 이러한 유형의 IP 주소에 대한 요구 사항을 충족할 필요는 없습니다.
+NOTE: BlueXP는 VPC 외부의 클라이언트에서 iSCSI 액세스 및 NAS 액세스를 위해 정적 IP 주소를 자동으로 생성합니다. 이러한 유형의 IP 주소에 대한 요구 사항을 충족할 필요는 없습니다.
 
 --
 VPC 외부에서 유동 IP 액세스를 지원하는 전송 게이트웨이:: 필요한 경우 link:task-setting-up-transit-gateway.html["AWS 전송 게이트웨이를 설정합니다"] HA 쌍이 상주하는 VPC 외부에서 HA 쌍의 부동 IP 주소에 액세스할 수 있도록 합니다.
-배관 테이블:: Cloud Manager에서 부동 IP 주소를 지정한 후 부동 IP 주소에 대한 라우트를 포함해야 하는 라우팅 테이블을 선택하라는 메시지가 표시됩니다. 이렇게 하면 클라이언트가 HA 쌍에 액세스할 수 있습니다.
+배관 테이블:: BlueXP에서 부동 IP 주소를 지정한 후 부동 IP 주소에 대한 경로를 포함해야 하는 라우팅 테이블을 선택하라는 메시지가 표시됩니다. 이렇게 하면 클라이언트가 HA 쌍에 액세스할 수 있습니다.
 +
 --
-VPC(기본 경로 테이블)에 있는 서브넷에 대해 하나의 라우팅 테이블만 있는 경우 Cloud Manager는 해당 라우팅 테이블에 부동 IP 주소를 자동으로 추가합니다. 둘 이상의 라우트 테이블이 있는 경우 HA 쌍을 시작할 때 올바른 라우트 테이블을 선택하는 것이 매우 중요합니다. 그렇지 않으면 일부 클라이언트가 Cloud Volumes ONTAP에 액세스하지 못할 수 있습니다.
+VPC(주 경로 테이블)에 있는 서브넷을 위한 경로 테이블이 하나만 있는 경우 BlueXP는 해당 라우팅 테이블에 부동 IP 주소를 자동으로 추가합니다. 둘 이상의 라우트 테이블이 있는 경우 HA 쌍을 시작할 때 올바른 라우트 테이블을 선택하는 것이 매우 중요합니다. 그렇지 않으면 일부 클라이언트가 Cloud Volumes ONTAP에 액세스하지 못할 수 있습니다.
 
 예를 들어, 서로 다른 라우팅 테이블에 연결된 두 개의 서브넷이 있을 수 있습니다. 라우트 테이블 A를 선택했지만 라우트 테이블 B는 선택하지 않은 경우, 라우트 테이블 A와 연결된 서브넷에 있는 클라이언트는 HA 쌍에 액세스할 수 있지만, 라우트 테이블 B와 연결된 서브넷에 있는 클라이언트는 액세스할 수 없습니다.
 
@@ -290,7 +290,7 @@ Connector를 사용하려면 공용 클라우드 환경 내의 리소스와 프�
 | https://support.netapp.com 으로 문의하십시오 | 라이센스 정보를 얻고 AutoSupport 메시지를 NetApp 지원 팀에 전송합니다. 
 
 
-| https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com 으로 문의하십시오 | Cloud Manager 내에서 SaaS 기능 및 서비스를 제공합니다. 
+| https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com 으로 문의하십시오 | BlueXP 내에서 SaaS 기능 및 서비스를 제공합니다. 
 
 
 | https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net 으로 문의하십시오 | Connector 및 해당 Docker 구성 요소를 업그레이드합니다. 

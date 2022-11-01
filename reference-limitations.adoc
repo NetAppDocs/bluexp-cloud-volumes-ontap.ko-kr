@@ -16,27 +16,27 @@ summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않�
 [role="lead"]
 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오.
 
-이러한 제한은 Cloud Manager의 Cloud Volumes ONTAP 관리에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어 자체의 제한 사항을 보려면 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limitations.html["Cloud Volumes ONTAP 릴리즈 노트 로 이동합니다"^]
+이러한 제한은 BlueXP(이전의 Cloud Manager)의 Cloud Volumes ONTAP 관리에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어 자체의 제한 사항을 보려면 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limitations.html["Cloud Volumes ONTAP 릴리즈 노트 로 이동합니다"^]
 
 
 
-== Cloud Manager는 FlexGroup 볼륨을 지원하지 않습니다
+== BlueXP는 FlexGroup 볼륨을 지원하지 않습니다
 
-Cloud Volumes ONTAP는 FlexGroup 볼륨을 지원하지만 Cloud Manager는 지원하지 않습니다. System Manager 또는 CLI에서 FlexGroup 볼륨을 생성하는 경우 Cloud Manager의 용량 관리 모드를 수동으로 설정해야 합니다. FlexGroup 볼륨에서 자동 모드가 제대로 작동하지 않을 수 있습니다.
+Cloud Volumes ONTAP는 FlexGroup 볼륨을 지원하지만 BlueXP는 지원하지 않습니다. 시스템 관리자 또는 CLI에서 FlexGroup 볼륨을 생성하는 경우 BlueXP의 용량 관리 모드를 수동으로 설정해야 합니다. FlexGroup 볼륨에서 자동 모드가 제대로 작동하지 않을 수 있습니다.
 
 
 
-== Cloud Manager는 Cloud Volumes ONTAP에서 S3를 지원하지 않습니다
+== BlueXP는 Cloud Volumes ONTAP에서 S3을 지원하지 않습니다
 
-Cloud Volumes ONTAP은 일부 클라우드 공급자의 스케일아웃 스토리지 옵션으로 S3를 지원하지만 Cloud Manager에서는 이 기능에 대한 관리 기능을 제공하지 않습니다. CLI를 사용하는 것이 Cloud Volumes ONTAP에서 S3 클라이언트 액세스를 구성하는 모범 사례입니다. 자세한 내용은 를 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["S3 구성 전원 가이드"^].
+Cloud Volumes ONTAP는 일부 클라우드 공급자의 스케일 아웃 스토리지 옵션으로 S3를 지원하지만 BlueXP는 이 기능에 대한 관리 기능을 제공하지 않습니다. CLI를 사용하는 것이 Cloud Volumes ONTAP에서 S3 클라이언트 액세스를 구성하는 모범 사례입니다. 자세한 내용은 를 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["S3 구성 전원 가이드"^].
 
 link:concept-client-protocols.html["S3 및 기타 클라이언트 프로토콜에 대한 Cloud Volumes ONTAP 지원에 대해 자세히 알아보십시오"].
 
 
 
-== Cloud Manager는 스토리지 VM의 재해 복구를 지원하지 않습니다
+== BlueXP는 스토리지 VM의 재해 복구를 지원하지 않습니다
 
-Cloud Manager는 스토리지 VM 재해 복구에 대한 설정 또는 오케스트레이션 지원을 제공하지 않습니다. System Manager 또는 CLI를 사용해야 합니다.
+BlueXP는 스토리지 VM 재해 복구에 대한 설정 또는 조정 지원을 제공하지 않습니다. System Manager 또는 CLI를 사용해야 합니다.
 
 * https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 재해 복구 준비 Express 가이드"^]
 * https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM 재해 복구 익스프레스 가이드 를 참조하십시오"^]

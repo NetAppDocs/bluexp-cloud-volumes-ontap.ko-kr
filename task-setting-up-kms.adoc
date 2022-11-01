@@ -19,14 +19,14 @@ Cloud Volumes ONTAP에서 Amazon 암호화를 사용하려면 AWS KMS(키 관리
 .단계
 . 활성 CMK(Customer Master Key)가 있는지 확인합니다.
 +
-CMK는 AWS로 관리되는 CMK 또는 고객이 관리하는 CMK가 될 수 있습니다. Cloud Manager 및 Cloud Volumes ONTAP와 동일한 AWS 계정 또는 다른 AWS 계정에 있을 수 있습니다.
+CMK는 AWS로 관리되는 CMK 또는 고객이 관리하는 CMK가 될 수 있습니다. BlueXP 및 Cloud Volumes ONTAP와 동일한 AWS 계정 또는 다른 AWS 계정에 있을 수 있습니다.
 
 +
 https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys["AWS 설명서:CMK(Customer Master Key)"^]
 
-. Cloud Manager에 권한을 제공하는 IAM 역할을 _KEY USER_로 추가하여 각 CMK에 대한 키 정책을 수정합니다.
+. BlueXP에 대한 권한을 제공하는 IAM 역할을 _KEY USER_로 추가하여 각 CMK에 대한 키 정책을 수정합니다.
 +
-IAM 역할을 주요 사용자로 추가하면 Cloud Manager에서 Cloud Volumes ONTAP와 함께 CMK를 사용할 수 있는 권한이 부여됩니다.
+IAM 역할을 주요 사용자로 추가하면 BlueXP에서 Cloud Volumes ONTAP와 함께 CMK를 사용할 수 있는 권한이 부여됩니다.
 
 +
 https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS 설명서:키 편집"^]
@@ -37,11 +37,11 @@ https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS 설
 .. 키를 선택합니다.
 .. General configuration * 창에서 키의 ARN을 복사합니다.
 +
-Cloud Volumes ONTAP 시스템을 생성할 때 클라우드 관리자에게 ARN을 제공해야 합니다.
+Cloud Volumes ONTAP 시스템을 생성할 때 ARN을 BlueXP에 제공해야 합니다.
 
-.. 다른 AWS 계정 * 창에서 Cloud Manager에 사용 권한을 제공하는 AWS 계정을 추가합니다.
+.. 다른 AWS 계정 * 창에서 BlueXP에 사용 권한을 제공하는 AWS 계정을 추가합니다.
 +
-대부분의 경우 Cloud Manager가 상주하는 계정입니다. Cloud Manager가 AWS에 설치되어 있지 않으면, Cloud Manager에 AWS 액세스 키를 제공한 계정이 될 수 있습니다.
+대부분의 경우 이 계정은 BlueXP가 있는 계정입니다. BlueXP가 AWS에 설치되어 있지 않은 경우 BlueXP에 AWS 액세스 키를 제공한 계정이 됩니다.
 
 +
 image:screenshot_cmk_add_accounts.gif["이 스크린샷은 AWS KMS 콘솔의 \"다른 AWS 계정 추가\" 버튼을 보여줍니다."]
@@ -49,11 +49,11 @@ image:screenshot_cmk_add_accounts.gif["이 스크린샷은 AWS KMS 콘솔의 \"�
 +
 image:screenshot_cmk_add_accounts_dialog.gif["이 스크린샷은 AWS KMS 콘솔의 \"기타 AWS 계정\" 대화 상자를 보여 줍니다."]
 
-.. 이제 Cloud Manager에 사용 권한을 제공하는 AWS 계정으로 전환하고 IAM 콘솔을 엽니다.
+.. 이제 BlueXP에 사용 권한을 제공하고 IAM 콘솔을 여는 AWS 계정으로 전환합니다.
 .. 아래에 나열된 권한을 포함하는 IAM 정책을 생성합니다.
-.. Cloud Manager에 권한을 제공하는 IAM 역할 또는 IAM 사용자에 정책을 연결합니다.
+.. BlueXP에 대한 권한을 제공하는 IAM 역할 또는 IAM 사용자에게 정책을 첨부합니다.
 +
-다음 정책은 Cloud Manager가 외부 AWS 계정에서 CMK를 사용하는 데 필요한 권한을 제공합니다. "리소스" 섹션에서 지역 및 계정 ID를 수정해야 합니다.
+다음 정책은 BlueXP가 외부 AWS 계정에서 CMK를 사용하는 데 필요한 권한을 제공합니다. "리소스" 섹션에서 지역 및 계정 ID를 수정해야 합니다.
 
 +
 [source, json]

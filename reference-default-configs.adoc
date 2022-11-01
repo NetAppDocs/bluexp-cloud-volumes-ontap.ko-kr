@@ -20,11 +20,11 @@ Cloud Volumes ONTAP가 기본적으로 어떻게 구성되어 있는지 이해�
 
 == 기본 설정
 
-* Cloud Volumes ONTAP를 구축할 때 Cloud Manager가 단일 데이터 서비스 스토리지 VM을 생성합니다. 일부 구성은 추가 스토리지 VM을 지원합니다. link:task-managing-svms.html["스토리지 VM 관리에 대해 자세히 알아보십시오"].
+* BlueXP는 Cloud Volumes ONTAP를 배포할 때 데이터 서비스 스토리지 VM을 하나만 생성합니다. 일부 구성은 추가 스토리지 VM을 지원합니다. link:task-managing-svms.html["스토리지 VM 관리에 대해 자세히 알아보십시오"].
 +
-Cloud Manager 3.9.5 릴리즈부터는 초기 스토리지 VM에서 논리적 공간 보고가 활성화됩니다. 공간이 논리적으로 보고되면 ONTAP에서는 스토리지 효율성 기능으로 절약된 모든 물리적 공간이 사용된 것으로 보고하도록 볼륨 공간을 보고합니다.
+BlueXP 3.9.5 릴리스부터는 초기 스토리지 VM에서 논리적 공간 보고가 활성화됩니다. 공간이 논리적으로 보고되면 ONTAP에서는 스토리지 효율성 기능으로 절약된 모든 물리적 공간이 사용된 것으로 보고하도록 볼륨 공간을 보고합니다.
 
-* Cloud Manager는 Cloud Volumes ONTAP에 다음과 같은 ONTAP 기능 라이센스를 자동으로 설치합니다.
+* BlueXP는 Cloud Volumes ONTAP에 다음과 같은 ONTAP 기능 라이센스를 자동으로 설치합니다.
 +
 ** CIFS를 선택합니다
 ** FlexCache
@@ -97,14 +97,14 @@ NOTE: 클라우드 공급자의 요구사항으로 인해 LIF 페일오버가 Cl
 +
 백업은 에서 액세스할 수 있습니다 https://ipaddress/occm/offboxconfig/[] 여기서 _ipaddress_는 커넥터 호스트의 IP 주소입니다.
 
-** Cloud Manager에서는 다른 관리 툴(예: System Manager 또는 CLI)과 몇 가지 볼륨 특성을 다르게 설정합니다.
+** BlueXP는 다른 관리 도구(예: System Manager 또는 CLI)와 몇 가지 볼륨 속성을 다르게 설정합니다.
 +
-다음 표에는 Cloud Manager가 기본값과 다르게 설정하는 볼륨 특성이 나열되어 있습니다.
+다음 표에는 BlueXP가 기본값과 다르게 설정하는 볼륨 특성이 나열되어 있습니다.
 
 +
 [cols="15,85"]
 |===
-| 속성 | Cloud Manager에서 설정한 값입니다 
+| 속성 | BlueXP에서 설정한 값입니다 
 
 
 | 자동 크기 조정 모드입니다 | 성장 
@@ -137,7 +137,7 @@ NOTE: 계정 관리자는 설정 페이지에서 이 값을 수정할 수 있습
 
 == 시스템 데이터용 내부 디스크
 
-Cloud Manager는 사용자 데이터를 위한 스토리지 외에 시스템 데이터를 위한 클라우드 스토리지도 구매합니다.
+BlueXP는 사용자 데이터를 위한 스토리지 외에도 시스템 데이터를 위한 클라우드 스토리지를 구입합니다.
 
 ifdef::aws[]
 
@@ -230,7 +230,7 @@ endif::gcp[]
 
 === 디스크가 상주하는 위치입니다
 
-Cloud Manager에서는 스토리지를 다음과 같이 레이아웃합니다.
+BlueXP는 다음과 같이 스토리지를 배치합니다.
 
 * 부팅 데이터는 인스턴스 또는 가상 머신에 연결된 디스크에 있습니다.
 +

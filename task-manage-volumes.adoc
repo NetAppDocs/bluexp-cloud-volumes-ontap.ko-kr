@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-manage-volumes.html 
 keywords: volumes, managing, cloning, editing, CIFS server, edit, flexclone, snapshot copy, restore, mount, delete, cifs setup, DNS, active directory, AD, domain, NetBIOS, identify, move, capacity, action required, clone, snapshot copies, restoring, vol move, volume move, move a volume, volume move slow, volume move performance 
-summary: Cloud Manager를 사용하면 볼륨 및 CIFS 서버를 관리할 수 있습니다. 또한 용량 문제를 방지하기 위해 볼륨을 이동하라는 메시지가 표시됩니다. 
+summary: BlueXP를 사용하면 볼륨 및 CIFS 서버를 관리할 수 있습니다. 또한 용량 문제를 방지하기 위해 볼륨을 이동하라는 메시지가 표시됩니다. 
 ---
 = 기존 볼륨 관리
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager를 사용하면 볼륨 및 CIFS 서버를 관리할 수 �
 
 
 [role="lead"]
-Cloud Manager를 사용하면 볼륨 및 CIFS 서버를 관리할 수 있습니다. 또한 용량 문제를 방지하기 위해 볼륨을 이동하라는 메시지가 표시됩니다.
+BlueXP를 사용하면 볼륨 및 CIFS 서버를 관리할 수 있습니다. 또한 용량 문제를 방지하기 위해 볼륨을 이동하라는 메시지가 표시됩니다.
 
 
 
@@ -23,6 +23,7 @@ Cloud Manager를 사용하면 볼륨 및 CIFS 서버를 관리할 수 있습니�
 스토리지 요구사항의 변화에 따라 볼륨을 관리할 수 있습니다. 볼륨을 보고, 편집하고, 클론, 복원 및 삭제할 수 있습니다.
 
 .단계
+. 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . Canvas 페이지에서 볼륨을 관리할 Cloud Volumes ONTAP 작업 환경을 두 번 클릭합니다.
 . 볼륨 관리:
 +
@@ -90,7 +91,7 @@ FlexClone 볼륨에 대한 자세한 내용은 를 참조하십시오 http://doc
 
 
 
-NOTE: Cloud Manager에서 볼륨을 선택한 디스크 유형을 사용하는 기존 Aggregate로 이동하거나 볼륨에 대한 새 Aggregate를 생성합니다.
+NOTE: BlueXP는 볼륨을 선택한 디스크 유형을 사용하는 기존 Aggregate로 이동하거나 볼륨에 대한 새 Aggregate를 생성합니다.
 
 
 
@@ -101,7 +102,7 @@ NOTE: Cloud Manager에서 볼륨을 선택한 디스크 유형을 사용하는 �
 
 
 
-NOTE: Cloud Manager에서 선택한 디스크 유형을 사용하는 기존 애그리게이트로 볼륨을 이동하거나, 볼륨에 대한 새 애그리게이트를 생성합니다.
+NOTE: BlueXP는 계층화를 통해 선택한 디스크 유형을 사용하는 기존 Aggregate로 볼륨을 이동하거나 볼륨에 대한 새 Aggregate를 생성합니다.
 
 
 
@@ -201,12 +202,12 @@ Cloud Volumes ONTAP는 CIFS 서버를 변경 사항으로 업데이트합니다.
 
 
 
-== Cloud Manager에 작업 필요 메시지가 표시되면 볼륨을 이동합니다
+== BlueXP에 작업 필요 메시지가 표시되면 볼륨을 이동합니다
 
-용량 문제를 방지하려면 볼륨을 이동해야 하지만 직접 문제를 해결해야 한다는 작업 필요 메시지가 Cloud Manager에 표시될 수 있습니다. 이 경우 문제를 해결하는 방법을 식별한 다음 하나 이상의 볼륨을 이동해야 합니다.
+용량 문제를 방지하려면 볼륨을 이동해야 하지만 직접 문제를 해결해야 한다는 작업 필요 메시지가 BlueXP에 표시될 수 있습니다. 이 경우 문제를 해결하는 방법을 식별한 다음 하나 이상의 볼륨을 이동해야 합니다.
 
 
-TIP: Cloud Manager는 Aggregate가 90% 사용된 용량에 도달하면 이러한 작업 필요 메시지를 표시합니다. 데이터 계층화를 사용할 경우 aggregate가 80% 사용 용량에 도달하면 메시지가 표시됩니다. 기본적으로 10%의 여유 공간은 데이터 계층화용으로 예약되어 있습니다. link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["데이터 계층화를 위한 여유 공간 비율에 대해 자세히 알아보십시오"].
+TIP: BlueXP는 총 사용 용량이 90%에 도달하면 이러한 작업 필요 메시지를 표시합니다. 데이터 계층화를 사용할 경우 aggregate가 80% 사용 용량에 도달하면 메시지가 표시됩니다. 기본적으로 10%의 여유 공간은 데이터 계층화용으로 예약되어 있습니다. link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["데이터 계층화를 위한 여유 공간 비율에 대해 자세히 알아보십시오"].
 
 .단계
 .  how to correct capacity issues,문제를 해결하는 방법을 식별합니다.
@@ -222,7 +223,7 @@ TIP: Cloud Manager는 Aggregate가 90% 사용된 용량에 도달하면 이러�
 
 === 용량 문제를 해결하는 방법 파악
 
-Cloud Manager에서 용량 문제를 피하기 위해 볼륨을 이동하는 데 필요한 권장사항을 제공하지 못하는 경우, 이동해야 할 볼륨과 동일한 시스템의 다른 애그리게이트로 이동해야 하는지 또는 다른 시스템으로 이동해야 하는지 여부를 확인해야 합니다.
+용량 문제를 방지하기 위해 BlueXP에서 볼륨 이동을 위한 권장 사항을 제공할 수 없는 경우 이동해야 할 볼륨과 동일한 시스템의 다른 aggregate 또는 다른 시스템으로 볼륨을 이동해야 하는지 여부를 확인해야 합니다.
 
 .단계
 . Action Required 메시지의 고급 정보를 확인하여 용량 제한에 도달한 애그리게이트를 식별합니다.
@@ -270,7 +271,7 @@ image:screenshot_aggr_volumes.gif["스크린샷: 집계 정보 대화 상자의 
 
 이 작업의 단계를 따라 다음 작업 필요 메시지를 수정할 수 있습니다.
 
- Moving a volume is necessary to avoid capacity issues; however, Cloud Manager cannot perform this action for you because the system has reached the disk limit.
+ Moving a volume is necessary to avoid capacity issues; however, BlueXP cannot perform this action for you because the system has reached the disk limit.
 .단계
 . 사용 가능한 용량이 있는 Cloud Volumes ONTAP 시스템을 식별하거나 새 시스템을 구축합니다.
 . 타겟 작업 환경에서 소스 작업 환경을 끌어다 놓아 볼륨의 일회성 데이터 복제를 수행합니다.
@@ -299,7 +300,7 @@ image:screenshot_aggr_volumes.gif["스크린샷: 집계 정보 대화 상자의 
 
 이 작업의 단계를 따라 다음 작업 필요 메시지를 수정할 수 있습니다.
 
- Moving two or more volumes is necessary to avoid capacity issues; however, Cloud Manager cannot perform this action for you.
+ Moving two or more volumes is necessary to avoid capacity issues; however, BlueXP cannot perform this action for you.
 .단계
 . 기존 Aggregate에 이동해야 하는 볼륨에 대해 사용 가능한 용량이 있는지 확인합니다.
 +

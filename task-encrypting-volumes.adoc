@@ -35,12 +35,12 @@ Cloud Volumes ONTAP는 온보드 키 관리를 지원하지 않습니다.
 
 Cloud Volumes ONTAP 시스템은 NetApp 지원에 등록해야 합니다. NetApp 볼륨 암호화 라이센스는 NetApp Support에 등록된 각 Cloud Volumes ONTAP 시스템에 자동으로 설치됩니다.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Cloud Manager에 NetApp Support 사이트 계정 추가"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["BlueXP에 NetApp Support 사이트 계정 추가"^]
 * link:task-registering.html["선불 종량제 시스템을 등록하는 중입니다"]
 
 
 
-NOTE: Cloud Manager는 중국 지역에 있는 시스템에 NVE 라이센스를 설치하지 않습니다.
+NOTE: BlueXP는 중국 지역에 있는 시스템에 NVE 라이센스를 설치하지 않습니다.
 
 .단계
 . 에서 지원되는 주요 관리자 목록을 검토합니다 http://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"^].

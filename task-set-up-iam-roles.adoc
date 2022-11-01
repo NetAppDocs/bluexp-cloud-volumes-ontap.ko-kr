@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-set-up-iam-roles.html 
 keywords: iam role, mediator role, cloud volumes ontap role, policy, iam policy, permissions 
-summary: 각 Cloud Volumes ONTAP 노드에는 필요한 권한을 제공하는 IAM 역할이 연결되어 있어야 합니다. HA 중재자의 경우도 마찬가지입니다. Cloud Manager가 IAM 역할을 생성하도록 하는 것이 가장 쉽지만 자신의 역할을 사용할 수 있습니다. 
+summary: 각 Cloud Volumes ONTAP 노드에는 필요한 권한을 제공하는 IAM 역할이 연결되어 있어야 합니다. HA 중재자의 경우도 마찬가지입니다. BlueXP에서 IAM 역할을 생성하는 것이 가장 쉽지만 자신의 역할을 사용할 수 있습니다. 
 ---
 = Cloud Volumes ONTAP에 대한 IAM 역할을 설정합니다
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: 각 Cloud Volumes ONTAP 노드에는 필요한 권한을 제공하는 I
 
 
 [role="lead"]
-필요한 권한이 있는 IAM 역할을 각 Cloud Volumes ONTAP 노드에 연결해야 합니다. HA 중재자의 경우도 마찬가지입니다. Cloud Manager가 IAM 역할을 생성하도록 하는 것이 가장 쉽지만 자신의 역할을 사용할 수 있습니다.
+필요한 권한이 있는 IAM 역할을 각 Cloud Volumes ONTAP 노드에 연결해야 합니다. HA 중재자의 경우도 마찬가지입니다. BlueXP에서 IAM 역할을 생성하는 것이 가장 쉽지만 자신의 역할을 사용할 수 있습니다.
 
-이 작업은 선택 사항입니다. Cloud Volumes ONTAP 작업 환경을 생성할 때 기본 옵션은 Cloud Manager에서 IAM 역할을 생성할 수 있도록 하는 것입니다. 보안 정책에 따라 IAM 역할을 직접 생성해야 하는 경우 다음 단계를 따르십시오.
+이 작업은 선택 사항입니다. Cloud Volumes ONTAP 작업 환경을 생성할 때 기본 옵션은 BlueXP에서 IAM 역할을 생성할 수 있도록 하는 것입니다. 보안 정책에 따라 IAM 역할을 직접 생성해야 하는 경우 다음 단계를 따르십시오.
 
 
 NOTE: AWS 상용 클라우드 서비스 환경에서는 IAM의 역할을 직접 제공해야 합니다. link:task-getting-started-aws-c2s.html["C2S에 Cloud Volumes ONTAP를 배포하는 방법을 알아보십시오"].

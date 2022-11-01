@@ -31,7 +31,7 @@ endif::aws[]
 
 ifdef::azure[]
 
-* Azure의 경우 Cloud Manager에 필요한 권한이 있으면 작업을 수행할 필요가 없습니다.  to tier cold data to Azure Blob storage,자세한 정보.
+* Azure의 경우 BlueXP에 필요한 권한이 있으면 아무 작업도 수행할 필요가 없습니다.  to tier cold data to Azure Blob storage,자세한 정보.
 
 
 endif::azure[]
@@ -47,7 +47,7 @@ endif::gcp[]
 볼륨에서 데이터 계층화를 사용하려면 애그리게이트에서 데이터 계층화를 활성화해야 합니다. 새 볼륨 및 기존 볼륨에 대한 요구사항을 알고 있어야 합니다.  that tiering is enabled on aggregates,자세한 정보.
 
 [role="quick-margin-para"]
-볼륨을 생성, 수정 또는 복제할 때 Cloud Manager에서 계층화 정책을 선택하라는 메시지가 표시됩니다.
+볼륨을 생성, 수정 또는 복제할 때 BlueXP에서 계층화 정책을 선택하라는 메시지가 표시됩니다.
 
 * link:task-tiering.html#tiering-data-from-read-write-volumes["읽기-쓰기 볼륨의 데이터 계층화"]
 * link:task-tiering.html#tiering-data-from-data-protection-volumes["데이터 보호 볼륨의 데이터 계층화"]
@@ -57,10 +57,10 @@ endif::gcp[]
 .데이터 계층화에 필요하지 않은&#8217;은 무엇입니까?
 ====
 * 데이터 계층화를 사용하기 위해 기능 라이센스를 설치할 필요가 없습니다.
-* 용량 계층에 대해 오브젝트 저장소를 생성할 필요가 없습니다. Cloud Manager가 이 작업을 수행합니다.
+* 용량 계층에 대해 오브젝트 저장소를 생성할 필요가 없습니다. BlueXP가 이러한 작업을 수행합니다.
 * 시스템 레벨에서 데이터 계층화를 설정할 필요가 없습니다.
 +
-Cloud Manager는 시스템이 생성될 때 콜드 데이터용 오브젝트 저장소를 생성합니다.  data tiering after implementing the requirements,연결 또는 사용 권한 문제가 없는 경우. 그런 다음 볼륨에 대해 데이터 계층화를 활성화해야 합니다. 경우에 따라  that tiering is enabled on aggregates,애그리게이트)를 클릭합니다.
+BlueXP는 시스템이 생성될 때 콜드 데이터에 대한 오브젝트 저장소를 생성합니다.  data tiering after implementing the requirements,연결 또는 사용 권한 문제가 없는 경우. 그런 다음 볼륨에 대해 데이터 계층화를 활성화해야 합니다. 경우에 따라  that tiering is enabled on aggregates,애그리게이트)를 클릭합니다.
 
 
 
@@ -150,7 +150,7 @@ ifdef::azure[]
 
 === 콜드 데이터를 Azure Blob 저장소에 계층화하기 위한 요구사항
 
-Cloud Manager에 필요한 권한이 있는 경우 성능 계층과 용량 계층 간의 연결을 설정할 필요가 없습니다. Connector의 사용자 지정 역할에 다음 권한이 있는 경우 Cloud Manager를 통해 VNET 서비스 끝점을 사용할 수 있습니다.
+BlueXP에 필요한 권한이 있는 경우 성능 계층과 용량 계층 간에 연결을 설정할 필요가 없습니다. BlueXP는 Connector의 사용자 지정 역할에 다음과 같은 권한이 있는 경우 VNET 서비스 끝점을 활성화합니다.
 
 [source, json]
 ----
@@ -190,22 +190,23 @@ endif::gcp[]
 
 === 요구사항을 구현한 후 데이터 계층화를 사용하도록 설정
 
-연결 또는 권한 문제가 없는 경우, Cloud Manager는 시스템이 생성될 때 콜드 데이터에 대한 오브젝트 저장소를 생성합니다. 시스템을 생성하기 전까지는 위에 나열된 요구 사항을 구현하지 않았다면 수동으로 계층화를 설정해야 오브젝트 저장소가 생성됩니다.
+BlueXP는 연결 또는 사용 권한 문제가 없는 한 시스템이 생성될 때 콜드 데이터에 대한 개체 저장소를 생성합니다. 시스템을 생성하기 전까지는 위에 나열된 요구 사항을 구현하지 않았다면 수동으로 계층화를 설정해야 오브젝트 저장소가 생성됩니다.
 
 .단계
 . ,모든 요구 사항을 충족하는지 확인합니다.
+. 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . Canvas 페이지에서 Cloud Volumes ONTAP 인스턴스의 이름을 두 번 클릭합니다.
 . 메뉴 아이콘을 클릭하고 * 용량 계층화 활성화 * 를 선택합니다.
 +
-image:screenshot_enable_capacity_tiering.gif["Cloud Manager에서 데이터 계층화를 설정하려고 할 때 문제가 발생한 경우 작업 환경 메뉴에서 사용 가능한 용량 계층화 옵션 스크린샷"]
+image:screenshot_enable_capacity_tiering.gif["BlueXP에서 데이터 계층화를 활성화하려고 할 때 문제가 발생한 경우 작업 환경 메뉴에서 사용할 수 있는 용량 계층화 활성화 옵션의 스크린샷"]
 
 +
-Cloud Manager에서 시스템을 생성할 때 데이터 계층화를 설정할 수 없는 경우에만 이 옵션이 표시됩니다.
+BlueXP에서 시스템을 생성할 때 데이터 계층화를 활성화할 수 없는 경우에만 이 옵션이 표시됩니다.
 
 +
 Google Cloud에서는 이 옵션이 나타나기 전에 서비스 계정을 Cloud Volumes ONTAP에 연결해야 합니다. ,모든 요구 사항을 충족하는지 확인합니다.
 
-. 클라우드 관리자가 이 Cloud Volumes ONTAP 시스템이 계층형 데이터에 사용할 오브젝트 저장소를 만들 수 있도록 * 활성화 * 를 클릭합니다.
+. BlueXP가 이 Cloud Volumes ONTAP 시스템이 계층형 데이터에 사용할 개체 저장소를 만들 수 있도록 * 활성화 * 를 클릭합니다.
 
 
 
@@ -216,7 +217,7 @@ Google Cloud에서는 이 옵션이 나타나기 전에 서비스 계정을 Clou
 
 * * 새 볼륨 *
 +
-새 볼륨에서 데이터 계층화를 사용하는 경우에는 애그리게이트에서 데이터 계층화를 사용할 필요가 없습니다. Cloud Manager는 계층화가 활성화된 기존 애그리게이트에 볼륨을 생성하거나, 데이터 계층화가 활성화된 애그리게이트가 아직 존재하지 않으면 볼륨에 대한 새 애그리게이트를 생성합니다.
+새 볼륨에서 데이터 계층화를 사용하는 경우에는 애그리게이트에서 데이터 계층화를 사용할 필요가 없습니다. BlueXP는 계층화가 활성화된 기존 애그리게이트에 볼륨을 생성하거나, 데이터 계층화가 활성화된 애그리게이트가 아직 존재하지 않는 경우 볼륨에 대한 새 애그리게이트를 생성합니다.
 
 * * 기존 볼륨 *
 +
@@ -225,11 +226,11 @@ Google Cloud에서는 이 옵션이 나타나기 전에 서비스 계정을 Clou
 
 
 .Aggregate에서 계층화가 설정되었는지 확인하는 단계입니다
-. Cloud Manager에서 작업 환경을 엽니다.
+. BlueXP에서 작업 환경을 엽니다.
 . 메뉴 아이콘을 클릭하고 * 고급 * 을 클릭한 다음 * 고급 할당 * 을 클릭합니다.
 . 애그리게이트에서 계층화가 설정되었는지 또는 해제되었는지 확인합니다.
 +
-image:screenshot_aggr_tiering.gif["계층화 상태를 포함하는 Cloud Manager의 Aggregate에 대한 정보를 보여 주는 스크린샷"]
+image:screenshot_aggr_tiering.gif["계층화 상태를 포함하는 BlueXP의 Aggregate에 대한 정보를 보여 주는 스크린샷"]
 
 
 
@@ -271,7 +272,7 @@ Cloud Volumes ONTAP는 읽기-쓰기 볼륨의 비활성 데이터를 비용 효
 image:screenshot_tiered_storage.gif["오브젝트 스토리지에 대한 계층화를 활성화하는 아이콘을 보여 주는 스크린샷"]
 
 +
-데이터 계층화를 지원하는 애그리게이트가 아직 존재하지 않는 경우 Cloud Manager는 볼륨에 대한 새로운 애그리게이트를 생성합니다.
+데이터 계층화가 활성화된 애그리게이트가 아직 존재하지 않는 경우 BlueXP는 볼륨에 대한 새로운 애그리게이트를 생성합니다.
 
 
 
@@ -282,6 +283,7 @@ image:screenshot_tiered_storage.gif["오브젝트 스토리지에 대한 계층�
 Cloud Volumes ONTAP는 데이터 보호 볼륨의 데이터를 용량 계층으로 계층화할 수 있습니다. 대상 볼륨을 활성화하면 데이터가 읽혀지면서 성능 계층으로 서서히 이동합니다.
 
 .단계
+. 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . Canvas 페이지에서 소스 볼륨이 포함된 작업 환경을 선택한 다음 볼륨을 복제할 작업 환경으로 끌어다 놓습니다.
 . 표시되는 메시지에 따라 계층화 페이지로 이동한 다음 오브젝트 스토리지에 데이터 계층화를 설정합니다.
 +
@@ -316,7 +318,7 @@ Cloud Volumes ONTAP를 구축한 후 30일 동안 액세스하지 않은 비활�
 
 데이터 계층화를 위한 여유 공간 비율은 데이터를 오브젝트 스토리지로 계층화할 때 Cloud Volumes ONTAP SSD/HDD에 필요한 여유 공간을 정의합니다. 기본 설정은 10%의 여유 공간이지만 요구 사항에 따라 설정을 조정할 수 있습니다.
 
-예를 들어, 구입한 용량을 사용하기 위해 10% 미만의 여유 공간을 선택할 수 있습니다. 그런 다음, 추가 용량이 필요할 때(aggregate의 디스크 제한에 도달할 때까지) Cloud Manager를 통해 추가 디스크를 구입할 수 있습니다.
+예를 들어, 구입한 용량을 사용하기 위해 10% 미만의 여유 공간을 선택할 수 있습니다. 그런 다음 BlueXP는 추가 용량이 필요할 때 추가 디스크를 구입할 수 있습니다(최대 Aggregate의 디스크 한도에 도달할 때까지).
 
 
 CAUTION: 공간이 부족하면 Cloud Volumes ONTAP에서 데이터를 이동할 수 없어 성능이 저하될 수 있습니다. 모든 변경은 신중하게 수행해야 합니다. 확실하지 않은 경우 NetApp 지원 팀에 연락하여 안내를 받으십시오.
@@ -324,9 +326,9 @@ CAUTION: 공간이 부족하면 Cloud Volumes ONTAP에서 데이터를 이동할
 이 비율은 오브젝트 저장소에서 데이터를 읽을 때 Cloud Volumes ONTAP 더 나은 성능을 제공하기 위해 데이터를 SSD/HDD로 이동하기 때문에 재해 복구 시나리오에 중요합니다. 공간이 부족하면 Cloud Volumes ONTAP에서 데이터를 이동할 수 없습니다. 이 점을 고려하여 비율을 변경하면 비즈니스 요구 사항을 충족할 수 있습니다.
 
 .단계
-. Cloud Manager 콘솔의 오른쪽 상단에서 * 설정 * 아이콘을 클릭하고 * 커넥터 설정 * 을 선택합니다.
+. BlueXP 콘솔의 오른쪽 상단에서 * 설정 * 아이콘을 클릭하고 * 커넥터 설정 * 을 선택합니다.
 +
-image:screenshot_settings_icon.gif["Cloud Manager 콘솔의 오른쪽 위에 설정 아이콘이 표시된 스크린샷"]
+image:screenshot_settings_icon.gif["BlueXP 콘솔의 오른쪽 위에 설정 아이콘이 표시된 스크린샷."]
 
 . Capacity * 에서 * Aggregate Capacity Thresholds - Free Space Ratio for Data Tiering * 을 클릭합니다.
 . 요구 사항에 따라 여유 공간 비율을 변경하고 * Save * 를 클릭합니다.

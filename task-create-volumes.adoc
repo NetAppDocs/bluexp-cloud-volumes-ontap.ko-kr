@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-create-volumes.html 
 keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates 
-summary: 초기 Cloud Volumes ONTAP 시스템을 시작한 후 더 많은 스토리지가 필요한 경우 Cloud Manager에서 NFS, CIFS 또는 iSCSI용 새 FlexVol 볼륨을 생성할 수 있습니다. 
+summary: 초기 Cloud Volumes ONTAP 시스템을 시작한 후 더 많은 스토리지가 필요한 경우 BlueXP에서 NFS, CIFS 또는 iSCSI용 새 FlexVol 볼륨을 생성할 수 있습니다. 
 ---
 = FlexVol 볼륨을 생성합니다
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: 초기 Cloud Volumes ONTAP 시스템을 시작한 후 더 많은 스토
 
 
 [role="lead"]
-초기 Cloud Volumes ONTAP 시스템을 시작한 후 더 많은 스토리지가 필요한 경우 Cloud Manager에서 NFS, CIFS 또는 iSCSI용 새 FlexVol 볼륨을 생성할 수 있습니다.
+초기 Cloud Volumes ONTAP 시스템을 시작한 후 더 많은 스토리지가 필요한 경우 BlueXP에서 NFS, CIFS 또는 iSCSI용 새 FlexVol 볼륨을 생성할 수 있습니다.
 
-Cloud Manager에서 다양한 방법으로 새 볼륨을 생성할 수 있습니다.
+BlueXP에서는 여러 가지 방법으로 새 볼륨을 만들 수 있습니다.
 
-* 새 볼륨에 대한 세부 정보를 지정하고 Cloud Manager에서 기본 데이터 애그리게이트를 처리하도록 합니다.  a volume,자세한 정보.
+* 새 볼륨에 대한 세부 정보를 지정하고 BlueXP에서 기본 데이터 집계를 처리하도록 합니다.  a volume,자세한 정보.
 * 선택한 데이터 애그리게이트에 볼륨을 생성합니다.  a volume,자세한 정보.
 * 템플릿에서 볼륨을 생성하여 데이터베이스 또는 스트리밍 서비스와 같은 특정 애플리케이션의 워크로드 요구사항에 맞게 볼륨을 최적화합니다.  a volume from a template,자세한 정보.
 * HA 구성의 두 번째 노드에 볼륨을 생성합니다.  a volume on the second node in an HA configuration,자세한 정보.
@@ -30,7 +30,7 @@ Cloud Manager에서 다양한 방법으로 새 볼륨을 생성할 수 있습니
 
 볼륨 프로비저닝에 대한 몇 가지 참고 사항:
 
-* iSCSI 볼륨을 생성할 때 Cloud Manager에서 자동으로 LUN을 생성합니다. 볼륨 당 하나의 LUN만 생성하므로 관리가 필요 없습니다. 볼륨을 생성한 후  a LUN to a host,IQN을 사용하여 호스트에서 LUN에 연결합니다.
+* iSCSI 볼륨을 생성할 때 BlueXP에서 자동으로 LUN을 생성합니다. 볼륨 당 하나의 LUN만 생성하므로 관리가 필요 없습니다. 볼륨을 생성한 후  a LUN to a host,IQN을 사용하여 호스트에서 LUN에 연결합니다.
 * System Manager 또는 CLI에서 추가 LUN을 생성할 수 있습니다.
 
 
@@ -46,11 +46,12 @@ endif::aws[]
 
 == 볼륨을 생성합니다
 
-볼륨을 생성하는 가장 일반적인 방법은 필요한 볼륨 유형을 지정한 다음 Cloud Manager가 디스크 할당을 처리하는 것입니다. 그러나 볼륨을 생성할 특정 Aggregate를 선택할 수도 있습니다.
+볼륨을 생성하는 가장 일반적인 방법은 필요한 볼륨 유형을 지정한 다음 BlueXP에서 디스크 할당을 처리하는 것입니다. 그러나 볼륨을 생성할 특정 Aggregate를 선택할 수도 있습니다.
 
 .단계
+. 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . Canvas 페이지에서 FlexVol 볼륨을 프로비저닝할 Cloud Volumes ONTAP 시스템의 이름을 두 번 클릭합니다.
-. Cloud Manager에서 디스크 할당을 처리하도록 하거나 볼륨에 대한 특정 애그리게이트를 선택하여 새 볼륨을 생성합니다.
+. BlueXP에서 디스크 할당을 처리하도록 하거나 볼륨에 대한 특정 집계를 선택하여 새 볼륨을 생성합니다.
 +
 Cloud Volumes ONTAP 시스템의 데이터 애그리게이트를 잘 알고 있는 경우에만 특정 애그리게이트를 선택하는 것이 좋습니다.
 
@@ -93,7 +94,7 @@ Cloud Volumes ONTAP 시스템의 데이터 애그리게이트를 잘 알고 있�
 |===
 .. * 프로토콜 *: 볼륨의 프로토콜(NFS, CIFS 또는 iSCSI)을 선택한 다음 필요한 정보를 제공합니다.
 +
-CIFS를 선택하고 서버가 설정되지 않은 경우 * Next * 를 클릭하면 Cloud Manager에서 CIFS 연결을 설정하라는 메시지를 표시합니다.
+CIFS를 선택하고 서버가 설정되지 않은 경우 * 다음 * 을 클릭하면 BlueXP에서 CIFS 연결을 설정하라는 메시지가 표시됩니다.
 
 +
 link:concept-client-protocols.html["지원되는 클라이언트 프로토콜 및 버전에 대해 알아보십시오"].
@@ -107,7 +108,7 @@ link:concept-client-protocols.html["지원되는 클라이언트 프로토콜 �
 .NFS 를 참조하십시오
 --
 액세스 제어:: 클라이언트에서 볼륨을 사용할 수 있도록 사용자 지정 엑스포트 정책을 선택합니다.
-엑스포트 정책:: 볼륨을 액세스할 수 있는 서브넷의 클라이언트를 정의합니다. 기본적으로 Cloud Manager는 서브넷의 모든 인스턴스에 대한 액세스를 제공하는 값을 입력합니다.
+엑스포트 정책:: 볼륨을 액세스할 수 있는 서브넷의 클라이언트를 정의합니다. 기본적으로 BlueXP는 서브넷의 모든 인스턴스에 대한 액세스를 제공하는 값을 입력합니다.
 
 
 --
@@ -154,7 +155,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 DNS 도메인:: SVM(Cloud Volumes ONTAP 스토리지 가상 머신)용 DNS 도메인 대부분의 경우 도메인은 AD 도메인과 동일합니다.
-NTP 서버:: Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Cloud Manager 자동화 문서"^] 를 참조하십시오.
+NTP 서버:: Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP 자동화 문서"^] 를 참조하십시오.
 +
 --
 CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.
@@ -165,7 +166,7 @@ CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS �
 --
 .iSCSI
 --
-LUN을 클릭합니다:: iSCSI 스토리지 타겟을 LUN(논리 유닛)이라고 하며 호스트에 표준 블록 디바이스로 표시됩니다. iSCSI 볼륨을 생성할 때 Cloud Manager에서 자동으로 LUN을 생성합니다. 우리는 볼륨당 하나의 LUN만 생성하므로 관리가 필요하지 않습니다. 볼륨을 생성한 후 link:task-connect-lun.html["IQN을 사용하여 호스트에서 LUN에 연결합니다"].
+LUN을 클릭합니다:: iSCSI 스토리지 타겟을 LUN(논리 유닛)이라고 하며 호스트에 표준 블록 디바이스로 표시됩니다. iSCSI 볼륨을 생성할 때 BlueXP에서 자동으로 LUN을 생성합니다. 우리는 볼륨당 하나의 LUN만 생성하므로 관리가 필요하지 않습니다. 볼륨을 생성한 후 link:task-connect-lun.html["IQN을 사용하여 호스트에서 LUN에 연결합니다"].
 이니시에이터 그룹:: 이니시에이터 그룹(igroup)은 스토리지 시스템에서 지정된 LUN에 액세스할 수 있는 호스트를 지정합니다
 호스트 이니시에이터(IQN):: iSCSI 대상은 표준 이더넷 네트워크 어댑터(NIC), 소프트웨어 이니시에이터가 있는 TCP 오프로드 엔진(TOE) 카드, 통합 네트워크 어댑터(CNA) 또는 전용 호스트 파스트 어댑터(HBA)를 통해 네트워크에 연결되며 iSCSI 공인 이름(IQN)으로 식별됩니다.
 
@@ -213,7 +214,7 @@ ONTAP에는 필요한 총 스토리지 양을 줄일 수 있는 몇 가지 스�
 . * Review * (검토 *): 볼륨에 대한 세부 정보를 검토한 다음 * Add * (추가 *)를 클릭합니다.
 
 
-Cloud Manager에서 Cloud Volumes ONTAP 시스템에 볼륨을 생성합니다.
+BlueXP는 Cloud Volumes ONTAP 시스템에 볼륨을 생성합니다.
 
 
 
@@ -227,6 +228,7 @@ Cloud Manager에서 Cloud Volumes ONTAP 시스템에 볼륨을 생성합니다.
 NOTE: 템플릿을 사용하는 경우에만 NFS 또는 CIFS 볼륨을 생성할 수 있습니다.
 
 .단계
+. 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . Canvas 페이지에서 볼륨을 프로비저닝할 Cloud Volumes ONTAP 시스템의 이름을 클릭합니다.
 . 을 클릭합니다 image:screenshot_gallery_options.gif["세 개의 나란히 점이 있는 아이콘입니다."] > * 템플릿에서 볼륨 추가 *.
 +
@@ -271,18 +273,19 @@ image:screenshot_template_creating_resource_cvo.png["템플릿에서 새 볼륨 
 
 == HA 구성의 두 번째 노드에 볼륨을 생성합니다
 
-기본적으로 Cloud Manager는 HA 구성의 첫 번째 노드에 볼륨을 생성합니다. 두 노드에서 모두 클라이언트에 데이터를 제공하는 액티브-액티브 구성이 필요한 경우 두 번째 노드에서 애그리게이트와 볼륨을 생성해야 합니다.
+기본적으로 BlueXP는 HA 구성의 첫 번째 노드에 볼륨을 생성합니다. 두 노드에서 모두 클라이언트에 데이터를 제공하는 액티브-액티브 구성이 필요한 경우 두 번째 노드에서 애그리게이트와 볼륨을 생성해야 합니다.
 
 .단계
+. 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . Canvas 페이지에서 집계를 관리할 Cloud Volumes ONTAP 작업 환경의 이름을 두 번 클릭합니다.
 . 메뉴 아이콘을 클릭한 다음 * 고급 > 고급 할당 * 을 클릭합니다.
 . Add Aggregate * 를 클릭한 다음 Aggregate를 생성합니다.
 . 홈 노드의 경우 HA 쌍의 두 번째 노드를 선택합니다.
-. Cloud Manager에서 애그리게이트를 생성한 후, 애그리게이트를 선택하고 * 볼륨 생성 * 을 클릭합니다.
+. BlueXP에서 애그리게이트를 생성한 후 해당 애그리게이트를 선택한 다음 * 볼륨 생성 * 을 클릭합니다.
 . 새 볼륨에 대한 세부 정보를 입력한 다음 * Create * 를 클릭합니다.
 
 
-Cloud Manager에서 HA 쌍의 두 번째 노드에 볼륨을 생성합니다.
+BlueXP는 HA 쌍의 두 번째 노드에 볼륨을 생성합니다.
 
 ifdef::aws[]
 

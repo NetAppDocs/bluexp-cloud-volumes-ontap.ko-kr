@@ -18,7 +18,7 @@ summary: 계획되지 않은 페일오버 시간을 줄이고 Cloud Volumes ONTA
 
 Cloud Volumes ONTAP 9.10.1 릴리즈부터 Microsoft Azure에서 실행되는 Cloud Volumes ONTAP HA 쌍의 계획되지 않은 페일오버 시간을 줄이고 NFSv4에 대한 지원을 추가했습니다. Cloud Volumes ONTAP에서 이러한 향상된 기능을 사용하려면 Azure 구독에서 고가용성 기능을 활성화해야 합니다.
 
-Azure 구독에서 이 기능을 활성화해야 할 경우 Cloud Manager에서 작업 필요 메시지에 이러한 세부 정보를 표시합니다.
+Azure 구독에서 이 기능을 활성화해야 하는 경우 BlueXP에서 작업 필요 메시지에 이러한 세부 정보를 표시합니다.
 
 다음 사항에 유의하십시오.
 

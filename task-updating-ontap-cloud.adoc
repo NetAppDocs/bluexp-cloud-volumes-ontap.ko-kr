@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-updating-ontap-cloud.html 
 keywords: update, updating, upgrading, upgrade, software, downgrade, downgrading, FTP, HTTP, mediator, local image, revert, reverting, downgrading 
-summary: Cloud Manager에서 Cloud Volumes ONTAP을 업그레이드하여 최신 새 기능 및 향상된 기능에 액세스할 수 있습니다. 소프트웨어를 업그레이드하기 전에 Cloud Volumes ONTAP 시스템을 준비해야 합니다. 
+summary: BlueXP에서 Cloud Volumes ONTAP를 업그레이드하여 최신 새 기능 및 향상된 기능을 이용할 수 있습니다. 소프트웨어를 업그레이드하기 전에 Cloud Volumes ONTAP 시스템을 준비해야 합니다. 
 ---
 = Cloud Volumes ONTAP 소프트웨어를 업그레이드합니다
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Manager에서 Cloud Volumes ONTAP을 업그레이드하여 최신
 
 
 [role="lead"]
-Cloud Manager에서 Cloud Volumes ONTAP을 업그레이드하여 최신 새 기능 및 향상된 기능에 액세스할 수 있습니다. 소프트웨어를 업그레이드하기 전에 Cloud Volumes ONTAP 시스템을 준비해야 합니다.
+BlueXP에서 Cloud Volumes ONTAP를 업그레이드하여 최신 새 기능 및 향상된 기능을 이용할 수 있습니다. 소프트웨어를 업그레이드하기 전에 Cloud Volumes ONTAP 시스템을 준비해야 합니다.
 
 
 
@@ -24,18 +24,18 @@ Cloud Volumes ONTAP 업그레이드 프로세스를 시작하기 전에 다음 �
 
 
 
-=== Cloud Manager에서만 업그레이드할 수 있습니다
+=== BlueXP에서만 업그레이드합니다
 
-Cloud Volumes ONTAP 업그레이드는 Cloud Manager에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.
+Cloud Volumes ONTAP 업그레이드는 BlueXP에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.
 
 
 
 === 업그레이드 방법
 
-Cloud Manager에서는 Cloud Volumes ONTAP을 업그레이드하는 두 가지 방법을 제공합니다.
+BlueXP는 Cloud Volumes ONTAP를 업그레이드할 수 있는 두 가지 방법을 제공합니다.
 
 * 작업 환경에 나타나는 업그레이드 알림을 따릅니다
-* 업그레이드 이미지를 HTTPS 위치에 배치한 다음 Cloud Manager에 URL을 제공합니다
+* 업그레이드 이미지를 HTTPS 위치에 배치한 다음 BlueXP에 URL을 제공합니다
 
 
 
@@ -102,7 +102,7 @@ Cloud Manager에서는 Cloud Volumes ONTAP을 업그레이드하는 두 가지 �
 다음 사항에 유의하십시오.
 
 * Cloud Volumes ONTAP에 대해 지원되는 업그레이드 경로는 사내 ONTAP 클러스터에 대한 업그레이드 경로와 다릅니다.
-* 작업 환경에 나타나는 업그레이드 알림에 따라 업그레이드하면 Cloud Manager에서 지원되는 업그레이드 경로 다음에 있는 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
+* 작업 환경에 나타나는 업그레이드 알림에 따라 업그레이드하는 경우 BlueXP에서 지원되는 업그레이드 경로 다음에 나오는 릴리스로 업그레이드하라는 메시지가 표시됩니다.
 * HTTPS 위치에 업그레이드 이미지를 배치하여 업그레이드하는 경우 지원되는 업그레이드 경로를 따르십시오.
 * 경우에 따라 타겟 릴리즈로 업그레이드하기 위해 몇 차례 업그레이드해야 할 수도 있습니다.
 +
@@ -123,13 +123,13 @@ Cloud Volumes ONTAP를 이전 릴리즈로 되돌리거나 다운그레이드하
 이 페이지에 설명된 방법을 사용하여 소프트웨어를 업그레이드하려면 Cloud Volumes ONTAP를 NetApp 지원 팀에 등록해야 합니다. 이 내용은 PAYGO 및 BYOL 모두에 적용됩니다. 필요한 것이 있습니다 link:task-registering.html["PAYGO 시스템을 수동으로 등록합니다"]BYOL 시스템은 기본적으로 등록되지만
 
 
-TIP: 지원이 등록되지 않은 시스템에서는 새 버전이 사용 가능할 때 Cloud Manager에 표시되는 소프트웨어 업데이트 알림을 계속 받게 됩니다. 그러나 소프트웨어를 업그레이드하기 전에 시스템을 등록해야 합니다.
+TIP: 지원이 등록되지 않은 시스템은 새 버전이 출시되어도 BlueXP에 나타나는 소프트웨어 업데이트 알림을 계속 받게 됩니다. 그러나 소프트웨어를 업그레이드하기 전에 시스템을 등록해야 합니다.
 
 
 
 === HA 중재자의 업그레이드
 
-또한, Cloud Manager는 Cloud Volumes ONTAP 업그레이드 프로세스 중에 필요에 따라 중재자 인스턴스를 업데이트합니다.
+또한 BlueXP는 Cloud Volumes ONTAP 업그레이드 프로세스 중에 필요에 따라 중재자 인스턴스를 업데이트합니다.
 
 
 
@@ -177,7 +177,7 @@ NOTE: Cloud Backup은 SnapMirror 구현을 사용하여 백업 파일(SnapMirror
 
 +
 
-NOTE: Cloud Manager에 액세스하는 컴퓨터는 Cloud Volumes ONTAP에 대한 네트워크 연결이 있어야 합니다. 예를 들어, 클라우드 공급자 네트워크에 있는 점프 호스트에서 Cloud Manager에 로그인해야 할 수 있습니다.
+NOTE: BlueXP에 액세스하는 컴퓨터에는 Cloud Volumes ONTAP에 대한 네트워크 연결이 있어야 합니다. 예를 들어, 클라우드 제공업체 네트워크에 있는 점프 호스트에서 BlueXP에 로그인해야 할 수 있습니다.
 
 . 보호 > 관계 * 를 클릭합니다.
 . 관계를 선택하고 * 작업 > 정지 * 를 클릭합니다.
@@ -209,24 +209,24 @@ image:screenshot_aggr_state.gif["스크린샷: 집계에 대한 정보를 볼 �
 
 == Cloud Volumes ONTAP를 업그레이드합니다
 
-Cloud Manager는 새 버전을 업그레이드할 수 있을 때 사용자에게 알립니다. 이 알림에서 업그레이드 프로세스를 시작할 수 있습니다. 자세한 내용은 을 참조하십시오  from Cloud Manager notifications.
+BlueXP는 새 버전을 업그레이드할 수 있을 때 사용자에게 알립니다. 이 알림에서 업그레이드 프로세스를 시작할 수 있습니다. 자세한 내용은 을 참조하십시오  from BlueXP notifications.
 
-외부 URL의 이미지를 사용하여 소프트웨어 업그레이드를 수행하는 또 다른 방법입니다. 이 옵션은 Cloud Manager가 S3 버킷에 액세스하여 소프트웨어를 업그레이드할 수 없거나 패치가 제공된 경우에 유용합니다. 자세한 내용은 을 참조하십시오  from an image available at a URL.
+외부 URL의 이미지를 사용하여 소프트웨어 업그레이드를 수행하는 또 다른 방법입니다. 이 옵션은 BlueXP가 S3 버킷을 액세스하여 소프트웨어를 업그레이드할 수 없거나 패치가 제공된 경우에 유용합니다. 자세한 내용은 을 참조하십시오  from an image available at a URL.
 
 
 
-=== Cloud Manager 알림에서 업그레이드합니다
+=== BlueXP 알림에서 업그레이드합니다
 
-새 버전의 Cloud Volumes ONTAP를 사용할 수 있는 경우 Cloud Manager에서 Cloud Volumes ONTAP 작업 환경에 알림을 표시합니다.
+BlueXP는 새 버전의 Cloud Volumes ONTAP를 사용할 수 있을 때 Cloud Volumes ONTAP 작업 환경에 알림을 표시합니다.
 
 image:screenshot_cot_upgrade.gif["스크린샷: 작업 환경을 선택한 후 Canvas 페이지에 표시되는 새 버전 사용 가능 알림을 표시합니다."]
 
 이 알림에서 업그레이드 프로세스를 시작하여 S3 버킷에서 소프트웨어 이미지를 가져온 다음 이미지를 설치한 다음 시스템을 다시 시작하여 프로세스를 자동화할 수 있습니다.
 
-Cloud Volumes ONTAP 시스템에서 볼륨 또는 애그리게이트 생성과 같은 Cloud Manager 작업이 진행 중이지 않아야 합니다.
+볼륨 또는 애그리게이트 생성과 같은 BlueXP 작업은 Cloud Volumes ONTAP 시스템에서 진행 중이지 않아야 합니다.
 
 .단계
-. 왼쪽 탐색 메뉴에서 * Canvas * 를 선택합니다.
+. 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . 작업 환경을 선택합니다.
 +
 새 버전을 사용할 수 있는 경우 오른쪽 창에 알림이 나타납니다.
@@ -240,7 +240,7 @@ image:screenshot_cot_upgrade.gif["스크린샷: 작업 환경을 선택한 후 C
 . 검토 및 승인 페이지에서 중요한 메모를 읽고 * 이해했습니다... * 를 선택한 다음 * Go * 를 클릭합니다.
 
 
-Cloud Manager가 소프트웨어 업그레이드를 시작합니다. 소프트웨어 업데이트가 완료되면 작업 환경에서 작업을 수행할 수 있습니다.
+BlueXP가 소프트웨어 업그레이드를 시작합니다. 소프트웨어 업데이트가 완료되면 작업 환경에서 작업을 수행할 수 있습니다.
 
 SnapMirror 전송을 일시 중지한 경우 System Manager를 사용하여 전송을 다시 시작합니다.
 
@@ -248,16 +248,16 @@ SnapMirror 전송을 일시 중지한 경우 System Manager를 사용하여 전�
 
 === URL에서 사용할 수 있는 이미지에서 업그레이드합니다
 
-Cloud Volumes ONTAP 소프트웨어 이미지를 커넥터 또는 HTTP 서버에 배치한 다음 Cloud Manager에서 소프트웨어 업그레이드를 시작할 수 있습니다. Cloud Manager가 S3 버킷에 액세스하여 소프트웨어를 업그레이드할 수 없는 경우 이 옵션을 사용할 수 있습니다.
+Cloud Volumes ONTAP 소프트웨어 이미지를 커넥터 또는 HTTP 서버에 배치한 다음 BlueXP에서 소프트웨어 업그레이드를 시작할 수 있습니다. BlueXP에서 S3 버킷을 액세스하여 소프트웨어를 업그레이드할 수 없는 경우 이 옵션을 사용할 수 있습니다.
 
 .시작하기 전에
-* Cloud Volumes ONTAP 시스템에서 볼륨 또는 애그리게이트 생성과 같은 Cloud Manager 작업이 진행 중이지 않아야 합니다.
-* HTTPS를 사용하여 ONTAP 이미지를 호스팅하는 경우 인증서 누락으로 인한 SSL 인증 문제로 인해 업그레이드가 실패할 수 있습니다. 해결 방법은 ONTAP와 클라우드 관리자 간의 인증에 사용할 CA 서명 인증서를 생성하고 설치하는 것입니다.
+* 볼륨 또는 애그리게이트 생성과 같은 BlueXP 작업은 Cloud Volumes ONTAP 시스템에서 진행 중이지 않아야 합니다.
+* HTTPS를 사용하여 ONTAP 이미지를 호스팅하는 경우 인증서 누락으로 인한 SSL 인증 문제로 인해 업그레이드가 실패할 수 있습니다. 해결 방법은 ONTAP와 BlueXP 간의 인증에 사용할 CA 서명 인증서를 생성하고 설치하는 것입니다.
 +
 NetApp 기술 문서로 이동하여 단계별 지침을 확인하십시오.
 
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["NetApp KB: 업그레이드 이미지를 호스팅하기 위해 Cloud Manager를 HTTPS 서버로 구성하는 방법"^]
+https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["NetApp KB: 업그레이드 이미지를 호스팅하기 위해 BlueXP를 HTTPS 서버로 구성하는 방법"^]
 
 
 
@@ -281,7 +281,7 @@ NOTE: 미리 정의된 Cloud Volumes ONTAP 보안 그룹은 기본적으로 아�
 ** '/opt/application/netapp/cloudmanager/ontap/images/'
 
 
-. Cloud Manager의 작업 환경에서 메뉴 아이콘을 클릭한 다음 * 고급 > Cloud Volumes ONTAP 업데이트 * 를 클릭합니다.
+. BlueXP의 작업 환경에서 메뉴 아이콘을 클릭한 다음 * 고급 > Cloud Volumes ONTAP 업데이트 * 를 클릭합니다.
 . 소프트웨어 업데이트 페이지에서 URL을 입력한 다음 * 이미지 변경 * 을 클릭합니다.
 +
 위에 표시된 경로의 커넥터에 소프트웨어 이미지를 복사한 경우 다음 URL을 입력합니다.
@@ -292,7 +292,7 @@ http://<Connector-private-IP-address>/ontap/images/<image-file-name> 으로 문�
 . 계속하려면 * Proceed * (진행 *)를 클릭합니다.
 
 
-Cloud Manager가 소프트웨어 업데이트를 시작합니다. 소프트웨어 업데이트가 완료되면 작업 환경에서 작업을 수행할 수 있습니다.
+BlueXP가 소프트웨어 업데이트를 시작합니다. 소프트웨어 업데이트가 완료되면 작업 환경에서 작업을 수행할 수 있습니다.
 
 SnapMirror 전송을 일시 중지한 경우 System Manager를 사용하여 전송을 다시 시작합니다.
 
@@ -302,7 +302,7 @@ ifdef::gcp[]
 
 == Google Cloud NAT 게이트웨이를 사용할 때 다운로드 오류를 수정합니다
 
-커넥터는 Cloud Volumes ONTAP용 소프트웨어 업데이트를 자동으로 다운로드합니다. 구성에서 Google Cloud NAT 게이트웨이를 사용하는 경우 다운로드가 실패할 수 있습니다. 소프트웨어 이미지를 분할하는 부품 수를 제한하여 이 문제를 해결할 수 있습니다. 이 단계는 Cloud Manager API를 사용하여 완료해야 합니다.
+커넥터는 Cloud Volumes ONTAP용 소프트웨어 업데이트를 자동으로 다운로드합니다. 구성에서 Google Cloud NAT 게이트웨이를 사용하는 경우 다운로드가 실패할 수 있습니다. 소프트웨어 이미지를 분할하는 부품 수를 제한하여 이 문제를 해결할 수 있습니다. 이 단계는 BlueXP API를 사용하여 완료해야 합니다.
 
 .단계
 . 다음과 같은 JSON을 본문으로 /occm/config에 PUT 요청을 제출합니다.

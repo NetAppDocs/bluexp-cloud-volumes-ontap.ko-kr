@@ -76,7 +76,7 @@ GCP 디스크 유형입니다:: Cloud Volumes ONTAP용 볼륨을 생성할 때 C
 
 
 --
-GCP 디스크 크기입니다:: Cloud Volumes ONTAP 시스템을 배포할 때 초기 디스크 크기를 선택해야 합니다. 그런 다음 Cloud Manager에서 시스템의 용량을 관리할 수 있지만, 애그리게이트를 직접 구축하려는 경우 다음 사항에 유의하십시오.
+GCP 디스크 크기입니다:: Cloud Volumes ONTAP 시스템을 배포할 때 초기 디스크 크기를 선택해야 합니다. 그런 다음 BlueXP에서 시스템 용량을 관리할 수 있지만 자체적으로 집계를 구축하려는 경우 다음 사항에 유의하십시오.
 +
 --
 * Aggregate의 모든 디스크는 동일한 크기여야 합니다.
@@ -99,7 +99,7 @@ GCP 디스크 크기입니다:: Cloud Volumes ONTAP 시스템을 배포할 때 �
 
 == 기본 시스템 디스크를 봅니다
 
-사용자 데이터를 위한 스토리지 외에, Cloud Manager는 Cloud Volumes ONTAP 시스템 데이터(부팅 데이터, 루트 데이터, 코어 데이터, NVRAM)를 위한 클라우드 스토리지도 구매합니다. 계획을 위해 Cloud Volumes ONTAP를 배포하기 전에 이러한 세부 정보를 검토하는 것이 도움이 될 수 있습니다.
+BlueXP는 사용자 데이터를 위한 스토리지 외에도 Cloud Volumes ONTAP 시스템 데이터(부팅 데이터, 루트 데이터, 핵심 데이터 및 NVRAM)를 위한 클라우드 스토리지를 구입합니다. 계획을 위해 Cloud Volumes ONTAP를 배포하기 전에 이러한 세부 정보를 검토하는 것이 도움이 될 수 있습니다.
 
 * link:reference-default-configs.html#google-cloud-single-node["Google Cloud에서 Cloud Volumes ONTAP 시스템 데이터에 대한 기본 디스크를 봅니다"].
 * https://cloud.google.com/compute/quotas["Google Cloud 문서: 리소스 할당량"^]
@@ -202,13 +202,13 @@ GCP에서 Cloud Volumes ONTAP를 배포할 때 가상 네트워크에 대한 세
 
 == 쓰기 속도를 선택합니다
 
-Cloud Manager를 사용하면 Google Cloud의 고가용성(HA) 쌍을 제외한 Cloud Volumes ONTAP의 쓰기 속도 설정을 선택할 수 있습니다. 쓰기 속도를 선택하기 전에 고속 쓰기 속도를 사용할 때 정상 및 높음 설정의 차이점과 위험 및 권장 사항을 이해해야 합니다. link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시오"].
+BlueXP에서는 Google Cloud의 고가용성(HA) 쌍을 제외하고 Cloud Volumes ONTAP에 대한 쓰기 속도 설정을 선택할 수 있습니다. 쓰기 속도를 선택하기 전에 고속 쓰기 속도를 사용할 때 정상 및 높음 설정의 차이점과 위험 및 권장 사항을 이해해야 합니다. link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시오"].
 
 
 
 == 볼륨 사용 프로필을 선택합니다
 
-ONTAP에는 필요한 총 스토리지 양을 줄일 수 있는 몇 가지 스토리지 효율성 기능이 포함되어 있습니다. Cloud Manager에서 볼륨을 생성할 때 이러한 기능을 사용하도록 설정하는 프로필이나 기능을 사용하지 않도록 설정하는 프로필을 선택할 수 있습니다. 사용할 프로파일을 결정하는 데 도움이 되도록 이러한 기능에 대해 자세히 알아 두어야 합니다.
+ONTAP에는 필요한 총 스토리지 양을 줄일 수 있는 몇 가지 스토리지 효율성 기능이 포함되어 있습니다. BlueXP에서 볼륨을 생성할 때 이러한 기능을 활성화하는 프로필이나 해당 기능을 비활성화하는 프로필을 선택할 수 있습니다. 사용할 프로파일을 결정하는 데 도움이 되도록 이러한 기능에 대해 자세히 알아 두어야 합니다.
 
 NetApp 스토리지 효율성 기능은 다음과 같은 이점을 제공합니다.
 
