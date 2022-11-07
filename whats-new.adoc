@@ -20,6 +20,36 @@ BlueXP(이전의 Cloud Manager)에서 Cloud Volumes ONTAP 관리의 새로운 �
 
 
 
+== 2022년 11월 6일
+
+다음 변경 사항은 커넥터의 3.9.23 릴리스에 도입되었습니다.
+
+
+
+=== Azure에서 리소스 그룹을 이동하는 중입니다
+
+이제 동일한 Azure 가입 내에서 하나의 리소스 그룹에서 Azure의 다른 리소스 그룹으로 작업 환경을 이동할 수 있습니다.
+
+자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-moving-resource-groups-azure.html["리소스 그룹 이동 중"].
+
+
+
+=== NDMP-COPY 인증
+
+NDMP-copy는 현재 Cloud Volume ONTAP에서 사용하도록 인증되었습니다.
+
+NDMP를 구성하고 사용하는 방법에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP 구성 개요"].
+
+
+
+=== Azure에 대한 관리형 디스크 암호화 지원
+
+이제 생성 시 모든 관리되는 디스크를 암호화할 수 있는 새로운 Azure 권한이 추가되었습니다.
+
+이 새로운 기능에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-azure-encryption.html["Azure에서 고객이 관리하는 키를 사용하도록 Cloud Volumes ONTAP를 설정합니다"].
+
+
+
 == 2022년 9월 18일
 
 다음 변경 사항은 커넥터의 3.9.22 릴리스에 도입되었습니다.

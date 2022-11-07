@@ -2485,11 +2485,8 @@
   <block id="552690dff240721c335dffa2d29b8ef8" category="paragraph">새 버전의 키를 만들면 Cloud Volumes ONTAP에서 자동으로 최신 키 버전을 사용합니다.</block>
   <block id="0ea67820edee1410e568b14bb70835d0" category="section-title">데이터 암호화 방법</block>
   <block id="145da5369fc47bfb6b1cd09c08d698b0" category="paragraph">고객이 관리하는 키를 사용하도록 구성된 Cloud Volumes ONTAP 작업 환경을 생성한 후 Cloud Volumes ONTAP 데이터는 다음과 같이 암호화됩니다.</block>
-  <block id="6a3d2b5873e00648ba601f7a2af1a7a4" category="list-text">Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다.</block>
-  <block id="51037ebff676c4939694e74fa5a85b6e" category="list-text">디스크 또는 애그리게이트를 추가하는 경우와 같이 새로운 스토리지 계정에서도 동일한 키를 사용합니다.</block>
   <block id="2301d2b9fcb3fe6f26482aff37ea2c54" category="inline-link">디스크 암호화가 설정되었습니다</block>
   <block id="5dab396463f2f277886102bf78fe661b" category="list-text">새 데이터 디스크도 동일한 디스크 암호화 세트를 사용합니다.</block>
-  <block id="cfdbba0560e1880e7195e870b6813736" category="list-text">NVRAM과 코어 디스크는 고객이 관리하는 키 대신 Microsoft 관리 키를 사용하여 암호화됩니다.</block>
   <block id="8764c9ec9f17252b7df37e1710ec9e5a" category="section-title">키 볼트를 작성하고 키를 생성합니다</block>
   <block id="d01b7a4314685f64d972ad7a1fad92aa" category="paragraph">키 볼트는 Cloud Volumes ONTAP 시스템을 생성하려는 Azure 가입 및 지역에 있어야 합니다.</block>
   <block id="0355ddb77a5b72eb0604153dc1393f12" category="inline-link">Azure 구독에서 키 볼트를 작성합니다</block>
@@ -2499,7 +2496,6 @@
   <block id="1be48617ce5825c4bd54ef885eef8a65" category="list-text">다음 옵션을 활성화해야 합니다.</block>
   <block id="ba6db2df53167b0fe62e3b5c762cbbf1" category="list-text">* soft-delete * (이 옵션은 기본적으로 활성화되어 있지만 반드시 _not_사용하지 않아야 함)</block>
   <block id="fd08f80d1ec5aa4440248321eace716f" category="list-text">* 퍼지 보호 *</block>
-  <block id="75914e843b290769c8b2944ccc107c89" category="list-text">* 볼륨 암호화를 위한 Azure 디스크 암호화 * (단일 노드 Cloud Volumes ONTAP 시스템에만 해당)</block>
   <block id="8079302cfd5fd5ac16a06e331392b172" category="inline-link">키 볼트에 키를 생성합니다</block>
   <block id="08226457c01755d5b1d666bac6bf1add" category="list-text"><block ref="f3e81382631201ff959343d3ba9dea1c" category="inline-link-rx"></block>.</block>
   <block id="4bad1b88b2d24ff3ad1376a54e1bddbd" category="paragraph">키에 대한 다음 요구 사항을 확인합니다.</block>
@@ -4431,4 +4427,37 @@
   <block id="edeea5f1bc7f7fc7a2966961ec39210e" category="sidebar">BlueXP에서 스토리지 VM과 작업합니다</block>
   <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">BlueXP 웹 사이트 블로그</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">모든 BlueXP 설명서</block>
+  <block id="1223a21ec0a7e82e77ac43bd74628f1e" category="list-text">Azure HA 단일 가용성 영역</block>
+  <block id="dcd61ff34229ba534213e8501446885a" category="list-text">Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다.^1^</block>
+  <block id="08408518b6366a9a8bb69802d83d5e3c" category="list-text">디스크 또는 애그리게이트를 추가하는 경우와 같이 새로운 스토리지 계정에서도 동일한 키를 사용합니다.^1^</block>
+  <block id="efbd2c7930ae2087a4719eb7c262b95d" category="list-text">ONTAP 9.10.1P3에서 NVRAM 및 코어 디스크의 경우 BlueXP는 을 사용합니다<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>관리 디스크를 사용하여 암호화 키를 관리할 수 있습니다. 하위 버전은 고객 관리 키 대신 Microsoft 관리 키를 사용합니다.</block>
+  <block id="9dca67fbd1fac23e7aff5774ec0afa2a" category="list-text">Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다. ^1^</block>
+  <block id="6d69087e8037af0164a0779028792a7b" category="list-text">ONTAP 9.9.1P7에서 NVRAM 및 코어 디스크의 경우 BlueXP는 디스크 암호화 세트를 사용하여 관리되는 디스크로 암호화 키를 관리할 수 있습니다. 하위 버전은 고객 관리 키 대신 Microsoft 관리 키를 사용합니다.</block>
+  <block id="8b213ded385c637758f8c3705eb6386a" category="list-title">각주</block>
+  <block id="ab9a6656c154c96464d829868998ba40" category="list-text">스토리지 계정을 만드는 동안 암호화하려면 Cloud Volumes ONTAP 생성 요청에서 리소스의 ID를 생성하고 제공해야 합니다. 이는 모든 유형의 배포에 적용됩니다. 제공하지 않으면 저장소 계정은 여전히 암호화되지만 BlueXP는 먼저 Microsoft 관리 키 암호화를 사용하여 저장소 계정을 만든 다음 고객이 관리하는 키를 사용하도록 저장소 계정을 업데이트합니다.</block>
+  <block id="d07f270590b573e1e499b9c9aed87fb4" category="list-text">* 볼륨 암호화를 위한 Azure 디스크 암호화 *</block>
+  <block id="619dc876da25600cdf36ffbec25d908e" category="summary">Cloud Volumes ONTAP는 Azure 리소스 그룹 이동을 지원하지만 워크플로는 Azure 콘솔에서만 실행됩니다.</block>
+  <block id="6c2dc09b272a4aed6d56a3438a190129" category="doc">리소스 그룹 이동 중</block>
+  <block id="26d9e2ceeedec062543b6a4a27db01a1" category="paragraph">동일한 Azure 가입 내에서 하나의 리소스 그룹에서 Azure의 다른 리소스 그룹으로 작업 환경을 이동할 수 있습니다. 서로 다른 Azure 구독 간에 리소스 그룹을 이동하는 것은 지원되지 않습니다.</block>
+  <block id="d88235dd3e716412ac91be3dfa4023a4" category="list-text">Canvas * 에서 작업 환경을 제거합니다.</block>
+  <block id="02c73c19fdf0f5023f8a72d040197018" category="paragraph">작업 환경을 제거하는 방법에 대한 자세한 내용은 을 참조하십시오 <block ref="9dd47557c6bc134ec03be5246bea41e0" category="inline-link-macro-rx"></block>.</block>
+  <block id="2432571dc15a8d67f6eec5f65d85e73f" category="list-text">Azure 콘솔에서 리소스 그룹 이동을 실행합니다.</block>
+  <block id="4593d9667ed2d90debaf928ba5605850" category="inline-link-macro">리소스를 새 리소스 그룹 또는 Microsoft Azure 설명서에 있는 구독으로 이동합니다</block>
+  <block id="341c978d4ed833ff82feb36aba36ade0" category="paragraph">이동을 완료하려면 을 참조하십시오 <block ref="252fa4d56b2364e5af99ca61bfb066f4" category="inline-link-macro-rx"></block>.</block>
+  <block id="f2fe5653f91dfb127425583565d157db" category="list-text">Canvas * 에서 작업 환경을 검색합니다.</block>
+  <block id="628dfcbee044de30f5862101a64854ef" category="list-text">작업 환경에 대한 정보에서 새 리소스 그룹을 찾습니다.</block>
+  <block id="268c52a1e1197b595712cb880346cba4" category="paragraph">작업 환경 및 해당 리소스(VM, 디스크, 스토리지 계정, 네트워크 인터페이스, 스냅샷)가 새 리소스 그룹에 있습니다.</block>
+  <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022년 11월 6일</block>
+  <block id="2325f561a20765def93d682f14cae306" category="paragraph">다음 변경 사항은 커넥터의 3.9.23 릴리스에 도입되었습니다.</block>
+  <block id="6d5ba1b41fa03c2fdf0d747769a6b053" category="section-title">Azure에서 리소스 그룹을 이동하는 중입니다</block>
+  <block id="ea55da5ec5028d99103c938ded49761c" category="paragraph">이제 동일한 Azure 가입 내에서 하나의 리소스 그룹에서 Azure의 다른 리소스 그룹으로 작업 환경을 이동할 수 있습니다.</block>
+  <block id="d015054d89d4ecbe893f21f5ab9700c0" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="8d94a006f1853b408e5763a514426526" category="inline-link-macro-rx"></block>.</block>
+  <block id="b6a2ac7b66db8e93b936023f17401626" category="section-title">NDMP-COPY 인증</block>
+  <block id="c348c640ca478b45f3a3d9e14bb0695b" category="paragraph">NDMP-copy는 현재 Cloud Volume ONTAP에서 사용하도록 인증되었습니다.</block>
+  <block id="ab5a83d8e39547c5fb30a1fda984aebb" category="inline-link">NDMP 구성 개요</block>
+  <block id="e4b4f60ab9fe08116659a5e12d6db4a8" category="paragraph">NDMP를 구성하고 사용하는 방법에 대한 자세한 내용은 을 참조하십시오<block ref="9c57f7cf04e123991a3c88e286feb189" category="inline-link-rx"></block>.</block>
+  <block id="5e7de773a189ac8974753f9ce70a3dc5" category="section-title">Azure에 대한 관리형 디스크 암호화 지원</block>
+  <block id="a09181ba1488df77bf9950cb483e97e8" category="paragraph">이제 생성 시 모든 관리되는 디스크를 암호화할 수 있는 새로운 Azure 권한이 추가되었습니다.</block>
+  <block id="7343d251ecc72fc362a0ce85cf11a9fe" category="paragraph">이 새로운 기능에 대한 자세한 내용은 을 참조하십시오<block ref="91da0725d8642ccf887bde4d4604033e" category="inline-link-rx"></block>.</block>
+  <block id="a81c707e35ab82b2b21b18864fb458e9" category="sidebar">자원 그룹을 이동합니다</block>
 </blocks>

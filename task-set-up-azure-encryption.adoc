@@ -40,24 +40,29 @@ Cloud Volumes ONTAP에서 고객 관리 키를 사용하려면 다음 단계를 
 
 고객이 관리하는 키를 사용하도록 구성된 Cloud Volumes ONTAP 작업 환경을 생성한 후 Cloud Volumes ONTAP 데이터는 다음과 같이 암호화됩니다.
 
-HA 쌍::
+Azure HA 단일 가용성 영역::
 +
 --
-* Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다.
-* 디스크 또는 애그리게이트를 추가하는 경우와 같이 새로운 스토리지 계정에서도 동일한 키를 사용합니다.
+* Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다.^1^
+* 디스크 또는 애그리게이트를 추가하는 경우와 같이 새로운 스토리지 계정에서도 동일한 키를 사용합니다.^1^
+* ONTAP 9.10.1P3에서 NVRAM 및 코어 디스크의 경우 BlueXP는 을 사용합니다 https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["디스크 암호화가 설정되었습니다"^]관리 디스크를 사용하여 암호화 키를 관리할 수 있습니다. 하위 버전은 고객 관리 키 대신 Microsoft 관리 키를 사용합니다.
 
 
 --
 단일 노드::
 +
 --
-* Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다.
+* Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다. ^1^
 * 루트, 부팅 및 데이터 디스크의 경우 BlueXP는 을 사용합니다 https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["디스크 암호화가 설정되었습니다"^]관리 디스크를 사용하여 암호화 키를 관리할 수 있습니다.
 * 새 데이터 디스크도 동일한 디스크 암호화 세트를 사용합니다.
-* NVRAM과 코어 디스크는 고객이 관리하는 키 대신 Microsoft 관리 키를 사용하여 암호화됩니다.
+* ONTAP 9.9.1P7에서 NVRAM 및 코어 디스크의 경우 BlueXP는 디스크 암호화 세트를 사용하여 관리되는 디스크로 암호화 키를 관리할 수 있습니다. 하위 버전은 고객 관리 키 대신 Microsoft 관리 키를 사용합니다.
 
 
 --
+
+
+.각주
+. 스토리지 계정을 만드는 동안 암호화하려면 Cloud Volumes ONTAP 생성 요청에서 리소스의 ID를 생성하고 제공해야 합니다. 이는 모든 유형의 배포에 적용됩니다. 제공하지 않으면 저장소 계정은 여전히 암호화되지만 BlueXP는 먼저 Microsoft 관리 키 암호화를 사용하여 저장소 계정을 만든 다음 고객이 관리하는 키를 사용하도록 저장소 계정을 업데이트합니다.
 
 
 
@@ -77,7 +82,7 @@ HA 쌍::
 +
 *** * soft-delete * (이 옵션은 기본적으로 활성화되어 있지만 반드시 _not_사용하지 않아야 함)
 *** * 퍼지 보호 *
-*** * 볼륨 암호화를 위한 Azure 디스크 암호화 * (단일 노드 Cloud Volumes ONTAP 시스템에만 해당)
+*** * 볼륨 암호화를 위한 Azure 디스크 암호화 *
 
 
 
@@ -109,6 +114,7 @@ HA 쌍::
 "Microsoft.KeyVault/vaults/deploy/action",
 "Microsoft.KeyVault/vaults/read",
 "Microsoft.KeyVault/vaults/accessPolicies/write"
+"Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["최신 사용 권한 목록을 봅니다"^]
 
@@ -155,8 +161,9 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 [source, json]
 ----
 "azureEncryptionParameters": {
-       "key": "keyName",
-       "vaultName": "vaultName"
+              "key": "keyName",
+              "vaultName": "vaultName",
+              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
 }
 ----
 +
@@ -173,8 +180,9 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 [source, json]
 ----
 "azureEncryptionParameters": {
-       "key": "keyName",
-       "vaultName": "vaultName"
+              "key": "keyName",
+              "vaultName": "vaultName",
+              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
 }
 ----
 +

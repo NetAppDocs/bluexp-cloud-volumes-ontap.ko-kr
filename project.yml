@@ -196,6 +196,8 @@ sidebar:
           url: "/task-overriding-cifs-locks.html"
         - title: Azure Private Link 또는 서비스 끝점을 사용합니다
           url: "/task-enabling-private-link.html"
+        - title: 자원 그룹을 이동합니다
+          url: "/task-moving-resource-groups-azure.html"
       - title: Google Cloud 관리
         flavor: gcp
         entries:
