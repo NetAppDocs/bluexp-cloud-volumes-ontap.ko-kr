@@ -111,9 +111,6 @@ EBS 디스크 성능에 대한 자세한 내용은 을 참조하십시오 http:/
 --
 
 
-AWS에서 Cloud Volumes ONTAP 시스템 사이징에 대한 자세한 내용은 다음 비디오에서 확인하십시오.
-
-video::GELcXmOuYPw[youtube,width=848,height=480]
 
 
 == 기본 시스템 디스크를 봅니다
