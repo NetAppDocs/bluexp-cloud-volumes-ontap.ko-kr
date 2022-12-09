@@ -4571,4 +4571,9 @@
   <block id="26107ad7eb2db3c2d4b832701061add4" category="list-text">단일 노드 시스템이 있는 Azure 디스크 유형입니다</block>
   <block id="7a91b2f49a589947c7854acf66d0f91a" category="list-text">HA 쌍을 지원하는 Azure 디스크 유형</block>
   <block id="a75a698e7d0ed400565763b148a6d0db" category="list-text">HA 시스템은 프리미엄 SSD 공유 관리 디스크를 사용합니다. 이 두 디스크는 모두 I/O 집약적인 워크로드를 더 높은 비용으로 처리합니다. 9.12.1 릴리즈 이전에 생성된 HA 배포에서는 프리미엄 페이지 Blob을 사용합니다.</block>
+  <block id="e2ab7c65b21ed8cc1c3b642b5e36429e" category="section-title">S3</block>
+  <block id="cc5f50b3903dc30a3a3545bb58fcdd14" category="paragraph">Cloud Volumes ONTAP은 스케일아웃 스토리지 옵션으로 S3를 지원합니다. S3 프로토콜 지원을 통해 스토리지 VM(SVM)의 버킷에 포함된 오브젝트에 대한 S3 클라이언트 액세스를 구성할 수 있습니다.</block>
+  <block id="75081fb4982f7b843e702079b35f0ed4" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block>.</block>
+  <block id="eba1f3287bdc33dfa25c084b5e15a4c5" category="cell">9.12.1</block>
+  <block id="708ffc372ba6f36174a7930961b956ab" category="section-title">2022년 12월 8일</block>
 </blocks>
