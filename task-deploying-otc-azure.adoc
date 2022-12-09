@@ -104,9 +104,6 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 | 필드에 입력합니다 | 설명 
 
 
-| 가용성 영역 | 단일 노드 시스템의 경우 Cloud Volumes ONTAP를 구축할 가용성 영역을 선택할 수 있습니다. AZ를 선택하지 않으면 BlueXP가 사용자를 위해 하나를 선택합니다. 
-
-
 | 리소스 그룹  a| 
 Cloud Volumes ONTAP에 대한 새 리소스 그룹을 만들거나 기존 리소스 그룹을 사용합니다. 모범 사례는 Cloud Volumes ONTAP에 대한 새로운 전용 리소스 그룹을 사용하는 것입니다. 기존 공유 리소스 그룹에 Cloud Volumes ONTAP를 배포할 수는 있지만 데이터 손실 위험 때문에 권장되지 않습니다. 자세한 내용은 위의 경고를 참조하십시오.
 
@@ -159,19 +156,12 @@ link:concept-data-tiering.html["데이터 계층화에 대해 자세히 알아�
 
 
 
-. * 쓰기 속도 및 WORM * (단일 노드 시스템만 해당): * 일반 * 또는 * 고속 * 쓰기 속도를 선택하고 원하는 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
+. * 쓰기 속도 및 WORM *: * 일반 * 또는 * 고속 * 쓰기 속도를 선택하고 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
 +
 link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시오"].
 
 +
 데이터 계층화가 설정된 경우 WORM을 설정할 수 없습니다.
-
-+
-link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"].
-
-. * 스토리지와 WORM * (HA만 해당) 보안 통신: Azure 스토리지 계정에 대한 HTTPS 연결을 사용하도록 설정하고 원하는 경우 WORM(Write Once, Read Many) 스토리지를 활성화할지 여부를 선택합니다.
-+
-HTTPS 연결은 Cloud Volumes ONTAP 9.7 HA 쌍에서 Azure 스토리지 계정에 연결됩니다. 이 옵션을 설정하면 쓰기 성능에 영향을 줄 수 있습니다. 작업 환경을 만든 후에는 설정을 변경할 수 없습니다.
 
 +
 link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"].
@@ -332,9 +322,6 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 | 필드에 입력합니다 | 설명 
 
 
-| 가용성 영역 | 단일 노드 시스템의 경우 Cloud Volumes ONTAP를 구축할 가용성 영역을 선택할 수 있습니다. AZ를 선택하지 않으면 BlueXP가 사용자를 위해 하나를 선택합니다. 
-
-
 | 리소스 그룹  a| 
 Cloud Volumes ONTAP에 대한 새 리소스 그룹을 만들거나 기존 리소스 그룹을 사용합니다. 모범 사례는 Cloud Volumes ONTAP에 대한 새로운 전용 리소스 그룹을 사용하는 것입니다. 기존 공유 리소스 그룹에 Cloud Volumes ONTAP를 배포할 수는 있지만 데이터 손실 위험 때문에 권장되지 않습니다. 자세한 내용은 위의 경고를 참조하십시오.
 
@@ -377,7 +364,6 @@ NOTE: 선택한 버전에 대해 최신 출시 후보, 일반 가용성 또는 �
 다음 사항에 유의하십시오.
 
 +
-** 디스크 유형은 초기 볼륨입니다. 이후 볼륨에 대해 다른 디스크 유형을 선택할 수 있습니다.
 ** 디스크 크기는 초기 애그리게이트의 모든 디스크와 간단한 프로비저닝 옵션을 사용할 때 BlueXP가 생성하는 추가 애그리게이트에서 사용됩니다. 고급 할당 옵션을 사용하여 다른 디스크 크기를 사용하는 애그리게이트를 생성할 수 있습니다.
 +
 디스크 크기 선택에 대한 도움말은 를 참조하십시오 link:task-planning-your-config-azure.html#sizing-your-system-in-azure["Azure에서 시스템 사이징"].
@@ -389,9 +375,12 @@ link:concept-data-tiering.html["데이터 계층화에 대해 자세히 알아�
 
 
 
-. * 쓰기 속도 및 WORM * (단일 노드 시스템만 해당): * 일반 * 또는 * 고속 * 쓰기 속도를 선택하고 원하는 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
+. * 쓰기 속도 및 WORM *: * 일반 * 또는 * 고속 * 쓰기 속도를 선택하고 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
 +
 link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시오"].
+
++
+이 옵션은 특정 VM 유형에만 사용할 수 있습니다. 지원되는 VM 유형에 대한 자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["HA Pair에 대한 라이센스에서 지원되는 구성"].
 
 +
 데이터 계층화가 설정된 경우 WORM을 설정할 수 없습니다.
@@ -399,9 +388,9 @@ link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시
 +
 link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"].
 
-. * 스토리지와 WORM * (HA만 해당) 보안 통신: Azure 스토리지 계정에 대한 HTTPS 연결을 사용하도록 설정하고 원하는 경우 WORM(Write Once, Read Many) 스토리지를 활성화할지 여부를 선택합니다.
+. * 스토리지와 WORM * 에 대한 보안 통신: Azure 스토리지 계정에 대한 HTTPS 연결을 사용하도록 설정하고 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화할지 여부를 선택합니다.
 +
-HTTPS 연결은 Cloud Volumes ONTAP 9.7 HA 쌍에서 Azure 스토리지 계정에 연결됩니다. 이 옵션을 설정하면 쓰기 성능에 영향을 줄 수 있습니다. 작업 환경을 만든 후에는 설정을 변경할 수 없습니다.
+HTTPS 연결은 Cloud Volumes ONTAP 9.7 HA 쌍에서 Azure 페이지 blob 저장소 계정에 연결됩니다. 이 옵션을 설정하면 쓰기 성능에 영향을 줄 수 있습니다. 작업 환경을 만든 후에는 설정을 변경할 수 없습니다.
 
 +
 link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"].

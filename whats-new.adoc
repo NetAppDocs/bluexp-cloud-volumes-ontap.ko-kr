@@ -20,6 +20,12 @@ BlueXP(이전의 Cloud Manager)에서 Cloud Volumes ONTAP 관리의 새로운 �
 
 
 
+=== Cloud Volumes ONTAP 9.12.1
+
+이제 BlueXP는 새로운 기능과 추가 클라우드 공급자 지역을 지원하는 Cloud Volumes ONTAP 9.12.1을 배포 및 관리할 수 있습니다.https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^]
+
+
+
 == 2022년 12월 4일
 
 다음 변경 사항은 커넥터의 3.9.24 릴리스에 도입되었습니다.
@@ -35,6 +41,20 @@ Cloud Volumes ONTAP 생성 프로세스 중에 WORM(Write Once, Read Many) 및 �
 === 현재 이스라엘 지역은 Google Cloud에서 지원됩니다
 
 현재 이스라엘 지역은 Google Cloud for Cloud Volumes ONTAP 및 Connector for Cloud Volumes ONTAP 9.11.1 P3 이상에서 지원됩니다.
+
+
+
+== 2022년 11월 15일
+
+다음 변경 사항은 커넥터의 3.9.23 릴리스에 도입되었습니다.
+
+
+
+=== GCP의 ONTAP S3 라이센스
+
+ONTAP S3 라이센스는 이제 Google 클라우드 플랫폼에서 버전 9.12.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 포함되어 있습니다.
+
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오"^]
 
 
 

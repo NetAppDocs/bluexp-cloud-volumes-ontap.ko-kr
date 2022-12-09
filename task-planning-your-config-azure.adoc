@@ -62,20 +62,20 @@ Cloud Volumes ONTAP 시스템을 사이징하면 성능 및 용량 요구사항�
 
 
 --
-Azure 디스크 유형입니다:: Cloud Volumes ONTAP용 볼륨을 생성할 때 Cloud Volumes ONTAP가 디스크로 사용하는 기본 클라우드 스토리지를 선택해야 합니다.
+단일 노드 시스템이 있는 Azure 디스크 유형입니다:: Cloud Volumes ONTAP용 볼륨을 생성할 때 Cloud Volumes ONTAP가 디스크로 사용하는 기본 클라우드 스토리지를 선택해야 합니다.
 +
 --
-HA 시스템은 프리미엄 페이지 Blob을 사용합니다. 한편, 단일 노드 시스템에서는 두 가지 유형의 Azure 관리 디스크를 사용할 수 있습니다.
+단일 노드 시스템에서는 세 가지 유형의 Azure 관리 디스크를 사용할 수 있습니다.
 
 * _Premium SSD 관리 디스크_ 높은 비용으로 I/O 집약적인 작업 부하에 높은 성능을 제공합니다.
 * _Standard SSD Managed Disks_는 낮은 IOPS가 필요한 워크로드에 일관된 성능을 제공합니다.
 * _표준 HDD 관리 디스크 _ 는 높은 IOPS가 필요하지 않고 비용을 절감하려는 경우에 적합합니다.
-+
+
+
 이러한 디스크의 사용 사례에 대한 자세한 내용은 를 참조하십시오 https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure 설명서: Azure에서 사용할 수 있는 디스크 유형은 무엇입니까?"^].
 
-
-
 --
+HA 쌍을 지원하는 Azure 디스크 유형:: HA 시스템은 프리미엄 SSD 공유 관리 디스크를 사용합니다. 이 두 디스크는 모두 I/O 집약적인 워크로드를 더 높은 비용으로 처리합니다. 9.12.1 릴리즈 이전에 생성된 HA 배포에서는 프리미엄 페이지 Blob을 사용합니다.
 Azure 디스크 크기입니다:: Cloud Volumes ONTAP 인스턴스를 시작할 때 Aggregate의 기본 디스크 크기를 선택해야 합니다. BlueXP에서는 이 디스크 크기를 초기 집계와 단순 프로비저닝 옵션을 사용할 때 생성되는 추가 애그리게이트에 사용합니다. 에서는 기본적으로 와는 다른 디스크 크기를 사용하는 애그리게이트를 생성할 수 있습니다 link:task-create-aggregates.html["고급 할당 옵션을 사용합니다"].
 +
 --

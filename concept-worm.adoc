@@ -30,7 +30,14 @@ Cloud Volumes ONTAP 시스템에서 WORM(Write Once, Read Many) 스토리지를 
 
 WORM 볼륨의 총 프로비저닝 용량에 따라 WORM 스토리지에 대한 충전이 매시간 가능합니다.
 
-https://cloud.netapp.com/pricing["WORM 스토리지 가격에 대해 자세히 알아보십시오"^].
+Cloud Volumes ONTAP 9.10.1 이상에서는 다음과 같은 충전 동작을 이해해야 합니다.
+
+* ONTAP 9.10.1.1부터 WORM 볼륨과 비 WORM 볼륨이 동일한 애그리게이트에 존재할 수 있습니다.
+* Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM을 활성화하면 BlueXP에서 생성한 모든 볼륨에서 WORM이 활성화됩니다. 그러나 ONTAP CLI 또는 System Manager를 사용하여 WORM이 비활성화된 볼륨을 생성할 수 있습니다. 이러한 볼륨은 WORM 속도로 충전되지 않습니다.
+* 작업 환경을 생성할 때 WORM을 활성화하지 않으면 BlueXP에서 생성한 모든 볼륨에서 WORM이 비활성화됩니다. 해당 볼륨에 대해 WORM 속도로 충전되지 않습니다. 그러나 ONTAP CLI 또는 System Manager를 사용하여 WORM 지원 볼륨을 생성할 수 있습니다. 이러한 볼륨은 WORM 속도로 충전됩니다.
+
+
+https://cloud.netapp.com/pricing["WORM 스토리지 가격에 대해 자세히 알아보십시오"^]
 
 
 

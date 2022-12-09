@@ -114,11 +114,14 @@ endif::gcp[]
 
 빠른 쓰기 속도로 인해 데이터가 손실되면 EMS(Event Management System)에서 다음 두 이벤트를 보고합니다.
 
-* Cloud Volumes ONTAP 9.11.0 이상
+* Cloud Volumes ONTAP 9.12.1 이상
++
+ NOTICE nv.data.loss.possible: An unexpected shutdown occurred while in high write speed mode, which possibly caused a loss of data.
+* Cloud Volumes ONTAP 9.11.0에서 9.11.1까지
 +
  DEBUG nv.check.failed: NVRAM check failed with error "NVRAM disabled due to dirty shutdown with High Write Speed mode"
 +
- ERROR wafl.root.content.changed: Contents of the root volume '' might have changed. Verify that all recent configuration changes are still in effect.
+ ERROR wafl.root.content.changed: Contents of the root volume '' might have changed. Verify that all recent configuration changes are still in effect..
 * Cloud Volumes ONTAP 9.8 ~ 9.10.1
 +
  DEBUG nv.check.failed: NVRAM check failed with error "NVRAM disabled due to dirty shutdown"
