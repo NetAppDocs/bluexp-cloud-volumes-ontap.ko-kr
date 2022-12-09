@@ -42,6 +42,7 @@ BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 �
 
 위의 자체 지원 옵션 외에도 NetApp 지원 전문가와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.
 
+.시작하기 전에
 케이스 생성* 기능을 사용하려면 먼저 BlueXP 계정 ID 일련 번호( 960xxxx) NetApp 포함 link:task-support-registration.html["지원 등록 방법을 알아보십시오"].
 
 .단계
@@ -75,6 +76,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 
+.작업을 마친 후
 지원 케이스 번호와 함께 팝업이 나타납니다. NetApp 지원 전문가가 귀사의 사례를 검토하고 곧 다시 연결해 드릴 것입니다.
 
 지원 케이스 내역을 보려면 * 설정 > 일정 * 을 클릭하고 "지원 케이스 생성"이라는 이름의 작업을 찾습니다. 오른쪽 끝에 있는 버튼을 사용하여 작업을 확장하여 세부 정보를 볼 수 있습니다.

@@ -46,16 +46,77 @@ BlueXP에서 AutoSupport 메시지를 보낼 수 없다고 알리는 경우 link
 
 === IP 주소
 
-BlueXP는 Azure의 Cloud Volumes ONTAP에 다음과 같은 수의 IP 주소를 할당합니다.
+BlueXP는 Azure의 Cloud Volumes ONTAP에 필요한 수의 전용 IP 주소를 자동으로 할당합니다. 네트워킹에 사용 가능한 개인 IP 주소가 충분한지 확인해야 합니다.
 
-* 단일 노드: 5개의 IP 주소
-* HA 쌍: 16개의 IP 주소
+Cloud Manager가 Cloud Volumes ONTAP에 할당하는 LIF 수는 단일 노드 시스템을 구축하든 HA 쌍을 구축하든 관계없이 달라집니다. LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 SVM 관리 LIF가 필요합니다.
 
+
+NOTE: iSCSI LIF는 iSCSI 프로토콜을 통해 클라이언트에 액세스할 수 있도록 지원하며 시스템에서 다른 중요한 네트워킹 워크플로우에 사용됩니다. 이러한 LIF는 필수 항목이므로 삭제할 수 없습니다.
+
+
+
+==== 단일 노드 시스템의 IP 주소입니다
+
+BlueXP는 5개 또는 6개의 IP 주소를 단일 노드 시스템에 할당합니다.
+
+* 클러스터 관리 IP
+* 노드 관리 IP
+* SnapMirror에 대한 인터클러스터 IP
+* NFS/CIFS IP입니다
+* iSCSI IP입니다
++
+
+NOTE: iSCSI IP는 iSCSI 프로토콜을 통한 클라이언트 액세스를 제공합니다. 또한 시스템에서 다른 중요한 네트워킹 워크플로우에 사용됩니다. 이 LIF는 필수 항목이므로 삭제할 수 없습니다.
+
+* SVM 관리(선택 사항 - 기본적으로 구성되지 않음)
+
+
+
+
+==== HA 쌍의 IP 주소
+
+BlueXP는 구축하는 동안 노드당 4개의 NIC에 IP 주소를 할당합니다.
 
 BlueXP는 HA 쌍에서 SVM 관리 LIF를 생성하지만 Azure의 단일 노드 시스템에서는 생성한 것이 아닙니다.
 
+* NIC0 *
 
-TIP: LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 SVM 관리 LIF가 필요합니다.
+* 노드 관리 IP
+* 인터클러스터 IP
+* iSCSI IP입니다
++
+
+NOTE: iSCSI IP는 iSCSI 프로토콜을 통한 클라이언트 액세스를 제공합니다. 또한 시스템에서 다른 중요한 네트워킹 워크플로우에 사용됩니다. 이 LIF는 필수 항목이므로 삭제할 수 없습니다.
+
+
+
+* NIC1 *
+
+* 클러스터 네트워크 IP
+
+
+* NIC2 *
+
+* 클러스터 인터커넥트 IP(HA IC)
+
+
+* NIC3 *
+
+* Pageblob NIC IP(디스크 액세스)
+
+
+
+NOTE: NIC3는 페이지 blob 시스템이 있는 HA 구축에만 적용됩니다.
+
+위의 IP 주소는 페일오버 이벤트에서 마이그레이션되지 않습니다.
+
+또한 페일오버 이벤트에 마이그레이션하도록 4개의 프런트엔드 IP(FIPS)가 구성됩니다. 이러한 프런트엔드 IP는 로드 밸런서에 있습니다.
+
+* 클러스터 관리 IP
+* NodeA 데이터 IP(NFS/CIFS)
+* NodeB 데이터 IP(NFS/CIFS)
+* SVM 관리 IP
+
 
 
 

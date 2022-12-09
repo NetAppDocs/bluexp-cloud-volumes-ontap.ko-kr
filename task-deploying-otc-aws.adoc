@@ -49,6 +49,7 @@ link:task-set-up-licensing-aws.html["라이센스 설정 방법에 대해 알아
 
 AWS에서 Cloud Volumes ONTAP를 실행하려면 BlueXP에서 새로운 작업 환경을 만들어야 합니다
 
+.이 작업에 대해
 작업 환경을 생성한 직후 BlueXP는 지정된 VPC에서 테스트 인스턴스를 시작하여 연결을 확인합니다. 성공하면 즉시 BlueXP가 인스턴스를 종료한 다음 Cloud Volumes ONTAP 시스템 배포를 시작합니다. BlueXP에서 연결을 확인할 수 없는 경우 작업 환경 생성이 실패합니다. 테스트 인스턴스는 T2.nano(기본 VPC 테넌시의 경우) 또는 m3.medium(전용 VPC 테넌시의 경우)입니다.
 
 .단계
@@ -255,6 +256,7 @@ image:screenshot_cot_vol.gif["스크린샷: Cloud Volumes ONTAP 인스턴스에 
 
 
 
+.결과
 BlueXP에서 Cloud Volumes ONTAP 인스턴스를 시작합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.
 
 Cloud Volumes ONTAP 인스턴스를 시작하는 데 문제가 있는 경우 실패 메시지를 검토합니다. 작업 환경을 선택하고 환경 다시 생성 을 클릭할 수도 있습니다.
@@ -275,14 +277,16 @@ Cloud Volumes ONTAP 인스턴스를 시작하는 데 문제가 있는 경우 실
 
 AWS에서 Cloud Volumes ONTAP HA 쌍을 실행하려면 BlueXP에서 HA 작업 환경을 만들어야 합니다.
 
+.제한
 현재 HA 쌍은 AWS 아웃포스트에서 지원되지 않습니다.
 
+.이 작업에 대해
 작업 환경을 생성한 직후 BlueXP는 지정된 VPC에서 테스트 인스턴스를 시작하여 연결을 확인합니다. 성공하면 즉시 BlueXP가 인스턴스를 종료한 다음 Cloud Volumes ONTAP 시스템 배포를 시작합니다. BlueXP에서 연결을 확인할 수 없는 경우 작업 환경 생성이 실패합니다. 테스트 인스턴스는 T2.nano(기본 VPC 테넌시의 경우) 또는 m3.medium(전용 VPC 테넌시의 경우)입니다.
 
 .단계
 . 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 화면의 지시를 따릅니다.
-. * 위치 선택 *: * 아마존 웹 서비스 * 및 * Cloud Volumes ONTAP 단일 노드 * 를 선택합니다.
+. * 위치 선택 *: * 아마존 웹 서비스 * 및 * Cloud Volumes ONTAP HA * 를 선택합니다.
 . * 세부 정보 및 자격 증명 *: AWS 자격 증명과 구독을 선택적으로 변경하고, 작업 환경 이름을 입력하고, 필요한 경우 태그를 추가한 다음 암호를 입력합니다.
 +
 이 페이지의 일부 필드는 설명이 필요 없습니다. 다음 표에서는 지침이 필요한 필드를 설명합니다.
@@ -492,6 +496,7 @@ image:screenshot_cot_vol.gif["스크린샷: Cloud Volumes ONTAP 인스턴스에 
 
 
 
+.결과
 BlueXP에서 Cloud Volumes ONTAP HA 쌍을 시작합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.
 
 HA 쌍 실행에 문제가 있는 경우 장애 메시지를 검토하십시오. 작업 환경을 선택하고 환경 다시 생성 을 클릭할 수도 있습니다.

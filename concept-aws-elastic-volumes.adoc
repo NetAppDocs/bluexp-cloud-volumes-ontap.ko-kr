@@ -106,7 +106,7 @@ GP3 또는 ios1 디스크를 사용하는 볼륨을 생성하는 경우 BlueXP�
 이 시나리오는 가능성이 낮지만 다음 두 가지 경우에 가능합니다.
 
 ** API에서 Aggregate를 생성할 때 Elastic Volumes 기능을 명시적으로 비활성화했습니다.
-** 사용자 인터페이스에서 새 Cloud Volumes ONTAP 시스템을 생성했습니다. 이 경우 초기 애그리게이트에 탄성 볼륨 기능이 비활성화됩니다. 검토  을 참조하십시오.
+** 사용자 인터페이스에서 새 Cloud Volumes ONTAP 시스템을 생성했습니다. 이 경우 초기 애그리게이트에 탄성 볼륨 기능이 비활성화됩니다. 검토 <<제한 사항>> 을 참조하십시오.
 
 
 ====
@@ -146,7 +146,7 @@ link:task-deploying-otc-aws.html["Cloud Volumes ONTAP 시스템을 생성하는 
 
 * Elastic Volumes가 설정된 Aggregate에 새 볼륨을 생성합니다
 +
-GP3 또는 io1 디스크를 사용하는 볼륨을 생성하는 경우 BlueXP는 Elastic Volumes가 활성화된 Aggregate에 볼륨을 자동으로 생성합니다. 자세한 내용은 을 참조하십시오  happens when you create a volume.
+GP3 또는 io1 디스크를 사용하는 볼륨을 생성하는 경우 BlueXP는 Elastic Volumes가 활성화된 Aggregate에 볼륨을 자동으로 생성합니다. 자세한 내용은 을 참조하십시오 <<볼륨을 생성할 때 수행되는 작업>>.
 
 +
 link:task-create-volumes.html["볼륨을 생성하는 방법에 대해 알아보십시오"].

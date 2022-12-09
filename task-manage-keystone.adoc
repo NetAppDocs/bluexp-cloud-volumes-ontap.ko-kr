@@ -41,6 +41,7 @@ image:screenshot-keystone-overview.png["Keystone Flex 가입 목록을 보여주
 
 
 
+.다음 단계
 Cloud Volumes ONTAP에 사용할 구독을 연결합니다.
 
 
@@ -58,6 +59,7 @@ image:screenshot-keystone-link.png["구독에 대한 링크 옵션을 보여 주
 
 
 
+.결과
 이제 가입이 BlueXP 계정에 연결되어 있으며 Cloud Volumes ONTAP 작업 환경을 생성할 때 선택할 수 있습니다.
 
 
@@ -77,6 +79,7 @@ image:screenshot-keystone-request.png["구독에 대해 커밋된 용량 변경�
 . 아래로 스크롤하여 요청에 대한 추가 세부 정보를 입력한 다음 * 제출 * 을 클릭합니다.
 
 
+.결과
 요청이 NetApp의 시스템에서 처리를 위한 티켓을 생성합니다.
 
 
@@ -91,4 +94,5 @@ image:screenshot-keystone-request.png["구독에 대해 커밋된 용량 변경�
 . 연결을 해제할 구독의 경우 을 클릭합니다 image:icon-action.png["세 개의 나란히 점이 있는 아이콘입니다"] 를 클릭하고 * 연결 해제 * 를 선택합니다.
 
 
+.결과
 가입이 BlueXP 계정과 연결되어 있지 않으며 Cloud Volumes ONTAP 작업 환경을 생성할 때 더 이상 선택할 수 없습니다.

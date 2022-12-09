@@ -16,6 +16,7 @@ summary: 계정 관리자는 Cloud Volumes ONTAP 작업 환경을 제거하여 �
 [role="lead"]
 계정 관리자는 Cloud Volumes ONTAP 작업 환경을 제거하여 다른 시스템으로 이동하거나 검색 문제를 해결할 수 있습니다.
 
+.이 작업에 대해
 Cloud Volumes ONTAP 작업 환경을 제거하면 BlueXP에서 제거됩니다. Cloud Volumes ONTAP 시스템은 삭제되지 않습니다. 나중에 작업 환경을 다시 검색할 수 있습니다.
 
 BlueXP에서 작업 환경을 제거하면 다음과 같은 작업을 수행할 수 있습니다.
@@ -35,4 +36,5 @@ image:screenshot_settings_icon.gif["BlueXP 콘솔의 오른쪽 위에 설정 아
 . 검토 및 승인 페이지에서 * 이동 * 을 클릭합니다.
 
 
+.결과
 BlueXP는 작업 환경을 제거합니다. 사용자는 언제든지 Canvas 페이지에서 이 작업 환경을 다시 검색할 수 있습니다.

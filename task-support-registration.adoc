@@ -37,14 +37,14 @@ NetApp 기술 지원 팀의 지원 케이스를 생성하기 전에 NetApp Suppo
 기존 NetApp 고객 또는 파트너는 NSS(NetApp Support 사이트) SSO 계정을 사용하여 위에서 이러한 등록을 수행할 수 있습니다. 지원 대시보드에서 BlueXP는 NSS 계정을 추가할 수 있는 * NSS 관리 * 페이지를 제공합니다. NSS 계정을 추가하면 BlueXP에서 이러한 일련 번호를 자동으로 등록합니다.
 
 +
- an NSS account to BlueXP,NSS 계정을 추가하는 방법에 대해 알아봅니다.
+<<BlueXP에 NSS 계정을 추가합니다,NSS 계정을 추가하는 방법에 대해 알아봅니다>>.
 
 * NetApp이 처음입니다
 +
 NetApp이 처음인 파트너는 NetApp의 지원 등록 사이트에서 BlueXP 계정 ID 일련 번호를 한 번 등록해야 합니다. 이 등록을 완료하고 새 NSS 계정을 만들면 BlueXP에서 이 계정을 사용하여 앞으로 자동 등록할 수 있습니다.
 
 +
- with NetApp,NetApp에 등록하는 방법을 알아보십시오.
+<<NetApp에 등록,NetApp에 등록하는 방법을 알아보십시오>>.
 
 
 
@@ -156,6 +156,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 
+.작업을 마친 후
 이 과정에서 NetApp이 연락을 드릴 것입니다. 신규 사용자를 위한 일회성 온보딩 연습입니다.
 
 NetApp Support 사이트 계정이 있으면 BlueXP로 이동하여 나중에 등록하기 위해 이 NSS 계정을 추가할 수 있습니다.

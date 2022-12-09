@@ -16,6 +16,7 @@ summary: 계정 관리자는 BlueXP에서 Azure 유지 관리 이벤트 중에 C
 [role="lead"]
 계정 관리자는 BlueXP에서 Azure 유지 관리 이벤트 중에 Cloud Volumes ONTAP 스토리지 반환과 관련된 문제를 방지하는 설정을 활성화할 수 있습니다. 이 설정을 활성화하면 Cloud Volumes ONTAP가 CIFS 잠금을 확인하고 활성 CIFS 세션을 재설정합니다.
 
+.이 작업에 대해
 Microsoft Azure는 가상 시스템에서 정기적인 유지 관리 이벤트를 예약합니다. Cloud Volumes ONTAP HA 쌍에서 유지보수 이벤트가 발생하면 HA 쌍이 스토리지 테이크오버 시작됩니다. 이 유지 관리 이벤트 중에 활성 CIFS 세션이 있는 경우 CIFS 파일의 잠금이 스토리지 반환을 방지할 수 있습니다.
 
 이 설정을 활성화하면 Cloud Volumes ONTAP가 잠금을 거부하여 활성 CIFS 세션을 재설정합니다. 따라서 HA 쌍이 이러한 유지보수 이벤트 중에 스토리지 반환을 완료할 수 있습니다.
@@ -23,6 +24,7 @@ Microsoft Azure는 가상 시스템에서 정기적인 유지 관리 이벤트�
 
 CAUTION: 이 프로세스는 CIFS 클라이언트에 영향을 줄 수 있습니다. CIFS 클라이언트에서 커밋되지 않은 데이터는 손실될 수 있습니다.
 
+.필요한 것
 BlueXP 설정을 변경하려면 먼저 커넥터를 만들어야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#how-to-create-a-connector["자세히 알아보기"^].
 
 .단계

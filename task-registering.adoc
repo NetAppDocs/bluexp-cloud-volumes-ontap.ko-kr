@@ -35,4 +35,5 @@ image:screenshot_menu_registration.gif["스크린샷: Cloud Volumes ONTAP 시스
 . NetApp Support 사이트 계정을 선택하고 * Register * 를 클릭합니다.
 
 
+.결과
 BlueXP는 시스템을 NetApp에 등록합니다.

@@ -20,7 +20,11 @@ Cloud Volumes ONTAP HA(고가용성) 쌍은 클라우드 환경에서 장애가 
 
 == HA 구성 요소
 
-Azure의 Cloud Volumes ONTAP HA 구성에는 다음과 같은 구성요소가 포함됩니다.
+
+
+=== HA 페이지 BLOB 구성
+
+Azure의 Cloud Volumes ONTAP HA 페이지 BLOB 구성에는 다음과 같은 구성요소가 포함됩니다.
 
 image:diagram_ha_azure.png["BlueXP 및 클라이언트에서 들어오는 트래픽을 관리하는 로드 밸런서, 가용성 세트의 Cloud Volumes ONTAP 노드 2개, 부팅 데이터의 SSD 디스크, 고객 데이터를 위한 페이지 Blob 등을 보여 주는 개념적 이미지입니다."]
 
@@ -39,6 +43,29 @@ https://docs.microsoft.com/en-us/azure/storage/common/storage-scalability-target
 
 * Azure Blob 저장소에 데이터를 계층화하려면 하나의 스토리지 계정이 필요합니다.
 * Cloud Volumes ONTAP 9.7부터 BlueXP가 HA 쌍에 대해 생성하는 스토리지 계정은 범용 v2 스토리지 계정입니다.
+* 작업 환경을 생성할 때 Cloud Volumes ONTAP 9.7 HA 쌍에서 Azure 스토리지 계정으로 HTTPS 연결을 설정할 수 있습니다. 이 옵션을 설정하면 쓰기 성능에 영향을 줄 수 있습니다. 작업 환경을 만든 후에는 설정을 변경할 수 없습니다.
+
+
+--
+
+
+
+
+=== HA 다중 가용성 영역 구성
+
+Azure의 Cloud Volumes ONTAP HA 다중 가용성 영역 구성에는 다음과 같은 구성요소가 포함됩니다.
+
+image:diagram_ha_azure_maz.png["BlueXP 및 클라이언트에서 들어오는 트래픽을 관리하는 로드 밸런서, 두 가용성 영역의 Cloud Volumes ONTAP 노드 2개, 부팅 데이터용 SSD 디스크 및 고객 데이터용 관리형 디스크를 보여 주는 개념적 이미지입니다."]
+
+BlueXP가 배포하는 Azure 구성 요소에 대한 다음 사항에 유의하십시오.
+
+Azure 표준 로드 밸런서:: 로드 밸런서는 Cloud Volumes ONTAP HA 쌍에 대한 들어오는 트래픽을 관리합니다.
+가용성 영역:: 두 개의 Cloud Volumes ONTAP 노드가 서로 다른 가용성 영역에 구축됩니다. 가용성 영역은 노드가 서로 다른 장애 도메인에 있는지 확인합니다. https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy["Azure 문서의 Azure 저장소 중복성에 대해 자세히 알아보십시오"^].
+디스크:: 고객 데이터는 ZRS(Zone-Redundant Storage) 관리 디스크에 있습니다. 각 노드는 다른 노드의 스토리지에 액세스할 수 있습니다. 의 경우 추가 스토리지도 필요합니다 link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["부팅, 루트, 파트너 루트 및 핵심 데이터"].
+스토리지 계정::
++
+--
+* 관리되는 디스크에는 하나의 스토리지 계정이 필요합니다. BlueXP가 HA 쌍에 대해 생성하는 스토리지 계정은 범용 v2 스토리지 계정입니다.
 * 작업 환경을 생성할 때 Cloud Volumes ONTAP 9.7 HA 쌍에서 Azure 스토리지 계정으로 HTTPS 연결을 설정할 수 있습니다. 이 옵션을 설정하면 쓰기 성능에 영향을 줄 수 있습니다. 작업 환경을 만든 후에는 설정을 변경할 수 없습니다.
 
 

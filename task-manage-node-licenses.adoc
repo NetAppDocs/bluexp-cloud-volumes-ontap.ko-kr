@@ -67,6 +67,7 @@ image:screenshot_paygo_licenses.png["세 개의 PAYGO 라이센스가 있는 Dig
 . 라이선스 추가 * 를 클릭합니다.
 
 
+.결과
 BlueXP는 디지털 지갑에 라이센스를 추가합니다. 라이센스는 새 Cloud Volumes ONTAP 시스템에 연결할 때까지 할당되지 않은 것으로 식별됩니다. 이 경우 라이센스는 Digital Wallet의 * BYOL * 탭으로 이동합니다.
 
 
@@ -96,6 +97,7 @@ image:screenshot-exchange-license.png["할당되지 않은 라이센스 페이�
 . 법적 동의를 읽고 * 동의 * 를 클릭합니다.
 
 
+.결과
 BlueXP는 할당되지 않은 라이센스를 선택한 서비스로 변환합니다. 데이터 서비스 라이센스 * 탭에서 새 라이센스를 볼 수 있습니다.
 
 
@@ -133,6 +135,7 @@ NetApp 담당자에게 연락하여 BYOL 구독을 갱신하면, BlueXP는 NetAp
 . Update License * 를 클릭합니다.
 
 
+.결과
 BlueXP는 Cloud Volumes ONTAP 시스템의 라이센스를 업데이트합니다.
 
 
@@ -208,6 +211,7 @@ BlueXP의 오른쪽 하단에 있는 채팅 아이콘을 통해 문의하여 추
 . 사용권 변환 * 을 클릭합니다.
 
 
+.결과
 BlueXP가 변환 프로세스를 시작합니다. 이 프로세스의 일부로 Cloud Volumes ONTAP가 자동으로 다시 시작됩니다. 백업하는 경우 라이센스 정보에 새 라이센스가 반영됩니다.
 
 
