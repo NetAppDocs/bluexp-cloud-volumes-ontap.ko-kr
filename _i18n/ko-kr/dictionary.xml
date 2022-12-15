@@ -1547,12 +1547,7 @@
   <block id="b3f2fa100e111e8d78c1729bbe7330b9" category="inline-image-macro">Cloud Volumes ONTAP HA 아키텍처의 구성 요소를 보여 주는 개념적 이미지: 2개의 Cloud Volumes ONTAP 노드와 개별 가용성 영역에 있는 중재자 인스턴스</block>
   <block id="8baf5cc352903972240801715cac9720" category="paragraph"><block ref="8baf5cc352903972240801715cac9720" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a02218676e4b3b1478891bbfdaee427f" category="section-title">커넥터 요구 사항</block>
-  <block id="93fd4230b4afd5ccd3311e78e4c88ac9" category="paragraph">Connector가 공용 클라우드 환경 내에서 리소스와 프로세스를 관리할 수 있도록 네트워킹을 설정합니다. 가장 중요한 단계는 다양한 엔드포인트에 대한 아웃바운드 인터넷 액세스를 보장하는 것입니다.</block>
-  <block id="20f41095471130e3ee55ad0782eeccd0" category="inline-link">프록시 서버를 사용하도록 Connector 구성</block>
-  <block id="e50f8e178601a7a1b4960a62843eb210" category="admonition">네트워크에서 인터넷에 대한 모든 통신에 프록시 서버를 사용하는 경우 설정 페이지에서 프록시 서버를 지정할 수 있습니다. 을 참조하십시오<block ref="cce1b522253c2a5c153b8d2850e93a7a" category="inline-link-rx"></block>.</block>
   <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="section-title">대상 네트워크에 연결</block>
-  <block id="9c4e8356ff1f50418474478350731782" category="paragraph">커넥터를 사용하려면 Cloud Volumes ONTAP를 배포할 VPC 및 VNets에 대한 네트워크 연결이 필요합니다.</block>
-  <block id="c3a5da2edea375289d166ef749b9bd1e" category="paragraph">예를 들어 회사 네트워크에 커넥터를 설치하는 경우 Cloud Volumes ONTAP를 실행하는 VPC 또는 VNET에 대한 VPN 연결을 설정해야 합니다.</block>
   <block id="c8f224037ea295aeec347c94779d9932" category="section-title">아웃바운드 인터넷 액세스</block>
   <block id="c0dfa216f26874dae52a89e0090a3358" category="paragraph">Connector를 사용하려면 공용 클라우드 환경 내의 리소스와 프로세스를 관리하기 위한 아웃바운드 인터넷 액세스가 필요합니다.</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">엔드포인트</block>
@@ -2210,8 +2205,6 @@
   <block id="fc0a76ff0c6111ef71c66554bb9f5a6e" category="cell">121 인바운드_53</block>
   <block id="9962024a88bf4c8d55fd2f86b1873618" category="cell">53 모든 프로토콜</block>
   <block id="4038a3ad82c98f912a97fe2f042964cd" category="cell">DNS 및 CIFS를 지원합니다</block>
-  <block id="49b6be736ceeb184c7d4cfd9132cd282" category="admonition">네트워크에서 인터넷에 대한 모든 통신에 프록시 서버를 사용하는 경우 설정 페이지에서 프록시 서버를 지정할 수 있습니다. 을 참조하십시오 <block ref="6a702607d02fdf72fc33f667cfb9124d" category="inline-link-macro-rx"></block>.</block>
-  <block id="8f83d4a2626dac354314d5394d1f9d21" category="section-title">대상 네트워크에 대한 연결</block>
   <block id="e70747c71702cdc100bd5f592ed452be" category="summary">Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 옵션을 사용하여 요구 사항에 맞는 구성을 선택할 수 있습니다.</block>
   <block id="0ff1cb70b28d71c56ee0165393cbd500" category="doc">Cloud Volumes ONTAP 라이센스</block>
   <block id="6b32e99bddf60938239aabe092cb4c16" category="paragraph">Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 옵션을 사용하여 요구사항에 맞는 소비 모델을 선택할 수 있습니다.</block>
@@ -2339,7 +2332,6 @@
   <block id="14725afebf967c0c497c447ebcaf1764" category="list-text">GCP의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 VPC와 기업 네트워크 같은 다른 네트워크 간에 VPN 연결이 있어야 합니다.</block>
   <block id="2fbb401eef4220b4a89cce3e59325dcb" category="inline-link">Google Cloud 설명서: Cloud VPN 개요</block>
   <block id="6d1472a8434e4945740fa177e609f886" category="paragraph">자세한 지침은 을 참조하십시오<block ref="1bc8aad79f56acf8c242cfb981c11ee1" category="inline-link-rx"></block>.</block>
-  <block id="4b87bb8b88ced4d50758693e3dabd924" category="paragraph">커넥터를 사용하려면 Cloud Volumes ONTAP를 배포하려는 VPC에 대한 네트워크 연결이 필요합니다. HA 쌍을 구축하는 경우 Connector는 VPC-0에만 연결해야 합니다.</block>
   <block id="e0ab516914623c72df4ff708af6cdd54" category="section-title">Cloud Volumes ONTAP의 방화벽 규칙</block>
   <block id="4907f0fb8777892173f7e34fa56bfcdb" category="paragraph">Cloud Volumes ONTAP의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.</block>
   <block id="bcf66fd73f27e271725271d68f4723a9" category="paragraph">HA 구성을 구축할 경우 VPC-0의 Cloud Volumes ONTAP에 대한 방화벽 규칙입니다.</block>
@@ -3455,8 +3447,6 @@
   <block id="4094070de63eb60a22dafb42ecab40fb" category="paragraph">배포 중에 서비스 계정을 선택하지 않으면 Cloud Volumes ONTAP를 종료하고 Google Cloud 콘솔로 이동한 다음 Cloud Volumes ONTAP 인스턴스에 서비스 계정을 연결해야 합니다. 그런 다음 다음 다음 섹션에 설명된 대로 데이터 계층화를 설정할 수 있습니다.</block>
   <block id="03b060a90dee73a6134cc6c1ebdf7458" category="paragraph">Google Cloud에서는 이 옵션이 나타나기 전에 서비스 계정을 Cloud Volumes ONTAP에 연결해야 합니다. <block ref="066865d547a10de791f5772d517b17f7" category="inline-xref-macro-rx"></block>.</block>
   <block id="870789b9d0beec538c84e00432400091" category="list-text">Google Cloud에서 Cloud Volumes ONTAP 인스턴스로 이동하고 각 LIF에 대한 IP 주소를 nic0에 추가합니다.</block>
-  <block id="8ad37a38e1be1cd56ba8016e897e15c5" category="inline-link">VPC 네트워크 피어링에 대해 자세히 알아보십시오</block>
-  <block id="3af417bcb28902bf6e018910cab4b830" category="paragraph">커넥터와 별도로 VPC에 Cloud Volumes ONTAP를 배포하려는 경우 VPC 네트워크 피어링을 설정해야 합니다.<block ref="7da1fe3c3eb485cc3c06acb3359fc320" category="inline-link-rx"></block></block>
   <block id="b961ba228f0253598e8fe47f55865219" category="list-text">프런트엔드 IP의 이름을 입력하고, Cloud Volumes ONTAP HA 쌍의 서브넷을 선택하고, * Dynamic * 을 선택한 상태로 두고, 가용성 영역이 있는 지역에서는 * Zone-Redundant * 를 선택된 상태로 두어 존이 실패하는 경우 IP 주소를 계속 사용할 수 있도록 합니다.</block>
   <block id="c00e2d19af360558425fe43036ba7057" category="paragraph"><block ref="c00e2d19af360558425fe43036ba7057" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5505ffcb759fb1c9c3793b2dd386cd82" category="inline-link-macro">PAYGO와 BYOL 간 전환 방법에 대해 알아보십시오</block>
@@ -4441,7 +4431,6 @@
   <block id="b04fd67a98a3b32956894024aa6fcf4f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> AWS KMS를 설정합니다</block>
   <block id="3af67a9dfd37709bb6e502fd7f303262" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> BlueXP를 사용하여 Cloud Volumes ONTAP를 실행합니다</block>
   <block id="96f4c574f3909d1105768df05940587b" category="paragraph">BlueXP는 Azure의 Cloud Volumes ONTAP에 필요한 수의 전용 IP 주소를 자동으로 할당합니다. 네트워킹에 사용 가능한 개인 IP 주소가 충분한지 확인해야 합니다.</block>
-  <block id="03739fdb4fd68641a3dd276274b59b91" category="paragraph">Cloud Manager가 Cloud Volumes ONTAP에 할당하는 LIF 수는 단일 노드 시스템을 구축하든 HA 쌍을 구축하든 관계없이 달라집니다. LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 SVM 관리 LIF가 필요합니다.</block>
   <block id="99b06d2510cf563a2d5a3bb1e854c0be" category="admonition">iSCSI LIF는 iSCSI 프로토콜을 통해 클라이언트에 액세스할 수 있도록 지원하며 시스템에서 다른 중요한 네트워킹 워크플로우에 사용됩니다. 이러한 LIF는 필수 항목이므로 삭제할 수 없습니다.</block>
   <block id="efd5eb8fe39e72876a227a2a5666b829" category="paragraph">BlueXP는 5개 또는 6개의 IP 주소를 단일 노드 시스템에 할당합니다.</block>
   <block id="40800f2ceb1fadf0fb67562c1b95ca89" category="list-text">클러스터 관리 IP</block>
@@ -4498,7 +4487,6 @@
   <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">https://cloudmanager.cloud.netapp.com 으로 문의하십시오</block>
   <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">커넥터가 현재 "cloudmanager.cloud.netapp.com" 에 문의하고 있지만 곧 출시될 릴리스에서 "api.bluexp.netapp.com" 에 연락하기 시작합니다.</block>
   <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HA 다중 가용성 영역</block>
-  <block id="bf8536c9790d590866c905e06322f99d" category="list-text">루트, 부팅, NVRAM, 코어 및 데이터 디스크의 경우 Cloud Manager에서 디스크 암호화 세트를 사용하여 관리 디스크를 통해 암호화 키를 관리할 수 있습니다.</block>
   <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">ONTAP 9.10.1P3에서 NVRAM 및 코어 디스크의 경우 BlueXP는 을 사용합니다<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>관리 디스크를 사용하여 암호화 키를 관리할 수 있습니다. 하위 버전은 고객 관리 키 대신 Microsoft 관리 키를 사용합니다.</block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">단일 노드</block>
   <block id="41668006fb357f569acf8441fc16a00c" category="list-text">생성 중에 스토리지 계정을 암호화하려면 CVO 생성 요청에서 리소스 ID를 생성하고 제공해야 합니다. 이는 모든 유형의 배포에 적용됩니다. 제공하지 않으면 저장소 계정은 여전히 암호화되지만 BlueXP는 먼저 Microsoft 관리 키 암호화를 사용하여 저장소 계정을 만든 다음 고객이 관리하는 키를 사용하도록 저장소 계정을 업데이트합니다.</block>
@@ -4519,7 +4507,6 @@
   <block id="bdb764a539084c79daf35d5d881ae82c" category="list-text">고객 데이터는 LRS(Locally Redundant Storage) 관리 디스크에 상주합니다. 각 노드는 다른 노드의 스토리지에 액세스할 수 있습니다. 의 경우 추가 스토리지도 필요합니다 <block ref="9f11431b4ce0e30551c89e37c48c22cd" category="inline-link-macro-rx"></block>.</block>
   <block id="c69ac98b36cf0e598f3cae6b175a8eec" category="list-text">스토리지 계정은 관리 디스크 기반 구축에 사용되어 진단 로그를 처리하고 BLOB 스토리지에 계층화합니다.</block>
   <block id="dba89da91170934734e847dcfe4ad5d0" category="section-title">Cloud Volumes ONTAP 9.12.1</block>
-  <block id="6cfcf66978702040453f6b0622a89aaa" category="paragraph">이제 BlueXP는 새로운 기능과 추가 클라우드 공급자 지역을 지원하는 Cloud Volumes ONTAP 9.12.1을 배포 및 관리할 수 있습니다.<block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block></block>
   <block id="2dd09f45720a8f94b29c4d048b61ff4e" category="section-title">2022년 11월 15일</block>
   <block id="cca494b1b1d22bc8b5c8a8ecd5367bf8" category="section-title">GCP의 ONTAP S3 라이센스</block>
   <block id="44f72ae2127b89a470e082ae9f772acf" category="paragraph">ONTAP S3 라이센스는 이제 Google 클라우드 플랫폼에서 버전 9.12.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 포함되어 있습니다.</block>
@@ -4581,4 +4568,24 @@
   <block id="8a7f23615316304155b79b66eb77b5b8" category="paragraph">Cloud Manager가 Cloud Volumes ONTAP 인스턴스를 시작합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.</block>
   <block id="579a953172073c3fe33dc907abd6b3f8" category="paragraph">Cloud Manager는 Cloud Manager와 Cloud Volumes ONTAP가 클라우드에서 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="f4b34b24cc464b0154bd81cd6d906233" category="paragraph">Cloud Volumes ONTAP HA 중재자를 위해 미리 정의된 내부 보안 그룹에는 다음 규칙이 포함됩니다. Cloud Manager는 항상 이 보안 그룹을 생성합니다. 자체 옵션을 사용할 수 없습니다.</block>
+  <block id="3f2a41d3e64efd3d137a5132f84eb8b6" category="paragraph">BlueXP에서 Cloud Volumes ONTAP에 할당하는 LIF 수는 단일 노드 시스템을 배포할지 HA 쌍을 구축하는지에 따라 달라집니다. LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 SVM 관리 LIF가 필요합니다.</block>
+  <block id="df290139b26527b2473b1e82a36386d4" category="paragraph">Connector가 공용 클라우드 환경 내에서 리소스 및 프로세스를 관리할 수 있도록 네트워킹을 설정합니다. Connector에 대한 가상 네트워크 및 서브넷을 사용하는 것 외에 다음 요구 사항이 충족되는지 확인해야 합니다.</block>
+  <block id="2f03f8dd45cb031f8f3cce95fd4acefc" category="paragraph">Connector를 사용하려면 만들고 있는 작업 환경 유형과 활성화할 서비스에 대한 네트워크 연결이 필요합니다.</block>
+  <block id="3f92e0c134aea90b900c9d9fb8728adc" category="paragraph">예를 들어 회사 네트워크에 커넥터를 설치하는 경우 Cloud Volumes ONTAP를 실행하는 가상 네트워크에 대한 VPN 연결을 설정해야 합니다.</block>
+  <block id="3ae1b8362f96338c0c28c7652251bc8b" category="paragraph">조직에서 모든 나가는 인터넷 트래픽에 대해 HTTP 프록시를 구축해야 하는 경우 HTTP 프록시에 대한 다음 정보를 얻습니다.</block>
+  <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">IP 주소입니다</block>
+  <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">자격 증명</block>
+  <block id="6a3f3799bc264d32568bb7169ddd515a" category="list-text">HTTPS 인증서</block>
+  <block id="338578acf7e0dc54ebcd8c3592f0b022" category="section-title">보안 그룹</block>
+  <block id="ae6252cb830dbd695650f78870fe4309" category="inline-link">로컬 UI</block>
+  <block id="4f85ea1fc2337ca87ea3957b6ed0f523" category="paragraph">커넥터를 시작하거나 커넥터가 AutoSupport 메시지의 프록시로 사용되지 않는 한 커넥터로 들어오는 트래픽이 없습니다. HTTP 및 HTTPS는 에 대한 액세스를 제공합니다<block ref="b66a5441ef03e9f48be36352f5f78769" category="inline-link-rx"></block>이는 드문 경우지만 사용할 수 있습니다. SSH는 문제 해결을 위해 호스트에 연결해야 하는 경우에만 필요합니다.</block>
+  <block id="d72a801b2f49d6a4ed170ebdf3cf0efc" category="section-title">IP 주소 제한</block>
+  <block id="65d425afa00c3ead65e6a786e55b60bc" category="inline-link">이 제한 사항에 대해 자세히 알아보십시오</block>
+  <block id="9b1f033bcac0595326d8acd1ef89e52c" category="paragraph">172 범위의 IP 주소와 충돌할 수 있습니다.<block ref="120cc620882c590412757bc531a4f583" category="inline-link-rx"></block>.</block>
+  <block id="236afd214a59ab065a50ccb9cbbbe4c2" category="cell">9.12.0</block>
+  <block id="97145bbcb02af5e728740b1d40bd2046" category="section-title">2022년 12월 15일</block>
+  <block id="bf748f930fa11e46773ff6f7b815e480" category="section-title">Cloud Volumes ONTAP 9.12.0</block>
+  <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">이제 BlueXP는 AWS 및 Google Cloud에서 Cloud Volumes ONTAP 9.12.0을 배포하고 관리할 수 있습니다.</block>
+  <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">이제 BlueXP는 새로운 기능과 추가 클라우드 공급자 지역을 지원하는 Cloud Volumes ONTAP 9.12.1을 배포 및 관리할 수 있습니다.</block>
+  <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">루트, 부팅, NVRAM, 코어 및 데이터 디스크의 경우 BlueXP는 디스크 암호화 세트를 사용하여 관리되는 디스크로 암호화 키를 관리할 수 있습니다.</block>
 </blocks>
