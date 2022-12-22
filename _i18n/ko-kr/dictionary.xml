@@ -4329,7 +4329,6 @@
   <block id="1456e010de4447704584caa0f583807b" category="cell">레이블은 GCP 리소스에 대한 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 GCP 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오<block ref="fa397f5b6985fa16ac695ba7d4f7a5a5" category="inline-link-rx"></block>.</block>
   <block id="23b98688a84e3975fec56c5adda952e4" category="paragraph">Cloud Volumes ONTAP가 상주할 프로젝트를 선택합니다. 기본 프로젝트는 BlueXP가 있는 프로젝트입니다.</block>
   <block id="851527495c0afb57caeba39ab6e50d4f" category="paragraph">드롭다운 목록에 추가 프로젝트가 표시되지 않으면 BlueXP 서비스 계정을 다른 프로젝트와 연결하지 않은 것입니다. Google Cloud 콘솔로 이동하여 IAM 서비스를 열고 프로젝트를 선택합니다. BlueXP 역할이 있는 서비스 계정을 해당 프로젝트에 추가합니다. 각 프로젝트에 대해 이 단계를 반복해야 합니다.</block>
-  <block id="f521dfd49dba963e7b19cc773f33be00" category="admonition">BlueXP에 대해 설정한 서비스 계정입니다. <block ref="d1082cc762c3232516ac569780f04ada" category="inline-link-macro-rx"></block>.</block>
   <block id="e11609cdeba36e9154797798b7bb710f" category="paragraph">BlueXP에서 방화벽 정책을 생성하도록 허용할 경우 트래픽을 허용하는 방법을 선택해야 합니다.</block>
   <block id="4f4736bd9b3e508042a30af6279a85b0" category="list-text">BlueXP는 Cloud Volumes ONTAP 인스턴스에 서비스 계정을 설정합니다. 이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. Connector 서비스 계정을 계층화 서비스 계정의 사용자로 추가해야 합니다. 그렇지 않으면 BlueXP에서 선택할 수 없습니다</block>
   <block id="a696f74c5e0abf27caa52c3cb3b4a270" category="list-text">BlueXP에서 구매할 지원 및 GCP 리소스에 대한 세부 정보를 검토하려면 * 추가 정보 * 를 클릭합니다.</block>
@@ -4588,4 +4587,5 @@
   <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">이제 BlueXP는 AWS 및 Google Cloud에서 Cloud Volumes ONTAP 9.12.0을 배포하고 관리할 수 있습니다.</block>
   <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">이제 BlueXP는 새로운 기능과 추가 클라우드 공급자 지역을 지원하는 Cloud Volumes ONTAP 9.12.1을 배포 및 관리할 수 있습니다.</block>
   <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">루트, 부팅, NVRAM, 코어 및 데이터 디스크의 경우 BlueXP는 디스크 암호화 세트를 사용하여 관리되는 디스크로 암호화 키를 관리할 수 있습니다.</block>
+  <block id="da9740256f1fda9e06aa732d86702abc" category="admonition">BlueXP에 대해 설정한 서비스 계정입니다. <block ref="0f8a0ed359c33dd5dbb02a467fa98093" category="inline-link-macro-rx"></block>.</block>
 </blocks>
