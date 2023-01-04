@@ -3143,7 +3143,6 @@
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="list-title">필수 구성 요소</block>
   <block id="0dbc3b305b67f45cc077782f1bde33be" category="list-text">Cloud Volumes ONTAP에서 버전 9.10.1 이상을 실행해야 합니다</block>
   <block id="3db7729c3f93b51e237e9f64f77736ce" category="list-text">VE(Volume Encryption) 라이센스가 설치되었습니다</block>
-  <block id="1343117a59836c5996c8be9e9914ce4b" category="list-text">MTEKM(멀티 테넌트 암호화 키 관리) 라이센스가 설치되었습니다</block>
   <block id="941d09f50e1c95a1d21454ff759fc757" category="list-text">클러스터 또는 SVM 관리자여야 합니다</block>
   <block id="4da5254130066f3f3262c3aa07f10759" category="list-text">Active Azure 구독</block>
   <block id="0c7af18d6ac0bf65ef1d6aec6f629263" category="list-text">AKV는 데이터 SVM에서만 구성할 수 있습니다</block>
@@ -3681,8 +3680,6 @@
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">프로비저닝된 용량 및 I/O 작업에 대해 별도로 비용을 지불합니다.</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP 단일 노드 또는 HA</block>
   <block id="ac8875b922d75fca71aa495c421855a6" category="list-text">충전은 스토리지와 용도(I/O)의 두 가지 비용 구성 요소를 기반으로 합니다.</block>
-  <block id="050a8b75e1382967bf1140508c5b62b6" category="list-text">Azure 마켓플레이스에서만 용량제 오퍼링이나 연간 계약으로 사용할 수 있습니다</block>
-  <block id="cd709b16b7a535f5ecfcfbe3f849b353" category="list-text">선택한 VM 유형(E4s_v3, E4ds_v4, DS4_v2, DS13_v2, E8s_v3)에서 지원됨 및 E8ds_v4를 참조하십시오</block>
   <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">에지 캐시</block>
   <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">Cloud Volumes Edge Cache에 대한 라이센스를 제공합니다.</block>
   <block id="cbea577daebf267793d8d7234ee50729" category="list-text">분산 엔터프라이즈를 위한 비즈니스 연속성 및 데이터 보호 기능을 제공하는 Professional 패키지와 동일한 기능입니다</block>
@@ -3705,7 +3702,6 @@
   <block id="de908965dc022756e01253bb2ab070dc" category="list-text">* 연결 *: 새 리소스 그룹 또는 기존 리소스 그룹을 선택한 다음 미리 정의된 보안 그룹을 사용할지 아니면 직접 사용할 것인지 선택합니다.</block>
   <block id="c62cb6ffba40dfccd9137c53e13ffa06" category="list-text">선택한 VNET만 * 을 선택한 경우 인바운드 트래픽의 소스는 선택한 VNET의 서브넷 범위와 커넥터가 상주하는 VNET의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.</block>
   <block id="af5480ae1c406371c200cbecf7ae3ae3" category="list-text">All VNets * 를 선택한 경우 인바운드 트래픽의 소스는 0.0.0.0/0 IP 범위입니다.</block>
-  <block id="37fce366f49fadbb4cd779195ad526fd" category="list-text">멀티 테넌트 암호화 키 관리(MTEKM), Cloud Volumes ONTAP 9.11.1로 시작</block>
   <block id="8f2c4dcc319947ae616fd10e4743c3f2" category="paragraph"><block ref="8f2c4dcc319947ae616fd10e4743c3f2" category="inline-link-rx"></block></block>
   <block id="99ac8cc27f368522d020a76c65551219" category="list-text">Cloud Volumes ONTAP를 사용하려면 NetApp AutoSupport에 대한 아웃바운드 인터넷 액세스가 필요합니다. 사전 예방적으로 시스템의 상태를 모니터링하고 메시지를 NetApp 기술 지원으로 보냅니다.</block>
   <block id="20df81b10ec53f3723942b914b6125f2" category="paragraph">Cloud Volumes ONTAP에 대해 엄격한 아웃바운드 규칙을 정의한 경우 Cloud Volumes ONTAP 방화벽에서 포트 3128을 통한 _outbound_connection을 허용하는지 확인해야 합니다.</block>
@@ -4588,4 +4584,17 @@
   <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">이제 BlueXP는 새로운 기능과 추가 클라우드 공급자 지역을 지원하는 Cloud Volumes ONTAP 9.12.1을 배포 및 관리할 수 있습니다.</block>
   <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">루트, 부팅, NVRAM, 코어 및 데이터 디스크의 경우 BlueXP는 디스크 암호화 세트를 사용하여 관리되는 디스크로 암호화 키를 관리할 수 있습니다.</block>
   <block id="da9740256f1fda9e06aa732d86702abc" category="admonition">BlueXP에 대해 설정한 서비스 계정입니다. <block ref="0f8a0ed359c33dd5dbb02a467fa98093" category="inline-link-macro-rx"></block>.</block>
+  <block id="f85c96fab0937fb6abf38c354668c165" category="section-title">2023년 1월 3일</block>
+  <block id="3c757e219167079b631dfcb5b1d0c339" category="paragraph">다음 변경 사항은 커넥터의 3.9.25 릴리스에 도입되었습니다.</block>
+  <block id="234213185a1ffd45429411672de5d3e7" category="section-title">Google Cloud에서 사용 가능한 라이센스 패키지</block>
+  <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">최적화된 에지 캐시 용량 기반 라이센스 패키지는 Google Cloud Marketplace에서 Cloud Volumes ONTAP에 대해 용량제 오퍼링을 제공하거나 연간 계약으로 제공됩니다.</block>
+  <block id="d1f7ea60f001f689d734c007e925b17e" category="paragraph">을 참조하십시오 <block ref="0fb2e984675bc2d20107c292ded47d43" category="inline-link-macro-rx"></block>.</block>
+  <block id="fced3090ff990434831b838f07c6a3a7" category="paragraph">MTEKM(멀티 테넌트 암호화 키 관리) 라이센스는 새 Cloud Volumes ONTAP 배포에 더 이상 포함되지 않습니다.</block>
+  <block id="a1299d36f8821164c4414c1a5ab986dd" category="inline-link-macro">Cloud Volumes ONTAP의 기본 구성</block>
+  <block id="a8e8ca53febeb9bd58edbc0647eb9a34" category="paragraph">Cloud Volumes ONTAP와 함께 자동으로 설치되는 ONTAP 기능 라이센스에 대한 자세한 내용은 를 참조하십시오 <block ref="79578e78303d1a240e8fa9c178a9de63" category="inline-link-macro-rx"></block>.</block>
+  <block id="d4a6e54c4d6405336cdeb07c50490008" category="list-text">Azure Marketplace에서 용량제 오퍼링을 제공하거나 연간 계약으로 사용할 수 있습니다</block>
+  <block id="18daf9881514241d393343911b3c6b0d" category="list-text">Google Cloud Marketplace에서 선불 종량제 또는 연간 계약으로 제공됩니다</block>
+  <block id="0fbc0a0fa746d19ef30c136beb33ee6e" category="list-text">선택한 VM 유형에서 지원됨:</block>
+  <block id="e2bb4238e5d918b51d049ce1e69dc93c" category="list-text">Azure의 경우: E4s_v3, E4ds_v4, DS4_v2, DS13_v2, E8s_v3, 및 E8ds_v4를 참조하십시오</block>
+  <block id="2efd0683ed3ad3ba3a383a25bc466303" category="list-text">Google Cloud의 경우: n2-standard-4, n2-standard-8</block>
 </blocks>

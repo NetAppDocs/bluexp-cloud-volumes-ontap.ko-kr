@@ -20,7 +20,6 @@ Cloud KMS를 사용할 때는 기본적으로 데이터 SVM LIF가 클라우드 
 .필수 구성 요소
 * Cloud Volumes ONTAP에서 버전 9.10.1 이상을 실행해야 합니다
 * VE(Volume Encryption) 라이센스가 설치되었습니다
-* MTEKM(멀티 테넌트 암호화 키 관리) 라이센스가 설치되었습니다
 * 클러스터 또는 SVM 관리자여야 합니다
 * Google Cloud Platform의 활성 서브스크립션입니다
 

@@ -65,8 +65,6 @@ NetApp에서 무료로 모든 Cloud Volumes ONTAP 기능을 제공합니다(클�
 
 
 
-ifdef::azure[]
-
 
 
 ==== 최적화
@@ -78,12 +76,41 @@ ifdef::azure[]
 +
 데이터 복제(SnapMirror) 또는 NDMP와 관련된 입출력에는 비용이 청구되지 않습니다.
 
-* Azure 마켓플레이스에서만 용량제 오퍼링이나 연간 계약으로 사용할 수 있습니다
-* 선택한 VM 유형(E4s_v3, E4ds_v4, DS4_v2, DS13_v2, E8s_v3)에서 지원됨 및 E8ds_v4를 참조하십시오
-* NetApp의 클라우드 데이터 서비스를 추가 비용으로 이용할 수 있습니다
+
+
+ifdef::azure[]
+
+* Azure Marketplace에서 용량제 오퍼링을 제공하거나 연간 계약으로 사용할 수 있습니다
 
 
 endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloud Marketplace에서 선불 종량제 또는 연간 계약으로 제공됩니다
+
+
+endif::gcp[]
+
+* 선택한 VM 유형에서 지원됨:
+
+
+ifdef::azure[]
+
+* Azure의 경우: E4s_v3, E4ds_v4, DS4_v2, DS13_v2, E8s_v3, 및 E8ds_v4를 참조하십시오
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloud의 경우: n2-standard-4, n2-standard-8
+
+
+endif::gcp[]
+
+* NetApp의 클라우드 데이터 서비스를 추가 비용으로 이용할 수 있습니다
+
 
 
 
@@ -114,8 +141,6 @@ endif::azure[]
 * NetApp의 클라우드 데이터 서비스를 추가 비용으로 이용할 수 있습니다
 
 
-ifdef::azure[]
-
 
 
 ==== 에지 캐시
@@ -126,12 +151,23 @@ Cloud Volumes Edge Cache에 대한 라이센스를 제공합니다.
 * 각 위치에서 설치 공간이 작은 Windows VM을 통한 지능형 에지 캐싱
 * 최소 30TiB와 6개의 에지 노드 포함
 * 추가 용량을 구매할 때마다 3개의 TiB에 1개의 에지 노드가 제공됩니다
-* Azure 마켓플레이스에서만 용량제 오퍼링이나 연간 계약으로 사용할 수 있습니다
 
 
-https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge Cache를 통해 비즈니스를 지원하는 방법에 대해 자세히 알아보십시오"^]
+ifdef::azure[]
+
+* Azure Marketplace에서 용량제 오퍼링을 제공하거나 연간 계약으로 사용할 수 있습니다
+
 
 endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloud Marketplace에서 선불 종량제 또는 연간 계약으로 제공됩니다
+
+
+endif::gcp[]
+
+https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge Cache를 통해 비즈니스를 지원하는 방법에 대해 자세히 알아보십시오"^]
 
 
 
