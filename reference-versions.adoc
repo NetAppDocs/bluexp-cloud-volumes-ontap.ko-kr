@@ -1,0 +1,129 @@
+---
+sidebar: sidebar 
+permalink: reference-versions.html 
+keywords: versions, supported versions, new versions, cloud volumes ontap version 
+summary: BlueXP를 사용하면 새로운 Cloud Volumes ONTAP 작업 환경을 만들 때 여러 ONTAP 버전 중에서 선택할 수 있습니다. 
+---
+= 새로운 배포에 지원되는 버전입니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP를 사용하면 새로운 Cloud Volumes ONTAP 작업 환경을 만들 때 여러 ONTAP 버전 중에서 선택할 수 있습니다.
+
+다른 모든 Cloud Volumes ONTAP 버전은 새 배포에서 지원되지 않습니다.
+
+ifdef::aws[]
+
+
+
+== 설치하고
+
+단일 노드::
++
+--
+* 9.12.1 RC1
+* 9.12.0 P1
+* 9.11.1 P3
+* 9.10.1
+* 9.9.1 P6
+* 9.8
+* 9.7 P5
+* 9.5 P6
+
+
+--
+HA 쌍::
++
+--
+* 9.12.1 RC1
+* 9.12.0 P1
+* 9.11.1 P3
+* 9.10.1
+* 9.9.1 P6
+* 9.8
+* 9.7 P5
+* 9.5 P6
+
+
+--
+
+
+endif::aws[]
+
+ifdef::azure[]
+
+
+
+== Azure를 지원합니다
+
+단일 노드::
++
+--
+* 9.12.1 RC1
+* 9.11.1 P3
+* 9.10.1 P3
+* 9.9.1 P8
+* 9.9.1 P7
+* 9.8 P10
+* 9.7 P6
+* 9.5 P6
+
+
+--
+HA 쌍::
++
+--
+* 9.12.1 RC1
+* 9.11.1 P3
+* 9.10.1 P3
+* 9.9.1 P8
+* 9.9.1 P7
+* 9.8 P10
+* 9.7 P6
+
+
+--
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+
+
+== Google 클라우드
+
+단일 노드::
++
+--
+* 9.12.1 RC1
+* 9.12.0 P1
+* 9.11.1 P3
+* 9.10.1
+* 9.9.1 P6
+* 9.8
+* 9.7 P5
+
+
+--
+HA 쌍::
++
+--
+* 9.12.1 RC1
+* 9.12.0 P1
+* 9.11.1 P3
+* 9.10.1
+* 9.9.1 P6
+* 9.8
+
+
+--
+
+
+endif::gcp[]

@@ -717,7 +717,6 @@
   <block id="7aece74ebc88a7e88e14656ceaecf9cf" category="paragraph"><block ref="7aece74ebc88a7e88e14656ceaecf9cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="793e5668f96fd622a2b0f0f5b056d9f1" category="section-title">Cloud Volumes ONTAP 9.10.1</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오</block>
-  <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>.</block>
   <block id="18fdb1fc25a08be3ade7514891aeed16" category="section-title">Keystone 유연한 구독</block>
   <block id="f60e77d07f7c0d783ee18f2718a20e22" category="paragraph">이제 Keystone 유연한 구독을 활용하여 Cloud Volumes ONTAP HA 쌍에 대한 비용을 지불할 수 있습니다.</block>
   <block id="b860617ddbb0589f548ca364120755ac" category="paragraph">Keystone Flex Subscription은 종량제 구독 기반 서비스로, OpEx 소비 모델을 선호하는 사용자에게 원활한 하이브리드 클라우드 경험을 제공하여 자본 지출 또는 임대를 지원합니다.</block>
@@ -1955,8 +1954,6 @@
   <block id="eeb818d6636d7675fb1108e834a0fed1" category="inline-link">NetApp 라이센스 파일 생성기</block>
   <block id="3eff90cc077e6c35c01b4fa2ce08352e" category="list-text">로 이동합니다<block ref="d4604fbd185a778fcb9e2d4bce6d880d" category="inline-link-rx"></block> 를 입력하고 NetApp Support 사이트 자격 증명을 사용하여 로그인합니다.</block>
   <block id="fd714c8e7c7967952f8eefe7a8c25c48" category="list-text">비밀번호를 입력하고 제품을 선택한 다음 일련 번호를 입력하고 개인정보 보호정책을 읽고 동의했는지 확인한 다음 * 제출 * 을 클릭합니다.</block>
-  <block id="a107b24c3340d0e4184edbe0279df9ea" category="inline-image-macro">스크린샷: 암호, 제품(NetApp Cloud Volumes ONTAP BYOL for AWS) 및 제품 일련 번호를 포함하여 NetApp 라이센스 파일 생성기 웹 페이지의 예를 보여줍니다.</block>
-  <block id="dddb4a2878a41b33e01843d439e31968" category="paragraph"><block ref="dddb4a2878a41b33e01843d439e31968" category="inline-image-macro-rx" type="image"></block></block>
   <block id="74fd2dac6a51b8a94f6612bae65dcbdf" category="list-text">이메일 또는 직접 다운로드를 통해 serialnumber.nlf JSON 파일을 수신할지 여부를 선택합니다.</block>
   <block id="58f676020d30c00d4b3fb18fc835e7ca" category="section-title">시스템 라이센스를 업데이트합니다</block>
   <block id="eda4b0f5ee71694deda064c01799f329" category="list-text">BYOL * 탭에서 Cloud Volumes ONTAP 시스템의 세부 정보를 확장합니다.</block>
@@ -4584,7 +4581,6 @@
   <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">이제 BlueXP는 새로운 기능과 추가 클라우드 공급자 지역을 지원하는 Cloud Volumes ONTAP 9.12.1을 배포 및 관리할 수 있습니다.</block>
   <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">루트, 부팅, NVRAM, 코어 및 데이터 디스크의 경우 BlueXP는 디스크 암호화 세트를 사용하여 관리되는 디스크로 암호화 키를 관리할 수 있습니다.</block>
   <block id="da9740256f1fda9e06aa732d86702abc" category="admonition">BlueXP에 대해 설정한 서비스 계정입니다. <block ref="0f8a0ed359c33dd5dbb02a467fa98093" category="inline-link-macro-rx"></block>.</block>
-  <block id="f85c96fab0937fb6abf38c354668c165" category="section-title">2023년 1월 3일</block>
   <block id="3c757e219167079b631dfcb5b1d0c339" category="paragraph">다음 변경 사항은 커넥터의 3.9.25 릴리스에 도입되었습니다.</block>
   <block id="234213185a1ffd45429411672de5d3e7" category="section-title">Google Cloud에서 사용 가능한 라이센스 패키지</block>
   <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">최적화된 에지 캐시 용량 기반 라이센스 패키지는 Google Cloud Marketplace에서 Cloud Volumes ONTAP에 대해 용량제 오퍼링을 제공하거나 연간 계약으로 제공됩니다.</block>
@@ -4597,4 +4593,25 @@
   <block id="0fbc0a0fa746d19ef30c136beb33ee6e" category="list-text">선택한 VM 유형에서 지원됨:</block>
   <block id="e2bb4238e5d918b51d049ce1e69dc93c" category="list-text">Azure의 경우: E4s_v3, E4ds_v4, DS4_v2, DS13_v2, E8s_v3, 및 E8ds_v4를 참조하십시오</block>
   <block id="2efd0683ed3ad3ba3a383a25bc466303" category="list-text">Google Cloud의 경우: n2-standard-4, n2-standard-8</block>
+  <block id="3ee54ac340ad12860ef4b993b12b351c" category="summary">BlueXP를 사용하면 새로운 Cloud Volumes ONTAP 작업 환경을 만들 때 여러 ONTAP 버전 중에서 선택할 수 있습니다.</block>
+  <block id="aa74aee23f6f151917b2bab3bcdb7635" category="doc">새로운 배포에 지원되는 버전입니다</block>
+  <block id="f97f94b14bab297536041160e29c5828" category="paragraph">다른 모든 Cloud Volumes ONTAP 버전은 새 배포에서 지원되지 않습니다.</block>
+  <block id="94a06e39ad7d8a5f30a29ceb12e0cf9d" category="list-text">9.12.1 RC1</block>
+  <block id="b783301cf6b68b7d026b486472da6add" category="list-text">9.12.0 P1</block>
+  <block id="3c1b6c5437336ba57e79705c297e33dc" category="list-text">9.11.1 P3</block>
+  <block id="49603c48d65ef4fb8dd254f815e75b43" category="list-text">9.9.1 P6</block>
+  <block id="76ff5e2b756f473531665fb4019d3573" category="list-text">9.7 P5</block>
+  <block id="0de55206c94834c678768dfaf359fb98" category="list-text">9.5 P6</block>
+  <block id="592862851dd12d3c1919101b087e511e" category="list-text">9.10.1 P3</block>
+  <block id="8198b6447184bf52b73a4e25d8850ed0" category="list-text">9.9.1 P8</block>
+  <block id="e752d3074b911c222830c7f61cf640f3" category="list-text">9.9.1 P7</block>
+  <block id="91e09743e1f25ab741e5f94a5852dfc4" category="list-text">9.8 P10</block>
+  <block id="19d6e3f3d60f0c83123cd6e040378404" category="list-text">9.7 P6</block>
+  <block id="1f7138998459804601fc351f8d442e29" category="section-title">2023년 1월 1일</block>
+  <block id="64885a300b31929a1b0ea6b5a20128d3" category="paragraph"><block ref="065aa84d514cfdc6fc00d8cb3eaf6ec4" category="inline-link-rx"></block>.</block>
+  <block id="0fce19996aa4315b8976b5aa61c84f65" category="paragraph"><block ref="0fce19996aa4315b8976b5aa61c84f65" category="inline-link-rx"></block></block>
+  <block id="fe9b71f5efddc78532b32c810e3a805b" category="paragraph"><block ref="3919476ab513bb736283b5357766698b" category="inline-link-rx"></block>.</block>
+  <block id="79abc1902ac261d36290f5ef58f42833" category="paragraph"><block ref="91e4737b8b6f603b26f3f35aca1dbafa" category="inline-link-rx"></block>.</block>
+  <block id="7260bbc39295ef94e60be19b73affac6" category="inline-image-macro">스크린샷: 사용 가능한 제품군이 포함된 NetApp License Generator 웹 페이지의 예를 보여 줍니다.</block>
+  <block id="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="paragraph"><block ref="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

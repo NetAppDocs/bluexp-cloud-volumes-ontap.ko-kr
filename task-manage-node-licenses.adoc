@@ -113,7 +113,7 @@ BlueXP는 할당되지 않은 라이센스를 선택한 서비스로 변환합�
 * 예 *
 
 +
-image:screenshot_license_generator.gif["스크린샷: 암호, 제품(NetApp Cloud Volumes ONTAP BYOL for AWS) 및 제품 일련 번호를 포함하여 NetApp 라이센스 파일 생성기 웹 페이지의 예를 보여줍니다."]
+image:screenshot-license-generator.png["스크린샷: 사용 가능한 제품군이 포함된 NetApp License Generator 웹 페이지의 예를 보여 줍니다."]
 
 . 이메일 또는 직접 다운로드를 통해 serialnumber.nlf JSON 파일을 수신할지 여부를 선택합니다.
 
