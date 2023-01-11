@@ -840,11 +840,6 @@
   <block id="487d92711c834ef6ed6c245a4ade969b" category="paragraph">보존 기간이 경과한 후에는 더 이상 필요하지 않은 파일을 삭제해야 합니다.</block>
   <block id="d7b54fc61b65b19c4694a29b6044aacd" category="section-title">충전 중</block>
   <block id="74f13d97ea448b8140308bf35c78920e" category="section-title">WORM 스토리지를 활성화하는 중입니다</block>
-  <block id="82389b2fd96eb0a8c75af9a934cf690c" category="paragraph">새로운 작업 환경을 생성할 때 Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화할 수 있습니다. 여기에는 파일의 기본 보존 기간 설정이 포함됩니다.</block>
-  <block id="99726e6dac736d4f262968c3400fc895" category="admonition">개별 볼륨에서 WORM 스토리지를 활성화할 수 없음 -- WORM은 시스템 레벨에서 활성화해야 합니다.</block>
-  <block id="34d0ed563f1f75350e0269592f33c876" category="paragraph">다음 이미지는 작업 환경을 생성할 때 WORM 스토리지를 활성화하는 방법을 보여줍니다.</block>
-  <block id="c7c2875ea001d781c82d348606d491d5" category="inline-image-macro">에는 새 작업 환경을 생성할 때 사용할 수 있는 WORM 옵션이 나와 있습니다.</block>
-  <block id="e8c8f94a99b5ff03b2c26b3348becb8a" category="paragraph"><block ref="e8c8f94a99b5ff03b2c26b3348becb8a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="785248b65164fa7ba3b7948c05afc1cc" category="section-title">WORM에 파일 커밋 중</block>
   <block id="3fd6e3cd7f26f44db79e5d9fabdbeda0" category="paragraph">애플리케이션을 사용하여 NFS 또는 CIFS를 통해 WORM에 파일을 커밋하거나 ONTAP CLI를 사용하여 파일을 WORM에 자동으로 커밋할 수 있습니다. 또한 WORM 추가 가능 파일을 사용하여 로그 정보와 같이 점증적으로 기록된 데이터를 보존할 수 있습니다.</block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link">ONTAP 설명서</block>
@@ -4614,4 +4609,16 @@
   <block id="79abc1902ac261d36290f5ef58f42833" category="paragraph"><block ref="91e4737b8b6f603b26f3f35aca1dbafa" category="inline-link-rx"></block>.</block>
   <block id="7260bbc39295ef94e60be19b73affac6" category="inline-image-macro">스크린샷: 사용 가능한 제품군이 포함된 NetApp License Generator 웹 페이지의 예를 보여 줍니다.</block>
   <block id="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="paragraph"><block ref="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="770d7d25a250359f096cca82c310f07b" category="paragraph">WORM 스토리지의 활성화 방법은 사용 중인 Cloud Volumes ONTAP 버전에 따라 다릅니다.</block>
+  <block id="f7bdab9f1b3e432deef3bba2021d518d" category="section-title">버전 9.10.1 이상</block>
+  <block id="634f99868031f4c19cc89185a03da350" category="paragraph">Cloud Volumes ONTAP 9.10.1부터 볼륨 레벨에서 WORM을 활성화 또는 비활성화할 수 있습니다. WORM의 사용 방법은 필요에 따라 다릅니다.</block>
+  <block id="2c404b5c40a30cea75e4486ca42855d7" category="paragraph">새 Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM 스토리지를 설정하거나 해제하라는 메시지가 표시됩니다.</block>
+  <block id="1000fd534e8c9bff4332bafb5a9125aa" category="list-text">작업 환경을 생성할 때 WORM 스토리지를 활성화하면 BlueXP에서 생성한 모든 볼륨에서 WORM이 활성화됩니다. 그러나 System Manager 또는 CLI를 사용하여 WORM을 사용하지 않는 볼륨을 생성할 수 있습니다.</block>
+  <block id="8614dac2e3bd328ce10de870996db0f5" category="paragraph">이 옵션은 WORM 스토리지용 전용 시스템을 생성하려는 경우에 적합합니다.</block>
+  <block id="53c068d69d7edf4c467cf5bb2a3193dd" category="list-text">작업 환경을 생성할 때 WORM 스토리지를 비활성화하면 BlueXP에서 생성한 모든 볼륨에서 WORM이 비활성화됩니다. 그러나 System Manager 또는 CLI를 사용하여 WORM 지원 볼륨을 생성할 수 있습니다.</block>
+  <block id="03b892a4c3b15391f53e9a5afe77bb58" category="paragraph">이 옵션은 동일한 시스템에서 여러 유형의 볼륨을 혼합하려는 경우에 적합합니다.</block>
+  <block id="3cbff90f9e1dd222c93cec86291eb0d2" category="inline-xref">충전 작동 방식을 이해합니다</block>
+  <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">두 가지 옵션 중 하나를 사용할 경우 가능합니다 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>.</block>
+  <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">버전 9.10.0 이하</block>
+  <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">새로운 작업 환경을 생성할 때 Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화할 수 있습니다. 개별 볼륨에서 WORM 스토리지를 활성화할 수 없음 -- WORM은 시스템 레벨에서 활성화해야 합니다. 작업 환경을 생성할 때만 활성화할 수 있습니다.</block>
 </blocks>
