@@ -3676,8 +3676,6 @@
   <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">Cloud Volumes Edge Cache에 대한 라이센스를 제공합니다.</block>
   <block id="cbea577daebf267793d8d7234ee50729" category="list-text">분산 엔터프라이즈를 위한 비즈니스 연속성 및 데이터 보호 기능을 제공하는 Professional 패키지와 동일한 기능입니다</block>
   <block id="90083db3dbad73e69a817501be172673" category="list-text">각 위치에서 설치 공간이 작은 Windows VM을 통한 지능형 에지 캐싱</block>
-  <block id="c42bae5dc6b1d94a8229aa520a055d09" category="list-text">최소 30TiB와 6개의 에지 노드 포함</block>
-  <block id="9228e835b818682287047b781e3a92b5" category="list-text">추가 용량을 구매할 때마다 3개의 TiB에 1개의 에지 노드가 제공됩니다</block>
   <block id="7c4c7c30514b4cc21e76f21acfaacf2a" category="inline-link">Cloud Volumes Edge Cache를 통해 비즈니스를 지원하는 방법에 대해 자세히 알아보십시오</block>
   <block id="20044e95e1ba41fb44c428898ee01dc2" category="paragraph"><block ref="20044e95e1ba41fb44c428898ee01dc2" category="inline-link-rx"></block></block>
   <block id="54dcd2c31a61414eef44d6ac931b8f57" category="paragraph">+ 최적화된 및 Edge Cache 패키지는 BYOL에서 사용할 수 없습니다.</block>
@@ -4621,4 +4619,5 @@
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">두 가지 옵션 중 하나를 사용할 경우 가능합니다 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>.</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">버전 9.10.0 이하</block>
   <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">새로운 작업 환경을 생성할 때 Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화할 수 있습니다. 개별 볼륨에서 WORM 스토리지를 활성화할 수 없음 -- WORM은 시스템 레벨에서 활성화해야 합니다. 작업 환경을 생성할 때만 활성화할 수 있습니다.</block>
+  <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">구매한 용량이 3Tib마다 엣지 노드 1개</block>
 </blocks>
