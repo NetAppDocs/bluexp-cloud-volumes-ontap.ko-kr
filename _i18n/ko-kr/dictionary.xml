@@ -4409,8 +4409,6 @@
   <block id="3d9563c3da13e16d8921ac243a987129" category="paragraph">Azure의 Cloud Volumes ONTAP HA 다중 가용성 영역 구성에는 다음과 같은 구성요소가 포함됩니다.</block>
   <block id="ad6e11a5573fe6579ae1e6dcdce60d8b" category="inline-image-macro">BlueXP 및 클라이언트에서 들어오는 트래픽을 관리하는 로드 밸런서, 두 가용성 영역의 Cloud Volumes ONTAP 노드 2개, 부팅 데이터용 SSD 디스크 및 고객 데이터용 관리형 디스크를 보여 주는 개념적 이미지입니다.</block>
   <block id="af874ecaf1a103d4d596315556c66e56" category="paragraph"><block ref="af874ecaf1a103d4d596315556c66e56" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="77a1f8867dc12013c0da2ead2b6c9ca3" category="inline-link">Azure 문서의 Azure 저장소 중복성에 대해 자세히 알아보십시오</block>
-  <block id="2b6a2a78ba6ba0d1bf316591f2c9f89b" category="list-text">두 개의 Cloud Volumes ONTAP 노드가 서로 다른 가용성 영역에 구축됩니다. 가용성 영역은 노드가 서로 다른 장애 도메인에 있는지 확인합니다.<block ref="c8912f6a29cb2653305e1189cf1fa38a" category="inline-link-rx"></block>.</block>
   <block id="0297170537ff589d5fd67ec8db7c4ae4" category="inline-link-macro">부팅, 루트, 파트너 루트 및 핵심 데이터</block>
   <block id="419c5f0dee6c475074f478e8aca659fd" category="list-text">고객 데이터는 ZRS(Zone-Redundant Storage) 관리 디스크에 있습니다. 각 노드는 다른 노드의 스토리지에 액세스할 수 있습니다. 의 경우 추가 스토리지도 필요합니다 <block ref="21b5d37c4ebe0dabed7cc2a884c8db5a" category="inline-link-macro-rx"></block>.</block>
   <block id="b04fd67a98a3b32956894024aa6fcf4f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> AWS KMS를 설정합니다</block>
@@ -4620,4 +4618,14 @@
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">버전 9.10.0 이하</block>
   <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">새로운 작업 환경을 생성할 때 Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화할 수 있습니다. 개별 볼륨에서 WORM 스토리지를 활성화할 수 없음 -- WORM은 시스템 레벨에서 활성화해야 합니다. 작업 환경을 생성할 때만 활성화할 수 있습니다.</block>
   <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">구매한 용량이 3Tib마다 엣지 노드 1개</block>
+  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">클라우드 공급자 솔루션 지원</block>
+  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">BlueXP에 통합한 다음 클라우드 제공업체 솔루션에 대한 기술 지원은 해당 제품에 대한 BlueXP 설명서의 "도움말 얻기"를 참조하십시오.</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP용 Amazon FSx</block>
+  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
+  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
+  <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Google Cloud용 Cloud Volumes Service</block>
+  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
+  <block id="6d50c94851edb68865f91b19a7c8e802" category="inline-link">Azure 문서에서 관리되는 디스크를 위한 Azure 영역 중복 스토리지에 대해 자세히 알아보십시오</block>
+  <block id="d0dd1e24dc3eec7e346159d97577b2a5" category="list-text">두 개의 Cloud Volumes ONTAP 노드가 서로 다른 가용성 영역에 구축됩니다. 가용성 영역은 노드가 서로 다른 장애 도메인에 있는지 확인합니다.<block ref="ac08b397e7ae08c3f76d7057ac214476" category="inline-link-rx"></block>.</block>
 </blocks>

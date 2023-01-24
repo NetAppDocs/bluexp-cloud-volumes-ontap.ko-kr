@@ -14,6 +14,17 @@ NetApp 기술 지원 팀의 지원 케이스를 생성하기 전에 NetApp Suppo
 
 
 
+== 클라우드 공급자 솔루션 지원
+
+BlueXP에 통합한 다음 클라우드 제공업체 솔루션에 대한 기술 지원은 해당 제품에 대한 BlueXP 설명서의 "도움말 얻기"를 참조하십시오.
+
+* link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html#getting-help["ONTAP용 Amazon FSx"^]
+* link:https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/concept-azure-netapp-files.html#getting-help["Azure NetApp Files"^]
+* link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/concept-cvs-gcp.html#getting-help["Google Cloud용 Cloud Volumes Service"^]
+
+
+
+
 == 지원 등록 개요
 
 지원 권한을 활성화하려면 두 가지 형태의 등록이 있습니다.
