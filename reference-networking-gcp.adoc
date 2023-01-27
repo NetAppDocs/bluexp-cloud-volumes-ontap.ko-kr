@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-networking-gcp.html 
 keywords: networking, network, requirements, connection, connections, subnet, vpn, internet, proxy, HTTP, private, proxy server, routing, firewall, autosupport, connection, jump host, outbound, ports, tiering, data tiering, bucket, private google access, set up data tiering, data tiering requirement, gcp networking, google networking, shared vpc, host project, service project 
-summary: Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Google 클라우드 플랫폼 네트워킹을 설정합니다. 여기에는 커넥터 및 Cloud Volumes ONTAP에 대한 네트워킹이 포함됩니다. 
+summary: Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Google Cloud 네트워킹을 설정합니다. 
 ---
-= GCP의 Cloud Volumes ONTAP에 대한 네트워킹 요구 사항
+= Google Cloud의 Cloud Volumes ONTAP에 대한 네트워킹 요구 사항
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,19 +14,114 @@ summary: Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 G
 
 
 [role="lead"]
-Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Google 클라우드 플랫폼 네트워킹을 설정합니다. 여기에는 커넥터 및 Cloud Volumes ONTAP에 대한 네트워킹이 포함됩니다.
+Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Google Cloud 네트워킹을 설정합니다.
 
-HA 쌍을 구축하려는 경우 link:concept-ha-google-cloud.html["GCP에서 HA Pair의 작동 방식에 대해 알아보십시오"].
+HA 쌍을 구축하려는 경우 link:concept-ha-google-cloud.html["HA 쌍이 Google Cloud에서 어떻게 작동하는지를 알아보십시오"].
 
 
 
 == Cloud Volumes ONTAP에 대한 요구사항
 
-GCP에서 다음 요구사항을 충족해야 합니다.
+Google Cloud에서 다음 요구사항을 충족해야 합니다.
 
-내부 로드 밸런서:: BlueXP는 들어오는 트래픽을 Cloud Volumes ONTAP HA 쌍으로 관리하는 4개의 Google 클라우드 내부 로드 밸런서(TCP/UDP)를 자동으로 생성합니다. 설정을 마칠 필요가 없습니다 이를 단순히 네트워크 트래픽을 알리고 보안 문제를 완화하기 위한 요구 사항으로 나열했습니다.
+
+
+=== 요구사항을 충족해야 합니다
+
+단일 노드 시스템을 배포하려는 경우 네트워킹이 다음 요구 사항을 충족하는지 확인합니다.
+
+
+
+==== VPC 1개
+
+단일 노드 시스템을 위해 VPC(가상 프라이빗 클라우드) 1개가 필요합니다.
+
+
+
+==== 전용 IP 주소
+
+BlueXP는 Google Cloud의 단일 노드 시스템에 3개 또는 4개의 사설 IP 주소를 할당합니다.
+
+API를 사용하여 Cloud Volumes ONTAP를 구축하고 다음 플래그를 지정한 경우 SVM(스토리지 VM) 관리 LIF의 생성을 건너뛸 수 있습니다.
+
+'스킵스만트관리면: TRUE'
+
+
+NOTE: LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 스토리지 VM(SVM) 관리 LIF가 필요합니다.
+
+
+
+=== HA 쌍 관련 요구사항
+
+HA 쌍을 구축하려는 경우 네트워킹이 다음 요구사항을 충족하는지 확인합니다.
+
+
+
+==== 하나 또는 여러 개의 영역
+
+여러 영역 또는 단일 영역에 HA 구성을 배포하여 데이터의 고가용성을 보장할 수 있습니다. HA 쌍을 생성할 때 BlueXP에서 여러 존 또는 단일 존을 선택하라는 메시지가 표시됩니다.
+
+* 다중 영역(권장)
 +
---
+3개 존에 HA 구성을 구축하면 존 내에서 장애가 발생하더라도 지속적인 데이터 가용성을 보장할 수 있습니다. 쓰기 성능은 단일 존을 사용할 때보다 약간 낮지만, 이는 최소화됩니다.
+
+* 단일 영역
++
+단일 영역에 배포되면 Cloud Volumes ONTAP HA 구성에서 분산 배치 정책을 사용합니다. 이 정책은 별도의 존을 사용하여 장애를 격리하지 않고도 존 내의 단일 장애 지점으로부터 HA 구성을 보호합니다.
+
++
+이 구축 모델은 구역 간 데이터 유출 비용이 없으므로 비용이 절감됩니다.
+
+
+
+
+
+==== 4개의 가상 프라이빗 클라우드
+
+HA 구성을 위해서는 4개의 가상 프라이빗 클라우드(VPC)가 필요합니다. Google Cloud에서는 각 네트워크 인터페이스가 별도의 VPC 네트워크에 상주해야 하므로 4대의 VPC가 필요합니다.
+
+HA 쌍을 생성할 때 BlueXP에서 네 개의 VPC를 선택하라는 메시지가 표시됩니다.
+
+* 데이터 및 노드에 대한 인바운드 연결을 위한 VPC-0
+* 노드와 HA 중재자 간의 내부 통신을 위한 VPC-1, VPC-2 및 VPC-3
+
+
+image:diagram_gcp_ha.png["Cloud Volume HA 쌍 및 구성에 필요한 4개의 VPC를 보여주는 개념적 이미지."]
+
+
+
+==== 서브넷
+
+각 VPC에 전용 서브넷이 필요합니다.
+
+Connector를 VPC-0에 배치한 경우 서브넷에서 Private Google Access를 활성화하여 API에 액세스하고 데이터 계층화를 활성화해야 합니다.
+
+이러한 VPC에 있는 서브넷에는 고유한 CIDR 범위가 있어야 합니다. CIDR 범위가 중복될 수 없습니다.
+
+
+
+==== 전용 IP 주소
+
+BlueXP는 Google Cloud의 HA 쌍에 14개 또는 15개의 사설 IP 주소를 할당합니다.
+
+* VPC-0용 전용 IP 주소 7개 또는 8개
++
+API를 사용하여 Cloud Volumes ONTAP를 구축하고 다음 플래그를 지정한 경우 SVM(스토리지 VM) 관리 LIF의 생성을 건너뛸 수 있습니다.
+
++
+'스킵스만트관리면: TRUE'
+
+* VPC-1용 사설 IP 주소 2개
+* VPC-2용 사설 IP 주소 2개
+* VPC-3용 사설 IP 주소 3개
+
+
+
+
+==== 내부 로드 밸런서
+
+BlueXP는 들어오는 트래픽을 Cloud Volumes ONTAP HA 쌍으로 관리하는 4개의 Google 클라우드 내부 로드 밸런서(TCP/UDP)를 자동으로 생성합니다. 설정을 마칠 필요가 없습니다 이를 단순히 네트워크 트래픽을 알리고 보안 문제를 완화하기 위한 요구 사항으로 나열했습니다.
+
 로드 밸런싱 장치 하나는 클러스터 관리이고, 하나는 SVM(스토리지 VM) 관리이고, 하나는 노드 1에 대한 NAS 트래픽이고, 나머지 하나는 노드 2에 대한 NAS 트래픽입니다.
 
 각 부하 분산 장치에 대한 설정은 다음과 같습니다.
@@ -46,49 +141,12 @@ GCP에서 다음 요구사항을 충족해야 합니다.
 
 
 
---
-HA 쌍을 위한 하나 이상의 영역:: 여러 영역 또는 단일 영역에 HA 구성을 배포하여 데이터의 고가용성을 보장할 수 있습니다. HA 쌍을 생성할 때 BlueXP에서 여러 존 또는 단일 존을 선택하라는 메시지가 표시됩니다.
-+
---
-* 다중 영역(권장)
-+
-3개 존에 HA 구성을 구축하면 존 내에서 장애가 발생하더라도 지속적인 데이터 가용성을 보장할 수 있습니다. 쓰기 성능은 단일 존을 사용할 때보다 약간 낮지만, 이는 최소화됩니다.
-
-* 단일 영역
-+
-단일 영역에 배포되면 Cloud Volumes ONTAP HA 구성에서 분산 배치 정책을 사용합니다. 이 정책은 별도의 존을 사용하여 장애를 격리하지 않고도 존 내의 단일 장애 지점으로부터 HA 구성을 보호합니다.
-
-+
-이 구축 모델은 구역 간 데이터 유출 비용이 없으므로 비용이 절감됩니다.
 
 
+=== 공유 VPC
 
---
-HA 쌍을 위한 4가지 가상 프라이빗 클라우드:: HA 구성을 위해서는 4개의 가상 프라이빗 클라우드(VPC)가 필요합니다. GCP가 각 네트워크 인터페이스가 별도의 VPC 네트워크에 상주하도록 요구하기 때문에 4개의 VPC가 필요합니다.
-+
---
-HA 쌍을 생성할 때 BlueXP에서 네 개의 VPC를 선택하라는 메시지가 표시됩니다.
+Cloud Volumes ONTAP 및 Connector는 Google Cloud 공유 VPC 및 독립 실행형 VPC에서도 지원됩니다.
 
-* 데이터 및 노드에 대한 인바운드 연결을 위한 VPC-0
-* 노드와 HA 중재자 간의 내부 통신을 위한 VPC-1, VPC-2 및 VPC-3
-+
-image:diagram_gcp_ha.png["Cloud Volume HA 쌍 및 구성에 필요한 4개의 VPC를 보여주는 개념적 이미지."]
-
-
-
---
-HA 쌍을 위한 서브넷:: 각 VPC에 전용 서브넷이 필요합니다.
-+
---
-Connector를 VPC-0에 배치한 경우 서브넷에서 Private Google Access를 활성화하여 API에 액세스하고 데이터 계층화를 활성화해야 합니다.
-
-이러한 VPC에 있는 서브넷에는 고유한 CIDR 범위가 있어야 합니다. CIDR 범위가 중복될 수 없습니다.
-
---
-단일 노드 시스템을 위한 단일 가상 프라이빗 클라우드:: 단일 노드 시스템에는 VPC 1개가 필요합니다.
-공유 VPC:: Cloud Volumes ONTAP 및 Connector는 Google Cloud 공유 VPC 및 독립 실행형 VPC에서도 지원됩니다.
-+
---
 단일 노드 시스템의 경우 VPC는 공유 VPC 또는 독립형 VPC가 될 수 있습니다.
 
 HA 쌍의 경우 4개의 VPC가 필요합니다. 각 VPC는 공유 또는 독립 실행형으로 사용할 수 있습니다. 예를 들어 VPC-0은 공유 VPC가 될 수 있고 VPC-1, VPC-2 및 VPC-3은 독립 실행형 VPC가 될 수 있습니다.
@@ -97,171 +155,68 @@ HA 쌍의 경우 4개의 VPC가 필요합니다. 각 VPC는 공유 또는 독립
 
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#shared-vpc-permissions["Connector 구축에서 적용되는 필수 공유 VPC 사용 권한을 검토합니다"^]
 
---
-VPC의 패킷 미러링:: https://cloud.google.com/vpc/docs/packet-mirroring["패킷 미러링"^] Cloud Volumes ONTAP를 구축하는 Google Cloud VPC에서 비활성화되어야 합니다. 패킷 미러링이 활성화된 경우 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.
-Cloud Volumes ONTAP에 대한 아웃바운드 인터넷 액세스:: Cloud Volumes ONTAP를 사용하려면 NetApp AutoSupport에 대한 아웃바운드 인터넷 액세스가 필요합니다. 사전 예방적으로 시스템의 상태를 모니터링하고 메시지를 NetApp 기술 지원으로 보냅니다.
-+
---
-라우팅 및 방화벽 정책은 Cloud Volumes ONTAP가 AutoSupport 메시지를 보낼 수 있도록 다음 엔드포인트에 대한 HTTP/HTTPS 트래픽을 허용해야 합니다.
-
-* https://support.netapp.com/aods/asupmessage 으로 문의하십시오
-* https://support.netapp.com/asupprod/post/1.0/postAsup 으로 문의하십시오
-+
-AutoSupport 메시지를 보내는 데 아웃바운드 인터넷 연결을 사용할 수 없는 경우 BlueXP는 자동으로 Cloud Volumes ONTAP 시스템에서 커넥터를 프록시 서버로 사용하도록 구성합니다. 유일한 요구 사항은 커넥터의 방화벽이 포트 3128을 통한 _INbound_connection을 허용하는지 확인하는 것입니다. Connector를 배포한 후 이 포트를 열어야 합니다.
-
-+
-Cloud Volumes ONTAP에 대해 엄격한 아웃바운드 규칙을 정의한 경우 Cloud Volumes ONTAP 방화벽에서 포트 3128을 통한 _outbound_connection을 허용하는지 확인해야 합니다.
-
-+
-아웃바운드 인터넷 액세스가 가능한지 확인한 후 AutoSupport를 테스트하여 메시지를 보낼 수 있는지 확인할 수 있습니다. 자세한 지침은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 문서: AutoSupport 설정"^].
-
-+
-
-TIP: HA 쌍을 사용하는 경우 HA 중재자가 아웃바운드 인터넷 액세스를 요구하지 않습니다.
 
 
+=== VPC의 패킷 미러링
 
---
-
-
-BlueXP에서 AutoSupport 메시지를 보낼 수 없다고 알리는 경우 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 구성 문제를 해결합니다"].
-
-전용 IP 주소:: BlueXP는 GCP의 Cloud Volumes ONTAP에 다음과 같은 수의 개인 IP 주소를 할당합니다.
-+
---
-* * 단일 노드 *: 3개 또는 4개의 전용 IP 주소
-+
-API를 사용하여 Cloud Volumes ONTAP를 구축하고 다음 플래그를 지정한 경우 SVM(스토리지 VM) 관리 LIF의 생성을 건너뛸 수 있습니다.
-
-+
-'스킵스만트관리면: TRUE'
-
-+
-LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 스토리지 VM(SVM) 관리 LIF가 필요합니다.
-
-* * HA 쌍 *: 14 또는 15개의 전용 IP 주소
-+
-** VPC-0용 전용 IP 주소 7개 또는 8개
-+
-API를 사용하여 Cloud Volumes ONTAP를 구축하고 다음 플래그를 지정한 경우 SVM(스토리지 VM) 관리 LIF의 생성을 건너뛸 수 있습니다.
-
-+
-'스킵스만트관리면: TRUE'
-
-** VPC-1용 사설 IP 주소 2개
-** VPC-2용 사설 IP 주소 2개
-** VPC-3용 사설 IP 주소 3개
-
-
-
-
---
-방화벽 규칙:: BlueXP는 방화벽 규칙을 만들 필요가 없습니다. 직접 사용해야 하는 경우 아래 나열된 방화벽 규칙을 참조하십시오.
-+
---
-HA 구성에는 두 가지 방화벽 규칙 세트가 필요합니다.
-
-* VPC-0의 HA 구성 요소에 대한 하나의 규칙 세트 이러한 규칙을 통해 Cloud Volumes ONTAP에 대한 데이터 액세스가 가능합니다. <<Cloud Volumes ONTAP의 방화벽 규칙,자세한 정보>>.
-* VPC-1, VPC-2 및 VPC-3의 HA 구성 요소에 대한 또 다른 규칙 세트 이러한 규칙은 HA 구성 요소 간의 인바운드 및 아웃바운드 통신에 대해 개방됩니다. <<Cloud Volumes ONTAP의 방화벽 규칙,자세한 정보>>.
-
-
---
-데이터 계층화를 위해 Cloud Volumes ONTAP에서 Google 클라우드 스토리지로 연결:: 콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷이 프라이빗 Google 액세스용으로 구성되어야 합니다(HA 쌍을 사용하는 경우 VPC-0의 서브넷임). 자세한 지침은 을 참조하십시오 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 설명서: 개인 Google Access 구성"^].
-+
---
-BlueXP에서 데이터 계층화를 설정하는 데 필요한 추가 단계는 을 참조하십시오 link:task-tiering.html["콜드 데이터를 저비용 오브젝트 스토리지로 계층화"].
-
---
-다른 네트워크의 ONTAP 시스템에 대한 연결:: GCP의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 VPC와 기업 네트워크 같은 다른 네트워크 간에 VPN 연결이 있어야 합니다.
-+
---
-자세한 지침은 을 참조하십시오 https://cloud.google.com/vpn/docs/concepts/overview["Google Cloud 설명서: Cloud VPN 개요"^].
-
---
-
-
-
-
-== 커넥터 요구 사항
-
-Connector가 공용 클라우드 환경 내에서 리소스 및 프로세스를 관리할 수 있도록 네트워킹을 설정합니다. Connector에 대한 가상 네트워크 및 서브넷을 사용하는 것 외에 다음 요구 사항이 충족되는지 확인해야 합니다.
-
-
-
-=== 대상 네트워크에 연결
-
-Connector를 사용하려면 만들고 있는 작업 환경 유형과 활성화할 서비스에 대한 네트워크 연결이 필요합니다.
-
-예를 들어 회사 네트워크에 커넥터를 설치하는 경우 Cloud Volumes ONTAP를 실행하는 가상 네트워크에 대한 VPN 연결을 설정해야 합니다.
+https://cloud.google.com/vpc/docs/packet-mirroring["패킷 미러링"^] Cloud Volumes ONTAP를 구축하는 Google Cloud VPC에서 비활성화되어야 합니다. 패킷 미러링이 활성화된 경우 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.
 
 
 
 === 아웃바운드 인터넷 액세스
 
-Connector를 사용하려면 공용 클라우드 환경 내의 리소스와 프로세스를 관리하기 위한 아웃바운드 인터넷 액세스가 필요합니다.
+Cloud Volumes ONTAP를 사용하려면 NetApp AutoSupport에 대한 아웃바운드 인터넷 액세스가 필요합니다. 사전 예방적으로 시스템의 상태를 모니터링하고 메시지를 NetApp 기술 지원으로 보냅니다.
 
-[cols="2*"]
-|===
-| 엔드포인트 | 목적 
+라우팅 및 방화벽 정책은 Cloud Volumes ONTAP가 AutoSupport 메시지를 보낼 수 있도록 다음 엔드포인트에 대한 HTTP/HTTPS 트래픽을 허용해야 합니다.
 
-
-| https://support.netapp.com 으로 문의하십시오 | 라이센스 정보를 얻고 AutoSupport 메시지를 NetApp 지원 팀에 전송합니다. 
+* https://support.netapp.com/aods/asupmessage 으로 문의하십시오
+* https://support.netapp.com/asupprod/post/1.0/postAsup 으로 문의하십시오
 
 
- a| 
-https://*.api.bluexp.netapp.com 으로 문의하십시오
+AutoSupport 메시지를 보내는 데 아웃바운드 인터넷 연결을 사용할 수 없는 경우 BlueXP는 자동으로 Cloud Volumes ONTAP 시스템에서 커넥터를 프록시 서버로 사용하도록 구성합니다. 유일한 요구 사항은 커넥터의 방화벽이 포트 3128을 통한 _INbound_connection을 허용하는지 확인하는 것입니다. Connector를 배포한 후 이 포트를 열어야 합니다.
 
-https://api.bluexp.netapp.com 으로 문의하십시오
+Cloud Volumes ONTAP에 대해 엄격한 아웃바운드 규칙을 정의한 경우 Cloud Volumes ONTAP 방화벽에서 포트 3128을 통한 _outbound_connection을 허용하는지 확인해야 합니다.
 
-https://*.cloudmanager.cloud.netapp.com 으로 문의하십시오
-
-https://cloudmanager.cloud.netapp.com 으로 문의하십시오
- a| 
-BlueXP 내에서 SaaS 기능 및 서비스를 제공합니다.
+아웃바운드 인터넷 액세스가 가능한지 확인한 후 AutoSupport를 테스트하여 메시지를 보낼 수 있는지 확인할 수 있습니다. 자세한 지침은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 문서: AutoSupport 설정"^].
 
 
-NOTE: 커넥터가 현재 "cloudmanager.cloud.netapp.com" 에 문의하고 있지만 곧 출시될 릴리스에서 "api.bluexp.netapp.com" 에 연락하기 시작합니다.
+TIP: HA 쌍을 사용하는 경우 HA 중재자가 아웃바운드 인터넷 액세스를 요구하지 않습니다.
+
+BlueXP에서 AutoSupport 메시지를 보낼 수 없다고 알리는 경우 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 구성 문제를 해결합니다"].
 
 
 
-| https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net 으로 문의하십시오 | Connector 및 해당 Docker 구성 요소를 업그레이드합니다. 
-|===
+=== 데이터 계층화를 위해 Google Cloud Storage에 연결
 
+콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷이 프라이빗 Google 액세스용으로 구성되어야 합니다(HA 쌍을 사용하는 경우 VPC-0의 서브넷임). 자세한 지침은 을 참조하십시오 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 설명서: 개인 Google Access 구성"^].
 
-=== 프록시 서버
-
-조직에서 모든 나가는 인터넷 트래픽에 대해 HTTP 프록시를 구축해야 하는 경우 HTTP 프록시에 대한 다음 정보를 얻습니다.
-
-* IP 주소입니다
-* 자격 증명
-* HTTPS 인증서
+BlueXP에서 데이터 계층화를 설정하는 데 필요한 추가 단계는 을 참조하십시오 link:task-tiering.html["콜드 데이터를 저비용 오브젝트 스토리지로 계층화"].
 
 
 
+=== 다른 네트워크의 ONTAP 시스템에 대한 연결
 
-=== 보안 그룹
+Google Cloud의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 VPC와 기업 네트워크 같은 다른 네트워크 간에 VPN 연결이 있어야 합니다.
 
-커넥터를 시작하거나 커넥터가 AutoSupport 메시지의 프록시로 사용되지 않는 한 커넥터로 들어오는 트래픽이 없습니다. HTTP 및 HTTPS는 에 대한 액세스를 제공합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#the-local-user-interface["로컬 UI"]이는 드문 경우지만 사용할 수 있습니다. SSH는 문제 해결을 위해 호스트에 연결해야 하는 경우에만 필요합니다.
-
-
-
-=== IP 주소 제한
-
-172 범위의 IP 주소와 충돌할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["이 제한 사항에 대해 자세히 알아보십시오"].
+자세한 지침은 을 참조하십시오 https://cloud.google.com/vpn/docs/concepts/overview["Google Cloud 설명서: Cloud VPN 개요"^].
 
 
 
-== Cloud Volumes ONTAP의 방화벽 규칙
+=== 방화벽 규칙
 
-BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 GCP 방화벽 규칙을 생성합니다. 테스트 목적으로 또는 자체 방화벽 규칙을 사용하려는 경우 포트를 참조할 수 있습니다.
+BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Google Cloud 방화벽 규칙을 생성합니다. 테스트 목적으로 또는 자체 방화벽 규칙을 사용하려는 경우 포트를 참조할 수 있습니다.
 
-Cloud Volumes ONTAP의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.
+Cloud Volumes ONTAP의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다. HA 구성을 구축할 경우 VPC-0의 Cloud Volumes ONTAP에 대한 방화벽 규칙입니다.
 
-HA 구성을 구축할 경우 VPC-0의 Cloud Volumes ONTAP에 대한 방화벽 규칙입니다.
+HA 구성에는 두 가지 방화벽 규칙 세트가 필요합니다.
+
+* VPC-0의 HA 구성 요소에 대한 하나의 규칙 세트 이러한 규칙을 통해 Cloud Volumes ONTAP에 대한 데이터 액세스가 가능합니다.
+* VPC-1, VPC-2 및 VPC-3의 HA 구성 요소에 대한 또 다른 규칙 세트 이러한 규칙은 HA 구성 요소 간의 인바운드 및 아웃바운드 통신에 대해 개방됩니다. <<Rules for VPC-1,VPC-2 및 VPC-3에서 자세히 알아보십시오>>.
 
 
 
-=== 인바운드 규칙
+
+==== 인바운드 규칙
 
 작업 환경을 만들 때 배포 중에 미리 정의된 방화벽 정책에 대한 소스 필터를 선택할 수 있습니다.
 
@@ -352,13 +307,13 @@ HA 구성을 구축할 경우 VPC-0의 Cloud Volumes ONTAP에 대한 방화벽 �
 |===
 
 
-=== 아웃바운드 규칙
+==== 아웃바운드 규칙
 
 Cloud Volumes ONTAP에 대해 미리 정의된 보안 그룹은 모든 아웃바운드 트래픽을 엽니다. 허용 가능한 경우 기본 아웃바운드 규칙을 따릅니다. 더 엄격한 규칙이 필요한 경우 고급 아웃바운드 규칙을 사용합니다.
 
 
 
-==== 기본 아웃바운드 규칙
+===== 기본 아웃바운드 규칙
 
 Cloud Volumes ONTAP에 대해 미리 정의된 보안 그룹에는 다음과 같은 아웃바운드 규칙이 포함됩니다.
 
@@ -377,7 +332,7 @@ Cloud Volumes ONTAP에 대해 미리 정의된 보안 그룹에는 다음과 같
 |===
 
 
-==== 고급 아웃바운드 규칙
+===== 고급 아웃바운드 규칙
 
 아웃바운드 트래픽에 대해 엄격한 규칙이 필요한 경우 다음 정보를 사용하여 Cloud Volumes ONTAP의 아웃바운드 통신에 필요한 포트만 열 수 있습니다.
 
@@ -492,9 +447,9 @@ NOTE: 소스는 Cloud Volumes ONTAP 시스템의 인터페이스(IP 주소)입�
 |===
 
 
-== VPC-1, VPC-2 및 VPC-3의 방화벽 규칙
+==== VPC-1, VPC-2 및 VPC-3에 대한 규칙
 
-GCP에서 HA 구성은 네 대의 VPC에 구축됩니다. VPC-0의 HA 구성에 필요한 방화벽 규칙은 입니다 <<Cloud Volumes ONTAP의 방화벽 규칙,Cloud Volumes ONTAP에 대해 위에 나열되어 있습니다>>.
+Google Cloud에서는 4개의 VPC에 HA 구성이 배포됩니다. VPC-0의 HA 구성에 필요한 방화벽 규칙은 입니다 <<방화벽 규칙,Cloud Volumes ONTAP에 대해 위에 나열되어 있습니다>>.
 
 한편, BlueXP가 VPC-1, VPC-2 및 VPC-3의 인스턴스에 대해 생성하는 사전 정의된 방화벽 규칙은 _ALL_PROTOCOLS 및 포트를 통한 수신 통신을 가능하게 합니다. 이 규칙은 HA 노드 간 통신을 지원합니다.
 
@@ -502,68 +457,8 @@ HA 노드와 HA 중재자의 통신은 포트 3260(iSCSI)을 통해 이루어집
 
 
 
-== 커넥터의 방화벽 규칙
+== 커넥터 요구 사항
 
-Connector의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.
+아직 Connector를 만들지 않은 경우 Connector에 대한 네트워킹 요구 사항도 검토해야 합니다.
 
-
-
-=== 인바운드 규칙
-
-[cols="10,10,80"]
-|===
-| 프로토콜 | 포트 | 목적 
-
-
-| SSH를 클릭합니다 | 22 | 커넥터 호스트에 대한 SSH 액세스를 제공합니다 
-
-
-| HTTP | 80 | 클라이언트 웹 브라우저에서 로컬 사용자 인터페이스로 HTTP 액세스를 제공합니다 
-
-
-| HTTPS | 443 | 클라이언트 웹 브라우저에서 로컬 사용자 인터페이스로 HTTPS 액세스를 제공합니다 
-
-
-| TCP | 3128 | Cloud Volumes ONTAP에서 인터넷에 액세스하여 AutoSupport 메시지를 NetApp 지원으로 보냅니다. 커넥터를 배포한 후 이 포트를 수동으로 열어야 합니다. 
-|===
-
-
-=== 아웃바운드 규칙
-
-Connector에 대해 미리 정의된 방화벽 규칙은 모든 아웃바운드 트래픽을 엽니다. 허용 가능한 경우 기본 아웃바운드 규칙을 따릅니다. 더 엄격한 규칙이 필요한 경우 고급 아웃바운드 규칙을 사용합니다.
-
-
-
-==== 기본 아웃바운드 규칙
-
-Connector에 대해 미리 정의된 방화벽 규칙에는 다음과 같은 아웃바운드 규칙이 포함됩니다.
-
-[cols="20,20,60"]
-|===
-| 프로토콜 | 포트 | 목적 
-
-
-| 모든 TCP | 모두 | 모든 아웃바운드 트래픽 
-
-
-| 모든 UDP | 모두 | 모든 아웃바운드 트래픽 
-|===
-
-
-==== 고급 아웃바운드 규칙
-
-아웃바운드 트래픽에 대해 엄격한 규칙이 필요한 경우 다음 정보를 사용하여 Connector의 아웃바운드 통신에 필요한 포트만 열 수 있습니다.
-
-
-NOTE: 소스 IP 주소는 커넥터 호스트입니다.
-
-[cols="5*"]
-|===
-| 서비스 | 프로토콜 | 포트 | 목적지 | 목적 
-
-
-| API 호출 및 AutoSupport | HTTPS | 443 | 아웃바운드 인터넷 및 ONTAP 클러스터 관리 LIF | API는 GCP 및 ONTAP, 클라우드 데이터 센스, 랜섬웨어 서비스 요청 및 AutoSupport 메시지를 NetApp에 전송합니다 
-
-
-| DNS | UDP입니다 | 53 | DNS | BlueXP에서 DNS Resolve에 사용됩니다 
-|===
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["커넥터에 대한 네트워킹 요구 사항을 봅니다"^]

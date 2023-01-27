@@ -1541,14 +1541,7 @@
   <block id="b3f2fa100e111e8d78c1729bbe7330b9" category="inline-image-macro">Cloud Volumes ONTAP HA 아키텍처의 구성 요소를 보여 주는 개념적 이미지: 2개의 Cloud Volumes ONTAP 노드와 개별 가용성 영역에 있는 중재자 인스턴스</block>
   <block id="8baf5cc352903972240801715cac9720" category="paragraph"><block ref="8baf5cc352903972240801715cac9720" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a02218676e4b3b1478891bbfdaee427f" category="section-title">커넥터 요구 사항</block>
-  <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="section-title">대상 네트워크에 연결</block>
   <block id="c8f224037ea295aeec347c94779d9932" category="section-title">아웃바운드 인터넷 액세스</block>
-  <block id="c0dfa216f26874dae52a89e0090a3358" category="paragraph">Connector를 사용하려면 공용 클라우드 환경 내의 리소스와 프로세스를 관리하기 위한 아웃바운드 인터넷 액세스가 필요합니다.</block>
-  <block id="b8724da75fb917e992576b17378e66b3" category="cell">엔드포인트</block>
-  <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">https://support.netapp.com 으로 문의하십시오</block>
-  <block id="db9e137068a05efe5440105c2494b7f1" category="cell">라이센스 정보를 얻고 AutoSupport 메시지를 NetApp 지원 팀에 전송합니다.</block>
-  <block id="554841a7559bd190d883de523464d1d1" category="cell">https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net 으로 문의하십시오</block>
-  <block id="065880318484084e9bfe33ea9c6a8702" category="cell">Connector 및 해당 Docker 구성 요소를 업그레이드합니다.</block>
   <block id="47a9dec41b05cb9452bf85a6b7a24260" category="summary">몇 가지 단계로 Cloud Volumes ONTAP for AWS를 시작하십시오.</block>
   <block id="486388bbe4cda183a0e74df6ada2a454" category="doc">AWS에서 Cloud Volumes ONTAP를 빠르게 시작합니다</block>
   <block id="ecd871e3e8bbcd8fb9b67fde1abb1ca5" category="paragraph">몇 가지 단계를 통해 AWS에서 Cloud Volumes ONTAP를 시작하십시오.</block>
@@ -2109,7 +2102,6 @@
   <block id="92d6097e791c2b01c7cc0104f3a00d02" category="inline-link">Google Cloud 설명서: 고객이 관리하는 암호화 키 사용</block>
   <block id="8d6456bdd46775a0bde58d79fa727b86" category="paragraph">자세한 내용은 을 참조하십시오<block ref="0d1fec14af342ac3f0970d5f69f9ea12" category="inline-link-rx"></block></block>
   <block id="4d5272b77be8e6cf2d9611b8c660d0aa" category="list-text">작업 환경을 만들 때 API 요청과 함께 "GcpEncryption" 매개 변수를 사용합니다.</block>
-  <block id="17cdbe368c7c729de5966fefda692ad9" category="summary">Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Azure 네트워킹을 설정합니다. 여기에는 커넥터 및 Cloud Volumes ONTAP에 대한 네트워킹이 포함됩니다.</block>
   <block id="412590af9448ac66459e9c3d686de880" category="doc">Azure의 Cloud Volumes ONTAP에 대한 네트워킹 요구사항</block>
   <block id="72928bd9aacf64df0eb1285c03f5f5c0" category="section-title">Cloud Volumes ONTAP에 대한 요구사항</block>
   <block id="098d8cb8c4a1291e10ee07b333610f24" category="paragraph">Azure에서 다음 네트워킹 요구사항을 충족해야 합니다.</block>
@@ -2264,11 +2256,6 @@
   <block id="8b26f0918bd84f8f658268af9e2d60ac" category="list-text"><block ref="8b26f0918bd84f8f658268af9e2d60ac" category="inline-link-macro-rx"></block></block>
   <block id="ebd1806e62b51cb0c1b6db8082e0666d" category="inline-link-macro">Google Cloud에서 Cloud Volumes ONTAP와 함께 NetApp FlexCache를 구축하는 방법</block>
   <block id="dd8a20d5a7875f2be225fbdc1a4c18bf" category="list-text"><block ref="dd8a20d5a7875f2be225fbdc1a4c18bf" category="inline-link-macro-rx"></block></block>
-  <block id="c1a944514f668a6530be7821e4a430f3" category="summary">Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Google 클라우드 플랫폼 네트워킹을 설정합니다. 여기에는 커넥터 및 Cloud Volumes ONTAP에 대한 네트워킹이 포함됩니다.</block>
-  <block id="a74ee89365e6df5e260d1051917ad0ea" category="doc">GCP의 Cloud Volumes ONTAP에 대한 네트워킹 요구 사항</block>
-  <block id="26f701fd34070cdff3f09a341ace7632" category="inline-link-macro">GCP에서 HA Pair의 작동 방식에 대해 알아보십시오</block>
-  <block id="16e04d05ebe78ce811365e6363616985" category="paragraph">HA 쌍을 구축하려는 경우 <block ref="34f7e91e8936b0b0eaed95f473b90e44" category="inline-link-macro-rx"></block>.</block>
-  <block id="394894d4a834735632bdc966f17ca917" category="paragraph">GCP에서 다음 요구사항을 충족해야 합니다.</block>
   <block id="0b92442656d83f3067193055685902c8" category="list-text">내부 로드 밸런서</block>
   <block id="bed26a3b752abff1e6e50d64a46ef060" category="paragraph">로드 밸런싱 장치 하나는 클러스터 관리이고, 하나는 SVM(스토리지 VM) 관리이고, 하나는 노드 1에 대한 NAS 트래픽이고, 나머지 하나는 노드 2에 대한 NAS 트래픽입니다.</block>
   <block id="a3f8b70147487a4cbe0d1e707fb50ec9" category="paragraph">각 부하 분산 장치에 대한 설정은 다음과 같습니다.</block>
@@ -2281,17 +2268,11 @@
   <block id="0777a377adfb71ee50970edc3940dc96" category="list-text">UDP 포워딩 규칙 1개</block>
   <block id="8141cbd2dd808b9e48e91eaf3d5f2fe1" category="list-text">전역 액세스가 비활성화되었습니다</block>
   <block id="83d4ff33554cb62b1f10057bae8d85ce" category="paragraph">전역 액세스는 기본적으로 해제되어 있지만 사후 배포를 사용하도록 설정하는 것이 지원됩니다. 지역 간 트래픽의 지연 시간이 훨씬 더 길기 때문에 이 기능을 비활성화했습니다. 우발적인 교차 부위 장착으로 인해 부정적인 경험을 하지 않으려 했습니다. 이 옵션의 활성화는 비즈니스 요구 사항에 따라 다릅니다.</block>
-  <block id="75f83e966c01c1de3b682a52f8d4c7c0" category="list-text">HA 쌍을 위한 하나 이상의 영역</block>
-  <block id="0a27741a79d0e9ca18ec583e983bfb93" category="list-text">HA 쌍을 위한 4가지 가상 프라이빗 클라우드</block>
-  <block id="9aac39c2eff8d072fd62e0e718e5684b" category="list-text">HA 구성을 위해서는 4개의 가상 프라이빗 클라우드(VPC)가 필요합니다. GCP가 각 네트워크 인터페이스가 별도의 VPC 네트워크에 상주하도록 요구하기 때문에 4개의 VPC가 필요합니다.</block>
   <block id="d05ee1603902a8831c88a7a4e2d05592" category="list-text">데이터 및 노드에 대한 인바운드 연결을 위한 VPC-0</block>
   <block id="420f5bde5fe8d88334d70c6e271fafb1" category="list-text">노드와 HA 중재자 간의 내부 통신을 위한 VPC-1, VPC-2 및 VPC-3</block>
-  <block id="3d13cafcfa05e263c4df4bafb6f8f947" category="list-text">HA 쌍을 위한 서브넷</block>
   <block id="8a8c42c41cee152d79d679a14f70eab6" category="list-text">각 VPC에 전용 서브넷이 필요합니다.</block>
   <block id="79dd843cdbd0a98276c26f29bded2257" category="paragraph">Connector를 VPC-0에 배치한 경우 서브넷에서 Private Google Access를 활성화하여 API에 액세스하고 데이터 계층화를 활성화해야 합니다.</block>
   <block id="879d9e5531b71e6c91d2bb1771c06d40" category="paragraph">이러한 VPC에 있는 서브넷에는 고유한 CIDR 범위가 있어야 합니다. CIDR 범위가 중복될 수 없습니다.</block>
-  <block id="115b6c4bc1559957108cd2e500828c8d" category="list-text">단일 노드 시스템을 위한 단일 가상 프라이빗 클라우드</block>
-  <block id="50db7350c142ba7d29f00df81b4c786b" category="list-text">단일 노드 시스템에는 VPC 1개가 필요합니다.</block>
   <block id="b9ea9f76a11191d80f8fe1abc9437eb6" category="list-text">공유 VPC</block>
   <block id="f3d03214bf75026b54f5b2c16fec0e81" category="list-text">Cloud Volumes ONTAP 및 Connector는 Google Cloud 공유 VPC 및 독립 실행형 VPC에서도 지원됩니다.</block>
   <block id="d3a2a7fdaa8373f4a0dca1f16e49c9c1" category="paragraph">단일 노드 시스템의 경우 VPC는 공유 VPC 또는 독립형 VPC가 될 수 있습니다.</block>
@@ -2302,42 +2283,26 @@
   <block id="0d8050524ef140aadb3a681481890b39" category="list-text">VPC의 패킷 미러링</block>
   <block id="4d6aebef0af2c2c1118b467bdf0dadf0" category="inline-link">패킷 미러링</block>
   <block id="7c0126eb5fa57fb86ccb4cf44811856d" category="list-text"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> Cloud Volumes ONTAP를 구축하는 Google Cloud VPC에서 비활성화되어야 합니다. 패킷 미러링이 활성화된 경우 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.</block>
-  <block id="d3d79704bb54117545a4635e1d22fc65" category="list-text">Cloud Volumes ONTAP에 대한 아웃바운드 인터넷 액세스</block>
   <block id="4c896c50345c5252f4b0e8fc4bf10723" category="admonition">HA 쌍을 사용하는 경우 HA 중재자가 아웃바운드 인터넷 액세스를 요구하지 않습니다.</block>
-  <block id="e7787f4da96c754ed6401b93cf7a96ee" category="list-text">* 단일 노드 *: 3개 또는 4개의 전용 IP 주소</block>
   <block id="c0d1b864d00da3eb6415590dfa2621ab" category="paragraph">API를 사용하여 Cloud Volumes ONTAP를 구축하고 다음 플래그를 지정한 경우 SVM(스토리지 VM) 관리 LIF의 생성을 건너뛸 수 있습니다.</block>
   <block id="9389c2cd70872a229cd788537557d183" category="paragraph">'스킵스만트관리면: TRUE'</block>
   <block id="2be40f62b7c4e1d13a18dcc030852bf8" category="paragraph">LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 스토리지 VM(SVM) 관리 LIF가 필요합니다.</block>
-  <block id="a4dcab9c1ee36b30447e9cfab646cbc8" category="list-text">* HA 쌍 *: 14 또는 15개의 전용 IP 주소</block>
   <block id="0ac7ae25c356474957d53018f385f434" category="list-text">VPC-0용 전용 IP 주소 7개 또는 8개</block>
   <block id="16dba371e7c3be679c75a860acf986a5" category="list-text">VPC-1용 사설 IP 주소 2개</block>
   <block id="3b36c3b05500e8c44c01c05c2c597b97" category="list-text">VPC-2용 사설 IP 주소 2개</block>
   <block id="75a392272a1bb675ed8f846182436d6e" category="list-text">VPC-3용 사설 IP 주소 3개</block>
   <block id="4dfddd1829f7fb340bd9b36bff6e3130" category="list-text">방화벽 규칙</block>
   <block id="2a361a1f21cbd928455b1bd06df94169" category="paragraph">HA 구성에는 두 가지 방화벽 규칙 세트가 필요합니다.</block>
-  <block id="01e18e5463e6c1fc9c05a5b8a728f3ff" category="list-text">VPC-0의 HA 구성 요소에 대한 하나의 규칙 세트 이러한 규칙을 통해 Cloud Volumes ONTAP에 대한 데이터 액세스가 가능합니다. <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>.</block>
-  <block id="204347da7430e0509c4b62949e49e5dc" category="list-text">VPC-1, VPC-2 및 VPC-3의 HA 구성 요소에 대한 또 다른 규칙 세트 이러한 규칙은 HA 구성 요소 간의 인바운드 및 아웃바운드 통신에 대해 개방됩니다. <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>.</block>
-  <block id="d9352b05e7fd32136338aa8bf365e170" category="list-text">데이터 계층화를 위해 Cloud Volumes ONTAP에서 Google 클라우드 스토리지로 연결</block>
   <block id="5e74b536fe3c8bd111e49f783c8e991c" category="inline-link">Google Cloud 설명서: 개인 Google Access 구성</block>
   <block id="9e0ae4847043d43d71330ce503e69ac8" category="list-text">콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷이 프라이빗 Google 액세스용으로 구성되어야 합니다(HA 쌍을 사용하는 경우 VPC-0의 서브넷임). 자세한 지침은 을 참조하십시오<block ref="6db326f0ee07df97e25069fccf883deb" category="inline-link-rx"></block>.</block>
   <block id="df025646ed6854c0696237c0ac916446" category="list-text">다른 네트워크의 ONTAP 시스템에 대한 연결</block>
-  <block id="14725afebf967c0c497c447ebcaf1764" category="list-text">GCP의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 VPC와 기업 네트워크 같은 다른 네트워크 간에 VPN 연결이 있어야 합니다.</block>
   <block id="2fbb401eef4220b4a89cce3e59325dcb" category="inline-link">Google Cloud 설명서: Cloud VPN 개요</block>
   <block id="6d1472a8434e4945740fa177e609f886" category="paragraph">자세한 지침은 을 참조하십시오<block ref="1bc8aad79f56acf8c242cfb981c11ee1" category="inline-link-rx"></block>.</block>
-  <block id="e0ab516914623c72df4ff708af6cdd54" category="section-title">Cloud Volumes ONTAP의 방화벽 규칙</block>
-  <block id="4907f0fb8777892173f7e34fa56bfcdb" category="paragraph">Cloud Volumes ONTAP의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.</block>
-  <block id="bcf66fd73f27e271725271d68f4723a9" category="paragraph">HA 구성을 구축할 경우 VPC-0의 Cloud Volumes ONTAP에 대한 방화벽 규칙입니다.</block>
   <block id="1147a9bceab35dc98b14493a462a8f27" category="inline-link">Google Cloud 설명서: 부하 분산 방화벽 규칙</block>
   <block id="1395d3dc336eac468612e7bbe8281f7a" category="cell">63001-63050</block>
   <block id="06fb5a0f91eb3d073524ac0c7e590c54" category="cell">로드 밸런싱 프로브 포트를 통해 어떤 노드가 정상 상태인지 확인(HA 쌍에만 필요)</block>
-  <block id="9fda35946418ee004d3cdc93c12473b4" category="section-title">VPC-1, VPC-2 및 VPC-3의 방화벽 규칙</block>
   <block id="4e9d1f4e3c452c7aba2d9cc51c690416" category="inline-xref">Cloud Volumes ONTAP에 대해 위에 나열되어 있습니다</block>
-  <block id="8ab03e4616af1a81bd7e097e2a865c29" category="paragraph">GCP에서 HA 구성은 네 대의 VPC에 구축됩니다. VPC-0의 HA 구성에 필요한 방화벽 규칙은 입니다 <block ref="6696339384f87dfedda2136f4a028ff0" category="inline-xref-macro-rx"></block>.</block>
   <block id="e83b31d42852ca12480d330a3385214f" category="paragraph">HA 노드와 HA 중재자의 통신은 포트 3260(iSCSI)을 통해 이루어집니다.</block>
-  <block id="fa6661c729382092acdf9b6930de105e" category="section-title">커넥터의 방화벽 규칙</block>
-  <block id="5ea521a799e1cf043cd101ec326044f6" category="paragraph">Connector의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.</block>
-  <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">Connector에 대해 미리 정의된 방화벽 규칙은 모든 아웃바운드 트래픽을 엽니다. 허용 가능한 경우 기본 아웃바운드 규칙을 따릅니다. 더 엄격한 규칙이 필요한 경우 고급 아웃바운드 규칙을 사용합니다.</block>
-  <block id="bd83f7d2350eb6b777b2622dfd275ab6" category="paragraph">Connector에 대해 미리 정의된 방화벽 규칙에는 다음과 같은 아웃바운드 규칙이 포함됩니다.</block>
   <block id="aef294321c5e9daca32778610304f081" category="summary">몇 가지 단계를 통해 Azure용 Cloud Volumes ONTAP를 시작하십시오.</block>
   <block id="6b9ec885733dcee16db8c4d8dde6312a" category="doc">Azure에서 Cloud Volumes ONTAP를 빠르게 시작합니다</block>
   <block id="019fd7c8c6395aedf9e4d8fe995febee" category="inline-link">Azure에서 커넥터를 만드는 방법에 대해 알아봅니다</block>
@@ -2773,7 +2738,6 @@
   <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">메시지가 표시되면 * 계속 * 을 클릭하여 Microsoft 로그인 페이지로 리디렉션됩니다.</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp은 Microsoft Azure Active Directory를 지원 및 라이선싱과 관련된 인증 서비스의 ID 공급자로 사용합니다.</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">로그인 페이지에서 인증 프로세스를 수행할 수 있도록 NetApp Support 사이트의 등록 이메일 주소와 암호를 제공합니다.</block>
-  <block id="6dabf2a1195c84bdf3b7bf30e5ddf080" category="cell">API는 GCP 및 ONTAP, 클라우드 데이터 센스, 랜섬웨어 서비스 요청 및 AutoSupport 메시지를 NetApp에 전송합니다</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
   <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
@@ -2930,7 +2894,6 @@
   <block id="81cc31df8f1cfdded8f19bde6b378f31" category="section-title">HA 구성 내부 보안 그룹에 대한 규칙입니다</block>
   <block id="7893e453f8f5e33915b2a7890867e098" category="paragraph">Cloud Volumes ONTAP HA 구성에 대해 미리 정의된 내부 보안 그룹에는 다음 규칙이 포함됩니다. 이 보안 그룹은 HA 노드와 중재자 및 노드 간의 통신을 지원합니다.</block>
   <block id="52bb55c8099e551b91ec50d983141e9a" category="paragraph">Azure의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 Azure VNET와 다른 네트워크(예: 기업 네트워크) 간에 VPN 연결이 있어야 합니다.</block>
-  <block id="d17764ffa4b2b993f35778d5e7c1f22e" category="cell">API는 Azure 및 ONTAP, 클라우드 데이터 감지, 랜섬웨어 서비스 요청, AutoSupport 메시지를 NetApp에 전송합니다</block>
   <block id="aa73f4eb582c3e0e9bca433f741e8a12" category="inline-link-macro">S3 및 기타 클라이언트 프로토콜에 대한 Cloud Volumes ONTAP 지원에 대해 자세히 알아보십시오</block>
   <block id="b19dcb5d79169da5722547be25d81a05" category="paragraph"><block ref="2b5ab7e81cd6465f0e4fd342fda67520" category="inline-link-macro-rx"></block>.</block>
   <block id="2f2289dc4d144dd69a1fd73eaab183e0" category="summary">일부 Cloud Volumes ONTAP 구성에는 Cloud Volumes ONTAP이 성능 향상을 위해 Flash Cache로 사용하는 로컬 NVMe 스토리지가 포함됩니다.</block>
@@ -3930,7 +3893,6 @@
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">Azure 리소스 그룹에 두 번째 Cloud Volumes ONTAP HA 쌍을 배포하려고 하면 BlueXP에서 연결 문제가 발생합니다.</block>
   <block id="ce23ccd5f69f45f3f2a022750ab9d6e7" category="paragraph">BlueXP에서는 보안 그룹을 만들 필요가 없습니다. 직접 사용해야 하는 경우 아래 나열된 보안 그룹 규칙을 참조하십시오.</block>
   <block id="196affcedcabdcd9243dfaab58327dae" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Azure 보안 그룹을 만듭니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
-  <block id="23486ca53d499245ebae5460cf6d10ad" category="cell">BlueXP 내에서 SaaS 기능 및 서비스를 제공합니다.</block>
   <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">BlueXP에서 DNS Resolve에 사용됩니다</block>
   <block id="4350eea5911affd7e2c237dd5705777c" category="list-text">BlueXP는 Cloud Volumes ONTAP를 배포할 때 데이터 서비스 스토리지 VM을 하나만 생성합니다. 일부 구성은 추가 스토리지 VM을 지원합니다. <block ref="a7cc00a0b341c53959a0ff9bb9ec925b" category="inline-link-macro-rx"></block>.</block>
   <block id="d3ba63f114f62f143d97434a92eb48a8" category="paragraph">BlueXP 3.9.5 릴리스부터는 초기 스토리지 VM에서 논리적 공간 보고가 활성화됩니다. 공간이 논리적으로 보고되면 ONTAP에서는 스토리지 효율성 기능으로 절약된 모든 물리적 공간이 사용된 것으로 보고하도록 볼륨 공간을 보고합니다.</block>
@@ -4041,10 +4003,7 @@
   <block id="0d5b8e06664cffcf9f498e7821c89481" category="list-text">여러 영역 또는 단일 영역에 HA 구성을 배포하여 데이터의 고가용성을 보장할 수 있습니다. HA 쌍을 생성할 때 BlueXP에서 여러 존 또는 단일 존을 선택하라는 메시지가 표시됩니다.</block>
   <block id="44b028753f7a7976b8be9d11b1afed32" category="paragraph">HA 쌍을 생성할 때 BlueXP에서 네 개의 VPC를 선택하라는 메시지가 표시됩니다.</block>
   <block id="c44db905496bb7220714be5427afb035" category="paragraph">AutoSupport 메시지를 보내는 데 아웃바운드 인터넷 연결을 사용할 수 없는 경우 BlueXP는 자동으로 Cloud Volumes ONTAP 시스템에서 커넥터를 프록시 서버로 사용하도록 구성합니다. 유일한 요구 사항은 커넥터의 방화벽이 포트 3128을 통한 _INbound_connection을 허용하는지 확인하는 것입니다. Connector를 배포한 후 이 포트를 열어야 합니다.</block>
-  <block id="8c9d06136a351aef5233e159f1b086f5" category="list-text">BlueXP는 GCP의 Cloud Volumes ONTAP에 다음과 같은 수의 개인 IP 주소를 할당합니다.</block>
-  <block id="c3872c89a315822852621c448e41aac4" category="list-text">BlueXP는 방화벽 규칙을 만들 필요가 없습니다. 직접 사용해야 하는 경우 아래 나열된 방화벽 규칙을 참조하십시오.</block>
   <block id="33e7d975fa9a0910415fa300d8bf304a" category="paragraph">BlueXP에서 데이터 계층화를 설정하는 데 필요한 추가 단계는 을 참조하십시오 <block ref="9ae9bcf59853ba48ce2658a41db24feb" category="inline-link-macro-rx"></block>.</block>
-  <block id="e468ba21e4a82ddfaf9b8e28f74bb73b" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 GCP 방화벽 규칙을 생성합니다. 테스트 목적으로 또는 자체 방화벽 규칙을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="639c4a9b76126cf4712751dee5546383" category="paragraph">한편, BlueXP가 VPC-1, VPC-2 및 VPC-3의 인스턴스에 대해 생성하는 사전 정의된 방화벽 규칙은 _ALL_PROTOCOLS 및 포트를 통한 수신 통신을 가능하게 합니다. 이 규칙은 HA 노드 간 통신을 지원합니다.</block>
   <block id="3ef69cb41da937aa60ab5fbab53eb42a" category="list-text">Cloud Volumes ONTAP를 업그레이드할 때 BlueXP는 필요에 따라 중재자 인스턴스도 업데이트합니다.</block>
   <block id="5d345d14f8662bfe45d8562fba90c487" category="list-text">BlueXP에서 Cloud Volumes ONTAP HA 쌍을 만들면 중재자 인스턴스에 대한 키 쌍을 제공하라는 메시지가 표시됩니다. 를 사용하여 SSH 액세스에 이 키 쌍을 사용할 수 있습니다<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 사용자.</block>
@@ -4169,7 +4128,6 @@
   <block id="0dbd392deaa683187b56036c1e13a1a6" category="list-text">고객이 관리하는 암호화 키를 사용하고 데이터를 오브젝트 스토리지에 계층화하는 경우 BlueXP는 영구 디스크를 암호화하는 데 사용되는 동일한 키를 사용하려고 합니다. 하지만 먼저 Google Cloud Storage 버킷을 활성화하여 키를 사용해야 합니다.</block>
   <block id="2f75073874e4641aa2be5b8208fdfe64" category="paragraph">을 참조하십시오<block ref="cf06621be2a2bfce0ef0595deee16955" category="inline-link-rx"></block> "GcpEncryption" 매개 변수 사용에 대한 자세한 내용은 를 참조하십시오.</block>
   <block id="2f1e7d6affd61098f336e5b1777ec8e2" category="summary">BlueXP는 IP 주소, 넷마스크 및 라우트와 같은 Cloud Volumes ONTAP용 네트워킹 구성 요소 설정을 처리합니다. 아웃바운드 인터넷 액세스를 사용할 수 있는지, 충분한 전용 IP 주소를 사용할 수 있는지, 올바른 연결이 있는지 등을 확인해야 합니다.</block>
-  <block id="716fe391ac4cd57434ca473a86d6a7da" category="paragraph">BlueXP(이전의 Cloud Manager)는 IP 주소, 넷마스크 및 라우트와 같은 Cloud Volumes ONTAP용 네트워킹 구성 요소의 설정을 처리합니다. 아웃바운드 인터넷 액세스를 사용할 수 있는지, 충분한 전용 IP 주소를 사용할 수 있는지, 올바른 연결이 있는지 등을 확인해야 합니다.</block>
   <block id="b28334323356fda049acaa1568ee382c" category="paragraph">BlueXP는 필요한 수의 전용 IP 주소를 Cloud Volumes ONTAP에 자동으로 할당합니다. 네트워킹에 사용 가능한 개인 IP 주소가 충분한지 확인해야 합니다.</block>
   <block id="bdc0bf1240a907023821eccea893d017" category="paragraph">BlueXP에서 Cloud Volumes ONTAP에 할당하는 LIF 수는 단일 노드 시스템을 배포할지 HA 쌍을 구축하는지에 따라 달라집니다. LIF는 물리적 포트와 연결된 IP 주소입니다.</block>
   <block id="7a4fc6df5acc7a338525efe76c970bd8" category="paragraph">BlueXP는 단일 노드 시스템에 6개의 IP 주소를 할당합니다.</block>
@@ -4464,11 +4422,6 @@
   <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM을 활성화하면 BlueXP에서 생성한 모든 볼륨에서 WORM이 활성화됩니다. 그러나 ONTAP CLI 또는 System Manager를 사용하여 WORM이 비활성화된 볼륨을 생성할 수 있습니다. 이러한 볼륨은 WORM 속도로 충전되지 않습니다.</block>
   <block id="3101fb677e91832ce5fd2af7de4c1850" category="list-text">작업 환경을 생성할 때 WORM을 활성화하지 않으면 BlueXP에서 생성한 모든 볼륨에서 WORM이 비활성화됩니다. 해당 볼륨에 대해 WORM 속도로 충전되지 않습니다. 그러나 ONTAP CLI 또는 System Manager를 사용하여 WORM 지원 볼륨을 생성할 수 있습니다. 이러한 볼륨은 WORM 속도로 충전됩니다.</block>
   <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
-  <block id="37ba276f010f4ea07f1196b487811443" category="paragraph">https://*.api.bluexp.netapp.com 으로 문의하십시오</block>
-  <block id="e1095ff19466581c5274f67123c95036" category="paragraph">https://api.bluexp.netapp.com 으로 문의하십시오</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="paragraph">https://*.cloudmanager.cloud.netapp.com 으로 문의하십시오</block>
-  <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">https://cloudmanager.cloud.netapp.com 으로 문의하십시오</block>
-  <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">커넥터가 현재 "cloudmanager.cloud.netapp.com" 에 문의하고 있지만 곧 출시될 릴리스에서 "api.bluexp.netapp.com" 에 연락하기 시작합니다.</block>
   <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HA 다중 가용성 영역</block>
   <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">ONTAP 9.10.1P3에서 NVRAM 및 코어 디스크의 경우 BlueXP는 을 사용합니다<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>관리 디스크를 사용하여 암호화 키를 관리할 수 있습니다. 하위 버전은 고객 관리 키 대신 Microsoft 관리 키를 사용합니다.</block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="list-text">단일 노드</block>
@@ -4552,19 +4505,6 @@
   <block id="579a953172073c3fe33dc907abd6b3f8" category="paragraph">Cloud Manager는 Cloud Manager와 Cloud Volumes ONTAP가 클라우드에서 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="f4b34b24cc464b0154bd81cd6d906233" category="paragraph">Cloud Volumes ONTAP HA 중재자를 위해 미리 정의된 내부 보안 그룹에는 다음 규칙이 포함됩니다. Cloud Manager는 항상 이 보안 그룹을 생성합니다. 자체 옵션을 사용할 수 없습니다.</block>
   <block id="3f2a41d3e64efd3d137a5132f84eb8b6" category="paragraph">BlueXP에서 Cloud Volumes ONTAP에 할당하는 LIF 수는 단일 노드 시스템을 배포할지 HA 쌍을 구축하는지에 따라 달라집니다. LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 SVM 관리 LIF가 필요합니다.</block>
-  <block id="df290139b26527b2473b1e82a36386d4" category="paragraph">Connector가 공용 클라우드 환경 내에서 리소스 및 프로세스를 관리할 수 있도록 네트워킹을 설정합니다. Connector에 대한 가상 네트워크 및 서브넷을 사용하는 것 외에 다음 요구 사항이 충족되는지 확인해야 합니다.</block>
-  <block id="2f03f8dd45cb031f8f3cce95fd4acefc" category="paragraph">Connector를 사용하려면 만들고 있는 작업 환경 유형과 활성화할 서비스에 대한 네트워크 연결이 필요합니다.</block>
-  <block id="3f92e0c134aea90b900c9d9fb8728adc" category="paragraph">예를 들어 회사 네트워크에 커넥터를 설치하는 경우 Cloud Volumes ONTAP를 실행하는 가상 네트워크에 대한 VPN 연결을 설정해야 합니다.</block>
-  <block id="3ae1b8362f96338c0c28c7652251bc8b" category="paragraph">조직에서 모든 나가는 인터넷 트래픽에 대해 HTTP 프록시를 구축해야 하는 경우 HTTP 프록시에 대한 다음 정보를 얻습니다.</block>
-  <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">IP 주소입니다</block>
-  <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">자격 증명</block>
-  <block id="6a3f3799bc264d32568bb7169ddd515a" category="list-text">HTTPS 인증서</block>
-  <block id="338578acf7e0dc54ebcd8c3592f0b022" category="section-title">보안 그룹</block>
-  <block id="ae6252cb830dbd695650f78870fe4309" category="inline-link">로컬 UI</block>
-  <block id="4f85ea1fc2337ca87ea3957b6ed0f523" category="paragraph">커넥터를 시작하거나 커넥터가 AutoSupport 메시지의 프록시로 사용되지 않는 한 커넥터로 들어오는 트래픽이 없습니다. HTTP 및 HTTPS는 에 대한 액세스를 제공합니다<block ref="b66a5441ef03e9f48be36352f5f78769" category="inline-link-rx"></block>이는 드문 경우지만 사용할 수 있습니다. SSH는 문제 해결을 위해 호스트에 연결해야 하는 경우에만 필요합니다.</block>
-  <block id="d72a801b2f49d6a4ed170ebdf3cf0efc" category="section-title">IP 주소 제한</block>
-  <block id="65d425afa00c3ead65e6a786e55b60bc" category="inline-link">이 제한 사항에 대해 자세히 알아보십시오</block>
-  <block id="9b1f033bcac0595326d8acd1ef89e52c" category="paragraph">172 범위의 IP 주소와 충돌할 수 있습니다.<block ref="120cc620882c590412757bc531a4f583" category="inline-link-rx"></block>.</block>
   <block id="236afd214a59ab065a50ccb9cbbbe4c2" category="cell">9.12.0</block>
   <block id="97145bbcb02af5e728740b1d40bd2046" category="section-title">2022년 12월 15일</block>
   <block id="bf748f930fa11e46773ff6f7b815e480" category="section-title">Cloud Volumes ONTAP 9.12.0</block>
@@ -4628,4 +4568,36 @@
   <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
   <block id="6d50c94851edb68865f91b19a7c8e802" category="inline-link">Azure 문서에서 관리되는 디스크를 위한 Azure 영역 중복 스토리지에 대해 자세히 알아보십시오</block>
   <block id="d0dd1e24dc3eec7e346159d97577b2a5" category="list-text">두 개의 Cloud Volumes ONTAP 노드가 서로 다른 가용성 영역에 구축됩니다. 가용성 영역은 노드가 서로 다른 장애 도메인에 있는지 확인합니다.<block ref="ac08b397e7ae08c3f76d7057ac214476" category="inline-link-rx"></block>.</block>
+  <block id="806bf55e3fada643423a5e8b443a821f" category="summary">Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Google Cloud 네트워킹을 설정합니다.</block>
+  <block id="b2a93ab6944b01da98f77474158de584" category="doc">Google Cloud의 Cloud Volumes ONTAP에 대한 네트워킹 요구 사항</block>
+  <block id="589257f6242e3a6232a5f72f7867c4b6" category="inline-link-macro">HA 쌍이 Google Cloud에서 어떻게 작동하는지를 알아보십시오</block>
+  <block id="c8e39b92d04aae2c3a6d3e6f428d480e" category="paragraph">HA 쌍을 구축하려는 경우 <block ref="135d51832239d75e9eff2c1e7574765f" category="inline-link-macro-rx"></block>.</block>
+  <block id="26cc43b1e094bf317e2d9013491cb9af" category="paragraph">Google Cloud에서 다음 요구사항을 충족해야 합니다.</block>
+  <block id="cd28e0a76ff845ef2e9e5eeced367a01" category="section-title">요구사항을 충족해야 합니다</block>
+  <block id="d9358a4b713f2c5cc37fadb9fef3c574" category="paragraph">단일 노드 시스템을 배포하려는 경우 네트워킹이 다음 요구 사항을 충족하는지 확인합니다.</block>
+  <block id="1ec1df3337524963212c8e27b42ab3cc" category="section-title">VPC 1개</block>
+  <block id="5bd17b13142e93319e9f09e96063763a" category="paragraph">단일 노드 시스템을 위해 VPC(가상 프라이빗 클라우드) 1개가 필요합니다.</block>
+  <block id="268f43c6ccc1a99cbd92114c3903e0f1" category="paragraph">BlueXP는 Google Cloud의 단일 노드 시스템에 3개 또는 4개의 사설 IP 주소를 할당합니다.</block>
+  <block id="fea70579987e879c99c2df3cebf39f70" category="section-title">HA 쌍 관련 요구사항</block>
+  <block id="549263475571fab7c340abda30733212" category="paragraph">HA 쌍을 구축하려는 경우 네트워킹이 다음 요구사항을 충족하는지 확인합니다.</block>
+  <block id="5dadc4e112da073feca16f4aff4ba237" category="section-title">하나 또는 여러 개의 영역</block>
+  <block id="4c62b2e0648ccb7cc5ac07de5a4c67f4" category="section-title">4개의 가상 프라이빗 클라우드</block>
+  <block id="0fc9a4a783a2856e3a35ee9b12a2f357" category="paragraph">HA 구성을 위해서는 4개의 가상 프라이빗 클라우드(VPC)가 필요합니다. Google Cloud에서는 각 네트워크 인터페이스가 별도의 VPC 네트워크에 상주해야 하므로 4대의 VPC가 필요합니다.</block>
+  <block id="74cd215a46d2bd96fc35dad7ef313283" category="section-title">서브넷</block>
+  <block id="206f49c25e0bbd2da69d30f14f4f222d" category="paragraph">BlueXP는 Google Cloud의 HA 쌍에 14개 또는 15개의 사설 IP 주소를 할당합니다.</block>
+  <block id="974715540568df2f5efe3c40777931b7" category="section-title">데이터 계층화를 위해 Google Cloud Storage에 연결</block>
+  <block id="53c6f0799470bd2e67e7902192e11c7c" category="paragraph">Google Cloud의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 VPC와 기업 네트워크 같은 다른 네트워크 간에 VPN 연결이 있어야 합니다.</block>
+  <block id="8bb6cd6de4a896f626b89e711d40aa4c" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Google Cloud 방화벽 규칙을 생성합니다. 테스트 목적으로 또는 자체 방화벽 규칙을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
+  <block id="30f3abb35963e0cd7d66dc08581087c9" category="paragraph">Cloud Volumes ONTAP의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다. HA 구성을 구축할 경우 VPC-0의 Cloud Volumes ONTAP에 대한 방화벽 규칙입니다.</block>
+  <block id="cb97a2b297b246ea14d6c17e8e5ee28a" category="list-text">VPC-0의 HA 구성 요소에 대한 하나의 규칙 세트 이러한 규칙을 통해 Cloud Volumes ONTAP에 대한 데이터 액세스가 가능합니다.</block>
+  <block id="853d5f8d41b181e1e73157826ecc4287" category="inline-xref">VPC-2 및 VPC-3에서 자세히 알아보십시오</block>
+  <block id="9cd85fea135b7ad7c981c3cc1f75a6ea" category="list-text">VPC-1, VPC-2 및 VPC-3의 HA 구성 요소에 대한 또 다른 규칙 세트 이러한 규칙은 HA 구성 요소 간의 인바운드 및 아웃바운드 통신에 대해 개방됩니다. <block ref="8d9dee5ea3dbe6098c688583dd57c09d" category="inline-xref-macro-rx"></block>.</block>
+  <block id="ae2d87942e6697528344ccace68364e3" category="section-title">VPC-1, VPC-2 및 VPC-3에 대한 규칙</block>
+  <block id="5fb73c1af98e831dcfe0ce66f4582d3b" category="paragraph">Google Cloud에서는 4개의 VPC에 HA 구성이 배포됩니다. VPC-0의 HA 구성에 필요한 방화벽 규칙은 입니다 <block ref="8216cabe940880477030118a8a765034" category="inline-xref-macro-rx"></block>.</block>
+  <block id="4fad8964dcacb8a6d329f6e2e57a2af9" category="paragraph">아직 Connector를 만들지 않은 경우 Connector에 대한 네트워킹 요구 사항도 검토해야 합니다.</block>
+  <block id="f63c987d15807845ae712461b133bad5" category="inline-link">커넥터에 대한 네트워킹 요구 사항을 봅니다</block>
+  <block id="fec3732f829761687c4a94dc2dcf4ef5" category="paragraph"><block ref="fec3732f829761687c4a94dc2dcf4ef5" category="inline-link-rx"></block></block>
+  <block id="0f5cc196efac5a9fadb7272e55c7d686" category="summary">Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Azure 네트워킹을 설정합니다.</block>
+  <block id="323c8a1d29b771e63edf9d7a9968be4e" category="paragraph"><block ref="323c8a1d29b771e63edf9d7a9968be4e" category="inline-link-rx"></block></block>
+  <block id="f483cdf3bbc75344ed7ba476a346b3ae" category="paragraph"><block ref="f483cdf3bbc75344ed7ba476a346b3ae" category="inline-link-rx"></block></block>
 </blocks>
