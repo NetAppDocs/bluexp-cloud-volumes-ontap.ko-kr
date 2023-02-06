@@ -214,7 +214,6 @@
   <block id="9ee8a2504ba9f03aae4b30973ea35ad4" category="inline-link">GCP에서 Cloud Volumes ONTAP에 지원되는 구성입니다</block>
   <block id="5356346579bd6c821def647592378a8a" category="paragraph">Cloud Volumes ONTAP 시스템의 물리적 용량 제한은 라이센스에 연결되어 있습니다. 추가 제한은 애그리게이트 및 볼륨 크기에 영향을 줍니다. 구성을 계획할 때 이러한 제한 사항을 숙지해야 합니다.</block>
   <block id="9265447fe548064ca54a98dd4a111bc0" category="inline-link">GCP의 Cloud Volumes ONTAP에 대한 스토리지 제한입니다</block>
-  <block id="a15ee6cc62f2676af04c7221ef99fc86" category="section-title">GCP에서 시스템 사이징</block>
   <block id="d1d964d1db8731b3b8174fa845b85de0" category="paragraph">Cloud Volumes ONTAP 시스템을 사이징하면 성능 및 용량 요구사항을 충족하는 데 도움이 될 수 있습니다. 시스템 유형, 디스크 유형 및 디스크 크기를 선택할 때 몇 가지 주요 사항을 알고 있어야 합니다.</block>
   <block id="3ea4bf9da7622edeeae1bf80e9c5cded" category="list-text">기계 유형</block>
   <block id="c216ce09fef0e1ef250512b3b43005f3" category="list-text">에서 지원되는 기계 유형을 확인합니다<block ref="f922a7787320953a33ee2591f979f78c" category="inline-link-rx"></block> 지원되는 각 시스템 유형에 대한 자세한 내용은 Google에서 확인하십시오. 워크로드 요구 사항을 시스템 유형에 대한 vCPU 및 메모리 수와 일치시킵니다. 각 CPU 코어는 네트워킹 성능을 향상시킵니다.</block>
@@ -308,11 +307,8 @@
   <block id="fcdf2fd9d6e147f33f4e8d5f15a8724a" category="inline-link-macro">랜섬웨어에 대한 NetApp 솔루션을 구축하는 방법을 알아보십시오</block>
   <block id="8d9f62f251a8a411876740e6611a61cf" category="paragraph"><block ref="f1b4d319a2908121f0a6e639ae6c7cdc" category="inline-link-macro-rx"></block>.</block>
   <block id="eef256fe1f25b0dfdcc3971d7f0a9974" category="summary">Cloud Volumes ONTAP를 단일 시스템 구성으로 실행하거나 Google 클라우드 플랫폼에서 HA 쌍으로 실행할 수 있습니다.</block>
-  <block id="fdbc311c4dd4bb425160f22f166435fa" category="doc">GCP에서 Cloud Volumes ONTAP를 시작합니다</block>
-  <block id="74b0825a91f70136708bc63f9253e89c" category="paragraph">단일 노드 구성에서 Cloud Volumes ONTAP를 실행하거나 Google 클라우드 플랫폼에서 HA 쌍으로 실행할 수 있습니다.</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">시작하기 전에</block>
   <block id="3a2e3bd3692b5b10d4e8d1876ea764e4" category="list-text">가 있어야 합니다<block ref="31efb472d9740ae4bd5b3185af479587" category="inline-link-rx"></block>.</block>
-  <block id="af2fe545c466e4cd2bff03fb7e3dd4f2" category="paragraph">구성을 선택하고 관리자로부터 GCP 네트워킹 정보를 받아 준비해야 합니다. 자세한 내용은 을 참조하십시오 <block ref="7c40283f4f533a5903d1033c57ef27f4" category="inline-link-macro-rx"></block>.</block>
   <block id="fb387d3403e9d0f4168631a5c1e65d3d" category="inline-link">프로젝트에서 활성화됩니다</block>
   <block id="3f7dd317abe229076594c229e96f375d" category="list-text">Google Cloud API는 입니다<block ref="2bf1d71c4d11fe94040400dbdd9bbe2e" category="inline-link-rx"></block>:</block>
   <block id="d82c8fcef9b6dd8fb6808c96dcbc5bb5" category="list-text">Cloud Deployment Manager V2 API</block>
@@ -320,7 +316,6 @@
   <block id="9e636409b20980fb5089c87705851b4d" category="list-text">Cloud Resource Manager API를 참조하십시오</block>
   <block id="1101b09020ade12e90a562489e315c8d" category="list-text">컴퓨팅 엔진 API</block>
   <block id="71660685d00034957db3f9a31c160978" category="list-text">IAM(Identity and Access Management) API</block>
-  <block id="2418d4e79163fe8a8ee473ee02e56b0d" category="section-title">GCP에서 단일 노드 시스템 시작</block>
   <block id="02468344d7eb024c93087ede43938890" category="list-text">* 위치 선택 *: * Google Cloud * 및 * Cloud Volumes ONTAP * 를 선택합니다.</block>
   <block id="a52ac8a7b02f1fcb4758ef8608df8657" category="list-text">메시지가 표시되면<block ref="3902ae0ac0b84277d412c62a8daa1bac" category="inline-link-rx"></block>.</block>
   <block id="47e8755e148fbe2f9d687cce086d2e82" category="list-text">* 세부 정보 및 자격 증명 *: 프로젝트를 선택하고 클러스터 이름을 지정한 다음 서비스 계정을 선택하고 선택적으로 레이블을 추가한 다음 자격 증명을 지정합니다.</block>
@@ -334,36 +329,21 @@
   <block id="c9dac17a844d646dfb54058f973d40a5" category="cell">프로젝트 편집</block>
   <block id="380bfdc134190af310ad2f9812d7569f" category="inline-link-macro">이 페이지에 설명되어 있습니다</block>
   <block id="27d9b3c82bd8da92f73b89a66c20ba04" category="paragraph">선택한 자격 증명을 구독과 연결하려면 * 구독 추가 * 를 클릭합니다.</block>
-  <block id="b878d292874b3ab2ea5568d71ba31a73" category="paragraph">용량제 Cloud Volumes ONTAP 시스템을 생성하려면 GCP 마켓플레이스에서 Cloud Volumes ONTAP 서브스크립션과 연관된 GCP 프로젝트를 선택해야 합니다.</block>
-  <block id="0b6a93a12e94b586f0634222ff996760" category="inline-link">Marketplace 구독을 GCP 자격 증명과 연결합니다</block>
-  <block id="c6183bf47ae03a5fca3043b995daf4ad" category="paragraph">다음 비디오에서는 용량제 마켓플레이스 서브스크립션을 GCP 프로젝트에 연결하는 방법을 보여줍니다. 또는 에 있는 구독 단계를 따릅니다<block ref="1ca5652e3bd427104a4f5f3fa595cbd8" category="inline-link-rx"></block> 섹션을 참조하십시오.</block>
   <block id="440dfcc60c7c21a1c797e881b2dd7646" category="list-text">* 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. Cloud Backup을 선택하거나 Tiering을 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.</block>
   <block id="2e5f3aa65f18453c5c51b5ffcf2214d5" category="inline-link">Google Cloud 설명서: 개인 Google Access 구성</block>
   <block id="f72d7e736d5c07e6650c7c59c1d4beae" category="list-text">* 기본 스토리지 리소스 *: 초기 집계에 대한 설정(디스크 유형 및 각 디스크의 크기)을 선택합니다.</block>
-  <block id="46c8ec27dde6a17388de3058e4f90f1b" category="paragraph">디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 <block ref="648252a904437aee014f01faec9e87c4" category="inline-link-macro-rx"></block>.</block>
-  <block id="8ee28f71a3913c6cd38d72baee984fef" category="list-text">* 쓰기 속도 및 WORM *: * 일반 * 또는 * 고속 * 쓰기 속도를 선택하고 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.</block>
-  <block id="95fb8b2c3ed7d9abbd6c24af1369553c" category="paragraph">쓰기 속도 선택은 단일 노드 시스템에서만 지원됩니다.</block>
-  <block id="bd33ad636739b8c6eade3eaa425ba1d4" category="list-text">* Google Cloud Platform의 데이터 계층화 *: 초기 애그리게이트에서 데이터 계층화를 사용할지 여부를 선택하고, 계층형 데이터에 대한 스토리지 클래스를 선택한 다음 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택합니다(Cloud Volumes ONTAP 9.7 이상에 필요). 또는 GCP 계정(Cloud Volumes ONTAP 9.6의 경우 필수)을 선택합니다.</block>
-  <block id="528caeb1301c53d77a1cb7331729c1de" category="inline-link">9.6으로 데이터 계층화를 위해 GCP 계정 설정 및 추가</block>
-  <block id="256547a64d3e41d9a7c6a18d8d4243c1" category="list-text">GCP 계정 추가에 대한 자세한 내용은 을 참조하십시오<block ref="73ec53281b5c885e66f789300c61c2d4" category="inline-link-rx"></block>.</block>
-  <block id="158462e318c84b41ed7070989fee5b8c" category="list-text">데이터 계층화를 사용하지 않는 경우, 후속 애그리게이트에서 사용하도록 설정할 수 있지만 시스템을 끄고 GCP 콘솔에서 서비스 계정을 추가해야 합니다.</block>
   <block id="03cb85499f4837ea1e2f43864e39d856" category="cell">CIFS 서버와 연결할 AD 도메인 내의 조직 단위입니다. 기본값은 CN=Computers입니다.</block>
   <block id="547635b81ffb0f5ff05913c2836c7d9a" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="3385123430547e9830342b8fdb19e3d3" category="inline-link-macro-rx"></block> 및 <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>.</block>
-  <block id="031ff168f42bf83e7c6ebec1250cef3f" category="section-title">GCP에서 HA 쌍 시작</block>
   <block id="7289ff9561bd8f3124de5e821bd3e8e0" category="list-text">Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 화면의 지시를 따릅니다.</block>
   <block id="b5a7d19f6788ad4a9fa68128eabe2be1" category="list-text">* 위치 선택 *: * Google Cloud * 및 * Cloud Volumes ONTAP HA * 를 선택합니다.</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link-macro">계층화</block>
   <block id="44c4ed2245bcd5288c91b50f9a330bf4" category="cell">를 사용할 계획인 경우 <block ref="1295a10079ec492e012aa129538498c1" category="inline-link-macro-rx"></block> 또는<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block> 서비스를 사용하려면 * 서비스 계정 * 스위치를 활성화한 다음 미리 정의된 스토리지 관리자 역할이 있는 서비스 계정을 선택해야 합니다.</block>
-  <block id="65be3455c2d9a55c35fcbb66e8968d88" category="paragraph">다음 비디오에서는 용량제 마켓플레이스 서브스크립션을 GCP 프로젝트에 연결하는 방법을 보여줍니다. 또는 에 있는 구독 단계를 따릅니다<block ref="1ca5652e3bd427104a4f5f3fa595cbd8" category="inline-link-rx"></block> 섹션을 참조하십시오.</block>
   <block id="166a4b640ff9a34dd7447ebf0e16518b" category="list-text">* HA 배포 모델 *: HA 구성에 대해 여러 영역(권장) 또는 단일 영역을 선택합니다. 그런 다음 지역 및 구역을 선택합니다.</block>
   <block id="96c883d1fa1e7ebdc724bb5cec521bbd" category="inline-link-macro">HA 구축 모델 에 대해 자세히 알아보십시오</block>
   <block id="c03cb5d06936cb14d5f6dff824cc7c90" category="paragraph"><block ref="978980a9148c052b6f4164e267b317c3" category="inline-link-macro-rx"></block>.</block>
   <block id="74c223c0ac10d19fc933bf44bdfae707" category="list-text">* 연결 *: HA 구성을 위한 4개의 서로 다른 VPC, 각 VPC의 서브넷을 선택한 다음 방화벽 정책을 선택합니다.</block>
   <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">네트워킹 요구 사항에 대해 자세히 알아보십시오</block>
   <block id="7e1b099e8ddd48733a860e9dc84718f9" category="paragraph"><block ref="81d7ec58de725abfb78667b4f46a89ab" category="inline-link-macro-rx"></block>.</block>
-  <block id="09c7f0ffca918d21158d7ea36691dcf2" category="list-text">* WORM *: 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.</block>
-  <block id="279b45ef0c8a71337da715b526ec30ed" category="paragraph">데이터 계층화가 설정된 경우 WORM을 설정할 수 없습니다. <block ref="b8e9389aa16366d8b675fc0ac72edf2e" category="inline-link-macro-rx"></block>.</block>
-  <block id="5a491f1bb01a92203592595fdf6ce353" category="list-text">* Google Cloud Platform * 의 데이터 계층화: 초기 애그리게이트에 데이터 계층화를 사용할 것인지, 계층형 데이터에 대한 스토리지 클래스를 선택한 다음 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택합니다.</block>
   <block id="243c363888d8a767b0c39057fd91bece" category="doc">Cloud Volumes ONTAP 시스템 삭제</block>
   <block id="1b044bb64b9bbe28f6c0512f65cdaa86" category="paragraph">클라우드 백업을 위한 백업 및 클라우드 데이터 감지 및 모니터링을 위한 인스턴스 등과 같은 다른 서비스에서 관리하는 리소스는 작업 환경을 삭제할 때 삭제되지 않습니다. 수동으로 삭제해야 합니다. 그렇지 않으면 이러한 리소스에 대한 비용을 계속 받게 됩니다.</block>
   <block id="ab3fdba113c7d85bf4272c78761ef0b8" category="inline-link">필요한 경우 백업을 삭제합니다</block>
@@ -847,7 +827,6 @@
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">제한 사항</block>
   <block id="e2d4a517cbcae1c0966d5e478d743531" category="list-text">Cloud Volumes ONTAP의 WORM 스토리지는 "신뢰할 수 있는 스토리지 관리자" 모델로 운영됩니다. WORM 파일은 변경 또는 수정으로부터 보호되지만, 만료되지 않은 WORM 데이터가 포함된 볼륨에도 클러스터 관리자가 볼륨을 삭제할 수 있습니다.</block>
   <block id="6d0cc0f6b100bdce8cb06276811faff9" category="list-text">신뢰할 수 있는 스토리지 관리자 모델 외에도 Cloud Volumes ONTAP의 WORM 스토리지는 "신뢰할 수 있는 클라우드 관리자" 모델에서도 암시적으로 작동합니다. 클라우드 관리자는 클라우드 공급자에서 직접 클라우드 스토리지를 제거 또는 편집하여 만료 날짜 이전에 WORM 데이터를 삭제할 수 있습니다.</block>
-  <block id="eb57ade58504f4d5c09cb5e8cd78ae55" category="list-text">WORM 스토리지가 활성화된 경우 오브젝트 스토리지에 대한 데이터 계층화를 설정할 수 없습니다.</block>
   <block id="c65544a3678422a2d15f8bc1a12dec12" category="doc">FlexVol 볼륨을 생성합니다</block>
   <block id="6a6295e49dd6d445ae2c708b064bab15" category="list-text">선택한 데이터 애그리게이트에 볼륨을 생성합니다. <block ref="f87b905002e05e67a79602c0e20e2e8c" category="inline-xref-macro-rx"></block>.</block>
   <block id="e016f8b4ca56502e28a613178565fc27" category="list-text">템플릿에서 볼륨을 생성하여 데이터베이스 또는 스트리밍 서비스와 같은 특정 애플리케이션의 워크로드 요구사항에 맞게 볼륨을 최적화합니다. <block ref="924dba442370e336c9e9ec48f12c601d" category="inline-xref-macro-rx"></block>.</block>
@@ -4220,7 +4199,6 @@
   <block id="6f3d93af7507d9ff7bead94d1ffc9cc1" category="paragraph">기본적으로 BlueXP는 Cloud Volumes ONTAP과 관련 저장소 계정 간의 연결을 위해 Azure 개인 링크를 활성화합니다. Azure Private Link는 Azure의 엔드포인트 간 연결을 보호하고 성능상의 이점을 제공합니다.</block>
   <block id="7dfd5068a6c1386a24bb81164b3321f3" category="paragraph">BlueXP는 두 가지 구성 모두 Cloud Volumes ONTAP 및 스토리지 계정 간의 연결을 위해 항상 네트워크 액세스를 제한합니다. 네트워크 액세스는 Cloud Volumes ONTAP가 배포된 VNET와 커넥터가 배포된 VNET로 제한됩니다.</block>
   <block id="2172036a4fb1da374a247000f3d0760e" category="paragraph">회사에서 요구하는 경우, BlueXP에서 Azure Private Link 대신 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성하도록 설정을 변경할 수 있습니다. 이 설정을 변경하면 새로 만든 Cloud Volumes ONTAP 시스템에 적용됩니다.</block>
-  <block id="b2ae1e45589e149ddbd92b2a29aa5bd3" category="paragraph">대부분의 경우 Cloud Volumes ONTAP를 사용하여 Azure 개인 링크를 설정하는 데 필요한 작업은 없습니다. BlueXP는 Azure 프라이빗 링크를 관리합니다. 그러나 Azure Private DNS를 사용하는 경우에는 구성 파일을 편집해야 합니다. Azure의 커넥터 위치에 대한 요구 사항도 알고 있어야 합니다.</block>
   <block id="497286b7c4a76755ff0535ba3414dce0" category="paragraph">BlueXP는 Azure에 Cloud Volumes ONTAP를 배포할 때 리소스 그룹에 개인 끝점을 만듭니다. 프라이빗 엔드포인트는 Cloud Volumes ONTAP의 스토리지 계정과 연결되어 있습니다. 따라서 Cloud Volumes ONTAP 스토리지에 대한 액세스는 Microsoft 백본 네트워크를 통해 이루어집니다.</block>
   <block id="77bb2abfb8f3c95b3fdaf2c2e6814b89" category="section-title">Azure 프라이빗 DNS에 대한 자세한 내용은 BlueXP를 참조하십시오</block>
   <block id="c6862ef0bb5d25a7ed0231faab734f0d" category="paragraph">를 사용하는 경우<block ref="35609e050ed0963e042a408dda682719" category="inline-link-rx"></block>그런 다음 각 Connector에서 설정 파일을 수정해야 합니다. 그렇지 않으면 BlueXP에서 Cloud Volumes ONTAP 및 관련 저장소 계정 간에 Azure Private Link 연결을 활성화할 수 없습니다.</block>
@@ -4268,14 +4246,10 @@
   <block id="43b4e2bfc7554b142c2e386bdb5e5828" category="paragraph">몇 개월 전, Cloud Volumes ONTAP은 AWS(Amazon Web Services) out포스트 준비 지정을 달성했다고 발표했습니다. 오늘, AWS 아웃포스트에서 BlueXP 및 Cloud Volumes ONTAP의 검증을 마쳤습니다.</block>
   <block id="bada065bfea7e34e9203e33edc44d46a" category="paragraph">이제 단일 노드 Cloud Volumes ONTAP 시스템을 구축할 가용성 영역을 선택할 수 있습니다. AZ를 선택하지 않으면 BlueXP가 사용자를 위해 하나를 선택합니다.</block>
   <block id="4f0678a9e095858a4fa747c1c08210ee" category="paragraph">기본적으로 BlueXP에서는 이제 Cloud Volumes ONTAP 및 관련 저장소 계정 간에 Azure Private Link 연결을 사용할 수 있습니다. 전용 링크는 Azure의 엔드포인트 간 연결을 보호합니다.</block>
-  <block id="e7fc9bf2d5b3fc237c8223fb2e9678d6" category="paragraph">BlueXP에서 작업 환경을 만들어 GCP에서 Cloud Volumes ONTAP를 실행합니다.</block>
-  <block id="3cc94422ed10580ec406e0e90e02ed57" category="cell">BlueXP는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 GCP VM 인스턴스 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다.</block>
-  <block id="1456e010de4447704584caa0f583807b" category="cell">레이블은 GCP 리소스에 대한 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 GCP 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오<block ref="fa397f5b6985fa16ac695ba7d4f7a5a5" category="inline-link-rx"></block>.</block>
   <block id="23b98688a84e3975fec56c5adda952e4" category="paragraph">Cloud Volumes ONTAP가 상주할 프로젝트를 선택합니다. 기본 프로젝트는 BlueXP가 있는 프로젝트입니다.</block>
   <block id="851527495c0afb57caeba39ab6e50d4f" category="paragraph">드롭다운 목록에 추가 프로젝트가 표시되지 않으면 BlueXP 서비스 계정을 다른 프로젝트와 연결하지 않은 것입니다. Google Cloud 콘솔로 이동하여 IAM 서비스를 열고 프로젝트를 선택합니다. BlueXP 역할이 있는 서비스 계정을 해당 프로젝트에 추가합니다. 각 프로젝트에 대해 이 단계를 반복해야 합니다.</block>
   <block id="e11609cdeba36e9154797798b7bb710f" category="paragraph">BlueXP에서 방화벽 정책을 생성하도록 허용할 경우 트래픽을 허용하는 방법을 선택해야 합니다.</block>
   <block id="4f4736bd9b3e508042a30af6279a85b0" category="list-text">BlueXP는 Cloud Volumes ONTAP 인스턴스에 서비스 계정을 설정합니다. 이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. Connector 서비스 계정을 계층화 서비스 계정의 사용자로 추가해야 합니다. 그렇지 않으면 BlueXP에서 선택할 수 없습니다</block>
-  <block id="a696f74c5e0abf27caa52c3cb3b4a270" category="list-text">BlueXP에서 구매할 지원 및 GCP 리소스에 대한 세부 정보를 검토하려면 * 추가 정보 * 를 클릭합니다.</block>
   <block id="04429fb60c702313423187ef9f61c183" category="list-text">BlueXP는 Cloud Volumes ONTAP 인스턴스에 서비스 계정을 설정합니다. 이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. Connector 서비스 계정을 계층화 서비스 계정의 사용자로 추가해야 합니다. 그렇지 않으면 BlueXP에서 선택할 수 없습니다.</block>
   <block id="5d46d9d34dce758984570380cdc60f89" category="summary">VPC 서비스 컨트롤로 Google 환경을 잠글 때 BlueXP 및 Cloud Volumes ONTAP가 Google API와 상호 작용하는 방식과 BlueXP 및 Cloud Volumes ONTAP를 배포하기 위해 서비스 매개 변수를 구성하는 방법을 이해해야 합니다.</block>
   <block id="ad5571e5652bf6da2a87ff238427dd83" category="paragraph">VPC 서비스 제어를 통해 Google 클라우드 환경을 잠그도록 선택할 때는 BlueXP 및 Cloud Volumes ONTAP이 Google 클라우드 API와 상호 작용하는 방식과 BlueXP 및 Cloud Volumes ONTAP를 배포하기 위해 서비스 경계를 구성하는 방법을 이해해야 합니다.</block>
@@ -4600,4 +4574,59 @@
   <block id="0f5cc196efac5a9fadb7272e55c7d686" category="summary">Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Azure 네트워킹을 설정합니다.</block>
   <block id="323c8a1d29b771e63edf9d7a9968be4e" category="paragraph"><block ref="323c8a1d29b771e63edf9d7a9968be4e" category="inline-link-rx"></block></block>
   <block id="f483cdf3bbc75344ed7ba476a346b3ae" category="paragraph"><block ref="f483cdf3bbc75344ed7ba476a346b3ae" category="inline-link-rx"></block></block>
+  <block id="7dca2de7042f01604c6fa18e67e28e36" category="section-title">WORM 및 데이터 계층화</block>
+  <block id="83f865c2acfa2b30d8adc34128a9b741" category="paragraph">새로운 Cloud Volumes ONTAP 9.8 시스템 이상을 생성할 때 데이터 계층화와 WORM 스토리지를 함께 사용할 수 있습니다. WORM 스토리지를 통한 데이터 계층화를 사용하면 데이터를 클라우드의 오브젝트 저장소에 계층화할 수 있습니다.</block>
+  <block id="125acd88196259df48335a29149824c8" category="paragraph">데이터 계층화와 WORM 스토리지 모두에 대한 설정 방법은 다음과 같습니다.</block>
+  <block id="a915bf61fc4da5557d359b0301ad21ef" category="list-text">오브젝트 스토리지로 계층화되어 있는 데이터에는 ONTAP WORM 기능이 포함되지 않습니다. 엔드 투 엔드 WORM 기능을 보장하려면 버킷 권한을 올바르게 설정해야 합니다.</block>
+  <block id="998c3b79cbc9135556e51847e16ca6c3" category="list-text">오브젝트 스토리지로 계층화된 데이터에는 WORM 기능이 없습니다. 즉, 기술적으로 버킷 및 컨테이너에 대한 모든 액세스 권한이 있는 사람은 ONTAP에 의해 계층화된 오브젝트를 이동 및 삭제할 수 있습니다.</block>
+  <block id="795cfc8480eae289c5de0d65352581a1" category="list-text">WORM 및 계층화를 활성화한 후에는 Cloud Volumes ONTAP 9.8로의 되돌리기 또는 다운그레이드가 차단됩니다.</block>
+  <block id="8f3a22fee1fcc35025e3e68b3c7b5499" category="paragraph">대부분의 경우 Cloud Volumes ONTAP로 Azure Private 링크를 설정할 필요가 없습니다. BlueXP는 Azure 프라이빗 링크를 관리합니다. 그러나 Azure Private DNS를 사용하는 경우에는 구성 파일을 편집해야 합니다. Azure의 커넥터 위치에 대한 요구 사항도 알고 있어야 합니다.</block>
+  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023년 2월 5일</block>
+  <block id="078640757da4b274abf89709c42d7741" category="paragraph">다음 변경 사항은 커넥터의 3.9.26 릴리스에 도입되었습니다.</block>
+  <block id="72c6f65b45015ee1135ff4bc2cce8860" category="section-title">AWS에서 반 배정 그룹 생성</block>
+  <block id="b743dbbfdeafb74e0c5a918472cb8000" category="paragraph">이제 AWS HA AZ(단일 가용성 영역) 구축을 통해 반 배정 그룹을 생성할 수 있는 새로운 구성 설정이 제공됩니다. 이제 장애가 발생한 반 배정 그룹 생성을 생략하고 AWS HA 단일 AZ 구축을 성공적으로 완료하도록 선택할 수 있습니다.</block>
+  <block id="a461eabe3ab382f71ac2e2f6d1e640ac" category="inline-link-macro">AWS HA 단일 AZ에 대한 배치 그룹 생성 구성</block>
+  <block id="f8574b4ca8450ebb66b430e6a34a7af0" category="paragraph">반 배정 그룹 생성 설정을 구성하는 방법에 대한 자세한 내용은 을 참조하십시오 <block ref="76b771ebcb3b2314cb6a5531c78c8c56" category="inline-link-macro-rx"></block>.</block>
+  <block id="6d236ccded1ae841f7032a1cfa719500" category="section-title">개인 DNS 영역 구성 업데이트</block>
+  <block id="c07e7cfc7f9b172f2a6463f65a2a4b56" category="paragraph">Azure Private Links를 사용할 때 개인 DNS 영역과 가상 네트워크 간의 링크를 만들지 않도록 새로운 구성 설정을 사용할 수 있습니다. 생성은 기본적으로 활성화되어 있습니다.</block>
+  <block id="b4f6cf785c09e40247b4fa3feac5c2a6" category="paragraph"><block ref="b4f6cf785c09e40247b4fa3feac5c2a6" category="inline-link-macro-rx"></block></block>
+  <block id="9790d5e9d3f702b3255ef268a7bcfc80" category="section-title">WORM 스토리지 및 데이터 계층화</block>
+  <block id="3277463bf1ddcca922f85a2efd92c721" category="paragraph">이제 Cloud Volumes ONTAP 9.8 시스템 이상을 생성할 때 데이터 계층화와 WORM 스토리지를 함께 사용할 수 있습니다. WORM 스토리지를 통한 데이터 계층화를 사용하면 데이터를 클라우드의 오브젝트 저장소에 계층화할 수 있습니다.</block>
+  <block id="2179dc7c2201ce007bdd7f0a37e78d5e" category="inline-link-macro">WORM 스토리지에 대해 자세히 알아보십시오.</block>
+  <block id="fc76ca2a106ecf45415f92e5b6f34f21" category="paragraph"><block ref="fc76ca2a106ecf45415f92e5b6f34f21" category="inline-link-macro-rx"></block></block>
+  <block id="cd46599be4a268656c67fc0d154a21ec" category="admonition">WORM 및 데이터 계층화를 활용하려면 클라우드 백업을 비활성화하고 9.8 버전 이상의 Cloud Volumes ONTAP 작업 환경을 구축해야 합니다.</block>
+  <block id="a0657ff0e169aee7a5734487716bb0c4" category="list-text">* 쓰기 속도 및 WORM *:</block>
+  <block id="8423b054b8164151c3151be7c37415ed" category="list-text">필요한 경우 * Normal * (정상 *) 또는 * High * (높음 *) 쓰기 속도를 선택합니다.</block>
+  <block id="0a44bfce0bc775d87f0ac6a57bdba584" category="list-text">필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.</block>
+  <block id="6aeb3713e488b71d0dcbb96914a7951f" category="paragraph">Cloud Volumes ONTAP 9.7 이하 버전에서 데이터 계층화가 활성화된 경우 WORM을 사용할 수 없습니다. WORM 및 계층화를 활성화한 후에는 Cloud Volumes ONTAP 9.8로의 되돌리기 또는 다운그레이드가 차단됩니다.</block>
+  <block id="02675533e5e8f922a01de0dd3f2892ad" category="list-text">WORM 스토리지를 활성화한 경우 보존 기간을 선택합니다.</block>
+  <block id="94fb201facd8c99956b25af1c56a2562" category="paragraph">Cloud Volumes ONTAP에서 장애가 발생하면 배치 그룹을 생성하지 못할 때마다 단일 가용성 영역(AZ)에서 AWS HA(고가용성) 구성의 새로운 구축을 롤백합니다. 필요한 경우 생성에 실패할 때마다 롤백 프로세스를 무시하도록 반 배정 그룹을 구성하여 배포를 성공적으로 완료할 수 있습니다.</block>
+  <block id="4b80314a98cf05dbcb3b2c5f33f9e79f" category="paragraph">기본적으로 HA 단일 가용성 영역 작업 환경의 생성 프로세스가 반 배정 그룹에 실패할 때마다 배포가 실패하고 롤백됩니다. Cloud Volumes ONTAP 노드와 중재자 인스턴스가 모두 없는 경우 배치 그룹 생성도 실패하고 롤백됩니다.</block>
+  <block id="65f98964e7d8889df16715139a88da9d" category="paragraph">배치 그룹 생성이 실패할 때마다 롤백 프로세스를 건너뛰고 app.conf 파일을 구성하여 배포를 계속할 수 있습니다. 롤백 프로세스를 바이패스하면 배포가 성공적으로 완료되고 시스템이 반 배정 그룹 생성이 완료되지 않은 상태로 실패했음을 알리는 알림을 생성합니다.</block>
+  <block id="8dbf64cf105a5f307a9741aab14c6d90" category="section-title">반 배정 그룹 롤백 실패를 비활성화합니다</block>
+  <block id="103d8850bfd2b5f919a2c306256386e7" category="paragraph">반 배정 그룹 실패를 해제하려면 "반 배정 그룹 실패" 플래그를 "거짓"으로 설정해야 합니다.</block>
+  <block id="53db5515d90522545dd9493db83f9ad7" category="list-text">SSH를 사용하여 커넥터 호스트에 연결하고 로그인합니다.</block>
+  <block id="e5d0a443064f8c75bf5b7e1c953ec5f9" category="list-text">"rollback-on-placement-group-failure" 매개 변수의 값을 'false'로 변경하여 app.conf를 편집합니다.</block>
+  <block id="6b90ec112441f6a2ffc873da4c8cb544" category="admonition">기본적으로 "rollback-on-placement-group-failure" 매개 변수는 "True"로 설정됩니다.</block>
+  <block id="abb2030a97b8fa0f26925ca21ccacdce" category="paragraph">재부팅할 필요는 없습니다.</block>
+  <block id="254d5c87d5ab437395f866390ea49cd0" category="doc">Google Cloud에서 Cloud Volumes ONTAP 실행</block>
+  <block id="952f472ceaa325aaac5f1352ed448f4e" category="paragraph">단일 노드 구성에서 Cloud Volumes ONTAP를 실행하거나 Google Cloud에서 HA 쌍으로 실행할 수 있습니다.</block>
+  <block id="5ce440fd1a40346ea0f26ec2424bfcb2" category="paragraph">구성을 선택하고 관리자로부터 Google Cloud 네트워킹 정보를 받아 준비해야 합니다. 자세한 내용은 을 참조하십시오 <block ref="7c40283f4f533a5903d1033c57ef27f4" category="inline-link-macro-rx"></block>.</block>
+  <block id="733156037751f70e529112a458e8ade6" category="section-title">Google Cloud에서 단일 노드 시스템 실행</block>
+  <block id="ee5b769fad1fe9446cc03d19d0a3d607" category="paragraph">BlueXP에서 작업 환경을 만들어 Google Cloud에서 Cloud Volumes ONTAP를 실행합니다.</block>
+  <block id="aeeff95df93d5139e77aaa023ae4f78d" category="cell">BlueXP는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 Google Cloud VM 인스턴스 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다.</block>
+  <block id="a4bf88119cf04fd8c616db4b8cc720b8" category="cell">레이블은 Google Cloud 리소스의 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 Google Cloud 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오<block ref="fa397f5b6985fa16ac695ba7d4f7a5a5" category="inline-link-rx"></block>.</block>
+  <block id="9825444762440cb7be1345336853f4a6" category="paragraph">선불 종량제 Cloud Volumes ONTAP 시스템을 생성하려면 Google 클라우드 마켓플레이스에서 Cloud Volumes ONTAP 구독과 연결된 Google Cloud 프로젝트를 선택해야 합니다.</block>
+  <block id="2dbb2a35f48f58340e040cb41a1d70b1" category="inline-link">Google Cloud 자격 증명과 마켓플레이스 가입 연결</block>
+  <block id="493552d486a035ce25ba041dbe0317cc" category="paragraph">다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다. 또는 에 있는 구독 단계를 따릅니다<block ref="ae09191bda49c43cc387d269b21d9c61" category="inline-link-rx"></block> 섹션을 참조하십시오.</block>
+  <block id="c328f8a7342e88f617f6d5b5de3ddde7" category="paragraph">디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 <block ref="d149bf4b730fbae097705dc422facd68" category="inline-link-macro-rx"></block>.</block>
+  <block id="06017a9b77812f0002c0c97398d0c75e" category="list-text">* Google Cloud Platform의 데이터 계층화 *: 초기 애그리게이트에서 데이터 계층화를 사용할지 여부를 선택하고, 계층형 데이터에 대한 스토리지 클래스를 선택한 다음 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택합니다(Cloud Volumes ONTAP 9.7 이상에 필요). 또는 Google 클라우드 계정을 선택합니다(Cloud Volumes ONTAP 9.6의 경우 필수).</block>
+  <block id="bb74d89743a44b4a44d7b815ee74a08e" category="inline-link">9.6의 데이터 계층화를 위한 Google Cloud 계정 설정 및 추가</block>
+  <block id="a7e78bd76ee63b56217658f0ca0d9ae8" category="list-text">Google Cloud 계정 추가에 대한 도움말은 을 참조하십시오<block ref="d5ddd655d9651722d04dce7a3fd75f04" category="inline-link-rx"></block>.</block>
+  <block id="cd6afa4ed61f071f47165012e4286043" category="list-text">데이터 계층화를 사용하지 않는 경우, 후속 애그리게이트에서 사용하도록 설정할 수 있지만 시스템을 끄고 Google Cloud 콘솔에서 서비스 계정을 추가해야 합니다.</block>
+  <block id="5e80d11354160f3330ae3fb0f2186edf" category="list-text">BlueXP가 구매할 지원 및 Google Cloud 리소스에 대한 세부 정보를 검토하려면 * 추가 정보 * 를 클릭합니다.</block>
+  <block id="f23467ff8f84fc95ca2baa4b362c7865" category="section-title">Google Cloud에서 HA 쌍 시작</block>
+  <block id="1ed50148a7aaf99d753c01a51f01ef11" category="paragraph">다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다. 또는 에 있는 구독 단계를 따릅니다<block ref="ae09191bda49c43cc387d269b21d9c61" category="inline-link-rx"></block> 섹션을 참조하십시오.</block>
+  <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloud의 데이터 계층화 *: 초기 애그리게이트에서 데이터 계층화를 사용할지 여부를 선택하고, 계층형 데이터에 대한 스토리지 클래스를 선택한 다음 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택합니다.</block>
+  <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">반 배정 그룹 생성을 구성합니다</block>
 </blocks>

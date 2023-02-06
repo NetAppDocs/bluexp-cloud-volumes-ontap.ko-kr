@@ -91,6 +91,10 @@ TIP: 여러 IAM 사용자가 동일한 AWS 계정으로 작업하는 경우 각 
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["클라우드 데이터 센스에 대해 자세히 알아보십시오"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Cloud Backup에 대해 자세히 알아보십시오"^]
++
+
+TIP: WORM 및 데이터 계층화를 활용하려면 클라우드 백업을 비활성화하고 9.8 버전 이상의 Cloud Volumes ONTAP 작업 환경을 구축해야 합니다.
+
 
 
 . * 위치 및 연결 *: 에 기록한 네트워크 정보를 입력합니다 link:task-planning-your-config.html#aws-network-information-worksheet["AWS 워크시트"].
@@ -169,15 +173,21 @@ link:concept-data-tiering.html["데이터 계층화의 작동 방식에 대해 �
 
 
 
-. * 쓰기 속도 및 WORM *: * 일반 * 또는 * 고속 * 쓰기 속도를 선택하고 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
+. * 쓰기 속도 및 WORM *:
++
+.. 필요한 경우 * Normal * (정상 *) 또는 * High * (높음 *) 쓰기 속도를 선택합니다.
 +
 link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시오"].
 
+.. 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
 +
-데이터 계층화가 설정된 경우 WORM을 설정할 수 없습니다.
+Cloud Volumes ONTAP 9.7 이하 버전에서 데이터 계층화가 활성화된 경우 WORM을 사용할 수 없습니다. WORM 및 계층화를 활성화한 후에는 Cloud Volumes ONTAP 9.8로의 되돌리기 또는 다운그레이드가 차단됩니다.
 
 +
 link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"].
+
+.. WORM 스토리지를 활성화한 경우 보존 기간을 선택합니다.
+
 
 . * 볼륨 생성 *: 새 볼륨에 대한 세부 정보를 입력하거나 * 건너뛰기 * 를 클릭합니다.
 +
@@ -321,6 +331,10 @@ TIP: 여러 IAM 사용자가 동일한 AWS 계정으로 작업하는 경우 각 
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["클라우드 데이터 센스에 대해 자세히 알아보십시오"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Cloud Backup에 대해 자세히 알아보십시오"^]
++
+
+TIP: WORM 및 데이터 계층화를 활용하려면 클라우드 백업을 비활성화하고 9.8 버전 이상의 Cloud Volumes ONTAP 작업 환경을 구축해야 합니다.
+
 
 
 . * HA 배포 모델 *: HA 구성을 선택합니다.
@@ -409,15 +423,21 @@ link:concept-data-tiering.html["데이터 계층화의 작동 방식에 대해 �
 
 
 
-. * 쓰기 속도 및 WORM *: * 일반 * 또는 * 고속 * 쓰기 속도를 선택하고 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
+. * 쓰기 속도 및 WORM *:
++
+.. 필요한 경우 * Normal * (정상 *) 또는 * High * (높음 *) 쓰기 속도를 선택합니다.
 +
 link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시오"].
 
+.. 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
 +
-데이터 계층화가 설정된 경우 WORM을 설정할 수 없습니다.
+Cloud Volumes ONTAP 9.7 이하 버전에서 데이터 계층화가 활성화된 경우 WORM을 사용할 수 없습니다. WORM 및 계층화를 활성화한 후에는 Cloud Volumes ONTAP 9.8로의 되돌리기 또는 다운그레이드가 차단됩니다.
 
 +
 link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"].
+
+.. WORM 스토리지를 활성화한 경우 보존 기간을 선택합니다.
+
 
 . * 볼륨 생성 *: 새 볼륨에 대한 세부 정보를 입력하거나 * 건너뛰기 * 를 클릭합니다.
 +

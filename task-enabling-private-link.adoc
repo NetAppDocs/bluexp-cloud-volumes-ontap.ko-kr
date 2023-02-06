@@ -43,7 +43,7 @@ BlueXP는 두 가지 구성 모두 Cloud Volumes ONTAP 및 스토리지 계정 �
 
 == Azure 개인 링크 사용
 
-대부분의 경우 Cloud Volumes ONTAP를 사용하여 Azure 개인 링크를 설정하는 데 필요한 작업은 없습니다. BlueXP는 Azure 프라이빗 링크를 관리합니다. 그러나 Azure Private DNS를 사용하는 경우에는 구성 파일을 편집해야 합니다. Azure의 커넥터 위치에 대한 요구 사항도 알고 있어야 합니다.
+대부분의 경우 Cloud Volumes ONTAP로 Azure Private 링크를 설정할 필요가 없습니다. BlueXP는 Azure 프라이빗 링크를 관리합니다. 그러나 Azure Private DNS를 사용하는 경우에는 구성 파일을 편집해야 합니다. Azure의 커넥터 위치에 대한 요구 사항도 알고 있어야 합니다.
 
 
 
@@ -81,6 +81,7 @@ DNS 이름은 Azure DNS 명명 요구 사항과 일치해야 합니다 https://d
    "resource-group" : "<resource group name of the DNS zone>",
    "subscription" : "<subscription ID>",
    "use-existing" : true
+   "create-private-dns-zone-link" : true
 }
 ....
 +

@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: task-configure-placement-group-failure-aws.html 
+keywords: placement group, failure, HA single zone, app.conf, rollback, AWS 
+summary: Cloud Volumes ONTAP는 Azure 프라이빗 링크를 사용하여 연결된 저장소 계정에 연결합니다. 필요한 경우 Azure Private Links를 비활성화하고 서비스 끝점을 대신 사용할 수 있습니다. 
+---
+= AWS HA 단일 AZ에 대한 배치 그룹 생성 구성
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP에서 장애가 발생하면 배치 그룹을 생성하지 못할 때마다 단일 가용성 영역(AZ)에서 AWS HA(고가용성) 구성의 새로운 구축을 롤백합니다. 필요한 경우 생성에 실패할 때마다 롤백 프로세스를 무시하도록 반 배정 그룹을 구성하여 배포를 성공적으로 완료할 수 있습니다.
+
+
+
+== 개요
+
+기본적으로 HA 단일 가용성 영역 작업 환경의 생성 프로세스가 반 배정 그룹에 실패할 때마다 배포가 실패하고 롤백됩니다. Cloud Volumes ONTAP 노드와 중재자 인스턴스가 모두 없는 경우 배치 그룹 생성도 실패하고 롤백됩니다.
+
+배치 그룹 생성이 실패할 때마다 롤백 프로세스를 건너뛰고 app.conf 파일을 구성하여 배포를 계속할 수 있습니다. 롤백 프로세스를 바이패스하면 배포가 성공적으로 완료되고 시스템이 반 배정 그룹 생성이 완료되지 않은 상태로 실패했음을 알리는 알림을 생성합니다.
+
+
+
+=== 반 배정 그룹 롤백 실패를 비활성화합니다
+
+반 배정 그룹 실패를 해제하려면 "반 배정 그룹 실패" 플래그를 "거짓"으로 설정해야 합니다.
+
+.단계
+. SSH를 사용하여 커넥터 호스트에 연결하고 로그인합니다.
+. /opt/application/netapp/cloudmanager/docker_occm/data 디렉토리로 이동합니다
+. "rollback-on-placement-group-failure" 매개 변수의 값을 'false'로 변경하여 app.conf를 편집합니다.
++
+[listing]
+----
+{
+    "occm" : {
+        "aws" : {
+            "rollback-on-placement-group-failure" : false
+        }
+    }
+}
+----
++
+
+NOTE: 기본적으로 "rollback-on-placement-group-failure" 매개 변수는 "True"로 설정됩니다.
+
+. 파일을 저장하고 Connector를 로그오프합니다.
++
+재부팅할 필요는 없습니다.
+
+

@@ -20,6 +20,36 @@ BlueXP(이전의 Cloud Manager)에서 Cloud Volumes ONTAP 관리의 새로운 �
 
 
 
+== 2023년 2월 5일
+
+다음 변경 사항은 커넥터의 3.9.26 릴리스에 도입되었습니다.
+
+
+
+=== AWS에서 반 배정 그룹 생성
+
+이제 AWS HA AZ(단일 가용성 영역) 구축을 통해 반 배정 그룹을 생성할 수 있는 새로운 구성 설정이 제공됩니다. 이제 장애가 발생한 반 배정 그룹 생성을 생략하고 AWS HA 단일 AZ 구축을 성공적으로 완료하도록 선택할 수 있습니다.
+
+반 배정 그룹 생성 설정을 구성하는 방법에 대한 자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["AWS HA 단일 AZ에 대한 배치 그룹 생성 구성"^].
+
+
+
+=== 개인 DNS 영역 구성 업데이트
+
+Azure Private Links를 사용할 때 개인 DNS 영역과 가상 네트워크 간의 링크를 만들지 않도록 새로운 구성 설정을 사용할 수 있습니다. 생성은 기본적으로 활성화되어 있습니다.
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["Azure 프라이빗 DNS에 대한 자세한 내용은 BlueXP를 참조하십시오"^]
+
+
+
+=== WORM 스토리지 및 데이터 계층화
+
+이제 Cloud Volumes ONTAP 9.8 시스템 이상을 생성할 때 데이터 계층화와 WORM 스토리지를 함께 사용할 수 있습니다. WORM 스토리지를 통한 데이터 계층화를 사용하면 데이터를 클라우드의 오브젝트 저장소에 계층화할 수 있습니다.
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오."^]
+
+
+
 == 2023년 1월 1일
 
 다음 변경 사항은 커넥터의 3.9.25 릴리스에 도입되었습니다.

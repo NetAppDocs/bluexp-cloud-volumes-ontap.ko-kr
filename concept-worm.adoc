@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-worm.html 
-keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage 
+keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage, tiering 
 summary: 'Cloud Volumes ONTAP 시스템에서 WORM(Write Once, Read Many) 스토리지를 활성화하여 지정된 보존 기간 동안 수정되지 않은 형식으로 파일을 보존할 수 있습니다. 클라우드 WORM 스토리지는 SnapLock 기술을 기반으로 하며, 이는 WORM 파일이 파일 레벨에서 보호됨을 의미합니다.' 
 ---
 = WORM 스토리지
@@ -81,9 +81,21 @@ Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화한 후에는 
 
 
 
+== WORM 및 데이터 계층화
+
+새로운 Cloud Volumes ONTAP 9.8 시스템 이상을 생성할 때 데이터 계층화와 WORM 스토리지를 함께 사용할 수 있습니다. WORM 스토리지를 통한 데이터 계층화를 사용하면 데이터를 클라우드의 오브젝트 저장소에 계층화할 수 있습니다.
+
+데이터 계층화와 WORM 스토리지 모두에 대한 설정 방법은 다음과 같습니다.
+
+* 오브젝트 스토리지로 계층화되어 있는 데이터에는 ONTAP WORM 기능이 포함되지 않습니다. 엔드 투 엔드 WORM 기능을 보장하려면 버킷 권한을 올바르게 설정해야 합니다.
+* 오브젝트 스토리지로 계층화된 데이터에는 WORM 기능이 없습니다. 즉, 기술적으로 버킷 및 컨테이너에 대한 모든 액세스 권한이 있는 사람은 ONTAP에 의해 계층화된 오브젝트를 이동 및 삭제할 수 있습니다.
+* WORM 및 계층화를 활성화한 후에는 Cloud Volumes ONTAP 9.8로의 되돌리기 또는 다운그레이드가 차단됩니다.
+
+
+
+
 == 제한 사항
 
 * Cloud Volumes ONTAP의 WORM 스토리지는 "신뢰할 수 있는 스토리지 관리자" 모델로 운영됩니다. WORM 파일은 변경 또는 수정으로부터 보호되지만, 만료되지 않은 WORM 데이터가 포함된 볼륨에도 클러스터 관리자가 볼륨을 삭제할 수 있습니다.
 * 신뢰할 수 있는 스토리지 관리자 모델 외에도 Cloud Volumes ONTAP의 WORM 스토리지는 "신뢰할 수 있는 클라우드 관리자" 모델에서도 암시적으로 작동합니다. 클라우드 관리자는 클라우드 공급자에서 직접 클라우드 스토리지를 제거 또는 편집하여 만료 날짜 이전에 WORM 데이터를 삭제할 수 있습니다.
-* WORM 스토리지가 활성화된 경우 오브젝트 스토리지에 대한 데이터 계층화를 설정할 수 없습니다.
 

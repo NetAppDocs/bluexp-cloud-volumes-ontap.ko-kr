@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-deploying-gcp.html 
-keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, gcp, BYOL, license key, serial number, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, high availability, gcp ha, ha in gcp, ha pair 
+keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create,  BYOL, license key, serial number, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, high availability, google cloud ha, ha in google cloud, ha pair 
 summary: Cloud Volumes ONTAP를 단일 시스템 구성으로 실행하거나 Google 클라우드 플랫폼에서 HA 쌍으로 실행할 수 있습니다. 
 ---
-= GCP에서 Cloud Volumes ONTAP를 시작합니다
+= Google Cloud에서 Cloud Volumes ONTAP 실행
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Cloud Volumes ONTAP를 단일 시스템 구성으로 실행하거나 Go
 
 
 [role="lead"]
-단일 노드 구성에서 Cloud Volumes ONTAP를 실행하거나 Google 클라우드 플랫폼에서 HA 쌍으로 실행할 수 있습니다.
+단일 노드 구성에서 Cloud Volumes ONTAP를 실행하거나 Google Cloud에서 HA 쌍으로 실행할 수 있습니다.
 
 
 
@@ -32,7 +32,7 @@ summary: Cloud Volumes ONTAP를 단일 시스템 구성으로 실행하거나 Go
 
 * 사용하려는 구성에 대한 이해.
 +
-구성을 선택하고 관리자로부터 GCP 네트워킹 정보를 받아 준비해야 합니다. 자세한 내용은 을 참조하십시오 link:task-planning-your-config-gcp.html["Cloud Volumes ONTAP 구성 계획"].
+구성을 선택하고 관리자로부터 Google Cloud 네트워킹 정보를 받아 준비해야 합니다. 자세한 내용은 을 참조하십시오 link:task-planning-your-config-gcp.html["Cloud Volumes ONTAP 구성 계획"].
 
 * Cloud Volumes ONTAP에 대한 라이센스 설정에 필요한 사항을 이해합니다.
 +
@@ -51,9 +51,9 @@ link:task-set-up-licensing-gcp.html["라이센스 설정 방법에 대해 알아
 
 
 
-== GCP에서 단일 노드 시스템 시작
+== Google Cloud에서 단일 노드 시스템 실행
 
-BlueXP에서 작업 환경을 만들어 GCP에서 Cloud Volumes ONTAP를 실행합니다.
+BlueXP에서 작업 환경을 만들어 Google Cloud에서 Cloud Volumes ONTAP를 실행합니다.
 
 .단계
 . 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
@@ -70,13 +70,13 @@ BlueXP에서 작업 환경을 만들어 GCP에서 Cloud Volumes ONTAP를 실행�
 | 필드에 입력합니다 | 설명 
 
 
-| 작업 환경 이름 | BlueXP는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 GCP VM 인스턴스 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다. 
+| 작업 환경 이름 | BlueXP는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 Google Cloud VM 인스턴스 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다. 
 
 
 | 서비스 계정 이름입니다 | 를 사용할 계획인 경우 link:concept-data-tiering.html["데이터 계층화"] 또는 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["클라우드 백업"^] Cloud Volumes ONTAP를 사용하는 경우 * 서비스 계정 * 을 활성화하고 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택해야 합니다. link:task-creating-gcp-service-account.html["서비스 계정을 만드는 방법에 대해 알아봅니다"]. 
 
 
-| 레이블 추가 | 레이블은 GCP 리소스에 대한 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 GCP 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 설명서: 라벨 리소스"^]. 
+| 레이블 추가 | 레이블은 Google Cloud 리소스의 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 Google Cloud 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 설명서: 라벨 리소스"^]. 
 
 
 | 사용자 이름 및 암호 | Cloud Volumes ONTAP 클러스터 관리자 계정의 자격 증명입니다. 이러한 자격 증명을 사용하여 System Manager 또는 CLI를 통해 Cloud Volumes ONTAP에 연결할 수 있습니다. default_admin_user 이름을 유지하거나 사용자 지정 사용자 이름으로 변경합니다. 
@@ -92,15 +92,19 @@ NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.ne
 
 선택한 자격 증명을 구독과 연결하려면 * 구독 추가 * 를 클릭합니다.
 
-용량제 Cloud Volumes ONTAP 시스템을 생성하려면 GCP 마켓플레이스에서 Cloud Volumes ONTAP 서브스크립션과 연관된 GCP 프로젝트를 선택해야 합니다.
+선불 종량제 Cloud Volumes ONTAP 시스템을 생성하려면 Google 클라우드 마켓플레이스에서 Cloud Volumes ONTAP 구독과 연결된 Google Cloud 프로젝트를 선택해야 합니다.
 
 |===
 +
-다음 비디오에서는 용량제 마켓플레이스 서브스크립션을 GCP 프로젝트에 연결하는 방법을 보여줍니다. 또는 에 있는 구독 단계를 따릅니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Marketplace 구독을 GCP 자격 증명과 연결합니다"^] 섹션을 참조하십시오.
+다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다. 또는 에 있는 구독 단계를 따릅니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Google Cloud 자격 증명과 마켓플레이스 가입 연결"^] 섹션을 참조하십시오.
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
 . * 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. Cloud Backup을 선택하거나 Tiering을 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.
++
+
+TIP: WORM 및 데이터 계층화를 활용하려면 클라우드 백업을 비활성화하고 9.8 버전 이상의 Cloud Volumes ONTAP 작업 환경을 구축해야 합니다.
+
 . * 위치 및 연결 *: 위치를 선택하고 방화벽 정책을 선택한 다음 데이터 계층화를 위해 Google Cloud 스토리지에 대한 네트워크 연결을 확인합니다.
 +
 다음 표에서는 지침이 필요한 필드를 설명합니다.
@@ -148,30 +152,33 @@ NOTE: 선택한 버전에 대해 최신 출시 후보, 일반 가용성 또는 �
 디스크 크기는 초기 애그리게이트의 모든 디스크와 간단한 프로비저닝 옵션을 사용할 때 BlueXP가 생성하는 추가 애그리게이트에서 사용됩니다. 고급 할당 옵션을 사용하여 다른 디스크 크기를 사용하는 애그리게이트를 생성할 수 있습니다.
 
 +
-디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["GCP에서 시스템 사이징"].
+디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Google Cloud에서 시스템 크기 조정"].
 
-. * 쓰기 속도 및 WORM *: * 일반 * 또는 * 고속 * 쓰기 속도를 선택하고 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
+. * 쓰기 속도 및 WORM *:
 +
-쓰기 속도 선택은 단일 노드 시스템에서만 지원됩니다.
-
+.. 필요한 경우 * Normal * (정상 *) 또는 * High * (높음 *) 쓰기 속도를 선택합니다.
 +
 link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시오"].
 
+.. 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
 +
-데이터 계층화가 설정된 경우 WORM을 설정할 수 없습니다.
+Cloud Volumes ONTAP 9.7 이하 버전에서 데이터 계층화가 활성화된 경우 WORM을 사용할 수 없습니다. WORM 및 계층화를 활성화한 후에는 Cloud Volumes ONTAP 9.8로의 되돌리기 또는 다운그레이드가 차단됩니다.
 
 +
 link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"].
 
-. * Google Cloud Platform의 데이터 계층화 *: 초기 애그리게이트에서 데이터 계층화를 사용할지 여부를 선택하고, 계층형 데이터에 대한 스토리지 클래스를 선택한 다음 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택합니다(Cloud Volumes ONTAP 9.7 이상에 필요). 또는 GCP 계정(Cloud Volumes ONTAP 9.6의 경우 필수)을 선택합니다.
+.. WORM 스토리지를 활성화한 경우 보존 기간을 선택합니다.
+
+
+. * Google Cloud Platform의 데이터 계층화 *: 초기 애그리게이트에서 데이터 계층화를 사용할지 여부를 선택하고, 계층형 데이터에 대한 스토리지 클래스를 선택한 다음 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택합니다(Cloud Volumes ONTAP 9.7 이상에 필요). 또는 Google 클라우드 계정을 선택합니다(Cloud Volumes ONTAP 9.6의 경우 필수).
 +
 다음 사항에 유의하십시오.
 
 +
 ** BlueXP는 Cloud Volumes ONTAP 인스턴스에 서비스 계정을 설정합니다. 이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. Connector 서비스 계정을 계층화 서비스 계정의 사용자로 추가해야 합니다. 그렇지 않으면 BlueXP에서 선택할 수 없습니다
-** GCP 계정 추가에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["9.6으로 데이터 계층화를 위해 GCP 계정 설정 및 추가"^].
+** Google Cloud 계정 추가에 대한 도움말은 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["9.6의 데이터 계층화를 위한 Google Cloud 계정 설정 및 추가"^].
 ** 볼륨을 생성하거나 편집할 때 특정 볼륨 계층화 정책을 선택할 수 있습니다.
-** 데이터 계층화를 사용하지 않는 경우, 후속 애그리게이트에서 사용하도록 설정할 수 있지만 시스템을 끄고 GCP 콘솔에서 서비스 계정을 추가해야 합니다.
+** 데이터 계층화를 사용하지 않는 경우, 후속 애그리게이트에서 사용하도록 설정할 수 있지만 시스템을 끄고 Google Cloud 콘솔에서 서비스 계정을 추가해야 합니다.
 +
 link:concept-data-tiering.html["데이터 계층화에 대해 자세히 알아보십시오"].
 
@@ -247,7 +254,7 @@ image:screenshot_cot_vol.gif["스크린샷: Cloud Volumes ONTAP 인스턴스에 
 . * 검토 및 승인 *: 선택 사항을 검토 및 확인합니다.
 +
 .. 구성에 대한 세부 정보를 검토합니다.
-.. BlueXP에서 구매할 지원 및 GCP 리소스에 대한 세부 정보를 검토하려면 * 추가 정보 * 를 클릭합니다.
+.. BlueXP가 구매할 지원 및 Google Cloud 리소스에 대한 세부 정보를 검토하려면 * 추가 정보 * 를 클릭합니다.
 .. 이해함... * 확인란을 선택합니다.
 .. Go * 를 클릭합니다.
 
@@ -271,9 +278,9 @@ Cloud Volumes ONTAP 시스템을 배포하는 데 문제가 있으면 오류 메
 
 
 
-== GCP에서 HA 쌍 시작
+== Google Cloud에서 HA 쌍 시작
 
-BlueXP에서 작업 환경을 만들어 GCP에서 Cloud Volumes ONTAP를 실행합니다.
+BlueXP에서 작업 환경을 만들어 Google Cloud에서 Cloud Volumes ONTAP를 실행합니다.
 
 .단계
 . 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
@@ -289,13 +296,13 @@ BlueXP에서 작업 환경을 만들어 GCP에서 Cloud Volumes ONTAP를 실행�
 | 필드에 입력합니다 | 설명 
 
 
-| 작업 환경 이름 | BlueXP는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 GCP VM 인스턴스 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다. 
+| 작업 환경 이름 | BlueXP는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 Google Cloud VM 인스턴스 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다. 
 
 
 | 서비스 계정 이름입니다 | 를 사용할 계획인 경우 link:concept-data-tiering.html["계층화"] 또는 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["클라우드 백업"^] 서비스를 사용하려면 * 서비스 계정 * 스위치를 활성화한 다음 미리 정의된 스토리지 관리자 역할이 있는 서비스 계정을 선택해야 합니다. 
 
 
-| 레이블 추가 | 레이블은 GCP 리소스에 대한 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 GCP 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 설명서: 라벨 리소스"^]. 
+| 레이블 추가 | 레이블은 Google Cloud 리소스의 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 Google Cloud 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 설명서: 라벨 리소스"^]. 
 
 
 | 사용자 이름 및 암호 | Cloud Volumes ONTAP 클러스터 관리자 계정의 자격 증명입니다. 이러한 자격 증명을 사용하여 System Manager 또는 CLI를 통해 Cloud Volumes ONTAP에 연결할 수 있습니다. default_admin_user 이름을 유지하거나 사용자 지정 사용자 이름으로 변경합니다. 
@@ -311,15 +318,19 @@ NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.ne
 
 선택한 자격 증명을 구독과 연결하려면 * 구독 추가 * 를 클릭합니다.
 
-용량제 Cloud Volumes ONTAP 시스템을 생성하려면 GCP 마켓플레이스에서 Cloud Volumes ONTAP 서브스크립션과 연관된 GCP 프로젝트를 선택해야 합니다.
+선불 종량제 Cloud Volumes ONTAP 시스템을 생성하려면 Google 클라우드 마켓플레이스에서 Cloud Volumes ONTAP 구독과 연결된 Google Cloud 프로젝트를 선택해야 합니다.
 
 |===
 +
-다음 비디오에서는 용량제 마켓플레이스 서브스크립션을 GCP 프로젝트에 연결하는 방법을 보여줍니다. 또는 에 있는 구독 단계를 따릅니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Marketplace 구독을 GCP 자격 증명과 연결합니다"^] 섹션을 참조하십시오.
+다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다. 또는 에 있는 구독 단계를 따릅니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Google Cloud 자격 증명과 마켓플레이스 가입 연결"^] 섹션을 참조하십시오.
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
 . * 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. Cloud Backup을 선택하거나 Tiering을 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.
++
+
+TIP: WORM 및 데이터 계층화를 활용하려면 클라우드 백업을 비활성화하고 9.8 버전 이상의 Cloud Volumes ONTAP 작업 환경을 구축해야 합니다.
+
 . * HA 배포 모델 *: HA 구성에 대해 여러 영역(권장) 또는 단일 영역을 선택합니다. 그런 다음 지역 및 구역을 선택합니다.
 +
 link:concept-ha-google-cloud.html["HA 구축 모델 에 대해 자세히 알아보십시오"].
@@ -371,20 +382,32 @@ NOTE: 선택한 버전에 대해 최신 출시 후보, 일반 가용성 또는 �
 디스크 크기는 초기 애그리게이트의 모든 디스크와 간단한 프로비저닝 옵션을 사용할 때 BlueXP가 생성하는 추가 애그리게이트에서 사용됩니다. 고급 할당 옵션을 사용하여 다른 디스크 크기를 사용하는 애그리게이트를 생성할 수 있습니다.
 
 +
-디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["GCP에서 시스템 사이징"].
+디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Google Cloud에서 시스템 크기 조정"].
 
-. * WORM *: 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
+. * 쓰기 속도 및 WORM *:
 +
-데이터 계층화가 설정된 경우 WORM을 설정할 수 없습니다. link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"].
+.. 필요한 경우 * Normal * (정상 *) 또는 * High * (높음 *) 쓰기 속도를 선택합니다.
++
+link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시오"].
 
-. * Google Cloud Platform * 의 데이터 계층화: 초기 애그리게이트에 데이터 계층화를 사용할 것인지, 계층형 데이터에 대한 스토리지 클래스를 선택한 다음 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택합니다.
+.. 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
++
+Cloud Volumes ONTAP 9.7 이하 버전에서 데이터 계층화가 활성화된 경우 WORM을 사용할 수 없습니다. WORM 및 계층화를 활성화한 후에는 Cloud Volumes ONTAP 9.8로의 되돌리기 또는 다운그레이드가 차단됩니다.
+
++
+link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"].
+
+.. WORM 스토리지를 활성화한 경우 보존 기간을 선택합니다.
+
+
+. * Google Cloud의 데이터 계층화 *: 초기 애그리게이트에서 데이터 계층화를 사용할지 여부를 선택하고, 계층형 데이터에 대한 스토리지 클래스를 선택한 다음 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택합니다.
 +
 다음 사항에 유의하십시오.
 
 +
 ** BlueXP는 Cloud Volumes ONTAP 인스턴스에 서비스 계정을 설정합니다. 이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. Connector 서비스 계정을 계층화 서비스 계정의 사용자로 추가해야 합니다. 그렇지 않으면 BlueXP에서 선택할 수 없습니다.
 ** 볼륨을 생성하거나 편집할 때 특정 볼륨 계층화 정책을 선택할 수 있습니다.
-** 데이터 계층화를 사용하지 않는 경우, 후속 애그리게이트에서 사용하도록 설정할 수 있지만 시스템을 끄고 GCP 콘솔에서 서비스 계정을 추가해야 합니다.
+** 데이터 계층화를 사용하지 않는 경우, 후속 애그리게이트에서 사용하도록 설정할 수 있지만 시스템을 끄고 Google Cloud 콘솔에서 서비스 계정을 추가해야 합니다.
 +
 link:concept-data-tiering.html["데이터 계층화에 대해 자세히 알아보십시오"].
 
@@ -460,7 +483,7 @@ image:screenshot_cot_vol.gif["스크린샷: Cloud Volumes ONTAP 인스턴스에 
 . * 검토 및 승인 *: 선택 사항을 검토 및 확인합니다.
 +
 .. 구성에 대한 세부 정보를 검토합니다.
-.. BlueXP에서 구매할 지원 및 GCP 리소스에 대한 세부 정보를 검토하려면 * 추가 정보 * 를 클릭합니다.
+.. BlueXP가 구매할 지원 및 Google Cloud 리소스에 대한 세부 정보를 검토하려면 * 추가 정보 * 를 클릭합니다.
 .. 이해함... * 확인란을 선택합니다.
 .. Go * 를 클릭합니다.
 
