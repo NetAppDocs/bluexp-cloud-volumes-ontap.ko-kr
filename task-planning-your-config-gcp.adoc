@@ -23,7 +23,7 @@ Google Cloud에 Cloud Volumes ONTAP를 배포할 때 워크로드 요구 사항�
 Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 옵션을 사용하여 요구사항에 맞는 소비 모델을 선택할 수 있습니다.
 
 * link:concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오"]
-* link:task-set-up-licensing-gcp.html["라이센스 설정 방법에 대해 알아보십시오"]
+* link:task-set-up-licensing-google.html["라이센스 설정 방법에 대해 알아보십시오"]
 
 
 

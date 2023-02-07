@@ -3047,7 +3047,6 @@
   <block id="8e3273e621dd5a9485259171b1b535e9" category="section-title">Azure에서 시스템 크기 조정</block>
   <block id="e17d83fdb14af6aea9c5838dcc9ece55" category="paragraph"><block ref="b2908e7df27905e20924b93b3ff0b803" category="inline-link-macro-rx"></block>.</block>
   <block id="96440bf30cd20c7ed50d0d7a8279917e" category="doc">Google Cloud에서 Cloud Volumes ONTAP 구성을 계획하십시오</block>
-  <block id="9b79239dba046d18af2dfc2ca929db17" category="list-text"><block ref="9b79239dba046d18af2dfc2ca929db17" category="inline-link-macro-rx"></block></block>
   <block id="18ff4ec9e6259918d45028a5d6040d91" category="section-title">지원되는 시스템 유형을 선택합니다</block>
   <block id="0d705fad98d8ea6c4ffe75e2508e2f92" category="section-title">GCP에서 시스템 크기를 조정합니다</block>
   <block id="9b183a2167e00c4527ad8d66a1342c3c" category="list-text">상세 정보 및 자격 증명 * 페이지에서 * 자격 증명 편집 &gt; 구독 추가 * 를 클릭한 다음 화면의 지시에 따라 Google Cloud Marketplace에서 선불 종량제 서비스를 구독합니다.</block>
@@ -4629,4 +4628,5 @@
   <block id="1ed50148a7aaf99d753c01a51f01ef11" category="paragraph">다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다. 또는 에 있는 구독 단계를 따릅니다<block ref="ae09191bda49c43cc387d269b21d9c61" category="inline-link-rx"></block> 섹션을 참조하십시오.</block>
   <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloud의 데이터 계층화 *: 초기 애그리게이트에서 데이터 계층화를 사용할지 여부를 선택하고, 계층형 데이터에 대한 스토리지 클래스를 선택한 다음 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택합니다.</block>
   <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">반 배정 그룹 생성을 구성합니다</block>
+  <block id="f1e89d709c35aed2650bbf12a55f1ba1" category="list-text"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block></block>
 </blocks>
