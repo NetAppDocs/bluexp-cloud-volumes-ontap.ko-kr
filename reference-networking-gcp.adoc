@@ -215,6 +215,9 @@ HA 구성에는 두 가지 방화벽 규칙 세트가 필요합니다.
 
 
 
+TIP: 커넥터에 대한 정보를 찾고 계십니까? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Connector의 방화벽 규칙을 봅니다"^]
+
+
 
 ==== 인바운드 규칙
 
@@ -461,4 +464,6 @@ HA 노드와 HA 중재자의 통신은 포트 3260(iSCSI)을 통해 이루어집
 
 아직 Connector를 만들지 않은 경우 Connector에 대한 네트워킹 요구 사항도 검토해야 합니다.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["커넥터에 대한 네트워킹 요구 사항을 봅니다"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["커넥터에 대한 네트워킹 요구 사항을 봅니다"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloud의 방화벽 규칙"^]
+

@@ -156,17 +156,14 @@ Azure 리소스 그룹에 두 번째 Cloud Volumes ONTAP HA 쌍을 배포하려�
 
 
 
-=== 보안 그룹
-
-BlueXP에서는 보안 그룹을 만들 필요가 없습니다. 직접 사용해야 하는 경우 아래 나열된 보안 그룹 규칙을 참조하십시오.
-
-
-
 === 보안 그룹 규칙
 
 BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Azure 보안 그룹을 만듭니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.
 
 Cloud Volumes ONTAP의 보안 그룹에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.
+
+
+TIP: 커넥터에 대한 정보를 찾고 계십니까? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Connector에 대한 보안 그룹 규칙을 봅니다"^]
 
 
 
@@ -435,4 +432,6 @@ NOTE: 소스는 Cloud Volumes ONTAP 시스템의 인터페이스(IP 주소)입�
 
 아직 Connector를 만들지 않은 경우 Connector에 대한 네트워킹 요구 사항도 검토해야 합니다.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["커넥터에 대한 네트워킹 요구 사항을 봅니다"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["커넥터에 대한 네트워킹 요구 사항을 봅니다"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azure의 보안 그룹 규칙"^]
+

@@ -2034,21 +2034,7 @@
   <block id="fa1cddc8ac392ea41880d5f31e86fbf3" category="cell">스토리지 페일오버 지원</block>
   <block id="1e56718e9810cd52e22fd292a9b32245" category="admonition">포트 443과 53을 열지 않고 타겟 서브넷에서 AWS EC2 서비스로 인터페이스 VPC 엔드포인트를 생성할 수 있습니다.</block>
   <block id="75fb76c71939b7f9f3ee363c4aec2044" category="section-title">커넥터 규칙</block>
-  <block id="e41468f89241b53dc9a8cebeff010b25" category="cell">클라이언트 웹 브라우저에서 로컬 사용자 인터페이스로 HTTP 액세스를 제공하고 Cloud Data Sense에서 연결을 제공합니다</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
-  <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">Connector에 대해 미리 정의된 보안 그룹은 모든 아웃바운드 트래픽을 엽니다. 허용 가능한 경우 기본 아웃바운드 규칙을 따릅니다. 더 엄격한 규칙이 필요한 경우 고급 아웃바운드 규칙을 사용합니다.</block>
-  <block id="4c7e4350b2ac4e79ecdf1d8f33b2d41e" category="paragraph">아웃바운드 트래픽에 대해 엄격한 규칙이 필요한 경우 다음 정보를 사용하여 Connector의 아웃바운드 통신에 필요한 포트만 열 수 있습니다.</block>
-  <block id="a94c44d83136ca0aa23c397adb28b116" category="admonition">소스 IP 주소는 커넥터 호스트입니다.</block>
-  <block id="241b5fab8e737eaa79c543efe7307059" category="cell">API 호출 및 AutoSupport</block>
-  <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">아웃바운드 인터넷 및 ONTAP 클러스터 관리 LIF</block>
-  <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">API 호출</block>
-  <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">ONTAP HA 중재자</block>
-  <block id="ad4167f20adb487bdfdd71a56ab00120" category="cell">ONTAP HA 중재인과의 커뮤니케이션</block>
-  <block id="172ef5a94b4dd0aa120c6878fc29f70c" category="cell">8088</block>
-  <block id="168342a53455f99d5b1d8d7d95e99567" category="cell">API에서 S3로 백업을 호출합니다</block>
-  <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="cell">클라우드 데이터 감지</block>
-  <block id="6cf25d0dcbf586ed6aff3b930e4d8019" category="cell">클라우드 데이터 감지 인스턴스</block>
-  <block id="059ace13ef3980df592dafb754ef8883" category="cell">Cloud Volumes ONTAP에 대한 클라우드 데이터 감지</block>
   <block id="f5c4745b8a5809c2aa248d1297288719" category="summary">Cloud Volumes ONTAP HA(고가용성) 쌍은 클라우드 환경에서 장애가 발생할 경우 엔터프라이즈급 안정성과 지속적인 운영을 제공합니다. Azure에서 스토리지는 두 노드 간에 공유됩니다.</block>
   <block id="ca010532511b0575d0c11648404720a6" category="doc">Azure의 고가용성 쌍</block>
   <block id="957e0d287584ed2cb6cff5c8c76e1be1" category="list-text">Azure 표준 로드 밸런서</block>
@@ -2710,7 +2696,6 @@
   <block id="6958464059ef304c59d06fcb948ccafd" category="inline-link">ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오</block>
   <block id="cad02caeb4ee636c87f28b0bb1263080" category="inline-link-macro">지원되는 클라이언트 프로토콜 및 버전에 대해 알아보십시오</block>
   <block id="f0ddee23dd0d83f105bbdaa15ff5d87a" category="paragraph"><block ref="43c09f3d08ec80b50648a2a905bca06c" category="inline-link-macro-rx"></block>.</block>
-  <block id="a6a8d3a613b6b7ece18f688d168e5cda" category="cell">API는 AWS 및 ONTAP, 클라우드 데이터 감지, 랜섬웨어 서비스 요청, AutoSupport 메시지를 NetApp에 전송합니다</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다</block>
   <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">NSS 관리 &gt; NSS 계정 추가 * 를 클릭합니다.</block>
@@ -3638,7 +3623,6 @@
   <block id="20df81b10ec53f3723942b914b6125f2" category="paragraph">Cloud Volumes ONTAP에 대해 엄격한 아웃바운드 규칙을 정의한 경우 Cloud Volumes ONTAP 방화벽에서 포트 3128을 통한 _outbound_connection을 허용하는지 확인해야 합니다.</block>
   <block id="72d5371b4a8014dbf2df076044553ab6" category="paragraph">작업 환경을 만들 때 배포 중에 미리 정의된 방화벽 정책에 대한 소스 필터를 선택할 수 있습니다.</block>
   <block id="6cf46adb3fb6177f186428a0cac9190b" category="cell">아웃바운드 인터넷 연결을 사용할 수 없는 경우 커넥터의 프록시 서버를 통해 AutoSupport 메시지 보내기</block>
-  <block id="2fcfd53faae8a46d655bdd5bf49e4324" category="cell">Cloud Volumes ONTAP에서 인터넷에 액세스하여 AutoSupport 메시지를 NetApp 지원으로 보냅니다. 커넥터를 배포한 후 이 포트를 수동으로 열어야 합니다.</block>
   <block id="84d78cb2b5253a0b7912f4b35a0a5276" category="list-text">에서 소프트웨어 이미지를 가져옵니다<block ref="66da4490d1acc2c130b3158cd12dade2" category="inline-link-rx"></block>.</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022년 7월 31일</block>
   <block id="5d95d03306d738eddc1fcb7b61b6151a" category="paragraph">다음 변경 사항은 커넥터의 3.9.21 릴리스에 도입되었습니다.</block>
@@ -3869,9 +3853,7 @@
   <block id="a972bcad179af301a93e1049da5fbbbb" category="paragraph">BlueXP는 HA 쌍에서 SVM 관리 LIF를 생성하지만 Azure의 단일 노드 시스템에서는 생성한 것이 아닙니다.</block>
   <block id="6065260b6e2ca957f806162cf33800f6" category="paragraph">비즈니스 요구 사항에 따라 필요한 경우 비공개 링크 연결을 비활성화할 수도 있습니다. 링크를 사용하지 않도록 설정하면 BlueXP는 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성합니다.</block>
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">Azure 리소스 그룹에 두 번째 Cloud Volumes ONTAP HA 쌍을 배포하려고 하면 BlueXP에서 연결 문제가 발생합니다.</block>
-  <block id="ce23ccd5f69f45f3f2a022750ab9d6e7" category="paragraph">BlueXP에서는 보안 그룹을 만들 필요가 없습니다. 직접 사용해야 하는 경우 아래 나열된 보안 그룹 규칙을 참조하십시오.</block>
   <block id="196affcedcabdcd9243dfaab58327dae" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Azure 보안 그룹을 만듭니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
-  <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">BlueXP에서 DNS Resolve에 사용됩니다</block>
   <block id="4350eea5911affd7e2c237dd5705777c" category="list-text">BlueXP는 Cloud Volumes ONTAP를 배포할 때 데이터 서비스 스토리지 VM을 하나만 생성합니다. 일부 구성은 추가 스토리지 VM을 지원합니다. <block ref="a7cc00a0b341c53959a0ff9bb9ec925b" category="inline-link-macro-rx"></block>.</block>
   <block id="d3ba63f114f62f143d97434a92eb48a8" category="paragraph">BlueXP 3.9.5 릴리스부터는 초기 스토리지 VM에서 논리적 공간 보고가 활성화됩니다. 공간이 논리적으로 보고되면 ONTAP에서는 스토리지 효율성 기능으로 절약된 모든 물리적 공간이 사용된 것으로 보고하도록 볼륨 공간을 보고합니다.</block>
   <block id="0dbf08a19cabe7472c89a9c1e7157737" category="list-text">BlueXP는 Cloud Volumes ONTAP에 다음과 같은 ONTAP 기능 라이센스를 자동으로 설치합니다.</block>
@@ -4109,7 +4091,6 @@
   <block id="b28334323356fda049acaa1568ee382c" category="paragraph">BlueXP는 필요한 수의 전용 IP 주소를 Cloud Volumes ONTAP에 자동으로 할당합니다. 네트워킹에 사용 가능한 개인 IP 주소가 충분한지 확인해야 합니다.</block>
   <block id="bdc0bf1240a907023821eccea893d017" category="paragraph">BlueXP에서 Cloud Volumes ONTAP에 할당하는 LIF 수는 단일 노드 시스템을 배포할지 HA 쌍을 구축하는지에 따라 달라집니다. LIF는 물리적 포트와 연결된 IP 주소입니다.</block>
   <block id="7a4fc6df5acc7a338525efe76c970bd8" category="paragraph">BlueXP는 단일 노드 시스템에 6개의 IP 주소를 할당합니다.</block>
-  <block id="939507fbe623e8fd878f92a352424732" category="paragraph">BlueXP에서는 보안 그룹을 만들 필요가 없습니다. 직접 사용해야 하는 경우 을 참조하십시오 <block ref="6b621ae9e3deb16d56da37977cce65f3" category="inline-link-macro-rx"></block>.</block>
   <block id="7fbad4788d127b35618996584caa5cbf" category="paragraph">추가 AWS 네트워킹 요구사항은 ZS(Multiple Availability Zones)를 사용하는 Cloud Volumes ONTAP HA 구성에 적용됩니다. 작업 환경을 생성할 때 BlueXP에 네트워킹 세부 정보를 입력해야 하므로 HA 쌍을 실행하기 전에 이러한 요구 사항을 검토해야 합니다.</block>
   <block id="79b99f78668311f7164df3fbc2b1ab13" category="paragraph">Cloud Volumes ONTAP HA 작업 환경을 생성할 때 BlueXP에서 부동 IP 주소를 입력해야 합니다. BlueXP는 시스템을 시작할 때 HA 쌍에 IP 주소를 할당합니다.</block>
   <block id="fbf22458f97f1e958f61f1269da5e0dc" category="admonition">BlueXP는 VPC 외부의 클라이언트에서 iSCSI 액세스 및 NAS 액세스를 위해 정적 IP 주소를 자동으로 생성합니다. 이러한 유형의 IP 주소에 대한 요구 사항을 충족할 필요는 없습니다.</block>
@@ -4192,8 +4173,6 @@
   <block id="156a3c6e72f6f36b96ffa2a53bc4b125" category="list-text">Cloud Volumes ONTAP 9.7부터 BlueXP가 HA 쌍에 대해 생성하는 스토리지 계정은 범용 v2 스토리지 계정입니다.</block>
   <block id="5891037085a8d7a4e0c6d1c1177dc1b1" category="paragraph">Cloud Volumes ONTAP 작업 환경을 생성할 때 BlueXP는 AWS Marketplace에서 사용 가능한 계약을 구독하라는 메시지를 표시합니다. 그러면 해당 구독이 충전을 위한 작업 환경과 연결됩니다. 추가 작업 환경에 동일한 서브스크립션을 사용할 수 있습니다.</block>
   <block id="762aad63fdd6b79217c19517ed5983a5" category="paragraph">BlueXP는 시간별 구독과 마찬가지로 AWS Marketplace에서 사용 가능한 연간 계약을 구독하라는 메시지를 표시합니다.</block>
-  <block id="313ffec3230aa3292dde2f11b0bfa481" category="summary">BlueXP는 BlueXP와 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 AWS 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 포트를 사용해야 하는 경우 포트를 참조할 수 있습니다.</block>
-  <block id="dfd7076c3cd05fe305cbd204cf4845a9" category="paragraph">BlueXP는 Connector와 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 AWS 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="4c06e1c4065aa853ffa68ddc60e138c3" category="paragraph">BlueXP는 항상 이 보안 그룹을 만듭니다. 자신의 을(를) 사용할 수 있는 옵션이 없습니다.</block>
   <block id="6f3d93af7507d9ff7bead94d1ffc9cc1" category="paragraph">기본적으로 BlueXP는 Cloud Volumes ONTAP과 관련 저장소 계정 간의 연결을 위해 Azure 개인 링크를 활성화합니다. Azure Private Link는 Azure의 엔드포인트 간 연결을 보호하고 성능상의 이점을 제공합니다.</block>
   <block id="7dfd5068a6c1386a24bb81164b3321f3" category="paragraph">BlueXP는 두 가지 구성 모두 Cloud Volumes ONTAP 및 스토리지 계정 간의 연결을 위해 항상 네트워크 액세스를 제한합니다. 네트워크 액세스는 Cloud Volumes ONTAP가 배포된 VNET와 커넥터가 배포된 VNET로 제한됩니다.</block>
@@ -4629,4 +4608,18 @@
   <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloud의 데이터 계층화 *: 초기 애그리게이트에서 데이터 계층화를 사용할지 여부를 선택하고, 계층형 데이터에 대한 스토리지 클래스를 선택한 다음 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택합니다.</block>
   <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">반 배정 그룹 생성을 구성합니다</block>
   <block id="f1e89d709c35aed2650bbf12a55f1ba1" category="list-text"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block></block>
+  <block id="2626748206273dbf0d13d2fffdb79c5b" category="summary">BlueXP는 Cloud Volumes ONTAP의 성공적인 운영에 필요한 인바운드 및 아웃바운드 규칙을 포함하는 AWS 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
+  <block id="eb19784d052e3e9a0aa941090082ebbe" category="inline-link">Connector에 대한 보안 그룹 규칙을 봅니다</block>
+  <block id="c456915aac0f612541f35dc3bfc19faf" category="paragraph"><block ref="c456915aac0f612541f35dc3bfc19faf" category="inline-link-rx"></block></block>
+  <block id="a6c935eff93c3c2a81864fdabc1d1951" category="inline-link">Connector의 방화벽 규칙을 봅니다</block>
+  <block id="fd21d6325b77b856e27ff0f3a2769254" category="admonition">커넥터에 대한 정보를 찾고 계십니까?<block ref="b4a1b1e09448c4916df7db5a89b51b2b" category="inline-link-rx"></block></block>
+  <block id="e22a4abc98b47ca148e0dfda7e259162" category="inline-link">Google Cloud의 방화벽 규칙</block>
+  <block id="2cfdb7ae537da608249744d8e40289a8" category="list-text"><block ref="2cfdb7ae537da608249744d8e40289a8" category="inline-link-rx"></block></block>
+  <block id="314f455c046d8114edc23b21e45ae3e0" category="admonition">커넥터에 대한 정보를 찾고 계십니까?<block ref="03f0ff9a2503a569189cff8aff64ae33" category="inline-link-rx"></block></block>
+  <block id="569fe31933e5918613ae1efa70e82d16" category="inline-link">Azure의 보안 그룹 규칙</block>
+  <block id="c3122c19fb459588f8438e668beb5f88" category="list-text"><block ref="c3122c19fb459588f8438e668beb5f88" category="inline-link-rx"></block></block>
+  <block id="0b79e4862d28fb04132c84c8aab97cc4" category="paragraph">BlueXP에서는 보안 그룹을 만들 필요가 없습니다. 직접 사용해야 하는 경우 을 참조하십시오 <block ref="6b621ae9e3deb16d56da37977cce65f3" category="inline-link-macro-rx"></block>.</block>
+  <block id="a8fd24da5145000ecce0c3f4f64ade44" category="admonition">커넥터에 대한 정보를 찾고 계십니까?<block ref="388760eab464a72355382b7e30fcff50" category="inline-link-rx"></block></block>
+  <block id="60f0453bf0393ab630be6aa37dc20180" category="inline-link">AWS의 보안 그룹 규칙</block>
+  <block id="f2ad0eeffca4d67e7eb677593c90d5bf" category="list-text"><block ref="f2ad0eeffca4d67e7eb677593c90d5bf" category="inline-link-rx"></block></block>
 </blocks>
