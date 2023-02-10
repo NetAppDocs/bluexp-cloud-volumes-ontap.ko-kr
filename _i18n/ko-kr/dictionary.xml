@@ -4622,4 +4622,5 @@
   <block id="a8fd24da5145000ecce0c3f4f64ade44" category="admonition">커넥터에 대한 정보를 찾고 계십니까?<block ref="388760eab464a72355382b7e30fcff50" category="inline-link-rx"></block></block>
   <block id="60f0453bf0393ab630be6aa37dc20180" category="inline-link">AWS의 보안 그룹 규칙</block>
   <block id="f2ad0eeffca4d67e7eb677593c90d5bf" category="list-text"><block ref="f2ad0eeffca4d67e7eb677593c90d5bf" category="inline-link-rx"></block></block>
+  <block id="384f4196da40ab94e0b11dc3977e8611" category="list-text">9.12.1 GA</block>
 </blocks>
