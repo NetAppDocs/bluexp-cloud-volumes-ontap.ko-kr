@@ -3066,14 +3066,10 @@
   <block id="0c7af18d6ac0bf65ef1d6aec6f629263" category="list-text">AKV는 데이터 SVM에서만 구성할 수 있습니다</block>
   <block id="72bf37dc916a5b7107e5555c05e6deba" category="section-title">구성 프로세스</block>
   <block id="29c35caadd576a358e25cf276cf3f5c4" category="list-text">기본 SSH 클라이언트를 사용하여 클러스터 관리 LIF에 연결합니다.</block>
-  <block id="04cf2d7d95d7d1c9ab9dbd7dbf46710c" category="list-text">ONTAP에서 고급 권한 모드 '고급 모드 해제'로 진입합니다</block>
   <block id="d25bc3e2f3cccb27b01b1088c349f1eb" category="list-text">원하는 데이터 SVM을 식별하고 DNS 구성 'vserver services name-service dns show'를 확인합니다</block>
   <block id="fe0e659383af9bbfb75708c240c256f8" category="list-text">원하는 데이터 SVM에 대한 DNS 항목이 있고 Azure DNS에 대한 항목이 포함된 경우 별도의 조치가 필요하지 않습니다. 그렇지 않으면 Azure DNS, 프라이빗 DNS 또는 사내 서버를 가리키는 데이터 SVM용 DNS 서버 항목을 추가합니다. 클러스터 관리 SVM의 항목과 일치해야 합니다. 'vserver services name-service dns create-vserver_SVM_name_-domain_domain_-name-servers_ip_address_'</block>
   <block id="e4919e440eb9972cf98c256c8354da12" category="list-text">SVM을 위해 DNS 서비스가 생성되었는지 확인합니다. 'vserver services name-service dns show'</block>
-  <block id="9d98aca60e70c6f5397deb1970b8afc4" category="list-text">응용 프로그램 등록 후 저장된 클라이언트 ID와 테넌트 ID를 사용하여 Azure 키 볼트를 활성화합니다. '보안 키 관리자 외부 Azure enable - vserver_SVM_name_-client-id_Azure_client_ID_-tenant-id_Azure_tenant_ID_-name_Azure_key_name_-key-id_Azure_key_ID_</block>
-  <block id="5ac6ffb19ceb9619fe5f2fb10414c629" category="list-text">Key Manager 설정 'Security key-manager external Azure show'를 확인한다</block>
   <block id="68f0035d3c55f26e0ec12ed454908a6e" category="list-text">Key Manager의 상태를 확인한다. '보안 Key-manager external Azure check' 출력 내용은 다음과 같다.</block>
-  <block id="558f8f17a0bbaa44eeaadc7095d4ec67" category="paragraph">만약 'service_reachability' 상태가 'OK'가 아닌 경우, SVM은 필요한 모든 접속 및 권한으로 Azure Key Vault 서비스에 연결할 수 없습니다. 초기구성 시 kms_Wrapped_key_status가 unknown을 보고합니다. 첫 볼륨을 암호화하면 상태가 OK로 바뀝니다.</block>
   <block id="776c67d51f3f1c503c9062c9d812c2b7" category="list-text">볼륨이 올바르게 생성되고 암호화되었는지 확인합니다. 이 경우 암호화된 매개 변수는 true로 표시됩니다. 'vol show-vserver_SVM_name_-fields is-encrypted'</block>
   <block id="0741b6c1237f126924ebdaa3fe6dbc4e" category="doc">Google의 클라우드 키 관리 서비스로 키를 관리합니다</block>
   <block id="0dbdff8ed1ef0e78c4dc84ace48205d6" category="inline-link-macro">Google Cloud Platform의 키 관리 서비스(Cloud KMS)</block>
@@ -3094,25 +3090,14 @@
   <block id="0a3c1ea98015fea252076643a7006949" category="list-text">응용 프로그램의 이름을 제공하고 지원되는 응용 프로그램 유형을 선택합니다. Azure Key Vault 사용에 대한 기본 단일 테넌트 접미사 ** Register **(등록**)을 선택합니다.</block>
   <block id="1d409f5854c728f2ea49e519f12e2ff8" category="list-text">Azure 개요 창에서 등록한 애플리케이션을 선택합니다. ** 애플리케이션(클라이언트) ID** 및** 디렉토리(테넌트) ID** 를 안전한 위치에 복사합니다. 등록 프로세스 후반부에 필요합니다.</block>
   <block id="4466def91ac19af993030eff5c4ea4ef" category="list-title">Azure 클라이언트 암호를 생성합니다</block>
-  <block id="138447381f65d7de53d276300e34ace2" category="list-text">Cloud Volumes ONTAP 응용 프로그램의 Azure 포털에서 ** 인증서 및 암호** 창을 선택합니다.</block>
-  <block id="0d11323c8a6d694cbd738f596a517d2f" category="list-text">새 클라이언트 암호** 클라이언트 비밀에 대한 의미 있는 이름을 입력합니다. NetApp에서는 24개월의 만료 기간을 권장하지만 특정 클라우드 거버넌스 정책에는 다른 설정이 필요할 수 있습니다.</block>
-  <block id="1fb1736b61369abce475039d7f448214" category="list-text">클라이언트 암호를 저장하려면** 추가** 를 선택합니다. 즉시 비밀의** 값**을 복사하고 나중에 구성할 수 있도록 안전한 곳에 저장합니다. 페이지를 벗어나 이동하면 암호 값이 표시되지 않습니다.</block>
   <block id="2c1f18e5f9ee7d42406022e9ffe5854d" category="list-title">Azure Key Vault를 작성합니다</block>
-  <block id="19238aa3b8371b577668244b3228880e" category="list-text">기존 Azure 키 저장소가 있는 경우 Cloud Volumes ONTAP 구성에 연결할 수 있지만 이 프로세스의 설정에 액세스 정책을 적용해야 합니다.</block>
   <block id="b52e3778af65d886ba32b1fd67fdfb1b" category="list-text">Azure 포털에서 ** Key Vaults** 섹션으로 이동합니다.</block>
-  <block id="92ffcbcc7fa86b0c7d82367345872f5a" category="list-text">** 작성** 을 선택합니다. 리소스 그룹, 지역 및 가격 책정 계층을 비롯한 필수 정보를 입력하고 삭제된 볼트를 보존할 일 수와 삭제 보호 활성화 여부를 선택합니다. 이 구성을 위해 기본값은 충분하지만 특정 클라우드 거버넌스 정책에는 다른 설정이 필요할 수 있습니다.</block>
   <block id="5806c7463c14b44dd17992a1c031fa0f" category="list-text">액세스 정책을 선택하려면 ** 다음** 을 선택합니다.</block>
-  <block id="a15b840e857b0be5423560edc5346ef6" category="list-text">볼륨 암호화 옵션에 대한 ** Azure 디스크 암호화** 및 권한 모델에 대한 ** 볼트 액세스 정책**을 선택합니다.</block>
-  <block id="1f34b5f3ab0226f052fc177239cc4f91" category="list-text">** 액세스 정책 추가** 를 선택합니다.</block>
-  <block id="68cd8db76e0574e7adc41824f92f13bf" category="list-text">** 템플릿에서 구성(선택 사항)** 필드 옆의 캐럿을 선택합니다. 그런 다음 ** 키, 비밀 및 인증 관리 를 선택합니다.**</block>
   <block id="e4bff652065888d52fed75044894f9e7" category="list-text">각 드롭다운 권한 메뉴(키, 암호, 인증서)를 선택한 다음** 메뉴 목록 상단의 모두 선택** 을 선택하여 사용 가능한 모든 권한을 선택합니다. 다음과 같은 항목이 있어야 합니다.</block>
-  <block id="527f287f763d308ba075a4aecc220dbe" category="list-text">** 키 권한**:19 선택됨</block>
   <block id="71a8ddee35e94c488b23ac9ba055bb79" category="list-text">** 비밀 권한**:8 선택됨</block>
   <block id="fee9a8fdd6aff1a6048d3ccee4f385a3" category="list-text">** 인증서 권한**:16 선택됨</block>
-  <block id="a158ec2c7b6ac237a382adc4fdd76141" category="list-text">액세스 정책을 만들려면 ** 추가** 를 선택합니다.</block>
   <block id="93856c87f5f709c2bb22415396d9f2a6" category="list-text">** 다음** 을 선택하여 ** 네트워킹** 옵션으로 진행합니다.</block>
   <block id="f10e4cb8be9ad6f896cadded4bf18cee" category="list-text">적절한 네트워크 액세스 방법을 선택하거나 ** 모든 네트워크** 및 ** 검토 + 작성**을 선택하여 키 볼트를 작성합니다. (네트워크 액세스 방법은 거버넌스 정책 또는 회사 클라우드 보안 팀에서 규정할 수 있습니다.)</block>
-  <block id="37e7091aa36439837070742f8d6bc7e9" category="list-text">키 볼트 URI 기록: 작성한 키 볼트에서 개요 메뉴로 이동하여 오른쪽 컬럼에서 ** 볼트 URI**를 복사합니다. 이 작업은 나중에 수행해야 합니다.</block>
   <block id="8925f0e46ff47371441124c2df44a2a3" category="list-title">암호화 키를 생성합니다</block>
   <block id="76f551dd2c984e558a618de45d9222ae" category="list-text">Cloud Volumes ONTAP에 대해 만든 키 저장소 메뉴에서 ** 키** 옵션으로 이동합니다.</block>
   <block id="4e6b60602e4345dfe01d9d28c342518e" category="list-text">새 키를 만들려면 ** Generate/import** 를 선택합니다.</block>
@@ -3131,7 +3116,6 @@
   <block id="a9f595a9e965e7fd1b0c9296a00dc089" category="list-text">Azure 포털에서 ** 가상 네트워크**로 이동합니다.</block>
   <block id="82a6e0886c87dc5bc69074249df4aa58" category="list-text">Cloud Volumes ONTAP 작업 환경을 배포한 가상 네트워크를 선택하고 페이지 왼쪽의 ** Subnets** 메뉴를 선택합니다.</block>
   <block id="d90b291a12c60639bd85c4fafde4ea97" category="list-text">목록에서 Cloud Volumes ONTAP 구축의 서브넷 이름을 선택합니다.</block>
-  <block id="c1c335737025d8b2354cceafcdabea4e" category="list-text">** 서비스 엔드포인트** 제목으로 이동합니다. 드롭다운 메뉴의 목록에서 ** Microsoft.AzureActiveDirectory**를 선택합니다.</block>
   <block id="23b8cf63899cafd6a9d0b32fbdc5c6e8" category="list-text">설정을 캡처하려면 ** 저장**을 선택합니다.</block>
   <block id="5bfda0e2440a8346cbb089805c29d898" category="list-title">Cloud Volumes ONTAP 구성</block>
   <block id="89fe433ed203b193e97ffc51ade125be" category="paragraph">올바르게 구성된 경우 Cloud Volumes ONTAP는 자동으로 볼륨을 생성하고 볼륨 암호화를 활성화합니다.</block>
@@ -4623,4 +4607,34 @@
   <block id="60f0453bf0393ab630be6aa37dc20180" category="inline-link">AWS의 보안 그룹 규칙</block>
   <block id="f2ad0eeffca4d67e7eb677593c90d5bf" category="list-text"><block ref="f2ad0eeffca4d67e7eb677593c90d5bf" category="inline-link-rx"></block></block>
   <block id="384f4196da40ab94e0b11dc3977e8611" category="list-text">9.12.1 GA</block>
+  <block id="c8b50b13301d65b649c5dff955341f33" category="list-text">멀티 테넌트 암호화 키 관리(MT_EK_MGMT) 라이센스가 있어야 합니다</block>
+  <block id="f0ab1ba9c7cd2818ec6a7b9845d5261f" category="list-text">Azure 키 저장소 앱 등록을 위한 Azure 포털에서 ** 인증서 및 비밀** 창을 선택합니다.</block>
+  <block id="07638cb7bdf5cf70a652a96bc9c441e6" category="list-text">새 클라이언트 암호** 를 선택합니다. 클라이언트 비밀에 의미 있는 이름을 입력합니다. NetApp에서는 24개월의 만료 기간을 권장합니다. 단, 특정 클라우드 거버넌스 정책에는 다른 설정이 필요할 수 있습니다.</block>
+  <block id="2e24e191003bd210535bb187b99bdb20" category="list-text">클라이언트 암호를 만들려면** 추가** 를 클릭합니다. 값** 열에 나열된 암호 문자열을 복사하여 에서 나중에 사용할 수 있도록 안전한 위치에 저장합니다 <block ref="0d835ce531ec9eb78a13d9e8f120db62" category="inline-xref-macro-rx"></block>. 페이지를 벗어나 이동하면 암호 값이 다시 표시되지 않습니다.</block>
+  <block id="eecc779e6126f4751ce25d8665d8752a" category="list-text">기존 Azure 키 저장소가 있는 경우 Cloud Volumes ONTAP 구성에 연결할 수 있지만 이 프로세스의 설정에 액세스 정책을 적용해야 합니다.</block>
+  <block id="122448c4ac87c414ab18368dae41855e" category="list-text">**+Create**를 클릭하고 리소스 그룹, 지역 및 가격 책정 계층을 포함한 필수 정보를 입력합니다. 또한, 삭제된 볼트를 보관할 일 수를 입력하고 키 볼트에서 ** 삭제 보호 활성화**를 선택합니다.</block>
+  <block id="a3fc7215327425815c209a85394ac7b7" category="list-text">다음 옵션을 선택합니다.</block>
+  <block id="af5f7f2c0020b3ed0f205c32458068f6" category="list-text">** Access configuration** 아래에서 ** Vault access policy**를 선택합니다.</block>
+  <block id="b9e0c7a11631ea448ff35e605b72d648" category="list-text">** 리소스 액세스** 아래에서 ** 볼륨 암호화를 위한 Azure 디스크 암호화** 를 선택합니다.</block>
+  <block id="f5c11dc87be0aa92bd41fbe0503654ae" category="list-text">액세스 정책을 추가하려면** + Create** 를 선택합니다.</block>
+  <block id="ab1ac4b8402c7f4aba23ed9129ab568e" category="list-text">템플릿에서 구성** 아래에서 드롭다운 메뉴를 클릭한 다음** 키, 암호 및 인증서 관리** 템플릿을 선택합니다.</block>
+  <block id="4872bcef21c3e02f21757b52684f47bf" category="list-text">** 키 권한**:20 선택됨</block>
+  <block id="bca072e8fff52a7319e53529df90d512" category="inline-image-macro">액세스 정책을 생성하는 데 필요한 모든 권한 선택을 보여 주는 액세스 정책 만들기 스크린샷</block>
+  <block id="e02047bc895c66685e2c498b81be6b3b" category="paragraph"><block ref="e02047bc895c66685e2c498b81be6b3b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ced341d58338703f54e95bd3db0a954d" category="list-text">에서 만든 ** 기본** Azure 등록 응용 프로그램을 선택하려면 ** 다음** 을 클릭합니다 <block ref="cdef42bd73f4820f7c1e1f3c23ba776b" category="inline-xref-macro-rx"></block>. 다음** 을 선택합니다.</block>
+  <block id="ead3297d323f4e2e1b5901f516515f0c" category="admonition">정책당 하나의 보안 주기만 할당할 수 있습니다.</block>
+  <block id="8f613c9b4f99d908128e0e1562262e54" category="inline-image-macro">액세스 정책 보안 주체 만들기 탭의 스크린샷</block>
+  <block id="d583500a4249a3885c54806205e70c31" category="paragraph"><block ref="d583500a4249a3885c54806205e70c31" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a5765d4b1939690e753a08c0f1e772f0" category="list-text">** 검토 후 작성 ** 이 나타날 때까지 ** 다음 ** 을 두 번 클릭합니다. 그런 다음** 만들기** 를 클릭합니다.</block>
+  <block id="02d7d5644299a84c630dbc080f8eb6a1" category="list-text">키 볼트 URI 기록: 작성한 키 볼트에서 개요 메뉴로 이동하여 오른쪽 컬럼에서 ** 볼트 URI**를 복사합니다. 이 작업은 나중에 수행해야 합니다.</block>
+  <block id="dcb092b03c8c0dcaa99bfb2bfea600aa" category="list-text">** 서비스 엔드포인트** 제목으로 이동합니다. 드롭다운 메뉴에서 다음을 선택합니다.</block>
+  <block id="d847c24a00a280e5290e5d14cdb0f117" category="list-text">NET Framework 클래스 라이브러리 Control.OnKeyEventArgs 클래스 참고: 이 속성은 .NET Framework 버전 2.0</block>
+  <block id="86855d8b306c899d960bb79deeed75c7" category="list-text">** Microsoft.KeyVault**</block>
+  <block id="a76ae603816a82c4af9bddb7aee3afb9" category="list-text">** Microsoft.Storage**(선택 사항)</block>
+  <block id="a329f820fccae25ebe98d73c85c8006c" category="inline-image-macro">선택한 서비스 세 개를 보여 주는 서비스 엔드포인트 스크린샷</block>
+  <block id="892728a8cb7d01d3a80f6c63ad7a3b1a" category="paragraph"><block ref="892728a8cb7d01d3a80f6c63ad7a3b1a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5b430d19ce10cad3c93da5d1a58ae5da" category="list-text">ONTAP에서 고급 권한 모드로 들어갑니다.<block ref="b18455e94f1f10f091d6cc4ad2e0507e" prefix=" " category="inline-code"></block></block>
+  <block id="65533a408ee230b29deae5fd1634c46a" category="list-text">응용 프로그램 등록 후 저장된 클라이언트 ID 및 테넌트 ID를 사용하여 Azure Key Vault를 활성화합니다.<block ref="fc019c518ce1e237021d337077bd96cc" prefix=" " category="inline-code"></block></block>
+  <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">를 누릅니다<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> 상태가 아닙니다<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>SVM은 필요한 모든 연결 및 사용 권한으로 Azure Key Vault 서비스에 연결할 수 없습니다. Azure 네트워크 정책 및 라우팅으로 인해 프라이빗 VNET가 Azure KeyVault Public 엔드포인트에 도달하지 못하도록 차단하지 않는지 확인합니다. 이러한 경우, VNET 내에서 키 볼트에 액세스하기 위해 Azure 프라이빗 끝점을 사용하는 것이 좋습니다. 또한 종점의 전용 IP 주소를 확인하기 위해 SVM에 정적 호스트 항목을 추가해야 할 수도 있습니다.</block>
+  <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">를 클릭합니다<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> 보고합니다<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 초기 구성 시 상태가 로 변경됩니다<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 첫 번째 볼륨이 암호화된 후</block>
 </blocks>
