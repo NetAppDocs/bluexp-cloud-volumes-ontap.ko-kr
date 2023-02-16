@@ -22,7 +22,7 @@ settings:
     - name: Microsoft Azure를 참조하십시오
       alias: Azure를 지원합니다
       id: azure
-  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,fr-fr
+  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr
 sidebar:
   entries:
   - title: Cloud Volumes ONTAP 문서
