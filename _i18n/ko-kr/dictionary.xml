@@ -959,7 +959,6 @@
   <block id="e60243467f676326e36a7e657bc20970" category="list-text">작업 환경에서 메뉴 아이콘을 클릭한 다음 * 정보 * 를 클릭합니다.</block>
   <block id="411f67726812722e40994bad9091a5ac" category="list-text">배관 테이블 * 을 클릭합니다.</block>
   <block id="ce501a2e9d8b238043619a3db4abc141" category="list-text">선택한 라우팅 테이블 목록을 수정하고 * 저장 * 을 클릭합니다.</block>
-  <block id="1bf0dfe526c6a7cc50e0e7cd24f46087" category="section-title">Azure의 커넥터 위치</block>
   <block id="573514d5de621ecfe56c91e7c665d73d" category="inline-link">Azure 지역 쌍</block>
   <block id="b2de829903c040e99b02d3d155ca0528" category="paragraph">클라이언트가 Cloud Volumes ONTAP와 동일한 VNET 내에 있거나, 피어링된 VNets 내에 있거나, VNET에 대한 전용 VPN 또는 ExpressRoute 연결을 사용할 때 사내 네트워크에 있는 경우 클라이언트 액세스는 개인 링크를 통해 이루어집니다.</block>
   <block id="6b29a9cbfcf35db30ad6d2c78c52db5e" category="paragraph">이 예에서는 동일한 VNET 내의 전용 링크와 전용 VPN 또는 ExpressRoute 연결이 있는 온프레미스 네트워크에서 클라이언트 액세스를 보여 줍니다.</block>
@@ -973,7 +972,6 @@
   <block id="6f35ba1af4056628e6fc10196137fc15" category="list-text">파일을 저장하고 Connector를 로그오프합니다.</block>
   <block id="4dbd1699313f9a246cfb29418554adf1" category="paragraph">재부팅할 필요는 없습니다.</block>
   <block id="65d4f53995ffa0759f8e9ed896c6e68e" category="section-title">장애 시 롤백 사용</block>
-  <block id="901f352e439a1e734fd8f1c8ef0a5450" category="paragraph">롤백 활성화는 API를 통해서만 지원됩니다.</block>
   <block id="48c7c41b72e1d678923ce3571aa65b2d" category="list-title">단계</block>
   <block id="3964c03d92d8204dfd473576f17a5009" category="list-text">다음 요청 본문과 함께 'Put/occm/config' API 호출 사용:</block>
   <block id="6c00fef2e24946332c58419df6198320" category="list-text">Azure * 에서 * Azure Private Link * 를 클릭합니다.</block>
@@ -3233,7 +3231,6 @@
   <block id="3b45d0097165753cbe807b39e8e38550" category="paragraph">Cloud Volumes ONTAP는 iio1 디스크에서 Amazon EBS Elastic Volumes 기능을 지원합니다. <block ref="2f34fac6c8e3e7a84b963b75a5591f20" category="inline-link-macro-rx"></block>.</block>
   <block id="44bacb29285bcdcf27b752d7b6c9e182" category="inline-link-macro">Amazon EBS Elastic Volumes 기능</block>
   <block id="a611a569997e8479ac56d19e1a51785f" category="paragraph">위에서 설명한 것처럼, Amazon EBS Elastic Volumes 기능을 지원하는 Cloud Volumes ONTAP 구성에서는 디스크 크기를 선택할 수 없습니다. <block ref="2f34fac6c8e3e7a84b963b75a5591f20" category="inline-link-macro-rx"></block>.</block>
-  <block id="0e4b0391e50169d97fc505f0c73a94ba" category="paragraph">커넥터는 해당 커넥터가 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 영역에 배포하거나 에 배포되어야 합니다<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> Cloud Volumes ONTAP 시스템의 경우 이 요구 사항은 Cloud Volumes ONTAP와 연결된 스토리지 계정 간에 Azure 전용 링크 연결이 사용되도록 합니다.</block>
   <block id="ab446ebd1f851655193779b7c50f3533" category="paragraph">스토리지 VM을 생성하고 LIF를 할당하기 전에 Azure에서 nic0에 IP 주소를 할당해야 합니다.</block>
   <block id="19c2f8be3dc9f0749efedd54317e259b" category="paragraph">데이터 LIF 액세스를 위한 IP 주소와 스토리지 VM(SVM) 관리 LIF를 위한 선택적 IP 주소를 생성해야 합니다. 이 관리 LIF는 SnapCenter과 같은 관리 툴에 연결할 수 있습니다.</block>
   <block id="6705d4b1a3db9cb88b17655dcca33de5" category="list-text">Cloud Volumes ONTAP 9.11.1 이상을 실행 중인 경우 스토리지 VM에 대한 네트워크 서비스 정책을 수정합니다.</block>
@@ -4159,7 +4156,6 @@
   <block id="4c06e1c4065aa853ffa68ddc60e138c3" category="paragraph">BlueXP는 항상 이 보안 그룹을 만듭니다. 자신의 을(를) 사용할 수 있는 옵션이 없습니다.</block>
   <block id="6f3d93af7507d9ff7bead94d1ffc9cc1" category="paragraph">기본적으로 BlueXP는 Cloud Volumes ONTAP과 관련 저장소 계정 간의 연결을 위해 Azure 개인 링크를 활성화합니다. Azure Private Link는 Azure의 엔드포인트 간 연결을 보호하고 성능상의 이점을 제공합니다.</block>
   <block id="7dfd5068a6c1386a24bb81164b3321f3" category="paragraph">BlueXP는 두 가지 구성 모두 Cloud Volumes ONTAP 및 스토리지 계정 간의 연결을 위해 항상 네트워크 액세스를 제한합니다. 네트워크 액세스는 Cloud Volumes ONTAP가 배포된 VNET와 커넥터가 배포된 VNET로 제한됩니다.</block>
-  <block id="2172036a4fb1da374a247000f3d0760e" category="paragraph">회사에서 요구하는 경우, BlueXP에서 Azure Private Link 대신 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성하도록 설정을 변경할 수 있습니다. 이 설정을 변경하면 새로 만든 Cloud Volumes ONTAP 시스템에 적용됩니다.</block>
   <block id="497286b7c4a76755ff0535ba3414dce0" category="paragraph">BlueXP는 Azure에 Cloud Volumes ONTAP를 배포할 때 리소스 그룹에 개인 끝점을 만듭니다. 프라이빗 엔드포인트는 Cloud Volumes ONTAP의 스토리지 계정과 연결되어 있습니다. 따라서 Cloud Volumes ONTAP 스토리지에 대한 액세스는 Microsoft 백본 네트워크를 통해 이루어집니다.</block>
   <block id="77bb2abfb8f3c95b3fdaf2c2e6814b89" category="section-title">Azure 프라이빗 DNS에 대한 자세한 내용은 BlueXP를 참조하십시오</block>
   <block id="c6862ef0bb5d25a7ed0231faab734f0d" category="paragraph">를 사용하는 경우<block ref="35609e050ed0963e042a408dda682719" category="inline-link-rx"></block>그런 다음 각 Connector에서 설정 파일을 수정해야 합니다. 그렇지 않으면 BlueXP에서 Cloud Volumes ONTAP 및 관련 저장소 계정 간에 Azure Private Link 연결을 활성화할 수 없습니다.</block>
@@ -4541,7 +4537,6 @@
   <block id="a915bf61fc4da5557d359b0301ad21ef" category="list-text">오브젝트 스토리지로 계층화되어 있는 데이터에는 ONTAP WORM 기능이 포함되지 않습니다. 엔드 투 엔드 WORM 기능을 보장하려면 버킷 권한을 올바르게 설정해야 합니다.</block>
   <block id="998c3b79cbc9135556e51847e16ca6c3" category="list-text">오브젝트 스토리지로 계층화된 데이터에는 WORM 기능이 없습니다. 즉, 기술적으로 버킷 및 컨테이너에 대한 모든 액세스 권한이 있는 사람은 ONTAP에 의해 계층화된 오브젝트를 이동 및 삭제할 수 있습니다.</block>
   <block id="795cfc8480eae289c5de0d65352581a1" category="list-text">WORM 및 계층화를 활성화한 후에는 Cloud Volumes ONTAP 9.8로의 되돌리기 또는 다운그레이드가 차단됩니다.</block>
-  <block id="8f3a22fee1fcc35025e3e68b3c7b5499" category="paragraph">대부분의 경우 Cloud Volumes ONTAP로 Azure Private 링크를 설정할 필요가 없습니다. BlueXP는 Azure 프라이빗 링크를 관리합니다. 그러나 Azure Private DNS를 사용하는 경우에는 구성 파일을 편집해야 합니다. Azure의 커넥터 위치에 대한 요구 사항도 알고 있어야 합니다.</block>
   <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023년 2월 5일</block>
   <block id="078640757da4b274abf89709c42d7741" category="paragraph">다음 변경 사항은 커넥터의 3.9.26 릴리스에 도입되었습니다.</block>
   <block id="72c6f65b45015ee1135ff4bc2cce8860" category="section-title">AWS에서 반 배정 그룹 생성</block>
@@ -4637,4 +4632,15 @@
   <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">를 누릅니다<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> 상태가 아닙니다<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>SVM은 필요한 모든 연결 및 사용 권한으로 Azure Key Vault 서비스에 연결할 수 없습니다. Azure 네트워크 정책 및 라우팅으로 인해 프라이빗 VNET가 Azure KeyVault Public 엔드포인트에 도달하지 못하도록 차단하지 않는지 확인합니다. 이러한 경우, VNET 내에서 키 볼트에 액세스하기 위해 Azure 프라이빗 끝점을 사용하는 것이 좋습니다. 또한 종점의 전용 IP 주소를 확인하기 위해 SVM에 정적 호스트 항목을 추가해야 할 수도 있습니다.</block>
   <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">를 클릭합니다<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> 보고합니다<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 초기 구성 시 상태가 로 변경됩니다<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 첫 번째 볼륨이 암호화된 후</block>
   <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">Cloud Volumes ONTAP 9.12.0까지 Flash Cache 성능 향상을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다. Cloud Volumes ONTAP 9.12.1을 배포하거나 업그레이드할 때 압축을 비활성화할 필요가 없습니다.</block>
+  <block id="dd1852694a70af4fe454fcf679ab1071" category="inline-link-macro">Azure 지역 쌍</block>
+  <block id="ab83b37918dd75da5385d47425e5a41b" category="paragraph">회사에서 요구하는 경우, BlueXP에서 Azure Private Link 대신 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성하도록 설정을 변경할 수 있습니다. 이 설정을 변경하면 새로 만든 Cloud Volumes ONTAP 시스템에 적용됩니다. 서비스 끝점은 에서만 지원됩니다 <block ref="143d2b52aa05d0c2b5e02a98661c9a57" category="inline-link-macro-rx"></block> 커넥터와 Cloud Volumes ONTAP VNets 사이.</block>
+  <block id="23c74e586b63f34de771242b40d88dcf" category="paragraph">커넥터는 해당 커넥터가 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 영역에 배포하거나 에 배포되어야 합니다<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> Cloud Volumes ONTAP 시스템의 경우</block>
+  <block id="1fee58171d5cf0db16d7385f5e4a939d" category="paragraph">대부분의 경우 Cloud Volumes ONTAP로 Azure Private 링크를 설정할 필요가 없습니다. BlueXP는 Azure 프라이빗 링크를 관리합니다. 그러나 기존 Azure Private DNS 영역을 사용하는 경우에는 구성 파일을 편집해야 합니다.</block>
+  <block id="dd7ca1b0e6369f5ef2a79cd465cf7cf2" category="section-title">사용자 지정 DNS 요구 사항</block>
+  <block id="224fa7dc7e400247de076ec5d2eafc75" category="inline-link-macro">DNS 전달자 사용에 대한 Azure의 설명서</block>
+  <block id="60af090fbecac12fdce367109a13438c" category="paragraph">필요에 따라 사용자 지정 DNS로 작업하는 경우 사용자 지정 DNS 서버에서 Azure 개인 DNS 영역에 조건부 전달자를 만들어야 합니다. 자세한 내용은 을 참조하십시오 <block ref="4be762cea0592f84a7a3a1377d992613" category="inline-link-macro-rx"></block>.</block>
+  <block id="b8bc704b3f131d1c37611dd5a5c17e1e" category="admonition">커넥터 및 Cloud Volumes ONTAP 시스템이 다른 VNets에 구축된 경우 커넥터가 배포된 VNET와 Cloud Volumes ONTAP 시스템이 배포된 VNET 간에 VNET 피어링을 설정해야 합니다.</block>
+  <block id="85fa376f75ded218650eec5453f272cf" category="paragraph">API를 통해 또는 app.conf 파일을 업데이트하여 롤백을 활성화할 수 있습니다.</block>
+  <block id="631d5d58329754fe0bb44ea77f068c95" category="paragraph">* API를 통한 롤백 활성화 *</block>
+  <block id="07c460b15c5d7df22ee3bebc2fd32aaa" category="paragraph">* app.conf * 를 업데이트하여 롤백 기능을 활성화합니다</block>
 </blocks>

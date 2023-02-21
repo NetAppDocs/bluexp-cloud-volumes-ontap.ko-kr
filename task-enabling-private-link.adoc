@@ -30,7 +30,9 @@ BlueXP는 두 가지 구성 모두 Cloud Volumes ONTAP 및 스토리지 계정 �
 
 == 대신 Azure 전용 링크를 비활성화하고 서비스 끝점을 사용합니다
 
-회사에서 요구하는 경우, BlueXP에서 Azure Private Link 대신 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성하도록 설정을 변경할 수 있습니다. 이 설정을 변경하면 새로 만든 Cloud Volumes ONTAP 시스템에 적용됩니다.
+회사에서 요구하는 경우, BlueXP에서 Azure Private Link 대신 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성하도록 설정을 변경할 수 있습니다. 이 설정을 변경하면 새로 만든 Cloud Volumes ONTAP 시스템에 적용됩니다. 서비스 끝점은 에서만 지원됩니다 link:https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] 커넥터와 Cloud Volumes ONTAP VNets 사이.
+
+커넥터는 해당 커넥터가 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 영역에 배포하거나 에 배포되어야 합니다 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] Cloud Volumes ONTAP 시스템의 경우
 
 .단계
 . BlueXP 콘솔의 오른쪽 상단에서 설정 아이콘을 클릭하고 * 커넥터 설정 * 을 선택합니다.
@@ -43,7 +45,13 @@ BlueXP는 두 가지 구성 모두 Cloud Volumes ONTAP 및 스토리지 계정 �
 
 == Azure 개인 링크 사용
 
-대부분의 경우 Cloud Volumes ONTAP로 Azure Private 링크를 설정할 필요가 없습니다. BlueXP는 Azure 프라이빗 링크를 관리합니다. 그러나 Azure Private DNS를 사용하는 경우에는 구성 파일을 편집해야 합니다. Azure의 커넥터 위치에 대한 요구 사항도 알고 있어야 합니다.
+대부분의 경우 Cloud Volumes ONTAP로 Azure Private 링크를 설정할 필요가 없습니다. BlueXP는 Azure 프라이빗 링크를 관리합니다. 그러나 기존 Azure Private DNS 영역을 사용하는 경우에는 구성 파일을 편집해야 합니다.
+
+
+
+=== 사용자 지정 DNS 요구 사항
+
+필요에 따라 사용자 지정 DNS로 작업하는 경우 사용자 지정 DNS 서버에서 Azure 개인 DNS 영역에 조건부 전달자를 만들어야 합니다. 자세한 내용은 을 참조하십시오 link:https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns#on-premises-workloads-using-a-dns-forwarder["DNS 전달자 사용에 대한 Azure의 설명서"^].
 
 
 
@@ -58,10 +66,7 @@ BlueXP는 Azure에 Cloud Volumes ONTAP를 배포할 때 리소스 그룹에 개�
 image:diagram_azure_private_link.png["Cloud Volumes ONTAP로 이동하는 데이터 액세스와 스토리지 계정에 대한 개인 끝점 및 개인 링크를 통한 데이터 액세스를 보여 주는 개념적 이미지입니다."]
 
 
-
-=== Azure의 커넥터 위치
-
-커넥터는 해당 커넥터가 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 영역에 배포하거나 에 배포되어야 합니다 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] Cloud Volumes ONTAP 시스템의 경우 이 요구 사항은 Cloud Volumes ONTAP와 연결된 스토리지 계정 간에 Azure 전용 링크 연결이 사용되도록 합니다.
+NOTE: 커넥터 및 Cloud Volumes ONTAP 시스템이 다른 VNets에 구축된 경우 커넥터가 배포된 VNET와 Cloud Volumes ONTAP 시스템이 배포된 VNET 간에 VNET 피어링을 설정해야 합니다.
 
 
 
@@ -111,7 +116,9 @@ BlueXP에서 Azure Private Link를 생성하지 못할 경우 롤백을 활성�
 
 롤백을 활성화하면 BlueXP는 작업을 중지하고 작업의 일부로 생성된 모든 리소스를 롤백합니다.
 
-롤백 활성화는 API를 통해서만 지원됩니다.
+API를 통해 또는 app.conf 파일을 업데이트하여 롤백을 활성화할 수 있습니다.
+
+* API를 통한 롤백 활성화 *
 
 .단계
 . 다음 요청 본문과 함께 'Put/occm/config' API 호출 사용:
@@ -119,5 +126,16 @@ BlueXP에서 Azure Private Link를 생성하지 못할 경우 롤백을 활성�
 [source, json]
 ----
 { "rollbackOnAzurePrivateLinkFailure": true }
+----
+
+
+* app.conf * 를 업데이트하여 롤백 기능을 활성화합니다
+
+.단계
+. 다음 요청 본문과 함께 'Put/occm/config' API 호출 사용:
++
+[source, json]
+----
+{ "rollbackOnAzurePrivateLinkFailure": false }
 ----
 
