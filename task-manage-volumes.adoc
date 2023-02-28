@@ -120,7 +120,7 @@ NOTE: BlueXP는 계층화를 통해 선택한 디스크 유형을 사용하는 �
 
 기본적으로, 공간이 부족할 때 볼륨이 자동으로 최대 크기로 커집니다. 기본값은 1,000이며 이는 볼륨이 크기가 11배로 커질 수 있음을 의미합니다. 이 값은 커넥터 설정에서 구성할 수 있습니다.
 
-볼륨 크기를 조정해야 하는 경우 에서 조정할 수 있습니다 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP 시스템 관리자"^]. 볼륨 크기를 조정할 때 시스템의 용량 제한을 고려해야 합니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트"^] 를 참조하십시오.
+볼륨 크기를 조정해야 하는 경우 에서 조정할 수 있습니다 link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP 시스템 관리자"^]. 볼륨 크기를 조정할 때 시스템의 용량 제한을 고려해야 합니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트"^] 를 참조하십시오.
 
 
 
@@ -161,14 +161,14 @@ endif::aws[]
 
 ifdef::azure[]
 
-** Azure AD 도메인 서비스를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=ADDC 컴퓨터 * 또는 * OU=ADDC 사용자 * 를 입력합니다.https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure 설명서: Azure AD 도메인 서비스 관리 도메인에 OU(조직 구성 단위)를 만듭니다"^]
+** Azure AD 도메인 서비스를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=ADDC 컴퓨터 * 또는 * OU=ADDC 사용자 * 를 입력합니다.link:https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure 설명서: Azure AD 도메인 서비스 관리 도메인에 OU(조직 구성 단위)를 만듭니다"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-** Google 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=Computers, OU=Cloud * 를 입력합니다.https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google 클라우드 문서: Google Managed Microsoft AD의 조직 단위"^]
+** Google 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=Computers, OU=Cloud * 를 입력합니다.link:https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google 클라우드 문서: Google Managed Microsoft AD의 조직 단위"^]
 
 
 endif::gcp[]
@@ -197,7 +197,7 @@ Cloud Volumes ONTAP는 CIFS 서버를 변경 사항으로 업데이트합니다.
 대부분의 경우 System Manager를 사용하여 볼륨을 이동할 수 있습니다.
 
 +
-자세한 내용은 를 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["ONTAP 9 볼륨 이동 익스프레스 가이드"^].
+자세한 내용은 를 참조하십시오 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["ONTAP 9 볼륨 이동 익스프레스 가이드"^].
 
 
 
@@ -208,14 +208,14 @@ Cloud Volumes ONTAP는 CIFS 서버를 변경 사항으로 업데이트합니다.
 용량 문제를 방지하려면 볼륨을 이동해야 하지만 직접 문제를 해결해야 한다는 작업 필요 메시지가 BlueXP에 표시될 수 있습니다. 이 경우 문제를 해결하는 방법을 식별한 다음 하나 이상의 볼륨을 이동해야 합니다.
 
 
-TIP: BlueXP는 총 사용 용량이 90%에 도달하면 이러한 작업 필요 메시지를 표시합니다. 데이터 계층화를 사용할 경우 aggregate가 80% 사용 용량에 도달하면 메시지가 표시됩니다. 기본적으로 10%의 여유 공간은 데이터 계층화용으로 예약되어 있습니다. link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["데이터 계층화를 위한 여유 공간 비율에 대해 자세히 알아보십시오"].
+TIP: BlueXP는 총 사용 용량이 90%에 도달하면 이러한 작업 필요 메시지를 표시합니다. 데이터 계층화를 사용할 경우 aggregate가 80% 사용 용량에 도달하면 메시지가 표시됩니다. 기본적으로 10%의 여유 공간은 데이터 계층화용으로 예약되어 있습니다. link:task-tiering.html#changing-the-free-space-ratio-for-data-tiering["데이터 계층화를 위한 여유 공간 비율에 대해 자세히 알아보십시오"^].
 
 .단계
-. <<용량 문제를 해결하는 방법 파악,문제를 해결하는 방법을 식별합니다>>.
+. <<용량 문제를 해결하는 방법 파악>>.
 . 분석을 기초로 용량 문제를 방지하려면 볼륨을 이동하십시오.
 +
-** <<용량 문제를 방지하려면 볼륨을 다른 시스템으로 이동합니다,볼륨을 다른 시스템으로 이동합니다>>.
-** <<용량 문제를 방지하려면 볼륨을 다른 애그리게이트로 이동하십시오,동일한 시스템에서 다른 애그리게이트로 볼륨 이동>>.
+** <<용량 문제를 방지하려면 볼륨을 다른 시스템으로 이동합니다>>.
+** <<용량 문제를 방지하려면 볼륨을 다른 애그리게이트로 이동하십시오>>.
 
 
 
@@ -273,20 +273,24 @@ image:screenshot_aggr_volumes.gif["스크린샷: 집계 정보 대화 상자의 
 .이 작업에 대해
 이 작업의 단계를 따라 다음 작업 필요 메시지를 수정할 수 있습니다.
 
- Moving a volume is necessary to avoid capacity issues; however, BlueXP cannot perform this action for you because the system has reached the disk limit.
+[]
+====
+용량 문제를 방지하려면 볼륨을 이동해야 하지만 시스템이 디스크 제한에 도달했으므로 BlueXP에서 이 작업을 수행할 수 없습니다.
+
+====
 .단계
 . 사용 가능한 용량이 있는 Cloud Volumes ONTAP 시스템을 식별하거나 새 시스템을 구축합니다.
 . 타겟 작업 환경에서 소스 작업 환경을 끌어다 놓아 볼륨의 일회성 데이터 복제를 수행합니다.
 +
-자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["시스템 간 데이터 복제"^].
+자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["시스템 간 데이터 복제"^].
 
 . 복제 상태 페이지로 이동한 다음 SnapMirror 관계를 끊어서 복제된 볼륨을 데이터 보호 볼륨에서 읽기/쓰기 볼륨으로 변환합니다.
 +
-자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["데이터 복제 일정 및 관계 관리"^].
+자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["데이터 복제 일정 및 관계 관리"^].
 
 . 데이터 액세스를 위한 볼륨을 구성합니다.
 +
-데이터 액세스를 위한 대상 볼륨을 구성하는 방법에 대한 자세한 내용은 를 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["ONTAP 9 볼륨 재해 복구 익스프레스 가이드"^].
+데이터 액세스를 위한 대상 볼륨을 구성하는 방법에 대한 자세한 내용은 를 참조하십시오 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["ONTAP 9 볼륨 재해 복구 익스프레스 가이드"^].
 
 . 원래 볼륨을 삭제합니다.
 +
@@ -303,7 +307,11 @@ image:screenshot_aggr_volumes.gif["스크린샷: 집계 정보 대화 상자의 
 .이 작업에 대해
 이 작업의 단계를 따라 다음 작업 필요 메시지를 수정할 수 있습니다.
 
- Moving two or more volumes is necessary to avoid capacity issues; however, BlueXP cannot perform this action for you.
+[]
+====
+용량 문제를 방지하려면 두 개 이상의 볼륨을 이동해야 하지만 BlueXP에서는 이 작업을 수행할 수 없습니다.
+
+====
 .단계
 . 기존 Aggregate에 이동해야 하는 볼륨에 대해 사용 가능한 용량이 있는지 확인합니다.
 +
@@ -327,7 +335,7 @@ image:screenshot_aggr_capacity.gif["스크린샷: 애그리게이트 정보 대�
 . System Manager 또는 CLI를 사용하여 볼륨을 애그리게이트로 이동합니다.
 . 대부분의 경우 System Manager를 사용하여 볼륨을 이동할 수 있습니다.
 +
-자세한 내용은 를 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["ONTAP 9 볼륨 이동 익스프레스 가이드"^].
+자세한 내용은 를 참조하십시오 link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-vol-move/home.html["ONTAP 9 볼륨 이동 익스프레스 가이드"^].
 
 
 
