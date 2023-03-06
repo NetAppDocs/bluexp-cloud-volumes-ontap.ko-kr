@@ -40,7 +40,6 @@
   <block id="bc2d1afe4b7b88784be36363245bd652" category="inline-link">Cloud Volumes ONTAP 릴리즈 노트</block>
   <block id="56ef2682280ac110060b881925a87b80" category="section-title">Google 클라우드</block>
   <block id="543bcb76d6487a8515a8a34178160fca" category="paragraph">단일 노드 시스템을 사용하는 경우 Cloud Volumes ONTAP는 모든 시스템 유형에 대해 고속 쓰기 속도를 지원합니다.</block>
-  <block id="a5feb10e04fddec4318f091f70667b36" category="paragraph">Cloud Volumes ONTAP는 Google Cloud에서 HA 쌍을 통한 빠른 쓰기 속도를 지원하지 않습니다.</block>
   <block id="e4e959caff2c6b1635b2a3bea64b35f7" category="inline-link">Cloud Volumes ONTAP가 지원하는 Google 클라우드 머신 유형에 대해 자세히 알아보십시오</block>
   <block id="5859fb81f0cd1fbd6824d86c16923404" category="section-title">쓰기 속도를 선택하는 방법</block>
   <block id="3d64d0d43e2b3f4726dd94ece523a44b" category="inline-link-macro">기존 시스템의 쓰기 속도를 변경합니다</block>
@@ -3702,10 +3701,7 @@
   <block id="1c91f3adc957364cb01d33e100ee1ea3" category="list-text">NetApp이 처음입니다</block>
   <block id="00fc9d0c515c69ea2c368521453d982e" category="inline-xref">NetApp에 등록하는 방법을 알아보십시오</block>
   <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>.</block>
-  <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">계정은 고객 수준 계정이어야 합니다(게스트 또는 임시 계정이 아님).</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">세 개의 가로 점으로 구성된 아이콘</block>
-  <block id="ff67299785d475e87002751aa6ab5eb8" category="list-text">로그인에 성공하면 NetApp은 NSS 사용자 이름을 저장합니다. 이 ID는 이메일에 매핑되는 시스템에서 생성된 ID입니다. NSS 관리 * 페이지의 에서 이메일을 표시할 수 있습니다 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
-  <block id="505da61efe6bebebbaf092da18f64613" category="list-text">로그인 자격 증명 토큰을 새로 고쳐야 하는 경우 에 * 자격 증명 업데이트 * 옵션이 있습니다 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 메뉴. 이 옵션을 사용하면 다시 로그인하라는 메시지가 표시됩니다.</block>
   <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">NetApp에 등록</block>
   <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">NetApp 지원에 등록하는 방법은 NetApp Support 사이트(NSS) 계정이 이미 있는지 여부에 따라 다릅니다.</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSS 계정이 있는 기존 고객</block>
@@ -4645,4 +4641,123 @@
   <block id="35b10bba4deebd11fc4a8516d588a2f7" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="99d9b6ae46b04038337785859273721b" category="inline-link-macro-rx"></block>.</block>
   <block id="5f377380cbcdf7966d890bdb7ff0faa5" category="paragraph">데이터 액세스를 위한 대상 볼륨을 구성하는 방법에 대한 자세한 내용은 를 참조하십시오 <block ref="194d6a4dc62fd84f1ce4e3d372f4afab" category="inline-link-macro-rx"></block>.</block>
   <block id="38e756f76c74b5075bf08a75f76e4554" category="paragraph">용량 문제를 방지하려면 두 개 이상의 볼륨을 이동해야 하지만 BlueXP에서는 이 작업을 수행할 수 없습니다.</block>
+  <block id="1ee6f28ca24808cbfb56feaccf1c3e53" category="summary">Google Cloud 명령줄을 통해 내보낸 이미지를 disk.raw 형식으로 변환합니다.</block>
+  <block id="4924fff9a6684704aac6ccb1ed5fd97d" category="doc">Google Cloud에서 이미지를 RAW 형식으로 변환합니다</block>
+  <block id="e42cb7ec1fc839883e3e4e1864b30d87" category="inline-link">NetApp Support 사이트(NSS)</block>
+  <block id="ac16be4e1060792bdf37f35e6cc518f9" category="paragraph">새 인스턴스 배포, 업그레이드 또는 기존 이미지에 사용 중인 이미지는 를 통해 클라이언트와 공유됩니다<block ref="c1c4e3e8a814891940b982f96af89878" category="inline-link-rx"></block>. 서명된 다이제스트 및 인증서는 NSS 포털을 통해 다운로드할 수 있습니다. NetApp Support에서 공유하는 이미지에 해당하는 오른쪽 릴리즈에 대한 다이제스트 및 인증서를 다운로드했는지 확인합니다. 예를 들어 9.13.0 이미지는 9.13.0 서명된 다이제스트와 NSS에서 사용할 수 있는 인증서를 갖습니다.</block>
+  <block id="7a8f498eae5977019b0d0c0d3ef013c0" category="section-title">이 단계가 필요한 이유는 무엇입니까?</block>
+  <block id="6bb0851f205415d62274497842e3218a" category="paragraph">Google Cloud의 이미지는 직접 다운로드할 수 없습니다. 서명된 다이제스트 및 인증서와 이미지를 비교하려면 두 파일을 비교하여 이미지를 다운로드하는 메커니즘이 있어야 합니다. 이렇게 하려면 이미지를 disk.raw 형식으로 내보내기/변환하고 결과를 Google Cloud의 저장 버킷에 저장해야 합니다. disk.raw 파일이 tarred로 압축되어 있습니다.</block>
+  <block id="639031c91c1718355b2c49de79b7c8a9" category="paragraph">사용자/서비스 계정에는 다음 작업을 수행할 수 있는 권한이 필요합니다.</block>
+  <block id="8510b9d49ae3af28080e9ab3c769e316" category="list-text">Google 스토리지 버킷에 액세스</block>
+  <block id="6b3a8711b7b0a7f0ca17594f3cb27910" category="list-text">Google Storage 버킷에 쓰십시오</block>
+  <block id="bb08d6d5fcb1c5c4e9257dd97f8657e8" category="list-text">클라우드 구축 작업 생성(내보내기 프로세스 중 사용)</block>
+  <block id="0211c2e7a1f1b9cd2d2ff37f63d0cbfe" category="list-text">원하는 이미지에 액세스합니다</block>
+  <block id="74a5f984dcb642bac9c5327e39e6df05" category="list-text">이미지 내보내기 작업을 만듭니다</block>
+  <block id="65f7614896abb27a91631087b7310da5" category="paragraph">이미지를 확인하려면 disk.raw 형식으로 변환한 다음 다운로드해야 합니다.</block>
+  <block id="10868e2d56662b4588b6d2397d92a859" category="section-title">Google Cloud 명령줄을 사용하여 Google Cloud 이미지를 내보냅니다</block>
+  <block id="af61c0c1ee8de516a01c6e171f19abeb" category="inline-link">gcloud 계산 이미지 내보내기 명령</block>
+  <block id="1dd36b5da1220777ad9e1ab31632d911" category="paragraph">이미지를 클라우드 스토리지로 내보내는 기본 방법은 을 사용하는 것입니다<block ref="a4c66ff2f3c53397780a048fb09314b7" category="inline-link-rx"></block>. 이 명령은 제공된 이미지를 가져와 tarred와 gzip이 되는 disk.raw 파일로 변환합니다. 생성된 파일은 대상 URL에 저장되며 확인을 위해 다운로드할 수 있습니다.</block>
+  <block id="26b2216a4240ad7d761b87056bdd08d6" category="paragraph">이 작업을 실행하려면 사용자/계정에 원하는 버킷에 액세스하고 쓰거나 이미지를 내보내고 Google에서 이미지를 내보낼 때 사용하는 클라우드 빌드에 액세스할 수 있는 권한이 있어야 합니다.</block>
+  <block id="d5d1915ba486e63c35a1f3a88839e1b0" category="paragraph">* gcloud * 를 사용하여 Google Cloud 이미지를 내보냅니다</block>
+  <block id="d2816514636c054ad7c6ba2f7c056434" category="example-title">스크립트를 표시하려면 클릭합니다</block>
+  <block id="b9231f744254be27be6f8180edb2c230" category="paragraph">압축 파일 압축 풀기 *</block>
+  <block id="7687a452778371a352ce867b57724b93" category="inline-link">이미지 내보내기에 대한 Google Cloud 문서</block>
+  <block id="c32a24baf89135bb87bdf6dbe099b487" category="admonition">을 참조하십시오<block ref="c7e947f0888e30efd1d729c87ccc8502" category="inline-link-rx"></block> Google Cloud를 통해 이미지를 내보내는 방법에 대한 자세한 내용은</block>
+  <block id="e6b411af64f8108d8230e8dc4d5ed17e" category="cell">9.13.0</block>
+  <block id="01277cd6d5e8d9a803f07b849cedae4b" category="summary">Google Cloud 이미지 파일 서명 파일을 확인합니다.</block>
+  <block id="5567cef37155e1157348c6775226af57" category="doc">Google Cloud 이미지 검증 개요</block>
+  <block id="248cdc66c441a6612309f6e2ce80a63c" category="inline-link">NSS</block>
+  <block id="1c6fb094d8ad58a6db78e6b557985243" category="paragraph">Google Cloud 이미지 검증은 향상된 NetApp 보안 요구사항을 준수합니다. 이 작업을 위해 특별히 생성된 개인 키를 사용하여 이미지를 생성하는 스크립트가 변경되었습니다. 를 통해 다운로드할 수 있는 Google Cloud용 서명된 다이제스트 및 공용 인증서를 사용하여 GCP 이미지의 무결성을 확인할 수 있습니다<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> 특정 릴리스에 대해.</block>
+  <block id="5745e537e1e3a11e00e50f67820a46a1" category="admonition">Google 클라우드 이미지 확인은 Cloud Volumes ONTAP 소프트웨어 버전 9.13.0 이상에서 지원됩니다.</block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">지원 사례 관리(Preview)</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">BlueXP에서 직접 활성 및 해결된 지원 사례를 보고 관리할 수 있습니다. NSS 계정 및 회사와 관련된 케이스를 관리할 수 있습니다.</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">케이스 관리를 미리 보기로 사용할 수 있습니다. NetApp은 이 경험을 개선하고 다음 릴리즈에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 사용하여 피드백을 보내주십시오.</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">페이지 상단의 케이스 관리 대시보드에서는 두 가지 보기를 제공합니다.</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">왼쪽 보기에는 사용자가 제공한 NSS 계정으로 지난 3개월 동안 개설된 총 케이스가 표시됩니다.</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">오른쪽 보기에는 사용자 NSS 계정을 기준으로 회사 수준에서 지난 3개월 동안 개설된 총 사례가 표시됩니다.</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">테이블의 결과에는 선택한 보기와 관련된 사례가 반영됩니다.</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">관심 있는 열을 추가 또는 제거할 수 있으며 우선 순위 및 상태 등의 열 내용을 필터링할 수 있습니다. 다른 열은 정렬 기능만 제공합니다.</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">자세한 내용은 아래 단계를 참조하십시오.</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">케이스 수준별로 케이스 메모를 업데이트하거나 아직 종결 또는 미결 종결 상태가 아닌 케이스를 종결할 수 있습니다.</block>
+  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">Case Management * 를 클릭하고 메시지가 표시되면 NSS 계정을 BlueXP에 추가합니다.</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">케이스 관리 * 페이지에는 BlueXP 사용자 계정과 연결된 NSS 계정과 관련된 미해결 케이스가 표시됩니다. NSS 관리 * 페이지 상단에 나타나는 것과 동일한 NSS 계정입니다.</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">필요한 경우 테이블에 표시되는 정보를 수정합니다.</block>
+  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">조직의 케이스 * 에서 * 보기 * 를 클릭하여 회사와 관련된 모든 케이스를 봅니다.</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">정확한 날짜 범위를 선택하거나 다른 기간을 선택하여 날짜 범위를 수정합니다.</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">케이스 관리 페이지의 표 위에 있는 옵션 스크린샷으로 정확한 날짜 범위 또는 최근 7일, 30일 또는 3개월을 선택할 수 있습니다.</block>
+  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">열의 내용을 필터링합니다.</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">활성 또는 종료와 같은 특정 상태와 일치하는 케이스를 필터링할 수 있는 상태 열의 필터 옵션 스크린샷</block>
+  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">테이블에 나타나는 더하기 아이콘입니다</block>
+  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">을 클릭하여 테이블에 표시되는 열을 변경합니다 <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> 표시할 열을 선택합니다.</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">표에 표시할 수 있는 열을 보여 주는 스크린샷</block>
+  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">표의 마지막 열에 세 개의 점이 있는 아이콘</block>
+  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">를 클릭하여 기존 케이스를 관리합니다 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 사용 가능한 옵션 중 하나를 선택합니다.</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">* 사례 보기 *: 특정 케이스에 대한 전체 세부 정보를 봅니다.</block>
+  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">* 사례 노트 업데이트 *: 문제에 대한 추가 세부 정보를 제공합니다.</block>
+  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">* 케이스 종료 *: 케이스를 닫는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 클릭합니다.</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷</block>
+  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3c6506a0407767fa4ee430c24f3b89e2" category="admonition">_Flash Cache_, 고속 쓰기 속도 및 896의 고속 전송 단위(MTU)는 * 고속 * 쓰기 속도 옵션을 통해 사용할 수 있으며, n2-표준-16, n2-표준-32, n2-표준-48, n2-표준-64 인스턴스 유형이 있습니다. 또한, 8,896의 MTU가 높을수록 구축 시 VCP-1, VPC-2 또는 VCP-3을 선택해야 합니다. _Flash Cache_, 높은 쓰기 속도 및 8,896의 MTU는 기능마다 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다.</block>
+  <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.13.0 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.</block>
+  <block id="436ea77bab9d72d8fe71dbccf1dd6613" category="list-text">멀티 테넌트 암호화 키 관리(MTEKM) 라이센스가 설치되어 있으며 Cloud Volumes ONTAP 9.12.1 GA부터 시작합니다.</block>
+  <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">Cloud Volumes ONTAP 이미지 다이제스트 파일 도구를 통해 내보낸 Google 클라우드 이미지 파일 서명을 확인합니다.</block>
+  <block id="f2381744b9c03db11d49cbcc38dd048d" category="doc">Google Cloud 서명 이미지를 확인합니다</block>
+  <block id="019892a31385e7fb7670de88abfcf3cd" category="paragraph">내보낸 Google Cloud 서명 이미지를 확인하려면 NSS에서 이미지 다이제스트 파일을 다운로드하여 disk.raw 파일의 유효성을 검사하고 파일 내용을 다이제해야 합니다.</block>
+  <block id="c81429443fac6104f46abd88cff6840a" category="section-title">서명된 이미지 검증 워크플로 요약</block>
+  <block id="89367ca4743c16d95c687430c6a0d9cc" category="paragraph">다음은 Google Cloud 서명 이미지 검증 워크플로 프로세스에 대한 개요입니다.</block>
+  <block id="11253a7af5a989f0e3e2ee767386c743" category="list-text">에서<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block>에서 다음 파일이 포함된 Google Cloud 아카이브를 다운로드합니다.</block>
+  <block id="e197da4f69193c85d129866a2675f762" category="list-text">서명된 다이제스트(.SIG)</block>
+  <block id="6763cb37e125279317bf8422431cb36a" category="list-text">공개 키(.pem)가 포함된 인증서</block>
+  <block id="41008194a87291660d5b8cbbcf4e901b" category="list-text">인증서 체인(.pem)</block>
+  <block id="20578512149c6e3b4e6524f4afc81315" category="inline-image-macro">요약 파일 tar.gz 다운로드가 포함된 NSS 페이지를 보여주는 이미지입니다</block>
+  <block id="956855c49a0e0c3b22aa13808aac916f" category="paragraph"><block ref="956855c49a0e0c3b22aa13808aac916f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="81b811e1bb7358a9bfbd1be493ad5e08" category="list-text">변환된 disk.raw 파일을 다운로드합니다</block>
+  <block id="f4580c24dd557ee68edae3101b584307" category="list-text">인증서 체인을 사용하여 인증서의 유효성을 검사합니다</block>
+  <block id="c6843882530be14543f812c098985cdb" category="list-text">인증서에 공개 키가 포함되어 있는 서명된 다이제스트를 확인합니다</block>
+  <block id="98774f82cdc945a9f4d0e57b8bc015ca" category="list-text">공개 키를 사용하여 서명된 다이제스트를 해독하여 이미지 파일의 다이제스트를 추출합니다</block>
+  <block id="aa709fc45e05f2a5e2dd888ef8a945d0" category="list-text">다운로드한 disk.raw 파일의 다이제스트를 만듭니다</block>
+  <block id="997f5d3364a511663fd4bf677e6ccd0d" category="list-text">검증을 위해 두 개의 다이제스트 파일을 비교합니다</block>
+  <block id="80f2dd223bbef33f12a6f95c73d7f282" category="inline-image-macro">이미지 서명 확인 프로세스를 보여주는 이미지입니다</block>
+  <block id="acd7963bcfab60ed9803b6ce962f013d" category="paragraph"><block ref="acd7963bcfab60ed9803b6ce962f013d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023년 3월 5일</block>
+  <block id="eed8585d0b45afc4676b1c89f6f22a9a" category="paragraph">다음 변경 사항은 커넥터의 3.9.27 릴리스에 도입되었습니다.</block>
+  <block id="e2c7f196cec5020e2b840087f6a8e068" category="section-title">Azure에서 16TiB 및 32TiB 지원</block>
+  <block id="bfb9ab5387a727da709a7377d950cee0" category="paragraph">이제 Cloud Volumes ONTAP는 16TiB 및 32TiB 디스크 크기를 지원하여 Azure의 관리 대상 디스크에서 실행되는 고가용성 배포를 지원합니다.</block>
+  <block id="8f9e72f80a7dd402a28a4b46aca286f9" category="inline-link">Azure에서 지원되는 디스크 크기입니다</block>
+  <block id="9bc26ebd17008cdc39569edf382f0b5e" category="paragraph">에 대해 자세히 알아보십시오<block ref="e55b1d7df019ac083c7ffec036e8de25" category="inline-link-rx"></block>.</block>
+  <block id="3cc0e97defd245de4dee36cae1e4c485" category="paragraph">이제 MTEKM(멀티 테넌트 암호화 키 관리) 라이센스가 버전 9.12.1 GA 이상을 실행하는 새로운 기존 Cloud Volumes ONTAP 시스템과 함께 포함됩니다.</block>
+  <block id="bc912dd00b6301509fad22d6a376560d" category="paragraph"><block ref="532112271454bf057b0a2415bb119744" category="inline-link-rx"></block>.</block>
+  <block id="93616689ecb546d3ff1261cf76e33109" category="section-title">인터넷이 없는 환경 지원 </block>
+  <block id="28f5f7b773a8085f5db45145fb774c27" category="paragraph">Cloud Volumes ONTAP는 이제 인터넷으로부터 완전히 분리된 모든 클라우드 환경에서 지원됩니다. BYOL(노드 기반 라이센싱)만 이 환경에서 지원됩니다. 용량 기반 라이센스는 지원되지 않습니다. 시작하려면 커넥터 소프트웨어를 수동으로 설치하고, 커넥터에서 실행되는 BlueXP 콘솔에 로그인하고, 디지털 지갑에 BYOL 라이센스를 추가한 다음 Cloud Volumes ONTAP를 구축하십시오. </block>
+  <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">인터넷에 연결되지 않은 위치에 커넥터를 설치합니다</block>
+  <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
+  <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">커넥터의 BlueXP 콘솔에 액세스합니다</block>
+  <block id="b620510a7b9198825896459898b7bc08" category="list-text"><block ref="b620510a7b9198825896459898b7bc08" category="inline-link-rx"></block></block>
+  <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">할당되지 않은 라이센스를 추가합니다</block>
+  <block id="587a8286d2e3b61d9f250d807b34983c" category="list-text"><block ref="587a8286d2e3b61d9f250d807b34983c" category="inline-link-rx"></block></block>
+  <block id="44579e142f1f753a153dbb19dac8125c" category="summary">OpenSSL을 사용하여 Google Cloud에서 digest 파일 컨텐츠와 비교하여 disk.raw 파일을 다운로드했는지 확인합니다.</block>
+  <block id="4768a2782def76fdf9b074232676aba9" category="doc">OpenSSL을 사용하여 disk.raw 파일 및 다이제스트 파일 내용을 확인합니다</block>
+  <block id="9790936d7b09c3cf187b770347ee60d1" category="paragraph">Google Cloud에서 다운로드한 disk.raw 파일을 을 통해 사용 가능한 다이제스트 파일 내용과 비교하여 확인할 수 있습니다<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> OpenSSL 사용.</block>
+  <block id="64bba92e74e274ead8d4e951ad8c9d3a" category="admonition">이미지의 유효성을 검사하는 OpenSSL 명령은 Linux, Mac OS 및 Windows 시스템과 호환됩니다.</block>
+  <block id="c275ec11ecf674a6672183664681e98f" category="list-text">OpenSSL을 사용하여 인증서를 확인합니다.</block>
+  <block id="72d3302ad6fe92c7f4d817235e6ec413" category="list-text">다운로드한 disk.raw 파일, 서명 및 인증서를 디렉터리에 넣습니다.</block>
+  <block id="f059e79846663b1827b8520855050095" category="list-text">OpenSSL을 사용하여 인증서에서 공개 키를 추출합니다.</block>
+  <block id="1ce11a955fcab73f91ead73e47d4f374" category="list-text">추출된 공개 키를 사용하여 서명을 해독하고 다운로드한 disk.raw 파일의 내용을 확인합니다.</block>
+  <block id="edcfeb86d02d7df1eb2c480ac3913d8a" category="list-text">멀티 테넌트 암호화 키 관리(MTEKM), Cloud Volumes ONTAP 9.12.1 GA로 시작</block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS 계정은 고객 수준 계정이어야 합니다(게스트 또는 임시 계정이 아님). 여러 개의 고객 수준 NSS 계정을 가질 수 있습니다.</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">NSS 계정은 파트너 수준 계정인 경우 하나만 있을 수 있습니다. 고객 수준 NSS 계정을 추가하려고 하면 파트너 수준 계정이 있으면 다음 오류 메시지가 나타납니다.</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">"NSS 고객 유형은 이미 다른 유형의 NSS 사용자가 있으므로 이 계정에 허용되지 않습니다."</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">기존 고객 수준 NSS 계정이 있는 경우에도 마찬가지이며 파트너 수준 계정을 추가하려고 합니다.</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">로그인에 성공하면 NetApp은 NSS 사용자 이름을 저장합니다.</block>
+  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">이 ID는 이메일에 매핑되는 시스템 생성 ID입니다. NSS 관리 * 페이지의 에서 이메일을 표시할 수 있습니다 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
+  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">로그인 자격 증명 토큰을 새로 고쳐야 하는 경우 에 * 자격 증명 업데이트 * 옵션이 있습니다 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">이 옵션을 사용하면 다시 로그인하라는 메시지가 표시됩니다. 이러한 계정의 토큰은 90일 후에 만료됩니다. 이를 알리는 알림이 게시됩니다.</block>
+  <block id="190ca4df9155a41a2f2d0d261c72ddc3" category="sidebar">Google Cloud Platform 이미지 검증</block>
+  <block id="0bb4855e3aeb722a47c6f81b2c53c274" category="sidebar">GCP에서 이미지를 원시 형식으로 변환합니다</block>
+  <block id="5cb40010f012896cbae43d59859ac520" category="sidebar">이미지 서명 확인</block>
+  <block id="734726fba5c0a704a6a780254a724e08" category="sidebar">GCP 서명 이미지를 확인합니다</block>
+  <block id="11bb059fb2906ae78eda04a864443447" category="sidebar">OpenSSL을 사용하여 내용을 확인하십시오</block>
 </blocks>

@@ -90,3 +90,64 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 * 제품 내 채팅을 사용합니다
 * 에서 비기술 케이스를 제출하십시오 https://mysupport.netapp.com/site/help[]
 
+
+
+
+== 지원 사례 관리(Preview)
+
+BlueXP에서 직접 활성 및 해결된 지원 사례를 보고 관리할 수 있습니다. NSS 계정 및 회사와 관련된 케이스를 관리할 수 있습니다.
+
+케이스 관리를 미리 보기로 사용할 수 있습니다. NetApp은 이 경험을 개선하고 다음 릴리즈에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 사용하여 피드백을 보내주십시오.
+
+다음 사항에 유의하십시오.
+
+* 페이지 상단의 케이스 관리 대시보드에서는 두 가지 보기를 제공합니다.
++
+** 왼쪽 보기에는 사용자가 제공한 NSS 계정으로 지난 3개월 동안 개설된 총 케이스가 표시됩니다.
+** 오른쪽 보기에는 사용자 NSS 계정을 기준으로 회사 수준에서 지난 3개월 동안 개설된 총 사례가 표시됩니다.
+
+
++
+테이블의 결과에는 선택한 보기와 관련된 사례가 반영됩니다.
+
+* 관심 있는 열을 추가 또는 제거할 수 있으며 우선 순위 및 상태 등의 열 내용을 필터링할 수 있습니다. 다른 열은 정렬 기능만 제공합니다.
++
+자세한 내용은 아래 단계를 참조하십시오.
+
+* 케이스 수준별로 케이스 메모를 업데이트하거나 아직 종결 또는 미결 종결 상태가 아닌 케이스를 종결할 수 있습니다.
+
+
+.단계
+. BlueXP에서 * 도움말 > 지원 * 을 클릭합니다.
+. Case Management * 를 클릭하고 메시지가 표시되면 NSS 계정을 BlueXP에 추가합니다.
++
+케이스 관리 * 페이지에는 BlueXP 사용자 계정과 연결된 NSS 계정과 관련된 미해결 케이스가 표시됩니다. NSS 관리 * 페이지 상단에 나타나는 것과 동일한 NSS 계정입니다.
+
+. 필요한 경우 테이블에 표시되는 정보를 수정합니다.
++
+** 조직의 케이스 * 에서 * 보기 * 를 클릭하여 회사와 관련된 모든 케이스를 봅니다.
+** 정확한 날짜 범위를 선택하거나 다른 기간을 선택하여 날짜 범위를 수정합니다.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-date-range.png["케이스 관리 페이지의 표 위에 있는 옵션 스크린샷으로 정확한 날짜 범위 또는 최근 7일, 30일 또는 3개월을 선택할 수 있습니다."]
+
+** 열의 내용을 필터링합니다.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-filter.png["활성 또는 종료와 같은 특정 상태와 일치하는 케이스를 필터링할 수 있는 상태 열의 필터 옵션 스크린샷"]
+
+** 을 클릭하여 테이블에 표시되는 열을 변경합니다 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-columns.png["테이블에 나타나는 더하기 아이콘입니다"] 표시할 열을 선택합니다.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-columns.png["표에 표시할 수 있는 열을 보여 주는 스크린샷"]
+
+
+
+. 를 클릭하여 기존 케이스를 관리합니다 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["표의 마지막 열에 세 개의 점이 있는 아이콘"] 사용 가능한 옵션 중 하나를 선택합니다.
++
+** * 사례 보기 *: 특정 케이스에 대한 전체 세부 정보를 봅니다.
+** * 사례 노트 업데이트 *: 문제에 대한 추가 세부 정보를 제공합니다.
+** * 케이스 종료 *: 케이스를 닫는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 클릭합니다.
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-actions.png["표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷"]
+
+

@@ -1,0 +1,149 @@
+---
+sidebar: sidebar 
+permalink: task-gcp-convert-image-raw.html 
+keywords: Google Cloud, image, VHD, image signature file, comvert, raw format, 
+summary: Google Cloud 명령줄을 통해 내보낸 이미지를 disk.raw 형식으로 변환합니다. 
+---
+= Google Cloud에서 이미지를 RAW 형식으로 변환합니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+새 인스턴스 배포, 업그레이드 또는 기존 이미지에 사용 중인 이미지는 를 통해 클라이언트와 공유됩니다 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NetApp Support 사이트(NSS)"^]. 서명된 다이제스트 및 인증서는 NSS 포털을 통해 다운로드할 수 있습니다. NetApp Support에서 공유하는 이미지에 해당하는 오른쪽 릴리즈에 대한 다이제스트 및 인증서를 다운로드했는지 확인합니다. 예를 들어 9.13.0 이미지는 9.13.0 서명된 다이제스트와 NSS에서 사용할 수 있는 인증서를 갖습니다.
+
+
+
+== 이 단계가 필요한 이유는 무엇입니까?
+
+Google Cloud의 이미지는 직접 다운로드할 수 없습니다. 서명된 다이제스트 및 인증서와 이미지를 비교하려면 두 파일을 비교하여 이미지를 다운로드하는 메커니즘이 있어야 합니다. 이렇게 하려면 이미지를 disk.raw 형식으로 내보내기/변환하고 결과를 Google Cloud의 저장 버킷에 저장해야 합니다. disk.raw 파일이 tarred로 압축되어 있습니다.
+
+사용자/서비스 계정에는 다음 작업을 수행할 수 있는 권한이 필요합니다.
+
+* Google 스토리지 버킷에 액세스
+* Google Storage 버킷에 쓰십시오
+* 클라우드 구축 작업 생성(내보내기 프로세스 중 사용)
+* 원하는 이미지에 액세스합니다
+* 이미지 내보내기 작업을 만듭니다
+
+
+이미지를 확인하려면 disk.raw 형식으로 변환한 다음 다운로드해야 합니다.
+
+
+
+== Google Cloud 명령줄을 사용하여 Google Cloud 이미지를 내보냅니다
+
+이미지를 클라우드 스토리지로 내보내는 기본 방법은 을 사용하는 것입니다 https://cloud.google.com/sdk/gcloud/reference/compute/images/export["gcloud 계산 이미지 내보내기 명령"^]. 이 명령은 제공된 이미지를 가져와 tarred와 gzip이 되는 disk.raw 파일로 변환합니다. 생성된 파일은 대상 URL에 저장되며 확인을 위해 다운로드할 수 있습니다.
+
+이 작업을 실행하려면 사용자/계정에 원하는 버킷에 액세스하고 쓰거나 이미지를 내보내고 Google에서 이미지를 내보낼 때 사용하는 클라우드 빌드에 액세스할 수 있는 권한이 있어야 합니다.
+
+* gcloud * 를 사용하여 Google Cloud 이미지를 내보냅니다
+
+.스크립트를 표시하려면 클릭합니다
+[%collapsible]
+====
+[source]
+----
+$ gcloud compute images export \
+    --destination-uri DESTINATION_URI \
+    --image IMAGE_NAME
+
+# For our example:
+$ gcloud compute images export \
+    --destination-uri gs://vsa-dev-bucket1/example-user-exportimage-gcp-demo \
+    --image example-user-20230120115139
+
+
+## DEMO ##
+# Step 1 - Optional: Checking access and listing objects in the destination bucket
+$ gsutil ls gs://example-user-export-image-bucket/
+
+# Step 2 - Exporting the desired image to the bucket
+$ gcloud compute images export --image example-user-export-image-demo --destination-uri gs://example-user-export-image-bucket/export-demo.tar.gz
+Created [https://cloudbuild.googleapis.com/v1/projects/example-demo-project/locations/us-central1/builds/xxxxxxxxxxxx].
+Logs are available at [https://console.cloud.google.com/cloud-build/builds;region=us-central1/xxxxxxxxxxxx?project=xxxxxxxxxxxx].
+[image-export]: 2023-01-25T18:13:48Z Fetching image "example-user-export-image-demo" from project "example-demo-project".
+[image-export]: 2023-01-25T18:13:49Z Validating workflow
+[image-export]: 2023-01-25T18:13:49Z Validating step "setup-disks"
+[image-export]: 2023-01-25T18:13:49Z Validating step "image-export-export-disk"
+[image-export.image-export-export-disk]: 2023-01-25T18:13:49Z Validating step "setup-disks"
+[image-export.image-export-export-disk]: 2023-01-25T18:13:49Z Validating step "run-image-export-export-disk"
+[image-export.image-export-export-disk]: 2023-01-25T18:13:50Z Validating step "wait-for-inst-image-export-export-disk"
+[image-export.image-export-export-disk]: 2023-01-25T18:13:50Z Validating step "copy-image-object"
+[image-export.image-export-export-disk]: 2023-01-25T18:13:50Z Validating step "delete-inst"
+[image-export]: 2023-01-25T18:13:51Z Validation Complete
+[image-export]: 2023-01-25T18:13:51Z Workflow Project: example-demo-project
+[image-export]: 2023-01-25T18:13:51Z Workflow Zone: us-central1-c
+[image-export]: 2023-01-25T18:13:51Z Workflow GCSPath: gs://example-demo-project-example-bkt-us/
+[image-export]: 2023-01-25T18:13:51Z Example scratch path: https://console.cloud.google.com/storage/browser/example-demo-project-example-bkt-us/example-image-export-20230125-18:13:49-r88px
+[image-export]: 2023-01-25T18:13:51Z Uploading sources
+[image-export]: 2023-01-25T18:13:51Z Running workflow
+[image-export]: 2023-01-25T18:13:51Z Running step "setup-disks" (CreateDisks)
+[image-export.setup-disks]: 2023-01-25T18:13:51Z CreateDisks: Creating disk "disk-image-export-image-export-r88px".
+[image-export]: 2023-01-25T18:14:02Z Step "setup-disks" (CreateDisks) successfully finished.
+[image-export]: 2023-01-25T18:14:02Z Running step "image-export-export-disk" (IncludeWorkflow)
+[image-export.image-export-export-disk]: 2023-01-25T18:14:02Z Running step "setup-disks" (CreateDisks)
+[image-export.image-export-export-disk.setup-disks]: 2023-01-25T18:14:02Z CreateDisks: Creating disk "disk-image-export-export-disk-image-export-image-export--r88px".
+[image-export.image-export-export-disk]: 2023-01-25T18:14:02Z Step "setup-disks" (CreateDisks) successfully finished.
+[image-export.image-export-export-disk]: 2023-01-25T18:14:02Z Running step "run-image-export-export-disk" (CreateInstances)
+[image-export.image-export-export-disk.run-image-export-export-disk]: 2023-01-25T18:14:02Z CreateInstances: Creating instance "inst-image-export-export-disk-image-export-image-export--r88px".
+[image-export.image-export-export-disk]: 2023-01-25T18:14:08Z Step "run-image-export-export-disk" (CreateInstances) successfully finished.
+[image-export.image-export-export-disk.run-image-export-export-disk]: 2023-01-25T18:14:08Z CreateInstances: Streaming instance "inst-image-export-export-disk-image-export-image-export--r88px" serial port 1 output to https://storage.cloud.google.com/example-demo-project-example-bkt-us/example-image-export-20230125-18:13:49-r88px/logs/inst-image-export-export-disk-image-export-image-export--r88px-serial-port1.log
+[image-export.image-export-export-disk]: 2023-01-25T18:14:08Z Running step "wait-for-inst-image-export-export-disk" (WaitForInstancesSignal)
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:14:08Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": watching serial port 1, SuccessMatch: "ExportSuccess", FailureMatch: ["ExportFailed:"] (this is not an error), StatusMatch: "GCEExport:".
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:14:29Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": StatusMatch found: "GCEExport: <serial-output key:'source-size-gb' value:'10'>"
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:14:29Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": StatusMatch found: "GCEExport: Running export tool."
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:14:29Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": StatusMatch found: "GCEExport: Disk /dev/sdb is 10 GiB, compressed size will most likely be much smaller."
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:14:29Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": StatusMatch found: "GCEExport: Beginning export process..."
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:14:29Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": StatusMatch found: "GCEExport: Copying \"/dev/sdb\" to gs://example-demo-project-example-bkt-us/example-image-export-20230125-18:13:49-r88px/outs/image-export-export-disk.tar.gz."
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:14:29Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": StatusMatch found: "GCEExport: Using \"/root/upload\" as the buffer prefix, 1.0 GiB as the buffer size, and 4 as the number of workers."
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:14:29Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": StatusMatch found: "GCEExport: Creating gzipped image of \"/dev/sdb\"."
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:14:29Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": StatusMatch found: "GCEExport: Read 1.0 GiB of 10 GiB (212 MiB/sec), total written size: 992 MiB (198 MiB/sec)"
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:14:59Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": StatusMatch found: "GCEExport: Read 8.0 GiB of 10 GiB (237 MiB/sec), total written size: 1.5 GiB (17 MiB/sec)"
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:15:19Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": StatusMatch found: "GCEExport: Finished creating gzipped image of \"/dev/sdb\" in 48.956433327s [213 MiB/s] with a compression ratio of 6."
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:15:19Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": StatusMatch found: "GCEExport: Finished export in  48.957347731s"
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:15:19Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": StatusMatch found: "GCEExport: <serial-output key:'target-size-gb' value:'2'>"
+[image-export.image-export-export-disk.wait-for-inst-image-export-export-disk]: 2023-01-25T18:15:19Z WaitForInstancesSignal: Instance "inst-image-export-export-disk-image-export-image-export--r88px": SuccessMatch found "ExportSuccess"
+[image-export.image-export-export-disk]: 2023-01-25T18:15:19Z Step "wait-for-inst-image-export-export-disk" (WaitForInstancesSignal) successfully finished.
+[image-export.image-export-export-disk]: 2023-01-25T18:15:19Z Running step "copy-image-object" (CopyGCSObjects)
+[image-export.image-export-export-disk]: 2023-01-25T18:15:19Z Running step "delete-inst" (DeleteResources)
+[image-export.image-export-export-disk.delete-inst]: 2023-01-25T18:15:19Z DeleteResources: Deleting instance "inst-image-export-export-disk".
+[image-export.image-export-export-disk]: 2023-01-25T18:15:19Z Step "copy-image-object" (CopyGCSObjects) successfully finished.
+[image-export.image-export-export-disk]: 2023-01-25T18:15:34Z Step "delete-inst" (DeleteResources) successfully finished.
+[image-export]: 2023-01-25T18:15:34Z Step "image-export-export-disk" (IncludeWorkflow) successfully finished.
+[image-export]: 2023-01-25T18:15:34Z Serial-output value -> source-size-gb:10
+[image-export]: 2023-01-25T18:15:34Z Serial-output value -> target-size-gb:2
+[image-export]: 2023-01-25T18:15:34Z Workflow "image-export" cleaning up (this may take up to 2 minutes).
+[image-export]: 2023-01-25T18:15:35Z Workflow "image-export" finished cleanup.
+
+# Step 3 - Validating the image was successfully exported
+$ gsutil ls gs://example-user-export-image-bucket/
+gs://example-user-export-image-bucket/export-demo.tar.gz
+
+
+# Step 4 - Download the exported image
+$ gcloud storage cp gs://BUCKET_NAME/OBJECT_NAME SAVE_TO_LOCATION
+
+$ gcloud storage cp gs://example-user-export-image-bucket/export-demo.tar.gz CVO_GCP_Signed_Digest.tar.gz
+Copying gs://example-user-export-image-bucket/export-demo.tar.gz to file://CVO_GCP_Signed_Digest.tar.gz
+  Completed files 1/1 | 1.5GiB/1.5GiB | 185.0MiB/s
+
+Average throughput: 213.3MiB/s
+$ ls -l
+total 1565036
+-rw-r--r-- 1 example-user example-user 1602589949 Jan 25 18:44 CVO_GCP_Signed_Digest.tar.gz
+----
+====
+압축 파일 압축 풀기 *
+
+[listing]
+----
+# Extracting files from the digest
+$ tar -xf CVO_GCP_Signed_Digest.tar.gz
+----
+
+NOTE: 을 참조하십시오 https://cloud.google.com/compute/docs/images/export-image#console["이미지 내보내기에 대한 Google Cloud 문서"^] Google Cloud를 통해 이미지를 내보내는 방법에 대한 자세한 내용은
