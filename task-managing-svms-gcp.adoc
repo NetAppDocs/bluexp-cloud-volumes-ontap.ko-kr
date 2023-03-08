@@ -106,14 +106,7 @@ BlueXP API를 사용하여 Google Cloud의 Cloud Volumes ONTAP 시스템에서 �
 BlueXP는 Google Cloud에 필요한 IP 주소를 할당하고 SMB/NFS 액세스를 위한 데이터 LIF와 아웃바운드 SMB 통신을 위한 iSCSI LIF를 사용하여 스토리지 VM을 생성합니다.
 
 .Google Cloud 권한이 필요합니다
-3.9.19 릴리즈부터 Cloud Volumes ONTAP HA 쌍에 대한 스토리지 VM을 생성하고 관리하기 위해 커넥터에는 다음 권한이 필요합니다.
-
-[source, yaml]
-----
-- compute.instanceGroups.get
-- compute.addresses.get
-----
-이러한 권한은 에 포함되어 있습니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["NetApp에서 제공하는 정책"].
+Connector에는 Cloud Volumes ONTAP HA 쌍에 대한 스토리지 VM을 생성하고 관리할 수 있는 특정 권한이 필요합니다. 필요한 권한은 에 포함되어 있습니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["NetApp에서 제공하는 정책"].
 
 .단계
 . 다음 API 호출을 사용하여 스토리지 VM을 생성합니다.
