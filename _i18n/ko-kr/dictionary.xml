@@ -1034,7 +1034,6 @@
   <block id="98fdd008687283335edf23e9e287cb83" category="paragraph">작업 환경을 생성할 때 스토리지 계층을 선택할 수 있으며 그 후에는 언제든지 변경할 수 있습니다. 스토리지 계층 변경에 대한 자세한 내용은 를 참조하십시오 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>.</block>
   <block id="a38b9b490932e9d5b5db3e24784ec656" category="paragraph">데이터 계층화를 위한 스토리지 액세스 계층은 볼륨 단위로 표시되지 않고 시스템 전체에 적용됩니다.</block>
   <block id="3b8940895816a07ee6f7b4cd2d7353e3" category="list-text">성능 계층은 SSD 영구 디스크, 균형 잡힌 영구 디스크 또는 표준 영구 디스크일 수 있습니다.</block>
-  <block id="56fcb51b5b1e4760266f6a808fa6396a" category="list-text">계층화된 데이터에 대한 기본 스토리지 클래스는 _Standard Storage_class입니다. 데이터에 자주 액세스하지 않는 경우 _Nearline Storage_ 또는 _Coldline Storage_ 로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 클래스를 변경하면 비활성 데이터가 표준 스토리지 클래스에서 시작되어 30일 후에 데이터에 액세스하지 않는 경우 선택한 스토리지 클래스로 전환됩니다.</block>
   <block id="5097a121ff5ccfae7cb78986b23616f8" category="inline-link">Google Cloud Storage용 스토리지 클래스에 대해 자세히 알아보십시오</block>
   <block id="3f1b0a674f5325ee098ce0196eda6d56" category="paragraph">데이터에 액세스하는 경우 액세스 비용이 더 높아지므로 스토리지 클래스를 변경하기 전에 이 점을 고려해야 합니다.<block ref="12bb21ea227f99e4e5df122704c6f379" category="inline-link-rx"></block>.</block>
   <block id="f273810af2be19da638a9463cfa6e62a" category="paragraph">작업 환경을 생성할 때 스토리지 계층을 선택할 수 있으며 그 후에는 언제든지 변경할 수 있습니다. 스토리지 클래스 변경에 대한 자세한 내용은 을 참조하십시오 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>.</block>
@@ -2908,8 +2907,6 @@
   <block id="4fbd5770a6fd5de01bbbcf2a407118d7" category="list-text">스토리지 계정 키 액세스: 사용</block>
   <block id="c826704ed8ef326581305fef2036bfb6" category="list-text">최소 TLS 버전: 버전 1.2</block>
   <block id="276a9219319519ae3ee8b320e4458068" category="list-text">인프라 암호화: 사용 안 함</block>
-  <block id="fb3bd9a69b565a8866ad383666b98f8c" category="list-text">Azure의 계층화된 데이터에 대한 기본 스토리지 액세스 계층은 _hot_tier입니다. 핫 계층은 자주 액세스하는 데이터에 적합합니다.</block>
-  <block id="45c06cdb409b9857a0b2089bf2cff7a0" category="paragraph">비활성 데이터에 액세스할 계획이 없는 경우 _cool_storage 계층으로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 계층을 변경하면 비활성 데이터가 핫 스토리지 계층에서 시작되어 30일 후에 데이터에 액세스하지 않는 경우 냉각 스토리지 계층으로 전환됩니다.</block>
   <block id="f2bc66356d174d95b97b4e9b8b873540" category="list-text">Cloud Volumes ONTAP 시스템은 단일 Google 클라우드 스토리지 버킷에 비활성 데이터를 계층화합니다.</block>
   <block id="bd15f9947281cda8b8713ff72eb007f8" category="list-text">위치 유형: 지역</block>
   <block id="95e66c145ec5a9c6db0940e3c8b89f10" category="list-text">공용 액세스: 개체 ACL의 영향을 받습니다</block>
@@ -3413,7 +3410,6 @@
   <block id="0d007d44f30aa9582772f6ca7709803f" category="paragraph">무제한 백업을 통해 모든 유형의 Cloud Volumes ONTAP 구성에 대한 용량별 지불.</block>
   <block id="fdb568933703a9268c5ba46f3208f414" category="list-text">모든 Cloud Volumes ONTAP 구성에 대한 라이센스를 제공합니다</block>
   <block id="2b7a2bda81dcf84ff8d6b600415c5e52" category="paragraph">동일한 속도로 운영 및 2차 볼륨의 용량을 충전하는 단일 노드 또는 HA</block>
-  <block id="2d856ef929513d16aba9286266a2ea92" category="list-text">클라우드 백업을 사용한 무제한 볼륨 백업을 포함하지만 프로페셔널 패키지와 함께 배포된 Cloud Volumes ONTAP 시스템에만 포함됩니다</block>
   <block id="728fd439c2abdc887c4a5e678d7c8708" category="paragraph">용량 기반 라이센스 패키지는 다음 소비 모델에서 사용할 수 있습니다.</block>
   <block id="fcbd09a2622ccd7b58495c6277262566" category="list-text">* BYOL *: NetApp에서 구입한 라이센스로 클라우드 공급자에 상관없이 Cloud Volumes ONTAP를 구축할 수 있습니다.</block>
   <block id="1e101142b61a711e7fbc92238adf9d20" category="list-text">* PAYGO *: 클라우드 공급자 마켓플레이스의 시간별 구독입니다.</block>
@@ -4314,7 +4310,6 @@
   <block id="f30b44d93ffa429590bd7907a3d0099c" category="paragraph">Cloud Volumes ONTAP 9.10.1 이상에서는 다음과 같은 충전 동작을 이해해야 합니다.</block>
   <block id="0514cef4c1e1a5949a3acc085ee50110" category="list-text">ONTAP 9.10.1.1부터 WORM 볼륨과 비 WORM 볼륨이 동일한 애그리게이트에 존재할 수 있습니다.</block>
   <block id="7ec6925d846a27916198adf7334fcae3" category="list-text">Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM을 활성화하면 BlueXP에서 생성한 모든 볼륨에서 WORM이 활성화됩니다. 그러나 ONTAP CLI 또는 System Manager를 사용하여 WORM이 비활성화된 볼륨을 생성할 수 있습니다. 이러한 볼륨은 WORM 속도로 충전되지 않습니다.</block>
-  <block id="3101fb677e91832ce5fd2af7de4c1850" category="list-text">작업 환경을 생성할 때 WORM을 활성화하지 않으면 BlueXP에서 생성한 모든 볼륨에서 WORM이 비활성화됩니다. 해당 볼륨에 대해 WORM 속도로 충전되지 않습니다. 그러나 ONTAP CLI 또는 System Manager를 사용하여 WORM 지원 볼륨을 생성할 수 있습니다. 이러한 볼륨은 WORM 속도로 충전됩니다.</block>
   <block id="38aefad2ca205e663da97b7fdd932dcf" category="paragraph"><block ref="38aefad2ca205e663da97b7fdd932dcf" category="inline-link-rx"></block></block>
   <block id="b9eeb00cda3e979e1efe9bef61f951fc" category="list-text">Azure HA 다중 가용성 영역</block>
   <block id="0f8e1302b6dedb536c0490b7602b0b32" category="list-text">ONTAP 9.10.1P3에서 NVRAM 및 코어 디스크의 경우 BlueXP는 을 사용합니다<block ref="c7a6854bb19ab523fbe585f89a860944" category="inline-link-rx"></block>관리 디스크를 사용하여 암호화 키를 관리할 수 있습니다. 하위 버전은 고객 관리 키 대신 Microsoft 관리 키를 사용합니다.</block>
@@ -4440,16 +4435,11 @@
   <block id="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="paragraph"><block ref="c7db6ec8c72cc25c90f19ebafe2ddfbd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="770d7d25a250359f096cca82c310f07b" category="paragraph">WORM 스토리지의 활성화 방법은 사용 중인 Cloud Volumes ONTAP 버전에 따라 다릅니다.</block>
   <block id="f7bdab9f1b3e432deef3bba2021d518d" category="section-title">버전 9.10.1 이상</block>
-  <block id="634f99868031f4c19cc89185a03da350" category="paragraph">Cloud Volumes ONTAP 9.10.1부터 볼륨 레벨에서 WORM을 활성화 또는 비활성화할 수 있습니다. WORM의 사용 방법은 필요에 따라 다릅니다.</block>
   <block id="2c404b5c40a30cea75e4486ca42855d7" category="paragraph">새 Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM 스토리지를 설정하거나 해제하라는 메시지가 표시됩니다.</block>
   <block id="1000fd534e8c9bff4332bafb5a9125aa" category="list-text">작업 환경을 생성할 때 WORM 스토리지를 활성화하면 BlueXP에서 생성한 모든 볼륨에서 WORM이 활성화됩니다. 그러나 System Manager 또는 CLI를 사용하여 WORM을 사용하지 않는 볼륨을 생성할 수 있습니다.</block>
-  <block id="8614dac2e3bd328ce10de870996db0f5" category="paragraph">이 옵션은 WORM 스토리지용 전용 시스템을 생성하려는 경우에 적합합니다.</block>
-  <block id="53c068d69d7edf4c467cf5bb2a3193dd" category="list-text">작업 환경을 생성할 때 WORM 스토리지를 비활성화하면 BlueXP에서 생성한 모든 볼륨에서 WORM이 비활성화됩니다. 그러나 System Manager 또는 CLI를 사용하여 WORM 지원 볼륨을 생성할 수 있습니다.</block>
-  <block id="03b892a4c3b15391f53e9a5afe77bb58" category="paragraph">이 옵션은 동일한 시스템에서 여러 유형의 볼륨을 혼합하려는 경우에 적합합니다.</block>
   <block id="3cbff90f9e1dd222c93cec86291eb0d2" category="inline-xref">충전 작동 방식을 이해합니다</block>
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">두 가지 옵션 중 하나를 사용할 경우 가능합니다 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>.</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">버전 9.10.0 이하</block>
-  <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">새로운 작업 환경을 생성할 때 Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화할 수 있습니다. 개별 볼륨에서 WORM 스토리지를 활성화할 수 없음 -- WORM은 시스템 레벨에서 활성화해야 합니다. 작업 환경을 생성할 때만 활성화할 수 있습니다.</block>
   <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">구매한 용량이 3Tib마다 엣지 노드 1개</block>
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">클라우드 공급자 솔루션 지원</block>
   <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">BlueXP에 통합한 다음 클라우드 제공업체 솔루션에 대한 기술 지원은 해당 제품에 대한 BlueXP 설명서의 "도움말 얻기"를 참조하십시오.</block>
@@ -4756,4 +4746,15 @@
   <block id="686559ad5b35ebcac7c3039ba4d273ec" category="paragraph">가 없는 경우<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 그러나 계정 관리자는 계정을 만들어야 합니다.<block ref="5057dc0bf3c81969de0b1b1e5a9bc718" category="inline-link-rx"></block></block>
   <block id="a646f605cbf6ed0d1902ed148dff6a02" category="paragraph">가 없는 경우<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 그러나 계정 관리자는 계정을 만들어야 합니다.<block ref="e02c55c05c6081d62516fdec2316cf6c" category="inline-link-rx"></block></block>
   <block id="60a5bfe73545b12bdf2f8c33e65bedb4" category="paragraph">Connector에는 Cloud Volumes ONTAP HA 쌍에 대한 스토리지 VM을 생성하고 관리할 수 있는 특정 권한이 필요합니다. 필요한 권한은 에 포함되어 있습니다<block ref="4e2f5782ef353f7277cd9ba2163caaf1" category="inline-link-rx"></block>.</block>
+  <block id="256b759fe821d1e6df4108737b419291" category="list-text">클라우드 백업을 사용한 무제한 볼륨 백업을 포함하지만 프로페셔널 패키지를 사용하는 Cloud Volumes ONTAP 시스템에만 포함됩니다</block>
+  <block id="c8f6e82c7aad23d387dc5633fe484591" category="paragraph">Cloud Volumes ONTAP 9.10.1부터 볼륨 레벨에서 WORM을 활성화 또는 비활성화할 수 있습니다.</block>
+  <block id="686bb3ee7d23fdaf656f41328b5449e7" category="list-text">작업 환경을 생성할 때 WORM 스토리지를 비활성화하면 BlueXP, System Manager 또는 CLI에서 생성한 모든 볼륨에서 WORM 스토리지가 비활성화됩니다. 생성 중 활성화되지 않은 Cloud Volumes ONTAP 작업 환경에서 WORM을 활성화하려면 NetApp 지원 부서의 지원 티켓을 생성해야 합니다.</block>
+  <block id="f4b6aa85f64f47d1816ec182949156ef" category="paragraph">새로운 작업 환경을 생성할 때 Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화할 수 있습니다. BlueXP에서 생성한 모든 볼륨에서 WORM이 활성화되어 있습니다. 개별 볼륨에서 WORM 스토리지를 비활성화할 수 없습니다.</block>
+  <block id="60e4218f85755238d0c16943a070de88" category="list-text">작업 환경을 생성할 때 WORM을 활성화하지 않으면 BlueXP에서 생성한 모든 볼륨에서 WORM이 비활성화됩니다. 해당 볼륨에 대해 WORM 속도로 충전되지 않습니다.</block>
+  <block id="39c6a1c30ae1faf01f4bd99a4757f7ae" category="paragraph">Azure Private Links를 사용하지 않도록 설정하고 Connector가 프록시 서버를 사용하는 경우 직접 API 트래픽을 활성화해야 합니다.</block>
+  <block id="40e86593118ce089551b3691f6bba919" category="inline-link">Connector에서 직접 API 트래픽을 활성화하는 방법에 대해 알아봅니다</block>
+  <block id="fd4c1859263bee09c6463abbca610eae" category="paragraph"><block ref="fd4c1859263bee09c6463abbca610eae" category="inline-link-rx"></block></block>
+  <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure의 계층화된 데이터에 대한 기본 스토리지 액세스 계층은 _hot_tier입니다. 핫 계층은 용량 계층에서 자주 액세스하는 데이터에 적합합니다.</block>
+  <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">용량 계층의 비활성 데이터에 액세스할 계획이 없는 경우 _cool_storage 계층으로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 계층을 냉각으로 변경하면 비활성 용량 계층 데이터가 차가운 스토리지 계층으로 직접 이동합니다.</block>
+  <block id="3e06c5fbfb4be981b82d7b6b33bb900f" category="list-text">계층화된 데이터에 대한 기본 스토리지 클래스는 _Standard Storage_class입니다. 데이터에 자주 액세스하지 않는 경우 _Nearline Storage_ 또는 _Coldline Storage_ 로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 클래스를 변경하면 비활성 데이터가 선택한 클래스로 직접 이동합니다.</block>
 </blocks>

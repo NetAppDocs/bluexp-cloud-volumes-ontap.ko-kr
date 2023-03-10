@@ -41,6 +41,11 @@ BlueXP는 두 가지 구성 모두 Cloud Volumes ONTAP 및 스토리지 계정 �
 . 저장 * 을 클릭합니다.
 
 
+.작업을 마친 후
+Azure Private Links를 사용하지 않도록 설정하고 Connector가 프록시 서버를 사용하는 경우 직접 API 트래픽을 활성화해야 합니다.
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["Connector에서 직접 API 트래픽을 활성화하는 방법에 대해 알아봅니다"^]
+
 
 
 == Azure 개인 링크 사용

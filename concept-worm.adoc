@@ -34,18 +34,12 @@ WORM 스토리지의 활성화 방법은 사용 중인 Cloud Volumes ONTAP 버�
 
 === 버전 9.10.1 이상
 
-Cloud Volumes ONTAP 9.10.1부터 볼륨 레벨에서 WORM을 활성화 또는 비활성화할 수 있습니다. WORM의 사용 방법은 필요에 따라 다릅니다.
+Cloud Volumes ONTAP 9.10.1부터 볼륨 레벨에서 WORM을 활성화 또는 비활성화할 수 있습니다.
 
 새 Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM 스토리지를 설정하거나 해제하라는 메시지가 표시됩니다.
 
 * 작업 환경을 생성할 때 WORM 스토리지를 활성화하면 BlueXP에서 생성한 모든 볼륨에서 WORM이 활성화됩니다. 그러나 System Manager 또는 CLI를 사용하여 WORM을 사용하지 않는 볼륨을 생성할 수 있습니다.
-+
-이 옵션은 WORM 스토리지용 전용 시스템을 생성하려는 경우에 적합합니다.
-
-* 작업 환경을 생성할 때 WORM 스토리지를 비활성화하면 BlueXP에서 생성한 모든 볼륨에서 WORM이 비활성화됩니다. 그러나 System Manager 또는 CLI를 사용하여 WORM 지원 볼륨을 생성할 수 있습니다.
-+
-이 옵션은 동일한 시스템에서 여러 유형의 볼륨을 혼합하려는 경우에 적합합니다.
-
+* 작업 환경을 생성할 때 WORM 스토리지를 비활성화하면 BlueXP, System Manager 또는 CLI에서 생성한 모든 볼륨에서 WORM 스토리지가 비활성화됩니다. 생성 중 활성화되지 않은 Cloud Volumes ONTAP 작업 환경에서 WORM을 활성화하려면 NetApp 지원 부서의 지원 티켓을 생성해야 합니다.
 
 
 두 가지 옵션 중 하나를 사용할 경우 가능합니다 <<충전 중,충전 작동 방식을 이해합니다>>.
@@ -54,7 +48,7 @@ Cloud Volumes ONTAP 9.10.1부터 볼륨 레벨에서 WORM을 활성화 또는 �
 
 === 버전 9.10.0 이하
 
-새로운 작업 환경을 생성할 때 Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화할 수 있습니다. 개별 볼륨에서 WORM 스토리지를 활성화할 수 없음 -- WORM은 시스템 레벨에서 활성화해야 합니다. 작업 환경을 생성할 때만 활성화할 수 있습니다.
+새로운 작업 환경을 생성할 때 Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화할 수 있습니다. BlueXP에서 생성한 모든 볼륨에서 WORM이 활성화되어 있습니다. 개별 볼륨에서 WORM 스토리지를 비활성화할 수 없습니다.
 
 
 
@@ -66,7 +60,7 @@ Cloud Volumes ONTAP 9.10.1 이상에서는 다음과 같은 충전 동작을 이
 
 * ONTAP 9.10.1.1부터 WORM 볼륨과 비 WORM 볼륨이 동일한 애그리게이트에 존재할 수 있습니다.
 * Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM을 활성화하면 BlueXP에서 생성한 모든 볼륨에서 WORM이 활성화됩니다. 그러나 ONTAP CLI 또는 System Manager를 사용하여 WORM이 비활성화된 볼륨을 생성할 수 있습니다. 이러한 볼륨은 WORM 속도로 충전되지 않습니다.
-* 작업 환경을 생성할 때 WORM을 활성화하지 않으면 BlueXP에서 생성한 모든 볼륨에서 WORM이 비활성화됩니다. 해당 볼륨에 대해 WORM 속도로 충전되지 않습니다. 그러나 ONTAP CLI 또는 System Manager를 사용하여 WORM 지원 볼륨을 생성할 수 있습니다. 이러한 볼륨은 WORM 속도로 충전됩니다.
+* 작업 환경을 생성할 때 WORM을 활성화하지 않으면 BlueXP에서 생성한 모든 볼륨에서 WORM이 비활성화됩니다. 해당 볼륨에 대해 WORM 속도로 충전되지 않습니다.
 
 
 https://cloud.netapp.com/pricing["WORM 스토리지 가격에 대해 자세히 알아보십시오"^]
