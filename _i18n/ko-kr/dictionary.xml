@@ -4757,4 +4757,7 @@
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure의 계층화된 데이터에 대한 기본 스토리지 액세스 계층은 _hot_tier입니다. 핫 계층은 용량 계층에서 자주 액세스하는 데이터에 적합합니다.</block>
   <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">용량 계층의 비활성 데이터에 액세스할 계획이 없는 경우 _cool_storage 계층으로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 계층을 냉각으로 변경하면 비활성 용량 계층 데이터가 차가운 스토리지 계층으로 직접 이동합니다.</block>
   <block id="3e06c5fbfb4be981b82d7b6b33bb900f" category="list-text">계층화된 데이터에 대한 기본 스토리지 클래스는 _Standard Storage_class입니다. 데이터에 자주 액세스하지 않는 경우 _Nearline Storage_ 또는 _Coldline Storage_ 로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 클래스를 변경하면 비활성 데이터가 선택한 클래스로 직접 이동합니다.</block>
+  <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
+  <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">이제 BlueXP는 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.13.0을 배포하고 관리할 수 있습니다.</block>
+  <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>.</block>
 </blocks>

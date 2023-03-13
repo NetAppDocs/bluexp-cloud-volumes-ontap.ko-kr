@@ -26,6 +26,14 @@ BlueXP(이전의 Cloud Manager)에서 Cloud Volumes ONTAP 관리의 새로운 �
 
 
 
+=== Cloud Volumes ONTAP 9.13.0
+
+이제 BlueXP는 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.13.0을 배포하고 관리할 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
+
+
+
 === Azure에서 16TiB 및 32TiB 지원
 
 이제 Cloud Volumes ONTAP는 16TiB 및 32TiB 디스크 크기를 지원하여 Azure의 관리 대상 디스크에서 실행되는 고가용성 배포를 지원합니다.
