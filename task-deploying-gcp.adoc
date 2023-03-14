@@ -392,7 +392,7 @@ link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시
 
 +
 
-NOTE: _Flash Cache_, 고속 쓰기 속도 및 896의 고속 전송 단위(MTU)는 * 고속 * 쓰기 속도 옵션을 통해 사용할 수 있으며, n2-표준-16, n2-표준-32, n2-표준-48, n2-표준-64 인스턴스 유형이 있습니다. 또한, 8,896의 MTU가 높을수록 구축 시 VCP-1, VPC-2 또는 VCP-3을 선택해야 합니다. _Flash Cache_, 높은 쓰기 속도 및 8,896의 MTU는 기능마다 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다.
+NOTE: _Flash Cache_, 고속 쓰기 속도 및 8,896바이트의 더 높은 최대 전송 단위(MTU)는 * 고속 * 쓰기 속도 옵션을 통해 사용할 수 있으며, n2-표준-16, n2-표준-32, n2-표준-48 및 n2-표준-64 인스턴스 유형이 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. _Flash Cache_, 높은 쓰기 속도 및 8,896의 MTU는 기능마다 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1, VPC-2 및 VPC-3에 대한 규칙"].
 
 .. 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
 +

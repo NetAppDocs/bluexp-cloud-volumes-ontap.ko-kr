@@ -4674,7 +4674,6 @@
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">* 케이스 종료 *: 케이스를 닫는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 클릭합니다.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3c6506a0407767fa4ee430c24f3b89e2" category="admonition">_Flash Cache_, 고속 쓰기 속도 및 896의 고속 전송 단위(MTU)는 * 고속 * 쓰기 속도 옵션을 통해 사용할 수 있으며, n2-표준-16, n2-표준-32, n2-표준-48, n2-표준-64 인스턴스 유형이 있습니다. 또한, 8,896의 MTU가 높을수록 구축 시 VCP-1, VPC-2 또는 VCP-3을 선택해야 합니다. _Flash Cache_, 높은 쓰기 속도 및 8,896의 MTU는 기능마다 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다.</block>
   <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.13.0 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.</block>
   <block id="436ea77bab9d72d8fe71dbccf1dd6613" category="list-text">멀티 테넌트 암호화 키 관리(MTEKM) 라이센스가 설치되어 있으며 Cloud Volumes ONTAP 9.12.1 GA부터 시작합니다.</block>
   <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">Cloud Volumes ONTAP 이미지 다이제스트 파일 도구를 통해 내보낸 Google 클라우드 이미지 파일 서명을 확인합니다.</block>
@@ -4760,4 +4759,12 @@
   <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
   <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">이제 BlueXP는 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.13.0을 배포하고 관리할 수 있습니다.</block>
   <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>.</block>
+  <block id="12169a51b108f73888655f2a089d493a" category="list-text">중국 지역에서는 BYOL을 사용하는 단일 노드 시스템만 지원됩니다.</block>
+  <block id="80dcfd22a2b6d14e887c1030b67098dd" category="admonition">_Flash Cache_, 고속 쓰기 속도 및 8,896바이트의 더 높은 최대 전송 단위(MTU)는 * 고속 * 쓰기 속도 옵션을 통해 사용할 수 있으며, n2-표준-16, n2-표준-32, n2-표준-48 및 n2-표준-64 인스턴스 유형이 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. _Flash Cache_, 높은 쓰기 속도 및 8,896의 MTU는 기능마다 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오<block ref="4cee9c1f75c8867521472d51adc68a19" category="inline-link-rx"></block>.</block>
+  <block id="ac1c722990c18687e956d9488b59bd3d" category="admonition">새로운 Google Cloud HA 쌍 구축에 빠른 쓰기 속도를 사용하려면 VPC-1, VPC-2 및 VPC-3에 최소 8,896바이트의 최대 전송 단위(MTU)가 필요합니다. 기존 VPC-1, VPC-2 및 VPC-3을 MTU가 8,896바이트인 경우 구성 프로세스 중에 이러한 VPC를 사용하여 모든 기존 HA 시스템을 종료해야 합니다.</block>
+  <block id="8ffbbcac612c8285be31d80ec1c1454d" category="admonition">고속 * 쓰기 속도 옵션은 버전 9.13.0부터 Google Cloud의 Cloud Volumes ONTAP HA 쌍에서 지원됩니다.</block>
+  <block id="98f6dc87e7c206ec16da559a2af45beb" category="section-title">Google Cloud의 Flash Cache 및 빠른 쓰기 속도</block>
+  <block id="77e5d57bae938bc31208cded57756dc8" category="paragraph">Cloud Volumes ONTAP 9.13.0 릴리즈의 일부 인스턴스에서 Flash Cache, 높은 쓰기 속도 및 높은 MTU(최대 전송 단위)를 8,896바이트로 지원할 수 있습니다.</block>
+  <block id="80d41628bf38145af2326ce3d52d8e91" category="inline-link-macro">Google Cloud 라이센스에 의해 지원되는 구성</block>
+  <block id="0a623de488b37ca75333d521fccaa559" category="paragraph">에 대해 자세히 알아보십시오 <block ref="cdeafd55498169f22d9d7a55ffee4ff4" category="inline-link-macro-rx"></block>.</block>
 </blocks>

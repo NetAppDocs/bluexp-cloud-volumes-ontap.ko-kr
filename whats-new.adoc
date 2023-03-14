@@ -63,6 +63,14 @@ Cloud Volumes ONTAP는 이제 인터넷으로부터 완전히 분리된 모든 �
 
 
 
+=== Google Cloud의 Flash Cache 및 빠른 쓰기 속도
+
+Cloud Volumes ONTAP 9.13.0 릴리즈의 일부 인스턴스에서 Flash Cache, 높은 쓰기 속도 및 높은 MTU(최대 전송 단위)를 8,896바이트로 지원할 수 있습니다.
+
+에 대해 자세히 알아보십시오 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud 라이센스에 의해 지원되는 구성"^].
+
+
+
 == 2023년 2월 5일
 
 다음 변경 사항은 커넥터의 3.9.26 릴리스에 도입되었습니다.
