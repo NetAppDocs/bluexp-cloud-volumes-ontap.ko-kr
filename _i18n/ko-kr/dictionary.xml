@@ -4767,4 +4767,12 @@
   <block id="77e5d57bae938bc31208cded57756dc8" category="paragraph">Cloud Volumes ONTAP 9.13.0 릴리즈의 일부 인스턴스에서 Flash Cache, 높은 쓰기 속도 및 높은 MTU(최대 전송 단위)를 8,896바이트로 지원할 수 있습니다.</block>
   <block id="80d41628bf38145af2326ce3d52d8e91" category="inline-link-macro">Google Cloud 라이센스에 의해 지원되는 구성</block>
   <block id="0a623de488b37ca75333d521fccaa559" category="paragraph">에 대해 자세히 알아보십시오 <block ref="cdeafd55498169f22d9d7a55ffee4ff4" category="inline-link-macro-rx"></block>.</block>
+  <block id="0eeac28a6eb03f47165f3c65b5e13cea" category="section-title">2023년 3월 13일</block>
+  <block id="5eeac325d343b1bb90074e1be60dd1ae" category="section-title">중국 지역 지원</block>
+  <block id="f3818f17dde36b1601ccfef8ceab6cbe" category="paragraph">Cloud Volumes ONTAP 9.12.1 GA부터 중국 지역 지원이 Azure에서 다음과 같이 지원됩니다.</block>
+  <block id="49b72186e2fe2638cbb520201b58bc02" category="list-text">Cloud Volumes ONTAP는 중국 북부에서 지원됩니다. 3.</block>
+  <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">단일 노드 시스템이 지원됩니다.</block>
+  <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">NetApp에서 직접 구매한 라이센스가 지원됩니다.</block>
+  <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">Cloud Volumes ONTAP를 위한 글로벌 지역 맵</block>
+  <block id="39aeb3e37839611b14bfa6c7390065c1" category="paragraph">지역별 이용 가능 여부는 를 참조하십시오 <block ref="69e22a6a63d14aa651819a20b96c9cc5" category="inline-link-macro-rx"></block>.</block>
 </blocks>
