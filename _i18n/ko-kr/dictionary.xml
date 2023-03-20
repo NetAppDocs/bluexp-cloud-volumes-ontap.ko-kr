@@ -2726,10 +2726,8 @@
   <block id="aba6d4795536d5c4e61cf75ce0ddd22c" category="list-text">노드 2에서 NAS 데이터 LIF 액세스를 위한 단일 IP 주소</block>
   <block id="7a5be31086b3ad69d1c6b2c5abafcc64" category="list-text">노드 1에서 데이터 LIF 액세스를 위한 프런트엔드 IP 구성을 하나 생성하고, 노드 2에서 데이터 LIF 액세스를 위한 또 다른 프런트엔드 IP를 생성하고, 스토리지 VM(SVM) 관리 LIF를 위한 또 다른 선택적 프런트엔드 IP를 생성합니다.</block>
   <block id="c09d6988bf61135b41e7b195d446e2b9" category="paragraph">SMB 데이터에 사용하는 IP 주소는 로드 밸런서에 할당되어 페일오버 이벤트가 발생할 경우 IP 주소가 다른 노드로 마이그레이션될 수 있습니다.</block>
-  <block id="da253cd0d6c8d87b61a60f7e67560913" category="list-text">노드 1의 iSCSI LIF에 대한 1개의 IP 주소입니다</block>
   <block id="5aa1fc4c5c5e3c602f89524b94fcaf47" category="list-text">노드 2의 iSCSI LIF에 대한 1개의 IP 주소입니다</block>
   <block id="d31b2ca2df7d7ec89a597cf3ff166e6d" category="paragraph">iSCSI LIF는 DNS 및 SMB 통신에 필요합니다. iSCSI LIF는 페일오버 시 마이그레이션되지 않으므로 이 용도로 사용됩니다.</block>
-  <block id="ccc2da4a96a5d07ea0b03ab18f4ed608" category="list-text">필요한 프런트엔드 IP 구성 수 생성:</block>
   <block id="3ad6e3f460248126da5c801e403088c1" category="paragraph">Azure에서 IP 주소를 할당한 후에는 단일 노드 시스템 또는 HA 쌍 에 새 스토리지 VM을 생성할 수 있습니다.</block>
   <block id="5683cfda0c67cd1651e904160b0a5460" category="paragraph">단일 노드 시스템에서 스토리지 VM 및 LIF를 생성하는 방법은 사용 중인 스토리지 프로토콜에 따라 다릅니다.</block>
   <block id="2d376cf045c4838856b9429d7fecf7a5" category="paragraph">필요한 LIF와 함께 새 스토리지 VM을 생성하려면 다음 단계를 따르십시오.</block>
@@ -2738,7 +2736,6 @@
   <block id="83871791a7611e5a981ec0b38a662078" category="list-text">다음 명령을 사용하여 노드 2에 iSCSI LIF를 생성합니다.</block>
   <block id="0cffe85429bb79552ce3607190d9dbad" category="list-text">다음 명령을 사용하여 노드 2에 NAS LIF를 생성합니다.</block>
   <block id="6c6c472de3f0cea0f21c8e31be81490c" category="list-text">NAS 데이터 LIF 생성:</block>
-  <block id="477dc9bfd99f5e3ed09c8dbdc76a2c7c" category="list-text">iSCSI LIF를 생성하여 DNS 및 SMB 통신 제공:</block>
   <block id="1d690a933c240dda520f6527f56da475" category="paragraph">9.7 릴리즈부터 특정 Cloud Volumes ONTAP 구성에서 여러 스토리지 VM이 지원됩니다. 로 이동합니다<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.</block>
   <block id="62978cf670cdcd284392400fa0cb70a9" category="list-text">* 선택한 VPC만 해당 *: 인바운드 트래픽의 소스 필터는 Cloud Volumes ONTAP 시스템용 VPC의 서브넷 범위와 커넥터가 상주하는 VPC의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.</block>
   <block id="ba2e1bf50371835f50d77c05a977d80c" category="list-text">* 모든 VPC *: 인바운드 트래픽의 소스 필터는 0.0.0.0/0 IP 범위입니다.</block>
@@ -4775,4 +4772,19 @@
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">NetApp에서 직접 구매한 라이센스가 지원됩니다.</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">Cloud Volumes ONTAP를 위한 글로벌 지역 맵</block>
   <block id="39aeb3e37839611b14bfa6c7390065c1" category="paragraph">지역별 이용 가능 여부는 를 참조하십시오 <block ref="69e22a6a63d14aa651819a20b96c9cc5" category="inline-link-macro-rx"></block>.</block>
+  <block id="8a83d5aff252fbe923fc5b8ce4cab9f9" category="paragraph">DNS 통신을 위해 iSCSI LIF가 필요합니다. iSCSI LIF는 페일오버 시 마이그레이션되지 않으므로 이 용도로 사용됩니다.</block>
+  <block id="c87f63c179c59eda8579e373c6a25976" category="paragraph">로드 밸런서에 다음 IP 주소를 만들어야 합니다.</block>
+  <block id="9b31eba9539b4b373752a1f9efafb8ac" category="list-text">각 VM의 해당 NIC0에 있는 노드 1의 iSCSI LIF에 대한 IP 주소 1개</block>
+  <block id="6f2174023153761cdb987311021eaf2b" category="list-text">데이터 및 SVM LIF에 필요한 수의 프런트엔드 IP 구성을 생성합니다.</block>
+  <block id="37dd90c0b5c3c64f5ce58ece1a549527" category="admonition">프런트엔드 IP는 각 해당 SVM에 대해 NIC0 아래에 생성되어야 합니다. SVM NIC0에 IP 주소를 추가하는 방법에 대한 자세한 내용은 "7단계[하이퍼링크]" 를 참조하십시오.</block>
+  <block id="b31c05988fa937699345307f0d088b5e" category="list-text">iSCSI LIF의 경우 NIC0의 IP 주소를 추가합니다.</block>
+  <block id="d8268f30cad7ca754b650b30d5a9fb20" category="list-text">설정에서 * IP 설정 * 을 클릭합니다.</block>
+  <block id="f14404f1eb77db8c34dfa687da4e9969" category="inline-image-macro">Azure 포털의 IP 구성 페이지 스크린샷</block>
+  <block id="d3f503b2101b1859a2272746e61a2bca" category="paragraph"><block ref="d3f503b2101b1859a2272746e61a2bca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d8292c375cfd1e8785887fa2307c216e" category="list-text">IP 구성의 이름을 입력하고 Dynamic 을 선택한 다음 * OK * 를 클릭합니다.</block>
+  <block id="d139a8131606839195ad605bafe04b07" category="inline-image-macro">Add IP configuration(IP 구성 추가) 창에 대한 스크린샷</block>
+  <block id="d78a1a202c691ad37ba63488112cab29" category="paragraph"><block ref="d78a1a202c691ad37ba63488112cab29" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">방금 만든 IP 구성의 이름을 클릭하고 Assignment 를 Static 으로 변경한 다음 * Save * 를 클릭합니다.</block>
+  <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">다음 명령을 입력하여 고급 모드에 액세스합니다.</block>
+  <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">DNS 통신을 제공하기 위해 iSCSI LIF 생성:</block>
 </blocks>

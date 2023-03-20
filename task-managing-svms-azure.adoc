@@ -111,6 +111,9 @@ NFS에 사용하는 IP 주소는 로드 밸런싱 장치에 할당되어 페일�
 * 노드 2에서 NAS 데이터 LIF 액세스를 위한 단일 IP 주소
 * 스토리지 VM(SVM) 관리 LIF의 선택적 IP 주소입니다
 +
+DNS 통신을 위해 iSCSI LIF가 필요합니다. iSCSI LIF는 페일오버 시 마이그레이션되지 않으므로 이 용도로 사용됩니다.
+
++
 이 관리 LIF는 SnapCenter과 같은 관리 툴에 연결할 수 있습니다.
 
 
@@ -173,11 +176,11 @@ image:screenshot_azure_lb_rule.gif["Azure 포털에서 위에 표시된 필드�
 --
 SMB 데이터에 사용하는 IP 주소는 로드 밸런서에 할당되어 페일오버 이벤트가 발생할 경우 IP 주소가 다른 노드로 마이그레이션될 수 있습니다.
 
-다음 IP 주소를 만들어야 합니다.
+로드 밸런서에 다음 IP 주소를 만들어야 합니다.
 
 * 노드 1에서 NAS 데이터 LIF 액세스를 위한 단일 IP 주소
 * 노드 2에서 NAS 데이터 LIF 액세스를 위한 단일 IP 주소
-* 노드 1의 iSCSI LIF에 대한 1개의 IP 주소입니다
+* 각 VM의 해당 NIC0에 있는 노드 1의 iSCSI LIF에 대한 IP 주소 1개
 * 노드 2의 iSCSI LIF에 대한 1개의 IP 주소입니다
 +
 iSCSI LIF는 DNS 및 SMB 통신에 필요합니다. iSCSI LIF는 페일오버 시 마이그레이션되지 않으므로 이 용도로 사용됩니다.
@@ -191,7 +194,11 @@ iSCSI LIF는 DNS 및 SMB 통신에 필요합니다. iSCSI LIF는 페일오버 �
 .단계
 . Azure 포털에서 * 로드 밸런서 * 서비스를 엽니다.
 . HA 쌍에 대한 로드 밸런싱 장치의 이름을 클릭합니다.
-. 필요한 프런트엔드 IP 구성 수 생성:
+. 데이터 및 SVM LIF에 필요한 수의 프런트엔드 IP 구성을 생성합니다.
++
+
+NOTE: 프런트엔드 IP는 각 해당 SVM에 대해 NIC0 아래에 생성되어야 합니다. SVM NIC0에 IP 주소를 추가하는 방법에 대한 자세한 내용은 "7단계[하이퍼링크]" 를 참조하십시오.
+
 +
 .. Settings * 에서 * Frontend IP configuration * 을 클릭합니다.
 .. 추가 * 를 클릭합니다.
@@ -239,7 +246,27 @@ image:screenshot_azure_lb_rule.gif["Azure 포털에서 위에 표시된 필드�
 
 
 . Cloud Volumes ONTAP에 대한 네트워크 보안 그룹 규칙을 통해 로드 밸런서가 위의 4단계에서 만든 상태 탐침에 대한 TCP 탐침을 보낼 수 있는지 확인합니다. 이 작업은 기본적으로 허용됩니다.
+. iSCSI LIF의 경우 NIC0의 IP 주소를 추가합니다.
++
+.. Cloud Volumes ONTAP VM의 이름을 클릭합니다.
+.. 네트워킹 * 을 클릭합니다.
+.. nic0의 네트워크 인터페이스 이름을 클릭합니다.
+.. 설정에서 * IP 설정 * 을 클릭합니다.
+.. 추가 * 를 클릭합니다.
++
+image:screenshot_azure_ip_config_add.png["Azure 포털의 IP 구성 페이지 스크린샷"]
 
+.. IP 구성의 이름을 입력하고 Dynamic 을 선택한 다음 * OK * 를 클릭합니다.
++
+image:screenshot_azure_ip_add_config_window.png["Add IP configuration(IP 구성 추가) 창에 대한 스크린샷"]
+
+.. 방금 만든 IP 구성의 이름을 클릭하고 Assignment 를 Static 으로 변경한 다음 * Save * 를 클릭합니다.
+
+
+
+
+
+NOTE: 정적 IP 주소를 사용하면 IP 주소가 변경되지 않으므로 정적 IP 주소를 사용하는 것이 가장 좋습니다. 이렇게 하면 응용 프로그램이 불필요하게 중단되는 것을 방지할 수 있습니다.
 
 --
 ====
@@ -280,7 +307,7 @@ network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
 ----
 . 선택 사항: 스토리지 VM 관리 LIF를 생성합니다.
 +
@@ -320,7 +347,7 @@ network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs--ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
 ----
 . 선택 사항: 스토리지 VM 관리 LIF를 생성합니다.
 +
@@ -360,7 +387,7 @@ network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs--ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
 ----
 . 선택 사항: 스토리지 VM 관리 LIF를 생성합니다.
 +
@@ -411,13 +438,13 @@ network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
 ----
 .. 다음 명령을 사용하여 노드 2에 iSCSI LIF를 생성합니다.
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node2> -data-protocol iscsi
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node2> -data-protocol iscsi
 ----
 
 
@@ -441,6 +468,13 @@ vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
 
 . Cloud Volumes ONTAP 9.11.1 이상을 실행 중인 경우 스토리지 VM에 대한 네트워크 서비스 정책을 수정합니다.
 +
+.. 다음 명령을 입력하여 고급 모드에 액세스합니다.
++
+[source, cli]
+----
+::> set adv -con off
+----
++
 Cloud Volumes ONTAP가 아웃바운드 관리 연결에 iSCSI LIF를 사용할 수 있도록 하기 때문에 서비스를 수정해야 합니다.
 
 +
@@ -462,6 +496,8 @@ network interface service-policy add-service -vserver <svm-name> -policy default
 network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-ldap-client
 network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-nis-client
 ----
+
+
 
 
 --
@@ -487,7 +523,7 @@ network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs--ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
 ----
 .. 다음 명령을 사용하여 노드 2에 NAS LIF를 생성합니다.
 +
@@ -496,6 +532,31 @@ network interface create -vserver <svm-name> -lif <lif-name> -role data -data-pr
 network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node2> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe2>
 ----
 
+
+. DNS 통신을 제공하기 위해 iSCSI LIF 생성:
++
+.. 다음 명령을 사용하여 노드 1에 iSCSI LIF를 생성합니다.
++
+[source, cli]
+----
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
+----
+.. 다음 명령을 사용하여 노드 2에 iSCSI LIF를 생성합니다.
++
+[source, cli]
+----
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node2> -data-protocol iscsi
+----
+
+
+. 선택 사항: 노드 1에 스토리지 VM 관리 LIF를 생성합니다.
++
+[source, cli]
+----
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default -probe-port <port-number-for-azure-health-probe3>
+----
++
+이 관리 LIF는 SnapCenter과 같은 관리 툴에 연결할 수 있습니다.
 
 . 선택 사항: 노드 1에 스토리지 VM 관리 LIF를 생성합니다.
 +
@@ -516,6 +577,13 @@ vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
 스토리지 VM에서 볼륨을 생성하기 전에 새 스토리지 VM이 적어도 하나의 애그리게이트에 액세스해야 하기 때문에 이 단계가 필요합니다.
 
 . Cloud Volumes ONTAP 9.11.1 이상을 실행 중인 경우 스토리지 VM에 대한 네트워크 서비스 정책을 수정합니다.
++
+.. 다음 명령을 입력하여 고급 모드에 액세스합니다.
++
+[source, cli]
+----
+::> set adv -con off
+----
 +
 Cloud Volumes ONTAP가 아웃바운드 관리 연결에 iSCSI LIF를 사용할 수 있도록 하기 때문에 서비스를 수정해야 합니다.
 
@@ -538,6 +606,8 @@ network interface service-policy add-service -vserver <svm-name> -policy default
 network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-ldap-client
 network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-nis-client
 ----
+
+
 
 
 --
@@ -563,7 +633,7 @@ network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs--ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
 ----
 .. 다음 명령을 사용하여 노드 2에 NAS LIF를 생성합니다.
 +
@@ -573,19 +643,19 @@ network interface create -vserver <svm-name> -lif <lif-name> -role data -data-pr
 ----
 
 
-. iSCSI LIF를 생성하여 DNS 및 SMB 통신 제공:
+. DNS 통신을 제공하기 위해 iSCSI LIF 생성:
 +
 .. 다음 명령을 사용하여 노드 1에 iSCSI LIF를 생성합니다.
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
 ----
 .. 다음 명령을 사용하여 노드 2에 iSCSI LIF를 생성합니다.
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node2> -data-protocol iscsi
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node2> -data-protocol iscsi
 ----
 
 
@@ -609,6 +679,13 @@ vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
 
 . Cloud Volumes ONTAP 9.11.1 이상을 실행 중인 경우 스토리지 VM에 대한 네트워크 서비스 정책을 수정합니다.
 +
+.. 다음 명령을 입력하여 고급 모드에 액세스합니다.
++
+[source, cli]
+----
+::> set adv -con off
+----
++
 Cloud Volumes ONTAP가 아웃바운드 관리 연결에 iSCSI LIF를 사용할 수 있도록 하기 때문에 서비스를 수정해야 합니다.
 
 +
@@ -630,6 +707,8 @@ network interface service-policy add-service -vserver <svm-name> -policy default
 network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-ldap-client
 network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-nis-client
 ----
+
+
 
 
 --
