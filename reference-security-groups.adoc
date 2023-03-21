@@ -222,6 +222,9 @@ NOTE: 소스는 Cloud Volumes ONTAP 시스템의 인터페이스(IP 주소)입�
 | ICMP | 1 | 노드 관리 LIF | HA 중재자 | 활성 상태 유지(Cloud Volumes ONTAP HA만 해당) 
 
 
+| 구성 백업 | HTTP | 80 | 노드 관리 LIF | http://<connector-IP-address>/occm/offboxconfig입니다 | Connector로 구성 백업을 보냅니다. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["구성 백업 파일에 대해 자세히 알아보십시오"^]. 
+
+
 | DHCP를 선택합니다 | UDP입니다 | 68 | 노드 관리 LIF | DHCP를 선택합니다 | 처음으로 설정하는 DHCP 클라이언트 
 
 

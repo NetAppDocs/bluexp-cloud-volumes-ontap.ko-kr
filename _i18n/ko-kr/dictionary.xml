@@ -1201,8 +1201,6 @@
   <block id="24b9f71baa2900d2012ac1aae73c5b0a" category="list-text">인터클러스터 LIF</block>
   <block id="a7bc162978ef4e3f1dc9043f2f3e0ae5" category="list-text">iSCSI 데이터 LIF</block>
   <block id="0514cf4d8c2c69285ce20b665b1dd21a" category="list-text">CIFS 및 NFS 데이터 LIF</block>
-  <block id="1e9a2ffff1b9836e04946d054d997a8b" category="list-text">Cloud Volumes ONTAP는 HTTPS를 사용하여 구성 백업을 커넥터로 보냅니다.</block>
-  <block id="15f4924ddb95a7cea86fd079534398ae" category="paragraph">백업은 에서 액세스할 수 있습니다<block ref="9e29fb2723605a4325a47b2dd7ceaffe" category="inline-link-rx"></block> 여기서 _ipaddress_는 커넥터 호스트의 IP 주소입니다.</block>
   <block id="f2bbdf9f72c085adc4d0404e370f0f4c" category="cell">속성</block>
   <block id="f01163ba6d2eb19e6f1c407b5fa8c355" category="cell">자동 크기 조정 모드입니다</block>
   <block id="4d200fce73a8e1cc965cfc2c43343824" category="cell">성장</block>
@@ -4788,4 +4786,10 @@
   <block id="52554fb81854d42f02280f83a1067574" category="cell">커넥터의 CIDR</block>
   <block id="cdbb82146d412877f64f943229bd9533" category="cell">AWS EC2 인스턴스에 있는 Connector의 IP 주소입니다</block>
   <block id="2e7f33375cb03e7deb01286344bbca46" category="cell">ec2.amazonaws.com</block>
+  <block id="724eda1c857fb38707e74b7c407fdcba" category="list-text">Cloud Volumes ONTAP는 HTTP를 사용하여 구성 백업을 Connector로 전송합니다.</block>
+  <block id="79ca31fea91f34abfd785c30c8f2dd3f" category="paragraph">백업은 에서 액세스할 수 있습니다<block ref="0ae28f0871642584688d7280b4ad0851" category="inline-link-rx"></block> 여기서 _ipaddress_는 커넥터 호스트의 IP 주소입니다.</block>
+  <block id="ff8a62cd0fc83b5c732cfd1ccb079e42" category="cell">구성 백업</block>
+  <block id="6f86fcaf171105846a04e6ca4d0b7f0b" category="cell">http://&lt;connector-IP-address&gt;/occm/offboxconfig입니다</block>
+  <block id="bbacf5ab57ba08e16b08f7b20295279f" category="inline-link-macro">구성 백업 파일에 대해 자세히 알아보십시오</block>
+  <block id="2ffb2b9a3d63d4562dc012fb7ccbe8f0" category="cell">Connector로 구성 백업을 보냅니다. <block ref="60ef96540660b8c0ada3ca23fe3c6d48" category="inline-link-macro-rx"></block>.</block>
 </blocks>

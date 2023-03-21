@@ -93,9 +93,9 @@ endif::gcp[]
 NOTE: 클라우드 공급자의 요구사항으로 인해 LIF 페일오버가 Cloud Volumes ONTAP에 대해 기본적으로 비활성화되어 있습니다. LIF를 다른 포트로 마이그레이션하면 IP 주소와 인스턴스 네트워크 인터페이스 간의 외부 매핑이 분리되므로 LIF에 액세스할 수 없습니다.
 
 +
-** Cloud Volumes ONTAP는 HTTPS를 사용하여 구성 백업을 커넥터로 보냅니다.
+** Cloud Volumes ONTAP는 HTTP를 사용하여 구성 백업을 Connector로 전송합니다.
 +
-백업은 에서 액세스할 수 있습니다 https://ipaddress/occm/offboxconfig/[] 여기서 _ipaddress_는 커넥터 호스트의 IP 주소입니다.
+백업은 에서 액세스할 수 있습니다 http://ipaddress/occm/offboxconfig/[] 여기서 _ipaddress_는 커넥터 호스트의 IP 주소입니다.
 
 ** BlueXP는 다른 관리 도구(예: System Manager 또는 CLI)와 몇 가지 볼륨 속성을 다르게 설정합니다.
 +
