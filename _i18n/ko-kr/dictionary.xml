@@ -4784,11 +4784,8 @@
   <block id="91927d042dca36bab1fa5fb92c667147" category="paragraph">백업은 \http://ipaddress/occm/offboxconfig/ 에서 액세스할 수 있습니다. 여기서 _ipaddress_는 커넥터 호스트의 IP 주소입니다.</block>
   <block id="498c90636197dec64c0feb8b682990f2" category="list-text">* 단일 노드 * BlueXP는 4개의 IP 주소를 단일 노드 시스템에 할당합니다.</block>
   <block id="a28292fa77dc234022cd48bc08becd01" category="list-text">NAS LIF</block>
-  <block id="db29658b73395ac9c81d9ab9db9c854e" category="list-text">* HA 쌍 * BlueXP는 HA 쌍에 14개의 IP 주소를 할당합니다.</block>
   <block id="4be2acabdfd03ad1e08cbfefbda0ff51" category="list-text">노드 관리 LIF 2개(e0a)</block>
   <block id="0c0ae10290400b878c0abf083889e78d" category="list-text">iSCSI LIF 2개(e0a)</block>
-  <block id="b2eba5b8e0037393ec3f8a81ae77e78b" category="list-text">NAS LIF 2개(e0a)</block>
-  <block id="e0c98565c3b923fcfdca593269481630" category="list-text">2 클러스터 간 LIF(e0a)</block>
   <block id="a00377c792cd8ccb6a0c832ffec2c1dc" category="list-text">클러스터 LIF 2개(e0b)</block>
   <block id="bbe8dbabe5bfd1d32eaa2131b90c191a" category="list-text">HA 인터커넥트 IP 주소 2개(e0c)</block>
   <block id="0baf3fbe98870c6047f6b10e5370bff7" category="list-text">RSM iSCSI IP 주소(e0d) 2개</block>
@@ -4801,4 +4798,7 @@
   <block id="c3c3a9cabe89fd2f00daf39d11c934e0" category="cell">스토리지 VM 관리</block>
   <block id="5a81ac921ca7aad4221a846f305e2643" category="cell">iSCSI 프로토콜을 통한 클라이언트 액세스. 이러한 LIF는 노드 간 부동 IP 주소의 마이그레이션도 관리합니다. 이러한 LIF는 필수 항목이므로 삭제할 수 없습니다.</block>
   <block id="04aa0890d693f69c17917f651d371711" category="paragraph">BlueXP는 필요한 수의 사설 IP 주소를 Google Cloud의 Cloud Volumes ONTAP에 자동으로 할당합니다. 네트워킹에 사용 가능한 개인 주소가 충분한지 확인해야 합니다.</block>
+  <block id="7f09653ec569404a6d78270f050d7c18" category="list-text">* HA 쌍 * BlueXP는 12-13개의 IP 주소를 HA 쌍에 할당합니다.</block>
+  <block id="99388f0fdeac933c80f2d52c95fe6eac" category="list-text">클러스터 관리 LIF 1개(e0a)</block>
+  <block id="07ddec46aac81bd14d6fc7f0d22ee78d" category="list-text">1~2개의 NAS LIF(e0a)</block>
 </blocks>
