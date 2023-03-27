@@ -4782,7 +4782,6 @@
   <block id="bbacf5ab57ba08e16b08f7b20295279f" category="inline-link-macro">구성 백업 파일에 대해 자세히 알아보십시오</block>
   <block id="2ffb2b9a3d63d4562dc012fb7ccbe8f0" category="cell">Connector로 구성 백업을 보냅니다. <block ref="60ef96540660b8c0ada3ca23fe3c6d48" category="inline-link-macro-rx"></block>.</block>
   <block id="91927d042dca36bab1fa5fb92c667147" category="paragraph">백업은 \http://ipaddress/occm/offboxconfig/ 에서 액세스할 수 있습니다. 여기서 _ipaddress_는 커넥터 호스트의 IP 주소입니다.</block>
-  <block id="a3a425fe01b7b7835f40e98d5131d953" category="paragraph">BlueXP는 필요한 수의 사설 IP 주소를 GCP의 Cloud Volumes ONTAP에 자동으로 할당합니다. 네트워킹에 사용 가능한 개인 주소가 충분한지 확인해야 합니다.</block>
   <block id="498c90636197dec64c0feb8b682990f2" category="list-text">* 단일 노드 * BlueXP는 4개의 IP 주소를 단일 노드 시스템에 할당합니다.</block>
   <block id="a28292fa77dc234022cd48bc08becd01" category="list-text">NAS LIF</block>
   <block id="db29658b73395ac9c81d9ab9db9c854e" category="list-text">* HA 쌍 * BlueXP는 HA 쌍에 14개의 IP 주소를 할당합니다.</block>
@@ -4801,5 +4800,5 @@
   <block id="6d0c9e6ffd2de679838428abdea38009" category="cell">iSCSI 프로토콜을 통한 클라이언트 액세스. 또한 시스템에서 다른 중요한 네트워킹 워크플로우에 사용됩니다. 이 LIF는 필수 항목이므로 삭제할 수 없습니다.</block>
   <block id="c3c3a9cabe89fd2f00daf39d11c934e0" category="cell">스토리지 VM 관리</block>
   <block id="5a81ac921ca7aad4221a846f305e2643" category="cell">iSCSI 프로토콜을 통한 클라이언트 액세스. 이러한 LIF는 노드 간 부동 IP 주소의 마이그레이션도 관리합니다. 이러한 LIF는 필수 항목이므로 삭제할 수 없습니다.</block>
-  <block id="03739fdb4fd68641a3dd276274b59b91" category="paragraph">Cloud Manager가 Cloud Volumes ONTAP에 할당하는 LIF 수는 단일 노드 시스템을 구축하든 HA 쌍을 구축하든 관계없이 달라집니다. LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 SVM 관리 LIF가 필요합니다.</block>
+  <block id="04aa0890d693f69c17917f651d371711" category="paragraph">BlueXP는 필요한 수의 사설 IP 주소를 Google Cloud의 Cloud Volumes ONTAP에 자동으로 할당합니다. 네트워킹에 사용 가능한 개인 주소가 충분한지 확인해야 합니다.</block>
 </blocks>
