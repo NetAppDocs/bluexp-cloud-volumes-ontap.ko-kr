@@ -1421,9 +1421,7 @@
   <block id="15a4d902a9e2eeb56724bdb94f9d1977" category="list-text">클러스터 관리 LIF</block>
   <block id="e2578ec54f85b5b6333c94364b756a1c" category="list-text">노드 관리 LIF</block>
   <block id="54f7d853bcd07992f133218c21a038be" category="list-text">인터클러스터 LIF</block>
-  <block id="ca44bf750b10b8a875a517d3a3ab5da6" category="list-text">NAS 데이터 LIF</block>
   <block id="e837515a89200e7cd1bddfc96747979e" category="list-text">iSCSI 데이터 LIF</block>
-  <block id="e4595cde20c3c7c41bb9f7fba19a0fc1" category="list-text">스토리지 VM 관리 LIF</block>
   <block id="f7fb4679628db57f6d5d8a1ad673e5d9" category="paragraph">스토리지 VM 관리 LIF는 SnapCenter와 같은 관리 툴과 함께 사용됩니다.</block>
   <block id="754851680a34e87fae0aca5083f7dbfe" category="section-title">HA 쌍의 IP 주소</block>
   <block id="e438a6efe5f9ab56c9230159070485aa" category="paragraph">HA Pair의 경우 단일 노드 시스템보다 더 많은 IP 주소가 필요합니다. 이러한 IP 주소는 다음 이미지와 같이 서로 다른 이더넷 인터페이스에 분산됩니다.</block>
@@ -1458,7 +1456,6 @@
   <block id="e63d2e05b66ab370cc2baaae9d2dcfe9" category="cell">RAID SyncMirror iSCSI 트래픽과 두 Cloud Volumes ONTAP 노드 및 중재자 간의 통신</block>
   <block id="af90726bf48cd763b5fb4e961da15871" category="cell">스토리지 테이크오버 및 반환 프로세스를 지원하는 노드와 중재자 간의 통신 채널</block>
   <block id="bff3c591c699ca31f730e1f2040baf4f" category="section-title">여러 AZs의 HA 쌍에 대한 LIF</block>
-  <block id="ecb277307bf56fdc012332a896c09dc2" category="cell">iSCSI 프로토콜을 통한 클라이언트 액세스. 이 LIF는 노드 간 부동 IP 주소의 마이그레이션도 관리합니다.</block>
   <block id="cf6001a1cee041e1f5a754d3c5447f93" category="inline-link-macro">유동 IP 주소</block>
   <block id="ab89f6727a41ad22707663146b9002d8" category="admonition">여러 가용성 영역에 구축된 경우 여러 LIF가 에 연결됩니다 <block ref="c1f676036d5f93c88159c13cc04402fb" category="inline-link-macro-rx"></block>이는 AWS 프라이빗 IP 제한에 계산되지 않습니다.</block>
   <block id="9175bb34d0aede26315b313b9432bcbb" category="section-title">보안 그룹</block>
@@ -2224,10 +2221,6 @@
   <block id="c0d1b864d00da3eb6415590dfa2621ab" category="paragraph">API를 사용하여 Cloud Volumes ONTAP를 구축하고 다음 플래그를 지정한 경우 SVM(스토리지 VM) 관리 LIF의 생성을 건너뛸 수 있습니다.</block>
   <block id="9389c2cd70872a229cd788537557d183" category="paragraph">'스킵스만트관리면: TRUE'</block>
   <block id="2be40f62b7c4e1d13a18dcc030852bf8" category="paragraph">LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 스토리지 VM(SVM) 관리 LIF가 필요합니다.</block>
-  <block id="0ac7ae25c356474957d53018f385f434" category="list-text">VPC-0용 전용 IP 주소 7개 또는 8개</block>
-  <block id="16dba371e7c3be679c75a860acf986a5" category="list-text">VPC-1용 사설 IP 주소 2개</block>
-  <block id="3b36c3b05500e8c44c01c05c2c597b97" category="list-text">VPC-2용 사설 IP 주소 2개</block>
-  <block id="75a392272a1bb675ed8f846182436d6e" category="list-text">VPC-3용 사설 IP 주소 3개</block>
   <block id="4dfddd1829f7fb340bd9b36bff6e3130" category="list-text">방화벽 규칙</block>
   <block id="2a361a1f21cbd928455b1bd06df94169" category="paragraph">HA 구성에는 두 가지 방화벽 규칙 세트가 필요합니다.</block>
   <block id="5e74b536fe3c8bd111e49f783c8e991c" category="inline-link">Google Cloud 설명서: 개인 Google Access 구성</block>
@@ -4024,7 +4017,6 @@
   <block id="2f1e7d6affd61098f336e5b1777ec8e2" category="summary">BlueXP는 IP 주소, 넷마스크 및 라우트와 같은 Cloud Volumes ONTAP용 네트워킹 구성 요소 설정을 처리합니다. 아웃바운드 인터넷 액세스를 사용할 수 있는지, 충분한 전용 IP 주소를 사용할 수 있는지, 올바른 연결이 있는지 등을 확인해야 합니다.</block>
   <block id="b28334323356fda049acaa1568ee382c" category="paragraph">BlueXP는 필요한 수의 전용 IP 주소를 Cloud Volumes ONTAP에 자동으로 할당합니다. 네트워킹에 사용 가능한 개인 IP 주소가 충분한지 확인해야 합니다.</block>
   <block id="bdc0bf1240a907023821eccea893d017" category="paragraph">BlueXP에서 Cloud Volumes ONTAP에 할당하는 LIF 수는 단일 노드 시스템을 배포할지 HA 쌍을 구축하는지에 따라 달라집니다. LIF는 물리적 포트와 연결된 IP 주소입니다.</block>
-  <block id="7a4fc6df5acc7a338525efe76c970bd8" category="paragraph">BlueXP는 단일 노드 시스템에 6개의 IP 주소를 할당합니다.</block>
   <block id="7fbad4788d127b35618996584caa5cbf" category="paragraph">추가 AWS 네트워킹 요구사항은 ZS(Multiple Availability Zones)를 사용하는 Cloud Volumes ONTAP HA 구성에 적용됩니다. 작업 환경을 생성할 때 BlueXP에 네트워킹 세부 정보를 입력해야 하므로 HA 쌍을 실행하기 전에 이러한 요구 사항을 검토해야 합니다.</block>
   <block id="79b99f78668311f7164df3fbc2b1ab13" category="paragraph">Cloud Volumes ONTAP HA 작업 환경을 생성할 때 BlueXP에서 부동 IP 주소를 입력해야 합니다. BlueXP는 시스템을 시작할 때 HA 쌍에 IP 주소를 할당합니다.</block>
   <block id="fbf22458f97f1e958f61f1269da5e0dc" category="admonition">BlueXP는 VPC 외부의 클라이언트에서 iSCSI 액세스 및 NAS 액세스를 위해 정적 IP 주소를 자동으로 생성합니다. 이러한 유형의 IP 주소에 대한 요구 사항을 충족할 필요는 없습니다.</block>
@@ -4459,8 +4451,6 @@
   <block id="4c62b2e0648ccb7cc5ac07de5a4c67f4" category="section-title">4개의 가상 프라이빗 클라우드</block>
   <block id="0fc9a4a783a2856e3a35ee9b12a2f357" category="paragraph">HA 구성을 위해서는 4개의 가상 프라이빗 클라우드(VPC)가 필요합니다. Google Cloud에서는 각 네트워크 인터페이스가 별도의 VPC 네트워크에 상주해야 하므로 4대의 VPC가 필요합니다.</block>
   <block id="74cd215a46d2bd96fc35dad7ef313283" category="section-title">서브넷</block>
-  <block id="206f49c25e0bbd2da69d30f14f4f222d" category="paragraph">BlueXP는 Google Cloud의 HA 쌍에 14개 또는 15개의 사설 IP 주소를 할당합니다.</block>
-  <block id="974715540568df2f5efe3c40777931b7" category="section-title">데이터 계층화를 위해 Google Cloud Storage에 연결</block>
   <block id="53c6f0799470bd2e67e7902192e11c7c" category="paragraph">Google Cloud의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 VPC와 기업 네트워크 같은 다른 네트워크 간에 VPN 연결이 있어야 합니다.</block>
   <block id="8bb6cd6de4a896f626b89e711d40aa4c" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Google Cloud 방화벽 규칙을 생성합니다. 테스트 목적으로 또는 자체 방화벽 규칙을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="30f3abb35963e0cd7d66dc08581087c9" category="paragraph">Cloud Volumes ONTAP의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다. HA 구성을 구축할 경우 VPC-0의 Cloud Volumes ONTAP에 대한 방화벽 규칙입니다.</block>
@@ -4792,4 +4782,24 @@
   <block id="bbacf5ab57ba08e16b08f7b20295279f" category="inline-link-macro">구성 백업 파일에 대해 자세히 알아보십시오</block>
   <block id="2ffb2b9a3d63d4562dc012fb7ccbe8f0" category="cell">Connector로 구성 백업을 보냅니다. <block ref="60ef96540660b8c0ada3ca23fe3c6d48" category="inline-link-macro-rx"></block>.</block>
   <block id="91927d042dca36bab1fa5fb92c667147" category="paragraph">백업은 \http://ipaddress/occm/offboxconfig/ 에서 액세스할 수 있습니다. 여기서 _ipaddress_는 커넥터 호스트의 IP 주소입니다.</block>
+  <block id="a3a425fe01b7b7835f40e98d5131d953" category="paragraph">BlueXP는 필요한 수의 사설 IP 주소를 GCP의 Cloud Volumes ONTAP에 자동으로 할당합니다. 네트워킹에 사용 가능한 개인 주소가 충분한지 확인해야 합니다.</block>
+  <block id="d73dbd7a9a0f76a49c1b796c3bbf2e51" category="paragraph">+Cloud Volumes ONTAP에 대해 Cloud Manager가 할당하는 LIF 수는 단일 노드 시스템을 구축하든 HA 쌍을 구축하느냐에 따라 다릅니다. LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 SVM 관리 LIF가 필요합니다.</block>
+  <block id="498c90636197dec64c0feb8b682990f2" category="list-text">* 단일 노드 * BlueXP는 4개의 IP 주소를 단일 노드 시스템에 할당합니다.</block>
+  <block id="a28292fa77dc234022cd48bc08becd01" category="list-text">NAS LIF</block>
+  <block id="db29658b73395ac9c81d9ab9db9c854e" category="list-text">* HA 쌍 * BlueXP는 HA 쌍에 14개의 IP 주소를 할당합니다.</block>
+  <block id="4be2acabdfd03ad1e08cbfefbda0ff51" category="list-text">노드 관리 LIF 2개(e0a)</block>
+  <block id="0c0ae10290400b878c0abf083889e78d" category="list-text">iSCSI LIF 2개(e0a)</block>
+  <block id="b2eba5b8e0037393ec3f8a81ae77e78b" category="list-text">NAS LIF 2개(e0a)</block>
+  <block id="e0c98565c3b923fcfdca593269481630" category="list-text">2 클러스터 간 LIF(e0a)</block>
+  <block id="a00377c792cd8ccb6a0c832ffec2c1dc" category="list-text">클러스터 LIF 2개(e0b)</block>
+  <block id="bbe8dbabe5bfd1d32eaa2131b90c191a" category="list-text">HA 인터커넥트 IP 주소 2개(e0c)</block>
+  <block id="0baf3fbe98870c6047f6b10e5370bff7" category="list-text">RSM iSCSI IP 주소(e0d) 2개</block>
+  <block id="c3872c89a315822852621c448e41aac4" category="list-text">BlueXP는 방화벽 규칙을 만들 필요가 없습니다. 직접 사용해야 하는 경우 아래 나열된 방화벽 규칙을 참조하십시오.</block>
+  <block id="01e18e5463e6c1fc9c05a5b8a728f3ff" category="list-text">VPC-0의 HA 구성 요소에 대한 하나의 규칙 세트 이러한 규칙을 통해 Cloud Volumes ONTAP에 대한 데이터 액세스가 가능합니다. <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>.</block>
+  <block id="204347da7430e0509c4b62949e49e5dc" category="list-text">VPC-1, VPC-2 및 VPC-3의 HA 구성 요소에 대한 또 다른 규칙 세트 이러한 규칙은 HA 구성 요소 간의 인바운드 및 아웃바운드 통신에 대해 개방됩니다. <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e2f177a250a8772cd8ebbe4839390958" category="paragraph">BlueXP는 단일 노드 시스템에 6개의 IP 주소를 할당합니다.</block>
+  <block id="b4f6a6268e9ed79637c765266075ab8c" category="paragraph">다음 표에는 각 프라이빗 IP 주소와 연결된 LIF에 대한 자세한 정보가 나와 있습니다.</block>
+  <block id="6d0c9e6ffd2de679838428abdea38009" category="cell">iSCSI 프로토콜을 통한 클라이언트 액세스. 또한 시스템에서 다른 중요한 네트워킹 워크플로우에 사용됩니다. 이 LIF는 필수 항목이므로 삭제할 수 없습니다.</block>
+  <block id="c3c3a9cabe89fd2f00daf39d11c934e0" category="cell">스토리지 VM 관리</block>
+  <block id="5a81ac921ca7aad4221a846f305e2643" category="cell">iSCSI 프로토콜을 통한 클라이언트 액세스. 이러한 LIF는 노드 간 부동 IP 주소의 마이그레이션도 관리합니다. 이러한 LIF는 필수 항목이므로 삭제할 수 없습니다.</block>
 </blocks>
