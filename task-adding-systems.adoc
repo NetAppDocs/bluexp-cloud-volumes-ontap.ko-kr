@@ -29,7 +29,7 @@ Cloud Volumes ONTAP admin 사용자 계정의 암호를 알아야 합니다.
 
 ifdef::aws[]
 
-를 누릅니다image:screenshot_discover.gif["기존 Cloud Volumes ONTAP 시스템을 검색하는 링크를 보여 주는 스크린샷"]
+를 누릅니다image:screenshot_discover_redesign.png["기존 Cloud Volumes ONTAP 시스템을 검색하는 링크를 보여 주는 스크린샷"]
 
 endif::aws[]
 

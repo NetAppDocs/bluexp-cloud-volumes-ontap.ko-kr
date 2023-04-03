@@ -169,10 +169,10 @@ link:task-create-aggregates.html["Aggregate를 생성하는 방법을 알아보�
 
 * Elastic Volumes가 설정된 애그리게이트를 식별합니다
 +
-고급 할당 페이지로 이동하면 애그리게이트에 Elastic Volumes 기능이 설정되어 있는지 확인할 수 있습니다. 다음 예에서는 aggr2에 Elastic Volumes가 활성화되어 있는 반면 aggr1은 활성화되어 있지 않습니다.
+고급 할당 페이지로 이동하면 애그리게이트에 Elastic Volumes 기능이 설정되어 있는지 확인할 수 있습니다. 다음 예에서는 aggr1에 Elastic Volumes가 활성화되어 있습니다.
 
 +
-image:screenshot-elastic-volumes-enabled.png["Elastic Volumes Enabled라는 텍스트가 있는 필드가 있는 두 개의 집계를 보여 주는 스크린샷"]
+image:screenshot_elastic_volume_enabled.png["Elastic Volumes Enabled라는 텍스트가 있는 필드가 있는 두 개의 집계를 보여 주는 스크린샷"]
 
 * Aggregate에 용량을 추가합니다
 +

@@ -87,14 +87,11 @@ Cloud Volumes ONTAP 작업 환경을 열고 고급 보기 옵션을 클릭합니
 . Canvas 페이지에서 Cloud Volumes ONTAP 시스템의 이름을 두 번 클릭합니다.
 . 오른쪽 상단에서 * 고급 보기로 전환 * 을 클릭합니다.
 +
-image:screenshot-cvo-advanced-view.png["고급 보기로 전환 옵션을 보여 주는 Cloud Volumes ONTAP 작업 환경의 스크린샷"]
+image:screenshot_advanced_view.png["고급 보기로 전환 옵션을 보여 주는 Cloud Volumes ONTAP 작업 환경의 스크린샷"]
 
 . 확인 메시지가 나타나면 메시지를 읽고 * 닫기 * 를 클릭합니다.
 . 시스템 관리자를 사용하여 Cloud Volumes ONTAP를 관리합니다.
 . 필요한 경우 * 표준 보기로 전환 * 을 클릭하여 BlueXP를 통한 표준 관리로 돌아갑니다.
-+
-image:screenshot-cvo-standard-view.png["표준 보기로 전환 옵션을 보여 주는 Cloud Volumes ONTAP 작업 환경의 스크린샷"]
-
 
 
 

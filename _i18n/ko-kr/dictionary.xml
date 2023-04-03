@@ -159,22 +159,16 @@
   <block id="4df66712f957d539001edc73bbb48742" category="list-text">이 작업은 HA 2노드에서 두 노드의 자동 종료를 예약합니다.</block>
   <block id="a38060fa2aae177f0fbef99ef2923324" category="list-text">예약된 종료를 통해 Cloud Volumes ONTAP를 끌 때 부팅 및 루트 디스크의 스냅샷이 생성되지 않습니다.</block>
   <block id="1f9d590b21cddc0cc992effc141a9be2" category="paragraph">스냅샷은 다음 섹션에 설명된 대로 수동 종료를 수행할 때만 자동으로 생성됩니다.</block>
-  <block id="8a1b478d84a6f80cc4e08b04f317d63b" category="list-text">작업 환경에서 시계 아이콘을 클릭합니다.</block>
   <block id="34e70391062bd14a2cecba6e39595285" category="inline-image-macro">스크린샷: 자동 종료 페이지를 로드하는 아이콘을 표시합니다.</block>
-  <block id="3bbcb84741fc1c9468cb750fd8649a74" category="paragraph"><block ref="3bbcb84741fc1c9468cb750fd8649a74" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f95206b8c2df1268bd8a4454e57f5df" category="list-text">종료 일정을 지정합니다.</block>
   <block id="3a3fb4513da1ae453de12bb3293a3aa1" category="list-text">매일, 매주 평일, 매주 또는 세 가지 옵션의 조합을 종료할지 여부를 선택합니다.</block>
   <block id="063dc598b5df43ce8c2ce8aebd705d40" category="list-text">시스템 전원을 끌 시기 및 시스템 전원을 끌 시간을 지정합니다.</block>
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 예 *</block>
-  <block id="fe684206be5bfef48a19e96654dd77eb" category="inline-image-macro">스크린샷: 48시간 동안 매주 주말 오전 12시에 Cloud Volumes ONTAP를 종료하는 종료 일정을 보여 줍니다.</block>
-  <block id="dcf55005a499d7c230aed9db69cce7cc" category="paragraph"><block ref="dcf55005a499d7c230aed9db69cce7cc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">저장 * 을 클릭합니다.</block>
-  <block id="bb0a5bced808713247ccd116ba565493" category="inline-image-macro">스크린샷: 일정이 정의된 후 자동 종료 아이콘을 표시합니다.</block>
   <block id="743f723fb93463aec3e7652a73bd3890" category="section-title">Cloud Volumes ONTAP를 중지하는 중입니다</block>
   <block id="9db86a680f4bae1de09076b7c830129a" category="paragraph">Cloud Volumes ONTAP를 중지하면 계산 비용이 절약되고 루트 및 부팅 디스크의 스냅샷이 생성되므로 문제 해결에 도움이 됩니다.</block>
   <block id="07bd6b4bc48913b55530949bce54eea8" category="list-text">작업 환경에서 * 끄기 * 아이콘을 클릭합니다.</block>
   <block id="b47a0575c3200f7dd372fe15d0a725a2" category="inline-image-macro">스크린샷: Cloud Volumes ONTAP 시스템을 끄는 아이콘을 표시합니다.</block>
-  <block id="b23fbf5cfb02f1455245e12c56aee2f3" category="paragraph"><block ref="b23fbf5cfb02f1455245e12c56aee2f3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8fa2551f6408bfa93fe493745bac6f4" category="list-text">스냅샷이 시스템 복구를 활성화할 수 있으므로 스냅샷을 생성하는 옵션을 활성 상태로 유지합니다.</block>
   <block id="bb7e6cfdc4746a614a2674f0e2c56e43" category="list-text">끄기 * 를 클릭합니다.</block>
   <block id="5f2e3fd1b057bcc33ab14fddf0b6d211" category="paragraph">시스템을 중지하는 데 몇 분 정도 걸릴 수 있습니다. 나중에 작업 환경 페이지에서 시스템을 다시 시작할 수 있습니다.</block>
@@ -351,9 +345,7 @@
   <block id="b684a678c3e505841ebacb9d4d1cb66d" category="list-text"><block ref="ac2e95b9536af713edc378ae2cd06df9" category="inline-link-rx"></block>.</block>
   <block id="57cbefe39109ab51b31e818f9ce6d9c4" category="list-text">Cloud Volumes ONTAP 작업 환경을 삭제합니다.</block>
   <block id="deacec910b77251dad4f11490aa93221" category="list-text">Canvas 페이지에서 삭제할 Cloud Volumes ONTAP 작업 환경의 이름을 두 번 클릭합니다.</block>
-  <block id="ce57c223c9772471dcabe8db7fec79ea" category="list-text">메뉴 아이콘을 클릭한 다음 * 삭제 * 를 클릭합니다.</block>
   <block id="4a9ee4aa88ebf38223ea447fe291d222" category="inline-image-macro">삭제 작업이 포함된 작업 환경에서 사용할 수 있는 메뉴를 보여 주는 스크린샷</block>
-  <block id="27bf96ea2dd4c98f397498424680c167" category="list-text">작업 환경의 이름을 입력한 다음 * 삭제 * 를 클릭합니다.</block>
   <block id="7d73be13421466d5cf5d832329f74c79" category="paragraph">작업 환경을 삭제하는 데 최대 5분이 걸릴 수 있습니다.</block>
   <block id="bfd15aa26ba0ced782240c4a8b7e517e" category="doc">스토리지 관리</block>
   <block id="6ba6ceafe8bda6d338b883b2b39f45f1" category="section-title">스토리지 프로비저닝</block>
@@ -441,47 +433,31 @@
   <block id="69e28a1ba6bc5233cc60dd248c362636" category="paragraph">쓰기 속도를 변경하려면 먼저 해야 합니다 <block ref="eb987e41d6a04bba64a9af2bb235fccb" category="inline-link-macro-rx"></block>.</block>
   <block id="d9072539538ac46d98e04043ff27fe64" category="list-text">볼륨 또는 애그리게이트 생성과 같은 작업이 진행 중이 아닌지 확인합니다.</block>
   <block id="48e74d5adada7060074e975baf48822e" category="list-text">이 변경 사항은 Cloud Volumes ONTAP 시스템을 다시 시작합니다. 이는 전체 시스템의 다운타임이 필요한 업무 중단입니다.</block>
-  <block id="95f9e248ac6da6c5225434c857ed26af" category="list-text">작업 환경에서 메뉴 아이콘을 클릭한 다음 * 고급 &gt; 작성 속도 * 를 클릭합니다.</block>
   <block id="96f68979b7e20270904a489e3ffb5590" category="list-text">Normal * (정상 *) 또는 * High * (높음 *)를 선택합니다.</block>
   <block id="1dc9045fa2256d31acd9a9e96f728946" category="paragraph">높음 을 선택한 경우 "이해했습니다..." 문장을 읽고 확인란을 선택하여 확인해야 합니다.</block>
-  <block id="b020ae609de3aa70a34f31ba07ba8917" category="list-text">저장 * 을 클릭하고 확인 메시지를 검토한 다음 * 진행 * 을 클릭합니다.</block>
   <block id="9038e7cfcfe9bb9df9afd31371070be8" category="doc">기존 볼륨 관리</block>
   <block id="e2439a8512b353f75391ba9c346bc84d" category="section-title">볼륨 관리</block>
   <block id="78b58016122bb23db763832d3df72599" category="paragraph">스토리지 요구사항의 변화에 따라 볼륨을 관리할 수 있습니다. 볼륨을 보고, 편집하고, 클론, 복원 및 삭제할 수 있습니다.</block>
   <block id="ad125360a406d7d2d9b4c68551674284" category="list-text">Canvas 페이지에서 볼륨을 관리할 Cloud Volumes ONTAP 작업 환경을 두 번 클릭합니다.</block>
-  <block id="75ab567efb1db447b59b0343c1a2ceb3" category="list-text">볼륨 관리:</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">작업</block>
   <block id="004bf6c9a40003140292e97330236c53" category="cell">조치</block>
   <block id="289d57ca7886b8016f08f4d17ad68a55" category="cell">볼륨에 대한 정보를 봅니다</block>
-  <block id="af7d09d8e320bd6a243e7e191eb7025d" category="cell">볼륨을 선택한 다음 * 정보 * 를 클릭합니다.</block>
   <block id="fa66a5498542b41c797489000210e5cb" category="cell">볼륨 편집(읽기-쓰기 볼륨만)</block>
-  <block id="3a952a555dd0c4bc3d26bcf0d7fde45e" category="list-text">볼륨을 선택한 다음 * 편집 * 을 클릭합니다.</block>
-  <block id="fbec2ab2a5e28a01696c847ad1605c40" category="list-text">볼륨의 스냅샷 정책, NFS 프로토콜 버전, NFS 액세스 제어 목록(엑스포트 정책) 또는 공유 권한을 수정한 다음 * 업데이트 * 를 클릭합니다.</block>
   <block id="4d72f256b7a978be1277616666d0ce81" category="admonition">사용자 지정 스냅샷 정책이 필요한 경우 System Manager를 사용하여 생성할 수 있습니다.</block>
   <block id="d50044469c0bf9ab38eff9cf7243fb25" category="cell">볼륨의 클론을 생성합니다</block>
-  <block id="94c63f19be46a66b73356db561854603" category="list-text">볼륨을 선택한 다음 * 클론 * 을 클릭합니다.</block>
   <block id="50086f0f77547b0171b7a431d6a39fa0" category="list-text">필요에 따라 클론 이름을 수정한 다음 * Clone * 을 클릭합니다.</block>
   <block id="4cc808195cbf18422cb9719f962fd525" category="paragraph">이 프로세스에서는 FlexClone 볼륨을 생성합니다. FlexClone 볼륨은 메타데이터에 작은 양의 공간을 사용하고 데이터가 변경 또는 추가됨에 따라 추가 공간만 사용하므로 공간 효율적인 쓰기 가능한 특정 시점 복사본입니다.</block>
   <block id="0fa0071d4364b9114c15a5d2758f2577" category="inline-link">ONTAP 9 논리적 스토리지 관리 가이드</block>
   <block id="4717b449094c1b48fb9da6fe4ec03c44" category="paragraph">FlexClone 볼륨에 대한 자세한 내용은 를 참조하십시오<block ref="3ae98799f9586e965a749204c2b3e8f9" category="inline-link-rx"></block>.</block>
   <block id="dc86e5cdedf617184e568612bb0f4b0e" category="cell">스냅샷 복사본에서 새 볼륨으로 데이터를 복원합니다</block>
-  <block id="0e7e803934c43587ce046f079fb159ae" category="list-text">볼륨을 선택한 다음 * 스냅샷 복사본에서 복원 * 을 클릭합니다.</block>
   <block id="d68e4493e40c36ff887078a04d29a0c7" category="list-text">스냅샷 복사본을 선택하고 새 볼륨의 이름을 입력한 다음 * 복원 * 을 클릭합니다.</block>
   <block id="7037507985b932c715517fcf78ae11e3" category="cell">필요 시 스냅샷 복사본을 생성합니다</block>
-  <block id="60e2cc66323270a764c3d126ddbdb292" category="list-text">볼륨을 선택한 다음 * 스냅샷 복사본 생성 * 을 클릭합니다.</block>
   <block id="4e421f73920c619b2a88e35f954c3429" category="list-text">필요한 경우 이름을 변경한 다음 * 만들기 * 를 클릭합니다.</block>
   <block id="9fe2538a2d5bb7e8ab50729192e9bae8" category="cell">NFS mount 명령을 가져옵니다</block>
-  <block id="93b75fd4fe38319058f69c169a51599d" category="list-text">볼륨을 선택한 다음 * 탑재 명령 * 을 클릭합니다.</block>
   <block id="a9320a3f6836ed5a97720b08ba97994a" category="list-text">복사 * 를 클릭합니다.</block>
-  <block id="b4791f5803f8c06f9ebe79fab64eb94c" category="cell">iSCSI 볼륨의 대상 IQN을 봅니다</block>
-  <block id="c2a685651a77d71812f2c11efaa07339" category="list-text">볼륨을 선택한 다음 * 대상 IQN * 을 클릭합니다.</block>
-  <block id="ff898fbdb96b746cb44abc417a9434e1" category="inline-link-macro">IQN을 사용하여 호스트에서 LUN에 연결합니다</block>
-  <block id="ef0b4c9a075f5ca377b2629e230fb1bf" category="list-text"><block ref="294b9b4974581388516e364caa79c936" category="inline-link-macro-rx"></block>.</block>
   <block id="e85050d3f9317d1eb563323469b5f697" category="cell">기본 디스크 유형을 변경합니다</block>
-  <block id="0a669a096950b6abbcba32005af805c3" category="list-text">볼륨을 선택한 다음 * 디스크 유형 및 계층화 정책 변경 * 을 클릭합니다.</block>
   <block id="73ffd7bf843e4fa686f3e89c1e8480d8" category="list-text">디스크 유형을 선택한 다음 * 변경 * 을 클릭합니다.</block>
   <block id="9f4aa892debf403a854859b0ca9c9ff6" category="cell">계층화 정책을 변경합니다</block>
-  <block id="df36c1d5436d58b70c3730737e5458b1" category="list-text">Edit Policy * 를 클릭합니다.</block>
   <block id="460e97605d9d46a32c5b9fbf3be9143b" category="list-text">다른 정책을 선택하고 * 변경 * 을 클릭합니다.</block>
   <block id="8e9a64bda9d21f945b6489df2e7946e1" category="cell">볼륨을 삭제합니다</block>
   <block id="150cd3111dfd7ae68aaeb429e7e50847" category="list-text">볼륨을 선택한 다음 * 삭제 * 를 클릭합니다.</block>
@@ -491,7 +467,6 @@
   <block id="6ad5e0a20f49ad6a370454bb3afc9a9e" category="inline-link">ONTAP 시스템 관리자</block>
   <block id="6b851ed63a549d28a80d2c974afcec80" category="section-title">CIFS 서버를 수정합니다</block>
   <block id="fd549a6bcd2d53b8accb49a7225fcfa0" category="paragraph">DNS 서버 또는 Active Directory 도메인을 변경하는 경우 Cloud Volumes ONTAP에서 CIFS 서버를 수정하여 스토리지에서 클라이언트로 계속 서비스를 제공할 수 있도록 해야 합니다.</block>
-  <block id="26eb89266cb77257e69e50bb61b2da4e" category="list-text">작업 환경에서 메뉴 아이콘을 클릭한 다음 * 고급 &gt; CIFS 설정 * 을 클릭합니다.</block>
   <block id="47839a059e385e1317a08bc188364e78" category="list-text">CIFS 서버에 대한 설정을 지정합니다.</block>
   <block id="fb0f1ebb01626c50d4db72222f7f93b8" category="cell">CIFS 서버와 연결할 AD 도메인 내의 조직 단위입니다. 기본값은 CN=Computers입니다. AWS 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하는 경우 이 필드에 * OU=Computers, OU=Corp * 를 입력해야 합니다.</block>
   <block id="d72f7fe99597ed8f22050ed88031cb7e" category="paragraph">Cloud Volumes ONTAP는 CIFS 서버를 변경 사항으로 업데이트합니다.</block>
@@ -507,12 +482,7 @@
   <block id="5a31c45fe6b6d37f4ceeb5b86c4346da" category="list-text">Action Required 메시지의 고급 정보를 확인하여 용량 제한에 도달한 애그리게이트를 식별합니다.</block>
   <block id="34b14acb1a2ab9863c3c5dad4fd43a16" category="paragraph">예를 들어, 고급 정보에는 Aggregate aggr1이 용량 제한에 도달했음을 나타냅니다.</block>
   <block id="d741de259d45adde48602bde8af2fa1e" category="list-text">애그리게이트에서 이동할 하나 이상의 볼륨을 식별합니다.</block>
-  <block id="13c88f068a7d567935bc3e57b6ac65e9" category="list-text">작업 환경에서 메뉴 아이콘을 클릭한 다음 * 고급 &gt; 고급 할당 * 을 클릭합니다.</block>
-  <block id="2b0c89ca25e54b64f2450bc1ed62e7dd" category="list-text">애그리게이트를 선택한 다음 * 정보 * 를 클릭합니다.</block>
-  <block id="a03fe4765cf778bd609159dbd02518f9" category="list-text">볼륨 목록을 확장합니다.</block>
   <block id="44996e2a556779f9e9d262677dc18a32" category="inline-image-macro">스크린샷: 집계 정보 대화 상자의 집계 볼륨 목록을 표시합니다.</block>
-  <block id="ebb164430899be4a43aac5ed08017381" category="paragraph"><block ref="ebb164430899be4a43aac5ed08017381" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f9c288511bce9b8d3e44ff0677a0b22b" category="list-text">각 볼륨의 크기를 검토하고 애그리게이트에서 이동할 볼륨을 하나 이상 선택합니다.</block>
   <block id="1ac63b40afca7dec0b6be58237e990c5" category="paragraph">나중에 추가 용량 문제를 방지할 수 있도록 aggregate에서 여유 공간을 확보하기 위해 충분히 큰 볼륨을 선택해야 합니다.</block>
   <block id="a64d88ebebbadd18db492923a6de8f40" category="list-text">시스템이 디스크 제한에 도달하지 않은 경우 볼륨을 동일한 시스템의 기존 애그리게이트 또는 새 aggregate로 이동해야 합니다.</block>
   <block id="b665b3a7d068d10da4bb1ff6a9eebc76" category="inline-link-macro">용량 문제를 피하기 위해 볼륨을 다른 애그리게이트로 이동합니다</block>
@@ -538,11 +508,8 @@
   <block id="9b75835d1597be290e865df9d9c03011" category="section-title">용량 문제를 방지하려면 볼륨을 다른 애그리게이트로 이동하십시오</block>
   <block id="46532ea93f05a647dcfb9dbb7724acf3" category="paragraph">용량 문제를 방지하기 위해 하나 이상의 볼륨을 다른 aggregate로 이동할 수 있습니다.</block>
   <block id="b9caee734c459ea1d440e0f169eb1723" category="list-text">기존 Aggregate에 이동해야 하는 볼륨에 대해 사용 가능한 용량이 있는지 확인합니다.</block>
-  <block id="a2d464b6fa7b04c397c84554c3e39809" category="list-text">각 애그리게이트를 선택하고 * 정보 * 를 클릭한 다음 사용 가능한 용량(총 용량에서 사용된 애그리게이트 용량)을 확인합니다.</block>
   <block id="82cf261b628d223daf02ae88b056b424" category="inline-image-macro">스크린샷: 애그리게이트 정보 대화 상자에서 사용할 수 있는 총 애그리게이트 용량과 사용된 애그리게이트 용량을 표시합니다.</block>
-  <block id="fc8b427ea07afce711bc9c553569a274" category="paragraph"><block ref="fc8b427ea07afce711bc9c553569a274" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b8bd018e0e8deb966bda4a09610591ac" category="list-text">필요한 경우 기존 애그리게이트에 디스크를 추가합니다.</block>
-  <block id="5e3902fe134d9ed2c4f422ab0316579f" category="list-text">애그리게이트를 선택한 다음 * 디스크 추가 * 를 클릭합니다.</block>
   <block id="3425dbe0168b60aed62d54b2290baad1" category="list-text">추가할 디스크 수를 선택한 다음 * 추가 * 를 클릭합니다.</block>
   <block id="e272fdd11a7aa99158a093a41c65fdd9" category="list-text">가용 용량이 있는 애그리게이트가 없는 경우 새 애그리게이트를 생성합니다.</block>
   <block id="0e725e4f9ac82ce0408528d6e38105f1" category="inline-link-macro">애그리게이트 생성</block>
@@ -606,8 +573,6 @@
   <block id="c8d8c076494c2c4a46c774a2f999d907" category="list-text">Cloud Volumes ONTAP가 다시 시작됩니다.</block>
   <block id="e8fafc5515dbe922c9cd7f7101d3a661" category="paragraph">단일 노드 시스템의 경우 입출력이 중단됩니다.</block>
   <block id="0da5cbb23a0a7d13b0f40ce06d29d3b4" category="paragraph">HA 쌍의 경우 변경은 무중단 것입니다. HA 쌍이 계속해서 데이터를 제공합니다.</block>
-  <block id="7ad9575195738d8c7f1b3ae6cea26ee2" category="list-text">노드 기반 PAYGO 라이센스를 사용하는 경우 선택적으로 다른 라이센스를 선택할 수 있습니다.</block>
-  <block id="124da972831d8567648a5d865ca52285" category="list-text">시스템 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해했는지 확인한 다음 * 확인 * 을 클릭합니다.</block>
   <block id="a8e111d8043785d9d556635c64194b73" category="paragraph">Cloud Volumes ONTAP가 새 구성으로 재부팅됩니다.</block>
   <block id="f6e43df1ac65ed84364d47e2313ea212" category="doc">AutoSupport 설정을 확인합니다</block>
   <block id="57f882d4d9318a77bccc1fe367a42ab5" category="paragraph">AutoSupport은 능동적으로 시스템 상태를 모니터링하고 NetApp 기술 지원 팀에 메시지를 보냅니다. 기본적으로 AutoSupport는 각 노드에서 HTTPS 전송 프로토콜을 사용하여 기술 지원 부서에 메시지를 보내도록 설정됩니다. AutoSupport에서 이러한 메시지를 보낼 수 있는지 확인하는 것이 가장 좋습니다.</block>
@@ -635,14 +600,10 @@
   <block id="4df04bd818b4ec915902bb9d71d89e11" category="summary">AWS에서 Cloud Volumes ONTAP를 시작할 때 여러 인스턴스 또는 유형 중에서 선택할 수 있습니다. 필요에 따라 크기가 작거나 크기 초과로 결정되면 언제든지 인스턴스 유형을 변경할 수 있습니다.</block>
   <block id="58cfda201064f1899f15aad3e019b071" category="doc">Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경합니다</block>
   <block id="64001104830dfdff90f2cf316af055f4" category="list-text">인스턴스 유형을 변경하면 AWS 서비스 요금에 영향을 줄 수 있습니다.</block>
-  <block id="ba1aa64af19fe534f8edf051425fc04d" category="list-text">인스턴스 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해했는지 확인한 다음 * 확인 * 을 클릭합니다.</block>
   <block id="f9ca6b49a548c69b9daaf623a10c70fe" category="summary">계정 관리자는 Cloud Volumes ONTAP 작업 환경을 제거하여 다른 시스템으로 이동하거나 검색 문제를 해결할 수 있습니다.</block>
   <block id="345811bf0383d75dd95a07e487d8b29b" category="doc">Cloud Volumes ONTAP 작업 환경 제거</block>
   <block id="8a5743c35b84714fc6fe40c2cfab576b" category="list-text">다른 작업 공간에서 다시 검색합니다</block>
   <block id="c0745336f44247c724e2de0e640b4daa" category="list-text">초기 검색 중에 문제가 발생한 경우 다시 검색합니다</block>
-  <block id="125c3f7f1a34115bd5d7a3312f502185" category="list-text">도구 페이지에서 * 시작 * 을 클릭합니다.</block>
-  <block id="c9c1fe399a016eb71ef77b98d9d3908c" category="list-text">제거할 Cloud Volumes ONTAP 작업 환경을 선택합니다.</block>
-  <block id="844581166f3d6c9fef0c12b72220bb3d" category="list-text">검토 및 승인 페이지에서 * 이동 * 을 클릭합니다.</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">새로운 기능</block>
   <block id="06a685f653628719e2e70fedf9b250a9" category="section-title">볼륨 마법사를 다시 설계했습니다</block>
   <block id="dd787088b52e69b3d8bf590e16c8413c" category="paragraph">최근에 도입된 새 볼륨 생성 마법사는 * 고급 할당 * 옵션에서 특정 애그리게이트에 볼륨을 생성할 때 사용할 수 있습니다.</block>
@@ -829,13 +790,8 @@
   <block id="7b706b41f05f9caa3f36f827554b9f72" category="list-text">Canvas 페이지에서 FlexVol 볼륨을 프로비저닝할 Cloud Volumes ONTAP 시스템의 이름을 두 번 클릭합니다.</block>
   <block id="8fe21d93cbc571a932071994087670db" category="paragraph">Cloud Volumes ONTAP 시스템의 데이터 애그리게이트를 잘 알고 있는 경우에만 특정 애그리게이트를 선택하는 것이 좋습니다.</block>
   <block id="71c3e1e405ad66b5bff9ec466ea6a3f4" category="open-title">모든 애그리게이트</block>
-  <block id="26b392aa05064fe814836b0694a9882f" category="paragraph">볼륨 탭에서 * 볼륨 추가 * &gt; * 새 볼륨 * 을 클릭합니다.</block>
   <block id="8f16078272611a0f4398b213c95246b5" category="open-title">특정 애그리게이트</block>
-  <block id="d56f9c2528e1e01328b3a8b34a35154d" category="list-text">메뉴 아이콘을 클릭한 다음 * 고급 &gt; 고급 할당 * 을 클릭합니다.</block>
-  <block id="c838714246a1663c8542bc0fc4ad1aab" category="list-text">집계 메뉴를 클릭합니다.</block>
-  <block id="e980b61c0751016af2c2c6c2323619ea" category="list-text">볼륨 생성 * 을 클릭합니다.</block>
   <block id="108a74a6cbb575c986177039e07dc411" category="list-text">마법사의 단계에 따라 볼륨을 생성합니다.</block>
-  <block id="9691bf3a7c5f05b620ab3b20437b6123" category="list-text">* 세부 정보, 보호 및 태그 *: 볼륨에 대한 기본 세부 정보를 입력하고 스냅샷 정책을 선택합니다.</block>
   <block id="3b0e375a08fe94a129cba31916c9d2dc" category="paragraph">이 페이지의 일부 필드는 설명이 필요 없습니다. 다음 목록에서는 지침이 필요한 필드를 설명합니다.</block>
   <block id="191fac23c2b2ea4e948178972521292f" category="cell">볼륨 크기</block>
   <block id="7b975bd58356ec64d88f70d7f167a299" category="cell">입력할 수 있는 최대 크기는 씬 프로비저닝의 사용 여부에 따라 크게 달라집니다. 이를 통해 현재 사용 가능한 물리적 스토리지보다 더 큰 볼륨을 생성할 수 있습니다.</block>
@@ -874,29 +830,20 @@
   <block id="395f4870d887a81edabc6ad40f5a84f0" category="admonition">템플릿을 사용하는 경우에만 NFS 또는 CIFS 볼륨을 생성할 수 있습니다.</block>
   <block id="3464a6536597fb17300e864f33f6b63d" category="list-text">Canvas 페이지에서 볼륨을 프로비저닝할 Cloud Volumes ONTAP 시스템의 이름을 클릭합니다.</block>
   <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">템플릿에서 새 볼륨을 추가하는 방법을 보여 주는 스크린샷</block>
-  <block id="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="paragraph"><block ref="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">Select Template_page에서 볼륨을 생성하는 데 사용할 템플릿을 선택하고 * Next * 를 클릭합니다.</block>
   <block id="41fdbb8293e553892079d0e7ad8a9ad9" category="inline-image-macro">사용 가능한 응용 프로그램 템플릿의 스크린샷.</block>
   <block id="f2a6f7bb83d518b8832e241b44419c17" category="paragraph"><block ref="f2a6f7bb83d518b8832e241b44419c17" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8675916eaff2fb10955e8a3b1b14108f" category="paragraph">Define Parameters_page가 표시됩니다.</block>
   <block id="19f5b7f92268b2f8e63e4083819666c9" category="inline-image-macro">볼륨을 생성하기 위해 입력해야 하는 빈 템플릿을 보여 주는 스크린샷</block>
   <block id="f9fb39421cb5c84a9897e58b19c84510" category="paragraph"><block ref="f9fb39421cb5c84a9897e58b19c84510" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c5ebc721265bff6f5891df31595f9db9" category="admonition">해당 매개 변수의 값을 보려면 * 읽기 전용 매개 변수 표시 * 확인란을 클릭하여 템플릿에 의해 잠긴 모든 필드를 표시할 수 있습니다. 기본적으로 이러한 미리 정의된 필드는 숨겨지고 완료해야 하는 필드만 표시됩니다.</block>
-  <block id="f916a27cf580c1cb72d910a796827151" category="list-text">context_area에서 작업 환경은 처음 시작한 작업 환경의 이름으로 채워집니다. 볼륨을 생성할 * 스토리지 VM * 을 선택해야 합니다.</block>
-  <block id="7c40758a149a5a65989345e1641d496d" category="list-text">정의해야 하는 다른 작업이 없는 경우(예: 클라우드 백업 구성) * 템플릿 실행 * 을 클릭합니다.</block>
   <block id="db382d688e4cb3e09b6e7a743ce00edb" category="paragraph">다른 작업이 있는 경우 왼쪽 창에서 작업을 클릭하여 완료해야 하는 매개 변수를 표시합니다.</block>
   <block id="a31e4f2aa7f454321015e4c5b02bae97" category="inline-image-macro">완료해야 하는 추가 작업을 선택하는 방법을 보여 주는 스크린샷</block>
   <block id="0fdf861b8e72c9acd6caea0924545667" category="paragraph"><block ref="0fdf861b8e72c9acd6caea0924545667" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="805efa3cb5ac86159dc412d73e3ea0ee" category="paragraph">예를 들어, 클라우드 백업 활성화 작업에서 백업 정책을 선택해야 하는 경우 지금 선택할 수 있습니다.</block>
-  <block id="4e4c407dde2bf455a9c4fcfb4d35f0cb" category="list-text">템플릿 실행 * 을 클릭합니다.</block>
   <block id="f97c61e27cbf22f850ec5f0412358f0b" category="paragraph">Cloud Volumes ONTAP에서는 진행 상황을 볼 수 있도록 볼륨을 프로비저닝하고 페이지를 표시합니다.</block>
   <block id="40136e65ff57723941fc2af2bf21d54a" category="inline-image-macro">템플릿에서 새 볼륨 생성 진행률을 보여 주는 스크린샷</block>
   <block id="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="paragraph"><block ref="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0ca2ea4d1ed88de2980b88af718eedaf" category="paragraph">또한 볼륨에 Cloud Backup을 설정하는 등 템플릿에 보조 작업이 구현되는 경우 해당 작업도 수행됩니다.</block>
   <block id="841221afb195f2b9f58a8b1dc6a57132" category="section-title">HA 구성의 두 번째 노드에 볼륨을 생성합니다</block>
   <block id="60a2834a97bdfe49641e5ed1d42e4116" category="list-text">Canvas 페이지에서 집계를 관리할 Cloud Volumes ONTAP 작업 환경의 이름을 두 번 클릭합니다.</block>
-  <block id="be6c4e6315a42d6166b9bdefd99b4175" category="list-text">메뉴 아이콘을 클릭한 다음 * 고급 &gt; 고급 할당 * 을 클릭합니다.</block>
-  <block id="ad8627b73ca7a7c5d40024a795bad541" category="list-text">Add Aggregate * 를 클릭한 다음 Aggregate를 생성합니다.</block>
   <block id="c8f3514620e31924fc247388a82834fa" category="list-text">홈 노드의 경우 HA 쌍의 두 번째 노드를 선택합니다.</block>
   <block id="3e508ca38cc9707d385da2b9195e69c1" category="list-text">새 볼륨에 대한 세부 정보를 입력한 다음 * Create * 를 클릭합니다.</block>
   <block id="8da4ea7971e73407bb70003f96f11e26" category="admonition">여러 AWS Availability Zone에 구축된 HA 쌍의 경우 볼륨이 상주하는 노드의 부동 IP 주소를 사용하여 볼륨을 클라이언트에 마운트해야 합니다.</block>
@@ -909,13 +856,10 @@
   <block id="47a29d3d79731f5f3ac2e35595cdd5a9" category="list-text">Canvas 페이지에서 집계를 관리할 Cloud Volumes ONTAP 작업 환경을 두 번 클릭합니다.</block>
   <block id="4ee08bb978546541b2d29cc9458a50b6" category="list-text">애그리게이트 관리:</block>
   <block id="6fb0fc660dff117671a3212aa98c1e9a" category="cell">Aggregate에 대한 정보를 봅니다</block>
-  <block id="a40afba5e0bd72803969dff1b0ed7469" category="cell">Aggregate를 선택하고 * Info * 를 클릭합니다.</block>
   <block id="b50c158eaf466db16b58f00ceffdc6e1" category="cell">특정 Aggregate에 볼륨을 생성합니다</block>
-  <block id="90f1a1f2730a3abc2245b4a979df10f4" category="cell">애그리게이트를 선택하고 * 볼륨 생성 * 을 클릭합니다.</block>
   <block id="ee1ffb740641bd768beada794d582fc1" category="cell">Aggregate에 디스크를 추가합니다</block>
   <block id="b98fc1f56f56b03e2525b90a45df7e45" category="list-text">추가할 디스크 수를 선택하고 * 추가 * 를 클릭합니다.</block>
   <block id="8ce62ed0fdfe7abb736c3597956922c2" category="cell">애그리게이트 삭제</block>
-  <block id="55acf40831b2a6bbebbb0948c51c7dad" category="list-text">볼륨이 없는 Aggregate를 선택하고 * Delete * 를 클릭합니다.</block>
   <block id="c8448275713faf6fe02a71468ed251d8" category="summary">이벤트 관리 시스템은 ONTAP 시스템에서 발생하는 이벤트에 대한 정보를 수집하고 표시합니다. 이벤트 알림을 수신하려면 특정 이벤트 심각도에 대한 이벤트 대상 및 이벤트 경로를 설정할 수 있습니다.</block>
   <block id="b1bf30693cbd3a53c3081b47d5526717" category="doc">EMS를 설정한다</block>
   <block id="ae72beb81d5834d2f01cddc522f75aab" category="paragraph">EMS(이벤트 관리 시스템)는 ONTAP 시스템에서 발생하는 이벤트에 대한 정보를 수집하고 표시합니다. 이벤트 알림을 수신하려면 이벤트 대상(이메일 주소, SNMP 트랩 호스트 또는 syslog 서버)과 이벤트 경로를 특정 이벤트 심각도에 대해 설정할 수 있습니다.</block>
@@ -928,10 +872,6 @@
   <block id="145677a5a159dfbbd80d693eb835dd56" category="paragraph">모든 방법을 사용하여 ONTAP 소프트웨어를 업그레이드하려면 PAYGO 시스템을 NetApp에 등록해야 합니다 <block ref="a298d5e88f2fe29dd7b686b16fbea686" category="inline-link-macro-rx"></block>.</block>
   <block id="17a487ae56e17c3c175366c070697ba7" category="inline-link">NetApp Support 사이트 계정을 추가하는 방법을 알아보십시오</block>
   <block id="8e396ea0aa1df92258d1f707577a2a06" category="paragraph"><block ref="15f23b395848b815304786c7c573b912" category="inline-link-rx"></block>.</block>
-  <block id="598a7189c0a8955db5d1e7c0795da2a6" category="list-text">Canvas 페이지에서 등록할 시스템의 이름을 두 번 클릭합니다.</block>
-  <block id="ddfc5fbf9d4116f75fab6bc240ee3629" category="list-text">메뉴 아이콘을 클릭한 다음 * 지원 등록 * 을 클릭합니다.</block>
-  <block id="c91422d2af44df29262eeef0050de7fb" category="inline-image-macro">스크린샷: Cloud Volumes ONTAP 시스템의 메뉴 아이콘에서 선택한 지원 등록 옵션을 표시합니다.</block>
-  <block id="f82fe496603bf204ff4b4b1c2f2016dc" category="paragraph"><block ref="f82fe496603bf204ff4b4b1c2f2016dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5e09b978da9c03ac56e9ae009a493fb2" category="list-text">NetApp Support 사이트 계정을 선택하고 * Register * 를 클릭합니다.</block>
   <block id="ce526ab58111a5389fb309107879b9a8" category="paragraph">Cloud Volumes ONTAP CLI를 사용하면 모든 관리 명령을 실행할 수 있으며 고급 작업에 이상적이고 CLI를 사용하는 것이 더 편할 경우 적합합니다. SSH(Secure Shell)를 사용하여 CLI에 연결할 수 있습니다.</block>
   <block id="3b1f07734e1995c8bb4477cd9ebabf4d" category="admonition">여러 AZs에 구축된 Cloud Volumes ONTAP HA 구성에서는 클러스터 관리 인터페이스에 부동 IP 주소를 사용합니다. 즉, 외부 라우팅을 사용할 수 없습니다. 동일한 라우팅 도메인의 일부인 호스트에서 접속해야 합니다.</block>
@@ -945,8 +885,6 @@
   <block id="4760896a3351a42c072a61eb664108e5" category="summary">여러 AWS 가용성 영역에 구축된 HA 쌍의 부동 IP 주소에 대한 라우트가 포함된 AWS 경로 테이블을 수정할 수 있습니다. 새로운 NFS 또는 CIFS 클라이언트가 AWS의 HA 쌍에 액세스해야 하는 경우 이 작업을 수행할 수 있습니다.</block>
   <block id="f431a02cb5c1646114365a3adfa4233b" category="doc">여러 AZs에서 HA 쌍의 경로 테이블을 변경합니다</block>
   <block id="89cac051c93d21ebf3a23db9a240bbd1" category="paragraph">여러 AZs(AWS Availability Zone)에 구축된 HA 쌍의 부동 IP 주소에 대한 라우트가 포함된 AWS 경로 테이블을 수정할 수 있습니다. 새로운 NFS 또는 CIFS 클라이언트가 AWS의 HA 쌍에 액세스해야 하는 경우 이 작업을 수행할 수 있습니다.</block>
-  <block id="e60243467f676326e36a7e657bc20970" category="list-text">작업 환경에서 메뉴 아이콘을 클릭한 다음 * 정보 * 를 클릭합니다.</block>
-  <block id="411f67726812722e40994bad9091a5ac" category="list-text">배관 테이블 * 을 클릭합니다.</block>
   <block id="ce501a2e9d8b238043619a3db4abc141" category="list-text">선택한 라우팅 테이블 목록을 수정하고 * 저장 * 을 클릭합니다.</block>
   <block id="573514d5de621ecfe56c91e7c665d73d" category="inline-link">Azure 지역 쌍</block>
   <block id="b2de829903c040e99b02d3d155ca0528" category="paragraph">클라이언트가 Cloud Volumes ONTAP와 동일한 VNET 내에 있거나, 피어링된 VNets 내에 있거나, VNET에 대한 전용 VPN 또는 ExpressRoute 연결을 사용할 때 사내 네트워크에 있는 경우 클라이언트 액세스는 개인 링크를 통해 이루어집니다.</block>
@@ -1068,7 +1006,6 @@
   <block id="0131f05be010a429416bcb6f853b54f6" category="doc">AWS 리소스 비용 모니터링</block>
   <block id="de4e4bb6bc85c14c6a8601fd20afdca3" category="inline-link">WorkingEnvironmentId* 태그를 활성화합니다</block>
   <block id="ee0050b628db7de40e04e661d528d91f" category="list-text"><block ref="541edff71c56eae6d36d5f7a463cfcca" category="inline-link-rx"></block>.</block>
-  <block id="525637918edc816fd2dd073b6aa98f41" category="list-text">Canvas 페이지에서 Cloud Volumes ONTAP 작업 환경을 선택한 다음 * 비용 * 을 클릭합니다.</block>
   <block id="9dfa1bfa6d369f6aee8b4ba09ac15642" category="paragraph">Cost 페이지에는 현재 및 이전 달의 비용이 표시되며, 볼륨에 NetApp의 비용 절감 기능을 활성화한 경우 연간 NetApp의 절감액이 표시됩니다.</block>
   <block id="c58c67877e90861ec92c90c10b7ad7f4" category="paragraph">다음 이미지는 샘플 비용 페이지를 보여 줍니다.</block>
   <block id="37423695a33e814084966c17d451584a" category="inline-image-macro">스크린샷: Cloud Volumes ONTAP 인스턴스의 월별 비용을 표시합니다.</block>
@@ -1186,7 +1123,6 @@
   <block id="21d971c1fd1bf90d09fc9c3acbf89eef" category="paragraph">클라이언트는 볼륨이 상주하는 노드의 데이터 IP 주소를 사용하여 NFS 및 CIFS 볼륨을 액세스해야 합니다. NAS 클라이언트가 파트너 노드의 IP 주소를 사용하여 볼륨에 액세스하는 경우 트래픽이 두 노드 간에 이동하므로 성능이 저하됩니다.</block>
   <block id="7dc27ef59812147ac25a6539ca8487d1" category="admonition">HA 쌍에서 노드 간에 볼륨을 이동하는 경우 다른 노드의 IP 주소를 사용하여 볼륨을 다시 마운트해야 합니다. 그렇지 않으면 성능이 저하될 수 있습니다. 클라이언트가 CIFS에 대한 NFSv4 참조 또는 폴더 리디렉션을 지원하는 경우 Cloud Volumes ONTAP 시스템에서 이러한 기능을 설정하여 볼륨을 다시 마운트하지 않도록 할 수 있습니다. 자세한 내용은 ONTAP 설명서를 참조하십시오.</block>
   <block id="d0eb9723d8f743b568ca7af03af706b0" category="inline-image-macro">스크린샷: 볼륨을 선택할 때 사용할 수 있는 마운트 명령을 표시합니다.</block>
-  <block id="a5061c073213535809d187195725e86c" category="paragraph"><block ref="a5061c073213535809d187195725e86c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="987e6a12f4054c7d2b4fb12b670fd3e2" category="summary">Cloud Volumes ONTAP가 기본적으로 어떻게 구성되어 있는지 이해하면 시스템을 설정하고 관리하는 데 도움이 됩니다. 특히 ONTAP에 익숙한 경우 Cloud Volumes ONTAP의 기본 설정은 ONTAP와 다르기 때문입니다.</block>
   <block id="f280b5a5c0eeaf41d31a8a2661b341cb" category="doc">Cloud Volumes ONTAP의 기본 구성입니다</block>
   <block id="bd87106622bcf823ab94ad8e03ed23db" category="inline-link-macro">스토리지 VM 관리에 대해 자세히 알아보십시오</block>
@@ -1625,22 +1561,14 @@
   <block id="502ba236a1cae83a29d3574451caea8b" category="list-text">관계를 선택하고 * 작업 &gt; 정지 * 를 클릭합니다.</block>
   <block id="58f03f4aa156a72c372951a943f6b4d3" category="section-title">애그리게이트가 온라인 상태인지 확인합니다</block>
   <block id="8934d548c1104122f0b1a27daeb92ffa" category="paragraph">소프트웨어를 업데이트하기 전에 Cloud Volumes ONTAP용 애그리게이트가 온라인 상태여야 합니다. 애그리게이트는 대부분의 구성에서 온라인 상태여야 하지만, 그렇지 않을 경우 온라인 상태로 전환할 수 있습니다.</block>
-  <block id="bad0781b91218856a150922e68d07abe" category="list-text">Aggregate를 선택하고 * Info * 를 클릭한 다음 상태가 온라인인지 확인합니다.</block>
   <block id="8a58bd2f86c7acb1b532ae3d8d8ffea5" category="inline-image-macro">스크린샷: 집계에 대한 정보를 볼 때 상태 필드를 표시합니다.</block>
-  <block id="9a995e2acb4483a9819c1ce69c1838e4" category="paragraph"><block ref="9a995e2acb4483a9819c1ce69c1838e4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3c9582501e322eb574b7a8f727a9838c" category="list-text">애그리게이트는 오프라인 상태인 경우 System Manager를 사용하여 애그리게이트를 온라인 상태로 전환합니다.</block>
   <block id="9f4fc08ee817c29b22638b7544f0a27a" category="list-text">스토리지 &gt; 애그리게이트 및 디스크 &gt; 애그리게이트 * 를 클릭합니다.</block>
   <block id="c8a8f302f21fc7d1accf5a0eb3025496" category="list-text">애그리게이트를 선택한 다음 * 추가 작업 &gt; 상태 &gt; 온라인 * 을 클릭합니다.</block>
   <block id="3a3843b2672bd389702bef2d50b13ac2" category="section-title">Cloud Volumes ONTAP를 업그레이드합니다</block>
   <block id="31d167cba5cdd422c65657c793b962dc" category="inline-image-macro">스크린샷: 작업 환경을 선택한 후 Canvas 페이지에 표시되는 새 버전 사용 가능 알림을 표시합니다.</block>
-  <block id="93e69b27c99652c72cf49fd51a487813" category="paragraph"><block ref="93e69b27c99652c72cf49fd51a487813" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1e565fae8cb8375a73df9abf2e99667a" category="paragraph">이 알림에서 업그레이드 프로세스를 시작하여 S3 버킷에서 소프트웨어 이미지를 가져온 다음 이미지를 설치한 다음 시스템을 다시 시작하여 프로세스를 자동화할 수 있습니다.</block>
   <block id="d51a07decbe601cbb24e543eb1a87686" category="list-text">작업 환경을 선택합니다.</block>
-  <block id="253804b3f61f30ff9abeb479b2c10701" category="paragraph">새 버전을 사용할 수 있는 경우 오른쪽 창에 알림이 나타납니다.</block>
-  <block id="3ff5bd4f7d1ec1b55544ace7c0a77dbc" category="list-text">새 버전을 사용할 수 있는 경우 * 업그레이드 * 를 클릭합니다.</block>
-  <block id="04f69386f5a6c4daab4b7332e06cb8ea" category="list-text">릴리스 정보 페이지에서 링크를 클릭하여 지정된 버전의 릴리스 정보를 읽은 다음 * 읽었으면... * 확인란을 선택합니다.</block>
-  <block id="ba897f4b2dc97e3650f4751a409565f3" category="list-text">최종 사용자 사용권 계약(EULA) 페이지에서 EULA를 읽은 다음 * EULA * 를 읽고 승인합니다 * 를 선택합니다.</block>
-  <block id="f475ec9a2d7eef21df387d22c2657629" category="list-text">검토 및 승인 페이지에서 중요한 메모를 읽고 * 이해했습니다... * 를 선택한 다음 * Go * 를 클릭합니다.</block>
   <block id="9a5aec1f134672fe587fc8acffcdf87f" category="paragraph">SnapMirror 전송을 일시 중지한 경우 System Manager를 사용하여 전송을 다시 시작합니다.</block>
   <block id="8a2e35e048f2fec22cf01ac1e91ac6e6" category="section-title">URL에서 사용할 수 있는 이미지에서 업그레이드합니다</block>
   <block id="478a47fb7018b29c05bb8f425afdc456" category="list-text">선택 사항: Cloud Volumes ONTAP 소프트웨어 이미지를 호스팅할 수 있는 HTTP 서버를 설정합니다.</block>
@@ -1758,9 +1686,6 @@
   <block id="a2f3899afcc452f690cc60c38609343a" category="cell">VNet(가상 네트워크)</block>
   <block id="23e95605ee0aa909f15e50833d6671a9" category="cell">네트워크 보안 그룹(자체 사용 시)</block>
   <block id="0c0c93dcca58dc6ba5a46ef2bf56980b" category="doc">랜섬웨어에 대한 보호 개선</block>
-  <block id="3e2be8b5f27f1aa296209f82d9266254" category="list-text">작업 환경에서 * 랜섬웨어 * 아이콘을 클릭합니다.</block>
-  <block id="b4d57e3816d3dc9005d5675c781d08bf" category="inline-image-macro">작업 환경을 볼 때 페이지 오른쪽 상단에 있는 랜섬웨어 아이콘을 보여주는 스크린샷</block>
-  <block id="7e750d159c031938f4193b0bd8d03636" category="paragraph"><block ref="7e750d159c031938f4193b0bd8d03636" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6fd2a34cb3ac050adc4e4ef8cbaf3727" category="list-text">랜섬웨어에 대한 NetApp 솔루션 구현:</block>
   <block id="630bed2396b7232862aa978bb71ea4a6" category="list-text">스냅샷 정책이 활성화되지 않은 볼륨이 있는 경우 * 스냅샷 정책 활성화 * 를 클릭합니다.</block>
   <block id="939f63aeda74246a5fa38c869770bd7c" category="paragraph">NetApp Snapshot 기술은 랜섬웨어 해결을 위한 업계 최고의 솔루션을 제공합니다. 성공적인 복구의 핵심은 감염되지 않은 백업에서 복원하는 것입니다. Snapshot 복사본은 읽기 전용이므로 랜섬웨어 손상을 방지합니다. 또한 세분화하여 단일 파일 복사본 또는 전체 재해 복구 솔루션의 이미지를 생성할 수도 있습니다.</block>
@@ -1771,8 +1696,6 @@
   <block id="3346762ff8f7a33c4ab0e7fa6f5ae4bf" category="summary">Digital Wallet에서 용량 기반 라이센스를 관리하여 NetApp 계정이 Cloud Volumes ONTAP 시스템에 필요한 용량을 확보하도록 하십시오.</block>
   <block id="56a50532d8da2bebb09d6190c126140c" category="doc">용량 기반 라이센스 관리</block>
   <block id="93ed65a89f306426be7980ddc22595e8" category="paragraph">_용량 기반 라이센스_Cloud Volumes ONTAP/TiB 용량 비용을 지불할 수 있습니다.</block>
-  <block id="8881e3192df3d6a5d7efc284f0e0beee" category="inline-image-macro">프로페셔널 패키지 및 필수 패키지에 대해 프로비저닝된 용량과 라이센스가 부여된 용량의 양을 보여 주는 스크린샷</block>
-  <block id="a67c1e3fa166897e8cc4f860ff4aa0c5" category="paragraph"><block ref="a67c1e3fa166897e8cc4f860ff4aa0c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b2dfe525c9a6bec7392826fba889fe07" category="section-title">구입한 라이센스를 계정에 추가합니다</block>
   <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">라이선스 추가 * 를 클릭합니다.</block>
   <block id="5c55b043854250a04085395d6b5a3a9d" category="list-text">용량 기반 라이센스의 일련 번호를 입력하거나 라이센스 파일을 업로드하십시오.</block>
@@ -1920,7 +1843,6 @@
   <block id="b171537681ac6ab38d6353435252c4f1" category="list-text">사용권 변환 * 을 클릭합니다.</block>
   <block id="c165494898bc0fbf27151d6359a27936" category="doc">애그리게이트 생성</block>
   <block id="67ea3f429e13cb33e66f1359eb85cc04" category="list-text">Canvas 페이지에서 집계를 관리할 Cloud Volumes ONTAP 인스턴스의 이름을 두 번 클릭합니다.</block>
-  <block id="ff4facf1a49a9f339fdb4bf4880c23f1" category="list-text">Add Aggregate * 를 클릭한 다음 Aggregate에 대한 세부 정보를 지정합니다.</block>
   <block id="833ac412ce32368430680596235b2009" category="list-text">Go * 를 클릭한 다음 * Approve and Purchase * 를 클릭합니다.</block>
   <block id="ff12fe6f5d97035a37481ab9694afb95" category="doc">AWS의 보안 그룹 규칙</block>
   <block id="01cc3f2faf08762df2ba5632863fa9b9" category="section-title">Cloud Volumes ONTAP 규칙</block>
@@ -2273,7 +2195,6 @@
   <block id="350a5f4a5776c36c5a3cd04127fb4fe5" category="section-title">요구사항을 구현한 후 데이터 계층화를 사용하도록 설정</block>
   <block id="153099ca90154cd624989c2d0ba20c2b" category="inline-xref">모든 요구 사항을 충족하는지 확인합니다</block>
   <block id="87d6e798cac3a87c0353ec294be704dd" category="list-text"><block ref="066865d547a10de791f5772d517b17f7" category="inline-xref-macro-rx"></block>.</block>
-  <block id="b9abd7055dd68825b2f07a610643808b" category="list-text">Canvas 페이지에서 Cloud Volumes ONTAP 인스턴스의 이름을 두 번 클릭합니다.</block>
   <block id="8bafa552ca08956804ea81c5b66b12db" category="list-text">메뉴 아이콘을 클릭하고 * 용량 계층화 활성화 * 를 선택합니다.</block>
   <block id="75a38ac7969fd8d12bc86993fd41536a" category="section-title">애그리게이트에서 계층화가 설정되었는지 확인합니다</block>
   <block id="d1795f03cc65928e7e6c681acf520582" category="paragraph">볼륨에서 데이터 계층화를 사용하려면 애그리게이트에서 데이터 계층화를 활성화해야 합니다. 새 볼륨 및 기존 볼륨에 대한 요구사항을 알고 있어야 합니다.</block>
@@ -2281,8 +2202,6 @@
   <block id="7837a0921d66e4bb13eaadfbd4e230b5" category="list-text">* 기존 볼륨 *</block>
   <block id="603cb1023afc4d427cec5523f7e57a44" category="paragraph">기존 볼륨에서 데이터 계층화를 사용하려면 기본 애그리게이트에 데이터 계층화가 설정되어 있는지 확인해야 합니다. 기존 애그리게이트에서 데이터 계층화를 사용하지 않는 경우 System Manager를 사용하여 기존 애그리게이트를 오브젝트 저장소에 연결해야 합니다.</block>
   <block id="8ccc20b42c5589bb063180b688f1b75c" category="list-title">Aggregate에서 계층화가 설정되었는지 확인하는 단계입니다</block>
-  <block id="164a2b16a831f0be194767eec1e394e9" category="list-text">메뉴 아이콘을 클릭하고 * 고급 * 을 클릭한 다음 * 고급 할당 * 을 클릭합니다.</block>
-  <block id="42e0fd08a018bc4ebe85c982dcdbf69e" category="list-text">애그리게이트에서 계층화가 설정되었는지 또는 해제되었는지 확인합니다.</block>
   <block id="f996b43685fd706b80aeb790d46b2ba2" category="list-title">Aggregate에서 계층화를 활성화하는 단계입니다</block>
   <block id="fa993d0910660bdcad473652ec5f6fd9" category="list-text">System Manager에서 * Storage &gt; Tiers * 를 클릭합니다.</block>
   <block id="a81d10975a3cf570e21398a50ce230b9" category="list-text">Aggregate에 대한 작업 메뉴를 클릭하고 * Attach Cloud Tiers * 를 선택합니다.</block>
@@ -2290,15 +2209,11 @@
   <block id="a323b1a6695991c4c107a123436089fb" category="paragraph">이제 다음 섹션에 설명된 대로 새 볼륨과 기존 볼륨에 대해 데이터 계층화를 설정할 수 있습니다.</block>
   <block id="4378a09b2897cb95172610f9ab82105b" category="section-title">읽기-쓰기 볼륨의 데이터 계층화</block>
   <block id="38f85b7b21b44c9b59780ab299932eff" category="paragraph">Cloud Volumes ONTAP는 읽기-쓰기 볼륨의 비활성 데이터를 비용 효율적인 오브젝트 스토리지에 계층화하여 핫 데이터에 대한 성능 계층을 확보할 수 있습니다.</block>
-  <block id="cdf6af3897d6557455ac809e1ffde97c" category="list-text">작업 환경에서 새 볼륨을 생성하거나 기존 볼륨의 계층을 변경합니다.</block>
   <block id="39bd65df7752a24493d186f47c1c4bcd" category="cell">새 볼륨을 생성합니다</block>
   <block id="e0e02b01eefffa92ef6dd41ca0bfddaa" category="cell">새 볼륨 추가 * 를 클릭합니다.</block>
   <block id="182706d5a3d41050c9687bc12322e932" category="cell">기존 볼륨을 수정합니다</block>
-  <block id="5db974b5f3510ad309e326c50b08ea61" category="cell">볼륨을 선택하고 * 디스크 유형 및 계층화 정책 변경 * 을 클릭합니다.</block>
   <block id="8e18d8c821310741023d16bcccb5aa95" category="list-text">계층화 정책을 선택합니다.</block>
   <block id="9566ee0b8867f3b42d0387e3792c2561" category="paragraph">이러한 정책에 대한 설명은 를 참조하십시오 <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>.</block>
-  <block id="ed3fffd1e98b6ea6e3c87bde5d798945" category="inline-image-macro">오브젝트 스토리지에 대한 계층화를 활성화하는 아이콘을 보여 주는 스크린샷</block>
-  <block id="6173457770f08d006795bfe77a9ee1ff" category="paragraph"><block ref="6173457770f08d006795bfe77a9ee1ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bbef357c8db2518419bffde441df9910" category="section-title">데이터 보호 볼륨에서 데이터 계층화</block>
   <block id="f7ace3ec87f10c0e3afcafcb4cf7b425" category="paragraph">Cloud Volumes ONTAP는 데이터 보호 볼륨의 데이터를 용량 계층으로 계층화할 수 있습니다. 대상 볼륨을 활성화하면 데이터가 읽혀지면서 성능 계층으로 서서히 이동합니다.</block>
   <block id="29e71d65fc647320e822efb6ec422c56" category="list-text">Canvas 페이지에서 소스 볼륨이 포함된 작업 환경을 선택한 다음 볼륨을 복제할 작업 환경으로 끌어다 놓습니다.</block>
@@ -2320,15 +2235,12 @@
   <block id="804f26a0bc44f8e04d1fb697d33eb4d8" category="list-text">Capacity * 에서 * Aggregate Capacity Thresholds - Free Space Ratio for Data Tiering * 을 클릭합니다.</block>
   <block id="c389556b61d8e54624252a2563fdfc17" category="list-text">요구 사항에 따라 여유 공간 비율을 변경하고 * Save * 를 클릭합니다.</block>
   <block id="24c979ae168264040ca2c88e59f2902a" category="section-title">자동 계층화 정책의 냉각 기간 변경</block>
-  <block id="314e806b4e1a10feefefa7b140062fab" category="paragraph">Cloud Volumes ONTAP 볼륨에서 _auto_Tiering 정책을 사용하여 데이터 계층화를 활성화한 경우 비즈니스 요구에 따라 기본 냉각 기간을 조정할 수 있습니다. 이 작업은 API를 통해서만 지원됩니다.</block>
   <block id="77ac5bdafcd5300a46db8d23117433c1" category="paragraph">냉각 기간은 볼륨의 사용자 데이터가 "콜드" 상태로 간주되어 오브젝트 스토리지로 이동되기 전에 비활성 상태로 유지해야 하는 일 수입니다.</block>
   <block id="15d3560479839db873ba3a7d6309b50c" category="paragraph">자동 계층화 정책의 기본 냉각 기간은 31일입니다. 냉각 기간을 다음과 같이 변경할 수 있습니다.</block>
   <block id="07c1e6ebf913a40fd18f3f57f20d6d68" category="list-text">9.8 이상: 2일에서 183일</block>
   <block id="a6f44cada6b6ce69a44f85c0c202e270" category="list-text">9.7 이하: 2일~63일</block>
   <block id="2e1602577b506088aeed8165e506d1e4" category="list-text">볼륨을 생성하거나 기존 볼륨을 수정할 때 API 요청과 함께 _minimumCoolingDays_매개 변수를 사용하십시오.</block>
   <block id="95d79008b0be56c31d097e76b7584763" category="doc">Cloud Volumes ONTAP의 암호를 변경합니다</block>
-  <block id="8ade5dd9392dfe1171a2a14523929e7d" category="list-text">작업 환경에서 메뉴 아이콘을 클릭한 다음 * 고급 &gt; 암호 설정 * 을 클릭합니다.</block>
-  <block id="4ca6940bf893c214ac89a699b609845c" category="list-text">새 암호를 두 번 입력한 다음 * 저장 * 을 클릭합니다.</block>
   <block id="809993be97183c1aad51ef5ea989cd2a" category="paragraph">새 암호는 마지막으로 사용한 6개의 암호 중 하나와 달라야 합니다.</block>
   <block id="aec821c01e23f20e98a9438c7d2dd253" category="summary">Microsoft 관리 키가 있는 Azure 스토리지 서비스 암호화를 사용하여 Azure의 Cloud Volumes ONTAP에서 데이터를 자동으로 암호화합니다. 그러나 이 페이지의 단계를 따르면 사용자 고유의 암호화 키를 사용할 수 있습니다.</block>
   <block id="e76c0365dfa8d6b43992d790f582e6c4" category="doc">Azure에서 고객이 관리하는 키를 사용하도록 Cloud Volumes ONTAP를 설정합니다</block>
@@ -2525,7 +2437,6 @@
   <block id="282267afd7416dee4eb19ac3837e1b47" category="summary">Microsoft Azure에서 Cloud Volumes ONTAP를 시작할 때 여러 VM 유형 중에서 선택할 수 있습니다. 필요에 따라 크기가 작거나 특대형 것으로 판단될 경우 언제든지 VM 유형을 변경할 수 있습니다.</block>
   <block id="a03c706f9aecdf2cb0f407d0f08a1656" category="doc">Cloud Volumes ONTAP의 Azure VM 유형을 변경합니다</block>
   <block id="9f257b11a56fb0990bae90687da210c7" category="list-text">VM 유형을 변경하면 Microsoft Azure 서비스 요금에 영향을 줄 수 있습니다.</block>
-  <block id="611a1fa2f8a37527bbcb1f0228321b4d" category="list-text">VM 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해하고 있는지 확인한 다음 * OK * 를 클릭합니다.</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">지원을 위해 등록하십시오</block>
   <block id="2971acb1ab572cfb61b7c86d49e2b300" category="sidebar">Cloud Volumes ONTAP 문서</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
@@ -2622,7 +2533,6 @@
   <block id="06c86f2b2f40c7b5ae916f820dace6f3" category="inline-link">Cloud Volumes ONTAP 릴리즈 노트 로 이동합니다</block>
   <block id="eaae0996b48caf454deb2608523a1af2" category="paragraph"><block ref="a3830f1e68e521753c115aa90de96c67" category="inline-link-rx"></block>.</block>
   <block id="cd46020b2ca09f66f5c79bd35fe2da2e" category="paragraph"><block ref="4107f790de2a45bc9a00a9b75db49bc5" category="inline-link-rx"></block>.</block>
-  <block id="0149fd22e5722b132cbafe2d3e86e10b" category="list-text">템플릿에서 하드 코딩되지 않은 모든 매개변수에 대한 값을 추가합니다. 을 참조하십시오 <block ref="c4711ce582f4a278fe266c32d7e1a70b" category="inline-xref-macro-rx"></block> Cloud Volumes ONTAP 볼륨을 구축하기 위해 완료해야 하는 모든 매개 변수에 대한 자세한 내용은 를 참조하십시오.</block>
   <block id="17f0fae3c5e44f9a095562194f423343" category="paragraph"><block ref="17f0fae3c5e44f9a095562194f423343" category="inline-link-rx"></block></block>
   <block id="82defe4f45724f0ce17f1a11c6980420" category="paragraph"><block ref="82defe4f45724f0ce17f1a11c6980420" category="inline-link-rx"></block></block>
   <block id="cc88253744d31e3bf2a7ccc252a7265a" category="paragraph">자세한 지침은 을 참조하십시오<block ref="6317d940bb63c8479a9b48e6dec2fde3" category="inline-link-rx"></block>.</block>
@@ -2791,7 +2701,6 @@
   <block id="331320477ecac4cca1b63e686d99f8d3" category="section-title">디지털 지갑에 라이센스를 추가하는 방법</block>
   <block id="792eeb7f686f2ad37b664f6478d40bed" category="paragraph">NetApp 세일즈 담당자로부터 라이센스를 구입하면 일련 번호와 추가 라이센스 세부 정보가 포함된 이메일이 전송됩니다.</block>
   <block id="ad0be4bc913a8026a3f5e42fc7656d23" category="inline-xref">구입한 라이센스를 계정에 추가하는 방법에 대해 알아봅니다</block>
-  <block id="0558557eddde3c400b73684dfb49fdbb" category="list-text">Aggregate를 선택하고 * Add disks * 를 클릭합니다.</block>
   <block id="3e385957b42bff8380e99a914d474fb1" category="list-text">* 세부 정보 및 자격 증명 *: 프로젝트를 선택하고 클러스터 이름을 지정한 다음 서비스 계정을 선택하고 선택적으로 레이블을 추가한 다음 자격 증명을 지정합니다.</block>
   <block id="1adb02ac235ed181f81480b00aa116f6" category="list-text">* 위치 및 연결 *: 위치를 선택하고 방화벽 정책을 선택한 다음 데이터 계층화를 위해 Google Cloud 스토리지에 대한 네트워크 연결을 확인합니다.</block>
   <block id="3450bc9327f985ff43682b683cb1eee9" category="cell">연결 검증</block>
@@ -3146,11 +3055,8 @@
   <block id="bb1ef255816e8724de2a508f11ab6faa" category="list-text">Canvas 페이지에서 Cloud Volumes ONTAP 시스템의 이름을 두 번 클릭합니다.</block>
   <block id="a31b079030fd3d406e06a9ce180abf58" category="list-text">오른쪽 상단에서 * 고급 보기로 전환 * 을 클릭합니다.</block>
   <block id="4764848a2e939676e46196b57ed3d239" category="inline-image-macro">고급 보기로 전환 옵션을 보여 주는 Cloud Volumes ONTAP 작업 환경의 스크린샷</block>
-  <block id="3ee38239984a2c6b3ae4074ced0704c7" category="paragraph"><block ref="3ee38239984a2c6b3ae4074ced0704c7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="74d668d6c47cd0c55c4ff8f77ad621bd" category="list-text">확인 메시지가 나타나면 메시지를 읽고 * 닫기 * 를 클릭합니다.</block>
   <block id="f0da217269d7f8fb37fd503f586df2ef" category="list-text">시스템 관리자를 사용하여 Cloud Volumes ONTAP를 관리합니다.</block>
-  <block id="c7c80403ddad5bf0ae3c78cf20ad2cf1" category="inline-image-macro">표준 보기로 전환 옵션을 보여 주는 Cloud Volumes ONTAP 작업 환경의 스크린샷</block>
-  <block id="b98d787e610274d7cf438bd9dacb5eb3" category="paragraph"><block ref="b98d787e610274d7cf438bd9dacb5eb3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9091c5cdacecb3d4082594d5d5a31855" category="section-title">System Manager 사용에 대한 도움말</block>
   <block id="29b2dad08499788ccf25f529167b3782" category="paragraph">Cloud Volumes ONTAP에서 System Manager를 사용하는 데 도움이 필요한 경우 을 참조하십시오<block ref="e4712fca3ed0fd9138bc58dbf36327e9" category="inline-link-rx"></block> 을 참조하십시오. 다음은 도움이 될 수 있는 몇 가지 링크입니다.</block>
   <block id="b9cf2d579e6b088870d384fe9910b52f" category="inline-link">볼륨 및 LUN 관리</block>
@@ -3177,8 +3083,6 @@
   <block id="45d56c7397375528eb877ce509812ff1" category="paragraph"><block ref="45d56c7397375528eb877ce509812ff1" category="inline-link-rx"></block></block>
   <block id="f544f5509c6658bd68f3e69072dd7145" category="admonition">이 동작은 Amazon EBS Elastic Volumes 기능을 지원하는 애그리게이트에는 적용되지 않습니다. Elastic Volumes가 설정된 애그리게이트는 하나 또는 두 개의 RAID 그룹으로 구성됩니다. 각 RAID 그룹에는 동일한 용량을 가진 4개의 동일한 디스크가 있습니다. <block ref="e64e49a1cded5f4109adae46b4faa045" category="inline-link-macro-rx"></block>.</block>
   <block id="149dd55e6760c710e611c0480e5069ac" category="cell">Amazon EBS Elastic Volumes를 지원하는 애그리게이트의 용량을 늘립니다</block>
-  <block id="f17996ff912274a89bd46a09126f54a0" category="list-text">애그리게이트를 선택하고 * 용량 증가 * 를 클릭합니다.</block>
-  <block id="c2ee080a41f3128dec50564d5d2cf945" category="list-text">추가할 추가 용량을 입력한 다음 * 추가 * 를 클릭합니다.</block>
   <block id="ddc70e48be52170226876f32fd0d0955" category="paragraph">Aggregate의 용량을 최소 256GiB 또는 애그리게이트 크기의 10% 이상으로 늘려야 합니다.</block>
   <block id="457b4b096cd2396d1dc52e52b77f7f16" category="paragraph">예를 들어 1.77TiB Aggregate가 있는 경우 10%는 181GiB입니다. 이 값이 256GiB보다 낮으므로 애그리게이트의 크기를 최소 256GiB까지 늘려야 합니다.</block>
   <block id="a787df3b454348b29e66a5e26381efe1" category="inline-link-macro">Elastic Volumes 지원에 대해 자세히 알아보십시오</block>
@@ -3264,9 +3168,6 @@
   <block id="d842642316b39be001efb718a0cad4bd" category="inline-link-macro">Aggregate를 생성하는 방법을 알아보십시오</block>
   <block id="3af655005fd29fbbd8824a6ef2f040dc" category="paragraph"><block ref="bdaa17f2dfe16043f8bea33e0b6d1ef8" category="inline-link-macro-rx"></block>.</block>
   <block id="71ce9ba1a5339afe1098587175217b4b" category="list-text">Elastic Volumes가 설정된 애그리게이트를 식별합니다</block>
-  <block id="71ba010a4e2b551c25de28ee7b4f8a9a" category="paragraph">고급 할당 페이지로 이동하면 애그리게이트에 Elastic Volumes 기능이 설정되어 있는지 확인할 수 있습니다. 다음 예에서는 aggr2에 Elastic Volumes가 활성화되어 있는 반면 aggr1은 활성화되어 있지 않습니다.</block>
-  <block id="090c5fa182e6b93f4da9c8d06195700f" category="inline-image-macro">Elastic Volumes Enabled라는 텍스트가 있는 필드가 있는 두 개의 집계를 보여 주는 스크린샷</block>
-  <block id="ee7cf33bd0cd0b3af6a7cc58c5d43380" category="paragraph"><block ref="ee7cf33bd0cd0b3af6a7cc58c5d43380" category="inline-image-macro-rx" type="image"></block></block>
   <block id="13cb5ebd8c0b7becb3143ed413ade223" category="list-text">Aggregate에 용량을 추가합니다</block>
   <block id="dc71aae1559eb6f97026da188f10aa46" category="inline-link-macro">애그리게이트 용량을 늘리는 방법에 대해 알아보십시오</block>
   <block id="aeef03dd397a861db5fa8e9873d3c379" category="paragraph"><block ref="ea7cf76a282dc5fbb196162d820ca1ce" category="inline-link-macro-rx"></block>.</block>
@@ -3327,11 +3228,9 @@
   <block id="03c93da41831d72dcea5fc724b2b4658" category="list-text">Capacity * 에서 다음 설정을 수정합니다.</block>
   <block id="af1f64d74440547a71a0dfdd077d8a15" category="inline-link-macro">용량 관리 모드의 작동 방식에 대해 알아보십시오</block>
   <block id="46e6171a2e84c75269ac8bcb3c5004d8" category="paragraph"><block ref="f8a3c55f9fa8638c083e126aaf830b07" category="inline-link-macro-rx"></block>.</block>
-  <block id="562e73580c466cead324e6a17fbfe1c8" category="list-text">여유 공간 비율</block>
   <block id="314b05c3387324c9621b3b3cd58816d4" category="list-text">Aggregate의 여유 공간 비율이 지정된 임계값 아래로 떨어지면 알림을 트리거합니다.</block>
   <block id="a27b16792f86cfcc4c0f28d5d58e43f4" category="paragraph">여유 공간 비율은 다음과 같이 계산됩니다.</block>
   <block id="b9fbc310908f08e909d0f601f964b6d5" category="paragraph">(Aggregate capacity - 애그리게이트에서 사용하는 총 용량입니다.)/애그리게이트 용량입니다</block>
-  <block id="1bf0c6edc1ff4a9b211fcdf6bda9cef9" category="list-text">데이터 계층화에 대한 여유 공간 비율</block>
   <block id="0bc3c683bdb3389ca9d8d2211fce0878" category="list-text">데이터를 용량 계층(오브젝트 스토리지)으로 계층화할 때 성능 계층(디스크)에 필요한 여유 공간을 정의합니다.</block>
   <block id="3e230a58ba269a917d314abcc623818e" category="paragraph">이 비율은 재해 복구 시나리오에 중요합니다. 용량 계층에서 데이터를 읽으면 Cloud Volumes ONTAP는 더 나은 성능을 제공하기 위해 데이터를 성능 계층으로 이동합니다. 공간이 부족하면 Cloud Volumes ONTAP에서 데이터를 이동할 수 없습니다.</block>
   <block id="99a583bf10de030bdac538c8b15f5b45" category="paragraph">이 동작은 커넥터의 _용량 관리 모드_에 의해 결정됩니다. 용량 관리 모드는 해당 커넥터가 관리하는 모든 Cloud Volumes ONTAP 시스템에 영향을 줍니다. 다른 커넥터가 있는 경우 다르게 구성할 수 있습니다.</block>
@@ -3423,18 +3322,12 @@
   <block id="e1d61ff8b15b12854145940279164504" category="paragraph">시스템에 대한 총 6개의 시스템이 있습니다. 그러면 계정에 14개의 추가 시스템을 추가할 수 있는 공간이 있습니다.</block>
   <block id="03021ab228ad1d1c921bbf536e2913a4" category="section-title">계정에서 사용된 용량을 확인합니다</block>
   <block id="e54d493645f297f788982c1215f721bf" category="paragraph">Digital Wallet은 사용자 계정의 총 소비된 용량과 라이센스 패키지별 소비된 용량을 표시합니다. 이를 통해 비용이 청구되는 방식 및 추가 용량을 구입해야 하는지 여부를 파악할 수 있습니다.</block>
-  <block id="d5dde91fb8d63e816b49f1eaaf1b31f0" category="list-text">Capacity Based Licenses * 를 선택한 상태에서 패키지 요약을 보면 사용된 용량, 총 라이센스 용량 및 총 PAYGO 용량을 확인할 수 있습니다.</block>
   <block id="29f9c9781f75b695cb6c7c93910280cd" category="list-text">_Total Consumed Capacity _ 는 NetApp 계정의 모든 Cloud Volumes ONTAP 시스템에 프로비저닝된 총 용량입니다. 충전은 볼륨 내의 로컬, 사용, 저장 또는 유효 공간에 관계없이 각 볼륨의 프로비저닝된 크기를 기준으로 합니다.</block>
-  <block id="2895d33d8798ea34fbece2f03c7b1a44" category="list-text">_Total licensed_는 NetApp에서 구입한 BYOL(총 라이센스 용량)입니다.</block>
   <block id="4cca90046112da5c5d3a703dafebbb7e" category="list-text">_Total PAYGO_는 클라우드 마켓플레이스 서브스크립션을 사용하여 프로비저닝된 총 용량입니다. PAYGO를 통한 충전은 사용된 용량이 BYOL 라이센스 용량보다 높거나 Digital Wallet에 사용 가능한 라이센스가 없는 경우에만 사용됩니다.</block>
-  <block id="fa5b039d6c7312346b7c921f81258971" category="paragraph">다음은 2000TiB의 사용 용량이 있는 계정의 예입니다.</block>
   <block id="ea7c202c277e5ccf92e08be29b4a64e9" category="list-text">요약에서 각 라이센스 패키지의 사용된 용량을 확인합니다.</block>
-  <block id="39d8821e12869173bcc44d49a6c82619" category="list-text">_Consumed capacity_는 해당 패키지에 대한 볼륨의 총 용량을 보여 줍니다. 특정 패키지에 대한 자세한 내용을 보려면 도구 설명 위로 마우스를 가져갑니다.</block>
   <block id="d30bc4bd5cee7ac23a1df54311d1f4b3" category="inline-link-macro">Essentials 패키지 충전 방법에 대해 알아봅니다</block>
   <block id="33b4838dec7acdb2df64d13961f0a255" category="paragraph">Essentials 패키지에 표시되는 용량을 더 잘 이해하려면 충전 작동 방식에 익숙해야 합니다. <block ref="eee0a6ebb632d7e4c34635f35e9b54cf" category="inline-link-macro-rx"></block>.</block>
   <block id="bbb170bfbf4105204b0dbe4292724d6e" category="paragraph">다음은 여러 라이센스 패키지가 있는 계정의 예입니다.</block>
-  <block id="9dbb08096054a8593f55c8cd3e2863d6" category="inline-image-macro">전문가, 최적화 및 필수 패키지에 대해 사용된 용량을 보여 주는 스크린샷.</block>
-  <block id="943b03ddb77b543ab329dfed996ad4ac" category="paragraph"><block ref="943b03ddb77b543ab329dfed996ad4ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
   <block id="c0d3ce4ea1bcde455d433b9182cdde33" category="list-text">왼쪽 탐색 메뉴에서 * Digital Wallet * 을 선택합니다.</block>
@@ -3452,8 +3345,6 @@
   <block id="3bc8827b2b8b4b47a25fb21994526d52" category="paragraph">빠른 쓰기 속도로 인해 데이터가 손실되면 EMS(Event Management System)에서 다음 두 이벤트를 보고합니다.</block>
   <block id="7cd42532925d5e610a9d3694b57652da" category="list-text">Cloud Volumes ONTAP 9.8 ~ 9.10.1</block>
   <block id="deae9d093dee266b166a3693474231a9" category="paragraph">이 경우 Cloud Volumes ONTAP는 사용자 개입 없이 부팅하여 데이터를 계속 제공할 수 있어야 합니다.</block>
-  <block id="4f68f7a47531b2df7b7a4db5225d57b5" category="list-text">_BYOL_은 NetApp에서 구입한 라이센스 용량을 보여 줍니다.</block>
-  <block id="0c27ea3454ff74c09bafc9361752d263" category="list-text">_PAYGO_는 라이센스 소비 모델별 총 사용 용량을 표시합니다.</block>
   <block id="37bd0d8d0efdd824ed9e36094f3c2c1c" category="paragraph">이러한 권한은 에 포함되어 있습니다<block ref="98fe8f9430f05dddae3f56358643ae7b" category="inline-link-rx"></block></block>
   <block id="d0cc9b5d406e02bdbb6a1a9848e6af5f" category="inline-link">필요한 권한을 봅니다</block>
   <block id="0fcac0fe9e3d9ae4416e83b6bf0316d1" category="paragraph"><block ref="0fcac0fe9e3d9ae4416e83b6bf0316d1" category="inline-link-rx"></block></block>
@@ -3573,18 +3464,11 @@
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">클라우드 공급자 마켓플레이스에서 프라이빗 오퍼 또는 계약을 체결한 경우, 계약에 포함되지 않은 충전 방법으로 변경하면 BYOL(NetApp에서 라이센스를 구매한 경우) 또는 PAYGO에 대해 충전이 생성됩니다.</block>
   <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">데이터 복제(SnapMirror) 또는 NDMP와 관련된 입출력에는 비용이 청구되지 않습니다.</block>
   <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 커넥터 및 HTTPS 액세스와의 연결</block>
-  <block id="9de6e01935c802f21691e7efbefa9680" category="inline-image-macro">세 개의 나란히 점이 있는 아이콘입니다.</block>
-  <block id="4cd7acfcbb86932901020185b1df1ec0" category="list-text">을 클릭합니다 <block ref="231de61ef434abbab90a4356a7d32c83" category="inline-image-macro-rx" type="image"></block> &gt; * 템플릿에서 볼륨 추가 *.</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">Cloud Volumes ONTAP HA 쌍 및 구성 요소의 개념적 이미지</block>
   <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="59d7031e8dd126031d49f14da3eb9662" category="inline-image-macro">Cloud Volume HA 쌍 및 구성에 필요한 4개의 VPC를 보여주는 개념적 이미지.</block>
   <block id="5f244177e38ddb1ab2243352007aaca2" category="paragraph"><block ref="5f244177e38ddb1ab2243352007aaca2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2963bb3da6cd2f26e6b000d48fda5b9c" category="inline-link-macro">AutoSupport 구성 문제를 해결합니다</block>
-  <block id="10b7e2e8f5f0b89386db5d8f54c2583a" category="list-text">Canvas에서 작업 환경을 선택합니다.</block>
-  <block id="26adcf62b4b0748e28f414b46e0ad443" category="list-text">오른쪽 창에서 메뉴 아이콘을 클릭하고 * 비용 및 성능 최적화 * 를 선택합니다.</block>
-  <block id="bbcd7b9a3e132961d93ea08d77eb732e" category="inline-image-macro">Canvas에서 사용할 수 있는 Optimize Cost &amp; amp; Performance 옵션의 스크린샷.</block>
-  <block id="84fb9846fd45aafb7e227dceba2bf483" category="paragraph"><block ref="41ee20c5926363ecd6aaed7cd5cd1cdd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d0e6517b6c0b570b620f706f71cb176c" category="admonition">이 옵션은 작업 환경을 입력하고 작업 메뉴를 연 다음 * VM 변경 * 을 선택하여 사용할 수도 있습니다.</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022년 9월 18일</block>
   <block id="440be74a67502f9c3d55890782329328" category="paragraph">다음 변경 사항은 커넥터의 3.9.22 릴리스에 도입되었습니다.</block>
   <block id="83bad7a989a8ab61893e9cfb7497cefd" category="section-title">디지털 지갑 기능 향상</block>
@@ -3599,7 +3483,6 @@
   <block id="f929bd53055100ea5034e258d5828a45" category="inline-image-macro">작업 환경을 선택한 후 Canvas에서 사용할 수 있는 Optimize Cost &amp; amp; Performance 옵션의 스크린샷.</block>
   <block id="b04af3108aa064fb53015f188d417418" category="paragraph"><block ref="740982637064d815add45193172173b0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa5f0abcdf06ead83ea7fc11be56d19a" category="section-title">AutoSupport 알림</block>
-  <block id="5ed78720df0a22827c77c0f200597bec" category="admonition">이 옵션은 작업 환경으로 들어가서 작업 메뉴를 열고 * 컴퓨터 변경 * 을 선택하여 사용할 수도 있습니다.</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">위의 자체 지원 옵션 외에도 NetApp 지원 전문가와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">지원 등록 방법을 알아보십시오</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">전화로 통화하려면 * 전화 * 를 클릭하십시오. 전화를 걸 수 있는 전화 번호가 나열된 netapp.com 페이지로 연결됩니다.</block>
@@ -3617,7 +3500,6 @@
   <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"선택한 서비스에 대해 케이스를 생성할 권한이 없습니다."</block>
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">제품 내 채팅을 사용합니다</block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">에서 비기술 케이스를 제출하십시오<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
-  <block id="9097b7003d9efcc9b19c4d5073cdcd3b" category="admonition">이 옵션은 작업 환경을 입력하고 작업 메뉴를 연 다음 * 인스턴스 변경 * 을 선택하여 사용할 수도 있습니다.</block>
   <block id="ad6a05badd8d020ceea1ccb2534365ab" category="section-title">AutoSupport 요구 사항</block>
   <block id="295477dc121353b83198c98d83f89695" category="section-title">AutoSupport 구성 문제를 해결합니다</block>
   <block id="db5287528bed608802655c082c0e89b3" category="paragraph">네트워킹 문제로 인해 이 메시지가 표시될 가능성이 높습니다.</block>
@@ -3652,8 +3534,6 @@
   <block id="ea92910b55077f3c4e27aa9df66efbf8" category="list-text">Cloud Volumes ONTAP CLI로 돌아가서 Cloud Volumes ONTAP가 AutoSupport 메시지를 보낼 수 있는지 확인합니다.</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">시작하기 전에</block>
   <block id="434256b12ce281ef5e4d73836f3321d4" category="paragraph">NetApp 기술 문서로 이동하여 단계별 지침을 확인하십시오.</block>
-  <block id="2d3838f6845c3ac0398071b3ad7e14f5" category="paragraph"><block ref="2d3838f6845c3ac0398071b3ad7e14f5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="99c8d21234f18ca8a3a220793fea2262" category="paragraph">를 누릅니다<block ref="d4324b56e309570d8b82ab9a959b9228" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a8bfe07e1e703ed3692dbea8b2a81de" category="inline-link">Cloud Volumes ONTAP 중재자를 위한 고지 사항</block>
   <block id="b8a867ef3334c621e08f3cfef506f53b" category="list-text"><block ref="b8a867ef3334c621e08f3cfef506f53b" category="inline-link-rx"></block></block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">ONTAP에 대한 고지 사항</block>
@@ -3873,7 +3753,6 @@
   <block id="00ab90255b4d6e7b956ddf02ccf0b78e" category="inline-image-macro">클러스터 관리 인터페이스의 부동 IP 주소, NFS 및 CIFS 데이터 인터페이스 2개, SVM 관리 인터페이스를 보여 주는 BlueXP의 스크린샷</block>
   <block id="0793fb2aa91da8227ea7295e5891ea57" category="paragraph"><block ref="0793fb2aa91da8227ea7295e5891ea57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="27f1a07e4eef2fc0ab102135404da657" category="paragraph">다음 샘플 이미지는 VPC 1의 라우트 테이블을 보여 줍니다. 여기에는 부동 IP 주소 및 클라이언트가 있는 VPC 2로의 라우트가 포함됩니다. BlueXP는 HA 쌍을 배포할 때 라우팅 테이블에 유동 IP를 자동으로 추가했습니다.</block>
-  <block id="9036b8f651252283ddfb9a00295cfa70" category="paragraph">볼륨을 선택하고 * 탑재 명령 * 을 클릭하여 BlueXP에서 올바른 IP 주소를 찾을 수 있습니다.</block>
   <block id="e0bda1591b7559424f02d1adbbd3965d" category="summary">표준 AWS 지역과 마찬가지로, AWS C2S(Commercial Cloud Services) 환경에서 BlueXP(이전의 Cloud Manager)를 사용하여 클라우드 스토리지에 엔터프라이즈급 기능을 제공하는 Cloud Volumes ONTAP를 구축할 수 있습니다. AWS C2S는 미국 고유의 폐쇄된 지역입니다 Intelligence Community - 이 페이지의 지침은 AWS C2S 지역 사용자에게만 적용됩니다.</block>
   <block id="d9bc9104669da346ed2fadb2cb686999" category="paragraph">BlueXP에서 Cloud Volumes ONTAP 인스턴스를 시작합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.</block>
   <block id="93f5e6c9fa12acc64acdb6b378a09bdd" category="doc">BlueXP에서 스토리지 VM 관리</block>
@@ -3899,7 +3778,6 @@
   <block id="bf75afe84fa4d8e8637d67f46da78447" category="admonition">BlueXP는 을 생성합니다<block ref="69dad99e4ae4952ff167137be3a42452" category="inline-link-rx"></block> 그런 다음 해당 배치 그룹에서 2개의 HA 노드를 시작합니다. 배치 그룹은 서로 다른 기본 하드웨어에 인스턴스를 분산하여 동시 오류 위험을 줄입니다. 이 기능은 디스크 장애 관점이 아니라 컴퓨팅 측면에서 중복성을 향상시킵니다.</block>
   <block id="c884e72132fe774e964d45203b2dda4d" category="paragraph">새 볼륨을 생성하고 추가 디스크가 필요한 경우 BlueXP는 두 노드에 동일한 수의 디스크를 할당하고 미러링된 애그리게이트를 생성한 다음 새 볼륨을 생성합니다. 예를 들어, 볼륨에 두 개의 디스크가 필요한 경우 BlueXP는 노드당 두 개의 디스크를 총 4개의 디스크에 할당합니다.</block>
   <block id="6b014a111978e615d8d143759130afe1" category="admonition">스토리지 시스템 보기에서 BlueXP를 사용하는 경우에만 활성-활성 구성을 설정할 수 있습니다.</block>
-  <block id="00c9595bc5cbf65901adf1c05dbc4c08" category="paragraph">BlueXP에서 올바른 IP 주소를 쉽게 식별할 수 있습니다.</block>
   <block id="a35bca3f24f4dccbc351b2e388077c00" category="paragraph">AWS에서 Cloud Volumes ONTAP를 실행하려면 BlueXP에서 새로운 작업 환경을 만들어야 합니다</block>
   <block id="da6a1a281804977deca79ae615d580d8" category="paragraph">작업 환경을 생성한 직후 BlueXP는 지정된 VPC에서 테스트 인스턴스를 시작하여 연결을 확인합니다. 성공하면 즉시 BlueXP가 인스턴스를 종료한 다음 Cloud Volumes ONTAP 시스템 배포를 시작합니다. BlueXP에서 연결을 확인할 수 없는 경우 작업 환경 생성이 실패합니다. 테스트 인스턴스는 T2.nano(기본 VPC 테넌시의 경우) 또는 m3.medium(전용 VPC 테넌시의 경우)입니다.</block>
   <block id="4430756ff29ab7fea3e175d3ff48be76" category="cell">BlueXP는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 Amazon EC2 인스턴스 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다.</block>
@@ -3935,8 +3813,6 @@
   <block id="d4cf496f112c8443c55c77f819b95b4b" category="paragraph">특정 시간 간격 동안 Cloud Volumes ONTAP를 종료하여 컴퓨팅 비용을 낮출 수 있습니다. 이 작업을 수동으로 수행하는 대신 특정 시간에 시스템이 자동으로 종료된 후 다시 시작하도록 BlueXP를 구성할 수 있습니다.</block>
   <block id="719804aecba45f2a91fc03419f9f60ac" category="list-text">Cloud Volumes ONTAP 시스템의 자동 종료를 예약하면 활성 데이터 전송이 진행 중인 경우 BlueXP가 종료를 연기합니다.</block>
   <block id="bef3442a081401294987a04d5fd013d7" category="paragraph">전송이 완료된 후 BlueXP가 시스템을 종료합니다.</block>
-  <block id="f884ea208e6bcd01380f10fb59dea173" category="paragraph">다음 이미지는 매주 토요일 오전 12시에 BlueXP가 시스템을 종료하도록 지시하는 스케줄을 보여줍니다 48시간 동안 BlueXP는 매주 월요일 오전 12시에 시스템을 다시 시작합니다</block>
-  <block id="e47eeb0d6a9544ebd7c2192d93a896cc" category="paragraph">BlueXP는 일정을 저장합니다. 일정이 설정되었음을 나타내기 위해 시계 아이콘이 변경됩니다. <block ref="74bec5e5dc52030c6eeec717b2b26a75" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d96640cb9857bedea622da8e210171a8" category="admonition">비용을 줄이기 위해 BlueXP는 루트 및 부팅 디스크의 이전 스냅샷을 주기적으로 삭제합니다. 루트와 부팅 디스크 모두에 대해 가장 최근의 두 스냅샷만 보존됩니다.</block>
   <block id="50840e2145fe17e7b2d3355bf1858f3b" category="paragraph">HA 쌍을 중지하면 BlueXP가 두 노드를 모두 종료합니다.</block>
   <block id="ffa45f5dd5756168cb752f08f5b3cefd" category="inline-link">BlueXP에 NetApp Support 사이트 계정 추가</block>
@@ -3948,28 +3824,22 @@
   <block id="71ad7ee54b2c54364e470e91313bd1c8" category="paragraph">BlueXP는 시스템이 생성될 때 콜드 데이터에 대한 오브젝트 저장소를 생성합니다. <block ref="dbb78a2cc39acf14e084217f8235322a" category="inline-xref-macro-rx"></block>. 그런 다음 볼륨에 대해 데이터 계층화를 활성화해야 합니다. 경우에 따라 <block ref="7f499208f2ff911432bf2cd70bde52dd" category="inline-xref-macro-rx"></block>)를 클릭합니다.</block>
   <block id="110bf8d701c3104f8527af78ccf4f6f3" category="paragraph">BlueXP에 필요한 권한이 있는 경우 성능 계층과 용량 계층 간에 연결을 설정할 필요가 없습니다. BlueXP는 Connector의 사용자 지정 역할에 다음과 같은 권한이 있는 경우 VNET 서비스 끝점을 활성화합니다.</block>
   <block id="544cf6a9b3209b8642549a9f636f850d" category="paragraph">BlueXP는 연결 또는 사용 권한 문제가 없는 한 시스템이 생성될 때 콜드 데이터에 대한 개체 저장소를 생성합니다. 시스템을 생성하기 전까지는 위에 나열된 요구 사항을 구현하지 않았다면 수동으로 계층화를 설정해야 오브젝트 저장소가 생성됩니다.</block>
-  <block id="7ba788606ad56bde2415340a76fe7dc0" category="inline-image-macro">BlueXP에서 데이터 계층화를 활성화하려고 할 때 문제가 발생한 경우 작업 환경 메뉴에서 사용할 수 있는 용량 계층화 활성화 옵션의 스크린샷</block>
-  <block id="c40ae3d4404caf2d331095e8007c76d0" category="paragraph"><block ref="c40ae3d4404caf2d331095e8007c76d0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="34a53c9826b73666c9ff291fdbb73cc4" category="paragraph">BlueXP에서 시스템을 생성할 때 데이터 계층화를 활성화할 수 없는 경우에만 이 옵션이 표시됩니다.</block>
   <block id="0ed8d1c9d40b89d8bb30156f2ff80b44" category="list-text">BlueXP가 이 Cloud Volumes ONTAP 시스템이 계층형 데이터에 사용할 개체 저장소를 만들 수 있도록 * 활성화 * 를 클릭합니다.</block>
   <block id="f504f88c3ef9fff4d0a0f3ea83ce4b0a" category="paragraph">새 볼륨에서 데이터 계층화를 사용하는 경우에는 애그리게이트에서 데이터 계층화를 사용할 필요가 없습니다. BlueXP는 계층화가 활성화된 기존 애그리게이트에 볼륨을 생성하거나, 데이터 계층화가 활성화된 애그리게이트가 아직 존재하지 않는 경우 볼륨에 대한 새 애그리게이트를 생성합니다.</block>
   <block id="6f7dbe99eb1dafd47fcc1667c1661873" category="list-text">BlueXP에서 작업 환경을 엽니다.</block>
   <block id="c42d7d1729e77b6aa2d88e357efbb241" category="inline-image-macro">계층화 상태를 포함하는 BlueXP의 Aggregate에 대한 정보를 보여 주는 스크린샷</block>
-  <block id="ec23400a3a57e1931ad6d6c4bcadc5f4" category="paragraph"><block ref="ec23400a3a57e1931ad6d6c4bcadc5f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18f662e89926d99c2d0078857e1e0594" category="paragraph">데이터 계층화가 활성화된 애그리게이트가 아직 존재하지 않는 경우 BlueXP는 볼륨에 대한 새로운 애그리게이트를 생성합니다.</block>
   <block id="15772334d40a5e0ec433c7a427e96777" category="paragraph">예를 들어, 구입한 용량을 사용하기 위해 10% 미만의 여유 공간을 선택할 수 있습니다. 그런 다음 BlueXP는 추가 용량이 필요할 때 추가 디스크를 구입할 수 있습니다(최대 Aggregate의 디스크 한도에 도달할 때까지).</block>
   <block id="2b891711a30d74a376864ff361ead016" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 * 설정 * 아이콘을 클릭하고 * 커넥터 설정 * 을 선택합니다.</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">BlueXP 콘솔의 오른쪽 위에 설정 아이콘이 표시된 스크린샷.</block>
-  <block id="cb9e3791dcb67c8a699c104be6a1c49c" category="paragraph"><block ref="cb9e3791dcb67c8a699c104be6a1c49c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b51126e31989dbd35d983caab04ff08" category="paragraph">Cloud Volumes ONTAP 작업 환경을 제거하면 BlueXP에서 제거됩니다. Cloud Volumes ONTAP 시스템은 삭제되지 않습니다. 나중에 작업 환경을 다시 검색할 수 있습니다.</block>
   <block id="c3d8bc113694ac5e1b1bc6903d5f4777" category="paragraph">BlueXP에서 작업 환경을 제거하면 다음과 같은 작업을 수행할 수 있습니다.</block>
   <block id="017482efc6f3c5791be39e26da43f9c3" category="list-text">다른 BlueXP 시스템에서 재검색합니다</block>
-  <block id="b55eb28344378e34c1c9c9f4b1a693ae" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 설정 아이콘을 클릭하고 * 도구 * 를 선택합니다.</block>
   <block id="fefa70b1c4e33b9a37d96658b2133389" category="paragraph">BlueXP는 작업 환경을 제거합니다. 사용자는 언제든지 Canvas 페이지에서 이 작업 환경을 다시 검색할 수 있습니다.</block>
   <block id="0e90b6bbef3911eccc0d09b6e4087aff" category="summary">BlueXP에서 Cloud Volumes ONTAP를 업그레이드하여 최신 새 기능 및 향상된 기능을 이용할 수 있습니다. 소프트웨어를 업그레이드하기 전에 Cloud Volumes ONTAP 시스템을 준비해야 합니다.</block>
   <block id="61560599f4747b091e1abc457824f639" category="section-title">BlueXP에서만 업그레이드합니다</block>
   <block id="c6925d752394e325c0b435137fbe997c" category="paragraph">Cloud Volumes ONTAP 업그레이드는 BlueXP에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.</block>
-  <block id="bed8a3185a4b2ddb1020be5c9da45358" category="paragraph">BlueXP는 Cloud Volumes ONTAP를 업그레이드할 수 있는 두 가지 방법을 제공합니다.</block>
   <block id="9291a80d43d5b5496ef3da30291aed0c" category="list-text">업그레이드 이미지를 HTTPS 위치에 배치한 다음 BlueXP에 URL을 제공합니다</block>
   <block id="a0c4aa457c64e636209cb497491957e3" category="list-text">작업 환경에 나타나는 업그레이드 알림에 따라 업그레이드하는 경우 BlueXP에서 지원되는 업그레이드 경로 다음에 나오는 릴리스로 업그레이드하라는 메시지가 표시됩니다.</block>
   <block id="331278b9811c6edc293cd27e4bb970a2" category="admonition">지원이 등록되지 않은 시스템은 새 버전이 출시되어도 BlueXP에 나타나는 소프트웨어 업데이트 알림을 계속 받게 됩니다. 그러나 소프트웨어를 업그레이드하기 전에 시스템을 등록해야 합니다.</block>
@@ -3980,7 +3850,6 @@
   <block id="32d300cab53087f3ab3e15c01593d633" category="section-title">BlueXP 알림에서 업그레이드합니다</block>
   <block id="5f75615300b4a5dfb537f7f68f86cad0" category="paragraph">BlueXP는 새 버전의 Cloud Volumes ONTAP를 사용할 수 있을 때 Cloud Volumes ONTAP 작업 환경에 알림을 표시합니다.</block>
   <block id="31aacf5ad0f1f7f769f403486ca64107" category="paragraph">볼륨 또는 애그리게이트 생성과 같은 BlueXP 작업은 Cloud Volumes ONTAP 시스템에서 진행 중이지 않아야 합니다.</block>
-  <block id="9be46f2eecdd8ba27897fc5c3d9e21f3" category="paragraph">BlueXP가 소프트웨어 업그레이드를 시작합니다. 소프트웨어 업데이트가 완료되면 작업 환경에서 작업을 수행할 수 있습니다.</block>
   <block id="daf09a56a5eef482eb39aae95ad9c10d" category="paragraph">Cloud Volumes ONTAP 소프트웨어 이미지를 커넥터 또는 HTTP 서버에 배치한 다음 BlueXP에서 소프트웨어 업그레이드를 시작할 수 있습니다. BlueXP에서 S3 버킷을 액세스하여 소프트웨어를 업그레이드할 수 없는 경우 이 옵션을 사용할 수 있습니다.</block>
   <block id="ec96841ef9fc6828c45908c34b7efd84" category="list-text">HTTPS를 사용하여 ONTAP 이미지를 호스팅하는 경우 인증서 누락으로 인한 SSL 인증 문제로 인해 업그레이드가 실패할 수 있습니다. 해결 방법은 ONTAP와 BlueXP 간의 인증에 사용할 CA 서명 인증서를 생성하고 설치하는 것입니다.</block>
   <block id="8187f77b708bd73b1d1ea983eefc6853" category="inline-link">NetApp KB: 업그레이드 이미지를 호스팅하기 위해 BlueXP를 HTTPS 서버로 구성하는 방법</block>
@@ -4048,7 +3917,6 @@
   <block id="2c5d07ca61673fa8fb94be1c97bf91fe" category="paragraph">BlueXP는 Google Cloud에 필요한 IP 주소를 할당하고 SMB/NFS 액세스를 위한 데이터 LIF와 아웃바운드 SMB 통신을 위한 iSCSI LIF를 사용하여 스토리지 VM을 생성합니다.</block>
   <block id="4a5ed1e1f5c4ada56ab2471bc9700165" category="paragraph">또한 BlueXP API는 HA 쌍에서 스토리지 VM의 이름 변경 및 삭제를 지원합니다.</block>
   <block id="f82d1b6b82e3a4e80812051b0f0d956c" category="list-text">NetApp Support 사이트 계정을 BlueXP에 아직 추가하지 않은 경우 * 계정 설정 * 으로 이동하여 지금 추가하십시오.</block>
-  <block id="b9ea5f54d5e7487561836a098ec50c0c" category="list-text">왼쪽 탐색 메뉴에서 * Storage &gt; Canvas * 를 선택합니다</block>
   <block id="3c133f4bc8bc3ebf4d10cf6cfdf4d97f" category="paragraph">BlueXP는 시스템을 NetApp에 등록합니다.</block>
   <block id="8c97ed5bc0c7a571b8993af8c6396051" category="paragraph">BlueXP는 디지털 지갑에 라이센스를 추가합니다. 라이센스는 새 Cloud Volumes ONTAP 시스템에 연결할 때까지 할당되지 않은 것으로 식별됩니다. 이 경우 라이센스는 Digital Wallet의 * BYOL * 탭으로 이동합니다.</block>
   <block id="e366d9a0e89a88ec47c46ef7e75a1620" category="paragraph">BlueXP는 할당되지 않은 라이센스를 선택한 서비스로 변환합니다. 데이터 서비스 라이센스 * 탭에서 새 라이센스를 볼 수 있습니다.</block>
@@ -4317,7 +4185,6 @@
   <block id="c69ac98b36cf0e598f3cae6b175a8eec" category="list-text">스토리지 계정은 관리 디스크 기반 구축에 사용되어 진단 로그를 처리하고 BLOB 스토리지에 계층화합니다.</block>
   <block id="dba89da91170934734e847dcfe4ad5d0" category="section-title">Cloud Volumes ONTAP 9.12.1</block>
   <block id="2dd09f45720a8f94b29c4d048b61ff4e" category="section-title">2022년 11월 15일</block>
-  <block id="cca494b1b1d22bc8b5c8a8ecd5367bf8" category="section-title">GCP의 ONTAP S3 라이센스</block>
   <block id="44f72ae2127b89a470e082ae9f772acf" category="paragraph">ONTAP S3 라이센스는 이제 Google 클라우드 플랫폼에서 버전 9.12.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 포함되어 있습니다.</block>
   <block id="50ffa0cb1ebb11ac1969ed98e7c94bf5" category="admonition">NIC3는 페이지 BLOB 스토리지를 사용하는 HA 구축에만 적용됩니다.</block>
   <block id="baa56a5cbeb0b5811b307c481a824728" category="paragraph">기본적으로 BlueXP는 Cloud Volumes ONTAP 및 Azure 페이지 blob 저장소 계정 간의 연결에 Azure 프라이빗 링크를 활성화합니다.</block>
@@ -4652,7 +4519,6 @@
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">표의 마지막 열에 세 개의 점이 있는 아이콘</block>
   <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">를 클릭하여 기존 케이스를 관리합니다 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 사용 가능한 옵션 중 하나를 선택합니다.</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">* 사례 보기 *: 특정 케이스에 대한 전체 세부 정보를 봅니다.</block>
-  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">* 사례 노트 업데이트 *: 문제에 대한 추가 세부 정보를 제공합니다.</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">* 케이스 종료 *: 케이스를 닫는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 클릭합니다.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
@@ -4801,4 +4667,200 @@
   <block id="7f09653ec569404a6d78270f050d7c18" category="list-text">* HA 쌍 * BlueXP는 12-13개의 IP 주소를 HA 쌍에 할당합니다.</block>
   <block id="99388f0fdeac933c80f2d52c95fe6eac" category="list-text">클러스터 관리 LIF 1개(e0a)</block>
   <block id="07ddec46aac81bd14d6fc7f0d22ee78d" category="list-text">1~2개의 NAS LIF(e0a)</block>
+  <block id="e8c25ea78d67a6ef891f303353422dbd" category="paragraph">를 누릅니다<block ref="45bd8c026c5ef22179001445b3bd636a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2c75d71bcadfabfa7cf8757cbfdd3d85" category="inline-image-macro">설정 아이콘 아래의 커넥터 설정 옵션 스크린샷.</block>
+  <block id="473c33023a339a6b370b4ddd3b34813e" category="paragraph"><block ref="473c33023a339a6b370b4ddd3b34813e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2e11b0ec6ed47b1e8f7051aaab70da38" category="list-text">애그리게이트 용량 임계값 - 사용 가능한 공간 비율</block>
+  <block id="c707daf76e9202bb2278e4872c7db485" category="list-text">Aggregate Capacity Thresholds - Data Tiering의 여유 공간 비율입니다</block>
+  <block id="93538ad94a332061adf2239e8ac21a4d" category="list-text">Canvas 페이지에서 작업 환경을 선택합니다.</block>
+  <block id="ca2685261e68781c7e281c106027c9d6" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * 경로 표 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
+  <block id="4b6844f3c505a6f4a3db39ea33fd3cf0" category="inline-image-macro">작업 환경을 볼 때 개요 페이지의 오른쪽 위에 있는 기능 패널 아래에 있는 경로 테이블 설정을 보여 주는 스크린샷.</block>
+  <block id="2057f11c69807ba4cbd27e1e921f7823" category="paragraph"><block ref="2057f11c69807ba4cbd27e1e921f7823" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8bcb080f300b6dfd8ee09d89bb85d060" category="paragraph"><block ref="8bcb080f300b6dfd8ee09d89bb85d060" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="021ed7718b4d1f8ff42ac2d9a653d143" category="list-text">작업 환경에서 * 집계 * 탭을 클릭합니다.</block>
+  <block id="a83fde1416b692585ab72d55276e43ee" category="list-text">애그리게이트 탭에서 원하는 제목으로 이동한 다음 *... (타원 아이콘) *.</block>
+  <block id="4940ff7a33940e4ec33b7d78f146648a" category="inline-image-macro">집계 메뉴 옵션의 스크린샷</block>
+  <block id="65c989c474db774160c441e94f03ddfc" category="paragraph"><block ref="65c989c474db774160c441e94f03ddfc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="116812c107d40280e65a3a0f4f5c3440" category="cell">아래에서... (타원 아이콘) 메뉴에서 * 애그리게이트 세부 정보 보기 * 를 클릭합니다.</block>
+  <block id="2e59a4ccfe2d0087aa6ece23a0922ea4" category="cell">아래에서... (타원 아이콘) 메뉴에서 * 볼륨 추가 * 를 클릭합니다.</block>
+  <block id="64209bde9f2d422a086f99622664bb4b" category="list-text">아래에서... (타원 아이콘) 메뉴에서 * 디스크 추가 * 를 클릭합니다.</block>
+  <block id="54afa16678d9fa49dd4f37f5d8d62d51" category="list-text">아래에서... (타원 아이콘) 메뉴에서 * 용량 증가 * 를 클릭합니다.</block>
+  <block id="cacd62863a1aec474ea14c7ba39b9f28" category="list-text">추가할 추가 용량을 입력한 다음 * 증가 * 를 클릭합니다.</block>
+  <block id="f20c2435bfa2bf017b0a33455e4d252c" category="list-text">볼륨을 포함하지 않는 집계 타일을 선택합니다. *...를 클릭합니다. (타원 아이콘) &gt; 삭제 *.</block>
+  <block id="44f505566cfb44ab274d6dd37da6a48b" category="list-text">Canvas 페이지에서 쓰기 속도로 구성하는 시스템의 이름을 두 번 클릭합니다.</block>
+  <block id="b9c48f0b7a355bd9b39b3ae2c666ec43" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * 쓰기 속도 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
+  <block id="bc3c9695426ff48d40dce0286c7e05f4" category="inline-image-macro">작업 환경을 볼 때 개요 페이지의 오른쪽 위에 있는 기능 패널 아래에 있는 쓰기 속도 설정을 보여 주는 스크린샷.</block>
+  <block id="98dbfe06324c35bb25c949f4b21d581a" category="paragraph"><block ref="98dbfe06324c35bb25c949f4b21d581a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8e1d6d29fa6bbc00ab6896ec1e677037" category="list-text">저장 * 을 클릭하고 확인 메시지를 검토한 다음 * 승인 * 을 클릭합니다.</block>
+  <block id="38124763ec69515302fcd6a655b0cb92" category="list-text">Canvas 페이지에서 Cloud Volumes ONTAP 작업 환경의 이름을 두 번 클릭합니다.</block>
+  <block id="67f0f7bdc0b6b3c961c645e5a644b531" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 타원 아이콘을 클릭하고 * 암호 설정 * 을 선택합니다.</block>
+  <block id="a18ec44ef07922a650e590de9dd0a36e" category="inline-image-macro">암호 설정 작업이 포함된 작업 환경에서 사용할 수 있는 메뉴를 보여 주는 스크린샷</block>
+  <block id="6daca7a21673390f9b4946d99b575dbc" category="paragraph"><block ref="6daca7a21673390f9b4946d99b575dbc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="906b0fc78378feea1883fe721c72e648" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * 기계 유형 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
+  <block id="6466b41798117de76beee910171ffc8f" category="inline-image-macro">작업 환경을 볼 때 개요 페이지의 오른쪽 위에 있는 기능 패널 아래에 있는 시스템 유형 설정을 보여 주는 스크린샷.</block>
+  <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ccb38ae114176203c2592f430a889d7" category="list-text">노드 기반 PAYGO 라이센스를 사용하는 경우 * 라이센스 유형 * 옆에 있는 연필 아이콘을 클릭하여 다른 라이센스 및 컴퓨터 유형을 선택할 수 있습니다.</block>
+  <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">시스템 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해했는지 확인한 다음 * 변경 * 을 클릭합니다.</block>
+  <block id="1bb49759ca91107ea85449bc0249ce13" category="list-text">Capacity Based Licenses * 를 선택한 상태에서 패키지 요약을 보면 사용된 용량, 사전 커밋된 총 용량 및 총 PAYGO 용량을 확인할 수 있습니다.</block>
+  <block id="def968f0e18d0f7aed6421ac81039272" category="list-text">_Total Prep커밋된 용량 _ 은(는) NetApp에서 구매한 총 라이센스 용량(BYOL 또는 Marketplace 계약)입니다.</block>
+  <block id="6805f1cb53971ab8cf6263bd093c5d20" category="paragraph">다음은 디지털 지갑에 대한 Cloud Volumes ONTAP 패키지 요약의 예입니다.</block>
+  <block id="e9132fa20985cf4b3d5004a6a371ecab" category="inline-image-macro">총 소비된 용량, BYOL 및 Marketplace 계약(Ttotal preCommitted capacity) 및 Digital Wallet의 총 PAYGO 또는 프로비저닝된 용량을 포함하여 Cloud Volumes ONTAP 패키지 요약을 보여 주는 스크린샷</block>
+  <block id="68519fd40c76d6220d905ceda4e0956b" category="paragraph"><block ref="68519fd40c76d6220d905ceda4e0956b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="af61e314a8c2484dfcfef0afc2e5b8b9" category="list-text">_Consumed capacity_는 해당 패키지의 볼륨 용량을 표시합니다. 특정 패키지에 대한 자세한 내용을 보려면 도구 설명 위로 마우스를 가져갑니다.</block>
+  <block id="cfc852810f89c13febd473e12117d828" category="list-text">_PreCommitted Capacity_는 NetApp에서 구매한 라이센스 용량(BYOL 또는 마켓플레이스 계약)입니다.</block>
+  <block id="b35741916171a2b4d1210c1ccf6e3920" category="list-text">_BYOL_은 이 패키지 유형에 대해 NetApp에서 구입한 라이센스 용량을 보여 줍니다.</block>
+  <block id="59bdc4172870791ff34a990174b34a66" category="list-text">_Marketplace 계약_ 은 이 패키지 유형에 대한 마켓플레이스 계약과 함께 구입한 라이센스 용량을 표시합니다.</block>
+  <block id="e733f8e4574a8639831d6df796e6a0eb" category="list-text">_PAYGO_는 라이센스 소비 모델에 따라 사용된 용량을 보여줍니다.</block>
+  <block id="b0980f4f35d961e95a685e0af8bda7e4" category="inline-image-macro">기본 및 전문 패키지에 사용된 용량, 사전 커밋된 용량 및 PAYGO 또는 프로비저닝된 용량을 보여 주는 스크린샷.</block>
+  <block id="71b669d4d19df676d975ef4911ded7af" category="paragraph"><block ref="71b669d4d19df676d975ef4911ded7af" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a98606dee1787dfd2471d2ef8adeb680" category="list-text">Canvas 페이지에서 등록할 시스템의 이름을 두 번 클릭합니다.</block>
+  <block id="24901c53838efd4b9981ed8ffd510413" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * 지원 등록 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
+  <block id="055fb099b650eb50b3be2ee6aaa5edaa" category="inline-image-macro">스크린샷: Cloud Volumes ONTAP 시스템의 기능 패널 아래에 지원 등록 옵션이 표시됩니다.</block>
+  <block id="683ad9be450b1e4aaffcdcab8b33b0c4" category="paragraph"><block ref="683ad9be450b1e4aaffcdcab8b33b0c4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4da26c1efc91c7136517504959cc0687" category="paragraph"><block ref="4da26c1efc91c7136517504959cc0687" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fc2c97abb2fb8e3c019de4850d91d264" category="list-text">캔버스 페이지에서 Cloud Volumes ONTAP 작업 환경을 선택합니다.</block>
+  <block id="6ba9fc3c166e3d53b824216485ae89ee" category="list-text">메뉴 아이콘을 클릭한 다음 * 비용 보고서 보기 * 를 클릭합니다.</block>
+  <block id="e657448bf5ab3960e8e1fc068d83deee" category="inline-image-macro">스크린샷: 비용 보고서 보기 메뉴 옵션을 표시합니다.</block>
+  <block id="4881300462ed76e4f5ebaf3070d5e7d9" category="paragraph"><block ref="4881300462ed76e4f5ebaf3070d5e7d9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6200e275553fcb2d81141061804129aa" category="list-text">Canvas 페이지에서 랜섬웨어 보호를 구성하는 시스템의 이름을 두 번 클릭합니다.</block>
+  <block id="68e277e7409c8587f5447ff6e1d07bac" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * 랜섬웨어 보호 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
+  <block id="e44870bfe38bf3731499fca3154b9528" category="inline-image-macro">작업 환경을 볼 때 개요 페이지의 오른쪽 상단에 있는 Features(기능) 패널 아래에 있는 랜섬웨어 보호 설정을 보여주는 스크린샷</block>
+  <block id="2a39771bd60186d9d0eea3e49bb0d221" category="paragraph"><block ref="2a39771bd60186d9d0eea3e49bb0d221" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d0b1fe5e5e43d6e24cc20f730b8d1742" category="paragraph">BlueXP의 볼륨 관리 패널에서 _Mount Command_ 옵션을 통해 올바른 IP 주소를 쉽게 식별할 수 있습니다.</block>
+  <block id="b717cb7368a7773e8663a0b7444325ad" category="paragraph"><block ref="b717cb7368a7773e8663a0b7444325ad" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36466e75ef3251345a1fc3b957275568" category="list-text">애그리게이트 탭에서 * 애그리게이트 추가 * 를 클릭한 다음 애그리게이트의 세부 정보를 지정합니다.</block>
+  <block id="3c27c0be3b51a96fbeaf21988a5d0da7" category="paragraph">고급 할당 페이지로 이동하면 애그리게이트에 Elastic Volumes 기능이 설정되어 있는지 확인할 수 있습니다. 다음 예에서는 aggr1에 Elastic Volumes가 활성화되어 있습니다.</block>
+  <block id="da881591358a049c4652b06b1054ccb1" category="inline-image-macro">Elastic Volumes Enabled라는 텍스트가 있는 필드가 있는 두 개의 집계를 보여 주는 스크린샷</block>
+  <block id="6d62cbba5d5d4db651e497c57ee98339" category="paragraph"><block ref="6d62cbba5d5d4db651e497c57ee98339" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3f5b7e3773583b9ca6b634b5264139c7" category="list-text">Canvas 페이지에서 제거할 작업 환경을 두 번 클릭합니다.</block>
+  <block id="a9d8201fa61b52d04aa8d5efa98407ef" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 타원 아이콘을 클릭하고 * 작업 영역에서 제거 * 를 선택합니다.</block>
+  <block id="41aeb32afbd7adcd7344a525b524aa2e" category="inline-image-macro">BlueXP 콘솔의 오른쪽 위에 있는 "작업 공간에서 제거" 옵션을 보여주는 스크린샷.</block>
+  <block id="68dff8388aadd10577c0c664fc4fa756" category="paragraph"><block ref="68dff8388aadd10577c0c664fc4fa756" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ccc69ca3b9f50bd572baa407834f41ed" category="list-text">작업 공간에서 검토 창에서 * 제거 * 를 클릭합니다.</block>
+  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023년 4월 3일</block>
+  <block id="2dfd965acb2426b281b13a70df99c06b" category="paragraph">다음 변경 사항은 커넥터의 3.9.28 릴리스에 도입되었습니다.</block>
+  <block id="7ce52c94db42646098e71a61d9836b73" category="section-title">Turin 지역이 이제 Google Cloud에서 지원됩니다</block>
+  <block id="84030861d628cd7238a62da972a260f4" category="paragraph">Turin 지역은 현재 Google Cloud for Cloud Volumes ONTAP 및 Connector for Cloud Volumes ONTAP 9.12.1 GA 이상에서 지원됩니다.</block>
+  <block id="671e2a59b2bfa852def9660bf14badde" category="section-title">디지털 지갑 기능 향상</block>
+  <block id="d3ab2a9ddd985032aa120324e6da3710" category="paragraph">Digital Wallet은 이제 시장 프라이빗 오퍼와 함께 구입한 라이선스 용량을 표시합니다.</block>
+  <block id="6ee7d527518e93562cc9e691d20fb1d5" category="section-title">볼륨 생성 중 주석 지원</block>
+  <block id="ac14eb6382fa5b619966ba72622ecd3f" category="paragraph">이 릴리즈를 사용하면 API를 사용할 때 Cloud Volumes ONTAP FlexGroup 볼륨 또는 FlexVol 볼륨을 생성할 때 주석을 작성할 수 있습니다.</block>
+  <block id="231ea98554191e640c216736796158d5" category="section-title">Cloud Volumes ONTAP 개요, 볼륨 및 집계 페이지를 위한 BlueXP 사용자 인터페이스 재설계</block>
+  <block id="1cc55fcb982bea0e8f241a1271bda985" category="paragraph">BlueXP는 이제 Cloud Volumes ONTAP 개요, 볼륨 및 집계 페이지에 대한 사용자 인터페이스를 새롭게 설계했습니다. 타일 기반 디자인은 각 타일에 보다 포괄적인 정보를 제공하여 사용자 경험을 향상시킬 수 있습니다.</block>
+  <block id="9000895c1e7c46e6e8fc9eb750dfb403" category="inline-image-macro">이 스크린샷은 Cloud Volumes ONTAP 개요 페이지에서 재설계된 BlueXP 사용자 인터페이스를 보여줍니다. 다양한 타일이 스토리지 효율성, 버전, 용량 배포, Cloud Volumes ONTAP 구축, 볼륨, 애그리게이트, 복제 및 백업에 대한 정보를 보여줍니다.</block>
+  <block id="23fbfdbb598644432ab089fa6e533405" category="paragraph"><block ref="23fbfdbb598644432ab089fa6e533405" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6fff4762fc0aeb74dd0a918683c157ae" category="section-title">FlexGroup 볼륨은 Cloud Volumes ONTAP를 통해 볼 수 있습니다</block>
+  <block id="8d40e6e8379382ee39fba2c4a1cb5629" category="paragraph">CLI 또는 System Manager를 통해 직접 생성된 FlexGroup 볼륨은 이제 BlueXP의 재설계된 볼륨 타일을 통해 볼 수 있습니다. FlexVol 볼륨에 대해 제공된 정보와 동일한 BlueXP는 전용 볼륨 타일을 통해 생성된 FlexGroup 볼륨에 대한 자세한 정보를 제공합니다.</block>
+  <block id="905d8520d584560b3995118b2a01f6c2" category="admonition">현재 BlueXP에서만 기존 FlexGroup 볼륨을 볼 수 있습니다. BlueXP에서 FlexGroup 볼륨을 생성하는 기능은 사용할 수 없지만 향후 릴리스에서 제공될 예정입니다.</block>
+  <block id="91f0dcc3b5f3e7c2ced12a923ca3b92e" category="inline-image-macro">볼륨 타일 아래에 FlexGroup 볼륨 아이콘 호버 텍스트를 보여 주는 스크린샷</block>
+  <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9f223d40f9c90f08d9cd6ef8cba648c3" category="inline-link-macro">생성된 FlexGroup 볼륨을 보는 방법에 대해 자세히 알아보십시오.</block>
+  <block id="acef74218ad5e199582b5c76062e5559" category="paragraph"><block ref="acef74218ad5e199582b5c76062e5559" category="inline-link-macro-rx"></block></block>
+  <block id="d92a428713f7303c87adb54fb04cf41b" category="section-title">Google Cloud의 ONTAP S3 라이센스</block>
+  <block id="df8131ce273465a002c95cb0c5cf8a39" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * VM 유형 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
+  <block id="838630480d269a60c2c6bb929717f964" category="inline-image-macro">작업 환경을 볼 때 개요 페이지의 오른쪽 위에 있는 기능 패널 아래에 있는 VM 유형 설정을 보여 주는 스크린샷.</block>
+  <block id="4782218bc1564550fa76897e159be9bf" category="paragraph"><block ref="4782218bc1564550fa76897e159be9bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e257ba6100e7f02e04c1d8b474024a3c" category="list-text">노드 기반 PAYGO 라이센스를 사용하는 경우 * 라이센스 유형 * 옆에 있는 연필 아이콘을 클릭하여 다른 라이센스 및 VM 유형을 선택할 수 있습니다.</block>
+  <block id="0b52c0f8f311ea5465845d81cc4401f1" category="list-text">VM 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해했는지 확인한 다음 * 변경 * 을 클릭합니다.</block>
+  <block id="c529c6170bed402afd9deff05a6b3d0d" category="paragraph">BlueXP의 볼륨 관리 패널의 * 탑재 명령 * 옵션을 통해 BlueXP에서 올바른 IP 주소를 찾을 수 있습니다.</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">* 첨부 파일(선택 사항) *: 한 번에 하나씩 최대 5개의 첨부 파일을 업로드합니다.</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">첨부 파일은 파일당 25MB로 제한됩니다. txt, log, pdf, jpg/jpeg, rtf, DOC/docx, xls/xlsx 및 CSV.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 케이스 메모 업데이트 *: 문제에 대한 추가 세부 정보를 제공하거나 * 파일 업로드 * 를 선택하여 최대 5개의 파일을 첨부할 수 있습니다.</block>
+  <block id="a3e3a06edf2b13412206a49650d28c73" category="list-text">Canvas 페이지에서 Cloud Volumes ONTAP 인스턴스의 이름을 선택합니다.</block>
+  <block id="c8ae9612aebf2aa8477908ecc9dc4ad2" category="list-text">애그리게이트 탭을 클릭합니다.</block>
+  <block id="93bad64eb0d84f1d45ce1ff481e26c51" category="list-text">원하는 타일로 이동하여 애그리게이트에서 계층화가 설정되었는지 여부를 확인합니다.</block>
+  <block id="cc26bc8be32a1d905f6d22627e65a0b9" category="paragraph"><block ref="cc26bc8be32a1d905f6d22627e65a0b9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b433e385414da518f50fc6f6b243cce6" category="list-text">작업 환경의 볼륨 탭에서 새 볼륨을 생성하거나 기존 볼륨의 계층을 변경합니다.</block>
+  <block id="4fea09deb083b39f9519227c4dc045e5" category="cell">원하는 볼륨 타일을 선택하고 * 볼륨 관리 * 를 클릭하여 볼륨 관리 오른쪽 패널에 액세스한 다음 오른쪽 패널에서 * 고급 작업 * 및 * 계층화 정책 변경 * 을 클릭합니다.</block>
+  <block id="78cffa6560689ac98432ba58e17e78ff" category="inline-image-macro">볼륨에 대한 계층화 정책을 변경하는 데 사용할 수 있는 옵션을 보여 주는 스크린샷</block>
+  <block id="e0e0725f5ef956857b33c008a39af157" category="paragraph"><block ref="e0e0725f5ef956857b33c008a39af157" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fd6a9430e3d3dc98292b8abddc9d77ff" category="paragraph">Cloud Volumes ONTAP 볼륨에서 _auto_Tiering 정책을 사용하여 데이터 계층화를 활성화한 경우 비즈니스 요구에 따라 기본 냉각 기간을 조정할 수 있습니다. 이 작업은 API 및 CLI에서만 지원됩니다.</block>
+  <block id="0f6046d8813989f95f3ce9353dba26a5" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 타원 아이콘을 클릭하고 * 삭제 * 를 선택합니다.</block>
+  <block id="ec8e04c7758ae04f1375383b387929a1" category="paragraph"><block ref="ec8e04c7758ae04f1375383b387929a1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e46b959133eadbb0d00ac0a308843f30" category="list-text">작업 환경 삭제 창에서 작업 환경의 이름을 입력한 다음 * 삭제 * 를 클릭합니다.</block>
+  <block id="c4bd89564dafc82c9b2027b549fa45f2" category="list-text">작업 환경에서 * Volumes * 탭을 클릭합니다.</block>
+  <block id="31fe088c17d984a78f5027d2b8428e18" category="list-text">Volumes(볼륨) 탭에서 원하는 볼륨 제목으로 이동한 다음 * Manage volume(볼륨 관리) * 을 클릭하여 Manage Volumes(볼륨 관리) 오른쪽 패널에 액세스합니다.</block>
+  <block id="2142690a2d1ae8bd820983b7911914d5" category="list-text">대상 IQN * 을 클릭합니다.</block>
+  <block id="a56a5ae6f53f5f4ccfd018cd42004ea1" category="list-text">Canvas 페이지에서 원하는 작업 환경을 두 번 클릭합니다.</block>
+  <block id="1db430d5f476ccb7c5abbdfc3d4402d2" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * 예정된 가동 중지 시간 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
+  <block id="16fe8db807301272754ce201908a4d01" category="paragraph"><block ref="16fe8db807301272754ce201908a4d01" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0e1d67ee86981cf82fb4f5195e170da1" category="paragraph">다음 이미지는 매주 토요일 오후 20시에 BlueXP가 시스템을 종료하도록 지시하는 스케줄을 보여줍니다 (오후 8:00) 12시간 동안 BlueXP는 매주 월요일 오전 12시에 시스템을 다시 시작합니다</block>
+  <block id="3d33a0e91197625fe5c19262b8588a5e" category="inline-image-macro">스크린 샷: 예약 정지 화면을 표시합니다.</block>
+  <block id="b7964eed3054006e2dc32e71addc9330" category="paragraph"><block ref="b7964eed3054006e2dc32e71addc9330" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="833d40bbf64439ee457b9a9720b3cc4c" category="paragraph">BlueXP는 일정을 저장합니다. Features(기능) 패널 아래의 해당 Scheduled Downtime line(예정된 가동 중지 라인) 항목에 'On(켜짐)'이 표시됩니다.</block>
+  <block id="ee55aa8843d0fe4882d1ebc2115835c8" category="paragraph"><block ref="ee55aa8843d0fe4882d1ebc2115835c8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e6441a36027812e99b99675afebb1ad3" category="inline-image-macro">개요 탭의 볼륨 추가 단추 스크린샷</block>
+  <block id="d3c83108d2d70bd2eb22fbd1bb485f2f" category="paragraph">개요 탭에서 볼륨 타일로 이동한 다음 * 볼륨 추가 * 를 클릭합니다.<block ref="d66b0ca71189f0ddd53cd4b3e65bbf57" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d67d87305db3f29260c81473dd44e3f1" category="inline-image-macro">애그리게이트 탭 아래의 볼륨 추가 버튼 스크린샷</block>
+  <block id="13f1658d880a29010b36402880b7742d" category="paragraph">애그리게이트 탭에서 원하는 애그리게이트 타일로 이동합니다. 메뉴 아이콘을 클릭한 다음 * 볼륨 추가 * 를 클릭합니다.<block ref="90511a2a61b219fe659f6c6204d0e9f4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5359c0cc8b61614ec08d953783fef7e9" category="list-text">* 볼륨, 세부 정보, 보호 및 태그 *: 볼륨에 대한 기본 세부 정보를 입력하고 스냅샷 정책을 선택합니다.</block>
+  <block id="5a33fdd3ad048388d676b3cfe62a76b4" category="cell">볼륨 이름</block>
+  <block id="da791c0c870c83e87ff0b50e41446b5f" category="cell">새 볼륨에 입력할 수 있는 식별 가능한 이름입니다.</block>
+  <block id="8bc5e99f50f67c6de120548d75821d83" category="cell">스토리지 VM(SVM)</block>
+  <block id="360a6a454911fe3432462fbd11f3588c" category="cell">스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, 클라이언트에 스토리지 및 데이터 서비스를 제공합니다. SVM 또는 가상 서버로서 이를 알 수 있습니다. Cloud Volumes ONTAP는 기본적으로 하나의 스토리지 VM으로 구성되지만 일부 구성에서는 추가 스토리지 VM을 지원합니다. 새 볼륨에 대해 스토리지 VM을 지정할 수 있습니다.</block>
+  <block id="83153603fdc3097c323cd6a9c354a74c" category="list-text">볼륨 탭으로 이동하고 * 볼륨 추가 * &gt; * 템플릿에서 새 볼륨 * 을 클릭합니다.</block>
+  <block id="d5b72c940ba2727afcbba5dd037893f5" category="paragraph"><block ref="d5b72c940ba2727afcbba5dd037893f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ac2c13cd2f76af0753933c8630446e5f" category="paragraph">Editor_page가 표시됩니다.</block>
+  <block id="18a9b2315ac5b98381d542571ba28299" category="list-text">Action_panel 위에 템플릿 이름을 입력합니다.</block>
+  <block id="74f7c9266baa87f8e4aceef158811143" category="list-text">context_에서 작업 환경은 시작한 작업 환경의 이름으로 채워집니다. 볼륨을 생성할 * 스토리지 VM * 을 선택합니다.</block>
+  <block id="02550edcd072d55bf0b10ab3bdd4bc07" category="list-text">템플릿에서 하드 코딩되지 않은 모든 매개변수에 대한 값을 추가합니다. 을 참조하십시오 <block ref="c4711ce582f4a278fe266c32d7e1a70b" category="inline-xref-macro-rx"></block> Cloud Volumes ONTAP 볼륨 구축을 완료하는 데 필요한 모든 매개 변수에 대한 자세한 내용은 를 참조하십시오.</block>
+  <block id="746037c3b6a0eec6bb1e41959d51e07e" category="list-text">Apply * (적용 *)를 클릭하여 구성된 매개변수를 선택한 작업에 저장합니다.</block>
+  <block id="ceaf2fbd590803b94d4b9355d3432936" category="list-text">정의해야 하는 다른 작업(예: 클라우드 백업 구성)이 없으면 * 템플릿 저장 * 을 클릭합니다.</block>
+  <block id="be2645489c0ae0149fc30f6dc8d80bbb" category="paragraph">예를 들어 Enable Cloud Backup on Volume 작업이 백업 정책을 선택해야 하는 경우 지금 선택할 수 있습니다.</block>
+  <block id="f0131c80c45b00e70cb9a1d8c9e3448a" category="list-text">템플릿 작업에 대한 구성이 완료되면 * 템플릿 저장 * 을 클릭합니다.</block>
+  <block id="bc321d6d3a5b549e1c0961440ef815f4" category="list-text">집계 탭에서 * 집계 추가 * 를 클릭합니다.</block>
+  <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">Add Aggregate_screen에서 Aggregate를 생성합니다.</block>
+  <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">집계 추가 진행률을 보여 주는 스크린샷</block>
+  <block id="6d8395606a42c9b4b508b7083fef071b" category="paragraph"><block ref="6d8395606a42c9b4b508b7083fef071b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1f0652f3e88178c774443201328e4d2a" category="paragraph">BlueXP는 다음과 같은 세 가지 방법으로 Cloud Volumes ONTAP를 업그레이드할 수 있습니다.</block>
+  <block id="61c67604de243e1d1f09464a53018e48" category="list-text">집계 제목 아래에서 타원 버튼을 클릭한 다음 * 집계 세부 정보 보기 * 를 선택합니다.</block>
+  <block id="46804cb5ec7cb836d1b3ea87af016b42" category="paragraph"><block ref="46804cb5ec7cb836d1b3ea87af016b42" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b1d9e8a6210003e4a2d3ad9699698b5c" category="paragraph"><block ref="b1d9e8a6210003e4a2d3ad9699698b5c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c0db33b74d957aee90885031cc634b6" category="paragraph">새 버전을 사용할 수 있는 경우 개요 탭에 알림이 나타납니다.</block>
+  <block id="9646f8f8111c91fa6c731c727c894c5f" category="inline-image-macro">"지금 업그레이드!"가 표시된 스크린샷 링크 - 개요 탭 아래.</block>
+  <block id="96189d65a45e7fa44a02098d1c2994b3" category="paragraph"><block ref="96189d65a45e7fa44a02098d1c2994b3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c8a40603d5d9f8240beba1de505700ab" category="list-text">새 버전을 사용할 수 있는 경우 * 지금 업그레이드! * 를 클릭합니다</block>
+  <block id="e4e172ed018cf6c10be6941fd7282e6f" category="list-text">Upgrade Cloud Volumes ONTAP 페이지에서 EULA를 읽은 다음 * EULA * 를 읽고 승인합니다 * 를 선택합니다.</block>
+  <block id="f6e8db7e26c18ff77395c70107114b81" category="list-text">업그레이드 * 를 클릭합니다.</block>
+  <block id="aac15e5127b7a8b7e9fa2c9cd925e9b5" category="paragraph">BlueXP가 소프트웨어 업그레이드를 시작합니다. 소프트웨어 업데이트가 완료되면 작업 환경에서 작업을 수행할 수 있습니다.</block>
+  <block id="2d06184bb48576ef2fb92fc134897025" category="admonition">현재 BlueXP 사용자 인터페이스를 통해서만 최신 ONTAP 버전으로 업그레이드할 수 있습니다. BlueXP 사용자 인터페이스를 통해 특정 ONTAP 버전으로 업그레이드할 수 있는 기능은 향후 릴리스에서 제공될 예정입니다.</block>
+  <block id="fa7b604cc90feece6d71e8400213710f" category="list-text">다음 매개 변수와 값을 추가하여 app.conf를 편집합니다.</block>
+  <block id="4356eb78a767f5eff5a7176feb088ce4" category="inline-image-macro">볼륨 탭의 볼륨 관리 단추 스크린샷</block>
+  <block id="3113f5bbc88ead26c7d366fdec38f27b" category="paragraph"><block ref="3113f5bbc88ead26c7d366fdec38f27b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8f56224592abe10774e5575500874b11" category="cell">Manage volumes(볼륨 관리) 패널의 Volume Actions(볼륨 작업) 에서 * View volume details(볼륨 세부 정보 보기) * 를 클릭합니다.</block>
+  <block id="d4c98b540182b809e992d8b4a580423e" category="list-text">볼륨 관리 패널의 볼륨 작업 에서 * 탑재 명령 * 을 클릭합니다.</block>
+  <block id="98c56e9d0291f443f1ed942549039cc3" category="list-text">Manage volumes(볼륨 관리) 패널의 Volume Actions(볼륨 작업) 에서 * Clone the volume(볼륨 복제) * 을 클릭합니다.</block>
+  <block id="c36ae8709c4f5551dcd33c1fa09b1144" category="cell">볼륨 태그 편집(읽기-쓰기 볼륨만 해당)</block>
+  <block id="0c76e6ded4e12f0dc0b2564def628aae" category="list-text">볼륨 관리 패널의 볼륨 작업 에서 * 볼륨 태그 편집 * 을 클릭하여 선택한 볼륨에 할당된 볼륨 태그를 수정합니다.</block>
+  <block id="186ac335ead3bdabcd70b18a0e6f40ed" category="list-text">제공된 필드에 볼륨 태그 키 및 값을 입력합니다.</block>
+  <block id="cf92c264f59ad57e63ae663106047d25" category="list-text">추가 태그를 포함하려면 * 새 태그 추가 * 를 클릭합니다.</block>
+  <block id="29f680a1731a2250d73a33aede73a2eb" category="list-text">볼륨 관리 패널의 볼륨 작업 에서 * 볼륨 설정 편집 * 을 클릭합니다</block>
+  <block id="ac11ccea860c1468f49807407e073557" category="list-text">볼륨의 스냅샷 정책, NFS 프로토콜 버전, NFS 액세스 제어 목록(엑스포트 정책) 또는 공유 권한을 수정한 다음 * 적용 * 을 클릭합니다.</block>
+  <block id="6271604d64ad8f6bcdad901be64df292" category="list-text">Manage volumes(볼륨 관리) 패널의 Volume Actions(볼륨 작업) 에서 * Delete the volume(볼륨 삭제) * 을 클릭합니다.</block>
+  <block id="a1546ebb48752d4bd4d09e75842decd8" category="list-text">Delete Volume(볼륨 삭제) 창에서 삭제할 볼륨의 이름을 입력합니다.</block>
+  <block id="0776ce27c5318514c6a838e721b809ce" category="list-text">볼륨 관리 패널의 보호 작업 에서 * 스냅샷 복사본 생성 * 을 클릭합니다.</block>
+  <block id="23d745e528991c6cbab9c76044a9058b" category="list-text">Manage Volumes(볼륨 관리) 패널의 Protection Actions(보호 작업) 에서 * Restore from Snapshot copy(스냅샷 복사본에서 복원) * 를 클릭합니다.</block>
+  <block id="44ef2d8eff57541b631f3815660b4ecf" category="list-text">볼륨 관리 패널의 고급 작업 아래에서 * 디스크 유형 변경 * 을 클릭합니다.</block>
+  <block id="7dfcaaac35e1f30c1f24428c9e96edbf" category="list-text">볼륨 관리 패널의 고급 작업 에서 * 계층화 정책 변경 * 을 클릭합니다.</block>
+  <block id="29d65535c1a7fceff3430e7f581ccab6" category="list-text">대화 상자에 볼륨의 이름을 입력합니다.</block>
+  <block id="df558d420bf0d201f04fde33701f2df7" category="list-text">작업 환경의 개요 탭에서 오른쪽 패널 아래의 기능 탭을 클릭합니다.</block>
+  <block id="7a35a25a92271952afb7c4819b18295f" category="list-text">CIFS Setup(CIFS 설정) 필드에서 * 연필 아이콘 * 을 클릭하여 CIFS Setup(CIFS 설정) 창을 표시합니다.</block>
+  <block id="1931ad448159a5e88348fe5bcc0f9382" category="cell">스토리지 VM(SVM) 선택</block>
+  <block id="350c5507976ce0078fb3fab36bf47f9b" category="cell">Cloud Volume ONTAP SVM(스토리지 가상 시스템)을 선택하면 구성된 CIFS 정보가 표시됩니다.</block>
+  <block id="1aad0c623c80b59d018f9ae6c07ca0bf" category="list-text">Set * 를 클릭합니다.</block>
+  <block id="4145a13d965a05b20f37aec1922ef7dd" category="list-text">작업 환경에서 * 집계 탭 * 을 클릭합니다.</block>
+  <block id="7d3d9db5a4178e569561d635871c26ed" category="list-text">원하는 집계 타일로 이동한 다음 *... (타원 아이콘) &gt; 애그리게이트 세부 정보 보기 *.</block>
+  <block id="920937d0401827a767850d6598f69cf9" category="list-text">Aggregate Details(집계 세부 정보) 화면의 Overview(개요) 탭에서 각 볼륨의 크기를 검토하고 aggregate에서 이동할 볼륨을 하나 이상 선택합니다.</block>
+  <block id="e992ef205a43832966f09572f1eb3492" category="paragraph"><block ref="e992ef205a43832966f09572f1eb3492" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c6d494ac63d05f0797b17cc4e9b671a5" category="list-text">애그리게이트 타일에서 사용 가능한 용량(프로비저닝된 크기 - 사용된 애그리게이트 용량)을 확인합니다.</block>
+  <block id="448b7e585e92285ee5349bcda1a7acd0" category="paragraph"><block ref="448b7e585e92285ee5349bcda1a7acd0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8fcffd0e2a621979482d32af8df3fa54" category="list-text">애그리게이트를 선택한 다음 *... (타원 아이콘) &gt; 디스크 추가 *.</block>
+  <block id="85cbc8c9d17142818868d0deb987b7d4" category="section-title">FlexGroup 볼륨을 봅니다</block>
+  <block id="bfc66c582a5f0744b4549abc59217c8b" category="paragraph">CLI 또는 System Manager를 통해 생성된 FlexGroup 볼륨은 BlueXP의 볼륨 탭을 통해 직접 볼 수 있습니다. FlexVol 볼륨에 대해 제공된 정보와 동일한 BlueXP는 전용 볼륨 타일을 통해 생성된 FleGroup 볼륨에 대한 자세한 정보를 제공합니다. 볼륨 타일에서 아이콘의 호버 텍스트를 통해 각 FlexGroup 볼륨 그룹을 식별할 수 있습니다. 또한 볼륨 스타일 열을 통해 볼륨 목록 보기에서 FlexGroup 볼륨을 식별하고 정렬할 수 있습니다.</block>
+  <block id="b732fd66a88d23ecd20ddd54d252bde0" category="paragraph"><block ref="b732fd66a88d23ecd20ddd54d252bde0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="18f38afc08c122a02d1cef0b8f55b13c" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * 인스턴스 유형 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
+  <block id="246617af3cc2b3a4751f4377e63c90d9" category="inline-image-macro">작업 환경을 볼 때 개요 페이지의 오른쪽 위에 있는 기능 패널 아래에 인스턴스 유형 설정이 표시된 스크린샷.</block>
+  <block id="22d199cf6285224598c87a4bf598fec7" category="paragraph"><block ref="22d199cf6285224598c87a4bf598fec7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e977a40ba12e4cbe82ec5ad1eeca10d3" category="list-text">노드 기반 PAYGO 라이센스를 사용하는 경우 * 라이센스 유형 * 옆에 있는 연필 아이콘을 클릭하여 다른 라이센스 및 인스턴스 유형을 선택할 수도 있습니다.</block>
+  <block id="dcee8dbc1dce5317d8cfa6588f8f050e" category="list-text">인스턴스 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해했는지 확인한 다음 * 변경 * 을 클릭합니다.</block>
 </blocks>

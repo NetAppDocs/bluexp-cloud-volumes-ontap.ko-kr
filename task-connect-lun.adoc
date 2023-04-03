@@ -25,7 +25,9 @@ iSCSI 볼륨을 생성할 때 BlueXP에서 자동으로 LUN을 생성합니다. 
 .단계
 . 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . Canvas 페이지에서 볼륨을 관리할 Cloud Volumes ONTAP 작업 환경을 두 번 클릭합니다.
-. 볼륨을 선택한 다음 * 대상 IQN * 을 클릭합니다.
+. 작업 환경에서 * Volumes * 탭을 클릭합니다.
+. Volumes(볼륨) 탭에서 원하는 볼륨 제목으로 이동한 다음 * Manage volume(볼륨 관리) * 을 클릭하여 Manage Volumes(볼륨 관리) 오른쪽 패널에 액세스합니다.
+. 대상 IQN * 을 클릭합니다.
 . IQN 이름을 복사하려면 * Copy * 를 클릭합니다.
 . 호스트에서 LUN으로의 iSCSI 접속을 설정합니다.
 +

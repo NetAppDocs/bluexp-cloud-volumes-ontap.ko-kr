@@ -67,6 +67,10 @@ NSS 계정이 표시되지 않으면 BlueXP의 지원 섹션에서 * NSS 관리 
 
 *** * 문제 설명 * : 해당 오류 메시지 또는 수행한 문제 해결 단계를 포함하여 문제에 대한 자세한 설명을 제공합니다.
 *** * 추가 이메일 주소 *: 다른 사람에게 이 문제를 알고자 할 경우 추가 이메일 주소를 입력하십시오.
+*** * 첨부 파일(선택 사항) *: 한 번에 하나씩 최대 5개의 첨부 파일을 업로드합니다.
++
+첨부 파일은 파일당 25MB로 제한됩니다. txt, log, pdf, jpg/jpeg, rtf, DOC/docx, xls/xlsx 및 CSV.
+
 
 
 
@@ -143,7 +147,10 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 . 를 클릭하여 기존 케이스를 관리합니다 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["표의 마지막 열에 세 개의 점이 있는 아이콘"] 사용 가능한 옵션 중 하나를 선택합니다.
 +
 ** * 사례 보기 *: 특정 케이스에 대한 전체 세부 정보를 봅니다.
-** * 사례 노트 업데이트 *: 문제에 대한 추가 세부 정보를 제공합니다.
+** * 케이스 메모 업데이트 *: 문제에 대한 추가 세부 정보를 제공하거나 * 파일 업로드 * 를 선택하여 최대 5개의 파일을 첨부할 수 있습니다.
++
+첨부 파일은 파일당 25MB로 제한됩니다. txt, log, pdf, jpg/jpeg, rtf, DOC/docx, xls/xlsx 및 CSV.
+
 ** * 케이스 종료 *: 케이스를 닫는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 클릭합니다.
 
 

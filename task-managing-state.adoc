@@ -35,9 +35,10 @@ BlueXP에서 Cloud Volumes ONTAP를 중지하고 시작하여 클라우드 컴�
 
 
 .단계
-. 작업 환경에서 시계 아이콘을 클릭합니다.
+. Canvas 페이지에서 원하는 작업 환경을 두 번 클릭합니다.
+. 개요 탭에서 기능 패널을 클릭한 다음 * 예정된 가동 중지 시간 * 옆에 있는 연필 아이콘을 클릭합니다.
 +
-image:screenshot_shutdown_icon.gif["스크린샷: 자동 종료 페이지를 로드하는 아이콘을 표시합니다."]
+image:screenshot_schedule_downtime.png["스크린샷: 자동 종료 페이지를 로드하는 아이콘을 표시합니다."]
 
 . 종료 일정을 지정합니다.
 +
@@ -47,10 +48,10 @@ image:screenshot_shutdown_icon.gif["스크린샷: 자동 종료 페이지를 로
 * 예 *
 
 +
-다음 이미지는 매주 토요일 오전 12시에 BlueXP가 시스템을 종료하도록 지시하는 스케줄을 보여줍니다 48시간 동안 BlueXP는 매주 월요일 오전 12시에 시스템을 다시 시작합니다
+다음 이미지는 매주 토요일 오후 20시에 BlueXP가 시스템을 종료하도록 지시하는 스케줄을 보여줍니다 (오후 8:00) 12시간 동안 BlueXP는 매주 월요일 오전 12시에 시스템을 다시 시작합니다
 
 +
-image:screenshot_shutdown.gif["스크린샷: 48시간 동안 매주 주말 오전 12시에 Cloud Volumes ONTAP를 종료하는 종료 일정을 보여 줍니다."]
+image:screenshot_schedule_downtime_window.png["스크린 샷: 예약 정지 화면을 표시합니다."]
 
 
 
@@ -58,7 +59,7 @@ image:screenshot_shutdown.gif["스크린샷: 48시간 동안 매주 주말 오�
 
 
 .결과
-BlueXP는 일정을 저장합니다. 일정이 설정되었음을 나타내기 위해 시계 아이콘이 변경됩니다. image:screenshot_shutdown_icon_scheduled.gif["스크린샷: 일정이 정의된 후 자동 종료 아이콘을 표시합니다."]
+BlueXP는 일정을 저장합니다. Features(기능) 패널 아래의 해당 Scheduled Downtime line(예정된 가동 중지 라인) 항목에 'On(켜짐)'이 표시됩니다.
 
 
 
@@ -75,7 +76,7 @@ HA 쌍을 중지하면 BlueXP가 두 노드를 모두 종료합니다.
 .단계
 . 작업 환경에서 * 끄기 * 아이콘을 클릭합니다.
 +
-image:screenshot_otc_turn_off.gif["스크린샷: Cloud Volumes ONTAP 시스템을 끄는 아이콘을 표시합니다."]
+image:screenshot_turn_off_redesign.png["스크린샷: Cloud Volumes ONTAP 시스템을 끄는 아이콘을 표시합니다."]
 
 . 스냅샷이 시스템 복구를 활성화할 수 있으므로 스냅샷을 생성하는 옵션을 활성 상태로 유지합니다.
 . 끄기 * 를 클릭합니다.

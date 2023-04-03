@@ -200,13 +200,11 @@ BlueXP는 연결 또는 사용 권한 문제가 없는 한 시스템이 생성�
 .단계
 . <<요구 사항,모든 요구 사항을 충족하는지 확인합니다>>.
 . 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
-. Canvas 페이지에서 Cloud Volumes ONTAP 인스턴스의 이름을 두 번 클릭합니다.
+. Canvas 페이지에서 Cloud Volumes ONTAP 인스턴스의 이름을 선택합니다.
 . 메뉴 아이콘을 클릭하고 * 용량 계층화 활성화 * 를 선택합니다.
 +
-image:screenshot_enable_capacity_tiering.gif["BlueXP에서 데이터 계층화를 활성화하려고 할 때 문제가 발생한 경우 작업 환경 메뉴에서 사용할 수 있는 용량 계층화 활성화 옵션의 스크린샷"]
 
-+
-BlueXP에서 시스템을 생성할 때 데이터 계층화를 활성화할 수 없는 경우에만 이 옵션이 표시됩니다.
+NOTE: BlueXP에서 시스템을 생성할 때 데이터 계층화를 활성화할 수 없는 경우에만 이 옵션이 표시됩니다.
 
 +
 Google Cloud에서는 이 옵션이 나타나기 전에 서비스 계정을 Cloud Volumes ONTAP에 연결해야 합니다. <<요구 사항,모든 요구 사항을 충족하는지 확인합니다>>.
@@ -232,10 +230,10 @@ Google Cloud에서는 이 옵션이 나타나기 전에 서비스 계정을 Clou
 
 .Aggregate에서 계층화가 설정되었는지 확인하는 단계입니다
 . BlueXP에서 작업 환경을 엽니다.
-. 메뉴 아이콘을 클릭하고 * 고급 * 을 클릭한 다음 * 고급 할당 * 을 클릭합니다.
-. 애그리게이트에서 계층화가 설정되었는지 또는 해제되었는지 확인합니다.
+. 애그리게이트 탭을 클릭합니다.
+. 원하는 타일로 이동하여 애그리게이트에서 계층화가 설정되었는지 여부를 확인합니다.
 +
-image:screenshot_aggr_tiering.gif["계층화 상태를 포함하는 BlueXP의 Aggregate에 대한 정보를 보여 주는 스크린샷"]
+image:screenshot_aggregate_tiering_enabled.png["계층화 상태를 포함하는 BlueXP의 Aggregate에 대한 정보를 보여 주는 스크린샷"]
 
 
 
@@ -255,7 +253,7 @@ image:screenshot_aggr_tiering.gif["계층화 상태를 포함하는 BlueXP의 Ag
 Cloud Volumes ONTAP는 읽기-쓰기 볼륨의 비활성 데이터를 비용 효율적인 오브젝트 스토리지에 계층화하여 핫 데이터에 대한 성능 계층을 확보할 수 있습니다.
 
 .단계
-. 작업 환경에서 새 볼륨을 생성하거나 기존 볼륨의 계층을 변경합니다.
+. 작업 환경의 볼륨 탭에서 새 볼륨을 생성하거나 기존 볼륨의 계층을 변경합니다.
 +
 [cols="30,70"]
 |===
@@ -265,7 +263,7 @@ Cloud Volumes ONTAP는 읽기-쓰기 볼륨의 비활성 데이터를 비용 효
 | 새 볼륨을 생성합니다 | 새 볼륨 추가 * 를 클릭합니다. 
 
 
-| 기존 볼륨을 수정합니다 | 볼륨을 선택하고 * 디스크 유형 및 계층화 정책 변경 * 을 클릭합니다. 
+| 기존 볼륨을 수정합니다 | 원하는 볼륨 타일을 선택하고 * 볼륨 관리 * 를 클릭하여 볼륨 관리 오른쪽 패널에 액세스한 다음 오른쪽 패널에서 * 고급 작업 * 및 * 계층화 정책 변경 * 을 클릭합니다. 
 |===
 . 계층화 정책을 선택합니다.
 +
@@ -275,7 +273,7 @@ Cloud Volumes ONTAP는 읽기-쓰기 볼륨의 비활성 데이터를 비용 효
 * 예 *
 
 +
-image:screenshot_tiered_storage.gif["오브젝트 스토리지에 대한 계층화를 활성화하는 아이콘을 보여 주는 스크린샷"]
+image:screenshot_volumes_change_tiering_policy.png["볼륨에 대한 계층화 정책을 변경하는 데 사용할 수 있는 옵션을 보여 주는 스크린샷"]
 
 +
 데이터 계층화가 활성화된 애그리게이트가 아직 존재하지 않는 경우 BlueXP는 볼륨에 대한 새로운 애그리게이트를 생성합니다.
@@ -334,7 +332,7 @@ CAUTION: 공간이 부족하면 Cloud Volumes ONTAP에서 데이터를 이동할
 .단계
 . BlueXP 콘솔의 오른쪽 상단에서 * 설정 * 아이콘을 클릭하고 * 커넥터 설정 * 을 선택합니다.
 +
-image:screenshot_settings_icon.gif["BlueXP 콘솔의 오른쪽 위에 설정 아이콘이 표시된 스크린샷."]
+image:screenshot_settings_icon.png["BlueXP 콘솔의 오른쪽 위에 설정 아이콘이 표시된 스크린샷."]
 
 . Capacity * 에서 * Aggregate Capacity Thresholds - Free Space Ratio for Data Tiering * 을 클릭합니다.
 . 요구 사항에 따라 여유 공간 비율을 변경하고 * Save * 를 클릭합니다.
@@ -344,7 +342,7 @@ image:screenshot_settings_icon.gif["BlueXP 콘솔의 오른쪽 위에 설정 아
 
 == 자동 계층화 정책의 냉각 기간 변경
 
-Cloud Volumes ONTAP 볼륨에서 _auto_Tiering 정책을 사용하여 데이터 계층화를 활성화한 경우 비즈니스 요구에 따라 기본 냉각 기간을 조정할 수 있습니다. 이 작업은 API를 통해서만 지원됩니다.
+Cloud Volumes ONTAP 볼륨에서 _auto_Tiering 정책을 사용하여 데이터 계층화를 활성화한 경우 비즈니스 요구에 따라 기본 냉각 기간을 조정할 수 있습니다. 이 작업은 API 및 CLI에서만 지원됩니다.
 
 냉각 기간은 볼륨의 사용자 데이터가 "콜드" 상태로 간주되어 오브젝트 스토리지로 이동되기 전에 비활성 상태로 유지해야 하는 일 수입니다.
 
