@@ -20,6 +20,18 @@ BlueXP(이전의 Cloud Manager)에서 Cloud Volumes ONTAP 관리의 새로운 �
 
 
 
+== 2023년 4월 4일
+
+Cloud Volumes ONTAP 9.12.1 GA부터 중국 지역이 다음과 같이 AWS에서 지원됩니다.
+
+* 단일 노드 시스템이 지원됩니다.
+* NetApp에서 직접 구매한 라이센스가 지원됩니다.
+
+
+지역별 이용 가능 여부는 를 참조하십시오 link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP를 위한 글로벌 지역 맵"^].
+
+
+
 == 2023년 4월 3일
 
 다음 변경 사항은 커넥터의 3.9.28 릴리스에 도입되었습니다.
