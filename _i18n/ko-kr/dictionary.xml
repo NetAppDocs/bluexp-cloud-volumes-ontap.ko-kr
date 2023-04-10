@@ -3610,7 +3610,6 @@
   <block id="bd143c2af617c5743abf3efb9b36b10a" category="paragraph">Cloud Volumes ONTAP 작업 환경을 만들 때 BlueXP는 Google Cloud Marketplace에서 사용 가능한 계약을 구독하라는 메시지를 표시합니다. 그러면 해당 구독이 충전을 위한 작업 환경과 연결됩니다. 추가 작업 환경에 동일한 서브스크립션을 사용할 수 있습니다.</block>
   <block id="f03e86cc66eb1161cd11073bf0ca84cb" category="list-text">mailto:ng-keystone-success@netapp.com [NetApp에 문의]하여 하나 이상의 Keystone Flex 구독으로 BlueXP 사용자 계정을 인증하십시오.</block>
   <block id="970e80f52bfaf06fb0516cbd1132f19b" category="paragraph">이러한 제한은 BlueXP(이전의 Cloud Manager)의 Cloud Volumes ONTAP 관리에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어 자체의 제한 사항을 보려면<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
-  <block id="cc536ef595b8b8d98efa4ac1fce2305e" category="paragraph">Cloud Volumes ONTAP는 FlexGroup 볼륨을 지원하지만 BlueXP는 지원하지 않습니다. 시스템 관리자 또는 CLI에서 FlexGroup 볼륨을 생성하는 경우 BlueXP의 용량 관리 모드를 수동으로 설정해야 합니다. FlexGroup 볼륨에서 자동 모드가 제대로 작동하지 않을 수 있습니다.</block>
   <block id="a719d497acfd7c92ff4bf9224e1de3d0" category="paragraph">Cloud Volumes ONTAP는 일부 클라우드 공급자의 스케일 아웃 스토리지 옵션으로 S3를 지원하지만 BlueXP는 이 기능에 대한 관리 기능을 제공하지 않습니다. CLI를 사용하는 것이 Cloud Volumes ONTAP에서 S3 클라이언트 액세스를 구성하는 모범 사례입니다. 자세한 내용은 를 참조하십시오<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>.</block>
   <block id="397f1667d1f282be3b879b4e92a63aad" category="paragraph">BlueXP는 스토리지 VM 재해 복구에 대한 설정 또는 조정 지원을 제공하지 않습니다. System Manager 또는 CLI를 사용해야 합니다.</block>
   <block id="66abe501678500958b330ea34f7f3794" category="admonition">BlueXP는 테이크오버를 시작하고 Giveback을 기다리면서 한 번에 하나의 노드를 정상적으로 변경합니다. NetApp의 QA 팀은 이 프로세스 중에 파일 쓰기와 읽기를 모두 테스트했지만 클라이언트 측에서는 문제가 발생하지 않았습니다. 접속이 변경됨에 따라 입출력 레벨에서 재시도 횟수가 확인되었지만 애플리케이션 계층은 NFS/CIFS 연결의 이러한 짧은 "재연결"을 극복했습니다.</block>
@@ -4084,7 +4083,6 @@
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">다음 단계</block>
   <block id="f3d9abb903127694db460aa9c7f4d7be" category="paragraph-title">제한</block>
   <block id="6b2eadbbc64d8760da4136e28da230c2" category="list-text">* 위치 선택 *: * 아마존 웹 서비스 * 및 * Cloud Volumes ONTAP HA * 를 선택합니다.</block>
-  <block id="7945e794f4dd8b21c15eebff5d67a416" category="section-title">BlueXP는 FlexGroup 볼륨을 지원하지 않습니다</block>
   <block id="56fe439ee061f5bc2e940368c1d73fa3" category="section-title">BlueXP는 Cloud Volumes ONTAP에서 S3을 지원하지 않습니다</block>
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXP는 스토리지 VM의 재해 복구를 지원하지 않습니다</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">필요한 것</block>
@@ -4865,4 +4863,7 @@
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">2023년 4월 4일</block>
   <block id="ebef32c1ba0aec7a39eb2ce8370a97d5" category="paragraph">Cloud Volumes ONTAP 9.12.1 GA부터 중국 지역이 다음과 같이 AWS에서 지원됩니다.</block>
+  <block id="88e0131339701d1e970c1ab7a5495d25" category="section-title">BlueXP는 FlexGroup 볼륨 생성을 지원하지 않습니다</block>
+  <block id="fff40ddae0362c17ba575430d4cdd727" category="paragraph">Cloud Volumes ONTAP는 FlexGroup 볼륨을 지원하지만 BlueXP는 현재 FlexGroup 볼륨 생성을 지원하지 않습니다. 시스템 관리자 또는 CLI에서 FlexGroup 볼륨을 생성하는 경우 BlueXP의 용량 관리 모드를 수동으로 설정해야 합니다. FlexGroup 볼륨에서 자동 모드가 제대로 작동하지 않을 수 있습니다.</block>
+  <block id="be5e56e337ebbc7d99062048ba94693e" category="admonition">BlueXP에서 FlexGroup 볼륨을 생성할 수 있는 기능은 향후 릴리스에 제공될 예정입니다.</block>
 </blocks>
