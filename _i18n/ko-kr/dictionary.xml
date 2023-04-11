@@ -4742,12 +4742,10 @@
   <block id="231ea98554191e640c216736796158d5" category="section-title">Cloud Volumes ONTAP 개요, 볼륨 및 집계 페이지를 위한 BlueXP 사용자 인터페이스 재설계</block>
   <block id="1cc55fcb982bea0e8f241a1271bda985" category="paragraph">BlueXP는 이제 Cloud Volumes ONTAP 개요, 볼륨 및 집계 페이지에 대한 사용자 인터페이스를 새롭게 설계했습니다. 타일 기반 디자인은 각 타일에 보다 포괄적인 정보를 제공하여 사용자 경험을 향상시킬 수 있습니다.</block>
   <block id="9000895c1e7c46e6e8fc9eb750dfb403" category="inline-image-macro">이 스크린샷은 Cloud Volumes ONTAP 개요 페이지에서 재설계된 BlueXP 사용자 인터페이스를 보여줍니다. 다양한 타일이 스토리지 효율성, 버전, 용량 배포, Cloud Volumes ONTAP 구축, 볼륨, 애그리게이트, 복제 및 백업에 대한 정보를 보여줍니다.</block>
-  <block id="23fbfdbb598644432ab089fa6e533405" category="paragraph"><block ref="23fbfdbb598644432ab089fa6e533405" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6fff4762fc0aeb74dd0a918683c157ae" category="section-title">FlexGroup 볼륨은 Cloud Volumes ONTAP를 통해 볼 수 있습니다</block>
   <block id="8d40e6e8379382ee39fba2c4a1cb5629" category="paragraph">CLI 또는 System Manager를 통해 직접 생성된 FlexGroup 볼륨은 이제 BlueXP의 재설계된 볼륨 타일을 통해 볼 수 있습니다. FlexVol 볼륨에 대해 제공된 정보와 동일한 BlueXP는 전용 볼륨 타일을 통해 생성된 FlexGroup 볼륨에 대한 자세한 정보를 제공합니다.</block>
   <block id="905d8520d584560b3995118b2a01f6c2" category="admonition">현재 BlueXP에서만 기존 FlexGroup 볼륨을 볼 수 있습니다. BlueXP에서 FlexGroup 볼륨을 생성하는 기능은 사용할 수 없지만 향후 릴리스에서 제공될 예정입니다.</block>
   <block id="91f0dcc3b5f3e7c2ced12a923ca3b92e" category="inline-image-macro">볼륨 타일 아래에 FlexGroup 볼륨 아이콘 호버 텍스트를 보여 주는 스크린샷</block>
-  <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9f223d40f9c90f08d9cd6ef8cba648c3" category="inline-link-macro">생성된 FlexGroup 볼륨을 보는 방법에 대해 자세히 알아보십시오.</block>
   <block id="acef74218ad5e199582b5c76062e5559" category="paragraph"><block ref="acef74218ad5e199582b5c76062e5559" category="inline-link-macro-rx"></block></block>
   <block id="d92a428713f7303c87adb54fb04cf41b" category="section-title">Google Cloud의 ONTAP S3 라이센스</block>
@@ -4866,4 +4864,8 @@
   <block id="6e987a799bff743a20629c6963efee7e" category="paragraph"><block ref="88e663ceca138a2ba6bdf07d4cbe79f1" category="inline-link-rx"></block>.</block>
   <block id="9bb754282eec4e66c9472848d18fa68b" category="paragraph">Essentials 패키지에 표시되는 용량을 더 잘 이해하려면 충전 작동 방식에 익숙해야 합니다.<block ref="e0127f60c714803ed2bb7172384e02ad" category="inline-link-rx"></block>.</block>
   <block id="180b09672bfae24bd56a0aee5f3b1b2b" category="paragraph"><block ref="a9e2b0598eacf571f92143c75c6c24a3" category="inline-link-rx"></block>.</block>
+  <block id="77b63f391cd8d8277d8d106f03ad5d8f" category="paragraph"><block ref="77b63f391cd8d8277d8d106f03ad5d8f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="78f9ca50556d02ff8700efd01af0d528" category="paragraph"><block ref="78f9ca50556d02ff8700efd01af0d528" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9cc2b6cdaf0b50459353a2d67c0baa80" category="section-title">구축 시간 단축</block>
+  <block id="66d5639668d7c3e585771304940a252b" category="paragraph">일반 쓰기 속도를 사용하도록 설정한 경우 Microsoft Azure 또는 Google Cloud에서 Cloud Volumes ONTAP 작업 환경을 구축하는 데 걸리는 시간을 단축했습니다. 배포 시간은 이제 평균 3-4분 더 짧습니다.</block>
 </blocks>

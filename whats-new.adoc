@@ -36,15 +36,11 @@ Cloud Volumes ONTAP 9.12.1 GA부터 중국 지역이 다음과 같이 AWS에서 
 
 다음 변경 사항은 커넥터의 3.9.28 릴리스에 도입되었습니다.
 
-ifdef::gcp[]
-
 
 
 === Turin 지역이 이제 Google Cloud에서 지원됩니다
 
 Turin 지역은 현재 Google Cloud for Cloud Volumes ONTAP 및 Connector for Cloud Volumes ONTAP 9.12.1 GA 이상에서 지원됩니다.
-
-endif::gcp[]
 
 
 
@@ -66,7 +62,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 BlueXP는 이제 Cloud Volumes ONTAP 개요, 볼륨 및 집계 페이지에 대한 사용자 인터페이스를 새롭게 설계했습니다. 타일 기반 디자인은 각 타일에 보다 포괄적인 정보를 제공하여 사용자 경험을 향상시킬 수 있습니다.
 
-image:screenshot-resource-page-rn.png["이 스크린샷은 Cloud Volumes ONTAP 개요 페이지에서 재설계된 BlueXP 사용자 인터페이스를 보여줍니다. 다양한 타일이 스토리지 효율성, 버전, 용량 배포, Cloud Volumes ONTAP 구축, 볼륨, 애그리게이트, 복제 및 백업에 대한 정보를 보여줍니다."]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["이 스크린샷은 Cloud Volumes ONTAP 개요 페이지에서 재설계된 BlueXP 사용자 인터페이스를 보여줍니다. 다양한 타일이 스토리지 효율성, 버전, 용량 배포, Cloud Volumes ONTAP 구축, 볼륨, 애그리게이트, 복제 및 백업에 대한 정보를 보여줍니다."]
 
 
 
@@ -77,7 +73,7 @@ CLI 또는 System Manager를 통해 직접 생성된 FlexGroup 볼륨은 이제 
 
 NOTE: 현재 BlueXP에서만 기존 FlexGroup 볼륨을 볼 수 있습니다. BlueXP에서 FlexGroup 볼륨을 생성하는 기능은 사용할 수 없지만 향후 릴리스에서 제공될 예정입니다.
 
-image:screenshot-show-flexgroup-volume.png["볼륨 타일 아래에 FlexGroup 볼륨 아이콘 호버 텍스트를 보여 주는 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["볼륨 타일 아래에 FlexGroup 볼륨 아이콘 호버 텍스트를 보여 주는 스크린샷"]
 
 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["생성된 FlexGroup 볼륨을 보는 방법에 대해 자세히 알아보십시오."^]
 
@@ -112,8 +108,6 @@ Cloud Volumes ONTAP 9.12.1 GA부터 중국 지역 지원이 Azure에서 다음�
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
 
-ifdef::azure[]
-
 
 
 === Azure에서 16TiB 및 32TiB 지원
@@ -121,8 +115,6 @@ ifdef::azure[]
 이제 Cloud Volumes ONTAP는 16TiB 및 32TiB 디스크 크기를 지원하여 Azure의 관리 대상 디스크에서 실행되는 고가용성 배포를 지원합니다.
 
 에 대해 자세히 알아보십시오 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#supported-disk-sizes["Azure에서 지원되는 디스크 크기입니다"^].
-
-endif::azure[]
 
 
 
@@ -145,8 +137,6 @@ Cloud Volumes ONTAP는 이제 인터넷으로부터 완전히 분리된 모든 �
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["할당되지 않은 라이센스를 추가합니다"^]
 
 
-ifdef::gcp[]
-
 
 
 === Google Cloud의 Flash Cache 및 빠른 쓰기 속도
@@ -155,15 +145,11 @@ Cloud Volumes ONTAP 9.13.0 릴리즈의 일부 인스턴스에서 Flash Cache, �
 
 에 대해 자세히 알아보십시오 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud 라이센스에 의해 지원되는 구성"^].
 
-endif::gcp[]
-
 
 
 == 2023년 2월 5일
 
 다음 변경 사항은 커넥터의 3.9.26 릴리스에 도입되었습니다.
-
-ifdef::aws[]
 
 
 
@@ -172,10 +158,6 @@ ifdef::aws[]
 이제 AWS HA AZ(단일 가용성 영역) 구축을 통해 반 배정 그룹을 생성할 수 있는 새로운 구성 설정이 제공됩니다. 이제 장애가 발생한 반 배정 그룹 생성을 생략하고 AWS HA 단일 AZ 구축을 성공적으로 완료하도록 선택할 수 있습니다.
 
 반 배정 그룹 생성 설정을 구성하는 방법에 대한 자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["AWS HA 단일 AZ에 대한 배치 그룹 생성 구성"^].
-
-endif::aws[]
-
-ifdef::azure[]
 
 
 
@@ -199,8 +181,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-wor
 
 다음 변경 사항은 커넥터의 3.9.25 릴리스에 도입되었습니다.
 
-ifdef::gcp[]
-
 
 
 === Google Cloud에서 사용 가능한 라이센스 패키지
@@ -208,8 +188,6 @@ ifdef::gcp[]
 최적화된 에지 캐시 용량 기반 라이센스 패키지는 Google Cloud Marketplace에서 Cloud Volumes ONTAP에 대해 용량제 오퍼링을 제공하거나 연간 계약으로 제공됩니다.
 
 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Cloud Volumes ONTAP 라이센스"^].
-
-endif::gcp[]
 
 
 
@@ -267,8 +245,6 @@ Cloud Volumes ONTAP 생성 프로세스 중에 WORM(Write Once, Read Many) 및 �
 
 다음 변경 사항은 커넥터의 3.9.23 릴리스에 도입되었습니다.
 
-ifdef::gcp[]
-
 
 
 === Google Cloud의 ONTAP S3 라이센스
@@ -277,15 +253,11 @@ ONTAP S3 라이센스는 이제 Google 클라우드 플랫폼에서 버전 9.12.
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오"^]
 
-endif::gcp[]
-
 
 
 == 2022년 11월 6일
 
 다음 변경 사항은 커넥터의 3.9.23 릴리스에 도입되었습니다.
-
-ifdef::azure[]
 
 
 
@@ -295,8 +267,6 @@ ifdef::azure[]
 
 자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-moving-resource-groups-azure.html["리소스 그룹 이동 중"].
 
-endif::azure[]
-
 
 
 === NDMP-COPY 인증
@@ -305,8 +275,6 @@ NDMP-copy는 현재 Cloud Volume ONTAP에서 사용하도록 인증되었습니�
 
 NDMP를 구성하고 사용하는 방법에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP 구성 개요"].
 
-ifdef::azure[]
-
 
 
 === Azure에 대한 관리형 디스크 암호화 지원
@@ -314,8 +282,6 @@ ifdef::azure[]
 이제 생성 시 모든 관리되는 디스크를 암호화할 수 있는 새로운 Azure 권한이 추가되었습니다.
 
 이 새로운 기능에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-azure-encryption.html["Azure에서 고객이 관리하는 키를 사용하도록 Cloud Volumes ONTAP를 설정합니다"].
-
-endif::azure[]
 
 
 
@@ -402,8 +368,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 == 2022년 7월 18일
 
-ifdef::azure[]
-
 
 
 === Azure의 새로운 라이센스 패키지
@@ -415,8 +379,6 @@ Azure Marketplace 구독을 통해 비용을 지불하는 Azure에서는 Cloud V
 
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["이러한 라이센스 패키지에 대해 자세히 알아보십시오"].
-
-endif::azure[]
 
 
 
@@ -440,8 +402,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["AWS의 Elastic Volumes 지원에 대해 자세히 알아보십시오"].
 
-ifdef::aws[]
-
 
 
 === AWS의 ONTAP S3 라이센스
@@ -449,10 +409,6 @@ ifdef::aws[]
 ONTAP S3 라이센스는 이제 AWS 버전 9.11.0 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 포함되어 있습니다.
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오"^]
-
-endif::aws[]
-
-ifdef::azure[]
 
 
 
@@ -469,8 +425,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 �
 ONTAP S3 라이센스는 이제 Azure에서 버전 9.9.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 포함됩니다.
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오"^]
-
-endif::azure[]
 
 
 
@@ -495,8 +449,6 @@ Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우 ONTAP 시스�
 이 고급 보기는 Cloud Volumes ONTAP 9.10.0 이상에서 미리 보기로 사용할 수 있습니다. NetApp은 이 경험을 개선하고 다음 릴리즈에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 사용하여 피드백을 보내주십시오.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["고급 보기에 대해 자세히 알아보십시오"].
-
-ifdef::aws[]
 
 
 
@@ -525,10 +477,6 @@ Cloud Volumes ONTAP 9.11.1에는 AWS VPC 공유에 대한 지원이 포함되어
 
 link:task-deploy-aws-shared-vpc.html["공유 서브넷에 HA 쌍을 구축하는 방법을 알아보십시오"].
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === 서비스 엔드포인트를 사용할 경우 네트워크 액세스가 제한됩니다
@@ -536,10 +484,6 @@ ifdef::azure[]
 BlueXP는 이제 VNET 서비스 끝점을 사용하여 Cloud Volumes ONTAP와 스토리지 계정 간의 연결을 위해 네트워크 액세스를 제한합니다. BlueXP는 Azure Private Link 연결을 사용하지 않는 경우 서비스 끝점을 사용합니다.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP를 사용한 Azure 전용 링크 연결에 대해 자세히 알아보십시오"].
-
-endif::azure[]
-
-ifdef::gcp[]
 
 
 
@@ -559,8 +503,6 @@ ONTAP CLI 또는 System Manager를 사용하여 단일 노드 시스템에 스�
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["Google Cloud의 스토리지 VM 제한에 대해 자세히 알아보십시오"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["Google Cloud에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 생성하는 방법을 알아보십시오"]
 
-
-endif::gcp[]
 
 
 
@@ -590,8 +532,6 @@ K8s 탭은 이전 버전에서 사용되지 않으며 이제 제거되었습니�
 
 https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["BlueXP의 Kubernetes 데이터 관리에 대해 알아보십시오"^]
 
-ifdef::azure[]
-
 
 
 === Azure에서 연간 계약
@@ -602,8 +542,6 @@ NetApp이 프라이빗 오퍼를 공유하면 작업 환경을 생성하는 동�
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["라이센스에 대해 자세히 알아보십시오"].
 
-endif::azure[]
-
 
 
 === S3 빙하 즉시 검색
@@ -611,8 +549,6 @@ endif::azure[]
 이제 Amazon S3 Glacier Instant Retrieval 저장소 클래스에 계층화된 데이터를 저장할 수 있습니다.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["계층화된 데이터에 대한 스토리지 클래스를 변경하는 방법에 대해 알아보십시오"].
-
-ifdef::aws[]
 
 
 
@@ -628,10 +564,6 @@ ifdef::aws[]
 이제 이러한 권한이 있어야 BlueXP에서 배치 그룹을 만드는 방법을 최적화할 수 있습니다.
 
 BlueXP에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["AWS에 대한 최신 커넥터 정책을 봅니다"^].
-
-endif::aws[]
-
-ifdef::gcp[]
 
 
 
@@ -673,8 +605,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 Cloud Volumes ONTAP에서 사용할 Google Cloud 서비스 계정을 선택하면 BlueXP에 각 서비스 계정과 연결된 이메일 주소가 표시됩니다. 이메일 주소를 보면 동일한 이름을 공유하는 서비스 계정을 쉽게 구별할 수 있습니다.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["서비스 계정 필드의 스크린샷"]
-
-endif::gcp[]
 
 
 
@@ -774,8 +704,6 @@ Cloud Volumes ONTAP 라이선스를 단일 탭에 통합하여 * Digital Wallet 
 
 다음 변경 사항은 커넥터의 3.9.14 릴리스에 도입되었습니다.
 
-ifdef::azure[]
-
 
 
 === 추가 Azure VM 유형 지원
@@ -789,8 +717,6 @@ Cloud Volumes ONTAP는 이제 Microsoft Azure에서 9.10.1 릴리즈부터 다�
 
 
 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Cloud Volumes ONTAP 릴리즈 노트"^] 지원되는 구성에 대한 자세한 내용은 를 참조하십시오.
-
-endif::azure[]
 
 
 
@@ -855,17 +781,11 @@ Keystone Flex 가입은 BlueXP에서 구축할 수 있는 모든 새로운 버�
 * link:task-manage-keystone.html["BlueXP에서 Keystone Flex 서브스크립션을 시작하는 방법에 대해 알아보십시오"].
 
 
-ifdef::aws[]
-
 
 
 === 새로운 AWS 지역 지원
 
 Cloud Volumes ONTAP는 현재 AWS 아시아 태평양(Osaka) 지역(AP-북동부-3)에서 지원됩니다.
-
-endif::aws[]
-
-ifdef::azure[]
 
 
 
@@ -874,8 +794,6 @@ ifdef::azure[]
 포트 8023 및 4900은 단일 노드 시스템과 HA 쌍 모두에 대해 Azure의 Cloud Volumes ONTAP 시스템에서 더 이상 열리지 않습니다.
 
 이 변경 사항은 커넥터의 3.9.13 릴리스부터 _NEW_Cloud Volumes ONTAP 시스템에 적용됩니다.
-
-endif::azure[]
 
 
 
@@ -891,7 +809,11 @@ Connector의 3.9.11 릴리스에는 다음과 같은 변경 사항이 도입되�
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-9100-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
 
-ifdef::azure[]
+
+
+=== 구축 시간 단축
+
+일반 쓰기 속도를 사용하도록 설정한 경우 Microsoft Azure 또는 Google Cloud에서 Cloud Volumes ONTAP 작업 환경을 구축하는 데 걸리는 시간을 단축했습니다. 배포 시간은 이제 평균 3-4분 더 짧습니다.
 
 
 
@@ -910,8 +832,6 @@ Azure의 Cloud Volumes ONTAP에서 를 사용하여 데이터가 자동으로 �
 
 
 link:task-set-up-azure-encryption.html["이 단계에 대해 자세히 알아보십시오"].
-
-endif::azure[]
 
 
 
@@ -944,8 +864,6 @@ image:screenshot_cvo_charging_methods.png["충전 방법을 선택할 수 있는
 
 WORM(Write Once, Read Many) 스토리지는 더 이상 미리 보기에 표시되지 않으며 Cloud Volumes ONTAP에서 일반적으로 사용할 수 있습니다. link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"].
 
-ifdef::aws[]
-
 
 
 === AWS에서 m5dn.24xlarge 지원
@@ -953,10 +871,6 @@ ifdef::aws[]
 이제 Cloud Volumes ONTAP는 9.9.1 릴리스부터 PAYGO Premium, BYOL(Bring Your Own License) 및 Freemium과 같은 충전 방법을 사용하여 m5dn.24xLarge 인스턴스 유형을 지원합니다.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["AWS에서 지원되는 Cloud Volumes ONTAP 구성 보기"^].
-
-endif::aws[]
-
-ifdef::azure[]
 
 
 
@@ -991,10 +905,6 @@ BlueXP에 추가한 각 Azure 자격 증명 세트에 이러한 권한을 제공
 
 link:task-enabling-private-link.html["Cloud Volumes ONTAP에서 Azure 프라이빗 링크를 사용하는 방법에 대해 자세히 알아보십시오"].
 
-endif::azure[]
-
-ifdef::gcp[]
-
 
 
 === Google Cloud에서 균형 잡힌 영구 디스크
@@ -1013,15 +923,11 @@ CUSTOM-4-16384 시스템 유형은 새로운 Cloud Volumes ONTAP 시스템에서
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["GCP에서 Cloud Volumes ONTAP에 대해 지원되는 구성을 봅니다"^].
 
-endif::gcp[]
-
 
 
 == 2021년 5월 30일
 
 커넥터 3.9.7 릴리스에는 다음과 같은 변경 사항이 도입되었습니다.
-
-ifdef::aws[]
 
 
 
@@ -1040,8 +946,6 @@ ifdef::aws[]
 이제 BlueXP는 새로운 Cloud Volumes ONTAP 작업 환경을 만들 때 EBS 볼륨에 태그를 추가합니다. 이 태그는 Cloud Volumes ONTAP를 배포한 후에 이미 생성되었습니다.
 
 조직에서 SCP(서비스 제어 정책)를 사용하여 사용 권한을 관리하는 경우 이 변경 사항이 도움이 될 수 있습니다.
-
-endif::aws[]
 
 
 
@@ -1065,16 +969,12 @@ BlueXP는 이제 Cloud Volumes ONTAP 시스템을 배포하고 전원을 켤 때
 
 이러한 기능 향상으로 더 이상 필요하지 않은 스냅샷을 제거하여 클라우드 공급자 비용을 절감할 수 있습니다.
 
-ifdef::azure[]
-
 Connector에는 Azure 스냅샷을 삭제할 수 있는 새로운 권한이 필요합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Azure의 최신 커넥터 정책을 봅니다"^].
 
 [source, json]
 ----
 "Microsoft.Compute/snapshots/delete"
 ----
-endif::azure[]
-
 
 
 == 2021년 5월 24일
@@ -1101,8 +1001,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-991-relnotes["이 Cloud Volume
 
 공간이 논리적으로 보고되면 ONTAP에서는 스토리지 효율성 기능으로 절약된 모든 물리적 공간이 사용된 것으로 보고하도록 볼륨 공간을 보고합니다.
 
-ifdef::aws[]
-
 
 
 === AWS에서 GP3 디스크 지원
@@ -1117,17 +1015,11 @@ link:task-planning-your-config.html#sizing-your-system-in-aws["Cloud Volumes ONT
 
 Cloud Volumes ONTAP는 더 이상 콜드 HDD(SC1) 디스크를 지원하지 않습니다.
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === Azure 저장소 계정용 TLS 1.2
 
 BlueXP가 Azure for Cloud Volumes ONTAP에서 저장소 계정을 만들 때 저장소 계정의 TLS 버전은 이제 1.2입니다.
-
-endif::azure[]
 
 
 
@@ -1142,8 +1034,6 @@ endif::azure[]
 이제 BlueXP에서 Cloud Volumes ONTAP 9.9.0을 배포하고 관리할 수 있습니다.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-990-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
-
-ifdef::aws[]
 
 
 
@@ -1163,19 +1053,11 @@ CMK를 사용하려면 Cloud Volumes ONTAP IAM 역할을 제공해야 합니다.
 
 link:task-setting-up-kms.html["Cloud Volumes ONTAP를 사용하여 AWS KMS를 설정하는 방법에 대해 자세히 알아보십시오"].
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === Azure DoD 지원
 
 이제 Azure 국방부(DoD) Impact Level 6(IL6)에 Cloud Volumes ONTAP 9.8을 배포할 수 있습니다.
-
-endif::azure[]
-
-ifdef::gcp[]
 
 
 
@@ -1193,15 +1075,11 @@ Google Cloud에 Cloud Volumes ONTAP HA 쌍을 구축하면 VPC-1, VPC-2 및 VPC-
 
 link:reference-networking-gcp.html["Google Cloud 네트워킹 요구 사항에 대해 자세히 알아보십시오"].
 
-endif::gcp[]
-
 
 
 == 2021년 1월 4일
 
 다음 변경 사항은 커넥터의 3.9.2 릴리스에 도입되었습니다.
-
-ifdef::aws[]
 
 
 
@@ -1218,10 +1096,6 @@ AWS 아웃포스트가 있는 경우 작업 환경 마법사에서 아웃포스�
 * 현재 GP2(범용 SSD)만 지원됩니다
 
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === 지원되는 Azure 지역의 Ultra SSD VNVRAM
@@ -1237,10 +1111,6 @@ VNVRAM은 향상된 쓰기 성능을 제공합니다.
 이제 단일 노드 Cloud Volumes ONTAP 시스템을 구축할 가용성 영역을 선택할 수 있습니다. AZ를 선택하지 않으면 BlueXP가 사용자를 위해 하나를 선택합니다.
 
 image:screenshot_azure_az.gif["지역을 선택한 후 사용할 수 있는 가용성 영역 드롭다운 목록의 스크린샷"]
-
-endif::azure[]
-
-ifdef::gcp[]
 
 
 
@@ -1262,10 +1132,6 @@ Cloud Volumes ONTAP는 이제 다음과 같은 기계 유형을 지원합니다.
 * 프리미엄 라이센스가 있고 BYOL이 있는 N2-STANDARD-32
 
 
-endif::gcp[]
-
-ifdef::azure[]
-
 
 
 == 2020년 11월 3일
@@ -1281,5 +1147,3 @@ ifdef::azure[]
 * https://docs.microsoft.com/en-us/azure/private-link/private-link-overview["Azure 프라이빗 링크에 대해 자세히 알아보십시오"^]
 * link:task-enabling-private-link.html["Cloud Volumes ONTAP에서 Azure 프라이빗 링크를 사용하는 방법에 대해 자세히 알아보십시오"]
 
-
-endif::azure[]
