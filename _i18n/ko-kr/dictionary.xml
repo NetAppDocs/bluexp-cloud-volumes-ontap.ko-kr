@@ -1016,7 +1016,6 @@
   <block id="144db5f18aa0a48a9fe63c8b55bd0275" category="paragraph">Keystone Flex Subscription_ 은 NetApp에서 제공하는 성장에 따른 지불 스토리지 서비스입니다.</block>
   <block id="d9bf30eba2f9818a8ee777ae42a8f9f5" category="paragraph">디지털 지갑 _ 을(를) 사용하면 단일 위치에서 Cloud Volumes ONTAP에 대한 라이선스를 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.</block>
   <block id="8caaaa4afae93c31b741be21eed669cc" category="inline-link-macro">Cloud Volumes ONTAP 라이센스에 대해 자세히 알아보십시오</block>
-  <block id="6cfeec56d62104397ed8dc01e81de3ba" category="paragraph"><block ref="2ccb396125a12f708cc5bb17905b5f90" category="inline-link-macro-rx"></block>.</block>
   <block id="4edb70089cdbc18de22fa9ead5189bc8" category="section-title">계정을 인증합니다</block>
   <block id="34050b9fba3323c4ec7fb2d89aa95a36" category="list-text">Keystone 유연한 구독 * 을 클릭합니다.</block>
   <block id="daf4ae396784c74ec2cbf002eaaa25f4" category="list-text">NetApp Keystone* 시작 페이지가 나타나면 페이지에 나열된 주소로 이메일을 보냅니다.</block>
@@ -3210,7 +3209,6 @@
   <block id="0f1f7d0cff1734f943c2503c9febec73" category="paragraph"><block ref="0f1f7d0cff1734f943c2503c9febec73" category="inline-link-rx"></block></block>
   <block id="2dd15870a87ceaf45f31f08d066afaeb" category="list-text">원래 작업 환경을 삭제하여 더 이상 필요하지 않은 Cloud Volumes ONTAP 시스템을 종료합니다.</block>
   <block id="2464ba8f7f97ce117f749b75a1c60906" category="inline-link-macro">Cloud Volumes ONTAP 작업 환경을 삭제하는 방법에 대해 알아봅니다</block>
-  <block id="4397e74dad93d251efd7f65b1756f22b" category="paragraph"><block ref="8170ae40f603808099e16014cfba3f00" category="inline-link-macro-rx"></block>.</block>
   <block id="998afd8cfe6da6d00c47dc7bb4b8a5b1" category="doc">Azure Private Link 또는 서비스 끝점을 사용합니다</block>
   <block id="c9a73222b35c741b31b116efb4cefa73" category="paragraph">필요한 경우 Azure 프라이빗 링크 대신 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성할 수 있습니다.</block>
   <block id="e44ebdbfa162690dea44b66cf5d816f9" category="section-title">대신 Azure 전용 링크를 비활성화하고 서비스 끝점을 사용합니다</block>
@@ -3325,7 +3323,6 @@
   <block id="4cca90046112da5c5d3a703dafebbb7e" category="list-text">_Total PAYGO_는 클라우드 마켓플레이스 서브스크립션을 사용하여 프로비저닝된 총 용량입니다. PAYGO를 통한 충전은 사용된 용량이 BYOL 라이센스 용량보다 높거나 Digital Wallet에 사용 가능한 라이센스가 없는 경우에만 사용됩니다.</block>
   <block id="ea7c202c277e5ccf92e08be29b4a64e9" category="list-text">요약에서 각 라이센스 패키지의 사용된 용량을 확인합니다.</block>
   <block id="d30bc4bd5cee7ac23a1df54311d1f4b3" category="inline-link-macro">Essentials 패키지 충전 방법에 대해 알아봅니다</block>
-  <block id="33b4838dec7acdb2df64d13961f0a255" category="paragraph">Essentials 패키지에 표시되는 용량을 더 잘 이해하려면 충전 작동 방식에 익숙해야 합니다. <block ref="eee0a6ebb632d7e4c34635f35e9b54cf" category="inline-link-macro-rx"></block>.</block>
   <block id="bbb170bfbf4105204b0dbe4292724d6e" category="paragraph">다음은 여러 라이센스 패키지가 있는 계정의 예입니다.</block>
   <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
@@ -4866,4 +4863,7 @@
   <block id="88e0131339701d1e970c1ab7a5495d25" category="section-title">BlueXP는 FlexGroup 볼륨 생성을 지원하지 않습니다</block>
   <block id="fff40ddae0362c17ba575430d4cdd727" category="paragraph">Cloud Volumes ONTAP는 FlexGroup 볼륨을 지원하지만 BlueXP는 현재 FlexGroup 볼륨 생성을 지원하지 않습니다. 시스템 관리자 또는 CLI에서 FlexGroup 볼륨을 생성하는 경우 BlueXP의 용량 관리 모드를 수동으로 설정해야 합니다. FlexGroup 볼륨에서 자동 모드가 제대로 작동하지 않을 수 있습니다.</block>
   <block id="be5e56e337ebbc7d99062048ba94693e" category="admonition">BlueXP에서 FlexGroup 볼륨을 생성할 수 있는 기능은 향후 릴리스에 제공될 예정입니다.</block>
+  <block id="6e987a799bff743a20629c6963efee7e" category="paragraph"><block ref="88e663ceca138a2ba6bdf07d4cbe79f1" category="inline-link-rx"></block>.</block>
+  <block id="9bb754282eec4e66c9472848d18fa68b" category="paragraph">Essentials 패키지에 표시되는 용량을 더 잘 이해하려면 충전 작동 방식에 익숙해야 합니다.<block ref="e0127f60c714803ed2bb7172384e02ad" category="inline-link-rx"></block>.</block>
+  <block id="180b09672bfae24bd56a0aee5f3b1b2b" category="paragraph"><block ref="a9e2b0598eacf571f92143c75c6c24a3" category="inline-link-rx"></block>.</block>
 </blocks>

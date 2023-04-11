@@ -20,7 +20,7 @@ _용량 기반 라이센스_Cloud Volumes ONTAP/TiB 용량 비용을 지불할 �
 
 디지털 지갑 _ 을(를) 사용하면 단일 위치에서 Cloud Volumes ONTAP에 대한 라이선스를 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.
 
-link:concept-licensing.html["Cloud Volumes ONTAP 라이센스에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP 라이센스에 대해 자세히 알아보십시오"].
 
 
 
@@ -57,7 +57,7 @@ image:screenshot_capacity-based-licenses.png["총 소비된 용량, BYOL 및 Mar
 +
 ** _Consumed capacity_는 해당 패키지의 볼륨 용량을 표시합니다. 특정 패키지에 대한 자세한 내용을 보려면 도구 설명 위로 마우스를 가져갑니다.
 +
-Essentials 패키지에 표시되는 용량을 더 잘 이해하려면 충전 작동 방식에 익숙해야 합니다. link:concept-licensing.html#notes-about-charging["Essentials 패키지 충전 방법에 대해 알아봅니다"].
+Essentials 패키지에 표시되는 용량을 더 잘 이해하려면 충전 작동 방식에 익숙해야 합니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#notes-about-charging["Essentials 패키지 충전 방법에 대해 알아봅니다"].
 
 ** _PreCommitted Capacity_는 NetApp에서 구매한 라이센스 용량(BYOL 또는 마켓플레이스 계약)입니다.
 +
