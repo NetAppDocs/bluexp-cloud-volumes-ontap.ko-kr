@@ -39,8 +39,9 @@ BlueXP에서 라이센스를 추가할 수 없는 경우 직접 디지털 지갑
 Digital Wallet은 사용자 계정의 총 소비된 용량과 라이센스 패키지별 소비된 용량을 표시합니다. 이를 통해 비용이 청구되는 방식 및 추가 용량을 구입해야 하는지 여부를 파악할 수 있습니다.
 
 .단계
-. 왼쪽 탐색 메뉴에서 * Digital Wallet * 을 선택합니다.
-. Capacity Based Licenses * 를 선택한 상태에서 패키지 요약을 보면 사용된 용량, 사전 커밋된 총 용량 및 총 PAYGO 용량을 확인할 수 있습니다.
+. BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
+. Cloud Volumes ONTAP * 탭에서 * 용량 기반 라이센스 * 를 선택한 상태로 유지합니다.
+. 사용된 용량, 사전 커밋된 총 용량 및 총 PAYGO 용량을 보여 주는 패키지 요약을 봅니다.
 +
 ** _Total Consumed Capacity _ 는 NetApp 계정의 모든 Cloud Volumes ONTAP 시스템에 프로비저닝된 총 용량입니다. 충전은 볼륨 내의 로컬, 사용, 저장 또는 유효 공간에 관계없이 각 볼륨의 프로비저닝된 크기를 기준으로 합니다.
 ** _Total Prep커밋된 용량 _ 은(는) NetApp에서 구매한 총 라이센스 용량(BYOL 또는 Marketplace 계약)입니다.
@@ -88,7 +89,7 @@ image:screenshot-digital-wallet-packages.png["기본 및 전문 패키지에 사
 
 
 .단계
-. 왼쪽 탐색 메뉴에서 * Digital Wallet * 을 선택합니다.
+. BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
 . Cloud Volumes ONTAP * 탭에서 * 용량 기반 라이센스 * 를 선택한 상태로 두고 * 라이센스 추가 * 를 클릭합니다.
 . 용량 기반 라이센스의 일련 번호를 입력하거나 라이센스 파일을 업로드하십시오.
 +
@@ -109,7 +110,7 @@ image:screenshot-digital-wallet-packages.png["기본 및 전문 패키지에 사
 라이센스 파일(또는 HA 쌍이 있는 경우 _ 파일 _).
 
 .단계
-. 왼쪽 탐색 메뉴에서 * Digital Wallet * 을 선택합니다.
+. BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
 . Cloud Volumes ONTAP* 탭에서 사용권 옆에 있는 작업 메뉴를 클릭하고 * 사용권 업데이트 * 를 선택합니다.
 . 라이센스 파일을 업로드합니다.
 . 라이센스 업로드 * 를 클릭합니다.
@@ -132,7 +133,7 @@ endif::azure[]
 클라우드 공급자 마켓플레이스에서 프라이빗 오퍼 또는 계약을 체결한 경우, 계약에 포함되지 않은 충전 방법으로 변경하면 BYOL(NetApp에서 라이센스를 구매한 경우) 또는 PAYGO에 대해 충전이 생성됩니다.
 
 .단계
-. 왼쪽 탐색 메뉴에서 * Digital Wallet * 을 선택합니다.
+. BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
 . Cloud Volumes ONTAP * 탭에서 * 충전 방법 변경 * 을 클릭합니다.
 +
 image:screenshot-digital-wallet-charging-method-button.png["충전 방법 변경 단추가 표 바로 위에 있는 디지털 지갑의 Cloud Volumes ONTAP 페이지 스크린샷"]
@@ -156,7 +157,7 @@ BlueXP는 Cloud Volumes ONTAP 시스템의 충전 방법을 변경합니다.
 용량 기반 라이센스가 만료되어 더 이상 사용되지 않는 경우 언제든지 라이센스를 제거할 수 있습니다.
 
 .단계
-. 왼쪽 탐색 메뉴에서 * Digital Wallet * 을 선택합니다.
+. BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
 . Cloud Volumes ONTAP* 탭에서 사용권 옆에 있는 작업 메뉴를 클릭하고 * 사용권 제거 * 를 선택합니다.
 . 확인하려면 * 제거 * 를 클릭합니다.
 

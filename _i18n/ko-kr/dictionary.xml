@@ -1017,7 +1017,6 @@
   <block id="d9bf30eba2f9818a8ee777ae42a8f9f5" category="paragraph">디지털 지갑 _ 을(를) 사용하면 단일 위치에서 Cloud Volumes ONTAP에 대한 라이선스를 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.</block>
   <block id="8caaaa4afae93c31b741be21eed669cc" category="inline-link-macro">Cloud Volumes ONTAP 라이센스에 대해 자세히 알아보십시오</block>
   <block id="4edb70089cdbc18de22fa9ead5189bc8" category="section-title">계정을 인증합니다</block>
-  <block id="34050b9fba3323c4ec7fb2d89aa95a36" category="list-text">Keystone 유연한 구독 * 을 클릭합니다.</block>
   <block id="daf4ae396784c74ec2cbf002eaaa25f4" category="list-text">NetApp Keystone* 시작 페이지가 나타나면 페이지에 나열된 주소로 이메일을 보냅니다.</block>
   <block id="16692c26ca4528e651bbb36d93c465c7" category="paragraph">NetApp 담당자가 사용자 계정에 구독 액세스를 승인하여 요청을 처리합니다.</block>
   <block id="ed53b278164ebd0a6b2a2a8f63581c09" category="list-text">가입을 보려면 * Keystone Flex 가입 * 으로 되돌아오십시오.</block>
@@ -3326,7 +3325,6 @@
   <block id="bbb170bfbf4105204b0dbe4292724d6e" category="paragraph">다음은 여러 라이센스 패키지가 있는 계정의 예입니다.</block>
   <block id="998e6cc07bc5c3b4a2329ad21093316c" category="paragraph"><block ref="998e6cc07bc5c3b4a2329ad21093316c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fe75f10a35597997861eca633c30fa7" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block></block>
-  <block id="c0d3ce4ea1bcde455d433b9182cdde33" category="list-text">왼쪽 탐색 메뉴에서 * Digital Wallet * 을 선택합니다.</block>
   <block id="5844b24c31c1897efda5443d984702f8" category="list-text">Cloud Volumes ONTAP * 탭의 드롭다운에서 * 노드 기반 라이센스 * 를 선택합니다.</block>
   <block id="666ac747a8d5a1aa317496f8add413a6" category="list-text">Cloud Volumes ONTAP * 탭에서 * 용량 기반 라이센스 * 를 선택한 상태로 두고 * 라이센스 추가 * 를 클릭합니다.</block>
   <block id="ecdf6ba3b837de5910abdabc360df552" category="list-text">Cloud Volumes ONTAP* 탭에서 사용권 옆에 있는 작업 메뉴를 클릭하고 * 사용권 업데이트 * 를 선택합니다.</block>
@@ -4695,7 +4693,6 @@
   <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6ccb38ae114176203c2592f430a889d7" category="list-text">노드 기반 PAYGO 라이센스를 사용하는 경우 * 라이센스 유형 * 옆에 있는 연필 아이콘을 클릭하여 다른 라이센스 및 컴퓨터 유형을 선택할 수 있습니다.</block>
   <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">시스템 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해했는지 확인한 다음 * 변경 * 을 클릭합니다.</block>
-  <block id="1bb49759ca91107ea85449bc0249ce13" category="list-text">Capacity Based Licenses * 를 선택한 상태에서 패키지 요약을 보면 사용된 용량, 사전 커밋된 총 용량 및 총 PAYGO 용량을 확인할 수 있습니다.</block>
   <block id="def968f0e18d0f7aed6421ac81039272" category="list-text">_Total Prep커밋된 용량 _ 은(는) NetApp에서 구매한 총 라이센스 용량(BYOL 또는 Marketplace 계약)입니다.</block>
   <block id="6805f1cb53971ab8cf6263bd093c5d20" category="paragraph">다음은 디지털 지갑에 대한 Cloud Volumes ONTAP 패키지 요약의 예입니다.</block>
   <block id="e9132fa20985cf4b3d5004a6a371ecab" category="inline-image-macro">총 소비된 용량, BYOL 및 Marketplace 계약(Ttotal preCommitted capacity) 및 Digital Wallet의 총 PAYGO 또는 프로비저닝된 용량을 포함하여 Cloud Volumes ONTAP 패키지 요약을 보여 주는 스크린샷</block>
@@ -4868,4 +4865,8 @@
   <block id="78f9ca50556d02ff8700efd01af0d528" category="paragraph"><block ref="78f9ca50556d02ff8700efd01af0d528" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9cc2b6cdaf0b50459353a2d67c0baa80" category="section-title">구축 시간 단축</block>
   <block id="66d5639668d7c3e585771304940a252b" category="paragraph">일반 쓰기 속도를 사용하도록 설정한 경우 Microsoft Azure 또는 Google Cloud에서 Cloud Volumes ONTAP 작업 환경을 구축하는 데 걸리는 시간을 단축했습니다. 배포 시간은 이제 평균 3-4분 더 짧습니다.</block>
+  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">BlueXP 탐색 메뉴에서 * Governance &gt; Digital Wallet * 을 선택합니다.</block>
+  <block id="e83a5b2754cd537ac6467dc025115726" category="list-text">Cloud Volumes ONTAP * 탭에서 * 용량 기반 라이센스 * 를 선택한 상태로 유지합니다.</block>
+  <block id="2bd469c6a2a1a44818909050205d416b" category="list-text">사용된 용량, 사전 커밋된 총 용량 및 총 PAYGO 용량을 보여 주는 패키지 요약을 봅니다.</block>
+  <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">Keystone * 을 선택합니다.</block>
 </blocks>
