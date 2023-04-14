@@ -18,10 +18,10 @@ summary: 몇 가지 단계로 Cloud Volumes ONTAP for AWS를 시작하십시오.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] 커넥터를 작성합니다
 [role="quick-margin-para"]
-가 없는 경우 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["커넥터"^] 그러나 계정 관리자는 계정을 만들어야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWS에서 커넥터를 생성하는 방법에 대해 알아보십시오"^]
+가 없는 경우 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["커넥터"^] 그러나 계정 관리자는 계정을 만들어야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["AWS에서 커넥터를 생성하는 방법에 대해 알아보십시오"^]
 
 [role="quick-margin-para"]
-인터넷에 액세스할 수 없는 서브넷에 Cloud Volumes ONTAP를 배포하려는 경우 수동으로 커넥터를 설치하고 해당 커넥터에서 실행 중인 BlueXP 사용자 인터페이스에 액세스해야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["인터넷에 액세스하지 않고 커넥터에 수동으로 설치하는 방법에 대해 알아봅니다"^]
+인터넷에 액세스할 수 없는 서브넷에 Cloud Volumes ONTAP를 배포하려는 경우 수동으로 커넥터를 설치하고 해당 커넥터에서 실행 중인 BlueXP 사용자 인터페이스에 액세스해야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["인터넷에 액세스하지 않고 커넥터에 수동으로 설치하는 방법에 대해 알아봅니다"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 구성을 계획합니다
 [role="quick-margin-para"]
@@ -52,8 +52,8 @@ Cloud Volumes ONTAP에서 아마존 암호화를 사용하려면 활성 CMK(고�
 작업 환경 추가 * 를 클릭하고 배포할 시스템 유형을 선택한 다음 마법사의 단계를 완료합니다. link:task-deploying-otc-aws.html["단계별 지침을 읽습니다"].
 
 .관련 링크
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["BlueXP에서 커넥터 만들기"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html["AWS Marketplace에서 커넥터 실행"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Linux 호스트에 Connector 소프트웨어 설치"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["BlueXP에서 커넥터 만들기"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-aws.html["AWS Marketplace에서 커넥터 실행"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Linux 호스트에 Connector 소프트웨어 설치"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["BlueXP에서 AWS 권한을 사용하는 경우"^]
 

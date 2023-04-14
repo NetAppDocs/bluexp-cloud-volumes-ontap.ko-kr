@@ -22,7 +22,7 @@ BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성하여 Azure에서 단�
 [[licensing]]
 * 실행 중인 커넥터입니다.
 +
-** 가 있어야 합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["작업 영역과 연결된 커넥터입니다"^].
+** 가 있어야 합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["작업 영역과 연결된 커넥터입니다"^].
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["항상 Connector를 실행 상태로 둘 준비가 되어 있어야 합니다"^].
 
 
@@ -57,7 +57,7 @@ Azure에서 단일 노드 Cloud Volumes ONTAP 시스템을 실행하려면 BlueX
 . 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . [[subscribe]] Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 화면의 지시를 따릅니다.
 . * 위치 선택 *: * Microsoft Azure * 및 * Cloud Volumes ONTAP 단일 노드 * 를 선택합니다.
-. 메시지가 표시되면 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["커넥터를 작성합니다"^].
+. 메시지가 표시되면 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["커넥터를 작성합니다"^].
 . * 세부 정보 및 자격 증명 *: 필요에 따라 Azure 자격 증명 및 구독을 변경하고, 클러스터 이름을 지정하고, 필요한 경우 태그를 추가한 다음 자격 증명을 지정합니다.
 +
 다음 표에서는 지침이 필요한 필드를 설명합니다.
@@ -280,7 +280,7 @@ Azure에서 Cloud Volumes ONTAP HA 쌍을 실행하려면 BlueXP에서 HA 작업
 .단계
 . 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . [[subscribe]] Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 화면의 지시를 따릅니다.
-. 메시지가 표시되면 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["커넥터를 작성합니다"^].
+. 메시지가 표시되면 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["커넥터를 작성합니다"^].
 . * 세부 정보 및 자격 증명 *: 필요에 따라 Azure 자격 증명 및 구독을 변경하고, 클러스터 이름을 지정하고, 필요한 경우 태그를 추가한 다음 자격 증명을 지정합니다.
 +
 다음 표에서는 지침이 필요한 필드를 설명합니다.

@@ -64,7 +64,6 @@
   <block id="17871dd6725112548c5735d13d60d639" category="paragraph">작업 환경을 만들려면 다음이 필요합니다.</block>
   <block id="ad1cc9fdb978e0b0a5e397b3152a1867" category="list-text">실행 중인 커넥터입니다.</block>
   <block id="86836b73bcaa40dc1dd7e8f91fc43a4d" category="inline-link">작업 영역과 연결된 커넥터입니다</block>
-  <block id="a400a126d25356fde0a70c51f2acefce" category="list-text">가 있어야 합니다<block ref="5e0fb3fa3227d63874a92da746e0293a" category="inline-link-rx"></block>.</block>
   <block id="c501058ef93efe907f1517f309ec8be3" category="inline-link">항상 Connector를 실행 상태로 둘 준비가 되어 있어야 합니다</block>
   <block id="de098ba23ceff4a71fb2ce17a3743e6a" category="list-text"><block ref="5241bf058927c40b0779be84498fcc52" category="inline-link-rx"></block>.</block>
   <block id="72fa1e29e831adb71ca0ce01f7356dc9" category="list-text">사용하려는 구성에 대한 이해.</block>
@@ -80,7 +79,6 @@
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
   <block id="f153679ad4c5ae5aeae3a0ca4f337a37" category="list-text">[[subscribe]] Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 화면의 지시를 따릅니다.</block>
   <block id="3c19bc1d7cfc3da0dab6310259e4b2c1" category="inline-link">커넥터를 작성합니다</block>
-  <block id="1870c86878dd46336ac6bfc08665eab6" category="list-text">메시지가 표시되면<block ref="7d165ca08e4106b12a1b93b3149d1a83" category="inline-link-rx"></block>.</block>
   <block id="ceca015ffa0918205a91a8cc0268611c" category="list-text">* 세부 정보 및 자격 증명 *: 필요에 따라 Azure 자격 증명 및 구독을 변경하고, 클러스터 이름을 지정하고, 필요한 경우 태그를 추가한 다음 자격 증명을 지정합니다.</block>
   <block id="321caeadb2c3d8d2d4962fdb49b92543" category="paragraph">다음 표에서는 지침이 필요한 필드를 설명합니다.</block>
   <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">필드에 입력합니다</block>
@@ -301,7 +299,6 @@
   <block id="8d9f62f251a8a411876740e6611a61cf" category="paragraph"><block ref="f1b4d319a2908121f0a6e639ae6c7cdc" category="inline-link-macro-rx"></block>.</block>
   <block id="eef256fe1f25b0dfdcc3971d7f0a9974" category="summary">Cloud Volumes ONTAP를 단일 시스템 구성으로 실행하거나 Google 클라우드 플랫폼에서 HA 쌍으로 실행할 수 있습니다.</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">시작하기 전에</block>
-  <block id="3a2e3bd3692b5b10d4e8d1876ea764e4" category="list-text">가 있어야 합니다<block ref="31efb472d9740ae4bd5b3185af479587" category="inline-link-rx"></block>.</block>
   <block id="fb387d3403e9d0f4168631a5c1e65d3d" category="inline-link">프로젝트에서 활성화됩니다</block>
   <block id="3f7dd317abe229076594c229e96f375d" category="list-text">Google Cloud API는 입니다<block ref="2bf1d71c4d11fe94040400dbdd9bbe2e" category="inline-link-rx"></block>:</block>
   <block id="d82c8fcef9b6dd8fb6808c96dcbc5bb5" category="list-text">Cloud Deployment Manager V2 API</block>
@@ -310,7 +307,6 @@
   <block id="1101b09020ade12e90a562489e315c8d" category="list-text">컴퓨팅 엔진 API</block>
   <block id="71660685d00034957db3f9a31c160978" category="list-text">IAM(Identity and Access Management) API</block>
   <block id="02468344d7eb024c93087ede43938890" category="list-text">* 위치 선택 *: * Google Cloud * 및 * Cloud Volumes ONTAP * 를 선택합니다.</block>
-  <block id="a52ac8a7b02f1fcb4758ef8608df8657" category="list-text">메시지가 표시되면<block ref="3902ae0ac0b84277d412c62a8daa1bac" category="inline-link-rx"></block>.</block>
   <block id="47e8755e148fbe2f9d687cce086d2e82" category="list-text">* 세부 정보 및 자격 증명 *: 프로젝트를 선택하고 클러스터 이름을 지정한 다음 서비스 계정을 선택하고 선택적으로 레이블을 추가한 다음 자격 증명을 지정합니다.</block>
   <block id="1689b34158a0f16fa3aa69baa2307300" category="cell">서비스 계정 이름입니다</block>
   <block id="2157938460edbda23f083148927e15a0" category="inline-link-macro">데이터 계층화</block>
@@ -1446,9 +1442,7 @@
   <block id="de55eaa977cb9b3376bd6729e1a97107" category="paragraph">작업 환경 추가 * 를 클릭하고 배포할 시스템 유형을 선택한 다음 마법사의 단계를 완료합니다. <block ref="168f7f4d4c37c8fac9b64fb187eb00a2" category="inline-link-macro-rx"></block>.</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">관련 링크</block>
   <block id="de737ba84e61f1a8380fd351112b7183" category="inline-link">AWS Marketplace에서 커넥터 실행</block>
-  <block id="f184c656bf02dee61743212967601db4" category="list-text"><block ref="f184c656bf02dee61743212967601db4" category="inline-link-rx"></block></block>
   <block id="c8f9fcb2d5c182f76e53507a00efe037" category="inline-link">Linux 호스트에 Connector 소프트웨어 설치</block>
-  <block id="86a342f075ca5d85dc5033d1092f71cd" category="list-text"><block ref="86a342f075ca5d85dc5033d1092f71cd" category="inline-link-rx"></block></block>
   <block id="fb60cc8b1c07b3747a72dcf7ce2f2f58" category="list-text">구역 1개 또는 구역 3개(권장)</block>
   <block id="0f3118cdf0606432dbda8dd0e39d7d10" category="paragraph">세 개의 영역을 선택하면 두 개의 노드와 중재자가 별도의 Google Cloud 영역에 있습니다.</block>
   <block id="57634383537fa922f1a5f4ab683aa664" category="list-text">4개의 가상 프라이빗 클라우드(VPC).</block>
@@ -2160,7 +2154,6 @@
   <block id="0d21ff817105e810cdab25bd9f2d902a" category="paragraph"><block ref="6e8067af2836c2e6e39420cbcee5abb4" category="inline-link-macro-rx"></block>.</block>
   <block id="7f4227f5e289d9b09c1c0e06243584ef" category="paragraph">작업 환경 추가 * 를 클릭하고 배포할 시스템 유형을 선택한 다음 마법사의 단계를 완료합니다. <block ref="6f7d7b3de08ec5c6f3771511caa5244a" category="inline-link-macro-rx"></block>.</block>
   <block id="4fa0ddd312f5d44c35c17e8e39a2e30a" category="inline-link">Azure Marketplace에서 커넥터 만들기</block>
-  <block id="b081addc2f83e112d92546a8f172e9bb" category="list-text"><block ref="b081addc2f83e112d92546a8f172e9bb" category="inline-link-rx"></block></block>
   <block id="b6f2459d07813a329f10d1f5ef7babc2" category="summary">사용 빈도가 높은 데이터를 위한 SSD 또는 HDD 성능 계층과 비활성 데이터를 위한 오브젝트 스토리지 용량 계층을 결합하여 Cloud Volumes ONTAP의 스토리지 비용을 절감할 수 있습니다. 데이터 계층화는 FabricPool 기술을 기반으로 합니다.</block>
   <block id="5448b18116123f634a8085197accad95" category="paragraph">사용 빈도가 높은 데이터를 위한 SSD 또는 HDD 성능 계층과 비활성 데이터를 위한 오브젝트 스토리지 용량 계층을 결합하여 Cloud Volumes ONTAP의 스토리지 비용을 절감할 수 있습니다. 데이터 계층화는 FabricPool 기술을 기반으로 합니다. 개괄적인 개요는 을 참조하십시오 <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>.</block>
   <block id="10647b0244486006c8ce3cf5b113d377" category="paragraph">데이터 계층화를 설정하려면 다음을 수행해야 합니다.</block>
@@ -2343,13 +2336,11 @@
   <block id="7d7ca8f39ddaf09ca365d0d1f9421649" category="cell">부동 IP 주소에 대한 라우팅 테이블</block>
   <block id="b5fc4208e494804d1484996e111220af" category="summary">Cloud Volumes ONTAP 인스턴스를 단일 시스템 구성으로 실행하거나 AWS에서 HA 쌍으로 실행할 수 있습니다.</block>
   <block id="45fa74d97bba23976f6236bb8a583eb3" category="paragraph">Cloud Volumes ONTAP는 단일 시스템 구성에서 실행하거나 AWS에서 HA 쌍으로 실행할 수 있습니다.</block>
-  <block id="2d40a6ffeefcd23a2428a319159c776e" category="list-text">가 있어야 합니다<block ref="e8cab23cf8c8a33fc74f81f04b4bafbd" category="inline-link-rx"></block>.</block>
   <block id="62dbb34ae2dbba36fcd72e9009367d7f" category="paragraph">구성을 선택하고 관리자로부터 AWS 네트워킹 정보를 받아 준비해야 합니다. 자세한 내용은 을 참조하십시오 <block ref="221e8f6e98d75a4db804bf88879345c0" category="inline-link-macro-rx"></block>.</block>
   <block id="70bc0792aaac2d1fe5c19e375b615c8f" category="list-text">CIFS 구성을 위한 DNS 및 Active Directory</block>
   <block id="6ff827eb8724bf30147eb7172866032d" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="5e41481253f1e5476c9db04d39b740c0" category="inline-link-macro-rx"></block>.</block>
   <block id="9ae9e2a95a93a162ede8aa13ce31e809" category="section-title">AWS에서 단일 노드 Cloud Volumes ONTAP 시스템 시작</block>
   <block id="5f9fae15ed0e9699a97ede914a14bdc5" category="list-text">* 위치 선택 *: * 아마존 웹 서비스 * 및 * Cloud Volumes ONTAP 단일 노드 * 를 선택합니다.</block>
-  <block id="a7388cd0078069663fa238e90c2c6c4b" category="list-text">메시지가 표시되면<block ref="b2c90f31fa9d0d1638b11d924a469775" category="inline-link-rx"></block>.</block>
   <block id="2548b207aecb436cf10911e9afefdeb4" category="list-text">* 세부 정보 및 자격 증명 *: AWS 자격 증명과 구독을 선택적으로 변경하고, 작업 환경 이름을 입력하고, 필요한 경우 태그를 추가한 다음 암호를 입력합니다.</block>
   <block id="130d74c3ba60e43c646b8d2ae2e189f7" category="cell">태그 추가</block>
   <block id="ab2bc7358191e02d5aacdd2ddaa4233d" category="inline-link">AWS 문서: Amazon EC2 리소스에 태그 달기</block>
@@ -3435,7 +3426,6 @@
   <block id="de908965dc022756e01253bb2ab070dc" category="list-text">* 연결 *: 새 리소스 그룹 또는 기존 리소스 그룹을 선택한 다음 미리 정의된 보안 그룹을 사용할지 아니면 직접 사용할 것인지 선택합니다.</block>
   <block id="c62cb6ffba40dfccd9137c53e13ffa06" category="list-text">선택한 VNET만 * 을 선택한 경우 인바운드 트래픽의 소스는 선택한 VNET의 서브넷 범위와 커넥터가 상주하는 VNET의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.</block>
   <block id="af5480ae1c406371c200cbecf7ae3ae3" category="list-text">All VNets * 를 선택한 경우 인바운드 트래픽의 소스는 0.0.0.0/0 IP 범위입니다.</block>
-  <block id="8f2c4dcc319947ae616fd10e4743c3f2" category="paragraph"><block ref="8f2c4dcc319947ae616fd10e4743c3f2" category="inline-link-rx"></block></block>
   <block id="99ac8cc27f368522d020a76c65551219" category="list-text">Cloud Volumes ONTAP를 사용하려면 NetApp AutoSupport에 대한 아웃바운드 인터넷 액세스가 필요합니다. 사전 예방적으로 시스템의 상태를 모니터링하고 메시지를 NetApp 기술 지원으로 보냅니다.</block>
   <block id="20df81b10ec53f3723942b914b6125f2" category="paragraph">Cloud Volumes ONTAP에 대해 엄격한 아웃바운드 규칙을 정의한 경우 Cloud Volumes ONTAP 방화벽에서 포트 3128을 통한 _outbound_connection을 허용하는지 확인해야 합니다.</block>
   <block id="72d5371b4a8014dbf2df076044553ab6" category="paragraph">작업 환경을 만들 때 배포 중에 미리 정의된 방화벽 정책에 대한 소스 필터를 선택할 수 있습니다.</block>
@@ -3589,7 +3579,6 @@
   <block id="5137e20086fbd2e10511433ace3ac154" category="paragraph">BlueXP는 AWS 비용을 추적하기 위해 Cloud Volumes ONTAP 인스턴스에 비용 할당 태그를 할당합니다. 첫 번째 작업 환경을 만든 후 * WorkingEnvironmentId * 태그를 활성화합니다. 사용자 정의 태그는 청구 및 비용 관리 콘솔에서 활성화할 때까지 AWS 청구 보고서에 나타나지 않습니다.</block>
   <block id="0c29cb137ebcfb10c1b30edf702322ea" category="paragraph">BlueXP는 워크로드 요구 사항에 맞는 사전 구성된 패키지를 제공하거나 사용자가 직접 구성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다. <block ref="786d547ede2f0e723e26aaa12a2cb737" category="inline-link-macro-rx"></block>.</block>
   <block id="9c51d38f64e8c1335e2502c05f118401" category="inline-link">BlueXP에서 커넥터 만들기</block>
-  <block id="0d5f53ba40b365132e5ed55aeb13bafc" category="list-text"><block ref="0d5f53ba40b365132e5ed55aeb13bafc" category="inline-link-rx"></block></block>
   <block id="68de98d1358d2928dcaffc946aeaa266" category="inline-link">BlueXP에서 AWS 권한을 사용하는 경우</block>
   <block id="153bb0c5c52aba578d76867c6401e038" category="list-text"><block ref="153bb0c5c52aba578d76867c6401e038" category="inline-link-rx"></block></block>
   <block id="ad4ac1c47a9ebdd6164879be3ae930d1" category="paragraph">BlueXP는 AWS 요청을 전송하여 경로 테이블을 수정합니다.</block>
@@ -3885,7 +3874,6 @@
   <block id="428a055923de2c8ce19ebc96a080afee" category="list-text">BlueXP에서 부동 IP 주소를 지정한 후 부동 IP 주소에 대한 경로를 포함해야 하는 라우팅 테이블을 선택하라는 메시지가 표시됩니다. 이렇게 하면 클라이언트가 HA 쌍에 액세스할 수 있습니다.</block>
   <block id="92eecc3a42de035f448beaea1c75a1ad" category="paragraph">VPC(주 경로 테이블)에 있는 서브넷을 위한 경로 테이블이 하나만 있는 경우 BlueXP는 해당 라우팅 테이블에 부동 IP 주소를 자동으로 추가합니다. 둘 이상의 라우트 테이블이 있는 경우 HA 쌍을 시작할 때 올바른 라우트 테이블을 선택하는 것이 매우 중요합니다. 그렇지 않으면 일부 클라이언트가 Cloud Volumes ONTAP에 액세스하지 못할 수 있습니다.</block>
   <block id="0ed492eac5f86d35987ba9152345c07c" category="paragraph">BlueXP는 워크로드 요구 사항에 맞는 사전 구성된 패키지를 제공하거나 사용자가 직접 구성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다. <block ref="9ca4f67c2d4212e79227daec95e33cdd" category="inline-link-macro-rx"></block>.</block>
-  <block id="103cbb6d6f7a112f9eb15cc3d5a4c7b2" category="list-text"><block ref="103cbb6d6f7a112f9eb15cc3d5a4c7b2" category="inline-link-rx"></block></block>
   <block id="e377cef11f252d8c520d41695086c34d" category="inline-link">권한을 가진 BlueXP의 기능</block>
   <block id="875d70659503a06c5444ddec9ca959c7" category="list-text"><block ref="875d70659503a06c5444ddec9ca959c7" category="inline-link-rx"></block></block>
   <block id="ff6bb7f0e5c448daaba5bf73047a6a3c" category="summary">초기 Cloud Volumes ONTAP 시스템을 시작한 후 더 많은 스토리지가 필요한 경우 BlueXP에서 NFS, CIFS 또는 iSCSI용 새 FlexVol 볼륨을 생성할 수 있습니다.</block>
@@ -3931,7 +3919,6 @@
   <block id="a5e653a54b839ff1cd287d93b221928e" category="paragraph">BlueXP에는 계정 관리자이고 옵션을 활성화한 경우 이메일로 전송되는 Cloud Volumes ONTAP 보고서에 라이센스 만료 경고가 포함됩니다.</block>
   <block id="d2563fcd4b4b3ec541ca3e59420d1fc7" category="paragraph">NetApp 담당자에게 연락하여 노드 기반 BYOL 가입을 갱신하면, BlueXP는 NetApp에서 새로운 라이센스를 자동으로 얻어 Cloud Volumes ONTAP 시스템에 설치합니다.</block>
   <block id="c8ce4a03cda52de4d81a6d52e83dcfc7" category="paragraph">BlueXP는 워크로드 요구 사항에 맞는 사전 구성된 패키지를 제공하거나 사용자가 직접 구성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다.</block>
-  <block id="f9ba5de6e1e6e10258b5319a01017c4f" category="list-text"><block ref="f9ba5de6e1e6e10258b5319a01017c4f" category="inline-link-rx"></block></block>
   <block id="7dfb6c2c87a3491ee04b30bc313e53c5" category="summary">BlueXP를 사용하면 볼륨 및 CIFS 서버를 관리할 수 있습니다. 또한 용량 문제를 방지하기 위해 볼륨을 이동하라는 메시지가 표시됩니다.</block>
   <block id="56b02e9e8848ef5443c7bdbcb313ec2c" category="admonition">BlueXP는 볼륨을 선택한 디스크 유형을 사용하는 기존 Aggregate로 이동하거나 볼륨에 대한 새 Aggregate를 생성합니다.</block>
   <block id="f162010d329e7b7904453b50a89c50d5" category="admonition">BlueXP는 계층화를 통해 선택한 디스크 유형을 사용하는 기존 Aggregate로 볼륨을 이동하거나 볼륨에 대한 새 Aggregate를 생성합니다.</block>
@@ -4242,7 +4229,6 @@
   <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">이제 BlueXP는 AWS 및 Google Cloud에서 Cloud Volumes ONTAP 9.12.0을 배포하고 관리할 수 있습니다.</block>
   <block id="abd10f7bee2f791a9e8f76bf98163c27" category="paragraph">이제 BlueXP는 새로운 기능과 추가 클라우드 공급자 지역을 지원하는 Cloud Volumes ONTAP 9.12.1을 배포 및 관리할 수 있습니다.</block>
   <block id="fdfad4872e8eceed069f74f82808d36e" category="list-text">루트, 부팅, NVRAM, 코어 및 데이터 디스크의 경우 BlueXP는 디스크 암호화 세트를 사용하여 관리되는 디스크로 암호화 키를 관리할 수 있습니다.</block>
-  <block id="da9740256f1fda9e06aa732d86702abc" category="admonition">BlueXP에 대해 설정한 서비스 계정입니다. <block ref="0f8a0ed359c33dd5dbb02a467fa98093" category="inline-link-macro-rx"></block>.</block>
   <block id="3c757e219167079b631dfcb5b1d0c339" category="paragraph">다음 변경 사항은 커넥터의 3.9.25 릴리스에 도입되었습니다.</block>
   <block id="234213185a1ffd45429411672de5d3e7" category="section-title">Google Cloud에서 사용 가능한 라이센스 패키지</block>
   <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">최적화된 에지 캐시 용량 기반 라이센스 패키지는 Google Cloud Marketplace에서 Cloud Volumes ONTAP에 대해 용량제 오퍼링을 제공하거나 연간 계약으로 제공됩니다.</block>
@@ -4320,10 +4306,7 @@
   <block id="5fb73c1af98e831dcfe0ce66f4582d3b" category="paragraph">Google Cloud에서는 4개의 VPC에 HA 구성이 배포됩니다. VPC-0의 HA 구성에 필요한 방화벽 규칙은 입니다 <block ref="8216cabe940880477030118a8a765034" category="inline-xref-macro-rx"></block>.</block>
   <block id="4fad8964dcacb8a6d329f6e2e57a2af9" category="paragraph">아직 Connector를 만들지 않은 경우 Connector에 대한 네트워킹 요구 사항도 검토해야 합니다.</block>
   <block id="f63c987d15807845ae712461b133bad5" category="inline-link">커넥터에 대한 네트워킹 요구 사항을 봅니다</block>
-  <block id="fec3732f829761687c4a94dc2dcf4ef5" category="paragraph"><block ref="fec3732f829761687c4a94dc2dcf4ef5" category="inline-link-rx"></block></block>
   <block id="0f5cc196efac5a9fadb7272e55c7d686" category="summary">Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Azure 네트워킹을 설정합니다.</block>
-  <block id="323c8a1d29b771e63edf9d7a9968be4e" category="paragraph"><block ref="323c8a1d29b771e63edf9d7a9968be4e" category="inline-link-rx"></block></block>
-  <block id="f483cdf3bbc75344ed7ba476a346b3ae" category="paragraph"><block ref="f483cdf3bbc75344ed7ba476a346b3ae" category="inline-link-rx"></block></block>
   <block id="7dca2de7042f01604c6fa18e67e28e36" category="section-title">WORM 및 데이터 계층화</block>
   <block id="83f865c2acfa2b30d8adc34128a9b741" category="paragraph">새로운 Cloud Volumes ONTAP 9.8 시스템 이상을 생성할 때 데이터 계층화와 WORM 스토리지를 함께 사용할 수 있습니다. WORM 스토리지를 통한 데이터 계층화를 사용하면 데이터를 클라우드의 오브젝트 저장소에 계층화할 수 있습니다.</block>
   <block id="125acd88196259df48335a29149824c8" category="paragraph">데이터 계층화와 WORM 스토리지 모두에 대한 설정 방법은 다음과 같습니다.</block>
@@ -4546,7 +4529,6 @@
   <block id="93616689ecb546d3ff1261cf76e33109" category="section-title">인터넷이 없는 환경 지원 </block>
   <block id="28f5f7b773a8085f5db45145fb774c27" category="paragraph">Cloud Volumes ONTAP는 이제 인터넷으로부터 완전히 분리된 모든 클라우드 환경에서 지원됩니다. BYOL(노드 기반 라이센싱)만 이 환경에서 지원됩니다. 용량 기반 라이센스는 지원되지 않습니다. 시작하려면 커넥터 소프트웨어를 수동으로 설치하고, 커넥터에서 실행되는 BlueXP 콘솔에 로그인하고, 디지털 지갑에 BYOL 라이센스를 추가한 다음 Cloud Volumes ONTAP를 구축하십시오. </block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">인터넷에 연결되지 않은 위치에 커넥터를 설치합니다</block>
-  <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
   <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">커넥터의 BlueXP 콘솔에 액세스합니다</block>
   <block id="b620510a7b9198825896459898b7bc08" category="list-text"><block ref="b620510a7b9198825896459898b7bc08" category="inline-link-rx"></block></block>
   <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">할당되지 않은 라이센스를 추가합니다</block>
@@ -4575,15 +4557,11 @@
   <block id="11bb059fb2906ae78eda04a864443447" category="sidebar">OpenSSL을 사용하여 내용을 확인하십시오</block>
   <block id="8fa0059a7c3b7b511ddc3ef2fd394b8e" category="summary">몇 가지 단계로 Cloud Volumes ONTAP for Google Cloud를 시작하십시오.</block>
   <block id="aa5c1c092b41ba183b34ea75815e55a2" category="inline-link">Google Cloud에서 Connector를 만드는 방법을 알아보십시오</block>
-  <block id="410319d8e485760a446e1bdee0ff326b" category="paragraph">가 없는 경우<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 그러나 계정 관리자는 계정을 만들어야 합니다.<block ref="ae1244ceb54b5b14bb70d7bfb0adabbd" category="inline-link-rx"></block></block>
   <block id="20323efc4d51de74865285e21220bc14" category="inline-link">인터넷에 액세스하지 않고 커넥터에 수동으로 설치하는 방법에 대해 알아봅니다</block>
-  <block id="af6bcead3114e39003d2acc90fa53454" category="paragraph">인터넷에 액세스할 수 없는 서브넷에 Cloud Volumes ONTAP를 배포하려는 경우 수동으로 커넥터를 설치하고 해당 커넥터에서 실행 중인 BlueXP 사용자 인터페이스에 액세스해야 합니다.<block ref="1fc505e892ad76b5ccb867f11989c2d8" category="inline-link-rx"></block></block>
   <block id="b73b2829274aee64ee8dcd0fc7290f49" category="list-text">NetApp AutoSupport용 VPC 타겟으로부터 아웃바운드 인터넷 액세스 지원</block>
   <block id="f26437251ef23953176712de75dc4d69" category="paragraph">인터넷에 액세스할 수 없는 위치에 Cloud Volumes ONTAP를 배포하는 경우에는 이 단계가 필요하지 않습니다.</block>
   <block id="824be8b95270c8a8618f49cb7fb21ae8" category="inline-link">BlueXP가 Google Cloud 사용 권한으로 수행하는 기능</block>
   <block id="1857f44521f712859d70ea04bc03b602" category="list-text"><block ref="1857f44521f712859d70ea04bc03b602" category="inline-link-rx"></block></block>
-  <block id="686559ad5b35ebcac7c3039ba4d273ec" category="paragraph">가 없는 경우<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 그러나 계정 관리자는 계정을 만들어야 합니다.<block ref="5057dc0bf3c81969de0b1b1e5a9bc718" category="inline-link-rx"></block></block>
-  <block id="a646f605cbf6ed0d1902ed148dff6a02" category="paragraph">가 없는 경우<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 그러나 계정 관리자는 계정을 만들어야 합니다.<block ref="e02c55c05c6081d62516fdec2316cf6c" category="inline-link-rx"></block></block>
   <block id="60a5bfe73545b12bdf2f8c33e65bedb4" category="paragraph">Connector에는 Cloud Volumes ONTAP HA 쌍에 대한 스토리지 VM을 생성하고 관리할 수 있는 특정 권한이 필요합니다. 필요한 권한은 에 포함되어 있습니다<block ref="4e2f5782ef353f7277cd9ba2163caaf1" category="inline-link-rx"></block>.</block>
   <block id="256b759fe821d1e6df4108737b419291" category="list-text">클라우드 백업을 사용한 무제한 볼륨 백업을 포함하지만 프로페셔널 패키지를 사용하는 Cloud Volumes ONTAP 시스템에만 포함됩니다</block>
   <block id="c8f6e82c7aad23d387dc5633fe484591" category="paragraph">Cloud Volumes ONTAP 9.10.1부터 볼륨 레벨에서 WORM을 활성화 또는 비활성화할 수 있습니다.</block>
@@ -4869,4 +4847,26 @@
   <block id="e83a5b2754cd537ac6467dc025115726" category="list-text">Cloud Volumes ONTAP * 탭에서 * 용량 기반 라이센스 * 를 선택한 상태로 유지합니다.</block>
   <block id="2bd469c6a2a1a44818909050205d416b" category="list-text">사용된 용량, 사전 커밋된 총 용량 및 총 PAYGO 용량을 보여 주는 패키지 요약을 봅니다.</block>
   <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">Keystone * 을 선택합니다.</block>
+  <block id="01b3d35a5a3d4b29869efcf0dee1ef4a" category="paragraph">가 없는 경우<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 그러나 계정 관리자는 계정을 만들어야 합니다.<block ref="c58dbfb222f1156cd2d0460f83cbf4c7" category="inline-link-rx"></block></block>
+  <block id="455f8606c0fb4ca04f1b5f0a288da23a" category="paragraph">인터넷에 액세스할 수 없는 서브넷에 Cloud Volumes ONTAP를 배포하려는 경우 수동으로 커넥터를 설치하고 해당 커넥터에서 실행 중인 BlueXP 사용자 인터페이스에 액세스해야 합니다.<block ref="02b458581c0c414770660f2e444a2fb8" category="inline-link-rx"></block></block>
+  <block id="5ae6c11eada04754344ee539db8b3ce1" category="list-text"><block ref="5ae6c11eada04754344ee539db8b3ce1" category="inline-link-rx"></block></block>
+  <block id="3cdbf2a459d98a40470e49e40669f6b7" category="list-text"><block ref="3cdbf2a459d98a40470e49e40669f6b7" category="inline-link-rx"></block></block>
+  <block id="fd344415274d665a0998be694f6a7962" category="list-text">가 있어야 합니다<block ref="f00f534723871cb90d5bf00c434fd34a" category="inline-link-rx"></block>.</block>
+  <block id="b2e9cc42fc2dbadbced0791f0753467c" category="list-text">메시지가 표시되면<block ref="1b3782954e8dc5b27adc57e0ca96e781" category="inline-link-rx"></block>.</block>
+  <block id="54913060f98d45f0dcbcf891200d3371" category="admonition">BlueXP에 대해 설정한 서비스 계정입니다. <block ref="75555d429bb33c248aadd8914e0604e7" category="inline-link-macro-rx"></block>.</block>
+  <block id="827fa6031d14277d7c0b951b8451bf41" category="paragraph"><block ref="827fa6031d14277d7c0b951b8451bf41" category="inline-link-rx"></block></block>
+  <block id="fcec8203c79f1b4529bfd9306146d82f" category="list-text"><block ref="fcec8203c79f1b4529bfd9306146d82f" category="inline-link-rx"></block></block>
+  <block id="69d38eba8e13d2a86d065b701643d8ce" category="list-text">가 있어야 합니다<block ref="3bcef99efd116218f27c4e74ed4e9a29" category="inline-link-rx"></block>.</block>
+  <block id="7731e5a74063afef822597a8281749b9" category="list-text">메시지가 표시되면<block ref="1cf77b7aa55c9b061d47111489c3663d" category="inline-link-rx"></block>.</block>
+  <block id="3d4078cf30fb0b730a588fa26541ca17" category="paragraph">가 없는 경우<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 그러나 계정 관리자는 계정을 만들어야 합니다.<block ref="7b70ad066970c5d7440189a7b0c6f2d4" category="inline-link-rx"></block></block>
+  <block id="ad8530e01bddf5e8d7522dd27e743116" category="list-text"><block ref="ad8530e01bddf5e8d7522dd27e743116" category="inline-link-rx"></block></block>
+  <block id="1de4151d9a8d5524592ed8937502fc10" category="list-text"><block ref="1de4151d9a8d5524592ed8937502fc10" category="inline-link-rx"></block></block>
+  <block id="375722a8c494be03ab26376d516886ce" category="list-text"><block ref="375722a8c494be03ab26376d516886ce" category="inline-link-rx"></block></block>
+  <block id="0671e957e985255493ea11c2ed171f0c" category="list-text"><block ref="0671e957e985255493ea11c2ed171f0c" category="inline-link-rx"></block></block>
+  <block id="94608a863eb00cecfa11af2b174a9912" category="list-text"><block ref="94608a863eb00cecfa11af2b174a9912" category="inline-link-rx"></block></block>
+  <block id="0b2ed2a82217ebd8a243caa1e7abf280" category="paragraph">가 없는 경우<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> 그러나 계정 관리자는 계정을 만들어야 합니다.<block ref="756cb4188e7e3e88d58a6642b4e598fe" category="inline-link-rx"></block></block>
+  <block id="1bd793a562b94148544a0b1c2ca2a70f" category="list-text"><block ref="1bd793a562b94148544a0b1c2ca2a70f" category="inline-link-rx"></block></block>
+  <block id="e88bc1c2d4be3eab5eab4a9e93c1e63a" category="list-text"><block ref="e88bc1c2d4be3eab5eab4a9e93c1e63a" category="inline-link-rx"></block></block>
+  <block id="1748e846f144876b1d04e44a47b6bfc1" category="list-text">가 있어야 합니다<block ref="64c17a4100b5d25f4987dd100dc9d010" category="inline-link-rx"></block>.</block>
+  <block id="a8bbd59ca2a81e7bb031ca075a23d475" category="list-text">메시지가 표시되면<block ref="ab60b4fc7da5cbb71bc719deeeffb706" category="inline-link-rx"></block>.</block>
 </blocks>

@@ -25,7 +25,7 @@ summary: Cloud Volumes ONTAP를 단일 시스템 구성으로 실행하거나 Go
 [[licensing]]
 * 실행 중인 커넥터입니다.
 +
-** 가 있어야 합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["작업 영역과 연결된 커넥터입니다"^].
+** 가 있어야 합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["작업 영역과 연결된 커넥터입니다"^].
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["항상 Connector를 실행 상태로 둘 준비가 되어 있어야 합니다"^].
 ** Connector와 연결된 서비스 계정입니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["필요한 권한이 있어야 합니다"^]
 
@@ -59,7 +59,7 @@ BlueXP에서 작업 환경을 만들어 Google Cloud에서 Cloud Volumes ONTAP�
 . 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . [[subscribe]] Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 화면의 지시를 따릅니다.
 . * 위치 선택 *: * Google Cloud * 및 * Cloud Volumes ONTAP * 를 선택합니다.
-. 메시지가 표시되면 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["커넥터를 작성합니다"^].
+. 메시지가 표시되면 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["커넥터를 작성합니다"^].
 . * 세부 정보 및 자격 증명 *: 프로젝트를 선택하고 클러스터 이름을 지정한 다음 서비스 계정을 선택하고 선택적으로 레이블을 추가한 다음 자격 증명을 지정합니다.
 +
 다음 표에서는 지침이 필요한 필드를 설명합니다.
@@ -88,7 +88,7 @@ Cloud Volumes ONTAP가 상주할 프로젝트를 선택합니다. 기본 프로�
 드롭다운 목록에 추가 프로젝트가 표시되지 않으면 BlueXP 서비스 계정을 다른 프로젝트와 연결하지 않은 것입니다. Google Cloud 콘솔로 이동하여 IAM 서비스를 열고 프로젝트를 선택합니다. BlueXP 역할이 있는 서비스 계정을 해당 프로젝트에 추가합니다. 각 프로젝트에 대해 이 단계를 반복해야 합니다.
 
 
-NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["이 페이지에 설명되어 있습니다"^].
+NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["이 페이지에 설명되어 있습니다"^].
 
 선택한 자격 증명을 구독과 연결하려면 * 구독 추가 * 를 클릭합니다.
 
@@ -314,7 +314,7 @@ Cloud Volumes ONTAP가 상주할 프로젝트를 선택합니다. 기본 프로�
 드롭다운 목록에 추가 프로젝트가 표시되지 않으면 BlueXP 서비스 계정을 다른 프로젝트와 연결하지 않은 것입니다. Google Cloud 콘솔로 이동하여 IAM 서비스를 열고 프로젝트를 선택합니다. BlueXP 역할이 있는 서비스 계정을 해당 프로젝트에 추가합니다. 각 프로젝트에 대해 이 단계를 반복해야 합니다.
 
 
-NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["이 페이지에 설명되어 있습니다"^].
+NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["이 페이지에 설명되어 있습니다"^].
 
 선택한 자격 증명을 구독과 연결하려면 * 구독 추가 * 를 클릭합니다.
 
