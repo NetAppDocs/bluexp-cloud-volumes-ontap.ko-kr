@@ -88,7 +88,7 @@ Cloud Volumes ONTAP가 상주할 프로젝트를 선택합니다. 기본 프로�
 드롭다운 목록에 추가 프로젝트가 표시되지 않으면 BlueXP 서비스 계정을 다른 프로젝트와 연결하지 않은 것입니다. Google Cloud 콘솔로 이동하여 IAM 서비스를 열고 프로젝트를 선택합니다. BlueXP 역할이 있는 서비스 계정을 해당 프로젝트에 추가합니다. 각 프로젝트에 대해 이 단계를 반복해야 합니다.
 
 
-NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["이 페이지에 설명되어 있습니다"^].
+NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["이 페이지에 설명되어 있습니다"^].
 
 선택한 자격 증명을 구독과 연결하려면 * 구독 추가 * 를 클릭합니다.
 
@@ -314,7 +314,7 @@ Cloud Volumes ONTAP가 상주할 프로젝트를 선택합니다. 기본 프로�
 드롭다운 목록에 추가 프로젝트가 표시되지 않으면 BlueXP 서비스 계정을 다른 프로젝트와 연결하지 않은 것입니다. Google Cloud 콘솔로 이동하여 IAM 서비스를 열고 프로젝트를 선택합니다. BlueXP 역할이 있는 서비스 계정을 해당 프로젝트에 추가합니다. 각 프로젝트에 대해 이 단계를 반복해야 합니다.
 
 
-NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html#set-up-a-service-account-for-the-connector["이 페이지에 설명되어 있습니다"^].
+NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["이 페이지에 설명되어 있습니다"^].
 
 선택한 자격 증명을 구독과 연결하려면 * 구독 추가 * 를 클릭합니다.
 

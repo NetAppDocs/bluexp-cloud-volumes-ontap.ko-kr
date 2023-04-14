@@ -4853,8 +4853,6 @@
   <block id="3cdbf2a459d98a40470e49e40669f6b7" category="list-text"><block ref="3cdbf2a459d98a40470e49e40669f6b7" category="inline-link-rx"></block></block>
   <block id="fd344415274d665a0998be694f6a7962" category="list-text">가 있어야 합니다<block ref="f00f534723871cb90d5bf00c434fd34a" category="inline-link-rx"></block>.</block>
   <block id="b2e9cc42fc2dbadbced0791f0753467c" category="list-text">메시지가 표시되면<block ref="1b3782954e8dc5b27adc57e0ca96e781" category="inline-link-rx"></block>.</block>
-  <block id="54913060f98d45f0dcbcf891200d3371" category="admonition">BlueXP에 대해 설정한 서비스 계정입니다. <block ref="75555d429bb33c248aadd8914e0604e7" category="inline-link-macro-rx"></block>.</block>
-  <block id="827fa6031d14277d7c0b951b8451bf41" category="paragraph"><block ref="827fa6031d14277d7c0b951b8451bf41" category="inline-link-rx"></block></block>
   <block id="fcec8203c79f1b4529bfd9306146d82f" category="list-text"><block ref="fcec8203c79f1b4529bfd9306146d82f" category="inline-link-rx"></block></block>
   <block id="69d38eba8e13d2a86d065b701643d8ce" category="list-text">가 있어야 합니다<block ref="3bcef99efd116218f27c4e74ed4e9a29" category="inline-link-rx"></block>.</block>
   <block id="7731e5a74063afef822597a8281749b9" category="list-text">메시지가 표시되면<block ref="1cf77b7aa55c9b061d47111489c3663d" category="inline-link-rx"></block>.</block>
@@ -4869,4 +4867,6 @@
   <block id="e88bc1c2d4be3eab5eab4a9e93c1e63a" category="list-text"><block ref="e88bc1c2d4be3eab5eab4a9e93c1e63a" category="inline-link-rx"></block></block>
   <block id="1748e846f144876b1d04e44a47b6bfc1" category="list-text">가 있어야 합니다<block ref="64c17a4100b5d25f4987dd100dc9d010" category="inline-link-rx"></block>.</block>
   <block id="a8bbd59ca2a81e7bb031ca075a23d475" category="list-text">메시지가 표시되면<block ref="ab60b4fc7da5cbb71bc719deeeffb706" category="inline-link-rx"></block>.</block>
+  <block id="bda3783d2bc581168e75face42b077fc" category="admonition">BlueXP에 대해 설정한 서비스 계정입니다. <block ref="217ece91c776cfab87e2daa3df8115e9" category="inline-link-macro-rx"></block>.</block>
+  <block id="00da77f8fd6be3d642021bca988d9b5e" category="paragraph"><block ref="00da77f8fd6be3d642021bca988d9b5e" category="inline-link-rx"></block></block>
 </blocks>
