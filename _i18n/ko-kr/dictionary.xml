@@ -2932,7 +2932,6 @@
   <block id="53521a13e927a2d5286f3433c692ed71" category="list-text">메시지가 표시되면 GCP 계정의 서비스 계정 JSON 키를 입력합니다.</block>
   <block id="b20c482c85ecfd221cc2a8a8ac33d883" category="list-text">활성화된 프로세스가 성공했는지 확인합니다. '보안 키 - 관리자 외부 GCP 검사 - vserver_svm_name_'</block>
   <block id="d60c463bb4096f3ed4bd1618626dfe10" category="section-title">문제 해결</block>
-  <block id="46653d32d1199a88497ad4000ed4e7b3" category="paragraph">AKV를 사용하여 보호할 수 있습니다 <block ref="8531e852e621158c599cbd603b309c10" category="inline-link-macro-rx"></block> 데이터 SVM에만 해당.</block>
   <block id="0e62debe1968d8a9992becc4fb3a303b" category="list-title">Azure 애플리케이션 등록</block>
   <block id="7f7d612d5f09a474aa8522e2022e503d" category="list-text">먼저 Cloud Volumes ONTAP가 Azure 키 저장소에 액세스하기 위해 사용할 Azure 구독에 응용 프로그램을 등록해야 합니다. Azure 포털에서 ** 앱 등록** 을 선택합니다.</block>
   <block id="fe03672d5cebda78f425cc339ac0425f" category="list-text">새 등록** 을 선택합니다.</block>
@@ -4869,4 +4868,5 @@
   <block id="a8bbd59ca2a81e7bb031ca075a23d475" category="list-text">메시지가 표시되면<block ref="ab60b4fc7da5cbb71bc719deeeffb706" category="inline-link-rx"></block>.</block>
   <block id="bda3783d2bc581168e75face42b077fc" category="admonition">BlueXP에 대해 설정한 서비스 계정입니다. <block ref="217ece91c776cfab87e2daa3df8115e9" category="inline-link-macro-rx"></block>.</block>
   <block id="00da77f8fd6be3d642021bca988d9b5e" category="paragraph"><block ref="00da77f8fd6be3d642021bca988d9b5e" category="inline-link-rx"></block></block>
+  <block id="ece137c555d8c53c8378fee53f6273c4" category="paragraph">AKV를 사용하여 보호할 수 있습니다 <block ref="defc94716dcceab396c0509ed7db9366" category="inline-link-macro-rx"></block> 데이터 SVM에만 해당.</block>
 </blocks>
