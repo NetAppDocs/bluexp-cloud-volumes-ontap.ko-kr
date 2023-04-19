@@ -1773,7 +1773,6 @@
   <block id="0a2292629d42074cb011142b9cd8f433" category="list-text">_private_ip_는 cvo_node2의 eth0(e0a)에서 사용되지 않는 보조 전용 IP 주소입니다.</block>
   <block id="7e3a4c0ec1aee45acf094839bb9c449f" category="summary">디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.</block>
   <block id="de94398a333e3b7bdafad2ddf3232331" category="doc">노드 기반 라이센스 관리</block>
-  <block id="15d021d83ccb68dbaf63683ce6741fee" category="paragraph">디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.</block>
   <block id="4627bd080634e9380c75a1cc04a09486" category="paragraph">_ 노드 기반 라이센스 _ 은(는) 이전 세대 라이센스 모델입니다(신규 고객은 사용할 수 없습니다).</block>
   <block id="81f9d97336a30fb7be6f8d770fee25eb" category="list-text">NetApp에서 BYOL 라이센스를 구입함</block>
   <block id="17ac9e85cf5b6f7b77acf61fb7721242" category="list-text">클라우드 공급자 마켓플레이스에서 시간별 PAYGO(Pay-as-you-go) 구독을 지원합니다</block>
@@ -4869,4 +4868,7 @@
   <block id="bda3783d2bc581168e75face42b077fc" category="admonition">BlueXP에 대해 설정한 서비스 계정입니다. <block ref="217ece91c776cfab87e2daa3df8115e9" category="inline-link-macro-rx"></block>.</block>
   <block id="00da77f8fd6be3d642021bca988d9b5e" category="paragraph"><block ref="00da77f8fd6be3d642021bca988d9b5e" category="inline-link-rx"></block></block>
   <block id="ece137c555d8c53c8378fee53f6273c4" category="paragraph">AKV를 사용하여 보호할 수 있습니다 <block ref="defc94716dcceab396c0509ed7db9366" category="inline-link-macro-rx"></block> 데이터 SVM에만 해당.</block>
+  <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">노드 기반 라이센스를 관리하는 방법에 대해 자세히 알아보십시오</block>
+  <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>.</block>
+  <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.</block>
 </blocks>

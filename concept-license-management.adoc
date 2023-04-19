@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-license-management.html 
-keywords: byol, bring your own license, expiration, warning, node-based byol, node license 
+keywords: byol, bring your own license, expiration, warning, node-based byol, node license, capacity 
 summary: 노드 기반 BYOL을 사용하는 각 Cloud Volumes ONTAP 시스템에는 활성 상태의 시스템 라이센스가 설치되어 있어야 합니다. BlueXP는 라이선스를 관리하고 만료 전에 경고를 표시하여 프로세스를 간소화합니다. 
 ---
 = 노드 기반 BYOL의 라이센스 관리
@@ -20,6 +20,8 @@ summary: 노드 기반 BYOL을 사용하는 각 Cloud Volumes ONTAP 시스템에
 TIP: 노드 기반 라이센스는 이전 세대 BYOL for Cloud Volumes ONTAP입니다. 노드 기반 라이센스는 라이센스 갱신에만 사용할 수 있습니다.
 
 link:concept-licensing.html["Cloud Volumes ONTAP 라이센스 옵션에 대해 자세히 알아보십시오"].
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["노드 기반 라이센스를 관리하는 방법에 대해 자세히 알아보십시오"^].
 
 
 
