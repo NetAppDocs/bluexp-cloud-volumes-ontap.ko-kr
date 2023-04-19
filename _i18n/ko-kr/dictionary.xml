@@ -178,8 +178,6 @@
   <block id="f9402b876a835ea0ecd00da4d201433a" category="paragraph">노드 기반 라이센스는 단일 노드 또는 HA 쌍에 대해 최대 368TiB의 용량을 제공합니다.</block>
   <block id="7bf9d9c18215351b0d16f4f9343c9700" category="paragraph">Cloud Volumes ONTAP BYOL 시스템에 여러 개의 라이센스를 구매하여 368TiB 이상의 용량을 할당할 수 있습니다. 예를 들어, 2개의 라이센스를 구입하여 최대 736TiB의 용량을 Cloud Volumes ONTAP에 할당할 수 있습니다. 또는 4개의 라이센스를 구입하여 최대 1.4개의 PiB를 구입할 수 있습니다.</block>
   <block id="5e26587c8f074cc4f0455ff005cb744c" category="paragraph">단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다.</block>
-  <block id="c695cd123d8c1b69b12f443c42ad98f9" category="inline-link">사용할 수 있는 라이센스가 있는지 확인합니다</block>
-  <block id="d5777fa0c0510a8e0af55b024f765d10" category="admonition">구입한 일부 사내 ONTAP 스토리지 시스템에는 무료 Cloud Volumes ONTAP 라이센스가 포함되어 있을 수 있습니다. 라이센스를 사용하여 새 Cloud Volumes ONTAP 시스템을 생성하거나 기존 Cloud Volumes ONTAP 시스템에 라이센스를 적용하여 용량을 확장할 수 있습니다.<block ref="e219f91c05893e1e7e9c773a8103d487" category="inline-link-rx"></block>.</block>
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link-macro">비활성 데이터를 오브젝트 스토리지로 계층화</block>
   <block id="255a885478279e7778252b0fbb8e555b" category="inline-link">Cloud Volumes ONTAP 릴리즈 노트의 저장 용량 제한</block>
   <block id="2b1ca4265fcc8a110e4539b4d9a23ffe" category="section-title">새 시스템의 라이센스 관리</block>
@@ -2796,7 +2794,6 @@
   <block id="77d680745644d1c19a022cc0a306f88b" category="list-text">데이터 암호화: Google에서 관리하는 키입니다</block>
   <block id="b33b7497784a31fa197bca9debbfddea" category="list-text">Cloud Volumes ONTAP에 대한 라이센스 설정에 필요한 사항을 이해합니다.</block>
   <block id="b2084f1d9eba331a28867d15c742284e" category="inline-link-macro">라이센스 설정 방법에 대해 알아보십시오</block>
-  <block id="1093810fe4a9e55d156722b8332da3cd" category="paragraph"><block ref="9b79239dba046d18af2dfc2ca929db17" category="inline-link-macro-rx"></block>.</block>
   <block id="5719f300587dfbbd55551379f9ab4915" category="list-text"><block ref="69100fd89c8fc892aa253073563db45d" category="inline-link-macro-rx"></block>.</block>
   <block id="17b559ceaadd6decdd6c9a579de016a2" category="summary">Cloud Volumes ONTAP에 사용할 라이센스 옵션을 결정한 후에는 몇 가지 단계를 거쳐 새 시스템을 배포할 때 해당 라이센스 옵션을 선택해야 합니다.</block>
   <block id="0cce9e09385c0d8e677ff5d9518dc514" category="doc">Azure에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다</block>
@@ -4871,4 +4868,5 @@
   <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">노드 기반 라이센스를 관리하는 방법에 대해 자세히 알아보십시오</block>
   <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>.</block>
   <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.</block>
+  <block id="0c1a89022d40f1a10025e9f9354168a0" category="paragraph"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block>.</block>
 </blocks>
