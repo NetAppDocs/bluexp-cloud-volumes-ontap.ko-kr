@@ -1068,7 +1068,6 @@
   <block id="cd5ddfb19671526301ef6b32141e2e79" category="section-title">RPO 및 RTO</block>
   <block id="723596a60ea78fba91bcc7acb47cb786" category="paragraph">HA 구성을 사용하면 다음과 같이 데이터의 고가용성을 유지할 수 있습니다.</block>
   <block id="f04b83c6c15bc920bde6b3bda82d692e" category="list-text">복구 지점 목표(RPO)는 0초입니다. 데이터는 데이터 손실 없이 트랜잭션 측면에서 일관적입니다.</block>
-  <block id="9a761447afd0b14671defde47da1673b" category="list-text">복구 시간 목표(RTO)는 60초입니다. 정전이 발생할 경우 60초 이내에 데이터를 사용할 수 있어야 합니다.</block>
   <block id="218815dee60a5e42cd50732e4ad90420" category="section-title">HA 구축 모델</block>
   <block id="a2efc5fc54fd68c09324deea01c6bc06" category="paragraph">여러 AZs(Availability Zone) 또는 단일 AZ에 HA 구성을 배포하여 데이터의 고가용성을 보장할 수 있습니다. 각 구성에 대한 자세한 내용을 검토하여 요구 사항에 가장 적합한 구성을 선택해야 합니다.</block>
   <block id="bc2a46f921494df9fc5f911909c03874" category="section-title">여러 가용성 영역</block>
@@ -1453,8 +1452,6 @@
   <block id="48c4b347a69acc97f71ef6775bf6260d" category="list-text">Debian의 경우 기본 클라우드 사용자는 "admin"입니다. Google Cloud 콘솔 또는 gcloud 명령줄을 통해 SSH 액세스가 요청될 때 "admin" 사용자의 인증서를 생성하고 추가합니다. 루트 권한을 얻기 위해 'SUDO'를 지정할 수 있습니다.</block>
   <block id="b9c7a6d43bec359b40ab04efb944c7c4" category="list-text">복구 지점 목표(RPO)는 0초입니다.</block>
   <block id="bf7c76034279e30c18d14dc7990ee330" category="paragraph">데이터는 데이터 손실 없이 트랜잭션 측면에서 일관적입니다.</block>
-  <block id="856d7ffe64733ea6b89924ff6410d489" category="list-text">복구 시간 목표(RTO)는 60초입니다.</block>
-  <block id="a440b74cbaeb3025f8a909b3dd0782ed" category="paragraph">정전이 발생할 경우 60초 이내에 데이터를 사용할 수 있어야 합니다.</block>
   <block id="8bf571523805ed82609d8283f739355b" category="paragraph">여러 존 또는 단일 존에 HA 구성을 구축하여 데이터의 고가용성을 보장할 수 있습니다.</block>
   <block id="b998798af53f2f105151ceda08e634dd" category="list-text">다중 영역(권장)</block>
   <block id="b7cc244050d3d3e8c009b5b563e1d7df" category="list-text">3개 존에 HA 구성을 구축하면 존 내에서 장애가 발생하더라도 지속적인 데이터 가용성을 보장할 수 있습니다. 쓰기 성능은 단일 존을 사용할 때보다 약간 낮지만, 이는 최소화됩니다.</block>
@@ -4869,4 +4866,7 @@
   <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>.</block>
   <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.</block>
   <block id="0c1a89022d40f1a10025e9f9354168a0" category="paragraph"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block>.</block>
+  <block id="ed40352f9ed490b733344d4ac872054a" category="list-text">복구 시간 목표(RTO)는 120초입니다. 정전이 발생할 경우 120초 이내에 데이터를 사용할 수 있어야 합니다.</block>
+  <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">복구 시간 목표(RTO)는 120초입니다.</block>
+  <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">정전이 발생할 경우 120초 이내에 데이터를 사용할 수 있어야 합니다.</block>
 </blocks>
