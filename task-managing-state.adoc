@@ -83,4 +83,8 @@ image:screenshot_turn_off_redesign.png["스크린샷: Cloud Volumes ONTAP 시스
 +
 시스템을 중지하는 데 몇 분 정도 걸릴 수 있습니다. 나중에 작업 환경 페이지에서 시스템을 다시 시작할 수 있습니다.
 
++
+
+NOTE: 스냅샷은 재부팅 시 자동으로 생성됩니다.
+
 
