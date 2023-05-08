@@ -20,6 +20,50 @@ BlueXP(이전의 Cloud Manager)에서 Cloud Volumes ONTAP 관리의 새로운 �
 
 
 
+== 2023년 5월 7일
+
+다음 변경 사항은 커넥터의 3.9.29 릴리스에 도입되었습니다.
+
+
+
+=== Qatar 지역이 이제 Google Cloud에서 지원됩니다
+
+Qatar 지역은 현재 Google Cloud for Cloud Volumes ONTAP 및 Connector for Cloud Volumes ONTAP 9.12.1 GA 이상에서 지원됩니다.
+
+
+
+=== 이제 스웨덴 중앙 지역이 Azure에서 지원됩니다
+
+이제 스웨덴 중앙 지역은 Azure for Cloud Volumes ONTAP 및 Cloud Volumes ONTAP 9.12.1 GA 이상의 커넥터에서 지원됩니다.
+
+
+
+=== Azure Australia East의 HA 다중 가용성 영역 배포 지원
+
+Azure의 오스트레일리아 동부 지역은 현재 Cloud Volumes ONTAP 9.12.1 GA 이상을 위한 HA 다중 가용성 영역 구축을 지원합니다.
+
+
+
+=== 충전 사용 내역이 없습니다
+
+이제 용량 기반 라이센스를 구독할 때 부과되는 요금을 확인할 수 있습니다. BlueXP의 디지털 지갑에서 다음 유형의 사용 보고서를 다운로드할 수 있습니다. 사용 현황 보고서는 구독의 용량 세부 정보를 제공하고 Cloud Volumes ONTAP 구독에 포함된 리소스에 대한 비용 청구 방식을 알려줍니다. 다운로드할 수 있는 보고서는 다른 사용자와 쉽게 공유할 수 있습니다.
+
+* Cloud Volumes ONTAP 패키지 사용
+* 높은 수준의 사용
+* 스토리지 VM 사용량
+* 볼륨 사용량
+
+
+자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["용량 기반 라이센스 관리"^].
+
+
+
+=== 마켓플레이스 가입 없이 BlueXP에 액세스할 때 알림 메시지가 표시됩니다
+
+이제 시장에 가입하지 않고 BlueXP에서 Cloud Volumes ONTAP에 액세스할 때마다 알림이 표시됩니다. 알림에는 "이 작업 환경에 대한 마켓플레이스 가입이 Cloud Volumes ONTAP 약관을 준수해야 합니다."라고 나와 있습니다.
+
+
+
 == 2023년 4월 4일
 
 Cloud Volumes ONTAP 9.12.1 GA부터 중국 지역이 다음과 같이 AWS에서 지원됩니다.
@@ -48,7 +92,7 @@ Turin 지역은 현재 Google Cloud for Cloud Volumes ONTAP 및 Connector for Cl
 
 Digital Wallet은 이제 시장 프라이빗 오퍼와 함께 구입한 라이선스 용량을 표시합니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["계정에서 사용된 용량을 확인하는 방법에 대해 알아봅니다"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["계정에서 사용된 용량을 확인하는 방법에 대해 알아봅니다"^].
 
 
 

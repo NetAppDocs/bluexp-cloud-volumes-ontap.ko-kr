@@ -4870,4 +4870,55 @@
   <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">복구 시간 목표(RTO)는 120초입니다.</block>
   <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">정전이 발생할 경우 120초 이내에 데이터를 사용할 수 있어야 합니다.</block>
   <block id="51f3f3385ba782f2b8752155e908cf60" category="admonition">스냅샷은 재부팅 시 자동으로 생성됩니다.</block>
+  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023년 5월 7일</block>
+  <block id="3b9e0ca0be1cb4ee263fc0a386a705bc" category="paragraph">다음 변경 사항은 커넥터의 3.9.29 릴리스에 도입되었습니다.</block>
+  <block id="ef33a11b5d2090c4cf0e98ca1b79cc2d" category="section-title">Qatar 지역이 이제 Google Cloud에서 지원됩니다</block>
+  <block id="357b47742b71d8fe5b5936de05c522ec" category="paragraph">Qatar 지역은 현재 Google Cloud for Cloud Volumes ONTAP 및 Connector for Cloud Volumes ONTAP 9.12.1 GA 이상에서 지원됩니다.</block>
+  <block id="c8dc4f54d280ddaf5974f6c903e2152f" category="section-title">이제 스웨덴 중앙 지역이 Azure에서 지원됩니다</block>
+  <block id="787bf3f02b45f65c827e46d88d4e7b24" category="paragraph">이제 스웨덴 중앙 지역은 Azure for Cloud Volumes ONTAP 및 Cloud Volumes ONTAP 9.12.1 GA 이상의 커넥터에서 지원됩니다.</block>
+  <block id="d38001cc976e394cf57ce77223bee1a1" category="section-title">Azure Australia East의 HA 다중 가용성 영역 배포 지원</block>
+  <block id="bef0df4f898713881ef2098a621a3745" category="paragraph">Azure의 오스트레일리아 동부 지역은 현재 Cloud Volumes ONTAP 9.12.1 GA 이상을 위한 HA 다중 가용성 영역 구축을 지원합니다.</block>
+  <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">충전 사용 내역이 없습니다</block>
+  <block id="300bba824d9f2e68a0c89aef6da5fb8a" category="paragraph">이제 용량 기반 라이센스를 구독할 때 부과되는 요금을 확인할 수 있습니다. BlueXP의 디지털 지갑에서 다음 유형의 사용 보고서를 다운로드할 수 있습니다. 사용 현황 보고서는 구독의 용량 세부 정보를 제공하고 Cloud Volumes ONTAP 구독에 포함된 리소스에 대한 비용 청구 방식을 알려줍니다. 다운로드할 수 있는 보고서는 다른 사용자와 쉽게 공유할 수 있습니다.</block>
+  <block id="ed54fb55b53f11e61f612ff99520f4bc" category="list-text">Cloud Volumes ONTAP 패키지 사용</block>
+  <block id="160ba974abba347f5e939a1a0acd5982" category="list-text">높은 수준의 사용</block>
+  <block id="bf951096cc9eea5fae867ec94f06dfa3" category="list-text">스토리지 VM 사용량</block>
+  <block id="3c5979c173a0a4fe3ff27e0e6185a693" category="list-text">볼륨 사용량</block>
+  <block id="6ddb4c081e1822f2c34768a65c03eb8b" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="ebcf101f07f46d44ff28084ad0f8bce3" category="inline-link-macro-rx"></block>.</block>
+  <block id="eaf72ee058835b38b417b55e2fb1c0af" category="section-title">마켓플레이스 가입 없이 BlueXP에 액세스할 때 알림 메시지가 표시됩니다</block>
+  <block id="5cc1493ad28334fdb28f7ed57f0e1d41" category="paragraph">이제 시장에 가입하지 않고 BlueXP에서 Cloud Volumes ONTAP에 액세스할 때마다 알림이 표시됩니다. 알림에는 "이 작업 환경에 대한 마켓플레이스 가입이 Cloud Volumes ONTAP 약관을 준수해야 합니다."라고 나와 있습니다.</block>
+  <block id="d845f71cd5cacb5fdb671f6530007953" category="paragraph"><block ref="b614243ef1614b3040beb4428349cfdf" category="inline-link-rx"></block>.</block>
+  <block id="37532cd27e3c53471b1caed0ba1f90ed" category="section-title">사용 보고서를 다운로드합니다</block>
+  <block id="819d4e1e06bcd4bb3249b60d928ccacc" category="paragraph">계정 관리자는 BlueXP의 디지털 지갑에서 네 가지 사용 보고서를 다운로드할 수 있습니다. 이러한 사용 보고서는 구독의 용량 세부 정보를 제공하고 Cloud Volumes ONTAP 구독에 포함된 리소스에 대한 비용 청구 방식을 알려줍니다. 다운로드할 수 있는 보고서는 특정 시점에 데이터를 캡처하여 다른 사람과 쉽게 공유할 수 있습니다.</block>
+  <block id="c2b73e18a5b530a547ba48a8177d13c3" category="inline-image-macro">스크린샷은 Digital Wallet Cloud Volumes ONTAP Capacity Based License(디지털 지갑 용량 기반 라이센스) 페이지를 보여 주고 사용 보고서 단추를 강조 표시합니다.</block>
+  <block id="a1a4a48254cf8eb8962fbd995f5e7ea8" category="paragraph"><block ref="a1a4a48254cf8eb8962fbd995f5e7ea8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d11dcbec58d47bd13de1dcccfbd640ff" category="paragraph">다음 보고서를 다운로드할 수 있습니다. 표시된 용량 값은 TiB입니다.</block>
+  <block id="ad73e4897304c80496a4f15e033cefa7" category="list-text">* 고급 사용량*: 이 보고서는 디지털 지갑의 “Cloud Volumes ONTAP 패키지 요약” 카드에 있는 내용을 정확하게 보여줍니다. 여기에는 다음 정보가 포함됩니다.</block>
+  <block id="c596c9291f76a11af1aefc235c262de6" category="list-text">사용된 총 용량입니다</block>
+  <block id="8dd7541d6c4e83402d88448119068a02" category="list-text">사전 커밋된 총 용량입니다</block>
+  <block id="b01a146aed01aa8af61e034befc116ce" category="list-text">총 BYOL 용량</block>
+  <block id="109323142d354af9ccc7eb636b1dcbce" category="list-text">총 마켓플레이스 계약 용량입니다</block>
+  <block id="baf09c6c43fd26effd8f15e252649384" category="list-text">총 PAYGO 용량</block>
+  <block id="76101a2de96d735db21249323914bc6c" category="list-text">* Cloud Volumes ONTAP 패키지 사용 *: 이 보고서는 디지털 지갑의 패키지 카드에 있는 내용을 정확하게 보여줍니다. 최적화된 I/O 패키지를 제외한 각 패키지에 대한 다음 정보가 포함되어 있습니다.</block>
+  <block id="c01bbdbe6721d80a74779e943243486b" category="list-text">* 스토리지 VM 사용량 *: 이 보고서는 Cloud Volumes ONTAP 시스템과 스토리지 가상 시스템(SVM)에서 청구 용량이 얼마나 분석되는지를 보여줍니다. 이 정보는 디지털 지갑의 화면에서는 사용할 수 없습니다. 여기에는 다음 정보가 포함됩니다.</block>
+  <block id="b16bfcaa9b0651f05b8e8894a2aebb31" category="list-text">작업 환경 ID(UUID로 표시됨)</block>
+  <block id="c8e2277ecfb1427838c488c217f99466" category="list-text">클라우드</block>
+  <block id="4736cd35bf5b3fe63e1b1785fb2aa664" category="list-text">NetApp 계정 ID입니다</block>
+  <block id="bbfa34e8af02138b821f784c8962669b" category="list-text">작업 환경 구성</block>
+  <block id="203c4205822c007d08ecafe163b02ea2" category="list-text">SVM 이름</block>
+  <block id="b567847dd629376ac84ed4958fd61687" category="list-text">용량을 프로비저닝합니다</block>
+  <block id="a09b8df9fd0007770b0a8c10f9a17d81" category="list-text">데이터 중복 제거 용량</block>
+  <block id="671095c17b0e9e0deda06cff2fa103e6" category="list-text">마켓플레이스 청구 기간</block>
+  <block id="d38764d5edf26bd9b744840cd2ea3c17" category="list-text">Cloud Volumes ONTAP 패키지 또는 기능</block>
+  <block id="a016fcdfd1d7159ffd537d78d4b68f74" category="list-text">SaaS Marketplace 구독 이름 충전 중</block>
+  <block id="fe6ac599d13d94a0ee0800482bec7e41" category="list-text">SaaS Marketplace 구독 ID를 충전하는 중입니다</block>
+  <block id="33e97335db88f16611400cab965f95af" category="list-text">* Volumes usage *: 이 보고서는 작업 환경의 볼륨에 의해 청구된 용량이 어떻게 분할되는지 보여줍니다. 이 정보는 디지털 지갑의 화면에서는 사용할 수 없습니다. 여기에는 다음 정보가 포함됩니다.</block>
+  <block id="3edb9123c69629ec86469d96d3feb0aa" category="list-text">SVN 이름입니다</block>
+  <block id="cccc95b62282240886ee975a3f122adb" category="list-text">볼륨 ID입니다</block>
+  <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="list-text">볼륨 유형입니다</block>
+  <block id="3756f66a273f440893f16ee968ce3450" category="list-text">볼륨 프로비저닝 용량입니다</block>
+  <block id="8b3da2ed858ee5c956acde26c9ef7dd0" category="admonition">FlexClone 볼륨은 이러한 유형의 볼륨에 비용이 발생하지 않으므로 이 보고서에 포함되지 않습니다.</block>
+  <block id="a4bad4f350632a2078a6d795984ee60f" category="list-text">Cloud Volumes ONTAP * 탭에서 * Capacity Based Licenses * 를 선택한 상태로 두고 * Usage report * 를 클릭합니다.</block>
+  <block id="23e918e9f1c9f1bb5769dcc236489de2" category="paragraph">사용량 보고서가 다운로드됩니다.</block>
+  <block id="05655bb3cbd3604d6c71a1db823ad94f" category="list-text">다운로드한 파일을 열어 보고서에 액세스합니다.</block>
 </blocks>
