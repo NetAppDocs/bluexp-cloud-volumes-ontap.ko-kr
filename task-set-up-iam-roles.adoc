@@ -236,6 +236,7 @@ Cloud Volumes ONTAP 시스템에서 클라우드 백업을 사용하려는 경�
 ====
 ** HA 중재자
 +
+--
 [source, json]
 ----
 {
@@ -251,12 +252,15 @@ Cloud Volumes ONTAP 시스템에서 클라우드 백업을 사용하려는 경�
 				"ec2:DescribeVpcs",
 				"ec2:ReplaceRoute",
 				"ec2:UnassignPrivateIpAddresses"
+                "sts:AssumeRole"
+                "ec2:DescribeSubnets"
 			],
 			"Resource": "*"
 		}
 	]
 }
 ----
+--
 
 
 . IAM 역할을 생성하고 생성한 정책을 역할에 연결합니다.
