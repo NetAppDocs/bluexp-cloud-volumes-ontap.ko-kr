@@ -4833,11 +4833,8 @@
   <block id="23a6fec51e7e7d398bc37636e86e1522" category="list-text">충전 방법을 선택하라는 메시지가 표시되면 Keystone 가입 충전 방법을 선택합니다.</block>
   <block id="9ef6a991e8b332819da490002a529dfe" category="inline-image-macro">Cloud Volumes ONTAP 작업 환경을 생성할 때의 Keystone 구독 옵션 스크린샷</block>
   <block id="002247e118f1fafbd5464e9559e97958" category="paragraph"><block ref="002247e118f1fafbd5464e9559e97958" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f299a90ea343277f03db9212a075b743" category="inline-link">백업 및 복구</block>
-  <block id="3f61ed1be9573dd263bad0fb454ff936" category="cell">를 사용할 계획인 경우 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 또는<block ref="f6a24dd7c8333d6197d5c13fe0b2da54" category="inline-link-rx"></block> Cloud Volumes ONTAP를 사용하는 경우 * 서비스 계정 * 을 활성화하고 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택해야 합니다. <block ref="1e3ffbdede44246b454219bb91ade15a" category="inline-link-macro-rx"></block>.</block>
   <block id="b96b0568ece0515dc25527bb206dc624" category="list-text">* 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. BlueXP 백업 및 복구를 선택하거나 BlueXP 계층화를 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.</block>
   <block id="00b55c6e8a613c3d6275f305157bc85f" category="admonition">WORM 및 데이터 계층화를 사용하려면 BlueXP 백업 및 복구를 비활성화하고 버전 9.8 이상의 Cloud Volumes ONTAP 작업 환경을 구축해야 합니다.</block>
-  <block id="122fbba22f02b63cfbb1c31be8b85e8e" category="cell">를 사용할 계획인 경우 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 또는<block ref="f6a24dd7c8333d6197d5c13fe0b2da54" category="inline-link-rx"></block> 서비스를 사용하려면 * 서비스 계정 * 스위치를 활성화한 다음 미리 정의된 스토리지 관리자 역할이 있는 서비스 계정을 선택해야 합니다.</block>
   <block id="b52e55022a3899fe34e70373f16c4e69" category="list-text">* 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. BlueXP 백업 및 복구를 선택하거나 BlueXP 계층화를 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.</block>
   <block id="4112533811706ae9c45d956e68299f46" category="summary">BlueXP 디지털 지갑에서 용량 기반 라이센스를 관리하여 NetApp 계정의 Cloud Volumes ONTAP 시스템 용량이 충분한지 확인합니다.</block>
   <block id="b37ea3f4c93245969c515634c741e9bf" category="paragraph">BlueXP 디지털 지갑 _ 을(를) 사용하면 한 곳에서 Cloud Volumes ONTAP에 대한 라이센스를 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.</block>
@@ -4854,14 +4851,13 @@
   <block id="325ef46eb3d6b63c4d60ef08cdd6176f" category="inline-image-macro">BlueXP 디지털 지갑에서 충전 방법 변경 단추가 표 바로 위에 있는 Cloud Volumes ONTAP 페이지 스크린샷</block>
   <block id="bdc5814154b1b181ca8722ef08ed8a28" category="paragraph"><block ref="bdc5814154b1b181ca8722ef08ed8a28" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d592a4e1d68c1047f1f5e39639bee6bf" category="paragraph">BlueXP 디지털 지갑은 각 패키지 유형의 소비된 용량을 새로 고쳐 방금 변경한 내용을 고려할 수도 있습니다.</block>
-  <block id="078be6a9f1dfaaea5e7153ff9ec78760" category="list-text">BlueXP 계층화</block>
+  <block id="078be6a9f1dfaaea5e7153ff9ec78760" category="inline-link-macro">BlueXP 계층화</block>
   <block id="fdc0e66a431a39bf7d68fad74c362d1a" category="paragraph">Cloud Volumes ONTAP에서는 BlueXP 계층화 서비스가 지원되지 않습니다. 볼륨 생성 시 BlueXP의 표준 보기에서 데이터를 오브젝트 스토리지로 계층화하도록 직접 설정해야 합니다.</block>
   <block id="fd736cdd9cd06a871bed533b6e339d5c" category="summary">표준 AWS 지역과 마찬가지로, AWS C2S(Commercial Cloud Services) 환경에서 BlueXP를 사용하여 클라우드 스토리지에 엔터프라이즈급 기능을 제공하는 Cloud Volumes ONTAP를 구축할 수 있습니다. AWS C2S는 미국 고유의 폐쇄된 지역입니다 Intelligence Community - 이 페이지의 지침은 AWS C2S 지역 사용자에게만 적용됩니다.</block>
   <block id="52c73bbae26b1c8362e849d7b7e0539f" category="paragraph">Cloud Volumes ONTAP 시스템에서 BlueXP 백업 및 복구를 사용하려는 경우 노드에 대한 IAM 역할에 아래에 나와 있는 두 번째 정책이 포함되어야 합니다.</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="inline-link">BlueXP 백업 및 복구</block>
   <block id="d71976832e1023b23c1ad48c04841a20" category="paragraph">Cloud Volumes ONTAP를 사용하려면 Google Cloud 서비스 계정이 두 가지 용도로 필요합니다. 첫 번째는 를 활성화하는 것입니다 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> Google Cloud에서 콜드 데이터를 저비용 오브젝트 스토리지로 계층화합니다. 두 번째는 를 활성화하는 것입니다<block ref="f8430e60155316f7bd64115f216c9ed9" category="inline-link-rx"></block> 볼륨을 저렴한 오브젝트 스토리지에 백업</block>
   <block id="334457e955e851dd9304247244593287" category="summary">BlueXP 디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.</block>
-  <block id="990d530a36683451e6ac666b1b224270" category="paragraph">BlueXP 디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.</block>
   <block id="755544cd7e451192e8f70ab60b76986b" category="paragraph">BlueXP 디지털 지갑 페이지에서 일련 번호 및 PAYGO 라이센스 유형을 비롯한 각 PAYGO Cloud Volumes ONTAP 시스템에 대한 세부 정보를 볼 수 있습니다.</block>
   <block id="0ad53d9b2c46069812124453e75f768d" category="inline-image-macro">세 개의 페이고 라이센스가 있는 BlueXP 디지털 전자지갑의 표를 보여 주는 스크린샷. 각 행에는 이름, 시스템 유형, 일련 번호, 패키지 및 라이센스 관리 링크가 표시됩니다.</block>
   <block id="53f70eaa2639e1c4c624cb3bcc1042c2" category="paragraph"><block ref="53f70eaa2639e1c4c624cb3bcc1042c2" category="inline-image-macro-rx" type="image"></block></block>
@@ -4884,7 +4880,7 @@
   <block id="26ee3f5587dc47d76226ef9b570828ff" category="paragraph">BlueXP 디지털 지갑에서 50TiB가 _Essentials Single Node_license에 대해 청구된 것으로 표시됩니다.</block>
   <block id="3ea1315566755c191cc8996f86a9af02" category="paragraph">충전은 Keystone 가입 중 하나 이상의 Cloud Volumes ONTAP HA 쌍에서 대해 확정된 용량 크기를 기준으로 합니다.</block>
   <block id="46b39bb522bc6ece1b6bf75e81db3cbf" category="paragraph">각 볼륨에 대해 프로비저닝된 용량은 주기적으로 Keystone 가입 시 할당된 용량과 비교되며, Keystone 가입 시 초과요금이 부과됩니다.</block>
-  <block id="100bae5c7e0821077de0fde9621000c1" category="paragraph"><block ref="bc493c0c6367fdf80f51179db159d9ed" category="inline-link-rx"></block>.</block>
+  <block id="100bae5c7e0821077de0fde9621000c1" category="list-text"><block ref="bc493c0c6367fdf80f51179db159d9ed" category="inline-link-rx"></block>.</block>
   <block id="73511701791994e2ed3cc40c68089746" category="paragraph">Keystone 구독은 HA 쌍으로 지원됩니다. 현재 단일 노드 시스템에서는 이 라이센스 옵션이 지원되지 않습니다.</block>
   <block id="9a762a1c55d92068610f4f2bc3e42d91" category="paragraph">Keystone 가입을 시작하는 방법 알아보기:</block>
   <block id="fc757430059ba1c5429f69be6c92e93b" category="paragraph">기존 Cloud Volumes ONTAP 시스템을 다른 라이센스 방식으로 변환하는 것은 지원되지 않습니다. 현재 세 가지 라이센스 방법은 용량 기반 라이센스, Keystone 가입 및 노드 기반 라이센싱입니다. 예를 들어, 시스템을 노드 기반 라이센싱에서 용량 기반 라이센싱으로 전환할 수 없습니다. 반대의 경우도 마찬가지입니다.</block>
@@ -4898,7 +4894,6 @@
   <block id="de33988c687dff633cec70e80a05f959" category="paragraph">Keystone 가입은 선불 종량제 구독 기반 서비스로, OpEx 소비 모델을 선호하는 고객에게 원활한 하이브리드 클라우드 경험을 제공하여 자본 지출 또는 임대를 지원합니다.</block>
   <block id="8765b8141289c553bb6583d305152f50" category="paragraph">Keystone 가입은 BlueXP에서 구축할 수 있는 모든 새로운 버전의 Cloud Volumes ONTAP에서 지원됩니다.</block>
   <block id="47e98d8abdf6a91192cff6466b616ce4" category="inline-link-macro">BlueXP에서 Keystone 가입을 시작하는 방법을 알아보십시오</block>
-  <block id="d32bc06f4693559b0941ab221004f77a" category="list-text"><block ref="b537ee4eb64ec01da34737ed00ba85c9" category="inline-link-macro-rx"></block>.</block>
   <block id="e0277b8d41546d47637400507bf0f9f5" category="paragraph">BlueXP 백업 및 복구, BlueXP 분류 인스턴스 등과 같은 다른 서비스에서 관리하는 리소스는 작업 환경을 삭제할 때 삭제되지 않습니다. 수동으로 삭제해야 합니다. 그렇지 않으면 이러한 리소스에 대한 비용을 계속 받게 됩니다.</block>
   <block id="54247681d588d23204e6fae74998cc72" category="list-text">작업 환경에서 BlueXP 백업 및 복구를 활성화한 경우 백업된 데이터가 여전히 필요한지 확인한 다음<block ref="a63fe511bda1d904c92110dce9e2b88b" category="inline-link-rx"></block>.</block>
   <block id="6994b2fbca796c979abed69e3bd6275c" category="paragraph">BlueXP 백업 및 복구는 설계상 Cloud Volumes ONTAP와 독립적입니다. Cloud Volumes ONTAP 시스템을 삭제할 때 BlueXP 백업 및 복구는 자동으로 백업을 삭제하지 않으며, 시스템이 삭제된 후 백업을 삭제할 수 있도록 UI에 현재 지원이 없습니다.</block>
@@ -4918,6 +4913,10 @@
   <block id="c5889acf4592b2ce675b7e0be182268e" category="paragraph">이러한 제한은 BlueXP의 Cloud Volumes ONTAP 관리에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어 자체의 제한 사항을 보려면<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
   <block id="829bbd3178c74725b58e1817c2135502" category="paragraph">또한 Cloud Volumes ONTAP는 BlueXP 백업 및 복구 기능과 통합되어 클라우드 데이터의 보호 및 장기 아카이브를 위한 백업 및 복원 기능을 제공합니다.</block>
   <block id="d37c9703eabd9a68dc0d1fb0b42d7881" category="paragraph">BlueXP 분류와의 통합으로 데이터 컨텍스트를 이해하고 중요한 데이터를 식별할 수 있습니다.</block>
-  <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">Keystone 가입은 종량제 구독 기반 서비스입니다. <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>.</block>
   <block id="5d52a8b51c505c42c6cec9d89c67795a" category="paragraph"><block ref="3abd3a0b5353b2721a22292e3b71aa39" category="inline-link-rx"></block> BlueXP UI에 통합되어 단일 창에서 Cloud Volumes ONTAP 시스템의 운영, 보안 및 성능을 최적화할 수 있습니다.</block>
+  <block id="e16f30d121bfd2f9150c3b384f4bafd7" category="cell">를 사용할 계획인 경우 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 또는<block ref="f8430e60155316f7bd64115f216c9ed9" category="inline-link-rx"></block> Cloud Volumes ONTAP를 사용하는 경우 * 서비스 계정 * 을 활성화하고 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택해야 합니다. <block ref="1e3ffbdede44246b454219bb91ade15a" category="inline-link-macro-rx"></block>.</block>
+  <block id="59d8dcefa0c00dc439534f201c3b8cad" category="cell">를 사용할 계획인 경우 <block ref="b0493934baf26f9529eb4214b9de6c71" category="inline-link-macro-rx"></block> 또는<block ref="f8430e60155316f7bd64115f216c9ed9" category="inline-link-rx"></block> 서비스를 사용하려면 * 서비스 계정 * 스위치를 활성화한 다음 미리 정의된 스토리지 관리자 역할이 있는 서비스 계정을 선택해야 합니다.</block>
+  <block id="fe8304b9cc044b147f56b2d91e04417e" category="list-text"><block ref="fe8304b9cc044b147f56b2d91e04417e" category="inline-link-rx"></block></block>
+  <block id="1ff8c921e91129864e26470e27f163e4" category="paragraph"><block ref="f3dcfa97ec0e043d2a6bb618df9e88d1" category="inline-link-rx"></block>[NetApp Keystone 구독에 대한 자세한 정보^].</block>
+  <block id="082d2f26c5c0981f06c4a8fa0b1114d6" category="list-text"><block ref="f4e5a313767343aeb22db09ed17536ac" category="inline-link-macro-rx"></block>.</block>
 </blocks>
