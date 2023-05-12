@@ -39,7 +39,7 @@ Active IQ는 전체 인벤토리 및 소프트웨어 및 하드웨어 구성 정
 
 
 .관련 정보
-* https://docs.netapp.com/us-en/active-iq/["NetApp 설명서: Active IQ 디지털 자문업체"^]
-* https://aiq.netapp.com/custom-dashboard/search["Active IQ를 시작합니다"^]
-* https://www.netapp.com/us/services/support-edge.aspx["SupportEdge 서비스"^]
+* https://["NetApp 설명서: Active IQ 디지털 자문업체"^]
+* https://["Active IQ를 시작합니다"^]
+* https://["SupportEdge 서비스"^]
 

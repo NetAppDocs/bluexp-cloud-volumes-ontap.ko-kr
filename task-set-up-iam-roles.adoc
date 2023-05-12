@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-iam-roles.html 
-keywords: iam role, mediator role, cloud volumes ontap role, policy, iam policy, permissions 
+keywords: iam role, mediator role, cloud volumes ontap role, policy, iam policy, permissions, cloud backup 
 summary: 필요한 권한이 있는 IAM 역할은 각 Cloud Volumes ONTAP 노드에 연결되어야 합니다. HA 중재자의 경우도 마찬가지입니다. BlueXP에서 IAM 역할을 생성하는 것이 가장 쉽지만 자신의 역할을 사용할 수 있습니다. 
 ---
 = Cloud Volumes ONTAP에 대한 IAM 역할을 설정합니다
@@ -120,7 +120,7 @@ NOTE: AWS 상용 클라우드 서비스 환경에서는 IAM의 역할을 직접 
 ====
 ** Cloud Volumes ONTAP 노드의 백업 정책
 +
-Cloud Volumes ONTAP 시스템에서 클라우드 백업을 사용하려는 경우 노드에 대한 IAM 역할에 아래에 나와 있는 두 번째 정책이 포함되어야 합니다.
+Cloud Volumes ONTAP 시스템에서 BlueXP 백업 및 복구를 사용하려는 경우 노드에 대한 IAM 역할에 아래에 나와 있는 두 번째 정책이 포함되어야 합니다.
 
 +
 [role="tabbed-block"]
@@ -270,6 +270,6 @@ Cloud Volumes ONTAP 시스템에서 클라우드 백업을 사용하려는 경�
 이제 새로운 Cloud Volumes ONTAP 작업 환경을 생성할 때 선택할 수 있는 IAM 역할이 있습니다.
 
 .추가 정보
-* https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AWS 설명서: IAM 정책 생성"^]
-* https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 설명서: IAM 역할 생성"^]
+* https://["AWS 설명서: IAM 정책 생성"^]
+* https://["AWS 설명서: IAM 역할 생성"^]
 

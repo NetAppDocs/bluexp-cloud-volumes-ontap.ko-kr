@@ -29,7 +29,7 @@ image:diagram_transit_gateway.png["유동 IP가 전송 게이트웨이로 라우
 다음 단계에서는 유사한 구성을 설정하는 방법을 보여 줍니다.
 
 .단계
-. https://docs.aws.amazon.com/vpc/latest/tgw/tgw-getting-started.html["전송 게이트웨이를 만들고 VPC를 게이트웨이에 연결합니다"^].
+. https://["전송 게이트웨이를 만들고 VPC를 게이트웨이에 연결합니다"^].
 . VPC를 전송 게이트웨이 경로 테이블에 연결합니다.
 +
 .. VPC * 서비스에서 * Transit Gateway Route Tables * 를 클릭합니다.

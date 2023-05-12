@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-licensing.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, cloud backup, digital wallet 
 summary: Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 옵션을 사용하여 요구 사항에 맞는 구성을 선택할 수 있습니다. 
 ---
 = Cloud Volumes ONTAP 라이센스
@@ -23,7 +23,7 @@ Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 �
 신규 고객은 다음과 같은 라이선스 옵션을 사용할 수 있습니다.
 
 용량 기반 라이센스:: 프로비저닝된 용량을 기준으로 NetApp 계정의 여러 Cloud Volumes ONTAP 시스템에 대한 비용 지불 애드온 클라우드 데이터 서비스를 구매할 수 있는 기능이 포함되어 있습니다.
-유연한 Keystone 구독:: HA 쌍에 대한 원활한 하이브리드 클라우드 경험을 제공하는 용량제 구독 기반 서비스입니다.
+Keystone 구독:: HA 쌍에 대한 원활한 하이브리드 클라우드 경험을 제공하는 용량제 구독 기반 서비스입니다.
 
 
 이전 by-node 라이센스 모델은 이미 라이선스를 구입했거나 현재 마켓플레이스 서브스크립션을 보유하고 있는 기존 고객에게도 계속 사용할 수 있습니다.
@@ -137,7 +137,7 @@ endif::gcp[]
 +
 동일한 속도로 운영 및 2차 볼륨의 용량을 충전하는 단일 노드 또는 HA
 
-* 클라우드 백업을 사용한 무제한 볼륨 백업을 포함하지만 프로페셔널 패키지를 사용하는 Cloud Volumes ONTAP 시스템에만 포함됩니다
+* BlueXP 백업 및 복구를 사용한 볼륨 백업 무제한 포함, 프로페셔널 패키지를 사용하는 Cloud Volumes ONTAP 시스템에만 해당
 * NetApp의 클라우드 데이터 서비스를 추가 비용으로 이용할 수 있습니다
 
 
@@ -166,7 +166,7 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge Cache를 통해 비즈니스를 지원하는 방법에 대해 자세히 알아보십시오"^]
+https://["Cloud Volumes Edge Cache를 통해 비즈니스를 지원하는 방법에 대해 자세히 알아보십시오"^]
 
 
 
@@ -214,13 +214,13 @@ link:task-manage-capacity-licenses.html["충전 방법을 변경하는 방법에
 
 === 가격
 
-가격에 대한 자세한 내용은 를 참조하십시오 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXP 웹 사이트"^].
+가격에 대한 자세한 내용은 를 참조하십시오 https://["NetApp BlueXP 웹 사이트"^].
 
 
 
 === 무료 평가판
 
-클라우드 공급자 마켓플레이스의 용량제 구독을 통해 30일 무료 평가판을 사용할 수 있습니다. 무료 평가판에 Cloud Volumes ONTAP 및 클라우드 백업이 포함되어 있습니다. 이 평가판은 사용자가 마켓플레이스의 서비스에 가입할 때 시작됩니다.
+클라우드 공급자 마켓플레이스의 용량제 구독을 통해 30일 무료 평가판을 사용할 수 있습니다. 무료 평가판에는 Cloud Volumes ONTAP 및 BlueXP 백업 및 복구가 포함됩니다. 이 평가판은 사용자가 마켓플레이스의 서비스에 가입할 때 시작됩니다.
 
 인스턴스 또는 용량 제한은 없습니다. 원하는 만큼 Cloud Volumes ONTAP 시스템을 구축하고 30일 동안 무료로 필요한 용량을 할당할 수 있습니다. 무료 평가판은 30일 후에 자동으로 유료 시간별 구독으로 변환됩니다.
 
@@ -269,7 +269,7 @@ TIP: 무료 평가판이 시작될 때, 7일 남았을 때, 1일 남았을 때 B
 
 20대 이상의 시스템이 필요한 대규모 구축 환경의 경우 고객 담당자 또는 세일즈 팀에 문의하십시오.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["NetApp 계정 에 대해 자세히 알아보십시오"^].
+https://["NetApp 계정 에 대해 자세히 알아보십시오"^].
 
 
 
@@ -299,7 +299,7 @@ BYOL 용량을 초과하거나 라이센스가 만료된 경우, 마켓플레이
 
 Essentials 패키지를 사용하면 배포 유형(HA 또는 단일 노드) 및 볼륨 유형(기본 또는 보조)으로 비용이 청구됩니다. 예를 들어, _Essentials HA_의 가격이 _Essentials 보조 HA_와 다릅니다.
 
-NetApp에서 BYOL(Essentials) 라이센스를 구매하고 그 구현 및 볼륨 유형에 대해 라이센스 용량을 초과하는 경우 Digital Wallet은 더 비싼 Essentials 라이센스(있는 경우)에 대해 초과 요금을 부과합니다. 이는 시장에 대해 충전하기 전에 이미 선결제 용량으로 구매한 가용 용량을 처음 사용하기 때문입니다. 마켓플레이스에 비용을 청구하면 월별 청구서에 비용이 추가됩니다.
+NetApp에서 BYOL(Essentials) 라이센스를 구매하고 해당 배포 및 볼륨 유형에 대해 라이센스 용량을 초과하는 경우 BlueXP 디지털 지갑은 가격이 더 높은 Essentials 라이센스(있는 경우)에 대해 초과 요금을 부과합니다. 이는 시장에 대해 충전하기 전에 이미 선결제 용량으로 구매한 가용 용량을 처음 사용하기 때문입니다. 마켓플레이스에 비용을 청구하면 월별 청구서에 비용이 추가됩니다.
 
 예를 들어, Essentials 패키지에 대해 다음 라이선스를 보유하고 있다고 가정해 보겠습니다.
 
@@ -307,9 +307,9 @@ NetApp에서 BYOL(Essentials) 라이센스를 구매하고 그 구현 및 볼륨
 * 100TiB의 커밋된 용량만 있는 500TiB_Essentials 단일 Node_license
 
 
-보조 볼륨이 있는 HA 쌍에서 50TiB가 또 다른 프로비저닝됩니다. Digital Wallet은 50TiB를 PAYGO로 충전하는 대신 _Essentials Single Node_license에 대해 50TiB 초과 요금을 부과합니다. 이 라이센스는 _Essentials Secondary HA_보다 비싸지만 PAYGO 요금보다 저렴합니다.
+보조 볼륨이 있는 HA 쌍에서 50TiB가 또 다른 프로비저닝됩니다. BlueXP 디지털 지갑은 50TiB에서 PAYGO로 충전하는 대신 _Essentials Single Node_license에 대해 50TiB 초과를 충전합니다. 이 라이센스는 _Essentials Secondary HA_보다 비싸지만 PAYGO 요금보다 저렴합니다.
 
-Digital Wallet에서 50TiB가 _Essentials Single Node_license에 대해 청구된 것으로 표시됩니다.
+BlueXP 디지털 지갑에서 50TiB가 _Essentials Single Node_license에 대해 청구된 것으로 표시됩니다.
 
 
 
@@ -362,21 +362,21 @@ endif::gcp[]
 
 
 
-== 유연한 Keystone 구독
+== Keystone 구독
 
 OpEx 소비 모델을 선호하는 투자자들에게 원활한 하이브리드 클라우드 경험을 제공하여 선불 CapEx 또는 임대를 지불하는 종량제 구독 기반 서비스입니다.
 
-충전은 Keystone 유연한 구독에서 하나 이상의 Cloud Volumes ONTAP HA 쌍에 대한 확정된 용량 크기를 기준으로 합니다.
+충전은 Keystone 가입 중 하나 이상의 Cloud Volumes ONTAP HA 쌍에서 대해 확정된 용량 크기를 기준으로 합니다.
 
-각 볼륨에 대해 프로비저닝된 용량이 Keystone Flex 구독의 확정된 용량과 주기적으로 집계되며, Keystone Flex 구독에 대한 급증으로 초과 요금이 부과됩니다.
+각 볼륨에 대해 프로비저닝된 용량은 주기적으로 Keystone 가입 시 할당된 용량과 비교되며, Keystone 가입 시 초과요금이 부과됩니다.
 
-https://www.netapp.com/services/subscriptions/keystone/flex-subscription/["Keystone Flex 구독에 대해 자세히 알아보십시오"^].
+https://["NetApp Keystone 구독에 대해 자세히 알아보십시오"^].
 
 
 
 === 지원되는 구성
 
-Keystone Flex 구독은 HA 쌍으로 지원됩니다. 현재 단일 노드 시스템에서는 이 라이센스 옵션이 지원되지 않습니다.
+Keystone 구독은 HA 쌍으로 지원됩니다. 현재 단일 노드 시스템에서는 이 라이센스 옵션이 지원되지 않습니다.
 
 
 
@@ -388,7 +388,7 @@ Keystone Flex 구독은 HA 쌍으로 지원됩니다. 현재 단일 노드 시�
 
 === 시작하는 방법
 
-Keystone 유연한 구독 시작 방법 알아보기:
+Keystone 가입을 시작하는 방법 알아보기:
 
 ifdef::aws[]
 
@@ -427,7 +427,7 @@ endif::gcp[]
 
 == 라이선스 변환
 
-기존 Cloud Volumes ONTAP 시스템을 다른 라이센스 방식으로 변환하는 것은 지원되지 않습니다. 현재 세 가지 라이센스 방법은 용량 기반 라이센스, Keystone Flex 가입 및 노드 기반 라이센싱입니다. 예를 들어, 시스템을 노드 기반 라이센싱에서 용량 기반 라이센싱으로 전환할 수 없습니다. 반대의 경우도 마찬가지입니다.
+기존 Cloud Volumes ONTAP 시스템을 다른 라이센스 방식으로 변환하는 것은 지원되지 않습니다. 현재 세 가지 라이센스 방법은 용량 기반 라이센스, Keystone 가입 및 노드 기반 라이센싱입니다. 예를 들어, 시스템을 노드 기반 라이센싱에서 용량 기반 라이센싱으로 전환할 수 없습니다. 반대의 경우도 마찬가지입니다.
 
 다른 라이센스 방법으로 이전하려는 경우 라이센스를 구입하고 해당 라이센스를 사용하여 새 Cloud Volumes ONTAP 시스템을 배포한 다음 데이터를 새 시스템으로 복제할 수 있습니다.
 

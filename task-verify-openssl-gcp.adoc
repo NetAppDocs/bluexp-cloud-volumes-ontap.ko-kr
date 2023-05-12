@@ -14,7 +14,7 @@ summary: OpenSSL을 사용하여 Google Cloud에서 digest 파일 컨텐츠와 �
 
 
 [role="lead"]
-Google Cloud에서 다운로드한 disk.raw 파일을 을 통해 사용 가능한 다이제스트 파일 내용과 비교하여 확인할 수 있습니다 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NSS"^] OpenSSL 사용.
+Google Cloud에서 다운로드한 disk.raw 파일을 을 통해 사용 가능한 다이제스트 파일 내용과 비교하여 확인할 수 있습니다 https://["NSS"^] OpenSSL 사용.
 
 
 NOTE: 이미지의 유효성을 검사하는 OpenSSL 명령은 Linux, Mac OS 및 Windows 시스템과 호환됩니다.

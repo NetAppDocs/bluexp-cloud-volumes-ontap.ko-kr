@@ -122,7 +122,7 @@ sidebar:
       entries:
       - title: 용량 기반 라이센스 관리
         url: "/task-manage-capacity-licenses.html"
-      - title: Keystone Flex 구독 관리
+      - title: Keystone 구독 관리
         url: "/task-manage-keystone.html"
       - title: 노드 기반 라이센스 관리
         url: "/task-manage-node-licenses.html"
@@ -307,7 +307,7 @@ homepage:
       url: task-manage-capacity-licenses.html
     - title: 할당되지 않은 Exchange 노드 기반 라이센스
       url: task-manage-node-licenses.html#exchange-unassigned-node-based-licenses
-    - title: Keystone Flex 구독 관리
+    - title: Keystone 구독 관리
       url: task-manage-keystone.html
   - title: 스토리지 관리
     links:

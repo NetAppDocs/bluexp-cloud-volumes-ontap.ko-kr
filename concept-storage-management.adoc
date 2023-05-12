@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-storage-management.html 
-keywords: provisioning, capacity management, storage provisioning, manual, automatic, advanced allocation, aggregates, thin provisioning, free space, mode 
+keywords: provisioning, capacity management, storage provisioning, manual, automatic, advanced allocation, aggregates, thin provisioning, free space, mode, BlueXP, cloud manager 
 summary: BlueXP는 Cloud Volumes ONTAP 스토리지의 단순하고 고급 관리 기능을 제공합니다. 
 ---
 = 스토리지 관리
@@ -14,7 +14,7 @@ summary: BlueXP는 Cloud Volumes ONTAP 스토리지의 단순하고 고급 관�
 
 
 [role="lead"]
-BlueXP(이전의 Cloud Manager)는 Cloud Volumes ONTAP 스토리지의 단순하고 고급 관리 기능을 제공합니다.
+BlueXP는 Cloud Volumes ONTAP 스토리지의 단순하고 고급 관리 기능을 제공합니다.
 
 
 CAUTION: 모든 디스크와 애그리게이트는 BlueXP에서 직접 생성 및 삭제해야 합니다. 다른 관리 도구에서 이러한 작업을 수행해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 주고 향후 디스크를 추가할 수 없도록 하며 중복 클라우드 공급자 비용을 생성할 수 있습니다.

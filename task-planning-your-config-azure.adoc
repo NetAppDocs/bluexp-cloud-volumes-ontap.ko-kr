@@ -30,7 +30,7 @@ Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 �
 
 == 지원되는 지역을 선택하십시오
 
-Cloud Volumes ONTAP는 대부분의 Microsoft Azure 지역에서 지원됩니다. https://cloud.netapp.com/cloud-volumes-global-regions["지원되는 영역의 전체 목록을 봅니다"^].
+Cloud Volumes ONTAP는 대부분의 Microsoft Azure 지역에서 지원됩니다. https://["지원되는 영역의 전체 목록을 봅니다"^].
 
 
 
@@ -38,7 +38,7 @@ Cloud Volumes ONTAP는 대부분의 Microsoft Azure 지역에서 지원됩니다
 
 Cloud Volumes ONTAP는 선택한 라이센스 유형에 따라 여러 VM 유형을 지원합니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure에서 Cloud Volumes ONTAP에 대해 지원되는 구성입니다"^]
+https://["Azure에서 Cloud Volumes ONTAP에 대해 지원되는 구성입니다"^]
 
 
 
@@ -46,7 +46,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azu
 
 Cloud Volumes ONTAP 시스템의 물리적 용량 제한은 라이센스에 연결되어 있습니다. 추가 제한은 애그리게이트 및 볼륨 크기에 영향을 줍니다. 구성을 계획할 때 이러한 제한 사항을 숙지해야 합니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Azure의 Cloud Volumes ONTAP에 대한 스토리지 제한"^]
+https://["Azure의 Cloud Volumes ONTAP에 대한 스토리지 제한"^]
 
 
 
@@ -54,11 +54,11 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azur
 
 Cloud Volumes ONTAP 시스템을 사이징하면 성능 및 용량 요구사항을 충족하는 데 도움이 될 수 있습니다. VM 유형, 디스크 유형 및 디스크 크기를 선택할 때 고려해야 할 몇 가지 주요 사항은 다음과 같습니다.
 
-가상 머신 유형입니다:: 에서 지원되는 가상 머신 유형을 확인합니다 http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["Cloud Volumes ONTAP 릴리즈 노트"^] 지원되는 각 VM 유형에 대한 세부 정보를 검토합니다. 각 VM 유형은 특정 수의 데이터 디스크를 지원합니다.
+가상 머신 유형입니다:: 에서 지원되는 가상 머신 유형을 확인합니다 http://["Cloud Volumes ONTAP 릴리즈 노트"^] 지원되는 각 VM 유형에 대한 세부 정보를 검토합니다. 각 VM 유형은 특정 수의 데이터 디스크를 지원합니다.
 +
 --
-* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general#dsv2-series["Azure 설명서: 범용 가상 머신 크기"^]
-* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-memory#dsv2-series-11-15["Azure 설명서: 메모리에 최적화된 가상 머신 크기"^]
+* https://["Azure 설명서: 범용 가상 머신 크기"^]
+* https://["Azure 설명서: 메모리에 최적화된 가상 머신 크기"^]
 
 
 --
@@ -72,7 +72,7 @@ Cloud Volumes ONTAP 시스템을 사이징하면 성능 및 용량 요구사항�
 * _표준 HDD 관리 디스크 _ 는 높은 IOPS가 필요하지 않고 비용을 절감하려는 경우에 적합합니다.
 
 
-이러한 디스크의 사용 사례에 대한 자세한 내용은 를 참조하십시오 https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure 설명서: Azure에서 사용할 수 있는 디스크 유형은 무엇입니까?"^].
+이러한 디스크의 사용 사례에 대한 자세한 내용은 를 참조하십시오 https://["Microsoft Azure 설명서: Azure에서 사용할 수 있는 디스크 유형은 무엇입니까?"^].
 
 --
 HA 쌍을 지원하는 Azure 디스크 유형:: HA 시스템은 프리미엄 SSD 공유 관리 디스크를 사용합니다. 이 두 디스크는 모두 I/O 집약적인 워크로드를 더 높은 비용으로 처리합니다. 9.12.1 릴리즈 이전에 생성된 HA 배포에서는 프리미엄 페이지 Blob을 사용합니다.
@@ -90,8 +90,8 @@ Azure 프리미엄 스토리지의 성능은 디스크 크기와 관련이 있�
 
 IOPS 및 디스크 크기별 처리량은 Azure를 참조하십시오.
 
-* https://azure.microsoft.com/en-us/pricing/details/managed-disks/["Microsoft Azure: 관리형 디스크 가격"^]
-* https://azure.microsoft.com/en-us/pricing/details/storage/page-blobs/["Microsoft Azure: 페이지 Blob 가격 책정"^]
+* https://["Microsoft Azure: 관리형 디스크 가격"^]
+* https://["Microsoft Azure: 페이지 Blob 가격 책정"^]
 
 
 --
@@ -106,7 +106,7 @@ BlueXP는 사용자 데이터를 위한 스토리지 외에도 Cloud Volumes ONT
 link:reference-default-configs.html#azure-single-node["Azure에서 Cloud Volumes ONTAP 시스템 데이터에 대한 기본 디스크를 봅니다"].
 
 
-TIP: 커넥터에는 시스템 디스크도 필요합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["커넥터의 기본 설정에 대한 세부 정보를 봅니다"^].
+TIP: 커넥터에는 시스템 디스크도 필요합니다. https://["커넥터의 기본 설정에 대한 세부 정보를 봅니다"^].
 
 
 

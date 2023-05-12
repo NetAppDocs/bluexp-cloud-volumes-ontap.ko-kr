@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-administer-advanced-view.html 
-keywords: system manager, advanced view, access system manager, load system manager, use system manager 
+keywords: system manager, advanced view, access system manager, load system manager, use system manager, cloud tiering 
 summary: Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우, ONTAP 시스템과 함께 제공되는 관리 인터페이스인 ONTAP System Manager를 사용하면 됩니다. BlueXP에 System Manager 인터페이스를 직접 포함하므로 고급 관리를 위해 BlueXP를 떠날 필요가 없습니다. 
 ---
 = 고급 보기를 사용하여 Cloud Volumes ONTAP를 관리합니다
@@ -60,9 +60,9 @@ GovCloud 지역 또는 아웃바운드 인터넷 액세스가 없는 지역에�
 
 Cloud Volumes ONTAP에서는 System Manager 인터페이스에 표시되는 몇 가지 기능을 지원하지 않습니다.
 
-* 클라우드 계층화
+* BlueXP 계층화
 +
-Cloud Volumes ONTAP에서는 Cloud Tiering 서비스가 지원되지 않습니다. 볼륨 생성 시 BlueXP의 표준 보기에서 데이터를 오브젝트 스토리지로 계층화하도록 직접 설정해야 합니다.
+Cloud Volumes ONTAP에서는 BlueXP 계층화 서비스가 지원되지 않습니다. 볼륨 생성 시 BlueXP의 표준 보기에서 데이터를 오브젝트 스토리지로 계층화하도록 직접 설정해야 합니다.
 
 * 계층
 +
@@ -98,9 +98,9 @@ image:screenshot_advanced_view.png["고급 보기로 전환 옵션을 보여 주
 
 == System Manager 사용에 대한 도움말
 
-Cloud Volumes ONTAP에서 System Manager를 사용하는 데 도움이 필요한 경우 을 참조하십시오 https://docs.netapp.com/us-en/ontap/index.html["ONTAP 설명서"^] 을 참조하십시오. 다음은 도움이 될 수 있는 몇 가지 링크입니다.
+Cloud Volumes ONTAP에서 System Manager를 사용하는 데 도움이 필요한 경우 을 참조하십시오 https://["ONTAP 설명서"^] 을 참조하십시오. 다음은 도움이 될 수 있는 몇 가지 링크입니다.
 
-* https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["볼륨 및 LUN 관리"^]
-* https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["네트워크 관리"^]
-* https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["데이터 보호"^]
+* https://["볼륨 및 LUN 관리"^]
+* https://["네트워크 관리"^]
+* https://["데이터 보호"^]
 

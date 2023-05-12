@@ -14,13 +14,13 @@ summary: Microsoft 관리 키가 있는 Azure 스토리지 서비스 암호화�
 
 
 [role="lead"]
-Azure의 Cloud Volumes ONTAP에서 를 사용하여 데이터가 자동으로 암호화됩니다 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 스토리지 서비스 암호화"] Microsoft 관리 키를 사용합니다. 그러나 이 페이지의 단계를 따르면 사용자 고유의 암호화 키를 사용할 수 있습니다.
+Azure의 Cloud Volumes ONTAP에서 를 사용하여 데이터가 자동으로 암호화됩니다 https://["Azure 스토리지 서비스 암호화"] Microsoft 관리 키를 사용합니다. 그러나 이 페이지의 단계를 따르면 사용자 고유의 암호화 키를 사용할 수 있습니다.
 
 
 
 == 데이터 암호화 개요
 
-Cloud Volumes ONTAP 데이터는 를 사용하여 Azure에서 자동으로 암호화됩니다 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 스토리지 서비스 암호화"^]. 기본 구현에는 Microsoft 관리 키가 사용됩니다. 설정이 필요하지 않습니다.
+Cloud Volumes ONTAP 데이터는 를 사용하여 Azure에서 자동으로 암호화됩니다 https://["Azure 스토리지 서비스 암호화"^]. 기본 구현에는 Microsoft 관리 키가 사용됩니다. 설정이 필요하지 않습니다.
 
 Cloud Volumes ONTAP에서 고객 관리 키를 사용하려면 다음 단계를 완료해야 합니다.
 
@@ -54,7 +54,7 @@ Azure HA 단일 가용성 영역::
 --
 * Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다.^1^
 * 디스크 또는 애그리게이트를 추가하는 경우와 같이 새로운 스토리지 계정에서도 동일한 키를 사용합니다.^1^
-* ONTAP 9.10.1P3에서 NVRAM 및 코어 디스크의 경우 BlueXP는 을 사용합니다 https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["디스크 암호화가 설정되었습니다"^]관리 디스크를 사용하여 암호화 키를 관리할 수 있습니다. 하위 버전은 고객 관리 키 대신 Microsoft 관리 키를 사용합니다.
+* ONTAP 9.10.1P3에서 NVRAM 및 코어 디스크의 경우 BlueXP는 을 사용합니다 https://["디스크 암호화가 설정되었습니다"^]관리 디스크를 사용하여 암호화 키를 관리할 수 있습니다. 하위 버전은 고객 관리 키 대신 Microsoft 관리 키를 사용합니다.
 
 
 --
@@ -62,7 +62,7 @@ Azure HA 단일 가용성 영역::
 +
 --
 * Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다. ^1^
-* 루트, 부팅 및 데이터 디스크의 경우 BlueXP는 을 사용합니다 https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["디스크 암호화가 설정되었습니다"^]관리 디스크를 사용하여 암호화 키를 관리할 수 있습니다.
+* 루트, 부팅 및 데이터 디스크의 경우 BlueXP는 을 사용합니다 https://["디스크 암호화가 설정되었습니다"^]관리 디스크를 사용하여 암호화 키를 관리할 수 있습니다.
 * 새 데이터 디스크도 동일한 디스크 암호화 세트를 사용합니다.
 * ONTAP 9.9.1P7에서 NVRAM 및 코어 디스크의 경우 BlueXP는 디스크 암호화 세트를 사용하여 관리되는 디스크로 암호화 키를 관리할 수 있습니다. 하위 버전은 고객 관리 키 대신 Microsoft 관리 키를 사용합니다.
 
@@ -81,7 +81,7 @@ Azure HA 단일 가용성 영역::
 키 볼트는 Cloud Volumes ONTAP 시스템을 생성하려는 Azure 가입 및 지역에 있어야 합니다.
 
 .단계
-. https://docs.microsoft.com/en-us/azure/key-vault/general/quick-create-portal["Azure 구독에서 키 볼트를 작성합니다"^].
+. https://["Azure 구독에서 키 볼트를 작성합니다"^].
 +
 키 볼트에 대한 다음 요구 사항을 확인합니다.
 
@@ -96,7 +96,7 @@ Azure HA 단일 가용성 영역::
 
 
 
-. https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault["키 볼트에 키를 생성합니다"^].
+. https://["키 볼트에 키를 생성합니다"^].
 +
 키에 대한 다음 요구 사항을 확인합니다.
 
@@ -126,7 +126,7 @@ Azure HA 단일 가용성 영역::
 "Microsoft.KeyVault/vaults/accessPolicies/write"
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["최신 사용 권한 목록을 봅니다"^]
+https://["최신 사용 권한 목록을 봅니다"^]
 
 
 NOTE: 단일 존의 HA 쌍에는 권한이 필요하지 않습니다.
@@ -143,7 +143,7 @@ HA 쌍의 경우: 'get/Azure/ha/metadata/vaults'
 이름 * 과 * resourceGroup * 을 기록해 둡니다. 다음 단계에서 이러한 값을 지정해야 합니다.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["이 API 호출에 대해 자세히 알아보십시오"^].
+https://["이 API 호출에 대해 자세히 알아보십시오"^].
 
 . 다음 BlueXP API 호출을 사용하여 볼트 내의 키 목록을 가져옵니다.
 +
@@ -156,7 +156,7 @@ HA 쌍의 경우: 'get/Azure/ha/metadata/keys-vault'
 keyName * 을 기록해 두십시오. 다음 단계에서 해당 값을 볼트 이름과 함께 지정해야 합니다.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["이 API 호출에 대해 자세히 알아보십시오"^].
+https://["이 API 호출에 대해 자세히 알아보십시오"^].
 
 . 다음 BlueXP API 호출을 사용하여 Cloud Volumes ONTAP 시스템을 생성합니다.
 +
@@ -177,7 +177,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-haworking-environments["이 API 호출에 대해 자세히 알아보십시오"^].
+https://["이 API 호출에 대해 자세히 알아보십시오"^].
 
 .. 단일 노드 시스템의 경우:
 +
@@ -196,7 +196,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-vsaworking-environments["이 API 호출에 대해 자세히 알아보십시오"^].
+https://["이 API 호출에 대해 자세히 알아보십시오"^].
 
 
 

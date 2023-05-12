@@ -138,7 +138,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 기존 사용권 및 제품 번호를 가지고 있지만 _NO_NSS 계정을 가지고 있는 기존 NetApp 고객은 NSS 계정을 만들어야 합니다.
 
 .단계
-. 를 완료하여 NetApp Support 사이트 계정을 생성합니다 https://mysupport.netapp.com/site/user/registration["NetApp Support 사이트 사용자 등록 양식"^]
+. 를 완료하여 NetApp Support 사이트 계정을 생성합니다 https://["NetApp Support 사이트 사용자 등록 양식"^]
 +
 .. 적절한 사용자 레벨(일반적으로 * NetApp 고객/최종 사용자 *)을 선택해야 합니다.
 .. 위에 사용된 BlueXP 계정 일련 번호(960xxxx)를 일련 번호 필드에 복사해야 합니다. 이렇게 하면 계정 처리 속도가 빨라집니다.
@@ -161,7 +161,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-serial-number.png["도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다"]
 
-. 로 이동합니다 https://register.netapp.com["NetApp의 지원 등록 사이트"^] 를 선택하고 * 등록된 NetApp 고객이 아닙니다 * 를 선택합니다.
+. 로 이동합니다 https://["NetApp의 지원 등록 사이트"^] 를 선택하고 * 등록된 NetApp 고객이 아닙니다 * 를 선택합니다.
 . 필수 필드(빨간색 별표가 있는 필드)를 입력합니다.
 . [제품 라인] * 필드에서 * Cloud Manager * 를 선택한 다음 해당 청구 공급자를 선택합니다.
 . 위의 2단계에서 계정의 일련 번호를 복사하고 보안 검색을 완료한 다음 NetApp의 글로벌 데이터 개인 정보 보호 정책을 읽는지 확인합니다.
@@ -172,7 +172,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 +
 확인 시 NetApp에 요청이 제출되고 NetApp Support 사이트 계정을 만들 것을 권장합니다.
 
-. 를 완료하여 NetApp Support 사이트 계정을 생성합니다 https://mysupport.netapp.com/site/user/registration["NetApp Support 사이트 사용자 등록 양식"^]
+. 를 완료하여 NetApp Support 사이트 계정을 생성합니다 https://["NetApp Support 사이트 사용자 등록 양식"^]
 +
 .. 적절한 사용자 레벨(일반적으로 * NetApp 고객/최종 사용자 *)을 선택해야 합니다.
 .. 일련 번호 필드에 위에서 사용된 계정 일련 번호(960xxxx)를 복사해 주십시오. 이렇게 하면 계정 처리 속도가 빨라집니다.

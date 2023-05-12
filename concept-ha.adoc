@@ -103,7 +103,7 @@ iSCSI는 부동 IP 주소를 사용하지 않으므로 Cross-VPC 데이터 통�
 iSCSI의 경우 Cloud Volumes ONTAP는 다중 경로 I/O(MPIO) 및 ALUA(Asymmetric Logical Unit Access)를 사용하여 능동 최적화 경로와 최적화되지 않은 경로 간의 경로 페일오버를 관리합니다.
 
 
-NOTE: ALUA를 지원하는 특정 호스트 구성에 대한 자세한 내용은 를 참조하십시오 http://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"^] 및 호스트 운영 체제용 Host Utilities 설치 및 설정 설명서를 참조하십시오.
+NOTE: ALUA를 지원하는 특정 호스트 구성에 대한 자세한 내용은 를 참조하십시오 http://["NetApp 상호 운용성 매트릭스 툴"^] 및 호스트 운영 체제용 Host Utilities 설치 및 설정 설명서를 참조하십시오.
 
 
 
@@ -126,7 +126,7 @@ image:diagram_takeover_giveback.png["Cloud Volumes ONTAP HA 쌍의 스토리지 
 AZ(단일 가용성 영역)에 HA 구성을 구축하면 Cloud Volumes ONTAP 노드를 실행하는 인스턴스에 장애가 발생할 경우 데이터의 고가용성을 보장할 수 있습니다. 모든 데이터는 VPC 외부에서 기본적으로 액세스할 수 있습니다.
 
 
-NOTE: BlueXP는 을 생성합니다 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 배치 그룹 분산"^] 그런 다음 해당 배치 그룹에서 2개의 HA 노드를 시작합니다. 배치 그룹은 서로 다른 기본 하드웨어에 인스턴스를 분산하여 동시 오류 위험을 줄입니다. 이 기능은 디스크 장애 관점이 아니라 컴퓨팅 측면에서 중복성을 향상시킵니다.
+NOTE: BlueXP는 을 생성합니다 https://["AWS 배치 그룹 분산"^] 그런 다음 해당 배치 그룹에서 2개의 HA 노드를 시작합니다. 배치 그룹은 서로 다른 기본 하드웨어에 인스턴스를 분산하여 동시 오류 위험을 줄입니다. 이 기능은 디스크 장애 관점이 아니라 컴퓨팅 측면에서 중복성을 향상시킵니다.
 
 
 
@@ -145,7 +145,7 @@ image:diagram_single_az.png["VPC 외부에서 데이터에 액세스할 수 있�
 iSCSI의 경우 Cloud Volumes ONTAP는 다중 경로 I/O(MPIO) 및 ALUA(Asymmetric Logical Unit Access)를 사용하여 능동 최적화 경로와 최적화되지 않은 경로 간의 경로 페일오버를 관리합니다.
 
 
-NOTE: ALUA를 지원하는 특정 호스트 구성에 대한 자세한 내용은 를 참조하십시오 http://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"^] 및 호스트 운영 체제용 Host Utilities 설치 및 설정 설명서를 참조하십시오.
+NOTE: ALUA를 지원하는 특정 호스트 구성에 대한 자세한 내용은 를 참조하십시오 http://["NetApp 상호 운용성 매트릭스 툴"^] 및 호스트 운영 체제용 Host Utilities 설치 및 설정 설명서를 참조하십시오.
 
 NAS 구성의 경우 장애가 발생할 경우 데이터 IP 주소를 HA 노드 간에 마이그레이션할 수 있습니다. 이렇게 하면 클라이언트가 스토리지에 액세스할 수 있습니다.
 

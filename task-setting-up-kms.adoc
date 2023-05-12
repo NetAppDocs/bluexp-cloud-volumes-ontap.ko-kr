@@ -22,14 +22,14 @@ Cloud Volumes ONTAP에서 Amazon 암호화를 사용하려면 AWS KMS(키 관리
 CMK는 AWS로 관리되는 CMK 또는 고객이 관리하는 CMK가 될 수 있습니다. BlueXP 및 Cloud Volumes ONTAP와 동일한 AWS 계정 또는 다른 AWS 계정에 있을 수 있습니다.
 
 +
-https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys["AWS 설명서:CMK(Customer Master Key)"^]
+https://["AWS 설명서:CMK(Customer Master Key)"^]
 
 . BlueXP에 대한 권한을 제공하는 IAM 역할을 _KEY USER_로 추가하여 각 CMK에 대한 키 정책을 수정합니다.
 +
 IAM 역할을 주요 사용자로 추가하면 BlueXP에서 Cloud Volumes ONTAP와 함께 CMK를 사용할 수 있는 권한이 부여됩니다.
 
 +
-https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS 설명서:키 편집"^]
+https://["AWS 설명서:키 편집"^]
 
 . CMK가 다른 AWS 계정에 있는 경우 다음 단계를 수행하십시오.
 +
@@ -96,7 +96,7 @@ image:screenshot_cmk_add_accounts_dialog.gif["이 스크린샷은 AWS KMS 콘솔
 }
 ----
 +
-이 프로세스에 대한 자세한 내용은 을 참조하십시오 https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html["AWS 설명서: 다른 계정의 사용자가 KMS 키를 사용할 수 있도록 허용합니다"^].
+이 프로세스에 대한 자세한 내용은 을 참조하십시오 https://["AWS 설명서: 다른 계정의 사용자가 KMS 키를 사용할 수 있도록 허용합니다"^].
 
 
 
@@ -108,6 +108,6 @@ image:screenshot_cmk_add_accounts_dialog.gif["이 스크린샷은 AWS KMS 콘솔
 작업 환경을 생성할 때 IAM 역할이 생성되므로 이 단계는 _ After _ Cloud Volumes ONTAP를 구축해야 합니다. (물론 기존 Cloud Volumes ONTAP IAM 역할을 사용할 수 있는 옵션이 있으므로 이 단계를 이전에 수행할 수 있습니다.)
 
 +
-https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["AWS 설명서:키 편집"^]
+https://["AWS 설명서:키 편집"^]
 
 

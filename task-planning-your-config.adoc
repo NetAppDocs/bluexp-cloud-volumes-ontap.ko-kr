@@ -30,9 +30,9 @@ Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 �
 
 == 지원되는 지역을 선택하십시오
 
-Cloud Volumes ONTAP는 대부분의 AWS 지역에서 지원됩니다. https://cloud.netapp.com/cloud-volumes-global-regions["지원되는 영역의 전체 목록을 봅니다"^].
+Cloud Volumes ONTAP는 대부분의 AWS 지역에서 지원됩니다. https://["지원되는 영역의 전체 목록을 봅니다"^].
 
-해당 지역에서 리소스를 생성하고 관리하려면 먼저 새로운 AWS 영역을 활성화해야 합니다. https://docs.aws.amazon.com/general/latest/gr/rande-manage.html["지역 활성화 방법을 알아보십시오"^].
+해당 지역에서 리소스를 생성하고 관리하려면 먼저 새로운 AWS 영역을 활성화해야 합니다. https://["지역 활성화 방법을 알아보십시오"^].
 
 
 
@@ -40,7 +40,7 @@ Cloud Volumes ONTAP는 대부분의 AWS 지역에서 지원됩니다. https://cl
 
 Cloud Volumes ONTAP는 선택한 라이센스 유형에 따라 여러 인스턴스 유형을 지원합니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["AWS에서 Cloud Volumes ONTAP가 지원되는 구성입니다"^]
+https://["AWS에서 Cloud Volumes ONTAP가 지원되는 구성입니다"^]
 
 
 
@@ -48,7 +48,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws
 
 Cloud Volumes ONTAP 시스템의 물리적 용량 제한은 라이센스에 연결되어 있습니다. 추가 제한은 애그리게이트 및 볼륨 크기에 영향을 줍니다. 구성을 계획할 때 이러한 제한 사항을 숙지해야 합니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html["AWS의 Cloud Volumes ONTAP에 대한 스토리지 제한"^]
+https://["AWS의 Cloud Volumes ONTAP에 대한 스토리지 제한"^]
 
 
 
@@ -63,19 +63,19 @@ Cloud Volumes ONTAP 시스템을 사이징하면 성능 및 용량 요구사항�
 * 여러 사용자가 동시에 시스템에 쓸 경우 요청을 관리할 CPU가 충분한 인스턴스 유형을 선택합니다.
 * 대부분 읽혀지는 응용 프로그램이 있는 경우 충분한 RAM이 있는 시스템을 선택합니다.
 +
-** https://aws.amazon.com/ec2/instance-types/["AWS 문서: Amazon EC2 인스턴스 유형"^]
-** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["AWS 문서: Amazon EBS – 최적화된 인스턴스"^]
+** https://["AWS 문서: Amazon EC2 인스턴스 유형"^]
+** https://["AWS 문서: Amazon EBS – 최적화된 인스턴스"^]
 
 
 
 
 --
-EBS 디스크 유형입니다:: EBS 디스크 유형의 차이점은 다음과 같습니다. EBS 디스크의 사용 사례에 대한 자세한 내용은 을 참조하십시오 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 설명서:EBS 볼륨 유형"^].
+EBS 디스크 유형입니다:: EBS 디스크 유형의 차이점은 다음과 같습니다. EBS 디스크의 사용 사례에 대한 자세한 내용은 을 참조하십시오 http://["AWS 설명서:EBS 볼륨 유형"^].
 +
 --
 * _GP3(General Purpose SSD)_디스크는 광범위한 워크로드에 대해 비용과 성능의 균형을 유지하는 가장 저렴한 SSD입니다. 성능은 IOPS 및 처리량 측면에서 정의됩니다. GP3 디스크는 Cloud Volumes ONTAP 9.7 이상에서 지원됩니다.
 +
-GP3 디스크를 선택할 때 BlueXP는 기본 IOPS와 처리량 값을 채워 선택한 디스크 크기를 기준으로 GP2 디스크와 동일한 성능을 제공합니다. 더 높은 비용으로 더 나은 성능을 얻기 위해 값을 늘릴 수 있지만 성능이 저하될 수 있으므로 더 낮은 값을 지원하지 않습니다. 즉, 기본값을 그대로 사용하거나 값을 늘립니다. 낮추지 마십시오. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["GP3 디스크 및 성능에 대해 자세히 알아보십시오"^].
+GP3 디스크를 선택할 때 BlueXP는 기본 IOPS와 처리량 값을 채워 선택한 디스크 크기를 기준으로 GP2 디스크와 동일한 성능을 제공합니다. 더 높은 비용으로 더 나은 성능을 얻기 위해 값을 늘릴 수 있지만 성능이 저하될 수 있으므로 더 낮은 값을 지원하지 않습니다. 즉, 기본값을 그대로 사용하거나 값을 늘립니다. 낮추지 마십시오. https://["GP3 디스크 및 성능에 대해 자세히 알아보십시오"^].
 
 +
 Cloud Volumes ONTAP는 GP3 디스크를 사용하는 Amazon EBS Elastic Volumes 기능을 지원합니다. link:concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].
@@ -101,7 +101,7 @@ EBS 디스크 크기입니다:: 를 지원하지 않는 구성을 선택하는 �
 * 궁극적으로 필요한 _ 지속적인 성능 _ 을(를) 제공하는 디스크 크기를 선택해야 합니다.
 * 더 큰 디스크(예: 4TiB 디스크 6개)를 선택하더라도 EC2 인스턴스가 대역폭 제한에 도달할 수 있으므로 모든 IOPS를 가져오지 못할 수 있습니다.
 +
-EBS 디스크 성능에 대한 자세한 내용은 을 참조하십시오 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html["AWS 설명서:EBS 볼륨 유형"^].
+EBS 디스크 성능에 대한 자세한 내용은 을 참조하십시오 http://["AWS 설명서:EBS 볼륨 유형"^].
 
 +
 위에서 설명한 것처럼, Amazon EBS Elastic Volumes 기능을 지원하는 Cloud Volumes ONTAP 구성에서는 디스크 크기를 선택할 수 없습니다. link:concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].
@@ -120,7 +120,7 @@ BlueXP는 사용자 데이터를 위한 스토리지 외에도 Cloud Volumes ONT
 link:reference-default-configs.html#aws["AWS에서 Cloud Volumes ONTAP 시스템 데이터의 기본 디스크를 봅니다"].
 
 
-TIP: 커넥터에는 시스템 디스크도 필요합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["커넥터의 기본 설정에 대한 세부 정보를 봅니다"^].
+TIP: 커넥터에는 시스템 디스크도 필요합니다. https://["커넥터의 기본 설정에 대한 세부 정보를 봅니다"^].
 
 
 

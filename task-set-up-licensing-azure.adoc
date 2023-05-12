@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-licensing-azure.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, digital wallet 
 summary: Cloud Volumes ONTAP에 사용할 라이센스 옵션을 결정한 후에는 몇 가지 단계를 거쳐 새 시스템을 배포할 때 해당 라이센스 옵션을 선택해야 합니다. 
 ---
 = Azure에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다
@@ -67,13 +67,13 @@ link:concept-licensing.html["용량 기반 라이센스에 대해 자세히 알�
 NetApp에서 BYOL(License)을 구매하여 모든 클라우드 공급자를 통해 Cloud Volumes ONTAP 시스템 구축
 
 .단계
-. https://cloud.netapp.com/contact-cds["라이센스를 획득하려면 NetApp 세일즈 팀에 문의하십시오"^]
-. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["NetApp Support 사이트 계정을 BlueXP에 추가합니다"^]
+. https://["라이센스를 획득하려면 NetApp 세일즈 팀에 문의하십시오"^]
+. https://["NetApp Support 사이트 계정을 BlueXP에 추가합니다"^]
 +
-BlueXP는 NetApp의 라이센스 서비스에 자동으로 쿼리하여 NetApp Support 사이트 계정과 관련된 라이센스에 대한 자세한 정보를 확인합니다. 오류가 없으면 BlueXP에서 자동으로 디지털 지갑에 라이센스를 추가합니다.
+BlueXP는 NetApp의 라이센스 서비스에 자동으로 쿼리하여 NetApp Support 사이트 계정과 관련된 라이센스에 대한 자세한 정보를 확인합니다. 오류가 없으면 BlueXP는 자동으로 디지털 지갑에 라이센스를 추가합니다.
 
 +
-Cloud Volumes ONTAP에서 사용하기 전에 디지털 지갑에서 라이센스를 사용할 수 있어야 합니다. 필요한 경우, 할 수 있습니다 link:task-manage-capacity-licenses.html#add-purchased-licenses-to-your-account["디지털 지갑에 라이센스를 수동으로 추가합니다"].
+Cloud Volumes ONTAP와 함께 사용하기 전에 BlueXP 디지털 지갑에서 라이센스를 사용할 수 있어야 합니다. 필요한 경우, 할 수 있습니다 link:task-manage-capacity-licenses.html#add-purchased-licenses-to-your-account["BlueXP 디지털 지갑에 라이센스를 수동으로 추가합니다"].
 
 . Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 BlueXP의 단계를 따릅니다.
 +
@@ -121,7 +121,7 @@ image:screenshot-professional.png["Cloud Volumes ONTAP 작업 환경을 만들 �
 link:task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP를 시작하는 단계별 지침을 확인하십시오"].
 
 
-TIP: 설정 > 자격 증명 페이지에서 Azure 계정과 연결된 Azure 마켓플레이스 구독을 관리할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["Azure 계정 및 구독을 관리하는 방법에 대해 알아보십시오"^]
+TIP: 설정 > 자격 증명 페이지에서 Azure 계정과 연결된 Azure 마켓플레이스 구독을 관리할 수 있습니다. https://["Azure 계정 및 구독을 관리하는 방법에 대해 알아보십시오"^]
 
 
 
@@ -153,19 +153,19 @@ link:task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP를 시작하
 
 
 
-== 유연한 Keystone 구독
+== Keystone 구독
 
-Keystone Flex 가입은 종량제 구독 기반 서비스입니다. link:concept-licensing.html#keystone-flex-subscription["Keystone Flex 구독에 대해 자세히 알아보십시오"].
+Keystone 가입은 종량제 구독 기반 서비스입니다. link:concept-licensing.html#keystone-subscription["NetApp Keystone 구독에 대해 자세히 알아보십시오"].
 
 .단계
-. 아직 구독이 없는 경우 https://www.netapp.com/forms/keystone-sales-contact/["NetApp에 문의하십시오"^]
-. mailto:ng-keystone-success@netapp.com [NetApp에 문의]하여 하나 이상의 Keystone Flex 구독으로 BlueXP 사용자 계정을 인증하십시오.
+. 아직 구독이 없는 경우 https://["NetApp에 문의하십시오"^]
+. mailto:ng-keystone-success@netapp.com [NetApp에 문의]하여 하나 이상의 Keystone 구독으로 BlueXP 사용자 계정을 인증하십시오.
 . NetApp이 사용자 계정을 승인한 후 link:task-manage-keystone.html#link-a-subscription["Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 연결합니다"].
 . Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 BlueXP의 단계를 따릅니다.
 +
-.. 충전 방법을 선택하라는 메시지가 표시되면 Keystone Flex 가입 충전 방법을 선택합니다.
+.. 충전 방법을 선택하라는 메시지가 표시되면 Keystone 가입 충전 방법을 선택합니다.
 +
-image:screenshot-keystone.png["Cloud Volumes ONTAP 작업 환경을 생성할 때 Keystone 유연한 구독 옵션 스크린샷"]
+image:screenshot-keystone.png["Cloud Volumes ONTAP 작업 환경을 생성할 때의 Keystone 구독 옵션 스크린샷"]
 
 
 

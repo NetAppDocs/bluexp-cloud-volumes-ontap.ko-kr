@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploying-gcp.html 
-keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create,  BYOL, license key, serial number, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, high availability, google cloud ha, ha in google cloud, ha pair 
+keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create,  BYOL, license key, serial number, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, high availability, google cloud ha, ha in google cloud, ha pair, cloud backup, cloud tiering 
 summary: Cloud Volumes ONTAP를 단일 시스템 구성으로 실행하거나 Google 클라우드 플랫폼에서 HA 쌍으로 실행할 수 있습니다. 
 ---
 = Google Cloud에서 Cloud Volumes ONTAP 실행
@@ -25,9 +25,9 @@ summary: Cloud Volumes ONTAP를 단일 시스템 구성으로 실행하거나 Go
 [[licensing]]
 * 실행 중인 커넥터입니다.
 +
-** 가 있어야 합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["작업 영역과 연결된 커넥터입니다"^].
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["항상 Connector를 실행 상태로 둘 준비가 되어 있어야 합니다"^].
-** Connector와 연결된 서비스 계정입니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["필요한 권한이 있어야 합니다"^]
+** 가 있어야 합니다 https://["작업 영역과 연결된 커넥터입니다"^].
+** https://["항상 Connector를 실행 상태로 둘 준비가 되어 있어야 합니다"^].
+** Connector와 연결된 서비스 계정입니다 https://["필요한 권한이 있어야 합니다"^]
 
 
 * 사용하려는 구성에 대한 이해.
@@ -38,7 +38,7 @@ summary: Cloud Volumes ONTAP를 단일 시스템 구성으로 실행하거나 Go
 +
 link:task-set-up-licensing-google.html["라이센스 설정 방법에 대해 알아보십시오"].
 
-* Google Cloud API는 입니다 https://cloud.google.com/apis/docs/getting-started#enabling_apis["프로젝트에서 활성화됩니다"^]:
+* Google Cloud API는 입니다 https://["프로젝트에서 활성화됩니다"^]:
 +
 ** Cloud Deployment Manager V2 API
 ** 클라우드 로깅 API
@@ -59,7 +59,7 @@ BlueXP에서 작업 환경을 만들어 Google Cloud에서 Cloud Volumes ONTAP�
 . 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
 . [[subscribe]] Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 화면의 지시를 따릅니다.
 . * 위치 선택 *: * Google Cloud * 및 * Cloud Volumes ONTAP * 를 선택합니다.
-. 메시지가 표시되면 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["커넥터를 작성합니다"^].
+. 메시지가 표시되면 https://["커넥터를 작성합니다"^].
 . * 세부 정보 및 자격 증명 *: 프로젝트를 선택하고 클러스터 이름을 지정한 다음 서비스 계정을 선택하고 선택적으로 레이블을 추가한 다음 자격 증명을 지정합니다.
 +
 다음 표에서는 지침이 필요한 필드를 설명합니다.
@@ -73,10 +73,10 @@ BlueXP에서 작업 환경을 만들어 Google Cloud에서 Cloud Volumes ONTAP�
 | 작업 환경 이름 | BlueXP는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 Google Cloud VM 인스턴스 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다. 
 
 
-| 서비스 계정 이름입니다 | 를 사용할 계획인 경우 link:concept-data-tiering.html["데이터 계층화"] 또는 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["클라우드 백업"^] Cloud Volumes ONTAP를 사용하는 경우 * 서비스 계정 * 을 활성화하고 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택해야 합니다. link:task-creating-gcp-service-account.html["서비스 계정을 만드는 방법에 대해 알아봅니다"]. 
+| 서비스 계정 이름입니다 | 를 사용할 계획인 경우 link:concept-data-tiering.html["데이터 계층화"] 또는 https://["백업 및 복구"^] Cloud Volumes ONTAP를 사용하는 경우 * 서비스 계정 * 을 활성화하고 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택해야 합니다. link:task-creating-gcp-service-account.html["서비스 계정을 만드는 방법에 대해 알아봅니다"]. 
 
 
-| 레이블 추가 | 레이블은 Google Cloud 리소스의 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 Google Cloud 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 설명서: 라벨 리소스"^]. 
+| 레이블 추가 | 레이블은 Google Cloud 리소스의 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 Google Cloud 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오 https://["Google Cloud 설명서: 라벨 리소스"^]. 
 
 
 | 사용자 이름 및 암호 | Cloud Volumes ONTAP 클러스터 관리자 계정의 자격 증명입니다. 이러한 자격 증명을 사용하여 System Manager 또는 CLI를 통해 Cloud Volumes ONTAP에 연결할 수 있습니다. default_admin_user 이름을 유지하거나 사용자 지정 사용자 이름으로 변경합니다. 
@@ -96,14 +96,14 @@ NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.ne
 
 |===
 +
-다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다. 또는 에 있는 구독 단계를 따릅니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Google Cloud 자격 증명과 마켓플레이스 가입 연결"^] 섹션을 참조하십시오.
+다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다. 또는 에 있는 구독 단계를 따릅니다 https://["Google Cloud 자격 증명과 마켓플레이스 가입 연결"^] 섹션을 참조하십시오.
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
-. * 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. Cloud Backup을 선택하거나 Tiering을 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.
+. * 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. BlueXP 백업 및 복구를 선택하거나 BlueXP 계층화를 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.
 +
 
-TIP: WORM 및 데이터 계층화를 활용하려면 클라우드 백업을 비활성화하고 9.8 버전 이상의 Cloud Volumes ONTAP 작업 환경을 구축해야 합니다.
+TIP: WORM 및 데이터 계층화를 사용하려면 BlueXP 백업 및 복구를 비활성화하고 버전 9.8 이상의 Cloud Volumes ONTAP 작업 환경을 구축해야 합니다.
 
 . * 위치 및 연결 *: 위치를 선택하고 방화벽 정책을 선택한 다음 데이터 계층화를 위해 Google Cloud 스토리지에 대한 네트워크 연결을 확인합니다.
 +
@@ -115,7 +115,7 @@ TIP: WORM 및 데이터 계층화를 활용하려면 클라우드 백업을 비�
 | 필드에 입력합니다 | 설명 
 
 
-| 연결 검증 | 콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷을 프라이빗 Google 액세스용으로 구성해야 합니다. 자세한 지침은 을 참조하십시오 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 설명서: 개인 Google Access 구성"^]. 
+| 연결 검증 | 콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷을 프라이빗 Google 액세스용으로 구성해야 합니다. 자세한 지침은 을 참조하십시오 https://["Google Cloud 설명서: 개인 Google Access 구성"^]. 
 
 
 | 방화벽 정책을 생성했습니다  a| 
@@ -176,7 +176,7 @@ link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오
 
 +
 ** BlueXP는 Cloud Volumes ONTAP 인스턴스에 서비스 계정을 설정합니다. 이 서비스 계정은 Google Cloud Storage 버킷에 대한 데이터 계층화 권한을 제공합니다. Connector 서비스 계정을 계층화 서비스 계정의 사용자로 추가해야 합니다. 그렇지 않으면 BlueXP에서 선택할 수 없습니다
-** Google Cloud 계정 추가에 대한 도움말은 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["9.6의 데이터 계층화를 위한 Google Cloud 계정 설정 및 추가"^].
+** Google Cloud 계정 추가에 대한 도움말은 을 참조하십시오 https://["9.6의 데이터 계층화를 위한 Google Cloud 계정 설정 및 추가"^].
 ** 볼륨을 생성하거나 편집할 때 특정 볼륨 계층화 정책을 선택할 수 있습니다.
 ** 데이터 계층화를 사용하지 않는 경우, 후속 애그리게이트에서 사용하도록 설정할 수 있지만 시스템을 끄고 Google Cloud 콘솔에서 서비스 계정을 추가해야 합니다.
 +
@@ -239,13 +239,13 @@ image:screenshot_cot_vol.gif["스크린샷: Cloud Volumes ONTAP 인스턴스에 
 | CIFS 서버 NetBIOS 이름입니다 | AD 도메인에서 고유한 CIFS 서버 이름입니다. 
 
 
-| 조직 구성 단위 | CIFS 서버와 연결할 AD 도메인 내의 조직 단위입니다. 기본값은 CN=Computers입니다. Google 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=Computers, OU=Cloud * 를 입력합니다.https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google 클라우드 문서: Google Managed Microsoft AD의 조직 단위"^] 
+| 조직 구성 단위 | CIFS 서버와 연결할 AD 도메인 내의 조직 단위입니다. 기본값은 CN=Computers입니다. Google 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=Computers, OU=Cloud * 를 입력합니다.https://["Google 클라우드 문서: Google Managed Microsoft AD의 조직 단위"^] 
 
 
 | DNS 도메인 | SVM(Cloud Volumes ONTAP 스토리지 가상 머신)용 DNS 도메인 대부분의 경우 도메인은 AD 도메인과 동일합니다. 
 
 
-| NTP 서버 | Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP 자동화 문서"^] 를 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다. 
+| NTP 서버 | Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://["BlueXP 자동화 문서"^] 를 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다. 
 |===
 . * Usage Profile, Disk Type, Tiering Policy *: 스토리지 효율성 기능을 사용하도록 설정하고 필요한 경우 볼륨 계층화 정책을 변경할 것인지 선택합니다.
 +
@@ -266,7 +266,7 @@ BlueXP는 Cloud Volumes ONTAP 시스템을 구축합니다. 타임라인에서 �
 
 Cloud Volumes ONTAP 시스템을 배포하는 데 문제가 있으면 오류 메시지를 검토합니다. 작업 환경을 선택하고 * 환경 다시 작성 * 을 클릭할 수도 있습니다.
 
-자세한 내용은 를 참조하십시오 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp Cloud Volumes ONTAP 지원"^].
+자세한 내용은 를 참조하십시오 https://["NetApp Cloud Volumes ONTAP 지원"^].
 
 .작업을 마친 후
 * CIFS 공유를 프로비저닝한 경우 파일 및 폴더에 대한 사용자 또는 그룹 권한을 제공하고 해당 사용자가 공유를 액세스하고 파일을 생성할 수 있는지 확인합니다.
@@ -299,10 +299,10 @@ BlueXP에서 작업 환경을 만들어 Google Cloud에서 Cloud Volumes ONTAP�
 | 작업 환경 이름 | BlueXP는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 Google Cloud VM 인스턴스 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다. 
 
 
-| 서비스 계정 이름입니다 | 를 사용할 계획인 경우 link:concept-data-tiering.html["계층화"] 또는 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["클라우드 백업"^] 서비스를 사용하려면 * 서비스 계정 * 스위치를 활성화한 다음 미리 정의된 스토리지 관리자 역할이 있는 서비스 계정을 선택해야 합니다. 
+| 서비스 계정 이름입니다 | 를 사용할 계획인 경우 link:concept-data-tiering.html["데이터 계층화"] 또는 https://["백업 및 복구"^] 서비스를 사용하려면 * 서비스 계정 * 스위치를 활성화한 다음 미리 정의된 스토리지 관리자 역할이 있는 서비스 계정을 선택해야 합니다. 
 
 
-| 레이블 추가 | 레이블은 Google Cloud 리소스의 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 Google Cloud 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 설명서: 라벨 리소스"^]. 
+| 레이블 추가 | 레이블은 Google Cloud 리소스의 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 Google Cloud 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오 https://["Google Cloud 설명서: 라벨 리소스"^]. 
 
 
 | 사용자 이름 및 암호 | Cloud Volumes ONTAP 클러스터 관리자 계정의 자격 증명입니다. 이러한 자격 증명을 사용하여 System Manager 또는 CLI를 통해 Cloud Volumes ONTAP에 연결할 수 있습니다. default_admin_user 이름을 유지하거나 사용자 지정 사용자 이름으로 변경합니다. 
@@ -322,14 +322,14 @@ NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.ne
 
 |===
 +
-다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다. 또는 에 있는 구독 단계를 따릅니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Google Cloud 자격 증명과 마켓플레이스 가입 연결"^] 섹션을 참조하십시오.
+다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다. 또는 에 있는 구독 단계를 따릅니다 https://["Google Cloud 자격 증명과 마켓플레이스 가입 연결"^] 섹션을 참조하십시오.
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
-. * 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. Cloud Backup을 선택하거나 Tiering을 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.
+. * 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. BlueXP 백업 및 복구를 선택하거나 BlueXP 계층화를 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.
 +
 
-TIP: WORM 및 데이터 계층화를 활용하려면 클라우드 백업을 비활성화하고 9.8 버전 이상의 Cloud Volumes ONTAP 작업 환경을 구축해야 합니다.
+TIP: WORM 및 데이터 계층화를 사용하려면 BlueXP 백업 및 복구를 비활성화하고 버전 9.8 이상의 Cloud Volumes ONTAP 작업 환경을 구축해야 합니다.
 
 . * HA 배포 모델 *: HA 구성에 대해 여러 영역(권장) 또는 단일 영역을 선택합니다. 그런 다음 지역 및 구역을 선택합니다.
 +
@@ -392,7 +392,7 @@ link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시
 
 +
 
-NOTE: _Flash Cache_, 고속 쓰기 속도 및 8,896바이트의 더 높은 최대 전송 단위(MTU)는 * 고속 * 쓰기 속도 옵션을 통해 사용할 수 있으며, n2-표준-16, n2-표준-32, n2-표준-48 및 n2-표준-64 인스턴스 유형이 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. _Flash Cache_, 높은 쓰기 속도 및 8,896의 MTU는 기능마다 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1, VPC-2 및 VPC-3에 대한 규칙"].
+NOTE: _Flash Cache_, 고속 쓰기 속도 및 8,896바이트의 더 높은 최대 전송 단위(MTU)는 * 고속 * 쓰기 속도 옵션을 통해 사용할 수 있으며, n2-표준-16, n2-표준-32, n2-표준-48 및 n2-표준-64 인스턴스 유형이 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. _Flash Cache_, 높은 쓰기 속도 및 8,896의 MTU는 기능마다 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오 https://["VPC-1, VPC-2 및 VPC-3에 대한 규칙"].
 
 .. 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
 +
@@ -472,13 +472,13 @@ image:screenshot_cot_vol.gif["스크린샷: Cloud Volumes ONTAP 인스턴스에 
 | CIFS 서버 NetBIOS 이름입니다 | AD 도메인에서 고유한 CIFS 서버 이름입니다. 
 
 
-| 조직 구성 단위 | CIFS 서버와 연결할 AD 도메인 내의 조직 단위입니다. 기본값은 CN=Computers입니다. Google 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=Computers, OU=Cloud * 를 입력합니다.https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google 클라우드 문서: Google Managed Microsoft AD의 조직 단위"^] 
+| 조직 구성 단위 | CIFS 서버와 연결할 AD 도메인 내의 조직 단위입니다. 기본값은 CN=Computers입니다. Google 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=Computers, OU=Cloud * 를 입력합니다.https://["Google 클라우드 문서: Google Managed Microsoft AD의 조직 단위"^] 
 
 
 | DNS 도메인 | SVM(Cloud Volumes ONTAP 스토리지 가상 머신)용 DNS 도메인 대부분의 경우 도메인은 AD 도메인과 동일합니다. 
 
 
-| NTP 서버 | Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP 자동화 문서"^] 를 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다. 
+| NTP 서버 | Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://["BlueXP 자동화 문서"^] 를 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다. 
 |===
 . * Usage Profile, Disk Type, Tiering Policy *: 스토리지 효율성 기능을 사용하도록 설정하고 필요한 경우 볼륨 계층화 정책을 변경할 것인지 선택합니다.
 +
@@ -499,7 +499,7 @@ BlueXP는 Cloud Volumes ONTAP 시스템을 구축합니다. 타임라인에서 �
 
 Cloud Volumes ONTAP 시스템을 배포하는 데 문제가 있으면 오류 메시지를 검토합니다. 작업 환경을 선택하고 * 환경 다시 작성 * 을 클릭할 수도 있습니다.
 
-자세한 내용은 를 참조하십시오 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["NetApp Cloud Volumes ONTAP 지원"^].
+자세한 내용은 를 참조하십시오 https://["NetApp Cloud Volumes ONTAP 지원"^].
 
 .작업을 마친 후
 * CIFS 공유를 프로비저닝한 경우 파일 및 폴더에 대한 사용자 또는 그룹 권한을 제공하고 해당 사용자가 공유를 액세스하고 파일을 생성할 수 있는지 확인합니다.

@@ -20,8 +20,8 @@ FlexCache 볼륨을 사용하면 데이터 액세스 속도를 높이거나 자�
 
 현재 BlueXP는 FlexCache 볼륨을 관리하지 않지만 ONTAP CLI 또는 ONTAP 시스템 관리자를 사용하여 FlexCache 볼륨을 생성 및 관리할 수 있습니다.
 
-* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-fc-mgmt/home.html["빠른 데이터 액세스를 위한 FlexCache 볼륨 전원 가이드"^]
-* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-07F4C213-076D-4FE8-A8E3-410F49498D49.html["System Manager에서 FlexCache 볼륨 생성"^]
+* http://["빠른 데이터 액세스를 위한 FlexCache 볼륨 전원 가이드"^]
+* http://["System Manager에서 FlexCache 볼륨 생성"^]
 
 
 BlueXP는 3.7.2 릴리스부터 모든 새로운 Cloud Volumes ONTAP 시스템에 대한 FlexCache 라이센스를 생성합니다. 이 라이센스에는 500GiB 사용 제한이 포함됩니다.

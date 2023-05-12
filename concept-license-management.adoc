@@ -33,7 +33,7 @@ Cloud Volumes ONTAP BYOL 시스템에 여러 개의 라이센스를 구매하여
 
 단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다.
 
-디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 link:concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"]. 디스크 제한에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Cloud Volumes ONTAP 릴리즈 노트의 저장 용량 제한"^].
+디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 link:concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"]. 디스크 제한에 대한 자세한 내용은 를 참조하십시오 https://["Cloud Volumes ONTAP 릴리즈 노트의 저장 용량 제한"^].
 
 
 
@@ -41,7 +41,7 @@ Cloud Volumes ONTAP BYOL 시스템에 여러 개의 라이센스를 구매하여
 
 노드 기반 BYOL 시스템을 생성하는 경우 BlueXP는 라이센스 및 NetApp Support 사이트 계정의 일련 번호를 묻습니다. BlueXP에서는 계정을 사용하여 NetApp에서 라이센스 파일을 다운로드하고 Cloud Volumes ONTAP 시스템에 설치합니다.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NetApp Support 사이트 계정을 BlueXP에 추가하는 방법에 대해 알아봅니다"^].
+https://["NetApp Support 사이트 계정을 BlueXP에 추가하는 방법에 대해 알아봅니다"^].
 
 보안 인터넷 연결을 통해 BlueXP에서 라이센스 파일에 액세스할 수 없는 경우 link:task-manage-node-licenses.html["파일을 직접 얻은 다음 파일을 BlueXP에 수동으로 업로드합니다"].
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-create-volumes.html 
-keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates 
+keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates, cloud backup 
 summary: 초기 Cloud Volumes ONTAP 시스템을 시작한 후 더 많은 스토리지가 필요한 경우 BlueXP에서 NFS, CIFS 또는 iSCSI용 새 FlexVol 볼륨을 생성할 수 있습니다. 
 ---
 = FlexVol 볼륨을 생성합니다
@@ -87,7 +87,7 @@ Cloud Volumes ONTAP 시스템의 데이터 애그리게이트를 잘 알고 있�
 | 볼륨 크기 | 입력할 수 있는 최대 크기는 씬 프로비저닝의 사용 여부에 따라 크게 달라집니다. 이를 통해 현재 사용 가능한 물리적 스토리지보다 더 큰 볼륨을 생성할 수 있습니다. 
 
 
-| 태그 | 볼륨에 추가하는 태그는 과 연결됩니다 https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["응용 프로그램 템플릿 서비스"^]을 사용하면 리소스 관리를 구성하고 단순화할 수 있습니다. 
+| 태그 | 볼륨에 추가하는 태그는 과 연결됩니다 https://["응용 프로그램 템플릿 서비스"^]을 사용하면 리소스 관리를 구성하고 단순화할 수 있습니다. 
 
 
 | 스토리지 VM(SVM) | 스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, 클라이언트에 스토리지 및 데이터 서비스를 제공합니다. SVM 또는 가상 서버로서 이를 알 수 있습니다. Cloud Volumes ONTAP는 기본적으로 하나의 스토리지 VM으로 구성되지만 일부 구성에서는 추가 스토리지 VM을 지원합니다. 새 볼륨에 대해 스토리지 VM을 지정할 수 있습니다. 
@@ -145,20 +145,20 @@ endif::aws[]
 
 ifdef::azure[]
 
-*** Azure AD 도메인 서비스를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=ADDC 컴퓨터 * 또는 * OU=ADDC 사용자 * 를 입력합니다.https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Azure 설명서: Azure AD 도메인 서비스 관리 도메인에 OU(조직 구성 단위)를 만듭니다"^]
+*** Azure AD 도메인 서비스를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=ADDC 컴퓨터 * 또는 * OU=ADDC 사용자 * 를 입력합니다.https://["Azure 설명서: Azure AD 도메인 서비스 관리 도메인에 OU(조직 구성 단위)를 만듭니다"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-*** Google 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=Computers, OU=Cloud * 를 입력합니다.https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google 클라우드 문서: Google Managed Microsoft AD의 조직 단위"^]
+*** Google 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=Computers, OU=Cloud * 를 입력합니다.https://["Google 클라우드 문서: Google Managed Microsoft AD의 조직 단위"^]
 
 
 endif::gcp[]
 
 DNS 도메인:: SVM(Cloud Volumes ONTAP 스토리지 가상 머신)용 DNS 도메인 대부분의 경우 도메인은 AD 도메인과 동일합니다.
-NTP 서버:: Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP 자동화 문서"^] 를 참조하십시오.
+NTP 서버:: Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://["BlueXP 자동화 문서"^] 를 참조하십시오.
 +
 --
 CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.
@@ -252,7 +252,7 @@ image:screenshot_define_cvo_vol_from_template.png["볼륨을 생성하기 위해
 . context_에서 작업 환경은 시작한 작업 환경의 이름으로 채워집니다. 볼륨을 생성할 * 스토리지 VM * 을 선택합니다.
 . 템플릿에서 하드 코딩되지 않은 모든 매개변수에 대한 값을 추가합니다. 을 참조하십시오 <<create a volume,볼륨을 생성합니다>> Cloud Volumes ONTAP 볼륨 구축을 완료하는 데 필요한 모든 매개 변수에 대한 자세한 내용은 를 참조하십시오.
 . Apply * (적용 *)를 클릭하여 구성된 매개변수를 선택한 작업에 저장합니다.
-. 정의해야 하는 다른 작업(예: 클라우드 백업 구성)이 없으면 * 템플릿 저장 * 을 클릭합니다.
+. 정의해야 할 다른 작업이 없는 경우(예: BlueXP 백업 및 복구 구성) * 템플릿 저장 * 을 클릭합니다.
 +
 다른 작업이 있는 경우 왼쪽 창에서 작업을 클릭하여 완료해야 하는 매개 변수를 표시합니다.
 
@@ -270,7 +270,7 @@ Cloud Volumes ONTAP에서는 진행 상황을 볼 수 있도록 볼륨을 프로
 
 image:screenshot_template_creating_resource_cvo.png["템플릿에서 새 볼륨 생성 진행률을 보여 주는 스크린샷"]
 
-또한 볼륨에 Cloud Backup을 설정하는 등 템플릿에 보조 작업이 구현되는 경우 해당 작업도 수행됩니다.
+또한 볼륨에 대해 BlueXP 백업 및 복구를 활성화하는 등 템플릿에 보조 작업이 구현된 경우 해당 작업도 수행됩니다.
 
 
 

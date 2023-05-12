@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cvo-aiq-digital-advisor.html 
-keywords: concepts, active iq digital advisor, cloud volumes ontap 
+keywords: concepts, active iq digital advisor, cloud volumes ontap, cloud manager, BlueXP 
 summary: Active IQ 디지털 어드바이저는 BlueXP UI에 통합되어 단일 창에서 ONTAP 클러스터의 운영, 보안 및 성능을 최적화할 수 있습니다. 
 ---
 = Active IQ 디지털 자문업체 를 사용하여 Cloud Volumes ONTAP 시스템을 최적화하십시오
@@ -14,7 +14,7 @@ summary: Active IQ 디지털 어드바이저는 BlueXP UI에 통합되어 단일
 
 
 [role="lead"]
-https://www.netapp.com/services/support/active-iq/["Active IQ 디지털 자문업체"] BlueXP(이전의 Cloud Manager) UI에 통합되어 단일 창에서 Cloud Volumes ONTAP 시스템의 운영, 보안 및 성능을 최적화할 수 있습니다.
+https://["Active IQ 디지털 자문업체"] BlueXP UI에 통합되어 단일 창에서 Cloud Volumes ONTAP 시스템의 운영, 보안 및 성능을 최적화할 수 있습니다.
 
 
 
@@ -48,18 +48,18 @@ Active IQ 디지털 어드바이저 사용자 인터페이스는 BlueXP에 완�
 
 BlueXP에서 * Active IQ * 서비스를 클릭합니다.
 
-* BlueXP에 기존 NSS 계정을 이미 등록한 경우 Active IQ 디지털 어드바이저 UI는 의 독립 실행에서와 같이 나타납니다 https://activeiq.netapp.com/[].
+* BlueXP에 기존 NSS 계정을 이미 등록한 경우 Active IQ 디지털 어드바이저 UI는 의 독립 실행에서와 같이 나타납니다 https://[].
 +
 image:screenshot_aiq_digital_advisor.png["BlueXP의 Active IQ 디지털 자문업체 사용자 인터페이스 스크린샷"]
 
-* BlueXP에 NSS 계정을 등록하지 않은 경우 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NSS 계정을 지금 등록하십시오"^] 그런 다음 Active IQ 디지털 자문 UI가 나타납니다.
+* BlueXP에 NSS 계정을 등록하지 않은 경우 https://["NSS 계정을 지금 등록하십시오"^] 그런 다음 Active IQ 디지털 자문 UI가 나타납니다.
 
 
 
-NOTE: 2021년 12월 3일 현재 NetApp은 NSS 계정에 대한 자격 증명을 등록하는 새로운 방법론으로 전환했습니다. https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["자세한 내용은 이 FAQ를 참조하십시오"]. NSS 계정이 이전 자격 증명 세트를 사용하는 경우 계정을 새 자격 증명으로 업데이트해야 합니다.
+NOTE: 2021년 12월 3일 현재 NetApp은 NSS 계정에 대한 자격 증명을 등록하는 새로운 방법론으로 전환했습니다. https://["자세한 내용은 이 FAQ를 참조하십시오"]. NSS 계정이 이전 자격 증명 세트를 사용하는 경우 계정을 새 자격 증명으로 업데이트해야 합니다.
 
 
 
 == 다음 단계
 
-를 참조하십시오 https://docs.netapp.com/us-en/active-iq/index.html["Active IQ 디지털 자문 문서"] 를 참조하십시오.
+를 참조하십시오 https://["Active IQ 디지털 자문 문서"] 를 참조하십시오.

@@ -24,9 +24,9 @@ BlueXP를 사용하면 AWS에서 Cloud Volumes ONTAP를 실행할 때 발생하�
 +
 .. BlueXP에 사용 권한을 제공하는 IAM 정책에 필요한 권한이 포함되어 있는지 확인합니다.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["필요한 권한을 봅니다"^]
+https://["필요한 권한을 봅니다"^]
 
-.. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["WorkingEnvironmentId* 태그를 활성화합니다"^].
+.. https://["WorkingEnvironmentId* 태그를 활성화합니다"^].
 +
 BlueXP는 AWS 비용을 추적하기 위해 Cloud Volumes ONTAP 인스턴스에 비용 할당 태그를 할당합니다. 첫 번째 작업 환경을 만든 후 * WorkingEnvironmentId * 태그를 활성화합니다. 사용자 정의 태그는 청구 및 비용 관리 콘솔에서 활성화할 때까지 AWS 청구 보고서에 나타나지 않습니다.
 

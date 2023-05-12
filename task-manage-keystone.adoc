@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-manage-keystone.html 
-keywords: license, licensing, install, keystone, requst capacity, link subscription, add keystone subscription, keystone subscription 
-summary: 디지털 지갑 페이지에서는 Cloud Volumes ONTAP에 대한 라이선스를 한 곳에서 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다. 
+keywords: license, licensing, install, keystone, request capacity, link subscription, add keystone subscription, keystone subscription, digital wallet, keystone flex 
+summary: BlueXP 디지털 전자지갑을 사용하면 한 곳에서 Cloud Volumes ONTAP의 라이센스를 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다. 
 ---
-= Keystone Flex 구독 관리
+= Keystone 구독 관리
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,19 +14,19 @@ summary: 디지털 지갑 페이지에서는 Cloud Volumes ONTAP에 대한 라�
 
 
 [role="lead"]
-Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 활성화하여 디지털 지갑에서 Keystone Flex 구독을 관리하십시오. 또한 커밋된 용량에 대한 변경 내용을 요청하고 구독 연결을 해제할 수 있습니다.
+Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 활성화하여 BlueXP 디지털 지갑에서 Keystone 가입을 관리하십시오. 또한 커밋된 용량에 대한 변경 내용을 요청하고 구독 연결을 해제할 수 있습니다.
 
-Keystone Flex Subscription_ 은 NetApp에서 제공하는 성장에 따른 지불 스토리지 서비스입니다.
+Keystone 가입 _ 은 NetApp이 제공하는 종량제 스토리지 서비스입니다.
 
-디지털 지갑 _ 을(를) 사용하면 단일 위치에서 Cloud Volumes ONTAP에 대한 라이선스를 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.
+BlueXP 디지털 지갑 _ 을(를) 사용하면 한 곳에서 Cloud Volumes ONTAP에 대한 라이센스를 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP 라이센스에 대해 자세히 알아보십시오"].
+https://["Cloud Volumes ONTAP 라이센스에 대해 자세히 알아보십시오"].
 
 
 
 == 계정을 인증합니다
 
-BlueXP에서 Keystone Flex 서브스크립션을 사용하고 관리하려면 먼저 NetApp에 문의하여 Keystone Flex 구독으로 BlueXP 사용자 계정을 인증해야 합니다.
+BlueXP에서 Keystone 등록을 사용하고 관리하려면 NetApp에 문의하여 Keystone 구독으로 BlueXP 사용자 계정을 인증해야 합니다.
 
 .단계
 . BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
@@ -35,9 +35,9 @@ BlueXP에서 Keystone Flex 서브스크립션을 사용하고 관리하려면 �
 +
 NetApp 담당자가 사용자 계정에 구독 액세스를 승인하여 요청을 처리합니다.
 
-. 가입을 보려면 * Keystone Flex 가입 * 으로 되돌아오십시오.
+. 가입을 보려면 * Keystone 가입 * 으로 돌아갑니다.
 +
-image:screenshot-keystone-overview.png["Keystone Flex 가입 목록을 보여주는 스크린샷"]
+image:screenshot-keystone-overview.png["Keystone 가입 목록을 보여주는 스크린샷"]
 
 
 
@@ -48,7 +48,7 @@ Cloud Volumes ONTAP에 사용할 구독을 연결합니다.
 
 == 구독 링크
 
-NetApp에서 사용자 계정을 승인한 후 Cloud Volumes ONTAP에 사용할 수 있도록 Keystone 유연한 구독을 연결해야 합니다. 이 작업을 통해 사용자는 새 Cloud Volumes ONTAP 시스템의 충전 방법으로 구독을 선택할 수 있습니다.
+NetApp에서 사용자 계정을 승인한 후 Cloud Volumes ONTAP에 사용할 수 있도록 Keystone 구독을 연결해야 합니다. 이 작업을 통해 사용자는 새 Cloud Volumes ONTAP 시스템의 충전 방법으로 구독을 선택할 수 있습니다.
 
 .단계
 . BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
@@ -86,7 +86,7 @@ image:screenshot-keystone-request.png["구독에 대해 커밋된 용량 변경�
 
 == 구독 연결을 해제합니다
 
-새 Cloud Volumes ONTAP 시스템에 Keystone Flex 서브스크립션을 더 이상 사용하지 않으려면 가입을 연결 해제할 수 있습니다. 기존 Cloud Volumes ONTAP 구독에 연결되지 않은 구독만 연결 해제할 수 있습니다.
+새 Cloud Volumes ONTAP 시스템에 Keystone 가입을 더 이상 사용하지 않으려면 가입을 연결 해제할 수 있습니다. 기존 Cloud Volumes ONTAP 구독에 연결되지 않은 구독만 연결 해제할 수 있습니다.
 
 .단계
 . BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
