@@ -52,9 +52,6 @@ BlueXP는 다음과 같은 세 가지 방법으로 Cloud Volumes ONTAP를 업그
 | 9.12.1 | 9.13.0 
 
 
-| 9.12.1 | 9.13.0 
-
-
 | 9.12.0 | 9.12.1 
 
 
@@ -303,15 +300,14 @@ NOTE: 미리 정의된 Cloud Volumes ONTAP 보안 그룹은 기본적으로 아�
 ** '/opt/application/netapp/cloudmanager/ontap/images/'
 
 
-. BlueXP의 작업 환경에서 메뉴 아이콘을 클릭한 다음 * 고급 > Cloud Volumes ONTAP 업데이트 * 를 클릭합니다.
-. 소프트웨어 업데이트 페이지에서 URL을 입력한 다음 * 이미지 변경 * 을 클릭합니다.
+. BlueXP의 작업 환경에서 *... (타원 아이콘) * 을 클릭한 다음 * Cloud Volumes ONTAP 업데이트 * 를 클릭합니다.
+. Cloud Volumes ONTAP 버전 업데이트 페이지에서 URL을 입력한 다음 * 이미지 변경 * 을 클릭합니다.
 +
 위에 표시된 경로의 커넥터에 소프트웨어 이미지를 복사한 경우 다음 URL을 입력합니다.
 
 +
 http://<Connector-private-IP-address>/ontap/images/<image-file-name> 으로 문의하십시오
 
-. 계속하려면 * Proceed * (진행 *)를 클릭합니다.
 
 
 .결과

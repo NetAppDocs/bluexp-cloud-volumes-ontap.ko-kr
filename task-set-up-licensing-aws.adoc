@@ -152,7 +152,7 @@ link:task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP를 시작하는 
 
 == Keystone 구독
 
-Keystone 가입은 종량제 구독 기반 서비스입니다. link:concept-licensing.html#keystone-subscription["NetApp Keystone 구독에 대해 자세히 알아보십시오"].
+Keystone 가입은 종량제 구독 기반 서비스입니다. link:concept-licensing.html#keystone-subscription["NetApp Keystone 구독에 대해 자세히 알아보십시오"^].
 
 .단계
 . 아직 구독이 없는 경우 https://["NetApp에 문의하십시오"^]

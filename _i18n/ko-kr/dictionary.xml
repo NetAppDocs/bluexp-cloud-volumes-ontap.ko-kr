@@ -517,12 +517,6 @@
   <block id="51ade599e97dd58d56c5f3c242449e8f" category="inline-image-macro">볼륨을 복제할 스토리지 VM을 선택할 수 있는 기능을 보여 주는 스크린샷</block>
   <block id="f6fdd9a8422426229035e242b935272e" category="paragraph"><block ref="f6fdd9a8422426229035e242b935272e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0b6956f370dad63125aa39057f9fb97e" category="section-title">기본 스토리지 VM의 이름을 수정합니다</block>
-  <block id="7653e0abc427b73765825d38050763ab" category="list-text">작업 환경에서 메뉴 아이콘을 클릭한 다음 * 정보 * 를 클릭합니다.</block>
-  <block id="eae507dc240e4e00154f4e496e2489eb" category="list-text">스토리지 VM 이름 오른쪽에 있는 편집 아이콘을 클릭합니다.</block>
-  <block id="41bae8072f7709a6dea902697d27502c" category="inline-image-macro">스크린샷: SVM 이름 필드를 표시하고 SVM 이름을 수정하려면 클릭해야 하는 편집 아이콘을 표시합니다.</block>
-  <block id="702cd8b5778c05ac8a668b21c59c3e4b" category="paragraph"><block ref="702cd8b5778c05ac8a668b21c59c3e4b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5c8f140d140067c2425ea00d27f023f7" category="list-text">Modify SVM Name(SVM 이름 수정) 대화 상자에서 이름을 변경한 다음 * Save * (저장 *)를 클릭합니다.</block>
-  <block id="eb47971e346ef76aab3c839fd1b8c204" category="section-title">재해 복구를 위한 스토리지 VM 관리</block>
   <block id="412af2a2404a4e920b18be59197204b0" category="inline-link">SVM 재해 복구 준비 Express 가이드</block>
   <block id="c15bb50c43eaf0ceb1bc0ce3d7503ebd" category="list-text"><block ref="c15bb50c43eaf0ceb1bc0ce3d7503ebd" category="inline-link-rx"></block></block>
   <block id="a06e9c241b02eb678d35f19c0eec257f" category="inline-link">SVM 재해 복구 익스프레스 가이드 를 참조하십시오</block>
@@ -1532,10 +1526,8 @@
   <block id="a0b1807d647c5ece7bc49bd539f7dcc6" category="inline-link">NetApp Support 사이트</block>
   <block id="3e3318ff6382b95c2c0c29be3a83b97d" category="list-text">파일을 제공할 Connector 또는 HTTP 서버의 디렉토리에 소프트웨어 이미지를 복사합니다.</block>
   <block id="1b19ae48e0693419e1e905991459c290" category="paragraph">'/opt/application/netapp/cloudmanager/docker/data/ONTAP/images/'</block>
-  <block id="593130e23abb8f92a3863f44a5070ba6" category="list-text">소프트웨어 업데이트 페이지에서 URL을 입력한 다음 * 이미지 변경 * 을 클릭합니다.</block>
   <block id="36b9b0b795315e6103637ec1e81df1ae" category="paragraph">위에 표시된 경로의 커넥터에 소프트웨어 이미지를 복사한 경우 다음 URL을 입력합니다.</block>
   <block id="3dbcdaf55d05d32136f76c127fdacce1" category="paragraph">http://&lt;Connector-private-IP-address&gt;/ontap/images/&lt;image-file-name&gt; 으로 문의하십시오</block>
-  <block id="a6f0c7a0901d4da8e8ff8a6db3216b38" category="list-text">계속하려면 * Proceed * (진행 *)를 클릭합니다.</block>
   <block id="fb6890fd99d108eeb3627b961bdfb529" category="section-title">Google Cloud NAT 게이트웨이를 사용할 때 다운로드 오류를 수정합니다</block>
   <block id="123919fc420bd58c9e773df9431e7089" category="list-text">다음과 같은 JSON을 본문으로 /occm/config에 PUT 요청을 제출합니다.</block>
   <block id="cd8e208bdf0e89ff2e888104b2d9c769" category="paragraph">maxDownloadSessions_ 값은 1이거나 1보다 큰 정수일 수 있습니다. 값이 1이면 다운로드한 이미지는 분할되지 않습니다.</block>
@@ -3653,8 +3645,6 @@
   <block id="d9bc9104669da346ed2fadb2cb686999" category="paragraph">BlueXP에서 Cloud Volumes ONTAP 인스턴스를 시작합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.</block>
   <block id="93f5e6c9fa12acc64acdb6b378a09bdd" category="doc">BlueXP에서 스토리지 VM 관리</block>
   <block id="50660b7473b276b2ca6ffca877133e87" category="paragraph">BlueXP는 System Manager 또는 CLI에서 생성한 추가 스토리지 VM을 지원합니다.</block>
-  <block id="3a7da23df37c318afca891bae50b8b40" category="paragraph">BlueXP는 Cloud Volumes ONTAP용으로 생성한 단일 스토리지 VM의 이름을 자동으로 지정합니다. 엄격한 명명 규칙이 있는 경우 스토리지 VM 이름을 수정할 수 있습니다. 예를 들어, 이름이 ONTAP 클러스터에 대한 스토리지 VM의 이름을 지정하는 방법과 일치할 수 있습니다.</block>
-  <block id="6ad06cca9a22ffa541a72c1a64acb283" category="paragraph">Cloud Volumes ONTAP용 추가 스토리지 VM을 생성한 경우 BlueXP에서 스토리지 VM 이름을 바꿀 수 없습니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP에서 직접 변경해야 합니다.</block>
   <block id="891665afb192ec7434051075c05e3e2f" category="list-text">BlueXP에서 클러스터 관리 인터페이스의 IP 주소를 확인합니다.</block>
   <block id="08882f53f80237686337effbc79af710" category="paragraph">현재 BlueXP는 FlexCache 볼륨을 관리하지 않지만 ONTAP CLI 또는 ONTAP 시스템 관리자를 사용하여 FlexCache 볼륨을 생성 및 관리할 수 있습니다.</block>
   <block id="84c7d68ceec07ae1479f5ffd5345fe69" category="paragraph">BlueXP는 3.7.2 릴리스부터 모든 새로운 Cloud Volumes ONTAP 시스템에 대한 FlexCache 라이센스를 생성합니다. 이 라이센스에는 500GiB 사용 제한이 포함됩니다.</block>
@@ -3748,7 +3738,6 @@
   <block id="ec96841ef9fc6828c45908c34b7efd84" category="list-text">HTTPS를 사용하여 ONTAP 이미지를 호스팅하는 경우 인증서 누락으로 인한 SSL 인증 문제로 인해 업그레이드가 실패할 수 있습니다. 해결 방법은 ONTAP와 BlueXP 간의 인증에 사용할 CA 서명 인증서를 생성하고 설치하는 것입니다.</block>
   <block id="8187f77b708bd73b1d1ea983eefc6853" category="inline-link">NetApp KB: 업그레이드 이미지를 호스팅하기 위해 BlueXP를 HTTPS 서버로 구성하는 방법</block>
   <block id="c7dc0e2f3985a59155226a1b49fa72f0" category="paragraph"><block ref="c7dc0e2f3985a59155226a1b49fa72f0" category="inline-link-rx"></block></block>
-  <block id="a96872ca23fc4d0e47d83b2ac4aee24f" category="list-text">BlueXP의 작업 환경에서 메뉴 아이콘을 클릭한 다음 * 고급 &gt; Cloud Volumes ONTAP 업데이트 * 를 클릭합니다.</block>
   <block id="62e3daffda94b222aa0f3758e47992d3" category="paragraph">BlueXP가 소프트웨어 업데이트를 시작합니다. 소프트웨어 업데이트가 완료되면 작업 환경에서 작업을 수행할 수 있습니다.</block>
   <block id="2eac5df1bc108f46482e586570f46442" category="paragraph">커넥터는 Cloud Volumes ONTAP용 소프트웨어 업데이트를 자동으로 다운로드합니다. 구성에서 Google Cloud NAT 게이트웨이를 사용하는 경우 다운로드가 실패할 수 있습니다. 소프트웨어 이미지를 분할하는 부품 수를 제한하여 이 문제를 해결할 수 있습니다. 이 단계는 BlueXP API를 사용하여 완료해야 합니다.</block>
   <block id="84a030379f30db92916c596dbdfb092c" category="paragraph">자세한 내용은 를 참조하십시오<block ref="07e6a6e4814dabc1a0870a10a70c4b44" category="inline-link-rx"></block></block>
@@ -4914,9 +4903,13 @@
   <block id="829bbd3178c74725b58e1817c2135502" category="paragraph">또한 Cloud Volumes ONTAP는 BlueXP 백업 및 복구 기능과 통합되어 클라우드 데이터의 보호 및 장기 아카이브를 위한 백업 및 복원 기능을 제공합니다.</block>
   <block id="d37c9703eabd9a68dc0d1fb0b42d7881" category="paragraph">BlueXP 분류와의 통합으로 데이터 컨텍스트를 이해하고 중요한 데이터를 식별할 수 있습니다.</block>
   <block id="5d52a8b51c505c42c6cec9d89c67795a" category="paragraph"><block ref="3abd3a0b5353b2721a22292e3b71aa39" category="inline-link-rx"></block> BlueXP UI에 통합되어 단일 창에서 Cloud Volumes ONTAP 시스템의 운영, 보안 및 성능을 최적화할 수 있습니다.</block>
-  <block id="e16f30d121bfd2f9150c3b384f4bafd7" category="cell">를 사용할 계획인 경우 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 또는<block ref="f8430e60155316f7bd64115f216c9ed9" category="inline-link-rx"></block> Cloud Volumes ONTAP를 사용하는 경우 * 서비스 계정 * 을 활성화하고 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택해야 합니다. <block ref="1e3ffbdede44246b454219bb91ade15a" category="inline-link-macro-rx"></block>.</block>
-  <block id="59d8dcefa0c00dc439534f201c3b8cad" category="cell">를 사용할 계획인 경우 <block ref="b0493934baf26f9529eb4214b9de6c71" category="inline-link-macro-rx"></block> 또는<block ref="f8430e60155316f7bd64115f216c9ed9" category="inline-link-rx"></block> 서비스를 사용하려면 * 서비스 계정 * 스위치를 활성화한 다음 미리 정의된 스토리지 관리자 역할이 있는 서비스 계정을 선택해야 합니다.</block>
-  <block id="fe8304b9cc044b147f56b2d91e04417e" category="list-text"><block ref="fe8304b9cc044b147f56b2d91e04417e" category="inline-link-rx"></block></block>
-  <block id="1ff8c921e91129864e26470e27f163e4" category="paragraph"><block ref="f3dcfa97ec0e043d2a6bb618df9e88d1" category="inline-link-rx"></block>[NetApp Keystone 구독에 대한 자세한 정보^].</block>
-  <block id="082d2f26c5c0981f06c4a8fa0b1114d6" category="list-text"><block ref="f4e5a313767343aeb22db09ed17536ac" category="inline-link-macro-rx"></block>.</block>
+  <block id="f299a90ea343277f03db9212a075b743" category="inline-link">백업 및 복구</block>
+  <block id="3f61ed1be9573dd263bad0fb454ff936" category="cell">를 사용할 계획인 경우 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 또는<block ref="f6a24dd7c8333d6197d5c13fe0b2da54" category="inline-link-rx"></block> Cloud Volumes ONTAP를 사용하는 경우 * 서비스 계정 * 을 활성화하고 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택해야 합니다. <block ref="1e3ffbdede44246b454219bb91ade15a" category="inline-link-macro-rx"></block>.</block>
+  <block id="122fbba22f02b63cfbb1c31be8b85e8e" category="cell">를 사용할 계획인 경우 <block ref="0afefdfec765b284960d752caf97004c" category="inline-link-macro-rx"></block> 또는<block ref="f6a24dd7c8333d6197d5c13fe0b2da54" category="inline-link-rx"></block> 서비스를 사용하려면 * 서비스 계정 * 스위치를 활성화한 다음 미리 정의된 스토리지 관리자 역할이 있는 서비스 계정을 선택해야 합니다.</block>
+  <block id="990d530a36683451e6ac666b1b224270" category="paragraph">BlueXP 디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.</block>
+  <block id="11a72b1b7122c65d1d6f13efb867113a" category="paragraph">BlueXP는 Cloud Volumes ONTAP용으로 생성한 단일 스토리지 VM의 이름을 자동으로 지정합니다. 엄격한 명명 규칙이 있는 경우 System Manager, CLI 또는 API에서 스토리지 VM 이름을 수정할 수 있습니다. 예를 들어, 이름이 ONTAP 클러스터에 대한 스토리지 VM의 이름을 지정하는 방법과 일치할 수 있습니다.</block>
+  <block id="c916a82ca6e79a33689505d2642c711c" category="list-text">BlueXP의 작업 환경에서 *... (타원 아이콘) * 을 클릭한 다음 * Cloud Volumes ONTAP 업데이트 * 를 클릭합니다.</block>
+  <block id="31a578b8e294d03f4be50639f79e8160" category="list-text">Cloud Volumes ONTAP 버전 업데이트 페이지에서 URL을 입력한 다음 * 이미지 변경 * 을 클릭합니다.</block>
+  <block id="d32bc06f4693559b0941ab221004f77a" category="list-text"><block ref="b537ee4eb64ec01da34737ed00ba85c9" category="inline-link-macro-rx"></block>.</block>
+  <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">Keystone 가입은 종량제 구독 기반 서비스입니다. <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>.</block>
 </blocks>
