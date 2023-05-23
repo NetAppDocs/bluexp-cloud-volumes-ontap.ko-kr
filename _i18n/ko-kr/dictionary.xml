@@ -4912,4 +4912,5 @@
   <block id="31a578b8e294d03f4be50639f79e8160" category="list-text">Cloud Volumes ONTAP 버전 업데이트 페이지에서 URL을 입력한 다음 * 이미지 변경 * 을 클릭합니다.</block>
   <block id="d32bc06f4693559b0941ab221004f77a" category="list-text"><block ref="b537ee4eb64ec01da34737ed00ba85c9" category="inline-link-macro-rx"></block>.</block>
   <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">Keystone 가입은 종량제 구독 기반 서비스입니다. <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>.</block>
+  <block id="57a6d3c65b0af592c913eb5564c15458" category="admonition">URL에서 * image-file-name * 은 "cot.image.9.13.1P2.tgz" 형식을 따라야 합니다.</block>
 </blocks>
