@@ -24,7 +24,7 @@ TIP: 지원이 등록되지 않은 시스템은 새 버전이 출시되어도 Bl
 .단계
 . NetApp Support 사이트 계정을 BlueXP에 아직 추가하지 않은 경우 * 계정 설정 * 으로 이동하여 지금 추가하십시오.
 +
-https://["NetApp Support 사이트 계정을 추가하는 방법을 알아보십시오"^].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NetApp Support 사이트 계정을 추가하는 방법을 알아보십시오"^].
 
 . Canvas 페이지에서 등록할 시스템의 이름을 두 번 클릭합니다.
 . 개요 탭에서 기능 패널을 클릭한 다음 * 지원 등록 * 옆에 있는 연필 아이콘을 클릭합니다.

@@ -270,6 +270,6 @@ Cloud Volumes ONTAP 시스템에서 BlueXP 백업 및 복구를 사용하려는 
 이제 새로운 Cloud Volumes ONTAP 작업 환경을 생성할 때 선택할 수 있는 IAM 역할이 있습니다.
 
 .추가 정보
-* https://["AWS 설명서: IAM 정책 생성"^]
-* https://["AWS 설명서: IAM 역할 생성"^]
+* https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AWS 설명서: IAM 정책 생성"^]
+* https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 설명서: IAM 역할 생성"^]
 

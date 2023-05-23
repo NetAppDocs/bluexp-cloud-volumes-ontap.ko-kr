@@ -37,7 +37,7 @@ Elastic Volumes에서 설정된 애그리게이트에는 2개의 RAID 그룹에 
 
 
 
-https://["AWS의 Elastic Volumes에 대해 자세히 알아보십시오"^]
+https://aws.amazon.com/ebs/features/["AWS의 Elastic Volumes에 대해 자세히 알아보십시오"^]
 
 
 
@@ -69,7 +69,7 @@ GP3(General Purpose SSD) 또는 ios1(Provisioned IOPS SSD)을 사용하는 경�
 * EC2: ModifyVolume(수정 볼륨)
 
 
-이러한 권한은 에 포함되어 있습니다 https://["NetApp에서 제공하는 정책"^]
+이러한 권한은 에 포함되어 있습니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["NetApp에서 제공하는 정책"^]
 
 
 
@@ -186,6 +186,6 @@ link:task-manage-aggregates.html["애그리게이트 용량을 늘리는 방법�
 대상 Cloud Volumes ONTAP 시스템이 Elastic Volumes를 지원하는 경우, GP3 또는 ios1 디스크를 선택하면 대상 볼륨이 활성화된 Aggregate에 배치됩니다.
 
 +
-https://["데이터 복제를 설정하는 방법에 대해 알아보십시오"^]
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["데이터 복제를 설정하는 방법에 대해 알아보십시오"^]
 
 

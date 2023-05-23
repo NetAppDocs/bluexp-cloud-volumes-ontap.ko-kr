@@ -72,7 +72,7 @@ ifdef::aws[]
 
 9.8 릴리즈부터 Cloud Volumes ONTAP는 지원되는 EC2 인스턴스 유형 중 M5.xLarge 및 R5.xLarge를 제외한 거의 모든 유형을 사용할 때 HA 쌍을 포함한 고속 쓰기 속도를 지원합니다.
 
-https://["Cloud Volumes ONTAP가 지원하는 Amazon EC2 인스턴스에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["Cloud Volumes ONTAP가 지원하는 Amazon EC2 인스턴스에 대해 자세히 알아보십시오"^].
 
 endif::aws[]
 
@@ -84,7 +84,7 @@ ifdef::azure[]
 
 단일 노드 시스템을 사용하는 경우 Cloud Volumes ONTAP는 모든 VM 유형에 대해 고속 쓰기 속도를 지원합니다.
 
-HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.8 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다 https://["Cloud Volumes ONTAP 릴리즈 노트"^] 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.
+HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.8 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Cloud Volumes ONTAP 릴리즈 노트"^] 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.
 
 endif::azure[]
 
@@ -96,9 +96,9 @@ ifdef::gcp[]
 
 단일 노드 시스템을 사용하는 경우 Cloud Volumes ONTAP는 모든 시스템 유형에 대해 고속 쓰기 속도를 지원합니다.
 
-HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.13.0 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다 https://["Cloud Volumes ONTAP 릴리즈 노트"^] 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.
+HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.13.0 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html#supported-configurations-by-license["Cloud Volumes ONTAP 릴리즈 노트"^] 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.
 
-https://["Cloud Volumes ONTAP가 지원하는 Google 클라우드 머신 유형에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Cloud Volumes ONTAP가 지원하는 Google 클라우드 머신 유형에 대해 자세히 알아보십시오"^].
 
 endif::gcp[]
 
@@ -142,7 +142,7 @@ NVFAIL 설정을 확인합니다:: 'vol show-volume <vol-name> - fields nvfail
 NVFAIL 옵션을 비활성화합니다:: 'vol modify -volume <vol-name> - nvfail off'(볼륨 수정 - 볼륨 <vol-name> - nvfail 꺼짐)
 
 
-데이터 손실이 발생하면 NVFAIL을 사용하는 NFS 또는 iSCSI 볼륨에서 데이터 서비스를 중지해야 합니다(상태 비저장 프로토콜인 CIFS에는 영향을 주지 않음). 자세한 내용은 을 참조하십시오 https://["NVFAIL이 NFS 볼륨 또는 LUN에 대한 액세스에 미치는 영향"^].
+데이터 손실이 발생하면 NVFAIL을 사용하는 NFS 또는 iSCSI 볼륨에서 데이터 서비스를 중지해야 합니다(상태 비저장 프로토콜인 CIFS에는 영향을 주지 않음). 자세한 내용은 을 참조하십시오 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-mgmt-dr/GUID-40D04B8A-01F7-4E87-8161-E30BD80F5B7F.html["NVFAIL이 NFS 볼륨 또는 LUN에 대한 액세스에 미치는 영향"^].
 
 NVFAIL 상태를 확인합니다:: 'vol show-fields in-nvfailed-state'
 

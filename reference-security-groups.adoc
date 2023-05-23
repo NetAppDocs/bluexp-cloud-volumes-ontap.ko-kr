@@ -361,4 +361,4 @@ BlueXP는 항상 이 보안 그룹을 만듭니다. 자신의 을(를) 사용할
 
 == 커넥터 규칙
 
-https://["Connector에 대한 보안 그룹 규칙을 봅니다"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Connector에 대한 보안 그룹 규칙을 봅니다"^]

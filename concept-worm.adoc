@@ -63,7 +63,7 @@ Cloud Volumes ONTAP 9.10.1 이상에서는 다음과 같은 충전 동작을 이
 * 작업 환경을 생성할 때 WORM을 활성화하지 않으면 BlueXP에서 생성한 모든 볼륨에서 WORM이 비활성화됩니다. 해당 볼륨에 대해 WORM 속도로 충전되지 않습니다.
 
 
-https://["WORM 스토리지 가격에 대해 자세히 알아보십시오"^]
+https://cloud.netapp.com/pricing["WORM 스토리지 가격에 대해 자세히 알아보십시오"^]
 
 
 
@@ -71,7 +71,7 @@ https://["WORM 스토리지 가격에 대해 자세히 알아보십시오"^]
 
 애플리케이션을 사용하여 NFS 또는 CIFS를 통해 WORM에 파일을 커밋하거나 ONTAP CLI를 사용하여 파일을 WORM에 자동으로 커밋할 수 있습니다. 또한 WORM 추가 가능 파일을 사용하여 로그 정보와 같이 점증적으로 기록된 데이터를 보존할 수 있습니다.
 
-Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화한 후에는 모든 WORM 스토리지 관리에 ONTAP CLI를 사용해야 합니다. 자세한 지침은 을 참조하십시오 http://["ONTAP 설명서"^].
+Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화한 후에는 모든 WORM 스토리지 관리에 ONTAP CLI를 사용해야 합니다. 자세한 지침은 을 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-arch-con/home.html["ONTAP 설명서"^].
 
 
 

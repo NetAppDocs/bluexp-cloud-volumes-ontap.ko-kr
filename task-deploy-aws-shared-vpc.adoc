@@ -16,7 +16,7 @@ summary: 9.11.1 릴리즈부터 VPC 공유를 지원하는 AWS에서 Cloud Volum
 [role="lead"]
 9.11.1 릴리즈부터 VPC 공유를 지원하는 AWS에서 Cloud Volumes ONTAP HA 쌍이 지원됩니다. VPC 공유를 사용하면 서브넷을 다른 AWS 계정과 공유할 수 있습니다. 이 구성을 사용하려면 AWS 환경을 설정한 다음 API를 사용하여 HA 쌍을 구축해야 합니다.
 
-와 함께 https://["VPC 공유"^]Cloud Volumes ONTAP HA 구성은 다음 두 계정에 분산됩니다.
+와 함께 https://aws.amazon.com/blogs/networking-and-content-delivery/vpc-sharing-a-new-approach-to-multiple-accounts-and-vpc-management/["VPC 공유"^]Cloud Volumes ONTAP HA 구성은 다음 두 계정에 분산됩니다.
 
 * 네트워킹을 소유하는 VPC 소유자 계정(VPC, 서브넷, 라우팅 테이블 및 Cloud Volumes ONTAP 보안 그룹)
 * 참가자 계정으로, EC2 인스턴스가 공유 서브넷에 구축됩니다(여기에는 2개의 HA 노드와 중재자가 포함됨).
@@ -38,7 +38,7 @@ Cloud Volumes ONTAP 작업 환경을 만들면 BlueXP는 자동으로 IAM 역할
 이 단계는 공유 서브넷에 HA 쌍을 구축하는 데 필요합니다.
 
 +
-https://["AWS 설명서: 서브넷을 공유합니다"^]
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-share-subnet["AWS 설명서: 서브넷을 공유합니다"^]
 
 . VPC 소유자 계정에서 Cloud Volumes ONTAP용 보안 그룹을 생성합니다.
 +
@@ -82,7 +82,7 @@ Action": [
 }
 ----
 +
-https://["Cloud Volumes ONTAP API에 대해 자세히 알아보십시오"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/overview.html["Cloud Volumes ONTAP API에 대해 자세히 알아보십시오"^]
 
 
 

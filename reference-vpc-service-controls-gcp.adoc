@@ -16,7 +16,7 @@ summary: VPC 서비스 컨트롤로 Google 환경을 잠글 때 BlueXP 및 Cloud
 [role="lead"]
 VPC 서비스 제어를 통해 Google 클라우드 환경을 잠그도록 선택할 때는 BlueXP 및 Cloud Volumes ONTAP이 Google 클라우드 API와 상호 작용하는 방식과 BlueXP 및 Cloud Volumes ONTAP를 배포하기 위해 서비스 경계를 구성하는 방법을 이해해야 합니다.
 
-VPC 서비스 제어를 사용하면 신뢰할 수 있는 경계 외부의 Google 관리 서비스에 대한 액세스를 제어하고, 신뢰할 수 없는 위치에서 데이터 액세스를 차단하고, 무단 데이터 전송 위험을 완화할 수 있습니다. https://["Google Cloud VPC 서비스 컨트롤에 대해 자세히 알아보십시오"^].
+VPC 서비스 제어를 사용하면 신뢰할 수 있는 경계 외부의 Google 관리 서비스에 대한 액세스를 제어하고, 신뢰할 수 없는 위치에서 데이터 액세스를 차단하고, 무단 데이터 전송 위험을 완화할 수 있습니다. https://cloud.google.com/vpc-service-controls/docs["Google Cloud VPC 서비스 컨트롤에 대해 자세히 알아보십시오"^].
 
 
 
@@ -54,7 +54,7 @@ VPC 서비스 제어를 사용하여 이러한 이미지를 가져오는 데 필
 
 == VPC 서비스는 경계 정책을 제어합니다
 
-정책은 VPC 서비스 제어 규칙 집합에 대한 예외를 허용합니다. 정책에 대한 자세한 내용은 를 참조하십시오 https://["GCP VPC 서비스 제어 정책 문서"^].
+정책은 VPC 서비스 제어 규칙 집합에 대한 예외를 허용합니다. 정책에 대한 자세한 내용은 를 참조하십시오 https://cloud.google.com/vpc-service-controls/docs/ingress-egress-rules#policy-model["GCP VPC 서비스 제어 정책 문서"^].
 
 BlueXP에 필요한 정책을 설정하려면 조직 내의 VPC 서비스 제어 경계 로 이동하여 다음 정책을 추가합니다. 이 필드는 VPC 서비스 제어 정책 페이지에 제공된 옵션과 일치해야 합니다. 또한 * 모든 * 규칙이 필요하며 * 또는 * 매개 변수를 규칙 집합에 사용해야 합니다.
 

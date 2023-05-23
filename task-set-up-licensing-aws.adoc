@@ -67,8 +67,8 @@ link:concept-licensing.html["용량 기반 라이센스에 대해 자세히 알�
 NetApp에서 BYOL(License)을 구매하여 모든 클라우드 공급자를 통해 Cloud Volumes ONTAP 시스템 구축
 
 .단계
-. https://["라이센스를 획득하려면 NetApp 세일즈 팀에 문의하십시오"^]
-. https://["NetApp Support 사이트 계정을 BlueXP에 추가합니다"^]
+. https://cloud.netapp.com/contact-cds["라이센스를 획득하려면 NetApp 세일즈 팀에 문의하십시오"^]
+. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["NetApp Support 사이트 계정을 BlueXP에 추가합니다"^]
 +
 BlueXP는 NetApp의 라이센스 서비스에 자동으로 쿼리하여 NetApp Support 사이트 계정과 관련된 라이센스에 대한 자세한 정보를 확인합니다. 오류가 없으면 BlueXP는 자동으로 디지털 지갑에 라이센스를 추가합니다.
 
@@ -121,7 +121,7 @@ image:screenshot-professional.png["Cloud Volumes ONTAP 작업 환경을 만들 �
 link:task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP를 시작하는 단계별 지침을 확인하십시오"].
 
 
-TIP: 설정 > 자격 증명 페이지에서 AWS 계정과 연결된 AWS Marketplace 구독을 관리할 수 있습니다. https://["AWS 계정 및 구독을 관리하는 방법에 대해 알아보십시오"^]
+TIP: 설정 > 자격 증명 페이지에서 AWS 계정과 연결된 AWS Marketplace 구독을 관리할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["AWS 계정 및 구독을 관리하는 방법에 대해 알아보십시오"^]
 
 
 
@@ -155,7 +155,7 @@ link:task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP를 시작하는 
 Keystone 가입은 종량제 구독 기반 서비스입니다. link:concept-licensing.html#keystone-subscription["NetApp Keystone 구독에 대해 자세히 알아보십시오"^].
 
 .단계
-. 아직 구독이 없는 경우 https://["NetApp에 문의하십시오"^]
+. 아직 구독이 없는 경우 https://www.netapp.com/forms/keystone-sales-contact/["NetApp에 문의하십시오"^]
 . mailto:ng-keystone-success@netapp.com [NetApp에 문의]하여 하나 이상의 Keystone 구독으로 BlueXP 사용자 계정을 인증하십시오.
 . NetApp이 사용자 계정을 승인한 후 link:task-manage-keystone.html#link-a-subscription["Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 연결합니다"].
 . Canvas 페이지에서 * 작업 환경 추가 * 를 클릭하고 BlueXP의 단계를 따릅니다.

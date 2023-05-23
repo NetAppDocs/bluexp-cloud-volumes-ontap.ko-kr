@@ -18,11 +18,11 @@ NetApp은 다양한 방법으로 BlueXP 및 클라우드 서비스를 지원합�
 
 이 옵션은 하루 24시간, 주 7일 동안 무료로 사용할 수 있습니다.
 
-* https://["기술 자료"^]
+* https://kb.netapp.com/Cloud/BlueXP["기술 자료"^]
 +
 문제를 해결하는 데 도움이 되는 문서를 찾으려면 BlueXP 기술 자료를 검색하십시오.
 
-* http://["커뮤니티"^]
+* http://community.netapp.com/["커뮤니티"^]
 +
 BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 새 토론을 만드십시오.
 
@@ -92,7 +92,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 이 오류는 NSS 계정과 연결된 레코드 회사가 BlueXP 계정 일련 번호( 960xxxx) 또는 작동 환경 일련 번호 케이스 생성 * 양식 상단의 NSS 계정 목록을 확인하여 올바른 일치 항목을 찾거나 다음 옵션 중 하나를 사용하여 지원을 요청할 수 있습니다.
 
 * 제품 내 채팅을 사용합니다
-* 에서 비기술 케이스를 제출하십시오 https://[]
+* 에서 비기술 케이스를 제출하십시오 https://mysupport.netapp.com/site/help[]
 
 
 

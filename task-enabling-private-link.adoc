@@ -32,7 +32,7 @@ BlueXP는 두 가지 구성 모두 Cloud Volumes ONTAP 및 스토리지 계정 �
 
 회사에서 요구하는 경우, BlueXP에서 Azure Private Link 대신 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성하도록 설정을 변경할 수 있습니다. 이 설정을 변경하면 새로 만든 Cloud Volumes ONTAP 시스템에 적용됩니다. 서비스 끝점은 에서만 지원됩니다 link:https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] 커넥터와 Cloud Volumes ONTAP VNets 사이.
 
-커넥터는 해당 커넥터가 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 영역에 배포하거나 에 배포되어야 합니다 https://["Azure 지역 쌍"^] Cloud Volumes ONTAP 시스템의 경우
+커넥터는 해당 커넥터가 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 영역에 배포하거나 에 배포되어야 합니다 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] Cloud Volumes ONTAP 시스템의 경우
 
 .단계
 . BlueXP 콘솔의 오른쪽 상단에서 설정 아이콘을 클릭하고 * 커넥터 설정 * 을 선택합니다.
@@ -47,7 +47,7 @@ image:screenshot_settings_icon.png["BlueXP 콘솔의 오른쪽 위에 설정 아
 .작업을 마친 후
 Azure Private Links를 사용하지 않도록 설정하고 Connector가 프록시 서버를 사용하는 경우 직접 API 트래픽을 활성화해야 합니다.
 
-https://["Connector에서 직접 API 트래픽을 활성화하는 방법에 대해 알아봅니다"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["Connector에서 직접 API 트래픽을 활성화하는 방법에 대해 알아봅니다"^]
 
 
 
@@ -80,9 +80,9 @@ NOTE: 커넥터 및 Cloud Volumes ONTAP 시스템이 다른 VNets에 구축된 �
 
 === Azure 프라이빗 DNS에 대한 자세한 내용은 BlueXP를 참조하십시오
 
-를 사용하는 경우 https://["Azure 프라이빗 DNS"^]그런 다음 각 Connector에서 설정 파일을 수정해야 합니다. 그렇지 않으면 BlueXP에서 Cloud Volumes ONTAP 및 관련 저장소 계정 간에 Azure Private Link 연결을 활성화할 수 없습니다.
+를 사용하는 경우 https://docs.microsoft.com/en-us/azure/dns/private-dns-overview["Azure 프라이빗 DNS"^]그런 다음 각 Connector에서 설정 파일을 수정해야 합니다. 그렇지 않으면 BlueXP에서 Cloud Volumes ONTAP 및 관련 저장소 계정 간에 Azure Private Link 연결을 활성화할 수 없습니다.
 
-DNS 이름은 Azure DNS 명명 요구 사항과 일치해야 합니다 https://["Azure 설명서에 나와 있는 대로 적용됩니다"^].
+DNS 이름은 Azure DNS 명명 요구 사항과 일치해야 합니다 https://docs.microsoft.com/en-us/azure/storage/common/storage-private-endpoints#dns-changes-for-private-endpoints["Azure 설명서에 나와 있는 대로 적용됩니다"^].
 
 .단계
 . 커넥터 호스트에 SSH로 접속하고 로그인합니다.

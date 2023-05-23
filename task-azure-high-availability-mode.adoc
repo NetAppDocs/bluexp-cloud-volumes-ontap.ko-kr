@@ -30,7 +30,7 @@ Azure 구독에서 이 기능을 활성화해야 하는 경우 BlueXP에서 작�
 "소유자" 권한이 있는 Azure 사용자는 Azure CLI에서 이 기능을 활성화할 수 있습니다.
 
 .단계
-. https://["Azure Portal에서 Azure Cloud Shell에 액세스합니다"^]
+. https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart["Azure Portal에서 Azure Cloud Shell에 액세스합니다"^]
 . 고가용성 모드 기능 등록:
 +
 [source, azurecli]

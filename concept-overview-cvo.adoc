@@ -34,7 +34,7 @@ Cloud Volumes ONTAP는 업계 최고 수준의 NetApp 복제 기술인 SnapMirro
 또한 Cloud Volumes ONTAP는 BlueXP 백업 및 복구 기능과 통합되어 클라우드 데이터의 보호 및 장기 아카이브를 위한 백업 및 복원 기능을 제공합니다.
 
 +
-https://["BlueXP 백업 및 복구에 대해 자세히 알아보십시오"^]
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["BlueXP 백업 및 복구에 대해 자세히 알아보십시오"^]
 
 * 데이터 계층화
 +
@@ -45,7 +45,7 @@ https://["BlueXP 백업 및 복구에 대해 자세히 알아보십시오"^]
 NetApp SnapCenter를 사용하여 NetApp Snapshot 복사본의 일관성을 보장합니다.
 
 +
-https://["SnapCenter에 대해 자세히 알아보십시오"^]
+https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html["SnapCenter에 대해 자세히 알아보십시오"^]
 
 * 데이터 보안
 +
@@ -56,13 +56,13 @@ Cloud Volumes ONTAP는 데이터 암호화를 지원하고 바이러스 및 랜�
 BlueXP 분류와의 통합으로 데이터 컨텍스트를 이해하고 중요한 데이터를 식별할 수 있습니다.
 
 +
-https://["BlueXP 분류에 대해 자세히 알아보십시오"^]
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXP 분류에 대해 자세히 알아보십시오"^]
 
 
 
 
 NOTE: ONTAP 기능에 대한 라이센스는 Cloud Volumes ONTAP에 포함되어 있습니다.
 
-https://["지원되는 Cloud Volumes ONTAP 구성을 봅니다"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["지원되는 Cloud Volumes ONTAP 구성을 봅니다"^]
 
-https://["Cloud Volumes ONTAP에 대해 자세히 알아보십시오"^]
+https://cloud.netapp.com/ontap-cloud["Cloud Volumes ONTAP에 대해 자세히 알아보십시오"^]

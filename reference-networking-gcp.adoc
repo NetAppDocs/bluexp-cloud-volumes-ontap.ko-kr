@@ -182,15 +182,15 @@ Cloud Volumes ONTAP 및 Connector는 Google Cloud 공유 VPC 및 독립 실행�
 
 HA 쌍의 경우 4개의 VPC가 필요합니다. 각 VPC는 공유 또는 독립 실행형으로 사용할 수 있습니다. 예를 들어 VPC-0은 공유 VPC가 될 수 있고 VPC-1, VPC-2 및 VPC-3은 독립 실행형 VPC가 될 수 있습니다.
 
-공유 VPC를 사용하면 여러 프로젝트에서 가상 네트워크를 구성하고 중앙에서 관리할 수 있습니다. _host project_에서 공유 VPC 네트워크를 설정하고 _service project_에서 Connector 및 Cloud Volumes ONTAP 가상 머신 인스턴스를 배포할 수 있습니다. https://["Google Cloud 설명서: 공유 VPC 개요"^].
+공유 VPC를 사용하면 여러 프로젝트에서 가상 네트워크를 구성하고 중앙에서 관리할 수 있습니다. _host project_에서 공유 VPC 네트워크를 설정하고 _service project_에서 Connector 및 Cloud Volumes ONTAP 가상 머신 인스턴스를 배포할 수 있습니다. https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud 설명서: 공유 VPC 개요"^].
 
-https://["Connector 구축에서 적용되는 필수 공유 VPC 사용 권한을 검토합니다"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Connector 구축에서 적용되는 필수 공유 VPC 사용 권한을 검토합니다"^]
 
 
 
 === VPC의 패킷 미러링
 
-https://["패킷 미러링"^] Cloud Volumes ONTAP를 구축하는 Google Cloud VPC에서 비활성화되어야 합니다. 패킷 미러링이 활성화된 경우 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.
+https://cloud.google.com/vpc/docs/packet-mirroring["패킷 미러링"^] Cloud Volumes ONTAP를 구축하는 Google Cloud VPC에서 비활성화되어야 합니다. 패킷 미러링이 활성화된 경우 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.
 
 
 
@@ -208,7 +208,7 @@ AutoSupport 메시지를 보내는 데 아웃바운드 인터넷 연결을 사�
 
 Cloud Volumes ONTAP에 대해 엄격한 아웃바운드 규칙을 정의한 경우 Cloud Volumes ONTAP 방화벽에서 포트 3128을 통한 _outbound_connection을 허용하는지 확인해야 합니다.
 
-아웃바운드 인터넷 액세스가 가능한지 확인한 후 AutoSupport를 테스트하여 메시지를 보낼 수 있는지 확인할 수 있습니다. 자세한 지침은 을 참조하십시오 https://["ONTAP 문서: AutoSupport 설정"^].
+아웃바운드 인터넷 액세스가 가능한지 확인한 후 AutoSupport를 테스트하여 메시지를 보낼 수 있는지 확인할 수 있습니다. 자세한 지침은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 문서: AutoSupport 설정"^].
 
 
 TIP: HA 쌍을 사용하는 경우 HA 중재자가 아웃바운드 인터넷 액세스를 요구하지 않습니다.
@@ -227,7 +227,7 @@ HA 구성에는 두 가지 방화벽 규칙 세트가 필요합니다.
 --
 
 
-콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷이 프라이빗 Google 액세스용으로 구성되어야 합니다(HA 쌍을 사용하는 경우 VPC-0의 서브넷임). 자세한 지침은 을 참조하십시오 https://["Google Cloud 설명서: 개인 Google Access 구성"^].
+콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷이 프라이빗 Google 액세스용으로 구성되어야 합니다(HA 쌍을 사용하는 경우 VPC-0의 서브넷임). 자세한 지침은 을 참조하십시오 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 설명서: 개인 Google Access 구성"^].
 
 BlueXP에서 데이터 계층화를 설정하는 데 필요한 추가 단계는 을 참조하십시오 link:task-tiering.html["콜드 데이터를 저비용 오브젝트 스토리지로 계층화"].
 
@@ -237,7 +237,7 @@ BlueXP에서 데이터 계층화를 설정하는 데 필요한 추가 단계는 
 
 Google Cloud의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 VPC와 기업 네트워크 같은 다른 네트워크 간에 VPN 연결이 있어야 합니다.
 
-자세한 지침은 을 참조하십시오 https://["Google Cloud 설명서: Cloud VPN 개요"^].
+자세한 지침은 을 참조하십시오 https://cloud.google.com/vpn/docs/concepts/overview["Google Cloud 설명서: Cloud VPN 개요"^].
 
 
 
@@ -254,7 +254,7 @@ HA 구성에는 두 가지 방화벽 규칙 세트가 필요합니다.
 
 
 
-TIP: 커넥터에 대한 정보를 찾고 계십니까? https://["Connector의 방화벽 규칙을 봅니다"^]
+TIP: 커넥터에 대한 정보를 찾고 계십니까? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Connector의 방화벽 규칙을 봅니다"^]
 
 
 
@@ -266,7 +266,7 @@ TIP: 커넥터에 대한 정보를 찾고 계십니까? https://["Connector의 �
 * * 모든 VPC *: 인바운드 트래픽의 소스 필터는 0.0.0.0/0 IP 범위입니다.
 
 
-자체 방화벽 정책을 사용하는 경우 Cloud Volumes ONTAP와 통신해야 하는 모든 네트워크를 추가해야 하지만 내부 Google 로드 밸런서가 올바르게 작동할 수 있도록 두 주소 범위를 모두 추가해야 합니다. 이러한 주소는 130.211.0.0/22 및 35.191.0.0/16입니다. 자세한 내용은 을 참조하십시오 https://["Google Cloud 설명서: 부하 분산 방화벽 규칙"^].
+자체 방화벽 정책을 사용하는 경우 Cloud Volumes ONTAP와 통신해야 하는 모든 네트워크를 추가해야 하지만 내부 Google 로드 밸런서가 올바르게 작동할 수 있도록 두 주소 범위를 모두 추가해야 합니다. 이러한 주소는 130.211.0.0/22 및 35.191.0.0/16입니다. 자세한 내용은 을 참조하십시오 https://cloud.google.com/load-balancing/docs/tcp#firewall_rules["Google Cloud 설명서: 부하 분산 방화벽 규칙"^].
 
 [cols="10,10,80"]
 |===
@@ -509,6 +509,6 @@ NOTE: 새로운 Google Cloud HA 쌍 구축에 빠른 쓰기 속도를 사용하�
 
 아직 Connector를 만들지 않은 경우 Connector에 대한 네트워킹 요구 사항도 검토해야 합니다.
 
-* https://["커넥터에 대한 네트워킹 요구 사항을 봅니다"^]
-* https://["Google Cloud의 방화벽 규칙"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["커넥터에 대한 네트워킹 요구 사항을 봅니다"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloud의 방화벽 규칙"^]
 

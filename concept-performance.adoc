@@ -24,7 +24,7 @@ ifdef::aws[]
 
 * AWS 환경을 위한 Cloud Volumes ONTAP
 +
-https://["NetApp 기술 보고서 4383: 애플리케이션 워크로드를 포함한 Amazon Web Services의 Cloud Volumes ONTAP 성능 특성"^]
+https://www.netapp.com/us/media/tr-4383.pdf["NetApp 기술 보고서 4383: 애플리케이션 워크로드를 포함한 Amazon Web Services의 Cloud Volumes ONTAP 성능 특성"^]
 
 
 
@@ -34,7 +34,7 @@ ifdef::azure[]
 
 * Microsoft Azure용 Cloud Volumes ONTAP
 +
-https://["NetApp 기술 보고서 4671: 애플리케이션 워크로드를 포함한 Azure의 Cloud Volumes ONTAP 성능 특성"^]
+https://www.netapp.com/us/media/tr-4671.pdf["NetApp 기술 보고서 4671: 애플리케이션 워크로드를 포함한 Azure의 Cloud Volumes ONTAP 성능 특성"^]
 
 
 
@@ -44,7 +44,7 @@ ifdef::gcp[]
 
 * Google Cloud용 Cloud Volumes ONTAP
 +
-https://["NetApp 기술 보고서 4816: Cloud Volumes ONTAP for Google Cloud의 성능 특성"^]
+https://www.netapp.com/us/media/tr-4816.pdf["NetApp 기술 보고서 4816: Cloud Volumes ONTAP for Google Cloud의 성능 특성"^]
 
 
 
@@ -56,4 +56,4 @@ endif::gcp[]
 
 Cloud Volumes ONTAP 노드는 클라우드 공급자의 모니터링 툴을 사용해 활용률이 90% 이상인 것으로 나타났습니다. 이는 ONTAP가 필요한 경우 사용할 수 있도록 가상 머신에 제공되는 모든 vCPU를 예약하기 때문입니다.
 
-자세한 내용은 를 참조하십시오 https://["CLI를 사용하여 ONTAP CPU 활용률을 모니터링하는 방법에 대한 NetApp 기술 자료 문서"^]
+자세한 내용은 를 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/Monitoring_CPU_utilization_before_an_ONTAP_upgrade["CLI를 사용하여 ONTAP CPU 활용률을 모니터링하는 방법에 대한 NetApp 기술 자료 문서"^]

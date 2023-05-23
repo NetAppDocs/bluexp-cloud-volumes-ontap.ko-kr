@@ -14,7 +14,7 @@ summary: Google Cloud 명령줄을 통해 내보낸 이미지를 disk.raw 형식
 
 
 [role="lead"]
-새 인스턴스 배포, 업그레이드 또는 기존 이미지에 사용 중인 이미지는 를 통해 클라이언트와 공유됩니다 https://["NetApp Support 사이트(NSS)"^]. 서명된 다이제스트 및 인증서는 NSS 포털을 통해 다운로드할 수 있습니다. NetApp Support에서 공유하는 이미지에 해당하는 오른쪽 릴리즈에 대한 다이제스트 및 인증서를 다운로드했는지 확인합니다. 예를 들어 9.13.0 이미지는 9.13.0 서명된 다이제스트와 NSS에서 사용할 수 있는 인증서를 갖습니다.
+새 인스턴스 배포, 업그레이드 또는 기존 이미지에 사용 중인 이미지는 를 통해 클라이언트와 공유됩니다 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NetApp Support 사이트(NSS)"^]. 서명된 다이제스트 및 인증서는 NSS 포털을 통해 다운로드할 수 있습니다. NetApp Support에서 공유하는 이미지에 해당하는 오른쪽 릴리즈에 대한 다이제스트 및 인증서를 다운로드했는지 확인합니다. 예를 들어 9.13.0 이미지는 9.13.0 서명된 다이제스트와 NSS에서 사용할 수 있는 인증서를 갖습니다.
 
 
 
@@ -37,7 +37,7 @@ Google Cloud의 이미지는 직접 다운로드할 수 없습니다. 서명된 
 
 == Google Cloud 명령줄을 사용하여 Google Cloud 이미지를 내보냅니다
 
-이미지를 클라우드 스토리지로 내보내는 기본 방법은 을 사용하는 것입니다 https://["gcloud 계산 이미지 내보내기 명령"^]. 이 명령은 제공된 이미지를 가져와 tarred와 gzip이 되는 disk.raw 파일로 변환합니다. 생성된 파일은 대상 URL에 저장되며 확인을 위해 다운로드할 수 있습니다.
+이미지를 클라우드 스토리지로 내보내는 기본 방법은 을 사용하는 것입니다 https://cloud.google.com/sdk/gcloud/reference/compute/images/export["gcloud 계산 이미지 내보내기 명령"^]. 이 명령은 제공된 이미지를 가져와 tarred와 gzip이 되는 disk.raw 파일로 변환합니다. 생성된 파일은 대상 URL에 저장되며 확인을 위해 다운로드할 수 있습니다.
 
 이 작업을 실행하려면 사용자/계정에 원하는 버킷에 액세스하고 쓰거나 이미지를 내보내고 Google에서 이미지를 내보낼 때 사용하는 클라우드 빌드에 액세스할 수 있는 권한이 있어야 합니다.
 
@@ -146,4 +146,4 @@ total 1565036
 $ tar -xf CVO_GCP_Signed_Digest.tar.gz
 ----
 
-NOTE: 을 참조하십시오 https://["이미지 내보내기에 대한 Google Cloud 문서"^] Google Cloud를 통해 이미지를 내보내는 방법에 대한 자세한 내용은
+NOTE: 을 참조하십시오 https://cloud.google.com/compute/docs/images/export-image#console["이미지 내보내기에 대한 Google Cloud 문서"^] Google Cloud를 통해 이미지를 내보내는 방법에 대한 자세한 내용은

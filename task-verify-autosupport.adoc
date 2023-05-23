@@ -34,7 +34,7 @@ AutoSupport 메시지를 보내는 데 아웃바운드 인터넷 연결을 사�
 
 Cloud Volumes ONTAP에 대해 엄격한 아웃바운드 규칙을 정의한 경우 Cloud Volumes ONTAP 보안 그룹이 포트 3128을 통한 _outbound_connection을 허용하는지 확인해야 합니다.
 
-아웃바운드 인터넷 액세스가 가능한지 확인한 후 AutoSupport를 테스트하여 메시지를 보낼 수 있는지 확인할 수 있습니다. 자세한 지침은 을 참조하십시오 https://["ONTAP 문서: AutoSupport 설정"^].
+아웃바운드 인터넷 액세스가 가능한지 확인한 후 AutoSupport를 테스트하여 메시지를 보낼 수 있는지 확인할 수 있습니다. 자세한 지침은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 문서: AutoSupport 설정"^].
 
 
 
@@ -109,7 +109,7 @@ AutoSupport check show-details를 선택합니다
 . 상태가 여전히 FAILED인 경우 Cloud Volumes ONTAP와 포트 3128을 통한 커넥터 사이에 연결이 있는지 확인합니다.
 . 연결이 있는지 확인한 후에도 상태 ID가 계속 실패하면 커넥터에 SSH를 연결합니다.
 +
-https://["Connector용 Linux VM에 연결하는 방법에 대해 자세히 알아보십시오"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["Connector용 Linux VM에 연결하는 방법에 대해 자세히 알아보십시오"^]
 
 . '/opt/application/netapp/cloudmanager/docker_occm/data/'로 이동합니다
 . 프록시 구성 파일 'quid.conf'를 엽니다

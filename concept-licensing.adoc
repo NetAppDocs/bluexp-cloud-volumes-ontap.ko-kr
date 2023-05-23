@@ -166,7 +166,7 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-https://["Cloud Volumes Edge Cache를 통해 비즈니스를 지원하는 방법에 대해 자세히 알아보십시오"^]
+https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge Cache를 통해 비즈니스를 지원하는 방법에 대해 자세히 알아보십시오"^]
 
 
 
@@ -214,7 +214,7 @@ link:task-manage-capacity-licenses.html["충전 방법을 변경하는 방법에
 
 === 가격
 
-가격에 대한 자세한 내용은 를 참조하십시오 https://["NetApp BlueXP 웹 사이트"^].
+가격에 대한 자세한 내용은 를 참조하십시오 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXP 웹 사이트"^].
 
 
 
@@ -269,7 +269,7 @@ TIP: 무료 평가판이 시작될 때, 7일 남았을 때, 1일 남았을 때 B
 
 20대 이상의 시스템이 필요한 대규모 구축 환경의 경우 고객 담당자 또는 세일즈 팀에 문의하십시오.
 
-https://["NetApp 계정 에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["NetApp 계정 에 대해 자세히 알아보십시오"^].
 
 
 
@@ -370,7 +370,7 @@ OpEx 소비 모델을 선호하는 투자자들에게 원활한 하이브리드 
 
 각 볼륨에 대해 프로비저닝된 용량은 주기적으로 Keystone 가입 시 할당된 용량과 비교되며, Keystone 가입 시 초과요금이 부과됩니다.
 
-https://["NetApp Keystone 구독에 대해 자세히 알아보십시오"^].
+https://www.netapp.com/services/keystone/["NetApp Keystone 구독에 대해 자세히 알아보십시오"^].
 
 
 
