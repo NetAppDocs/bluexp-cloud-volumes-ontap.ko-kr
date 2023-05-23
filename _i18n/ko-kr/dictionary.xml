@@ -4663,7 +4663,6 @@
   <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">Add Aggregate_screen에서 Aggregate를 생성합니다.</block>
   <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">집계 추가 진행률을 보여 주는 스크린샷</block>
   <block id="6d8395606a42c9b4b508b7083fef071b" category="paragraph"><block ref="6d8395606a42c9b4b508b7083fef071b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1f0652f3e88178c774443201328e4d2a" category="paragraph">BlueXP는 다음과 같은 세 가지 방법으로 Cloud Volumes ONTAP를 업그레이드할 수 있습니다.</block>
   <block id="61c67604de243e1d1f09464a53018e48" category="list-text">집계 제목 아래에서 타원 버튼을 클릭한 다음 * 집계 세부 정보 보기 * 를 선택합니다.</block>
   <block id="46804cb5ec7cb836d1b3ea87af016b42" category="paragraph"><block ref="46804cb5ec7cb836d1b3ea87af016b42" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1d9e8a6210003e4a2d3ad9699698b5c" category="paragraph"><block ref="b1d9e8a6210003e4a2d3ad9699698b5c" category="inline-image-macro-rx" type="image"></block></block>
@@ -4913,4 +4912,5 @@
   <block id="d32bc06f4693559b0941ab221004f77a" category="list-text"><block ref="b537ee4eb64ec01da34737ed00ba85c9" category="inline-link-macro-rx"></block>.</block>
   <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">Keystone 가입은 종량제 구독 기반 서비스입니다. <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>.</block>
   <block id="57a6d3c65b0af592c913eb5564c15458" category="admonition">URL에서 * image-file-name * 은 "cot.image.9.13.1P2.tgz" 형식을 따라야 합니다.</block>
+  <block id="bed8a3185a4b2ddb1020be5c9da45358" category="paragraph">BlueXP는 Cloud Volumes ONTAP를 업그레이드할 수 있는 두 가지 방법을 제공합니다.</block>
 </blocks>
