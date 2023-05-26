@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: task-aws-key-management.html 
+keywords: aws, amazon, encryption, NVE, NetApp volume encryption, KMIP, kms, key manager service 
+summary: 타사 키 관리 서비스에 AWS의 키 관리 서비스를 활용할 수 있습니다. 
+---
+= AWS 키 관리 서비스로 키를 관리합니다
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+을 사용할 수 있습니다 link:https://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS KMS(Key Management Service)"^] Google Cloud Platform에서 구축한 응용 프로그램에서 ONTAP 암호화 키를 보호합니다.
+
+AWS KMS를 사용한 키 관리는 CLI 또는 ONTAP REST API를 통해 활성화할 수 있습니다.
+
+KMS를 사용할 때는 기본적으로 데이터 SVM의 LIF가 클라우드 키 관리 엔드포인트와 통신하는 데 사용됩니다. 노드 관리 네트워크는 AWS의 인증 서비스와 통신하는 데 사용됩니다. 클러스터 네트워크가 올바르게 구성되지 않은 경우 클러스터는 키 관리 서비스를 제대로 사용하지 않습니다.
+
+.시작하기 전에
+* Cloud Volumes ONTAP는 버전 9.12.0 이상을 실행해야 합니다
+* 볼륨 암호화(VE) 라이센스 및 을(를) 설치해야 합니다
+* MTEKM(멀티 테넌트 암호화 키 관리) 라이센스가 설치되어 있어야 합니다.
+* 클러스터 또는 SVM 관리자여야 합니다
+* 활성 AWS 구독이 있어야 합니다
+
+
+
+NOTE: 데이터 SVM에 대한 키만 구성할 수 있습니다.
+
+
+
+== 구성
+
+.설치하고
+. 을(를) 만들어야 합니다 link:https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#grant["허가"^] 암호화를 관리하는 IAM 역할에 사용되는 AWS KMS 키의 경우 IAM 역할에는 다음 작업을 허용하는 정책이 포함되어야 합니다.
++
+** `DescribeKey`
+** `Encrypt`
+** `Decrypt`
+보조금을 생성하려면 을 참조하십시오 link:https://docs.aws.amazon.com/kms/latest/developerguide/create-grant-overview.html["AWS 문서"^].
+
+
+. link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["적절한 IAM 역할에 정책을 추가합니다."^] 이 정책은 을 지원해야 합니다 `DescribeKey`, `Encrypt`, 및 `Decrypt` 운영:
+
+
+.Cloud Volumes ONTAP
+. Cloud Volumes ONTAP 환경으로 전환하십시오.
+. 고급 권한 수준 설정 고급 으로 전환합니다
+. AWS 키 관리자를 활성화합니다.
+`security key-manager external aws enable -vserver _data_svm_name_ -region _AWS_region_ -key-id _key_ID_ -encryption-context _encryption_context_`
+. 메시지가 표시되면 비밀 키를 입력합니다.
+. AWS KMS가 올바르게 구성되었는지 확인합니다.
+`security key-manager external aws show -vserver _svm_name_`
+

@@ -163,6 +163,9 @@ sidebar:
       entries:
       - title: NetApp 암호화로 볼륨 암호화
         url: "/task-encrypting-volumes.html"
+      - title: AWS 키 관리 서비스로 키를 관리합니다
+        flavor: aws
+        url: "/task-aws-key-management.html"
       - title: Azure Key Vault를 사용하여 키를 관리합니다
         flavor: azure
         url: "/task-azure-key-vault.html"

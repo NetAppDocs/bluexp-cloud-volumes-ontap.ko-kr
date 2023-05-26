@@ -1428,15 +1428,6 @@
   <block id="80d50e51e1ababfa4d2d5826b8482855" category="list-text"><block ref="80d50e51e1ababfa4d2d5826b8482855" category="inline-link-macro-rx"></block></block>
   <block id="d8fe61fe121132ae71b6616d52f15f56" category="summary">Cloud Volumes ONTAP는 외부 키 관리자로 NVE(NetApp Volume Encryption) 및 NAE(NetApp Aggregate Encryption)를 지원합니다. 외부 키 관리자를 설정하면 NVE와 NAE가 기본적으로 활성화됩니다.</block>
   <block id="9472acffdb6a585b24d4317169bbc868" category="inline-link-macro">이러한 암호화 솔루션에 대해 자세히 알아보십시오</block>
-  <block id="1be198b136be79973c11820713c00b26" category="paragraph">외부 키 관리자를 설정한 후 새 애그리게이트에 NAE가 기본적으로 사용하도록 설정됩니다. NAE 애그리게이트에 속하지 않는 새로운 볼륨은 기본적으로 NVE를 사용하도록 설정됩니다(예: 외부 키 관리자를 설정하기 전에 생성된 기존 애그리게이트가 있는 경우).</block>
-  <block id="d43f2f210545a0ed495aab9f6633e453" category="paragraph">Cloud Volumes ONTAP는 온보드 키 관리를 지원하지 않습니다.</block>
-  <block id="0df0b10ec6b2374f12bc928912e0e165" category="paragraph">Cloud Volumes ONTAP 시스템은 NetApp 지원에 등록해야 합니다. NetApp 볼륨 암호화 라이센스는 NetApp Support에 등록된 각 Cloud Volumes ONTAP 시스템에 자동으로 설치됩니다.</block>
-  <block id="adac812f3fe59c6affec734b3525f076" category="list-text"><block ref="adac812f3fe59c6affec734b3525f076" category="inline-link-macro-rx"></block></block>
-  <block id="86c9e6db61d865382ea083244fc00daf" category="list-text">에서 지원되는 주요 관리자 목록을 검토합니다<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block>.</block>
-  <block id="c13505bd809d243a40ac179bc7ce4107" category="admonition">Key Managers * 솔루션을 검색합니다.</block>
-  <block id="1de6a60059bfa3554a0fdce87d051073" category="inline-link-macro">Cloud Volumes ONTAP CLI에 연결합니다</block>
-  <block id="29d9a993720ee20b5810ae4a968304ca" category="list-text"><block ref="088a226dfa45520beac98dc7ae15a28a" category="inline-link-macro-rx"></block>.</block>
-  <block id="48a052340f9e5c18b43a0cbab831db99" category="list-text">외부 키 관리를 구성합니다.</block>
   <block id="4aea138a21bb343e460b0084ce3eb8d8" category="doc">Active IQ 디지털 자문업체 를 사용하여 Cloud Volumes ONTAP 시스템을 최적화하십시오</block>
   <block id="dab2edf9eaac3950e92c281ce358af01" category="inline-link">Active IQ 디지털 자문업체</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">피처</block>
@@ -2835,7 +2826,6 @@
   <block id="4294aa58822f061e77d8da0c76ebf94d" category="inline-link-macro">NVE(NetApp Volume Encryption) 키</block>
   <block id="b80b61bef9c57d9979c8a0a11310d79b" category="paragraph">AKV를 사용한 키 관리는 CLI 또는 ONTAP REST API를 사용하여 활성화할 수 있습니다.</block>
   <block id="e99dab450e193aa16ab181a9cbb70701" category="paragraph">AKV를 사용할 때는 기본적으로 데이터 SVM LIF가 클라우드 키 관리 엔드포인트와 통신하는 데 사용됩니다. 노드 관리 네트워크는 클라우드 공급자의 인증 서비스(login.microsoftonline.com 통신하는 데 사용됩니다. 클러스터 네트워크가 올바르게 구성되지 않은 경우 클러스터는 키 관리 서비스를 제대로 사용하지 않습니다.</block>
-  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="list-title">필수 구성 요소</block>
   <block id="0dbc3b305b67f45cc077782f1bde33be" category="list-text">Cloud Volumes ONTAP에서 버전 9.10.1 이상을 실행해야 합니다</block>
   <block id="3db7729c3f93b51e237e9f64f77736ce" category="list-text">VE(Volume Encryption) 라이센스가 설치되었습니다</block>
   <block id="941d09f50e1c95a1d21454ff759fc757" category="list-text">클러스터 또는 SVM 관리자여야 합니다</block>
@@ -2851,7 +2841,6 @@
   <block id="0741b6c1237f126924ebdaa3fe6dbc4e" category="doc">Google의 클라우드 키 관리 서비스로 키를 관리합니다</block>
   <block id="0dbdff8ed1ef0e78c4dc84ace48205d6" category="inline-link-macro">Google Cloud Platform의 키 관리 서비스(Cloud KMS)</block>
   <block id="2f7905ac71167519792d73f964942175" category="paragraph">을 사용할 수 있습니다 <block ref="4ef7b266bd9680469191a283388836d8" category="inline-link-macro-rx"></block> Google Cloud Platform에서 구축한 응용 프로그램에서 ONTAP 암호화 키를 보호합니다.</block>
-  <block id="effd05555235b0681857f0aff356bf2f" category="paragraph">Cloud KMS를 사용할 때는 기본적으로 데이터 SVM LIF가 클라우드 키 관리 엔드포인트와 통신하는 데 사용됩니다. 노드 관리 네트워크는 클라우드 공급자의 인증 서비스(oauth2.googleapis.com 통신하는 데 사용됩니다. 클러스터 네트워크가 올바르게 구성되지 않은 경우 클러스터는 키 관리 서비스를 제대로 사용하지 않습니다.</block>
   <block id="41a2c826f6f02a44a93533524c99b84e" category="list-text">클라우드 KMS는 데이터 SVM에서만 구성할 수 있습니다</block>
   <block id="105e3d12938c631bc5d8ab6f6b628e1c" category="list-text">Google Cloud Platform의 활성 서브스크립션입니다</block>
   <block id="d21cbe89c10e8cddec31594493146dcf" category="list-text">서비스 계정 JSON 키 다운로드:'gcloud iam service-accounts key create key-file --iam-account=_sa-name_@_project-id_.iam.gserviceaccount.com</block>
@@ -2905,7 +2894,6 @@
   <block id="d8787bda3ae35a469afc376610816a6a" category="list-text">데이터 SVM을 위한 DNS를 생성합니다. dns create-domain c._&lt;project&gt;_.internal -name-servers_server_address_-vserver_SVM_name_'을 선택합니다</block>
   <block id="1601dadf3d75da8ab487484480cbf4ef" category="list-text">선택 사항: 암호화 'vol create_volume_name_-aggregate_aggregate_-vserver_vserver_name_-size 10G'를 테스트할 볼륨을 생성합니다</block>
   <block id="401a8aaa330fe64d45395192c047e1ed" category="paragraph">Cloud Volumes ONTAP는 NVE(NetApp Volume Encryption) 및 NAE(NetApp Aggregate Encryption)를 지원합니다. NVE와 NAE는 FIPS 140-2를 준수하는 볼륨 유휴 데이터 암호화를 지원하는 소프트웨어 기반 솔루션입니다. <block ref="d36456219fc3d98cd4133816e30fd33f" category="inline-link-macro-rx"></block>.</block>
-  <block id="f0daa22edb6ee8b88bae0e5a21b552ec" category="inline-link-macro">Google Cloud 키 관리 서비스</block>
   <block id="8c01e5151cb74437e444454be784333c" category="list-text">설치된 볼륨 암호화(VE) 라이센스(NetApp 볼륨 암호화 라이센스는 NetApp Support에 등록된 각 Cloud Volumes ONTAP 시스템에 자동으로 설치됨)</block>
   <block id="8c2e4fec68d3b8906dcb334bbfe418bf" category="paragraph">이 단계에서는 Azure에 Cloud Volumes ONTAP 구성을 등록하는 방법과 Azure 키 저장소 및 키를 생성하는 방법을 설명합니다. 이 단계를 이미 완료한 경우, 특히 에서 올바른 구성 설정이 있는지 확인하십시오 <block ref="b6cee0c01f8bf1f1cd6348c49fbde2b0" category="inline-xref-macro-rx"></block>을 클릭한 다음 로 진행합니다 <block ref="0d835ce531ec9eb78a13d9e8f120db62" category="inline-xref-macro-rx"></block>.</block>
   <block id="04b2bf8e8c9915aa61da3721f209d407" category="list-text"><block ref="cdef42bd73f4820f7c1e1f3c23ba776b" category="inline-xref-macro-rx"></block></block>
@@ -3102,10 +3090,6 @@
   <block id="fab7a3813da88237a3633c0b925bf6d0" category="sidebar">CLI에서 관리</block>
   <block id="383f69885998c1a12752a714d0112637" category="summary">9.11.1 릴리즈부터 VPC 공유를 지원하는 AWS에서 Cloud Volumes ONTAP HA 쌍이 지원됩니다. VPC 공유를 사용하면 서브넷을 다른 AWS 계정과 공유할 수 있습니다. 이 구성을 사용하려면 AWS 환경을 설정한 다음 API를 사용하여 HA 쌍을 구축해야 합니다.</block>
   <block id="9a21580c09403b622f0f8cb3f190a88c" category="paragraph">다음 단계에서는 CLI를 사용하여 단일 노드 시스템에 새 스토리지 VM을 생성합니다. 데이터 LIF를 생성하려면 하나의 프라이빗 IP 주소가 필요하며, 관리 LIF를 생성하려면 또 다른 선택적 프라이빗 IP 주소가 필요합니다.</block>
-  <block id="fd821d5714ebcc986157929dd866f41c" category="inline-link">자세한 내용은 ONTAP 설명서를 참조하십시오</block>
-  <block id="780234ea39261cf819a32f7b1f62cacd" category="list-text">AWS:<block ref="f103b81da9a8e5be0e2af29f647d4fa3" category="inline-link-rx"></block></block>
-  <block id="80b607f58d83b6d6aea68e10d7e615ad" category="list-text">Azure(Azure): <block ref="a8e451d7a52ebee36c6527d684d09cd7" category="inline-link-macro-rx"></block></block>
-  <block id="c06321d34601f3b5366ec101222f76b5" category="list-text">Google 클라우드: <block ref="7cf27d24396a294ecbe07a4a35a715e6" category="inline-link-macro-rx"></block></block>
   <block id="b9b815f5546c4c8adc367e9b0b643daf" category="list-text">서비스 계정을 Cloud Volumes ONTAP에 연결해야 합니다.</block>
   <block id="3416d6997f78d0ffe7261725d24751ca" category="inline-link-macro">이 서비스 계정을 설정하는 방법에 대해 알아보십시오</block>
   <block id="1599759c277422fbe5e683ed93eafe5f" category="paragraph"><block ref="5a9b347c50656bd207fa757a3eb4fa66" category="inline-link-macro-rx"></block>.</block>
@@ -3699,9 +3683,6 @@
   <block id="bef3442a081401294987a04d5fd013d7" category="paragraph">전송이 완료된 후 BlueXP가 시스템을 종료합니다.</block>
   <block id="d96640cb9857bedea622da8e210171a8" category="admonition">비용을 줄이기 위해 BlueXP는 루트 및 부팅 디스크의 이전 스냅샷을 주기적으로 삭제합니다. 루트와 부팅 디스크 모두에 대해 가장 최근의 두 스냅샷만 보존됩니다.</block>
   <block id="50840e2145fe17e7b2d3355bf1858f3b" category="paragraph">HA 쌍을 중지하면 BlueXP가 두 노드를 모두 종료합니다.</block>
-  <block id="ffa45f5dd5756168cb752f08f5b3cefd" category="inline-link">BlueXP에 NetApp Support 사이트 계정 추가</block>
-  <block id="4f490cf7f68d51fff0157cb5d3ac6f7c" category="list-text"><block ref="4f490cf7f68d51fff0157cb5d3ac6f7c" category="inline-link-rx"></block></block>
-  <block id="ccd8316afafdf5821150f19704baa787" category="admonition">BlueXP는 중국 지역에 있는 시스템에 NVE 라이센스를 설치하지 않습니다.</block>
   <block id="cee30c6c8c5eb1828d0d6dec87f1f0d6" category="list-text">Azure의 경우 BlueXP에 필요한 권한이 있으면 아무 작업도 수행할 필요가 없습니다. <block ref="b95ed179d0a0b66246f2db10d9eda033" category="inline-xref-macro-rx"></block>.</block>
   <block id="35f3e87191a8bdf385e81c8fa7b65976" category="paragraph">볼륨을 생성, 수정 또는 복제할 때 BlueXP에서 계층화 정책을 선택하라는 메시지가 표시됩니다.</block>
   <block id="667b969b7280b52556322ad43cb00a91" category="list-text">용량 계층에 대해 오브젝트 저장소를 생성할 필요가 없습니다. BlueXP가 이러한 작업을 수행합니다.</block>
@@ -4913,4 +4894,30 @@
   <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">Keystone 가입은 종량제 구독 기반 서비스입니다. <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>.</block>
   <block id="57a6d3c65b0af592c913eb5564c15458" category="admonition">URL에서 * image-file-name * 은 "cot.image.9.13.1P2.tgz" 형식을 따라야 합니다.</block>
   <block id="bed8a3185a4b2ddb1020be5c9da45358" category="paragraph">BlueXP는 Cloud Volumes ONTAP를 업그레이드할 수 있는 두 가지 방법을 제공합니다.</block>
+  <block id="3522be3c31d2b76f91f779f655a0d48e" category="summary">타사 키 관리 서비스를 위해 Google의 키 관리 서비스를 활용합니다.</block>
+  <block id="c8533211539a9c2738a7bfd20bd2c682" category="paragraph">Cloud KMS를 사용할 때는 기본적으로 데이터 SVM의 LIF가 클라우드 키 관리 엔드포인트와 통신하는 데 사용됩니다. 노드 관리 네트워크는 클라우드 공급자의 인증 서비스(oauth2.googleapis.com 통신하는 데 사용됩니다. 클러스터 네트워크가 올바르게 구성되지 않은 경우 클러스터는 키 관리 서비스를 제대로 사용하지 않습니다.</block>
+  <block id="fb4c65b52def4e8355252bcb74eab6be" category="summary">타사 키 관리 서비스에 AWS의 키 관리 서비스를 활용할 수 있습니다.</block>
+  <block id="da8f544047a48addb30292b7f355c64e" category="doc">AWS 키 관리 서비스로 키를 관리합니다</block>
+  <block id="44d61056f175f112376610c7782283a1" category="inline-link-macro">AWS KMS(Key Management Service)</block>
+  <block id="6ad0c0113b3b55b452407927aa4aa75b" category="paragraph">을 사용할 수 있습니다 <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> Google Cloud Platform에서 구축한 응용 프로그램에서 ONTAP 암호화 키를 보호합니다.</block>
+  <block id="c7fa7b72f6d04762c019500275a89386" category="paragraph">AWS KMS를 사용한 키 관리는 CLI 또는 ONTAP REST API를 통해 활성화할 수 있습니다.</block>
+  <block id="ce62b1827da5aee89a8c9443b4ca4301" category="paragraph">KMS를 사용할 때는 기본적으로 데이터 SVM의 LIF가 클라우드 키 관리 엔드포인트와 통신하는 데 사용됩니다. 노드 관리 네트워크는 AWS의 인증 서비스와 통신하는 데 사용됩니다. 클러스터 네트워크가 올바르게 구성되지 않은 경우 클러스터는 키 관리 서비스를 제대로 사용하지 않습니다.</block>
+  <block id="1a96e698f264a0a04e8665750d57e611" category="list-text">Cloud Volumes ONTAP는 버전 9.12.0 이상을 실행해야 합니다</block>
+  <block id="7c299d2093e269562665f07029a4cec7" category="list-text">볼륨 암호화(VE) 라이센스 및 을(를) 설치해야 합니다</block>
+  <block id="4901f0c84455edcc92ec6a24224e83af" category="list-text">MTEKM(멀티 테넌트 암호화 키 관리) 라이센스가 설치되어 있어야 합니다.</block>
+  <block id="3cb889381dd4ea2a9ffdd9e9da7b480c" category="list-text">활성 AWS 구독이 있어야 합니다</block>
+  <block id="289b930b66911925b2bb021d1b7fff58" category="admonition">데이터 SVM에 대한 키만 구성할 수 있습니다.</block>
+  <block id="64fad28965d003cde964ea3016e257a3" category="inline-link-macro">허가</block>
+  <block id="7a59df81f5f29cec1e5fc407aec175f3" category="list-text">을(를) 만들어야 합니다 <block ref="f4b68cc11f5d4403654feba4f4232241" category="inline-link-macro-rx"></block> 암호화를 관리하는 IAM 역할에 사용되는 AWS KMS 키의 경우 IAM 역할에는 다음 작업을 허용하는 정책이 포함되어야 합니다.</block>
+  <block id="6f3a9219e54bd545f63f7c278a3dd364" category="list-text"><block ref="f88ab0a10dae682ad047d37ae6bc5d41" prefix="" category="inline-code"></block></block>
+  <block id="9c3569206610778cb2870868354ce5a2" category="list-text"><block ref="611d29c748a7931c825a247fcf3f290e" prefix="" category="inline-code"></block></block>
+  <block id="df710f89ebb9e663bd3d66607a0bf413" category="inline-link-macro">AWS 문서</block>
+  <block id="4978ada7b9b2f691b8a90b1da40d7081" category="list-text"><block ref="762e3a77ecdd773da2b859e6807529a2" prefix="" category="inline-code"></block>
+보조금을 생성하려면 을 참조하십시오 <block ref="2e58dbc76dde8987ce87452533881aab" category="inline-link-macro-rx"></block>.</block>
+  <block id="af332839ba7d883cbe3b8961d03bbc3e" category="inline-link-macro">적절한 IAM 역할에 정책을 추가합니다.</block>
+  <block id="f294c61436af25f5a28ac9b8924bb7fb" category="list-text"><block ref="7ae258a567efc672e80f18f77e4ad287" category="inline-link-macro-rx"></block> 이 정책은 을 지원해야 합니다<block ref="f88ab0a10dae682ad047d37ae6bc5d41" prefix=" " category="inline-code"></block>,<block ref="611d29c748a7931c825a247fcf3f290e" prefix=" " category="inline-code"></block>, 및<block ref="762e3a77ecdd773da2b859e6807529a2" prefix=" " category="inline-code"></block> 운영:</block>
+  <block id="467e9c77886899cd96b4c77a6e88da03" category="list-text">Cloud Volumes ONTAP 환경으로 전환하십시오.</block>
+  <block id="9b975f17f93fdf8bcdf7549a7ba1f42f" category="list-text">AWS 키 관리자를 활성화합니다.<block ref="4e70bf9ec679e2ced63b5b4e84c35b24" prefix=" " category="inline-code"></block></block>
+  <block id="2427f2edcaf3dd71c86f28d6d104a05d" category="list-text">메시지가 표시되면 비밀 키를 입력합니다.</block>
+  <block id="75d1c443711b08a199c506b32994abb0" category="list-text">AWS KMS가 올바르게 구성되었는지 확인합니다.<block ref="f749e141a9bc2497fcae9da71d1642a2" prefix=" " category="inline-code"></block></block>
 </blocks>
