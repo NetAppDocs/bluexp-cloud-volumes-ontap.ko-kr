@@ -126,7 +126,7 @@ Azure HA 단일 가용성 영역::
 "Microsoft.KeyVault/vaults/accessPolicies/write"
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["최신 사용 권한 목록을 봅니다"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["최신 사용 권한 목록을 봅니다"^]
 
 
 NOTE: 단일 존의 HA 쌍에는 권한이 필요하지 않습니다.
@@ -143,7 +143,7 @@ HA 쌍의 경우: 'get/Azure/ha/metadata/vaults'
 이름 * 과 * resourceGroup * 을 기록해 둡니다. 다음 단계에서 이러한 값을 지정해야 합니다.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["이 API 호출에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-hametadata["이 API 호출에 대해 자세히 알아보십시오"^].
 
 . 다음 BlueXP API 호출을 사용하여 볼트 내의 키 목록을 가져옵니다.
 +
@@ -156,7 +156,7 @@ HA 쌍의 경우: 'get/Azure/ha/metadata/keys-vault'
 keyName * 을 기록해 두십시오. 다음 단계에서 해당 값을 볼트 이름과 함께 지정해야 합니다.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["이 API 호출에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-hametadata["이 API 호출에 대해 자세히 알아보십시오"^].
 
 . 다음 BlueXP API 호출을 사용하여 Cloud Volumes ONTAP 시스템을 생성합니다.
 +
@@ -177,7 +177,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-haworking-environments["이 API 호출에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-haworking-environments["이 API 호출에 대해 자세히 알아보십시오"^].
 
 .. 단일 노드 시스템의 경우:
 +
@@ -196,7 +196,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 }
 ----
 +
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-vsaworking-environments["이 API 호출에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-vsaworking-environments["이 API 호출에 대해 자세히 알아보십시오"^].
 
 
 

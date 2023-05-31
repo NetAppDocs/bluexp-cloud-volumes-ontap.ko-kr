@@ -162,7 +162,7 @@ BlueXP에 필요한 권한이 있는 경우 성능 계층과 용량 계층 간�
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-사용 권한은 기본적으로 사용자 지정 역할에 포함됩니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Connector에 대한 Azure 권한을 봅니다"^]
+사용 권한은 기본적으로 사용자 지정 역할에 포함됩니다. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Connector에 대한 Azure 권한을 봅니다"^]
 
 endif::azure[]
 
@@ -297,7 +297,7 @@ Cloud Volumes ONTAP는 데이터 보호 볼륨의 데이터를 용량 계층으�
 image:screenshot_replication_tiering.gif["볼륨을 복제할 때 S3 계층화 옵션을 보여 주는 스크린샷"]
 
 +
-데이터 복제에 대한 도움말은 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["클라우드 간 데이터 복제"^].
+데이터 복제에 대한 도움말은 을 참조하십시오 https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["클라우드 간 데이터 복제"^].
 
 
 

@@ -184,7 +184,7 @@ HA 쌍의 경우 4개의 VPC가 필요합니다. 각 VPC는 공유 또는 독립
 
 공유 VPC를 사용하면 여러 프로젝트에서 가상 네트워크를 구성하고 중앙에서 관리할 수 있습니다. _host project_에서 공유 VPC 네트워크를 설정하고 _service project_에서 Connector 및 Cloud Volumes ONTAP 가상 머신 인스턴스를 배포할 수 있습니다. https://cloud.google.com/vpc/docs/shared-vpc["Google Cloud 설명서: 공유 VPC 개요"^].
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Connector 구축에서 적용되는 필수 공유 VPC 사용 권한을 검토합니다"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Connector 구축에서 적용되는 필수 공유 VPC 사용 권한을 검토합니다"^]
 
 
 
@@ -254,7 +254,7 @@ HA 구성에는 두 가지 방화벽 규칙 세트가 필요합니다.
 
 
 
-TIP: 커넥터에 대한 정보를 찾고 계십니까? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Connector의 방화벽 규칙을 봅니다"^]
+TIP: 커넥터에 대한 정보를 찾고 계십니까? https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Connector의 방화벽 규칙을 봅니다"^]
 
 
 
@@ -509,6 +509,6 @@ NOTE: 새로운 Google Cloud HA 쌍 구축에 빠른 쓰기 속도를 사용하�
 
 아직 Connector를 만들지 않은 경우 Connector에 대한 네트워킹 요구 사항도 검토해야 합니다.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["커넥터에 대한 네트워킹 요구 사항을 봅니다"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloud의 방화벽 규칙"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["커넥터에 대한 네트워킹 요구 사항을 봅니다"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloud의 방화벽 규칙"^]
 

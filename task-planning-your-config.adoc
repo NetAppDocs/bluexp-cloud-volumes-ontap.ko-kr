@@ -120,7 +120,7 @@ BlueXP는 사용자 데이터를 위한 스토리지 외에도 Cloud Volumes ONT
 link:reference-default-configs.html#aws["AWS에서 Cloud Volumes ONTAP 시스템 데이터의 기본 디스크를 봅니다"].
 
 
-TIP: 커넥터에는 시스템 디스크도 필요합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["커넥터의 기본 설정에 대한 세부 정보를 봅니다"^].
+TIP: 커넥터에는 시스템 디스크도 필요합니다. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["커넥터의 기본 설정에 대한 세부 정보를 봅니다"^].
 
 
 

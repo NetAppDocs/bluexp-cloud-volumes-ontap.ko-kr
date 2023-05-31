@@ -54,7 +54,7 @@ Azure의 오스트레일리아 동부 지역은 현재 Cloud Volumes ONTAP 9.12.
 * 볼륨 사용량
 
 
-자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["용량 기반 라이센스 관리"^].
+자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["용량 기반 라이센스 관리"^].
 
 
 
@@ -92,7 +92,7 @@ Turin 지역은 현재 Google Cloud for Cloud Volumes ONTAP 및 Connector for Cl
 
 이제 BlueXP 디지털 지갑에 시장 프라이빗 오퍼와 함께 구입한 라이센스 용량이 표시됩니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["계정에서 사용된 용량을 확인하는 방법에 대해 알아봅니다"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["계정에서 사용된 용량을 확인하는 방법에 대해 알아봅니다"^].
 
 
 
@@ -106,7 +106,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 BlueXP는 이제 Cloud Volumes ONTAP 개요, 볼륨 및 집계 페이지에 대한 사용자 인터페이스를 새롭게 설계했습니다. 타일 기반 디자인은 각 타일에 보다 포괄적인 정보를 제공하여 사용자 경험을 향상시킬 수 있습니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["이 스크린샷은 Cloud Volumes ONTAP 개요 페이지에서 재설계된 BlueXP 사용자 인터페이스를 보여줍니다. 다양한 타일이 스토리지 효율성, 버전, 용량 배포, Cloud Volumes ONTAP 구축, 볼륨, 애그리게이트, 복제 및 백업에 대한 정보를 보여줍니다."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["이 스크린샷은 Cloud Volumes ONTAP 개요 페이지에서 재설계된 BlueXP 사용자 인터페이스를 보여줍니다. 다양한 타일이 스토리지 효율성, 버전, 용량 배포, Cloud Volumes ONTAP 구축, 볼륨, 애그리게이트, 복제 및 백업에 대한 정보를 보여줍니다."]
 
 
 
@@ -117,9 +117,9 @@ CLI 또는 System Manager를 통해 직접 생성된 FlexGroup 볼륨은 이제 
 
 NOTE: 현재 BlueXP에서만 기존 FlexGroup 볼륨을 볼 수 있습니다. BlueXP에서 FlexGroup 볼륨을 생성하는 기능은 사용할 수 없지만 향후 릴리스에서 제공될 예정입니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["볼륨 타일 아래에 FlexGroup 볼륨 아이콘 호버 텍스트를 보여 주는 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["볼륨 타일 아래에 FlexGroup 볼륨 아이콘 호버 텍스트를 보여 주는 스크린샷"]
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["생성된 FlexGroup 볼륨을 보는 방법에 대해 자세히 알아보십시오."^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volumes.html["생성된 FlexGroup 볼륨을 보는 방법에 대해 자세히 알아보십시오."^]
 
 
 
@@ -168,7 +168,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["이 Cloud Volumes ON
 
 멀티 테넌트 외부 키 관리를 통해 NetApp Volume Encryption을 사용할 때 개별 스토리지 VM(SVM)이 KMIP 서버를 통해 자체 키를 유지할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["NetApp 암호화 솔루션으로 볼륨을 암호화하는 방법을 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html["NetApp 암호화 솔루션으로 볼륨을 암호화하는 방법을 알아보십시오"^].
 
 
 
@@ -176,9 +176,9 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 Cloud Volumes ONTAP는 이제 인터넷으로부터 완전히 분리된 모든 클라우드 환경에서 지원됩니다. BYOL(노드 기반 라이센싱)만 이 환경에서 지원됩니다. 용량 기반 라이센스는 지원되지 않습니다. 시작하려면 커넥터 소프트웨어를 수동으로 설치하고, 커넥터에서 실행되는 BlueXP 콘솔에 로그인하고, BlueXP 디지털 지갑에 BYOL 라이센스를 추가한 다음 Cloud Volumes ONTAP를 구축하십시오.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["인터넷에 연결되지 않은 위치에 커넥터를 설치합니다"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["커넥터의 BlueXP 콘솔에 액세스합니다"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["할당되지 않은 라이센스를 추가합니다"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["인터넷에 연결되지 않은 위치에 커넥터를 설치합니다"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui["커넥터의 BlueXP 콘솔에 액세스합니다"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["할당되지 않은 라이센스를 추가합니다"^]
 
 
 
@@ -201,7 +201,7 @@ Cloud Volumes ONTAP 9.13.0 릴리즈의 일부 인스턴스에서 Flash Cache, �
 
 이제 AWS HA AZ(단일 가용성 영역) 구축을 통해 반 배정 그룹을 생성할 수 있는 새로운 구성 설정이 제공됩니다. 이제 장애가 발생한 반 배정 그룹 생성을 생략하고 AWS HA 단일 AZ 구축을 성공적으로 완료하도록 선택할 수 있습니다.
 
-반 배정 그룹 생성 설정을 구성하는 방법에 대한 자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["AWS HA 단일 AZ에 대한 배치 그룹 생성 구성"^].
+반 배정 그룹 생성 설정을 구성하는 방법에 대한 자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["AWS HA 단일 AZ에 대한 배치 그룹 생성 구성"^].
 
 
 
@@ -209,7 +209,7 @@ Cloud Volumes ONTAP 9.13.0 릴리즈의 일부 인스턴스에서 Flash Cache, �
 
 Azure Private Links를 사용할 때 개인 DNS 영역과 가상 네트워크 간의 링크를 만들지 않도록 새로운 구성 설정을 사용할 수 있습니다. 생성은 기본적으로 활성화되어 있습니다.
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["Azure 프라이빗 DNS에 대한 자세한 내용은 BlueXP를 참조하십시오"^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["Azure 프라이빗 DNS에 대한 자세한 내용은 BlueXP를 참조하십시오"^]
 
 
 
@@ -217,7 +217,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabli
 
 이제 Cloud Volumes ONTAP 9.8 시스템 이상을 생성할 때 데이터 계층화와 WORM 스토리지를 함께 사용할 수 있습니다. WORM 스토리지를 통한 데이터 계층화를 사용하면 데이터를 클라우드의 오브젝트 저장소에 계층화할 수 있습니다.
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오."^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오."^]
 
 
 
@@ -231,7 +231,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-wor
 
 최적화된 에지 캐시 용량 기반 라이센스 패키지는 Google Cloud Marketplace에서 Cloud Volumes ONTAP에 대해 용량제 오퍼링을 제공하거나 연간 계약으로 제공됩니다.
 
-을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Cloud Volumes ONTAP 라이센스"^].
+을 참조하십시오 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Cloud Volumes ONTAP 라이센스"^].
 
 
 
@@ -239,7 +239,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-wor
 
 MTEKM(멀티 테넌트 암호화 키 관리) 라이센스는 새 Cloud Volumes ONTAP 배포에 더 이상 포함되지 않습니다.
 
-Cloud Volumes ONTAP와 함께 자동으로 설치되는 ONTAP 기능 라이센스에 대한 자세한 내용은 를 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-default-configs.html["Cloud Volumes ONTAP의 기본 구성"^].
+Cloud Volumes ONTAP와 함께 자동으로 설치되는 ONTAP 기능 라이센스에 대한 자세한 내용은 를 참조하십시오 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html["Cloud Volumes ONTAP의 기본 구성"^].
 
 
 
@@ -309,7 +309,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP�
 
 이제 동일한 Azure 가입 내에서 하나의 리소스 그룹에서 Azure의 다른 리소스 그룹으로 작업 환경을 이동할 수 있습니다.
 
-자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-moving-resource-groups-azure.html["리소스 그룹 이동 중"].
+자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-moving-resource-groups-azure.html["리소스 그룹 이동 중"].
 
 
 
@@ -325,7 +325,7 @@ NDMP를 구성하고 사용하는 방법에 대한 자세한 내용은 을 참�
 
 이제 생성 시 모든 관리되는 디스크를 암호화할 수 있는 새로운 Azure 권한이 추가되었습니다.
 
-이 새로운 기능에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-azure-encryption.html["Azure에서 고객이 관리하는 키를 사용하도록 Cloud Volumes ONTAP를 설정합니다"].
+이 새로운 기능에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-azure-encryption.html["Azure에서 고객이 관리하는 키를 사용하도록 Cloud Volumes ONTAP를 설정합니다"].
 
 
 
@@ -342,11 +342,11 @@ NDMP를 구성하고 사용하는 방법에 대한 자세한 내용은 을 참�
 이러한 세부 정보를 통해 청구 방식 및 추가 용량 구매 여부를 보다 잘 파악할 수 있습니다.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["계정에서 사용된 용량을 확인하는 방법에 대해 알아봅니다"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["계정에서 사용된 용량을 확인하는 방법에 대해 알아봅니다"].
 
 * 이제 하나의 충전 방법을 최적화된 충전 방법으로 변경할 수 있습니다.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["충전 방법을 변경하는 방법에 대해 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["충전 방법을 변경하는 방법에 대해 알아보십시오"].
 
 
 
@@ -358,7 +358,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 작업 환경을 선택한 후 * 비용 및 성능 최적화 * 옵션을 선택하여 Cloud Volumes ONTAP의 인스턴스 유형을 변경할 수 있습니다. 더 작은 크기의 인스턴스를 선택하면 비용을 절감하고 더 큰 인스턴스로 변경하면 성능을 최적화할 수 있습니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-optimize-cost-performance.png["작업 환경을 선택한 후 Canvas에서 사용할 수 있는 Optimize Cost  amp; Performance 옵션의 스크린샷."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-optimize-cost-performance.png["작업 환경을 선택한 후 Canvas에서 사용할 수 있는 Optimize Cost  amp; Performance 옵션의 스크린샷."]
 
 
 
@@ -380,7 +380,7 @@ Cloud Volumes ONTAP 시스템에서 AutoSupport 메시지를 보낼 수 없는 �
 
 멀티 테넌트 외부 키 관리를 통해 NetApp Volume Encryption을 사용할 때 개별 스토리지 VM(SVM)이 KMIP 서버를 통해 자체 키를 유지할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["NetApp 암호화 솔루션으로 볼륨을 암호화하는 방법을 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html["NetApp 암호화 솔루션으로 볼륨을 암호화하는 방법을 알아보십시오"].
 
 
 
@@ -398,7 +398,7 @@ AutoSupport은 능동적으로 시스템 상태를 모니터링하고 NetApp 기
 
 이제 용량 기반 라이센스를 사용하는 Cloud Volumes ONTAP 시스템의 충전 방법을 변경할 수 있습니다. 예를 들어, Essentials 패키지와 함께 Cloud Volumes ONTAP 시스템을 배포한 경우 비즈니스 요구사항이 변경되면 이를 Professional 패키지로 변경할 수 있습니다. 이 기능은 Digital Wallet에서 사용할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["충전 방법을 변경하는 방법에 대해 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["충전 방법을 변경하는 방법에 대해 알아보십시오"].
 
 
 
@@ -406,7 +406,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 Cloud Volumes ONTAP 작업 환경을 만들면 사용자 인터페이스를 통해 미리 정의된 보안 그룹이 선택한 네트워크 내에서만(권장) 또는 모든 네트워크 내의 트래픽을 허용할지 여부를 선택할 수 있습니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["보안 그룹을 선택할 때 작업 환경 마법사에서 사용할 수 있는 트래픽 허용 옵션을 보여 주는 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["보안 그룹을 선택할 때 작업 환경 마법사에서 사용할 수 있는 트래픽 허용 옵션을 보여 주는 스크린샷"]
 
 
 
@@ -422,7 +422,7 @@ Azure Marketplace 구독을 통해 비용을 지불하는 Azure에서는 Cloud V
 * * Edge Cache *: 라이센스 https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge 캐시"^]
 
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["이러한 라이센스 패키지에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["이러한 라이센스 패키지에 대해 자세히 알아보십시오"].
 
 
 
@@ -436,7 +436,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 이제 Digital Wallet은 사용자 계정의 총 소비된 용량과 라이센스 패키지별 소비된 용량을 표시합니다. 이를 통해 비용이 청구되는 방식 및 추가 용량을 구입해야 하는지 여부를 파악할 수 있습니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["용량 기반 라이센스에 대한 Digital Wallet 페이지를 보여 주는 스크린샷 이 페이지에서는 계정에서 사용된 용량에 대한 개요를 제공하고 라이센스 패키지를 통해 사용된 용량을 나눕니다."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["용량 기반 라이센스에 대한 Digital Wallet 페이지를 보여 주는 스크린샷 이 페이지에서는 계정에서 사용된 용량에 대한 개요를 제공하고 라이센스 패키지를 통해 사용된 용량을 나눕니다."]
 
 
 
@@ -444,7 +444,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 이제 BlueXP는 사용자 인터페이스에서 Cloud Volumes ONTAP 작업 환경을 생성할 때 Amazon EBS Elastic Volumes 기능을 지원합니다. GP3 또는 ios1 디스크를 사용하는 경우 Elastic Volumes 기능이 기본적으로 활성화됩니다. 스토리지 요구사항에 따라 초기 용량을 선택하고 Cloud Volumes ONTAP를 구축한 후 수정할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["AWS의 Elastic Volumes 지원에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html["AWS의 Elastic Volumes 지원에 대해 자세히 알아보십시오"].
 
 
 
@@ -492,7 +492,7 @@ Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우 ONTAP 시스�
 
 이 고급 보기는 Cloud Volumes ONTAP 9.10.0 이상에서 미리 보기로 사용할 수 있습니다. NetApp은 이 경험을 개선하고 다음 릴리즈에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 사용하여 피드백을 보내주십시오.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["고급 보기에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["고급 보기에 대해 자세히 알아보십시오"].
 
 
 
@@ -502,7 +502,7 @@ Cloud Volumes ONTAP aggregate에서 Amazon EBS Elastic Volumes 기능을 지원�
 
 Elastic Volumes에 대한 지원은 _new_Cloud Volumes ONTAP 9.11.0 시스템과 GP3 및 ios1 EBS 디스크 유형으로 시작됩니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].
 
 Elastic Volumes를 지원하려면 Connector에 대한 새로운 AWS 권한이 필요합니다.
 
@@ -511,7 +511,7 @@ Elastic Volumes를 지원하려면 Connector에 대한 새로운 AWS 권한이 �
 "ec2:DescribeVolumesModifications",
 "ec2:ModifyVolume",
 ----
-BlueXP에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["AWS에 대한 최신 커넥터 정책을 봅니다"^].
+BlueXP에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["AWS에 대한 최신 커넥터 정책을 봅니다"^].
 
 
 
@@ -527,7 +527,7 @@ link:task-deploy-aws-shared-vpc.html["공유 서브넷에 HA 쌍을 구축하는
 
 BlueXP는 이제 VNET 서비스 끝점을 사용하여 Cloud Volumes ONTAP와 스토리지 계정 간의 연결을 위해 네트워크 액세스를 제한합니다. BlueXP는 Azure Private Link 연결을 사용하지 않는 경우 서비스 끝점을 사용합니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP를 사용한 Azure 전용 링크 연결에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Cloud Volumes ONTAP를 사용한 Azure 전용 링크 연결에 대해 자세히 알아보십시오"].
 
 
 
@@ -545,7 +545,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-pr
 ONTAP CLI 또는 System Manager를 사용하여 단일 노드 시스템에 스토리지 VM을 생성해야 합니다.
 
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["Google Cloud의 스토리지 VM 제한에 대해 자세히 알아보십시오"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["Google Cloud에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 생성하는 방법을 알아보십시오"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Google Cloud에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 생성하는 방법을 알아보십시오"]
 
 
 
@@ -574,7 +574,7 @@ BlueXP가 HA 쌍의 중재자를 업그레이드할 때 이제 부팅 디스크�
 
 K8s 탭은 이전 버전에서 사용되지 않으며 이제 제거되었습니다. Kubernetes를 Cloud Volumes ONTAP와 함께 사용하려면 고급 데이터 관리를 위한 작업 환경으로 관리 Kubernetes 클러스터를 Canvas에 추가할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["BlueXP의 Kubernetes 데이터 관리에 대해 알아보십시오"^]
+https://docs.netapp.com/us-en/bluexp-kubernetes/concept-kubernetes.html["BlueXP의 Kubernetes 데이터 관리에 대해 알아보십시오"^]
 
 
 
@@ -584,7 +584,7 @@ https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["
 
 NetApp이 프라이빗 오퍼를 공유하면 작업 환경을 생성하는 동안 Azure 마켓플레이스에서 구독할 때 연간 계획을 선택할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["라이센스에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["라이센스에 대해 자세히 알아보십시오"].
 
 
 
@@ -592,7 +592,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 이제 Amazon S3 Glacier Instant Retrieval 저장소 클래스에 계층화된 데이터를 저장할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["계층화된 데이터에 대한 스토리지 클래스를 변경하는 방법에 대해 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["계층화된 데이터에 대한 스토리지 클래스를 변경하는 방법에 대해 알아보십시오"].
 
 
 
@@ -607,7 +607,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.htm
 ----
 이제 이러한 권한이 있어야 BlueXP에서 배치 그룹을 만드는 방법을 최적화할 수 있습니다.
 
-BlueXP에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["AWS에 대한 최신 커넥터 정책을 봅니다"^].
+BlueXP에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["AWS에 대한 최신 커넥터 정책을 봅니다"^].
 
 
 
@@ -648,7 +648,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 
 Cloud Volumes ONTAP에서 사용할 Google Cloud 서비스 계정을 선택하면 BlueXP에 각 서비스 계정과 연결된 이메일 주소가 표시됩니다. 이메일 주소를 보면 동일한 이름을 공유하는 서비스 계정을 쉽게 구별할 수 있습니다.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["서비스 계정 필드의 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["서비스 계정 필드의 스크린샷"]
 
 
 
@@ -660,7 +660,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 이전에 Cloud Volumes ONTAP 작업 환경 내에서 사용할 수 있었던 시스템 관리자 링크가 제거되었습니다.
 
-Cloud Volumes ONTAP 시스템에 연결된 웹 브라우저에 클러스터 관리 IP 주소를 입력하여 System Manager에 연결할 수도 있습니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connecting-to-otc.html["System Manager에 연결하는 방법에 대해 자세히 알아보십시오"].
+Cloud Volumes ONTAP 시스템에 연결된 웹 브라우저에 클러스터 관리 IP 주소를 입력하여 System Manager에 연결할 수도 있습니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connecting-to-otc.html["System Manager에 연결하는 방법에 대해 자세히 알아보십시오"].
 
 
 
@@ -682,7 +682,7 @@ https://cloud.netapp.com/pricing["WORM 스토리지 가격에 대해 자세히 �
 
 최근에 도입된 새 볼륨 생성 마법사는 * 고급 할당 * 옵션에서 특정 애그리게이트에 볼륨을 생성할 때 사용할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html["특정 애그리게이트에서 볼륨을 생성하는 방법에 대해 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-create-volumes.html["특정 애그리게이트에서 볼륨을 생성하는 방법에 대해 알아보십시오"].
 
 
 
@@ -708,7 +708,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volu
 
 
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오"].
 
 
 
@@ -722,7 +722,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 이 작업은 Cloud Volumes ONTAP 라이센스를 해지하고 만료 날짜가 동일한 서비스에 대해 달러 상당 라이센스를 생성합니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["할당되지 않은 노드 기반 라이센스를 교환하는 방법에 대해 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["할당되지 않은 노드 기반 라이센스를 교환하는 방법에 대해 알아보십시오"].
 
 
 
@@ -931,7 +931,7 @@ image:screenshot_azure_resource_group.png["기존 자원 그룹을 선택할 수
 "Microsoft.Network/privateEndpoints/delete",
 "Microsoft.Compute/availabilitySets/delete",
 ----
-BlueXP에 추가한 각 Azure 자격 증명 세트에 이러한 권한을 제공해야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Azure의 최신 커넥터 정책을 봅니다"^].
+BlueXP에 추가한 각 Azure 자격 증명 세트에 이러한 권한을 제공해야 합니다. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Azure의 최신 커넥터 정책을 봅니다"^].
 
 
 
@@ -1013,7 +1013,7 @@ BlueXP는 이제 Cloud Volumes ONTAP 시스템을 배포하고 전원을 켤 때
 
 이러한 기능 향상으로 더 이상 필요하지 않은 스냅샷을 제거하여 클라우드 공급자 비용을 절감할 수 있습니다.
 
-Connector에는 Azure 스냅샷을 삭제할 수 있는 새로운 권한이 필요합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Azure의 최신 커넥터 정책을 봅니다"^].
+Connector에는 Azure 스냅샷을 삭제할 수 있는 새로운 권한이 필요합니다. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Azure의 최신 커넥터 정책을 봅니다"^].
 
 [source, json]
 ----

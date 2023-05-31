@@ -76,7 +76,7 @@ NSS 계정이 표시되지 않으면 BlueXP의 지원 섹션에서 * NSS 관리 
 
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-create-case.png["NetApp Support로 케이스를 생성할 수 있는 케이스 생성 양식 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-create-case.png["NetApp Support로 케이스를 생성할 수 있는 케이스 생성 양식 스크린샷"]
 
 
 
@@ -132,19 +132,19 @@ BlueXP에서 직접 활성 및 해결된 지원 사례를 보고 관리할 수 �
 ** 조직의 케이스 * 에서 * 보기 * 를 클릭하여 회사와 관련된 모든 케이스를 봅니다.
 ** 정확한 날짜 범위를 선택하거나 다른 기간을 선택하여 날짜 범위를 수정합니다.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-date-range.png["케이스 관리 페이지의 표 위에 있는 옵션 스크린샷으로 정확한 날짜 범위 또는 최근 7일, 30일 또는 3개월을 선택할 수 있습니다."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-date-range.png["케이스 관리 페이지의 표 위에 있는 옵션 스크린샷으로 정확한 날짜 범위 또는 최근 7일, 30일 또는 3개월을 선택할 수 있습니다."]
 
 ** 열의 내용을 필터링합니다.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-filter.png["활성 또는 종료와 같은 특정 상태와 일치하는 케이스를 필터링할 수 있는 상태 열의 필터 옵션 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-filter.png["활성 또는 종료와 같은 특정 상태와 일치하는 케이스를 필터링할 수 있는 상태 열의 필터 옵션 스크린샷"]
 
-** 을 클릭하여 테이블에 표시되는 열을 변경합니다 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-columns.png["테이블에 나타나는 더하기 아이콘입니다"] 표시할 열을 선택합니다.
+** 을 클릭하여 테이블에 표시되는 열을 변경합니다 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-columns.png["테이블에 나타나는 더하기 아이콘입니다"] 표시할 열을 선택합니다.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-columns.png["표에 표시할 수 있는 열을 보여 주는 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-columns.png["표에 표시할 수 있는 열을 보여 주는 스크린샷"]
 
 
 
-. 를 클릭하여 기존 케이스를 관리합니다 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["표의 마지막 열에 세 개의 점이 있는 아이콘"] 사용 가능한 옵션 중 하나를 선택합니다.
+. 를 클릭하여 기존 케이스를 관리합니다 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-action.png["표의 마지막 열에 세 개의 점이 있는 아이콘"] 사용 가능한 옵션 중 하나를 선택합니다.
 +
 ** * 사례 보기 *: 특정 케이스에 대한 전체 세부 정보를 봅니다.
 ** * 케이스 메모 업데이트 *: 문제에 대한 추가 세부 정보를 제공하거나 * 파일 업로드 * 를 선택하여 최대 5개의 파일을 첨부할 수 있습니다.
@@ -155,6 +155,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-actions.png["표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-actions.png["표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷"]
 
 

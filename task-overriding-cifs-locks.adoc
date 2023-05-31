@@ -25,7 +25,7 @@ Microsoft Azure는 가상 시스템에서 정기적인 유지 관리 이벤트�
 CAUTION: 이 프로세스는 CIFS 클라이언트에 영향을 줄 수 있습니다. CIFS 클라이언트에서 커밋되지 않은 데이터는 손실될 수 있습니다.
 
 .필요한 것
-BlueXP 설정을 변경하려면 먼저 커넥터를 만들어야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#how-to-create-a-connector["자세히 알아보기"^].
+BlueXP 설정을 변경하려면 먼저 커넥터를 만들어야 합니다. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#how-to-create-a-connector["자세히 알아보기"^].
 
 .단계
 . BlueXP 콘솔의 오른쪽 상단에서 설정 아이콘을 클릭하고 * 커넥터 설정 * 을 선택합니다.

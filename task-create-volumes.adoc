@@ -87,7 +87,7 @@ Cloud Volumes ONTAP 시스템의 데이터 애그리게이트를 잘 알고 있�
 | 볼륨 크기 | 입력할 수 있는 최대 크기는 씬 프로비저닝의 사용 여부에 따라 크게 달라집니다. 이를 통해 현재 사용 가능한 물리적 스토리지보다 더 큰 볼륨을 생성할 수 있습니다. 
 
 
-| 태그 | 볼륨에 추가하는 태그는 과 연결됩니다 https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["응용 프로그램 템플릿 서비스"^]을 사용하면 리소스 관리를 구성하고 단순화할 수 있습니다. 
+| 태그 | 볼륨에 추가하는 태그는 과 연결됩니다 https://docs.netapp.com/us-en/bluexp-remediation/task-using-tags.html["응용 프로그램 템플릿 서비스"^]을 사용하면 리소스 관리를 구성하고 단순화할 수 있습니다. 
 
 
 | 스토리지 VM(SVM) | 스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, 클라이언트에 스토리지 및 데이터 서비스를 제공합니다. SVM 또는 가상 서버로서 이를 알 수 있습니다. Cloud Volumes ONTAP는 기본적으로 하나의 스토리지 VM으로 구성되지만 일부 구성에서는 추가 스토리지 VM을 지원합니다. 새 볼륨에 대해 스토리지 VM을 지정할 수 있습니다. 
@@ -158,7 +158,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 DNS 도메인:: SVM(Cloud Volumes ONTAP 스토리지 가상 머신)용 DNS 도메인 대부분의 경우 도메인은 AD 도메인과 동일합니다.
-NTP 서버:: Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP 자동화 문서"^] 를 참조하십시오.
+NTP 서버:: Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP 자동화 문서"^] 를 참조하십시오.
 +
 --
 CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.

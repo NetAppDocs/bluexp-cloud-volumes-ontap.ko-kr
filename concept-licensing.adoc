@@ -269,7 +269,7 @@ TIP: 무료 평가판이 시작될 때, 7일 남았을 때, 1일 남았을 때 B
 
 20대 이상의 시스템이 필요한 대규모 구축 환경의 경우 고객 담당자 또는 세일즈 팀에 문의하십시오.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["NetApp 계정 에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["NetApp 계정 에 대해 자세히 알아보십시오"^].
 
 
 

@@ -52,7 +52,7 @@ BlueXP에서 * Active IQ * 서비스를 클릭합니다.
 +
 image:screenshot_aiq_digital_advisor.png["BlueXP의 Active IQ 디지털 자문업체 사용자 인터페이스 스크린샷"]
 
-* BlueXP에 NSS 계정을 등록하지 않은 경우 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NSS 계정을 지금 등록하십시오"^] 그런 다음 Active IQ 디지털 자문 UI가 나타납니다.
+* BlueXP에 NSS 계정을 등록하지 않은 경우 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["NSS 계정을 지금 등록하십시오"^] 그런 다음 Active IQ 디지털 자문 UI가 나타납니다.
 
 
 

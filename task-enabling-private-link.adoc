@@ -47,7 +47,7 @@ image:screenshot_settings_icon.png["BlueXP 콘솔의 오른쪽 위에 설정 아
 .작업을 마친 후
 Azure Private Links를 사용하지 않도록 설정하고 Connector가 프록시 서버를 사용하는 경우 직접 API 트래픽을 활성화해야 합니다.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["Connector에서 직접 API 트래픽을 활성화하는 방법에 대해 알아봅니다"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html#enable-a-proxy-on-a-connector["Connector에서 직접 API 트래픽을 활성화하는 방법에 대해 알아봅니다"^]
 
 
 

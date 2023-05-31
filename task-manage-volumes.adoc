@@ -298,11 +298,11 @@ image:screenshot_aggr_volume_overview.png["스크린샷: 집계 정보 대화 �
 . 사용 가능한 용량이 있는 Cloud Volumes ONTAP 시스템을 식별하거나 새 시스템을 구축합니다.
 . 타겟 작업 환경에서 소스 작업 환경을 끌어다 놓아 볼륨의 일회성 데이터 복제를 수행합니다.
 +
-자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["시스템 간 데이터 복제"^].
+자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["시스템 간 데이터 복제"^].
 
 . 복제 상태 페이지로 이동한 다음 SnapMirror 관계를 끊어서 복제된 볼륨을 데이터 보호 볼륨에서 읽기/쓰기 볼륨으로 변환합니다.
 +
-자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["데이터 복제 일정 및 관계 관리"^].
+자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["데이터 복제 일정 및 관계 관리"^].
 
 . 데이터 액세스를 위한 볼륨을 구성합니다.
 +

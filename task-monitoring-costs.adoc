@@ -24,7 +24,7 @@ BlueXP를 사용하면 AWS에서 Cloud Volumes ONTAP를 실행할 때 발생하�
 +
 .. BlueXP에 사용 권한을 제공하는 IAM 정책에 필요한 권한이 포함되어 있는지 확인합니다.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["필요한 권한을 봅니다"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["필요한 권한을 봅니다"^]
 
 .. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["WorkingEnvironmentId* 태그를 활성화합니다"^].
 +

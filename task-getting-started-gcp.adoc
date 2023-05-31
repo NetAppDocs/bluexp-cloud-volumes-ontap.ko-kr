@@ -18,10 +18,10 @@ summary: 몇 가지 단계로 Cloud Volumes ONTAP for Google Cloud를 시작하�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] 커넥터를 작성합니다
 [role="quick-margin-para"]
-가 없는 경우 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["커넥터"^] 그러나 계정 관리자는 계정을 만들어야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Google Cloud에서 Connector를 만드는 방법을 알아보십시오"^]
+가 없는 경우 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["커넥터"^] 그러나 계정 관리자는 계정을 만들어야 합니다. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Google Cloud에서 Connector를 만드는 방법을 알아보십시오"^]
 
 [role="quick-margin-para"]
-인터넷에 액세스할 수 없는 서브넷에 Cloud Volumes ONTAP를 배포하려는 경우 수동으로 커넥터를 설치하고 해당 커넥터에서 실행 중인 BlueXP 사용자 인터페이스에 액세스해야 합니다. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["인터넷에 액세스하지 않고 커넥터에 수동으로 설치하는 방법에 대해 알아봅니다"^]
+인터넷에 액세스할 수 없는 서브넷에 Cloud Volumes ONTAP를 배포하려는 경우 수동으로 커넥터를 설치하고 해당 커넥터에서 실행 중인 BlueXP 사용자 인터페이스에 액세스해야 합니다. https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["인터넷에 액세스하지 않고 커넥터에 수동으로 설치하는 방법에 대해 알아봅니다"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 구성을 계획합니다
 [role="quick-margin-para"]
@@ -47,7 +47,7 @@ link:reference-networking-gcp.html["네트워킹 요구 사항에 대해 자세�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] 서비스 계정을 설정합니다
 [role="quick-margin-para"]
-Cloud Volumes ONTAP를 사용하려면 Google Cloud 서비스 계정이 두 가지 용도로 필요합니다. 첫 번째는 를 활성화하는 것입니다 link:concept-data-tiering.html["데이터 계층화"] Google Cloud에서 콜드 데이터를 저비용 오브젝트 스토리지로 계층화합니다. 두 번째는 를 활성화하는 것입니다 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["BlueXP 백업 및 복구"^] 볼륨을 저렴한 오브젝트 스토리지에 백업
+Cloud Volumes ONTAP를 사용하려면 Google Cloud 서비스 계정이 두 가지 용도로 필요합니다. 첫 번째는 를 활성화하는 것입니다 link:concept-data-tiering.html["데이터 계층화"] Google Cloud에서 콜드 데이터를 저비용 오브젝트 스토리지로 계층화합니다. 두 번째는 를 활성화하는 것입니다 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXP 백업 및 복구"^] 볼륨을 저렴한 오브젝트 스토리지에 백업
 
 [role="quick-margin-para"]
 하나의 서비스 계정을 설정하고 두 가지 용도로 사용할 수 있습니다. 서비스 계정에는 * 스토리지 관리자 * 역할이 있어야 합니다.
@@ -72,7 +72,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["프로젝트�
 작업 환경 추가 * 를 클릭하고 배포할 시스템 유형을 선택한 다음 마법사의 단계를 완료합니다. link:task-deploying-gcp.html["단계별 지침을 읽습니다"].
 
 .관련 링크
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["BlueXP에서 커넥터 만들기"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Linux 호스트에 Connector 소프트웨어 설치"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["BlueXP가 Google Cloud 사용 권한으로 수행하는 기능"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["BlueXP에서 커넥터 만들기"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Linux 호스트에 Connector 소프트웨어 설치"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["BlueXP가 Google Cloud 사용 권한으로 수행하는 기능"^]
 

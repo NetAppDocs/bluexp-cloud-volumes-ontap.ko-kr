@@ -176,7 +176,7 @@ TIP: 여러 가용성 영역에 구축된 경우 여러 LIF가 에 연결됩니�
 BlueXP에서는 보안 그룹을 만들 필요가 없습니다. 직접 사용해야 하는 경우 을 참조하십시오 link:reference-security-groups.html["보안 그룹 규칙"].
 
 
-TIP: 커넥터에 대한 정보를 찾고 계십니까? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Connector에 대한 보안 그룹 규칙을 봅니다"^]
+TIP: 커넥터에 대한 정보를 찾고 계십니까? https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["Connector에 대한 보안 그룹 규칙을 봅니다"^]
 
 
 
@@ -281,6 +281,6 @@ image:diagram_ha_networking.png["Cloud Volumes ONTAP HA 아키텍처의 구성 �
 
 아직 Connector를 만들지 않은 경우 Connector에 대한 네트워킹 요구 사항도 검토해야 합니다.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["커넥터에 대한 네트워킹 요구 사항을 봅니다"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWS의 보안 그룹 규칙"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["커넥터에 대한 네트워킹 요구 사항을 봅니다"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS의 보안 그룹 규칙"^]
 

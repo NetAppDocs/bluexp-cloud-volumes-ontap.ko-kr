@@ -19,7 +19,7 @@ Google 클라우드 스토리지는 디스크에 데이터를 쓰기 전에 항�
 .단계
 . BlueXP Connector 서비스 계정의 프로젝트 수준에서 키가 저장된 프로젝트에 대한 올바른 권한이 있는지 확인합니다.
 +
-사용 권한은 에 제공됩니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["기본적으로 커넥터 서비스 계정 권한이 있습니다"^], 그러나 클라우드 키 관리 서비스에 대체 프로젝트를 사용하는 경우에는 적용되지 않을 수 있습니다.
+사용 권한은 에 제공됩니다 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["기본적으로 커넥터 서비스 계정 권한이 있습니다"^], 그러나 클라우드 키 관리 서비스에 대체 프로젝트를 사용하는 경우에는 적용되지 않을 수 있습니다.
 
 +
 사용 권한은 다음과 같습니다.
@@ -62,4 +62,4 @@ https://cloud.google.com/kms/docs/iam#granting_roles_on_a_resource["Google Cloud
 ----
 
 
-을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP 자동화 문서"^] "GcpEncryption" 매개 변수 사용에 대한 자세한 내용은 를 참조하십시오.
+을 참조하십시오 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP 자동화 문서"^] "GcpEncryption" 매개 변수 사용에 대한 자세한 내용은 를 참조하십시오.

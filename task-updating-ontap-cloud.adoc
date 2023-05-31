@@ -342,6 +342,6 @@ maxDownloadSessions_ 값은 1이거나 1보다 큰 정수일 수 있습니다. �
 
 32는 예제 값입니다. 사용할 값은 NAT 구성과 동시에 사용할 수 있는 세션 수에 따라 다릅니다.
 
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["/occm/config API 호출에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmconfig["/occm/config API 호출에 대해 자세히 알아보십시오"^].
 
 endif::gcp[]
