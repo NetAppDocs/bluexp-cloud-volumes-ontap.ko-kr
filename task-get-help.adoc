@@ -18,6 +18,10 @@ NetApp은 다양한 방법으로 BlueXP 및 클라우드 서비스를 지원합�
 
 이 옵션은 하루 24시간, 주 7일 동안 무료로 사용할 수 있습니다.
 
+* 문서화
++
+현재 보고 있는 BlueXP 문서입니다.
+
 * https://kb.netapp.com/Cloud/BlueXP["기술 자료"^]
 +
 문제를 해결하는 데 도움이 되는 문서를 찾으려면 BlueXP 기술 자료를 검색하십시오.
@@ -25,10 +29,6 @@ NetApp은 다양한 방법으로 BlueXP 및 클라우드 서비스를 지원합�
 * http://community.netapp.com/["커뮤니티"^]
 +
 BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 새 토론을 만드십시오.
-
-* 문서화
-+
-현재 보고 있는 BlueXP 문서입니다.
 
 * mailto:ng-cloudmanager-feedback@netapp.com [피드백 이메일]
 +
@@ -43,7 +43,9 @@ BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 �
 위의 자체 지원 옵션 외에도 NetApp 지원 전문가와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.
 
 .시작하기 전에
-케이스 생성* 기능을 사용하려면 먼저 BlueXP 계정 ID 일련 번호( 960xxxx) NetApp 포함 link:task-support-registration.html["지원 등록 방법을 알아보십시오"].
+* 케이스 생성 * 기능을 사용하려면 먼저 NetApp Support 사이트 자격 증명을 BlueXP 로그인에 연결해야 합니다. https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.html["BlueXP 로그인과 관련된 자격 증명을 관리하는 방법에 대해 알아봅니다"^].
+* 일련 번호가 있는 ONTAP 시스템의 케이스를 여는 경우 NSS 계정은 해당 시스템의 일련 번호와 연결되어 있어야 합니다.
+
 
 .단계
 . BlueXP에서 * 도움말 > 지원 * 을 클릭합니다.
@@ -52,10 +54,6 @@ BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 �
 .. 전화로 통화하려면 * 전화 * 를 클릭하십시오. 전화를 걸 수 있는 전화 번호가 나열된 netapp.com 페이지로 연결됩니다.
 .. 케이스 생성 * 을 클릭하여 NetApp 지원 담당자와 티켓을 엽니다.
 +
-*** * NetApp Support 사이트 계정 *: 지원 케이스를 여는 사람과 관련된 해당 NSS 계정을 선택합니다. 이 담당자는 아래에 제공된 추가 이메일 외에 NetApp에 연락할 수 있는 기본 담당자가 됩니다.
-+
-NSS 계정이 표시되지 않으면 BlueXP의 지원 섹션에서 * NSS 관리 * 탭으로 이동하여 추가할 수 있습니다.
-
 *** * 서비스 *: 문제와 관련된 서비스를 선택합니다. 예를 들어, 서비스 내의 워크플로우 또는 기능과 관련된 기술 지원 문제에 해당하는 BlueXP를 예로 들 수 있습니다.
 *** * 작업 환경 *: 스토리지에 적용 가능한 경우 * Cloud Volumes ONTAP * 또는 * On-Premise * 를 선택한 다음 관련 작업 환경을 선택합니다.
 +
@@ -89,7 +87,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 
 "선택한 서비스에 대해 케이스를 생성할 권한이 없습니다."
 
-이 오류는 NSS 계정과 연결된 레코드 회사가 BlueXP 계정 일련 번호( 960xxxx) 또는 작동 환경 일련 번호 케이스 생성 * 양식 상단의 NSS 계정 목록을 확인하여 올바른 일치 항목을 찾거나 다음 옵션 중 하나를 사용하여 지원을 요청할 수 있습니다.
+이 오류는 NSS 계정과 연결된 레코드 회사가 BlueXP 계정 일련 번호( 960xxxx) 또는 작동 환경 일련 번호 다음 옵션 중 하나를 사용하여 지원을 요청할 수 있습니다.
 
 * 제품 내 채팅을 사용합니다
 * 에서 비기술 케이스를 제출하십시오 https://mysupport.netapp.com/site/help[]

@@ -250,15 +250,24 @@ image:screenshot_overview_upgrade.png["스크린샷: 작업 환경을 선택한 
 image:screenshot_overview_upgrade.png["\"지금 업그레이드!\"가 표시된 스크린샷 링크 - 개요 탭 아래."]
 
 . 새 버전을 사용할 수 있는 경우 * 지금 업그레이드! * 를 클릭합니다
++
+
+NOTE: BlueXP 알림을 통해 Cloud Volumes ONTAP를 업그레이드하려면 먼저 NetApp Support 사이트 계정이 있어야 합니다.
+
 . Upgrade Cloud Volumes ONTAP 페이지에서 EULA를 읽은 다음 * EULA * 를 읽고 승인합니다 * 를 선택합니다.
 . 업그레이드 * 를 클릭합니다.
++
+
+NOTE: Upgrade Cloud Volumes ONTAP 페이지에서는 기본적으로 업그레이드할 최신 Cloud Volumes ONTAP 버전을 선택합니다. 사용 가능한 경우 * 이전 버전 선택 * 을 클릭하여 업그레이드를 위해 이전 버전의 Cloud Volumes ONTAP를 선택할 수 있습니다.
+을 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#supported-upgrade-paths["지원되는 업그레이드 경로 목록입니다"^] 현재 Cloud Volumes ONTAP 버전을 기반으로 적절한 업그레이드 경로를 선택합니다.
+
++
+image:screenshot_upgrade_select_versions.png["Cloud Volumes ONTAP 버전 업그레이드 페이지의 스크린샷."]
+
 
 
 .결과
 BlueXP가 소프트웨어 업그레이드를 시작합니다. 소프트웨어 업데이트가 완료되면 작업 환경에서 작업을 수행할 수 있습니다.
-
-
-NOTE: 현재 BlueXP 사용자 인터페이스를 통해서만 최신 ONTAP 버전으로 업그레이드할 수 있습니다. BlueXP 사용자 인터페이스를 통해 특정 ONTAP 버전으로 업그레이드할 수 있는 기능은 향후 릴리스에서 제공될 예정입니다.
 
 .작업을 마친 후
 SnapMirror 전송을 일시 중지한 경우 System Manager를 사용하여 전송을 다시 시작합니다.

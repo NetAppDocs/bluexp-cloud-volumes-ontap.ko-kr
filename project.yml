@@ -203,8 +203,6 @@ sidebar:
           url: "/task-change-ec2-instance.html"
         - title: HA 쌍의 경로 테이블을 변경합니다
           url: "/task-change-route-tables.html"
-        - title: AWS 비용 모니터링
-          url: "/task-monitoring-costs.html"
         - title: 반 배정 그룹 생성을 구성합니다
           url: task-configure-placement-group-failure-aws.html
       - title: Azure 관리

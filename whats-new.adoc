@@ -20,6 +20,20 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2023년 6월 4일
+
+다음 변경은 커넥터의 3.9.30 릴리스에 도입되었습니다.
+
+
+
+=== Cloud Volumes ONTAP 업그레이드 버전 선택기 업데이트
+
+Cloud Volumes ONTAP 업그레이드 페이지를 통해 최신 버전의 Cloud Volumes ONTAP 또는 이전 버전으로 업그레이드할 수 있습니다.
+
+BlueXP를 통한 Cloud Volumes ONTAP 업그레이드에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["Cloud Volumes ONTAP를 업그레이드합니다"^].
+
+
+
 == 2023년 5월 7일
 
 다음 변경 사항은 커넥터의 3.9.29 릴리스에 도입되었습니다.

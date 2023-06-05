@@ -2106,9 +2106,6 @@
   <block id="030b67ae86ab61438eb6b00a3ade8e7a" category="inline-link-macro">Cloud Volumes ONTAP에서 고객이 관리하는 암호화 키를 사용하는 방법에 대해 알아보십시오</block>
   <block id="d9c32a88801cedef2b665ed828d3ec26" category="paragraph"><block ref="c6d38e0757454a32ebb960ce7a42b88f" category="inline-link-macro-rx"></block>.</block>
   <block id="350a5f4a5776c36c5a3cd04127fb4fe5" category="section-title">요구사항을 구현한 후 데이터 계층화를 사용하도록 설정</block>
-  <block id="153099ca90154cd624989c2d0ba20c2b" category="inline-xref">모든 요구 사항을 충족하는지 확인합니다</block>
-  <block id="87d6e798cac3a87c0353ec294be704dd" category="list-text"><block ref="066865d547a10de791f5772d517b17f7" category="inline-xref-macro-rx"></block>.</block>
-  <block id="8bafa552ca08956804ea81c5b66b12db" category="list-text">메뉴 아이콘을 클릭하고 * 용량 계층화 활성화 * 를 선택합니다.</block>
   <block id="75a38ac7969fd8d12bc86993fd41536a" category="section-title">애그리게이트에서 계층화가 설정되었는지 확인합니다</block>
   <block id="d1795f03cc65928e7e6c681acf520582" category="paragraph">볼륨에서 데이터 계층화를 사용하려면 애그리게이트에서 데이터 계층화를 활성화해야 합니다. 새 볼륨 및 기존 볼륨에 대한 요구사항을 알고 있어야 합니다.</block>
   <block id="a424b516a0915a28d7aed2e00bd7621a" category="list-text">* 새 볼륨 *</block>
@@ -2385,7 +2382,6 @@
   <block id="be62ee4908c8d3dca05c47093c17858d" category="sidebar">시스템을 삭제합니다</block>
   <block id="0edcab2caeaab556e980f6a3212d51d3" category="sidebar">EC2 인스턴스 유형을 변경합니다</block>
   <block id="a96911d11ce21851c5394b372bc85f56" category="sidebar">HA 쌍의 경로 테이블을 변경합니다</block>
-  <block id="8819d055e4c3008377d8247600c4b4e5" category="sidebar">AWS 비용 모니터링</block>
   <block id="8b1d624f794355ece665dd67c7ae9471" category="sidebar">Azure VM 유형을 변경합니다</block>
   <block id="1755d74bde1ae25f7eaa96466419ce0c" category="sidebar">CIFS 잠금을 재정의합니다</block>
   <block id="57478f8fdb7096e76f6786fa003c8e66" category="sidebar">기계 유형을 변경합니다</block>
@@ -3071,7 +3067,6 @@
   <block id="1599759c277422fbe5e683ed93eafe5f" category="paragraph"><block ref="5a9b347c50656bd207fa757a3eb4fa66" category="inline-link-macro-rx"></block>.</block>
   <block id="cfdfdba6990e94ddaae28fd71b33c102" category="paragraph">Cloud Volumes ONTAP 작업 환경을 생성할 때 이 서비스 계정을 선택하라는 메시지가 표시됩니다.</block>
   <block id="4094070de63eb60a22dafb42ecab40fb" category="paragraph">배포 중에 서비스 계정을 선택하지 않으면 Cloud Volumes ONTAP를 종료하고 Google Cloud 콘솔로 이동한 다음 Cloud Volumes ONTAP 인스턴스에 서비스 계정을 연결해야 합니다. 그런 다음 다음 다음 섹션에 설명된 대로 데이터 계층화를 설정할 수 있습니다.</block>
-  <block id="03b060a90dee73a6134cc6c1ebdf7458" category="paragraph">Google Cloud에서는 이 옵션이 나타나기 전에 서비스 계정을 Cloud Volumes ONTAP에 연결해야 합니다. <block ref="066865d547a10de791f5772d517b17f7" category="inline-xref-macro-rx"></block>.</block>
   <block id="870789b9d0beec538c84e00432400091" category="list-text">Google Cloud에서 Cloud Volumes ONTAP 인스턴스로 이동하고 각 LIF에 대한 IP 주소를 nic0에 추가합니다.</block>
   <block id="b961ba228f0253598e8fe47f55865219" category="list-text">프런트엔드 IP의 이름을 입력하고, Cloud Volumes ONTAP HA 쌍의 서브넷을 선택하고, * Dynamic * 을 선택한 상태로 두고, 가용성 영역이 있는 지역에서는 * Zone-Redundant * 를 선택된 상태로 두어 존이 실패하는 경우 IP 주소를 계속 사용할 수 있도록 합니다.</block>
   <block id="c00e2d19af360558425fe43036ba7057" category="paragraph"><block ref="c00e2d19af360558425fe43036ba7057" category="inline-image-macro-rx" type="image"></block></block>
@@ -3325,9 +3320,7 @@
   <block id="f929bd53055100ea5034e258d5828a45" category="inline-image-macro">작업 환경을 선택한 후 Canvas에서 사용할 수 있는 Optimize Cost &amp; amp; Performance 옵션의 스크린샷.</block>
   <block id="fa5f0abcdf06ead83ea7fc11be56d19a" category="section-title">AutoSupport 알림</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">위의 자체 지원 옵션 외에도 NetApp 지원 전문가와 협력하여 지원을 활성화한 이후의 모든 문제를 해결할 수 있습니다.</block>
-  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">지원 등록 방법을 알아보십시오</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">전화로 통화하려면 * 전화 * 를 클릭하십시오. 전화를 걸 수 있는 전화 번호가 나열된 netapp.com 페이지로 연결됩니다.</block>
-  <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">* NetApp Support 사이트 계정 *: 지원 케이스를 여는 사람과 관련된 해당 NSS 계정을 선택합니다. 이 담당자는 아래에 제공된 추가 이메일 외에 NetApp에 연락할 수 있는 기본 담당자가 됩니다.</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">* 작업 환경 *: 스토리지에 적용 가능한 경우 * Cloud Volumes ONTAP * 또는 * On-Premise * 를 선택한 다음 관련 작업 환경을 선택합니다.</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">* 케이스 우선 순위 *: 케이스의 우선 순위를 선택합니다. 우선 순위는 낮음, 중간, 높음 또는 긴급입니다.</block>
   <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">이러한 우선 순위에 대한 자세한 내용을 보려면 필드 이름 옆에 있는 정보 아이콘 위로 마우스를 가져갑니다.</block>
@@ -3382,20 +3375,9 @@
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">지원 등록 개요</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">지원 권한을 활성화하려면 두 가지 형태의 등록이 있습니다.</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">클라우드 공급자 마켓플레이스의 구독과 연결된 Cloud Volumes ONTAP 일련 번호 등록(20자리 909201xxxxxxxx 일련 번호)</block>
-  <block id="98bc603dcb6d5a57d540b13b541fa41a" category="paragraph">등록 방법은 신규 고객인지, 기존 고객인지 또는 파트너인지에 따라 다릅니다.</block>
-  <block id="e5646198d2e01aab2cec9ef946f9c53a" category="list-text">기존 고객 또는 파트너</block>
-  <block id="4e6af37fb81d50483d832d4de6e2b26a" category="inline-xref">NSS 계정을 추가하는 방법에 대해 알아봅니다</block>
-  <block id="1c91f3adc957364cb01d33e100ee1ea3" category="list-text">NetApp이 처음입니다</block>
-  <block id="00fc9d0c515c69ea2c368521453d982e" category="inline-xref">NetApp에 등록하는 방법을 알아보십시오</block>
-  <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>.</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">세 개의 가로 점으로 구성된 아이콘</block>
-  <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">NetApp에 등록</block>
-  <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">NetApp 지원에 등록하는 방법은 NetApp Support 사이트(NSS) 계정이 이미 있는지 여부에 따라 다릅니다.</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSS 계정이 있는 기존 고객</block>
-  <block id="819aff12752b7e6a1828e755c7664de7" category="list-text">Resources * 페이지에서 * Register for Support * 를 클릭합니다.</block>
-  <block id="e8a3d9970b8fc1d92caaf33d9e116bd4" category="inline-image-macro">계정 일련 번호 및 지원 등록 옵션을 보여 주는 스크린샷</block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">기존 고객이지만 NSS 계정은 없습니다</block>
-  <block id="cc1d3c161bcf25e6445c2fc771647849" category="paragraph">기존 사용권 및 제품 번호를 가지고 있지만 _NO_NSS 계정을 가지고 있는 기존 NetApp 고객은 NSS 계정을 만들어야 합니다.</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp Support 사이트 사용자 등록 양식</block>
   <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">를 완료하여 NetApp Support 사이트 계정을 생성합니다<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">적절한 사용자 레벨(일반적으로 * NetApp 고객/최종 사용자 *)을 선택해야 합니다.</block>
@@ -3449,33 +3431,22 @@
   <block id="57852986cd3f5ad7ac21806a5411e80c" category="paragraph"><block ref="42b118f18012057fcf20af94d08351c2" category="inline-link-macro-rx"></block>. HA 중재자를 위한 보안 그룹을 만들 필요는 없습니다. BlueXP가 이러한 작업을 수행합니다.</block>
   <block id="491260bf43eaf4240ea4e86f9ccd88c2" category="list-text">BlueXP API를 사용하여 새로운 Cloud Volumes ONTAP 작업 환경을 만듭니다.</block>
   <block id="243263104c829e77835d632f591230d5" category="summary">NetApp 기술 지원 팀과 지원 케이스를 생성하기 전에 NetApp Support 사이트 계정을 BlueXP에 추가한 다음 지원 등록을 해야 합니다.</block>
-  <block id="8bf30fadf784022b073adb9233678a71" category="paragraph">NetApp 기술 지원 팀의 지원 케이스를 생성하기 전에 NetApp Support 사이트(NSS) 계정을 BlueXP에 추가한 다음 지원 등록을 해야 합니다.</block>
   <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">BlueXP 계정 ID 지원 가입 등록(BlueXP의 지원 리소스 페이지에 있는 20자리 960xxxxxxxxx 일련 번호)</block>
   <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">이는 BlueXP 내의 모든 서비스에 대한 단일 지원 가입 ID의 역할을 합니다. 각 BlueXP 계정 수준 지원 구독을 등록해야 합니다.</block>
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">이러한 일련 번호는 일반적으로 _PAYGO 일련 번호_라고 하며 Cloud Volumes ONTAP 배포 시 BlueXP에서 생성됩니다.</block>
-  <block id="9d4125dc88bb9db6eb4be939905761ce" category="paragraph">두 가지 유형의 일련 번호를 등록하면 지원 티켓 열기와 자동 케이스 생성 등의 기능을 사용할 수 있습니다.</block>
-  <block id="76928f97884b4332b83c5be9b99d93d3" category="paragraph">기존 NetApp 고객 또는 파트너는 NSS(NetApp Support 사이트) SSO 계정을 사용하여 위에서 이러한 등록을 수행할 수 있습니다. 지원 대시보드에서 BlueXP는 NSS 계정을 추가할 수 있는 * NSS 관리 * 페이지를 제공합니다. NSS 계정을 추가하면 BlueXP에서 이러한 일련 번호를 자동으로 등록합니다.</block>
-  <block id="8d80298f51b7ff2da78e26e60195c7a3" category="paragraph"><block ref="cbec7c1a4a2acff5e84457dd449ac01d" category="inline-xref-macro-rx"></block>.</block>
-  <block id="679f2cae4657f177cc89458d49c97e5f" category="paragraph">NetApp이 처음인 파트너는 NetApp의 지원 등록 사이트에서 BlueXP 계정 ID 일련 번호를 한 번 등록해야 합니다. 이 등록을 완료하고 새 NSS 계정을 만들면 BlueXP에서 이 계정을 사용하여 앞으로 자동 등록할 수 있습니다.</block>
-  <block id="a92ec860f505b318fd0f0eba6165d607" category="section-title">BlueXP에 NSS 계정을 추가합니다</block>
   <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 도움말 아이콘을 클릭하고 * 지원 * 을 선택합니다.</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">이러한 작업을 통해 BlueXP는 NSS 계정을 사용하여 라이선스 다운로드, 소프트웨어 업그레이드 확인 및 향후 지원 등록과 같은 작업을 수행할 수 있습니다.</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">NSS 계정을 가지고 있는 NetApp 고객은 BlueXP를 통해 지원을 받기 위해 등록하기만 하면 됩니다.</block>
-  <block id="25b94e7b58140f12be91fa8fd935fa59" category="list-text">아직 추가하지 않은 경우 NSS 계정을 BlueXP에 추가합니다.</block>
   <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">위에 사용된 BlueXP 계정 일련 번호(960xxxx)를 일련 번호 필드에 복사해야 합니다. 이렇게 하면 계정 처리 속도가 빨라집니다.</block>
-  <block id="1c0e45ef07d0dbc13ca2394d5e285fd7" category="paragraph">NetApp Support 사이트 계정이 있으면 BlueXP로 이동하여 나중에 등록하기 위해 이 NSS 계정을 추가할 수 있습니다.</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp은 다양한 방법으로 BlueXP를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp은 다양한 방법으로 BlueXP 및 클라우드 서비스를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">문제를 해결하는 데 도움이 되는 문서를 찾으려면 BlueXP 기술 자료를 검색하십시오.</block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 새 토론을 만드십시오.</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">현재 보고 있는 BlueXP 문서입니다.</block>
   <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">저희는 귀하의 의견을 소중하게 생각합니다. BlueXP 개선에 도움이 되는 피드백을 제출하십시오.</block>
-  <block id="1012a287397c66025d7748edf06a36e2" category="paragraph">케이스 생성* 기능을 사용하려면 먼저 BlueXP 계정 ID 일련 번호( 960xxxx) NetApp 포함 <block ref="3349e4b3d05f646f2f1421bee7c2ad26" category="inline-link-macro-rx"></block>.</block>
   <block id="6254a4afeeb76765a127fe74d31c1b3d" category="list-text">BlueXP에서 * 도움말 &gt; 지원 * 을 클릭합니다.</block>
-  <block id="d950fb930d7f7e6bfdda1b91b4639a02" category="paragraph">NSS 계정이 표시되지 않으면 BlueXP의 지원 섹션에서 * NSS 관리 * 탭으로 이동하여 추가할 수 있습니다.</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">* 서비스 *: 문제와 관련된 서비스를 선택합니다. 예를 들어, 서비스 내의 워크플로우 또는 기능과 관련된 기술 지원 문제에 해당하는 BlueXP를 예로 들 수 있습니다.</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">작업 환경 목록은 서비스의 상단 배너에서 선택한 BlueXP 계정, 작업 영역 및 커넥터의 범위 내에 있습니다.</block>
-  <block id="fa6b601b2fb4e3e5c7b466ecb8bd70ac" category="paragraph">이 오류는 NSS 계정과 연결된 레코드 회사가 BlueXP 계정 일련 번호( 960xxxx) 또는 작동 환경 일련 번호 케이스 생성 * 양식 상단의 NSS 계정 목록을 확인하여 올바른 일치 항목을 찾거나 다음 옵션 중 하나를 사용하여 지원을 요청할 수 있습니다.</block>
   <block id="0c726404ad0f4ebb2cb2a2d0bdc04192" category="summary">Active IQ 디지털 어드바이저는 BlueXP UI에 통합되어 단일 창에서 ONTAP 클러스터의 운영, 보안 및 성능을 최적화할 수 있습니다.</block>
   <block id="442a1ebc0b1897741c68b149d0cff869" category="paragraph">BlueXP를 통해 이 서비스를 무료로 사용할 수 있습니다.</block>
   <block id="58d982bcac1ea01385942d6f57a7656f" category="section-title">Active IQ 디지털 어드바이저가 BlueXP에서 작동하는 방식</block>
@@ -3631,9 +3602,6 @@
   <block id="667b969b7280b52556322ad43cb00a91" category="list-text">용량 계층에 대해 오브젝트 저장소를 생성할 필요가 없습니다. BlueXP가 이러한 작업을 수행합니다.</block>
   <block id="71ad7ee54b2c54364e470e91313bd1c8" category="paragraph">BlueXP는 시스템이 생성될 때 콜드 데이터에 대한 오브젝트 저장소를 생성합니다. <block ref="dbb78a2cc39acf14e084217f8235322a" category="inline-xref-macro-rx"></block>. 그런 다음 볼륨에 대해 데이터 계층화를 활성화해야 합니다. 경우에 따라 <block ref="7f499208f2ff911432bf2cd70bde52dd" category="inline-xref-macro-rx"></block>)를 클릭합니다.</block>
   <block id="110bf8d701c3104f8527af78ccf4f6f3" category="paragraph">BlueXP에 필요한 권한이 있는 경우 성능 계층과 용량 계층 간에 연결을 설정할 필요가 없습니다. BlueXP는 Connector의 사용자 지정 역할에 다음과 같은 권한이 있는 경우 VNET 서비스 끝점을 활성화합니다.</block>
-  <block id="544cf6a9b3209b8642549a9f636f850d" category="paragraph">BlueXP는 연결 또는 사용 권한 문제가 없는 한 시스템이 생성될 때 콜드 데이터에 대한 개체 저장소를 생성합니다. 시스템을 생성하기 전까지는 위에 나열된 요구 사항을 구현하지 않았다면 수동으로 계층화를 설정해야 오브젝트 저장소가 생성됩니다.</block>
-  <block id="34a53c9826b73666c9ff291fdbb73cc4" category="paragraph">BlueXP에서 시스템을 생성할 때 데이터 계층화를 활성화할 수 없는 경우에만 이 옵션이 표시됩니다.</block>
-  <block id="0ed8d1c9d40b89d8bb30156f2ff80b44" category="list-text">BlueXP가 이 Cloud Volumes ONTAP 시스템이 계층형 데이터에 사용할 개체 저장소를 만들 수 있도록 * 활성화 * 를 클릭합니다.</block>
   <block id="f504f88c3ef9fff4d0a0f3ea83ce4b0a" category="paragraph">새 볼륨에서 데이터 계층화를 사용하는 경우에는 애그리게이트에서 데이터 계층화를 사용할 필요가 없습니다. BlueXP는 계층화가 활성화된 기존 애그리게이트에 볼륨을 생성하거나, 데이터 계층화가 활성화된 애그리게이트가 아직 존재하지 않는 경우 볼륨에 대한 새 애그리게이트를 생성합니다.</block>
   <block id="6f7dbe99eb1dafd47fcc1667c1661873" category="list-text">BlueXP에서 작업 환경을 엽니다.</block>
   <block id="c42d7d1729e77b6aa2d88e357efbb241" category="inline-image-macro">계층화 상태를 포함하는 BlueXP의 Aggregate에 대한 정보를 보여 주는 스크린샷</block>
@@ -3854,7 +3822,6 @@
   <block id="4d0c93d7ce5ce6f6010669f660c38d43" category="paragraph">Cloud Volumes ONTAP 생성 프로세스 중에 WORM(Write Once, Read Many) 및 클라우드 백업 기능을 모두 활성화할 수 있습니다.</block>
   <block id="4d9d8c1f4a4820e4fe54b4e7d8733a68" category="section-title">현재 이스라엘 지역은 Google Cloud에서 지원됩니다</block>
   <block id="4ff0d60c5d06bf54def05888e62a6d9e" category="paragraph">현재 이스라엘 지역은 Google Cloud for Cloud Volumes ONTAP 및 Connector for Cloud Volumes ONTAP 9.11.1 P3 이상에서 지원됩니다.</block>
-  <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">지원 대시보드를 통해 NetApp Support 사이트 계정을 추가하고 관리하여 BlueXP에서 사용할 수 있습니다.</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">파트너 또는 리셀러 계정이 있는 경우 NSS 계정을 하나 이상 추가할 수 있지만 고객 수준 계정과 함께 추가할 수는 없습니다.</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">지원 등록 페이지에서 계정 ID 일련 번호를 찾습니다.</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">위의 2단계에서 계정의 일련 번호를 복사하고 보안 검색을 완료한 다음 NetApp의 글로벌 데이터 개인 정보 보호 정책을 읽는지 확인합니다.</block>
@@ -4075,7 +4042,6 @@
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">버전 9.10.0 이하</block>
   <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">구매한 용량이 3Tib마다 엣지 노드 1개</block>
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">클라우드 공급자 솔루션 지원</block>
-  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">BlueXP에 통합한 다음 클라우드 제공업체 솔루션에 대한 기술 지원은 해당 제품에 대한 BlueXP 설명서의 "도움말 얻기"를 참조하십시오.</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP용 Amazon FSx</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Google Cloud용 Cloud Volumes Service</block>
@@ -4494,7 +4460,6 @@
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">* 첨부 파일(선택 사항) *: 한 번에 하나씩 최대 5개의 첨부 파일을 업로드합니다.</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">첨부 파일은 파일당 25MB로 제한됩니다. txt, log, pdf, jpg/jpeg, rtf, DOC/docx, xls/xlsx 및 CSV.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">* 케이스 메모 업데이트 *: 문제에 대한 추가 세부 정보를 제공하거나 * 파일 업로드 * 를 선택하여 최대 5개의 파일을 첨부할 수 있습니다.</block>
-  <block id="a3e3a06edf2b13412206a49650d28c73" category="list-text">Canvas 페이지에서 Cloud Volumes ONTAP 인스턴스의 이름을 선택합니다.</block>
   <block id="c8ae9612aebf2aa8477908ecc9dc4ad2" category="list-text">애그리게이트 탭을 클릭합니다.</block>
   <block id="93bad64eb0d84f1d45ce1ff481e26c51" category="list-text">원하는 타일로 이동하여 애그리게이트에서 계층화가 설정되었는지 여부를 확인합니다.</block>
   <block id="cc26bc8be32a1d905f6d22627e65a0b9" category="paragraph"><block ref="cc26bc8be32a1d905f6d22627e65a0b9" category="inline-image-macro-rx" type="image"></block></block>
@@ -4549,7 +4514,6 @@
   <block id="e4e172ed018cf6c10be6941fd7282e6f" category="list-text">Upgrade Cloud Volumes ONTAP 페이지에서 EULA를 읽은 다음 * EULA * 를 읽고 승인합니다 * 를 선택합니다.</block>
   <block id="f6e8db7e26c18ff77395c70107114b81" category="list-text">업그레이드 * 를 클릭합니다.</block>
   <block id="aac15e5127b7a8b7e9fa2c9cd925e9b5" category="paragraph">BlueXP가 소프트웨어 업그레이드를 시작합니다. 소프트웨어 업데이트가 완료되면 작업 환경에서 작업을 수행할 수 있습니다.</block>
-  <block id="2d06184bb48576ef2fb92fc134897025" category="admonition">현재 BlueXP 사용자 인터페이스를 통해서만 최신 ONTAP 버전으로 업그레이드할 수 있습니다. BlueXP 사용자 인터페이스를 통해 특정 ONTAP 버전으로 업그레이드할 수 있는 기능은 향후 릴리스에서 제공될 예정입니다.</block>
   <block id="fa7b604cc90feece6d71e8400213710f" category="list-text">다음 매개 변수와 값을 추가하여 app.conf를 편집합니다.</block>
   <block id="4356eb78a767f5eff5a7176feb088ce4" category="inline-image-macro">볼륨 탭의 볼륨 관리 단추 스크린샷</block>
   <block id="3113f5bbc88ead26c7d366fdec38f27b" category="paragraph"><block ref="3113f5bbc88ead26c7d366fdec38f27b" category="inline-image-macro-rx" type="image"></block></block>
@@ -4816,7 +4780,6 @@ CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS �
   <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">이 ID는 이메일에 매핑되는 시스템 생성 ID입니다. NSS 관리 * 페이지의 에서 이메일을 표시할 수 있습니다 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
   <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">로그인 자격 증명 토큰을 새로 고쳐야 하는 경우 에 * 자격 증명 업데이트 * 옵션이 있습니다 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
-  <block id="1bb5620ed3998fd776980cad36e22c9a" category="paragraph"><block ref="1bb5620ed3998fd776980cad36e22c9a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="20bdc8e898822d36cabdfe4a9638e121" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="a8781c6a9ecdb41d7e575ae3ee248743" category="inline-link-macro-rx"></block>.</block>
   <block id="b47d0e32ffe2734848d420601bb90cd1" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="a00289b5f740e60f77871e1b98f3406f" category="inline-link-macro-rx"></block>.</block>
@@ -4933,4 +4896,46 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="6ba7d68d8b3ef0f3398afb9d3ea96172" category="list-text">를 클릭하여 기존 케이스를 관리합니다 <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 사용 가능한 옵션 중 하나를 선택합니다.</block>
   <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b32d478f210a577f125252950845cbe8" category="paragraph">작업 환경을 제거하는 방법에 대한 자세한 내용은 을 참조하십시오 <block ref="9423a665187115a2d21726d57a71002a" category="inline-link-macro-rx"></block>.</block>
+  <block id="1de6b58086ec6bbd99165acbdda4ccac" category="paragraph">BlueXP는 연결 또는 사용 권한 문제가 없는 한 시스템이 생성될 때 콜드 데이터에 대한 개체 저장소를 생성합니다. 시스템을 생성하기 전까지는 위에 나열된 요구 사항을 구현하지 않았다면 개체 저장소를 생성하는 API 또는 System Manager를 통해 계층화를 수동으로 활성화해야 합니다.</block>
+  <block id="59f3df18fcb3b0636b9675ad9e9f397c" category="admonition">BlueXP 사용자 인터페이스를 통해 계층화를 활성화하는 기능은 향후 Cloud Volumes ONTAP 릴리스에서 제공될 예정입니다.</block>
+  <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">BlueXP 로그인과 관련된 자격 증명을 관리하는 방법에 대해 알아봅니다</block>
+  <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">케이스 생성 * 기능을 사용하려면 먼저 NetApp Support 사이트 자격 증명을 BlueXP 로그인에 연결해야 합니다.<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>.</block>
+  <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">일련 번호가 있는 ONTAP 시스템의 케이스를 여는 경우 NSS 계정은 해당 시스템의 일련 번호와 연결되어 있어야 합니다.</block>
+  <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">이 오류는 NSS 계정과 연결된 레코드 회사가 BlueXP 계정 일련 번호( 960xxxx) 또는 작동 환경 일련 번호 다음 옵션 중 하나를 사용하여 지원을 요청할 수 있습니다.</block>
+  <block id="381c003443d0dbcf14a51f216a4e01dc" category="section-title">2023년 6월 4일</block>
+  <block id="99b154ed343fdc0ce0be282015d40529" category="paragraph">다음 변경은 커넥터의 3.9.30 릴리스에 도입되었습니다.</block>
+  <block id="46f41748d329a2f863d5f787b783bcc5" category="section-title">Cloud Volumes ONTAP 업그레이드 버전 선택기 업데이트</block>
+  <block id="25c3dcdd6e2c69b30eba973a10e656d8" category="paragraph">Cloud Volumes ONTAP 업그레이드 페이지를 통해 최신 버전의 Cloud Volumes ONTAP 또는 이전 버전으로 업그레이드할 수 있습니다.</block>
+  <block id="91cf56905c9848b7dbc6e3d59504dcd3" category="paragraph">BlueXP를 통한 Cloud Volumes ONTAP 업그레이드에 대한 자세한 내용은 을 참조하십시오<block ref="9777e426a24de9582e7ed3fdb1795e0a" category="inline-link-rx"></block>.</block>
+  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">BlueXP 계정 및 개별 Cloud Volumes ONTAP 시스템에 대한 지원 등록이 필요합니다.</block>
+  <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">두 가지 유형의 일련 번호를 등록하면 지원 티켓 열기와 자동 케이스 생성 등의 기능을 사용할 수 있습니다. 아래 설명과 같이 BlueXP에 NetApp Support 사이트(NSS) 계정을 추가하여 등록을 완료합니다.</block>
+  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">다음 클라우드 제공업체 솔루션에 대한 기술 지원은 해당 제품에 대한 BlueXP 설명서의 "도움말 얻기"를 참조하십시오.</block>
+  <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">NetApp 지원을 위해 BlueXP 계정을 등록합니다</block>
+  <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">지원을 등록하고 지원 권한을 활성화하려면 BlueXP 계정의 한 사용자가 NetApp Support 사이트 계정을 BlueXP 로그인에 연결해야 합니다. NetApp 지원에 등록하는 방법은 NetApp Support 사이트(NSS) 계정이 이미 있는지 여부에 따라 다릅니다.</block>
+  <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 설정 아이콘을 클릭하고 * 자격 증명 * 을 선택합니다.</block>
+  <block id="41e1e3cff4a07ce2ecc08e6c09f11092" category="list-text">사용자 자격 증명 * 을 클릭합니다.</block>
+  <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">NSS 자격 증명 추가 * 를 선택하고 NetApp Support 사이트(NSS) 인증 프롬프트를 따릅니다.</block>
+  <block id="8c916e828e9e5a3592c8cac4e25928be" category="list-text">등록 프로세스가 성공적으로 완료되었는지 확인하려면 도움말 아이콘을 클릭하고 * 지원 * 을 선택합니다.</block>
+  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">리소스 * 페이지에 계정이 지원을 위해 등록되었다는 내용이 표시됩니다.</block>
+  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">계정 일련 번호와 녹색 확인란이 표시된 스크린샷 및 지원을 위해 등록된 텍스트.</block>
+  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">다른 BlueXP 사용자는 BlueXP 로그인과 NetApp Support 사이트 계정을 연결하지 않은 경우 동일한 지원 등록 상태를 볼 수 없습니다. 그러나 BlueXP 계정이 지원을 위해 등록되지 않은 것은 아닙니다. 계정에 있는 한 사용자가 이 단계를 따랐을 경우 계정이 등록되었습니다.</block>
+  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">기존 사용권 및 제품 번호가 _NO_NSS인 기존 NetApp 고객인 경우 NSS 계정을 만들어 BlueXP 로그인과 연결해야 합니다.</block>
+  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">의 단계를 완료하여 새 NSS 계정을 BlueXP 로그인에 연결합니다 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">NetApp Support 사이트 계정이 있으면 의 단계를 완료하여 계정을 BlueXP 로그인에 연결합니다 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">Cloud Volumes ONTAP 지원을 위해 NSS 자격 증명을 연결합니다</block>
+  <block id="d8f0da67cbab6e43f6d266bdab68cdc8" category="paragraph">Cloud Volumes ONTAP에 대해 다음 주요 워크플로를 사용하려면 NetApp Support 사이트 자격 증명을 BlueXP 계정과 연결해야 합니다.</block>
+  <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">지원을 위해 선불 종량제 Cloud Volumes ONTAP 시스템을 등록합니다</block>
+  <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">NSS 계정을 제공하면 시스템에 대한 지원을 활성화하고 NetApp 기술 지원 리소스에 액세스할 수 있습니다.</block>
+  <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">BYOL(Bring Your Own License) 방식으로 Cloud Volumes ONTAP 구축</block>
+  <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">BlueXP에서 사용권 키를 업로드하고 구입한 용어에 대한 구독을 활성화하려면 NSS 계정을 제공해야 합니다. 여기에는 기간 갱신을 위한 자동 업데이트가 포함됩니다.</block>
+  <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Cloud Volumes ONTAP 소프트웨어를 최신 릴리즈로 업그레이드하는 중입니다</block>
+  <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">NSS 자격 증명을 BlueXP 계정과 연결하는 것은 BlueXP 사용자 로그인과 연결된 NSS 계정과 다릅니다.</block>
+  <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">이러한 NSS 자격 증명은 특정 BlueXP 계정 ID와 연결됩니다. BlueXP 계정에 속한 사용자는 * 지원 &gt; NSS 관리 * 에서 이러한 자격 증명에 액세스할 수 있습니다.</block>
+  <block id="b164b6fd89d2aa03544d045cf180f639" category="admonition">BlueXP 알림을 통해 Cloud Volumes ONTAP를 업그레이드하려면 먼저 NetApp Support 사이트 계정이 있어야 합니다.</block>
+  <block id="1284a776b9f3feb49d88b74d4068f85f" category="inline-link">지원되는 업그레이드 경로 목록입니다</block>
+  <block id="08c727e5413b02eb0e2eaebdfa595ec1" category="admonition">Upgrade Cloud Volumes ONTAP 페이지에서는 기본적으로 업그레이드할 최신 Cloud Volumes ONTAP 버전을 선택합니다. 사용 가능한 경우 * 이전 버전 선택 * 을 클릭하여 업그레이드를 위해 이전 버전의 Cloud Volumes ONTAP를 선택할 수 있습니다.
+을 참조하십시오<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></block> 현재 Cloud Volumes ONTAP 버전을 기반으로 적절한 업그레이드 경로를 선택합니다.</block>
+  <block id="40a5b297d7fc7d1cb7f4639309d92351" category="inline-image-macro">Cloud Volumes ONTAP 버전 업그레이드 페이지의 스크린샷.</block>
+  <block id="94730a34db857a8cffa1610edfc7314d" category="paragraph"><block ref="94730a34db857a8cffa1610edfc7314d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
