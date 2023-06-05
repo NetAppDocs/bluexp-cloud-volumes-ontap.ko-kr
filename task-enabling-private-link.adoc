@@ -93,7 +93,7 @@ DNS 이름은 Azure DNS 명명 요구 사항과 일치해야 합니다 https://d
 "user-private-dns-zone-settings" : {
    "resource-group" : "<resource group name of the DNS zone>",
    "subscription" : "<subscription ID>",
-   "use-existing" : true
+   "use-existing" : true,
    "create-private-dns-zone-link" : true
 }
 ....
