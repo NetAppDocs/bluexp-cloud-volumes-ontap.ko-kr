@@ -4938,4 +4938,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
 을 참조하십시오<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inline-link-rx"></block> 현재 Cloud Volumes ONTAP 버전을 기반으로 적절한 업그레이드 경로를 선택합니다.</block>
   <block id="40a5b297d7fc7d1cb7f4639309d92351" category="inline-image-macro">Cloud Volumes ONTAP 버전 업그레이드 페이지의 스크린샷.</block>
   <block id="94730a34db857a8cffa1610edfc7314d" category="paragraph"><block ref="94730a34db857a8cffa1610edfc7314d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9b8cca0e5a3840c29a71a4c6f13a917" category="inline-link-macro">NetApp Keystone에 대해 자세히 알아보십시오</block>
+  <block id="9eecbfaf12c4b441b4b80b15e69b1763" category="paragraph"><block ref="861512b606f6337e516b8d3562c115c3" category="inline-link-macro-rx"></block>.</block>
 </blocks>

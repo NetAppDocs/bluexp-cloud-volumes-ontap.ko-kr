@@ -370,7 +370,7 @@ OpEx 소비 모델을 선호하는 투자자들에게 원활한 하이브리드 
 
 각 볼륨에 대해 프로비저닝된 용량은 주기적으로 Keystone 가입 시 할당된 용량과 비교되며, Keystone 가입 시 초과요금이 부과됩니다.
 
-https://www.netapp.com/services/keystone/["NetApp Keystone 구독에 대해 자세히 알아보십시오"^].
+link:https://docs.netapp.com/us-en/keystone-staas/index.html["NetApp Keystone에 대해 자세히 알아보십시오"^].
 
 
 
