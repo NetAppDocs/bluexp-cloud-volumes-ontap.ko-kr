@@ -4940,4 +4940,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="94730a34db857a8cffa1610edfc7314d" category="paragraph"><block ref="94730a34db857a8cffa1610edfc7314d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9b8cca0e5a3840c29a71a4c6f13a917" category="inline-link-macro">NetApp Keystone에 대해 자세히 알아보십시오</block>
   <block id="9eecbfaf12c4b441b4b80b15e69b1763" category="paragraph"><block ref="861512b606f6337e516b8d3562c115c3" category="inline-link-macro-rx"></block>.</block>
+  <block id="ce8df63e83de2ff4c9315aacad840c85" category="inline-link-macro">지원되는 EC2 인스턴스</block>
+  <block id="eb8249aa4fe7f904487ee8ca24dce280" category="paragraph">AWS에서 지원되는 인스턴스 유형 목록은 를 참조하십시오 <block ref="ab5d2be79e0f4831293646ade5590437" category="inline-link-macro-rx"></block>.</block>
 </blocks>
