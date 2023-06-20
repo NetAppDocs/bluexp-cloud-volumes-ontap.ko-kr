@@ -3845,7 +3845,6 @@
   <block id="86f463a1f0f0879749d1274dc94305d9" category="paragraph-title">중요 참고 사항</block>
   <block id="fdee261787c8d28a1d5af5c07b8580d6" category="list-text">ONTAP 9.9.1P7에서 NVRAM 및 코어 디스크의 경우 BlueXP는 디스크 암호화 세트를 사용하여 관리되는 디스크로 암호화 키를 관리할 수 있습니다. 하위 버전은 고객 관리 키 대신 Microsoft 관리 키를 사용합니다.</block>
   <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">* 볼륨 암호화를 위한 Azure 디스크 암호화 * (단일 노드 시스템 또는 여러 존의 HA 쌍)</block>
-  <block id="6337ff9e523cd4d0c21d00ce582cb8ca" category="admonition">단일 존의 HA 쌍에는 권한이 필요하지 않습니다.</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">Google Cloud 권한이 필요합니다</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">Flash Cache란 무엇입니까?</block>
   <block id="78d0efd6b2c71cba47286de0ff16747c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 커넥터를 작성합니다</block>
@@ -4942,4 +4941,32 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="9eecbfaf12c4b441b4b80b15e69b1763" category="paragraph"><block ref="861512b606f6337e516b8d3562c115c3" category="inline-link-macro-rx"></block>.</block>
   <block id="ce8df63e83de2ff4c9315aacad840c85" category="inline-link-macro">지원되는 EC2 인스턴스</block>
   <block id="eb8249aa4fe7f904487ee8ca24dce280" category="paragraph">AWS에서 지원되는 인스턴스 유형 목록은 를 참조하십시오 <block ref="ab5d2be79e0f4831293646ade5590437" category="inline-link-macro-rx"></block>.</block>
+  <block id="21d684c5497d7c44f38249fb9317e2ff" category="section-title">사용자가 할당한 관리 ID를 만듭니다</block>
+  <block id="c1d9d82ae4f42fc1db168e7b745f9697" category="paragraph">사용자가 할당한 관리 ID라는 리소스를 만들 수 있습니다. 이렇게 하면 Cloud Volumes ONTAP 작업 환경을 생성할 때 스토리지 계정을 암호화할 수 있습니다. 키 볼트를 작성하고 키를 생성하기 전에 이 리소스를 생성하는 것이 좋습니다.</block>
+  <block id="2da2bdad0a1c89d70cb7a7586bf14758" category="paragraph">리소스의 ID는 다음과 같습니다.<block ref="0169e4e7c078e2230c21c551eaf35e56" prefix=" " category="inline-code"></block>.</block>
+  <block id="2f37b99340ba454bd7f13c34ebaf9799" category="list-text">Azure에서 Azure 서비스로 이동하여 * Managed Identities * 를 선택합니다.</block>
+  <block id="f2a42a68e067e481d094b018459ef895" category="list-text">Create * 를 클릭합니다.</block>
+  <block id="0de11488ec479f7728a12eaa20900087" category="list-text">다음 세부 정보를 제공합니다.</block>
+  <block id="eb6b5e1059f0c14240e0b29450c64244" category="list-text">* 구독 *: 구독을 선택합니다. Connector 가입과 동일한 구독을 선택하는 것이 좋습니다.</block>
+  <block id="10a805425ce15433762da2005f065657" category="list-text">* 리소스 그룹 *: 기존 리소스 그룹을 사용하거나 새 리소스 그룹을 생성합니다.</block>
+  <block id="da2433e2c4da1ae4d4ccf813bec559d8" category="list-text">* Region * (영역 *): 선택적으로 Connector (커넥터)와 동일한 영역을 선택합니다.</block>
+  <block id="5b75c82ea3a972e4af28cf4cebb17b30" category="list-text">* 이름 *: 리소스 이름을 입력합니다.</block>
+  <block id="a5224fbb5f2e884564b316411dcf1c8b" category="list-text">필요에 따라 태그를 추가합니다.</block>
+  <block id="8a719e3e1b73b371d427de036115d5ca" category="inline-xref">사용자가 할당한 관리 ID를 만들었습니다</block>
+  <block id="6290500d5abf30b274cc1c7ddf30e546" category="paragraph">있다면 <block ref="33573eb5764d0fad6438d3a347eee31f" category="inline-xref-macro-rx"></block>키 볼트를 작성하는 동안 키 볼트에 대한 액세스 정책도 작성해야 합니다.</block>
+  <block id="4fe37dc4f545dffb56459397b5344d4c" category="list-text">사용자 지정 관리 ID를 만든 경우 다음 옵션을 활성화해야 합니다.</block>
+  <block id="7761893631ec0e57ca5b1847392a89d1" category="list-text">* 볼트 액세스 정책 *</block>
+  <block id="6b549cac54fb4417d571d2ff5fe2226a" category="list-text">볼트 액세스 정책을 선택한 경우, 작성 을 클릭하여 키 볼트에 대한 액세스 정책을 작성합니다. 그렇지 않은 경우 3단계로 건너뜁니다.</block>
+  <block id="05d7a493e761863b43bc21c5b24707a8" category="list-text">다음 권한을 선택합니다.</block>
+  <block id="b5eda0a74558a342cf659187f06f746f" category="list-text">가져오기</block>
+  <block id="10ae9fc7d453b0dd525d0edf2ede7961" category="list-text">목록</block>
+  <block id="9a2d8ce3ffdcdf2123bddd94d79ef200" category="list-text">암호를 해독합니다</block>
+  <block id="53c82eba31f6d416f331de9162ebe997" category="list-text">암호화</block>
+  <block id="64d6d5cd6bec2e7026a301304363a0f2" category="list-text">줄 바꿈 해제 키</block>
+  <block id="2733a028e38aa84f7ea84735ac7988a6" category="list-text">랩 키</block>
+  <block id="e8418d1d706cd73548f9f16f1d55ad6e" category="list-text">확인합니다</block>
+  <block id="04b29480233f4def5c875875b6bdc3b1" category="list-text">서명</block>
+  <block id="dfbbb3ca890c5e816afc33a0f5d49ec2" category="list-text">사용자가 할당한 관리 ID(리소스)를 보안 주체에 선택합니다.</block>
+  <block id="0882685275009e45f6167bce4081e668" category="list-text">액세스 정책을 검토하고 생성합니다.</block>
+  <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">을 포함합니다<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> 스토리지 계정 암호화에 사용할 이 리소스를 생성한 경우 필드입니다.</block>
 </blocks>
