@@ -3424,7 +3424,6 @@
   <block id="17024db75b14b1900d128c5da0a5c029" category="inline-link">NetApp Support 사이트 계정을 BlueXP에 추가합니다</block>
   <block id="f8cf58037c7bed5dced264c41261bad2" category="list-text">BlueXP로 돌아온 후 충전 방법 페이지에 도달하면 용량 기반 패키지를 선택합니다.</block>
   <block id="bd143c2af617c5743abf3efb9b36b10a" category="paragraph">Cloud Volumes ONTAP 작업 환경을 만들 때 BlueXP는 Google Cloud Marketplace에서 사용 가능한 계약을 구독하라는 메시지를 표시합니다. 그러면 해당 구독이 충전을 위한 작업 환경과 연결됩니다. 추가 작업 환경에 동일한 서브스크립션을 사용할 수 있습니다.</block>
-  <block id="a719d497acfd7c92ff4bf9224e1de3d0" category="paragraph">Cloud Volumes ONTAP는 일부 클라우드 공급자의 스케일 아웃 스토리지 옵션으로 S3를 지원하지만 BlueXP는 이 기능에 대한 관리 기능을 제공하지 않습니다. CLI를 사용하는 것이 Cloud Volumes ONTAP에서 S3 클라이언트 액세스를 구성하는 모범 사례입니다. 자세한 내용은 를 참조하십시오<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>.</block>
   <block id="397f1667d1f282be3b879b4e92a63aad" category="paragraph">BlueXP는 스토리지 VM 재해 복구에 대한 설정 또는 조정 지원을 제공하지 않습니다. System Manager 또는 CLI를 사용해야 합니다.</block>
   <block id="66abe501678500958b330ea34f7f3794" category="admonition">BlueXP는 테이크오버를 시작하고 Giveback을 기다리면서 한 번에 하나의 노드를 정상적으로 변경합니다. NetApp의 QA 팀은 이 프로세스 중에 파일 쓰기와 읽기를 모두 테스트했지만 클라이언트 측에서는 문제가 발생하지 않았습니다. 접속이 변경됨에 따라 입출력 레벨에서 재시도 횟수가 확인되었지만 애플리케이션 계층은 NFS/CIFS 연결의 이러한 짧은 "재연결"을 극복했습니다.</block>
   <block id="ee8671e0efb5c4ca4bc939aa5f95934e" category="paragraph">Cloud Volumes ONTAP 작업 환경을 만들면 BlueXP는 자동으로 IAM 역할을 생성하여 중재자에 연결합니다. 이 역할은 HA 쌍과 연결된 경로 테이블을 변경하기 위해 VPC 소유자 계정에서 생성한 IAM 역할을 가정합니다.</block>
@@ -4969,4 +4968,15 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="dfbbb3ca890c5e816afc33a0f5d49ec2" category="list-text">사용자가 할당한 관리 ID(리소스)를 보안 주체에 선택합니다.</block>
   <block id="0882685275009e45f6167bce4081e668" category="list-text">액세스 정책을 검토하고 생성합니다.</block>
   <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">을 포함합니다<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> 스토리지 계정 암호화에 사용할 이 리소스를 생성한 경우 필드입니다.</block>
+  <block id="57a3061930625af99195891e9e561fb2" category="cell">9.13.1</block>
+  <block id="24eacd330f66ba30cc845660c1efa967" category="list-text">패치(P) 릴리스의 경우 한 버전 릴리즈에서 다음 버전의 모든 P 릴리즈로 업그레이드할 수 있습니다.</block>
+  <block id="99430eacf0d5244d50939eea94bd5962" category="paragraph">다음은 몇 가지 예입니다.</block>
+  <block id="1893a0478b381d08866888a1c7f8607a" category="list-text">9.13.0 &gt; 9.13.1P15</block>
+  <block id="4ae2d614cc725ba442c80c740c08f75f" category="list-text">9.12.1&gt;9.13.1P2</block>
+  <block id="a6f0c7a0901d4da8e8ff8a6db3216b38" category="list-text">계속하려면 * Proceed * (진행 *)를 클릭합니다.</block>
+  <block id="e6bab5933e86bee96753d8079fcceaed" category="section-title">2023년 6월 26일</block>
+  <block id="ba106db82d3577b52130dde5ddd372b4" category="section-title">Cloud Volumes ONTAP 9.13.1 RC1</block>
+  <block id="9bc26bf4259fc1662eaaa13a7534abb1" category="paragraph">이제 BlueXP는 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.13.1 을 배포하고 관리할 수 있습니다.</block>
+  <block id="52801e0e59533cb4c6f4428ad9e239be" category="list-text">9.13.1 RC1</block>
+  <block id="3dc988ad93a3ac0c3a1487fc3b6754cf" category="paragraph">Cloud Volumes ONTAP는 S3를 스케일 아웃 스토리지 옵션으로 지원하지만 BlueXP는 이 기능에 대한 관리 기능을 제공하지 않습니다. CLI를 사용하는 것이 Cloud Volumes ONTAP에서 S3 클라이언트 액세스를 구성하는 모범 사례입니다. 자세한 내용은 를 참조하십시오<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>.</block>
 </blocks>

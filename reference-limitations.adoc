@@ -31,7 +31,7 @@ NOTE: BlueXP에서 FlexGroup 볼륨을 생성할 수 있는 기능은 향후 릴
 
 == BlueXP는 Cloud Volumes ONTAP에서 S3을 지원하지 않습니다
 
-Cloud Volumes ONTAP는 일부 클라우드 공급자의 스케일 아웃 스토리지 옵션으로 S3를 지원하지만 BlueXP는 이 기능에 대한 관리 기능을 제공하지 않습니다. CLI를 사용하는 것이 Cloud Volumes ONTAP에서 S3 클라이언트 액세스를 구성하는 모범 사례입니다. 자세한 내용은 를 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["S3 구성 전원 가이드"^].
+Cloud Volumes ONTAP는 S3를 스케일 아웃 스토리지 옵션으로 지원하지만 BlueXP는 이 기능에 대한 관리 기능을 제공하지 않습니다. CLI를 사용하는 것이 Cloud Volumes ONTAP에서 S3 클라이언트 액세스를 구성하는 모범 사례입니다. 자세한 내용은 를 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["S3 구성 전원 가이드"^].
 
 link:concept-client-protocols.html["S3 및 기타 클라이언트 프로토콜에 대한 Cloud Volumes ONTAP 지원에 대해 자세히 알아보십시오"].
 
