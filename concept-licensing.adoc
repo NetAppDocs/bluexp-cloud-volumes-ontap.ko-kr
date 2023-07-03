@@ -285,7 +285,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["N
 
 아직 볼륨을 프로비저닝하지 않은 경우 최소 요금이 적용되지 않습니다.
 
-4TiB 최소 용량 비용은 보조(데이터 보호) 볼륨만 포함된 스토리지 VM에는 적용되지 않습니다. 예를 들어, 1TiB의 보조 데이터를 사용하는 스토리지 VM의 경우 해당 1TiB 데이터에 대한 요금이 청구됩니다.
+Essentials 패키지의 경우 4TiB 최소 용량 비용은 보조(데이터 보호) 볼륨만 포함된 스토리지 VM에 적용되지 않습니다. 예를 들어, 1TiB의 보조 데이터를 사용하는 스토리지 VM의 경우 해당 1TiB 데이터에 대한 요금이 청구됩니다. Essentials 이외의 모든 패키지 유형(Optimized(최적화), Professional(프로페셔널), Edge Cache(에지 캐시))에서 4TiB의 최소 용량 충전은 볼륨 유형에 관계없이 적용됩니다.
 
 
 

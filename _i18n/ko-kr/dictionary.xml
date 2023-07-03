@@ -3168,7 +3168,6 @@
   <block id="e26935ad375965079b7681b616fa96eb" category="paragraph">다음 세부 정보는 용량 기반 라이센싱에서 충전이 어떻게 작동하는지 이해하는 데 도움이 됩니다.</block>
   <block id="10297bdbea13a5f039ea0c228d352388" category="section-title">최소 충전</block>
   <block id="2f3cbf00c1fc3c4ac211dcbe5883292c" category="paragraph">아직 볼륨을 프로비저닝하지 않은 경우 최소 요금이 적용되지 않습니다.</block>
-  <block id="f167d4d0d82d9d30283cad870543871a" category="paragraph">4TiB 최소 용량 비용은 보조(데이터 보호) 볼륨만 포함된 스토리지 VM에는 적용되지 않습니다. 예를 들어, 1TiB의 보조 데이터를 사용하는 스토리지 VM의 경우 해당 1TiB 데이터에 대한 요금이 청구됩니다.</block>
   <block id="bec8a1d5f2dd848ffc437304b7f6557d" category="section-title">초과</block>
   <block id="1d47f9c9e82cf7214539548fd5c31bc6" category="paragraph">Essentials 패키지를 사용하면 배포 유형(HA 또는 단일 노드) 및 볼륨 유형(기본 또는 보조)으로 비용이 청구됩니다. 예를 들어, _Essentials HA_의 가격이 _Essentials 보조 HA_와 다릅니다.</block>
   <block id="ecc429e82f6e54d1b5ef6c8bb4a49308" category="paragraph">예를 들어, Essentials 패키지에 대해 다음 라이선스를 보유하고 있다고 가정해 보겠습니다.</block>
@@ -4979,4 +4978,19 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="9bc26bf4259fc1662eaaa13a7534abb1" category="paragraph">이제 BlueXP는 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.13.1 을 배포하고 관리할 수 있습니다.</block>
   <block id="52801e0e59533cb4c6f4428ad9e239be" category="list-text">9.13.1 RC1</block>
   <block id="3dc988ad93a3ac0c3a1487fc3b6754cf" category="paragraph">Cloud Volumes ONTAP는 S3를 스케일 아웃 스토리지 옵션으로 지원하지만 BlueXP는 이 기능에 대한 관리 기능을 제공하지 않습니다. CLI를 사용하는 것이 Cloud Volumes ONTAP에서 S3 클라이언트 액세스를 구성하는 모범 사례입니다. 자세한 내용은 를 참조하십시오<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>.</block>
+  <block id="2db3dc5428f2e0831511cd891db676b1" category="paragraph">Essentials 패키지의 경우 4TiB 최소 용량 비용은 보조(데이터 보호) 볼륨만 포함된 스토리지 VM에 적용되지 않습니다. 예를 들어, 1TiB의 보조 데이터를 사용하는 스토리지 VM의 경우 해당 1TiB 데이터에 대한 요금이 청구됩니다. Essentials 이외의 모든 패키지 유형(Optimized(최적화), Professional(프로페셔널), Edge Cache(에지 캐시))에서 4TiB의 최소 용량 충전은 볼륨 유형에 관계없이 적용됩니다.</block>
+  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023년 7월 2일</block>
+  <block id="a6d6a466484f2718bba09926e0dfb2c7" category="paragraph">다음 변경 사항은 커넥터의 3.9.31 릴리스에 도입되었습니다.</block>
+  <block id="0888a7f5d81ff73f5ec9fa719b091bdc" category="section-title">Azure에서 HA 다중 가용성 영역 구축 지원</block>
+  <block id="4df3cde02df4d7a411534f5e0a1565bc" category="paragraph">Azure의 Japan East 및 Korea Central은 현재 Cloud Volumes ONTAP 9.12.1 GA 이상의 HA 다중 가용성 영역 배포를 지원합니다.</block>
+  <block id="1453deb356953584c888fcae0040c1c6" category="inline-link">Azure 아래의 글로벌 지역 지도</block>
+  <block id="9e8ed8cdd45e3d9bd3f546720545d06a" category="paragraph">여러 가용 영역을 지원하는 모든 지역 목록은 를 참조하십시오<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
+  <block id="bdecbec2a6c25b03595e885ec64c0ea0" category="section-title">자율주행 랜섬웨어 보호 지원</block>
+  <block id="ede53fbba4985444af96fca9c3cc6371" category="paragraph">Cloud Volumes ONTAP에서는 자율 ARP(랜섬웨어 보호)가 현재 지원됩니다. ARP 지원은 Cloud Volumes ONTAP 버전 9.12.1 이상에서 사용할 수 있습니다.</block>
+  <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">자율 랜섬웨어 보호</block>
+  <block id="ca401b5672c0ad2688c93bc7bc20d2f4" category="paragraph">Cloud Volumes ONTAP의 ARP에 대한 자세한 내용은 를 참조하십시오<block ref="9a5c0a514fb4b4b0c5abdde049600542" category="inline-link-rx"></block>.</block>
+  <block id="6f7a609c476697f17ecdfbfe367e39ad" category="paragraph">Cloud Volumes ONTAP는 워크로드 분석을 수행하여 랜섬웨어 공격을 나타낼 수 있는 비정상적인 활동을 사전에 감지하고 경고하는 ARP(Autonomous 랜섬웨어 Protection) 기능을 지원합니다.</block>
+  <block id="75ece8e655ff469f6f78ae805a30c6ad" category="paragraph">ARP 기능은 노드 기반 및 용량 기반 라이센스 모델 모두에서 BYOL 라이센스(1년, 2년, 3년 조건)에만 사용할 수 있습니다. Cloud Volumes ONTAP의 ARP 기능과 함께 사용할 새 라이센스를 구입하려면 NetApp 영업 담당자에게 문의해야 합니다.</block>
+  <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">자율주행 랜섬웨어 보호 활성화</block>
+  <block id="f4f1116cfaa769b8eb002623deca5f2e" category="paragraph">라이센스를 구입하여 디지털 지갑에 추가하면 Cloud Volumes ONTAP를 사용하여 볼륨별로 ARP를 활성화할 수 있습니다. 볼륨에 대한 ARP 구성은 ONTAP 시스템 관리자 및 ONTAP CLI를 통해 수행됩니다. ONTAP 시스템 관리자 및 CLI에서 ARP를 활성화하는 방법에 대한 자세한 내용은 를 참조하십시오<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>.</block>
 </blocks>
