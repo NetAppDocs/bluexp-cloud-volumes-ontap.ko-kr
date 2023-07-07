@@ -4993,4 +4993,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="75ece8e655ff469f6f78ae805a30c6ad" category="paragraph">ARP 기능은 노드 기반 및 용량 기반 라이센스 모델 모두에서 BYOL 라이센스(1년, 2년, 3년 조건)에만 사용할 수 있습니다. Cloud Volumes ONTAP의 ARP 기능과 함께 사용할 새 라이센스를 구입하려면 NetApp 영업 담당자에게 문의해야 합니다.</block>
   <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">자율주행 랜섬웨어 보호 활성화</block>
   <block id="f4f1116cfaa769b8eb002623deca5f2e" category="paragraph">라이센스를 구입하여 디지털 지갑에 추가하면 Cloud Volumes ONTAP를 사용하여 볼륨별로 ARP를 활성화할 수 있습니다. 볼륨에 대한 ARP 구성은 ONTAP 시스템 관리자 및 ONTAP CLI를 통해 수행됩니다. ONTAP 시스템 관리자 및 CLI에서 ARP를 활성화하는 방법에 대한 자세한 내용은 를 참조하십시오<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>.</block>
+  <block id="46d7a6dd7db3af97caa5603b84f76cc1" category="paragraph">PAYGO 또는 연간 약정 조건에서만 사용할 수 있으며, WORM용 라이센스는 클라우드 공급자 마켓플레이스를 통해 구입할 수 있습니다. WORM은 노드 기반 및 용량 기반 라이센스 모델을 모두 지원합니다.</block>
+  <block id="66ab7e49c11a830935ab2c9b0bf49e5e" category="admonition">Cloud Volumes ONTAP에서 WORM 스토리지에 BYOL 라이센스를 사용할 수 없음</block>
 </blocks>

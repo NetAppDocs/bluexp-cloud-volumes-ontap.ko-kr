@@ -56,6 +56,11 @@ Cloud Volumes ONTAP 9.10.1부터 볼륨 레벨에서 WORM을 활성화 또는 �
 
 WORM 볼륨의 총 프로비저닝 용량에 따라 WORM 스토리지에 대한 충전이 매시간 가능합니다.
 
+PAYGO 또는 연간 약정 조건에서만 사용할 수 있으며, WORM용 라이센스는 클라우드 공급자 마켓플레이스를 통해 구입할 수 있습니다. WORM은 노드 기반 및 용량 기반 라이센스 모델을 모두 지원합니다.
+
+
+NOTE: Cloud Volumes ONTAP에서 WORM 스토리지에 BYOL 라이센스를 사용할 수 없음
+
 Cloud Volumes ONTAP 9.10.1 이상에서는 다음과 같은 충전 동작을 이해해야 합니다.
 
 * ONTAP 9.10.1.1부터 WORM 볼륨과 비 WORM 볼륨이 동일한 애그리게이트에 존재할 수 있습니다.
