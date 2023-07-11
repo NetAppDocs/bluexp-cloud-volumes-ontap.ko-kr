@@ -26,6 +26,26 @@ Cloud Volumes ONTAP 시스템에서 WORM(Write Once, Read Many) 스토리지를 
 
 
 
+== 충전 중
+
+WORM 볼륨의 총 프로비저닝 용량에 따라 WORM 스토리지에 대한 충전이 매시간 가능합니다.
+
+PAYGO 또는 연간 약정 조건에서만 사용할 수 있으며, WORM용 라이센스는 클라우드 공급자 마켓플레이스를 통해 구입할 수 있습니다. WORM은 노드 기반 및 용량 기반 라이센스 모델을 모두 지원합니다.
+
+
+NOTE: Cloud Volumes ONTAP에서 WORM 스토리지에 BYOL 라이센스를 사용할 수 없음
+
+Cloud Volumes ONTAP 9.10.1 이상에서는 다음과 같은 충전 동작을 이해해야 합니다.
+
+* ONTAP 9.10.1.1부터 WORM 볼륨과 비 WORM 볼륨이 동일한 애그리게이트에 존재할 수 있습니다.
+* Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM을 활성화하면 BlueXP에서 생성한 모든 볼륨에서 WORM이 활성화됩니다. 그러나 ONTAP CLI 또는 System Manager를 사용하여 WORM이 비활성화된 볼륨을 생성할 수 있습니다. 이러한 볼륨은 WORM 속도로 충전되지 않습니다.
+* 작업 환경을 생성할 때 WORM을 활성화하지 않으면 BlueXP에서 생성한 모든 볼륨에서 WORM이 비활성화됩니다. 해당 볼륨에 대해 WORM 속도로 충전되지 않습니다.
+
+
+https://cloud.netapp.com/pricing["WORM 스토리지 가격에 대해 자세히 알아보십시오"^]
+
+
+
 == WORM 스토리지를 활성화하는 중입니다
 
 WORM 스토리지의 활성화 방법은 사용 중인 Cloud Volumes ONTAP 버전에 따라 다릅니다.
@@ -52,31 +72,19 @@ Cloud Volumes ONTAP 9.10.1부터 볼륨 레벨에서 WORM을 활성화 또는 �
 
 
 
-== 충전 중
-
-WORM 볼륨의 총 프로비저닝 용량에 따라 WORM 스토리지에 대한 충전이 매시간 가능합니다.
-
-PAYGO 또는 연간 약정 조건에서만 사용할 수 있으며, WORM용 라이센스는 클라우드 공급자 마켓플레이스를 통해 구입할 수 있습니다. WORM은 노드 기반 및 용량 기반 라이센스 모델을 모두 지원합니다.
-
-
-NOTE: Cloud Volumes ONTAP에서 WORM 스토리지에 BYOL 라이센스를 사용할 수 없음
-
-Cloud Volumes ONTAP 9.10.1 이상에서는 다음과 같은 충전 동작을 이해해야 합니다.
-
-* ONTAP 9.10.1.1부터 WORM 볼륨과 비 WORM 볼륨이 동일한 애그리게이트에 존재할 수 있습니다.
-* Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM을 활성화하면 BlueXP에서 생성한 모든 볼륨에서 WORM이 활성화됩니다. 그러나 ONTAP CLI 또는 System Manager를 사용하여 WORM이 비활성화된 볼륨을 생성할 수 있습니다. 이러한 볼륨은 WORM 속도로 충전되지 않습니다.
-* 작업 환경을 생성할 때 WORM을 활성화하지 않으면 BlueXP에서 생성한 모든 볼륨에서 WORM이 비활성화됩니다. 해당 볼륨에 대해 WORM 속도로 충전되지 않습니다.
-
-
-https://cloud.netapp.com/pricing["WORM 스토리지 가격에 대해 자세히 알아보십시오"^]
-
-
-
 == WORM에 파일 커밋 중
 
 애플리케이션을 사용하여 NFS 또는 CIFS를 통해 WORM에 파일을 커밋하거나 ONTAP CLI를 사용하여 파일을 WORM에 자동으로 커밋할 수 있습니다. 또한 WORM 추가 가능 파일을 사용하여 로그 정보와 같이 점증적으로 기록된 데이터를 보존할 수 있습니다.
 
 Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화한 후에는 모든 WORM 스토리지 관리에 ONTAP CLI를 사용해야 합니다. 자세한 지침은 을 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-arch-con/home.html["ONTAP 설명서"^].
+
+
+
+== WORM 파일을 삭제하는 중입니다
+
+보존 기간 동안 권한이 있는 삭제 기능을 사용하여 WORM 파일을 삭제할 수 있습니다.
+
+자세한 지침은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/snaplock/delete-worm-files-concept.html["ONTAP 설명서"^]
 
 
 
