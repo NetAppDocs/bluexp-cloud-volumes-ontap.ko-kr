@@ -1486,7 +1486,6 @@
   <block id="68c43e2b96fbdbfa40796f17526ce49b" category="list-text"><block ref="6cb773c19d321df01c24599ee993e239" category="inline-xref-macro-rx"></block></block>
   <block id="f509056e5113d375c99bca630ad36b66" category="section-title">다운타임을 계획합니다</block>
   <block id="13ab03e6ad3ee2215bec95a4c0f024e2" category="paragraph">단일 노드 시스템을 업그레이드할 경우 업그레이드 프로세스에서는 I/O가 중단되는 동안 시스템을 최대 25분 동안 오프라인 상태로 전환합니다.</block>
-  <block id="00795e3f043d0bab791590ffc0257204" category="paragraph">HA 2노드 업그레이드는 무중단으로 I/O를 업그레이드할 수 있으며 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.</block>
   <block id="534c7f5fb857a948ecc7186949e8487b" category="section-title">자동 반환이 여전히 활성화되어 있는지 확인합니다</block>
   <block id="9119de3f1b6e3cbe55216fa59da529bf" category="section-title">SnapMirror 전송을 일시 중단합니다</block>
   <block id="a502184baec20af3276eaf812b0bc5e9" category="paragraph">Cloud Volumes ONTAP 시스템에 활성 SnapMirror 관계가 있는 경우 Cloud Volumes ONTAP 소프트웨어를 업데이트하기 전에 전송을 일시 중지하는 것이 좋습니다. 전송을 일시 중단하면 SnapMirror 장애가 방지됩니다. 대상 시스템에서 전송을 일시 중지해야 합니다.</block>
@@ -5000,4 +4999,7 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="fa0127eadcc515624ef23babde9aead2" category="paragraph">추가 라이센스를 구입하여 디지털 지갑에 추가하면 Cloud Volumes ONTAP를 사용하여 볼륨별로 ARP를 활성화할 수 있습니다. 볼륨에 대한 ARP 구성은 ONTAP 시스템 관리자 및 ONTAP CLI를 통해 수행됩니다. ONTAP 시스템 관리자 및 CLI에서 ARP를 활성화하는 방법에 대한 자세한 내용은 를 참조하십시오<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>.</block>
   <block id="a35eb7b32c61adf984cdcc0cc1594b1c" category="inline-image-macro">스크린샷은 Autonomous 랜섬웨어 Protection의 애드온 라이센스를 보여줍니다.</block>
   <block id="97a79a643f303c97f7df9ccd26c34e5e" category="paragraph"><block ref="97a79a643f303c97f7df9ccd26c34e5e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">대부분의 경우 HA 쌍의 업그레이드는 무중단으로 가능하며 I/O는 중단되지 않습니다. 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.</block>
+  <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">ONTAP 설명서를 참조하십시오</block>
+  <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">세션 지향 프로토콜은 업그레이드 중 특정 영역의 클라이언트 및 애플리케이션에 부정적인 영향을 미칠 수 있습니다. 자세한 내용은<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
 </blocks>
