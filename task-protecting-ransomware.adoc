@@ -54,6 +54,8 @@ image:screenshot_ransomware_protection.gif["작업 환경 내에서 사용할 �
 
 Cloud Volumes ONTAP는 워크로드 분석을 수행하여 랜섬웨어 공격을 나타낼 수 있는 비정상적인 활동을 사전에 감지하고 경고하는 ARP(Autonomous 랜섬웨어 Protection) 기능을 지원합니다.
 
-ARP 기능은 노드 기반 및 용량 기반 라이센스 모델 모두에서 BYOL 라이센스(1년, 2년, 3년 조건)에만 사용할 수 있습니다. Cloud Volumes ONTAP의 ARP 기능과 함께 사용할 새 라이센스를 구입하려면 NetApp 영업 담당자에게 문의해야 합니다.
+ARP 기능은 노드 기반 및 용량 기반 라이센스 모델 모두에서 BYOL 라이센스(1년, 2년, 3년 조건)에만 사용할 수 있습니다. Cloud Volumes ONTAP의 ARP 기능과 함께 사용하기 위해 별도의 새 애드온 라이센스를 구입하려면 NetApp 영업 담당자에게 문의해야 합니다.
 
-라이센스를 구입하여 디지털 지갑에 추가하면 Cloud Volumes ONTAP를 사용하여 볼륨별로 ARP를 활성화할 수 있습니다. 볼륨에 대한 ARP 구성은 ONTAP 시스템 관리자 및 ONTAP CLI를 통해 수행됩니다. ONTAP 시스템 관리자 및 CLI에서 ARP를 활성화하는 방법에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["자율주행 랜섬웨어 보호 활성화"^].
+추가 라이센스를 구입하여 디지털 지갑에 추가하면 Cloud Volumes ONTAP를 사용하여 볼륨별로 ARP를 활성화할 수 있습니다. 볼륨에 대한 ARP 구성은 ONTAP 시스템 관리자 및 ONTAP CLI를 통해 수행됩니다. ONTAP 시스템 관리자 및 CLI에서 ARP를 활성화하는 방법에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["자율주행 랜섬웨어 보호 활성화"^].
+
+image:screenshot_arp.png["스크린샷은 Autonomous 랜섬웨어 Protection의 애드온 라이센스를 보여줍니다."]
