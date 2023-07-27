@@ -54,10 +54,10 @@ BlueXP 계정 및 개별 Cloud Volumes ONTAP 시스템에 대한 지원 등록�
 NSS 계정을 가지고 있는 NetApp 고객은 BlueXP를 통해 지원을 받기 위해 등록하기만 하면 됩니다.
 
 .단계
-. BlueXP 콘솔의 오른쪽 상단에서 설정 아이콘을 클릭하고 * 자격 증명 * 을 선택합니다.
-. 사용자 자격 증명 * 을 클릭합니다.
+. BlueXP 콘솔의 오른쪽 상단에서 설정 아이콘을 선택하고 * 자격 증명 * 을 선택합니다.
+. 사용자 자격 증명 * 을 선택합니다.
 . NSS 자격 증명 추가 * 를 선택하고 NetApp Support 사이트(NSS) 인증 프롬프트를 따릅니다.
-. 등록 프로세스가 성공적으로 완료되었는지 확인하려면 도움말 아이콘을 클릭하고 * 지원 * 을 선택합니다.
+. 등록 프로세스가 성공적으로 완료되었는지 확인하려면 도움말 아이콘을 선택하고 * 지원 * 을 선택합니다.
 +
 리소스 * 페이지에 계정이 지원을 위해 등록되었다는 내용이 표시됩니다.
 
@@ -92,7 +92,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 NetApp의 새로운 브랜드이고 NSS 계정이 없는 경우 아래의 각 단계를 수행하십시오.
 
 .단계
-. BlueXP 콘솔의 오른쪽 상단에서 도움말 아이콘을 클릭하고 * 지원 * 을 선택합니다.
+. BlueXP 콘솔의 오른쪽 상단에서 도움말 아이콘을 선택하고 * 지원 * 을 선택합니다.
 +
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다"]
 
@@ -150,12 +150,12 @@ NSS 자격 증명을 BlueXP 계정과 연결하는 것은 BlueXP 사용자 로�
 
 
 .단계
-. BlueXP 콘솔의 오른쪽 상단에서 도움말 아이콘을 클릭하고 * 지원 * 을 선택합니다.
+. BlueXP 콘솔의 오른쪽 상단에서 도움말 아이콘을 선택하고 * 지원 * 을 선택합니다.
 +
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다"]
 
-. NSS 관리 > NSS 계정 추가 * 를 클릭합니다.
-. 메시지가 표시되면 * 계속 * 을 클릭하여 Microsoft 로그인 페이지로 리디렉션됩니다.
+. NSS 관리 > NSS 계정 추가 * 를 선택합니다.
+. 메시지가 표시되면 * 계속 * 을 선택하여 Microsoft 로그인 페이지로 리디렉션합니다.
 +
 NetApp은 Microsoft Azure Active Directory를 지원 및 라이선싱과 관련된 인증 서비스의 ID 공급자로 사용합니다.
 

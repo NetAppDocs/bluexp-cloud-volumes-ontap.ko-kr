@@ -48,11 +48,11 @@ BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 �
 
 
 .단계
-. BlueXP에서 * 도움말 > 지원 * 을 클릭합니다.
+. BlueXP에서 * 도움말 > 지원 * 을 선택합니다.
 . 리소스 * 페이지의 기술 지원 아래에서 사용 가능한 옵션 중 하나를 선택합니다.
 +
-.. 전화로 통화하려면 * 전화 * 를 클릭하십시오. 전화를 걸 수 있는 전화 번호가 나열된 netapp.com 페이지로 연결됩니다.
-.. 케이스 생성 * 을 클릭하여 NetApp 지원 담당자와 티켓을 엽니다.
+.. 전화로 통화하려면 * 전화 * 를 선택하십시오. 전화를 걸 수 있는 전화 번호가 나열된 netapp.com 페이지로 연결됩니다.
+.. NetApp 지원 전문가와 함께 티켓을 열려면 * 케이스 생성 * 을 선택하십시오.
 +
 *** * 서비스 *: 문제와 관련된 서비스를 선택합니다. 예를 들어, 서비스 내의 워크플로우 또는 기능과 관련된 기술 지원 문제에 해당하는 BlueXP를 예로 들 수 있습니다.
 *** * 작업 환경 *: 스토리지에 적용 가능한 경우 * Cloud Volumes ONTAP * 또는 * On-Premise * 를 선택한 다음 관련 작업 환경을 선택합니다.
@@ -81,7 +81,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 .작업을 마친 후
 지원 케이스 번호와 함께 팝업이 나타납니다. NetApp 지원 전문가가 귀사의 사례를 검토하고 곧 다시 연결해 드릴 것입니다.
 
-지원 케이스 내역을 보려면 * 설정 > 일정 * 을 클릭하고 "지원 케이스 생성"이라는 이름의 작업을 찾습니다. 오른쪽 끝에 있는 버튼을 사용하여 작업을 확장하여 세부 정보를 볼 수 있습니다.
+지원 케이스 내역을 보려면 * 설정 > 타임라인 * 을 선택하고 "지원 케이스 생성"이라는 이름의 작업을 찾습니다. 오른쪽 끝에 있는 버튼을 사용하여 작업을 확장하여 세부 정보를 볼 수 있습니다.
 
 케이스를 생성하려고 할 때 다음과 같은 오류 메시지가 나타날 수 있습니다.
 
@@ -120,14 +120,14 @@ BlueXP에서 직접 활성 및 해결된 지원 사례를 보고 관리할 수 �
 
 
 .단계
-. BlueXP에서 * 도움말 > 지원 * 을 클릭합니다.
-. Case Management * 를 클릭하고 메시지가 표시되면 NSS 계정을 BlueXP에 추가합니다.
+. BlueXP에서 * 도움말 > 지원 * 을 선택합니다.
+. Case Management * 를 선택하고 메시지가 표시되면 NSS 계정을 BlueXP에 추가합니다.
 +
 케이스 관리 * 페이지에는 BlueXP 사용자 계정과 연결된 NSS 계정과 관련된 미해결 케이스가 표시됩니다. NSS 관리 * 페이지 상단에 나타나는 것과 동일한 NSS 계정입니다.
 
 . 필요한 경우 테이블에 표시되는 정보를 수정합니다.
 +
-** 조직의 케이스 * 에서 * 보기 * 를 클릭하여 회사와 관련된 모든 케이스를 봅니다.
+** 조직의 케이스 * 에서 * 보기 * 를 선택하여 회사와 관련된 모든 케이스를 봅니다.
 ** 정확한 날짜 범위를 선택하거나 다른 기간을 선택하여 날짜 범위를 수정합니다.
 +
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-date-range.png["케이스 관리 페이지의 표 위에 있는 옵션 스크린샷으로 정확한 날짜 범위 또는 최근 7일, 30일 또는 3개월을 선택할 수 있습니다."]
@@ -136,20 +136,20 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 +
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-filter.png["활성 또는 종료와 같은 특정 상태와 일치하는 케이스를 필터링할 수 있는 상태 열의 필터 옵션 스크린샷"]
 
-** 을 클릭하여 테이블에 표시되는 열을 변경합니다 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-columns.png["테이블에 나타나는 더하기 아이콘입니다"] 표시할 열을 선택합니다.
+** 를 선택하여 테이블에 표시되는 열을 변경합니다 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-columns.png["테이블에 나타나는 더하기 아이콘입니다"] 표시할 열을 선택합니다.
 +
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-columns.png["표에 표시할 수 있는 열을 보여 주는 스크린샷"]
 
 
 
-. 를 클릭하여 기존 케이스를 관리합니다 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-action.png["표의 마지막 열에 세 개의 점이 있는 아이콘"] 사용 가능한 옵션 중 하나를 선택합니다.
+. 를 선택하여 기존 케이스를 관리합니다 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-action.png["표의 마지막 열에 세 개의 점이 있는 아이콘"] 사용 가능한 옵션 중 하나를 선택합니다.
 +
 ** * 사례 보기 *: 특정 케이스에 대한 전체 세부 정보를 봅니다.
 ** * 케이스 메모 업데이트 *: 문제에 대한 추가 세부 정보를 제공하거나 * 파일 업로드 * 를 선택하여 최대 5개의 파일을 첨부할 수 있습니다.
 +
 첨부 파일은 파일당 25MB로 제한됩니다. txt, log, pdf, jpg/jpeg, rtf, DOC/docx, xls/xlsx 및 CSV.
 
-** * 케이스 종료 *: 케이스를 닫는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 클릭합니다.
+** * 케이스 종료 *: 케이스를 종료하는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 선택합니다.
 
 
 +

@@ -20,6 +20,20 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2023년 7월 26일
+
+다음 변경 사항은 커넥터의 3.9.31 릴리스에 도입되었습니다.
+
+
+
+=== Cloud Volumes ONTAP 9.13.1 GA
+
+BlueXP는 이제 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.13.1 일반 가용성 릴리스를 배포하고 관리할 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
+
+
+
 == 2023년 7월 2일
 
 다음 변경 사항은 커넥터의 3.9.31 릴리스에 도입되었습니다.
@@ -88,7 +102,7 @@ Qatar 지역은 현재 Google Cloud for Cloud Volumes ONTAP 및 Connector for Cl
 
 
 
-=== Azure Australia East의 HA 다중 가용성 영역 배포 지원
+=== Azure Australia East에서 HA 다중 가용성 영역 구축 지원
 
 Azure의 오스트레일리아 동부 지역은 현재 Cloud Volumes ONTAP 9.12.1 GA 이상을 위한 HA 다중 가용성 영역 구축을 지원합니다.
 
