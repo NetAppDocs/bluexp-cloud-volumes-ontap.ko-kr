@@ -107,7 +107,7 @@ image:screenshot-digital-wallet-usage-report.png["스크린샷은 Digital Wallet
 
 * * 스토리지 VM 사용량 *: 이 보고서는 Cloud Volumes ONTAP 시스템과 스토리지 가상 시스템(SVM)에서 청구 용량이 얼마나 분석되는지를 보여줍니다. 이 정보는 디지털 지갑의 화면에서는 사용할 수 없습니다. 여기에는 다음 정보가 포함됩니다.
 +
-** 작업 환경 ID(UUID로 표시됨)
+** 작업 환경 ID 및 이름(UUID로 표시됨)
 ** 클라우드
 ** NetApp 계정 ID입니다
 ** 작업 환경 구성
@@ -118,11 +118,12 @@ image:screenshot-digital-wallet-usage-report.png["스크린샷은 Digital Wallet
 ** Cloud Volumes ONTAP 패키지 또는 기능
 ** SaaS Marketplace 구독 이름 충전 중
 ** SaaS Marketplace 구독 ID를 충전하는 중입니다
+** 워크로드 유형
 
 
 * * Volumes usage *: 이 보고서는 작업 환경의 볼륨에 의해 청구된 용량이 어떻게 분할되는지 보여줍니다. 이 정보는 디지털 지갑의 화면에서는 사용할 수 없습니다. 여기에는 다음 정보가 포함됩니다.
 +
-** 작업 환경 ID(UUID로 표시됨)
+** 작업 환경 ID 및 이름(UUID로 표시됨)
 ** SVN 이름입니다
 ** 볼륨 ID입니다
 ** 볼륨 유형입니다

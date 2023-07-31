@@ -730,7 +730,6 @@
   <block id="d9bdad4a2680b0998135ed5fd46e50e3" category="section-title">Cloud Volumes ONTAP용 Azure 프라이빗 링크</block>
   <block id="8f7830ddfb4c3be4f076516f4856d257" category="inline-link">Azure 프라이빗 링크에 대해 자세히 알아보십시오</block>
   <block id="b159a32bd5237dec9c6c28e81628f28a" category="list-text"><block ref="b159a32bd5237dec9c6c28e81628f28a" category="inline-link-rx"></block></block>
-  <block id="a2f09fc910f91b45be16b1d3da056377" category="list-text"><block ref="a2f09fc910f91b45be16b1d3da056377" category="inline-link-macro-rx"></block></block>
   <block id="a194c96a36b587eade03d569bf173238" category="summary">Cloud Volumes ONTAP 시스템에서 WORM(Write Once, Read Many) 스토리지를 활성화하여 지정된 보존 기간 동안 수정되지 않은 형식으로 파일을 보존할 수 있습니다. 클라우드 WORM 스토리지는 SnapLock 기술을 기반으로 하며, 이는 WORM 파일이 파일 레벨에서 보호됨을 의미합니다.</block>
   <block id="8aca368ccd90320c96e8a69a43545003" category="doc">WORM 스토리지</block>
   <block id="1ee261e062b77615a21251aa4b6da907" category="section-title">WORM 스토리지의 작동 방식</block>
@@ -4585,7 +4584,6 @@
   <block id="baf09c6c43fd26effd8f15e252649384" category="list-text">총 PAYGO 용량</block>
   <block id="76101a2de96d735db21249323914bc6c" category="list-text">* Cloud Volumes ONTAP 패키지 사용 *: 이 보고서는 디지털 지갑의 패키지 카드에 있는 내용을 정확하게 보여줍니다. 최적화된 I/O 패키지를 제외한 각 패키지에 대한 다음 정보가 포함되어 있습니다.</block>
   <block id="c01bbdbe6721d80a74779e943243486b" category="list-text">* 스토리지 VM 사용량 *: 이 보고서는 Cloud Volumes ONTAP 시스템과 스토리지 가상 시스템(SVM)에서 청구 용량이 얼마나 분석되는지를 보여줍니다. 이 정보는 디지털 지갑의 화면에서는 사용할 수 없습니다. 여기에는 다음 정보가 포함됩니다.</block>
-  <block id="b16bfcaa9b0651f05b8e8894a2aebb31" category="list-text">작업 환경 ID(UUID로 표시됨)</block>
   <block id="c8e2277ecfb1427838c488c217f99466" category="list-text">클라우드</block>
   <block id="4736cd35bf5b3fe63e1b1785fb2aa664" category="list-text">NetApp 계정 ID입니다</block>
   <block id="bbfa34e8af02138b821f784c8962669b" category="list-text">작업 환경 구성</block>
@@ -4740,7 +4738,6 @@
 CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.</block>
   <block id="dabcd93c47c69ecf7688c43957686bb7" category="cell">를 사용할 계획인 경우 <block ref="b0493934baf26f9529eb4214b9de6c71" category="inline-link-macro-rx"></block> 또는<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> 서비스를 사용하려면 * 서비스 계정 * 스위치를 활성화한 다음 미리 정의된 스토리지 관리자 역할이 있는 서비스 계정을 선택해야 합니다.</block>
   <block id="5355322e972163adefa502954b34d25c" category="paragraph">다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다.  또는 에 있는 구독 단계를 따릅니다<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> 섹션을 참조하십시오.</block>
-  <block id="5f3d5b090fa9d570cead4124db6f3d69" category="admonition">_Flash Cache_, 고속 쓰기 속도 및 8,896바이트의 더 높은 최대 전송 단위(MTU)는 * 고속 * 쓰기 속도 옵션을 통해 사용할 수 있으며, n2-표준-16, n2-표준-32, n2-표준-48 및 n2-표준-64 인스턴스 유형이 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. _Flash Cache_, 높은 쓰기 속도 및 8,896의 MTU는 기능마다 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>.</block>
   <block id="200bfa431a059f9cb12bdce777845a7e" category="admonition">커넥터에는 시스템 디스크도 필요합니다.<block ref="d20acabc118cd0226229fe484509d871" category="inline-link-rx"></block>.</block>
   <block id="f4e04685569a1b4c66fdec145eb96e7a" category="paragraph">가 없는 경우<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> 그러나 계정 관리자는 계정을 만들어야 합니다.<block ref="5b9d2e73755e0f28771296de88f8a39a" category="inline-link-rx"></block></block>
   <block id="3e15a93b8abafd714d90153ac66e4e82" category="paragraph">인터넷에 액세스할 수 없는 서브넷에 Cloud Volumes ONTAP를 배포하려는 경우 수동으로 커넥터를 설치하고 해당 커넥터에서 실행 중인 BlueXP 사용자 인터페이스에 액세스해야 합니다.<block ref="dfc982bbe2dfabd644ac809e4b468ae7" category="inline-link-rx"></block></block>
@@ -5005,4 +5002,32 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">를 선택하여 테이블에 표시되는 열을 변경합니다 <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> 표시할 열을 선택합니다.</block>
   <block id="348552521b849746260fe8d296d34c15" category="list-text">를 선택하여 기존 케이스를 관리합니다 <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 사용 가능한 옵션 중 하나를 선택합니다.</block>
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">* 케이스 종료 *: 케이스를 종료하는 이유에 대한 세부 정보를 제공하고 * 케이스 닫기 * 를 선택합니다.</block>
+  <block id="80f98bfa8cbe0d66021e6448047c1b5c" category="list-text">* Flash Cache, 쓰기 속도 및 WORM *:</block>
+  <block id="b67eda3e3db596eb1c104f55326e3754" category="list-text">필요한 경우 * Flash Cache * 를 활성화합니다.</block>
+  <block id="5f33cf47c262adc4871d3556fcd8c00f" category="admonition">Cloud Volumes ONTAP 9.13.1 부터, _Flash Cache_는 n2-standard-16, n2-standard-32, n2-standard-48, n2-standard-64 인스턴스 유형에서 지원됩니다. 구축 후에는 Flash Cache를 사용하지 않도록 설정할 수 없습니다.</block>
+  <block id="504ca6d1f97a8949483d99d521a7a500" category="admonition">고속 * 쓰기 속도 옵션을 통해 896바이트의 고속 쓰기 속도와 높은 최대 전송 단위(MTU)를 사용할 수 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>.</block>
+  <block id="e4cfc04d9c35d908faed204900862e80" category="admonition">고속 쓰기 속도와 896바이트의 최대 전송 단위(MTU)는 n2-standard-16, n2-standard-32, n2-standard-48 및 n2-standard-64 인스턴스 유형의 * 고속 * 쓰기 속도 옵션을 통해 사용할 수 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. 높은 쓰기 속도 및 8,896의 MTU는 기능에 따라 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오<block ref="3af5ff5ce5ff5a68a4b6fb78e7e7794a" category="inline-link-rx"></block>.</block>
+  <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023년 7월 30일</block>
+  <block id="4325a8ea9cec7ffa18f3ee74d15997fe" category="paragraph">다음 변경 사항은 커넥터의 3.9.32 릴리스에 도입되었습니다.</block>
+  <block id="7741410e87d6144c42e8ca73837c3707" category="section-title">Flash Cache 및 Google Cloud의 고속 쓰기 지원</block>
+  <block id="4f90c73c3d52d1bd4329e9961707db5c" category="paragraph">Google Cloud for Cloud Volumes ONTAP 9.13.1 이상에서는 Flash Cache 및 고속 쓰기 속도를 별도로 활성화할 수 있습니다. 지원되는 모든 인스턴스 유형에서 빠른 쓰기 속도를 사용할 수 있습니다. Flash Cache는 다음과 같은 인스턴스 유형에서 지원됩니다.</block>
+  <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="list-text">N2-표준-16</block>
+  <block id="8f66358785ed8f4d9a356630a4ee515c" category="list-text">N2-표준-32</block>
+  <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">N2-표준-48</block>
+  <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">N2-표준-64</block>
+  <block id="0891ba6a1f7a37c01cb3698c692751bc" category="paragraph">이러한 기능은 단일 노드 및 고가용성 쌍 구축 모두에서 개별적으로 또는 함께 사용할 수 있습니다.</block>
+  <block id="1e69916eaa563a1da0ccff3715e2342d" category="paragraph"><block ref="1e69916eaa563a1da0ccff3715e2342d" category="inline-link-macro-rx"></block></block>
+  <block id="ee4272223579f1299444d14f2d185eb5" category="section-title">사용 보고서 기능 향상</block>
+  <block id="ec123c8f161f9dfe4383b8db1d8883c4" category="paragraph">이제 사용 보고서 내에 표시되는 정보를 다양한 개선 사항을 사용할 수 있습니다. 다음은 사용 보고서의 향상된 기능입니다.</block>
+  <block id="4c63050f1e33aa32db50cc80b682e805" category="list-text">이제 TiB 단위는 컬럼 이름에 포함됩니다.</block>
+  <block id="fc7fa4a44c2c9442201bf8725e6237b7" category="list-text">이제 일련 번호에 대한 새로운 "노드" 필드가 포함되었습니다.</block>
+  <block id="68d761e353cd9d529997fa49bfe51f92" category="list-text">이제 새로운 "워크로드 유형" 열이 스토리지 VM 사용량 보고서에 포함됩니다.</block>
+  <block id="26f51c309f5237522421f24bf4df04e0" category="list-text">이제 스토리지 VM 및 볼륨 사용 보고서에 작업 환경 이름이 포함됩니다.</block>
+  <block id="fa3abcbc43662c93139af3f3f6421a6f" category="list-text">볼륨 유형 “파일”은 이제 “기본(읽기/쓰기)”으로 표시됩니다.</block>
+  <block id="b259e22e76e27ad956b503941804b4c6" category="list-text">볼륨 유형 “보조”는 이제 “보조(DP)”로 표시됩니다.</block>
+  <block id="a8c4bf4701c4d99d778be1176c8c8616" category="paragraph">사용 현황 보고서에 대한 자세한 내용은 을 참조하십시오 <block ref="b9c4007084372a89d5df93919658aa73" category="inline-link-macro-rx"></block>.</block>
+  <block id="c2282365523aa8fbb305c5432e90d5d7" category="paragraph"><block ref="6f9b2ccd962907ef2c43f6fa9517a053" category="inline-link-macro-rx"></block>.</block>
+  <block id="5e167ef814cd8fe02fd01be002ffa235" category="list-text"><block ref="5e167ef814cd8fe02fd01be002ffa235" category="inline-link-macro-rx"></block></block>
+  <block id="4a9ebfe4f0e3302083955176f47a9519" category="list-text">작업 환경 ID 및 이름(UUID로 표시됨)</block>
+  <block id="427af860f9733f0c5427a1408195bb2b" category="list-text">워크로드 유형</block>
 </blocks>
