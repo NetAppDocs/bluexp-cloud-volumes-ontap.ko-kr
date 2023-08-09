@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-protecting-ransomware.html 
-keywords: snapshot policy, ransomware, protection, fpolicy, block, extension, attacks 
+keywords: snapshot policy, ransomware, protection, fpolicy, block, extension, attacks, arp, autonomous, monitor, alert, attacks 
 summary: 랜섬웨어 공격은 비즈니스 시간, 리소스 및 평판에 악영향을 줄 수 있습니다. BlueXP를 사용하면 랜섬웨어에 대한 NetApp 솔루션을 구현할 수 있으며, 이 솔루션은 가시성, 탐지 및 문제 해결에 효과적인 툴을 제공합니다. 
 ---
 = 랜섬웨어에 대한 보호 개선
@@ -14,13 +14,20 @@ summary: 랜섬웨어 공격은 비즈니스 시간, 리소스 및 평판에 악
 
 
 [role="lead"]
-랜섬웨어 공격은 비즈니스 시간, 리소스 및 평판에 악영향을 줄 수 있습니다. BlueXP를 사용하면 랜섬웨어에 대한 NetApp 솔루션을 구현할 수 있으며, 이 솔루션은 가시성, 탐지 및 문제 해결에 효과적인 툴을 제공합니다.
+랜섬웨어 공격은 비즈니스 시간, 리소스 및 평판에 악영향을 줄 수 있습니다. BlueXP를 사용하면 일반적인 랜섬웨어 파일 확장으로부터 보호하는 것과 자율적 랜섬웨어 방어(ARP)라는 두 가지 NetApp 솔루션을 랜섬웨어용 구현할 수 있습니다. 이러한 솔루션은 가시성, 감지, 문제 해결을 위한 효과적인 툴을 제공합니다.
+
+
+
+== 일반적인 랜섬웨어 파일 확장명으로부터 보호
+
+[role="lead"]
+BlueXP를 통해 제공되는 랜섬웨어 방어 설정에서 ONTAP FPolicy 기능을 활용하여 일반적인 랜섬웨어 파일 확장 유형을 방지할 수 있습니다.
 
 .단계
 . Canvas 페이지에서 랜섬웨어 보호를 구성하는 시스템의 이름을 두 번 클릭합니다.
 . 개요 탭에서 기능 패널을 클릭한 다음 * 랜섬웨어 보호 * 옆에 있는 연필 아이콘을 클릭합니다.
 +
-image:screenshot_features_ransomware.png["작업 환경을 볼 때 개요 페이지의 오른쪽 상단에 있는 Features(기능) 패널 아래에 있는 랜섬웨어 보호 설정을 보여주는 스크린샷"]
+image::screenshot_features_ransomware.png[400]
 
 . 랜섬웨어에 대한 NetApp 솔루션 구현:
 +
@@ -42,20 +49,29 @@ NetApp Snapshot 기술은 랜섬웨어 해결을 위한 업계 최고의 솔루�
 
 TIP: Cloud Volumes ONTAP에서 FPolicy를 활성화하면 BlueXP에서 이 범위가 생성됩니다. 이 목록은 일반적인 랜섬웨어 파일 유형을 기반으로 합니다. Cloud Volumes ONTAP CLI에서 _vserver FPolicy scope_ 명령을 사용하여 차단된 파일 확장명을 사용자 지정할 수 있습니다.
 
-
-
-
-
++
 image:screenshot_ransomware_protection.gif["작업 환경 내에서 사용할 수 있는 랜섬웨어 보호 페이지를 보여주는 스크린샷 화면에는 스냅샷 정책이 없는 볼륨의 수와 랜섬웨어 파일 확장을 차단할 수 있는 기능이 표시됩니다."]
+
+
+
+
 
 
 
 == 자율 랜섬웨어 보호
 
+[role="lead"]
 Cloud Volumes ONTAP는 워크로드 분석을 수행하여 랜섬웨어 공격을 나타낼 수 있는 비정상적인 활동을 사전에 감지하고 경고하는 ARP(Autonomous 랜섬웨어 Protection) 기능을 지원합니다.
+
+를 통해 제공되는 파일 확장자 보호와 분리됩니다 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["랜섬웨어 차단 설정"]ARP 기능은 워크로드 분석을 사용하여 감지된 “비정상적인 활동”을 기반으로 잠재적인 공격에 대해 사용자에게 경고합니다. 랜섬웨어 차단 설정과 ARP 기능을 모두 포괄적인 랜섬웨어 방어에 함께 사용할 수 있습니다.
 
 ARP 기능은 노드 기반 및 용량 기반 라이센스 모델 모두에서 BYOL 라이센스(1년, 2년, 3년 조건)에만 사용할 수 있습니다. Cloud Volumes ONTAP의 ARP 기능과 함께 사용하기 위해 별도의 새 애드온 라이센스를 구입하려면 NetApp 영업 담당자에게 문의해야 합니다.
 
-추가 라이센스를 구입하여 디지털 지갑에 추가하면 Cloud Volumes ONTAP를 사용하여 볼륨별로 ARP를 활성화할 수 있습니다. 볼륨에 대한 ARP 구성은 ONTAP 시스템 관리자 및 ONTAP CLI를 통해 수행됩니다. ONTAP 시스템 관리자 및 CLI에서 ARP를 활성화하는 방법에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["자율주행 랜섬웨어 보호 활성화"^].
+추가 라이센스를 구입하여 디지털 지갑에 추가하면 Cloud Volumes ONTAP를 사용하여 볼륨별로 ARP를 활성화할 수 있습니다. 볼륨에 대한 ARP 구성은 ONTAP 시스템 관리자 및 ONTAP CLI를 통해 수행됩니다.
 
-image:screenshot_arp.png["스크린샷은 Autonomous 랜섬웨어 Protection의 애드온 라이센스를 보여줍니다."]
+ONTAP 시스템 관리자 및 CLI에서 ARP를 활성화하는 방법에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["자율주행 랜섬웨어 보호 활성화"^].
+
+
+NOTE: 라이센스가 없는 경우 라이센스가 부여된 기능을 사용할 수 없습니다.
+
+image::screenshot_arp.png[스크린샷 ARP]

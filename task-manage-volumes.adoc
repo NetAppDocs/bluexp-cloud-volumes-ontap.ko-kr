@@ -257,7 +257,7 @@ TIP: BlueXP는 총 사용 용량이 90%에 도달하면 이러한 작업 필요 
 나중에 추가 용량 문제를 방지할 수 있도록 aggregate에서 여유 공간을 확보하기 위해 충분히 큰 볼륨을 선택해야 합니다.
 
 +
-image:screenshot_aggr_volume_overview.png["스크린샷: 집계 정보 대화 상자의 집계 볼륨 목록을 표시합니다."]
+image::screenshot_aggr_volume_overview.png[스크린샷 집계 볼륨 개요]
 
 
 
@@ -335,7 +335,7 @@ image:screenshot_aggr_volume_overview.png["스크린샷: 집계 정보 대화 �
 .. 원하는 집계 타일로 이동한 다음 *... (타원 아이콘) > 애그리게이트 세부 정보 보기 *.
 .. 애그리게이트 타일에서 사용 가능한 용량(프로비저닝된 크기 - 사용된 애그리게이트 용량)을 확인합니다.
 +
-image:screenshot_aggr_capacity.png["스크린샷: 애그리게이트 정보 대화 상자에서 사용할 수 있는 총 애그리게이트 용량과 사용된 애그리게이트 용량을 표시합니다."]
+image::screenshot_aggr_capacity.png[스크린샷 집계 용량]
 
 
 
@@ -380,7 +380,7 @@ Cloud Volumes ONTAP에 대해 다음 조건 중 하나가 참인 경우 볼륨�
 
 CLI 또는 System Manager를 통해 생성된 FlexGroup 볼륨은 BlueXP의 볼륨 탭을 통해 직접 볼 수 있습니다. FlexVol 볼륨에 대해 제공된 정보와 동일한 BlueXP는 전용 볼륨 타일을 통해 생성된 FleGroup 볼륨에 대한 자세한 정보를 제공합니다. 볼륨 타일에서 아이콘의 호버 텍스트를 통해 각 FlexGroup 볼륨 그룹을 식별할 수 있습니다. 또한 볼륨 스타일 열을 통해 볼륨 목록 보기에서 FlexGroup 볼륨을 식별하고 정렬할 수 있습니다.
 
-image:screenshot_show_flexgroup_vol.png["볼륨 타일 아래에 FlexGroup 볼륨 아이콘 호버 텍스트를 보여 주는 스크린샷"]
+image::screenshot_show_flexgroup_vol.png[스크린샷에 FlexGroup vol이 나와 있습니다]
 
 
 NOTE: 현재 BlueXP에서만 기존 FlexGroup 볼륨을 볼 수 있습니다. BlueXP에서 FlexGroup 볼륨을 생성하는 기능은 사용할 수 없지만 향후 릴리스에서 제공될 예정입니다.

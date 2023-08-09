@@ -193,4 +193,4 @@ TIP: HA 쌍에서 노드 간에 볼륨을 이동하는 경우 다른 노드의 I
 
 BlueXP의 볼륨 관리 패널에서 _Mount Command_ 옵션을 통해 올바른 IP 주소를 쉽게 식별할 수 있습니다.
 
-image:screenshot_mount_option.png["스크린샷: 볼륨을 선택할 때 사용할 수 있는 마운트 명령을 표시합니다."]
+image::screenshot_mount_option.png[400]
