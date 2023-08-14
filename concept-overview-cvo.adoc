@@ -34,7 +34,7 @@ Cloud Volumes ONTAP는 업계 최고 수준의 NetApp 복제 기술인 SnapMirro
 또한 Cloud Volumes ONTAP는 BlueXP 백업 및 복구 기능과 통합되어 클라우드 데이터의 보호 및 장기 아카이브를 위한 백업 및 복원 기능을 제공합니다.
 
 +
-https://docs.netapp.com/us-en/bluexp-backup-restore/concept-backup-to-cloud.html["BlueXP 백업 및 복구에 대해 자세히 알아보십시오"^]
+link:https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXP 백업 및 복구에 대해 자세히 알아보십시오"^]
 
 * 데이터 계층화
 +

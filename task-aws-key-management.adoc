@@ -11,6 +11,7 @@ summary: 타사 키 관리 서비스에 AWS의 키 관리 서비스를 활용할
 :imagesdir: ../media/
 
 
+[role="lead"]
 을 사용할 수 있습니다 link:https://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS KMS(Key Management Service)"^] Google Cloud Platform에서 구축한 응용 프로그램에서 ONTAP 암호화 키를 보호합니다.
 
 AWS KMS를 사용한 키 관리는 CLI 또는 ONTAP REST API를 통해 활성화할 수 있습니다.

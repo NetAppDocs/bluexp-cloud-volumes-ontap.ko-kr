@@ -11,6 +11,7 @@ summary: 타사 키 관리 서비스에 Azure Key Vault를 사용합니다.
 :imagesdir: ./media/
 
 
+[role="lead"]
 을 사용할 수 있습니다 link:https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts["Azure 키 저장소(AKV)"^] Azure로 배포된 응용 프로그램에서 ONTAP 암호화 키를 보호합니다.
 
 AKV를 사용하여 보호할 수 있습니다 link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-netapp-volume-encryption-concept.html["NVE(NetApp Volume Encryption) 키"^] 데이터 SVM에만 해당.

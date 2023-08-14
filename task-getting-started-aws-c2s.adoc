@@ -14,7 +14,7 @@ summary: '표준 AWS 지역과 마찬가지로, AWS C2S(Commercial Cloud Service
 
 
 [role="lead"]
-표준 AWS 지역과 마찬가지로, 에서 Cloud Manager를 사용할 수 있습니다 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S(Commercial Cloud Services)"] 구축할 환경: 클라우드 스토리지에 엔터프라이즈급 기능을 제공하는 Cloud Volumes ONTAP AWS C2S는 미국 고유의 폐쇄된 지역입니다 Intelligence Community - 이 페이지의 지침은 AWS C2S 지역 사용자에게만 적용됩니다.
+표준 AWS 지역과 마찬가지로, 에서 Cloud Manager를 사용할 수 있습니다 link:https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S(Commercial Cloud Services)"^] 구축할 환경: 클라우드 스토리지에 엔터프라이즈급 기능을 제공하는 Cloud Volumes ONTAP AWS C2S는 미국 고유의 폐쇄된 지역입니다 Intelligence Community - 이 페이지의 지침은 AWS C2S 지역 사용자에게만 적용됩니다.
 
 
 
@@ -366,7 +366,7 @@ AWS에서 Cloud Volumes ONTAP 시스템을 시작하려면 먼저 AWS Marketplac
 
 . Connector 인스턴스에 연결된 호스트에서 Cloud Manager를 설정합니다.
 +
-.. 웹 브라우저를 열고 다음 URL을 입력합니다. http://ipaddress[]
+.. 웹 브라우저를 열고 를 입력합니다 https://_ipaddress_[] 여기서 _ipaddress_는 Connector를 설치한 Linux 호스트의 IP 주소입니다.
 .. AWS 서비스 연결을 위한 프록시 서버를 지정합니다.
 .. 1단계에서 얻은 인증서를 업로드합니다.
 .. 설정 마법사의 단계를 완료하여 Cloud Manager를 설정합니다.

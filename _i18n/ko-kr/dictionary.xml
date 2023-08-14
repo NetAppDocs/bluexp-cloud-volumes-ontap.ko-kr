@@ -2628,9 +2628,6 @@
   <block id="73af9e90d6d077cf277e49f829259963" category="section-title">추가 Azure VM 유형 지원</block>
   <block id="2322c1ee122a6f508293dfcafb34cbb8" category="paragraph">다음은 선택할 수 있는 충전 방법의 예입니다.</block>
   <block id="a37467cf4bce3dba72f93fb0b699e4c0" category="paragraph">AWS의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 AWS VPC와 회사 네트워크 같은 다른 네트워크 간에 VPN 연결을 설정해야 합니다. 자세한 내용은 을 참조하십시오<block ref="c51e953b17de89205c1bdc018e56b9ee" category="inline-link-rx"></block>.</block>
-  <block id="f424e41eea4394dc755ac33b3bb98e9f" category="paragraph"><block ref="f424e41eea4394dc755ac33b3bb98e9f" category="inline-link-rx"></block></block>
-  <block id="077140c1baeb52c8d13f5022a867186c" category="paragraph"><block ref="077140c1baeb52c8d13f5022a867186c" category="inline-link-rx"></block></block>
-  <block id="a14ca8046d4e179694151285831aea3e" category="paragraph"><block ref="a14ca8046d4e179694151285831aea3e" category="inline-link-rx"></block></block>
   <block id="7a023e7d56fe92fdfa3e74151ef7e333" category="paragraph">Cloud Volumes ONTAP에 연결하기 위해 SSH를 사용하는 호스트에는 Cloud Volumes ONTAP에 대한 네트워크 연결이 있어야 합니다. 예를 들어, 클라우드 공급자 네트워크에 있는 점프 호스트에서 SSH를 사용해야 할 수 있습니다.</block>
   <block id="85ec9558f558eed2eff28acdf93d0e5d" category="paragraph">클라우드 공급자의 기본 암호화와 함께 NetApp 암호화 솔루션을 사용할 수 있으며, 하이퍼바이저 레벨에서 데이터를 암호화할 수 있습니다. 이렇게 하면 매우 민감한 데이터에 필요할 수 있는 이중 암호화가 제공됩니다. 암호화된 데이터에 액세스할 때 하이퍼바이저 수준에서 한 번(클라우드 공급자의 키 사용) 암호화되지 않은 다음 다시 NetApp 암호화 솔루션(외부 키 관리자의 키 사용)을 사용합니다.</block>
   <block id="154811f59111df605f6aebc9999a1135" category="paragraph">NVE와 NAE는 모두 외부 키 관리자로 지원됩니다.</block>
@@ -3369,7 +3366,6 @@
   <block id="201080500e946070a2e4873042507c77" category="paragraph">확인 시 NetApp에 요청이 제출되고 NetApp Support 사이트 계정을 만들 것을 권장합니다.</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">이 과정에서 NetApp이 연락을 드릴 것입니다. 신규 사용자를 위한 일회성 온보딩 연습입니다.</block>
   <block id="49265e8ef749144b85748114012266a8" category="cell">iSCSI 프로토콜을 통한 클라이언트 액세스. 또한 시스템에서 다른 중요한 네트워킹 워크플로우에 사용됩니다. 이러한 LIF는 필수 항목이므로 삭제할 수 없습니다.</block>
-  <block id="4df8bb837bc00b990bb9e359a33c532c" category="list-text">웹 브라우저를 열고 다음 URL을 입력합니다.<block ref="484de961b6aa06a7131bf90e9cc3be46" category="inline-link-rx"></block></block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">고객 수준 계정이 있는 경우 하나 이상의 NSS 계정을 추가할 수 있습니다.</block>
   <block id="752a2c1ba3bb227b061216ee70132a08" category="paragraph">두 개의 경로를 사용할 수 있습니다. 올바른 경로는 커넥터 버전에 따라 다릅니다.</block>
   <block id="93f9a2aa0331918bf3f1a44fb42f791e" category="list-text">'/opt/application/netapp/cloudmanager/ontap/images/'</block>
@@ -3927,7 +3923,6 @@
   <block id="cc5f50b3903dc30a3a3545bb58fcdd14" category="paragraph">Cloud Volumes ONTAP은 스케일아웃 스토리지 옵션으로 S3를 지원합니다. S3 프로토콜 지원을 통해 스토리지 VM(SVM)의 버킷에 포함된 오브젝트에 대한 S3 클라이언트 액세스를 구성할 수 있습니다.</block>
   <block id="eba1f3287bdc33dfa25c084b5e15a4c5" category="cell">9.12.1</block>
   <block id="708ffc372ba6f36174a7930961b956ab" category="section-title">2022년 12월 8일</block>
-  <block id="5e1976febada1fa49b700760dd574954" category="paragraph">표준 AWS 지역과 마찬가지로, 에서 Cloud Manager를 사용할 수 있습니다<block ref="5d288b71381e3fb57ca0bda26da6a1f9" category="inline-link-rx"></block> 구축할 환경: 클라우드 스토리지에 엔터프라이즈급 기능을 제공하는 Cloud Volumes ONTAP AWS C2S는 미국 고유의 폐쇄된 지역입니다 Intelligence Community - 이 페이지의 지침은 AWS C2S 지역 사용자에게만 적용됩니다.</block>
   <block id="2d0867b6a9603b07d840b96ca1528053" category="section-title">C2S에서 지원되는 버전입니다</block>
   <block id="d8c9328d84b7250ac992afdd5368aaa2" category="list-text">Cloud Volumes ONTAP 9.8이 지원됩니다</block>
   <block id="44ea8a993710d0101dfe9031f76256f1" category="list-text">커넥터 버전 3.9.4가 지원됩니다</block>
@@ -4810,7 +4805,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="858ec278294a792f5ea142222ae04b60" category="paragraph">Connector에는 Azure 스냅샷을 삭제할 수 있는 새로운 권한이 필요합니다.<block ref="79d8cd4f977a99bf8e629833fd73b054" category="inline-link-rx"></block>.</block>
   <block id="aad10f1417f9d6284c42c038aa957c2d" category="list-text">작업 환경에서 BlueXP 백업 및 복구를 활성화한 경우 백업된 데이터가 여전히 필요한지 확인한 다음<block ref="2a5c41aae5ca819c9524ed1201853c58" category="inline-link-rx"></block>.</block>
   <block id="99c4f0d8ec951918a59bfaaca39bb4ca" category="paragraph"><block ref="f2e7710407c44ef8c5dbdd9288b7ee6b" category="inline-link-rx"></block>.</block>
-  <block id="b3c9ac1767fa8bfbe8133cd72009a35e" category="paragraph"><block ref="b3c9ac1767fa8bfbe8133cd72009a35e" category="inline-link-rx"></block></block>
   <block id="06fa65d7342a7f5fc1c1b3e860f71288" category="paragraph"><block ref="06fa65d7342a7f5fc1c1b3e860f71288" category="inline-link-rx"></block></block>
   <block id="0a0a9c268ceae809cd37185e5224280d" category="admonition">커넥터에 대한 정보를 찾고 계십니까?<block ref="4585ed17d7526f698523790a17c65b9d" category="inline-link-rx"></block></block>
   <block id="6d86824cdc02e0b8265acbfea06a9e54" category="list-text"><block ref="6d86824cdc02e0b8265acbfea06a9e54" category="inline-link-rx"></block></block>
@@ -5005,6 +4999,13 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="6c32dae7ba2780f8dc42d1813f66ea24" category="paragraph">를 통해 제공되는 파일 확장자 보호와 분리됩니다<block ref="1f479b2258cad80f990e85fbf571e95d" category="inline-link-rx"></block>ARP 기능은 워크로드 분석을 사용하여 감지된 “비정상적인 활동”을 기반으로 잠재적인 공격에 대해 사용자에게 경고합니다. 랜섬웨어 차단 설정과 ARP 기능을 모두 포괄적인 랜섬웨어 방어에 함께 사용할 수 있습니다.</block>
   <block id="8ba032b0bcbcde63a6545318072ff32b" category="paragraph">추가 라이센스를 구입하여 디지털 지갑에 추가하면 Cloud Volumes ONTAP를 사용하여 볼륨별로 ARP를 활성화할 수 있습니다. 볼륨에 대한 ARP 구성은 ONTAP 시스템 관리자 및 ONTAP CLI를 통해 수행됩니다.</block>
   <block id="dfa314101a62671bea85bd2701b00194" category="paragraph">ONTAP 시스템 관리자 및 CLI에서 ARP를 활성화하는 방법에 대한 자세한 내용은 를 참조하십시오<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>.</block>
-  <block id="65b6e49abdf1ec103e12f3c1d363d3d8" category="image-alt">스크린샷 ARP</block>
   <block id="4f87e49be20cab28b98c082c672f9032" category="paragraph">Cloud Volumes ONTAP의 ARP에 대한 자세한 내용은 를 참조하십시오<block ref="3ad484b0b391dd26474b87b6bc7f70b6" category="inline-link-rx"></block>.</block>
+  <block id="d1c5c359fc2e3c8fe0af6fd09605d616" category="paragraph">표준 AWS 지역과 마찬가지로, 에서 Cloud Manager를 사용할 수 있습니다 <block ref="25b8ce564d4ee42e840c162aa63df82a" category="inline-link-macro-rx"></block> 구축할 환경: 클라우드 스토리지에 엔터프라이즈급 기능을 제공하는 Cloud Volumes ONTAP AWS C2S는 미국 고유의 폐쇄된 지역입니다 Intelligence Community - 이 페이지의 지침은 AWS C2S 지역 사용자에게만 적용됩니다.</block>
+  <block id="0f35cbc7e00034a2864005fe2859c834" category="list-text">웹 브라우저를 열고 를 입력합니다<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block> 여기서 _ipaddress_는 Connector를 설치한 Linux 호스트의 IP 주소입니다.</block>
+  <block id="265500dbd640f554b9f30de2ec515220" category="paragraph"><block ref="265500dbd640f554b9f30de2ec515220" category="inline-link-macro-rx"></block></block>
+  <block id="beb8833b4eaacb3c1a782191786a543b" category="paragraph"><block ref="beb8833b4eaacb3c1a782191786a543b" category="inline-link-macro-rx"></block></block>
+  <block id="1464348153a00f61568c45903caeb019" category="paragraph"><block ref="1464348153a00f61568c45903caeb019" category="inline-link-macro-rx"></block></block>
+  <block id="de98023f98ece91547c73d7585576ce2" category="paragraph"><block ref="de98023f98ece91547c73d7585576ce2" category="inline-link-macro-rx"></block></block>
+  <block id="e44870bfe38bf3731499fca3154b9528" category="image-alt">작업 환경을 볼 때 개요 페이지의 오른쪽 상단에 있는 Features(기능) 패널 아래에 있는 랜섬웨어 보호 설정을 보여주는 스크린샷</block>
+  <block id="a35eb7b32c61adf984cdcc0cc1594b1c" category="image-alt">스크린샷은 Autonomous 랜섬웨어 Protection의 애드온 라이센스를 보여줍니다.</block>
 </blocks>

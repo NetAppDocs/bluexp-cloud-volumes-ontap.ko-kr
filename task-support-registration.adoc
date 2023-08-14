@@ -10,6 +10,7 @@ summary: NetApp 기술 지원 팀과 지원 케이스를 생성하기 전에 Net
 :imagesdir: ../media/
 
 
+[role="lead"]
 BlueXP 계정 및 개별 Cloud Volumes ONTAP 시스템에 대한 지원 등록이 필요합니다.
 
 
