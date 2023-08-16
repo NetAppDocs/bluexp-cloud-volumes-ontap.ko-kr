@@ -88,7 +88,7 @@ HA 구성이 여러 가용성 영역 간에 분산되면 _floating IP addresses_
 
 여러 가용성 영역에 HA 구성을 배포하기 전에 부동 IP 주소 및 라우팅 테이블에 대한 요구 사항을 검토해야 합니다. 구성을 배포할 때 부동 IP 주소를 지정해야 합니다. BlueXP에서 개인 IP 주소를 자동으로 생성합니다.
 
-자세한 내용은 을 참조하십시오 link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["여러 AZs에서 Cloud Volumes ONTAP HA를 위한 AWS 네트워킹 요구사항"].
+자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["여러 AZs에서 Cloud Volumes ONTAP HA를 위한 AWS 네트워킹 요구사항"^].
 
 
 

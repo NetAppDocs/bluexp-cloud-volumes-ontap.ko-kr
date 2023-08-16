@@ -101,7 +101,7 @@ TIP: WORM 및 데이터 계층화를 사용하려면 BlueXP 백업 및 복구를
 
 
 
-. * 위치 및 연결 *: 에 기록한 네트워크 정보를 입력합니다 link:task-planning-your-config.html#aws-network-information-worksheet["AWS 워크시트"].
+. * 위치 및 연결 *: 에 기록한 네트워크 정보를 입력합니다 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#collect-networking-information["AWS 워크시트"^].
 +
 다음 표에서는 지침이 필요한 필드를 설명합니다.
 
@@ -260,7 +260,7 @@ CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS �
 |===
 . * Usage Profile, Disk Type 및 Tiering Policy *: 스토리지 효율성 기능을 사용하도록 설정하고 필요한 경우 볼륨 계층화 정책을 편집할지 여부를 선택합니다.
 +
-자세한 내용은 을 참조하십시오 link:task-planning-your-config.html#choosing-a-volume-usage-profile["볼륨 사용 프로필 이해"] 및 link:concept-data-tiering.html["데이터 계층화 개요"].
+자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["볼륨 사용 프로필 이해"^] 및 link:concept-data-tiering.html["데이터 계층화 개요"^].
 
 . * 검토 및 승인 *: 선택 사항을 검토 및 확인합니다.
 +
@@ -377,7 +377,7 @@ BlueXP에서 보안 그룹을 생성하도록 하면 트래픽을 허용하는 �
 . * 연결 및 SSH 인증 *: HA 쌍선 및 중재자의 연결 방법을 선택합니다.
 . * 부동 IP *: 여러 AZs를 선택한 경우 부동 IP 주소를 지정합니다.
 +
-IP 주소는 해당 지역의 모든 VPC에 대한 CIDR 블록 외부에 있어야 합니다. 자세한 내용은 을 참조하십시오 link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["여러 AZs에서 Cloud Volumes ONTAP HA를 위한 AWS 네트워킹 요구사항"].
+IP 주소는 해당 지역의 모든 VPC에 대한 CIDR 블록 외부에 있어야 합니다. 자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["여러 AZs에서 Cloud Volumes ONTAP HA를 위한 AWS 네트워킹 요구사항"^].
 
 . * 루트 테이블 *: 여러 AZs를 선택한 경우 부동 IP 주소에 대한 라우트를 포함해야 하는 라우팅 테이블을 선택합니다.
 +
@@ -518,7 +518,7 @@ CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS �
 |===
 . * Usage Profile, Disk Type 및 Tiering Policy *: 스토리지 효율성 기능을 사용하도록 설정하고 필요한 경우 볼륨 계층화 정책을 편집할지 여부를 선택합니다.
 +
-자세한 내용은 을 참조하십시오 link:task-planning-your-config.html#choosing-a-volume-usage-profile["볼륨 사용 프로필 이해"] 및 link:concept-data-tiering.html["데이터 계층화 개요"].
+자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#choose-a-volume-usage-profile["볼륨 사용 프로필 이해"^] 및 link:concept-data-tiering.html["데이터 계층화 개요"^].
 
 . * 검토 및 승인 *: 선택 사항을 검토 및 확인합니다.
 +
