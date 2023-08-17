@@ -347,7 +347,7 @@ image::screenshot_aggr_capacity.png[스크린샷 집계 용량]
 
 . 가용 용량이 있는 애그리게이트가 없는 경우 새 애그리게이트를 생성합니다.
 +
-자세한 내용은 을 참조하십시오 link:task-create-aggregates.html["애그리게이트 생성"].
+자세한 내용은 을 참조하십시오 link:task-create-aggregates.html["애그리게이트 생성"^].
 
 . System Manager 또는 CLI를 사용하여 볼륨을 애그리게이트로 이동합니다.
 . 대부분의 경우 System Manager를 사용하여 볼륨을 이동할 수 있습니다.

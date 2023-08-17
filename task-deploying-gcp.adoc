@@ -73,7 +73,7 @@ BlueXP에서 작업 환경을 만들어 Google Cloud에서 Cloud Volumes ONTAP�
 | 작업 환경 이름 | BlueXP는 작업 환경 이름을 사용하여 Cloud Volumes ONTAP 시스템과 Google Cloud VM 인스턴스 이름을 모두 지정합니다. 또한 이 옵션을 선택하면 미리 정의된 보안 그룹의 접두사로 이름이 사용됩니다. 
 
 
-| 서비스 계정 이름입니다 | 를 사용할 계획인 경우 link:concept-data-tiering.html["데이터 계층화"] 또는 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXP 백업 및 복구"^] Cloud Volumes ONTAP를 사용하는 경우 * 서비스 계정 * 을 활성화하고 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택해야 합니다. link:task-creating-gcp-service-account.html["서비스 계정을 만드는 방법에 대해 알아봅니다"]. 
+| 서비스 계정 이름입니다 | 를 사용할 계획인 경우 link:concept-data-tiering.html["데이터 계층화"] 또는 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXP 백업 및 복구"^] Cloud Volumes ONTAP를 사용하는 경우 * 서비스 계정 * 을 활성화하고 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택해야 합니다. link:task-creating-gcp-service-account.html["서비스 계정을 만드는 방법에 대해 알아봅니다"^]. 
 
 
 | 레이블 추가 | 레이블은 Google Cloud 리소스의 메타데이터입니다. BlueXP는 시스템에 연결된 Cloud Volumes ONTAP 시스템 및 Google Cloud 리소스에 레이블을 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 레이블을 추가할 수 있으며, 그런 다음 만든 후에 레이블을 더 추가할 수 있습니다. API는 작업 환경을 만들 때 레이블을 네 개로 제한하지 않습니다. 레이블에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/labeling-resources["Google Cloud 설명서: 라벨 리소스"^]. 
@@ -131,8 +131,8 @@ BlueXP에서 방화벽 정책을 생성하도록 허용할 경우 트래픽을 �
 |===
 . * 충전 방법 및 NSS 계정 *: 이 시스템에서 사용할 충전 옵션을 지정한 다음 NetApp Support 사이트 계정을 지정합니다.
 +
-** link:concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오"].
-** link:task-set-up-licensing-google.html["라이센스 설정 방법에 대해 알아보십시오"].
+** link:concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오"^].
+** link:task-set-up-licensing-google.html["라이센스 설정 방법에 대해 알아보십시오"^].
 
 
 . * 사전 구성된 패키지 *: 패키지 중 하나를 선택하여 Cloud Volumes ONTAP 시스템을 신속하게 배포하거나 * 고유한 구성 만들기 * 를 클릭합니다.
@@ -152,7 +152,7 @@ NOTE: 선택한 버전에 대해 최신 출시 후보, 일반 가용성 또는 �
 디스크 크기는 초기 애그리게이트의 모든 디스크와 간단한 프로비저닝 옵션을 사용할 때 BlueXP가 생성하는 추가 애그리게이트에서 사용됩니다. 고급 할당 옵션을 사용하여 다른 디스크 크기를 사용하는 애그리게이트를 생성할 수 있습니다.
 
 +
-디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Google Cloud에서 시스템 크기를 조정합니다"].
+디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Google Cloud에서 시스템 크기를 조정합니다"^].
 
 . * Flash Cache, 쓰기 속도 및 WORM *:
 +
@@ -167,14 +167,14 @@ link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시
 
 +
 
-NOTE: 고속 * 쓰기 속도 옵션을 통해 896바이트의 고속 쓰기 속도와 높은 최대 전송 단위(MTU)를 사용할 수 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1, VPC-2 및 VPC-3에 대한 규칙"].
+NOTE: 고속 * 쓰기 속도 옵션을 통해 896바이트의 고속 쓰기 속도와 높은 최대 전송 단위(MTU)를 사용할 수 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1, VPC-2 및 VPC-3에 대한 규칙"^].
 
 .. 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
 +
 Cloud Volumes ONTAP 9.7 이하 버전에서 데이터 계층화가 활성화된 경우 WORM을 사용할 수 없습니다. WORM 및 계층화를 활성화한 후에는 Cloud Volumes ONTAP 9.8로의 되돌리기 또는 다운그레이드가 차단됩니다.
 
 +
-link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"].
+link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"^].
 
 .. WORM 스토리지를 활성화한 경우 보존 기간을 선택합니다.
 
@@ -189,13 +189,13 @@ link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오
 ** 볼륨을 생성하거나 편집할 때 특정 볼륨 계층화 정책을 선택할 수 있습니다.
 ** 데이터 계층화를 사용하지 않는 경우, 후속 애그리게이트에서 사용하도록 설정할 수 있지만 시스템을 끄고 Google Cloud 콘솔에서 서비스 계정을 추가해야 합니다.
 +
-link:concept-data-tiering.html["데이터 계층화에 대해 자세히 알아보십시오"].
+link:concept-data-tiering.html["데이터 계층화에 대해 자세히 알아보십시오"^].
 
 
 
 . * 볼륨 생성 *: 새 볼륨에 대한 세부 정보를 입력하거나 * 건너뛰기 * 를 클릭합니다.
 +
-link:concept-client-protocols.html["지원되는 클라이언트 프로토콜 및 버전에 대해 알아보십시오"].
+link:concept-client-protocols.html["지원되는 클라이언트 프로토콜 및 버전에 대해 알아보십시오"^].
 
 +
 이 페이지의 일부 필드는 설명이 필요 없습니다. 다음 표에서는 지침이 필요한 필드를 설명합니다.
@@ -260,7 +260,7 @@ CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS �
 |===
 . * Usage Profile, Disk Type, Tiering Policy *: 스토리지 효율성 기능을 사용하도록 설정하고 필요한 경우 볼륨 계층화 정책을 변경할 것인지 선택합니다.
 +
-자세한 내용은 을 참조하십시오 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["볼륨 사용 프로필을 선택합니다"] 및 link:concept-data-tiering.html["데이터 계층화 개요"].
+자세한 내용은 을 참조하십시오 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["볼륨 사용 프로필을 선택합니다"^] 및 link:concept-data-tiering.html["데이터 계층화 개요"^].
 
 . * 검토 및 승인 *: 선택 사항을 검토 및 확인합니다.
 +
@@ -344,11 +344,11 @@ TIP: WORM 및 데이터 계층화를 사용하려면 BlueXP 백업 및 복구를
 
 . * HA 배포 모델 *: HA 구성에 대해 여러 영역(권장) 또는 단일 영역을 선택합니다. 그런 다음 지역 및 구역을 선택합니다.
 +
-link:concept-ha-google-cloud.html["HA 구축 모델 에 대해 자세히 알아보십시오"].
+link:concept-ha-google-cloud.html["HA 구축 모델 에 대해 자세히 알아보십시오"^].
 
 . * 연결 *: HA 구성을 위한 4개의 서로 다른 VPC, 각 VPC의 서브넷을 선택한 다음 방화벽 정책을 선택합니다.
 +
-link:reference-networking-gcp.html["네트워킹 요구 사항에 대해 자세히 알아보십시오"].
+link:reference-networking-gcp.html["네트워킹 요구 사항에 대해 자세히 알아보십시오"^].
 
 +
 다음 표에서는 지침이 필요한 필드를 설명합니다.
@@ -368,12 +368,12 @@ BlueXP에서 방화벽 정책을 생성하도록 허용할 경우 트래픽을 �
 
 
 
-| 기존 항목 사용 | 기존 방화벽 정책을 사용하는 경우 필수 규칙이 포함되어 있는지 확인합니다. link:reference-networking-gcp.html#firewall-rules["Cloud Volumes ONTAP의 방화벽 규칙에 대해 알아보십시오"]. 
+| 기존 항목 사용 | 기존 방화벽 정책을 사용하는 경우 필수 규칙이 포함되어 있는지 확인합니다. link:reference-networking-gcp.html#firewall-rules["Cloud Volumes ONTAP의 방화벽 규칙에 대해 알아보십시오"^]. 
 |===
 . * 충전 방법 및 NSS 계정 *: 이 시스템에서 사용할 충전 옵션을 지정한 다음 NetApp Support 사이트 계정을 지정합니다.
 +
-** link:concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오"].
-** link:task-set-up-licensing-google.html["라이센스 설정 방법에 대해 알아보십시오"].
+** link:concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오"^].
+** link:task-set-up-licensing-google.html["라이센스 설정 방법에 대해 알아보십시오"^].
 
 
 . * 사전 구성된 패키지 *: 패키지 중 하나를 선택하여 Cloud Volumes ONTAP 시스템을 신속하게 배포하거나 * 고유한 구성 만들기 * 를 클릭합니다.
@@ -393,7 +393,7 @@ NOTE: 선택한 버전에 대해 최신 출시 후보, 일반 가용성 또는 �
 디스크 크기는 초기 애그리게이트의 모든 디스크와 간단한 프로비저닝 옵션을 사용할 때 BlueXP가 생성하는 추가 애그리게이트에서 사용됩니다. 고급 할당 옵션을 사용하여 다른 디스크 크기를 사용하는 애그리게이트를 생성할 수 있습니다.
 
 +
-디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Google Cloud에서 시스템 크기를 조정합니다"].
+디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Google Cloud에서 시스템 크기를 조정합니다"^].
 
 . * Flash Cache, 쓰기 속도 및 WORM *:
 +
@@ -404,18 +404,18 @@ NOTE: Cloud Volumes ONTAP 9.13.1 부터, _Flash Cache_는 n2-standard-16, n2-sta
 
 .. 필요한 경우 * Normal * (정상 *) 또는 * High * (높음 *) 쓰기 속도를 선택합니다.
 +
-link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시오"].
+link:concept-write-speed.html["쓰기 속도에 대해 자세히 알아보십시오"^].
 
 +
 
-NOTE: 고속 쓰기 속도와 896바이트의 최대 전송 단위(MTU)는 n2-standard-16, n2-standard-32, n2-standard-48 및 n2-standard-64 인스턴스 유형의 * 고속 * 쓰기 속도 옵션을 통해 사용할 수 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. 높은 쓰기 속도 및 8,896의 MTU는 기능에 따라 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1, VPC-2 및 VPC-3에 대한 규칙"].
+NOTE: 고속 쓰기 속도와 896바이트의 최대 전송 단위(MTU)는 n2-standard-16, n2-standard-32, n2-standard-48 및 n2-standard-64 인스턴스 유형의 * 고속 * 쓰기 속도 옵션을 통해 사용할 수 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. 높은 쓰기 속도 및 8,896의 MTU는 기능에 따라 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["VPC-1, VPC-2 및 VPC-3에 대한 규칙"^].
 
 .. 필요한 경우 WORM(Write Once, Read Many) 스토리지를 활성화합니다.
 +
 Cloud Volumes ONTAP 9.7 이하 버전에서 데이터 계층화가 활성화된 경우 WORM을 사용할 수 없습니다. WORM 및 계층화를 활성화한 후에는 Cloud Volumes ONTAP 9.8로의 되돌리기 또는 다운그레이드가 차단됩니다.
 
 +
-link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"].
+link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오"^].
 
 .. WORM 스토리지를 활성화한 경우 보존 기간을 선택합니다.
 
@@ -429,13 +429,13 @@ link:concept-worm.html["WORM 스토리지에 대해 자세히 알아보십시오
 ** 볼륨을 생성하거나 편집할 때 특정 볼륨 계층화 정책을 선택할 수 있습니다.
 ** 데이터 계층화를 사용하지 않는 경우, 후속 애그리게이트에서 사용하도록 설정할 수 있지만 시스템을 끄고 Google Cloud 콘솔에서 서비스 계정을 추가해야 합니다.
 +
-link:concept-data-tiering.html["데이터 계층화에 대해 자세히 알아보십시오"].
+link:concept-data-tiering.html["데이터 계층화에 대해 자세히 알아보십시오"^].
 
 
 
 . * 볼륨 생성 *: 새 볼륨에 대한 세부 정보를 입력하거나 * 건너뛰기 * 를 클릭합니다.
 +
-link:concept-client-protocols.html["지원되는 클라이언트 프로토콜 및 버전에 대해 알아보십시오"].
+link:concept-client-protocols.html["지원되는 클라이언트 프로토콜 및 버전에 대해 알아보십시오"^].
 
 +
 이 페이지의 일부 필드는 설명이 필요 없습니다. 다음 표에서는 지침이 필요한 필드를 설명합니다.
@@ -500,7 +500,7 @@ CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS �
 |===
 . * Usage Profile, Disk Type, Tiering Policy *: 스토리지 효율성 기능을 사용하도록 설정하고 필요한 경우 볼륨 계층화 정책을 변경할 것인지 선택합니다.
 +
-자세한 내용은 을 참조하십시오 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["볼륨 사용 프로필을 선택합니다"] 및 link:concept-data-tiering.html["데이터 계층화 개요"].
+자세한 내용은 을 참조하십시오 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["볼륨 사용 프로필을 선택합니다"^] 및 link:concept-data-tiering.html["데이터 계층화 개요"^].
 
 . * 검토 및 승인 *: 선택 사항을 검토 및 확인합니다.
 +
