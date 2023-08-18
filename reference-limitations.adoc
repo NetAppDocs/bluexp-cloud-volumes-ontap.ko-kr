@@ -39,8 +39,6 @@ link:concept-client-protocols.html["S3 및 기타 클라이언트 프로토콜�
 
 == BlueXP는 스토리지 VM의 재해 복구를 지원하지 않습니다
 
-BlueXP는 스토리지 VM 재해 복구에 대한 설정 또는 조정 지원을 제공하지 않습니다. System Manager 또는 CLI를 사용해야 합니다.
+BlueXP는 스토리지 VM(SVM) 재해 복구에 대한 설정 또는 오케스트레이션 지원을 제공하지 않습니다. System Manager 또는 CLI를 사용해야 합니다.
 
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 재해 복구 준비 Express 가이드"^]
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM 재해 복구 익스프레스 가이드 를 참조하십시오"^]
-
+link:task-manage-svm-dr.html["SVM 재해 복구에 대해 자세히 알아보십시오"].

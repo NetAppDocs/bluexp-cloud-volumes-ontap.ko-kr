@@ -5016,4 +5016,10 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="157452a4d26511160047acedc5ae5b81" category="paragraph"><block ref="2824c251ff24540ca0c877b5ced755b8" category="inline-link-macro-rx"></block>.</block>
   <block id="cf523fc47469c34a8d903bacda7e81e5" category="cell">기존 방화벽 정책을 사용하는 경우 필수 규칙이 포함되어 있는지 확인합니다. <block ref="bee5d22e907894802468a917716c85b0" category="inline-link-macro-rx"></block>.</block>
   <block id="07a5d71b593f96284694315beb6fe13d" category="admonition">고속 쓰기 속도와 896바이트의 최대 전송 단위(MTU)는 n2-standard-16, n2-standard-32, n2-standard-48 및 n2-standard-64 인스턴스 유형의 * 고속 * 쓰기 속도 옵션을 통해 사용할 수 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. 높은 쓰기 속도 및 8,896의 MTU는 기능에 따라 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오<block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>.</block>
+  <block id="9f5be27589cc6b51b9720d024782dcb8" category="paragraph">BlueXP는 스토리지 VM(SVM) 재해 복구에 대한 설정 또는 오케스트레이션 지원을 제공하지 않습니다. System Manager 또는 CLI를 사용해야 합니다.</block>
+  <block id="9c6c0a63729c2c1bc8388b9ccd4e4155" category="inline-link-macro">SVM 재해 복구에 대해 자세히 알아보십시오</block>
+  <block id="5dc0415d3b98038c9ac4667c27633958" category="paragraph"><block ref="9ef9838740c8c73e2e54c1615ffa6adb" category="inline-link-macro-rx"></block>.</block>
+  <block id="74ee0a2fe74e69a19051f0e09c04fc43" category="doc">SVM 재해 복구 설정</block>
+  <block id="f01867033c75f2410ea82d8cbf4634d7" category="paragraph">두 Cloud Volumes ONTAP 시스템 간에 SnapMirror SVM 복제를 설정할 경우 두 개의 HA 쌍 시스템 또는 두 개의 단일 노드 시스템 간에 복제를 수행해야 합니다. HA 쌍과 단일 노드 시스템 간에 SnapMirror SVM 복제를 설정할 수 없습니다.</block>
+  <block id="64a88357645876cf49151eb26ffb0021" category="paragraph">CLI 지침은 다음 문서를 참조하십시오.</block>
 </blocks>

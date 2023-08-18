@@ -159,6 +159,8 @@ sidebar:
       - title: Google Cloud에서 스토리지 VM을 생성합니다
         flavor: gcp
         url: "/task-managing-svms-gcp.html"
+      - title: SVM 재해 복구 설정
+        url: "/task-manage-svm-dr.html"
     - title: 보안 및 데이터 암호화
       entries:
       - title: NetApp 암호화로 볼륨 암호화
