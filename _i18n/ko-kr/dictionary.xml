@@ -1489,7 +1489,6 @@
   <block id="4ae719205766e20198cc595136cbf10c" category="inline-link">/occm/config API 호출에 대해 자세히 알아보십시오</block>
   <block id="5ac123f6eee32c0fe88eeab92338a1a4" category="summary">FlexCache 볼륨은 원본 또는 소스 볼륨에서 NFS 읽기 데이터를 캐싱하는 스토리지 볼륨입니다. 이후에 캐싱된 데이터를 읽으면 해당 데이터에 더 빠르게 액세스할 수 있습니다.</block>
   <block id="d5ce201ca4cc42ba6b38e9166bcef415" category="doc">FlexCache 볼륨을 사용하여 데이터 액세스 가속화</block>
-  <block id="2ddb8d07e9f5af9d9a76333b9ef2a7cb" category="paragraph">FlexCache 볼륨은 원본(또는 소스) 볼륨의 NFS 읽기 데이터를 캐싱하는 스토리지 볼륨입니다. 이후에 캐싱된 데이터를 읽으면 해당 데이터에 더 빠르게 액세스할 수 있습니다.</block>
   <block id="90c624683582774042156c98858d14dc" category="paragraph">FlexCache 볼륨을 사용하면 데이터 액세스 속도를 높이거나 자주 액세스하는 볼륨에서 트래픽을 오프로드할 수 있습니다. FlexCache 볼륨은 원본 볼륨에 액세스하지 않고도 직접 데이터를 제공할 수 있으므로 클라이언트가 동일한 데이터에 반복적으로 액세스해야 할 때 성능을 개선할 수 있습니다. FlexCache 볼륨은 읽기 집약적인 시스템 워크로드에 적합합니다.</block>
   <block id="29e15f4a6477b08e72892d33f28001ce" category="inline-link">빠른 데이터 액세스를 위한 FlexCache 볼륨 전원 가이드</block>
   <block id="f2a7a46cc845b377d163ce816c723b41" category="list-text"><block ref="f2a7a46cc845b377d163ce816c723b41" category="inline-link-rx"></block></block>
@@ -3470,8 +3469,6 @@
   <block id="93f5e6c9fa12acc64acdb6b378a09bdd" category="doc">BlueXP에서 스토리지 VM 관리</block>
   <block id="50660b7473b276b2ca6ffca877133e87" category="paragraph">BlueXP는 System Manager 또는 CLI에서 생성한 추가 스토리지 VM을 지원합니다.</block>
   <block id="891665afb192ec7434051075c05e3e2f" category="list-text">BlueXP에서 클러스터 관리 인터페이스의 IP 주소를 확인합니다.</block>
-  <block id="08882f53f80237686337effbc79af710" category="paragraph">현재 BlueXP는 FlexCache 볼륨을 관리하지 않지만 ONTAP CLI 또는 ONTAP 시스템 관리자를 사용하여 FlexCache 볼륨을 생성 및 관리할 수 있습니다.</block>
-  <block id="84c7d68ceec07ae1479f5ffd5345fe69" category="paragraph">BlueXP는 3.7.2 릴리스부터 모든 새로운 Cloud Volumes ONTAP 시스템에 대한 FlexCache 라이센스를 생성합니다. 이 라이센스에는 500GiB 사용 제한이 포함됩니다.</block>
   <block id="68e3d383b46bd2d1a96c2a6b2ddbc3f5" category="admonition">HA 쌍의 노드를 사용할 수 없는 경우 BlueXP의 작업 환경 상태는 _ Degraded _ 입니다.</block>
   <block id="71279608104bfad0fd0c8e38e3fe117b" category="paragraph">BlueXP 스토리지 테이크오버에서는 다음 작업을 사용할 수 없습니다.</block>
   <block id="83abd5ee8b7f73b0a1f8620e32618f71" category="paragraph">Azure 구독에서 이 기능을 활성화해야 하는 경우 BlueXP에서 작업 필요 메시지에 이러한 세부 정보를 표시합니다.</block>
@@ -5023,4 +5020,9 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="f01867033c75f2410ea82d8cbf4634d7" category="paragraph">두 Cloud Volumes ONTAP 시스템 간에 SnapMirror SVM 복제를 설정할 경우 두 개의 HA 쌍 시스템 또는 두 개의 단일 노드 시스템 간에 복제를 수행해야 합니다. HA 쌍과 단일 노드 시스템 간에 SnapMirror SVM 복제를 설정할 수 없습니다.</block>
   <block id="64a88357645876cf49151eb26ffb0021" category="paragraph">CLI 지침은 다음 문서를 참조하십시오.</block>
   <block id="ead6e5569d8d8a0e0ef737aef13e13d9" category="list-text">업그레이드 상태를 확인하려면 설정 아이콘을 클릭하고 * 타임라인 * 을 선택합니다.</block>
+  <block id="4255b526fdaa2217071759cd5d05e981" category="paragraph">FlexCache 볼륨은 원본(또는 소스) 볼륨에서 SMB 및 NFS 읽기 데이터를 캐싱하는 스토리지 볼륨입니다. 이후에 캐싱된 데이터를 읽으면 해당 데이터에 더 빠르게 액세스할 수 있습니다.</block>
+  <block id="5f63db6bf0512dc0612ee852c1faf373" category="inline-link-macro">BlueXP 볼륨 캐싱</block>
+  <block id="28495b8712e93ec4d83d5af5db51d535" category="paragraph">BlueXP는 를 사용하여 FlexCache 볼륨을 관리할 수 있는 기능을 제공합니다 <block ref="06867f1eea47d22d6d5c52a51ce61294" category="inline-link-macro-rx"></block> 서비스.</block>
+  <block id="06156010b52bde259c58b15866491a02" category="paragraph">ONTAP CLI 또는 ONTAP System Manager를 사용하여 FlexCache 볼륨을 생성하고 관리할 수도 있습니다.</block>
+  <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">BlueXP는 모든 새로운 Cloud Volumes ONTAP 시스템에 대한 FlexCache 라이센스를 생성합니다. 이 라이센스에는 500GiB 사용 제한이 포함됩니다.</block>
 </blocks>
