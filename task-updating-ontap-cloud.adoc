@@ -281,6 +281,7 @@ NOTE: Upgrade Cloud Volumes ONTAP 페이지에서는 기본적으로 업그레�
 +
 image:screenshot_upgrade_select_versions.png["Cloud Volumes ONTAP 버전 업그레이드 페이지의 스크린샷."]
 
+. 업그레이드 상태를 확인하려면 설정 아이콘을 클릭하고 * 타임라인 * 을 선택합니다.
 
 
 .결과

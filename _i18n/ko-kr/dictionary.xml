@@ -5022,4 +5022,5 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="74ee0a2fe74e69a19051f0e09c04fc43" category="doc">SVM 재해 복구 설정</block>
   <block id="f01867033c75f2410ea82d8cbf4634d7" category="paragraph">두 Cloud Volumes ONTAP 시스템 간에 SnapMirror SVM 복제를 설정할 경우 두 개의 HA 쌍 시스템 또는 두 개의 단일 노드 시스템 간에 복제를 수행해야 합니다. HA 쌍과 단일 노드 시스템 간에 SnapMirror SVM 복제를 설정할 수 없습니다.</block>
   <block id="64a88357645876cf49151eb26ffb0021" category="paragraph">CLI 지침은 다음 문서를 참조하십시오.</block>
+  <block id="ead6e5569d8d8a0e0ef737aef13e13d9" category="list-text">업그레이드 상태를 확인하려면 설정 아이콘을 클릭하고 * 타임라인 * 을 선택합니다.</block>
 </blocks>
