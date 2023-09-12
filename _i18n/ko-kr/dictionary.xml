@@ -5025,4 +5025,12 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="28495b8712e93ec4d83d5af5db51d535" category="paragraph">BlueXP는 를 사용하여 FlexCache 볼륨을 관리할 수 있는 기능을 제공합니다 <block ref="06867f1eea47d22d6d5c52a51ce61294" category="inline-link-macro-rx"></block> 서비스.</block>
   <block id="06156010b52bde259c58b15866491a02" category="paragraph">ONTAP CLI 또는 ONTAP System Manager를 사용하여 FlexCache 볼륨을 생성하고 관리할 수도 있습니다.</block>
   <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">BlueXP는 모든 새로운 Cloud Volumes ONTAP 시스템에 대한 FlexCache 라이센스를 생성합니다. 이 라이센스에는 500GiB 사용 제한이 포함됩니다.</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023년 9월 10일</block>
+  <block id="3e34162a2379c48e3eaf3f3857b029c0" category="paragraph">Connector 3.9.33 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.</block>
+  <block id="e749c9d187d1531bb81af1a3c9eb73be" category="section-title">Azure에서 Lsv3 시리즈 VM 지원</block>
+  <block id="cc2bfd53f6bcbc23893aaa8fab8b1eb2" category="paragraph">이제 L48s_v3 및 L64s_v3 인스턴스 유형이 Azure의 Cloud Volumes ONTAP에서 지원되므로 9.13.1 릴리즈부터 단일 및 여러 가용 영역의 공유 관리 디스크를 사용한 단일 노드 및 고가용성 쌍 구축이 가능합니다. 이러한 인스턴스 유형은 Flash Cache를 지원합니다.</block>
+  <block id="c2af1dd6b400531e930c62dad5095f7d" category="inline-link-macro">Azure에서 Cloud Volumes ONTAP에 대해 지원되는 구성을 봅니다</block>
+  <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">Azure에서 Cloud Volumes ONTAP의 스토리지 제한을 봅니다</block>
+  <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
+<block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
 </blocks>
