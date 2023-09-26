@@ -4600,7 +4600,6 @@
   <block id="fb4c65b52def4e8355252bcb74eab6be" category="summary">타사 키 관리 서비스에 AWS의 키 관리 서비스를 활용할 수 있습니다.</block>
   <block id="da8f544047a48addb30292b7f355c64e" category="doc">AWS 키 관리 서비스로 키를 관리합니다</block>
   <block id="44d61056f175f112376610c7782283a1" category="inline-link-macro">AWS KMS(Key Management Service)</block>
-  <block id="6ad0c0113b3b55b452407927aa4aa75b" category="paragraph">을 사용할 수 있습니다 <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> Google Cloud Platform에서 구축한 응용 프로그램에서 ONTAP 암호화 키를 보호합니다.</block>
   <block id="c7fa7b72f6d04762c019500275a89386" category="paragraph">AWS KMS를 사용한 키 관리는 CLI 또는 ONTAP REST API를 통해 활성화할 수 있습니다.</block>
   <block id="ce62b1827da5aee89a8c9443b4ca4301" category="paragraph">KMS를 사용할 때는 기본적으로 데이터 SVM의 LIF가 클라우드 키 관리 엔드포인트와 통신하는 데 사용됩니다. 노드 관리 네트워크는 AWS의 인증 서비스와 통신하는 데 사용됩니다. 클러스터 네트워크가 올바르게 구성되지 않은 경우 클러스터는 키 관리 서비스를 제대로 사용하지 않습니다.</block>
   <block id="1a96e698f264a0a04e8665750d57e611" category="list-text">Cloud Volumes ONTAP는 버전 9.12.0 이상을 실행해야 합니다</block>
@@ -5033,4 +5032,5 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">Azure에서 Cloud Volumes ONTAP의 스토리지 제한을 봅니다</block>
   <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
 <block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
+  <block id="9d0048a7e2f292f2c49dc43d2698028b" category="paragraph">을 사용할 수 있습니다 <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> AWS가 구축한 애플리케이션에서 ONTAP 암호화 키를 보호합니다.</block>
 </blocks>
