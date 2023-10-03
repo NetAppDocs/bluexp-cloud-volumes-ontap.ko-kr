@@ -1,0 +1,280 @@
+---
+sidebar: sidebar 
+permalink: task-segregate-snapmirror-azure.html 
+keywords: segregate, SnapMirror, SnapMirror traffic, SnapMirror replication, add, additional NIC, new NIC, intercluster LIF, non-routable subnet, subnet 
+summary: Azure의 Cloud Volumes ONTAP를 사용하면 다른 네트워크를 사용하여 SnapMirror 복제 트래픽을 분리하여 데이터의 보안과 성능을 향상할 수 있습니다. 
+---
+= Azure에서 SnapMirror 트래픽을 분리합니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azure의 Cloud Volumes ONTAP를 사용하면 SnapMirror 복제 트래픽을 데이터와 관리 트래픽에서 분리할 수 있습니다. SnapMirror 복제 트래픽을 데이터 트래픽에서 분리하려면 새 네트워크 인터페이스 카드(NIC), 관련 인터클러스터 LIF 및 라우팅할 수 없는 서브넷을 추가합니다.
+
+
+
+== Azure에서 SnapMirror 트래픽 분리 에 대해 자세히 알아보십시오
+
+기본적으로 BlueXP는 동일한 서브넷에 있는 Cloud Volumes ONTAP 구축의 모든 NIC 및 LIF를 구성합니다. 이러한 구성에서는 SnapMirror 복제 트래픽과 데이터 및 관리 트래픽이 동일한 서브넷을 사용합니다. SnapMirror 트래픽을 분리하면 데이터 및 관리 트래픽에 사용되는 기존 서브넷으로 라우팅할 수 없는 추가 서브넷을 활용합니다.
+
+.그림 1
+다음 다이어그램은 단일 노드 배포에서 추가 NIC, 관련 인터클러스터 LIF 및 라우팅할 수 없는 서브넷과 SnapMirror 복제 트래픽의 분리 과정을 보여줍니다. HA 쌍 구축이 약간 다릅니다.
+
+image:diagram-segregate-snapmirror-traffic.png["다이어그램은 단일 노드 구성에서 SnapMirror 복제 트래픽을 분리하는 방법을 보여 줍니다"]
+
+.시작하기 전에
+다음 고려 사항을 검토하십시오.
+
+* SnapMirror 트래픽 분리를 위해 단일 NIC를 Cloud Volumes ONTAP 단일 노드 또는 HA 쌍 구축(VM 인스턴스)에 추가할 수 있습니다.
+* 새 NIC를 추가하려면 배포하는 VM 인스턴스 유형에 미사용 NIC가 있어야 합니다.
+* 소스 및 대상 클러스터가 동일한 VNet(Virtual Network)에 있어야 하지만 동일한 서브넷에 있어서는 안 됩니다.
+
+
+
+
+== 1단계: 추가 NIC를 생성하고 대상 VM에 연결합니다
+
+이 섹션에서는 추가 NIC를 생성하여 대상 VM에 연결하는 방법에 대한 지침을 제공합니다. 대상 VM은 Cloud Volumes ONTAP의 Azure에서 추가 NIC를 설정하려는 단일 노드 또는 HA 쌍 시스템입니다.
+
+.단계
+. ONTAP CLI에서 노드를 중지합니다.
++
+[source, cli]
+----
+dest::> halt -node <dest_node-vm>
+----
+. Azure 포털에서 VM(노드) 상태가 Stopped인지 확인합니다.
++
+[source, cli]
+----
+az vm get-instance-view --resource-group <dest-rg> --name <dest-vm> --query instanceView.statuses[1].displayStatus
+----
+. Azure Cloud Shell의 Bash 환경을 사용하여 노드를 중지합니다.
++
+.. 노드를 중지합니다.
++
+[source, cli]
+----
+az vm stop --resource-group <dest_node-rg> --name <dest_node-vm>
+----
+.. 노드 할당 해제
++
+[source, cli]
+----
+az vm deallocate --resource-group <dest_node-rg> --name <dest_node-vm>
+----
+
+
+. 두 서브넷(소스 클러스터 서브넷 및 대상 클러스터 서브넷)을 서로 라우팅할 수 없도록 네트워크 보안 그룹 규칙을 구성합니다.
++
+.. 대상 VM에 새 NIC를 생성합니다.
+.. 소스 클러스터 서브넷의 서브넷 ID를 조회합니다.
++
+[source, cli]
+----
+az network vnet subnet show -g <src_vnet-rg> -n <src_subnet> --vnet-name <vnet> --query id
+----
+.. 소스 클러스터 서브넷의 서브넷 ID를 사용하여 대상 VM에 새 NIC를 생성합니다. 여기에 새 NIC의 이름을 입력합니다.
++
+[source, cli]
+----
+az network nic create -g <dest_node-rg> -n <dest_node-vm-nic-new> --subnet <id_from_prev_command> --accelerated-networking true
+----
+.. privateIPAddress를 저장합니다. 이 IP 주소인 <new_added_nic_primary_addr>는 에서 인터클러스터 LIF를 생성하는 데 사용됩니다 <<Step 2: Create a new IPspace,새 NIC의 브로드캐스트 도메인, 인터클러스터 LIF>>.
+
+
+. 새 NIC를 VM에 연결합니다.
++
+[source, cli]
+----
+az vm nic add -g <dest_node-rg> --vm-name <dest_node-vm> --nics <dest_node-vm-nic-new>
+----
+. VM(노드)을 시작합니다.
++
+[source, cli]
+----
+az vm start --resource-group <dest_node-rg>  --name <dest_node-vm>
+----
+. Azure 포털에서 * Networking * 으로 이동하여 새 NIC(예: NIC-NEW)가 존재하고 가속 네트워킹이 활성화되었는지 확인합니다.
++
+[source, cli]
+----
+az network nic list --resource-group azure-59806175-60147103-azure-rg --query "[].{NIC: name, VM: virtualMachine.id}"
+----
+
+
+HA 쌍 구축의 경우 파트너 노드에 대해 단계를 반복합니다.
+
+
+
+== 2단계: 새 NIC에 대한 새 IPspace, 브로드캐스트 도메인 및 인터클러스터 LIF를 생성합니다
+
+인터클러스터 LIF에 대한 별도의 IPspace를 통해 클러스터 간 복제를 위해 네트워킹 기능 간에 논리적으로 분리할 수 있습니다.
+
+다음 단계에서는 ONTAP CLI를 사용합니다.
+
+.단계
+. 새 IPspace(new_IPspace)를 생성합니다.
++
+[source, cli]
+----
+dest::> network ipspace create -ipspace <new_ipspace>
+----
+. 새 IPspace(new_IPspace)에 브로드캐스트 도메인을 만들고 nic-new 포트를 추가합니다.
++
+[source, cli]
+----
+dest::> network port show
+----
+. 단일 노드 시스템의 경우 새로 추가된 포트는_e0b_입니다. 관리형 디스크가 있는 HA Pair 배포의 경우 새로 추가된 포트는_e0d_입니다. 페이지 Blob이 있는 HA 쌍 구축의 경우 새로 추가된 포트는_e0e_입니다. VM 이름이 아닌 노드 이름을 사용합니다. 를 실행하여 노드 이름을 찾습니다 `node show`.
++
+[source, cli]
+----
+dest::> broadcast-domain create -broadcast-domain <new_bd> -mtu 1500 -ipspace <new_ipspace> -ports <dest_node-cot-vm:e0b>
+----
+. 새 브로드캐스트 도메인(new_BD) 및 새 NIC(NIC-NEW)에 인터클러스터 LIF를 생성합니다.
++
+[source, cli]
+----
+dest::> net int create -vserver <new_ipspace> -lif <new_dest_node-ic-lif> -service-policy default-intercluster -address <new_added_nic_primary_addr> -home-port <e0b> -home-node <node> -netmask <new_netmask_ip> -broadcast-domain <new_bd>
+----
+. 새 인터클러스터 LIF가 생성되었는지 확인합니다.
++
+[source, cli]
+----
+dest::> net int show
+----
+
+
+HA 쌍 구축의 경우 파트너 노드에 대해 단계를 반복합니다.
+
+
+
+== 3단계: 소스 시스템과 타겟 시스템 간 클러스터 피어링을 확인합니다
+
+이 섹션에서는 소스 시스템과 대상 시스템 간의 피어링을 확인하는 방법에 대한 지침을 제공합니다.
+
+다음 단계에서는 ONTAP CLI를 사용합니다.
+
+.단계
+. 대상 클러스터의 인터클러스터 LIF가 소스 클러스터의 인터클러스터 LIF를 ping할 수 있는지 확인합니다. 대상 클러스터가 이 명령을 실행하므로 대상 IP 주소가 소스에서 인터클러스터 LIF IP 주소가 됩니다.
++
+[source, cli]
+----
+dest::> ping -lif <new_dest_node-ic-lif> -vserver <new_ipspace> -destination <10.161.189.6>
+----
+. 소스 클러스터의 인터클러스터 LIF가 대상 클러스터의 인터클러스터 LIF를 ping할 수 있는지 확인합니다. 대상은 대상에 생성된 새 NIC의 IP 주소입니다.
++
+[source, cli]
+----
+src::> ping -lif <src_node-ic-lif> -vserver <src_svm> -destination <10.161.189.18>
+----
+
+
+HA 쌍 구축의 경우 파트너 노드에 대해 단계를 반복합니다.
+
+
+
+== 4단계: 소스 시스템과 타겟 시스템 간에 SVM 피어링을 생성합니다
+
+이 섹션은 소스 시스템과 타겟 시스템 간에 SVM 피어링을 생성하는 방법에 대한 지침을 제공합니다.
+
+다음 단계에서는 ONTAP CLI를 사용합니다.
+
+.단계
+. 소스 인터클러스터 LIF IP 주소를 로 사용하여 대상에서 클러스터 피어링을 생성합니다 `-peer-addrs`. HA 페어의 경우 두 노드에 대한 소스 인터클러스터 LIF IP 주소를 로 나열합니다 `-peer-addrs`.
++
+[source, cli]
+----
+dest::> cluster peer create -peer-addrs <10.161.189.6> -ipspace <new_ipspace>
+----
+. 암호를 입력하고 확인합니다.
+. 타겟 클러스터 LIF IP 주소를 로 사용하여 소스에서 클러스터 피어링을 생성합니다 `peer-addrs`. HA 쌍의 경우, 두 노드의 대상 인터클러스터 LIF IP 주소를 로 나열합니다 `-peer-addrs`.
++
+[source, cli]
+----
+src::> cluster peer create -peer-addrs <10.161.189.18>
+----
+. 암호를 입력하고 확인합니다.
+. 클러스터가 피어링되었는지 확인합니다.
++
+[source, cli]
+----
+src::> cluster peer show
+----
++
+성공적인 피어링은 가용성 필드에 * 사용 가능 * 을 표시합니다.
+
+. 타겟에서 SVM 피어링을 생성합니다. 소스 및 대상 SVM 모두 데이터 SVM이어야 합니다.
++
+[source, cli]
+----
+dest::> vserver peer create -vserver <dest_svm> -peer-vserver <src_svm> -peer-cluster <src_cluster> -applications snapmirror``
+----
+. SVM 피어링을 수락합니다.
++
+[source, cli]
+----
+src::> vserver peer accept -vserver <src_svm> -peer-vserver <dest_svm>
+----
+. SVM이 피어링되었는지 확인합니다.
++
+[source, cli]
+----
+dest::> vserver peer show
+----
++
+피어 상태가 표시됩니다 *`peered`와 피어링 응용 프로그램이 표시됩니다 *`snapmirror`*.
+
+
+
+
+
+== 5단계: 소스 시스템과 대상 시스템 사이에 SnapMirror 복제 관계를 생성합니다
+
+이 섹션에서는 소스 시스템과 대상 시스템 간에 SnapMirror 복제 관계를 생성하는 방법에 대해 설명합니다.
+
+다음 단계에서는 ONTAP CLI를 사용합니다.
+
+.단계
+. 대상 SVM에 데이터로 보호된 볼륨을 생성합니다.
++
+[source, cli]
+----
+dest::> vol create -volume <new_dest_vol> -vserver <dest_svm> -type DP -size <10GB> -aggregate <aggr1>
+----
+. 복제 일정 및 SnapMirror 정책을 포함하는 대상에서 SnapMirror 복제 관계를 생성합니다.
++
+[source, cli]
+----
+dest::> snapmirror create -source-path src_svm:src_vol  -destination-path  dest_svm:new_dest_vol -vserver dest_svm -policy MirrorAllSnapshots -schedule 5min
+----
+. 타겟에서 SnapMirror 복제 관계를 초기화합니다.
++
+[source, cli]
+----
+dest::> snapmirror initialize -destination-path  <dest_svm:new_dest_vol>
+----
+. ONTAP CLI에서 다음 명령을 실행하여 SnapMirror 관계 상태를 확인합니다.
++
+[source, cli]
+----
+dest::> snapmirror show
+----
++
+관계 상태는 입니다 `Snapmirrored` 그리고 관계의 상태는 이다 `true`.
+
+. 선택 사항: ONTAP CLI에서 다음 명령을 실행하여 SnapMirror 관계에 대한 작업 기록을 봅니다.
++
+[source, cli]
+----
+dest::> snapmirror show-history
+----
+
+
+필요에 따라 소스 및 대상 볼륨을 마운트하고, 소스에 파일을 쓰고, 볼륨이 대상에 복제되는지 확인할 수 있습니다.

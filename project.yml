@@ -218,6 +218,8 @@ sidebar:
           url: "/task-enabling-private-link.html"
         - title: 자원 그룹을 이동합니다
           url: "/task-moving-resource-groups-azure.html"
+        - title: Azure에서 SnapMirror 트래픽을 분리합니다
+          url: "/task-segregate-snapmirror-azure.html"
       - title: Google Cloud 관리
         flavor: gcp
         entries:

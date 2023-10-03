@@ -3953,7 +3953,6 @@
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">두 가지 옵션 중 하나를 사용할 경우 가능합니다 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>.</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">버전 9.10.0 이하</block>
   <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">구매한 용량이 3Tib마다 엣지 노드 1개</block>
-  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">클라우드 공급자 솔루션 지원</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP용 Amazon FSx</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Google Cloud용 Cloud Volumes Service</block>
@@ -4780,9 +4779,7 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="46f41748d329a2f863d5f787b783bcc5" category="section-title">Cloud Volumes ONTAP 업그레이드 버전 선택기 업데이트</block>
   <block id="25c3dcdd6e2c69b30eba973a10e656d8" category="paragraph">Cloud Volumes ONTAP 업그레이드 페이지를 통해 최신 버전의 Cloud Volumes ONTAP 또는 이전 버전으로 업그레이드할 수 있습니다.</block>
   <block id="91cf56905c9848b7dbc6e3d59504dcd3" category="paragraph">BlueXP를 통한 Cloud Volumes ONTAP 업그레이드에 대한 자세한 내용은 을 참조하십시오<block ref="9777e426a24de9582e7ed3fdb1795e0a" category="inline-link-rx"></block>.</block>
-  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">BlueXP 계정 및 개별 Cloud Volumes ONTAP 시스템에 대한 지원 등록이 필요합니다.</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">두 가지 유형의 일련 번호를 등록하면 지원 티켓 열기와 자동 케이스 생성 등의 기능을 사용할 수 있습니다. 아래 설명과 같이 BlueXP에 NetApp Support 사이트(NSS) 계정을 추가하여 등록을 완료합니다.</block>
-  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">다음 클라우드 제공업체 솔루션에 대한 기술 지원은 해당 제품에 대한 BlueXP 설명서의 "도움말 얻기"를 참조하십시오.</block>
   <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">NetApp 지원을 위해 BlueXP 계정을 등록합니다</block>
   <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">지원을 등록하고 지원 권한을 활성화하려면 BlueXP 계정의 한 사용자가 NetApp Support 사이트 계정을 BlueXP 로그인에 연결해야 합니다. NetApp 지원에 등록하는 방법은 NetApp Support 사이트(NSS) 계정이 이미 있는지 여부에 따라 다릅니다.</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">NSS 자격 증명 추가 * 를 선택하고 NetApp Support 사이트(NSS) 인증 프롬프트를 따릅니다.</block>
@@ -5033,4 +5030,73 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
 <block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
   <block id="9d0048a7e2f292f2c49dc43d2698028b" category="paragraph">을 사용할 수 있습니다 <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> AWS가 구축한 애플리케이션에서 ONTAP 암호화 키를 보호합니다.</block>
+  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">BlueXP 및 해당 스토리지 솔루션 및 서비스와 관련된 기술 지원을 받으려면 지원을 등록해야 합니다. Cloud Volumes ONTAP 시스템의 주요 워크플로우를 사용하려면 지원 등록도 필요합니다.</block>
+  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">지원을 등록한다고 해서 클라우드 공급자 파일 서비스에 대한 NetApp 지원이 활성화되지 않습니다. 클라우드 공급자의 파일 서비스, 자체 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 BlueXP 설명서에서 "도움말 얻기"를 참조하십시오.</block>
+  <block id="f316f0dfd566f9d842d2d368b7e3ecbb" category="cell">9.14.0</block>
+  <block id="303aacd2fb75405c16e06a32d73c9c79" category="summary">Azure의 Cloud Volumes ONTAP를 사용하면 다른 네트워크를 사용하여 SnapMirror 복제 트래픽을 분리하여 데이터의 보안과 성능을 향상할 수 있습니다.</block>
+  <block id="21621fa11949957e26b3e8faa6ac858e" category="doc">Azure에서 SnapMirror 트래픽을 분리합니다</block>
+  <block id="0f8fc7abeaf93224876aeb20cc640a67" category="paragraph">Azure의 Cloud Volumes ONTAP를 사용하면 SnapMirror 복제 트래픽을 데이터와 관리 트래픽에서 분리할 수 있습니다. SnapMirror 복제 트래픽을 데이터 트래픽에서 분리하려면 새 네트워크 인터페이스 카드(NIC), 관련 인터클러스터 LIF 및 라우팅할 수 없는 서브넷을 추가합니다.</block>
+  <block id="9ca833fb1a50865ff88e9da267c0f41f" category="section-title">Azure에서 SnapMirror 트래픽 분리 에 대해 자세히 알아보십시오</block>
+  <block id="4750291421c319d60eddb36242a2a88e" category="paragraph">기본적으로 BlueXP는 동일한 서브넷에 있는 Cloud Volumes ONTAP 구축의 모든 NIC 및 LIF를 구성합니다. 이러한 구성에서는 SnapMirror 복제 트래픽과 데이터 및 관리 트래픽이 동일한 서브넷을 사용합니다. SnapMirror 트래픽을 분리하면 데이터 및 관리 트래픽에 사용되는 기존 서브넷으로 라우팅할 수 없는 추가 서브넷을 활용합니다.</block>
+  <block id="60806a484aa67dd4b1f9835cf1de9551" category="paragraph-title">그림 1</block>
+  <block id="d631a4c5f16e24d65bf4b95667c74ab1" category="paragraph">다음 다이어그램은 단일 노드 배포에서 추가 NIC, 관련 인터클러스터 LIF 및 라우팅할 수 없는 서브넷과 SnapMirror 복제 트래픽의 분리 과정을 보여줍니다. HA 쌍 구축이 약간 다릅니다.</block>
+  <block id="f7142f8300db32ac533cebbf28b1a65c" category="inline-image-macro">다이어그램은 단일 노드 구성에서 SnapMirror 복제 트래픽을 분리하는 방법을 보여 줍니다</block>
+  <block id="40126e16e9279ba224718054c8599d19" category="paragraph"><block ref="40126e16e9279ba224718054c8599d19" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2d713c56af0861a0b0bed91ef8da2e18" category="paragraph">다음 고려 사항을 검토하십시오.</block>
+  <block id="97d737a59c7e796eb8610dce5b0f817a" category="list-text">SnapMirror 트래픽 분리를 위해 단일 NIC를 Cloud Volumes ONTAP 단일 노드 또는 HA 쌍 구축(VM 인스턴스)에 추가할 수 있습니다.</block>
+  <block id="933fe3c7f865ac41ceae93a6e0cb11be" category="list-text">새 NIC를 추가하려면 배포하는 VM 인스턴스 유형에 미사용 NIC가 있어야 합니다.</block>
+  <block id="e6f791d5fe8a01a86623cb53cef66120" category="list-text">소스 및 대상 클러스터가 동일한 VNet(Virtual Network)에 있어야 하지만 동일한 서브넷에 있어서는 안 됩니다.</block>
+  <block id="c61486c21b19c2bf3cf6e82a2a1a645b" category="section-title">1단계: 추가 NIC를 생성하고 대상 VM에 연결합니다</block>
+  <block id="d1348b7908ab7ffc3e987964d5d681f0" category="paragraph">이 섹션에서는 추가 NIC를 생성하여 대상 VM에 연결하는 방법에 대한 지침을 제공합니다. 대상 VM은 Cloud Volumes ONTAP의 Azure에서 추가 NIC를 설정하려는 단일 노드 또는 HA 쌍 시스템입니다.</block>
+  <block id="faa6897ed3f655c419813b3c65575b23" category="list-text">ONTAP CLI에서 노드를 중지합니다.</block>
+  <block id="0a35d6e7621851d0057f60bd59de0033" category="list-text">Azure 포털에서 VM(노드) 상태가 Stopped인지 확인합니다.</block>
+  <block id="4e4710d224030f7e39ce8b2750fbb740" category="list-text">Azure Cloud Shell의 Bash 환경을 사용하여 노드를 중지합니다.</block>
+  <block id="c5d8f32ad4d62afd3c9e40fef3d1cbd0" category="list-text">노드를 중지합니다.</block>
+  <block id="8f19990e7da7dad0679229805c3df746" category="list-text">노드 할당 해제</block>
+  <block id="9fc7f10dbf9f36fb02a3ff55eb91940d" category="list-text">두 서브넷(소스 클러스터 서브넷 및 대상 클러스터 서브넷)을 서로 라우팅할 수 없도록 네트워크 보안 그룹 규칙을 구성합니다.</block>
+  <block id="bd7492db1a0b8c1b34be6a58c6374a50" category="list-text">대상 VM에 새 NIC를 생성합니다.</block>
+  <block id="a6b97c800c08f0f47cf048c9cd043899" category="list-text">소스 클러스터 서브넷의 서브넷 ID를 조회합니다.</block>
+  <block id="5a90251e4d045fbd97e56cd055766b1e" category="list-text">소스 클러스터 서브넷의 서브넷 ID를 사용하여 대상 VM에 새 NIC를 생성합니다. 여기에 새 NIC의 이름을 입력합니다.</block>
+  <block id="5fd584f186e30730537d22a78bb11616" category="inline-xref">새 NIC의 브로드캐스트 도메인, 인터클러스터 LIF</block>
+  <block id="d863813a11392f8ccc266be047976b56" category="list-text">privateIPAddress를 저장합니다. 이 IP 주소인 &lt;new_added_nic_primary_addr&gt;는 에서 인터클러스터 LIF를 생성하는 데 사용됩니다 <block ref="13642ed959fde49bda6806fad0d107cf" category="inline-xref-macro-rx"></block>.</block>
+  <block id="c720b471b5c9a398d1674113fb61ccb3" category="list-text">새 NIC를 VM에 연결합니다.</block>
+  <block id="04144942b75846f169eab289baa03332" category="list-text">VM(노드)을 시작합니다.</block>
+  <block id="891b715fb21f166e1ddefb85f1ada848" category="list-text">Azure 포털에서 * Networking * 으로 이동하여 새 NIC(예: NIC-NEW)가 존재하고 가속 네트워킹이 활성화되었는지 확인합니다.</block>
+  <block id="0b2645871b4d5e300b856a5676815053" category="paragraph">HA 쌍 구축의 경우 파트너 노드에 대해 단계를 반복합니다.</block>
+  <block id="75ca82ebaa2ab2a348dab6de8af96db1" category="section-title">2단계: 새 NIC에 대한 새 IPspace, 브로드캐스트 도메인 및 인터클러스터 LIF를 생성합니다</block>
+  <block id="f81ad401f01ac6ccee4552cee262ea96" category="paragraph">인터클러스터 LIF에 대한 별도의 IPspace를 통해 클러스터 간 복제를 위해 네트워킹 기능 간에 논리적으로 분리할 수 있습니다.</block>
+  <block id="bf5db4b0d890ae0f47f0666b4786c11e" category="paragraph">다음 단계에서는 ONTAP CLI를 사용합니다.</block>
+  <block id="5caa556e7511fbc031e556f35273b4b5" category="list-text">새 IPspace(new_IPspace)를 생성합니다.</block>
+  <block id="c3e846d4c68310f0bbaebfe81b1b016c" category="list-text">새 IPspace(new_IPspace)에 브로드캐스트 도메인을 만들고 nic-new 포트를 추가합니다.</block>
+  <block id="ec7cd635bbff7496ce854419fbac424d" category="list-text">단일 노드 시스템의 경우 새로 추가된 포트는_e0b_입니다. 관리형 디스크가 있는 HA Pair 배포의 경우 새로 추가된 포트는_e0d_입니다. 페이지 Blob이 있는 HA 쌍 구축의 경우 새로 추가된 포트는_e0e_입니다. VM 이름이 아닌 노드 이름을 사용합니다. 를 실행하여 노드 이름을 찾습니다<block ref="9cd5e832790132a87592f2958fc2b1a6" prefix=" " category="inline-code"></block>.</block>
+  <block id="9defaa4e7d0a35e22135ad0e2f58e852" category="list-text">새 브로드캐스트 도메인(new_BD) 및 새 NIC(NIC-NEW)에 인터클러스터 LIF를 생성합니다.</block>
+  <block id="be0a702fb4057bb2e91bdd1cc96da2e4" category="list-text">새 인터클러스터 LIF가 생성되었는지 확인합니다.</block>
+  <block id="2aea6959bcbac1fa4b42120415127f49" category="section-title">3단계: 소스 시스템과 타겟 시스템 간 클러스터 피어링을 확인합니다</block>
+  <block id="daaed44d8f29e01bf2b9136c812dba11" category="paragraph">이 섹션에서는 소스 시스템과 대상 시스템 간의 피어링을 확인하는 방법에 대한 지침을 제공합니다.</block>
+  <block id="7bd80217b21e266e5b946de878bcd116" category="list-text">대상 클러스터의 인터클러스터 LIF가 소스 클러스터의 인터클러스터 LIF를 ping할 수 있는지 확인합니다. 대상 클러스터가 이 명령을 실행하므로 대상 IP 주소가 소스에서 인터클러스터 LIF IP 주소가 됩니다.</block>
+  <block id="b10932f9d1b350d60dc8e6ca4ee93b51" category="list-text">소스 클러스터의 인터클러스터 LIF가 대상 클러스터의 인터클러스터 LIF를 ping할 수 있는지 확인합니다. 대상은 대상에 생성된 새 NIC의 IP 주소입니다.</block>
+  <block id="93abe604e120de65d22caed1aaada374" category="section-title">4단계: 소스 시스템과 타겟 시스템 간에 SVM 피어링을 생성합니다</block>
+  <block id="75dd127515b5a2b5c961b90596de57ac" category="paragraph">이 섹션은 소스 시스템과 타겟 시스템 간에 SVM 피어링을 생성하는 방법에 대한 지침을 제공합니다.</block>
+  <block id="8f3afc07cdf026cecf587706e3f50a9e" category="list-text">소스 인터클러스터 LIF IP 주소를 로 사용하여 대상에서 클러스터 피어링을 생성합니다<block ref="e668c84230a87b9121e88eebf5b66a53" prefix=" " category="inline-code"></block>. HA 페어의 경우 두 노드에 대한 소스 인터클러스터 LIF IP 주소를 로 나열합니다<block ref="e668c84230a87b9121e88eebf5b66a53" prefix=" " category="inline-code"></block>.</block>
+  <block id="bddd18b8263487594b76ea4fec379386" category="list-text">암호를 입력하고 확인합니다.</block>
+  <block id="124c978c2ba222186c71a76388ee00be" category="list-text">타겟 클러스터 LIF IP 주소를 로 사용하여 소스에서 클러스터 피어링을 생성합니다<block ref="2c00dca3dca5747b8a2b8745956d98a1" prefix=" " category="inline-code"></block>. HA 쌍의 경우, 두 노드의 대상 인터클러스터 LIF IP 주소를 로 나열합니다<block ref="e668c84230a87b9121e88eebf5b66a53" prefix=" " category="inline-code"></block>.</block>
+  <block id="a3e35c96ecf9655b55a3dcde79058fa0" category="list-text">클러스터가 피어링되었는지 확인합니다.</block>
+  <block id="5db4c569041073c27e73bd49c013f30a" category="paragraph">성공적인 피어링은 가용성 필드에 * 사용 가능 * 을 표시합니다.</block>
+  <block id="6321e930bee04054fa8c00750098f3ea" category="list-text">타겟에서 SVM 피어링을 생성합니다. 소스 및 대상 SVM 모두 데이터 SVM이어야 합니다.</block>
+  <block id="91a3470d875fd7cbe36145c7f10cd29a" category="list-text">SVM 피어링을 수락합니다.</block>
+  <block id="3116cb0ef49131786df2af89745dc321" category="list-text">SVM이 피어링되었는지 확인합니다.</block>
+  <block id="766b57929d5f2d18ec41dd1965fea420" category="paragraph">피어 상태가 표시됩니다 <block ref="20df74dd9059112f4ef8506d8ece8b43" prefix="*" category="inline-code"></block>와 피어링 응용 프로그램이 표시됩니다 <block ref="775e6dfb98cc0aadf603bb1ada48a066" prefix="*" category="inline-code"></block>*.</block>
+  <block id="ddf01b8bab877738e14ace0c08658ed2" category="section-title">5단계: 소스 시스템과 대상 시스템 사이에 SnapMirror 복제 관계를 생성합니다</block>
+  <block id="93afe55f4bcb481fc116c93fb5cbd23e" category="paragraph">이 섹션에서는 소스 시스템과 대상 시스템 간에 SnapMirror 복제 관계를 생성하는 방법에 대해 설명합니다.</block>
+  <block id="1b596d323c1c9ba86accf6e5bd9c3acf" category="list-text">대상 SVM에 데이터로 보호된 볼륨을 생성합니다.</block>
+  <block id="136a01ceb51816607d063508b0344e22" category="list-text">복제 일정 및 SnapMirror 정책을 포함하는 대상에서 SnapMirror 복제 관계를 생성합니다.</block>
+  <block id="5ca85e0710f1c97ab63385105a12e084" category="list-text">타겟에서 SnapMirror 복제 관계를 초기화합니다.</block>
+  <block id="0bcfd2e8ebb39d8c8a0cba2af13462c1" category="list-text">ONTAP CLI에서 다음 명령을 실행하여 SnapMirror 관계 상태를 확인합니다.</block>
+  <block id="3c6eca06b6c8daa748eff1365143a924" category="paragraph">관계 상태는 입니다<block ref="d34e79870b17da17e894ddc837954dcc" prefix=" " category="inline-code"></block> 그리고 관계의 상태는 이다<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>.</block>
+  <block id="6016f20f177613d8d26c5d9473f64718" category="list-text">선택 사항: ONTAP CLI에서 다음 명령을 실행하여 SnapMirror 관계에 대한 작업 기록을 봅니다.</block>
+  <block id="9bc0846f66e4a0d0a36a210fa3342991" category="paragraph">필요에 따라 소스 및 대상 볼륨을 마운트하고, 소스에 파일을 쓰고, 볼륨이 대상에 복제되는지 확인할 수 있습니다.</block>
+  <block id="c9abaf2f2285d7432a5d5112e315cb83" category="list-text">9.14.0 GA</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">클라우드 공급자의 파일 서비스에 대한 지원을 받습니다</block>
+  <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">클라우드 공급자의 파일 서비스, 자체 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 BlueXP 설명서에서 "도움말 얻기"를 참조하십시오.</block>
+  <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">BlueXP 및 해당 스토리지 솔루션 및 서비스에 관한 기술 지원을 받으려면 아래에 설명된 지원 옵션을 사용하십시오.</block>
 </blocks>
