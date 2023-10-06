@@ -20,6 +20,20 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2023년 10월 6일
+
+Connector 3.9.34 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.
+
+
+
+=== Cloud Volumes ONTAP 9.14.0
+
+BlueXP는 이제 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.14.0 General Availability 릴리즈를 구축 및 관리할 수 있습니다.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
+
+
+
 == 2023년 9월 10일
 
 Connector 3.9.33 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.

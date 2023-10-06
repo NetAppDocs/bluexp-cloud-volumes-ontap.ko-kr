@@ -5099,4 +5099,8 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">클라우드 공급자의 파일 서비스에 대한 지원을 받습니다</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">클라우드 공급자의 파일 서비스, 자체 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 BlueXP 설명서에서 "도움말 얻기"를 참조하십시오.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">BlueXP 및 해당 스토리지 솔루션 및 서비스에 관한 기술 지원을 받으려면 아래에 설명된 지원 옵션을 사용하십시오.</block>
+  <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023년 10월 6일</block>
+  <block id="5612c729ea34f27969af31fd815184e0" category="paragraph">Connector 3.9.34 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.</block>
+  <block id="44d133359b344c4542acdebe6209e101" category="section-title">Cloud Volumes ONTAP 9.14.0</block>
+  <block id="c5fa627d231c9a8813c9a2421d86136f" category="paragraph">BlueXP는 이제 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.14.0 General Availability 릴리즈를 구축 및 관리할 수 있습니다.</block>
 </blocks>
