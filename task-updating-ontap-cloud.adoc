@@ -163,6 +163,31 @@ TIP: 지원이 등록되지 않은 시스템은 새 버전이 출시되어도 Bl
 
 
 
+=== C4, M4 및 R4 EC2 인스턴스 유형으로 AWS에서 업그레이드
+
+Cloud Volumes ONTAP은 더 이상 C4, M4 및 R4 EC2 인스턴스 유형을 지원하지 않습니다. 이러한 인스턴스 유형을 사용하여 기존 배포를 Cloud Volumes ONTAP 버전 9.8-9.12.1로 업그레이드할 수 있습니다. 업그레이드하기 전에 다음을 수행하는 것이 좋습니다 <<인스턴스 유형을 변경합니다,인스턴스 유형을 변경합니다>>. 인스턴스 유형을 변경할 수 없는 경우 을 변경해야 합니다 <<향상된 네트워킹을 활성화합니다,향상된 네트워킹을 활성화합니다>> 업그레이드 전. 인스턴스 유형 변경 및 향상된 네트워킹 활성화에 대한 자세한 내용은 다음 섹션을 참조하십시오.
+
+9.13.0 이상을 실행하는 Cloud Volumes ONTAP에서는 C4, M4 및 R4 EC2 인스턴스 유형으로 업그레이드할 수 없습니다. 이 경우 디스크 수를 줄인 다음 <<인스턴스 유형을 변경합니다,인스턴스 유형을 변경합니다>> 또는 C5, M5, R5 EC2 인스턴스 유형으로 새로운 HA 쌍 구성을 배포하고 데이터를 마이그레이션합니다.
+
+
+
+==== 인스턴스 유형을 변경합니다
+
+C4, M4 및 R4 EC2 인스턴스 유형을 사용하면 C5, M5 및 R5 EC2 인스턴스 유형보다 노드당 더 많은 디스크를 지원할 수 있습니다. 실행 중인 C4, M4 또는 R4 EC2 인스턴스의 노드당 디스크 수가 C5, M5 및 R5 인스턴스에 대한 노드당 최대 디스크 허용치보다 작은 경우 EC2 인스턴스 유형을 C5, M5 또는 R5로 변경할 수 있습니다.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html#disk-and-tiering-limits-by-ec2-instance["EC2 인스턴스별로 디스크 및 계층화 제한을 확인합니다"^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경합니다"^]
+
+인스턴스 유형을 변경할 수 없는 경우 의 단계를 따릅니다 <<향상된 네트워킹을 활성화합니다>>.
+
+
+
+==== 향상된 네트워킹을 활성화합니다
+
+Cloud Volumes ONTAP 9.8 이상 버전으로 업그레이드하려면 C4, M4 또는 R4 인스턴스 유형을 실행하는 클러스터에서 enable_enhanced networking_을 사용해야 합니다. ENA를 활성화하려면 기술 문서 를 참조하십시오 link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/How_to_enable_Enhanced_networking_like_SR-IOV_or_ENA_on_AWS_CVO_instances["AWS Cloud Volumes ONTAP 인스턴스에서 SR-IOV 또는 ENA와 같은 향상된 네트워킹을 활성화하는 방법"^].
+
+
+
 == 업그레이드 준비
 
 업그레이드를 수행하기 전에 시스템이 준비되어 있는지 확인하고 필요한 구성을 변경해야 합니다.
