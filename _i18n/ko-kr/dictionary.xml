@@ -5119,4 +5119,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="489d7e740d2dd946585a03c48af8f4cf" category="paragraph">Cloud Volumes ONTAP 9.8 이상 버전으로 업그레이드하려면 C4, M4 또는 R4 인스턴스 유형을 실행하는 클러스터에서 enable_enhanced networking_을 사용해야 합니다. ENA를 활성화하려면 기술 문서 를 참조하십시오 <block ref="a4ba9465250c8fbd5a9415056507370e" category="inline-link-macro-rx"></block>.</block>
   <block id="4b9b39edb3e09fa20d9a66c33e754c00" category="inline-link-macro">디스크 수 오류로 인해 인스턴스 유형을 R4에서 R5로 변경할 수 없습니다</block>
   <block id="58cbae1f4fc410ea043517dc0196bed4" category="paragraph">C4, M4 또는 R4 인스턴스에서 인스턴스 유형을 변경할 수 없는 경우 KB 문서를 참조하십시오 <block ref="ddbe8a0e687a77b95fcbe5dc93c2e464" category="inline-link-macro-rx"></block>.</block>
+  <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Microsoft Azure 설명서</block>
+  <block id="75640f19259f0f28da8136565db5cc22" category="admonition">NIC 관련 작업을 추가로 수행하려면 Azure에서 적절한 권한을 사용하여 네트워크 참가자 역할 또는 사용자 지정 역할을 할당할 수 있습니다. 이러한 NIC 관련 권한에 대한 자세한 내용은 를 참조하십시오<block ref="66f156d6b7e425dd982efc44f4fabac6" category="inline-link-rx"></block>.</block>
 </blocks>
