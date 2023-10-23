@@ -4547,7 +4547,6 @@
   <block id="fc0a70bcada485a87b25779f9232cd77" category="summary">Cloud Volumes ONTAP를 사용하려면 Google Cloud 서비스 계정이 두 가지 용도로 필요합니다. 첫 번째는 데이터 계층화를 통해 콜드 데이터를 Google Cloud의 저비용 오브젝트 스토리지로 계층화할 수 있는 때입니다. 두 번째는 BlueXP 백업 및 복구를 활성화하여 저렴한 객체 스토리지에 볼륨을 백업하는 것입니다.</block>
   <block id="3051092d4bbc438c196cba870b70c79f" category="paragraph">이 단계는 데이터 계층화에만 필요합니다. BlueXP 백업 및 복구에는 필요하지 않습니다.</block>
   <block id="aaaac746aa3fb70f64bdaf1919aefe27" category="admonition">BlueXP 백업 및 복구는 SnapMirror 구현을 사용하여 백업 파일(SnapMirror Cloud라고 함)을 생성하지만 시스템을 업그레이드할 때 백업을 일시 중단할 필요가 없습니다.</block>
-  <block id="448cadabb687a7ab81490776866364cf" category="list-text">BlueXP 백업 및 복구를 사용한 볼륨 백업 무제한 포함, 프로페셔널 패키지를 사용하는 Cloud Volumes ONTAP 시스템에만 해당</block>
   <block id="35ae8932a2c6f1191cf21157a991b4dd" category="paragraph">클라우드 공급자 마켓플레이스의 용량제 구독을 통해 30일 무료 평가판을 사용할 수 있습니다. 무료 평가판에는 Cloud Volumes ONTAP 및 BlueXP 백업 및 복구가 포함됩니다. 이 평가판은 사용자가 마켓플레이스의 서비스에 가입할 때 시작됩니다.</block>
   <block id="8b3631f5373c77f26bc2e8fe7f000bd3" category="paragraph">NetApp에서 BYOL(Essentials) 라이센스를 구매하고 해당 배포 및 볼륨 유형에 대해 라이센스 용량을 초과하는 경우 BlueXP 디지털 지갑은 가격이 더 높은 Essentials 라이센스(있는 경우)에 대해 초과 요금을 부과합니다. 이는 시장에 대해 충전하기 전에 이미 선결제 용량으로 구매한 가용 용량을 처음 사용하기 때문입니다. 마켓플레이스에 비용을 청구하면 월별 청구서에 비용이 추가됩니다.</block>
   <block id="ae0bff30a3baa225238bb8caae6abf20" category="paragraph">보조 볼륨이 있는 HA 쌍에서 50TiB가 또 다른 프로비저닝됩니다. BlueXP 디지털 지갑은 50TiB에서 PAYGO로 충전하는 대신 _Essentials Single Node_license에 대해 50TiB 초과를 충전합니다. 이 라이센스는 _Essentials Secondary HA_보다 비싸지만 PAYGO 요금보다 저렴합니다.</block>
@@ -5121,4 +5120,7 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="58cbae1f4fc410ea043517dc0196bed4" category="paragraph">C4, M4 또는 R4 인스턴스에서 인스턴스 유형을 변경할 수 없는 경우 KB 문서를 참조하십시오 <block ref="ddbe8a0e687a77b95fcbe5dc93c2e464" category="inline-link-macro-rx"></block>.</block>
   <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Microsoft Azure 설명서</block>
   <block id="75640f19259f0f28da8136565db5cc22" category="admonition">NIC 관련 작업을 추가로 수행하려면 Azure에서 적절한 권한을 사용하여 네트워크 참가자 역할 또는 사용자 지정 역할을 할당할 수 있습니다. 이러한 NIC 관련 권한에 대한 자세한 내용은 를 참조하십시오<block ref="66f156d6b7e425dd982efc44f4fabac6" category="inline-link-rx"></block>.</block>
+  <block id="2cf711540cadf3cbb4cac96dba2d9464" category="list-text">BlueXP 백업 및 복구를 사용하는 무제한 볼륨 백업이 포함되지만 프로페셔널 패키지를 사용하는 Cloud Volumes ONTAP 시스템에 대해서만 포함됩니다.</block>
+  <block id="f4b04af639ebf32754e26b928989f33f" category="inline-link">BlueXP 백업 및 복구에 대한 라이센스를 설정합니다</block>
+  <block id="e8b3ed24563d59f059354b6c1674f982" category="admonition">BlueXP 백업 및 복구를 위해 PAYGO 구독이 필요하지만 이 서비스 사용과 관련하여 비용은 발생하지 않습니다. BlueXP 백업 및 복구의 라이센스 설정에 대한 자세한 내용은 를 참조하십시오<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>.</block>
 </blocks>
