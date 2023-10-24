@@ -4900,7 +4900,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">N2-표준-48</block>
   <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">N2-표준-64</block>
   <block id="0891ba6a1f7a37c01cb3698c692751bc" category="paragraph">이러한 기능은 단일 노드 및 고가용성 쌍 구축 모두에서 개별적으로 또는 함께 사용할 수 있습니다.</block>
-  <block id="1e69916eaa563a1da0ccff3715e2342d" category="paragraph"><block ref="1e69916eaa563a1da0ccff3715e2342d" category="inline-link-macro-rx"></block></block>
   <block id="ee4272223579f1299444d14f2d185eb5" category="section-title">사용 보고서 기능 향상</block>
   <block id="ec123c8f161f9dfe4383b8db1d8883c4" category="paragraph">이제 사용 보고서 내에 표시되는 정보를 다양한 개선 사항을 사용할 수 있습니다. 다음은 사용 보고서의 향상된 기능입니다.</block>
   <block id="4c63050f1e33aa32db50cc80b682e805" category="list-text">이제 TiB 단위는 컬럼 이름에 포함됩니다.</block>
@@ -5026,8 +5025,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="cc2bfd53f6bcbc23893aaa8fab8b1eb2" category="paragraph">이제 L48s_v3 및 L64s_v3 인스턴스 유형이 Azure의 Cloud Volumes ONTAP에서 지원되므로 9.13.1 릴리즈부터 단일 및 여러 가용 영역의 공유 관리 디스크를 사용한 단일 노드 및 고가용성 쌍 구축이 가능합니다. 이러한 인스턴스 유형은 Flash Cache를 지원합니다.</block>
   <block id="c2af1dd6b400531e930c62dad5095f7d" category="inline-link-macro">Azure에서 Cloud Volumes ONTAP에 대해 지원되는 구성을 봅니다</block>
   <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">Azure에서 Cloud Volumes ONTAP의 스토리지 제한을 봅니다</block>
-  <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
-<block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
   <block id="9d0048a7e2f292f2c49dc43d2698028b" category="paragraph">을 사용할 수 있습니다 <block ref="27c0f93edc246c81e0de0dea4ee78543" category="inline-link-macro-rx"></block> AWS가 구축한 애플리케이션에서 ONTAP 암호화 키를 보호합니다.</block>
   <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">BlueXP 및 해당 스토리지 솔루션 및 서비스와 관련된 기술 지원을 받으려면 지원을 등록해야 합니다. Cloud Volumes ONTAP 시스템의 주요 워크플로우를 사용하려면 지원 등록도 필요합니다.</block>
   <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">지원을 등록한다고 해서 클라우드 공급자 파일 서비스에 대한 NetApp 지원이 활성화되지 않습니다. 클라우드 공급자의 파일 서비스, 자체 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 BlueXP 설명서에서 "도움말 얻기"를 참조하십시오.</block>
@@ -5123,4 +5120,18 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="2cf711540cadf3cbb4cac96dba2d9464" category="list-text">BlueXP 백업 및 복구를 사용하는 무제한 볼륨 백업이 포함되지만 프로페셔널 패키지를 사용하는 Cloud Volumes ONTAP 시스템에 대해서만 포함됩니다.</block>
   <block id="f4b04af639ebf32754e26b928989f33f" category="inline-link">BlueXP 백업 및 복구에 대한 라이센스를 설정합니다</block>
   <block id="e8b3ed24563d59f059354b6c1674f982" category="admonition">BlueXP 백업 및 복구를 위해 PAYGO 구독이 필요하지만 이 서비스 사용과 관련하여 비용은 발생하지 않습니다. BlueXP 백업 및 복구의 라이센스 설정에 대한 자세한 내용은 를 참조하십시오<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>.</block>
+  <block id="fb2530f9293a4ba59cfd3ca6492bb972" category="section-title">2023년 10월 23일</block>
+  <block id="2bc953fcced4addf338156cc4681b683" category="section-title">Azure에서 HA 다중 가용 영역 배포를 위해 새로운 영역이 지원됩니다</block>
+  <block id="13ff77e69df5acabc2f0da9e5ebc94b8" category="paragraph">현재 Azure의 다음 지역에서는 Cloud Volumes ONTAP 9.14.0 이상에 대해 가용성이 높은 다중 가용 영역 구축을 지원합니다.</block>
+  <block id="cee3f0213dd8b7eb15d7b31824e01754" category="list-text">호주 동부</block>
+  <block id="f74e1c0c8ee8410fa5bfe03676347257" category="list-text">동아시아</block>
+  <block id="bea1bd3d23555c539dab5f3f5426184c" category="list-text">프랑스 중부</block>
+  <block id="d0fe0e3b6520479f718b98f0d471b7d0" category="list-text">북유럽</block>
+  <block id="055ffb1451e38deb0c8ac651e32d77ec" category="list-text">카타르 중부</block>
+  <block id="7def8b46a24f875959130a855cd80918" category="list-text">스웨덴 중부</block>
+  <block id="8fb2033d01e3efa2825282a13f86c14e" category="list-text">서유럽</block>
+  <block id="c349d3a26cf4231660785a0c5b4cb007" category="list-text">미국 서부 2</block>
+  <block id="500a97f33bcbe3073f32ba66331ac662" category="paragraph"><block ref="dc552a90a374cbb55f942fc8465d623a" category="inline-link-macro-rx"></block>
+<block ref="c6a2e575c9cd7913e0bdc96abdd66269" category="inline-link-macro-rx"></block></block>
+  <block id="75cbcf1dd82ddd4349696999b639377f" category="paragraph"><block ref="75cbcf1dd82ddd4349696999b639377f" category="inline-link-macro-rx"></block></block>
 </blocks>

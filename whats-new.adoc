@@ -20,6 +20,30 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2023년 10월 23일
+
+Connector 3.9.34 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.
+
+
+
+=== Azure에서 HA 다중 가용 영역 배포를 위해 새로운 영역이 지원됩니다
+
+현재 Azure의 다음 지역에서는 Cloud Volumes ONTAP 9.14.0 이상에 대해 가용성이 높은 다중 가용 영역 구축을 지원합니다.
+
+* 호주 동부
+* 동아시아
+* 프랑스 중부
+* 북유럽
+* 카타르 중부
+* 스웨덴 중부
+* 서유럽
+* 미국 서부 2
+
+
+여러 가용 영역을 지원하는 모든 지역 목록은 를 참조하십시오 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure 아래의 글로벌 지역 지도"^].
+
+
+
 == 2023년 10월 6일
 
 Connector 3.9.34 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.
@@ -44,8 +68,8 @@ Connector 3.9.33 릴리스에서 다음과 같은 변경 사항이 적용되었�
 
 이제 L48s_v3 및 L64s_v3 인스턴스 유형이 Azure의 Cloud Volumes ONTAP에서 지원되므로 9.13.1 릴리즈부터 단일 및 여러 가용 영역의 공유 관리 디스크를 사용한 단일 노드 및 고가용성 쌍 구축이 가능합니다. 이러한 인스턴스 유형은 Flash Cache를 지원합니다.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure에서 Cloud Volumes ONTAP에 대해 지원되는 구성을 봅니다"]
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Azure에서 Cloud Volumes ONTAP의 스토리지 제한을 봅니다"]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure에서 Cloud Volumes ONTAP에 대해 지원되는 구성을 봅니다"^]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Azure에서 Cloud Volumes ONTAP의 스토리지 제한을 봅니다"^]
 
 
 
@@ -67,7 +91,7 @@ Google Cloud for Cloud Volumes ONTAP 9.13.1 이상에서는 Flash Cache 및 고�
 
 이러한 기능은 단일 노드 및 고가용성 쌍 구축 모두에서 개별적으로 또는 함께 사용할 수 있습니다.
 
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Google Cloud에서 Cloud Volumes ONTAP를 실행합니다"]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Google Cloud에서 Cloud Volumes ONTAP를 실행합니다"^]
 
 
 
