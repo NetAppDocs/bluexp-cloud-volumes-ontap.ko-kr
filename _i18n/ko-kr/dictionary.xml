@@ -5134,4 +5134,12 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="500a97f33bcbe3073f32ba66331ac662" category="paragraph"><block ref="dc552a90a374cbb55f942fc8465d623a" category="inline-link-macro-rx"></block>
 <block ref="c6a2e575c9cd7913e0bdc96abdd66269" category="inline-link-macro-rx"></block></block>
   <block id="75cbcf1dd82ddd4349696999b639377f" category="paragraph"><block ref="75cbcf1dd82ddd4349696999b639377f" category="inline-link-macro-rx"></block></block>
+  <block id="d58f9fdbd1d532cc694fdda41e135b6d" category="list-text">보안 그룹 설정을 VPC의 모든 트래픽으로 업데이트합니다.</block>
+  <block id="527fd1e92cffc7d0d75228da5dcf987a" category="list-text">Virtual Private Cloud에서 * Subnets * 를 클릭합니다.</block>
+  <block id="286864595e223b69a96678aa6ac91be4" category="list-text">Route table * 탭을 클릭하고 HA 쌍의 부동 IP 주소 중 하나에 대해 원하는 환경을 선택합니다.</block>
+  <block id="e460f9261a4048cd0819c3e6fab5b772" category="list-text">보안 그룹 * 을 클릭합니다.</block>
+  <block id="362c2feb62512390cc0adfe615d08b5e" category="list-text">인바운드 규칙 편집 * 을 선택합니다.</block>
+  <block id="0444b867f0aca3029a2b9ea7cd093316" category="list-text">규칙 추가 * 를 클릭합니다.</block>
+  <block id="39eb101f969fe671b016bf47de2d6d12" category="list-text">유형 아래에서 * 모든 트래픽 * 을 선택한 다음 VPC IP 주소를 선택합니다.</block>
+  <block id="20d3f54acd662a128694ddf527ea22fb" category="list-text">규칙 저장 * 을 클릭하여 변경 사항을 적용합니다.</block>
 </blocks>
