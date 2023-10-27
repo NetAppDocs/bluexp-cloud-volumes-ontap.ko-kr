@@ -32,7 +32,7 @@ image:diagram-segregate-snapmirror-traffic.png["다이어그램은 단일 노드
 
 * SnapMirror 트래픽 분리를 위해 단일 NIC를 Cloud Volumes ONTAP 단일 노드 또는 HA 쌍 구축(VM 인스턴스)에 추가할 수 있습니다.
 * 새 NIC를 추가하려면 배포하는 VM 인스턴스 유형에 미사용 NIC가 있어야 합니다.
-* 소스 및 대상 클러스터가 동일한 VNet(Virtual Network)에 있어야 하지만 동일한 서브넷에 있어서는 안 됩니다.
+* 소스 및 대상 클러스터는 동일한 VNet(Virtual Network)에 액세스할 수 있어야 합니다. 대상 클러스터는 Azure의 Cloud Volumes ONTAP 시스템입니다. 소스 클러스터는 Azure의 Cloud Volumes ONTAP 시스템 또는 ONTAP 시스템이 될 수 있습니다.
 
 
 
@@ -238,6 +238,8 @@ dest::> vserver peer show
 == 5단계: 소스 시스템과 대상 시스템 사이에 SnapMirror 복제 관계를 생성합니다
 
 이 섹션에서는 소스 시스템과 대상 시스템 간에 SnapMirror 복제 관계를 생성하는 방법에 대해 설명합니다.
+
+기존 SnapMirror 복제 관계를 이동하려면 새 SnapMirror 복제 관계를 생성하기 전에 먼저 기존 SnapMirror 복제 관계를 해제해야 합니다.
 
 다음 단계에서는 ONTAP CLI를 사용합니다.
 

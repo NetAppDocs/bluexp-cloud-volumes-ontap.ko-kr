@@ -5041,7 +5041,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="2d713c56af0861a0b0bed91ef8da2e18" category="paragraph">다음 고려 사항을 검토하십시오.</block>
   <block id="97d737a59c7e796eb8610dce5b0f817a" category="list-text">SnapMirror 트래픽 분리를 위해 단일 NIC를 Cloud Volumes ONTAP 단일 노드 또는 HA 쌍 구축(VM 인스턴스)에 추가할 수 있습니다.</block>
   <block id="933fe3c7f865ac41ceae93a6e0cb11be" category="list-text">새 NIC를 추가하려면 배포하는 VM 인스턴스 유형에 미사용 NIC가 있어야 합니다.</block>
-  <block id="e6f791d5fe8a01a86623cb53cef66120" category="list-text">소스 및 대상 클러스터가 동일한 VNet(Virtual Network)에 있어야 하지만 동일한 서브넷에 있어서는 안 됩니다.</block>
   <block id="c61486c21b19c2bf3cf6e82a2a1a645b" category="section-title">1단계: 추가 NIC를 생성하고 대상 VM에 연결합니다</block>
   <block id="d1348b7908ab7ffc3e987964d5d681f0" category="paragraph">이 섹션에서는 추가 NIC를 생성하여 대상 VM에 연결하는 방법에 대한 지침을 제공합니다. 대상 VM은 Cloud Volumes ONTAP의 Azure에서 추가 NIC를 설정하려는 단일 노드 또는 HA 쌍 시스템입니다.</block>
   <block id="faa6897ed3f655c419813b3c65575b23" category="list-text">ONTAP CLI에서 노드를 중지합니다.</block>
@@ -5142,4 +5141,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="0444b867f0aca3029a2b9ea7cd093316" category="list-text">규칙 추가 * 를 클릭합니다.</block>
   <block id="39eb101f969fe671b016bf47de2d6d12" category="list-text">유형 아래에서 * 모든 트래픽 * 을 선택한 다음 VPC IP 주소를 선택합니다.</block>
   <block id="20d3f54acd662a128694ddf527ea22fb" category="list-text">규칙 저장 * 을 클릭하여 변경 사항을 적용합니다.</block>
+  <block id="2fd1ee72a12db129de96b6606fbce188" category="list-text">소스 및 대상 클러스터는 동일한 VNet(Virtual Network)에 액세스할 수 있어야 합니다. 대상 클러스터는 Azure의 Cloud Volumes ONTAP 시스템입니다. 소스 클러스터는 Azure의 Cloud Volumes ONTAP 시스템 또는 ONTAP 시스템이 될 수 있습니다.</block>
+  <block id="53dbdce3b901c59c8d3bbdae0e91364c" category="paragraph">기존 SnapMirror 복제 관계를 이동하려면 새 SnapMirror 복제 관계를 생성하기 전에 먼저 기존 SnapMirror 복제 관계를 해제해야 합니다.</block>
 </blocks>
