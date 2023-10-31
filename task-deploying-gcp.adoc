@@ -99,7 +99,8 @@ NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.ne
 다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다. 또는 에 있는 구독 단계를 따릅니다 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Google Cloud 자격 증명과 마켓플레이스 가입 연결"^] 섹션을 참조하십시오.
 
 +
-video::video_subscribing_gcp.mp4[width=848,height=480]
+.Google Cloud 마켓플레이스에서 BlueXP를 구독하십시오
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. BlueXP 백업 및 복구를 선택하거나 BlueXP 계층화를 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.
 +
 
@@ -336,7 +337,8 @@ NOTE: BlueXP에 대해 설정한 서비스 계정입니다. link:https://docs.ne
 다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다.  또는 에 있는 구독 단계를 따릅니다 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Google Cloud 자격 증명과 마켓플레이스 가입 연결"^] 섹션을 참조하십시오.
 
 +
-video::video_subscribing_gcp.mp4[width=848,height=480]
+.Google Cloud 마켓플레이스에서 BlueXP를 구독하십시오
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . * 서비스 *: 이 시스템에서 사용할 서비스를 선택합니다. BlueXP 백업 및 복구를 선택하거나 BlueXP 계층화를 사용하려면 3단계에서 서비스 계정을 지정해야 합니다.
 +
 
