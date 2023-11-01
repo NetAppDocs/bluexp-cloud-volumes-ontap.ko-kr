@@ -5113,7 +5113,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="e8b3ed24563d59f059354b6c1674f982" category="admonition">BlueXP 백업 및 복구를 위해 PAYGO 구독이 필요하지만 이 서비스 사용과 관련하여 비용은 발생하지 않습니다. BlueXP 백업 및 복구의 라이센스 설정에 대한 자세한 내용은 를 참조하십시오<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>.</block>
   <block id="fb2530f9293a4ba59cfd3ca6492bb972" category="section-title">2023년 10월 23일</block>
   <block id="2bc953fcced4addf338156cc4681b683" category="section-title">Azure에서 HA 다중 가용 영역 배포를 위해 새로운 영역이 지원됩니다</block>
-  <block id="13ff77e69df5acabc2f0da9e5ebc94b8" category="paragraph">현재 Azure의 다음 지역에서는 Cloud Volumes ONTAP 9.14.0 이상에 대해 가용성이 높은 다중 가용 영역 구축을 지원합니다.</block>
   <block id="cee3f0213dd8b7eb15d7b31824e01754" category="list-text">호주 동부</block>
   <block id="f74e1c0c8ee8410fa5bfe03676347257" category="list-text">동아시아</block>
   <block id="bea1bd3d23555c539dab5f3f5426184c" category="list-text">프랑스 중부</block>
@@ -5151,4 +5150,10 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="20ea4c62f4c9e4254314fe7fbbef0319" category="inline-link">구독 사용량 모니터링에 대해 자세히 알아보십시오</block>
   <block id="d7105dd212dc96a8b292b6b48f84916f" category="paragraph"><block ref="d7105dd212dc96a8b292b6b48f84916f" category="inline-link-rx"></block></block>
   <block id="28ca5cda5cdef790c457097830d81ca5" category="paragraph">더 이상 BlueXP에 Keystone 구독을 사용하지 않으려는 경우 구독 링크를 해제할 수 있습니다. 기존 Cloud Volumes ONTAP 구독에 연결되지 않은 구독만 연결 해제할 수 있습니다.</block>
+  <block id="499efcb2be11e80e5bdfc003278352e3" category="section-title">2023년 11월 1일</block>
+  <block id="992f57af99811ae146ed6df67eccc26f" category="section-title">사우디아라비아 지역은 현재 Google Cloud에서 지원됩니다</block>
+  <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">사우디아라비아 지역은 현재 Google Cloud for Cloud Volumes ONTAP 및 Connector for Cloud Volumes ONTAP 9.12.1 GA 이상에서 지원됩니다.</block>
+  <block id="2bc724993144e8002899059117620062" category="inline-link">Google Cloud의 글로벌 지역 지도</block>
+  <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">모든 지역 목록은 를 참조하십시오<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>.</block>
+  <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">현재 Azure의 다음 지역에서는 Cloud Volumes ONTAP 9.12.1 GA 이상에 대해 고가용성 다중 가용성 영역 구축을 지원합니다.</block>
 </blocks>
