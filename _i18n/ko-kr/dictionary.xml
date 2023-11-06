@@ -3195,7 +3195,6 @@
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">최적화</block>
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">프로비저닝된 용량 및 I/O 작업에 대해 별도로 비용을 지불합니다.</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP 단일 노드 또는 HA</block>
-  <block id="ac8875b922d75fca71aa495c421855a6" category="list-text">충전은 스토리지와 용도(I/O)의 두 가지 비용 구성 요소를 기반으로 합니다.</block>
   <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">에지 캐시</block>
   <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">Cloud Volumes Edge Cache에 대한 라이센스를 제공합니다.</block>
   <block id="cbea577daebf267793d8d7234ee50729" category="list-text">분산 엔터프라이즈를 위한 비즈니스 연속성 및 데이터 보호 기능을 제공하는 Professional 패키지와 동일한 기능입니다</block>
@@ -3234,7 +3233,6 @@
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">* All VNets *: 인바운드 트래픽의 소스는 0.0.0.0/0 IP 범위입니다.</block>
   <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">Edge Cache 라이센스로 변경하거나 변경하는 것은 지원되지 않습니다.</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">클라우드 공급자 마켓플레이스에서 프라이빗 오퍼 또는 계약을 체결한 경우, 계약에 포함되지 않은 충전 방법으로 변경하면 BYOL(NetApp에서 라이센스를 구매한 경우) 또는 PAYGO에 대해 충전이 생성됩니다.</block>
-  <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">데이터 복제(SnapMirror) 또는 NDMP와 관련된 입출력에는 비용이 청구되지 않습니다.</block>
   <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 커넥터 및 HTTPS 액세스와의 연결</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">Cloud Volumes ONTAP HA 쌍 및 구성 요소의 개념적 이미지</block>
   <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
@@ -5156,4 +5154,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="2bc724993144e8002899059117620062" category="inline-link">Google Cloud의 글로벌 지역 지도</block>
   <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">모든 지역 목록은 를 참조하십시오<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>.</block>
   <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">현재 Azure의 다음 지역에서는 Cloud Volumes ONTAP 9.12.1 GA 이상에 대해 고가용성 다중 가용성 영역 구축을 지원합니다.</block>
+  <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">충전은 스토리지 및 사용량(I/O)의 두 가지 비용 구성 요소를 기준으로 합니다.</block>
+  <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">데이터 복제(SnapMirror), 백업(SnapVault) 또는 NDMP와 관련된 입출력에 대한 비용이 청구되지 않습니다.</block>
 </blocks>
