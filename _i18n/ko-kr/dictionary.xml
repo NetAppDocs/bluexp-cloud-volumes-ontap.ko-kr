@@ -5009,7 +5009,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="06156010b52bde259c58b15866491a02" category="paragraph">ONTAP CLI 또는 ONTAP System Manager를 사용하여 FlexCache 볼륨을 생성하고 관리할 수도 있습니다.</block>
   <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">BlueXP는 모든 새로운 Cloud Volumes ONTAP 시스템에 대한 FlexCache 라이센스를 생성합니다. 이 라이센스에는 500GiB 사용 제한이 포함됩니다.</block>
   <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023년 9월 10일</block>
-  <block id="3e34162a2379c48e3eaf3f3857b029c0" category="paragraph">Connector 3.9.33 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.</block>
   <block id="e749c9d187d1531bb81af1a3c9eb73be" category="section-title">Azure에서 Lsv3 시리즈 VM 지원</block>
   <block id="cc2bfd53f6bcbc23893aaa8fab8b1eb2" category="paragraph">이제 L48s_v3 및 L64s_v3 인스턴스 유형이 Azure의 Cloud Volumes ONTAP에서 지원되므로 9.13.1 릴리즈부터 단일 및 여러 가용 영역의 공유 관리 디스크를 사용한 단일 노드 및 고가용성 쌍 구축이 가능합니다. 이러한 인스턴스 유형은 Flash Cache를 지원합니다.</block>
   <block id="c2af1dd6b400531e930c62dad5095f7d" category="inline-link-macro">Azure에서 Cloud Volumes ONTAP에 대해 지원되는 구성을 봅니다</block>
@@ -5084,7 +5083,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">클라우드 공급자의 파일 서비스, 자체 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품의 BlueXP 설명서에서 "도움말 얻기"를 참조하십시오.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">BlueXP 및 해당 스토리지 솔루션 및 서비스에 관한 기술 지원을 받으려면 아래에 설명된 지원 옵션을 사용하십시오.</block>
   <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023년 10월 6일</block>
-  <block id="5612c729ea34f27969af31fd815184e0" category="paragraph">Connector 3.9.34 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.</block>
   <block id="44d133359b344c4542acdebe6209e101" category="section-title">Cloud Volumes ONTAP 9.14.0</block>
   <block id="c5fa627d231c9a8813c9a2421d86136f" category="paragraph">BlueXP는 이제 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.14.0 General Availability 릴리즈를 구축 및 관리할 수 있습니다.</block>
   <block id="b74a118169165fd9778df58b68c1bf8b" category="section-title">C4, M4 및 R4 EC2 인스턴스 유형으로 AWS에서 업그레이드</block>
@@ -5160,4 +5158,12 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="6d09b3b7b0c828e4faaa038218afc509" category="section-title">모든 LIF가 홈 포트에 있는지 확인합니다</block>
   <block id="4a0d5f4ccd3c4d2acc213b54daf63f9e" category="inline-link-macro">모든 LIF가 홈 포트에 있는지 확인합니다</block>
   <block id="0754aed90b1b7e3ecf810f88321b76f5" category="paragraph">업그레이드하기 전에 모든 LIF가 홈 포트에 있어야 합니다. ONTAP 설명서를 참조하십시오 <block ref="e645c13326fab640068fe44ceb8154ff" category="inline-link-macro-rx"></block>.</block>
+  <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">2023년 11월 8일</block>
+  <block id="8e40e7e4940e30b2ce260ff97ad74d25" category="paragraph">Connector 3.9.35 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.</block>
+  <block id="bbb4cf526641d95bbb8ab8bada56fa79" category="section-title">텔아비브 지역은 현재 AWS에서 지원됩니다</block>
+  <block id="04afad264aa486baec91a1ade145665a" category="paragraph">텔아비브 지역은 현재 Cloud Volumes ONTAP 9.12.1 GA 이상에 대해 AWS에서 지원됩니다.</block>
+  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">AWS에 따른 글로벌 지역 지도</block>
+  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">모든 지역 목록은 를 참조하십시오<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
+  <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">커넥터 3.9.34 릴리스에서 다음과 같은 변경 사항이 도입되었습니다.</block>
+  <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">Connector 3.9.33 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.</block>
 </blocks>
