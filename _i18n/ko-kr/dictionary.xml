@@ -5156,4 +5156,8 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">충전은 스토리지 및 사용량(I/O)의 두 가지 비용 구성 요소를 기준으로 합니다.</block>
   <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">데이터 복제(SnapMirror), 백업(SnapVault) 또는 NDMP와 관련된 입출력에 대한 비용이 청구되지 않습니다.</block>
   <block id="0b8c1e660d75aa2bec12f002f097dcab" category="list-title">여러 가용 영역에 공유 관리형 디스크가 있는 HA Pair</block>
+  <block id="a710c8d7ee654ea3241f1b07f9f7de05" category="list-text"><block ref="de989a17a1629831650b134e00461edd" category="inline-xref-macro-rx"></block></block>
+  <block id="6d09b3b7b0c828e4faaa038218afc509" category="section-title">모든 LIF가 홈 포트에 있는지 확인합니다</block>
+  <block id="4a0d5f4ccd3c4d2acc213b54daf63f9e" category="inline-link-macro">모든 LIF가 홈 포트에 있는지 확인합니다</block>
+  <block id="0754aed90b1b7e3ecf810f88321b76f5" category="paragraph">업그레이드하기 전에 모든 LIF가 홈 포트에 있어야 합니다. ONTAP 설명서를 참조하십시오 <block ref="e645c13326fab640068fe44ceb8154ff" category="inline-link-macro-rx"></block>.</block>
 </blocks>
