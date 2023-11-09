@@ -889,7 +889,6 @@
   <block id="c1b0fccfdff9ac3307a1dde73fefce36" category="paragraph">비활성 데이터를 저비용 오브젝트 스토리지로 자동 계층화하여 스토리지 비용을 절감합니다. 활성 데이터는 고성능 SSD 또는 HDD에 남아 있고 비활성 데이터는 저비용 오브젝트 스토리지로 계층화되어 있습니다. 따라서 운영 스토리지의 공간을 재확보하고 2차 스토리지를 축소할 수 있습니다.</block>
   <block id="4a399275f88e7ce2505e96b9b7f521b9" category="inline-image-macro">이것은 EBS 스토리지로 이동하는 핫 데이터와 S3 스토리지로 이동하는 비활성 데이터를 보여주는 개념적 이미지입니다.</block>
   <block id="3d3b4afad1ee8976c0e2861a36e95c05" category="paragraph"><block ref="3d3b4afad1ee8976c0e2861a36e95c05" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="79a1ac94d3a1278dbc40ff2a430fa52a" category="admonition">FabricPool(데이터 계층화)를 사용하기 위해 기능 라이센스를 설치할 필요가 없습니다.</block>
   <block id="e452e8c25e7bc8d94f88ce5a25cbbf4a" category="section-title">AWS의 데이터 계층화</block>
   <block id="d6a11de1ddf26c52daac1219f9ab237d" category="paragraph">AWS에서 데이터 계층화를 활성화하면 Cloud Volumes ONTAP은 EBS를 핫 데이터의 성능 계층으로, AWS S3를 비활성 데이터의 용량 계층으로 사용합니다.</block>
   <block id="9a817efc11f456e69cd659f0afd9447b" category="list-text">성능 계층</block>
@@ -2604,7 +2603,6 @@
   <block id="d17c4281542937487475a76b3afea508" category="doc">Google Cloud의 고가용성 쌍</block>
   <block id="36b2e0baf475c546a7d804d50bd41be4" category="paragraph">Cloud Volumes ONTAP HA(고가용성) 구성은 무중단 운영 및 내결함성을 제공합니다. Google Cloud에서는 두 노드 간에 데이터를 동기식으로 미러링합니다.</block>
   <block id="f406c9d6eeead7db4c0d7c4436e4365f" category="paragraph">Google Cloud의 Cloud Volumes ONTAP HA 구성에는 다음과 같은 구성요소가 포함됩니다.</block>
-  <block id="89f3aa2399b6fb2684acf4e64a1b95ad" category="paragraph">데이터 계층화는 FabricPool 기술을 기반으로 합니다.</block>
   <block id="3844834e9306a66948e49d6149c5a299" category="section-title">Google Cloud의 데이터 계층화</block>
   <block id="f6535844f45781691afa19e3fe67a627" category="paragraph">Google Cloud에서 데이터 계층화를 활성화하면 Cloud Volumes ONTAP은 핫 데이터를 위한 성능 계층으로 영구 디스크를 사용하고 비활성 데이터를 위한 용량 계층으로 Google Cloud Storage 버킷을 사용합니다.</block>
   <block id="2bae3f4058e112cc703c4dc74dc72501" category="paragraph">모든 유형의 단일 노드 시스템 및 일부 HA 쌍 구성에서 고속 쓰기 속도가 지원됩니다. 에서 지원되는 구성을 봅니다<block ref="d080347ff89205e9b3e508b1fee0c025" category="inline-link-rx"></block></block>
@@ -5166,4 +5164,5 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">모든 지역 목록은 를 참조하십시오<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">커넥터 3.9.34 릴리스에서 다음과 같은 변경 사항이 도입되었습니다.</block>
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">Connector 3.9.33 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.</block>
+  <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">데이터 계층화는 FabricPool 기술을 기반으로 합니다. Cloud Volumes ONTAP는 모든 Cloud Volumes ONTAP 클러스터에 데이터 계층화를 제공합니다. 데이터 계층화를 사용하면 오브젝트 스토리지로 계층화된 데이터에 요금이 발생합니다. 오브젝트 스토리지 비용에 대한 자세한 내용은 클라우드 공급자의 문서를 참조하십시오.</block>
 </blocks>
