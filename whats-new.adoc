@@ -20,6 +20,20 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2023년 11월 10일
+
+Connector 3.9.35 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.
+
+
+
+=== 독일 지역은 현재 Google Cloud에서 지원됩니다
+
+독일 지역은 현재 Google Cloud for Cloud Volumes ONTAP 및 Connector for Cloud Volumes ONTAP 9.12.1 GA 이상에서 지원됩니다.
+
+모든 지역 목록은 를 참조하십시오 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud의 글로벌 지역 지도"^].
+
+
+
 == 2023년 11월 8일
 
 Connector 3.9.35 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.

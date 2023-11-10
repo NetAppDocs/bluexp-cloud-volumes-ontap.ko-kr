@@ -5165,4 +5165,7 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">커넥터 3.9.34 릴리스에서 다음과 같은 변경 사항이 도입되었습니다.</block>
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">Connector 3.9.33 릴리스에서 다음과 같은 변경 사항이 적용되었습니다.</block>
   <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">데이터 계층화는 FabricPool 기술을 기반으로 합니다. Cloud Volumes ONTAP는 모든 Cloud Volumes ONTAP 클러스터에 데이터 계층화를 제공합니다. 데이터 계층화를 사용하면 오브젝트 스토리지로 계층화된 데이터에 요금이 발생합니다. 오브젝트 스토리지 비용에 대한 자세한 내용은 클라우드 공급자의 문서를 참조하십시오.</block>
+  <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">2023년 11월 10일</block>
+  <block id="1e8bf13d2a6124785fff6ed75b8efe5d" category="section-title">독일 지역은 현재 Google Cloud에서 지원됩니다</block>
+  <block id="1eb6caf052a1ca736597d3e01c5333f9" category="paragraph">독일 지역은 현재 Google Cloud for Cloud Volumes ONTAP 및 Connector for Cloud Volumes ONTAP 9.12.1 GA 이상에서 지원됩니다.</block>
 </blocks>
