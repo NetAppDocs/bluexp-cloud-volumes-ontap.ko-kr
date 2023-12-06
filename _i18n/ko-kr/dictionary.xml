@@ -5184,4 +5184,9 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="92e19d728517dc371c0f37ee23fa9d03" category="list-text">아랍 에미리트 북쪽으로</block>
   <block id="343c78956fe2e30b58a341de94a8673a" category="list-text">중국 북부 3</block>
   <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">모든 지역 목록은 를 참조하십시오<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
+  <block id="cfa3976fbec6c6f7dfd434e6d66eb83a" category="list-text">9.14.1 RC1</block>
+  <block id="a037be7aafc2f071c4517e8f2c6e58e9" category="section-title">2023년 12월 6일</block>
+  <block id="4a76045b19fb3233070f77ae414d5810" category="section-title">Cloud Volumes ONTAP 9.14.1 RC1</block>
+  <block id="efb4d9478ba663f514e18b3310c2de65" category="paragraph">BlueXP는 이제 AWS, Azure 및 Google Cloud에 Cloud Volumes ONTAP 9.14.1을 구축 및 관리할 수 있습니다.</block>
+  <block id="d544ab02530940d46c43ea00a73d59d3" category="cell">9.14.1</block>
 </blocks>
