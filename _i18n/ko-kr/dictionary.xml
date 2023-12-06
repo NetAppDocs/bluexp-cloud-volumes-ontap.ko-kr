@@ -5168,4 +5168,20 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">2023년 11월 10일</block>
   <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">베를린 지역은 현재 Google Cloud에서 지원됩니다</block>
   <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">베를린 지역은 현재 Google Cloud for Cloud Volumes ONTAP 9.12.1 GA 이상에서 지원됩니다.</block>
+  <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">2023년 12월 5일</block>
+  <block id="1fdbf90814a4e25f5b9e765470846181" category="paragraph">다음과 같은 변경 사항이 적용되었습니다.</block>
+  <block id="de3678aecacdbfc2cde1f365589103a8" category="section-title">Azure의 새로운 지역 지원</block>
+  <block id="2d87524b148f67773bbd84eaceabd1a8" category="section-title">단일 가용 영역 지역 지원</block>
+  <block id="b778fb7051f3e08881d95bd99b033b37" category="paragraph">현재 다음 지역에서는 Cloud Volumes ONTAP 9.12.1 GA 이후 버전용 Azure에서 가용성이 높은 단일 가용 영역 배포를 지원합니다.</block>
+  <block id="b5eed9442adc540b3e59ae08aa129632" category="list-text">텔아비브</block>
+  <block id="437d461430ecc08e2d51abbcf5ce9b3c" category="list-text">밀라노</block>
+  <block id="657afe0033330876ccc58b79bded6c83" category="section-title">여러 가용 영역 지역 지원</block>
+  <block id="20576a03f90633178b591a3e73ee5d59" category="paragraph">현재 다음 지역에서는 Cloud Volumes ONTAP 9.12.1 GA 이후 버전용 Azure에서 가용성이 높은 다중 가용 영역 배포를 지원합니다.</block>
+  <block id="910918c80516a55b4ba940f0b485cea1" category="list-text">중부 인도</block>
+  <block id="e57064b31b815fd4c1124aa7f2cc1fd4" category="list-text">노르웨이 동부</block>
+  <block id="524a897e665c757be360f9ceaca6b0a5" category="list-text">스위스 북부</block>
+  <block id="d5daca31a462e138266141f6d01ca814" category="list-text">남아프리카 북부에 있습니다</block>
+  <block id="92e19d728517dc371c0f37ee23fa9d03" category="list-text">아랍 에미리트 북쪽으로</block>
+  <block id="343c78956fe2e30b58a341de94a8673a" category="list-text">중국 북부 3</block>
+  <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">모든 지역 목록은 를 참조하십시오<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
 </blocks>
