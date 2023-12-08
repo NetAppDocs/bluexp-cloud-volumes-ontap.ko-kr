@@ -5188,4 +5188,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="7df51deb241262b7a30e9f895e6b3b75" category="paragraph">공유 관리 디스크가 있는 Azure HA 단일 가용 영역</block>
   <block id="75b5d41c945fb77a44a02275e5167f03" category="paragraph">Azure HA 공유 관리 디스크가 있는 여러 가용 영역</block>
   <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다. 생성 중에 스토리지 계정을 암호화하려면 CVO 생성 요청에서 리소스 ID를 생성하고 제공해야 합니다. 이는 모든 유형의 배포에 적용됩니다. 제공하지 않으면 저장소 계정은 여전히 암호화되지만 BlueXP는 먼저 Microsoft 관리 키 암호화를 사용하여 저장소 계정을 만든 다음 고객이 관리하는 키를 사용하도록 저장소 계정을 업데이트합니다.</block>
+  <block id="3d398b97e4c42f1072862ca68a5330e0" category="inline-link-macro">기술 문서 "Cloud Volumes ONTAP 업그레이드 실패"</block>
+  <block id="73f61210747fe91bea8a184200d3fcc5" category="paragraph">업그레이드 실패 오류가 발생하면 를 참조하십시오 <block ref="60b526b210a3d8d7f028168de61b0c4a" category="inline-link-macro-rx"></block>.</block>
 </blocks>

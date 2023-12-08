@@ -277,6 +277,8 @@ image:screenshots_aggregate_details_state.png["스크린샷: 집계에 대한 �
 
 업그레이드하기 전에 모든 LIF가 홈 포트에 있어야 합니다. ONTAP 설명서를 참조하십시오 link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["모든 LIF가 홈 포트에 있는지 확인합니다"].
 
+업그레이드 실패 오류가 발생하면 를 참조하십시오 link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["기술 문서 "Cloud Volumes ONTAP 업그레이드 실패""].
+
 
 
 == Cloud Volumes ONTAP를 업그레이드합니다
