@@ -5,15 +5,12 @@ keywords: encrypt, encryption, data, volumes, netapp volume encryption, volume e
 summary: 'Cloud Volumes ONTAP는 외부 키 관리자로 NVE(NetApp Volume Encryption) 및 NAE(NetApp Aggregate Encryption)를 지원합니다. 외부 키 관리자를 설정하면 NVE와 NAE가 기본적으로 활성화됩니다.' 
 ---
 = NetApp 암호화 솔루션으로 볼륨 암호화
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
