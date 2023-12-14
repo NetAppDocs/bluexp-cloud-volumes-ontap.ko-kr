@@ -45,7 +45,7 @@ link:reference-networking-azure.html["네트워킹 요구 사항에 대해 자�
 
 .관련 링크
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["BlueXP에서 커넥터 만들기"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure.html["Azure Marketplace에서 커넥터 만들기"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html["Azure Marketplace에서 커넥터 만들기"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Linux 호스트에 Connector 소프트웨어 설치"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["권한을 가진 BlueXP의 기능"^]
 

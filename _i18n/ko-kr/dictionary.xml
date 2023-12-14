@@ -3698,7 +3698,6 @@
   <block id="6f08ec81b4927997ffedc134bef57095" category="admonition">클라우드 공급자로부터 구입한 총 스토리지 양은 _raw capacity_입니다. 가용 용량은 약 12~14%가 Cloud Volumes ONTAP용으로 예약된 오버헤드이므로 _ 이(가) 적습니다. 예를 들어, BlueXP가 500GiB 애그리게이트를 생성할 경우 가용 용량은 442.94GiB입니다.</block>
   <block id="edeea5f1bc7f7fc7a2966961ec39210e" category="sidebar">BlueXP에서 스토리지 VM과 작업합니다</block>
   <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">BlueXP 웹 사이트 블로그</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">모든 BlueXP 설명서</block>
   <block id="619dc876da25600cdf36ffbec25d908e" category="summary">Cloud Volumes ONTAP는 Azure 리소스 그룹 이동을 지원하지만 워크플로는 Azure 콘솔에서만 실행됩니다.</block>
   <block id="6c2dc09b272a4aed6d56a3438a190129" category="doc">리소스 그룹 이동 중</block>
   <block id="26d9e2ceeedec062543b6a4a27db01a1" category="paragraph">동일한 Azure 가입 내에서 하나의 리소스 그룹에서 Azure의 다른 리소스 그룹으로 작업 환경을 이동할 수 있습니다. 서로 다른 Azure 구독 간에 리소스 그룹을 이동하는 것은 지원되지 않습니다.</block>
@@ -4730,7 +4729,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="111605ffc2720ee271322511d8e418e9" category="list-text">BlueXP에 NSS 계정을 등록하지 않은 경우<block ref="fa1dd20a91aad716fe7b27583a904c1e" category="inline-link-rx"></block> 그런 다음 Active IQ 디지털 자문 UI가 나타납니다.</block>
   <block id="f9a3a3f013c1705985786496412a0de0" category="paragraph">가 없는 경우<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> 그러나 계정 관리자는 계정을 만들어야 합니다.<block ref="de51f8f797fd6bb6357ef338b87ca66d" category="inline-link-rx"></block></block>
   <block id="de6c35943505135e58a4af4389b1768d" category="list-text"><block ref="de6c35943505135e58a4af4389b1768d" category="inline-link-rx"></block></block>
-  <block id="8529c592033773e796216d83dbb6e52a" category="list-text"><block ref="8529c592033773e796216d83dbb6e52a" category="inline-link-rx"></block></block>
   <block id="9ae78035ef81aaff6187ef9a11cd1f03" category="list-text"><block ref="9ae78035ef81aaff6187ef9a11cd1f03" category="inline-link-rx"></block></block>
   <block id="08922f23ed9079ed0750935efad792c1" category="admonition">커넥터에 대한 정보를 찾고 계십니까?<block ref="a05739e7bce05bd7a830b46920675255" category="inline-link-rx"></block></block>
   <block id="081496cbc3abd2aa45670e7415b9b307" category="list-text"><block ref="081496cbc3abd2aa45670e7415b9b307" category="inline-link-rx"></block></block>
@@ -5190,4 +5188,5 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다. 생성 중에 스토리지 계정을 암호화하려면 CVO 생성 요청에서 리소스 ID를 생성하고 제공해야 합니다. 이는 모든 유형의 배포에 적용됩니다. 제공하지 않으면 저장소 계정은 여전히 암호화되지만 BlueXP는 먼저 Microsoft 관리 키 암호화를 사용하여 저장소 계정을 만든 다음 고객이 관리하는 키를 사용하도록 저장소 계정을 업데이트합니다.</block>
   <block id="3d398b97e4c42f1072862ca68a5330e0" category="inline-link-macro">기술 문서 "Cloud Volumes ONTAP 업그레이드 실패"</block>
   <block id="73f61210747fe91bea8a184200d3fcc5" category="paragraph">업그레이드 실패 오류가 발생하면 를 참조하십시오 <block ref="60b526b210a3d8d7f028168de61b0c4a" category="inline-link-macro-rx"></block>.</block>
+  <block id="9239af3d88d2e7788330e1bb0d8cd044" category="list-text"><block ref="9239af3d88d2e7788330e1bb0d8cd044" category="inline-link-rx"></block></block>
 </blocks>
