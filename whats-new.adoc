@@ -20,6 +20,24 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2024년 1월 8일
+
+
+
+=== Azure에 대한 새로운 VM이 여러 가용 영역
+
+Cloud Volumes ONTAP 9.13.1부터 다음 VM 유형은 신규 및 기존 고가용성 쌍 구축에 Azure 다중 가용성 영역을 지원합니다.
+
+* L16s_v3
+* L32s_v3
+* L48s_v3를 참조하십시오
+* L64s_v3을 참조하십시오
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure에서 지원되는 구성"^]
+
+
+
 == 2023년 12월 6일
 
 

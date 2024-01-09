@@ -5189,4 +5189,13 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="3d398b97e4c42f1072862ca68a5330e0" category="inline-link-macro">기술 문서 "Cloud Volumes ONTAP 업그레이드 실패"</block>
   <block id="73f61210747fe91bea8a184200d3fcc5" category="paragraph">업그레이드 실패 오류가 발생하면 를 참조하십시오 <block ref="60b526b210a3d8d7f028168de61b0c4a" category="inline-link-macro-rx"></block>.</block>
   <block id="9239af3d88d2e7788330e1bb0d8cd044" category="list-text"><block ref="9239af3d88d2e7788330e1bb0d8cd044" category="inline-link-rx"></block></block>
+  <block id="fd9107be3db2a4144e054c68a7eab15f" category="section-title">2024년 1월 8일</block>
+  <block id="dba248d0d18e6170f9bd4a4286edda53" category="section-title">Azure에 대한 새로운 VM이 여러 가용 영역</block>
+  <block id="c8d113632e2ef2b901829a0843658f2c" category="paragraph">Cloud Volumes ONTAP 9.13.1부터 다음 VM 유형은 신규 및 기존 고가용성 쌍 구축에 Azure 다중 가용성 영역을 지원합니다.</block>
+  <block id="ceac2355e7d70d7e31592bc8ded88ab3" category="list-text">L16s_v3</block>
+  <block id="2b89a58d3269391f70f9c7fb8d68f746" category="list-text">L32s_v3</block>
+  <block id="c7316b16841dc002d14d45c38a750287" category="list-text">L48s_v3를 참조하십시오</block>
+  <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="list-text">L64s_v3을 참조하십시오</block>
+  <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link-macro">Azure에서 지원되는 구성</block>
+  <block id="22342037237200e034fd29c9cfd5bfd4" category="paragraph"><block ref="22342037237200e034fd29c9cfd5bfd4" category="inline-link-macro-rx"></block></block>
 </blocks>
