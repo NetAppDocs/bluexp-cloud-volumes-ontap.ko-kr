@@ -3375,7 +3375,6 @@
   <block id="a972bcad179af301a93e1049da5fbbbb" category="paragraph">BlueXP는 HA 쌍에서 SVM 관리 LIF를 생성하지만 Azure의 단일 노드 시스템에서는 생성한 것이 아닙니다.</block>
   <block id="6065260b6e2ca957f806162cf33800f6" category="paragraph">비즈니스 요구 사항에 따라 필요한 경우 비공개 링크 연결을 비활성화할 수도 있습니다. 링크를 사용하지 않도록 설정하면 BlueXP는 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성합니다.</block>
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">Azure 리소스 그룹에 두 번째 Cloud Volumes ONTAP HA 쌍을 배포하려고 하면 BlueXP에서 연결 문제가 발생합니다.</block>
-  <block id="196affcedcabdcd9243dfaab58327dae" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Azure 보안 그룹을 만듭니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="4350eea5911affd7e2c237dd5705777c" category="list-text">BlueXP는 Cloud Volumes ONTAP를 배포할 때 데이터 서비스 스토리지 VM을 하나만 생성합니다. 일부 구성은 추가 스토리지 VM을 지원합니다. <block ref="a7cc00a0b341c53959a0ff9bb9ec925b" category="inline-link-macro-rx"></block>.</block>
   <block id="d3ba63f114f62f143d97434a92eb48a8" category="paragraph">BlueXP 3.9.5 릴리스부터는 초기 스토리지 VM에서 논리적 공간 보고가 활성화됩니다. 공간이 논리적으로 보고되면 ONTAP에서는 스토리지 효율성 기능으로 절약된 모든 물리적 공간이 사용된 것으로 보고하도록 볼륨 공간을 보고합니다.</block>
   <block id="0dbf08a19cabe7472c89a9c1e7157737" category="list-text">BlueXP는 Cloud Volumes ONTAP에 다음과 같은 ONTAP 기능 라이센스를 자동으로 설치합니다.</block>
@@ -3954,7 +3953,6 @@
   <block id="0fc9a4a783a2856e3a35ee9b12a2f357" category="paragraph">HA 구성을 위해서는 4개의 가상 프라이빗 클라우드(VPC)가 필요합니다. Google Cloud에서는 각 네트워크 인터페이스가 별도의 VPC 네트워크에 상주해야 하므로 4대의 VPC가 필요합니다.</block>
   <block id="74cd215a46d2bd96fc35dad7ef313283" category="section-title">서브넷</block>
   <block id="53c6f0799470bd2e67e7902192e11c7c" category="paragraph">Google Cloud의 Cloud Volumes ONTAP 시스템과 다른 네트워크의 ONTAP 시스템 간에 데이터를 복제하려면 VPC와 기업 네트워크 같은 다른 네트워크 간에 VPN 연결이 있어야 합니다.</block>
-  <block id="8bb6cd6de4a896f626b89e711d40aa4c" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Google Cloud 방화벽 규칙을 생성합니다. 테스트 목적으로 또는 자체 방화벽 규칙을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="30f3abb35963e0cd7d66dc08581087c9" category="paragraph">Cloud Volumes ONTAP의 방화벽 규칙에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다. HA 구성을 구축할 경우 VPC-0의 Cloud Volumes ONTAP에 대한 방화벽 규칙입니다.</block>
   <block id="cb97a2b297b246ea14d6c17e8e5ee28a" category="list-text">VPC-0의 HA 구성 요소에 대한 하나의 규칙 세트 이러한 규칙을 통해 Cloud Volumes ONTAP에 대한 데이터 액세스가 가능합니다.</block>
   <block id="ae2d87942e6697528344ccace68364e3" category="section-title">VPC-1, VPC-2 및 VPC-3에 대한 규칙</block>
@@ -4009,7 +4007,6 @@
   <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">* Google Cloud의 데이터 계층화 *: 초기 애그리게이트에서 데이터 계층화를 사용할지 여부를 선택하고, 계층형 데이터에 대한 스토리지 클래스를 선택한 다음 사전 정의된 스토리지 관리 역할이 있는 서비스 계정을 선택합니다.</block>
   <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">반 배정 그룹 생성을 구성합니다</block>
   <block id="f1e89d709c35aed2650bbf12a55f1ba1" category="list-text"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block></block>
-  <block id="2626748206273dbf0d13d2fffdb79c5b" category="summary">BlueXP는 Cloud Volumes ONTAP의 성공적인 운영에 필요한 인바운드 및 아웃바운드 규칙을 포함하는 AWS 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="eb19784d052e3e9a0aa941090082ebbe" category="inline-link">Connector에 대한 보안 그룹 규칙을 봅니다</block>
   <block id="a6c935eff93c3c2a81864fdabc1d1951" category="inline-link">Connector의 방화벽 규칙을 봅니다</block>
   <block id="e22a4abc98b47ca148e0dfda7e259162" category="inline-link">Google Cloud의 방화벽 규칙</block>
@@ -5198,4 +5195,7 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="list-text">L64s_v3을 참조하십시오</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link-macro">Azure에서 지원되는 구성</block>
   <block id="22342037237200e034fd29c9cfd5bfd4" category="paragraph"><block ref="22342037237200e034fd29c9cfd5bfd4" category="inline-link-macro-rx"></block></block>
+  <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Azure 보안 그룹을 만듭니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
+  <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP는 Cloud Volumes ONTAP의 성공적인 운영에 필요한 인바운드 및 아웃바운드 규칙을 포함하는 AWS 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
+  <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Google Cloud 방화벽 규칙을 생성합니다. 테스트용으로 또는 자체 방화벽 규칙을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
 </blocks>
