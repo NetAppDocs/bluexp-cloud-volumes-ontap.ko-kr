@@ -44,10 +44,6 @@ BlueXP 및 해당 스토리지 솔루션 및 서비스에 관한 기술 지원�
 +
 BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 새 토론을 만드십시오.
 
-* mailto:ng-cloudmanager-feedback@netapp.com [피드백 이메일]
-+
-저희는 귀하의 의견을 소중하게 생각합니다. BlueXP 개선에 도움이 되는 피드백을 제출하십시오.
-
 
 
 
