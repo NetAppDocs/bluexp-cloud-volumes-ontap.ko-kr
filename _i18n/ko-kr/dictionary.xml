@@ -4804,7 +4804,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="0882685275009e45f6167bce4081e668" category="list-text">액세스 정책을 검토하고 생성합니다.</block>
   <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">을 포함합니다<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> 스토리지 계정 암호화에 사용할 이 리소스를 생성한 경우 필드입니다.</block>
   <block id="57a3061930625af99195891e9e561fb2" category="cell">9.13.1</block>
-  <block id="24eacd330f66ba30cc845660c1efa967" category="list-text">패치(P) 릴리스의 경우 한 버전 릴리즈에서 다음 버전의 모든 P 릴리즈로 업그레이드할 수 있습니다.</block>
   <block id="99430eacf0d5244d50939eea94bd5962" category="paragraph">다음은 몇 가지 예입니다.</block>
   <block id="1893a0478b381d08866888a1c7f8607a" category="list-text">9.13.0 &gt; 9.13.1P15</block>
   <block id="4ae2d614cc725ba442c80c740c08f75f" category="list-text">9.12.1&gt;9.13.1P2</block>
@@ -5195,10 +5194,18 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP는 Cloud Volumes ONTAP의 성공적인 운영에 필요한 인바운드 및 아웃바운드 규칙을 포함하는 AWS 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Google Cloud 방화벽 규칙을 생성합니다. 테스트용으로 또는 자체 방화벽 규칙을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="f297f6161ef6c027c4e0cd622d4c9f53" category="paragraph">ARP 기능은 노드 기반 및 용량 기반 라이센스 모델 모두에서 BYOL 라이센스와 함께 사용할 수 있습니다(1-36개월 조건). Cloud Volumes ONTAP의 ARP 기능과 함께 사용하기 위해 별도의 새 애드온 라이센스를 구입하려면 NetApp 영업 담당자에게 문의해야 합니다.</block>
-  <block id="69f67d4caf75d0a80b925b65a04419a0" category="paragraph">ARP 라이센스는 "유동" 라이센스로 간주되며, 이는 단일 Cloud Volumes ONTAP 인스턴스에 바인딩되지 않고 여러 Cloud Volumes ONTAP 환경에 적용될 수 있음을 의미합니다.</block>
   <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">노드 기반 Cloud Volumes ONTAP 라이센스가 있는 ARP 기능의 사용은 현재 디지털 지갑에 반영되지 않습니다. 노드 기반 ARP 사용을 볼 수 있는 기능은 향후 릴리스의 Digital Wallet에서 사용할 수 있습니다.</block>
   <block id="36228eb2dbf48b5f5e080f1abf747714" category="paragraph">추가 라이센스를 구입하여 디지털 지갑에 추가하면 Cloud Volumes ONTAP를 사용하여 볼륨별로 ARP를 활성화할 수 있습니다. ARP에 대한 충전은 ARP 기능이 활성화된 볼륨의 총 프로비저닝 용량에 따라 볼륨 레벨에서 측정됩니다. 최소 라이센스 용량은 1TB입니다. 그러나 ARP 기능에 대한 최소 용량 충전은 없습니다.</block>
-  <block id="2a51dc407e4b9108dfb0e2caff776939" category="paragraph">ARP가 활성화된 볼륨은 "학습 모드" 또는 "활성" 상태로 지정되어 있습니다. ARP 상태가 "Disabled"인 볼륨은 충전에서 제외됩니다. 예를 들어, 프로비저닝 용량이 30TiB인 Cloud Volumes ONTAP 환경에서는 ARP가 활성화된 15TiB 볼륨의 서브셋만 사용하도록 선택할 수 있습니다.</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">볼륨에 대한 ARP 구성은 ONTAP 시스템 관리자 및 ONTAP CLI를 통해 수행됩니다.</block>
   <block id="41040f9c93f65d2edb4f6b2d1dc680a4" category="admonition">저장 공간 및 네트워크 사용량은 2진 기가바이트(GB)로 계산되며, 여기서 1GB는 2 30바이트입니다. 이 측정 단위는 지비바이트(GiB)라고도 합니다. 마찬가지로 1TB는 240바이트, 즉 1024GB입니다.</block>
+  <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024년 1월 16일</block>
+  <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXP의 패치 릴리즈</block>
+  <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXP에서 패치 릴리즈는 최신 3가지 버전의 Cloud Volumes ONTAP에 대해서만 사용할 수 있습니다.</block>
+  <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
+  <block id="fa8624c42ea6d2ce73d1dbb434c41dc8" category="paragraph">ARP 라이센스는 "유동" 라이센스로 간주되며, 이는 단일 Cloud Volumes ONTAP 인스턴스에 바인딩되지 않고 여러 Cloud Volumes ONTAP 환경에 적용될 수 있음을 의미합니다.</block>
+  <block id="a7453af7846f7db9aba5aa90fa8093e5" category="paragraph">ARP가 활성화된 볼륨은 "학습 모드" 또는 "활성" 상태로 지정되어 있습니다. ARP 상태가 "Disabled"인 볼륨은 충전에서 제외됩니다. 예를 들어, 프로비저닝 용량이 30TiB인 Cloud Volumes ONTAP 환경에서는 ARP가 활성화된 15TiB 볼륨의 서브셋만 사용하도록 선택할 수 있습니다.</block>
+  <block id="677ee5101eb2acd8a357643d03784fa7" category="section-title">패치 릴리스</block>
+  <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">ONTAP 이미지를 다운로드하는 중입니다</block>
+  <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">2024년 1월부터 패치 업그레이드는 Cloud Volumes ONTAP의 3가지 최신 버전에 대한 패치 릴리즈인 경우에만 BlueXP에서 사용할 수 있습니다. 최신 GA 릴리즈를 사용하여 BlueXP에 표시할 3가지 최신 버전을 결정합니다. 예를 들어, 현재 GA 릴리즈가 9.13.1인 경우 9.11.1~9.13.1용 패치가 BlueXP에 표시됩니다. 버전 9.11.1 이하의 패치 릴리스로 업그레이드하려면 에서 수동 업그레이드 절차를 사용해야 합니다 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>.</block>
+  <block id="b0b450f5a78908e6b78f5c13bf6b0da4" category="paragraph">패치(P) 릴리스의 일반적인 규칙으로, 하나의 버전 릴리스에서 실행 중인 현재 버전 또는 다음 버전의 P-릴리스로 업그레이드할 수 있습니다.</block>
 </blocks>

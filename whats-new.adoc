@@ -20,6 +20,18 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2024년 1월 16일
+
+
+
+=== BlueXP의 패치 릴리즈
+
+BlueXP에서 패치 릴리즈는 최신 3가지 버전의 Cloud Volumes ONTAP에 대해서만 사용할 수 있습니다.
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#patch-releases["Cloud Volumes ONTAP를 업그레이드합니다"^]
+
+
+
 == 2024년 1월 8일
 
 
