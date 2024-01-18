@@ -30,6 +30,7 @@ AKV를 사용할 때는 기본적으로 데이터 SVM LIF가 클라우드 키 �
 
 .제한 사항
 * AKV는 데이터 SVM에서만 구성할 수 있습니다
+* NAE는 AKV로 사용할 수 없습니다. NAE는 외부 지원 KMIP 서버가 필요합니다.
 
 
 
@@ -149,7 +150,12 @@ image:screenshot-azure-service-endpoints-services.png["선택한 서비스 세 �
 
 
 . 응용 프로그램 등록 후 저장된 클라이언트 ID 및 테넌트 ID를 사용하여 Azure Key Vault를 활성화합니다.
-`security key-manager external azure enable -vserver _SVM_name_ -client-id _Azure_client_ID_ -tenant-id _Azure_tenant_ID_ -name _Azure_key_vault_name_ -key-id _Azure_key_ID_`
+`security key-manager external azure enable -vserver _SVM_name_ -client-id _Azure_client_ID_ -tenant-id _Azure_tenant_ID_ -name _key_vault_URI_ -key-id _full_key_URI_`
++
+
+NOTE: 를 클릭합니다 `_full_key_URI` 값은 을 사용해야 합니다 `<https:// <key vault host name>/keys/<key label>` 형식.
+
+. Azure Key Vault가 활성화되면 를 입력합니다 `client secret value` 메시지가 표시되면
 . Key Manager의 상태를 확인한다. '보안 Key-manager external Azure check' 출력 내용은 다음과 같다.
 +
 [source]
