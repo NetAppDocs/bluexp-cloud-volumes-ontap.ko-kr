@@ -3103,7 +3103,6 @@
   <block id="10297bdbea13a5f039ea0c228d352388" category="section-title">최소 충전</block>
   <block id="2f3cbf00c1fc3c4ac211dcbe5883292c" category="paragraph">아직 볼륨을 프로비저닝하지 않은 경우 최소 요금이 적용되지 않습니다.</block>
   <block id="bec8a1d5f2dd848ffc437304b7f6557d" category="section-title">초과</block>
-  <block id="1d47f9c9e82cf7214539548fd5c31bc6" category="paragraph">Essentials 패키지를 사용하면 배포 유형(HA 또는 단일 노드) 및 볼륨 유형(기본 또는 보조)으로 비용이 청구됩니다. 예를 들어, _Essentials HA_의 가격이 _Essentials 보조 HA_와 다릅니다.</block>
   <block id="ecc429e82f6e54d1b5ef6c8bb4a49308" category="paragraph">예를 들어, Essentials 패키지에 대해 다음 라이선스를 보유하고 있다고 가정해 보겠습니다.</block>
   <block id="afac41d47fd5a7a0fff54c7d4dcc9ac8" category="list-text">500TiB_Essentials 보조 HA_license에 커밋된 용량이 500TiB입니다</block>
   <block id="1ce6ab2d6dbcea26717506a031dde30c" category="list-text">100TiB의 커밋된 용량만 있는 500TiB_Essentials 단일 Node_license</block>
@@ -4521,8 +4520,6 @@
   <block id="3051092d4bbc438c196cba870b70c79f" category="paragraph">이 단계는 데이터 계층화에만 필요합니다. BlueXP 백업 및 복구에는 필요하지 않습니다.</block>
   <block id="aaaac746aa3fb70f64bdaf1919aefe27" category="admonition">BlueXP 백업 및 복구는 SnapMirror 구현을 사용하여 백업 파일(SnapMirror Cloud라고 함)을 생성하지만 시스템을 업그레이드할 때 백업을 일시 중단할 필요가 없습니다.</block>
   <block id="35ae8932a2c6f1191cf21157a991b4dd" category="paragraph">클라우드 공급자 마켓플레이스의 용량제 구독을 통해 30일 무료 평가판을 사용할 수 있습니다. 무료 평가판에는 Cloud Volumes ONTAP 및 BlueXP 백업 및 복구가 포함됩니다. 이 평가판은 사용자가 마켓플레이스의 서비스에 가입할 때 시작됩니다.</block>
-  <block id="8b3631f5373c77f26bc2e8fe7f000bd3" category="paragraph">NetApp에서 BYOL(Essentials) 라이센스를 구매하고 해당 배포 및 볼륨 유형에 대해 라이센스 용량을 초과하는 경우 BlueXP 디지털 지갑은 가격이 더 높은 Essentials 라이센스(있는 경우)에 대해 초과 요금을 부과합니다. 이는 시장에 대해 충전하기 전에 이미 선결제 용량으로 구매한 가용 용량을 처음 사용하기 때문입니다. 마켓플레이스에 비용을 청구하면 월별 청구서에 비용이 추가됩니다.</block>
-  <block id="ae0bff30a3baa225238bb8caae6abf20" category="paragraph">보조 볼륨이 있는 HA 쌍에서 50TiB가 또 다른 프로비저닝됩니다. BlueXP 디지털 지갑은 50TiB에서 PAYGO로 충전하는 대신 _Essentials Single Node_license에 대해 50TiB 초과를 충전합니다. 이 라이센스는 _Essentials Secondary HA_보다 비싸지만 PAYGO 요금보다 저렴합니다.</block>
   <block id="26ee3f5587dc47d76226ef9b570828ff" category="paragraph">BlueXP 디지털 지갑에서 50TiB가 _Essentials Single Node_license에 대해 청구된 것으로 표시됩니다.</block>
   <block id="3ea1315566755c191cc8996f86a9af02" category="paragraph">충전은 Keystone 가입 중 하나 이상의 Cloud Volumes ONTAP HA 쌍에서 대해 확정된 용량 크기를 기준으로 합니다.</block>
   <block id="46b39bb522bc6ece1b6bf75e81db3cbf" category="paragraph">각 볼륨에 대해 프로비저닝된 용량은 주기적으로 Keystone 가입 시 할당된 용량과 비교되며, Keystone 가입 시 초과요금이 부과됩니다.</block>
@@ -5219,4 +5216,13 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="37da66fa8b940c6b66bd42740840f9cd" category="list-text"><block ref="37da66fa8b940c6b66bd42740840f9cd" category="inline-link-macro-rx"></block></block>
   <block id="c73908091fadeb9dec16abab42821644" category="inline-link-macro">Google Cloud의 스토리지 제한</block>
   <block id="cf7df70a21568dc1f0d90f876bcb89a1" category="list-text"><block ref="cf7df70a21568dc1f0d90f876bcb89a1" category="inline-link-macro-rx"></block></block>
+  <block id="0453ee72b46bdca9dc63a814dd0c856a" category="paragraph">Essentials 패키지를 사용하면 배포 유형(HA 또는 단일 노드) 및 볼륨 유형(기본 또는 보조)으로 비용이 청구됩니다. 가격은 _ Essentials 기본 HA _, _ Essentials 기본 단일 노드 _, _ Essentials 보조 HA _ 및 _ Essentials 보조 단일 노드 _ 순서로 책정됩니다. 또는 마켓플레이스 계약을 구입하거나 전용 혜택을 수락하는 경우 배포 또는 볼륨 유형에 대해 용량 비용이 동일합니다.</block>
+  <block id="ddc4342c7910879feb801db956e02a34" category="paragraph">NetApp(BYOL)에서 Essentials 라이센스를 구매하고 해당 구축 및 볼륨 유형에 대해 라이센스가 있는 용량을 초과하는 경우, BlueXP 디지털 지갑은 더 높은 가격의 Essentials 라이센스(사용 가능한 용량이 있는 경우)에 대해 초과 요금을 부과합니다. 이는 시장에 대해 충전하기 전에 이미 선결제 용량으로 구매한 가용 용량을 처음 사용하기 때문입니다. BYOL 라이센스로 사용할 수 있는 용량이 없는 경우 초과 용량은 시장의 온디맨드 시간당 요금(PAYGO)으로 부과되며 월별 요금제에 비용이 추가됩니다.</block>
+  <block id="dd29699bc2761d1ef57790f730780d55" category="paragraph">보조 볼륨이 있는 HA 쌍에서 50TiB가 또 다른 프로비저닝됩니다. BlueXP 디지털 지갑은 50TiB에서 PAYGO로 충전하는 대신 _Essentials Single Node_license에 대해 50TiB 초과를 충전합니다. 이 라이선스의 가격은 _Essentials Secondary HA_보다 높지만 이미 구입한 라이선스를 사용하고 있으며 월별 청구서에 비용이 추가되지 않습니다.</block>
+  <block id="63ed6cabd3493279be97114b0d2d21f5" category="paragraph">다음은 또 다른 예입니다. Essentials 패키지에 대해 다음 라이선스를 보유하고 있다고 가정해 보겠습니다.</block>
+  <block id="79e457d19dd228dcb61825c92ce8eb7f" category="paragraph">운영 볼륨의 HA 쌍에서 또 다른 100TiB가 프로비저닝됩니다. 구입한 라이센스에 _Essentials 기본 HA_커밋 용량이 없습니다. _Essentials 기본 HA_라이센스의 가격은 _Essentials 기본 단일 노드_ 및 _Essentials 보조 HA_ 라이센스보다 높습니다.</block>
+  <block id="73c4f353b58571df329412c03faf62ed" category="paragraph">이 예에서 BlueXP 디지털 지갑은 추가 100TiB에 대한 마켓플레이스의 요율로 초과 요금을 부과합니다. 초과 요금은 월별 청구서에 표시됩니다.</block>
+  <block id="cb012953ce0037bbd6089c0cf714fef9" category="paragraph-title">마켓플레이스 계약 또는 전용 혜택</block>
+  <block id="63e7dad437ffdf90e141f5642e1654d2" category="paragraph">마켓플레이스 계약 또는 전용 오퍼의 일부로 Essentials 라이선스를 구입한 경우 BYOL 로직이 적용되지 않으며 해당 사용에 대한 정확한 라이선스 유형이 있어야 합니다. 라이센스 유형에는 볼륨 유형(운영 또는 2차) 및 구축 유형(HA 또는 단일 노드)이 포함됩니다.</block>
+  <block id="b5131f07b7cc2d9ac372dcfc0789c727" category="paragraph">예를 들어, Essentials 라이선스를 사용하여 Cloud Volumes ONTAP 인스턴스를 배포한다고 가정해 보겠습니다. 그런 다음 읽기-쓰기 볼륨(운영 단일 노드) 및 읽기 전용(2차 단일 노드) 볼륨을 프로비저닝합니다. 마켓플레이스 계약 또는 전용 오퍼에는 프로비저닝 용량을 충당하기 위해 _Essentials 단일 노드_ 및 _Essentials 보조 단일 노드_ 의 용량이 포함되어야 합니다. 마켓플레이스 계약 또는 프라이빗 오퍼에 포함되지 않은 모든 용량 할당은 온디맨드 시간당 요금(PAYGO)으로 청구되며 월별 청구서에 비용이 추가됩니다.</block>
 </blocks>
