@@ -5227,11 +5227,11 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="976b4993be588a7b52da07c4e96553c3" category="paragraph"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> Cloud Volumes ONTAP을 배포하는 Google Cloud 서브넷에서 비활성화해야 합니다. 패킷 미러링이 활성화된 경우 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.</block>
   <block id="d4eb5b4412a01c5991086dff8c51a89f" category="section-title">2024년 2월 2일</block>
   <block id="4b2d018110adbf4819b09a7a28283445" category="section-title">Azure에서 Edv5 시리즈 VM 지원</block>
-  <block id="1ecd861cfd41cf61121b433fcb6f7fed" category="paragraph">Cloud Volumes ONTAP는 이제 9.14.1 릴리즈부터 단일 및 여러 가용 영역에서 관리되는 공유 디스크를 사용하여 다음 Edv5 시리즈 VM을 지원합니다.</block>
   <block id="0ce1565dc58071deb098bde3e5a6a4b6" category="list-text">E4ds_v5 를 참조하십시오</block>
   <block id="625fbc51242c48d9e17a8b8b2fe6e5c7" category="list-text">E8ds_v5 를 참조하십시오</block>
   <block id="d6f19e3dc85d5a64809ab696a35a54ab" category="list-text">E20s_v5</block>
   <block id="708880d509c52585ca0500cd17ef2166" category="list-text">E32ds_v5</block>
   <block id="843cc0b63b36e79d0bdf4097a1b84b6a" category="list-text">E48ds_v5</block>
   <block id="6ec5cb856eb24c85cf7368cdfd11627f" category="list-text">E64ds_v5</block>
+  <block id="d94bc26a7eea05003dc921a469161911" category="paragraph">Cloud Volumes ONTAP는 이제 9.14.1 릴리즈부터 다음과 같은 Edv5 시리즈 VM을 지원합니다.</block>
 </blocks>
