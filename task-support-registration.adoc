@@ -154,7 +154,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 . NSS 관리 > NSS 계정 추가 * 를 선택합니다.
 . 메시지가 표시되면 * 계속 * 을 선택하여 Microsoft 로그인 페이지로 리디렉션합니다.
 +
-NetApp은 Microsoft Azure Active Directory를 지원 및 라이선싱과 관련된 인증 서비스의 ID 공급자로 사용합니다.
+NetApp는 지원 및 라이센스와 관련된 인증 서비스의 ID 공급자로 Microsoft Entra ID를 사용합니다.
 
 . 로그인 페이지에서 인증 프로세스를 수행할 수 있도록 NetApp Support 사이트의 등록 이메일 주소와 암호를 제공합니다.
 +

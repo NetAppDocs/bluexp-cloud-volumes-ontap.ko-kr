@@ -190,7 +190,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-goog
 
 === VPC의 패킷 미러링
 
-https://cloud.google.com/vpc/docs/packet-mirroring["패킷 미러링"^] Cloud Volumes ONTAP를 구축하는 Google Cloud VPC에서 비활성화되어야 합니다. 패킷 미러링이 활성화된 경우 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.
+https://cloud.google.com/vpc/docs/packet-mirroring["패킷 미러링"^] Cloud Volumes ONTAP을 배포하는 Google Cloud 서브넷에서 비활성화해야 합니다. 패킷 미러링이 활성화된 경우 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.
 
 
 

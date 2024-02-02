@@ -2016,7 +2016,6 @@
   <block id="9bbb7f4f51c49edeb24f8a9b17a2d5f4" category="inline-link-macro">Connector 구축에서 적용되는 필수 공유 VPC 사용 권한을 검토합니다</block>
   <block id="0d8050524ef140aadb3a681481890b39" category="list-text">VPC의 패킷 미러링</block>
   <block id="4d6aebef0af2c2c1118b467bdf0dadf0" category="inline-link">패킷 미러링</block>
-  <block id="7c0126eb5fa57fb86ccb4cf44811856d" category="list-text"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> Cloud Volumes ONTAP를 구축하는 Google Cloud VPC에서 비활성화되어야 합니다. 패킷 미러링이 활성화된 경우 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.</block>
   <block id="4c896c50345c5252f4b0e8fc4bf10723" category="admonition">HA 쌍을 사용하는 경우 HA 중재자가 아웃바운드 인터넷 액세스를 요구하지 않습니다.</block>
   <block id="c0d1b864d00da3eb6415590dfa2621ab" category="paragraph">API를 사용하여 Cloud Volumes ONTAP를 구축하고 다음 플래그를 지정한 경우 SVM(스토리지 VM) 관리 LIF의 생성을 건너뛸 수 있습니다.</block>
   <block id="9389c2cd70872a229cd788537557d183" category="paragraph">'스킵스만트관리면: TRUE'</block>
@@ -2421,7 +2420,6 @@
   <block id="cad02caeb4ee636c87f28b0bb1263080" category="inline-link-macro">지원되는 클라이언트 프로토콜 및 버전에 대해 알아보십시오</block>
   <block id="f0ddee23dd0d83f105bbdaa15ff5d87a" category="paragraph"><block ref="43c09f3d08ec80b50648a2a905bca06c" category="inline-link-macro-rx"></block>.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">도움말 메뉴의 스크린샷으로, 여기에서 지원은 첫 번째 옵션입니다</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp은 Microsoft Azure Active Directory를 지원 및 라이선싱과 관련된 인증 서비스의 ID 공급자로 사용합니다.</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">로그인 페이지에서 인증 프로세스를 수행할 수 있도록 NetApp Support 사이트의 등록 이메일 주소와 암호를 제공합니다.</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
@@ -5225,4 +5223,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="cb012953ce0037bbd6089c0cf714fef9" category="paragraph-title">마켓플레이스 계약 또는 전용 혜택</block>
   <block id="63e7dad437ffdf90e141f5642e1654d2" category="paragraph">마켓플레이스 계약 또는 전용 오퍼의 일부로 Essentials 라이선스를 구입한 경우 BYOL 로직이 적용되지 않으며 해당 사용에 대한 정확한 라이선스 유형이 있어야 합니다. 라이센스 유형에는 볼륨 유형(운영 또는 2차) 및 구축 유형(HA 또는 단일 노드)이 포함됩니다.</block>
   <block id="b5131f07b7cc2d9ac372dcfc0789c727" category="paragraph">예를 들어, Essentials 라이선스를 사용하여 Cloud Volumes ONTAP 인스턴스를 배포한다고 가정해 보겠습니다. 그런 다음 읽기-쓰기 볼륨(운영 단일 노드) 및 읽기 전용(2차 단일 노드) 볼륨을 프로비저닝합니다. 마켓플레이스 계약 또는 전용 오퍼에는 프로비저닝 용량을 충당하기 위해 _Essentials 단일 노드_ 및 _Essentials 보조 단일 노드_ 의 용량이 포함되어야 합니다. 마켓플레이스 계약 또는 프라이빗 오퍼에 포함되지 않은 모든 용량 할당은 온디맨드 시간당 요금(PAYGO)으로 청구되며 월별 청구서에 비용이 추가됩니다.</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp는 지원 및 라이센스와 관련된 인증 서비스의 ID 공급자로 Microsoft Entra ID를 사용합니다.</block>
+  <block id="976b4993be588a7b52da07c4e96553c3" category="paragraph"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> Cloud Volumes ONTAP을 배포하는 Google Cloud 서브넷에서 비활성화해야 합니다. 패킷 미러링이 활성화된 경우 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.</block>
 </blocks>
