@@ -3895,7 +3895,6 @@
   <block id="d4a6e54c4d6405336cdeb07c50490008" category="list-text">Azure Marketplace에서 용량제 오퍼링을 제공하거나 연간 계약으로 사용할 수 있습니다</block>
   <block id="18daf9881514241d393343911b3c6b0d" category="list-text">Google Cloud Marketplace에서 선불 종량제 또는 연간 계약으로 제공됩니다</block>
   <block id="0fbc0a0fa746d19ef30c136beb33ee6e" category="list-text">선택한 VM 유형에서 지원됨:</block>
-  <block id="e2bb4238e5d918b51d049ce1e69dc93c" category="list-text">Azure의 경우: E4s_v3, E4ds_v4, DS4_v2, DS13_v2, E8s_v3, 및 E8ds_v4를 참조하십시오</block>
   <block id="2efd0683ed3ad3ba3a383a25bc466303" category="list-text">Google Cloud의 경우: n2-standard-4, n2-standard-8</block>
   <block id="3ee54ac340ad12860ef4b993b12b351c" category="summary">BlueXP를 사용하면 새로운 Cloud Volumes ONTAP 작업 환경을 만들 때 여러 ONTAP 버전 중에서 선택할 수 있습니다.</block>
   <block id="aa74aee23f6f151917b2bab3bcdb7635" category="doc">새로운 배포에 지원되는 버전입니다</block>
@@ -5234,4 +5233,5 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="843cc0b63b36e79d0bdf4097a1b84b6a" category="list-text">E48ds_v5</block>
   <block id="6ec5cb856eb24c85cf7368cdfd11627f" category="list-text">E64ds_v5</block>
   <block id="d94bc26a7eea05003dc921a469161911" category="paragraph">Cloud Volumes ONTAP는 이제 9.14.1 릴리즈부터 다음과 같은 Edv5 시리즈 VM을 지원합니다.</block>
+  <block id="ea2cd969d5e6f95c064e4157ecab0c9e" category="list-text">Azure용: E4s_v3, E4ds_v4, DS4_v2, DS13_v2, E8s_v3, E8ds_v4, E4ds_v5 및 E8ds_v5</block>
 </blocks>
