@@ -52,6 +52,22 @@ NOTE: 저장 공간 및 네트워크 사용량은 2진 기가바이트(GB)로 �
 
 Cloud Volumes ONTAP에 사용할 수 있는 용량 기반 패키지는 다음과 같습니다.
 
+다음과 같은 용량 기반 패키지가 있는 지원되는 VM 유형 목록은 을 참조하십시오.
+
+ifdef::azure[]
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure에서 지원되는 구성"^]
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud에서 지원되는 구성"^]
+
+
+endif::gcp[]
+
 
 
 ==== 프리모늄
@@ -94,23 +110,6 @@ endif::azure[]
 ifdef::gcp[]
 
 * Google Cloud Marketplace에서 선불 종량제 또는 연간 계약으로 제공됩니다
-
-
-endif::gcp[]
-
-* 선택한 VM 유형에서 지원됨:
-
-
-ifdef::azure[]
-
-* Azure용: E4s_v3, E4ds_v4, DS4_v2, DS13_v2, E8s_v3, E8ds_v4, E4ds_v5 및 E8ds_v5
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Google Cloud의 경우: n2-standard-4, n2-standard-8
 
 
 endif::gcp[]
