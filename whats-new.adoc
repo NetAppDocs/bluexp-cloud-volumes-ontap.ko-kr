@@ -20,6 +20,16 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2024년 3월 5일
+
+
+
+=== Cloud Volumes ONTAP 9.14.1 GA
+
+BlueXP는 이제 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.14.1 일반 가용성 릴리즈를 구축 및 관리할 수 있습니다.
+
+
+
 == 2024년 2월 2일
 
 
