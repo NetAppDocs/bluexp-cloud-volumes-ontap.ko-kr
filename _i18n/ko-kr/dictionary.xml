@@ -5238,4 +5238,9 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="cf8f238c2116738b5ed3bacdbd527d14" category="section-title">Cloud Volumes ONTAP 9.14.1 GA</block>
   <block id="fc0f9e3eef3a6eff3efe2fe7cf358466" category="paragraph">BlueXP는 이제 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.14.1 일반 가용성 릴리즈를 구축 및 관리할 수 있습니다.</block>
   <block id="f8a262ce588acd29f7f91c585af357ea" category="list-text">9.14.1 GA</block>
+  <block id="4a1a05ee22994e328d9ec0402052b926" category="section-title">2024년 3월 8일</block>
+  <block id="1582ce9c3a0b0079717e0b0c6edf2347" category="section-title">Amazon Instant Metadata Service v2 지원</block>
+  <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">AWS, Cloud Volumes ONTAP, 중재자 및 커넥터는 이제 모든 기능에 대해 아마존 인스턴트 메타데이터 서비스 v2(IMDSv2)를 지원합니다. IMDSv2는 취약성에 대한 향상된 보호 기능을 제공합니다. 이전에 IMDSv1만 지원되었습니다.</block>
+  <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">기존 커넥터 관리를 위한 BlueXP 설정 및 관리 설명서</block>
+  <block id="6aec236f70c9d11e5073fa187bf36fd1" category="paragraph">보안 정책에서 요구하는 경우 IMDSv2를 사용하도록 EC2 인스턴스를 구성할 수 있습니다. 자세한 지침은 을 참조하십시오 <block ref="437fb94a00c6c9b10a9ad9095b6680bc" category="inline-link-macro-rx"></block>.</block>
 </blocks>
