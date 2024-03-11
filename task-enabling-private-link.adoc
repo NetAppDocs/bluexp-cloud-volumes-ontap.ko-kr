@@ -35,7 +35,7 @@ BlueXP는 두 가지 구성 모두 Cloud Volumes ONTAP 및 스토리지 계정 �
 커넥터는 해당 커넥터가 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 영역에 배포하거나 에 배포되어야 합니다 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 지역 쌍"^] Cloud Volumes ONTAP 시스템의 경우
 
 .단계
-. BlueXP 콘솔의 오른쪽 상단에서 설정 아이콘을 클릭하고 * 커넥터 설정 * 을 선택합니다.
+. BlueXP 콘솔의 오른쪽 위에서 설정 아이콘을 클릭하고 * Cloud Volumes ONTAP Settings * 를 선택합니다.
 +
 image:screenshot_settings_icon.png["BlueXP 콘솔의 오른쪽 위에 설정 아이콘이 표시된 스크린샷."]
 
