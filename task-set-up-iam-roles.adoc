@@ -251,8 +251,8 @@ Cloud Volumes ONTAP 시스템에서 BlueXP 백업 및 복구를 사용하려는 
 				"ec2:DescribeRouteTables",
 				"ec2:DescribeVpcs",
 				"ec2:ReplaceRoute",
-				"ec2:UnassignPrivateIpAddresses"
-                "sts:AssumeRole"
+				"ec2:UnassignPrivateIpAddresses",
+                "sts:AssumeRole",
                 "ec2:DescribeSubnets"
 			],
 			"Resource": "*"
