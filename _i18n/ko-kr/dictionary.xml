@@ -3168,7 +3168,6 @@
   <block id="68519dd54d9e3922e66ec5b7a67c39e0" category="paragraph">Cloud Volumes ONTAP 작업 환경을 만들면 사용자 인터페이스를 통해 미리 정의된 보안 그룹이 선택한 네트워크 내에서만(권장) 또는 모든 네트워크 내의 트래픽을 허용할지 여부를 선택할 수 있습니다.</block>
   <block id="2261cc540df38326c53234c3d2d87794" category="inline-image-macro">보안 그룹을 선택할 때 작업 환경 마법사에서 사용할 수 있는 트래픽 허용 옵션을 보여 주는 스크린샷</block>
   <block id="662442d32a5fd91298fcf8b6391fdf17" category="section-title">충전 방법을 변경합니다</block>
-  <block id="a117b4a94f6f90aef089573b1f002d26" category="paragraph">용량 기반 라이센스를 사용하는 Cloud Volumes ONTAP 시스템의 충전 방법을 변경할 수 있습니다. 예를 들어, Essentials 패키지와 함께 Cloud Volumes ONTAP 시스템을 배포한 경우 비즈니스 요구사항이 변경되면 이를 Professional 패키지로 변경할 수 있습니다.</block>
   <block id="3397777d22d2d5f746157ca31f0d8460" category="list-text">Cloud Volumes ONTAP * 탭에서 * 충전 방법 변경 * 을 클릭합니다.</block>
   <block id="de4b4e176958ea7181911ce715504321" category="list-text">작업 환경을 선택하고 새 충전 방법을 선택한 다음 패키지 유형을 변경하면 서비스 요금이 달라지게 된다는 것을 이해했는지 확인합니다.</block>
   <block id="b0d246ceb3cd290ace3abd509e982f73" category="inline-image-macro">Cloud Volumes ONTAP 작업 환경의 새 충전 방법을 선택하는 충전 방법 변경 대화 상자의 스크린 샷</block>
@@ -3222,7 +3221,6 @@
   <block id="2d66a0b2e45838b2ebcec83efd6c765c" category="inline-link">이러한 라이센스 패키지에 대해 자세히 알아보십시오</block>
   <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">* 선택한 VNET만 해당 *: 인바운드 트래픽의 소스는 Cloud Volumes ONTAP 시스템에 대한 VNET의 서브넷 범위와 커넥터가 상주하는 VNET의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.</block>
   <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">* All VNets *: 인바운드 트래픽의 소스는 0.0.0.0/0 IP 범위입니다.</block>
-  <block id="990da7f1ae0e8fb8294bff04c936ecaa" category="list-text">Edge Cache 라이센스로 변경하거나 변경하는 것은 지원되지 않습니다.</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">클라우드 공급자 마켓플레이스에서 프라이빗 오퍼 또는 계약을 체결한 경우, 계약에 포함되지 않은 충전 방법으로 변경하면 BYOL(NetApp에서 라이센스를 구매한 경우) 또는 PAYGO에 대해 충전이 생성됩니다.</block>
   <block id="240bee2f94d72e6a18a1263f971266c2" category="cell">클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 커넥터 및 HTTPS 액세스와의 연결</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">Cloud Volumes ONTAP HA 쌍 및 구성 요소의 개념적 이미지</block>
@@ -3736,7 +3734,6 @@
   <block id="56fe439ee061f5bc2e940368c1d73fa3" category="section-title">BlueXP는 Cloud Volumes ONTAP에서 S3을 지원하지 않습니다</block>
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXP는 스토리지 VM의 재해 복구를 지원하지 않습니다</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">필요한 것</block>
-  <block id="86f463a1f0f0879749d1274dc94305d9" category="paragraph-title">중요 참고 사항</block>
   <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">* 볼륨 암호화를 위한 Azure 디스크 암호화 * (단일 노드 시스템 또는 여러 존의 HA 쌍)</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">Google Cloud 권한이 필요합니다</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">Flash Cache란 무엇입니까?</block>
@@ -5243,4 +5240,9 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="6f0bb9f0803011314813e6aad3d926bf" category="list-text">BlueXP 콘솔의 오른쪽 위에서 * Settings * 아이콘을 클릭하고 * Cloud Volumes ONTAP Settings * 를 선택합니다.</block>
   <block id="d4b0cdcc1cd5c09a803de195e4f82296" category="paragraph">Cloud Volumes ONTAP 설정을 수정하려면 계정 관리자 권한이 필요합니다.</block>
   <block id="13cdcbf94ff7381b25ca5784f874a9b6" category="image-alt">설정 아이콘 아래의 Cloud Volumes ONTAP 설정 옵션 스크린샷</block>
+  <block id="970af11c442d109ac4d016f7c57f63fb" category="paragraph">용량 기반 라이센스는 _package_ 형식으로 제공됩니다. Cloud Volumes ONTAP 작업 환경을 만들 때 비즈니스 요구 사항에 따라 몇 가지 라이선스 패키지 중에서 선택할 수 있습니다. 작업 환경을 만든 후 요구 사항이 변경되면 언제든지 패키지를 변경할 수 있습니다. 예를 들어, Essentials 패키지에서 Professional 패키지로 변경할 수 있습니다.</block>
+  <block id="58dcfad3183b701a8f1b8781a5644d09" category="inline-link">용량 기반 라이센스 패키지에 대해 자세히 알아보십시오</block>
+  <block id="8e8751cb9b796773a6b79b4d5c3dc7b2" category="paragraph"><block ref="0205926668933cbb2cb5f56900594078" category="inline-link-rx"></block>.</block>
+  <block id="3e4729f0b91cf008c10b8ab719ea9e99" category="list-text">결제 방법을 변경해도 BYOL(NetApp)에서 구매한 라이선스를 통해 청구되는지 아니면 클라우드 공급자의 마켓플레이스(Pay As You Go)에서 청구되었는지에 영향을 미치지 않습니다.</block>
+  <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXP는 항상 라이센스에 대해 요금을 청구하려고 합니다. 라이선스를 사용할 수 없는 경우 마켓플레이스 구독에 대해 요금이 부과됩니다. BYOL에서 마켓플레이스 가입으로 또는 그 반대의 경우 "전환"이 필요하지 않습니다.</block>
 </blocks>

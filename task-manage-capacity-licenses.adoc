@@ -188,17 +188,17 @@ BlueXP 디지털 지갑에 구입한 라이센스가 없으면 Cloud Volumes ONT
 
 == 충전 방법을 변경합니다
 
-용량 기반 라이센스를 사용하는 Cloud Volumes ONTAP 시스템의 충전 방법을 변경할 수 있습니다. 예를 들어, Essentials 패키지와 함께 Cloud Volumes ONTAP 시스템을 배포한 경우 비즈니스 요구사항이 변경되면 이를 Professional 패키지로 변경할 수 있습니다.
+용량 기반 라이센스는 _package_ 형식으로 제공됩니다. Cloud Volumes ONTAP 작업 환경을 만들 때 비즈니스 요구 사항에 따라 몇 가지 라이선스 패키지 중에서 선택할 수 있습니다. 작업 환경을 만든 후 요구 사항이 변경되면 언제든지 패키지를 변경할 수 있습니다. 예를 들어, Essentials 패키지에서 Professional 패키지로 변경할 수 있습니다.
 
-ifdef::azure[]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["용량 기반 라이센스 패키지에 대해 자세히 알아보십시오"].
 
-.제한
-Edge Cache 라이센스로 변경하거나 변경하는 것은 지원되지 않습니다.
+.이 작업에 대해
+* 결제 방법을 변경해도 BYOL(NetApp)에서 구매한 라이선스를 통해 청구되는지 아니면 클라우드 공급자의 마켓플레이스(Pay As You Go)에서 청구되었는지에 영향을 미치지 않습니다.
++
+BlueXP는 항상 라이센스에 대해 요금을 청구하려고 합니다. 라이선스를 사용할 수 없는 경우 마켓플레이스 구독에 대해 요금이 부과됩니다. BYOL에서 마켓플레이스 가입으로 또는 그 반대의 경우 "전환"이 필요하지 않습니다.
 
-endif::azure[]
+* 클라우드 공급자 마켓플레이스에서 프라이빗 오퍼 또는 계약을 체결한 경우, 계약에 포함되지 않은 충전 방법으로 변경하면 BYOL(NetApp에서 라이센스를 구매한 경우) 또는 PAYGO에 대해 충전이 생성됩니다.
 
-.중요 참고 사항
-클라우드 공급자 마켓플레이스에서 프라이빗 오퍼 또는 계약을 체결한 경우, 계약에 포함되지 않은 충전 방법으로 변경하면 BYOL(NetApp에서 라이센스를 구매한 경우) 또는 PAYGO에 대해 충전이 생성됩니다.
 
 .단계
 . BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
