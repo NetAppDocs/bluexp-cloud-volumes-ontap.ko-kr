@@ -4172,7 +4172,6 @@
   <block id="40e86593118ce089551b3691f6bba919" category="inline-link">Connector에서 직접 API 트래픽을 활성화하는 방법에 대해 알아봅니다</block>
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure의 계층화된 데이터에 대한 기본 스토리지 액세스 계층은 _hot_tier입니다. 핫 계층은 용량 계층에서 자주 액세스하는 데이터에 적합합니다.</block>
   <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">용량 계층의 비활성 데이터에 액세스할 계획이 없는 경우 _cool_storage 계층으로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 계층을 냉각으로 변경하면 비활성 용량 계층 데이터가 차가운 스토리지 계층으로 직접 이동합니다.</block>
-  <block id="3e06c5fbfb4be981b82d7b6b33bb900f" category="list-text">계층화된 데이터에 대한 기본 스토리지 클래스는 _Standard Storage_class입니다. 데이터에 자주 액세스하지 않는 경우 _Nearline Storage_ 또는 _Coldline Storage_ 로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 클래스를 변경하면 비활성 데이터가 선택한 클래스로 직접 이동합니다.</block>
   <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
   <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">이제 BlueXP는 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.13.0을 배포하고 관리할 수 있습니다.</block>
   <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>.</block>
@@ -5181,7 +5180,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">노드 기반 Cloud Volumes ONTAP 라이센스가 있는 ARP 기능의 사용은 현재 디지털 지갑에 반영되지 않습니다. 노드 기반 ARP 사용을 볼 수 있는 기능은 향후 릴리스의 Digital Wallet에서 사용할 수 있습니다.</block>
   <block id="36228eb2dbf48b5f5e080f1abf747714" category="paragraph">추가 라이센스를 구입하여 디지털 지갑에 추가하면 Cloud Volumes ONTAP를 사용하여 볼륨별로 ARP를 활성화할 수 있습니다. ARP에 대한 충전은 ARP 기능이 활성화된 볼륨의 총 프로비저닝 용량에 따라 볼륨 레벨에서 측정됩니다. 최소 라이센스 용량은 1TB입니다. 그러나 ARP 기능에 대한 최소 용량 충전은 없습니다.</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">볼륨에 대한 ARP 구성은 ONTAP 시스템 관리자 및 ONTAP CLI를 통해 수행됩니다.</block>
-  <block id="41040f9c93f65d2edb4f6b2d1dc680a4" category="admonition">저장 공간 및 네트워크 사용량은 2진 기가바이트(GB)로 계산되며, 여기서 1GB는 2 30바이트입니다. 이 측정 단위는 지비바이트(GiB)라고도 합니다. 마찬가지로 1TB는 240바이트, 즉 1024GB입니다.</block>
   <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024년 1월 16일</block>
   <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXP의 패치 릴리즈</block>
   <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXP에서 패치 릴리즈는 최신 3가지 버전의 Cloud Volumes ONTAP에 대해서만 사용할 수 있습니다.</block>
@@ -5245,4 +5243,8 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="8e8751cb9b796773a6b79b4d5c3dc7b2" category="paragraph"><block ref="0205926668933cbb2cb5f56900594078" category="inline-link-rx"></block>.</block>
   <block id="3e4729f0b91cf008c10b8ab719ea9e99" category="list-text">결제 방법을 변경해도 BYOL(NetApp)에서 구매한 라이선스를 통해 청구되는지 아니면 클라우드 공급자의 마켓플레이스(Pay As You Go)에서 청구되었는지에 영향을 미치지 않습니다.</block>
   <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXP는 항상 라이센스에 대해 요금을 청구하려고 합니다. 라이선스를 사용할 수 없는 경우 마켓플레이스 구독에 대해 요금이 부과됩니다. BYOL에서 마켓플레이스 가입으로 또는 그 반대의 경우 "전환"이 필요하지 않습니다.</block>
+  <block id="d5f06dc5f98a38b5ccff1592c5d20e76" category="admonition">BlueXP에서 관리되는 제품 및 서비스의 실제 사용량 및 계측은 항상 GiB 및 TiB 단위로 계산되지만 GB/GiB와 TB/TiB라는 용어는 같은 의미로 사용됩니다. 이는 클라우드 마켓플레이스 목록, 가격 견적, 리스팅 설명 및 기타 지원 문서에 반영됩니다</block>
+  <block id="2732cf17c6f3094ab514d104cf7ecca1" category="admonition">BlueXP에서 관리되는 제품 및 서비스의 실제 사용량 및 계측은 항상 GiB 및 TiB 단위로 계산되지만 GB/GiB와 TB/TiB라는 용어는 같은 의미로 사용됩니다. 이는 클라우드 마켓플레이스 목록, 가격 견적, 리스팅 설명 및 기타 지원 문서에 반영됩니다.</block>
+  <block id="1a09137ca087e36b72504f4276c7cd08" category="list-text">계층화된 데이터에 대한 기본 스토리지 클래스는 _Standard Storage_class입니다. 데이터에 자주 액세스하지 않는 경우 _Nearline Storage_ 또는 _Coldline Storage_ 로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 클래스를 변경하면 이후의 비활성 데이터가 선택한 클래스로 직접 이동합니다.</block>
+  <block id="0d79695d01dd236a00fcb17dec14227f" category="admonition">스토리지 클래스를 변경할 때 기존의 비활성 데이터는 기본 스토리지 클래스를 유지합니다. 기존 비활성 데이터의 스토리지 클래스를 변경하려면 수동으로 지정을 수행해야 합니다.</block>
 </blocks>
