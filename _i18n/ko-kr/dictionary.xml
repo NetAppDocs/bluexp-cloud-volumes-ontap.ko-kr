@@ -4659,7 +4659,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="06765567af68358bde181ef7ae8a31b0" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="5aa81dcb1871cc4d565005ce5abe331d" category="inline-link-macro-rx"></block>.</block>
   <block id="d0922b1e87a764a73d3cfca142d88a3e" category="paragraph"><block ref="43cde999a8a50b7abff143c352cabd37" category="inline-link-rx"></block>.</block>
   <block id="15620bf0529e3d68b9f6b01095e269d3" category="paragraph"><block ref="15620bf0529e3d68b9f6b01095e269d3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c2f78492bd5f6bbe07383dadc5778fe8" category="paragraph"><block ref="c2f78492bd5f6bbe07383dadc5778fe8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="078d5a2ce174d1db14eba9ab521ae2a0" category="paragraph"><block ref="078d5a2ce174d1db14eba9ab521ae2a0" category="inline-link-macro-rx"></block></block>
   <block id="cf796cb5656f4bf0200ec02ab1ee4385" category="paragraph"><block ref="cf97c7b4bc867e067ebd7fa85f6363db" category="inline-link-rx"></block>.</block>
   <block id="7ddfab2c1a83893ebd448c6696f616f4" category="list-text"><block ref="7ddfab2c1a83893ebd448c6696f616f4" category="inline-link-rx"></block></block>
@@ -5240,11 +5239,13 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="13cdcbf94ff7381b25ca5784f874a9b6" category="image-alt">설정 아이콘 아래의 Cloud Volumes ONTAP 설정 옵션 스크린샷</block>
   <block id="970af11c442d109ac4d016f7c57f63fb" category="paragraph">용량 기반 라이센스는 _package_ 형식으로 제공됩니다. Cloud Volumes ONTAP 작업 환경을 만들 때 비즈니스 요구 사항에 따라 몇 가지 라이선스 패키지 중에서 선택할 수 있습니다. 작업 환경을 만든 후 요구 사항이 변경되면 언제든지 패키지를 변경할 수 있습니다. 예를 들어, Essentials 패키지에서 Professional 패키지로 변경할 수 있습니다.</block>
   <block id="58dcfad3183b701a8f1b8781a5644d09" category="inline-link">용량 기반 라이센스 패키지에 대해 자세히 알아보십시오</block>
-  <block id="8e8751cb9b796773a6b79b4d5c3dc7b2" category="paragraph"><block ref="0205926668933cbb2cb5f56900594078" category="inline-link-rx"></block>.</block>
   <block id="3e4729f0b91cf008c10b8ab719ea9e99" category="list-text">결제 방법을 변경해도 BYOL(NetApp)에서 구매한 라이선스를 통해 청구되는지 아니면 클라우드 공급자의 마켓플레이스(Pay As You Go)에서 청구되었는지에 영향을 미치지 않습니다.</block>
   <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXP는 항상 라이센스에 대해 요금을 청구하려고 합니다. 라이선스를 사용할 수 없는 경우 마켓플레이스 구독에 대해 요금이 부과됩니다. BYOL에서 마켓플레이스 가입으로 또는 그 반대의 경우 "전환"이 필요하지 않습니다.</block>
   <block id="d5f06dc5f98a38b5ccff1592c5d20e76" category="admonition">BlueXP에서 관리되는 제품 및 서비스의 실제 사용량 및 계측은 항상 GiB 및 TiB 단위로 계산되지만 GB/GiB와 TB/TiB라는 용어는 같은 의미로 사용됩니다. 이는 클라우드 마켓플레이스 목록, 가격 견적, 리스팅 설명 및 기타 지원 문서에 반영됩니다</block>
   <block id="2732cf17c6f3094ab514d104cf7ecca1" category="admonition">BlueXP에서 관리되는 제품 및 서비스의 실제 사용량 및 계측은 항상 GiB 및 TiB 단위로 계산되지만 GB/GiB와 TB/TiB라는 용어는 같은 의미로 사용됩니다. 이는 클라우드 마켓플레이스 목록, 가격 견적, 리스팅 설명 및 기타 지원 문서에 반영됩니다.</block>
   <block id="1a09137ca087e36b72504f4276c7cd08" category="list-text">계층화된 데이터에 대한 기본 스토리지 클래스는 _Standard Storage_class입니다. 데이터에 자주 액세스하지 않는 경우 _Nearline Storage_ 또는 _Coldline Storage_ 로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 클래스를 변경하면 이후의 비활성 데이터가 선택한 클래스로 직접 이동합니다.</block>
   <block id="0d79695d01dd236a00fcb17dec14227f" category="admonition">스토리지 클래스를 변경할 때 기존의 비활성 데이터는 기본 스토리지 클래스를 유지합니다. 기존 비활성 데이터의 스토리지 클래스를 변경하려면 수동으로 지정을 수행해야 합니다.</block>
+  <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3e509b6c896c67a8b8ec2afa8f3aa8eb" category="admonition">라이센스 파일을 얻는 방법에 대한 자세한 내용은 을 참조하십시오<block ref="c65aa3342130b0295e06cd938a12ad5e" category="inline-link-rx"></block>.</block>
+  <block id="6b5c2460f150173d3723de8a857a4d33" category="paragraph"><block ref="179c8a3ed717f2c4de3149f0e9edf685" category="inline-link-rx"></block>.</block>
 </blocks>

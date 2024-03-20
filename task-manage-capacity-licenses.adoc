@@ -180,6 +180,9 @@ BlueXP 디지털 지갑에 구입한 라이센스가 없으면 Cloud Volumes ONT
 .필요한 것
 라이센스 파일(또는 HA 쌍이 있는 경우 _ 파일 _).
 
+
+NOTE: 라이센스 파일을 얻는 방법에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#obtain-a-system-license-file["시스템 라이센스 파일을 얻습니다"^].
+
 .단계
 . BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
 . Cloud Volumes ONTAP* 탭에서 사용권 옆에 있는 작업 메뉴를 클릭하고 * 사용권 업데이트 * 를 선택합니다.
@@ -193,7 +196,7 @@ BlueXP 디지털 지갑에 구입한 라이센스가 없으면 Cloud Volumes ONT
 
 용량 기반 라이센스는 _package_ 형식으로 제공됩니다. Cloud Volumes ONTAP 작업 환경을 만들 때 비즈니스 요구 사항에 따라 몇 가지 라이선스 패키지 중에서 선택할 수 있습니다. 작업 환경을 만든 후 요구 사항이 변경되면 언제든지 패키지를 변경할 수 있습니다. 예를 들어, Essentials 패키지에서 Professional 패키지로 변경할 수 있습니다.
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["용량 기반 라이센스 패키지에 대해 자세히 알아보십시오"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["용량 기반 라이센스 패키지에 대해 자세히 알아보십시오"^].
 
 .이 작업에 대해
 * 결제 방법을 변경해도 BYOL(NetApp)에서 구매한 라이선스를 통해 청구되는지 아니면 클라우드 공급자의 마켓플레이스(Pay As You Go)에서 청구되었는지에 영향을 미치지 않습니다.
