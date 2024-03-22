@@ -407,7 +407,6 @@
   <block id="1dc9045fa2256d31acd9a9e96f728946" category="paragraph">높음 을 선택한 경우 "이해했습니다..." 문장을 읽고 확인란을 선택하여 확인해야 합니다.</block>
   <block id="9038e7cfcfe9bb9df9afd31371070be8" category="doc">기존 볼륨 관리</block>
   <block id="e2439a8512b353f75391ba9c346bc84d" category="section-title">볼륨 관리</block>
-  <block id="78b58016122bb23db763832d3df72599" category="paragraph">스토리지 요구사항의 변화에 따라 볼륨을 관리할 수 있습니다. 볼륨을 보고, 편집하고, 클론, 복원 및 삭제할 수 있습니다.</block>
   <block id="ad125360a406d7d2d9b4c68551674284" category="list-text">Canvas 페이지에서 볼륨을 관리할 Cloud Volumes ONTAP 작업 환경을 두 번 클릭합니다.</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">작업</block>
   <block id="004bf6c9a40003140292e97330236c53" category="cell">조치</block>
@@ -433,8 +432,6 @@
   <block id="150cd3111dfd7ae68aaeb429e7e50847" category="list-text">볼륨을 선택한 다음 * 삭제 * 를 클릭합니다.</block>
   <block id="a87e9e2d6f69725c3669d99fad70371d" category="list-text">확인하려면 * 삭제 * 를 다시 클릭합니다.</block>
   <block id="f003f3d16df55f060f81ad4dddd2fbf9" category="section-title">볼륨 크기를 조정합니다</block>
-  <block id="983731c4568a7ed436142da8a63f9442" category="paragraph">기본적으로, 공간이 부족할 때 볼륨이 자동으로 최대 크기로 커집니다. 기본값은 1,000이며 이는 볼륨이 크기가 11배로 커질 수 있음을 의미합니다. 이 값은 커넥터 설정에서 구성할 수 있습니다.</block>
-  <block id="6ad5e0a20f49ad6a370454bb3afc9a9e" category="inline-link">ONTAP 시스템 관리자</block>
   <block id="6b851ed63a549d28a80d2c974afcec80" category="section-title">CIFS 서버를 수정합니다</block>
   <block id="fd549a6bcd2d53b8accb49a7225fcfa0" category="paragraph">DNS 서버 또는 Active Directory 도메인을 변경하는 경우 Cloud Volumes ONTAP에서 CIFS 서버를 수정하여 스토리지에서 클라이언트로 계속 서비스를 제공할 수 있도록 해야 합니다.</block>
   <block id="47839a059e385e1317a08bc188364e78" category="list-text">CIFS 서버에 대한 설정을 지정합니다.</block>
@@ -2841,7 +2838,6 @@
   <block id="652f5bb57cb09b4930d22c8b8241e77c" category="summary">Cloud Volumes ONTAP CLI를 사용하면 모든 관리 명령을 실행할 수 있으며 고급 작업에 이상적이고 CLI를 사용하는 것이 더 편할 경우 적합합니다. SSH를 사용하여 CLI에 연결할 수 있습니다.</block>
   <block id="f92c0062f5f51f34505c72b0a5c9b3be" category="doc">CLI에서 Cloud Volumes ONTAP를 관리합니다</block>
   <block id="eb548256fe08b2a0e5f541bc56282edf" category="doc">고급 보기를 사용하여 Cloud Volumes ONTAP를 관리합니다</block>
-  <block id="74593b49f99b6e21d38ca3d969b213f3" category="paragraph">이 고급 보기는 미리 보기로 사용할 수 있습니다. NetApp은 이 경험을 개선하고 다음 릴리즈에서 향상된 기능을 추가할 계획입니다. 제품 내 채팅을 사용하여 피드백을 보내주십시오.</block>
   <block id="f3c3ee89c80d32726f5f937c07631d1c" category="list-text">고급 스토리지 관리</block>
   <block id="81988711ef6c9af40c8e8973f25c0bed" category="paragraph">일관성 그룹, 공유, Qtree, 할당량 및 스토리지 VM을 관리합니다.</block>
   <block id="62735a856683757bf28f1f02f97c151c" category="list-text">네트워킹 관리</block>
@@ -4046,7 +4042,6 @@
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">리소스 * 페이지의 기술 지원 아래에서 사용 가능한 옵션 중 하나를 선택합니다.</block>
   <block id="5db69347f06a9f63ed1f4c90e8b874e5" category="inline-link-macro">S3 멀티 프로토콜의 작동 방식에 대해 알아보십시오</block>
   <block id="e48cc3153e7d667d87986f8e162ea872" category="paragraph"><block ref="8674fe872330e1769235c43fb746c3f7" category="inline-link-macro-rx"></block>.<block ref="5b24747aa1a4fd51dbcea213f97833c7" category="inline-link-macro-rx"></block>.</block>
-  <block id="80f73203717d2460e95dcb08c0b8c6a2" category="paragraph">볼륨 크기를 조정해야 하는 경우 에서 조정할 수 있습니다 <block ref="03bbffa71060830678a71c986c6c0e67" category="inline-link-macro-rx"></block>. 볼륨 크기를 조정할 때 시스템의 용량 제한을 고려해야 합니다. 로 이동합니다<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="2ff4be1dced06cb9c588fc9e6efd1009" category="cell">CIFS 서버에 대한 이름 확인을 제공하는 DNS 서버의 IP 주소입니다. 나열된 DNS 서버에는 CIFS 서버가 연결할 도메인의 Active Directory LDAP 서버 및 도메인 컨트롤러를 찾는 데 필요한 서비스 위치 레코드(SRV)가 포함되어 있어야 합니다. ifdef::GCP [ ] Google Managed Active Directory를 구성하는 경우 기본적으로 169.254.169.254 IP 주소를 사용하여 AD에 액세스할 수 있습니다. 엔디프::GCP[]</block>
   <block id="0031307525b9c7232536c8489912acba" category="list-text">Azure AD 도메인 서비스를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=ADDC 컴퓨터 * 또는 * OU=ADDC 사용자 * 를 입력합니다.<block ref="6cfd09a964ae125f104125f00208f340" category="inline-link-macro-rx"></block></block>
   <block id="8c69b575c72fa1fcd5f27c44ebda605c" category="list-text">Google 관리 Microsoft AD를 Cloud Volumes ONTAP용 AD 서버로 구성하려면 이 필드에 * OU=Computers, OU=Cloud * 를 입력합니다.<block ref="1b7ab571d5a2f9c86fda846ee11b6c13" category="inline-link-macro-rx"></block></block>
@@ -5248,4 +5243,18 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3e509b6c896c67a8b8ec2afa8f3aa8eb" category="admonition">라이센스 파일을 얻는 방법에 대한 자세한 내용은 을 참조하십시오<block ref="c65aa3342130b0295e06cd938a12ad5e" category="inline-link-rx"></block>.</block>
   <block id="6b5c2460f150173d3723de8a857a4d33" category="paragraph"><block ref="179c8a3ed717f2c4de3149f0e9edf685" category="inline-link-rx"></block>.</block>
+  <block id="61f0796ced324a7d0b1f387e74f545a7" category="paragraph">BlueXP Standard View 또는 Advanced View에서 볼륨을 관리할 수 있습니다. 표준 보기에서는 볼륨을 수정할 수 있는 제한된 옵션 집합을 제공합니다. Advanced View는 클론 복제, 크기 조정, 랜섬웨어 방지, 분석, 보호 및 활동 추적 설정 변경, 계층 간 볼륨 이동과 같은 고급 수준의 관리를 제공합니다. 을 참조하십시오 <block ref="76b22e8ed647224335daed95530df604" category="inline-link-macro-rx"></block>.</block>
+  <block id="632ac3f99447a16bd75e4d1a0b8b691e" category="paragraph">BlueXP의 표준 보기를 사용하여 스토리지 요구사항에 따라 볼륨을 관리할 수 있습니다. 볼륨을 보고, 편집하고, 클론, 복원 및 삭제할 수 있습니다.</block>
+  <block id="5f9f6fee108a1a2e24bfa11e0350dbed" category="paragraph">기본적으로, 공간이 부족할 때 볼륨이 자동으로 최대 크기로 커집니다. 기본값은 1,000이며, 이는 볼륨이 크기의 11배로 증가할 수 있음을 의미합니다. 이 값은 커넥터 설정에서 구성할 수 있습니다.</block>
+  <block id="d83032202b952a29eb304290049be8f3" category="paragraph">볼륨 크기를 조정해야 하는 경우 BlueXP의 Advanced View에서 수행할 수 있습니다.</block>
+  <block id="b5101115b0cf1c430920e0b83ef354c6" category="list-text">고급 보기를 열어 System Manager를 통해 볼륨 크기를 조정합니다. 을 참조하십시오 <block ref="1bf7174b0a06a67edc83de5c18b2bf58" category="inline-link-macro-rx"></block>.</block>
+  <block id="a6bfbc7160bd5efb8fda7e791efd9e47" category="list-text">왼쪽 탐색 메뉴에서 * 스토리지 &gt; 볼륨 * 을 선택합니다.</block>
+  <block id="d875eee3d594951433259f6da1cc1729" category="list-text">볼륨 목록에서 크기를 조정할 볼륨을 식별합니다.</block>
+  <block id="52c148109936ec0cc34f1b38fb262428" category="inline-image-macro">Kabob 아이콘</block>
+  <block id="10261f98990e70ba53ecbcb1e0119090" category="list-text">옵션 아이콘을 클릭합니다 <block ref="ac91b27a7720c4844510cacb9be7afe5" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="782635f18c9a4c6e77f10be3b478b27a" category="list-text">크기 조정 * 을 선택합니다.</block>
+  <block id="4812655c0b87865bcb417f79c8eccc6c" category="list-text">Resize Volume * (볼륨 크기 조정) 화면에서 필요에 따라 용량 및 스냅숏 예비 공간 비율을 편집합니다. 기존 사용 가능한 공간과 수정된 용량을 비교할 수 있습니다.</block>
+  <block id="239d4539cd51c06a2b10a7f62d000f71" category="inline-image-macro">볼륨 크기 조정 후 수정된 용량이 화면에 표시됩니다</block>
+  <block id="b819ad9e0e6bb0675a6052fe63ec61dc" category="paragraph"><block ref="b819ad9e0e6bb0675a6052fe63ec61dc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bcbb72cb4f456c876a454b11cbf5cdaf" category="paragraph">볼륨 크기를 조정할 때 시스템의 용량 제한을 고려해야 합니다. 로 이동합니다<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 를 참조하십시오.</block>
 </blocks>

@@ -16,11 +16,13 @@ summary: BlueXP를 사용하면 볼륨 및 CIFS 서버를 관리할 수 있습�
 [role="lead"]
 BlueXP를 사용하면 볼륨 및 CIFS 서버를 관리할 수 있습니다. 또한 용량 문제를 방지하기 위해 볼륨을 이동하라는 메시지가 표시됩니다.
 
+BlueXP Standard View 또는 Advanced View에서 볼륨을 관리할 수 있습니다. 표준 보기에서는 볼륨을 수정할 수 있는 제한된 옵션 집합을 제공합니다. Advanced View는 클론 복제, 크기 조정, 랜섬웨어 방지, 분석, 보호 및 활동 추적 설정 변경, 계층 간 볼륨 이동과 같은 고급 수준의 관리를 제공합니다. 을 참조하십시오 link:task-administer-advanced-view.html["고급 보기를 사용하여 Cloud Volumes ONTAP를 관리합니다"].
+
 
 
 == 볼륨 관리
 
-스토리지 요구사항의 변화에 따라 볼륨을 관리할 수 있습니다. 볼륨을 보고, 편집하고, 클론, 복원 및 삭제할 수 있습니다.
+BlueXP의 표준 보기를 사용하여 스토리지 요구사항에 따라 볼륨을 관리할 수 있습니다. 볼륨을 보고, 편집하고, 클론, 복원 및 삭제할 수 있습니다.
 
 .단계
 . 왼쪽 탐색 메뉴에서 * Storage > Canvas * 를 선택합니다.
@@ -131,9 +133,23 @@ NOTE: BlueXP는 계층화를 통해 선택한 디스크 유형을 사용하는 �
 
 == 볼륨 크기를 조정합니다
 
-기본적으로, 공간이 부족할 때 볼륨이 자동으로 최대 크기로 커집니다. 기본값은 1,000이며 이는 볼륨이 크기가 11배로 커질 수 있음을 의미합니다. 이 값은 커넥터 설정에서 구성할 수 있습니다.
+기본적으로, 공간이 부족할 때 볼륨이 자동으로 최대 크기로 커집니다. 기본값은 1,000이며, 이는 볼륨이 크기의 11배로 증가할 수 있음을 의미합니다. 이 값은 커넥터 설정에서 구성할 수 있습니다.
 
-볼륨 크기를 조정해야 하는 경우 에서 조정할 수 있습니다 link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-C04C2C72-FF1F-4240-A22D-BE20BB74A116.html["ONTAP 시스템 관리자"^]. 볼륨 크기를 조정할 때 시스템의 용량 제한을 고려해야 합니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트"^] 를 참조하십시오.
+볼륨 크기를 조정해야 하는 경우 BlueXP의 Advanced View에서 수행할 수 있습니다.
+
+.단계
+. 고급 보기를 열어 System Manager를 통해 볼륨 크기를 조정합니다. 을 참조하십시오 link:task-administer-advanced-view.html#how-to-get-started["시작하는 방법"].
+. 왼쪽 탐색 메뉴에서 * 스토리지 > 볼륨 * 을 선택합니다.
+. 볼륨 목록에서 크기를 조정할 볼륨을 식별합니다.
+. 옵션 아이콘을 클릭합니다 image:screenshot_gallery_options.gif["Kabob 아이콘"].
+. 크기 조정 * 을 선택합니다.
+. Resize Volume * (볼륨 크기 조정) 화면에서 필요에 따라 용량 및 스냅숏 예비 공간 비율을 편집합니다. 기존 사용 가능한 공간과 수정된 용량을 비교할 수 있습니다.
+. 저장 * 을 클릭합니다.
+
+
+image:screenshot-resize-volume.png["볼륨 크기 조정 후 수정된 용량이 화면에 표시됩니다"]
+
+볼륨 크기를 조정할 때 시스템의 용량 제한을 고려해야 합니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트"^] 를 참조하십시오.
 
 
 
