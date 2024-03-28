@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-active-iq.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-client-protocols.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-cvo-aiq-digital-advisor.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-data-tiering.html</loc>
+        
+      
+      <lastmod>2024-03-19T15:19:44+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-degraded-ha-pair.html</loc>
+        
+      
+      <lastmod>2022-11-01T16:31:58+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-flash-cache.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-gcp-image-verification.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-gcp-verify-signed-image.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-ha-azure.html</loc>
+        
+      
+      <lastmod>2023-08-16T21:12:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-ha-google-cloud.html</loc>
+        
+      
+      <lastmod>2023-08-09T15:40:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-ha.html</loc>
+        
+      
+      <lastmod>2023-08-16T21:12:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-license-management.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-licensing.html</loc>
+        
+      
+      <lastmod>2024-03-19T15:19:44+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-overview-cvo.html</loc>
+        
+      
+      <lastmod>2023-08-14T17:24:14+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-performance.html</loc>
+        
+      
+      <lastmod>2023-08-14T17:24:14+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-security.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-storage-management.html</loc>
+        
+      
+      <lastmod>2024-03-28T08:07:44+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-storage.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-worm.html</loc>
+        
+      
+      <lastmod>2023-07-11T14:43:27+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/concept-write-speed.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/google-cloud.html</loc>
+        
+      
+      <lastmod>2022-04-14T17:30:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/</loc>
+        
+      
+      <lastmod>2023-12-13T19:30:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/legal-notices.html</loc>
+        
+      
+      <lastmod>2023-08-04T15:44:17+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/reference-default-configs.html</loc>
+        
+      
+      <lastmod>2023-11-06T18:01:31+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/reference-limitations.html</loc>
+        
+      
+      <lastmod>2023-08-18T15:55:33+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/reference-networking-aws.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/reference-networking-azure.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/reference-networking-gcp.html</loc>
+        
+      
+      <lastmod>2024-02-02T17:00:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/reference-security-groups.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/reference-versions.html</loc>
+        
+      
+      <lastmod>2024-03-07T05:18:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/reference-vpc-service-controls-gcp.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap//search.html</loc>
+        
+      
+      <lastmod>2024-03-28T08:07:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-accelerate-data-access.html</loc>
+        
+      
+      <lastmod>2023-08-31T20:16:38+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-adding-systems.html</loc>
+        
+      
+      <lastmod>2023-04-03T19:01:58+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html</loc>
+        
+      
+      <lastmod>2024-03-22T10:56:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-aws-key-management.html</loc>
+        
+      
+      <lastmod>2023-09-26T20:05:25+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-azure-high-availability-mode.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-azure-key-vault.html</loc>
+        
+      
+      <lastmod>2024-01-18T16:32:03+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-change-azure-vm.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html</loc>
+        
+      
+      <lastmod>2023-10-10T20:21:49+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-change-gcp-machine.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-change-password.html</loc>
+        
+      
+      <lastmod>2023-04-03T19:01:58+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-change-route-tables.html</loc>
+        
+      
+      <lastmod>2023-04-03T19:01:58+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-configure-ems.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html</loc>
+        
+      
+      <lastmod>2023-02-06T17:42:55+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-connect-lun.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-connecting-to-otc.html</loc>
+        
+      
+      <lastmod>2022-12-09T17:38:12+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-create-aggregates.html</loc>
+        
+      
+      <lastmod>2023-04-03T19:01:58+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-create-volumes.html</loc>
+        
+      
+      <lastmod>2023-08-16T21:12:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-creating-gcp-service-account.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-deleting-working-env.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-deploy-aws-shared-vpc.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-deploying-gcp.html</loc>
+        
+      
+      <lastmod>2023-10-31T19:27:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html</loc>
+        
+      
+      <lastmod>2023-10-31T19:27:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html</loc>
+        
+      
+      <lastmod>2023-10-31T19:27:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-enabling-private-link.html</loc>
+        
+      
+      <lastmod>2024-03-11T20:17:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html</loc>
+        
+      
+      <lastmod>2023-12-13T19:30:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-gcp-convert-image-raw.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-get-help.html</loc>
+        
+      
+      <lastmod>2024-01-11T17:33:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html</loc>
+        
+      
+      <lastmod>2023-08-14T17:24:14+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-getting-started-aws.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-getting-started-azure.html</loc>
+        
+      
+      <lastmod>2023-12-14T18:07:07+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-getting-started-gcp.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-google-key-manager.html</loc>
+        
+      
+      <lastmod>2023-08-14T17:24:14+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-manage-aggregates.html</loc>
+        
+      
+      <lastmod>2023-04-03T19:01:58+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html</loc>
+        
+      
+      <lastmod>2024-03-20T19:14:04+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-manage-capacity-settings.html</loc>
+        
+      
+      <lastmod>2024-03-28T08:07:44+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-manage-keystone.html</loc>
+        
+      
+      <lastmod>2023-10-31T19:27:59+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-manage-svm-dr.html</loc>
+        
+      
+      <lastmod>2023-12-13T19:30:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-manage-volumes.html</loc>
+        
+      
+      <lastmod>2024-03-22T10:56:56+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-managing-state.html</loc>
+        
+      
+      <lastmod>2023-08-09T15:40:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-managing-svms-aws.html</loc>
+        
+      
+      <lastmod>2023-12-13T19:30:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html</loc>
+        
+      
+      <lastmod>2023-12-13T19:30:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html</loc>
+        
+      
+      <lastmod>2023-12-13T19:30:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-managing-svms.html</loc>
+        
+      
+      <lastmod>2023-12-13T19:30:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-modify-write-speed.html</loc>
+        
+      
+      <lastmod>2023-08-09T15:40:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-moving-resource-groups-azure.html</loc>
+        
+      
+      <lastmod>2023-08-14T17:24:14+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-overriding-cifs-locks.html</loc>
+        
+      
+      <lastmod>2024-03-11T20:17:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-planning-your-config-gcp.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-planning-your-config.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html</loc>
+        
+      
+      <lastmod>2024-01-11T17:33:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-registering.html</loc>
+        
+      
+      <lastmod>2023-08-09T15:40:28+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-removing.html</loc>
+        
+      
+      <lastmod>2023-04-03T19:01:58+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-segregate-snapmirror-azure.html</loc>
+        
+      
+      <lastmod>2023-10-27T14:57:57+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-set-up-azure-encryption.html</loc>
+        
+      
+      <lastmod>2023-12-07T22:13:13+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html</loc>
+        
+      
+      <lastmod>2024-03-13T13:22:11+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-set-up-licensing-aws.html</loc>
+        
+      
+      <lastmod>2023-08-16T21:12:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-set-up-licensing-azure.html</loc>
+        
+      
+      <lastmod>2023-08-16T21:12:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-set-up-licensing-google.html</loc>
+        
+      
+      <lastmod>2023-08-16T21:12:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-setting-up-gcp-encryption.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-setting-up-kms.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-setting-up-transit-gateway.html</loc>
+        
+      
+      <lastmod>2023-10-25T15:36:35+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-support-registration.html</loc>
+        
+      
+      <lastmod>2024-02-02T17:00:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-sync-time.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-tiering.html</loc>
+        
+      
+      <lastmod>2024-03-11T20:17:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html</loc>
+        
+      
+      <lastmod>2024-01-16T16:31:05+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-verify-autosupport.html</loc>
+        
+      
+      <lastmod>2023-05-31T14:14:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-verify-openssl-gcp.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/whats-new-ontap.html</loc>
+        
+      
+      <lastmod>2023-05-23T18:17:26+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      
+        <loc>https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/whats-new.html</loc>
+        
+      
+      <lastmod>2024-03-20T19:14:04+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>

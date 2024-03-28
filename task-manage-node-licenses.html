@@ -1,0 +1,3245 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head class="at-element-marker">
+  <title>노드 기반 라이센스 관리 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="노드 기반 라이센스 관리 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html" />
+	<meta property="og:description" content="BlueXP 디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다." />
+  <meta property="og:image" content="https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="BlueXP 디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.">
+  <meta name="keywords" content=" license, licensing, install, updating license, system license, add system license, adding a system license, byol license, add byol license, update byol license, nlf, license generator, extra, by-node, digital wallet, cloud backup, cloud data sense, cloud tiering"><!-- Icons -->
+  <link rel="icon" href="/ko-kr/bluexp-cloud-volumes-ontap/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ko-kr/bluexp-cloud-volumes-ontap/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/bluexp-cloud-volumes-ontap/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/ko-kr/bluexp-cloud-volumes-ontap/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ko-kr/bluexp-cloud-volumes-ontap/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ko-kr/bluexp-cloud-volumes-ontap/js/na-search.js'></script><script src='/ko-kr/bluexp-cloud-volumes-ontap/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/ko-kr/bluexp-cloud-volumes-ontap/js/custom-dropdown.js'></script>
+  <script src='/ko-kr/bluexp-cloud-volumes-ontap/js/FileSaver.min.js'></script>
+  <script src='/ko-kr/bluexp-cloud-volumes-ontap/js/jszip-utils.min.js'></script>
+  <script src='/ko-kr/bluexp-cloud-volumes-ontap/js/jszip.min.js'></script><script src='/ko-kr/bluexp-cloud-volumes-ontap/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/ko-kr/bluexp-cloud-volumes-ontap/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/kr">
+                <image id="ie-header-logo" src="/ko-kr/bluexp-cloud-volumes-ontap/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">문서</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">한국어</span>
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">모든 NetApp</span>
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">지원</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">기술 자료</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/ko/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">교육</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/ko-kr/bluexp-cloud-volumes-ontap/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">모든 문서</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">클라우드 문서</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/ko-kr/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/ko-kr/bluexp-cloud-volumes-ontap/">-->
+      Cloud Volumes ONTAP
+    <!--</a>-->
+  </div>
+</div>
+
+            
+<div id="ie-selectors">
+<div id="flavor-dropdown" class="custom-dropdown" data-url="/ko-kr/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html">
+  
+  <div class="custom-dropdown-select unselected flavor" title="모든 클라우드 공급자">
+    <label>클라우드 공급자</label>
+    <span>모든 클라우드 공급자</span>
+    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown flavor invisible" />
+    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup flavor" />
+  </div>
+  
+
+  <ul class="custom-dropdown-menu">
+    
+    
+    <li data-value="aws" data-url="/ko-kr/bluexp-cloud-volumes-ontap/aws/task-manage-node-licenses.html">Amazon Web Services에서 직접 지원합니다
+    </li>
+    
+    
+    
+    <li data-value="gcp" data-url="/ko-kr/bluexp-cloud-volumes-ontap/gcp/task-manage-node-licenses.html">Google 클라우드
+    </li>
+    
+    
+    
+    <li data-value="azure" data-url="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-manage-node-licenses.html">Microsoft Azure를 참조하십시오
+    </li>
+    
+    
+    <li data-url="/ko-kr/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html">모든 클라우드 공급자</li>
+  </ul>
+</div>
+</div>
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/ko-kr/bluexp-cloud-volumes-ontap/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/ko-kr/bluexp-cloud-volumes-ontap/search.html" 
+        data-type="widget"
+        data-placeholder="설명서 검색"
+        data-no-results-found="{query}에 대한 결과를 찾을 수 없습니다"
+        data-did-you-mean="{suggestion}을(를) 검색하십시오."
+        data-no-results-found-did-you-mean="{query}에 대한 결과가 없습니다. {suggestion}을(를) 찾고 계시는 건가요?"
+        data-results-found="{hitCount}개의 결과를 찾았습니다"
+        data-error-message="오류가 발생했습니다. 다시 시도해 주십시오."
+        data-error-reset="검색 재설정"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Volumes ONTAP 문서"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/bluexp-cloud-volumes-ontap/index.html">
+        Cloud Volumes ONTAP 문서
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="릴리스 정보"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 릴리스 정보</div>-->
+         릴리스 정보
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="새로운 소식"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/whats-new.html">
+        새로운 소식
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="알려진 제한 사항"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/reference-limitations.html">
+        알려진 제한 사항
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Volumes ONTAP 릴리즈 노트"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/whats-new-ontap.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/whats-new-ontap.html">
+        Cloud Volumes ONTAP 릴리즈 노트
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시작하십시오"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 시작하십시오</div>-->
+         시작하십시오
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Volumes ONTAP에 대해 자세히 알아보십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-overview-cvo.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-overview-cvo.html">
+        Cloud Volumes ONTAP에 대해 자세히 알아보십시오
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="새로운 배포에 지원되는 버전입니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/reference-versions.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/reference-versions.html">
+        새로운 배포에 지원되는 버전입니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Amazon Web Services에서 시작하십시오"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Amazon Web Services에서 시작하십시오</div>-->
+         Amazon Web Services에서 시작하십시오
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="빠른 시작"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-getting-started-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-getting-started-aws.html">
+        빠른 시작
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="구성을 계획합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-planning-your-config.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-planning-your-config.html">
+        구성을 계획합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="네트워크 설정"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 네트워크 설정</div>-->
+         네트워크 설정
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="네트워킹 요구 사항"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/reference-networking-aws.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/reference-networking-aws.html">
+        네트워킹 요구 사항
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS 전송 게이트웨이를 설정합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-setting-up-transit-gateway.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-setting-up-transit-gateway.html">
+        AWS 전송 게이트웨이를 설정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="공유 서브넷에 HA 쌍 구축"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-deploy-aws-shared-vpc.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-deploy-aws-shared-vpc.html">
+        공유 서브넷에 HA 쌍 구축
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS의 보안 그룹 규칙"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/reference-security-groups.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/reference-security-groups.html">
+        AWS의 보안 그룹 규칙
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS KMS를 설정합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-setting-up-kms.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-setting-up-kms.html">
+        AWS KMS를 설정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="IAM 역할을 설정합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-set-up-iam-roles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html">
+        IAM 역할을 설정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="라이센스를 설정합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-set-up-licensing-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-set-up-licensing-aws.html">
+        라이센스를 설정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS에서 Cloud Volumes ONTAP를 시작합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-deploying-otc-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html">
+        AWS에서 Cloud Volumes ONTAP를 시작합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS C2S에서 시작하십시오"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-getting-started-aws-c2s.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html">
+        AWS C2S에서 시작하십시오
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Microsoft Azure에서 시작하십시오"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Microsoft Azure에서 시작하십시오</div>-->
+         Microsoft Azure에서 시작하십시오
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="빠른 시작"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-getting-started-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-getting-started-azure.html">
+        빠른 시작
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="구성을 계획합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-planning-your-config-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html">
+        구성을 계획합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="네트워크 설정"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/reference-networking-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/reference-networking-azure.html">
+        네트워크 설정
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="키를 사용하여 암호화를 설정합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-set-up-azure-encryption.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-set-up-azure-encryption.html">
+        키를 사용하여 암호화를 설정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="라이센스를 설정합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-set-up-licensing-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-set-up-licensing-azure.html">
+        라이센스를 설정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="고가용성 모드를 활성화합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-azure-high-availability-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-azure-high-availability-mode.html">
+        고가용성 모드를 활성화합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure에서 Cloud Volumes ONTAP를 실행합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-deploying-otc-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html">
+        Azure에서 Cloud Volumes ONTAP를 실행합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud에서 시작하십시오"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud에서 시작하십시오</div>-->
+         Google Cloud에서 시작하십시오
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="빠른 시작"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-getting-started-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-getting-started-gcp.html">
+        빠른 시작
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="구성을 계획합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-planning-your-config-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-planning-your-config-gcp.html">
+        구성을 계획합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="네트워크 설정"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/reference-networking-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/reference-networking-gcp.html">
+        네트워크 설정
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VPC 서비스 제어 계획"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/reference-vpc-service-controls-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/reference-vpc-service-controls-gcp.html">
+        VPC 서비스 제어 계획
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="서비스 계정을 생성합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-creating-gcp-service-account.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-creating-gcp-service-account.html">
+        서비스 계정을 생성합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="고객이 관리하는 암호화 키를 사용합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-setting-up-gcp-encryption.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-setting-up-gcp-encryption.html">
+        고객이 관리하는 암호화 키를 사용합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="라이센스를 설정합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-set-up-licensing-google.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-set-up-licensing-google.html">
+        라이센스를 설정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud에서 Cloud Volumes ONTAP를 실행합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-deploying-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-deploying-gcp.html">
+        Google Cloud에서 Cloud Volumes ONTAP를 실행합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud Platform 이미지 검증"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud Platform 이미지 검증</div>-->
+         Google Cloud Platform 이미지 검증
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="개요"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-gcp-image-verification.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-gcp-image-verification.html">
+        개요
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="GCP에서 이미지를 원시 형식으로 변환합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-gcp-convert-image-raw.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-gcp-convert-image-raw.html">
+        GCP에서 이미지를 원시 형식으로 변환합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="이미지 서명 확인"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 이미지 서명 확인</div>-->
+         이미지 서명 확인
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="GCP 서명 이미지를 확인합니다"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-gcp-verify-signed-image.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-gcp-verify-signed-image.html">
+        GCP 서명 이미지를 확인합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="OpenSSL을 사용하여 내용을 확인하십시오"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-verify-openssl-gcp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-verify-openssl-gcp.html">
+        OpenSSL을 사용하여 내용을 확인하십시오
+      </a></li></ul></li></ul></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Volumes ONTAP를 사용합니다"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Cloud Volumes ONTAP를 사용합니다</div>-->
+         Cloud Volumes ONTAP를 사용합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="라이센스 관리"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 라이센스 관리</div>-->
+         라이센스 관리
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="용량 기반 라이센스 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-manage-capacity-licenses.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html">
+        용량 기반 라이센스 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone 가입 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-manage-keystone.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-manage-keystone.html">
+        Keystone 가입 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="노드 기반 라이센스 관리"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-manage-node-licenses.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html">
+        노드 기반 라이센스 관리
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="볼륨 및 LUN 관리"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 볼륨 및 LUN 관리</div>-->
+         볼륨 및 LUN 관리
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="볼륨 생성"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-create-volumes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-create-volumes.html">
+        볼륨 생성
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="기존 볼륨 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-manage-volumes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-manage-volumes.html">
+        기존 볼륨 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="비활성 데이터를 오브젝트 스토리지에 계층화합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-tiering.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-tiering.html">
+        비활성 데이터를 오브젝트 스토리지에 계층화합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="LUN을 호스트에 연결합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-connect-lun.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-connect-lun.html">
+        LUN을 호스트에 연결합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="FlexCache을 통해 데이터에 더 빠르게 액세스"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-accelerate-data-access.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-accelerate-data-access.html">
+        FlexCache을 통해 데이터에 더 빠르게 액세스
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="통합 관리"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 통합 관리</div>-->
+         통합 관리
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="애그리게이트 생성"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-create-aggregates.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-create-aggregates.html">
+        애그리게이트 생성
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="기존 애그리게이트를 관리합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-manage-aggregates.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-manage-aggregates.html">
+        기존 애그리게이트를 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="용량 설정을 관리합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-manage-capacity-settings.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-manage-capacity-settings.html">
+        용량 설정을 관리합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="스토리지 VM 관리"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 스토리지 VM 관리</div>-->
+         스토리지 VM 관리
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP에서 스토리지 VM과 작업합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-managing-svms.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-managing-svms.html">
+        BlueXP에서 스토리지 VM과 작업합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS에서 스토리지 VM을 생성합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-managing-svms-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-managing-svms-aws.html">
+        AWS에서 스토리지 VM을 생성합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure에서 스토리지 VM을 생성합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-managing-svms-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html">
+        Azure에서 스토리지 VM을 생성합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud에서 스토리지 VM을 생성합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-managing-svms-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html">
+        Google Cloud에서 스토리지 VM을 생성합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SVM 재해 복구 설정"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-manage-svm-dr.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-manage-svm-dr.html">
+        SVM 재해 복구 설정
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="보안 및 데이터 암호화"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 보안 및 데이터 암호화</div>-->
+         보안 및 데이터 암호화
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp 암호화로 볼륨 암호화"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-encrypting-volumes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html">
+        NetApp 암호화로 볼륨 암호화
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS 키 관리 서비스로 키를 관리합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-aws-key-management.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-aws-key-management.html">
+        AWS 키 관리 서비스로 키를 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure Key Vault를 사용하여 키를 관리합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-azure-key-vault.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-azure-key-vault.html">
+        Azure Key Vault를 사용하여 키를 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud KMS로 키 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-google-key-manager.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-google-key-manager.html">
+        Google Cloud KMS로 키 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="랜섬웨어 보호 향상"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-protecting-ransomware.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html">
+        랜섬웨어 보호 향상
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템 관리"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 시스템 관리</div>-->
+         시스템 관리
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Volumes ONTAP를 업그레이드합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-updating-ontap-cloud.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html">
+        Cloud Volumes ONTAP를 업그레이드합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="선불 종량제 시스템을 등록합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-registering.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-registering.html">
+        선불 종량제 시스템을 등록합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템을 중지하고 시작합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-managing-state.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-managing-state.html">
+        시스템을 중지하고 시작합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템 시간을 동기화합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-sync-time.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-sync-time.html">
+        시스템 시간을 동기화합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템 쓰기 속도를 수정합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-modify-write-speed.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-modify-write-speed.html">
+        시스템 쓰기 속도를 수정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템 암호를 변경합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-change-password.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-change-password.html">
+        시스템 암호를 변경합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템을 추가, 제거 또는 삭제합니다"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 시스템을 추가, 제거 또는 삭제합니다</div>-->
+         시스템을 추가, 제거 또는 삭제합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="기존 시스템을 추가합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-adding-systems.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-adding-systems.html">
+        기존 시스템을 추가합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="작업 환경을 제거합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-removing.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-removing.html">
+        작업 환경을 제거합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템을 삭제합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-deleting-working-env.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-deleting-working-env.html">
+        시스템을 삭제합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="설치하고"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 설치하고</div>-->
+         설치하고
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="EC2 인스턴스 유형을 변경합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-change-ec2-instance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html">
+        EC2 인스턴스 유형을 변경합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HA 쌍의 경로 테이블을 변경합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-change-route-tables.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-change-route-tables.html">
+        HA 쌍의 경로 테이블을 변경합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="반 배정 그룹 생성을 구성합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="task-configure-placement-group-failure-aws.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html">
+        반 배정 그룹 생성을 구성합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure 관리"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure 관리</div>-->
+         Azure 관리
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure VM 유형을 변경합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-change-azure-vm.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-change-azure-vm.html">
+        Azure VM 유형을 변경합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="CIFS 잠금을 재정의합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-overriding-cifs-locks.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-overriding-cifs-locks.html">
+        CIFS 잠금을 재정의합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure Private Link 또는 서비스 끝점을 사용합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-enabling-private-link.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-enabling-private-link.html">
+        Azure Private Link 또는 서비스 끝점을 사용합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="자원 그룹을 이동합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-moving-resource-groups-azure.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-moving-resource-groups-azure.html">
+        자원 그룹을 이동합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure에서 SnapMirror 트래픽을 분리합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-segregate-snapmirror-azure.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-segregate-snapmirror-azure.html">
+        Azure에서 SnapMirror 트래픽을 분리합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud 관리"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud 관리</div>-->
+         Google Cloud 관리
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="기계 유형을 변경합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-change-gcp-machine.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-change-gcp-machine.html">
+        기계 유형을 변경합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="System Manager에서 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-administer-advanced-view.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html">
+        System Manager에서 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="CLI에서 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-connecting-to-otc.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-connecting-to-otc.html">
+        CLI에서 관리
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템 상태 및 이벤트입니다"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 시스템 상태 및 이벤트입니다</div>-->
+         시스템 상태 및 이벤트입니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AutoSupport 설정을 확인합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-verify-autosupport.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-verify-autosupport.html">
+        AutoSupport 설정을 확인합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="EMS를 설정한다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-configure-ems.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-configure-ems.html">
+        EMS를 설정한다
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="개념"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 개념</div>-->
+         개념
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="라이센싱"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-licensing.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-licensing.html">
+        라이센싱
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="스토리지"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 스토리지</div>-->
+         스토리지
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="클라이언트 프로토콜"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-client-protocols.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-client-protocols.html">
+        클라이언트 프로토콜
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="디스크와 애그리게이트"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-storage.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-storage.html">
+        디스크와 애그리게이트
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS의 탄력적인 볼륨"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-aws-elastic-volumes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html">
+        AWS의 탄력적인 볼륨
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="데이터 계층화"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-data-tiering.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-data-tiering.html">
+        데이터 계층화
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="스토리지 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-storage-management.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-storage-management.html">
+        스토리지 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="쓰기 속도"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-write-speed.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-write-speed.html">
+        쓰기 속도
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Flash Cache를 참조하십시오"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-flash-cache.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-flash-cache.html">
+        Flash Cache를 참조하십시오
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="WORM 스토리지"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-worm.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-worm.html">
+        WORM 스토리지
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="고가용성 쌍"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 고가용성 쌍</div>-->
+         고가용성 쌍
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS의 HA 쌍"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-ha.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-ha.html">
+        AWS의 HA 쌍
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure의 HA 쌍"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-ha-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-ha-azure.html">
+        Azure의 HA 쌍
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="GCP의 HA 쌍"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-ha-google-cloud.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-ha-google-cloud.html">
+        GCP의 HA 쌍
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="스토리지 테이크오버 중 동작"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-degraded-ha-pair.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-degraded-ha-pair.html">
+        스토리지 테이크오버 중 동작
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="보안"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-security.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-security.html">
+        보안
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="성능"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-performance.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-performance.html">
+        성능
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="노드 기반 BYOL 관리"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-license-management.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-license-management.html">
+        노드 기반 BYOL 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AutoSupport 및 Active IQ 디지털 자문업체"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/concept-active-iq.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/concept-active-iq.html">
+        AutoSupport 및 Active IQ 디지털 자문업체
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="기본 설정"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/reference-default-configs.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/reference-default-configs.html">
+        기본 설정
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="지식 및 지원"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 지식 및 지원</div>-->
+         지식 및 지원
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="지원을 위해 등록하십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-support-registration.html">
+        지원을 위해 등록하십시오
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="도움을 받으십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/task-get-help.html">
+        도움을 받으십시오
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="법적 고지"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-manage-node-licenses.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/bluexp-cloud-volumes-ontap/legal-notices.html">
+        법적 고지
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/ko-kr/bluexp-cloud-volumes-ontap"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/ko-kr/bluexp-cloud-volumes-ontap"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 본 한국어 번역은 사용자 편의를 위해 제공되는 기계 번역입니다. 영어 버전과 한국어 버전이 서로 어긋나는 경우에는 언제나 영어 버전이 우선합니다. </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">노드 기반 라이센스 관리</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2023-05-31 14:14:08 +0000">05/31/2023</time>
+        
+    
+    
+        <span>기여자
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/ko-kr/bluexp-cloud-volumes-ontap/images/discuss-sm.svg" alt="" class="github-icon" />변경 제안</span>
+        <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-cloud-volumes-ontap.ko-kr/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html&page-title=노드 기반 라이센스 관리" class="page-nav-contribute-link" role="button">문서 변경사항 요청</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-cloud-volumes-ontap/blob/main/task-manage-node-licenses.adoc" class="page-nav-contribute-link" role="button">이 페이지 편집</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >기여하는 방법 알아보기</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/fullsite-sidebar/Cloud_Volumes_ONTAP_설명서.pdf" >
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>이 문서 사이트의 PDF</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/릴리스_정보.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            릴리스 정보
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/시작하십시오.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            시작하십시오
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/Amazon_Web_Services에서_시작하십시오.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Amazon Web Services에서 시작하십시오
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/네트워크_설정.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            네트워크 설정
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/Microsoft_Azure에서_시작하십시오.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Microsoft Azure에서 시작하십시오
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/Google_Cloud에서_시작하십시오.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud에서 시작하십시오
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/Google_Cloud_Platform_이미지_검증.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud Platform 이미지 검증
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/이미지_서명_확인.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            이미지 서명 확인
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/Cloud_Volumes_ONTAP를_사용합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Cloud Volumes ONTAP를 사용합니다
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/라이센스_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            라이센스 관리
+          </a>
+          
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/볼륨_및_LUN_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            볼륨 및 LUN 관리
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/통합_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            통합 관리
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/스토리지_VM_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            스토리지 VM 관리
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/보안_및_데이터_암호화.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            보안 및 데이터 암호화
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/시스템_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            시스템 관리
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/시스템을_추가__제거_또는_삭제합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            시스템을 추가, 제거 또는 삭제합니다
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/설치하고.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            설치하고
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/Azure_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure 관리
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/Google_Cloud_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud 관리
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/시스템_상태_및_이벤트입니다.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            시스템 상태 및 이벤트입니다
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/개념.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            개념
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/스토리지.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            스토리지
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/고가용성_쌍.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            고가용성 쌍
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/sidebar/지식_및_지원.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            지식 및 지원
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>별도의 PDF 문서 모음<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>BlueXP 디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.</p>
+</div>
+<div class="paragraph">
+<p>_ 노드 기반 라이센스 _ 은(는) 이전 세대 라이센스 모델입니다(신규 고객은 사용할 수 없습니다).</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>NetApp에서 BYOL 라이센스를 구입함</p>
+</li>
+<li>
+<p>클라우드 공급자 마켓플레이스에서 시간별 PAYGO(Pay-as-you-go) 구독을 지원합니다</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>BlueXP 디지털 지갑 _ 을(를) 사용하면 한 곳에서 Cloud Volumes ONTAP에 대한 라이센스를 관리할 수 있습니다. 새 라이센스를 추가하고 기존 라이센스를 업데이트할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html">"Cloud Volumes ONTAP 라이센스에 대해 자세히 알아보십시오"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="paygo-라이센스를-관리합니다">PAYGO 라이센스를 관리합니다</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP 디지털 지갑 페이지에서 일련 번호 및 PAYGO 라이센스 유형을 비롯한 각 PAYGO Cloud Volumes ONTAP 시스템에 대한 세부 정보를 볼 수 있습니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>BlueXP 탐색 메뉴에서 * Governance &gt; Digital Wallet * 을 선택합니다.</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP * 탭의 드롭다운에서 * 노드 기반 라이센스 * 를 선택합니다.</p>
+</li>
+<li>
+<p>PAYGO * 를 클릭합니다.</p>
+</li>
+<li>
+<p>각 PAYGO 라이센스에 대한 자세한 내용은 표에서 확인하십시오.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_paygo_licenses.png" alt="세 개의 페이고 라이센스가 있는 BlueXP 디지털 전자지갑의 표를 보여 주는 스크린샷. 각 행에는 이름, 시스템 유형, 일련 번호, 패키지 및 라이센스 관리 링크가 표시됩니다."></span></p>
+</div>
+</li>
+<li>
+<p>필요한 경우 * PAYGO 라이센스 관리 * 를 클릭하여 PAYGO 라이센스를 변경하거나 인스턴스 유형을 변경합니다.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="byol-라이센스-관리">BYOL 라이센스 관리</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>시스템 라이센스 및 추가 용량 라이센스를 추가 및 제거하여 NetApp에서 직접 구매한 라이센스를 관리합니다.</p>
+</div>
+<div class="sect2">
+<h3 id="할당되지-않은-라이센스를-추가합니다">할당되지 않은 라이센스를 추가합니다</h3>
+<div class="paragraph">
+<p>BlueXP 디지털 지갑에 노드 기반 라이센스를 추가하여 새 Cloud Volumes ONTAP 시스템을 생성할 때 라이센스를 선택할 수 있습니다. 디지털 지갑에서 이러한 라이센스를 _할당되지 않음_으로 식별합니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>BlueXP 탐색 메뉴에서 * Governance &gt; Digital Wallet * 을 선택합니다.</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP * 탭의 드롭다운에서 * 노드 기반 라이센스 * 를 선택합니다.</p>
+</li>
+<li>
+<p>할당되지 않음 * 을 클릭합니다.</p>
+</li>
+<li>
+<p>할당되지 않은 라이센스 추가 * 를 클릭합니다.</p>
+</li>
+<li>
+<p>라이센스의 일련 번호를 입력하거나 라이센스 파일을 업로드하십시오.</p>
+<div class="paragraph">
+<p>라이센스 파일이 아직 없는 경우 아래 섹션을 참조하십시오.</p>
+</div>
+</li>
+<li>
+<p>라이선스 추가 * 를 클릭합니다.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">결과</div>
+<p>BlueXP는 디지털 지갑에 라이선스를 추가합니다. 라이센스는 새 Cloud Volumes ONTAP 시스템에 연결할 때까지 할당되지 않은 것으로 식별됩니다. 그런 다음 디지털 지갑에서 * BYOL * 탭으로 라이센스가 이동됩니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="할당되지-않은-exchange-노드-기반-라이센스">할당되지 않은 Exchange 노드 기반 라이센스</h3>
+<div class="paragraph">
+<p>아직 사용하지 않은 Cloud Volumes ONTAP에 대해 할당되지 않은 노드 기반 라이센스가 있는 경우 라이센스를 BlueXP 백업 및 복구 라이센스, BlueXP 분류 라이센스 또는 BlueXP 계층화 라이센스로 변환하여 교환할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>라이센스 교환은 Cloud Volumes ONTAP 라이센스를 해지하고 서비스에 대해 달러 상당 라이센스를 생성합니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cloud Volumes ONTAP HA 쌍의 라이센스는 51TiB 데이터 서비스 라이센스로 변환됩니다</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP 단일 노드의 라이센스는 32TiB 데이터 서비스 라이센스로 변환됩니다</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>변환된 라이센스의 만료일은 Cloud Volumes ONTAP 라이센스와 동일합니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>BlueXP 탐색 메뉴에서 * Governance &gt; Digital Wallet * 을 선택합니다.</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP * 탭의 드롭다운에서 * 노드 기반 라이센스 * 를 선택합니다.</p>
+</li>
+<li>
+<p>할당되지 않음 * 을 클릭합니다.</p>
+</li>
+<li>
+<p>Exchange 라이센스 * 를 클릭합니다.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-exchange-license.png" alt="할당되지 않은 라이센스 페이지에 나타나는 Exchange 라이센스 옵션 스크린샷"></span></p>
+</div>
+</li>
+<li>
+<p>라이센스를 교환할 서비스를 선택합니다.</p>
+</li>
+<li>
+<p>메시지가 표시되면 HA 쌍에 대한 추가 라이센스를 선택합니다.</p>
+</li>
+<li>
+<p>법적 동의를 읽고 * 동의 * 를 클릭합니다.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">결과</div>
+<p>BlueXP는 할당되지 않은 라이센스를 선택한 서비스로 변환합니다. 데이터 서비스 라이센스 * 탭에서 새 라이센스를 볼 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="시스템-라이센스-파일을-얻습니다">시스템 라이센스 파일을 얻습니다</h3>
+<div class="paragraph">
+<p>대부분의 경우 BlueXP는 NetApp Support 사이트 계정을 사용하여 라이센스 파일을 자동으로 가져올 수 있습니다. 그러나 그렇지 않으면 라이센스 파일을 수동으로 업로드해야 합니다. 라이센스 파일이 없는 경우 netapp.com 에서 얻을 수 있습니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>로 이동합니다 <a href="https://register.netapp.com/register/getlicensefile" target="_blank" rel="noopener">"NetApp 라이센스 파일 생성기"</a> 를 입력하고 NetApp Support 사이트 자격 증명을 사용하여 로그인합니다.</p>
+</li>
+<li>
+<p>비밀번호를 입력하고 제품을 선택한 다음 일련 번호를 입력하고 개인정보 보호정책을 읽고 동의했는지 확인한 다음 * 제출 * 을 클릭합니다.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>예 *</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-license-generator.png" alt="스크린샷: 사용 가능한 제품군이 포함된 NetApp License Generator 웹 페이지의 예를 보여 줍니다."></span></p>
+</div>
+</li>
+<li>
+<p>이메일 또는 직접 다운로드를 통해 serialnumber.nlf JSON 파일을 수신할지 여부를 선택합니다.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="시스템-라이센스를-업데이트합니다">시스템 라이센스를 업데이트합니다</h3>
+<div class="paragraph">
+<p>NetApp 담당자에게 연락하여 BYOL 구독을 갱신하면, BlueXP는 NetApp에서 새로운 라이센스를 자동으로 얻어 Cloud Volumes ONTAP 시스템에 설치합니다.</p>
+</div>
+<div class="paragraph">
+<p>보안 인터넷 연결을 통해 BlueXP에서 라이센스 파일에 액세스할 수 없는 경우 직접 파일을 얻은 다음 파일을 BlueXP에 수동으로 업로드할 수 있습니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>BlueXP 탐색 메뉴에서 * Governance &gt; Digital Wallet * 을 선택합니다.</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP * 탭의 드롭다운에서 * 노드 기반 라이센스 * 를 선택합니다.</p>
+</li>
+<li>
+<p>BYOL * 탭에서 Cloud Volumes ONTAP 시스템의 세부 정보를 확장합니다.</p>
+</li>
+<li>
+<p>시스템 라이센스 옆에 있는 작업 메뉴를 클릭하고 * 라이센스 업데이트 * 를 선택합니다.</p>
+</li>
+<li>
+<p>라이센스 파일(또는 HA 쌍이 있는 경우 파일)을 업로드합니다.</p>
+</li>
+<li>
+<p>Update License * 를 클릭합니다.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">결과</div>
+<p>BlueXP는 Cloud Volumes ONTAP 시스템의 라이센스를 업데이트합니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="추가-용량-라이센스-관리">추가 용량 라이센스 관리</h3>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP BYOL 시스템용 추가 용량 라이센스를 구입하여 368TiB 이상의 용량을 BYOL 시스템 라이센스와 함께 할당할 수 있습니다. 예를 들어, 라이센스 용량을 하나 더 구매하여 Cloud Volumes ONTAP에 최대 736TiB의 용량을 할당할 수 있습니다. 또는 최대 1.4PiB까지 추가 용량 라이센스를 3개 구매할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다.</p>
+</div>
+<div class="sect3">
+<h4 id="용량-라이센스-추가">용량 라이센스 추가</h4>
+<div class="paragraph">
+<p>BlueXP의 오른쪽 하단에 있는 채팅 아이콘을 통해 문의하여 추가 용량 라이센스를 구입하십시오. 라이센스를 구입한 후 Cloud Volumes ONTAP 시스템에 적용할 수 있습니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>BlueXP 탐색 메뉴에서 * Governance &gt; Digital Wallet * 을 선택합니다.</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP * 탭의 드롭다운에서 * 노드 기반 라이센스 * 를 선택합니다.</p>
+</li>
+<li>
+<p>BYOL * 탭에서 Cloud Volumes ONTAP 시스템의 세부 정보를 확장합니다.</p>
+</li>
+<li>
+<p>용량 라이센스 추가 * 를 클릭합니다.</p>
+</li>
+<li>
+<p>일련 번호를 입력하거나 라이센스 파일(또는 HA 쌍이 있는 경우 파일)을 업로드합니다.</p>
+</li>
+<li>
+<p>용량 라이센스 추가 * 를 클릭합니다.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="용량-라이센스를-업데이트합니다">용량 라이센스를 업데이트합니다</h4>
+<div class="paragraph">
+<p>추가 용량 라이센스 기간을 연장한 경우 BlueXP에서 라이센스를 업데이트해야 합니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>BlueXP 탐색 메뉴에서 * Governance &gt; Digital Wallet * 을 선택합니다.</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP * 탭의 드롭다운에서 * 노드 기반 라이센스 * 를 선택합니다.</p>
+</li>
+<li>
+<p>BYOL * 탭에서 Cloud Volumes ONTAP 시스템의 세부 정보를 확장합니다.</p>
+</li>
+<li>
+<p>용량 라이센스 옆에 있는 작업 메뉴를 클릭하고 * 라이센스 업데이트 * 를 선택합니다.</p>
+</li>
+<li>
+<p>라이센스 파일(또는 HA 쌍이 있는 경우 파일)을 업로드합니다.</p>
+</li>
+<li>
+<p>Update License * 를 클릭합니다.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="용량-라이센스를-제거합니다">용량 라이센스를 제거합니다</h4>
+<div class="paragraph">
+<p>추가 용량 라이센스가 만료되어 더 이상 사용되지 않는 경우 언제든지 라이센스를 제거할 수 있습니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>BlueXP 탐색 메뉴에서 * Governance &gt; Digital Wallet * 을 선택합니다.</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP * 탭의 드롭다운에서 * 노드 기반 라이센스 * 를 선택합니다.</p>
+</li>
+<li>
+<p>BYOL * 탭에서 Cloud Volumes ONTAP 시스템의 세부 정보를 확장합니다.</p>
+</li>
+<li>
+<p>용량 라이센스 옆에 있는 작업 메뉴를 클릭하고 * 라이센스 제거 * 를 선택합니다.</p>
+</li>
+<li>
+<p>제거 * 를 클릭합니다.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="eval-라이센스를-byol로-변환합니다">Eval 라이센스를 BYOL로 변환합니다</h3>
+<div class="paragraph">
+<p>평가판 라이센스는 30일간 사용할 수 있습니다. 현재 위치 업그레이드에 대한 평가 라이센스 위에 새로운 BYOL 라이센스를 적용할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>평가판 라이센스를 BYOL로 변환하면 BlueXP가 Cloud Volumes ONTAP 시스템을 다시 시작합니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>단일 노드 시스템의 경우 재시작 시 재부팅 프로세스 중에 I/O가 중단됩니다.</p>
+</li>
+<li>
+<p>HA 쌍의 경우, 재시작은 테이크오버 및 반환을 시작하여 클라이언트에 계속 I/O를 제공합니다.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>BlueXP 탐색 메뉴에서 * Governance &gt; Digital Wallet * 을 선택합니다.</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP * 탭의 드롭다운에서 * 노드 기반 라이센스 * 를 선택합니다.</p>
+</li>
+<li>
+<p>Eval * 을 클릭합니다.</p>
+</li>
+<li>
+<p>표에서 Cloud Volumes ONTAP 시스템용 BYOL 라이센스 * 로 변환 을 클릭합니다.</p>
+</li>
+<li>
+<p>일련 번호를 입력하거나 라이센스 파일을 업로드하십시오.</p>
+</li>
+<li>
+<p>사용권 변환 * 을 클릭합니다.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">결과</div>
+<p>BlueXP가 변환 프로세스를 시작합니다. 이 프로세스의 일부로 Cloud Volumes ONTAP가 자동으로 다시 시작됩니다. 백업하는 경우 라이센스 정보에 새 라이센스가 반영됩니다.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="paygo와-byol-간-변경">PAYGO와 BYOL 간 변경</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>시스템을 PAYGO by-node 라이센싱에서 BYOL by-node 라이센싱으로 변환하는 것은 지원되지 않으며 그 반대의 경우도 마찬가지입니다. 사용한 만큼만 지불하는 가입과 BYOL 가입형 간에 전환하려면 새 시스템을 구축하고 기존 시스템에서 새 시스템으로 데이터를 복제해야 합니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>새 Cloud Volumes ONTAP 작업 환경을 만듭니다.</p>
+</li>
+<li>
+<p>복제해야 하는 각 볼륨에 대해 시스템 간에 일회성 데이터 복제를 설정합니다.</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html" target="_blank" rel="noopener">"시스템 간에 데이터를 복제하는 방법에 대해 알아보십시오"</a></p>
+</div>
+</li>
+<li>
+<p>원래 작업 환경을 삭제하여 더 이상 필요하지 않은 Cloud Volumes ONTAP 시스템을 종료합니다.</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deleting-working-env.html">"Cloud Volumes ONTAP 작업 환경을 삭제하는 방법에 대해 알아봅니다"</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/ko-kr/bluexp-cloud-volumes-ontap/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">이 페이지에서</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">이용 약관</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">개인 정보 보호 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">쿠키 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">쿠키 설정</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">이 페이지에 대한 피드백 보내기</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ko-kr/bluexp-cloud-volumes-ontap/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ko-kr/bluexp-cloud-volumes-ontap/js/prism.js'></script>
+      <script type="text/javascript" src='/ko-kr/bluexp-cloud-volumes-ontap/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ko-kr/bluexp-cloud-volumes-ontap/js/ie-tabbed-blocks.js'></script>
+    <script src='/ko-kr/bluexp-cloud-volumes-ontap/js/ie-sidebar.js'></script>
+  </body>
+
+</html>

@@ -1,0 +1,3052 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head class="at-element-marker">
+  <title>Cloud Volumes ONTAP 소프트웨어를 업그레이드합니다 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Cloud Volumes ONTAP 소프트웨어를 업그레이드합니다 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html" />
+	<meta property="og:description" content="BlueXP에서 Cloud Volumes ONTAP를 업그레이드하여 최신 새 기능 및 향상된 기능을 이용할 수 있습니다. 소프트웨어를 업그레이드하기 전에 Cloud Volumes ONTAP 시스템을 준비해야 합니다." />
+  <meta property="og:image" content="https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="BlueXP에서 Cloud Volumes ONTAP를 업그레이드하여 최신 새 기능 및 향상된 기능을 이용할 수 있습니다. 소프트웨어를 업그레이드하기 전에 Cloud Volumes ONTAP 시스템을 준비해야 합니다.">
+  <meta name="keywords" content=" update, updating, upgrading, upgrade, software, downgrade, downgrading, FTP, HTTP, mediator, local image, revert, reverting, downgrading, cloud backup"><!-- Icons -->
+  <link rel="icon" href="/ko-kr/bluexp-cloud-volumes-ontap/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ko-kr/bluexp-cloud-volumes-ontap/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/bluexp-cloud-volumes-ontap/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/ko-kr/bluexp-cloud-volumes-ontap/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ko-kr/bluexp-cloud-volumes-ontap/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ko-kr/bluexp-cloud-volumes-ontap/js/na-search.js'></script><script src='/ko-kr/bluexp-cloud-volumes-ontap/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/ko-kr/bluexp-cloud-volumes-ontap/js/custom-dropdown.js'></script>
+  <script src='/ko-kr/bluexp-cloud-volumes-ontap/js/FileSaver.min.js'></script>
+  <script src='/ko-kr/bluexp-cloud-volumes-ontap/js/jszip-utils.min.js'></script>
+  <script src='/ko-kr/bluexp-cloud-volumes-ontap/js/jszip.min.js'></script><script src='/ko-kr/bluexp-cloud-volumes-ontap/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="azure">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/ko-kr/bluexp-cloud-volumes-ontap/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/kr">
+                <image id="ie-header-logo" src="/ko-kr/bluexp-cloud-volumes-ontap/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">문서</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">한국어</span>
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">모든 NetApp</span>
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">지원</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">기술 자료</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/ko/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">교육</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/ko-kr/bluexp-cloud-volumes-ontap/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">모든 문서</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">클라우드 문서</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/ko-kr/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/ko-kr/bluexp-cloud-volumes-ontap/">-->
+      Cloud Volumes ONTAP
+    <!--</a>-->
+  </div>
+</div>
+
+            
+<div id="ie-selectors">
+<div id="flavor-dropdown" class="custom-dropdown" data-url="/ko-kr/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html">
+  
+  
+  <div class="custom-dropdown-select selected" title="Azure를 지원합니다">
+    <label>클라우드 공급자</label>
+    <div>Azure를 지원합니다</div>  
+    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown flavor invisible" />
+    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup flavor" />
+    <!--<img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dismiss.svg" class="custom-icon selected" id="remove-flavor" alt="" />-->
+  </div>
+  
+
+  <ul class="custom-dropdown-menu">
+    
+    
+    <li data-value="aws" data-url="/ko-kr/bluexp-cloud-volumes-ontap/aws/task-updating-ontap-cloud.html">Amazon Web Services에서 직접 지원합니다
+    </li>
+    
+    
+    
+    <li data-value="gcp" data-url="/ko-kr/bluexp-cloud-volumes-ontap/gcp/task-updating-ontap-cloud.html">Google 클라우드
+    </li>
+    
+    
+    
+    <li data-value="azure" data-url="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-updating-ontap-cloud.html">Microsoft Azure를 참조하십시오
+    </li>
+    
+    
+    <li data-url="/ko-kr/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html">모든 클라우드 공급자</li>
+  </ul>
+</div>
+</div>
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/ko-kr/bluexp-cloud-volumes-ontap/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/ko-kr/bluexp-cloud-volumes-ontap/azure/search.html" 
+        data-type="widget"
+        data-placeholder="설명서 검색"
+        data-no-results-found="{query}에 대한 결과를 찾을 수 없습니다"
+        data-did-you-mean="{suggestion}을(를) 검색하십시오."
+        data-no-results-found-did-you-mean="{query}에 대한 결과가 없습니다. {suggestion}을(를) 찾고 계시는 건가요?"
+        data-results-found="{hitCount}개의 결과를 찾았습니다"
+        data-error-message="오류가 발생했습니다. 다시 시도해 주십시오."
+        data-error-reset="검색 재설정"
+        data-sk-es-pf-indexes="" 
+        data-flavor="azure">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Volumes ONTAP 문서"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/index.html">
+        Cloud Volumes ONTAP 문서
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="릴리스 정보"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 릴리스 정보</div>-->
+         릴리스 정보
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="새로운 소식"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/whats-new.html">
+        새로운 소식
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="알려진 제한 사항"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/reference-limitations.html">
+        알려진 제한 사항
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Volumes ONTAP 릴리즈 노트"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/whats-new-ontap.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/whats-new-ontap.html">
+        Cloud Volumes ONTAP 릴리즈 노트
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시작하십시오"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 시작하십시오</div>-->
+         시작하십시오
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Volumes ONTAP에 대해 자세히 알아보십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-overview-cvo.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-overview-cvo.html">
+        Cloud Volumes ONTAP에 대해 자세히 알아보십시오
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="새로운 배포에 지원되는 버전입니다"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/reference-versions.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/reference-versions.html">
+        새로운 배포에 지원되는 버전입니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Microsoft Azure에서 시작하십시오"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Microsoft Azure에서 시작하십시오</div>-->
+         Microsoft Azure에서 시작하십시오
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="빠른 시작"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-getting-started-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-getting-started-azure.html">
+        빠른 시작
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="구성을 계획합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-planning-your-config-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-planning-your-config-azure.html">
+        구성을 계획합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="네트워크 설정"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/reference-networking-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/reference-networking-azure.html">
+        네트워크 설정
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="키를 사용하여 암호화를 설정합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-set-up-azure-encryption.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-set-up-azure-encryption.html">
+        키를 사용하여 암호화를 설정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="라이센스를 설정합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-set-up-licensing-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-set-up-licensing-azure.html">
+        라이센스를 설정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="고가용성 모드를 활성화합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-azure-high-availability-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-azure-high-availability-mode.html">
+        고가용성 모드를 활성화합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure에서 Cloud Volumes ONTAP를 실행합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-deploying-otc-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-deploying-otc-azure.html">
+        Azure에서 Cloud Volumes ONTAP를 실행합니다
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Volumes ONTAP를 사용합니다"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Cloud Volumes ONTAP를 사용합니다</div>-->
+         Cloud Volumes ONTAP를 사용합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="라이센스 관리"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 라이센스 관리</div>-->
+         라이센스 관리
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="용량 기반 라이센스 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-manage-capacity-licenses.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-manage-capacity-licenses.html">
+        용량 기반 라이센스 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone 가입 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-manage-keystone.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-manage-keystone.html">
+        Keystone 가입 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="노드 기반 라이센스 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-manage-node-licenses.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-manage-node-licenses.html">
+        노드 기반 라이센스 관리
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="볼륨 및 LUN 관리"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 볼륨 및 LUN 관리</div>-->
+         볼륨 및 LUN 관리
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="볼륨 생성"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-create-volumes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-create-volumes.html">
+        볼륨 생성
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="기존 볼륨 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-manage-volumes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-manage-volumes.html">
+        기존 볼륨 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="비활성 데이터를 오브젝트 스토리지에 계층화합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-tiering.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-tiering.html">
+        비활성 데이터를 오브젝트 스토리지에 계층화합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="LUN을 호스트에 연결합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-connect-lun.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-connect-lun.html">
+        LUN을 호스트에 연결합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="FlexCache을 통해 데이터에 더 빠르게 액세스"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-accelerate-data-access.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-accelerate-data-access.html">
+        FlexCache을 통해 데이터에 더 빠르게 액세스
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="통합 관리"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 통합 관리</div>-->
+         통합 관리
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="애그리게이트 생성"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-create-aggregates.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-create-aggregates.html">
+        애그리게이트 생성
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="기존 애그리게이트를 관리합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-manage-aggregates.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-manage-aggregates.html">
+        기존 애그리게이트를 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="용량 설정을 관리합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-manage-capacity-settings.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-manage-capacity-settings.html">
+        용량 설정을 관리합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="스토리지 VM 관리"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 스토리지 VM 관리</div>-->
+         스토리지 VM 관리
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP에서 스토리지 VM과 작업합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-managing-svms.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-managing-svms.html">
+        BlueXP에서 스토리지 VM과 작업합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure에서 스토리지 VM을 생성합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-managing-svms-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-managing-svms-azure.html">
+        Azure에서 스토리지 VM을 생성합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SVM 재해 복구 설정"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-manage-svm-dr.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-manage-svm-dr.html">
+        SVM 재해 복구 설정
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="보안 및 데이터 암호화"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 보안 및 데이터 암호화</div>-->
+         보안 및 데이터 암호화
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp 암호화로 볼륨 암호화"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-encrypting-volumes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-encrypting-volumes.html">
+        NetApp 암호화로 볼륨 암호화
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure Key Vault를 사용하여 키를 관리합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-azure-key-vault.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-azure-key-vault.html">
+        Azure Key Vault를 사용하여 키를 관리합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="랜섬웨어 보호 향상"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-protecting-ransomware.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-protecting-ransomware.html">
+        랜섬웨어 보호 향상
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템 관리"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 시스템 관리</div>-->
+         시스템 관리
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Volumes ONTAP를 업그레이드합니다"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-updating-ontap-cloud.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-updating-ontap-cloud.html">
+        Cloud Volumes ONTAP를 업그레이드합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="선불 종량제 시스템을 등록합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-registering.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-registering.html">
+        선불 종량제 시스템을 등록합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템을 중지하고 시작합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-managing-state.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-managing-state.html">
+        시스템을 중지하고 시작합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템 시간을 동기화합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-sync-time.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-sync-time.html">
+        시스템 시간을 동기화합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템 쓰기 속도를 수정합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-modify-write-speed.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-modify-write-speed.html">
+        시스템 쓰기 속도를 수정합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템 암호를 변경합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-change-password.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-change-password.html">
+        시스템 암호를 변경합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템을 추가, 제거 또는 삭제합니다"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 시스템을 추가, 제거 또는 삭제합니다</div>-->
+         시스템을 추가, 제거 또는 삭제합니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="기존 시스템을 추가합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-adding-systems.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-adding-systems.html">
+        기존 시스템을 추가합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="작업 환경을 제거합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-removing.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-removing.html">
+        작업 환경을 제거합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템을 삭제합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-deleting-working-env.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-deleting-working-env.html">
+        시스템을 삭제합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure 관리"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure 관리</div>-->
+         Azure 관리
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure VM 유형을 변경합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-change-azure-vm.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-change-azure-vm.html">
+        Azure VM 유형을 변경합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="CIFS 잠금을 재정의합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-overriding-cifs-locks.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-overriding-cifs-locks.html">
+        CIFS 잠금을 재정의합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure Private Link 또는 서비스 끝점을 사용합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-enabling-private-link.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-enabling-private-link.html">
+        Azure Private Link 또는 서비스 끝점을 사용합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="자원 그룹을 이동합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-moving-resource-groups-azure.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-moving-resource-groups-azure.html">
+        자원 그룹을 이동합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure에서 SnapMirror 트래픽을 분리합니다"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-segregate-snapmirror-azure.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-segregate-snapmirror-azure.html">
+        Azure에서 SnapMirror 트래픽을 분리합니다
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="System Manager에서 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-administer-advanced-view.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-administer-advanced-view.html">
+        System Manager에서 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="CLI에서 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-connecting-to-otc.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-connecting-to-otc.html">
+        CLI에서 관리
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="시스템 상태 및 이벤트입니다"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 시스템 상태 및 이벤트입니다</div>-->
+         시스템 상태 및 이벤트입니다
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AutoSupport 설정을 확인합니다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-verify-autosupport.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-verify-autosupport.html">
+        AutoSupport 설정을 확인합니다
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="EMS를 설정한다"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-configure-ems.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-configure-ems.html">
+        EMS를 설정한다
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="개념"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 개념</div>-->
+         개념
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="라이센싱"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-licensing.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-licensing.html">
+        라이센싱
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="스토리지"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 스토리지</div>-->
+         스토리지
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="클라이언트 프로토콜"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-client-protocols.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-client-protocols.html">
+        클라이언트 프로토콜
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="디스크와 애그리게이트"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-storage.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-storage.html">
+        디스크와 애그리게이트
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="데이터 계층화"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-data-tiering.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-data-tiering.html">
+        데이터 계층화
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="스토리지 관리"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-storage-management.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-storage-management.html">
+        스토리지 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="쓰기 속도"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-write-speed.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-write-speed.html">
+        쓰기 속도
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Flash Cache를 참조하십시오"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-flash-cache.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-flash-cache.html">
+        Flash Cache를 참조하십시오
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="WORM 스토리지"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-worm.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-worm.html">
+        WORM 스토리지
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="고가용성 쌍"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 고가용성 쌍</div>-->
+         고가용성 쌍
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure의 HA 쌍"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-ha-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-ha-azure.html">
+        Azure의 HA 쌍
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="스토리지 테이크오버 중 동작"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-degraded-ha-pair.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-degraded-ha-pair.html">
+        스토리지 테이크오버 중 동작
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="보안"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-security.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-security.html">
+        보안
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="성능"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-performance.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-performance.html">
+        성능
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="노드 기반 BYOL 관리"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-license-management.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-license-management.html">
+        노드 기반 BYOL 관리
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AutoSupport 및 Active IQ 디지털 자문업체"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/concept-active-iq.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/concept-active-iq.html">
+        AutoSupport 및 Active IQ 디지털 자문업체
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="기본 설정"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/reference-default-configs.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/reference-default-configs.html">
+        기본 설정
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="지식 및 지원"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ko-kr/bluexp-cloud-volumes-ontap/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 지식 및 지원</div>-->
+         지식 및 지원
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="지원을 위해 등록하십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-support-registration.html">
+        지원을 위해 등록하십시오
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="도움을 받으십시오"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/task-get-help.html">
+        도움을 받으십시오
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="법적 고지"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-updating-ontap-cloud.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ko-kr/bluexp-cloud-volumes-ontap/azure/legal-notices.html">
+        법적 고지
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/ko-kr/bluexp-cloud-volumes-ontap"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/ko-kr/bluexp-cloud-volumes-ontap"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 본 한국어 번역은 사용자 편의를 위해 제공되는 기계 번역입니다. 영어 버전과 한국어 버전이 서로 어긋나는 경우에는 언제나 영어 버전이 우선합니다. </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">Cloud Volumes ONTAP 소프트웨어를 업그레이드합니다</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-01-16 16:31:05 +0000">01/16/2024</time>
+        
+    
+    
+        <span>기여자
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/ko-kr/bluexp-cloud-volumes-ontap/images/discuss-sm.svg" alt="" class="github-icon" />변경 제안</span>
+        <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-cloud-volumes-ontap.ko-kr/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/ko-kr/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html&page-title=Cloud Volumes ONTAP 소프트웨어를 업그레이드합니다" class="page-nav-contribute-link" role="button">문서 변경사항 요청</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-cloud-volumes-ontap/blob/main/task-updating-ontap-cloud.adoc" class="page-nav-contribute-link" role="button">이 페이지 편집</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >기여하는 방법 알아보기</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/ko-kr/bluexp-cloud-volumes-ontap/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/fullsite-sidebar/Cloud_Volumes_ONTAP_설명서.pdf" >
+                    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>이 문서 사이트의 PDF</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/릴리스_정보.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            릴리스 정보
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/시작하십시오.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            시작하십시오
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/Amazon_Web_Services에서_시작하십시오.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Amazon Web Services에서 시작하십시오
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/네트워크_설정.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            네트워크 설정
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/Microsoft_Azure에서_시작하십시오.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Microsoft Azure에서 시작하십시오
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/Google_Cloud에서_시작하십시오.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud에서 시작하십시오
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/Google_Cloud_Platform_이미지_검증.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud Platform 이미지 검증
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/이미지_서명_확인.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            이미지 서명 확인
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/Cloud_Volumes_ONTAP를_사용합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Cloud Volumes ONTAP를 사용합니다
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/라이센스_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            라이센스 관리
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/볼륨_및_LUN_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            볼륨 및 LUN 관리
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/통합_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            통합 관리
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/스토리지_VM_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            스토리지 VM 관리
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/보안_및_데이터_암호화.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            보안 및 데이터 암호화
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/시스템_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            시스템 관리
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/시스템을_추가__제거_또는_삭제합니다.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            시스템을 추가, 제거 또는 삭제합니다
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/설치하고.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            설치하고
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/Azure_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure 관리
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/Google_Cloud_관리.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud 관리
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/시스템_상태_및_이벤트입니다.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            시스템 상태 및 이벤트입니다
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/개념.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            개념
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/스토리지.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            스토리지
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/고가용성_쌍.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            고가용성 쌍
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ko-kr/bluexp-cloud-volumes-ontap/pdfs/azure/sidebar/지식_및_지원.pdf" 
+            
+          >
+            <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-icon.png" alt="" width="16" height="16"/>
+            지식 및 지원
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>별도의 PDF 문서 모음<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>BlueXP에서 Cloud Volumes ONTAP를 업그레이드하여 최신 새 기능 및 향상된 기능을 이용할 수 있습니다. 소프트웨어를 업그레이드하기 전에 Cloud Volumes ONTAP 시스템을 준비해야 합니다.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="업그레이드-개요">업그레이드 개요</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Volumes ONTAP 업그레이드 프로세스를 시작하기 전에 다음 사항을 숙지해야 합니다.</p>
+</div>
+<div class="sect2">
+<h3 id="bluexp에서만-업그레이드합니다">BlueXP에서만 업그레이드합니다</h3>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP 업그레이드는 BlueXP에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="업그레이드-방법">업그레이드 방법</h3>
+<div class="paragraph">
+<p>BlueXP는 Cloud Volumes ONTAP를 업그레이드할 수 있는 두 가지 방법을 제공합니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>작업 환경에 나타나는 업그레이드 알림을 따릅니다</p>
+</li>
+<li>
+<p>업그레이드 이미지를 HTTPS 위치에 배치한 다음 BlueXP에 URL을 제공합니다</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="지원되는-업그레이드-경로">지원되는 업그레이드 경로</h3>
+<div class="paragraph">
+<p>업그레이드할 수 있는 Cloud Volumes ONTAP 버전은 현재 실행 중인 Cloud Volumes ONTAP 버전에 따라 다릅니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">현재 버전</th>
+<th class="tableblock halign-left valign-top">로 직접 업그레이드할 수 있는 버전입니다</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.14.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.14.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">9.13.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.14.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.14.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">9.12.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.13.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.12.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">9.11.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.12.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.12.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.11.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.11.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">9.10.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.11.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.11.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.10.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.10.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">9.9.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.10.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.10.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.9.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.9.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.9.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.0</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>다음 사항에 유의하십시오.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cloud Volumes ONTAP에 대해 지원되는 업그레이드 경로는 사내 ONTAP 클러스터에 대한 업그레이드 경로와 다릅니다.</p>
+</li>
+<li>
+<p>작업 환경에 나타나는 업그레이드 알림에 따라 업그레이드하는 경우 BlueXP에서 지원되는 업그레이드 경로 다음에 나오는 릴리스로 업그레이드하라는 메시지가 표시됩니다.</p>
+</li>
+<li>
+<p>HTTPS 위치에 업그레이드 이미지를 배치하여 업그레이드하는 경우 지원되는 업그레이드 경로를 따르십시오.</p>
+</li>
+<li>
+<p>경우에 따라 타겟 릴리즈로 업그레이드하기 위해 몇 차례 업그레이드해야 할 수도 있습니다.</p>
+<div class="paragraph">
+<p>예를 들어 9.8 버전을 실행 중이고 9.10.1로 업그레이드하려면 먼저 9.9.1 버전으로 업그레이드한 다음 9.10.1로 업그레이드해야 합니다.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="패치-릴리스">패치 릴리스</h3>
+<div class="paragraph">
+<p>2024년 1월부터 패치 업그레이드는 Cloud Volumes ONTAP의 3가지 최신 버전에 대한 패치 릴리즈인 경우에만 BlueXP에서 사용할 수 있습니다. 최신 GA 릴리즈를 사용하여 BlueXP에 표시할 3가지 최신 버전을 결정합니다. 예를 들어, 현재 GA 릴리즈가 9.13.1인 경우 9.11.1~9.13.1용 패치가 BlueXP에 표시됩니다. 버전 9.11.1 이하의 패치 릴리스로 업그레이드하려면 에서 수동 업그레이드 절차를 사용해야 합니다 <a href="#url에서-사용할-수-있는-이미지에서-업그레이드합니다">ONTAP 이미지를 다운로드하는 중입니다</a>.</p>
+</div>
+<div class="paragraph">
+<p>패치(P) 릴리스의 일반적인 규칙으로, 하나의 버전 릴리스에서 실행 중인 현재 버전 또는 다음 버전의 P-릴리스로 업그레이드할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>다음은 몇 가지 예입니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>9.13.0 &gt; 9.13.1P15</p>
+</li>
+<li>
+<p>9.12.1&gt;9.13.1P2</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="되돌리기-또는-다운그레이드">되돌리기 또는 다운그레이드</h3>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP를 이전 릴리즈로 되돌리거나 다운그레이드하는 것은 지원되지 않습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="지원-등록">지원 등록</h3>
+<div class="paragraph">
+<p>이 페이지에 설명된 방법을 사용하여 소프트웨어를 업그레이드하려면 Cloud Volumes ONTAP를 NetApp 지원 팀에 등록해야 합니다. 이 내용은 PAYGO 및 BYOL 모두에 적용됩니다. 필요한 것이 있습니다 <a href="task-registering.html">"PAYGO 시스템을 수동으로 등록합니다"</a>BYOL 시스템은 기본적으로 등록되지만</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-cloud-volumes-ontap/images/tip.svg" alt="팁">
+</td>
+<td class="content">
+지원이 등록되지 않은 시스템은 새 버전이 출시되어도 BlueXP에 나타나는 소프트웨어 업데이트 알림을 계속 받게 됩니다. 그러나 소프트웨어를 업그레이드하기 전에 시스템을 등록해야 합니다.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ha-중재자의-업그레이드">HA 중재자의 업그레이드</h3>
+<div class="paragraph">
+<p>또한 BlueXP는 Cloud Volumes ONTAP 업그레이드 프로세스 중에 필요에 따라 중재자 인스턴스를 업데이트합니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="c4-m4-및-r4-ec2-인스턴스-유형으로-aws에서-업그레이드">C4, M4 및 R4 EC2 인스턴스 유형으로 AWS에서 업그레이드</h3>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP은 더 이상 C4, M4 및 R4 EC2 인스턴스 유형을 지원하지 않습니다. 이러한 인스턴스 유형을 사용하여 기존 배포를 Cloud Volumes ONTAP 버전 9.8-9.12.1로 업그레이드할 수 있습니다. 업그레이드하기 전에 다음을 수행하는 것이 좋습니다 <a href="#인스턴스-유형을-변경합니다">인스턴스 유형을 변경합니다</a>. 인스턴스 유형을 변경할 수 없는 경우 을 변경해야 합니다 <a href="#향상된-네트워킹을-활성화합니다">향상된 네트워킹을 활성화합니다</a> 업그레이드 전. 인스턴스 유형 변경 및 향상된 네트워킹 활성화에 대한 자세한 내용은 다음 섹션을 참조하십시오.</p>
+</div>
+<div class="paragraph">
+<p>9.13.0 이상을 실행하는 Cloud Volumes ONTAP에서는 C4, M4 및 R4 EC2 인스턴스 유형으로 업그레이드할 수 없습니다. 이 경우 디스크 수를 줄인 다음 <a href="#인스턴스-유형을-변경합니다">인스턴스 유형을 변경합니다</a> 또는 C5, M5, R5 EC2 인스턴스 유형으로 새로운 HA 쌍 구성을 배포하고 데이터를 마이그레이션합니다.</p>
+</div>
+<div class="sect3">
+<h4 id="인스턴스-유형을-변경합니다">인스턴스 유형을 변경합니다</h4>
+<div class="paragraph">
+<p>C4, M4 및 R4 EC2 인스턴스 유형을 사용하면 C5, M5 및 R5 EC2 인스턴스 유형보다 노드당 더 많은 디스크를 지원할 수 있습니다. 실행 중인 C4, M4 또는 R4 EC2 인스턴스의 노드당 디스크 수가 C5, M5 및 R5 인스턴스에 대한 노드당 최대 디스크 허용치보다 작은 경우 EC2 인스턴스 유형을 C5, M5 또는 R5로 변경할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html#disk-and-tiering-limits-by-ec2-instance" target="_blank" rel="noopener">"EC2 인스턴스별로 디스크 및 계층화 제한을 확인합니다"</a><br>
+<a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html" target="_blank" rel="noopener">"Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경합니다"</a></p>
+</div>
+<div class="paragraph">
+<p>인스턴스 유형을 변경할 수 없는 경우 의 단계를 따릅니다 <a href="#향상된-네트워킹을-활성화합니다">향상된 네트워킹을 활성화합니다</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="향상된-네트워킹을-활성화합니다">향상된 네트워킹을 활성화합니다</h4>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP 9.8 이상 버전으로 업그레이드하려면 C4, M4 또는 R4 인스턴스 유형을 실행하는 클러스터에서 enable_enhanced networking_을 사용해야 합니다. ENA를 활성화하려면 기술 문서 를 참조하십시오 <a href="https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/How_to_enable_Enhanced_networking_like_SR-IOV_or_ENA_on_AWS_CVO_instances" target="_blank" rel="noopener">"AWS Cloud Volumes ONTAP 인스턴스에서 SR-IOV 또는 ENA와 같은 향상된 네트워킹을 활성화하는 방법"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="업그레이드-준비">업그레이드 준비</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>업그레이드를 수행하기 전에 시스템이 준비되어 있는지 확인하고 필요한 구성을 변경해야 합니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#다운타임을-계획합니다">다운타임을 계획합니다</a></p>
+</li>
+<li>
+<p><a href="#자동-반환이-여전히-활성화되어-있는지-확인합니다">자동 반환이 여전히 활성화되어 있는지 확인합니다</a></p>
+</li>
+<li>
+<p><a href="#snapmirror-전송을-일시-중단합니다">SnapMirror 전송을 일시 중단합니다</a></p>
+</li>
+<li>
+<p><a href="#애그리게이트가-온라인-상태인지-확인합니다">애그리게이트가 온라인 상태인지 확인합니다</a></p>
+</li>
+<li>
+<p><a href="#모든-lif가-홈-포트에-있는지-확인합니다">모든 LIF가 홈 포트에 있는지 확인합니다</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="다운타임을-계획합니다">다운타임을 계획합니다</h3>
+<div class="paragraph">
+<p>단일 노드 시스템을 업그레이드할 경우 업그레이드 프로세스에서는 I/O가 중단되는 동안 시스템을 최대 25분 동안 오프라인 상태로 전환합니다.</p>
+</div>
+<div class="paragraph">
+<p>대부분의 경우 HA 쌍의 업그레이드는 무중단으로 가능하며 I/O는 중단되지 않습니다. 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.</p>
+</div>
+<div class="paragraph">
+<p>세션 지향 프로토콜은 업그레이드 중 특정 영역의 클라이언트 및 애플리케이션에 부정적인 영향을 미칠 수 있습니다. 자세한 내용은 <a href="https://docs.netapp.com/us-en/ontap/upgrade/concept_considerations_for_session_oriented_protocols.html" target="_blank" rel="noopener">"ONTAP 설명서를 참조하십시오"</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="자동-반환이-여전히-활성화되어-있는지-확인합니다">자동 반환이 여전히 활성화되어 있는지 확인합니다</h3>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP HA 쌍(기본 설정)에서 자동 반환이 활성화되어 있어야 합니다. 그렇지 않으면 작업이 실패합니다.</p>
+</div>
+<div class="paragraph">
+<p><a href="http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html" target="_blank" rel="noopener">"ONTAP 9 설명서: 자동 반환 구성을 위한 명령입니다"</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="snapmirror-전송을-일시-중단합니다">SnapMirror 전송을 일시 중단합니다</h3>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP 시스템에 활성 SnapMirror 관계가 있는 경우 Cloud Volumes ONTAP 소프트웨어를 업데이트하기 전에 전송을 일시 중지하는 것이 좋습니다. 전송을 일시 중단하면 SnapMirror 장애가 방지됩니다. 대상 시스템에서 전송을 일시 중지해야 합니다.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-cloud-volumes-ontap/images/note.svg" alt="참고">
+</td>
+<td class="content">
+BlueXP 백업 및 복구는 SnapMirror 구현을 사용하여 백업 파일(SnapMirror Cloud라고 함)을 생성하지만 시스템을 업그레이드할 때 백업을 일시 중단할 필요가 없습니다.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<div class="title">이 작업에 대해</div>
+<p>다음 단계에서는 버전 9.3 이상에서 System Manager를 사용하는 방법을 설명합니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>대상 시스템에서 System Manager에 로그인합니다.</p>
+<div class="paragraph">
+<p>웹 브라우저에서 클러스터 관리 LIF의 IP 주소를 지정하면 System Manager에 로그인할 수 있습니다. Cloud Volumes ONTAP 작업 환경에서 IP 주소를 찾을 수 있습니다.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-cloud-volumes-ontap/images/note.svg" alt="참고">
+</td>
+<td class="content">
+BlueXP에 액세스하는 컴퓨터에는 Cloud Volumes ONTAP에 대한 네트워크 연결이 있어야 합니다. 예를 들어, 클라우드 제공업체 네트워크에 있는 점프 호스트에서 BlueXP에 로그인해야 할 수 있습니다.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>보호 &gt; 관계 * 를 클릭합니다.</p>
+</li>
+<li>
+<p>관계를 선택하고 * 작업 &gt; 정지 * 를 클릭합니다.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="애그리게이트가-온라인-상태인지-확인합니다">애그리게이트가 온라인 상태인지 확인합니다</h3>
+<div class="paragraph">
+<p>소프트웨어를 업데이트하기 전에 Cloud Volumes ONTAP용 애그리게이트가 온라인 상태여야 합니다. 애그리게이트는 대부분의 구성에서 온라인 상태여야 하지만, 그렇지 않을 경우 온라인 상태로 전환할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<div class="title">이 작업에 대해</div>
+<p>다음 단계에서는 버전 9.3 이상에서 System Manager를 사용하는 방법을 설명합니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>작업 환경에서 * 집계 * 탭을 클릭합니다.</p>
+</li>
+<li>
+<p>집계 제목 아래에서 타원 버튼을 클릭한 다음 * 집계 세부 정보 보기 * 를 선택합니다.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshots_aggregate_details_state.png" alt="스크린샷: 집계에 대한 정보를 볼 때 상태 필드를 표시합니다."></span></p>
+</div>
+</li>
+<li>
+<p>애그리게이트는 오프라인 상태인 경우 System Manager를 사용하여 애그리게이트를 온라인 상태로 전환합니다.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>스토리지 &gt; 애그리게이트 및 디스크 &gt; 애그리게이트 * 를 클릭합니다.</p>
+</li>
+<li>
+<p>애그리게이트를 선택한 다음 * 추가 작업 &gt; 상태 &gt; 온라인 * 을 클릭합니다.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="모든-lif가-홈-포트에-있는지-확인합니다">모든 LIF가 홈 포트에 있는지 확인합니다</h3>
+<div class="paragraph">
+<p>업그레이드하기 전에 모든 LIF가 홈 포트에 있어야 합니다. ONTAP 설명서를 참조하십시오 <a href="https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html">"모든 LIF가 홈 포트에 있는지 확인합니다"</a>.</p>
+</div>
+<div class="paragraph">
+<p>업그레이드 실패 오류가 발생하면 를 참조하십시오 <a href="https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails">"기술 문서 "Cloud Volumes ONTAP 업그레이드 실패""</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cloud-volumes-ontap를-업그레이드합니다">Cloud Volumes ONTAP를 업그레이드합니다</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP는 새 버전을 업그레이드할 수 있을 때 사용자에게 알립니다. 이 알림에서 업그레이드 프로세스를 시작할 수 있습니다. 자세한 내용은 을 참조하십시오 <a href="#bluexp-알림에서-업그레이드합니다">BlueXP 알림에서 업그레이드합니다</a>.</p>
+</div>
+<div class="paragraph">
+<p>외부 URL의 이미지를 사용하여 소프트웨어 업그레이드를 수행하는 또 다른 방법입니다. 이 옵션은 BlueXP가 S3 버킷을 액세스하여 소프트웨어를 업그레이드할 수 없거나 패치가 제공된 경우에 유용합니다. 자세한 내용은 을 참조하십시오 <a href="#url에서-사용할-수-있는-이미지에서-업그레이드합니다">URL에서 사용할 수 있는 이미지에서 업그레이드합니다</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="bluexp-알림에서-업그레이드합니다">BlueXP 알림에서 업그레이드합니다</h3>
+<div class="paragraph">
+<p>BlueXP는 새 버전의 Cloud Volumes ONTAP를 사용할 수 있을 때 Cloud Volumes ONTAP 작업 환경에 알림을 표시합니다.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_overview_upgrade.png" alt="스크린샷: 작업 환경을 선택한 후 Canvas 페이지에 표시되는 새 버전 사용 가능 알림을 표시합니다."></span></p>
+</div>
+<div class="paragraph">
+<p>이 알림에서 업그레이드 프로세스를 시작하여 S3 버킷에서 소프트웨어 이미지를 가져온 다음 이미지를 설치한 다음 시스템을 다시 시작하여 프로세스를 자동화할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<div class="title">시작하기 전에</div>
+<p>볼륨 또는 애그리게이트 생성과 같은 BlueXP 작업은 Cloud Volumes ONTAP 시스템에서 진행 중이지 않아야 합니다.</p>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>왼쪽 탐색 메뉴에서 * Storage &gt; Canvas * 를 선택합니다.</p>
+</li>
+<li>
+<p>작업 환경을 선택합니다.</p>
+<div class="paragraph">
+<p>새 버전을 사용할 수 있는 경우 개요 탭에 알림이 나타납니다.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_overview_upgrade.png" alt="&quot;지금 업그레이드!&quot;가 표시된 스크린샷 링크 - 개요 탭 아래."></span></p>
+</div>
+</li>
+<li>
+<p>새 버전을 사용할 수 있는 경우 * 지금 업그레이드! * 를 클릭합니다</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-cloud-volumes-ontap/images/note.svg" alt="참고">
+</td>
+<td class="content">
+BlueXP 알림을 통해 Cloud Volumes ONTAP를 업그레이드하려면 먼저 NetApp Support 사이트 계정이 있어야 합니다.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Upgrade Cloud Volumes ONTAP 페이지에서 EULA를 읽은 다음 * EULA * 를 읽고 승인합니다 * 를 선택합니다.</p>
+</li>
+<li>
+<p>업그레이드 * 를 클릭합니다.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-cloud-volumes-ontap/images/note.svg" alt="참고">
+</td>
+<td class="content">
+Upgrade Cloud Volumes ONTAP 페이지에서는 기본적으로 업그레이드할 최신 Cloud Volumes ONTAP 버전을 선택합니다. 사용 가능한 경우 * 이전 버전 선택 * 을 클릭하여 업그레이드를 위해 이전 버전의 Cloud Volumes ONTAP를 선택할 수 있습니다.<br>
+을 참조하십시오 <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#supported-upgrade-paths" target="_blank" rel="noopener">"지원되는 업그레이드 경로 목록입니다"</a> 현재 Cloud Volumes ONTAP 버전을 기반으로 적절한 업그레이드 경로를 선택합니다.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_upgrade_select_versions.png" alt="Cloud Volumes ONTAP 버전 업그레이드 페이지의 스크린샷."></span></p>
+</div>
+</li>
+<li>
+<p>업그레이드 상태를 확인하려면 설정 아이콘을 클릭하고 * 타임라인 * 을 선택합니다.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">결과</div>
+<p>BlueXP가 소프트웨어 업그레이드를 시작합니다. 소프트웨어 업데이트가 완료되면 작업 환경에서 작업을 수행할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<div class="title">작업을 마친 후</div>
+<p>SnapMirror 전송을 일시 중지한 경우 System Manager를 사용하여 전송을 다시 시작합니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="url에서-사용할-수-있는-이미지에서-업그레이드합니다">URL에서 사용할 수 있는 이미지에서 업그레이드합니다</h3>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP 소프트웨어 이미지를 커넥터 또는 HTTP 서버에 배치한 다음 BlueXP에서 소프트웨어 업그레이드를 시작할 수 있습니다. BlueXP에서 S3 버킷을 액세스하여 소프트웨어를 업그레이드할 수 없는 경우 이 옵션을 사용할 수 있습니다.</p>
+</div>
+<div class="ulist">
+<div class="title">시작하기 전에</div>
+<ul>
+<li>
+<p>볼륨 또는 애그리게이트 생성과 같은 BlueXP 작업은 Cloud Volumes ONTAP 시스템에서 진행 중이지 않아야 합니다.</p>
+</li>
+<li>
+<p>HTTPS를 사용하여 ONTAP 이미지를 호스팅하는 경우 인증서 누락으로 인한 SSL 인증 문제로 인해 업그레이드가 실패할 수 있습니다. 해결 방법은 ONTAP와 BlueXP 간의 인증에 사용할 CA 서명 인증서를 생성하고 설치하는 것입니다.</p>
+<div class="paragraph">
+<p>NetApp 기술 문서로 이동하여 단계별 지침을 확인하십시오.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images" target="_blank" rel="noopener">"NetApp KB: 업그레이드 이미지를 호스팅하기 위해 BlueXP를 HTTPS 서버로 구성하는 방법"</a></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">단계</div>
+<ol class="arabic">
+<li>
+<p>선택 사항: Cloud Volumes ONTAP 소프트웨어 이미지를 호스팅할 수 있는 HTTP 서버를 설정합니다.</p>
+<div class="paragraph">
+<p>가상 네트워크에 VPN이 연결되어 있는 경우 Cloud Volumes ONTAP 소프트웨어 이미지를 자체 네트워크의 HTTP 서버에 배치할 수 있습니다. 그렇지 않으면 클라우드에 있는 HTTP 서버에 파일을 배치해야 합니다.</p>
+</div>
+</li>
+<li>
+<p>Cloud Volumes ONTAP에 대해 고유한 보안 그룹을 사용하는 경우 Cloud Volumes ONTAP가 소프트웨어 이미지에 액세스할 수 있도록 아웃바운드 규칙이 HTTP 연결을 허용하는지 확인합니다.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-cloud-volumes-ontap/images/note.svg" alt="참고">
+</td>
+<td class="content">
+미리 정의된 Cloud Volumes ONTAP 보안 그룹은 기본적으로 아웃바운드 HTTP 연결을 허용합니다.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>에서 소프트웨어 이미지를 가져옵니다 <a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab" target="_blank" rel="noopener">"NetApp Support 사이트"</a>.</p>
+</li>
+<li>
+<p>파일을 제공할 Connector 또는 HTTP 서버의 디렉토리에 소프트웨어 이미지를 복사합니다.</p>
+<div class="paragraph">
+<p>두 개의 경로를 사용할 수 있습니다. 올바른 경로는 커넥터 버전에 따라 다릅니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>'/opt/application/netapp/cloudmanager/docker/data/ONTAP/images/'</p>
+</li>
+<li>
+<p>'/opt/application/netapp/cloudmanager/ontap/images/'</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>BlueXP의 작업 환경에서 *&#8230;&#8203; (타원 아이콘) * 을 클릭한 다음 * Cloud Volumes ONTAP 업데이트 * 를 클릭합니다.</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP 버전 업데이트 페이지에서 URL을 입력한 다음 * 이미지 변경 * 을 클릭합니다.</p>
+<div class="paragraph">
+<p>위에 표시된 경로의 커넥터에 소프트웨어 이미지를 복사한 경우 다음 URL을 입력합니다.</p>
+</div>
+<div class="paragraph">
+<p><a href="http://&lt;Connector-private-IP-address&gt;/ontap/images/&lt;image-file-name&gt" class="bare">http://&lt;Connector-private-IP-address&gt;/ontap/images/&lt;image-file-name&gt</a>; 으로 문의하십시오</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-cloud-volumes-ontap/images/note.svg" alt="참고">
+</td>
+<td class="content">
+URL에서 * image-file-name * 은 "cot.image.9.13.1P2.tgz" 형식을 따라야 합니다.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>계속하려면 * Proceed * (진행 *)를 클릭합니다.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">결과</div>
+<p>BlueXP가 소프트웨어 업데이트를 시작합니다. 소프트웨어 업데이트가 완료되면 작업 환경에서 작업을 수행할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<div class="title">작업을 마친 후</div>
+<p>SnapMirror 전송을 일시 중지한 경우 System Manager를 사용하여 전송을 다시 시작합니다.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/ko-kr/bluexp-cloud-volumes-ontap/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/ko-kr/bluexp-cloud-volumes-ontap/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">이 페이지에서</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">이용 약관</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">개인 정보 보호 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">쿠키 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">쿠키 설정</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">이 페이지에 대한 피드백 보내기</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ko-kr/bluexp-cloud-volumes-ontap/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ko-kr/bluexp-cloud-volumes-ontap/js/prism.js'></script>
+      <script type="text/javascript" src='/ko-kr/bluexp-cloud-volumes-ontap/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ko-kr/bluexp-cloud-volumes-ontap/js/ie-tabbed-blocks.js'></script>
+    <script src='/ko-kr/bluexp-cloud-volumes-ontap/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
