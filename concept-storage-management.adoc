@@ -99,28 +99,28 @@ BlueXP에서 집계를 관리하는 대신 직접 관리할 수 있습니다. li
 
 === 자동 용량 관리
 
-Capacity Management Mode(용량 관리 모드)는 기본적으로 Automatic(자동)으로 설정됩니다. 이 모드에서 BlueXP는 더 많은 용량이 필요할 때 Cloud Volumes ONTAP 인스턴스에 대해 새 디스크를 자동으로 구매하고, 사용되지 않는 디스크 컬렉션(애그리게이트)을 삭제하고, 필요할 때 애그리게이트 간에 볼륨을 이동하며, 디스크 장애를 제거합니다.
+Capacity Management Mode(용량 관리 모드)는 기본적으로 Automatic(자동)으로 설정됩니다. 이 모드에서 BlueXP는 15분마다 여유 공간 비율을 확인하여 여유 공간 비율이 지정된 임계값 아래로 떨어지는지 확인합니다. 더 많은 용량이 필요한 경우 BlueXP가 자동으로 새 디스크 구매를 시작하고, 사용되지 않은 디스크 컬렉션(애그리게이트)을 삭제하고, 필요에 따라 애그리게이트 간에 볼륨을 이동하며, 디스크 장애를 방지합니다.
 
 다음 예제에서는 이 모드가 작동하는 방식을 보여 줍니다.
 
 * Aggregate가 용량 임계값에 도달하고 더 많은 디스크를 수용할 수 있는 공간이 있는 경우 BlueXP는 해당 aggregate에 대한 새 디스크를 자동으로 구매하여 볼륨이 계속 증가할 수 있도록 합니다.
 +
-BlueXP는 15분마다 사용 가능한 공간 비율을 확인하여 추가 디스크를 구입해야 하는지 확인합니다.
-
-
-
 ifdef::aws[]
 
-+ Elastic Volumes를 지원하는 AWS의 Aggregate의 경우 BlueXP는 RAID 그룹의 디스크 크기도 증가시킵니다. link:concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].
+
+
+AWS에서 Elastic Volumes를 지원하는 애그리게이트의 경우 BlueXP는 RAID 그룹의 디스크 크기도 증가합니다. link:concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].
 
 endif::aws[]
 
-* aggregate가 용량 임계값에 도달하고 추가 디스크를 지원할 수 없는 경우, BlueXP는 자동으로 볼륨을 해당 aggregate에서 가용 용량을 가진 aggregate 또는 새로운 aggregate로 이동합니다.
-+
+를 누릅니다
+* aggregate가 용량 임계값에 도달하고 추가 디스크를 지원할 수 없는 경우 BlueXP는 자동으로 볼륨을 해당 aggregate에서 사용 가능한 용량이 있는 Aggregate 또는 새로운 aggregate로 이동합니다.
+
+를 누릅니다
 BlueXP에서 볼륨에 대한 새 애그리게이트를 생성할 경우 해당 볼륨의 크기에 맞는 디스크 크기를 선택합니다.
 
-+
-이제 원래 aggregate에서 여유 공간을 사용할 수 있습니다. 기존 볼륨 또는 새 볼륨에서 해당 공간을 사용할 수 있습니다. 이 시나리오에서는 공간을 클라우드 프로저더(cloud provider)로 반환할 수 없습니다.
+를 누릅니다
+이제 원래 aggregate에서 여유 공간을 사용할 수 있습니다. 기존 볼륨 또는 새 볼륨에서 해당 공간을 사용할 수 있습니다. 이 시나리오에서는 공간을 클라우드 공급자에게 반환할 수 없습니다.
 
 * Aggregate에 12시간 이상 볼륨이 없는 경우 BlueXP에서 해당 볼륨을 삭제합니다.
 
