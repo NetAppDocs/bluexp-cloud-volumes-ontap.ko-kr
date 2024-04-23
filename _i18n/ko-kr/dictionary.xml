@@ -595,7 +595,6 @@
   <block id="f13e5738aeb376300b20ef726f2fe2e3" category="section-title">볼륨 생성 기능이 향상되었습니다</block>
   <block id="9f6be88742d739e1a17345387ce1fbb2" category="paragraph">볼륨 생성을 위해 다음과 같은 몇 가지 기능이 향상되었습니다.</block>
   <block id="c393c88c641a6c18da56fffa85b9c78c" category="list-text">볼륨 생성 마법사를 쉽게 다시 설계했습니다.</block>
-  <block id="6b7e7cce69c13d91130e2e673b1da322" category="list-text">볼륨에 추가한 태그는 이제 Application Templates 서비스와 연결되어 리소스 관리를 구성하고 단순화할 수 있습니다.</block>
   <block id="69582189d37c402edf59b0f133df7c09" category="list-text">이제 NFS에 대한 사용자 지정 엑스포트 정책을 선택할 수 있습니다.</block>
   <block id="7ab20d098d6605f542bfe595351b4d64" category="inline-image-macro">새 볼륨을 생성할 때 프로토콜 페이지를 보여 주는 스크린샷.</block>
   <block id="7aece74ebc88a7e88e14656ceaecf9cf" category="paragraph"><block ref="7aece74ebc88a7e88e14656ceaecf9cf" category="inline-image-macro-rx" type="image"></block></block>
@@ -740,8 +739,6 @@
   <block id="3b0e375a08fe94a129cba31916c9d2dc" category="paragraph">이 페이지의 일부 필드는 설명이 필요 없습니다. 다음 목록에서는 지침이 필요한 필드를 설명합니다.</block>
   <block id="191fac23c2b2ea4e948178972521292f" category="cell">볼륨 크기</block>
   <block id="7b975bd58356ec64d88f70d7f167a299" category="cell">입력할 수 있는 최대 크기는 씬 프로비저닝의 사용 여부에 따라 크게 달라집니다. 이를 통해 현재 사용 가능한 물리적 스토리지보다 더 큰 볼륨을 생성할 수 있습니다.</block>
-  <block id="189f63f277cd73395561651753563065" category="cell">태그</block>
-  <block id="d7ab5fe4cd7b86ba1ce9a35dbe34ee4b" category="inline-link">응용 프로그램 템플릿 서비스</block>
   <block id="426fb47479d0477ed5dbc9388b9add76" category="cell">스냅샷 정책</block>
   <block id="052c4d27b63fed6776d46336a295d801" category="cell">스냅샷 복사본 정책은 자동으로 생성되는 NetApp 스냅샷 복사본의 수와 빈도를 지정합니다. NetApp 스냅샷 복사본은 성능 영향이 없고 최소한의 스토리지가 필요한 시점 파일 시스템 이미지입니다. 기본 정책을 선택하거나 선택하지 않을 수 있습니다. Microsoft SQL Server의 tempdb와 같이 임시 데이터에 대해 없음을 선택할 수 있습니다.</block>
   <block id="8df799ab4a27609ef1087c249676bbc5" category="list-text">* 프로토콜 *: 볼륨의 프로토콜(NFS, CIFS 또는 iSCSI)을 선택한 다음 필요한 정보를 제공합니다.</block>
@@ -766,23 +763,6 @@
   <block id="13aa0c9cafb05f7d1436239215621d90" category="list-text">* Usage Profile &amp; Tiering Policy *: 볼륨에서 스토리지 효율성 기능을 활성화 또는 비활성화할지 여부를 선택한 다음 를 선택합니다 <block ref="45393a767ab360c2ba9e7110c6cbc830" category="inline-link-macro-rx"></block>.</block>
   <block id="1fd2dba2020c106a2c49da0e6ad7e868" category="paragraph">ONTAP에는 필요한 총 스토리지 양을 줄일 수 있는 몇 가지 스토리지 효율성 기능이 포함되어 있습니다. NetApp 스토리지 효율성 기능은 다음과 같은 이점을 제공합니다.</block>
   <block id="eb5c6869b3fc04254530622723507f79" category="list-text">* Review * (검토 *): 볼륨에 대한 세부 정보를 검토한 다음 * Add * (추가 *)를 클릭합니다.</block>
-  <block id="2fd8ed01b53ab930ba045f6316aa8fbf" category="section-title">템플릿에서 볼륨을 생성합니다</block>
-  <block id="027921a6306ed2c54f25607de975d377" category="paragraph">조직에서 Cloud Volumes ONTAP 볼륨 템플릿을 만들어 특정 애플리케이션의 워크로드 요구사항에 최적화된 볼륨을 구축한 경우 이 섹션의 단계를 수행하십시오.</block>
-  <block id="bc41c927b050313fabe4e7bfa9c82224" category="paragraph">템플릿에 디스크 유형, 크기, 프로토콜, 스냅샷 정책, 클라우드 공급자 등 특정 볼륨 매개 변수가 이미 정의되어 있기 때문에 템플릿을 사용하면 작업을 보다 쉽게 수행할 수 있습니다. 있습니다. 매개 변수가 이미 미리 정의된 경우 다음 볼륨 매개 변수로 건너뛸 수 있습니다.</block>
-  <block id="395f4870d887a81edabc6ad40f5a84f0" category="admonition">템플릿을 사용하는 경우에만 NFS 또는 CIFS 볼륨을 생성할 수 있습니다.</block>
-  <block id="3464a6536597fb17300e864f33f6b63d" category="list-text">Canvas 페이지에서 볼륨을 프로비저닝할 Cloud Volumes ONTAP 시스템의 이름을 클릭합니다.</block>
-  <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">템플릿에서 새 볼륨을 추가하는 방법을 보여 주는 스크린샷</block>
-  <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">Select Template_page에서 볼륨을 생성하는 데 사용할 템플릿을 선택하고 * Next * 를 클릭합니다.</block>
-  <block id="41fdbb8293e553892079d0e7ad8a9ad9" category="inline-image-macro">사용 가능한 응용 프로그램 템플릿의 스크린샷.</block>
-  <block id="f2a6f7bb83d518b8832e241b44419c17" category="paragraph"><block ref="f2a6f7bb83d518b8832e241b44419c17" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="19f5b7f92268b2f8e63e4083819666c9" category="inline-image-macro">볼륨을 생성하기 위해 입력해야 하는 빈 템플릿을 보여 주는 스크린샷</block>
-  <block id="f9fb39421cb5c84a9897e58b19c84510" category="paragraph"><block ref="f9fb39421cb5c84a9897e58b19c84510" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="db382d688e4cb3e09b6e7a743ce00edb" category="paragraph">다른 작업이 있는 경우 왼쪽 창에서 작업을 클릭하여 완료해야 하는 매개 변수를 표시합니다.</block>
-  <block id="a31e4f2aa7f454321015e4c5b02bae97" category="inline-image-macro">완료해야 하는 추가 작업을 선택하는 방법을 보여 주는 스크린샷</block>
-  <block id="0fdf861b8e72c9acd6caea0924545667" category="paragraph"><block ref="0fdf861b8e72c9acd6caea0924545667" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f97c61e27cbf22f850ec5f0412358f0b" category="paragraph">Cloud Volumes ONTAP에서는 진행 상황을 볼 수 있도록 볼륨을 프로비저닝하고 페이지를 표시합니다.</block>
-  <block id="40136e65ff57723941fc2af2bf21d54a" category="inline-image-macro">템플릿에서 새 볼륨 생성 진행률을 보여 주는 스크린샷</block>
-  <block id="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="paragraph"><block ref="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="841221afb195f2b9f58a8b1dc6a57132" category="section-title">HA 구성의 두 번째 노드에 볼륨을 생성합니다</block>
   <block id="60a2834a97bdfe49641e5ed1d42e4116" category="list-text">Canvas 페이지에서 집계를 관리할 Cloud Volumes ONTAP 작업 환경의 이름을 두 번 클릭합니다.</block>
   <block id="c8f3514620e31924fc247388a82834fa" category="list-text">홈 노드의 경우 HA 쌍의 두 번째 노드를 선택합니다.</block>
@@ -4321,19 +4301,10 @@
   <block id="d3c83108d2d70bd2eb22fbd1bb485f2f" category="paragraph">개요 탭에서 볼륨 타일로 이동한 다음 * 볼륨 추가 * 를 클릭합니다.<block ref="d66b0ca71189f0ddd53cd4b3e65bbf57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d67d87305db3f29260c81473dd44e3f1" category="inline-image-macro">애그리게이트 탭 아래의 볼륨 추가 버튼 스크린샷</block>
   <block id="13f1658d880a29010b36402880b7742d" category="paragraph">애그리게이트 탭에서 원하는 애그리게이트 타일로 이동합니다. 메뉴 아이콘을 클릭한 다음 * 볼륨 추가 * 를 클릭합니다.<block ref="90511a2a61b219fe659f6c6204d0e9f4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5359c0cc8b61614ec08d953783fef7e9" category="list-text">* 볼륨, 세부 정보, 보호 및 태그 *: 볼륨에 대한 기본 세부 정보를 입력하고 스냅샷 정책을 선택합니다.</block>
   <block id="5a33fdd3ad048388d676b3cfe62a76b4" category="cell">볼륨 이름</block>
   <block id="da791c0c870c83e87ff0b50e41446b5f" category="cell">새 볼륨에 입력할 수 있는 식별 가능한 이름입니다.</block>
   <block id="8bc5e99f50f67c6de120548d75821d83" category="cell">스토리지 VM(SVM)</block>
   <block id="360a6a454911fe3432462fbd11f3588c" category="cell">스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, 클라이언트에 스토리지 및 데이터 서비스를 제공합니다. SVM 또는 가상 서버로서 이를 알 수 있습니다. Cloud Volumes ONTAP는 기본적으로 하나의 스토리지 VM으로 구성되지만 일부 구성에서는 추가 스토리지 VM을 지원합니다. 새 볼륨에 대해 스토리지 VM을 지정할 수 있습니다.</block>
-  <block id="83153603fdc3097c323cd6a9c354a74c" category="list-text">볼륨 탭으로 이동하고 * 볼륨 추가 * &gt; * 템플릿에서 새 볼륨 * 을 클릭합니다.</block>
-  <block id="d5b72c940ba2727afcbba5dd037893f5" category="paragraph"><block ref="d5b72c940ba2727afcbba5dd037893f5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ac2c13cd2f76af0753933c8630446e5f" category="paragraph">Editor_page가 표시됩니다.</block>
-  <block id="18a9b2315ac5b98381d542571ba28299" category="list-text">Action_panel 위에 템플릿 이름을 입력합니다.</block>
-  <block id="74f7c9266baa87f8e4aceef158811143" category="list-text">context_에서 작업 환경은 시작한 작업 환경의 이름으로 채워집니다. 볼륨을 생성할 * 스토리지 VM * 을 선택합니다.</block>
-  <block id="746037c3b6a0eec6bb1e41959d51e07e" category="list-text">Apply * (적용 *)를 클릭하여 구성된 매개변수를 선택한 작업에 저장합니다.</block>
-  <block id="be2645489c0ae0149fc30f6dc8d80bbb" category="paragraph">예를 들어 Enable Cloud Backup on Volume 작업이 백업 정책을 선택해야 하는 경우 지금 선택할 수 있습니다.</block>
-  <block id="f0131c80c45b00e70cb9a1d8c9e3448a" category="list-text">템플릿 작업에 대한 구성이 완료되면 * 템플릿 저장 * 을 클릭합니다.</block>
   <block id="bc321d6d3a5b549e1c0961440ef815f4" category="list-text">집계 탭에서 * 집계 추가 * 를 클릭합니다.</block>
   <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">Add Aggregate_screen에서 Aggregate를 생성합니다.</block>
   <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">집계 추가 진행률을 보여 주는 스크린샷</block>
@@ -4354,10 +4325,6 @@
   <block id="8f56224592abe10774e5575500874b11" category="cell">Manage volumes(볼륨 관리) 패널의 Volume Actions(볼륨 작업) 에서 * View volume details(볼륨 세부 정보 보기) * 를 클릭합니다.</block>
   <block id="d4c98b540182b809e992d8b4a580423e" category="list-text">볼륨 관리 패널의 볼륨 작업 에서 * 탑재 명령 * 을 클릭합니다.</block>
   <block id="98c56e9d0291f443f1ed942549039cc3" category="list-text">Manage volumes(볼륨 관리) 패널의 Volume Actions(볼륨 작업) 에서 * Clone the volume(볼륨 복제) * 을 클릭합니다.</block>
-  <block id="c36ae8709c4f5551dcd33c1fa09b1144" category="cell">볼륨 태그 편집(읽기-쓰기 볼륨만 해당)</block>
-  <block id="0c76e6ded4e12f0dc0b2564def628aae" category="list-text">볼륨 관리 패널의 볼륨 작업 에서 * 볼륨 태그 편집 * 을 클릭하여 선택한 볼륨에 할당된 볼륨 태그를 수정합니다.</block>
-  <block id="186ac335ead3bdabcd70b18a0e6f40ed" category="list-text">제공된 필드에 볼륨 태그 키 및 값을 입력합니다.</block>
-  <block id="cf92c264f59ad57e63ae663106047d25" category="list-text">추가 태그를 포함하려면 * 새 태그 추가 * 를 클릭합니다.</block>
   <block id="29f680a1731a2250d73a33aede73a2eb" category="list-text">볼륨 관리 패널의 볼륨 작업 에서 * 볼륨 설정 편집 * 을 클릭합니다</block>
   <block id="ac11ccea860c1468f49807407e073557" category="list-text">볼륨의 스냅샷 정책, NFS 프로토콜 버전, NFS 액세스 제어 목록(엑스포트 정책) 또는 공유 권한을 수정한 다음 * 적용 * 을 클릭합니다.</block>
   <block id="6271604d64ad8f6bcdad901be64df292" category="list-text">Manage volumes(볼륨 관리) 패널의 Volume Actions(볼륨 작업) 에서 * Delete the volume(볼륨 삭제) * 을 클릭합니다.</block>
@@ -4487,8 +4454,6 @@
   <block id="b7553c7fbdeaddba3cf075caca1654ea" category="paragraph">BlueXP 디지털 지갑에 노드 기반 라이센스를 추가하여 새 Cloud Volumes ONTAP 시스템을 생성할 때 라이센스를 선택할 수 있습니다. 디지털 지갑에서 이러한 라이센스를 _할당되지 않음_으로 식별합니다.</block>
   <block id="5fd0d116f88accf7d18b80d146d87953" category="paragraph">BlueXP는 디지털 지갑에 라이선스를 추가합니다. 라이센스는 새 Cloud Volumes ONTAP 시스템에 연결할 때까지 할당되지 않은 것으로 식별됩니다. 그런 다음 디지털 지갑에서 * BYOL * 탭으로 라이센스가 이동됩니다.</block>
   <block id="637413a6c4ca962adade95ae4bcc1109" category="paragraph">아직 사용하지 않은 Cloud Volumes ONTAP에 대해 할당되지 않은 노드 기반 라이센스가 있는 경우 라이센스를 BlueXP 백업 및 복구 라이센스, BlueXP 분류 라이센스 또는 BlueXP 계층화 라이센스로 변환하여 교환할 수 있습니다.</block>
-  <block id="84494b1e674f56df077cb2b7eca2b569" category="list-text">정의해야 할 다른 작업이 없는 경우(예: BlueXP 백업 및 복구 구성) * 템플릿 저장 * 을 클릭합니다.</block>
-  <block id="3cb732600caeb6ed3e89ade08544187b" category="paragraph">또한 볼륨에 대해 BlueXP 백업 및 복구를 활성화하는 등 템플릿에 보조 작업이 구현된 경우 해당 작업도 수행됩니다.</block>
   <block id="726d1cad4d0527532460d1a853919ebc" category="inline-link">BlueXP 분류에 대해 자세히 알아보십시오</block>
   <block id="723a81a7ee0b42134a46c1aaa0d99371" category="inline-link">BlueXP 백업 및 복구에 대해 자세히 알아보십시오</block>
   <block id="fc0a70bcada485a87b25779f9232cd77" category="summary">Cloud Volumes ONTAP를 사용하려면 Google Cloud 서비스 계정이 두 가지 용도로 필요합니다. 첫 번째는 데이터 계층화를 통해 콜드 데이터를 Google Cloud의 저비용 오브젝트 스토리지로 계층화할 수 있는 때입니다. 두 번째는 BlueXP 백업 및 복구를 활성화하여 저렴한 객체 스토리지에 볼륨을 백업하는 것입니다.</block>
@@ -4614,7 +4579,6 @@ CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS �
   <block id="f9f4082179938e25ee1e3141d4b4b61d" category="paragraph"><block ref="f9f4082179938e25ee1e3141d4b4b61d" category="inline-link-rx"></block></block>
   <block id="882d5f98206dd8157654127073c920f2" category="paragraph"><block ref="882d5f98206dd8157654127073c920f2" category="inline-link-rx"></block></block>
   <block id="f870932f389b07a18c35e61ebc668c91" category="paragraph"><block ref="161ab28684c427e4961f0c360c1dbce7" category="inline-link-rx"></block>.</block>
-  <block id="63c9832895bcd0b024988b034d19fa69" category="cell">볼륨에 추가하는 태그는 과 연결됩니다<block ref="b6951a270b848f0d80ace1368ae797fd" category="inline-link-rx"></block>을 사용하면 리소스 관리를 구성하고 단순화할 수 있습니다.</block>
   <block id="ccd8fe0f54baad6a01a1827625b8a699" category="list-text">Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="781a31b225d61ebbabe5dd84830d307a" category="list-text">가 있어야 합니다<block ref="531433bd83668140eff1dc8bd40e140e" category="inline-link-rx"></block>.</block>
   <block id="0a878535ad1a6e2ef955aba255e762cd" category="list-text">메시지가 표시되면<block ref="b03d5bfc016d24f5269c25486d5c5105" category="inline-link-rx"></block>.</block>
@@ -4887,13 +4851,11 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="c865f6da9bcfc07ba082737620200b41" category="paragraph">프로비저닝된 용량 500GiB를 초과하지 않는 한, 마켓플레이스 구독을 통해 비용이 청구되지 않으며, 이 경우 시스템이 으로 자동으로 변환됩니다 <block ref="ec72849d6ddd1aa67c619efd7a434388" category="inline-link-macro-rx"></block>.</block>
   <block id="a8f0efbc9639c258065d01ea6552a320" category="list-text">새 볼륨에 대한 세부 정보를 지정하고 BlueXP에서 기본 데이터 집계를 처리하도록 합니다. <block ref="7d09ed3a2e8adfd1ea66dd5eff6c8d13" category="inline-xref-macro-rx"></block></block>
   <block id="f2354151259450918b28c0dd2ce20606" category="list-text">선택한 데이터 애그리게이트에 볼륨을 생성합니다. <block ref="7d09ed3a2e8adfd1ea66dd5eff6c8d13" category="inline-xref-macro-rx"></block></block>
-  <block id="b9269bf669334245761162ed1b5f67fc" category="list-text">템플릿에서 볼륨을 생성하여 데이터베이스 또는 스트리밍 서비스와 같은 특정 애플리케이션의 워크로드 요구사항에 맞게 볼륨을 최적화합니다. <block ref="2e0c3dc13b95af01c6b2fc43579657db" category="inline-xref-macro-rx"></block></block>
   <block id="6acfe5d47cf8e7d4ce1ddef9604984d8" category="list-text">HA 구성의 두 번째 노드에 볼륨을 생성합니다. <block ref="8d20c8ec5d13d4f8ec83a1bb8e2e1e5d" category="inline-xref-macro-rx"></block></block>
   <block id="765aadd821cf82bcd286359e2eb25476" category="list-text">iSCSI 볼륨을 생성할 때 BlueXP에서 자동으로 LUN을 생성합니다. 볼륨 당 하나의 LUN만 생성하므로 관리가 필요 없습니다. 볼륨을 생성한 후 <block ref="9b65fd4fba31c27fb58a4653a54defad" category="inline-link-macro-rx"></block>.</block>
   <block id="34b51cb01d3605c2b908600c2b516152" category="list-text"><block ref="34b51cb01d3605c2b908600c2b516152" category="inline-link-macro-rx"></block></block>
   <block id="2a79e18dae8df0be0a0d70d12cf4bfec" category="list-text"><block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block></block>
   <block id="14c10e4dfdbfa7bb1944c39086904d79" category="list-text"><block ref="14c10e4dfdbfa7bb1944c39086904d79" category="inline-link-macro-rx"></block></block>
-  <block id="ff89f21886369313040dff71f31e89db" category="list-text">템플릿에서 하드 코딩되지 않은 모든 매개변수에 대한 값을 추가합니다. 을 참조하십시오 <block ref="8a193d900c598af224bec0dcf7cbba7e" category="inline-xref-macro-rx"></block> Cloud Volumes ONTAP 볼륨 구축을 완료하는 데 필요한 모든 매개 변수에 대한 자세한 내용은 를 참조하십시오.</block>
   <block id="f784e2eca8423af6d4b6e02cd9dc17b6" category="list-text">VPC-0의 HA 구성 요소에 대한 하나의 규칙 세트 이러한 규칙을 통해 Cloud Volumes ONTAP에 대한 데이터 액세스가 가능합니다. <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>.</block>
   <block id="29642aeaa8aff442388842cc2c36f19d" category="list-text">VPC-1, VPC-2 및 VPC-3의 HA 구성 요소에 대한 또 다른 규칙 세트 이러한 규칙은 HA 구성 요소 간의 인바운드 및 아웃바운드 통신에 대해 개방됩니다. <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>.</block>
   <block id="b0082432bdd8f260c6c2bf11437fb1b7" category="list-text">VPC-1, VPC-2 및 VPC-3의 HA 구성 요소에 대한 또 다른 규칙 세트 이러한 규칙은 HA 구성 요소 간의 인바운드 및 아웃바운드 통신에 대해 개방됩니다. <block ref="07ead3ac53ea1b122b25bf61bd233110" category="inline-xref-macro-rx"></block>.</block>
@@ -5273,4 +5235,7 @@ BlueXP에서 볼륨에 대한 새 애그리게이트를 생성할 경우 해당 
   <block id="1d0f99876d748759fce5e852f79fca96" category="list-text">캐나다 중부</block>
   <block id="0b745a8416b0a8e3b89e7e01ba13af65" category="section-title">요하네스버그 지역은 현재 Google Cloud에서 지원됩니다</block>
   <block id="ec826289e3407edb59d3c5ed0aca5c74" category="paragraph">요하네스버그 지역 <block ref="6d1d2d77b70fb38d060e5653977838a2" prefix="(" category="inline-code"></block> 지역)은 현재 Google Cloud for Cloud Volumes ONTAP 9.12.1 GA 이상에서 지원됩니다.</block>
+  <block id="ee94ea94211470599a81d49f8c4b586f" category="section-title">볼륨 템플릿 및 태그는 더 이상 지원되지 않습니다</block>
+  <block id="96b0b2a19dd9deb6b94e53f2e29f4387" category="paragraph">더 이상 템플릿에서 볼륨을 생성하거나 볼륨의 태그를 편집할 수 없습니다. 이러한 작업을 BlueXP 해결 서비스와 연계하면 더 이상 사용할 수 없습니다.</block>
+  <block id="9691bf3a7c5f05b620ab3b20437b6123" category="list-text">* 세부 정보, 보호 및 태그 *: 볼륨에 대한 기본 세부 정보를 입력하고 스냅샷 정책을 선택합니다.</block>
 </blocks>
