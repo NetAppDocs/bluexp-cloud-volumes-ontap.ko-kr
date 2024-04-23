@@ -5262,4 +5262,15 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
 BlueXP에서 볼륨에 대한 새 애그리게이트를 생성할 경우 해당 볼륨의 크기에 맞는 디스크 크기를 선택합니다.</block>
   <block id="7f1e9230df284aec888c734befc03867" category="paragraph">를 누릅니다
 이제 원래 aggregate에서 여유 공간을 사용할 수 있습니다. 기존 볼륨 또는 새 볼륨에서 해당 공간을 사용할 수 있습니다. 이 시나리오에서는 공간을 클라우드 공급자에게 반환할 수 없습니다.</block>
+  <block id="31e2ca9cb7755d06bc40e30fd8e408d3" category="section-title">2024년 4월 23일</block>
+  <block id="a2fefc65df2136938b995f8abbe643c2" category="section-title">Azure에서 여러 가용 영역 배포를 위해 새로운 영역이 지원됩니다</block>
+  <block id="0cc914ed23f0f7d6bc902ae731843213" category="paragraph">현재 다음 지역에서는 Azure for Cloud Volumes ONTAP 9.12.1 GA 이상에서 HA 다중 가용 영역 배포를 지원합니다.</block>
+  <block id="1dab3491cdeeb2a6d567b21ee3063ae4" category="list-text">독일 웨스트 센트럴</block>
+  <block id="26b4bdc11dfead08029a688129c42cf9" category="list-text">폴란드 센트럴</block>
+  <block id="64fb50bb758fe12b94faa568a567e13c" category="list-text">서부 미국 3</block>
+  <block id="eb1aea8107eeeb90c841d5710262dd52" category="list-text">이스라엘 중부</block>
+  <block id="6c2cb03afda0af373b8df47f9dc47ed7" category="list-text">이탈리아 북부</block>
+  <block id="1d0f99876d748759fce5e852f79fca96" category="list-text">캐나다 중부</block>
+  <block id="0b745a8416b0a8e3b89e7e01ba13af65" category="section-title">요하네스버그 지역은 현재 Google Cloud에서 지원됩니다</block>
+  <block id="ec826289e3407edb59d3c5ed0aca5c74" category="paragraph">요하네스버그 지역 <block ref="6d1d2d77b70fb38d060e5653977838a2" prefix="(" category="inline-code"></block> 지역)은 현재 Google Cloud for Cloud Volumes ONTAP 9.12.1 GA 이상에서 지원됩니다.</block>
 </blocks>

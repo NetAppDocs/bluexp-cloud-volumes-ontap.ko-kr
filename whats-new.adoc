@@ -20,6 +20,34 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2024년 4월 23일
+
+
+
+=== Azure에서 여러 가용 영역 배포를 위해 새로운 영역이 지원됩니다
+
+현재 다음 지역에서는 Azure for Cloud Volumes ONTAP 9.12.1 GA 이상에서 HA 다중 가용 영역 배포를 지원합니다.
+
+* 독일 웨스트 센트럴
+* 폴란드 센트럴
+* 서부 미국 3
+* 이스라엘 중부
+* 이탈리아 북부
+* 캐나다 중부
+
+
+모든 지역 목록은 를 참조하십시오 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure 아래의 글로벌 지역 지도"^].
+
+
+
+=== 요하네스버그 지역은 현재 Google Cloud에서 지원됩니다
+
+요하네스버그 지역 (`africa-south1` 지역)은 현재 Google Cloud for Cloud Volumes ONTAP 9.12.1 GA 이상에서 지원됩니다.
+
+모든 지역 목록은 를 참조하십시오 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud의 글로벌 지역 지도"^].
+
+
+
 == 2024년 3월 8일
 
 
