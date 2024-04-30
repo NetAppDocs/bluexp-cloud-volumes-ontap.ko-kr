@@ -1081,47 +1081,21 @@
   <block id="7f025a91fb00bb0c9525dbad509366bd" category="list-text">스토리지 가상 시스템(SVM) 루트 볼륨은 aggr1에 있습니다.</block>
   <block id="f1ff33b1bdbf816203ee716386af3578" category="list-text">데이터 볼륨은 aggr1에도 상주합니다.</block>
   <block id="8d4073fa4a8e186f65d9241d17413d18" category="paragraph">KMS(키 관리 서비스)를 사용하여 AWS에서 데이터 암호화를 설정하면 Cloud Volumes ONTAP의 부팅 및 루트 디스크도 암호화됩니다. 여기에는 HA 쌍의 중재자 인스턴스를 위한 부팅 디스크가 포함됩니다. 디스크는 작업 환경을 생성할 때 선택한 CMK를 사용하여 암호화됩니다.</block>
-  <block id="ac46f2b5d78e0710ebb1765d7e4ba12a" category="doc">AWS C2S 환경에서 Cloud Volumes ONTAP를 시작하십시오</block>
-  <block id="5e2af697d363d750a2757a32a4987829" category="inline-link">AWS C2S(Commercial Cloud Services)</block>
-  <block id="55ac98eae564c353eeef8edc0d7097c1" category="section-title">C2S에서 지원되는 기능</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
-  <block id="0a9e63106b5735d38d5bf5377346f3ed" category="list-text">데이터 복제</block>
-  <block id="d4af1c3d6fd6c6f713f1c42aeefe16e0" category="list-text">감사 시간 표시 막대입니다</block>
-  <block id="a3ba8957c5b6da3f0cea5f6a0560a884" category="paragraph">Cloud Volumes ONTAP의 경우 단일 노드 시스템 또는 HA 쌍을 생성할 수 있습니다. 두 가지 라이센스 옵션 모두 사용 가능: 용량제 및 BYOL(Bring Your Own License)</block>
-  <block id="4533efdd4943c354325fa4b9afd6b946" category="paragraph">C2S의 Cloud Volumes ONTAP에서는 S3에 대한 데이터 계층화도 지원됩니다.</block>
-  <block id="bbac84abd1a970b9c0e8d31ed4aa0906" category="paragraph">C2S 환경에는 인터넷 액세스가 없으므로 다음 기능을 사용할 수 없습니다.</block>
-  <block id="a4d4a2ce01f92b20030c0f4e601e1469" category="list-text">NetApp AutoSupport를 참조하십시오</block>
-  <block id="c0954cac84549fc6e8eaef628e57836c" category="list-text">Cloud Volumes ONTAP 리소스에 대한 AWS 비용 정보입니다</block>
-  <block id="42f8643eb52a942747937327c72c8361" category="section-title">구축 개요</block>
-  <block id="7dbc114b490b3587afece94d9d3cfb10" category="paragraph">C2S에서 Cloud Volumes ONTAP 시작하기 에는 몇 가지 단계가 포함되어 있습니다.</block>
-  <block id="48779c5be1cd521ff10b7f3bcc805a25" category="paragraph">여기에는 네트워킹 설정, Cloud Volumes ONTAP 가입, 권한 설정 및 AWS KMS 설정 옵션이 포함됩니다.</block>
-  <block id="f14f364d88ae94a22fecdfb6080b3c8b" category="paragraph">이러한 각 단계는 아래에 설명되어 있습니다.</block>
-  <block id="ab674d97a0dbbc87ca939d68d82e8a08" category="paragraph">AWS 환경은 몇 가지 요구사항을 충족해야 합니다.</block>
   <block id="4e85b7aafac6d2da235acd904c8d01ca" category="section-title">네트워크 설정</block>
   <block id="7c5d8bf27092bf15632098a9cc75b95e" category="paragraph">Cloud Volumes ONTAP가 제대로 작동할 수 있도록 AWS 네트워킹을 설정합니다.</block>
   <block id="6cc1b87018ec63a72f339fd55542d90f" category="list-text">커넥터 인스턴스 및 Cloud Volumes ONTAP 인스턴스를 시작할 VPC 및 서브넷을 선택합니다.</block>
   <block id="c5a74d045a159ee12555da1d786bd27c" category="list-text">VPC와 서브넷이 커넥터와 Cloud Volumes ONTAP 간의 연결을 지원하는지 확인합니다.</block>
   <block id="c1540e16429791c7515c0322aad07fcf" category="list-text">VPC 엔드포인트를 S3 서비스로 설정합니다.</block>
   <block id="4274b83eccea8c2453ce00d6c7cde54e" category="paragraph">Cloud Volumes ONTAP의 콜드 데이터를 저비용 오브젝트 스토리지로 계층화하려는 경우 VPC 엔드포인트가 필요합니다.</block>
-  <block id="cfd6f0ddd1c37132e466969cd29cfd0b" category="section-title">Cloud Volumes ONTAP에 가입하십시오</block>
-  <block id="d1e73b0111e78833cd168c2cc012483b" category="list-text">AWS 인텔리전스 커뮤니티 마켓플레이스로 이동하여 Cloud Volumes ONTAP를 검색합니다.</block>
-  <block id="93dc1b846256ba5a81d496cecf09af84" category="list-text">구축할 오퍼링을 선택합니다.</block>
-  <block id="50b78843131cd5e7a6b90126141037f5" category="list-text">약관을 검토하고 * Accept * (수락 *)를 클릭합니다.</block>
-  <block id="bd81a861a9a90abd1e965fde29330091" category="list-text">다른 서비스를 배포하려는 경우 해당 서비스에 대해 이 단계를 반복합니다.</block>
-  <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="section-title">권한 설정</block>
   <block id="0dc3bc40ef64f54364ea349a4715e7ef" category="paragraph">다음 각 항목에 대해 IAM 정책 및 IAM 역할이 필요합니다.</block>
   <block id="c2f8321ff3a236ed24f9e8e5cabfae55" category="list-text">커넥터 인스턴스</block>
   <block id="66dbefe706035688123645657da5ccc3" category="list-text">Cloud Volumes ONTAP 인스턴스</block>
-  <block id="617e7edf7b8c2ab7627f64ba5996d390" category="list-text">Cloud Volumes ONTAP HA 중재자 인스턴스(HA 쌍을 구축하려는 경우)</block>
   <block id="054ddf0c6f6bd813102681cc9ef9ee60" category="list-text">AWS IAM 콘솔로 이동하여 * Policies * 를 클릭합니다.</block>
   <block id="224d061fb82ffb1726da2a61298c6c62" category="list-text">Connector 인스턴스에 대한 정책을 만듭니다.</block>
   <block id="084afa7630d7502963537edb4a0a6864" category="list-text">Cloud Volumes ONTAP에 대한 정책을 생성합니다.</block>
-  <block id="203dbf6d02c5576894caa3a1366d2ca9" category="list-text">Cloud Volumes ONTAP HA 쌍을 구축하려는 경우 HA 중재자를 위한 정책을 생성합니다.</block>
   <block id="6a708c2efcfd3fa9aadb11a053154305" category="list-text">Amazon EC2 역할 유형으로 IAM 역할을 생성하고 이전 단계에서 생성한 정책을 첨부합니다.</block>
-  <block id="ef1be41357c30caefe80a1e372159e5d" category="paragraph">정책과 마찬가지로, Connector에 IAM 역할 1개, Cloud Volumes ONTAP 노드에 대해 1개, HA 중재자를 위한 IAM 역할 1개가 있어야 합니다(HA 쌍을 구축하려는 경우).</block>
-  <block id="d8274187bd955095cc8d8a796bc54f28" category="paragraph">Connector 인스턴스를 실행할 때 Connector IAM 역할을 선택해야 합니다.</block>
   <block id="0178b985155f8038a3bb894fe24ece79" category="section-title">AWS KMS를 설정합니다</block>
-  <block id="d7eb931b5b1d4cfe133e4c07eb2379be" category="paragraph">Cloud Volumes ONTAP에서 Amazon 암호화를 사용하려면 AWS 키 관리 서비스에 대한 요구 사항이 충족되는지 확인합니다.</block>
   <block id="b625f1267fdc411389bea37c6c262eae" category="list-text">사용자 계정 또는 다른 AWS 계정에 활성 CMK(Customer Master Key)가 있는지 확인합니다.</block>
   <block id="3e4f6d7674e40fd3611c1cebec37b725" category="paragraph">CMK는 AWS로 관리되는 CMK 또는 고객이 관리하는 CMK가 될 수 있습니다.</block>
   <block id="3817567f1a0a9d7b3cf35607b29c79dc" category="list-text">CMK가 Cloud Volumes ONTAP를 배포할 계정과 별도로 AWS 계정에 있는 경우 해당 키의 ARN을 얻어야 합니다.</block>
@@ -1136,16 +1110,11 @@
   <block id="b901bc33967dc36bebafa77250edd08b" category="list-text">Connector에 필요한 연결 방법은 SSH, HTTP, HTTPS입니다.</block>
   <block id="4d0564ff4d1bbd71234a0838722dfc93" category="list-text">AWS 서비스 연결을 위한 프록시 서버를 지정합니다.</block>
   <block id="c3e84141ad53b58cc86262388ac9e4a6" category="list-text">1단계에서 얻은 인증서를 업로드합니다.</block>
-  <block id="38bfdffb2647d7fe06154cb0192f2725" category="list-text">* 검토 *: 세부 정보를 검토하고 최종 사용자 사용권 계약을 승인합니다.</block>
   <block id="ce844b01a8ab7308a739495c52892c79" category="list-text">CA 서명 인증서의 설치를 완료하려면 EC2 콘솔에서 Connector 인스턴스를 다시 시작합니다.</block>
   <block id="665230f4bd95f60852b6fc1b7f05c103" category="list-text">Connector가 다시 시작된 후 설치 마법사에서 만든 관리자 사용자 계정을 사용하여 로그인합니다.</block>
-  <block id="6f177e279944db659b80f0020df93964" category="list-text">라이센스를 구입한 경우 NetApp에서 받은 라이센스 파일이 있어야 합니다. 라이센스 파일은 JSON 형식의 .NLF 파일입니다.</block>
-  <block id="4b91157a6d4a5e01b05a5a74492fcdeb" category="list-text">HA 중재자가 키 기반 SSH 인증을 사용할 수 있도록 키 쌍이 필요합니다.</block>
   <block id="41c4defb4c9e45cc91ee861e1c4ca018" category="list-text">작업 환경 페이지에서 * 작업 환경 추가 * 를 클릭합니다.</block>
-  <block id="17e6091fb7a1e44978f0e6368bc2a694" category="list-text">생성 아래에서 Cloud Volumes ONTAP 또는 Cloud Volumes ONTAP HA를 선택합니다.</block>
   <block id="ece12a0b27d8259b8c5ddd7028b193a3" category="list-text">마법사의 단계를 완료하여 Cloud Volumes ONTAP 시스템을 시작합니다.</block>
   <block id="2279687b270447a870c961fcb9110b1b" category="paragraph">마법사를 완료하면 다음 사항에 유의하십시오.</block>
-  <block id="3283444cf4a21009d424e037c9609be5" category="list-text">여러 가용성 영역에 Cloud Volumes ONTAP HA를 배포하려는 경우 게시 시점에 AWS 상용 클라우드 서비스 환경에서 AZs를 두 개만 사용할 수 있으므로 다음과 같이 구성을 구축합니다.</block>
   <block id="bc3b42490f9e102df5b467500a3a96c9" category="list-text">노드 1: 가용성 영역 A</block>
   <block id="63d83e29bfaf6c403c2a3a24c54875de" category="list-text">노드 2: 가용성 영역 B</block>
   <block id="26e7cdb828ffddbb9d243b989175d6dd" category="list-text">중재자: 가용성 영역 A 또는 B</block>
@@ -1157,34 +1126,24 @@
   <block id="23706808bf27f7d9f29d49a2871a9168" category="paragraph">필요한 일관된 성능을 제공하는 디스크 크기를 선택해야 합니다. EBS 성능에 대한 자세한 내용은 AWS 설명서를 참조하십시오.</block>
   <block id="1510e6c2673239cb91de9ef82cd7e9e4" category="list-text">디스크 크기는 시스템의 모든 디스크에 대한 기본 크기입니다.</block>
   <block id="0c1d9d3db8eeeb7a62c2e39cb2683df5" category="admonition">나중에 다른 크기가 필요한 경우 고급 할당 옵션을 사용하여 특정 크기의 디스크를 사용하는 Aggregate를 생성할 수 있습니다.</block>
-  <block id="2ae63b53bd08da82000580623bac6398" category="list-text">스토리지 효율성 기능을 사용하면 스토리지 활용률을 개선하고 필요한 총 스토리지 양을 줄일 수 있습니다.</block>
   <block id="390a3dfacd9551e05363b9eb09a0464c" category="section-title">보안 그룹 규칙</block>
-  <block id="ca984063dccc5d90214a5ae0e7e5d3aa" category="section-title">커넥터의 보안 그룹</block>
-  <block id="0fbb894005047753551829b93d408eac" category="paragraph">Connector의 보안 그룹에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.</block>
   <block id="1b3884b38c271fe13c8142e1355e4523" category="section-title">인바운드 규칙</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">프로토콜</block>
   <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">포트</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">목적</block>
   <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH를 클릭합니다</block>
   <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22</block>
-  <block id="7dca630291dc35d5447daa0c9abf8da4" category="cell">커넥터 호스트에 대한 SSH 액세스를 제공합니다</block>
   <block id="293c9ea246ff9985dc6f62a650f78986" category="cell">HTTP</block>
   <block id="f033ab37c30201f73f142449d037028d" category="cell">80</block>
-  <block id="63b34d7f22329c0eb7915fca7a346007" category="cell">클라이언트 웹 브라우저에서 로컬 사용자 인터페이스로 HTTP 액세스를 제공합니다</block>
   <block id="0e8433f9a404f1f3ba601c14b026d321" category="cell">HTTPS</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
-  <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">클라이언트 웹 브라우저에서 로컬 사용자 인터페이스로 HTTPS 액세스를 제공합니다</block>
   <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">아웃바운드 규칙</block>
-  <block id="422c84262f431352e9da45084016a52c" category="paragraph">Connector에 대해 미리 정의된 보안 그룹에는 다음과 같은 아웃바운드 규칙이 포함됩니다.</block>
   <block id="170100eb6e4338b75a2fc06f87f9e5a4" category="cell">모든 TCP</block>
   <block id="a3c775b853cb7264d143451380d3e164" category="cell">모든 아웃바운드 트래픽</block>
   <block id="d78c51305ff97e9da7f4c5cb3d1d3453" category="cell">모든 UDP</block>
-  <block id="3dc508776ae41d76d647e62358d55180" category="section-title">Cloud Volumes ONTAP의 보안 그룹입니다</block>
-  <block id="d991e60dbce1c74dc50b148edfc8bbba" category="paragraph">Cloud Volumes ONTAP 노드의 보안 그룹에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.</block>
   <block id="d4b4ed7579a4f9267cc7dff8a948018e" category="cell">모든 ICMP</block>
   <block id="fbabb5b35538d91f91e0e1d4f56ff5a4" category="cell">인스턴스에 Ping을 수행 중입니다</block>
   <block id="ababfee3bb5ff05f9b0368cea51ee877" category="cell">클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 HTTP 액세스</block>
-  <block id="292d4f8112774cc3427c6a7da0cce58b" category="cell">클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 HTTPS 액세스</block>
   <block id="68e68bb8029eb3e7ed079fea7b679d99" category="cell">클러스터 관리 LIF 또는 노드 관리 LIF의 IP 주소에 SSH를 액세스할 수 있습니다</block>
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="698d51a19d8a121ce581499d7b701668" category="cell">111</block>
@@ -1217,14 +1176,10 @@
   <block id="89a4779d3836ea432f7ea074e522a17e" category="cell">4049</block>
   <block id="ec29b09319bcf28d103f2dda2dae3590" category="cell">NFS rquotad 프로토콜</block>
   <block id="74a441e1246bd6cf3265972bf1c89bef" category="paragraph">Cloud Volumes ONTAP에 대해 미리 정의된 보안 그룹에는 다음과 같은 아웃바운드 규칙이 포함됩니다.</block>
-  <block id="0dd51d029ffb5979ffac83190ff3f63e" category="section-title">HA 중재자를 위한 외부 보안 그룹</block>
   <block id="6f32c9b6315913918b0d282bfb2b4c66" category="paragraph">Cloud Volumes ONTAP HA 중재자를 위해 미리 정의된 외부 보안 그룹에는 다음과 같은 인바운드 및 아웃바운드 규칙이 포함됩니다.</block>
-  <block id="fb9be2e25293465c401ae5b6e13f9a51" category="paragraph">인바운드 규칙의 소스는 Connector가 상주하는 VPC의 트래픽입니다.</block>
-  <block id="f81635b4fadca27cff21e25f7426f99c" category="cell">HA 중재자로 SSH 연결</block>
   <block id="e93028bdc1aacdfb3687181f2031765d" category="cell">3000입니다</block>
   <block id="030bd70df22ed3354f19b1ed2afdeb00" category="cell">Connector에서 Restful API 액세스</block>
   <block id="35c1e7571a7c31f32b4caa5a6aee08bb" category="paragraph">HA 중재자를 위해 미리 정의된 보안 그룹에는 다음과 같은 아웃바운드 규칙이 포함됩니다.</block>
-  <block id="5cfc8e4f1942d56277d59f7dc3d51166" category="section-title">HA 중재자를 위한 내부 보안 그룹</block>
   <block id="d5e80ceb9cd16e162abee97d3789d829" category="paragraph">미리 정의된 보안 그룹에는 다음과 같은 인바운드 규칙이 포함됩니다.</block>
   <block id="c24475390eff056757a0e12aa5fe5e9f" category="cell">모든 교통 정보</block>
   <block id="e6929ac62766d022cca32bd1a5705a2a" category="cell">HA 중재자 및 HA 노드 간 통신</block>
@@ -1339,7 +1294,6 @@
   <block id="7e78cd436b6c8706972ddd93ac6ab72e" category="inline-link-macro">단계별 지침을 읽습니다</block>
   <block id="de55eaa977cb9b3376bd6729e1a97107" category="paragraph">작업 환경 추가 * 를 클릭하고 배포할 시스템 유형을 선택한 다음 마법사의 단계를 완료합니다. <block ref="168f7f4d4c37c8fac9b64fb187eb00a2" category="inline-link-macro-rx"></block>.</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">관련 링크</block>
-  <block id="de737ba84e61f1a8380fd351112b7183" category="inline-link">AWS Marketplace에서 커넥터 실행</block>
   <block id="c8f9fcb2d5c182f76e53507a00efe037" category="inline-link">Linux 호스트에 Connector 소프트웨어 설치</block>
   <block id="fb60cc8b1c07b3747a72dcf7ce2f2f58" category="list-text">구역 1개 또는 구역 3개(권장)</block>
   <block id="0f3118cdf0606432dbda8dd0e39d7d10" category="paragraph">세 개의 영역을 선택하면 두 개의 노드와 중재자가 별도의 Google Cloud 영역에 있습니다.</block>
@@ -2279,7 +2233,6 @@
   <block id="bbf1a68fc5e370127fe0c3f1622dced3" category="sidebar">구성을 계획합니다</block>
   <block id="9251700e586dc1a410f2e755a8643751" category="sidebar">네트워킹 요구 사항</block>
   <block id="f9d148736ba8ad65073e2ae083e6442a" category="sidebar">AWS 전송 게이트웨이를 설정합니다</block>
-  <block id="c513e9976f1caabf9a057b8deda54b0e" category="sidebar">AWS C2S에서 시작하십시오</block>
   <block id="1649f10406b5e0e0054f2cb76197f63a" category="sidebar">Microsoft Azure에서 시작하십시오</block>
   <block id="97eaaff53e693fb413bacbae932f73ac" category="sidebar">키를 사용하여 암호화를 설정합니다</block>
   <block id="34d4ba89a5a404f7068a211071e4b81a" category="sidebar">Google Cloud에서 시작하십시오</block>
@@ -2766,7 +2719,6 @@
   <block id="23b8cf63899cafd6a9d0b32fbdc5c6e8" category="list-text">설정을 캡처하려면 ** 저장**을 선택합니다.</block>
   <block id="5bfda0e2440a8346cbb089805c29d898" category="list-title">Cloud Volumes ONTAP 구성</block>
   <block id="89fe433ed203b193e97ffc51ade125be" category="paragraph">올바르게 구성된 경우 Cloud Volumes ONTAP는 자동으로 볼륨을 생성하고 볼륨 암호화를 활성화합니다.</block>
-  <block id="2f88a80d163d0a89ca5ecdf817af1f14" category="list-text">C2S 환경에서는 Freemium 라이센스가 지원되지 않습니다.</block>
   <block id="5e31f4e44c9ec2b42878b12dff64c9fb" category="paragraph">Cloud KMS를 사용한 키 관리는 CLI 또는 ONTAP REST API를 통해 활성화할 수 있습니다.</block>
   <block id="254f642527b45bc260048e30704edb39" category="section-title">구성</block>
   <block id="d8cc118193ca8f7de894de3aa3760c8b" category="inline-link-macro">대칭 GCP 키 링 및 키를 생성합니다</block>
@@ -3110,11 +3062,9 @@
   <block id="0f0088348e85cdf82b3a00d88879bc4d" category="inline-link">Connector에 대한 Azure 권한을 봅니다</block>
   <block id="75c41138bbd7704a1e0b806bef4b58ac" category="doc">Cloud Volumes ONTAP에 대한 IAM 역할을 설정합니다</block>
   <block id="07561162983a030769cc8563b6143a06" category="inline-link-macro">C2S에 Cloud Volumes ONTAP를 배포하는 방법을 알아보십시오</block>
-  <block id="f6fe0c003ae0bc360a2c1d722f423983" category="admonition">AWS 상용 클라우드 서비스 환경에서는 IAM의 역할을 직접 제공해야 합니다. <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>.</block>
   <block id="1e71ce7defc90d8f5a2c46c08ba968df" category="list-text">AWS IAM 콘솔로 이동합니다.</block>
   <block id="222ddb2f355a49f64fb3858123f2b97b" category="open-title">표준 영역</block>
   <block id="1411debdb32e6b128ca27ec92a708cbd" category="open-title">GovCloud(미국) 지역</block>
-  <block id="a8416eae2db8c97eb943559351fab358" category="open-title">C2S 환경</block>
   <block id="a640e21419d545eaa2be7040f35bcbde" category="paragraph">이제 새로운 Cloud Volumes ONTAP 작업 환경을 생성할 때 선택할 수 있는 IAM 역할이 있습니다.</block>
   <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="list-title">추가 정보</block>
   <block id="0eab25f343df3cb0d26a483c0c7e529f" category="inline-link">AWS 설명서: IAM 정책 생성</block>
@@ -3297,7 +3247,6 @@
   <block id="5d8d2c55116ea837270739e0c1ee4fb7" category="list-text">왼쪽 탐색 메뉴에서 * Storage &gt; Canvas * 를 선택합니다.</block>
   <block id="0c29cb137ebcfb10c1b30edf702322ea" category="paragraph">BlueXP는 워크로드 요구 사항에 맞는 사전 구성된 패키지를 제공하거나 사용자가 직접 구성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다. <block ref="786d547ede2f0e723e26aaa12a2cb737" category="inline-link-macro-rx"></block>.</block>
   <block id="9c51d38f64e8c1335e2502c05f118401" category="inline-link">BlueXP에서 커넥터 만들기</block>
-  <block id="68de98d1358d2928dcaffc946aeaa266" category="inline-link">BlueXP에서 AWS 권한을 사용하는 경우</block>
   <block id="ad4ac1c47a9ebdd6164879be3ae930d1" category="paragraph">BlueXP는 AWS 요청을 전송하여 경로 테이블을 수정합니다.</block>
   <block id="6e2f613815698bbf49809d31c29a0006" category="summary">iSCSI 볼륨을 생성할 때 BlueXP에서 자동으로 LUN을 생성합니다. NetApp은 볼륨당 하나의 LUN만 생성하므로 관리가 필요하지 않습니다. 볼륨을 생성한 후 IQN을 사용하여 호스트에서 LUN에 연결합니다.</block>
   <block id="4ea3aab4d949982c440f4df5e309a486" category="list-text">BlueXP의 자동 용량 관리는 LUN에 적용되지 않습니다. BlueXP에서 LUN을 생성하면 자동 확장 기능이 비활성화됩니다.</block>
@@ -3809,40 +3758,7 @@
   <block id="cc5f50b3903dc30a3a3545bb58fcdd14" category="paragraph">Cloud Volumes ONTAP은 스케일아웃 스토리지 옵션으로 S3를 지원합니다. S3 프로토콜 지원을 통해 스토리지 VM(SVM)의 버킷에 포함된 오브젝트에 대한 S3 클라이언트 액세스를 구성할 수 있습니다.</block>
   <block id="eba1f3287bdc33dfa25c084b5e15a4c5" category="cell">9.12.1</block>
   <block id="708ffc372ba6f36174a7930961b956ab" category="section-title">2022년 12월 8일</block>
-  <block id="2d0867b6a9603b07d840b96ca1528053" category="section-title">C2S에서 지원되는 버전입니다</block>
-  <block id="d8c9328d84b7250ac992afdd5368aaa2" category="list-text">Cloud Volumes ONTAP 9.8이 지원됩니다</block>
-  <block id="44ea8a993710d0101dfe9031f76256f1" category="list-text">커넥터 버전 3.9.4가 지원됩니다</block>
-  <block id="8f5457d70cb41e409f56734c39e0d5d6" category="paragraph">Connector는 AWS에서 Cloud Volumes ONTAP를 구축하고 관리하는 데 필요한 소프트웨어입니다. Connector 인스턴스에 설치되는 소프트웨어에서 Cloud Manager에 로그인합니다. Cloud Manager용 SaaS 웹 사이트는 C2S 환경에서 지원되지 않습니다.</block>
-  <block id="dae07c7817c5b878613418fce2bc47a4" category="admonition">Cloud Manager는 최근 BlueXP로 이름이 바뀌었지만 Connector 버전 3.9.4 에 포함된 사용자 인터페이스가 Cloud Manager라고 불리기 때문에 C2S에서 Cloud Manager로 계속 언급하고 있습니다.</block>
-  <block id="953b8019e01e302cfda1407c42757ca9" category="paragraph">C2S 환경의 Cloud Manager에서 사용할 수 있는 기능은 다음과 같습니다.</block>
-  <block id="92c64f1847bb1326cce66cc7f4bc8454" category="list-text">Cloud Manager에서 제공되는 NetApp 클라우드 서비스가 없습니다.</block>
-  <block id="a11bc353b91c78f50a85b950845a4b38" category="list-text">Cloud Manager에서 소프트웨어 업그레이드 자동화</block>
-  <block id="7668ed26cf424d7f7440ce0f230438e3" category="list-text"><block ref="70354dfe51c75681a6ee1c0148ca26ba" category="inline-xref-macro-rx"></block></block>
-  <block id="3b53f9d6057054fc25b0889239745085" category="list-text"><block ref="438b9fbe00ba2f3369249568b2e0205d" category="inline-xref-macro-rx"></block></block>
-  <block id="2e0e99403b74be7a5455c5f8ff21a2ec" category="paragraph">Cloud Manager를 사용하여 Cloud Volumes ONTAP를 구축하기 전에 _Connector_를 작성해야 합니다. Connector를 사용하면 Cloud Manager에서 퍼블릭 클라우드 환경(Cloud Volumes ONTAP 포함)의 리소스와 프로세스를 관리할 수 있습니다.</block>
-  <block id="26742afe0446e71796a9332243fb3983" category="paragraph">Connector 인스턴스에 설치되는 소프트웨어에서 Cloud Manager에 로그인합니다.</block>
-  <block id="25975a6f2b2fb500b1c5ce430865daf2" category="list-text"><block ref="d6d32fe8e125af163f491889e868bcb1" category="inline-xref-macro-rx"></block></block>
-  <block id="40727b40295de6679a15e7ab918b6c93" category="section-title">AWS 환경 준비</block>
-  <block id="f45971f8804dbe27a85371847149f156" category="paragraph">Cloud Manager에서 Cloud Volumes ONTAP를 구축하려면 Marketplace에 가입해야 합니다.</block>
-  <block id="b7a04099516f8430d91ecc6b9df3f486" category="paragraph">Cloud Volumes ONTAP 인스턴스를 시작하려면 Cloud Manager를 사용해야 합니다. EC2 콘솔에서 Cloud Volumes ONTAP 인스턴스를 시작하면 안 됩니다.</block>
-  <block id="74800ff1ec3d5552aaa473310f1b4c2c" category="paragraph">Connector 및 Cloud Volumes ONTAP에 AWS 상용 클라우드 서비스 환경에서 작업을 수행하는 데 필요한 권한을 제공하는 IAM 정책 및 역할을 설정합니다.</block>
-  <block id="82d76c39afb12299fd89e2b035a2fc70" category="paragraph">Cloud Manager에서 Cloud Volumes ONTAP 작업 환경을 생성할 때 Cloud Volumes ONTAP의 IAM 역할과 HA 중재자를 선택할 수 있습니다.</block>
-  <block id="83de5a123d83fde5dcaaf6811cf06320" category="paragraph">Cloud Volumes ONTAP 시스템을 생성할 때 클라우드 관리자에게 ARN을 제공해야 합니다.</block>
   <block id="abe7689876592f7424a214b07792ca15" category="list-text">Connector 인스턴스의 IAM 역할을 CMK의 주요 사용자 목록에 추가합니다.</block>
-  <block id="ea80d9267d93b8f0dcd057ae999b94ab" category="paragraph">이렇게 하면 Cloud Volumes ONTAP에서 CMK를 사용할 수 있는 클라우드 관리자 권한이 부여됩니다.</block>
-  <block id="95b4a625010cf2cf69514209c19dbc3e" category="section-title">Connector 설치 및 Cloud Manager 설정</block>
-  <block id="4c06b45d24ad980552c52a9cbf857f23" category="paragraph">AWS에서 Cloud Volumes ONTAP 시스템을 시작하려면 먼저 AWS Marketplace에서 Connector 인스턴스를 시작한 다음 로그인하고 Cloud Manager를 설정해야 합니다.</block>
-  <block id="0c7a137062facbdd9af5451dcc9caf1c" category="paragraph">설치 프로세스 중에 인증서를 업로드해야 합니다. Cloud Manager는 HTTPS를 통해 AWS로 요청을 보낼 때 신뢰할 수 있는 인증서를 사용합니다.</block>
-  <block id="c419f8d91e9428c13e4b489550591f42" category="list-text">Cloud Manager의 AWS Intelligence Community Marketplace 페이지로 이동합니다.</block>
-  <block id="2a74a4ca6ca91fb8d3c6b38fc9233a4f" category="list-text">Connector 인스턴스에 연결된 호스트에서 Cloud Manager를 설정합니다.</block>
-  <block id="2d354fadd521725ccc56833965bb4440" category="list-text">설정 마법사의 단계를 완료하여 Cloud Manager를 설정합니다.</block>
-  <block id="dd6fb2ba019c1dfb48ea66d8189f5b19" category="list-text">* 시스템 세부 정보 *: 이 Cloud Manager 인스턴스의 이름을 입력하고 회사 이름을 입력합니다.</block>
-  <block id="f996b51d4b8d0dffa87f16768fa11b0d" category="list-text">* 사용자 생성 *: Cloud Manager 관리에 사용할 관리자 사용자를 생성합니다.</block>
-  <block id="9e9b668de9a168aa4348af261abcf3d8" category="section-title">Cloud Manager에서 Cloud Volumes ONTAP 실행</block>
-  <block id="da7224d72b7c308843ae6ce07ceaa3d0" category="paragraph">Cloud Manager에서 새로운 작업 환경을 생성하여 AWS 상용 클라우드 서비스 환경에서 Cloud Volumes ONTAP 인스턴스를 시작할 수 있습니다.</block>
-  <block id="8a7f23615316304155b79b66eb77b5b8" category="paragraph">Cloud Manager가 Cloud Volumes ONTAP 인스턴스를 시작합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.</block>
-  <block id="579a953172073c3fe33dc907abd6b3f8" category="paragraph">Cloud Manager는 Cloud Manager와 Cloud Volumes ONTAP가 클라우드에서 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
-  <block id="f4b34b24cc464b0154bd81cd6d906233" category="paragraph">Cloud Volumes ONTAP HA 중재자를 위해 미리 정의된 내부 보안 그룹에는 다음 규칙이 포함됩니다. Cloud Manager는 항상 이 보안 그룹을 생성합니다. 자체 옵션을 사용할 수 없습니다.</block>
   <block id="3f2a41d3e64efd3d137a5132f84eb8b6" category="paragraph">BlueXP에서 Cloud Volumes ONTAP에 할당하는 LIF 수는 단일 노드 시스템을 배포할지 HA 쌍을 구축하는지에 따라 달라집니다. LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 SVM 관리 LIF가 필요합니다.</block>
   <block id="236afd214a59ab065a50ccb9cbbbe4c2" category="cell">9.12.0</block>
   <block id="97145bbcb02af5e728740b1d40bd2046" category="section-title">2022년 12월 15일</block>
@@ -4444,7 +4360,6 @@
   <block id="d592a4e1d68c1047f1f5e39639bee6bf" category="paragraph">BlueXP 디지털 지갑은 각 패키지 유형의 소비된 용량을 새로 고쳐 방금 변경한 내용을 고려할 수도 있습니다.</block>
   <block id="078be6a9f1dfaaea5e7153ff9ec78760" category="inline-link-macro">BlueXP 계층화</block>
   <block id="fdc0e66a431a39bf7d68fad74c362d1a" category="paragraph">Cloud Volumes ONTAP에서는 BlueXP 계층화 서비스가 지원되지 않습니다. 볼륨 생성 시 BlueXP의 표준 보기에서 데이터를 오브젝트 스토리지로 계층화하도록 직접 설정해야 합니다.</block>
-  <block id="fd736cdd9cd06a871bed533b6e339d5c" category="summary">표준 AWS 지역과 마찬가지로, AWS C2S(Commercial Cloud Services) 환경에서 BlueXP를 사용하여 클라우드 스토리지에 엔터프라이즈급 기능을 제공하는 Cloud Volumes ONTAP를 구축할 수 있습니다. AWS C2S는 미국 고유의 폐쇄된 지역입니다 Intelligence Community - 이 페이지의 지침은 AWS C2S 지역 사용자에게만 적용됩니다.</block>
   <block id="52c73bbae26b1c8362e849d7b7e0539f" category="paragraph">Cloud Volumes ONTAP 시스템에서 BlueXP 백업 및 복구를 사용하려는 경우 노드에 대한 IAM 역할에 아래에 나와 있는 두 번째 정책이 포함되어야 합니다.</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="inline-link">BlueXP 백업 및 복구</block>
   <block id="334457e955e851dd9304247244593287" category="summary">BlueXP 디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.</block>
@@ -4539,10 +4454,7 @@ CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS �
   <block id="200bfa431a059f9cb12bdce777845a7e" category="admonition">커넥터에는 시스템 디스크도 필요합니다.<block ref="d20acabc118cd0226229fe484509d871" category="inline-link-rx"></block>.</block>
   <block id="f4e04685569a1b4c66fdec145eb96e7a" category="paragraph">가 없는 경우<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> 그러나 계정 관리자는 계정을 만들어야 합니다.<block ref="5b9d2e73755e0f28771296de88f8a39a" category="inline-link-rx"></block></block>
   <block id="3e15a93b8abafd714d90153ac66e4e82" category="paragraph">인터넷에 액세스할 수 없는 서브넷에 Cloud Volumes ONTAP를 배포하려는 경우 수동으로 커넥터를 설치하고 해당 커넥터에서 실행 중인 BlueXP 사용자 인터페이스에 액세스해야 합니다.<block ref="dfc982bbe2dfabd644ac809e4b468ae7" category="inline-link-rx"></block></block>
-  <block id="d842db7919b0a7e75351ef9dec4465b5" category="list-text"><block ref="d842db7919b0a7e75351ef9dec4465b5" category="inline-link-rx"></block></block>
-  <block id="8172903aaa4aa5ff677be28ec5ebf79e" category="list-text"><block ref="8172903aaa4aa5ff677be28ec5ebf79e" category="inline-link-rx"></block></block>
   <block id="687a1e66717978102d4e4948c08968d3" category="list-text"><block ref="687a1e66717978102d4e4948c08968d3" category="inline-link-rx"></block></block>
-  <block id="4735c8c27fe69930b85af76948dea535" category="list-text"><block ref="4735c8c27fe69930b85af76948dea535" category="inline-link-rx"></block></block>
   <block id="25e7b507c919c21847b291c84a88ba36" category="paragraph"><block ref="73e1a6a2075a5d292111b694a644abf3" category="inline-link-rx"></block>.</block>
   <block id="b2678f2b003e23f7f5f3a7cd8451a26b" category="paragraph">Essentials 패키지에 표시되는 용량을 더 잘 이해하려면 충전 작동 방식에 익숙해야 합니다.<block ref="8d04d0643798fbb69d5260f477ea213c" category="inline-link-rx"></block>.</block>
   <block id="fa4ae0264bd8c2dfafbe1d03e4bc2b9a" category="list-text">일련 번호를 입력하려면 먼저 해야 합니다<block ref="c7616a3371ef10b7d4b9bba9548cea1f" category="inline-link-rx"></block>. 일련 번호에 액세스할 수 있는 권한이 있는 NetApp Support 사이트 계정입니다.</block>
@@ -4832,7 +4744,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="6c32dae7ba2780f8dc42d1813f66ea24" category="paragraph">를 통해 제공되는 파일 확장자 보호와 분리됩니다<block ref="1f479b2258cad80f990e85fbf571e95d" category="inline-link-rx"></block>ARP 기능은 워크로드 분석을 사용하여 감지된 “비정상적인 활동”을 기반으로 잠재적인 공격에 대해 사용자에게 경고합니다. 랜섬웨어 차단 설정과 ARP 기능을 모두 포괄적인 랜섬웨어 방어에 함께 사용할 수 있습니다.</block>
   <block id="dfa314101a62671bea85bd2701b00194" category="paragraph">ONTAP 시스템 관리자 및 CLI에서 ARP를 활성화하는 방법에 대한 자세한 내용은 를 참조하십시오<block ref="4379b61ba712146f3962583303024b3d" category="inline-link-rx"></block>.</block>
   <block id="4f87e49be20cab28b98c082c672f9032" category="paragraph">Cloud Volumes ONTAP의 ARP에 대한 자세한 내용은 를 참조하십시오<block ref="3ad484b0b391dd26474b87b6bc7f70b6" category="inline-link-rx"></block>.</block>
-  <block id="d1c5c359fc2e3c8fe0af6fd09605d616" category="paragraph">표준 AWS 지역과 마찬가지로, 에서 Cloud Manager를 사용할 수 있습니다 <block ref="25b8ce564d4ee42e840c162aa63df82a" category="inline-link-macro-rx"></block> 구축할 환경: 클라우드 스토리지에 엔터프라이즈급 기능을 제공하는 Cloud Volumes ONTAP AWS C2S는 미국 고유의 폐쇄된 지역입니다 Intelligence Community - 이 페이지의 지침은 AWS C2S 지역 사용자에게만 적용됩니다.</block>
   <block id="0f35cbc7e00034a2864005fe2859c834" category="list-text">웹 브라우저를 열고 를 입력합니다<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block> 여기서 _ipaddress_는 Connector를 설치한 Linux 호스트의 IP 주소입니다.</block>
   <block id="265500dbd640f554b9f30de2ec515220" category="paragraph"><block ref="265500dbd640f554b9f30de2ec515220" category="inline-link-macro-rx"></block></block>
   <block id="beb8833b4eaacb3c1a782191786a543b" category="paragraph"><block ref="beb8833b4eaacb3c1a782191786a543b" category="inline-link-macro-rx"></block></block>
@@ -5238,4 +5149,103 @@ BlueXP에서 볼륨에 대한 새 애그리게이트를 생성할 경우 해당 
   <block id="ee94ea94211470599a81d49f8c4b586f" category="section-title">볼륨 템플릿 및 태그는 더 이상 지원되지 않습니다</block>
   <block id="96b0b2a19dd9deb6b94e53f2e29f4387" category="paragraph">더 이상 템플릿에서 볼륨을 생성하거나 볼륨의 태그를 편집할 수 없습니다. 이러한 작업을 BlueXP 해결 서비스와 연계하면 더 이상 사용할 수 없습니다.</block>
   <block id="9691bf3a7c5f05b620ab3b20437b6123" category="list-text">* 세부 정보, 보호 및 태그 *: 볼륨에 대한 기본 세부 정보를 입력하고 스냅샷 정책을 선택합니다.</block>
+  <block id="4acf56e531f894043e53d2da10087d5a" category="summary">표준 AWS 지역과 마찬가지로, AWS Secret Cloud 및 Top Secret Cloud 환경에서 BlueXP를 사용하여 클라우드 스토리지에 엔터프라이즈급 기능을 제공하는 Cloud Volumes ONTAP를 구축할 수 있습니다. AWS Secret Cloud 및 Top Secret Cloud 지역은 미국 고유의 폐쇄형 지역입니다 이 페이지의 지침은 AWS Secret Cloud 및 Top Secret Cloud 지역 사용자에게만 적용됩니다.</block>
+  <block id="ac2f9ab20179404cb2925b0bc93ed4f9" category="doc">AWS Secret Cloud 및 Top Secret Cloud 지역에 Cloud Volumes ONTAP 구축</block>
+  <block id="ff2c9914d275ee17c3f22e89e7ca1ef7" category="inline-link-macro">AWS 비밀 클라우드</block>
+  <block id="a864a931bf30f7ad758b78e4a2cb264c" category="inline-link-macro">AWS Top Secret Cloud의 약어입니다</block>
+  <block id="89975f41f547e90460689ab0da3b0ba1" category="paragraph">표준 AWS 지역과 마찬가지로 에서 BlueXP를 사용할 수 있습니다 <block ref="2be032dbfb43d4ebf124ecec1e312c2a" category="inline-link-macro-rx"></block> 및 IN <block ref="9d779d36eb480c9dfb9170b409a86842" category="inline-link-macro-rx"></block> Cloud Volumes ONTAP 구축: 클라우드 스토리지에 엔터프라이즈급 기능을 제공합니다. AWS Secret Cloud 및 Top Secret Cloud는 미국 고유의 폐쇄형 지역입니다 이 페이지의 지침은 AWS Secret Cloud 및 Top Secret Cloud 지역 사용자에게만 적용됩니다.</block>
+  <block id="e115b84e252d542660fc126fe58ed0ec" category="paragraph">시작하기 전에 AWS Secret Cloud 및 Top Secret Cloud에서 지원되는 버전을 검토하고 BlueXP의 프라이빗 모드에 대해 알아보십시오.</block>
+  <block id="5b3446c0009be0998e01a76d231fcff5" category="list-text">AWS Secret Cloud 및 Top Secret Cloud에서 지원되는 다음 버전을 검토하십시오.</block>
+  <block id="74db90edede50180728fc9345eaadd99" category="list-text">Cloud Volumes ONTAP 9.12.1 P2</block>
+  <block id="31cafad5b8aa05bf5a895f71d790bc31" category="list-text">커넥터의 버전 3.9.32</block>
+  <block id="a64d8d20f8fb16ba08356b0b4d3b9d44" category="paragraph">Connector는 AWS에서 Cloud Volumes ONTAP를 구축하고 관리하는 데 필요한 소프트웨어입니다. Connector 인스턴스에 설치된 소프트웨어에서 BlueXP에 로그인합니다. BlueXP용 SaaS 웹 사이트는 AWS Secret Cloud 및 Top Secret Cloud에서 지원되지 않습니다.</block>
+  <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="list-text">비공개 모드에 대해 알아봅니다</block>
+  <block id="33a6dc309f8669893b36d5c8be8b1a93" category="paragraph">AWS Secret Cloud 및 Top Secret Cloud에서 BlueXP는 _private mode_로 작동합니다. 프라이빗 모드에서는 BlueXP SaaS 계층에 연결할 수 없습니다. 사용자는 SaaS 계층이 아닌 Connector에서 사용할 수 있는 웹 기반 콘솔에서 로컬로 BlueXP에 액세스할 수 있습니다.</block>
+  <block id="66f4b134b940ec20b17c336f1a486d4f" category="inline-link-macro">BlueXP 프라이빗 구축 모드</block>
+  <block id="97453fa6c7ef88b254426ae2b7265cda" category="paragraph">비공개 모드의 작동 방식에 대한 자세한 내용은 을 참조하십시오 <block ref="e770f8e26a570903d4715f679ebc5203" category="inline-link-macro-rx"></block>.</block>
+  <block id="c03330e1363f9c589022ede209df8821" category="section-title">1단계: 네트워킹을 설정한다</block>
+  <block id="e7f011d8b0cdfad4e5a7cfc96be6f8a8" category="section-title">2단계: 사용 권한을 설정합니다</block>
+  <block id="9e981cc504a541ebde2d49aa3db0a2e3" category="paragraph">Connector 및 Cloud Volumes ONTAP에 AWS Secret Cloud 또는 Top Secret Cloud에서 작업을 수행하는 데 필요한 권한을 제공하는 IAM 정책 및 역할을 설정합니다.</block>
+  <block id="9739bd344f9c18df073749c3c1df6aba" category="list-text">HA 페어의 경우 Cloud Volumes ONTAP HA 중재자 인스턴스(HA 쌍을 구축하려는 경우)</block>
+  <block id="f82577153680c1fa6270b7fc6215d770" category="admonition">AWS 환경에서 S3 버킷을 지원하기 위해 이러한 정책을 생성할 수 있습니다. 나중에 버킷을 생성할 때 버킷 이름 앞에 가 있는지 확인합니다<block ref="d3c58d24f0a570ff33a63f5f566d0628" prefix=" " category="inline-code"></block>. 이 요구 사항은 AWS Secret Cloud 및 Top Secret Cloud 지역 모두에 적용됩니다.</block>
+  <block id="026951b63281b53e88087e2423613cad" category="open-title">비밀 영역</block>
+  <block id="76187385115cd00f6a1ec1ff426ad7b5" category="open-title">주요 비밀 지역</block>
+  <block id="86d17edc0843864da1a1bf31c72eac37" category="paragraph">HA 쌍의 경우, Cloud Volumes ONTAP HA 쌍을 구축할 계획인 경우 HA 중재자에 대한 정책을 생성하십시오.</block>
+  <block id="c9580a77eb59c5015b0ef8946bcb5d12" category="paragraph-title">역할 생성:</block>
+  <block id="013f6a365dd7251733800b51147d7d3f" category="paragraph">정책과 유사하게 커넥터용 IAM 역할 하나와 Cloud Volumes ONTAP 노드용 IAM 역할 하나가 있어야 합니다.
+HA 쌍의 경우: 정책과 유사하게 커넥터용 IAM 역할 1개, Cloud Volumes ONTAP 노드용 IAM 역할 1개, HA 중재자용 역할 1개(HA 쌍을 배포하려는 경우)가 있어야 합니다.</block>
+  <block id="88df62b4ee44c5332a3574ccacc70c5a" category="paragraph-title">역할 선택:</block>
+  <block id="015fff9900f6912ac6d0f409e9c2a814" category="paragraph">Connector 인스턴스를 실행할 때 Connector IAM 역할을 선택해야 합니다. BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때 Cloud Volumes ONTAP의 IAM 역할을 선택할 수 있습니다.
+HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때 Cloud Volumes ONTAP 및 HA 중재자의 IAM 역할을 선택할 수 있습니다.</block>
+  <block id="9c183620d1c9eacbfef610a7ef94d757" category="section-title">3단계: AWS KMS를 설정합니다</block>
+  <block id="f8e47cd143bacefcea9f1e5d1ebf1c56" category="paragraph">Cloud Volumes ONTAP와 함께 Amazon 암호화를 사용하려는 경우 AWS 키 관리 서비스(KMS)에 대한 요구 사항이 충족되는지 확인합니다.</block>
+  <block id="83057eeba50af289c3119322d79424e5" category="paragraph">이렇게 하면 Cloud Volumes ONTAP에서 CMK를 사용할 수 있는 BlueXP 권한이 부여됩니다.</block>
+  <block id="a5fe7e3483f053e12b2231ae2b54412f" category="section-title">4단계: 커넥터 설치 및 BlueXP 설정</block>
+  <block id="415249a36e91ea5cfa8d50f601591feb" category="paragraph">BlueXP를 사용하여 AWS에 Cloud Volumes ONTAP을 구축하기 전에 먼저 BlueXP Connector를 설치하고 설정해야 합니다. BlueXP는 커넥터를 통해 공용 클라우드 환경(Cloud Volumes ONTAP 포함)의 리소스와 프로세스를 관리할 수 있습니다.</block>
+  <block id="02e897722a0b384d3b56b5e53deadba3" category="admonition">AWS Secret Cloud 지역의 경우 를 업로드해야 합니다<block ref="5511b40ac2a175fa641063529fb1b992" prefix=" " category="inline-code"></block> Certificate 및 Top Secret Cloud의 경우<block ref="52f8faa2c28592fc2d2739311ae97a65" prefix=" " category="inline-code"></block> 인증서. 이러한 인증서만 업로드하고 전체 체인은 업로드하지 마십시오. 인증서 체인의 파일이 커서 업로드에 실패할 수 있습니다. 추가 인증서가 있는 경우 다음 단계에 설명된 대로 나중에 업로드할 수 있습니다.</block>
+  <block id="4f00f71b9f16d5b5de7af5cb24e11347" category="paragraph">설치 프로세스 중에 인증서를 업로드해야 합니다. BlueXP는 HTTPS를 통해 AWS로 요청을 보낼 때 신뢰할 수 있는 인증서를 사용합니다.</block>
+  <block id="00e18132402ce28d7379ed3276cd9288" category="list-text">BlueXP의 AWS Intelligence Community Marketplace 페이지로 이동합니다.</block>
+  <block id="718e82374a85155addb83dd10b6381d5" category="list-text">권한을 설정할 때 생성한 IAM 역할을 선택해야 합니다.</block>
+  <block id="e0352c069670409718cfa65aea1b8233" category="list-text">Connector 인스턴스에 연결된 호스트에서 BlueXP를 설정합니다.</block>
+  <block id="ecbc764762d64c7a0728c929154e75f5" category="list-text">Set Up New BlueXP * 를 선택하고 화면의 지시에 따라 시스템을 설정합니다.</block>
+  <block id="9f390f684f634b575bf8d3a2e73f760c" category="list-text">* 시스템 세부 정보 *: 커넥터 이름과 회사 이름을 입력합니다.</block>
+  <block id="43601154a054554dd57207148a15b7b1" category="list-text">* 관리자 사용자 생성 *: 시스템에 대한 관리자 사용자를 생성합니다.</block>
+  <block id="0e5308fba9cc92e9ff80d599c7e865ca" category="paragraph">이 사용자 계정은 시스템에서 로컬로 실행됩니다. BlueXP를 통해 사용할 수 있는 auth0 서비스에 연결할 수 없습니다.</block>
+  <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">* 검토 *: 세부 정보를 검토하고 사용권 계약에 동의한 다음 * 설정 * 을 선택합니다.</block>
+  <block id="f4fe2053fb7ab00a75447368a3ab6dad" category="section-title">단계 5: (선택 사항) 개인 모드 인증서를 설치합니다</block>
+  <block id="66716c789ddc8e10990e69f6b800dc58" category="paragraph">이 단계는 AWS Secret Cloud 및 Top Secret Cloud 지역의 경우 선택 사항이며, 이전 단계에서 설치한 루트 인증서와 별도로 추가 인증서가 있는 경우에만 필요합니다.</block>
+  <block id="7e436414246ece785080276f3043dfea" category="list-text">설치된 기존 인증서를 나열합니다.</block>
+  <block id="4718b70b1dbaf6b078c92099e379cc0a" category="list-text">ocCM 컨테이너 Docker ID(식별된 이름 "ds-occm-1")를 수집하려면 다음 명령을 실행합니다.</block>
+  <block id="badae88fedd20814943ab16c879328e6" category="list-text">occm 컨테이너 내부로 이동하려면 다음 명령을 실행합니다.</block>
+  <block id="5447dc6b7cb1e7525a87084e81820f9a" category="list-text">"trust_store_password" 환경 변수에서 암호를 수집하려면 다음 명령을 실행합니다.</block>
+  <block id="8b50472226eb7a734969811ab405596c" category="list-text">truststore에 설치된 모든 인증서를 나열하려면 다음 명령을 실행하고 이전 단계에서 수집한 암호를 사용합니다.</block>
+  <block id="97698b8aa6c772e94d9ec494eb6f72b4" category="list-text">인증서를 추가합니다.</block>
+  <block id="36a5ad94e6017f2b50b764493ffdc59e" category="list-text">occm 컨테이너 Docker ID(식별된 이름 "ds-occm-1")를 수집하려면 다음 명령을 실행합니다.</block>
+  <block id="487cdce9d5f6c930100fc6446d6470c8" category="paragraph">새 인증서 파일을 에 저장합니다.</block>
+  <block id="83c9a1d48a04fa894c5c7b89df84a9d2" category="list-text">인증서를 truststore에 추가하려면 다음 명령을 실행하고 이전 단계의 암호를 사용합니다.</block>
+  <block id="ab4456aff1bf31b66fb21e90e256a0bf" category="list-text">인증서가 설치되어 있는지 확인하려면 다음 명령을 실행합니다.</block>
+  <block id="4e86cd46bd73aa827e2da7b16e21fe5d" category="list-text">ocCM 컨테이너를 종료하려면 다음 명령을 실행합니다.</block>
+  <block id="9fa69c9ac94c5fab1d2c0a21de8d9da8" category="list-text">ocCM 컨테이너를 재설정하려면 다음 명령을 실행합니다.</block>
+  <block id="93d9e7de76a42f0a43e0b5eeaf640aaf" category="section-title">6단계: BlueXP 디지털 지갑에 라이센스를 추가합니다</block>
+  <block id="c26b4fa2f47cbce737454bb196f89a62" category="paragraph">NetApp에서 라이센스를 구매한 경우, 새로운 Cloud Volumes ONTAP 시스템을 생성할 때 라이센스를 선택할 수 있도록 BlueXP 디지털 지갑에 추가해야 합니다. 디지털 지갑에서 이 라이선스를 할당되지 않은 것으로 식별합니다.</block>
+  <block id="26e4094b4003796af233df5b14d686cb" category="list-text">아직 라이센스 파일이 없는 경우 netapp.com 에서 라이센스 파일을 수동으로 업로드해야 합니다.</block>
+  <block id="b16c96ace145f01e62917fdfc00599aa" category="list-text">로 이동합니다 <block ref="0114eb86702e0481795ffa5d3f0e1a9a" category="inline-link-macro-rx"></block> 를 입력하고 NetApp Support 사이트 자격 증명을 사용하여 로그인합니다.</block>
+  <block id="07bd692d65047332808d785de9489824" category="paragraph">BlueXP는 디지털 지갑에 라이선스를 추가합니다. 라이센스는 새 Cloud Volumes ONTAP 시스템에 연결할 때까지 할당되지 않은 것으로 식별됩니다. 이렇게 되면 라이센스가 디지털 지갑의 BYOL 탭으로 이동합니다.</block>
+  <block id="1bf62b39176a49951c08d094b8e7160b" category="section-title">7단계: BlueXP에서 Cloud Volumes ONTAP를 시작합니다</block>
+  <block id="24c3a94f18d6502ce3729f5b298f8147" category="paragraph">BlueXP에 새로운 작업 환경을 생성하여 AWS Secret Cloud 및 Top Secret Cloud에서 Cloud Volumes ONTAP 인스턴스를 시작할 수 있습니다.</block>
+  <block id="c20e7c4054e0ef9e6d2b4616525b419f" category="paragraph">HA 쌍의 경우 HA 중재자에게 키 기반 SSH 인증을 활성화하려면 키 쌍이 필요합니다.</block>
+  <block id="54414aab34ed651199e33df9a54cd358" category="list-text">만들기 * 아래에서 Cloud Volumes ONTAP를 선택합니다.</block>
+  <block id="de952c2de50e9ccc38d840faa3a01a2d" category="paragraph">HA의 경우: * 생성 * 에서 Cloud Volumes ONTAP 또는 Cloud Volumes ONTAP HA를 선택합니다.</block>
+  <block id="3a9d310d3c7d575717795d5201c6eb82" category="admonition">마법사를 통해 선택하는 동안 * 서비스 * 아래에서 * Data Sense &amp; Compliance * 및 * Backup to Cloud * 를 선택하지 마십시오. 사전 구성된 패키지 * 에서 * 구성 변경 * 만 을 선택하고 다른 옵션을 선택하지 않았는지 확인합니다. 사전 구성된 패키지는 AWS Secret Cloud 및 Top Secret Cloud 지역에서 지원되지 않으며, 이 옵션을 선택하면 배포가 실패합니다.</block>
+  <block id="e5a35e28b12a6a035ea6dae7ea81e74b" category="paragraph-title">다수의 가용 영역에 Cloud Volumes ONTAP HA를 구축하기 위한 참고 사항</block>
+  <block id="f03dcf451f901bf20125c132b9de9c4e" category="paragraph">HA 쌍 마법사를 완료하면 다음을 유의하십시오.</block>
+  <block id="dc3b612dc8d3cd562dc1895e9abe009e" category="list-text">여러 가용 영역(AZ)에 Cloud Volumes ONTAP HA를 구축할 때는 전송 게이트웨이를 구성해야 합니다. 을 참조하십시오 <block ref="8ed1c74f676e6267bda3930e176fcde5" category="inline-link-macro-rx"></block>.</block>
+  <block id="157b26b8f9e431133768c4410746dab0" category="list-text">발행 당시 AWS Top Secret Cloud에서 두 개의 AZ만 사용할 수 있었기 때문에 구성을 다음과 같이 배포합니다.</block>
+  <block id="257255bfb66ac16ef18a6d55cdcb7b7a" category="paragraph-title">참고: 단일 노드 및 HA 노드 모두에 Cloud Volumes ONTAP를 구축하기 위한 참고 사항입니다</block>
+  <block id="ddc02d9ba0010a869da8ae08dfb2129d" category="section-title">8단계: 데이터 계층화를 위한 보안 인증서를 설치합니다</block>
+  <block id="8e027cf59b4559eb1838d0f8d1942021" category="paragraph">AWS Secret Cloud 및 Top Secret Cloud 지역에서 데이터 계층화를 활성화하려면 보안 인증서를 수동으로 설치해야 합니다.</block>
+  <block id="aa75c5800fcaf537c31bc596bbe5c5df" category="list-text">S3 버킷을 생성합니다.</block>
+  <block id="262a65bcc023dc57405d7cefeef7ffa6" category="admonition">버킷 이름 앞에 가 있는지 확인합니다<block ref="3d4d92057419ff716cce5acb01785244" prefix=" " category="inline-code"></block> 예를 들어<block ref="802d67bdbe81a898f2b2d3258a0e2918" prefix=" " category="inline-code"></block>.</block>
+  <block id="ab1c6060f522fe4e9268956b2ece4fea" category="list-text">에 설치한 루트 인증서를 유지합니다<block ref="10f5dacfa6ac3fb3d44d134b3d8aa6b7" prefix=" " category="inline-code"></block> 편리합니다.</block>
+  <block id="81df1240a5a0d61d4f271a7a16cb5665" category="list-text">에 설치한 루트 인증서의 텍스트를 복사합니다<block ref="10f5dacfa6ac3fb3d44d134b3d8aa6b7" prefix=" " category="inline-code"></block>.</block>
+  <block id="50ed41933c6de91a5e66cf3846284741" category="list-text">CLI를 사용하여 Cloud Volumes ONTAP 시스템에 안전하게 연결합니다.</block>
+  <block id="ac1c1103df890000364175789deedc50" category="list-text">루트 인증서를 설치합니다. 를 눌러야 할 수도 있습니다<block ref="331b3100a485d8cacff1d3df8e9b0c13" prefix=" " category="inline-code"></block> 키를 여러 번 누름:</block>
+  <block id="288c7317e7d4cdc9a1bbbfc8d5c0fdf9" category="list-text">메시지가 표시되면 및 을 포함하여 복사된 전체 텍스트를 입력합니다<block ref="2e6e444f0b3a9bf6ecf548f7f96b07d8" prefix=" " category="inline-code"></block> 를 선택합니다<block ref="5108b4f48c8cce016010ee651a887f04" prefix=" " category="inline-code"></block>.</block>
+  <block id="e892aacd69b0205a1e199c532dd982d5" category="list-text">나중에 참조할 수 있도록 CA 서명 디지털 인증서의 복사본을 보관합니다.</block>
+  <block id="6d2c80c94e9000583af57f67d83a074a" category="list-text">CA 이름과 인증서 일련 번호를 유지합니다.</block>
+  <block id="545c341f48cce4f4da97b8796161a847" category="list-text">AWS Secret Cloud 및 Top Secret Cloud 지역에 대한 객체 저장소 구성:<block ref="254354a94e4e8df01fb67d707c14196b" prefix=" " category="inline-code"></block></block>
+  <block id="f65fbc511c567783b0b1e613356f35a7" category="list-text">이 명령을 실행하여 개체 저장소를 구성합니다.</block>
+  <block id="ecf379308cec5ab29db394ce4598de0a" category="admonition">모든 아마존 리소스 이름(ARN)에는 접미사가 붙어야 합니다<block ref="958e00f0df59941b894836780ff1b87b" prefix=" " category="inline-code"></block>예를 들면, 입니다<block ref="2882f2417db32b0acd63a0279026e4d2" prefix=" " category="inline-code"></block>. 예를 들어, 리소스에 지역이 있는 ARN이 필요한 경우 Top Secret Cloud의 경우 명명 규칙을 로 사용합니다<block ref="0a00d2b4d6a45bd8dcfba73c394a6c2f" prefix=" " category="inline-code"></block> 의 경우<block ref="a7ad445f04459bf490643e88ff3dc62c" prefix=" " category="inline-code"></block> 깃발. AWS Secret Cloud의 경우 를 사용합니다<block ref="b0088da20a434ad4a82af219c6060e17" prefix=" " category="inline-code"></block>.</block>
+  <block id="0fa1ceff2d3029509f37c0908c04952b" category="list-text">개체 저장소가 성공적으로 생성되었는지 확인합니다.<block ref="53ae63f862b62252df3847d17f227e2c" prefix=" " category="inline-code"></block></block>
+  <block id="af1f90a041d2ca889370b245fb6604cf" category="list-text">오브젝트 저장소를 애그리게이트에 연결합니다. 모든 새로운 애그리게이트에 대해 이 작업을 반복해야 합니다.<block ref="cb01e4c0b63cc7176a787f4e75937016" prefix=" " category="inline-code"></block></block>
+  <block id="a9b34414733cf4871ed4d1f23b7438dd" category="inline-link">BlueXP에서 AWS에 커넥터를 생성합니다</block>
+  <block id="caf19a70c93137d87df4ede2dd06d267" category="list-text"><block ref="caf19a70c93137d87df4ede2dd06d267" category="inline-link-rx"></block></block>
+  <block id="e96bc5b1e40abf07ff070b96c65057db" category="inline-link">AWS Marketplace에서 Connector를 생성합니다</block>
+  <block id="4ce0d5011850342d0c6171e919048115" category="list-text"><block ref="4ce0d5011850342d0c6171e919048115" category="inline-link-rx"></block></block>
+  <block id="1fb392a56edc456b1bc3eddb57b0906b" category="inline-link">온-프레미스에 커넥터를 설치하고 설정합니다</block>
+  <block id="510a18acc0e91814caa7b29fd0c6cf03" category="list-text"><block ref="510a18acc0e91814caa7b29fd0c6cf03" category="inline-link-rx"></block></block>
+  <block id="a1dc2e55a815bd7f430fab36f4c28784" category="inline-link">Connector에 대한 AWS 권한</block>
+  <block id="059ef6b8ce45a93c6445c0f41c224068" category="list-text"><block ref="059ef6b8ce45a93c6445c0f41c224068" category="inline-link-rx"></block></block>
+  <block id="8d248e3b0efc80b62fc62ba57027d13f" category="admonition">AWS Secret Cloud에서는 자체 IAM 역할을 제공해야 합니다. <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>.</block>
+  <block id="275e611a605380e34988066f6fa53eae" category="sidebar">AWS 비밀 지역에 Cloud Volumes ONTAP 구축</block>
 </blocks>

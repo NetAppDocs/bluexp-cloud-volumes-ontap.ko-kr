@@ -19,7 +19,7 @@ summary: 필요한 권한이 있는 IAM 역할은 각 Cloud Volumes ONTAP 노드
 이 작업은 선택 사항입니다. Cloud Volumes ONTAP 작업 환경을 생성할 때 기본 옵션은 BlueXP에서 IAM 역할을 생성할 수 있도록 하는 것입니다. 보안 정책에 따라 IAM 역할을 직접 생성해야 하는 경우 다음 단계를 따르십시오.
 
 
-NOTE: AWS 상용 클라우드 서비스 환경에서는 IAM의 역할을 직접 제공해야 합니다. link:task-getting-started-aws-c2s.html["C2S에 Cloud Volumes ONTAP를 배포하는 방법을 알아보십시오"].
+NOTE: AWS Secret Cloud에서는 자체 IAM 역할을 제공해야 합니다. link:task-getting-started-aws-c2s.html["C2S에 Cloud Volumes ONTAP를 배포하는 방법을 알아보십시오"].
 
 .단계
 . AWS IAM 콘솔로 이동합니다.
@@ -88,7 +88,7 @@ NOTE: AWS 상용 클라우드 서비스 환경에서는 IAM의 역할을 직접 
 }
 ----
 --
-.C2S 환경
+.주요 비밀 지역
 --
 [source, json]
 ----
@@ -112,6 +112,35 @@ NOTE: AWS 상용 클라우드 서비스 환경에서는 IAM의 역할을 직접 
             "s3:DeleteObject"
         ],
         "Resource": "arn:aws-iso:s3:::fabric-pool-*",
+        "Effect": "Allow"
+    }]
+}
+----
+--
+.비밀 영역
+--
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Action": "s3:ListAllMyBuckets",
+        "Resource": "arn:aws-iso-b:s3:::*",
+        "Effect": "Allow"
+    }, {
+        "Action": [
+            "s3:ListBucket",
+            "s3:GetBucketLocation"
+        ],
+        "Resource": "arn:aws-iso-b:s3:::fabric-pool-*",
+        "Effect": "Allow"
+    }, {
+        "Action": [
+            "s3:GetObject",
+            "s3:PutObject",
+            "s3:DeleteObject"
+        ],
+        "Resource": "arn:aws-iso-b:s3:::fabric-pool-*",
         "Effect": "Allow"
     }]
 }
@@ -197,7 +226,7 @@ Cloud Volumes ONTAP 시스템에서 BlueXP 백업 및 복구를 사용하려는 
 }
 ----
 --
-.C2S 환경
+.주요 비밀 지역
 --
 [source, json]
 ----
@@ -227,6 +256,42 @@ Cloud Volumes ONTAP 시스템에서 BlueXP 백업 및 복구를 사용하려는 
                 "s3:PutObjectRetention"
             ],
             "Resource": "arn:aws-iso:s3:::netapp-backup*/*",
+            "Effect": "Allow"
+        }
+    ]
+}
+----
+--
+.비밀 영역
+--
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": "arn:aws-iso-b:s3:::netapp-backup*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:DeleteObject",
+                "s3:ListAllMyBuckets",
+                "s3:PutObjectTagging",
+                "s3:GetObjectTagging",
+                "s3:RestoreObject",
+                "s3:GetBucketObjectLockConfiguration",
+                "s3:GetObjectRetention",
+                "s3:PutBucketObjectLockConfiguration",
+                "s3:PutObjectRetention"
+            ],
+            "Resource": "arn:aws-iso-b:s3:::netapp-backup*/*",
             "Effect": "Allow"
         }
     ]

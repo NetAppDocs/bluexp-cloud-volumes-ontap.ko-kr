@@ -52,8 +52,8 @@ Cloud Volumes ONTAP에서 아마존 암호화를 사용하려면 활성 CMK(고�
 작업 환경 추가 * 를 클릭하고 배포할 시스템 유형을 선택한 다음 마법사의 단계를 완료합니다. link:task-deploying-otc-aws.html["단계별 지침을 읽습니다"].
 
 .관련 링크
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["BlueXP에서 커넥터 만들기"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws.html["AWS Marketplace에서 커넥터 실행"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Linux 호스트에 Connector 소프트웨어 설치"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["BlueXP에서 AWS 권한을 사용하는 경우"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html["BlueXP에서 AWS에 커넥터를 생성합니다"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html["AWS Marketplace에서 Connector를 생성합니다"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["온-프레미스에 커넥터를 설치하고 설정합니다"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Connector에 대한 AWS 권한"^]
 
