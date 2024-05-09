@@ -1914,13 +1914,6 @@
   <block id="7a216ec4d6977719ed1b40a4322bfd8f" category="section-title">라이선스 변환</block>
   <block id="7bd090ccc30738cd79592e7431dee17b" category="paragraph">다른 라이센스 방법으로 이전하려는 경우 라이센스를 구입하고 해당 라이센스를 사용하여 새 Cloud Volumes ONTAP 시스템을 배포한 다음 데이터를 새 시스템으로 복제할 수 있습니다.</block>
   <block id="170d227d215fb560bb4c8ad4e345183a" category="section-title">최대 시스템 수</block>
-  <block id="8e9d6d95264b6231f0a1d0ca22c087f7" category="summary">다음 가이드를 참조하여 Google Cloud에서 Cloud Volumes ONTAP를 시작하여 특정 사용 사례를 충족할 수 있습니다.</block>
-  <block id="f22e86b63856df3737d333499d0d8642" category="inline-link-macro">Google Cloud에서 Cloud Volumes ONTAP 시작하기: 설정 연습</block>
-  <block id="a480525c508abef033c6011b6b8ae5db" category="list-text"><block ref="a480525c508abef033c6011b6b8ae5db" category="inline-link-macro-rx"></block></block>
-  <block id="85536ede959e4a62b6eeb8fa7da21b71" category="inline-link-macro">재해 복구를 위해 ONTAP 사내 데이터를 NetApp Cloud Volumes ONTAP로 복제합니다</block>
-  <block id="8b26f0918bd84f8f658268af9e2d60ac" category="list-text"><block ref="8b26f0918bd84f8f658268af9e2d60ac" category="inline-link-macro-rx"></block></block>
-  <block id="ebd1806e62b51cb0c1b6db8082e0666d" category="inline-link-macro">Google Cloud에서 Cloud Volumes ONTAP와 함께 NetApp FlexCache를 구축하는 방법</block>
-  <block id="dd8a20d5a7875f2be225fbdc1a4c18bf" category="list-text"><block ref="dd8a20d5a7875f2be225fbdc1a4c18bf" category="inline-link-macro-rx"></block></block>
   <block id="0b92442656d83f3067193055685902c8" category="list-text">내부 로드 밸런서</block>
   <block id="bed26a3b752abff1e6e50d64a46ef060" category="paragraph">로드 밸런싱 장치 하나는 클러스터 관리이고, 하나는 SVM(스토리지 VM) 관리이고, 하나는 노드 1에 대한 NAS 트래픽이고, 나머지 하나는 노드 2에 대한 NAS 트래픽입니다.</block>
   <block id="a3f8b70147487a4cbe0d1e707fb50ec9" category="paragraph">각 부하 분산 장치에 대한 설정은 다음과 같습니다.</block>
@@ -5248,4 +5241,5 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="059ef6b8ce45a93c6445c0f41c224068" category="list-text"><block ref="059ef6b8ce45a93c6445c0f41c224068" category="inline-link-rx"></block></block>
   <block id="8d248e3b0efc80b62fc62ba57027d13f" category="admonition">AWS Secret Cloud에서는 자체 IAM 역할을 제공해야 합니다. <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>.</block>
   <block id="275e611a605380e34988066f6fa53eae" category="sidebar">AWS 비밀 지역에 Cloud Volumes ONTAP 구축</block>
+  <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">AWS Top Secret/Secret Cloud 지역의 빠른 시작</block>
 </blocks>

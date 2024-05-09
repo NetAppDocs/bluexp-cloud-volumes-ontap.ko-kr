@@ -9,6 +9,8 @@ indexpage:
       url: concept-overview-cvo.html
     - title: AWS를 위한 빠른 시작
       url: task-getting-started-aws.html
+    - title: AWS Top Secret/Secret Cloud 지역의 빠른 시작
+      url: task-getting-started-aws-c2s.html
       flavor: aws
     - title: Azure를 빠르게 시작합니다
       url: task-getting-started-azure.html

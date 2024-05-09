@@ -301,7 +301,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 +
 [source, cli]
 ----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
+network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
 . 데이터 LIF 생성:
 +
@@ -341,7 +341,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 +
 [source, cli]
 ----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
+network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
 . 데이터 LIF 생성:
 +
@@ -381,7 +381,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 +
 [source, cli]
 ----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
+network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
 . 데이터 LIF 생성:
 +
@@ -430,7 +430,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 +
 [source, cli]
 ----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
+network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
 . 데이터 LIF 생성:
 +
@@ -515,7 +515,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 +
 [source, cli]
 ----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
+network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
 . 데이터 LIF 생성:
 +
@@ -625,7 +625,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 +
 [source, cli]
 ----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
+network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
 . NAS 데이터 LIF 생성:
 +
