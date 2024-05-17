@@ -38,7 +38,7 @@ TIP: BlueXP는 테이크오버를 시작하고 Giveback을 기다리면서 한 �
 .참조하십시오
 AWS에서 지원되는 인스턴스 유형 목록은 를 참조하십시오 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html#supported-ec2-compute["지원되는 EC2 인스턴스"^].
 
-C4, M4 또는 R4 인스턴스에서 인스턴스 유형을 변경할 수 없는 경우 KB 문서를 참조하십시오 link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Unable_to_change_the_instance_type_from_r4_to_r5_with_disk_count_error["디스크 수 오류로 인해 인스턴스 유형을 R4에서 R5로 변경할 수 없습니다"^].
+C4, M4 또는 R4 인스턴스에서 인스턴스 유형을 변경할 수 없는 경우 KB 문서를 참조하십시오 link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Converting_an_AWS_Xen_CVO_instance_to_Nitro_(KVM)["AWS Xen CVO 인스턴스를 Nitro(KVM)로 변환"^].
 
 .단계
 . Canvas 페이지에서 작업 환경을 선택합니다.
