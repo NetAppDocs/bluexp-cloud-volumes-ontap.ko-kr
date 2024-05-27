@@ -972,9 +972,6 @@
   <block id="723596a60ea78fba91bcc7acb47cb786" category="paragraph">HA 구성을 사용하면 다음과 같이 데이터의 고가용성을 유지할 수 있습니다.</block>
   <block id="f04b83c6c15bc920bde6b3bda82d692e" category="list-text">복구 지점 목표(RPO)는 0초입니다. 데이터는 데이터 손실 없이 트랜잭션 측면에서 일관적입니다.</block>
   <block id="218815dee60a5e42cd50732e4ad90420" category="section-title">HA 구축 모델</block>
-  <block id="a2efc5fc54fd68c09324deea01c6bc06" category="paragraph">여러 AZs(Availability Zone) 또는 단일 AZ에 HA 구성을 배포하여 데이터의 고가용성을 보장할 수 있습니다. 각 구성에 대한 자세한 내용을 검토하여 요구 사항에 가장 적합한 구성을 선택해야 합니다.</block>
-  <block id="bc2a46f921494df9fc5f911909c03874" category="section-title">여러 가용성 영역</block>
-  <block id="28cbbb231a21034634b99c799eadc9ce" category="paragraph">AZ(Multiple Availability Zones)에 HA 구성을 구축하면 AZ 또는 Cloud Volumes ONTAP 노드를 실행하는 인스턴스에서 장애가 발생할 경우 데이터의 고가용성을 보장할 수 있습니다. NAS IP 주소가 데이터 액세스 및 스토리지 페일오버에 미치는 영향을 이해해야 합니다.</block>
   <block id="7657d465c1c0f4f6bfa9bdc17df2b08c" category="section-title">NFS 및 CIFS 데이터 액세스</block>
   <block id="9f0c295d98b756eb0b4e5810df0a50b2" category="inline-link-macro">AWS 전송 게이트웨이를 설정합니다</block>
   <block id="34df161a9c0315272455a0dcc8b35711" category="paragraph">HA 구성이 여러 가용성 영역 간에 분산되면 _floating IP addresses_enable NAS 클라이언트 액세스를 사용합니다. 해당 지역의 모든 VPC에 대한 CIDR 블록 외부에 있어야 하는 부동 IP 주소는 장애가 발생할 경우 노드 간에 마이그레이션할 수 있습니다. 고객이 아닌 한 VPC 외부에 있는 클라이언트에서 기본적으로 액세스할 수 없습니다 <block ref="f196b90949d1249f4f3797eb7257a21d" category="inline-link-macro-rx"></block>.</block>
@@ -992,8 +989,6 @@
   <block id="a97184b57d4c599265a6c857744616a6" category="paragraph"><block ref="a97184b57d4c599265a6c857744616a6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="24c0cd8b26bb96fcfde0ec7aa356e67c" category="paragraph">외부 VPC 액세스에 사용되는 NAS 데이터 IP는 장애가 발생할 경우 노드 간에 마이그레이션할 수 없습니다. 노드가 오프라인이 되면 다른 노드의 IP 주소를 사용하여 VPC 외부의 클라이언트에 볼륨을 수동으로 다시 마운트해야 합니다.</block>
   <block id="59cd6fed99392db807d679317017b518" category="paragraph">장애가 발생한 노드가 다시 온라인 상태가 되면 원래 IP 주소를 사용하여 클라이언트를 볼륨에 다시 마운트합니다. 이 단계는 두 HA 노드 간에 불필요한 데이터를 전송하지 않아야 하므로 성능에 중대한 영향을 미칠 수 있습니다.</block>
-  <block id="213cb4fa8613615178e793d9dcd42165" category="section-title">단일 가용성 영역</block>
-  <block id="b593d41d188d87529aac0e57d6b4594a" category="paragraph">AZ(단일 가용성 영역)에 HA 구성을 구축하면 Cloud Volumes ONTAP 노드를 실행하는 인스턴스에 장애가 발생할 경우 데이터의 고가용성을 보장할 수 있습니다. 모든 데이터는 VPC 외부에서 기본적으로 액세스할 수 있습니다.</block>
   <block id="31ac8d1ac9d098205b95d495a0a3f93a" category="inline-link">AWS 배치 그룹 분산</block>
   <block id="7f87e6839b7919bf607ad546427cfbe1" category="section-title">데이터 액세스</block>
   <block id="c60d8180a8553c026163df72ec4bf40d" category="paragraph">이 구성은 단일 AZ에 있으므로 부동 IP 주소가 필요하지 않습니다. VPC 내부 및 VPC 외부에서 동일한 IP 주소를 사용하여 데이터에 액세스할 수 있습니다.</block>
@@ -3372,7 +3367,6 @@
   <block id="639c4a9b76126cf4712751dee5546383" category="paragraph">한편, BlueXP가 VPC-1, VPC-2 및 VPC-3의 인스턴스에 대해 생성하는 사전 정의된 방화벽 규칙은 _ALL_PROTOCOLS 및 포트를 통한 수신 통신을 가능하게 합니다. 이 규칙은 HA 노드 간 통신을 지원합니다.</block>
   <block id="3ef69cb41da937aa60ab5fbab53eb42a" category="list-text">Cloud Volumes ONTAP를 업그레이드할 때 BlueXP는 필요에 따라 중재자 인스턴스도 업데이트합니다.</block>
   <block id="5d345d14f8662bfe45d8562fba90c487" category="list-text">BlueXP에서 Cloud Volumes ONTAP HA 쌍을 만들면 중재자 인스턴스에 대한 키 쌍을 제공하라는 메시지가 표시됩니다. 를 사용하여 SSH 액세스에 이 키 쌍을 사용할 수 있습니다<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 사용자.</block>
-  <block id="b4af2eb1a5c665c00f00d9b68f64d5be" category="paragraph">여러 가용성 영역에 HA 구성을 배포하기 전에 부동 IP 주소 및 라우팅 테이블에 대한 요구 사항을 검토해야 합니다. 구성을 배포할 때 부동 IP 주소를 지정해야 합니다. BlueXP에서 개인 IP 주소를 자동으로 생성합니다.</block>
   <block id="bf20805083b34c4479e326ea7f16966f" category="paragraph">볼륨을 선택하고 * 탑재 명령 * 을 클릭하여 BlueXP에서 올바른 IP 주소를 쉽게 식별할 수 있습니다.</block>
   <block id="bf75afe84fa4d8e8637d67f46da78447" category="admonition">BlueXP는 을 생성합니다<block ref="69dad99e4ae4952ff167137be3a42452" category="inline-link-rx"></block> 그런 다음 해당 배치 그룹에서 2개의 HA 노드를 시작합니다. 배치 그룹은 서로 다른 기본 하드웨어에 인스턴스를 분산하여 동시 오류 위험을 줄입니다. 이 기능은 디스크 장애 관점이 아니라 컴퓨팅 측면에서 중복성을 향상시킵니다.</block>
   <block id="c884e72132fe774e964d45203b2dda4d" category="paragraph">새 볼륨을 생성하고 추가 디스크가 필요한 경우 BlueXP는 두 노드에 동일한 수의 디스크를 할당하고 미러링된 애그리게이트를 생성한 다음 새 볼륨을 생성합니다. 예를 들어, 볼륨에 두 개의 디스크가 필요한 경우 BlueXP는 노드당 두 개의 디스크를 총 4개의 디스크에 할당합니다.</block>
@@ -5244,4 +5238,48 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="21374a20e08d3e0c8ca328133d8fe5f4" category="list-text">BlueXP 콘솔의 오른쪽 위에서 줄임표 아이콘을 클릭하고 * Remove from workspace * 를 선택합니다.</block>
   <block id="b724364be6320cfd44126523f60ef584" category="inline-link">마켓플레이스 제품의 프로그래밍 방식 배포</block>
   <block id="1466cb0ca0af8994440faa54da634c8d" category="list-text">*Azure Marketplace에서 구독 *: BlueXP가 Cloud Volumes ONTAP의 프로그래밍 방식 배포를 활성화할 수 없는 경우 이 페이지가 표시됩니다. 화면에 나열된 단계를 따릅니다. 을 참조하십시오<block ref="bc817edffaba6b19533f23cdb879088c" category="inline-link-rx"></block> 를 참조하십시오.</block>
+  <block id="64d1ac557c8992bc5d65b98a95e0b497" category="section-title">지원되는 로컬 영역을 선택합니다</block>
+  <block id="951d6dba79708fba245b5798bb84dde6" category="paragraph">Cloud Volumes ONTAP는 싱가포르를 포함한 일부 AWS 지역 지역에서 지원됩니다. 로컬 영역 선택은 선택 사항입니다.</block>
+  <block id="b1968c5681446da9bdcedadbf7a34131" category="inline-link-macro">로컬 영역의 전체 목록을 봅니다</block>
+  <block id="a455e3549f40e60e4a9c2e8c6580a6a2" category="paragraph"><block ref="27bdb425ba8206d688a379332282fbb4" category="inline-link-macro-rx"></block>.
+로컬 영역을 사용하도록 설정해야 해당 영역에서 리소스를 만들고 관리할 수 있습니다.</block>
+  <block id="7d273ac4682ff6458339567063ef099c" category="inline-link-macro">로컬 영역을 활성화하는 방법에 대해 알아봅니다</block>
+  <block id="9d27b872e974d3d08bf3a26f3677a159" category="paragraph"><block ref="4d81cb3a41369feab014b9955336458e" category="inline-link-macro-rx"></block>.</block>
+  <block id="f5d7776a3ddb7ca1ecdd36a3e71b0903" category="admonition">Phoenix는 지원되는 로컬 영역이 아닙니다.</block>
+  <block id="14f93e26a64410a779a8f05ff019c578" category="paragraph">여러 가용 영역(AZ) 또는 단일 가용 영역(AZ)에 HA 구성을 배포하여 데이터의 고가용성을 보장할 수 있습니다. 각 구성에 대한 자세한 내용을 검토하여 요구 사항에 가장 적합한 구성을 선택해야 합니다.</block>
+  <block id="086e808bdf46a8027609222c8bc2ae0b" category="section-title">다수의 가용 영역</block>
+  <block id="1f0c75dd86d99f8dd501e6ad73083cb9" category="paragraph">AZ(다중 가용 영역)에 HA 구성을 구축하면 AZ 또는 Cloud Volumes ONTAP 노드를 실행하는 인스턴스에서 장애가 발생할 경우 데이터의 고가용성을 보장할 수 있습니다. NAS IP 주소가 데이터 액세스 및 스토리지 페일오버에 미치는 영향을 이해해야 합니다.</block>
+  <block id="9e1e9460b8dc471c1ab072416162e7fd" category="paragraph">여러 가용 영역에 HA 구성을 배포하기 전에 부동 IP 주소 및 라우팅 테이블에 대한 요구 사항을 검토해야 합니다. 구성을 배포할 때 부동 IP 주소를 지정해야 합니다. BlueXP에서 개인 IP 주소를 자동으로 생성합니다.</block>
+  <block id="9915334dccd6082757486cc7db7c4599" category="section-title">단일 가용 영역</block>
+  <block id="4214b1507155cb0c63890d5526690625" category="paragraph">AZ(단일 가용 영역)에 HA 구성을 구축하면 Cloud Volumes ONTAP 노드를 실행하는 인스턴스에 장애가 발생할 경우 데이터의 고가용성을 보장할 수 있습니다. 모든 데이터는 VPC 외부에서 기본적으로 액세스할 수 있습니다.</block>
+  <block id="e0b08acf0828bf4594a0b9bd6411df1b" category="section-title">AWS 로컬 영역</block>
+  <block id="bc54c20d96244cbf865df76934081bb9" category="paragraph">AWS Local Zones 는 스토리지, 컴퓨팅, 데이터베이스 및 기타 엄선된 AWS 서비스가 대도시와 산업 영역에 가깝게 위치하는 인프라 구축입니다. AWS Local Zones를 사용하면 AWS 서비스를 더 가까운 곳으로 가져와 워크로드의 지연 시간을 개선하고 데이터베이스를 로컬에서 유지할 수 있습니다.</block>
+  <block id="ac654b16577855244ce7dae48d89fba9" category="paragraph">AWS 로컬 영역에 단일 AZ 또는 여러 AZ 구성을 배포할 수 있습니다.</block>
+  <block id="2a6302a8529ac1ec37d01886ead088d0" category="section-title">AWS 로컬 영역 구성의 예</block>
+  <block id="19af59a268c506bb19268e318e2e9e5f" category="paragraph">다음은 예제 구성입니다.</block>
+  <block id="cc9d5d3b16643a54feae6e4778e4d7b9" category="list-text">단일 가용 영역: 클러스터 노드와 중재자가 모두 동일한 로컬 영역에 있습니다.</block>
+  <block id="9f1aad520102b4f5b24cb8c2d5dce3eb" category="list-text">다수의 가용 영역
+여러 가용 영역 구성에는 3개의 인스턴스, 2개의 노드 및 1개의 중재자가 있습니다. 세 인스턴스 중 한 인스턴스는 별도의 영역에 있어야 합니다. 설정 방법을 선택할 수 있습니다.</block>
+  <block id="693e51513559ce9e3ac257ad0f07f744" category="paragraph">다음은 세 가지 구성의 예입니다.</block>
+  <block id="23cfd96026421dbbdfa6a706c9b57047" category="list-text">각 클러스터 노드는 서로 다른 로컬 영역에 있고 공용 가용 영역의 중재자입니다.</block>
+  <block id="e7b2b5f10ffa3982dbe023fcc44d9809" category="list-text">로컬 영역에 있는 클러스터 노드 1개, 로컬 영역에 있는 중재자 및 두 번째 클러스터 노드는 가용 영역에 있습니다.</block>
+  <block id="7f1ca580f0235d8ecd120f9905161358" category="list-text">각 클러스터 노드와 중재자는 별도의 로컬 영역에 있습니다.</block>
+  <block id="53e8d12efd0a1f3029b5796a1b3b6d97" category="section-title">지원되는 디스크 및 인스턴스 유형</block>
+  <block id="b725b06baf48d4e1dcf97d094f7fa465" category="paragraph">지원되는 유일한 디스크 유형은 GP2입니다.</block>
+  <block id="3d3c8175d796b0c12230914779b33fbb" category="paragraph">크기가 xlarge에서 4xlarge인 다음 EC2 인스턴스 유형 제품군이 현재 지원됩니다.</block>
+  <block id="3f44a84e6e34fdb5a2f89c68d8c36175" category="list-text">M5</block>
+  <block id="fea813d4ddba3c46cf8b8e664b92cdaa" category="list-text">C5</block>
+  <block id="82bce2d16d12d889961dbfbfac9b0015" category="list-text">시브드</block>
+  <block id="e1b8054c9cdd622c9eeecfe71f26054a" category="list-text">R5</block>
+  <block id="513e8fcb60809102e57ea96961daab7c" category="list-text">오른쪽 5분</block>
+  <block id="5eaba9c26c7009842affe7562eb137d3" category="inline-link-macro">로컬 영역에서 지원되는 EC2 인스턴스 유형에 대한 최신 정보와 전체 세부 정보는 AWS를 참조하십시오</block>
+  <block id="5a38beb8a35f70ab33e7cb660b004cf6" category="paragraph"><block ref="3d9029b658475a88eed4e09e15fa8cce" category="inline-link-macro-rx"></block>.</block>
+  <block id="6d79fc3df77a055abb0043c41477add1" category="paragraph">일부 AWS 로컬 존을 사용할 수 있습니다.</block>
+  <block id="b40c89ea76edb69b0a84d7a6a1be7455" category="inline-link-macro">AWS 자습서 "AWS 로컬 영역을 사용하여 지연 시간이 짧은 애플리케이션 배포를 시작합니다</block>
+  <block id="f8945f9c0b29d6212c5c9654ff1b7ed3" category="paragraph">AWS 로컬 영역을 사용하려면 먼저 AWS 계정의 로컬 영역에 로컬 영역을 사용하도록 설정하고 서브넷을 만들어야 합니다. 의 * AWS 로컬 영역으로 옵트인 * 및 * Amazon VPC를 로컬 영역으로 확장 * 단계를 따릅니다 <block ref="08374900627773b5f0e169d9824fde8a" category="inline-link-macro-rx"></block>.</block>
+  <block id="c0d8b980523f619bb9dff8ef93a968c9" category="paragraph">커넥터 버전 3.9.36 이하를 실행하는 경우 AWS EC2 콘솔의 AWS 커넥터 역할에 다음 권한을 추가해야 합니다. DescripbeAvailabilityZones</block>
+  <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024년 5월 17일</block>
+  <block id="b3e67e9d7f5be7902fd87917d0acb3e0" category="section-title">Amazon Web Services 로컬 영역 지원</block>
+  <block id="6f9fa4d02a6081aa6d33b131d8532328" category="paragraph">Cloud Volumes ONTAP HA 구축 환경에서 AWS 로컬 영역 지원을 사용할 수 있습니다. AWS Local Zones 는 스토리지, 컴퓨팅, 데이터베이스 및 기타 엄선된 AWS 서비스가 대도시와 산업 영역에 가깝게 위치하는 인프라 구축입니다.</block>
+  <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">HA 배포가 포함된 AWS Local Zones에 대한 자세한 내용은 을 참조하십시오 <block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>.</block>
 </blocks>
