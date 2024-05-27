@@ -4117,20 +4117,13 @@
   <block id="2057f11c69807ba4cbd27e1e921f7823" category="paragraph"><block ref="2057f11c69807ba4cbd27e1e921f7823" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8bcb080f300b6dfd8ee09d89bb85d060" category="paragraph"><block ref="8bcb080f300b6dfd8ee09d89bb85d060" category="inline-image-macro-rx" type="image"></block></block>
   <block id="021ed7718b4d1f8ff42ac2d9a653d143" category="list-text">작업 환경에서 * 집계 * 탭을 클릭합니다.</block>
-  <block id="a83fde1416b692585ab72d55276e43ee" category="list-text">애그리게이트 탭에서 원하는 제목으로 이동한 다음 *... (타원 아이콘) *.</block>
   <block id="4940ff7a33940e4ec33b7d78f146648a" category="inline-image-macro">집계 메뉴 옵션의 스크린샷</block>
   <block id="65c989c474db774160c441e94f03ddfc" category="paragraph"><block ref="65c989c474db774160c441e94f03ddfc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="116812c107d40280e65a3a0f4f5c3440" category="cell">아래에서... (타원 아이콘) 메뉴에서 * 애그리게이트 세부 정보 보기 * 를 클릭합니다.</block>
-  <block id="2e59a4ccfe2d0087aa6ece23a0922ea4" category="cell">아래에서... (타원 아이콘) 메뉴에서 * 볼륨 추가 * 를 클릭합니다.</block>
-  <block id="64209bde9f2d422a086f99622664bb4b" category="list-text">아래에서... (타원 아이콘) 메뉴에서 * 디스크 추가 * 를 클릭합니다.</block>
-  <block id="54afa16678d9fa49dd4f37f5d8d62d51" category="list-text">아래에서... (타원 아이콘) 메뉴에서 * 용량 증가 * 를 클릭합니다.</block>
   <block id="cacd62863a1aec474ea14c7ba39b9f28" category="list-text">추가할 추가 용량을 입력한 다음 * 증가 * 를 클릭합니다.</block>
-  <block id="f20c2435bfa2bf017b0a33455e4d252c" category="list-text">볼륨을 포함하지 않는 집계 타일을 선택합니다. *...를 클릭합니다. (타원 아이콘) &gt; 삭제 *.</block>
   <block id="44f505566cfb44ab274d6dd37da6a48b" category="list-text">Canvas 페이지에서 쓰기 속도로 구성하는 시스템의 이름을 두 번 클릭합니다.</block>
   <block id="b9c48f0b7a355bd9b39b3ae2c666ec43" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * 쓰기 속도 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
   <block id="8e1d6d29fa6bbc00ab6896ec1e677037" category="list-text">저장 * 을 클릭하고 확인 메시지를 검토한 다음 * 승인 * 을 클릭합니다.</block>
   <block id="38124763ec69515302fcd6a655b0cb92" category="list-text">Canvas 페이지에서 Cloud Volumes ONTAP 작업 환경의 이름을 두 번 클릭합니다.</block>
-  <block id="67f0f7bdc0b6b3c961c645e5a644b531" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 타원 아이콘을 클릭하고 * 암호 설정 * 을 선택합니다.</block>
   <block id="a18ec44ef07922a650e590de9dd0a36e" category="inline-image-macro">암호 설정 작업이 포함된 작업 환경에서 사용할 수 있는 메뉴를 보여 주는 스크린샷</block>
   <block id="6daca7a21673390f9b4946d99b575dbc" category="paragraph"><block ref="6daca7a21673390f9b4946d99b575dbc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="906b0fc78378feea1883fe721c72e648" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * 기계 유형 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
@@ -4157,7 +4150,6 @@
   <block id="da881591358a049c4652b06b1054ccb1" category="inline-image-macro">Elastic Volumes Enabled라는 텍스트가 있는 필드가 있는 두 개의 집계를 보여 주는 스크린샷</block>
   <block id="6d62cbba5d5d4db651e497c57ee98339" category="paragraph"><block ref="6d62cbba5d5d4db651e497c57ee98339" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f5b7e3773583b9ca6b634b5264139c7" category="list-text">Canvas 페이지에서 제거할 작업 환경을 두 번 클릭합니다.</block>
-  <block id="a9d8201fa61b52d04aa8d5efa98407ef" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 타원 아이콘을 클릭하고 * 작업 영역에서 제거 * 를 선택합니다.</block>
   <block id="41aeb32afbd7adcd7344a525b524aa2e" category="inline-image-macro">BlueXP 콘솔의 오른쪽 위에 있는 "작업 공간에서 제거" 옵션을 보여주는 스크린샷.</block>
   <block id="68dff8388aadd10577c0c664fc4fa756" category="paragraph"><block ref="68dff8388aadd10577c0c664fc4fa756" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ccc69ca3b9f50bd572baa407834f41ed" category="list-text">작업 공간에서 검토 창에서 * 제거 * 를 클릭합니다.</block>
@@ -4193,7 +4185,6 @@
   <block id="78cffa6560689ac98432ba58e17e78ff" category="inline-image-macro">볼륨에 대한 계층화 정책을 변경하는 데 사용할 수 있는 옵션을 보여 주는 스크린샷</block>
   <block id="e0e0725f5ef956857b33c008a39af157" category="paragraph"><block ref="e0e0725f5ef956857b33c008a39af157" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fd6a9430e3d3dc98292b8abddc9d77ff" category="paragraph">Cloud Volumes ONTAP 볼륨에서 _auto_Tiering 정책을 사용하여 데이터 계층화를 활성화한 경우 비즈니스 요구에 따라 기본 냉각 기간을 조정할 수 있습니다. 이 작업은 API 및 CLI에서만 지원됩니다.</block>
-  <block id="0f6046d8813989f95f3ce9353dba26a5" category="list-text">BlueXP 콘솔의 오른쪽 상단에서 타원 아이콘을 클릭하고 * 삭제 * 를 선택합니다.</block>
   <block id="ec8e04c7758ae04f1375383b387929a1" category="paragraph"><block ref="ec8e04c7758ae04f1375383b387929a1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e46b959133eadbb0d00ac0a308843f30" category="list-text">작업 환경 삭제 창에서 작업 환경의 이름을 입력한 다음 * 삭제 * 를 클릭합니다.</block>
   <block id="c4bd89564dafc82c9b2027b549fa45f2" category="list-text">작업 환경에서 * Volumes * 탭을 클릭합니다.</block>
@@ -4218,7 +4209,6 @@
   <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">Add Aggregate_screen에서 Aggregate를 생성합니다.</block>
   <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">집계 추가 진행률을 보여 주는 스크린샷</block>
   <block id="6d8395606a42c9b4b508b7083fef071b" category="paragraph"><block ref="6d8395606a42c9b4b508b7083fef071b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="61c67604de243e1d1f09464a53018e48" category="list-text">집계 제목 아래에서 타원 버튼을 클릭한 다음 * 집계 세부 정보 보기 * 를 선택합니다.</block>
   <block id="46804cb5ec7cb836d1b3ea87af016b42" category="paragraph"><block ref="46804cb5ec7cb836d1b3ea87af016b42" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1d9e8a6210003e4a2d3ad9699698b5c" category="paragraph"><block ref="b1d9e8a6210003e4a2d3ad9699698b5c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c0db33b74d957aee90885031cc634b6" category="paragraph">새 버전을 사용할 수 있는 경우 개요 탭에 알림이 나타납니다.</block>
@@ -4249,10 +4239,8 @@
   <block id="350c5507976ce0078fb3fab36bf47f9b" category="cell">Cloud Volume ONTAP SVM(스토리지 가상 시스템)을 선택하면 구성된 CIFS 정보가 표시됩니다.</block>
   <block id="1aad0c623c80b59d018f9ae6c07ca0bf" category="list-text">Set * 를 클릭합니다.</block>
   <block id="4145a13d965a05b20f37aec1922ef7dd" category="list-text">작업 환경에서 * 집계 탭 * 을 클릭합니다.</block>
-  <block id="7d3d9db5a4178e569561d635871c26ed" category="list-text">원하는 집계 타일로 이동한 다음 *... (타원 아이콘) &gt; 애그리게이트 세부 정보 보기 *.</block>
   <block id="920937d0401827a767850d6598f69cf9" category="list-text">Aggregate Details(집계 세부 정보) 화면의 Overview(개요) 탭에서 각 볼륨의 크기를 검토하고 aggregate에서 이동할 볼륨을 하나 이상 선택합니다.</block>
   <block id="c6d494ac63d05f0797b17cc4e9b671a5" category="list-text">애그리게이트 타일에서 사용 가능한 용량(프로비저닝된 크기 - 사용된 애그리게이트 용량)을 확인합니다.</block>
-  <block id="8fcffd0e2a621979482d32af8df3fa54" category="list-text">애그리게이트를 선택한 다음 *... (타원 아이콘) &gt; 디스크 추가 *.</block>
   <block id="85cbc8c9d17142818868d0deb987b7d4" category="section-title">FlexGroup 볼륨을 봅니다</block>
   <block id="bfc66c582a5f0744b4549abc59217c8b" category="paragraph">CLI 또는 System Manager를 통해 생성된 FlexGroup 볼륨은 BlueXP의 볼륨 탭을 통해 직접 볼 수 있습니다. FlexVol 볼륨에 대해 제공된 정보와 동일한 BlueXP는 전용 볼륨 타일을 통해 생성된 FleGroup 볼륨에 대한 자세한 정보를 제공합니다. 볼륨 타일에서 아이콘의 호버 텍스트를 통해 각 FlexGroup 볼륨 그룹을 식별할 수 있습니다. 또한 볼륨 스타일 열을 통해 볼륨 목록 보기에서 FlexGroup 볼륨을 식별하고 정렬할 수 있습니다.</block>
   <block id="18f38afc08c122a02d1cef0b8f55b13c" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * 인스턴스 유형 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
@@ -4399,7 +4387,6 @@
   <block id="5d52a8b51c505c42c6cec9d89c67795a" category="paragraph"><block ref="3abd3a0b5353b2721a22292e3b71aa39" category="inline-link-rx"></block> BlueXP UI에 통합되어 단일 창에서 Cloud Volumes ONTAP 시스템의 운영, 보안 및 성능을 최적화할 수 있습니다.</block>
   <block id="990d530a36683451e6ac666b1b224270" category="paragraph">BlueXP 디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.</block>
   <block id="11a72b1b7122c65d1d6f13efb867113a" category="paragraph">BlueXP는 Cloud Volumes ONTAP용으로 생성한 단일 스토리지 VM의 이름을 자동으로 지정합니다. 엄격한 명명 규칙이 있는 경우 System Manager, CLI 또는 API에서 스토리지 VM 이름을 수정할 수 있습니다. 예를 들어, 이름이 ONTAP 클러스터에 대한 스토리지 VM의 이름을 지정하는 방법과 일치할 수 있습니다.</block>
-  <block id="c916a82ca6e79a33689505d2642c711c" category="list-text">BlueXP의 작업 환경에서 *... (타원 아이콘) * 을 클릭한 다음 * Cloud Volumes ONTAP 업데이트 * 를 클릭합니다.</block>
   <block id="31a578b8e294d03f4be50639f79e8160" category="list-text">Cloud Volumes ONTAP 버전 업데이트 페이지에서 URL을 입력한 다음 * 이미지 변경 * 을 클릭합니다.</block>
   <block id="d32bc06f4693559b0941ab221004f77a" category="list-text"><block ref="b537ee4eb64ec01da34737ed00ba85c9" category="inline-link-macro-rx"></block>.</block>
   <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">Keystone 가입은 종량제 구독 기반 서비스입니다. <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>.</block>
@@ -5242,4 +5229,19 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">AWS Top Secret/Secret Cloud 지역의 빠른 시작</block>
   <block id="daa9928416a167d9b7399ff9cc7d8ca0" category="inline-link-macro">AWS Xen CVO 인스턴스를 Nitro(KVM)로 변환</block>
   <block id="77c35fc79180e21cd19319ed21d08508" category="paragraph">C4, M4 또는 R4 인스턴스에서 인스턴스 유형을 변경할 수 없는 경우 KB 문서를 참조하십시오 <block ref="609c7ea2ea8625480f6266b3b7e7b947" category="inline-link-macro-rx"></block>.</block>
+  <block id="4d3482cab23eb402cf41eedc8626a3b7" category="list-text">집계 제목에서 줄임표 단추를 클릭한 다음 * 집계 세부 정보 보기 * 를 선택합니다.</block>
+  <block id="12cf9bddd8c4164812494d4fa3077665" category="list-text">BlueXP의 작업 환경에서 *... (줄임표 아이콘) * 를 클릭한 다음 * Cloud Volumes ONTAP 업데이트 * 를 클릭합니다.</block>
+  <block id="f2f8cb191116ce13c9353aba365ae95e" category="list-text">원하는 집계 타일로 이동한 다음 *... (타원 아이콘) &gt; 애그리게이트 세부 정보 보기 *.</block>
+  <block id="138ffbf4a93266d3e7b39c528c04d8c7" category="list-text">집계를 선택한 다음 *... (줄임표 아이콘) &gt; 디스크 추가 *.</block>
+  <block id="4c71965d58af1f26dd6e9a862f318b07" category="list-text">집계 탭에서 원하는 제목으로 이동한 다음 *... (줄임표 아이콘) *.</block>
+  <block id="79af7751c40a5bdf0f691ca3f8994daa" category="cell">(줄임표 아이콘) 메뉴에서 * 집계 세부 정보 보기 * 를 클릭합니다.</block>
+  <block id="aa2920a3834825d262230b29a81f049d" category="cell">(줄임표 아이콘) 메뉴에서 * 볼륨 추가 * 를 클릭합니다.</block>
+  <block id="e85c530b7823cc4004b235aef0a57796" category="list-text">(줄임표 아이콘) 메뉴에서 * 디스크 추가 * 를 클릭합니다.</block>
+  <block id="ffce78aa73104a63f2c157847b6ffc7c" category="list-text">(줄임표 아이콘) 메뉴에서 * 용량 증가 * 를 클릭합니다.</block>
+  <block id="2edc419b0e18ec1ac829938d9101535e" category="list-text">볼륨을 포함하지 않는 집계 타일을 선택하십시오. *... (줄임표 아이콘)&gt; 삭제 *.</block>
+  <block id="8c4fbb7e9bd5b396b627cc7e7862fbba" category="list-text">BlueXP 콘솔의 오른쪽 위에서 줄임표 아이콘을 클릭하고 * Delete * 를 선택합니다.</block>
+  <block id="a0655fd5613af03dfa2a11af68b42b2e" category="list-text">BlueXP 콘솔의 오른쪽 위에서 줄임표 아이콘을 클릭하고 * Set password * 를 선택합니다.</block>
+  <block id="21374a20e08d3e0c8ca328133d8fe5f4" category="list-text">BlueXP 콘솔의 오른쪽 위에서 줄임표 아이콘을 클릭하고 * Remove from workspace * 를 선택합니다.</block>
+  <block id="b724364be6320cfd44126523f60ef584" category="inline-link">마켓플레이스 제품의 프로그래밍 방식 배포</block>
+  <block id="1466cb0ca0af8994440faa54da634c8d" category="list-text">*Azure Marketplace에서 구독 *: BlueXP가 Cloud Volumes ONTAP의 프로그래밍 방식 배포를 활성화할 수 없는 경우 이 페이지가 표시됩니다. 화면에 나열된 단계를 따릅니다. 을 참조하십시오<block ref="bc817edffaba6b19533f23cdb879088c" category="inline-link-rx"></block> 를 참조하십시오.</block>
 </blocks>

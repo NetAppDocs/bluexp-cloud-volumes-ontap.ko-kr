@@ -143,7 +143,7 @@ BlueXP에서 보안 그룹을 생성하도록 하면 트래픽을 허용하는 �
 
 NOTE: 선택한 버전에 대해 최신 출시 후보, 일반 가용성 또는 패치 릴리스를 사용할 수 있는 경우 BlueXP는 작업 환경을 만들 때 시스템을 해당 버전으로 업데이트합니다. 예를 들어, Cloud Volumes ONTAP 9.10.1 및 9.10.1 P4를 사용할 수 있는 경우 업데이트가 발생합니다. 업데이트는 한 릴리즈에서 다른 릴리즈로 발생하지 않습니다(예: 9.6에서 9.7로).
 
-. * Azure Marketplace * 구독: BlueXP가 Cloud Volumes ONTAP의 프로그래밍 방식 배포를 활성화할 수 없는 경우 다음 단계를 따르십시오.
+. *Azure Marketplace에서 구독 *: BlueXP가 Cloud Volumes ONTAP의 프로그래밍 방식 배포를 활성화할 수 없는 경우 이 페이지가 표시됩니다. 화면에 나열된 단계를 따릅니다. 을 참조하십시오 https://learn.microsoft.com/en-us/marketplace/programmatic-deploy-of-marketplace-products["마켓플레이스 제품의 프로그래밍 방식 배포"^] 를 참조하십시오.
 . * 기본 스토리지 리소스 *: 초기 애그리게이트의 설정(디스크 유형, 각 디스크의 크기, Blob 스토리지까지 데이터 계층화 활성화 여부)을 선택합니다.
 +
 다음 사항에 유의하십시오.

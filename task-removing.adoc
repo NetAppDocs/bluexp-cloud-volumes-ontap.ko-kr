@@ -28,7 +28,7 @@ BlueXP에서 작업 환경을 제거하면 다음과 같은 작업을 수행할 
 
 .단계
 . Canvas 페이지에서 제거할 작업 환경을 두 번 클릭합니다.
-. BlueXP 콘솔의 오른쪽 상단에서 타원 아이콘을 클릭하고 * 작업 영역에서 제거 * 를 선택합니다.
+. BlueXP 콘솔의 오른쪽 위에서 줄임표 아이콘을 클릭하고 * Remove from workspace * 를 선택합니다.
 +
 image:screenshot_settings_remove.png["BlueXP 콘솔의 오른쪽 위에 있는 \"작업 공간에서 제거\" 옵션을 보여주는 스크린샷."]
 
