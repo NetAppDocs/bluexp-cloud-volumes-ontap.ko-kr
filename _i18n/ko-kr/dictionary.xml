@@ -954,9 +954,7 @@
   <block id="cf7f72fb2e3e5a9df104130ba81c194e" category="section-title">중재자</block>
   <block id="fa8a1c8a7fb2a9d0529dc6ce8d75f99e" category="paragraph">다음은 AWS의 중재자 인스턴스에 대한 몇 가지 주요 정보입니다.</block>
   <block id="1e4f0991fe8c17eeb30a08a567b6faeb" category="list-text">인스턴스 유형</block>
-  <block id="ec078029075995846064f8135ac001c7" category="list-text">T2-마이크로</block>
   <block id="2d4aef30a49a581a6ed89ce840054235" category="list-text">디스크</block>
-  <block id="2928ec952c28834c42708b6033983463" category="list-text">약 8GiB의 EBS 마그네틱 디스크 1개</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="list-text">운영 체제</block>
   <block id="e49af72440176f7b22d853a9c2b29440" category="list-text">데비안 11</block>
   <block id="e57bd12603acfd3bc113dc88ee5c10d3" category="admonition">Cloud Volumes ONTAP 9.10.0 이전 버전에서는 데비안 10이 중재자위에 설치되었습니다.</block>
@@ -1038,11 +1036,9 @@
   <block id="f1c1592588411002af340cbaedd6fc33" category="cell">777</block>
   <block id="e5288c9c9df3485512af1ad66920a6f4" category="section-title">시스템 데이터용 내부 디스크</block>
   <block id="6fa32f5b70701d0a688b6541beb74a09" category="list-text">부팅, 루트 및 코어 데이터를 위한 노드당 디스크 3개:</block>
-  <block id="0916ca1fe06d26f579d29ce41bba24aa" category="list-text">부팅 데이터용 45GiB io1 디스크</block>
   <block id="98e2070bab7b3b5d7d8df93c31a0d604" category="list-text">루트 데이터용 140GiB GP3 디스크</block>
   <block id="465787191a1ad58255cf080d2465757a" category="list-text">핵심 데이터용 540GiB GP2 디스크</block>
   <block id="8cf431bb515ae46f1fb5484e8bb27744" category="list-text">각 부팅 디스크 및 루트 디스크마다 하나의 EBS 스냅샷</block>
-  <block id="0d9e99df90b8b75f4e0d96d0d4445a8c" category="list-text">HA 쌍의 경우 중재자 인스턴스를 위한 하나의 EBS 볼륨, 약 8GiB입니다</block>
   <block id="5170b265fcdfa9d59388a2d953d0277b" category="admonition">AWS에서 NVRAM은 부팅 디스크에 있습니다.</block>
   <block id="5639612d2f12168c8a83a7d9f034340d" category="section-title">Azure(단일 노드)</block>
   <block id="a54ef3cb3eaed60873e506e03712f9b0" category="list-text">3개의 프리미엄 SSD 디스크:</block>
@@ -5282,4 +5278,9 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="b3e67e9d7f5be7902fd87917d0acb3e0" category="section-title">Amazon Web Services 로컬 영역 지원</block>
   <block id="6f9fa4d02a6081aa6d33b131d8532328" category="paragraph">Cloud Volumes ONTAP HA 구축 환경에서 AWS 로컬 영역 지원을 사용할 수 있습니다. AWS Local Zones 는 스토리지, 컴퓨팅, 데이터베이스 및 기타 엄선된 AWS 서비스가 대도시와 산업 영역에 가깝게 위치하는 인프라 구축입니다.</block>
   <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">HA 배포가 포함된 AWS Local Zones에 대한 자세한 내용은 을 참조하십시오 <block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>.</block>
+  <block id="d4d3c7dc9c12800024fafcb2bb41c04f" category="list-text">부팅 데이터용 47GiB io1 디스크</block>
+  <block id="f4be35522ac705cbe795ea064998a28b" category="list-text">HA 페어의 경우 중재자 인스턴스를 위한 st1 EBS 볼륨 2개(약 8GiB 및 4GiB)와 각 노드에 다른 노드의 루트 데이터 복제본을 포함할 추가 140GiB GP3 디스크가 있습니다.</block>
+  <block id="10e3d4119b538d4a3b1943da285229fc" category="admonition">일부 영역에서는 사용 가능한 EBS 디스크 유형이 GP2일 수만 있습니다.</block>
+  <block id="0c14d315376234aa666bf4213aa88aec" category="list-text">T3-마이크로</block>
+  <block id="5dde3a7c362c6b03a35cf3c0b3374d14" category="list-text">8GiB 및 4GiB의 st1 디스크 2개</block>
 </blocks>
