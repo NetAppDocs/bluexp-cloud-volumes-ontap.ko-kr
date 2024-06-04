@@ -5273,7 +5273,6 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="6d79fc3df77a055abb0043c41477add1" category="paragraph">일부 AWS 로컬 존을 사용할 수 있습니다.</block>
   <block id="b40c89ea76edb69b0a84d7a6a1be7455" category="inline-link-macro">AWS 자습서 "AWS 로컬 영역을 사용하여 지연 시간이 짧은 애플리케이션 배포를 시작합니다</block>
   <block id="f8945f9c0b29d6212c5c9654ff1b7ed3" category="paragraph">AWS 로컬 영역을 사용하려면 먼저 AWS 계정의 로컬 영역에 로컬 영역을 사용하도록 설정하고 서브넷을 만들어야 합니다. 의 * AWS 로컬 영역으로 옵트인 * 및 * Amazon VPC를 로컬 영역으로 확장 * 단계를 따릅니다 <block ref="08374900627773b5f0e169d9824fde8a" category="inline-link-macro-rx"></block>.</block>
-  <block id="c0d8b980523f619bb9dff8ef93a968c9" category="paragraph">커넥터 버전 3.9.36 이하를 실행하는 경우 AWS EC2 콘솔의 AWS 커넥터 역할에 다음 권한을 추가해야 합니다. DescripbeAvailabilityZones</block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024년 5월 17일</block>
   <block id="b3e67e9d7f5be7902fd87917d0acb3e0" category="section-title">Amazon Web Services 로컬 영역 지원</block>
   <block id="6f9fa4d02a6081aa6d33b131d8532328" category="paragraph">Cloud Volumes ONTAP HA 구축 환경에서 AWS 로컬 영역 지원을 사용할 수 있습니다. AWS Local Zones 는 스토리지, 컴퓨팅, 데이터베이스 및 기타 엄선된 AWS 서비스가 대도시와 산업 영역에 가깝게 위치하는 인프라 구축입니다.</block>
@@ -5283,4 +5282,6 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="10e3d4119b538d4a3b1943da285229fc" category="admonition">일부 영역에서는 사용 가능한 EBS 디스크 유형이 GP2일 수만 있습니다.</block>
   <block id="0c14d315376234aa666bf4213aa88aec" category="list-text">T3-마이크로</block>
   <block id="5dde3a7c362c6b03a35cf3c0b3374d14" category="list-text">8GiB 및 4GiB의 st1 디스크 2개</block>
+  <block id="d3f932730561572a0dc4f8911dc7b758" category="paragraph">Connector 버전 3.9.36 이하를 실행하는 경우 AWS EC2 콘솔의 AWS Connector 역할에 다음 권한을 추가해야 합니다. DescripbeAvailabilityZones</block>
+  <block id="d4cffcdfb4fe4fc69dc234950d0f4151" category="admonition">AWS 로컬 영역은 표준 모드에서 BlueXP를 사용하는 경우 지원됩니다. 현재 BlueXP를 제한된 모드 또는 프라이빗 모드로 사용하는 경우 AWS 로컬 영역이 지원되지 않습니다.</block>
 </blocks>
