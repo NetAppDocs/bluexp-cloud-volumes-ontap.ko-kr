@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: concept-azure-image-verification.html 
+keywords: Azure, image, VHD, image signature file, 
+summary: Azure VHD 이미지 파일 서명 파일을 확인합니다. 
+---
+= Azure 이미지 검증 개요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azure 이미지 검증은 향상된 NetApp 보안 요구사항을 준수합니다. 이미지 파일을 검증하는 것은 간단한 프로세스이지만 Azure 마켓플레이스의 변경 사항으로 인해 Azure 이미지 서명 확인을 위해 잘 알려진 Azure VHD 이미지 파일에 특별한 필링이 필요합니다.
+
+
+NOTE: Azure 이미지 검증은 Cloud Volumes ONTAP 소프트웨어 버전 9.15.0 이상에서 지원됩니다.
+
+
+
+== 게시된 VHD 파일에 대한 Azure의 변경
+
+Azure에서 앞 1MB(1048576바이트)와 끝 512바이트의 VHD 파일을 수정합니다. NetApp 이미지 서명은 선행 1MB를 건너뛰고 512바이트를 종료하고 나머지 VHD 이미지 부분을 서명합니다.
+
+image:screenshot_azure_vhd_10gb.png["Azure의 10GB VHD 파일 변형을 보여 주는 이미지입니다"]
+
+위의 다이어그램은 10GB의 VHD 파일을 보여 줍니다. 그러나 NetApp 서명 부분은 10GB-1MB-512B 크기로 녹색으로 표시됩니다.

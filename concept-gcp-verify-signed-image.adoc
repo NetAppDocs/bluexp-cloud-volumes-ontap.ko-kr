@@ -28,7 +28,7 @@ summary: Cloud Volumes ONTAP 이미지 다이제스트 파일 도구를 통해 �
 ** 공개 키(.pem)가 포함된 인증서
 ** 인증서 체인(.pem)
 +
-image:screenshot_cloud_volumes_ontap_tar.gz.png["요약 파일 tar.gz 다운로드가 포함된 NSS 페이지를 보여주는 이미지입니다"]
+image::screenshot_cloud_volumes_ontap_tar.gz.png[스크린샷 Cloud Volumes ONTAP tar.gz]
 
 
 
@@ -40,7 +40,7 @@ image:screenshot_cloud_volumes_ontap_tar.gz.png["요약 파일 tar.gz 다운로�
 ** 다운로드한 disk.raw 파일의 다이제스트를 만듭니다
 ** 검증을 위해 두 개의 다이제스트 파일을 비교합니다
 +
-image:graphic_azure_check_signature.png["이미지 서명 확인 프로세스를 보여주는 이미지입니다"]
+image::graphic_azure_check_signature.png[그래픽 Azure 서명 확인]
 
 
 

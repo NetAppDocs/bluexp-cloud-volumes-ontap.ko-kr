@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: reference-image-verification-links.html 
+keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, reference, Python, OpenSSL, 
+summary: 참조 링크 Azure 이미지 검증 
+---
+= Azure 이미지 검증에 대한 추가 정보를 확인할 수 있는 위치
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azure 이미지 검증에 대한 자세한 내용은 아래 링크를 참조하십시오. 아래 링크를 클릭하면 비 NetApp 사이트로 이동합니다.
+
+
+
+== 참조
+
+* https://pagefault.blog/2019/04/22/how-to-sign-and-verify-using-openssl/["페이지 오류 블로그 : 어떻게 서명하고 OpenSSL을 사용하여 확인"^]
+* https://docs.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-virtual-machine-marketplace-image["Azure Marketplace 이미지를 사용하여 Azure Stack Edge Pro GPU | Microsoft Learn용 VM 이미지를 만드십시오"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/scripts/copy-managed-disks-vhd-to-storage-account["Azure CLI | Microsoft Learn 을 사용하여 관리되는 디스크를 저장소 계정으로 내보내기/복사합니다"^]
+* https://learn.microsoft.com/en-us/azure/cloud-shell/quickstart["Azure Cloud Shell Quickstart - Bash | Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Azure CLI 설치 방법 | Microsoft 알아보기"^]
+* https://learn.microsoft.com/en-us/cli/azure/storage/blob/copy?view=azure-cli-latest#az-storage-blob-copy-start["AZ 저장 blob 사본 | Microsoft learn"^]
+* https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli["Azure CLI로 로그인 - 로그인 및 인증 | Microsoft Learn 을 참조하십시오"^]
+

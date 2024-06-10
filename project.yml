@@ -39,7 +39,7 @@ sidebar:
     entries:
     - title: Cloud Volumes ONTAP에 대해 자세히 알아보십시오
       url: "/concept-overview-cvo.html"
-    - title: 새로운 배포에 지원되는 버전입니다
+    - title: 새로운 배포를 위해 지원되는 ONTAP 버전
       url: "/reference-versions.html"
     - title: Amazon Web Services에서 시작하십시오
       flavor: aws
@@ -85,6 +85,24 @@ sidebar:
         url: "/task-azure-high-availability-mode.html"
       - title: Azure에서 Cloud Volumes ONTAP를 실행합니다
         url: "/task-deploying-otc-azure.html"
+      - title: Azure 플랫폼 이미지 검증
+        entries:
+        - title: 개요
+          url: "/concept-azure-image-verification.html"
+        - title: Azure Image Digest File을 다운로드합니다
+          url: "/task-azure-download-digest-file.html"
+        - title: 이미지 내보내기
+          url: "/task-azure-image-export.html"
+        - title: 파일 서명 확인
+          entries:
+          - title: 파일 서명 확인
+            url: "/concept-azure-file-sig-verify.html"
+          - title: Linux 파일 서명 확인
+            url: "/task-file-verification-linux.html"
+          - title: Mac OS 파일 서명 확인
+            url: "/task-file-verification-mac.html"
+        - title: 추가 정보
+          url: "/reference-image-verification-links.html"
     - title: Google Cloud에서 시작하십시오
       flavor: gcp
       entries:

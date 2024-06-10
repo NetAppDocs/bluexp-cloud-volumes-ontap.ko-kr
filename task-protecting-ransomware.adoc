@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-protecting-ransomware.html 
-keywords: snapshot policy, ransomware, protection, fpolicy, block, extension, attacks, arp, autonomous, monitor, alert, attacks 
+keywords: snapshot policy, ransomware, protection, fpolicy, block, extension, attacks, arp, autonomous, monitor, alert, attacks, Cloud Volumes ONTAP 
 summary: 랜섬웨어 공격은 비즈니스 시간, 리소스 및 평판에 악영향을 줄 수 있습니다. BlueXP를 사용하면 랜섬웨어에 대한 NetApp 솔루션을 구현할 수 있으며, 이 솔루션은 가시성, 탐지 및 문제 해결에 효과적인 툴을 제공합니다. 
 ---
 = 랜섬웨어에 대한 보호 개선

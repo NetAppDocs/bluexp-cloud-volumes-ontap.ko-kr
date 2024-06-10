@@ -22,7 +22,7 @@ NOTE: 이미지의 유효성을 검사하는 OpenSSL 명령은 Linux, Mac OS 및
 .단계
 . OpenSSL을 사용하여 인증서를 확인합니다.
 +
-.스크립트를 표시하려면 클릭합니다
+.클릭하여 표시합니다
 [%collapsible]
 ====
 [listing]
@@ -133,7 +133,7 @@ Certificate-GCP-CVO-20230119-0XXXXX.pem: OK
 . OpenSSL을 사용하여 인증서에서 공개 키를 추출합니다.
 . 추출된 공개 키를 사용하여 서명을 해독하고 다운로드한 disk.raw 파일의 내용을 확인합니다.
 +
-.스크립트를 표시하려면 클릭합니다
+.클릭하여 표시합니다
 [%collapsible]
 ====
 [listing]

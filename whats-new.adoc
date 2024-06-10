@@ -20,6 +20,18 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2024년 6월 10일
+
+
+
+=== Cloud Volumes ONTAP 9.15.0
+
+BlueXP는 이제 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.15.0을 구축 및 관리할 수 있습니다.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
+
+
+
 == 2024년 5월 17일
 
 
@@ -149,6 +161,8 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-config
 
 BlueXP는 이제 AWS, Azure 및 Google Cloud에 Cloud Volumes ONTAP 9.14.1을 구축 및 관리할 수 있습니다.
 
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
+
 
 
 === 300TiB FlexVol 볼륨의 최대 제한값입니다
@@ -274,7 +288,7 @@ Connector 3.9.35 릴리스에서 다음과 같은 변경 사항이 적용되었�
 
 BlueXP는 이제 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.14.0 General Availability 릴리즈를 구축 및 관리할 수 있습니다.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9140-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
 
 
 
@@ -341,7 +355,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp
 
 BlueXP는 이제 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.13.1 일반 가용성 릴리스를 배포하고 관리할 수 있습니다.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9131-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
 
 
 
@@ -377,7 +391,7 @@ Cloud Volumes ONTAP의 ARP에 대한 자세한 내용은 를 참조하십시오 
 
 이제 BlueXP는 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.13.1 을 배포하고 관리할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9131-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
 
 
 
@@ -525,7 +539,7 @@ Cloud Volumes ONTAP 9.12.1 GA부터 중국 지역 지원이 Azure에서 다음�
 
 이제 BlueXP는 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.13.0을 배포하고 관리할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9130-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
 
 
 
@@ -638,7 +652,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9120-relnotes["이 Cloud Volum
 
 이제 BlueXP는 새로운 기능과 추가 클라우드 공급자 지역을 지원하는 Cloud Volumes ONTAP 9.12.1을 배포 및 관리할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9121-relnotes["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^]
 
 
 

@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: task-file-verification-linux.html 
+keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, Linux 
+summary: Linux에서 Cloud Volumes ONTAP 이미지 요약 파일 도구를 통해 내보낸 VHD 파일 서명을 확인합니다 
+---
+= Linux에서 파일 서명 확인
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+다음 단계에 따라 내보낸 Linux용 VHD 파일 서명을 확인할 수 있습니다.
+
+.단계
+. 에서 Azure Image Digest 파일을 다운로드합니다 https://mysupport.netapp.com/site/["NetApp Support 사이트"^] 다이제스트 파일(.sig), 공개 키 인증서 파일(.pem) 및 체인 인증서 파일(.pem)의 압축을 풉니다.
++
+을 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["Azure Image Digest 파일을 다운로드합니다"^] 를 참조하십시오.
+
+. 신뢰 체인을 확인합니다.
++
+[listing]
+----
+% openssl verify -CAfile Certificate-Chain-9.15.0P1_azure.pem Certificate-9.15.0P1_azure.pem
+Certificate-9.15.0P1_azure.pem: OK
+----
+. 앞의 1MB(1048576바이트)와 끝 512바이트의 VHD 파일을 제거합니다.
++
+'tail'을 사용하는 경우 '-c+K' 옵션은 지정된 파일의 Kth 바이트로 시작하는 바이트를 출력합니다. 따라서 1048577은 'tail -c'로 전달됩니다.
+
++
+[listing]
+----
+% tail -c +1048577 ./9150.01000024.05090105.vhd > ./sign.tmp.tail
+% head -c -512 ./sign.tmp.tail > sign.tmp
+% rm ./sign.tmp.tail
+----
+. openssl을 사용하여 인증서에서 공개 키를 추출하고 서명 파일과 공개 키로 스트라이프 파일(sign.tmp)을 확인합니다.
++
+입력 파일이 확인을 통과하면 명령이 표시됩니다
+"확인 정상". 그렇지 않으면 "Verification Failure(확인 실패)"가 표시됩니다.
+
++
+[listing]
+----
+% openssl x509 -pubkey -noout -in ./Certificate-9.15.0P1_azure.pem > ./Code-Sign-Cert-Public-key.pub
+
+% openssl dgst -verify Code-Sign-Cert-Public-key.pub -keyform PEM -sha256 -signature digest.sig -binary ./sign.tmp
+Verification OK
+
+% openssl dgst -verify Code-Sign-Cert-Public-key.pub -keyform PEM -sha256 -signature digest.sig -binary ./another_file_from_nowhere.tmp
+Verification Failure
+----
+. 작업 영역을 정리합니다.
++
+[listing]
+----
+% rm ./9150.01000024.05090105.vhd ./sign.tmp
+% rm *.sig *.pub *.pem
+----
+

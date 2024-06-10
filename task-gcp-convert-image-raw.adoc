@@ -43,7 +43,7 @@ Google Cloud의 이미지는 직접 다운로드할 수 없습니다. 서명된 
 
 * gcloud * 를 사용하여 Google Cloud 이미지를 내보냅니다
 
-.스크립트를 표시하려면 클릭합니다
+.클릭하여 표시합니다
 [%collapsible]
 ====
 [source]
