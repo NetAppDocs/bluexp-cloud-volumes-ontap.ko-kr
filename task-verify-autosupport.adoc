@@ -109,7 +109,7 @@ AutoSupport check show-details를 선택합니다
 . 상태가 여전히 FAILED인 경우 Cloud Volumes ONTAP와 포트 3128을 통한 커넥터 사이에 연결이 있는지 확인합니다.
 . 연결이 있는지 확인한 후에도 상태 ID가 계속 실패하면 커넥터에 SSH를 연결합니다.
 +
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["Connector용 Linux VM에 연결하는 방법에 대해 자세히 알아보십시오"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#connect-to-the-linux-vm["Connector용 Linux VM에 연결하는 방법에 대해 자세히 알아보십시오"^]
 
 . '/opt/application/netapp/cloudmanager/docker_occm/data/'로 이동합니다
 . 프록시 구성 파일 'quid.conf'를 엽니다

@@ -4436,7 +4436,6 @@ CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS �
   <block id="20bdc8e898822d36cabdfe4a9638e121" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="a8781c6a9ecdb41d7e575ae3ee248743" category="inline-link-macro-rx"></block>.</block>
   <block id="b47d0e32ffe2734848d420601bb90cd1" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="a00289b5f740e60f77871e1b98f3406f" category="inline-link-macro-rx"></block>.</block>
   <block id="be9422df375517187d0426d4361fafa6" category="paragraph">Connector에는 Cloud Volumes ONTAP HA 쌍에 대한 스토리지 VM을 생성하고 관리할 수 있는 특정 권한이 필요합니다. 필요한 권한은 에 포함되어 있습니다<block ref="24390b04eaeaec89ce5246eaa294abc3" category="inline-link-rx"></block>.</block>
-  <block id="88e2c301da80f343b1583809c63a969b" category="paragraph"><block ref="88e2c301da80f343b1583809c63a969b" category="inline-link-rx"></block></block>
   <block id="af13749595f5960a363d1c58fc759656" category="paragraph"><block ref="4610c02b1fca3398eed82ad29d834f6a" category="inline-link-macro-rx"></block>.</block>
   <block id="fef38ae672e04cfca804a3528b0c02b9" category="paragraph"><block ref="ae94ab44d9cabcaf642548c08d913cf9" category="inline-link-rx"></block>.</block>
   <block id="78b9037265070d084c1d8bcd663811e7" category="paragraph"><block ref="78b9037265070d084c1d8bcd663811e7" category="inline-link-rx"></block></block>
@@ -4486,7 +4485,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="078d5a2ce174d1db14eba9ab521ae2a0" category="paragraph"><block ref="078d5a2ce174d1db14eba9ab521ae2a0" category="inline-link-macro-rx"></block></block>
   <block id="cf796cb5656f4bf0200ec02ab1ee4385" category="paragraph"><block ref="cf97c7b4bc867e067ebd7fa85f6363db" category="inline-link-rx"></block>.</block>
   <block id="7ddfab2c1a83893ebd448c6696f616f4" category="list-text"><block ref="7ddfab2c1a83893ebd448c6696f616f4" category="inline-link-rx"></block></block>
-  <block id="c90756fe60d5b7e957a6726a33ac7a77" category="list-text"><block ref="c90756fe60d5b7e957a6726a33ac7a77" category="inline-link-rx"></block></block>
   <block id="94fe554eb0f60c68e4d46024baeef975" category="list-text"><block ref="94fe554eb0f60c68e4d46024baeef975" category="inline-link-rx"></block></block>
   <block id="a96ce09651955c969aae2a95cedce494" category="paragraph">반 배정 그룹 생성 설정을 구성하는 방법에 대한 자세한 내용은 을 참조하십시오 <block ref="d5195567ec527b48fac366d859b25db5" category="inline-link-macro-rx"></block>.</block>
   <block id="68d78772b0c7f6d7e44117814f34d8f0" category="paragraph"><block ref="68d78772b0c7f6d7e44117814f34d8f0" category="inline-link-macro-rx"></block></block>
@@ -5051,7 +5049,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="1582ce9c3a0b0079717e0b0c6edf2347" category="section-title">Amazon Instant Metadata Service v2 지원</block>
   <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">AWS, Cloud Volumes ONTAP, 중재자 및 커넥터는 이제 모든 기능에 대해 아마존 인스턴트 메타데이터 서비스 v2(IMDSv2)를 지원합니다. IMDSv2는 취약성에 대한 향상된 보호 기능을 제공합니다. 이전에 IMDSv1만 지원되었습니다.</block>
   <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">기존 커넥터 관리를 위한 BlueXP 설정 및 관리 설명서</block>
-  <block id="6aec236f70c9d11e5073fa187bf36fd1" category="paragraph">보안 정책에서 요구하는 경우 IMDSv2를 사용하도록 EC2 인스턴스를 구성할 수 있습니다. 자세한 지침은 을 참조하십시오 <block ref="437fb94a00c6c9b10a9ad9095b6680bc" category="inline-link-macro-rx"></block>.</block>
   <block id="4954156ba208adf3ff1ee232d2f1d15f" category="list-text">BlueXP 콘솔의 오른쪽 위에서 설정 아이콘을 클릭하고 * Cloud Volumes ONTAP Settings * 를 선택합니다.</block>
   <block id="6f0bb9f0803011314813e6aad3d926bf" category="list-text">BlueXP 콘솔의 오른쪽 위에서 * Settings * 아이콘을 클릭하고 * Cloud Volumes ONTAP Settings * 를 선택합니다.</block>
   <block id="d4b0cdcc1cd5c09a803de195e4f82296" category="paragraph">Cloud Volumes ONTAP 설정을 수정하려면 계정 관리자 권한이 필요합니다.</block>
@@ -5399,4 +5396,7 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="ea676e4072617197b2e26d0a11c13554" category="sidebar">Linux 파일 서명 확인</block>
   <block id="088e8318708fce80162f63284a86929f" category="sidebar">Mac OS 파일 서명 확인</block>
   <block id="0f68b904e33d9ac04605aecc958bcf52" category="sidebar">추가 정보</block>
+  <block id="c803b37d9c2a34c73d0b86de8cae9ac8" category="paragraph"><block ref="c803b37d9c2a34c73d0b86de8cae9ac8" category="inline-link-rx"></block></block>
+  <block id="bbe2b5062d2c900ca465f9eb12592a92" category="paragraph">보안 정책에서 요구하는 경우 IMDSv2를 사용하도록 EC2 인스턴스를 구성할 수 있습니다. 자세한 지침은 을 참조하십시오<block ref="a1765820625d1912b35ab79a3305fdea" category="inline-link-rx"></block>.</block>
+  <block id="59232a2e0b92b4018a48415d0d13c3b4" category="list-text"><block ref="59232a2e0b92b4018a48415d0d13c3b4" category="inline-link-rx"></block></block>
 </blocks>
