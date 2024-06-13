@@ -2035,7 +2035,6 @@
   <block id="56d8602584b412c6fa4268dd3cbf0ccb" category="section-title">데이터 암호화 개요</block>
   <block id="a9048454eade4a62fb2113428b74129f" category="paragraph">Cloud Volumes ONTAP 데이터는 를 사용하여 Azure에서 자동으로 암호화됩니다<block ref="7c6c7ca9180a9433e704ac02b33a8ed3" category="inline-link-rx"></block>. 기본 구현에는 Microsoft 관리 키가 사용됩니다. 설정이 필요하지 않습니다.</block>
   <block id="15a37269c447b60002a307d0f82d2bd4" category="paragraph">Cloud Volumes ONTAP에서 고객 관리 키를 사용하려면 다음 단계를 완료해야 합니다.</block>
-  <block id="82d5594584c34cedea52f390f69b9b89" category="list-text">Azure에서 키 볼트를 작성한 다음 해당 볼트에 키를 생성합니다</block>
   <block id="7c198fa2e871a635fde91e3430fc340b" category="section-title">키 회전</block>
   <block id="552690dff240721c335dffa2d29b8ef8" category="paragraph">새 버전의 키를 만들면 Cloud Volumes ONTAP에서 자동으로 최신 키 버전을 사용합니다.</block>
   <block id="0ea67820edee1410e568b14bb70835d0" category="section-title">데이터 암호화 방법</block>
@@ -3278,7 +3277,6 @@
   <block id="8e2921a1922b2a0ecfbeec5648e2a4ab" category="cell">BlueXP에서 설정한 값입니다</block>
   <block id="9f3e8e28b8288d2d66ebc481e1f389d6" category="paragraph">BlueXP는 사용자 데이터를 위한 스토리지 외에도 시스템 데이터를 위한 클라우드 스토리지를 구입합니다.</block>
   <block id="9c70722de73077ea88b96befb7d1076b" category="paragraph">BlueXP는 다음과 같이 스토리지를 배치합니다.</block>
-  <block id="ec0c586d512637babfaca236d1a1cc87" category="list-text">BlueXP에서 API를 사용하여 키를 사용하는 Cloud Volumes ONTAP 작업 환경을 만듭니다</block>
   <block id="cf7451c571bdcd94b5852c9167fbb885" category="paragraph">키 볼트를 작성하고 암호화 키를 생성한 후 키를 사용하도록 구성된 새 Cloud Volumes ONTAP 시스템을 작성할 수 있습니다. 이러한 단계는 BlueXP API를 사용하여 지원됩니다.</block>
   <block id="2a709f4373163ddbd1d13389c553a2eb" category="paragraph">단일 노드 Cloud Volumes ONTAP 시스템에서 고객 관리 키를 사용하려면 BlueXP 커넥터에 다음과 같은 권한이 있는지 확인하십시오.</block>
   <block id="8be0344d53e72ba6b33ee561546d42ef" category="list-text">다음 BlueXP API 호출을 사용하여 Azure 구독의 키 볼트 목록을 가져옵니다.</block>
@@ -3633,7 +3631,6 @@
   <block id="56fe439ee061f5bc2e940368c1d73fa3" category="section-title">BlueXP는 Cloud Volumes ONTAP에서 S3을 지원하지 않습니다</block>
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXP는 스토리지 VM의 재해 복구를 지원하지 않습니다</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">필요한 것</block>
-  <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">* 볼륨 암호화를 위한 Azure 디스크 암호화 * (단일 노드 시스템 또는 여러 존의 HA 쌍)</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">Google Cloud 권한이 필요합니다</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">Flash Cache란 무엇입니까?</block>
   <block id="78d0efd6b2c71cba47286de0ff16747c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 커넥터를 작성합니다</block>
@@ -5399,4 +5396,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="c803b37d9c2a34c73d0b86de8cae9ac8" category="paragraph"><block ref="c803b37d9c2a34c73d0b86de8cae9ac8" category="inline-link-rx"></block></block>
   <block id="bbe2b5062d2c900ca465f9eb12592a92" category="paragraph">보안 정책에서 요구하는 경우 IMDSv2를 사용하도록 EC2 인스턴스를 구성할 수 있습니다. 자세한 지침은 을 참조하십시오<block ref="a1765820625d1912b35ab79a3305fdea" category="inline-link-rx"></block>.</block>
   <block id="59232a2e0b92b4018a48415d0d13c3b4" category="list-text"><block ref="59232a2e0b92b4018a48415d0d13c3b4" category="inline-link-rx"></block></block>
+  <block id="312fcba055a7ab6b8314cb541c1f1b4f" category="list-text">* 볼륨 암호화를 위한 Azure 디스크 암호화 * (단일 노드 시스템의 경우, 여러 영역의 HA 쌍 및 HA 단일 AZ 배포)</block>
+  <block id="4b63d3239df3134d1faedabb0e8eb859" category="admonition">Azure 고객 관리 암호화 키는 키 저장소에 대해 Azure 디스크 암호화를 사용하도록 설정한 경우에 따라 사용됩니다.</block>
 </blocks>

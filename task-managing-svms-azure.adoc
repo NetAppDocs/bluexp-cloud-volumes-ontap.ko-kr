@@ -126,6 +126,7 @@ DNS 통신을 위해 iSCSI LIF가 필요합니다. iSCSI LIF는 페일오버 시
 .. Settings * 에서 * Frontend IP configuration * 을 클릭합니다.
 .. 추가 * 를 클릭합니다.
 .. 프런트엔드 IP의 이름을 입력하고, Cloud Volumes ONTAP HA 쌍의 서브넷을 선택하고, * Dynamic * 을 선택한 상태로 두고, 가용성 영역이 있는 지역에서는 * Zone-Redundant * 를 선택된 상태로 두어 존이 실패하는 경우 IP 주소를 계속 사용할 수 있도록 합니다.
+.. 저장 * 을 클릭합니다.
 +
 image:screenshot_azure_frontend_ip.png["이름과 서브넷이 선택된 Azure 포털에서 프런트엔드 IP 주소를 추가하는 스크린샷"]
 
@@ -203,6 +204,7 @@ NOTE: 프런트엔드 IP는 각 해당 SVM에 대해 NIC0 아래에 생성되어
 .. Settings * 에서 * Frontend IP configuration * 을 클릭합니다.
 .. 추가 * 를 클릭합니다.
 .. 프런트엔드 IP의 이름을 입력하고, Cloud Volumes ONTAP HA 쌍의 서브넷을 선택하고, * Dynamic * 을 선택한 상태로 두고, 가용성 영역이 있는 지역에서는 * Zone-Redundant * 를 선택된 상태로 두어 존이 실패하는 경우 IP 주소를 계속 사용할 수 있도록 합니다.
+.. 저장 * 을 클릭합니다.
 +
 image:screenshot_azure_frontend_ip.png["이름과 서브넷이 선택된 Azure 포털에서 프런트엔드 IP 주소를 추가하는 스크린샷"]
 
@@ -347,7 +349,7 @@ network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
+network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
 ----
 . 선택 사항: 스토리지 VM 관리 LIF를 생성합니다.
 +
@@ -387,7 +389,7 @@ network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
+network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
 ----
 . 선택 사항: 스토리지 VM 관리 LIF를 생성합니다.
 +
@@ -523,13 +525,13 @@ network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
+network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
 ----
 .. 다음 명령을 사용하여 노드 2에 NAS LIF를 생성합니다.
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node2> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe2>
+network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node2> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe2>
 ----
 
 
@@ -633,13 +635,13 @@ network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
+network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
 ----
 .. 다음 명령을 사용하여 노드 2에 NAS LIF를 생성합니다.
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node2> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe2>
+network interface create -vserver <svm-name> -lif <lif-name> -service-policy default-data-files -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node2> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe2>
 ----
 
 
