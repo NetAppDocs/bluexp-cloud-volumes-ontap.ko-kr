@@ -295,7 +295,7 @@ sidebar:
       url: "/concept-performance.html"
     - title: 노드 기반 BYOL 관리
       url: "/concept-license-management.html"
-    - title: AutoSupport 및 Active IQ 디지털 자문업체
+    - title: AutoSupport 및 디지털 자문업체
       url: "/concept-active-iq.html"
     - title: 기본 설정
       url: "/reference-default-configs.html"

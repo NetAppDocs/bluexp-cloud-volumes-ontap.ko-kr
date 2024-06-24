@@ -499,23 +499,11 @@
   <block id="c15bb50c43eaf0ceb1bc0ce3d7503ebd" category="list-text"><block ref="c15bb50c43eaf0ceb1bc0ce3d7503ebd" category="inline-link-rx"></block></block>
   <block id="a06e9c241b02eb678d35f19c0eec257f" category="inline-link">SVM 재해 복구 익스프레스 가이드 를 참조하십시오</block>
   <block id="84e6a974fd77c552b4d54c8a9b0727ab" category="list-text"><block ref="84e6a974fd77c552b4d54c8a9b0727ab" category="inline-link-rx"></block></block>
-  <block id="d6e98757d1df5cdc1234e534f0d83efe" category="summary">ONTAP의 AutoSupport 구성 요소는 원격 측정을 수집하여 분석을 위해 전송합니다. Active IQ 디지털 어드바이저는 AutoSupport의 데이터를 분석하고 능동적인 관리 및 최적화를 제공합니다. Active IQ은 인공 지능을 사용하여 잠재적인 문제를 파악하고 비즈니스에 영향을 미치기 전에 이를 해결하도록 지원합니다.</block>
-  <block id="0f68b2b3e9b96354c8791aefa8416cb6" category="doc">AutoSupport 및 Active IQ 디지털 자문업체</block>
-  <block id="534cf99258be6454cc1c45fef4893c42" category="paragraph">Active IQ을 사용하면 클라우드 기반 포털 및 모바일 앱을 통해 실행 가능한 예측 분석과 능동적 지원을 제공하여 글로벌 하이브리드 클라우드 전반에서 데이터 인프라를 최적화할 수 있습니다. SupportEdge의 데이터 중심 인사이트와 권장사항은 Active IQ 계약이 체결된 모든 NetApp 고객(기능은 제품 및 지원 계층에 따라 다름)에게 제공됩니다.</block>
-  <block id="4bb6101fde7dd3c4118f6c5807213e74" category="paragraph">다음은 Active IQ에서 수행할 수 있는 몇 가지 사항입니다.</block>
   <block id="c47f9b3777f430e38cd3c0ae2055b8d1" category="list-text">업그레이드 계획</block>
-  <block id="4d29491e869afe09d1800a5dfad089f6" category="paragraph">Active IQ는 사용자 환경에서 최신 버전의 ONTAP로 업그레이드하여 해결할 수 있는 문제를 식별하며, 업그레이드 관리자 구성 요소는 성공적인 업그레이드를 계획하는 데 도움이 됩니다.</block>
   <block id="945e0025643b0030db4eb79effddf1e9" category="list-text">시스템 상태 보기</block>
-  <block id="589b90e2e2daa989170300c9cd948b00" category="paragraph">Active IQ 대시보드에서 웰빙과 관련된 모든 문제를 보고하고 문제를 해결할 수 있습니다. 시스템 용량을 모니터링하여 스토리지 공간이 부족하지 않도록 하십시오. 시스템에 대한 지원 케이스를 봅니다.</block>
   <block id="20e2eede2c5919a473004ca356d93413" category="list-text">성능 관리</block>
-  <block id="ecd6bb6a4fc5a84223f5f3e0d766d80a" category="paragraph">Active IQ는 ONTAP System Manager에서 볼 수 있는 것보다 더 오랜 기간 동안의 시스템 성능을 보여 줍니다. 성능에 영향을 주는 구성 및 시스템 문제를 식별합니다. 효율성 극대화 스토리지 효율성 메트릭을 확인하고 더 적은 공간에 더 많은 데이터를 저장하는 방법을 알아보십시오.</block>
   <block id="f09f89f93d1b162f9bb2ce8cba2684c4" category="list-text">인벤토리 및 구성을 봅니다.</block>
-  <block id="e42a107e48352d575a987f69367e797c" category="paragraph">Active IQ는 전체 인벤토리 및 소프트웨어 및 하드웨어 구성 정보를 표시합니다. 서비스 계약이 만료되는 시기를 확인하고 서비스 계약을 갱신하여 계속 지원을 받을 수 있도록 합니다.</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="list-title">관련 정보</block>
-  <block id="8ebe1398dcefc296b0072bc4530c150c" category="inline-link">NetApp 설명서: Active IQ 디지털 자문업체</block>
-  <block id="9ef1865545667eeff8a540374f3a7bfc" category="list-text"><block ref="9ef1865545667eeff8a540374f3a7bfc" category="inline-link-rx"></block></block>
-  <block id="a783a523d1f410c5aed80b24061544fb" category="inline-link">Active IQ를 시작합니다</block>
-  <block id="5070674230fc0cc73a00eee7e2e2c117" category="list-text"><block ref="5070674230fc0cc73a00eee7e2e2c117" category="inline-link-rx"></block></block>
   <block id="c5511c7773a6c5295d79f6a8496c4458" category="inline-link">SupportEdge 서비스</block>
   <block id="ea0b284b83d41ae97d5b96dc6fc68e39" category="list-text"><block ref="ea0b284b83d41ae97d5b96dc6fc68e39" category="inline-link-rx"></block></block>
   <block id="2c6d5150f38721bc5e8328cd9dc5b306" category="summary">Google Cloud에서 Cloud Volumes ONTAP를 시작할 때 여러 컴퓨터 유형 중에서 선택할 수 있습니다. 필요에 따라 크기가 작거나 너무 큰 것으로 판단될 경우 언제든지 인스턴스 또는 컴퓨터 유형을 변경할 수 있습니다.</block>
@@ -1312,22 +1300,17 @@
   <block id="80d50e51e1ababfa4d2d5826b8482855" category="list-text"><block ref="80d50e51e1ababfa4d2d5826b8482855" category="inline-link-macro-rx"></block></block>
   <block id="d8fe61fe121132ae71b6616d52f15f56" category="summary">Cloud Volumes ONTAP는 외부 키 관리자로 NVE(NetApp Volume Encryption) 및 NAE(NetApp Aggregate Encryption)를 지원합니다. 외부 키 관리자를 설정하면 NVE와 NAE가 기본적으로 활성화됩니다.</block>
   <block id="9472acffdb6a585b24d4317169bbc868" category="inline-link-macro">이러한 암호화 솔루션에 대해 자세히 알아보십시오</block>
-  <block id="4aea138a21bb343e460b0084ce3eb8d8" category="doc">Active IQ 디지털 자문업체 를 사용하여 Cloud Volumes ONTAP 시스템을 최적화하십시오</block>
   <block id="dab2edf9eaac3950e92c281ce358af01" category="inline-link">Active IQ 디지털 자문업체</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">피처</block>
-  <block id="c07876874959817c312d5d151cdbf9fe" category="paragraph">Active IQ 디지털 자문업체 를 사용하여 관심 목록 수준에서 스토리지 시스템의 전반적인 상태, 시스템 상태에 대한 상위 수준 정보, 인벤토리, 계획 및 중요한 통찰력을 확인할 수 있습니다.</block>
   <block id="cd5d4df84a7902a777304de9ff13e8a8" category="list-text">스토리지 시스템의 상태 분석 및 최적화</block>
   <block id="9d4e486fd4968dd03a1921222e688c12" category="list-text">스토리지 시스템의 모든 위험과 위험 완화를 위한 조치에 대한 통찰력을 확보할 수 있습니다</block>
   <block id="4c8438807538fa50db0d24cda516c562" category="list-text">성능 데이터의 그래픽 형식을 확인하여 스토리지 디바이스의 성능을 분석할 수 있습니다</block>
   <block id="63a792f0efaeee81d9e7f3ba251637c2" category="list-text">90% 용량을 초과하거나 90% 용량에 근접하는 시스템에 대한 세부 정보를 확인하십시오</block>
   <block id="696fbf3ecd0e89c737f9c5b7adddfb8e" category="section-title">지원되는 ONTAP 시스템</block>
-  <block id="4b094536c4cca99df693f08aaf755f4d" category="paragraph">Active IQ 디지털 어드바이저는 NSS 계정 내의 모든 사내 ONTAP 시스템 및 Cloud Volumes ONTAP 시스템에 대한 정보를 제공합니다.</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">비용</block>
   <block id="7524f7a154d0b13a1e895c56c832c376" category="inline-link">NSS 계정을 지금 등록하십시오</block>
   <block id="48c7c08bdc82dde24c342aee125d0f2f" category="inline-link">자세한 내용은 이 FAQ를 참조하십시오</block>
   <block id="c0f65045a034bd8451814ab893994b7b" category="admonition">2021년 12월 3일 현재 NetApp은 NSS 계정에 대한 자격 증명을 등록하는 새로운 방법론으로 전환했습니다.<block ref="aa125d01c1b555d9e118821165394c02" category="inline-link-rx"></block>. NSS 계정이 이전 자격 증명 세트를 사용하는 경우 계정을 새 자격 증명으로 업데이트해야 합니다.</block>
-  <block id="8aec6a2bcfb78af1fffa4f2c52dfe49d" category="inline-link">Active IQ 디지털 자문 문서</block>
-  <block id="e778b936b44de5bd4765be37fb61b14b" category="paragraph">를 참조하십시오<block ref="6b8a787f5f28cd8a65ef0852e940136e" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="f0186be0ddaae2816f6d38932fcc74bb" category="paragraph">Microsoft Azure는 가상 시스템에서 정기적인 유지 관리 이벤트를 예약합니다. Cloud Volumes ONTAP HA 쌍에서 유지보수 이벤트가 발생하면 HA 쌍이 스토리지 테이크오버 시작됩니다. 이 유지 관리 이벤트 중에 활성 CIFS 세션이 있는 경우 CIFS 파일의 잠금이 스토리지 반환을 방지할 수 있습니다.</block>
   <block id="b41beec6b021aed8f5f64bcce68ec5c9" category="paragraph">이 설정을 활성화하면 Cloud Volumes ONTAP가 잠금을 거부하여 활성 CIFS 세션을 재설정합니다. 따라서 HA 쌍이 이러한 유지보수 이벤트 중에 스토리지 반환을 완료할 수 있습니다.</block>
   <block id="7dcc83de27613f9409a84f38ee5d345e" category="admonition">이 프로세스는 CIFS 클라이언트에 영향을 줄 수 있습니다. CIFS 클라이언트에서 커밋되지 않은 데이터는 손실될 수 있습니다.</block>
@@ -1477,7 +1460,6 @@
   <block id="9f8b4558b07e0b8fb83871b783e78430" category="inline-link">Azure의 Cloud Volumes ONTAP에 대한 스토리지 제한</block>
   <block id="803d8f94a55b7915e4d09ac9d6ca5588" category="paragraph">Cloud Volumes ONTAP 시스템을 사이징하면 성능 및 용량 요구사항을 충족하는 데 도움이 될 수 있습니다. VM 유형, 디스크 유형 및 디스크 크기를 선택할 때 고려해야 할 몇 가지 주요 사항은 다음과 같습니다.</block>
   <block id="c9b46e5d3304a0f098a9b6c39d3c78cc" category="list-text">가상 머신 유형입니다</block>
-  <block id="c31555ebab3cc6d019fa007862395153" category="list-text">에서 지원되는 가상 머신 유형을 확인합니다<block ref="f922a7787320953a33ee2591f979f78c" category="inline-link-rx"></block> 지원되는 각 VM 유형에 대한 세부 정보를 검토합니다. 각 VM 유형은 특정 수의 데이터 디스크를 지원합니다.</block>
   <block id="4191963ff40b7c0644356ab2e8d2bbd2" category="inline-link">Azure 설명서: 범용 가상 머신 크기</block>
   <block id="03cd53d9a632404d9be539683276c7a2" category="list-text"><block ref="03cd53d9a632404d9be539683276c7a2" category="inline-link-rx"></block></block>
   <block id="6fd456d71c345eb38fe1c0337056dc63" category="inline-link">Azure 설명서: 메모리에 최적화된 가상 머신 크기</block>
@@ -3257,14 +3239,7 @@
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">현재 보고 있는 BlueXP 문서입니다.</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">* 서비스 *: 문제와 관련된 서비스를 선택합니다. 예를 들어, 서비스 내의 워크플로우 또는 기능과 관련된 기술 지원 문제에 해당하는 BlueXP를 예로 들 수 있습니다.</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">작업 환경 목록은 서비스의 상단 배너에서 선택한 BlueXP 계정, 작업 영역 및 커넥터의 범위 내에 있습니다.</block>
-  <block id="0c726404ad0f4ebb2cb2a2d0bdc04192" category="summary">Active IQ 디지털 어드바이저는 BlueXP UI에 통합되어 단일 창에서 ONTAP 클러스터의 운영, 보안 및 성능을 최적화할 수 있습니다.</block>
   <block id="442a1ebc0b1897741c68b149d0cff869" category="paragraph">BlueXP를 통해 이 서비스를 무료로 사용할 수 있습니다.</block>
-  <block id="58d982bcac1ea01385942d6f57a7656f" category="section-title">Active IQ 디지털 어드바이저가 BlueXP에서 작동하는 방식</block>
-  <block id="bdb3a911549ab88300157732d091478f" category="paragraph">Active IQ 디지털 어드바이저 사용자 인터페이스는 BlueXP에 완벽하게 통합되어 있습니다.</block>
-  <block id="9c1995b7c5ce5be79cf95a5a51900431" category="paragraph">BlueXP에서 * Active IQ * 서비스를 클릭합니다.</block>
-  <block id="932530744f32a475e9aa2429537d3a83" category="list-text">BlueXP에 기존 NSS 계정을 이미 등록한 경우 Active IQ 디지털 어드바이저 UI는 의 독립 실행에서와 같이 나타납니다<block ref="a550a333ee33d06042f0abf049084bb9" category="inline-link-rx"></block>.</block>
-  <block id="e82ddc6cf5a70635ce4d69e536b0dfc8" category="inline-image-macro">BlueXP의 Active IQ 디지털 자문업체 사용자 인터페이스 스크린샷</block>
-  <block id="53b16518a30b773b00426877f83d628f" category="paragraph"><block ref="53b16518a30b773b00426877f83d628f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c88f764485548292578f2128d1953adc" category="paragraph">BlueXP에서 AutoSupport 메시지를 보낼 수 없다고 알리는 경우 <block ref="b6432223d87858d9cd4e446578247e88" category="inline-link-macro-rx"></block>.</block>
   <block id="a972bcad179af301a93e1049da5fbbbb" category="paragraph">BlueXP는 HA 쌍에서 SVM 관리 LIF를 생성하지만 Azure의 단일 노드 시스템에서는 생성한 것이 아닙니다.</block>
   <block id="6065260b6e2ca957f806162cf33800f6" category="paragraph">비즈니스 요구 사항에 따라 필요한 경우 비공개 링크 연결을 비활성화할 수도 있습니다. 링크를 사용하지 않도록 설정하면 BlueXP는 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성합니다.</block>
@@ -4362,7 +4337,6 @@
   <block id="c5889acf4592b2ce675b7e0be182268e" category="paragraph">이러한 제한은 BlueXP의 Cloud Volumes ONTAP 관리에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어 자체의 제한 사항을 보려면<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
   <block id="829bbd3178c74725b58e1817c2135502" category="paragraph">또한 Cloud Volumes ONTAP는 BlueXP 백업 및 복구 기능과 통합되어 클라우드 데이터의 보호 및 장기 아카이브를 위한 백업 및 복원 기능을 제공합니다.</block>
   <block id="d37c9703eabd9a68dc0d1fb0b42d7881" category="paragraph">BlueXP 분류와의 통합으로 데이터 컨텍스트를 이해하고 중요한 데이터를 식별할 수 있습니다.</block>
-  <block id="5d52a8b51c505c42c6cec9d89c67795a" category="paragraph"><block ref="3abd3a0b5353b2721a22292e3b71aa39" category="inline-link-rx"></block> BlueXP UI에 통합되어 단일 창에서 Cloud Volumes ONTAP 시스템의 운영, 보안 및 성능을 최적화할 수 있습니다.</block>
   <block id="990d530a36683451e6ac666b1b224270" category="paragraph">BlueXP 디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다.</block>
   <block id="11a72b1b7122c65d1d6f13efb867113a" category="paragraph">BlueXP는 Cloud Volumes ONTAP용으로 생성한 단일 스토리지 VM의 이름을 자동으로 지정합니다. 엄격한 명명 규칙이 있는 경우 System Manager, CLI 또는 API에서 스토리지 VM 이름을 수정할 수 있습니다. 예를 들어, 이름이 ONTAP 클러스터에 대한 스토리지 VM의 이름을 지정하는 방법과 일치할 수 있습니다.</block>
   <block id="31a578b8e294d03f4be50639f79e8160" category="list-text">Cloud Volumes ONTAP 버전 업데이트 페이지에서 URL을 입력한 다음 * 이미지 변경 * 을 클릭합니다.</block>
@@ -4523,7 +4497,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="4c1dfec10f54a14c066eb4fde624e32b" category="paragraph"><block ref="4c1dfec10f54a14c066eb4fde624e32b" category="inline-link-rx"></block></block>
   <block id="875ddb644dbb19174e249bb15473dd4b" category="paragraph">사용 권한은 기본적으로 사용자 지정 역할에 포함됩니다.<block ref="b7d06976ba0f29792527e383824a0357" category="inline-link-rx"></block></block>
   <block id="ef0007b779e97cd98e0fd4e6d256d699" category="paragraph">데이터 복제에 대한 도움말은 을 참조하십시오<block ref="19794cdf55ccd5ccb5c886ae036a6c7c" category="inline-link-rx"></block>.</block>
-  <block id="111605ffc2720ee271322511d8e418e9" category="list-text">BlueXP에 NSS 계정을 등록하지 않은 경우<block ref="fa1dd20a91aad716fe7b27583a904c1e" category="inline-link-rx"></block> 그런 다음 Active IQ 디지털 자문 UI가 나타납니다.</block>
   <block id="f9a3a3f013c1705985786496412a0de0" category="paragraph">가 없는 경우<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> 그러나 계정 관리자는 계정을 만들어야 합니다.<block ref="de51f8f797fd6bb6357ef338b87ca66d" category="inline-link-rx"></block></block>
   <block id="de6c35943505135e58a4af4389b1768d" category="list-text"><block ref="de6c35943505135e58a4af4389b1768d" category="inline-link-rx"></block></block>
   <block id="9ae78035ef81aaff6187ef9a11cd1f03" category="list-text"><block ref="9ae78035ef81aaff6187ef9a11cd1f03" category="inline-link-rx"></block></block>
@@ -5025,7 +4998,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="63e7dad437ffdf90e141f5642e1654d2" category="paragraph">마켓플레이스 계약 또는 전용 오퍼의 일부로 Essentials 라이선스를 구입한 경우 BYOL 로직이 적용되지 않으며 해당 사용에 대한 정확한 라이선스 유형이 있어야 합니다. 라이센스 유형에는 볼륨 유형(운영 또는 2차) 및 구축 유형(HA 또는 단일 노드)이 포함됩니다.</block>
   <block id="b5131f07b7cc2d9ac372dcfc0789c727" category="paragraph">예를 들어, Essentials 라이선스를 사용하여 Cloud Volumes ONTAP 인스턴스를 배포한다고 가정해 보겠습니다. 그런 다음 읽기-쓰기 볼륨(운영 단일 노드) 및 읽기 전용(2차 단일 노드) 볼륨을 프로비저닝합니다. 마켓플레이스 계약 또는 전용 오퍼에는 프로비저닝 용량을 충당하기 위해 _Essentials 단일 노드_ 및 _Essentials 보조 단일 노드_ 의 용량이 포함되어야 합니다. 마켓플레이스 계약 또는 프라이빗 오퍼에 포함되지 않은 모든 용량 할당은 온디맨드 시간당 요금(PAYGO)으로 청구되며 월별 청구서에 비용이 추가됩니다.</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp는 지원 및 라이센스와 관련된 인증 서비스의 ID 공급자로 Microsoft Entra ID를 사용합니다.</block>
-  <block id="976b4993be588a7b52da07c4e96553c3" category="paragraph"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> Cloud Volumes ONTAP을 배포하는 Google Cloud 서브넷에서 비활성화해야 합니다. 패킷 미러링이 활성화된 경우 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.</block>
   <block id="d4eb5b4412a01c5991086dff8c51a89f" category="section-title">2024년 2월 2일</block>
   <block id="4b2d018110adbf4819b09a7a28283445" category="section-title">Azure에서 Edv5 시리즈 VM 지원</block>
   <block id="0ce1565dc58071deb098bde3e5a6a4b6" category="list-text">E4ds_v5 를 참조하십시오</block>
@@ -5398,4 +5370,34 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="59232a2e0b92b4018a48415d0d13c3b4" category="list-text"><block ref="59232a2e0b92b4018a48415d0d13c3b4" category="inline-link-rx"></block></block>
   <block id="312fcba055a7ab6b8314cb541c1f1b4f" category="list-text">* 볼륨 암호화를 위한 Azure 디스크 암호화 * (단일 노드 시스템의 경우, 여러 영역의 HA 쌍 및 HA 단일 AZ 배포)</block>
   <block id="4b63d3239df3134d1faedabb0e8eb859" category="admonition">Azure 고객 관리 암호화 키는 키 저장소에 대해 Azure 디스크 암호화를 사용하도록 설정한 경우에 따라 사용됩니다.</block>
+  <block id="941288a863ad97154034dd3c71f32245" category="paragraph"><block ref="581f54bac504640f66f842676676be03" category="inline-link-rx"></block> Cloud Volumes ONTAP을 배포하는 Google Cloud 서브넷에서 비활성화해야 합니다.</block>
+  <block id="2c5f519b4286c7c769b12f8716b7cbe9" category="summary">Digital Advisor는 BlueXP UI에 통합되어 있으므로 단일 창에서 ONTAP 클러스터의 운영, 보안 및 성능을 최적화할 수 있습니다.</block>
+  <block id="285f8a8636eadf330259391137203f48" category="doc">Digital Advisor를 사용하여 Cloud Volumes ONTAP 시스템을 최적화하십시오</block>
+  <block id="bacbb0b2aa879f7a92df5711cad337d4" category="paragraph"><block ref="3abd3a0b5353b2721a22292e3b71aa39" category="inline-link-rx"></block> BlueXP UI에 통합되어 있으므로 단일 창에서 Cloud Volumes ONTAP 시스템의 운영, 보안 및 성능을 최적화할 수 있습니다.</block>
+  <block id="a832e927c8b42d501555813b999b7221" category="paragraph">Digital Advisor를 사용하면 스토리지 시스템의 전체 상태, 시스템 웰니스에 대한 상위 수준 정보, 인벤토리, 계획 및 유용한 인사이트에 대한 간략한 정보를 관심 목록 수준에서 볼 수 있습니다.</block>
+  <block id="1dba3e6a495ee6df07aa2319c84850b9" category="paragraph">Digital Advisor는 NSS 계정 내의 모든 사내 ONTAP 시스템 및 Cloud Volumes ONTAP 시스템에 대한 정보를 제공합니다.</block>
+  <block id="1708a7899dbb54c155b6283363ffb7ca" category="section-title">Digital Advisor와 BlueXP의 작동 방식</block>
+  <block id="999a89522cee5b44d9f30075a15443d9" category="paragraph">Digital Advisor 사용자 인터페이스가 BlueXP에 완전히 통합됩니다.</block>
+  <block id="7db975397b61b6560d2a672acae2c79c" category="paragraph">BlueXP에서 * Digital Advisor * 서비스를 클릭합니다.</block>
+  <block id="29b5b34f04dbd3d66b34bd6f9a6887b4" category="list-text">BlueXP에 기존 NSS 계정을 이미 등록한 경우 Digital Advisor UI는 의 독립 실행형 구현에서 보는 것처럼 나타납니다<block ref="a550a333ee33d06042f0abf049084bb9" category="inline-link-rx"></block>.</block>
+  <block id="d8bfc5e94810ca08a42561c6641c3041" category="inline-image-macro">BlueXP의 Digital Advisor 사용자 인터페이스 스크린샷</block>
+  <block id="270af6699089e1fd528db30a8e59039c" category="paragraph"><block ref="270af6699089e1fd528db30a8e59039c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a635be2c2772e7448a88461a1a2a2060" category="list-text">BlueXP에 NSS 계정을 등록하지 않은 경우<block ref="fa1dd20a91aad716fe7b27583a904c1e" category="inline-link-rx"></block> Digital Advisor UI가 나타납니다.</block>
+  <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Digital Advisor 설명서</block>
+  <block id="04b829e5c9f049ac625c2f31a74c3cba" category="paragraph">를 참조하십시오<block ref="f2e318b984927d4781fb278ddc8ba233" category="inline-link-rx"></block> 를 참조하십시오.</block>
+  <block id="32dfa86e33fe03388c6e88e19e1782f8" category="list-text">에서 지원되는 가상 머신 유형을 확인합니다<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 지원되는 각 VM 유형에 대한 세부 정보를 검토합니다. 각 VM 유형은 특정 수의 데이터 디스크를 지원합니다.</block>
+  <block id="2e0977c81182f3cd8c9bc0ca8b2381c8" category="summary">ONTAP의 AutoSupport 구성 요소는 원격 측정을 수집하여 분석을 위해 전송합니다. Digital Advisor는 AutoSupport에서 데이터를 분석하고 능동적 관리 및 최적화를 제공합니다. Digital Advisor는 인공 지능을 사용하여 잠재적 문제를 식별하고 비즈니스에 영향을 미치기 전에 해결할 수 있도록 지원합니다.</block>
+  <block id="c8ce69fcaf4de8a55daf1224f6f1c749" category="doc">AutoSupport 및 디지털 자문업체</block>
+  <block id="61f3d1fea52e4a93226203c7f3da9cc7" category="paragraph">ONTAP의 AutoSupport 구성 요소는 원격 측정을 수집하여 분석을 위해 전송합니다. Active IQ Digital Advisor(Digital Advisor)는 AutoSupport에서 데이터를 분석하고 능동적 관리 및 최적화를 제공합니다. Digital Advisor는 인공 지능을 사용하여 잠재적 문제를 식별하고 비즈니스에 영향을 미치기 전에 해결할 수 있도록 지원합니다.</block>
+  <block id="cab2272fdd4010056508f4fa09827383" category="paragraph">Digital Advisor를 사용하면 클라우드 기반 포털 및 모바일 앱을 통해 실행 가능한 예측 분석과 사전 예방적 지원을 제공하여 글로벌 하이브리드 클라우드 전반에서 데이터 인프라를 최적화할 수 있습니다. 활성 SupportEdge 계약을 보유한 모든 NetApp 고객은 디지털 어드바이저의 데이터 중심 인사이트와 권장 사항을 이용할 수 있습니다(기능은 제품 및 지원 계층에 따라 다름).</block>
+  <block id="e6f43a9e138f23960dcfc8b35dda3828" category="paragraph">Digital Advisor로 할 수 있는 작업은 다음과 같습니다.</block>
+  <block id="1f4968722cbd705311c87377fd259f10" category="paragraph">Digital Advisor는 최신 버전의 ONTAP로 업그레이드하여 해결할 수 있는 환경 문제를 식별하며 업그레이드 관리자 구성 요소는 성공적인 업그레이드를 계획하는 데 도움이 됩니다.</block>
+  <block id="dda5fb5d139dfab82bf01a2b11f7b9bb" category="paragraph">Digital Advisor 대시보드에서 웰니스 문제를 보고하고 이러한 문제를 해결할 수 있습니다. 시스템 용량을 모니터링하여 스토리지 공간이 부족하지 않도록 하십시오. 시스템에 대한 지원 케이스를 봅니다.</block>
+  <block id="4464f839c33dfbff0ded4f85b2f31226" category="paragraph">Digital Advisor는 ONTAP System Manager에서 볼 수 있는 것보다 더 오랜 기간 동안 시스템 성능을 표시합니다. 성능에 영향을 주는 구성 및 시스템 문제를 식별합니다.
+효율성 극대화 스토리지 효율성 메트릭을 확인하고 더 적은 공간에 더 많은 데이터를 저장하는 방법을 알아보십시오.</block>
+  <block id="dd93c0ad910a337acb87fc21af76f465" category="paragraph">Digital Advisor는 전체 인벤토리와 소프트웨어 및 하드웨어 구성 정보를 표시합니다. 서비스 계약이 만료되는 시기를 확인하고 서비스 계약을 갱신하여 계속 지원을 받을 수 있도록 합니다.</block>
+  <block id="96b8ef630a3f6fd5c5d555ac85237d8c" category="inline-link">NetApp 설명서: 디지털 어드바이저</block>
+  <block id="4ac58369201dcb717d1d1d37ee990c1c" category="list-text"><block ref="4ac58369201dcb717d1d1d37ee990c1c" category="inline-link-rx"></block></block>
+  <block id="dc538d1e88cb00b045ab5c768441ff92" category="inline-link">Digital Advisor를 실행합니다</block>
+  <block id="c0b168a4d72d74292c8b4f5299b9541e" category="list-text"><block ref="c0b168a4d72d74292c8b4f5299b9541e" category="inline-link-rx"></block></block>
 </blocks>
