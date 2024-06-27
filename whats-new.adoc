@@ -205,7 +205,6 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["이 Cloud
 * 스위스 북부
 * 남아프리카 북부에 있습니다
 * 아랍 에미리트 북쪽으로
-* 중국 북부 3
 
 
 모든 지역 목록은 를 참조하십시오 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure 아래의 글로벌 지역 지도"^].
