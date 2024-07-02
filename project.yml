@@ -194,6 +194,8 @@ sidebar:
         url: "/task-google-key-manager.html"
       - title: 랜섬웨어 보호 향상
         url: "/task-protecting-ransomware.html"
+      - title: WORM 스토리지를 위한 변조 방지 스냅샷 복사본을 생성합니다
+        url: "/reference-worm-snaplock.html"
     - title: 시스템 관리
       entries:
       - title: Cloud Volumes ONTAP를 업그레이드합니다
