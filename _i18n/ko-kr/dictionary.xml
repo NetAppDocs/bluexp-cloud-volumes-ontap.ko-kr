@@ -2381,7 +2381,6 @@
   <block id="44521137c9499dbef6a006058d0d9127" category="section-title">Cloud Volumes ONTAP 9.11.0</block>
   <block id="a0834297e8b28b9a51d59500441c7351" category="section-title">중재자 업그레이드 개선</block>
   <block id="e6e5b99786bfefd88e32c940b7547ab3" category="section-title">K8s 탭이 제거되었습니다</block>
-  <block id="6eb7d1343cce33ec7d31b57edd9f3aef" category="paragraph">K8s 탭은 이전 버전에서 사용되지 않으며 이제 제거되었습니다. Kubernetes를 Cloud Volumes ONTAP와 함께 사용하려면 고급 데이터 관리를 위한 작업 환경으로 관리 Kubernetes 클러스터를 Canvas에 추가할 수 있습니다.</block>
   <block id="7475abfb4039c00bb03fd05d6d792b3d" category="section-title">Azure에서 연간 계약</block>
   <block id="52b398f13b1acf3e73584a9cb106e989" category="paragraph">이제 Essentials 및 Professional 패키지는 Azure에서 연간 계약을 통해 제공됩니다. NetApp 세일즈 담당자에게 문의하여 연간 계약을 구매할 수 있습니다. 이 계약은 Azure 마켓플레이스에서 프라이빗 오퍼로 제공됩니다.</block>
   <block id="ba089edca33f314482ad946ae680f1eb" category="inline-link">라이센스에 대해 자세히 알아보십시오</block>
@@ -3519,7 +3518,6 @@
   <block id="f161f6edfaf6d911de2566d694781369" category="paragraph">이제 Google Cloud의 Cloud Volumes ONTAP에서 9.11.1 릴리즈부터 여러 스토리지 VM이 지원됩니다. 이번 커넥터 릴리스부터 BlueXP를 사용하면 API를 사용하여 Google Cloud의 Cloud Volumes ONTAP HA 쌍에서 스토리지 VM을 생성할 수 있습니다.</block>
   <block id="dbb2a3618007fc68b403b5db7a27888c" category="paragraph">이제 BlueXP에서 Cloud Volumes ONTAP 9.11.0을 배포 및 관리할 수 있습니다.</block>
   <block id="17cc55e2cfcef39231025dad282b0760" category="paragraph">BlueXP가 HA 쌍의 중재자를 업그레이드할 때 이제 부팅 디스크를 삭제하기 전에 새 중재자 이미지를 사용할 수 있는지 확인합니다. 이 변경 사항은 업그레이드 프로세스가 실패할 경우 중재자가 계속해서 성공적으로 작동할 수 있도록 합니다.</block>
-  <block id="998eb27e3e05260958103da3d27eb4ac" category="inline-link">BlueXP의 Kubernetes 데이터 관리에 대해 알아보십시오</block>
   <block id="496550dfa4d3b1c3955fe8ab428eedbf" category="paragraph">이제 이러한 권한이 있어야 BlueXP에서 배치 그룹을 만드는 방법을 최적화할 수 있습니다.</block>
   <block id="1fcd17a990e75722697d64df5dd2ffde" category="list-text">Google Cloud에서 Cloud Volumes ONTAP HA 쌍을 생성하면 BlueXP가 VPC에 기존 방화벽 정책을 모두 표시합니다.</block>
   <block id="46fc311e1b8dc6670926551c44511f90" category="paragraph">이전에는 BlueXP에서 대상 태그가 없는 VPC-1, VPC-2 또는 VPC-3에 정책을 표시하지 않았습니다.</block>
@@ -4477,7 +4475,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="8ade4dc1ca161da57728a6bf29be1db9" category="paragraph">BlueXP에 추가한 각 AWS 자격 증명 세트에 이러한 권한을 제공해야 합니다.<block ref="64ae4f789cd26cb4c9b5096ed42d2482" category="inline-link-rx"></block>.</block>
   <block id="ac1bc6f2b2358438076867200e537370" category="paragraph"><block ref="7abbb63a2cd3cab475ace2a577aa3de3" category="inline-link-rx"></block>.</block>
   <block id="07e4a4acdb333fe3d7b8dac1958d6459" category="list-text"><block ref="07e4a4acdb333fe3d7b8dac1958d6459" category="inline-link-rx"></block></block>
-  <block id="755c513b451157c807794bf1213fd1f9" category="paragraph"><block ref="755c513b451157c807794bf1213fd1f9" category="inline-link-rx"></block></block>
   <block id="73f030bd359abb41dc1089c470531542" category="paragraph"><block ref="37698926d26a2683d3b5c90c9b2406a6" category="inline-link-rx"></block>.</block>
   <block id="2e56aeba3c1fc24d42b0f15df12a08f9" category="paragraph"><block ref="5d4901194aa2380bf45bcc72c63f2763" category="inline-link-rx"></block>.</block>
   <block id="7abee0635d8cb81d3ae89fd8d82a442a" category="paragraph"><block ref="7abee0635d8cb81d3ae89fd8d82a442a" category="inline-image-macro-rx" type="image"></block></block>
@@ -5424,4 +5421,5 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="543cc078f66d581004934cfaa8988453" category="list-text">* ONTAP 버전 *: Cloud Volumes ONTAP 시스템의 ONTAP 버전이 암호화된 볼륨의 FlexCache를 지원하는지 확인하십시오. 자세한 내용은 최신<block ref="9ec4657ceea5a1d054b2b0fa2482a129" category="inline-link-rx"></block> 또는 호환성 매트릭스를 참조하십시오.</block>
   <block id="38d57b85102d8663bf30488289425e48" category="list-text">* 네트워크 구성 *: 네트워크 구성이 오리진 볼륨과 FlexCache 볼륨 간의 원활한 통신을 허용하는지 확인합니다. 여기에는 클라우드 환경에서의 적절한 라우팅 및 DNS 확인이 포함됩니다.</block>
   <block id="51aa8ce93131e7a6746f62c49df04fe2" category="paragraph">암호화된 소스 볼륨으로 Cloud Volumes ONTAP 시스템에 FlexCache 볼륨을 생성합니다. 자세한 단계 및 추가 고려 사항은 다음 섹션을 참조하십시오.</block>
+  <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">Kubernetes 탭은 이전 릴리즈에서 더 이상 사용되지 않으며 이제 제거되었습니다.</block>
 </blocks>
