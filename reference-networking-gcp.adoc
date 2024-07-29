@@ -215,22 +215,6 @@ TIP: HA 쌍을 사용하는 경우 HA 중재자가 아웃바운드 인터넷 액
 
 BlueXP에서 AutoSupport 메시지를 보낼 수 없다고 알리는 경우 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 구성 문제를 해결합니다"].
 
-방화벽 규칙:: BlueXP는 방화벽 규칙을 만들 필요가 없습니다. 직접 사용해야 하는 경우 아래 나열된 방화벽 규칙을 참조하십시오.
-+
---
-HA 구성에는 두 가지 방화벽 규칙 세트가 필요합니다.
-
-* VPC-0의 HA 구성 요소에 대한 하나의 규칙 세트 이러한 규칙을 통해 Cloud Volumes ONTAP에 대한 데이터 액세스가 가능합니다. <<방화벽 규칙,자세한 정보>>.
-* VPC-1, VPC-2 및 VPC-3의 HA 구성 요소에 대한 또 다른 규칙 세트 이러한 규칙은 HA 구성 요소 간의 인바운드 및 아웃바운드 통신에 대해 개방됩니다. <<방화벽 규칙,자세한 정보>>.
-
-
---
-
-
-콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷이 프라이빗 Google 액세스용으로 구성되어야 합니다(HA 쌍을 사용하는 경우 VPC-0의 서브넷임). 자세한 지침은 을 참조하십시오 https://cloud.google.com/vpc/docs/configure-private-google-access["Google Cloud 설명서: 개인 Google Access 구성"^].
-
-BlueXP에서 데이터 계층화를 설정하는 데 필요한 추가 단계는 을 참조하십시오 link:task-tiering.html["콜드 데이터를 저비용 오브젝트 스토리지로 계층화"].
-
 
 
 === 다른 네트워크의 ONTAP 시스템에 대한 연결

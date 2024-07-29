@@ -1751,7 +1751,6 @@
   <block id="a882b8d486f84abfbb2472c835d49dbf" category="paragraph">라우팅 및 방화벽 정책은 Cloud Volumes ONTAP가 AutoSupport 메시지를 보낼 수 있도록 다음 엔드포인트에 대한 HTTP/HTTPS 트래픽을 허용해야 합니다.</block>
   <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="section-title">IP 주소</block>
   <block id="0af87aead9b1478c9d33afc90cbcbf02" category="section-title">Azure 서비스에 대한 보안 연결</block>
-  <block id="465b92b3276cc18a4183d48ccf476d6a" category="inline-link-macro">콜드 데이터를 저비용 오브젝트 스토리지로 계층화</block>
   <block id="87b7d9ff8a42dbb6c0bcd13ae09f6010" category="section-title">다른 ONTAP 시스템에 대한 연결</block>
   <block id="29a865e45adc910f0644ded74b229df8" category="inline-link">Microsoft Azure 문서: Azure 포털에서 사이트 간 연결을 만듭니다</block>
   <block id="81acf7ceaf81844868547b75b3cbad05" category="paragraph">자세한 지침은 을 참조하십시오<block ref="58f617c37f2c96a9d814e3cfdc48d6c4" category="inline-link-rx"></block>.</block>
@@ -1919,8 +1918,6 @@
   <block id="2be40f62b7c4e1d13a18dcc030852bf8" category="paragraph">LIF는 물리적 포트와 연결된 IP 주소입니다. SnapCenter와 같은 관리 툴을 사용하려면 스토리지 VM(SVM) 관리 LIF가 필요합니다.</block>
   <block id="4dfddd1829f7fb340bd9b36bff6e3130" category="list-text">방화벽 규칙</block>
   <block id="2a361a1f21cbd928455b1bd06df94169" category="paragraph">HA 구성에는 두 가지 방화벽 규칙 세트가 필요합니다.</block>
-  <block id="5e74b536fe3c8bd111e49f783c8e991c" category="inline-link">Google Cloud 설명서: 개인 Google Access 구성</block>
-  <block id="9e0ae4847043d43d71330ce503e69ac8" category="list-text">콜드 데이터를 Google 클라우드 스토리지 버킷에 계층화하려면 Cloud Volumes ONTAP가 상주하는 서브넷이 프라이빗 Google 액세스용으로 구성되어야 합니다(HA 쌍을 사용하는 경우 VPC-0의 서브넷임). 자세한 지침은 을 참조하십시오<block ref="6db326f0ee07df97e25069fccf883deb" category="inline-link-rx"></block>.</block>
   <block id="df025646ed6854c0696237c0ac916446" category="list-text">다른 네트워크의 ONTAP 시스템에 대한 연결</block>
   <block id="2fbb401eef4220b4a89cce3e59325dcb" category="inline-link">Google Cloud 설명서: Cloud VPN 개요</block>
   <block id="6d1472a8434e4945740fa177e609f886" category="paragraph">자세한 지침은 을 참조하십시오<block ref="1bc8aad79f56acf8c242cfb981c11ee1" category="inline-link-rx"></block>.</block>
@@ -3330,7 +3327,6 @@
   <block id="0d5b8e06664cffcf9f498e7821c89481" category="list-text">여러 영역 또는 단일 영역에 HA 구성을 배포하여 데이터의 고가용성을 보장할 수 있습니다. HA 쌍을 생성할 때 BlueXP에서 여러 존 또는 단일 존을 선택하라는 메시지가 표시됩니다.</block>
   <block id="44b028753f7a7976b8be9d11b1afed32" category="paragraph">HA 쌍을 생성할 때 BlueXP에서 네 개의 VPC를 선택하라는 메시지가 표시됩니다.</block>
   <block id="c44db905496bb7220714be5427afb035" category="paragraph">AutoSupport 메시지를 보내는 데 아웃바운드 인터넷 연결을 사용할 수 없는 경우 BlueXP는 자동으로 Cloud Volumes ONTAP 시스템에서 커넥터를 프록시 서버로 사용하도록 구성합니다. 유일한 요구 사항은 커넥터의 방화벽이 포트 3128을 통한 _INbound_connection을 허용하는지 확인하는 것입니다. Connector를 배포한 후 이 포트를 열어야 합니다.</block>
-  <block id="33e7d975fa9a0910415fa300d8bf304a" category="paragraph">BlueXP에서 데이터 계층화를 설정하는 데 필요한 추가 단계는 을 참조하십시오 <block ref="9ae9bcf59853ba48ce2658a41db24feb" category="inline-link-macro-rx"></block>.</block>
   <block id="639c4a9b76126cf4712751dee5546383" category="paragraph">한편, BlueXP가 VPC-1, VPC-2 및 VPC-3의 인스턴스에 대해 생성하는 사전 정의된 방화벽 규칙은 _ALL_PROTOCOLS 및 포트를 통한 수신 통신을 가능하게 합니다. 이 규칙은 HA 노드 간 통신을 지원합니다.</block>
   <block id="3ef69cb41da937aa60ab5fbab53eb42a" category="list-text">Cloud Volumes ONTAP를 업그레이드할 때 BlueXP는 필요에 따라 중재자 인스턴스도 업데이트합니다.</block>
   <block id="5d345d14f8662bfe45d8562fba90c487" category="list-text">BlueXP에서 Cloud Volumes ONTAP HA 쌍을 만들면 중재자 인스턴스에 대한 키 쌍을 제공하라는 메시지가 표시됩니다. 를 사용하여 SSH 액세스에 이 키 쌍을 사용할 수 있습니다<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 사용자.</block>
@@ -4049,7 +4045,6 @@
   <block id="a00377c792cd8ccb6a0c832ffec2c1dc" category="list-text">클러스터 LIF 2개(e0b)</block>
   <block id="bbe8dbabe5bfd1d32eaa2131b90c191a" category="list-text">HA 인터커넥트 IP 주소 2개(e0c)</block>
   <block id="0baf3fbe98870c6047f6b10e5370bff7" category="list-text">RSM iSCSI IP 주소(e0d) 2개</block>
-  <block id="c3872c89a315822852621c448e41aac4" category="list-text">BlueXP는 방화벽 규칙을 만들 필요가 없습니다. 직접 사용해야 하는 경우 아래 나열된 방화벽 규칙을 참조하십시오.</block>
   <block id="e2f177a250a8772cd8ebbe4839390958" category="paragraph">BlueXP는 단일 노드 시스템에 6개의 IP 주소를 할당합니다.</block>
   <block id="b4f6a6268e9ed79637c765266075ab8c" category="paragraph">다음 표에는 각 프라이빗 IP 주소와 연결된 LIF에 대한 자세한 정보가 나와 있습니다.</block>
   <block id="6d0c9e6ffd2de679838428abdea38009" category="cell">iSCSI 프로토콜을 통한 클라이언트 액세스. 또한 시스템에서 다른 중요한 네트워킹 워크플로우에 사용됩니다. 이 LIF는 필수 항목이므로 삭제할 수 없습니다.</block>
@@ -4693,8 +4688,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="34b51cb01d3605c2b908600c2b516152" category="list-text"><block ref="34b51cb01d3605c2b908600c2b516152" category="inline-link-macro-rx"></block></block>
   <block id="2a79e18dae8df0be0a0d70d12cf4bfec" category="list-text"><block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block></block>
   <block id="14c10e4dfdbfa7bb1944c39086904d79" category="list-text"><block ref="14c10e4dfdbfa7bb1944c39086904d79" category="inline-link-macro-rx"></block></block>
-  <block id="f784e2eca8423af6d4b6e02cd9dc17b6" category="list-text">VPC-0의 HA 구성 요소에 대한 하나의 규칙 세트 이러한 규칙을 통해 Cloud Volumes ONTAP에 대한 데이터 액세스가 가능합니다. <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>.</block>
-  <block id="29642aeaa8aff442388842cc2c36f19d" category="list-text">VPC-1, VPC-2 및 VPC-3의 HA 구성 요소에 대한 또 다른 규칙 세트 이러한 규칙은 HA 구성 요소 간의 인바운드 및 아웃바운드 통신에 대해 개방됩니다. <block ref="1a421f2e5e3047ae3801063040dbe3fb" category="inline-xref-macro-rx"></block>.</block>
   <block id="b0082432bdd8f260c6c2bf11437fb1b7" category="list-text">VPC-1, VPC-2 및 VPC-3의 HA 구성 요소에 대한 또 다른 규칙 세트 이러한 규칙은 HA 구성 요소 간의 인바운드 및 아웃바운드 통신에 대해 개방됩니다. <block ref="07ead3ac53ea1b122b25bf61bd233110" category="inline-xref-macro-rx"></block>.</block>
   <block id="d2d30bf70c79bbb95b5e7ce630b66c21" category="cell">기존 보안 그룹을 선택하는 경우 Cloud Volumes ONTAP 요구 사항을 충족해야 합니다. <block ref="c840f14212255ea9808d6d3aa32adaf9" category="inline-link-macro-rx"></block>.</block>
   <block id="4956de48e08bd2176b53bb70ae88a9ea" category="paragraph">디스크 유형과 크기를 선택하는 방법은 을 참조하십시오 <block ref="2a79e18dae8df0be0a0d70d12cf4bfec" category="inline-link-macro-rx"></block>.</block>
@@ -4972,7 +4965,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">ONTAP 이미지를 다운로드하는 중입니다</block>
   <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">2024년 1월부터 패치 업그레이드는 Cloud Volumes ONTAP의 3가지 최신 버전에 대한 패치 릴리즈인 경우에만 BlueXP에서 사용할 수 있습니다. 최신 GA 릴리즈를 사용하여 BlueXP에 표시할 3가지 최신 버전을 결정합니다. 예를 들어, 현재 GA 릴리즈가 9.13.1인 경우 9.11.1~9.13.1용 패치가 BlueXP에 표시됩니다. 버전 9.11.1 이하의 패치 릴리스로 업그레이드하려면 에서 수동 업그레이드 절차를 사용해야 합니다 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>.</block>
   <block id="b0b450f5a78908e6b78f5c13bf6b0da4" category="paragraph">패치(P) 릴리스의 일반적인 규칙으로, 하나의 버전 릴리스에서 실행 중인 현재 버전 또는 다음 버전의 P-릴리스로 업그레이드할 수 있습니다.</block>
-  <block id="6641aeac9c3a566deb4f56b743076e2a" category="list-text">NAE는 AKV로 사용할 수 없습니다. NAE는 외부 지원 KMIP 서버가 필요합니다.</block>
   <block id="8f3a7aeceb3049764382da1a82a27238" category="list-text">응용 프로그램 등록 후 저장된 클라이언트 ID 및 테넌트 ID를 사용하여 Azure Key Vault를 활성화합니다.<block ref="5e256216aa762875258d90fbe836b7b2" prefix=" " category="inline-code"></block></block>
   <block id="27546657617543a3f0cd8927c3f369c8" category="admonition">를 클릭합니다<block ref="ee5ecb949ba751e6c3f7b03d02fc2819" prefix=" " category="inline-code"></block> 값은 을 사용해야 합니다<block ref="b5fd887d199c5a44249b4fce7085da7f" prefix=" " category="inline-code"></block> 형식.</block>
   <block id="b386d04ca3a89226a06701e85f70e33d" category="list-text">Azure Key Vault가 활성화되면 를 입력합니다<block ref="00c44d3486742ffa7af4a8bfbab4d3d3" prefix=" " category="inline-code"></block> 메시지가 표시되면</block>
@@ -5422,4 +5414,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="38d57b85102d8663bf30488289425e48" category="list-text">* 네트워크 구성 *: 네트워크 구성이 오리진 볼륨과 FlexCache 볼륨 간의 원활한 통신을 허용하는지 확인합니다. 여기에는 클라우드 환경에서의 적절한 라우팅 및 DNS 확인이 포함됩니다.</block>
   <block id="51aa8ce93131e7a6746f62c49df04fe2" category="paragraph">암호화된 소스 볼륨으로 Cloud Volumes ONTAP 시스템에 FlexCache 볼륨을 생성합니다. 자세한 단계 및 추가 고려 사항은 다음 섹션을 참조하십시오.</block>
   <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">Kubernetes 탭은 이전 릴리즈에서 더 이상 사용되지 않으며 이제 제거되었습니다.</block>
+  <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">NAE는 AKV를 사용하여 사용할 수 없습니다. NAE는 외부 지원 KMIP 서버가 필요합니다.</block>
+  <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAP 노드는 AKV를 15분마다 폴링하여 접근성과 키 가용성을 확인합니다. 이 폴링 기간은 구성할 수 없으며 폴링 시도에서 4회 연속 실패(총 1시간)가 발생하면 볼륨이 오프라인 상태로 전환됩니다.</block>
 </blocks>
