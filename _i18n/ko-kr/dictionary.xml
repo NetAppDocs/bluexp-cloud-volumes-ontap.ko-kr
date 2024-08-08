@@ -253,7 +253,6 @@
   <block id="7630e1f6ebde3d280c53fd350ed9e414" category="list-text">Azure 스토리지 서비스 암호화</block>
   <block id="d988a92cb3f4d22d80f5a79f6d0df13d" category="list-text">Google Cloud Platform 기본 암호화</block>
   <block id="1948af9c9d5426628760bb0ef4a35cdf" category="inline-link">NVE(NetApp Volume Encryption) 및 NetApp NAE(Aggregate Encryption)</block>
-  <block id="ea345086090743ba32da6aae6c9b6998" category="paragraph">Cloud Volumes ONTAP 지원<block ref="ae505195628dd60ca701666c408297af" category="inline-link-rx"></block>. NVE와 NAE는 볼륨의 유휴 데이터 암호화를 FIPS(140-2를 준수하는 소프트웨어 기반 솔루션입니다. NVE와 NAE는 모두 AES 256비트 암호화를 사용합니다.</block>
   <block id="0bf3330853877ab4b76b4f1e00d3ace2" category="list-text">NVE는 유휴 데이터를 한 번에 한 볼륨씩 암호화합니다. 각 데이터 볼륨에는 고유한 암호화 키가 있습니다.</block>
   <block id="988d5e992ea371904581e6f8ad13bac7" category="list-text">NAE는 NVE의 확장판이며 각 볼륨의 데이터를 암호화하고 애그리게이트 전체에서 볼륨을 공유합니다. NAE는 또한 애그리게이트의 모든 볼륨 전반에서 공통 블록을 중복제거할 수 있습니다.</block>
   <block id="e1bf87c98edd3bee07d170ae8b118aeb" category="paragraph">새 애그리게이트에는 외부 키 관리자를 설정한 후 기본적으로 NAE(NetApp Aggregate Encryption)가 활성화되어 있습니다. NAE 애그리게이트에 속하지 않는 새로운 볼륨은 기본적으로 NetApp Volume Encryption(NVE)이 활성화되어 있습니다(예: 외부 키 관리자를 설정하기 전에 생성된 기존 애그리게이트가 있는 경우).</block>
@@ -5416,4 +5415,5 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">Kubernetes 탭은 이전 릴리즈에서 더 이상 사용되지 않으며 이제 제거되었습니다.</block>
   <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">NAE는 AKV를 사용하여 사용할 수 없습니다. NAE는 외부 지원 KMIP 서버가 필요합니다.</block>
   <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAP 노드는 AKV를 15분마다 폴링하여 접근성과 키 가용성을 확인합니다. 이 폴링 기간은 구성할 수 없으며 폴링 시도에서 4회 연속 실패(총 1시간)가 발생하면 볼륨이 오프라인 상태로 전환됩니다.</block>
+  <block id="368b5e8e02b8134e8d1009fff74bf2bc" category="paragraph">Cloud Volumes ONTAP는 를<block ref="09aecd5417a289ba24f2f00949971fbc" category="inline-link-rx"></block>지원합니다. NVE와 NAE는 볼륨의 유휴 데이터 암호화를 FIPS(140-2를 준수하는 소프트웨어 기반 솔루션입니다. NVE와 NAE는 모두 AES 256비트 암호화를 사용합니다.</block>
 </blocks>
