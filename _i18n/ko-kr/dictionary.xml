@@ -1860,7 +1860,6 @@
   <block id="fdde7a7f3783aa0ce1e585f8be9c2def" category="list-text">라이센스 기간이 만료된 경우</block>
   <block id="36e4d5ff70cec517180ae18f1c34d2fd" category="list-text">마켓플레이스로부터 연간 계약을 체결한 경우 _ All_Cloud Volumes ONTAP 시스템에 해당 계약이 적용됩니다. BYOL은 연간 마켓플레이스 계약을 혼합하여 사용할 수 없습니다.</block>
   <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">가격</block>
-  <block id="25b035aed2fdd6599b8102a76363fdec" category="section-title">무료 평가판</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">지원되는 구성</block>
   <block id="4e4c431843fe55f93c074808800bf7d0" category="paragraph">용량 기반 라이센스 패키지는 Cloud Volumes ONTAP 9.7 이상에서 사용할 수 있습니다.</block>
   <block id="37040d43404231d8205705e4353af733" category="section-title">용량 제한</block>
@@ -1878,7 +1877,6 @@
   <block id="aad2b08c0103cffcbb5efae0a56ee747" category="paragraph">각 개별 Cloud Volumes ONTAP 시스템은 디스크를 통해 최대 2개의 PiB 용량을 지원하고 오브젝트 스토리지로 계층화합니다.</block>
   <block id="b2e75bbfb9933bc21b7f875e8676641d" category="inline-link">NetApp에 문의하십시오</block>
   <block id="a2f6a3e98ea1849ed1ab07d821bf6a18" category="section-title">노드 기반 라이센스</block>
-  <block id="361abfc2eaabdb045de49dafd20dbdf1" category="paragraph">노드 기반 라이센스는 이전 세대 라이센스 모델로, 노드별로 Cloud Volumes ONTAP에 대한 라이센스를 부여할 수 있도록 지원합니다. 이 라이센스 모델은 신규 고객에는 제공되지 않으며 무료 평가판을 사용할 수 없습니다. 노드별 충전은 위에서 설명한 용량 기준 충전 방법으로 대체되었습니다.</block>
   <block id="749b4d71be76e8fee5fe7895ae5ff71d" category="paragraph">기존 고객은 노드 기반 라이센스를 계속 사용할 수 있습니다.</block>
   <block id="04c40151a6d53f981d0364aef6215bd0" category="list-text">활성 라이센스가 있는 경우 BYOL은 라이센스 갱신에만 사용할 수 있습니다.</block>
   <block id="358962d4cc759ccb4c98e87cc3396033" category="list-text">유효한 마켓플레이스 가입이 있는 경우에도 해당 구독을 통해 충전할 수 있습니다.</block>
@@ -2471,8 +2469,6 @@
   <block id="783e44882ef395447a1b422181ebb3d4" category="section-title">Google Cloud 지원</block>
   <block id="c0a92ff7cf6e8a1570f1775a4a7c563d" category="list-text">데이터 계층화는 Cloud Volumes ONTAP 9.6부터 Google Cloud에서 지원됩니다.</block>
   <block id="0285440088a9a63b47028bcc1bccb076" category="section-title">기능 상호 운용성</block>
-  <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">인스턴스 또는 용량 제한은 없습니다. 원하는 만큼 Cloud Volumes ONTAP 시스템을 구축하고 30일 동안 무료로 필요한 용량을 할당할 수 있습니다. 무료 평가판은 30일 후에 자동으로 유료 시간별 구독으로 변환됩니다.</block>
-  <block id="631556a144b10d5d5f19603b18176e32" category="paragraph">Cloud Volumes ONTAP에는 시간당 소프트웨어 라이센스 비용이 부과되지 않지만, 클라우드 공급자의 인프라 비용이 여전히 적용됩니다.</block>
   <block id="6c30ec25f9c157f6acd5cb63a6abee29" category="list-text">애그리게이트 중 하나에서 객체에 대해 이전 명명 체계를 사용합니다. 두 애그리게이트 모두에서 같은 이름 형식을 사용해야 합니다.</block>
   <block id="181e3299a212253d089ee23c58a37a10" category="list-text">이제 Essentials 패키지와 Professional 패키지를 모든 클라우드 공급자 마켓플레이스에서 사용할 수 있습니다.</block>
   <block id="e399fe858ae4c467e1c830b512b1718c" category="list-text">모든 클라우드 공급자 마켓플레이스의 노드별 라이센스는 더 이상 사용되지 않으며 새 가입자에게 더 이상 제공되지 않습니다. 여기에는 연간 계약 및 시간별 가입(탐색, 표준, 프리미엄)이 포함됩니다.</block>
@@ -3066,13 +3062,6 @@
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">최적화</block>
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">프로비저닝된 용량 및 I/O 작업에 대해 별도로 비용을 지불합니다.</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP 단일 노드 또는 HA</block>
-  <block id="98b2954d7b26ad04d4f74c70881d3ece" category="section-title">에지 캐시</block>
-  <block id="0e6fc7a8a0a2e83eed1877313299a807" category="paragraph">Cloud Volumes Edge Cache에 대한 라이센스를 제공합니다.</block>
-  <block id="cbea577daebf267793d8d7234ee50729" category="list-text">분산 엔터프라이즈를 위한 비즈니스 연속성 및 데이터 보호 기능을 제공하는 Professional 패키지와 동일한 기능입니다</block>
-  <block id="90083db3dbad73e69a817501be172673" category="list-text">각 위치에서 설치 공간이 작은 Windows VM을 통한 지능형 에지 캐싱</block>
-  <block id="7c4c7c30514b4cc21e76f21acfaacf2a" category="inline-link">Cloud Volumes Edge Cache를 통해 비즈니스를 지원하는 방법에 대해 자세히 알아보십시오</block>
-  <block id="20044e95e1ba41fb44c428898ee01dc2" category="paragraph"><block ref="20044e95e1ba41fb44c428898ee01dc2" category="inline-link-rx"></block></block>
-  <block id="54dcd2c31a61414eef44d6ac931b8f57" category="paragraph">+ 최적화된 및 Edge Cache 패키지는 BYOL에서 사용할 수 없습니다.</block>
   <block id="69ab7c49a4285d04bdc7e75b51a4a476" category="section-title">패키지를 변경하는 중입니다</block>
   <block id="5bdd4028830bea76f4939d67baa460ff" category="paragraph">배포 후에는 용량 기반 라이센스를 사용하는 Cloud Volumes ONTAP 시스템의 패키지를 변경할 수 있습니다. 예를 들어, Essentials 패키지와 함께 Cloud Volumes ONTAP 시스템을 배포한 경우 비즈니스 요구사항이 변경되면 이를 Professional 패키지로 변경할 수 있습니다.</block>
   <block id="ec3e25d80cfc0e5561493729eadecef7" category="paragraph"><block ref="ea19fa0e06a6047bcaabb9af62b066c3" category="inline-link-macro-rx"></block>.</block>
@@ -3356,8 +3345,6 @@
   <block id="16c274138bfaf739b851a1b611d4cdb0" category="list-text">Cloud Volumes ONTAP 시스템에 대해 프로비저닝된 용량이 500GiB를 초과하면 BlueXP는 시스템을 Essentials 패키지로 변환합니다.</block>
   <block id="2cfe7b7de2a1df6b585bf1321d37fb8a" category="inline-link">NetApp BlueXP 웹 사이트</block>
   <block id="490f0cb4ab517a2c88f9d425fc84b42d" category="paragraph">가격에 대한 자세한 내용은 를 참조하십시오<block ref="c412404f1934ae5bd4e59f00ec0e79b9" category="inline-link-rx"></block>.</block>
-  <block id="d6887d442590b333a9ed7ab379a87bec" category="inline-image-macro">무료 평가판 사용 기간이 7일 남다는 BlueXP 인터페이스의 알림 스크린샷.</block>
-  <block id="25e3832249c9db3c8e31fc1a1a13b691" category="admonition">무료 평가판이 시작될 때, 7일 남았을 때, 1일 남았을 때 BlueXP에서 알림을 받게 됩니다. 예를 들면 다음과 같습니다.<block ref="5b65ab6646c17c41bf724ce3fdc19942" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4f6ffa2529265a9e4fcff29a28a16ebe" category="paragraph">기본(읽기-쓰기) 볼륨이 하나 이상 있는 데이터 서비스 스토리지 VM마다 최소 4TiB가 필요합니다. 운영 볼륨의 합계가 4TiB 미만인 경우 BlueXP는 해당 스토리지 VM에 4TiB 최소 요금을 적용합니다.</block>
   <block id="3116f8acc3e396f2ab1859f3fbe8234e" category="summary">BlueXP에서 Cloud Volumes ONTAP를 중지하고 시작하여 클라우드 컴퓨팅 비용을 관리할 수 있습니다.</block>
   <block id="d4cf496f112c8443c55c77f819b95b4b" category="paragraph">특정 시간 간격 동안 Cloud Volumes ONTAP를 종료하여 컴퓨팅 비용을 낮출 수 있습니다. 이 작업을 수동으로 수행하는 대신 특정 시간에 시스템이 자동으로 종료된 후 다시 시작하도록 BlueXP를 구성할 수 있습니다.</block>
@@ -3745,7 +3732,6 @@
   <block id="3cbff90f9e1dd222c93cec86291eb0d2" category="inline-xref">충전 작동 방식을 이해합니다</block>
   <block id="c975ffb3e3e23a37bf8f249186a33e9a" category="paragraph">두 가지 옵션 중 하나를 사용할 경우 가능합니다 <block ref="67a3b6c0cb52274370d571e06a09839a" category="inline-xref-macro-rx"></block>.</block>
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">버전 9.10.0 이하</block>
-  <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">구매한 용량이 3Tib마다 엣지 노드 1개</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP용 Amazon FSx</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Google Cloud용 Cloud Volumes Service</block>
@@ -3858,7 +3844,6 @@
   <block id="5b430d19ce10cad3c93da5d1a58ae5da" category="list-text">ONTAP에서 고급 권한 모드로 들어갑니다.<block ref="b18455e94f1f10f091d6cc4ad2e0507e" prefix=" " category="inline-code"></block></block>
   <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">를 누릅니다<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> 상태가 아닙니다<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>SVM은 필요한 모든 연결 및 사용 권한으로 Azure Key Vault 서비스에 연결할 수 없습니다. Azure 네트워크 정책 및 라우팅으로 인해 프라이빗 VNET가 Azure KeyVault Public 엔드포인트에 도달하지 못하도록 차단하지 않는지 확인합니다. 이러한 경우, VNET 내에서 키 볼트에 액세스하기 위해 Azure 프라이빗 끝점을 사용하는 것이 좋습니다. 또한 종점의 전용 IP 주소를 확인하기 위해 SVM에 정적 호스트 항목을 추가해야 할 수도 있습니다.</block>
   <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">를 클릭합니다<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> 보고합니다<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 초기 구성 시 상태가 로 변경됩니다<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 첫 번째 볼륨이 암호화된 후</block>
-  <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">Cloud Volumes ONTAP 9.12.0까지 Flash Cache 성능 향상을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다. Cloud Volumes ONTAP 9.12.1을 배포하거나 업그레이드할 때 압축을 비활성화할 필요가 없습니다.</block>
   <block id="dd1852694a70af4fe454fcf679ab1071" category="inline-link-macro">Azure 지역 쌍</block>
   <block id="ab83b37918dd75da5385d47425e5a41b" category="paragraph">회사에서 요구하는 경우, BlueXP에서 Azure Private Link 대신 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성하도록 설정을 변경할 수 있습니다. 이 설정을 변경하면 새로 만든 Cloud Volumes ONTAP 시스템에 적용됩니다. 서비스 끝점은 에서만 지원됩니다 <block ref="143d2b52aa05d0c2b5e02a98661c9a57" category="inline-link-macro-rx"></block> 커넥터와 Cloud Volumes ONTAP VNets 사이.</block>
   <block id="23c74e586b63f34de771242b40d88dcf" category="paragraph">커넥터는 해당 커넥터가 관리하는 Cloud Volumes ONTAP 시스템과 동일한 Azure 영역에 배포하거나 에 배포되어야 합니다<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> Cloud Volumes ONTAP 시스템의 경우</block>
@@ -4300,7 +4285,6 @@
   <block id="fc0a70bcada485a87b25779f9232cd77" category="summary">Cloud Volumes ONTAP를 사용하려면 Google Cloud 서비스 계정이 두 가지 용도로 필요합니다. 첫 번째는 데이터 계층화를 통해 콜드 데이터를 Google Cloud의 저비용 오브젝트 스토리지로 계층화할 수 있는 때입니다. 두 번째는 BlueXP 백업 및 복구를 활성화하여 저렴한 객체 스토리지에 볼륨을 백업하는 것입니다.</block>
   <block id="3051092d4bbc438c196cba870b70c79f" category="paragraph">이 단계는 데이터 계층화에만 필요합니다. BlueXP 백업 및 복구에는 필요하지 않습니다.</block>
   <block id="aaaac746aa3fb70f64bdaf1919aefe27" category="admonition">BlueXP 백업 및 복구는 SnapMirror 구현을 사용하여 백업 파일(SnapMirror Cloud라고 함)을 생성하지만 시스템을 업그레이드할 때 백업을 일시 중단할 필요가 없습니다.</block>
-  <block id="35ae8932a2c6f1191cf21157a991b4dd" category="paragraph">클라우드 공급자 마켓플레이스의 용량제 구독을 통해 30일 무료 평가판을 사용할 수 있습니다. 무료 평가판에는 Cloud Volumes ONTAP 및 BlueXP 백업 및 복구가 포함됩니다. 이 평가판은 사용자가 마켓플레이스의 서비스에 가입할 때 시작됩니다.</block>
   <block id="26ee3f5587dc47d76226ef9b570828ff" category="paragraph">BlueXP 디지털 지갑에서 50TiB가 _Essentials Single Node_license에 대해 청구된 것으로 표시됩니다.</block>
   <block id="3ea1315566755c191cc8996f86a9af02" category="paragraph">충전은 Keystone 가입 중 하나 이상의 Cloud Volumes ONTAP HA 쌍에서 대해 확정된 용량 크기를 기준으로 합니다.</block>
   <block id="46b39bb522bc6ece1b6bf75e81db3cbf" category="paragraph">각 볼륨에 대해 프로비저닝된 용량은 주기적으로 Keystone 가입 시 할당된 용량과 비교되며, Keystone 가입 시 초과요금이 부과됩니다.</block>
@@ -4578,7 +4562,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="ba106db82d3577b52130dde5ddd372b4" category="section-title">Cloud Volumes ONTAP 9.13.1 RC1</block>
   <block id="9bc26bf4259fc1662eaaa13a7534abb1" category="paragraph">이제 BlueXP는 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.13.1 을 배포하고 관리할 수 있습니다.</block>
   <block id="3dc988ad93a3ac0c3a1487fc3b6754cf" category="paragraph">Cloud Volumes ONTAP는 S3를 스케일 아웃 스토리지 옵션으로 지원하지만 BlueXP는 이 기능에 대한 관리 기능을 제공하지 않습니다. CLI를 사용하는 것이 Cloud Volumes ONTAP에서 S3 클라이언트 액세스를 구성하는 모범 사례입니다. 자세한 내용은 를 참조하십시오<block ref="49e8fee748cd4c8d6f01bdb03113fc2a" category="inline-link-rx"></block>.</block>
-  <block id="2db3dc5428f2e0831511cd891db676b1" category="paragraph">Essentials 패키지의 경우 4TiB 최소 용량 비용은 보조(데이터 보호) 볼륨만 포함된 스토리지 VM에 적용되지 않습니다. 예를 들어, 1TiB의 보조 데이터를 사용하는 스토리지 VM의 경우 해당 1TiB 데이터에 대한 요금이 청구됩니다. Essentials 이외의 모든 패키지 유형(Optimized(최적화), Professional(프로페셔널), Edge Cache(에지 캐시))에서 4TiB의 최소 용량 충전은 볼륨 유형에 관계없이 적용됩니다.</block>
   <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023년 7월 2일</block>
   <block id="a6d6a466484f2718bba09926e0dfb2c7" category="paragraph">다음 변경 사항은 커넥터의 3.9.31 릴리스에 도입되었습니다.</block>
   <block id="0888a7f5d81ff73f5ec9fa719b091bdc" category="section-title">Azure에서 HA 다중 가용성 영역 구축 지원</block>
@@ -5416,4 +5399,18 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">NAE는 AKV를 사용하여 사용할 수 없습니다. NAE는 외부 지원 KMIP 서버가 필요합니다.</block>
   <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAP 노드는 AKV를 15분마다 폴링하여 접근성과 키 가용성을 확인합니다. 이 폴링 기간은 구성할 수 없으며 폴링 시도에서 4회 연속 실패(총 1시간)가 발생하면 볼륨이 오프라인 상태로 전환됩니다.</block>
   <block id="368b5e8e02b8134e8d1009fff74bf2bc" category="paragraph">Cloud Volumes ONTAP는 를<block ref="09aecd5417a289ba24f2f00949971fbc" category="inline-link-rx"></block>지원합니다. NVE와 NAE는 볼륨의 유휴 데이터 암호화를 FIPS(140-2를 준수하는 소프트웨어 기반 솔루션입니다. NVE와 NAE는 모두 AES 256비트 암호화를 사용합니다.</block>
+  <block id="c89c4d58a7009250769a012cf2451410" category="list-text">AWS에서 Cloud Volumes ONTAP 9.12.0 이전 버전용 Flash Cache를 구성할 경우 Flash Cache의 성능 향상을 활용하려면 모든 볼륨에서 압축을 비활성화해야 합니다. Cloud Volumes ONTAP 9.12.1 이상으로 구축하거나 업그레이드할 때 압축을 해제하지 않아도 됩니다.</block>
+  <block id="f21def4319b19574f5ca7ab45389822b" category="paragraph">+ Optimized 패키지는 BYOL에서 사용할 수 없습니다.</block>
+  <block id="e2299e8e355a9b503858d1f8d800ccaa" category="paragraph">Essentials 패키지의 경우 4TiB 최소 용량 비용은 보조(데이터 보호) 볼륨만 포함된 스토리지 VM에 적용되지 않습니다. 예를 들어, 1TiB의 보조 데이터를 사용하는 스토리지 VM의 경우 해당 1TiB 데이터에 대한 요금이 청구됩니다. 기타 모든 비 Essentials 패키지 유형(Optimized 및 Professional)에서는 볼륨 유형에 상관없이 4TiB의 최소 용량 충전이 적용됩니다.</block>
+  <block id="ea4ba4158f6b2b895b0418072f2ba06d" category="paragraph">노드 기반 라이센스는 이전 세대 라이센스 모델로, 노드별로 Cloud Volumes ONTAP에 대한 라이센스를 부여할 수 있도록 지원합니다. 신규 고객은 이 라이센스 모델을 사용할 수 없습니다. 노드별 충전은 위에서 설명한 용량 기준 충전 방법으로 대체되었습니다.</block>
+  <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024년 8월 8일</block>
+  <block id="e84c1e70dc9a2186ec21e22a3e9cbda0" category="section-title">Edge Cache 라이선스 패키지는 더 이상 사용되지 않습니다</block>
+  <block id="882b50ca44d46bfb8d9502390cfeaf96" category="paragraph">Edge Cache 용량 기반 라이센스 패키지는 향후 Cloud Volumes ONTAP 배포에 더 이상 사용할 수 없습니다. 그러나 API를 사용하여 이 기능을 사용할 수 있습니다.</block>
+  <block id="a5729938408dc232ea97fb5d7d00b71c" category="section-title">Azure 기반 Flash Cache에 대해 지원되는 최소 ONTAP 버전</block>
+  <block id="9eed4224485f0ec8f22ac2ca0b031514" category="paragraph">Azure에서 Flash Cache를 구성하는 데 필요한 최소 ONTAP 버전은 9.13.1 GA입니다. ONTAP 9.13.1 GA 이상 버전만 Azure용 Cloud Volumes ONTAP 시스템에 Flash Cache를 구축하는 데 사용할 수 있습니다.</block>
+  <block id="2936dc7efe93e6248aca38d21b92cc62" category="paragraph">지원되는 구성은 를 참조하십시오<block ref="10c1bb30d666a83202b9e687d7b06d1b" category="inline-link-rx"></block>.</block>
+  <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">마켓플레이스 구독에 대한 무료 평가판은 더 이상 사용되지 않습니다</block>
+  <block id="860dc5e7395e0f2c15a42ffdef98eca4" category="paragraph">클라우드 제공업체의 마켓플레이스에서 선불 종량제 구독에 대한 30일 자동 무료 평가판은 더 이상 Cloud Volumes ONTAP에서 사용할 수 없습니다. 모든 유형의 마켓플레이스 가입(PAYGO 또는 연간 계약)에 대한 청구는 무료 평가판 기간 없이 처음 사용할 때 활성화됩니다.</block>
+  <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">캐나다 서부 지역은 현재 AWS에서 지원됩니다</block>
+  <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">캐나다 서부 지역은 현재 Cloud Volumes ONTAP 9.12.1 GA 이상에 대해 AWS에서 지원됩니다.</block>
 </blocks>

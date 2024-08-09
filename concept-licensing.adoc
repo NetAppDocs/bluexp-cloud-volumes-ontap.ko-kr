@@ -152,33 +152,6 @@ NOTE: BlueXP 백업 및 복구를 위해 PAYGO 구독이 필요하지만 이 서
 
 
 
-==== 에지 캐시
-
-Cloud Volumes Edge Cache에 대한 라이센스를 제공합니다.
-
-* 분산 엔터프라이즈를 위한 비즈니스 연속성 및 데이터 보호 기능을 제공하는 Professional 패키지와 동일한 기능입니다
-* 각 위치에서 설치 공간이 작은 Windows VM을 통한 지능형 에지 캐싱
-* 구매한 용량이 3Tib마다 엣지 노드 1개
-
-
-ifdef::azure[]
-
-* Azure Marketplace에서 용량제 오퍼링을 제공하거나 연간 계약으로 사용할 수 있습니다
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Google Cloud Marketplace에서 선불 종량제 또는 연간 계약으로 제공됩니다
-
-
-endif::gcp[]
-
-https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge Cache를 통해 비즈니스를 지원하는 방법에 대해 자세히 알아보십시오"^]
-
-
-
 === 소비 모델
 
 용량 기반 라이센스 패키지는 다음 소비 모델에서 사용할 수 있습니다.
@@ -188,7 +161,7 @@ https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge Cache를 �
 
 ifdef::azure[]
 
-+ 최적화된 및 Edge Cache 패키지는 BYOL에서 사용할 수 없습니다.
++ Optimized 패키지는 BYOL에서 사용할 수 없습니다.
 
 endif::azure[]
 
@@ -224,19 +197,6 @@ link:task-manage-capacity-licenses.html["충전 방법을 변경하는 방법에
 === 가격
 
 가격에 대한 자세한 내용은 를 참조하십시오 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXP 웹 사이트"^].
-
-
-
-=== 무료 평가판
-
-클라우드 공급자 마켓플레이스의 용량제 구독을 통해 30일 무료 평가판을 사용할 수 있습니다. 무료 평가판에는 Cloud Volumes ONTAP 및 BlueXP 백업 및 복구가 포함됩니다. 이 평가판은 사용자가 마켓플레이스의 서비스에 가입할 때 시작됩니다.
-
-인스턴스 또는 용량 제한은 없습니다. 원하는 만큼 Cloud Volumes ONTAP 시스템을 구축하고 30일 동안 무료로 필요한 용량을 할당할 수 있습니다. 무료 평가판은 30일 후에 자동으로 유료 시간별 구독으로 변환됩니다.
-
-Cloud Volumes ONTAP에는 시간당 소프트웨어 라이센스 비용이 부과되지 않지만, 클라우드 공급자의 인프라 비용이 여전히 적용됩니다.
-
-
-TIP: 무료 평가판이 시작될 때, 7일 남았을 때, 1일 남았을 때 BlueXP에서 알림을 받게 됩니다. 예를 들면 다음과 같습니다.image:screenshot-free-trial-notification.png["무료 평가판 사용 기간이 7일 남다는 BlueXP 인터페이스의 알림 스크린샷."]
 
 
 
@@ -294,7 +254,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["N
 
 아직 볼륨을 프로비저닝하지 않은 경우 최소 요금이 적용되지 않습니다.
 
-Essentials 패키지의 경우 4TiB 최소 용량 비용은 보조(데이터 보호) 볼륨만 포함된 스토리지 VM에 적용되지 않습니다. 예를 들어, 1TiB의 보조 데이터를 사용하는 스토리지 VM의 경우 해당 1TiB 데이터에 대한 요금이 청구됩니다. Essentials 이외의 모든 패키지 유형(Optimized(최적화), Professional(프로페셔널), Edge Cache(에지 캐시))에서 4TiB의 최소 용량 충전은 볼륨 유형에 관계없이 적용됩니다.
+Essentials 패키지의 경우 4TiB 최소 용량 비용은 보조(데이터 보호) 볼륨만 포함된 스토리지 VM에 적용되지 않습니다. 예를 들어, 1TiB의 보조 데이터를 사용하는 스토리지 VM의 경우 해당 1TiB 데이터에 대한 요금이 청구됩니다. 기타 모든 비 Essentials 패키지 유형(Optimized 및 Professional)에서는 볼륨 유형에 상관없이 4TiB의 최소 용량 충전이 적용됩니다.
 
 
 
@@ -440,7 +400,7 @@ endif::gcp[]
 
 == 노드 기반 라이센스
 
-노드 기반 라이센스는 이전 세대 라이센스 모델로, 노드별로 Cloud Volumes ONTAP에 대한 라이센스를 부여할 수 있도록 지원합니다. 이 라이센스 모델은 신규 고객에는 제공되지 않으며 무료 평가판을 사용할 수 없습니다. 노드별 충전은 위에서 설명한 용량 기준 충전 방법으로 대체되었습니다.
+노드 기반 라이센스는 이전 세대 라이센스 모델로, 노드별로 Cloud Volumes ONTAP에 대한 라이센스를 부여할 수 있도록 지원합니다. 신규 고객은 이 라이센스 모델을 사용할 수 없습니다. 노드별 충전은 위에서 설명한 용량 기준 충전 방법으로 대체되었습니다.
 
 기존 고객은 노드 기반 라이센스를 계속 사용할 수 있습니다.
 
