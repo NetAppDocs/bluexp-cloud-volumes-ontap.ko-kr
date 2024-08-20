@@ -44,14 +44,6 @@ Azure에서 Flash Cache를 구성하는 데 필요한 최소 ONTAP 버전은 9.1
 
 
 
-=== 캐나다 서부 지역은 현재 AWS에서 지원됩니다
-
-캐나다 서부 지역은 현재 Cloud Volumes ONTAP 9.12.1 GA 이상에 대해 AWS에서 지원됩니다.
-
-모든 지역 목록은 를 참조하십시오 https://bluexp.netapp.com/cloud-volumes-global-regions["AWS에 따른 글로벌 지역 지도"^].
-
-
-
 == 2024년 6월 10일
 
 
