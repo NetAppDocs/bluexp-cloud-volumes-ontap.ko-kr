@@ -25,7 +25,7 @@ summary: 몇 가지 단계를 통해 Azure용 Cloud Volumes ONTAP를 시작하�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 구성을 계획합니다
 [role="quick-margin-para"]
-BlueXP는 워크로드 요구 사항에 맞는 사전 구성된 패키지를 제공하거나 사용자가 직접 구성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다. link:task-planning-your-config-azure.html["자세한 정보"].
+BlueXP는 워크로드 요구 사항에 맞는 사전 구성된 패키지를 제공하거나 사용자가 직접 구성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다. 자세한 내용은 을 link:task-planning-your-config-azure.html["Azure에서 Cloud Volumes ONTAP 구성 계획"]참조하십시오.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] 네트워크 설정
 [role="quick-margin-list"]

@@ -71,7 +71,7 @@ GCP 디스크 유형입니다:: Cloud Volumes ONTAP용 볼륨을 생성할 때 C
 * _Zonal Balanced 영구 디스크 _: 이 SSD는 GB당 더 낮은 IOPS를 제공하여 성능과 비용을 균형 있게 조정합니다.
 * _Zonal Standard 영구 디스크_: 표준 영구 디스크는 경제적이며 순차적 읽기/쓰기 작업을 처리할 수 있습니다.
 +
-자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/disks/#pdspecs["Google Cloud 설명서: Zonal Persistent 디스크(Standard 및 SSD)"^].
+자세한 내용은 을 https://cloud.google.com/compute/docs/disks/#pdspecs["Google Cloud 설명서: Zonal Persistent 디스크(Standard 및 SSD)"^]참조하십시오.
 
 
 

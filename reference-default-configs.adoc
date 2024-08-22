@@ -97,7 +97,7 @@ NOTE: 클라우드 공급자의 요구사항으로 인해 LIF 페일오버가 Cl
 +
 백업은 \http://ipaddress/occm/offboxconfig/ 에서 액세스할 수 있습니다. 여기서 _ipaddress_는 커넥터 호스트의 IP 주소입니다.
 
-** BlueXP는 다른 관리 도구(예: System Manager 또는 CLI)와 몇 가지 볼륨 속성을 다르게 설정합니다.
+** BlueXP 는 몇 가지 볼륨 특성을 다른 관리 툴과 다르게 설정합니다(예: ONTAP System Manager 또는 ONTAP CLI).
 +
 다음 표에는 BlueXP가 기본값과 다르게 설정하는 볼륨 특성이 나열되어 있습니다.
 
@@ -127,7 +127,7 @@ NOTE: 계정 관리자는 설정 페이지에서 이 값을 수정할 수 있습
 | UNIX 권한(NFS에만 해당) | 777 
 |===
 +
-를 참조하십시오 link:https://docs.netapp.com/us-en/ontap-cli-9121/volume-create.html["ONTAP_volume create_man 페이지"] 이러한 속성에 대한 자세한 내용은 를 참조하십시오.
+이러한 속성에 대한 자세한 내용은 을 link:https://docs.netapp.com/us-en/ontap-cli-9121/volume-create.html["ONTAP_volume create_man 페이지"]참조하십시오.
 
 
 
@@ -189,6 +189,9 @@ Cloud Volumes ONTAP에 대해 선택한 가상 시스템이 Ultra SSD를 지원�
 * 코어 절약을 위한 1024GiB 표준 HDD 디스크 1개
 * 각 부팅 디스크 및 루트 디스크에 대해 Azure 스냅샷 1개
 * Azure에서 기본적으로 모든 디스크는 저장된 상태로 암호화됩니다.
++
+Cloud Volumes ONTAP용으로 선택한 가상 시스템에서 Premium SSD v2 관리 디스크를 데이터 디스크로 지원하는 경우, 시스템은 NVRAM용 32GiB Premium SSD v2 관리 디스크를 사용하고, 루트 디스크로 다른 디스크를 사용합니다.
+
 
 
 
@@ -210,7 +213,7 @@ NOTE: 스냅샷은 재부팅 시 자동으로 생성됩니다.
 
 .여러 가용 영역에 공유 관리형 디스크가 있는 HA Pair
 * 부팅 볼륨용 10GiB 프리미엄 SSD 디스크 2개(노드당 1개)
-* 루트 볼륨에 대해 2개의 512GiB 프리미엄 스토리지 페이지 Blob(노드당 1개)
+* 루트 볼륨용 512GiB Premium SSD 디스크 2개(노드당 1개)
 * 코어 저장용 1024GiB 표준 HDD 디스크 2개(노드당 1개)
 * NVRAM을 위한 512GiB 프리미엄 SSD 디스크 2개(노드당 1개)
 * 각 부팅 디스크 및 루트 디스크에 대해 Azure 스냅샷 1개
@@ -219,6 +222,16 @@ NOTE: 스냅샷은 재부팅 시 자동으로 생성됩니다.
 NOTE: 스냅샷은 재부팅 시 자동으로 생성됩니다.
 
 * Azure에서 기본적으로 모든 디스크는 저장된 상태로 암호화됩니다.
+
+
+.단일 가용 영역에서 공유 관리형 디스크가 있는 HA Pair
+* 부팅 볼륨용 10GiB 프리미엄 SSD 디스크 2개(노드당 1개)
+* 루트 볼륨용 512GiB Premium SSD Shared Managed 디스크 2개(노드당 1개)
+* 코어 저장용 1024GiB 표준 HDD 디스크 2개(노드당 1개)
+* NVRAM용 512GiB Premium SSD 관리형 디스크 2개(노드당 1개)
++
+가상 머신에서 Premium SSD v2 Managed Disks를 데이터 디스크로 지원하는 경우, 루트 볼륨에 32GiB Premium SSD v2 Managed Disks for NVRAM 및 512GiB Premium SSD v2 Shared Managed Disks를 사용합니다.
+
 
 
 endif::azure[]

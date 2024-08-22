@@ -145,7 +145,7 @@ endif::gcp[]
 * BlueXP 백업 및 복구를 사용하는 무제한 볼륨 백업이 포함되지만 프로페셔널 패키지를 사용하는 Cloud Volumes ONTAP 시스템에 대해서만 포함됩니다.
 +
 
-NOTE: BlueXP 백업 및 복구를 위해 PAYGO 구독이 필요하지만 이 서비스 사용과 관련하여 비용은 발생하지 않습니다. BlueXP 백업 및 복구의 라이센스 설정에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-licensing-cloud-backup.html["BlueXP 백업 및 복구에 대한 라이센스를 설정합니다"^].
+NOTE: BlueXP 백업 및 복구를 위해 PAYGO 구독이 필요하지만 이 서비스 사용과 관련하여 비용은 발생하지 않습니다. BlueXP  백업 및 복구의 라이센스 설정에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-licensing-cloud-backup.html["BlueXP 백업 및 복구에 대한 라이센스를 설정합니다"^]참조하십시오.
 
 * NetApp의 클라우드 데이터 서비스를 추가 비용으로 이용할 수 있습니다
 

@@ -83,6 +83,8 @@ sidebar:
         url: "/task-set-up-licensing-azure.html"
       - title: 고가용성 모드를 활성화합니다
         url: "/task-azure-high-availability-mode.html"
+      - title: 단일 가용 영역에 대해 VMOrchestrator ZonalMultiFD를 사용하도록 설정합니다
+        url: "/task-saz-feature.html"
       - title: Azure에서 Cloud Volumes ONTAP를 실행합니다
         url: "/task-deploying-otc-azure.html"
       - title: Azure 플랫폼 이미지 검증

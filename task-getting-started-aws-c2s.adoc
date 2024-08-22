@@ -628,7 +628,7 @@ CAUTION: 마법사를 통해 선택하는 동안 * 서비스 * 아래에서 * Da
 .다수의 가용 영역에 Cloud Volumes ONTAP HA를 구축하기 위한 참고 사항
 HA 쌍 마법사를 완료하면 다음을 유의하십시오.
 
-* 여러 가용 영역(AZ)에 Cloud Volumes ONTAP HA를 구축할 때는 전송 게이트웨이를 구성해야 합니다. 을 참조하십시오 link:task-setting-up-transit-gateway.html["AWS 전송 게이트웨이를 설정합니다"].
+* 여러 가용 영역(AZ)에 Cloud Volumes ONTAP HA를 구축할 때는 전송 게이트웨이를 구성해야 합니다. 자세한 내용은 을 link:task-setting-up-transit-gateway.html["AWS 전송 게이트웨이를 설정합니다"]참조하십시오.
 * 발행 당시 AWS Top Secret Cloud에서 두 개의 AZ만 사용할 수 있었기 때문에 구성을 다음과 같이 배포합니다.
 +
 ** 노드 1: 가용성 영역 A

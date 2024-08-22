@@ -40,10 +40,10 @@ Cloud Volumes ONTAP의 보안 그룹에는 인바운드 및 아웃바운드 규�
 | 모든 ICMP | 모두 | 인스턴스에 Ping을 수행 중입니다 
 
 
-| HTTP | 80 | 클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 HTTP 액세스 
+| HTTP | 80 | 클러스터 관리 LIF의 IP 주소를 사용하여 ONTAP System Manager 웹 콘솔에 대한 HTTP 액세스 
 
 
-| HTTPS | 443 | 클러스터 관리 LIF의 IP 주소를 사용하여 System Manager 웹 콘솔에 대한 커넥터 및 HTTPS 액세스와의 연결 
+| HTTPS | 443 | 커넥터 및 HTTPS로 연결 클러스터 관리 LIF의 IP 주소를 사용하여 ONTAP System Manager 웹 콘솔에 액세스합니다 
 
 
 | SSH를 클릭합니다 | 22 | 클러스터 관리 LIF 또는 노드 관리 LIF의 IP 주소에 SSH를 액세스할 수 있습니다 

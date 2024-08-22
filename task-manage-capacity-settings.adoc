@@ -42,7 +42,7 @@ link:concept-storage-management.html#capacity-management["용량 관리 모드�
 여유 공간 비율은 다음과 같이 계산됩니다.
 (Aggregate capacity - 애그리게이트에서 사용하는 총 용량입니다.)/애그리게이트 용량입니다
 
-을 참조하십시오 link:concept-storage-management.html#automatic-capacity-management["자동 용량 관리"] 이제 용량을 Cloud Volumes ONTAP에서 자동으로 관리합니다.
+link:concept-storage-management.html#automatic-capacity-management["자동 용량 관리"]자세한 내용은 를 참조하십시오. 이제 용량이 Cloud Volumes ONTAP에서 자동으로 관리됩니다.
 
 --
 Aggregate Capacity Thresholds - Data Tiering의 여유 공간 비율입니다:: 데이터를 용량 계층(오브젝트 스토리지)으로 계층화할 때 성능 계층(디스크)에 필요한 여유 공간을 정의합니다.

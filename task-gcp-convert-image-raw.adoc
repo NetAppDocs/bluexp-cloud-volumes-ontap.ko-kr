@@ -146,4 +146,4 @@ total 1565036
 $ tar -xf CVO_GCP_Signed_Digest.tar.gz
 ----
 
-NOTE: 을 참조하십시오 https://cloud.google.com/compute/docs/images/export-image#console["이미지 내보내기에 대한 Google Cloud 문서"^] Google Cloud를 통해 이미지를 내보내는 방법에 대한 자세한 내용은
+NOTE: Google Cloud를 통해 이미지를 내보내는 방법에 대한 자세한 내용은 을 참조하십시오 https://cloud.google.com/compute/docs/images/export-image#console["이미지 내보내기에 대한 Google Cloud 문서"^].

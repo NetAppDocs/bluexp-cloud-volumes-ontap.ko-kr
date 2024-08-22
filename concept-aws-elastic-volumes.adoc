@@ -37,7 +37,7 @@ Elastic Volumes에서 설정된 애그리게이트에는 2개의 RAID 그룹에 
 
 
 
-https://aws.amazon.com/ebs/features/["AWS의 Elastic Volumes에 대해 자세히 알아보십시오"^]
+https://aws.amazon.com/ebs/features/["AWS 설명서: AWS의 Elastic Volumes에 대해 자세히 알아보십시오"^]
 
 
 

@@ -26,7 +26,7 @@ image::graphic_azure_check_signature.png[그래픽 Azure 서명 확인]
 
 * 에서 Azure Image Digest 파일을 다운로드합니다 https://mysupport.netapp.com/site/["NetApp Support 사이트"^] 다이제스트 파일(.sig), 공개 키 인증서 파일(.pem) 및 체인 인증서 파일(.pem)의 압축을 풉니다.
 +
-을 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["Azure Image Digest 파일을 다운로드합니다"^] 를 참조하십시오.
+자세한 내용은 을 link:task-azure-download-digest-file.html["Azure Image Digest 파일을 다운로드합니다"] 참조하십시오.
 
 * 신뢰 체인을 확인합니다.
 * 공개 키 인증서(.pem)에서 공개 키(.pub)를 추출합니다.

@@ -30,12 +30,12 @@ BlueXP에서는 여러 가지 방법으로 새 볼륨을 만들 수 있습니다
 볼륨 프로비저닝에 대한 몇 가지 참고 사항:
 
 * iSCSI 볼륨을 생성할 때 BlueXP에서 자동으로 LUN을 생성합니다. 볼륨 당 하나의 LUN만 생성하므로 관리가 필요 없습니다. 볼륨을 생성한 후 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connect-lun.html["IQN을 사용하여 호스트에서 LUN에 연결합니다"^].
-* System Manager 또는 CLI에서 추가 LUN을 생성할 수 있습니다.
+* ONTAP System Manager 또는 ONTAP CLI에서 추가 LUN을 생성할 수 있습니다.
 
 
 ifdef::aws[]
 
-* AWS에서 CIFS를 사용하려면 DNS와 Active Directory를 설정해야 합니다. 자세한 내용은 을 참조하십시오 link:reference-networking-aws.html["Cloud Volumes ONTAP for AWS의 네트워킹 요구사항"].
+* AWS에서 CIFS를 사용하려면 DNS 및 Active Directory를 설정해야 합니다. 자세한 내용은 을 link:reference-networking-aws.html["Cloud Volumes ONTAP for AWS의 네트워킹 요구사항"]참조하십시오.
 * Cloud Volumes ONTAP 구성에서 Amazon EBS Elastic Volumes 기능을 지원하는 경우 원하는 대로 구성할 수 있습니다 link:concept-aws-elastic-volumes.html["볼륨을 생성할 때 발생하는 상황에 대해 자세히 알아보십시오"].
 
 
@@ -154,7 +154,7 @@ ifdef::gcp[]
 endif::gcp[]
 
 DNS 도메인:: SVM(Cloud Volumes ONTAP 스토리지 가상 머신)용 DNS 도메인 대부분의 경우 도메인은 AD 도메인과 동일합니다.
-NTP 서버:: Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 를 참조하십시오 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP 자동화 문서"^] 를 참조하십시오.
+NTP 서버:: Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 자세한 내용은 를 https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP 자동화 문서"^]참조하십시오.
 +
 --
 CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.
@@ -251,4 +251,4 @@ endif::aws[]
 
 CIFS 공유를 프로비저닝한 경우 파일 및 폴더에 대한 사용자 또는 그룹 권한을 제공하고 해당 사용자가 공유를 액세스하고 파일을 생성할 수 있는지 확인합니다.
 
-볼륨에 할당량을 적용하려면 System Manager 또는 CLI를 사용해야 합니다. 할당량을 사용하면 사용자, 그룹 또는 qtree가 사용하는 파일 수와 디스크 공간을 제한하거나 추적할 수 있습니다.
+볼륨에 할당량을 적용하려면 ONTAP System Manager 또는 ONTAP CLI를 사용해야 합니다. 할당량을 사용하면 사용자, 그룹 또는 qtree가 사용하는 파일 수와 디스크 공간을 제한하거나 추적할 수 있습니다.
