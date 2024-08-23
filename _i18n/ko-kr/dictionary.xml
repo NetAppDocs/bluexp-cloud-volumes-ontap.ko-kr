@@ -5441,4 +5441,8 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="0c3b75998af156d79139a5d58ce3e940" category="paragraph">자세한 내용은 을 <block ref="40105eada44e788e7e7b2f6a3662e9b3" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="879d073710741f985860274175b1a953" category="paragraph">NDMP를 구성하고 사용하는 방법에 대한 자세한 내용은 을<block ref="9c57f7cf04e123991a3c88e286feb189" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="a0a58ed3f539424b6c64463b7e8c6a6d" category="paragraph">이 새로운 기능에 대한 자세한 내용은 을<block ref="d02c006bc52cfaf2532a010e03aa1ef3" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="caf47538a5b97cacf4aba3098b6f9924" category="section-title">2024년 8월 23일</block>
+  <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">캐나다 서부 지역은 현재 AWS에서 지원됩니다</block>
+  <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">캐나다 서부 지역은 현재 Cloud Volumes ONTAP 9.12.1 GA 이상에 대해 AWS에서 지원됩니다.</block>
+  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">모든 지역 목록은 를 참조하십시오<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
 </blocks>
