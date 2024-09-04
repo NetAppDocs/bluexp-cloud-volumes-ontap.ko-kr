@@ -5351,11 +5351,7 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="d91c9bd9d601398d431e2acc5559f7bf" category="paragraph">자세한 내용은 및 을 <block ref="f7e49e28b2875e2913382dd3096ff790" category="inline-link-macro-rx"></block> <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="8c286011c74e75b22d1d90dbeb4504b6" category="list-text">* 서비스 *: Cloud Volumes ONTAP와 함께 사용할 것인지 여부에 따라 개별 서비스를 활성화 또는 비활성화합니다.</block>
   <block id="e9e34ff3ab97c79b3c316c17375f6ff1" category="inline-link-macro">단일 가용 영역에 대해 VMOrchestrator ZonalMultiFD를 사용하도록 설정합니다</block>
-  <block id="5d53fdb6098c234fa40898b914a4f5db" category="paragraph">Cloud Volumes ONTAP 9.15.1부터 VM 인스턴스를 LRS(Local-Redundant Storage) 단일 가용 영역에 배포할 수 있습니다. 또한<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block> 구독에 대해 기능을 활성화해야 합니다. 이 기능을 사용하면 동일한 가용 영역에 고가용성(HA) 쌍을 쉽게 구축할 수 있습니다. <block ref="8237f408225e4c565d3ae8daf52a7def" category="inline-link-macro-rx"></block>및 <block ref="88705e19880d9fa1af5df70699e53b95" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
-  <block id="2976779596586c38da75f46052ad2926" category="list-text">단일 가용 영역의 경우 Azure 지역, 가용 영역, VNet 및 서브넷을 선택합니다. Cloud Volumes ONTAP 9.15.1부터 단일 가용 영역에 VM 인스턴스를 설치할 수 있습니다. 이 모드를 지원하는 지역을 선택해야 합니다. 사용자가 선택한 지역이 영역 배포를 지원하지 않는 경우 이전 LRS의 비영역 배포 모델을 따릅니다.</block>
-  <block id="fcb7516396bf1d9722f3e765d3004427" category="inline-link">Microsoft Azure 설명서: Virtual Machine Scale Sets 설명서</block>
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft Azure 웹 사이트: 지역별 제품</block>
-  <block id="6d613bce1a88fcb164ac593c1058e246" category="paragraph">이 배포 모드 및 지원되는 Azure 영역에 대한 자세한 내용은<block ref="a0eb41cb535bf2a39d70134c95375180" category="inline-link-rx"></block> 및 을 참조하십시오<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>.</block>
   <block id="e4eaa3d391d7d55d8c20cbf06dc81915" category="list-text">여러 가용 영역의 경우 지역, VNet, 서브넷, 노드 1의 영역, 노드 2의 영역을 선택합니다.</block>
   <block id="407f144abfa1ac000a5a8035a2a3eb77" category="paragraph">디스크 크기 선택에 대한 자세한 내용은 을 <block ref="693042947faf99c4ded2e1854ea1714d" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="561bec0387138d2b07f137df6774960c" category="paragraph">자세한 내용은 및 을 <block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block> <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>참조하십시오.</block>
@@ -5445,4 +5441,13 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">캐나다 서부 지역은 현재 AWS에서 지원됩니다</block>
   <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">캐나다 서부 지역은 현재 Cloud Volumes ONTAP 9.12.1 GA 이상에 대해 AWS에서 지원됩니다.</block>
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">모든 지역 목록은 를 참조하십시오<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
+  <block id="208717af2c6557faae5e8d47b38680bd" category="paragraph">영역 배포에서는 다음 조건이 충족될 경우 Premium SSD v2 Managed Disks를 사용합니다.</block>
+  <block id="6326d313b843fff1d57ed50ec7c000f1" category="list-text">Cloud Volumes ONTAP 버전은 9.15.1 이상입니다.</block>
+  <block id="fd4ec163c1cf6efd42bc780358b7fb84" category="list-text">선택한 지역 및 영역은 Premium SSD v2 Managed Disks를 지원합니다. 지원되는 지역에 대한 자세한 내용은 을 <block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="a9b7d8164fa6256aced367d79aa2abab" category="inline-link-macro">Microsoft.Compute/VMOrchestratorZonalMultiFD 피처</block>
+  <block id="218949100f9bb1c7fe8ef525701547a0" category="list-text">이 구독은 Microsoft에 등록되어 <block ref="b47370f17ae59423c751ec1694c9ca74" category="inline-link-macro-rx"></block>있습니다.</block>
+  <block id="d63d6372ae20eb19f707718f270a6b48" category="list-text"><block ref="d63d6372ae20eb19f707718f270a6b48" category="inline-link-macro-rx"></block></block>
+  <block id="fadac06c68e9ffce4bb17bd0d6ec5f2b" category="paragraph">다음 조건을 충족할 경우, 단일 가용 영역에 HA 쌍을 구축하고 Premium SSD v2 Managed Disks를 사용할 수 있습니다.</block>
+  <block id="ed0e2426cd36bf5b4eb9a140ae9a7508" category="list-text">단일 가용 영역의 경우 Azure 지역, 가용 영역, VNet 및 서브넷을 선택합니다.</block>
+  <block id="e09953ef98be5a0cd4cc4ad0c288c775" category="paragraph">Cloud Volumes ONTAP 9.15.1부터 Azure의 AZ(단일 가용 영역)에 HA 모드로 가상 머신(VM) 인스턴스를 배포할 수 있습니다. 이 배포를 지원하는 영역과 지역을 선택해야 합니다. 영역 또는 영역이 영역 배포를 지원하지 않는 경우 LRS에 대한 이전 비영역 배포 모드를 따릅니다. 관리되는 공유 디스크에 대해 지원되는 구성에 대한 자세한 내용은 을 <block ref="2148c58538cc3adf327c3ade110b8487" category="inline-link-macro-rx"></block>참조하십시오.</block>
 </blocks>

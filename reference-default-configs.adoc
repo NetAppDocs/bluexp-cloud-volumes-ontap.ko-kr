@@ -229,9 +229,15 @@ NOTE: 스냅샷은 재부팅 시 자동으로 생성됩니다.
 * 루트 볼륨용 512GiB Premium SSD Shared Managed 디스크 2개(노드당 1개)
 * 코어 저장용 1024GiB 표준 HDD 디스크 2개(노드당 1개)
 * NVRAM용 512GiB Premium SSD 관리형 디스크 2개(노드당 1개)
-+
+
+
 가상 머신에서 Premium SSD v2 Managed Disks를 데이터 디스크로 지원하는 경우, 루트 볼륨에 32GiB Premium SSD v2 Managed Disks for NVRAM 및 512GiB Premium SSD v2 Shared Managed Disks를 사용합니다.
 
+다음 조건을 충족할 경우, 단일 가용 영역에 HA 쌍을 구축하고 Premium SSD v2 Managed Disks를 사용할 수 있습니다.
+
+* Cloud Volumes ONTAP 버전은 9.15.1 이상입니다.
+* 선택한 지역 및 영역은 Premium SSD v2 Managed Disks를 지원합니다. 지원되는 지역에 대한 자세한 내용은 을  https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft Azure 웹 사이트: 지역별 제품"^]참조하십시오.
+* 이 구독은 Microsoft에 등록되어 link:task-saz-feature.html["Microsoft.Compute/VMOrchestratorZonalMultiFD 피처"]있습니다.
 
 
 endif::azure[]

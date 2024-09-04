@@ -308,9 +308,6 @@ Azure에서 Cloud Volumes ONTAP HA 쌍을 실행하려면 BlueXP에서 HA 작업
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 . * 서비스 *: Cloud Volumes ONTAP와 함께 사용할 것인지 여부에 따라 개별 서비스를 활성화 또는 비활성화합니다.
 +
-Cloud Volumes ONTAP 9.15.1부터 VM 인스턴스를 LRS(Local-Redundant Storage) 단일 가용 영역에 배포할 수 있습니다. 또한 `Microsoft.Compute/VMOrchestratorZonalMultiFD` 구독에 대해 기능을 활성화해야 합니다. 이 기능을 사용하면 동일한 가용 영역에 고가용성(HA) 쌍을 쉽게 구축할 수 있습니다. link:task-saz-feature.html["단일 가용 영역에 대해 VMOrchestrator ZonalMultiFD를 사용하도록 설정합니다"]및 link:task-azure-high-availability-mode.html["Azure에서 고가용성 모드를 활성화합니다"]을 참조하십시오.
-
-+
 ** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP 분류에 대해 자세히 알아보십시오"^]
 ** https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXP 백업 및 복구에 대해 자세히 알아보십시오"^]
 +
@@ -323,9 +320,9 @@ TIP: WORM 및 데이터 계층화를 사용하려면 BlueXP 백업 및 복구를
 +
 .. 단일 가용성 영역 * 또는 * 다중 가용성 영역 * 을 선택합니다.
 +
-*** 단일 가용 영역의 경우 Azure 지역, 가용 영역, VNet 및 서브넷을 선택합니다. Cloud Volumes ONTAP 9.15.1부터 단일 가용 영역에 VM 인스턴스를 설치할 수 있습니다. 이 모드를 지원하는 지역을 선택해야 합니다. 사용자가 선택한 지역이 영역 배포를 지원하지 않는 경우 이전 LRS의 비영역 배포 모델을 따릅니다.
+*** 단일 가용 영역의 경우 Azure 지역, 가용 영역, VNet 및 서브넷을 선택합니다.
 +
-이 배포 모드 및 지원되는 Azure 영역에 대한 자세한 내용은 https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azure 설명서: Virtual Machine Scale Sets 설명서"^] 및 을 참조하십시오 https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft Azure 웹 사이트: 지역별 제품"^].
+Cloud Volumes ONTAP 9.15.1부터 Azure의 AZ(단일 가용 영역)에 HA 모드로 가상 머신(VM) 인스턴스를 배포할 수 있습니다. 이 배포를 지원하는 영역과 지역을 선택해야 합니다. 영역 또는 영역이 영역 배포를 지원하지 않는 경우 LRS에 대한 이전 비영역 배포 모드를 따릅니다. 관리되는 공유 디스크에 대해 지원되는 구성에 대한 자세한 내용은 을 link:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["공유 관리 디스크를 사용하는 HA 단일 가용성 영역 구성"]참조하십시오.
 
 *** 여러 가용 영역의 경우 지역, VNet, 서브넷, 노드 1의 영역, 노드 2의 영역을 선택합니다.
 
