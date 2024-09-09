@@ -48,6 +48,6 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/media/notice.pdf["BlueXP에 대한 고지 사항"^]
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/legal-notices.html#open-source["Cloud Volumes ONTAP 중재자를 위한 고지 사항"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/legal-notices.html#open-source["Cloud Volumes ONTAP에 대한 고지 사항"^]
 * https://docs.netapp.com/us-en/ontap/reference_legal_notices.html#open-source["ONTAP에 대한 고지 사항"^]
 
