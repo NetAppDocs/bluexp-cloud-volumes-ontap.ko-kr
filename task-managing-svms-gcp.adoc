@@ -102,6 +102,17 @@ BlueXP API를 사용하여 Google Cloud의 Cloud Volumes ONTAP 시스템에서 �
 
 BlueXP는 Google Cloud에 필요한 IP 주소를 할당하고 SMB/NFS 액세스를 위한 데이터 LIF와 아웃바운드 SMB 통신을 위한 iSCSI LIF를 사용하여 스토리지 VM을 생성합니다.
 
+BlueXP 은 또한 `default-data-files` NAS 데이터 LIF에서 다음 서비스를 제거한 후 iSCSI 데이터 LIF에 추가하여 데이터 스토리지 VM의 정책을 수정합니다.
+
+* `data-fpolicy-client`
+* `management-ad-client`
+* `management-dns-client`
+* `management-ldap-client`
+* `management-nis-client`
+
+
+Cloud Volumes ONTAP가 아웃바운드 관리 연결에 iSCSI LIF를 사용할 수 있도록 하기 때문에 서비스를 수정해야 합니다.
+
 .Google Cloud 권한이 필요합니다
 Connector에는 Cloud Volumes ONTAP HA 쌍에 대한 스토리지 VM을 생성하고 관리할 수 있는 특정 권한이 필요합니다. 필요한 권한은 에 포함되어 있습니다 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["NetApp에서 제공하는 정책"].
 

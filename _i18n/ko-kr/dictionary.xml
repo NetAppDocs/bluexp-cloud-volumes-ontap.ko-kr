@@ -5442,9 +5442,18 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="c728dacf8c5d7e9da86b3512e6ea5301" category="paragraph">ARP가 활성화된 볼륨은 "학습 모드" 또는 "활성" 상태로 지정되어 있습니다.</block>
   <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024년 9월 9일</block>
   <block id="cdd78645b017b927a25b5449e345f823" category="section-title">웜 및 ARP 기능은 더 이상 요금이 부과되지 않습니다</block>
-  <block id="f1967946737edb98fc1947e0768aa8bf" category="paragraph">WORM(Write Once Read Many) 및 ARP(자율적 랜섬웨어 방어)의 내장 데이터 보호 및 보안 기능이 추가 비용 없이 모든 Cloud Volumes ONTAP 라이센스에 포함됩니다. 이 옵션은 노드 기반 및 용량 기반 라이센스 모두에 대한 신규 및 기존 BYOL 및 PAYGO/마켓플레이스 구축에 적용됩니다. 새로운 가격 모델은 단일 노드 및 고가용성(HA) 구성을 포함한 모든 클라우드 공급자 및 구축 유형에 적용됩니다.</block>
-  <block id="be80dbfae56af07d4af9dfce1c36cc75" category="paragraph">다음과 같은 혜택을 이용할 수 있습니다.</block>
-  <block id="c2cf1fd5e48d77ab96276adb197066c3" category="list-text">WORM 및 ARP가 있는 기존 계정에는 이러한 기능에 대한 비용이 더 이상 청구되지 않습니다. 이 변경 전에 해당되는 용량 사용량에 대한 비용이 청구됩니다. 웜 및 ARP는 향후 청구에서 제외됩니다.</block>
-  <block id="404e8d1aa5724e9535ccf69bb3ee9c54" category="list-text">기존 계정에 이러한 기능이 활성화되어 있지 않으면 추가 비용 없이 WORM 및 ARP를 선택할 수 있습니다.</block>
-  <block id="3ed34d6b3fd7cd8c4e08b032a9f2dc07" category="list-text">새 계정의 경우 모든 Cloud Volumes ONTAP 제품에서 WORM 및 ARP 비용이 제거됩니다.</block>
+  <block id="8ddfd051601ea88c75625c16c542a149" category="paragraph">BlueXP 은 또한<block ref="891e111023ee3cccd4407be6ddd24c21" prefix=" " category="inline-code"></block> NAS 데이터 LIF에서 다음 서비스를 제거한 후 iSCSI 데이터 LIF에 추가하여 데이터 스토리지 VM의 정책을 수정합니다.</block>
+  <block id="e522a238c22a673b40cfb6b6b240f37b" category="list-text"><block ref="2548ff9e63092532a81a79e1ceebe91e" prefix="" category="inline-code"></block></block>
+  <block id="9c3ffe3e739ef0b406e2216de2c403b7" category="list-text"><block ref="c33d2f2401cef76503005b2317a0870d" prefix="" category="inline-code"></block></block>
+  <block id="23061a7b150b62a269bdf5346feaa7d1" category="list-text"><block ref="1f4fa402fb905ee626761b74cd1a4c87" prefix="" category="inline-code"></block></block>
+  <block id="58a7b8379178f95002ceeceb82feb029" category="list-text"><block ref="0d409a8ed03d0fa3e161460f3f21e0b4" prefix="" category="inline-code"></block></block>
+  <block id="3c1cec80e048088b9c829a18b7d5111b" category="list-text"><block ref="8e6e205a8b8f4f22cf306f9b85bd6c2c" prefix="" category="inline-code"></block></block>
+  <block id="7fd6d2c43ef162414a32b6569dfcc99a" category="paragraph">WORM(Write Once Read Many) 및 ARP(자율적 랜섬웨어 방어)의 내장 데이터 보호 및 보안 기능이 추가 비용 없이 Cloud Volumes ONTAP 라이센스와 함께 제공됩니다. 새로운 가격 모델은 AWS, Azure 및 Google Cloud의 신규 및 기존 BYOL 및 PAYGO/마켓플레이스 구독에 모두 적용됩니다. 용량 기반 라이센스와 노드 기반 라이센스 모두 추가 비용 없이 단일 노드 및 고가용성(HA) 쌍을 포함한 모든 구성에 대한 ARP 및 WORM을 포함합니다.</block>
+  <block id="9dab6b96899670128353b1e92c2b8997" category="paragraph">단순화된 가격으로 다음과 같은 이점을 얻을 수 있습니다.</block>
+  <block id="000f6c26eec43af35931bc5e6fbf9f49" category="list-text">현재 WORM 및 ARP가 포함된 계정에는 이러한 기능에 대한 비용이 더 이상 부과되지 않습니다. 향후 청구에는 이 변경 전과 마찬가지로 용량 사용량에 대한 비용만 부과됩니다. 웜과 ARP는 더 이상 미래의 청구서에 포함되지 않습니다.</block>
+  <block id="3817bf50b7761fc5155c59e4a334d37a" category="list-text">현재 계정에 이러한 기능이 포함되어 있지 않으면 추가 비용 없이 WORM 및 ARP를 선택할 수 있습니다.</block>
+  <block id="1974af11cb1ac87d0b58d8696f893e4d" category="list-text">모든 새 계정에 대한 모든 Cloud Volumes ONTAP 오퍼링은 WORM 및 ARP에 대한 비용을 제외합니다.</block>
+  <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">다음 기능에 대한 자세한 정보:</block>
+  <block id="a7cf7c6eee288b3a91bcae2e6522aa7a" category="list-text"><block ref="a7cf7c6eee288b3a91bcae2e6522aa7a" category="inline-link-rx"></block></block>
+  <block id="a100999de1d9ee815d7e13741acf163d" category="list-text"><block ref="a100999de1d9ee815d7e13741acf163d" category="inline-link-rx"></block></block>
 </blocks>
