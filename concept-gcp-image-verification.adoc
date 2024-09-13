@@ -14,7 +14,7 @@ summary: Google Cloud 이미지 파일 서명 파일을 확인합니다.
 
 
 [role="lead"]
-Google Cloud 이미지 검증은 향상된 NetApp 보안 요구사항을 준수합니다. 이 작업을 위해 특별히 생성된 개인 키를 사용하여 이미지를 생성하는 스크립트가 변경되었습니다. 를 통해 다운로드할 수 있는 Google Cloud용 서명된 다이제스트 및 공용 인증서를 사용하여 GCP 이미지의 무결성을 확인할 수 있습니다 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NSS"^] 특정 릴리스에 대해.
+Google Cloud 이미지 검증은 향상된 NetApp 보안 요구사항을 준수합니다. 이 작업을 위해 특별히 생성된 개인 키를 사용하여 이미지를 생성하는 스크립트가 변경되었습니다. Google Cloud용 서명된 다이제스트 및 공용 인증서를 사용하여 Google Cloud 이미지의 무결성을 확인할 수 있습니다. 이 다이제스트는 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NSS"^] 특정 릴리스에 대해 를 통해 다운로드할 수 있습니다.
 
 
 NOTE: Google 클라우드 이미지 확인은 Cloud Volumes ONTAP 소프트웨어 버전 9.13.0 이상에서 지원됩니다.

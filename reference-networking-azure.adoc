@@ -26,6 +26,60 @@ Azure에서 다음 네트워킹 요구사항을 충족해야 합니다.
 
 === 아웃바운드 인터넷 액세스
 
+Cloud Volumes ONTAP 노드는 다양한 기능을 위해 외부 엔드포인트에 액세스하기 위해 아웃바운드 인터넷 액세스가 필요합니다. 엄격한 보안 요구 사항이 있는 환경에서 이러한 엔드포인트가 차단되면 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.
+
+
+
+==== Cloud Volumes ONTAP 엔드포인트
+
+Cloud Volumes ONTAP에서는 일상적인 작업을 위해 다양한 엔드포인트에 연결하기 위해 아웃바운드 인터넷 액세스가 필요합니다.
+
+다음 끝점은 Cloud Volumes ONTAP에만 해당됩니다. 커넥터는 또한 BlueXP  웹 기반 콘솔뿐만 아니라 일상적인 작업을 위해 여러 끝점에 연결합니다.  https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["커넥터에서 접촉한 끝점을 봅니다"^]및 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["BlueXP 콘솔을 사용하기 위한 네트워킹을 준비합니다"^]을 참조하십시오.
+
+[cols="5*"]
+|===
+| 엔드포인트 | 에 적용됩니다 | 목적 | BlueXP 배포 모드 | 사용할 수 없는 경우 영향 
+
+
+| \https://netapp-cloud-account.auth0.com | 인증  a| 
+BlueXP  인증에 사용됩니다.
+| 표준 및 제한 모드.  a| 
+사용자 인증에 실패하고 다음 서비스를 사용할 수 없습니다.
+
+* Cloud Volumes ONTAP 서비스
+* ONTAP 서비스
+* 프로토콜 및 프록시 서비스
+
+
+
+
+| \https://keyvault-production-aks.vault.azure.net | 키 볼트 | 메타데이터 처리를 위해 S3 버킷과 통신하기 위해 Azure Key Vault에서 클라이언트 비밀 키를 검색하는 데 사용됩니다. Cloud Volumes ONTAP 서비스는 내부적으로 이 구성 요소를 사용합니다. | 표준, 제한 및 개인 모드. | Cloud Volumes ONTAP 서비스를 사용할 수 없습니다. 
+
+
+| https://cloudmanager.cloud.netapp.com/tenancy 으로 문의하십시오 | 테넌시 | BlueXP  테넌시에서 Cloud Volumes ONTAP 리소스를 검색하여 리소스 및 사용자에게 권한을 부여하는 데 사용됩니다. | 표준 및 제한 모드. | Cloud Volumes ONTAP 리소스 및 사용자에게 권한이 없습니다. 
+
+
+| \https://support.NetApp.com/aoods/asupmessage\https://support.NetApp.com/asupprod/post/1.0/postAsup | AutoSupport | AutoSupport 원격 측정 데이터를 NetApp 지원으로 전송하는 데 사용됩니다. | 표준 및 제한 모드. | AutoSupport 정보는 전달되지 않습니다. 
+
+
+| https://management.azure.com\https://login.microsoftonline.com\https://blob.core.windows.net\https://core.windows.net | 공공 지역 | Azure 서비스와의 통신: | 표준, 제한 및 개인 모드. | Cloud Volumes ONTAP는 Azure에서 특정 BlueXP  작업을 수행하기 위해 Azure 서비스와 통신할 수 없습니다. 
+
+
+| https://management.chinacloudapi.cn\https://login.chinacloudapi.cn\https://blob.core.chinacloudapi.cn\https://core.chinacloudapi.cn | 중국 지역 | Azure 서비스와의 통신: | 표준, 제한 및 개인 모드. | Cloud Volumes ONTAP는 Azure에서 특정 BlueXP  작업을 수행하기 위해 Azure 서비스와 통신할 수 없습니다. 
+
+
+| \https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de | 독일 지역 | Azure 서비스와의 통신: | 표준, 제한 및 개인 모드. | Cloud Volumes ONTAP는 Azure에서 특정 BlueXP  작업을 수행하기 위해 Azure 서비스와 통신할 수 없습니다. 
+
+
+| https://management.usgovcloudapi.net\https://login.microsoftonline.us\https://blob.core.usgovcloudapi.net\https://core.usgovcloudapi.net | 애드온 서비스입니다 | Azure 서비스와의 통신: | 표준, 제한 및 개인 모드. | Cloud Volumes ONTAP는 Azure에서 특정 BlueXP  작업을 수행하기 위해 Azure 서비스와 통신할 수 없습니다. 
+
+
+| https://management.azure.microsoft.scloud\https://login.microsoftonline.microsoft.scloud\https://blob.core.microsoft.scloud\https://core.microsoft.scloud | 정부 DoD 지역 | Azure 서비스와의 통신: | 표준, 제한 및 개인 모드. | Cloud Volumes ONTAP는 Azure에서 특정 BlueXP  작업을 수행하기 위해 Azure 서비스와 통신할 수 없습니다. 
+|===
+
+
+==== NetApp AutoSupport의 아웃바운드 인터넷 액세스
+
 Cloud Volumes ONTAP 노드를 사용하려면 NetApp AutoSupport에 대한 아웃바운드 인터넷 액세스가 필요합니다. 사전 예방적으로 시스템의 상태를 모니터링하고 메시지를 NetApp 기술 지원으로 보냅니다.
 
 라우팅 및 방화벽 정책은 Cloud Volumes ONTAP가 AutoSupport 메시지를 보낼 수 있도록 다음 엔드포인트에 대한 HTTP/HTTPS 트래픽을 허용해야 합니다.
