@@ -1948,7 +1948,6 @@
   <block id="a6f44cada6b6ce69a44f85c0c202e270" category="list-text">9.7 이하: 2일~63일</block>
   <block id="2e1602577b506088aeed8165e506d1e4" category="list-text">볼륨을 생성하거나 기존 볼륨을 수정할 때 API 요청과 함께 _minimumCoolingDays_매개 변수를 사용하십시오.</block>
   <block id="95d79008b0be56c31d097e76b7584763" category="doc">Cloud Volumes ONTAP의 암호를 변경합니다</block>
-  <block id="809993be97183c1aad51ef5ea989cd2a" category="paragraph">새 암호는 마지막으로 사용한 6개의 암호 중 하나와 달라야 합니다.</block>
   <block id="aec821c01e23f20e98a9438c7d2dd253" category="summary">Microsoft 관리 키가 있는 Azure 스토리지 서비스 암호화를 사용하여 Azure의 Cloud Volumes ONTAP에서 데이터를 자동으로 암호화합니다. 그러나 이 페이지의 단계를 따르면 사용자 고유의 암호화 키를 사용할 수 있습니다.</block>
   <block id="e76c0365dfa8d6b43992d790f582e6c4" category="doc">Azure에서 고객이 관리하는 키를 사용하도록 Cloud Volumes ONTAP를 설정합니다</block>
   <block id="4c0f1152ff8e08ad9c86fa100e8f9209" category="paragraph">Azure의 Cloud Volumes ONTAP에서 를 사용하여 데이터가 자동으로 암호화됩니다<block ref="0fb9c094fcac1ef4db7c0b9c1e4ffdfb" category="inline-link-rx"></block> Microsoft 관리 키를 사용합니다. 그러나 이 페이지의 단계를 따르면 사용자 고유의 암호화 키를 사용할 수 있습니다.</block>
@@ -5024,7 +5023,6 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="6f9fa4d02a6081aa6d33b131d8532328" category="paragraph">Cloud Volumes ONTAP HA 구축 환경에서 AWS 로컬 영역 지원을 사용할 수 있습니다. AWS Local Zones 는 스토리지, 컴퓨팅, 데이터베이스 및 기타 엄선된 AWS 서비스가 대도시와 산업 영역에 가깝게 위치하는 인프라 구축입니다.</block>
   <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">HA 배포가 포함된 AWS Local Zones에 대한 자세한 내용은 을 참조하십시오 <block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>.</block>
   <block id="d4d3c7dc9c12800024fafcb2bb41c04f" category="list-text">부팅 데이터용 47GiB io1 디스크</block>
-  <block id="f4be35522ac705cbe795ea064998a28b" category="list-text">HA 페어의 경우 중재자 인스턴스를 위한 st1 EBS 볼륨 2개(약 8GiB 및 4GiB)와 각 노드에 다른 노드의 루트 데이터 복제본을 포함할 추가 140GiB GP3 디스크가 있습니다.</block>
   <block id="10e3d4119b538d4a3b1943da285229fc" category="admonition">일부 영역에서는 사용 가능한 EBS 디스크 유형이 GP2일 수만 있습니다.</block>
   <block id="0c14d315376234aa666bf4213aa88aec" category="list-text">T3-마이크로</block>
   <block id="5dde3a7c362c6b03a35cf3c0b3374d14" category="list-text">8GiB 및 4GiB의 st1 디스크 2개</block>
@@ -5220,7 +5218,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024년 8월 8일</block>
   <block id="e84c1e70dc9a2186ec21e22a3e9cbda0" category="section-title">Edge Cache 라이선스 패키지는 더 이상 사용되지 않습니다</block>
   <block id="882b50ca44d46bfb8d9502390cfeaf96" category="paragraph">Edge Cache 용량 기반 라이센스 패키지는 향후 Cloud Volumes ONTAP 배포에 더 이상 사용할 수 없습니다. 그러나 API를 사용하여 이 기능을 사용할 수 있습니다.</block>
-  <block id="a5729938408dc232ea97fb5d7d00b71c" category="section-title">Azure 기반 Flash Cache에 대해 지원되는 최소 ONTAP 버전</block>
   <block id="2936dc7efe93e6248aca38d21b92cc62" category="paragraph">지원되는 구성은 를 참조하십시오<block ref="10c1bb30d666a83202b9e687d7b06d1b" category="inline-link-rx"></block>.</block>
   <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">마켓플레이스 구독에 대한 무료 평가판은 더 이상 사용되지 않습니다</block>
   <block id="860dc5e7395e0f2c15a42ffdef98eca4" category="paragraph">클라우드 제공업체의 마켓플레이스에서 선불 종량제 구독에 대한 30일 자동 무료 평가판은 더 이상 Cloud Volumes ONTAP에서 사용할 수 없습니다. 모든 유형의 마켓플레이스 가입(PAYGO 또는 연간 계약)에 대한 청구는 무료 평가판 기간 없이 처음 사용할 때 활성화됩니다.</block>
@@ -5400,7 +5397,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="bfe1024d3c9f1a02aa5dd1d7e5dccb34" category="section-title">2024년 8월 22일</block>
   <block id="cf153c7d2cb432b6e772832926525a09" category="section-title">Cloud Volumes ONTAP 9.15.1 GA</block>
   <block id="ffa2c93a775db2cb6243bf2a224cf240" category="paragraph">BlueXP는 이제 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.15.1 일반 가용성 릴리즈를 구축 및 관리할 수 있습니다.</block>
-  <block id="5e5a8323b53f79c61a277215cb801b01" category="paragraph">Azure에서 Flash Cache를 구성하는 데 필요한 최소 ONTAP 버전은 9.13.1 GA입니다. ONTAP 9.13.1 GA 이상 버전만 사용하여 Azure용 Cloud Volumes ONTAP 시스템에 Flash Cache를 구축할 수 있습니다.</block>
   <block id="91aba3afcaafb3ecbed8f358c30b8a7a" category="paragraph">모든 지역의 목록은 을<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="9b699d89d2577245514962357937a87b" category="paragraph">모든 지역의 목록은 을<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="a3146a355baed19983a62f97e9e33a8e" category="paragraph">모든 지역의 목록은 을<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>참조하십시오.</block>
@@ -5524,4 +5520,16 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="c3288ce29225fc4244fa01d5aef04aa3" category="paragraph">ARP 기능은 추가 비용 없이 노드 기반 라이센스와 용량 기반 라이센스 모두에 대해 BYOL 및 마켓플레이스 가입과 함께 사용할 수 있습니다. NetApp 영업 담당자에게 문의하여 현재 라이센스에 ARP를 추가하십시오.</block>
   <block id="5ee4faea784afb4b7750a3c91c073449" category="admonition">공간이 충분하지 않으면 Cloud Volumes ONTAP에서 데이터를 이동할 수 없으므로 성능이 저하될 수 있습니다. 모든 변경은 신중하게 수행해야 합니다. 잘 모르는 경우 NetApp 지원에 문의하여 지침을 받으십시오.</block>
   <block id="becb0288ca83df315765f9f31eb5847f" category="paragraph">이 페이지에 설명된 방법을 사용하여 소프트웨어를 업그레이드하려면 Cloud Volumes ONTAP를 NetApp 지원에 등록해야 합니다. 이 내용은 PAYGO 및 BYOL 모두에 적용됩니다. <block ref="f7029dacbf10b8aa72bca74845a64729" category="inline-link-macro-rx"></block>BYOL 시스템은 기본적으로 등록되지만</block>
+  <block id="fd8831656d484b23e386115d7264f056" category="list-text">HA 쌍의 경우:</block>
+  <block id="180b275121e0f37251fecae975bf46df" category="list-text">중재자 인스턴스용 st1 EBS 볼륨 2개, 루트 디스크로 약 8GiB 중 하나, 데이터 디스크로 4GiB 중 하나</block>
+  <block id="64b03175221d53e202f475eebaa91d75" category="list-text">각 노드에 하나의 140GiB GP3 디스크가 있으며, 다른 노드의 루트 데이터 복제본이 포함됩니다</block>
+  <block id="8988458abbc31ee6cea74e936e77a27d" category="list-text">9.15.1 GA</block>
+  <block id="b7c282068681beff1a173d0b12dfaf26" category="paragraph">새 암호는 다음 규칙을 준수해야 합니다.</block>
+  <block id="d35bb0db0465412bf87fad3c0e029c98" category="list-text">사용자 이름은 포함할 수 없습니다</block>
+  <block id="dbc56fe1cd1e248fe5365bf788c671af" category="list-text">8자 이상이어야 합니다</block>
+  <block id="4737ee9042d4511943f8ea991bd211c5" category="list-text">하나 이상의 문자와 숫자를 포함해야 합니다</block>
+  <block id="3f00eb5ab0ade2cfadc9848704073f92" category="list-text">마지막 여섯 개의 암호와 같을 수 없습니다</block>
+  <block id="120ae360daecd24b580b71f9f2766bbc" category="cell">9.15.1</block>
+  <block id="af4dea59253c9d0600f1101e032482c5" category="section-title">Azure 기반 Flash Cache에 대한 최소 버전 지원</block>
+  <block id="5fac3a4dd391ba31a160710474f8d3ca" category="paragraph">Azure에서 Flash Cache를 구성하는 데 필요한 최소 Cloud Volumes ONTAP 버전은 9.13.1 GA입니다. ONTAP 9.13.1 GA 이상 버전만 사용하여 Azure용 Cloud Volumes ONTAP 시스템에 Flash Cache를 구축할 수 있습니다.</block>
 </blocks>
