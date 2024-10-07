@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-ha.html 
 keywords: high availability, HA, mediator, concepts, understanding, overview, availability zones, AZs, takeover, giveback, rpo, rto, floating ip, nondisruptive, ha pairs, node, nodes, synchronous, resync, recovery point objective, recovery time objective, nas, nfs, cifs, floating ip address, route tables, iscsi, mpio, alua, failover, mount, remount, failure, data access, access, ip address, performance 
-summary: 'Cloud Volumes ONTAP HA(고가용성) 구성은 무중단 운영 및 내결함성을 제공합니다. AWS에서는 데이터가 두 노드 간에 동기식으로 미러링됩니다.' 
+summary: 'Cloud Volumes ONTAP HA(고가용성) 구성은 무중단 운영과 내결함성을 제공합니다. AWS에서는 데이터가 두 노드 간에 동기식으로 미러링됩니다.' 
 ---
 = AWS의 고가용성 쌍
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Cloud Volumes ONTAP HA(고가용성) 구성은 무중단 운영 및 �
 
 
 [role="lead"]
-Cloud Volumes ONTAP HA(고가용성) 구성은 무중단 운영 및 내결함성을 제공합니다. AWS에서는 데이터가 두 노드 간에 동기식으로 미러링됩니다.
+Cloud Volumes ONTAP HA(고가용성) 구성은 무중단 운영과 내결함성을 제공합니다. AWS에서는 데이터가 두 노드 간에 동기식으로 미러링됩니다.
 
 
 
@@ -60,7 +60,7 @@ NOTE: Cloud Volumes ONTAP 9.10.0 이전 버전에서는 데비안 10이 중재�
 
 == RPO 및 RTO
 
-HA 구성을 사용하면 다음과 같이 데이터의 고가용성을 유지할 수 있습니다.
+HA 구성을 사용하면 데이터의 고가용성을 유지할 수 있습니다.
 
 * 복구 지점 목표(RPO)는 0초입니다. 데이터는 데이터 손실 없이 트랜잭션 측면에서 일관적입니다.
 * 복구 시간 목표(RTO)는 120초입니다. 정전이 발생할 경우 120초 이내에 데이터를 사용할 수 있어야 합니다.

@@ -26,8 +26,6 @@ ONTAP CLI 또는 ONTAP System Manager를 사용하여 FlexCache 볼륨을 생성
 * http://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-07F4C213-076D-4FE8-A8E3-410F49498D49.html["System Manager에서 FlexCache 볼륨 생성"^]
 
 
-BlueXP는 모든 새로운 Cloud Volumes ONTAP 시스템에 대한 FlexCache 라이센스를 생성합니다. 이 라이센스에는 500GiB 사용 제한이 포함됩니다.
-
 video::PBNPVRUeT1o[youtube,width=848,height=480]
 
 
@@ -58,7 +56,7 @@ Google Cloud의 경우 Google Cloud 키 관리 서비스입니다. 자세한 내
 endif::gcp[]
 
 . * 키 관리 서비스 *: FlexCache 볼륨을 생성하기 전에 Cloud Volumes ONTAP 시스템에 키 관리 서비스가 올바르게 구성되어 있는지 확인하십시오. 이 구성은 FlexCache 볼륨이 원본 볼륨에서 데이터를 해독하는 데 필수적입니다.
-. * 라이센스 *: Cloud Volumes ONTAP 시스템에서 유효한 FlexCache 라이센스가 사용 가능하고 활성화되어 있는지 확인합니다. BlueXP는 모든 신규 Cloud Volumes ONTAP 시스템에 대한 FlexCache 라이센스를 생성하며 사용 제한이 500GiB입니다.
+. * 라이센스 *: Cloud Volumes ONTAP 시스템에서 유효한 FlexCache 라이센스가 사용 가능하고 활성화되어 있는지 확인합니다.
 . * ONTAP 버전 *: Cloud Volumes ONTAP 시스템의 ONTAP 버전이 암호화된 볼륨의 FlexCache를 지원하는지 확인하십시오. 자세한 내용은 최신 https://docs.netapp.com/us-en/ontap/release-notes/index.html["ONTAP 릴리즈 노트"^] 또는 호환성 매트릭스를 참조하십시오.
 . * 네트워크 구성 *: 네트워크 구성이 오리진 볼륨과 FlexCache 볼륨 간의 원활한 통신을 허용하는지 확인합니다. 여기에는 클라우드 환경에서의 적절한 라우팅 및 DNS 확인이 포함됩니다.
 

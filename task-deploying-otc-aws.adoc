@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploying-otc-aws.html 
-keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, aws, serial number, license key, byol, test instance, aws tags, tags, location, vpc, encryption, security group, aws-managed encryption, disk size, disk type, write speed, licensing, IAM role, preconfigured package, access control, volume protection, usage profile, register, CIFS share, quota, qtree, WorkingEnvironmentId, HA, high availability, subscription, cloud data sense, cloud backup 
+keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, aws, serial number, license key, byol, test instance, aws tags, tags, location, vpc, encryption, security group, aws-managed encryption, disk size, disk type, write speed, licensing, IAM role, preconfigured package, access control, volume protection, usage profile, register, CIFS share, quota, qtree, WorkingEnvironmentId, HA, high-availability, subscription, cloud data sense, cloud backup 
 summary: Cloud Volumes ONTAP 인스턴스를 단일 시스템 구성으로 실행하거나 AWS에서 HA 쌍으로 실행할 수 있습니다. 
 ---
 = AWS에서 Cloud Volumes ONTAP 실행

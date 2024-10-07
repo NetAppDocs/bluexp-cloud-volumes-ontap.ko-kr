@@ -307,7 +307,8 @@ BlueXP는 새 버전을 업그레이드할 수 있을 때 사용자에게 알립
 
 BlueXP는 새 버전의 Cloud Volumes ONTAP를 사용할 수 있을 때 Cloud Volumes ONTAP 작업 환경에 알림을 표시합니다.
 
-image:screenshot_overview_upgrade.png["스크린샷: 작업 환경을 선택한 후 Canvas 페이지에 표시되는 새 버전 사용 가능 알림을 표시합니다."]
+
+NOTE: BlueXP 알림을 통해 Cloud Volumes ONTAP를 업그레이드하려면 먼저 NetApp Support 사이트 계정이 있어야 합니다.
 
 이 알림에서 업그레이드 프로세스를 시작하여 S3 버킷에서 소프트웨어 이미지를 가져온 다음 이미지를 설치한 다음 시스템을 다시 시작하여 프로세스를 자동화할 수 있습니다.
 
@@ -323,21 +324,22 @@ image:screenshot_overview_upgrade.png["스크린샷: 작업 환경을 선택한 
 +
 image:screenshot_overview_upgrade.png["\"지금 업그레이드!\"가 표시된 스크린샷 링크 - 개요 탭 아래."]
 
-. 새 버전을 사용할 수 있는 경우 * 지금 업그레이드! * 를 클릭합니다
-+
-
-NOTE: BlueXP 알림을 통해 Cloud Volumes ONTAP를 업그레이드하려면 먼저 NetApp Support 사이트 계정이 있어야 합니다.
-
-. Upgrade Cloud Volumes ONTAP 페이지에서 EULA를 읽은 다음 * EULA * 를 읽고 승인합니다 * 를 선택합니다.
-. 업그레이드 * 를 클릭합니다.
-+
-
-NOTE: Upgrade Cloud Volumes ONTAP 페이지에서는 기본적으로 업그레이드할 최신 Cloud Volumes ONTAP 버전을 선택합니다. 사용 가능한 경우 * 이전 버전 선택 * 을 클릭하여 업그레이드를 위해 이전 버전의 Cloud Volumes ONTAP를 선택할 수 있습니다.
-을 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#supported-upgrade-paths["지원되는 업그레이드 경로 목록입니다"^] 현재 Cloud Volumes ONTAP 버전을 기반으로 적절한 업그레이드 경로를 선택합니다.
-
+. 설치된 Cloud Volumes ONTAP 버전을 업그레이드하려면 * 지금 업그레이드! * 를 클릭하십시오 기본적으로 업그레이드할 수 있는 최신 호환 버전이 표시됩니다.
 +
 image:screenshot_upgrade_select_versions.png["Cloud Volumes ONTAP 버전 업그레이드 페이지의 스크린샷."]
 
++
+다른 버전으로 업그레이드하려면 * 다른 버전 선택 * 을 클릭합니다. 시스템에 설치된 버전과 호환되는 최신 Cloud Volumes ONTAP 버전이 나열됩니다. 예를 들어 시스템에 설치된 버전은 9.12.1P3이며 다음과 같은 호환 버전을 사용할 수 있습니다.
+
++
+** 9.12.1P4 ~ 9.12.1P14
+** 9.13.1 및 9.13.1P1 업그레이드의 기본 버전은 9.13.1P1이고 사용 가능한 다른 버전은 9.12.1P13, 9.13.1P14, 9.13.1 및 9.13.1P1입니다.
+
+
+. 필요한 경우 * 모든 버전 * 을 클릭하여 업그레이드할 다른 버전(예: 설치된 버전의 다음 패치)을 입력할 수 있습니다. 현재 Cloud Volumes ONTAP 버전의 호환 가능한 업그레이드 경로는 을 link:task-updating-ontap-cloud.html#supported-upgrade-paths["지원되는 업그레이드 경로"]참조하십시오.
+. 저장 * 을 클릭한 다음 * 적용 * 을 클릭합니다. image:screenshot_upgrade_other_versions.png["업그레이드할 수 있는 버전을 보여 주는 스크린샷"]
+. Upgrade Cloud Volumes ONTAP 페이지에서 EULA를 읽은 다음 * EULA * 를 읽고 승인합니다 * 를 선택합니다.
+. 업그레이드 * 를 클릭합니다.
 . 업그레이드 상태를 확인하려면 설정 아이콘을 클릭하고 * 타임라인 * 을 선택합니다.
 
 
