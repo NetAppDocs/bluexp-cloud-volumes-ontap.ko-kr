@@ -55,7 +55,7 @@ image:screenshot_warning.gif["스크린샷: 경고 아이콘이 포함된 Cloud 
 
 작업 환경을 선택하여 메시지를 검토할 수 있습니다.
 
-BlueXP에는 계정 관리자이고 옵션을 활성화한 경우 이메일로 전송되는 Cloud Volumes ONTAP 보고서에 라이센스 만료 경고가 포함됩니다.
+BlueXP  조직 또는 계정 관리자이고 옵션을 활성화한 경우 BlueXP 에는 전자 메일로 받은 Cloud Volumes ONTAP 보고서에 라이센스 만료 경고가 포함되어 있습니다.
 
 image:screenshot_cvo_report.gif["이메일을 통해 Cloud Volumes ONTAP 보고서를 활성화하는 확인란을 보여 주는 사용자 프로필 패널 스크린샷"]
 

@@ -19,7 +19,7 @@ summary: 디스크를 추가하고, 애그리게이트에 대한 정보를 확�
 이러한 설정은 커넥터에 의해 관리되는 모든 Cloud Volumes ONTAP 시스템에 영향을 줍니다. 다른 커넥터가 있는 경우 다르게 구성할 수 있습니다.
 
 .필수 권한
-Cloud Volumes ONTAP 설정을 수정하려면 계정 관리자 권한이 필요합니다.
+Cloud Volumes ONTAP 설정을 수정하려면 BlueXP  조직 또는 계정 관리자 Privileges가 필요합니다.
 
 .단계
 . BlueXP 콘솔의 오른쪽 위에서 설정 아이콘을 클릭하고 * Cloud Volumes ONTAP Settings * 를 선택합니다.

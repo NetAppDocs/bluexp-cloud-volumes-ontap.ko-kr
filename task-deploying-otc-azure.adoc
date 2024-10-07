@@ -22,7 +22,7 @@ BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성하여 Azure에서 단�
 [[licensing]]
 * 실행 중인 커넥터입니다.
 +
-** 가 있어야 합니다 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["작업 영역과 연결된 커넥터입니다"^].
+** 가 있어야 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["프로젝트 또는 작업 영역과 연결된 연결선입니다"^] 합니다.
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["항상 Connector를 실행 상태로 둘 준비가 되어 있어야 합니다"^].
 
 

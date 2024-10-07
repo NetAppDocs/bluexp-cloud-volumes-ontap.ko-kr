@@ -26,7 +26,7 @@ BlueXP 및 해당 스토리지 솔루션 및 서비스와 관련된 기술 지�
 
 지원 권한을 활성화하려면 두 가지 형태의 등록이 있습니다.
 
-* BlueXP 계정 ID 지원 가입 등록(BlueXP의 지원 리소스 페이지에 있는 20자리 960xxxxxxxxx 일련 번호)
+* BlueXP  계정 일련 번호(BlueXP 의 지원 리소스 페이지에 있는 20자리 960xxxxxxxxx 일련 번호)를 등록하는 중입니다.
 +
 이는 BlueXP 내의 모든 서비스에 대한 단일 지원 가입 ID의 역할을 합니다. 각 BlueXP 계정 수준 지원 구독을 등록해야 합니다.
 
@@ -40,9 +40,9 @@ BlueXP 및 해당 스토리지 솔루션 및 서비스와 관련된 기술 지�
 
 
 
-== NetApp 지원을 위해 BlueXP 계정을 등록합니다
+== NetApp 지원을 받으려면 BlueXP 를 등록 하십시오
 
-지원을 등록하고 지원 권한을 활성화하려면 BlueXP 계정의 한 사용자가 NetApp Support 사이트 계정을 BlueXP 로그인에 연결해야 합니다. NetApp 지원에 등록하는 방법은 NetApp Support 사이트(NSS) 계정이 이미 있는지 여부에 따라 다릅니다.
+지원을 등록하고 지원 권한을 활성화하려면 BlueXP  조직(또는 계정)의 사용자 한 명이 NetApp 지원 사이트 계정을 BlueXP  로그인과 연결해야 합니다. NetApp 지원에 등록하는 방법은 NetApp Support 사이트(NSS) 계정이 이미 있는지 여부에 따라 다릅니다.
 
 
 
@@ -56,13 +56,13 @@ NSS 계정을 가지고 있는 NetApp 고객은 BlueXP를 통해 지원을 받�
 . NSS 자격 증명 추가 * 를 선택하고 NetApp Support 사이트(NSS) 인증 프롬프트를 따릅니다.
 . 등록 프로세스가 성공적으로 완료되었는지 확인하려면 도움말 아이콘을 선택하고 * 지원 * 을 선택합니다.
 +
-리소스 * 페이지에 계정이 지원을 위해 등록되었다는 내용이 표시됩니다.
+리소스 * 페이지에 귀하의 BlueXP  조직이 지원을 위해 등록되었다는 메시지가 표시됩니다.
 
 +
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-support-registration.png["계정 일련 번호와 녹색 확인란이 표시된 스크린샷 및 지원을 위해 등록된 텍스트."]
 
 +
-다른 BlueXP 사용자는 BlueXP 로그인과 NetApp Support 사이트 계정을 연결하지 않은 경우 동일한 지원 등록 상태를 볼 수 없습니다. 그러나 BlueXP 계정이 지원을 위해 등록되지 않은 것은 아닙니다. 계정에 있는 한 사용자가 이 단계를 따랐을 경우 계정이 등록되었습니다.
+다른 BlueXP 사용자는 BlueXP 로그인과 NetApp Support 사이트 계정을 연결하지 않은 경우 동일한 지원 등록 상태를 볼 수 없습니다. 하지만 그렇다고 BlueXP  조직이 지원에 등록되어 있지 않다는 뜻은 아닙니다. 조직 내 한 명의 사용자가 이 단계를 수행하면 조직이 등록됩니다.
 
 
 
@@ -111,7 +111,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 . 를 완료하여 NetApp Support 사이트 계정을 생성합니다 https://mysupport.netapp.com/site/user/registration["NetApp Support 사이트 사용자 등록 양식"^]
 +
 .. 적절한 사용자 레벨(일반적으로 * NetApp 고객/최종 사용자 *)을 선택해야 합니다.
-.. 일련 번호 필드에 위에서 사용된 계정 일련 번호(960xxxx)를 복사해 주십시오. 이렇게 하면 계정 처리 속도가 빨라집니다.
+.. 일련 번호 필드에 위에서 사용된 계정 일련 번호(960xxxx)를 복사해 주십시오. 그러면 처리 속도가 빨라집니다.
 
 
 
@@ -125,7 +125,7 @@ NetApp Support 사이트 계정이 있으면 의 단계를 완료하여 계정�
 
 == Cloud Volumes ONTAP 지원을 위해 NSS 자격 증명을 연결합니다
 
-Cloud Volumes ONTAP에 대해 다음 주요 워크플로를 사용하려면 NetApp Support 사이트 자격 증명을 BlueXP 계정과 연결해야 합니다.
+Cloud Volumes ONTAP에서 다음과 같은 주요 워크플로우를 사용하려면 NetApp 지원 사이트 자격 증명을 BlueXP  조직과 연결해야 합니다.
 
 * 지원을 위해 선불 종량제 Cloud Volumes ONTAP 시스템을 등록합니다
 +
@@ -138,9 +138,9 @@ BlueXP에서 사용권 키를 업로드하고 구입한 용어에 대한 구독�
 * Cloud Volumes ONTAP 소프트웨어를 최신 릴리즈로 업그레이드하는 중입니다
 
 
-NSS 자격 증명을 BlueXP 계정과 연결하는 것은 BlueXP 사용자 로그인과 연결된 NSS 계정과 다릅니다.
+NSS 자격 증명을 BlueXP  조직과 연결하는 것은 BlueXP  사용자 로그인과 연결된 NSS 계정과 다릅니다.
 
-이러한 NSS 자격 증명은 특정 BlueXP 계정 ID와 연결됩니다. BlueXP 계정에 속한 사용자는 * 지원 > NSS 관리 * 에서 이러한 자격 증명에 액세스할 수 있습니다.
+이러한 NSS 자격 증명은 특정 BlueXP  조직 ID와 연결됩니다. BlueXP  조직에 속한 사용자는 * 지원 > NSS 관리 * 에서 이러한 자격 증명에 액세스할 수 있습니다.
 
 * 고객 수준 계정이 있는 경우 하나 이상의 NSS 계정을 추가할 수 있습니다.
 * 파트너 또는 리셀러 계정이 있는 경우 NSS 계정을 하나 이상 추가할 수 있지만 고객 수준 계정과 함께 추가할 수는 없습니다.

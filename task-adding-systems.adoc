@@ -38,4 +38,4 @@ endif::aws[]
 
 
 .결과
-BlueXP는 Cloud Volumes ONTAP 인스턴스를 작업 영역에 추가합니다.
+BlueXP 는 Cloud Volumes ONTAP 인스턴스를 프로젝트나 작업 영역에 추가합니다.
