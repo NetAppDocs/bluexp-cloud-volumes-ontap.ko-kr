@@ -3295,8 +3295,6 @@
   <block id="b17fb4ec590936924c5159395f1b9182" category="paragraph">GP3 또는 io1 디스크를 사용하는 볼륨을 생성하는 경우 BlueXP는 Elastic Volumes가 활성화된 Aggregate에 볼륨을 자동으로 생성합니다. 자세한 내용은 을 참조하십시오 <block ref="e432ed6cbb90ef2b99ca3ebe7006e953" category="inline-xref-macro-rx"></block>.</block>
   <block id="4ddeb33245dab065e616a7abf58b631c" category="paragraph">Aggregate를 생성할 때 BlueXP에서 Aggregate의 용량 크기를 묻는 메시지를 표시합니다. 이는 디스크 크기 및 디스크 수를 선택하는 다른 구성과 다릅니다.</block>
   <block id="51cbce0195f13997e34cad7a23a2b638" category="paragraph">BlueXP는 필요에 따라 자동으로 Aggregate 용량을 추가하지만 수동으로 용량을 늘릴 수 있습니다.</block>
-  <block id="c01bba3f5cf220440d62298c4287d655" category="paragraph">이제 가입이 BlueXP 계정에 연결되어 있으며 Cloud Volumes ONTAP 작업 환경을 생성할 때 선택할 수 있습니다.</block>
-  <block id="ae187bda8f85dfd75202915fcca6b90d" category="paragraph">가입이 BlueXP 계정과 연결되어 있지 않으며 Cloud Volumes ONTAP 작업 환경을 생성할 때 더 이상 선택할 수 없습니다.</block>
   <block id="e3d629eecd6e06869848c53ac5c75380" category="summary">Google 클라우드 스토리지는 디스크에 데이터를 쓰기 전에 항상 데이터를 암호화하지만 BlueXP API를 사용하여 고객이 관리하는 암호화 키를 사용하는 Cloud Volumes ONTAP 시스템을 만들 수 있습니다. 클라우드 키 관리 서비스를 사용하여 GCP에서 생성하고 관리하는 키입니다.</block>
   <block id="a14be990a5564462179a98a679a9f0da" category="paragraph">Google 클라우드 스토리지는 디스크에 데이터를 쓰기 전에 항상 데이터를 암호화하지만 BlueXP API를 사용하여 _고객이 관리하는 암호화 키_ 를 사용하는 Cloud Volumes ONTAP 시스템을 만들 수 있습니다. 클라우드 키 관리 서비스를 사용하여 GCP에서 생성하고 관리하는 키입니다.</block>
   <block id="77418670efb657c3155eab4b410f6842" category="list-text">BlueXP Connector 서비스 계정의 프로젝트 수준에서 키가 저장된 프로젝트에 대한 올바른 권한이 있는지 확인합니다.</block>
@@ -5530,4 +5528,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="c5686848892b4de33534dcc294c33fff" category="paragraph">WORM(Write Once Read Many) 및 ARP(자율적 랜섬웨어 방어)의 내장 데이터 보호 및 보안 기능이 추가 비용 없이 Cloud Volumes ONTAP 라이센스와 함께 제공됩니다. 새로운 가격 모델은 AWS, Azure 및 Google Cloud의 신규 및 기존 BYOL 및 PAYGO/마켓플레이스 구독에 모두 적용됩니다. 용량 기반 라이센스와 노드 기반 라이센스 모두 추가 비용 없이 단일 노드 및 고가용성(HA) 쌍을 포함한 모든 구성에 대한 ARP 및 WORM을 포함합니다.</block>
   <block id="9da5d2f7e476f47c6a26d4ededfa4837" category="paragraph">Cloud Volumes ONTAP는 이제 Azure의 관리형 디스크에서 실행되는 고가용성 구축을 위해 16TiB 및 32TiB 디스크 크기를 지원합니다.</block>
   <block id="c4603a2a1f5be3fcdbe4e7ce09178104" category="sidebar">고가용성 모드를 활성화합니다</block>
+  <block id="7c27c9e51d561399ee84fb8d2259328c" category="paragraph">이제 구독이 BlueXP  조직 또는 계정에 연결되며 Cloud Volumes ONTAP 작업 환경을 만들 때 선택할 수 있습니다.</block>
+  <block id="287c693dd0bc6ec48aa0fc3f4b950a9e" category="paragraph">구독이 BlueXP  조직 또는 계정에서 연결 해제되어 Cloud Volumes ONTAP 작업 환경을 만들 때 더 이상 선택할 수 없습니다.</block>
 </blocks>

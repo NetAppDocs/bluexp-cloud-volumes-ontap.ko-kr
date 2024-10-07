@@ -55,7 +55,7 @@ image:screenshot-keystone-link.png["구독에 대한 링크 옵션을 보여 주
 
 
 .결과
-이제 가입이 BlueXP 계정에 연결되어 있으며 Cloud Volumes ONTAP 작업 환경을 생성할 때 선택할 수 있습니다.
+이제 구독이 BlueXP  조직 또는 계정에 연결되며 Cloud Volumes ONTAP 작업 환경을 만들 때 선택할 수 있습니다.
 
 
 
@@ -98,4 +98,4 @@ https://docs.netapp.com/us-en/keystone-staas/integrations/aiq-keystone-details.h
 
 
 .결과
-가입이 BlueXP 계정과 연결되어 있지 않으며 Cloud Volumes ONTAP 작업 환경을 생성할 때 더 이상 선택할 수 없습니다.
+구독이 BlueXP  조직 또는 계정에서 연결 해제되어 Cloud Volumes ONTAP 작업 환경을 만들 때 더 이상 선택할 수 없습니다.
