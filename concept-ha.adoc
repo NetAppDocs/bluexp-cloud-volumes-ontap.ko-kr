@@ -153,18 +153,18 @@ NAS 구성의 경우 장애가 발생할 경우 데이터 IP 주소를 HA 노드
 
 === AWS 로컬 영역
 
-AWS Local Zones 는 스토리지, 컴퓨팅, 데이터베이스 및 기타 엄선된 AWS 서비스가 대도시와 산업 영역에 가깝게 위치하는 인프라 구축입니다. AWS Local Zones를 사용하면 AWS 서비스를 더 가까운 곳으로 가져와 워크로드의 지연 시간을 개선하고 데이터베이스를 로컬에서 유지할 수 있습니다.
+AWS Local Zones 는 스토리지, 컴퓨팅, 데이터베이스 및 기타 엄선된 AWS 서비스가 대도시와 산업 영역에 가깝게 위치하는 인프라 구축입니다. AWS Local Zones를 사용하면 AWS 서비스를 더 가까운 곳으로 가져와 워크로드의 지연 시간을 개선하고 데이터베이스를 로컬에서 유지할 수 있습니다. Cloud Volumes ONTAP에서는
 
 AWS 로컬 영역에 단일 AZ 또는 여러 AZ 구성을 배포할 수 있습니다.
 
 
-NOTE: AWS 로컬 영역은 표준 모드에서 BlueXP를 사용하는 경우 지원됩니다. 현재 BlueXP를 제한된 모드 또는 프라이빗 모드로 사용하는 경우 AWS 로컬 영역이 지원되지 않습니다.
+NOTE: AWS 로컬 영역은 표준 및 개인 모드에서 BlueXP 를 사용할 때 지원됩니다. 현재 BlueXP 를 제한된 모드로 사용하는 경우 AWS 로컬 영역은 지원되지 않습니다.
 
 
 
 ==== AWS 로컬 영역 구성의 예
 
-다음은 예제 구성입니다.
+Cloud Volumes ONTAP는 AWS 로컬 영역에서 HA 구축만 지원합니다. 다음은 예제 구성입니다.
 
 * 단일 가용 영역: 클러스터 노드와 중재자가 모두 동일한 로컬 영역에 있습니다.
 * 다수의 가용 영역
@@ -184,9 +184,7 @@ NOTE: AWS 로컬 영역은 표준 모드에서 BlueXP를 사용하는 경우 지
 
 ==== 지원되는 디스크 및 인스턴스 유형
 
-지원되는 유일한 디스크 유형은 GP2입니다.
-
-크기가 xlarge에서 4xlarge인 다음 EC2 인스턴스 유형 제품군이 현재 지원됩니다.
+지원되는 유일한 디스크 유형은 GP2입니다. 크기가 xlarge에서 4xlarge인 다음 EC2 인스턴스 유형 제품군이 현재 지원됩니다.
 
 * M5
 * C5
@@ -195,7 +193,7 @@ NOTE: AWS 로컬 영역은 표준 모드에서 BlueXP를 사용하는 경우 지
 * 오른쪽 5분
 
 
-지원되는 에 대한 최신 세부 정보는 AWS 문서를 참조하십시오link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["로컬 영역의 EC2 인스턴스 유형"^].
+Cloud Volumes ONTAP는 이러한 구성만 지원합니다. Cloud Volumes ONTAP의 AWS 로컬 영역 구성에서 다른 디스크 유형이나 EC2 인스턴스를 선택하면 배포에 실패할 수 있습니다. 의 최신 정보와 전체 세부 정보는 AWS 문서를 참조하십시오link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["로컬 영역의 EC2 인스턴스 유형"^].
 
 
 
