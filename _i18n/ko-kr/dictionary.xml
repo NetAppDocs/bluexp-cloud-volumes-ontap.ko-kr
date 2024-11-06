@@ -5374,8 +5374,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="3817bf50b7761fc5155c59e4a334d37a" category="list-text">현재 계정에 이러한 기능이 포함되어 있지 않으면 추가 비용 없이 WORM 및 ARP를 선택할 수 있습니다.</block>
   <block id="1974af11cb1ac87d0b58d8696f893e4d" category="list-text">모든 새 계정에 대한 모든 Cloud Volumes ONTAP 오퍼링은 WORM 및 ARP에 대한 비용을 제외합니다.</block>
   <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">다음 기능에 대한 자세한 정보:</block>
-  <block id="a7cf7c6eee288b3a91bcae2e6522aa7a" category="list-text"><block ref="a7cf7c6eee288b3a91bcae2e6522aa7a" category="inline-link-rx"></block></block>
-  <block id="a100999de1d9ee815d7e13741acf163d" category="list-text"><block ref="a100999de1d9ee815d7e13741acf163d" category="inline-link-rx"></block></block>
   <block id="2a57c4c48ac4fed7319e97ba358228fe" category="paragraph">Google Cloud 이미지 검증은 향상된 NetApp 보안 요구사항을 준수합니다. 이 작업을 위해 특별히 생성된 개인 키를 사용하여 이미지를 생성하는 스크립트가 변경되었습니다. Google Cloud용 서명된 다이제스트 및 공용 인증서를 사용하여 Google Cloud 이미지의 무결성을 확인할 수 있습니다. 이 다이제스트는<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> 특정 릴리스에 대해 를 통해 다운로드할 수 있습니다.</block>
   <block id="92d90815a32824fbae3b0e1cc8bbf0bf" category="inline-link">고객 연락: CPC-00589</block>
   <block id="c4dbcb8cfcc96461b41d3911e9d893a3" category="paragraph">Cloud Volumes ONTAP 노드에서 일상 작업을 위해 다음 엔드포인트에 연결하려면 아웃바운드 인터넷 액세스가 필요합니다.</block>
@@ -5516,7 +5514,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">2024년 10월 7일</block>
   <block id="1b658f77da3dfa84be0559359889c6d1" category="section-title">업그레이드를 위한 버전 선택 시 사용자 환경이 향상되었습니다</block>
   <block id="76723ae6fdfacae29242fdb7085394b0" category="paragraph">이 릴리스부터 BlueXP  알림을 사용하여 Cloud Volumes ONTAP를 업그레이드하려고 하면 사용할 기본, 최신 및 호환 버전에 대한 지침을 받게 됩니다. 또한 이제 Cloud Volumes ONTAP 인스턴스와 호환되는 최신 패치 또는 주요 버전을 선택하거나 업그레이드할 버전을 수동으로 입력할 수 있습니다.</block>
-  <block id="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="paragraph"><block ref="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="inline-link-rx"></block></block>
   <block id="c5686848892b4de33534dcc294c33fff" category="paragraph">WORM(Write Once Read Many) 및 ARP(자율적 랜섬웨어 방어)의 내장 데이터 보호 및 보안 기능이 추가 비용 없이 Cloud Volumes ONTAP 라이센스와 함께 제공됩니다. 새로운 가격 모델은 AWS, Azure 및 Google Cloud의 신규 및 기존 BYOL 및 PAYGO/마켓플레이스 구독에 모두 적용됩니다. 용량 기반 라이센스와 노드 기반 라이센스 모두 추가 비용 없이 단일 노드 및 고가용성(HA) 쌍을 포함한 모든 구성에 대한 ARP 및 WORM을 포함합니다.</block>
   <block id="9da5d2f7e476f47c6a26d4ededfa4837" category="paragraph">Cloud Volumes ONTAP는 이제 Azure의 관리형 디스크에서 실행되는 고가용성 구축을 위해 16TiB 및 32TiB 디스크 크기를 지원합니다.</block>
   <block id="c4603a2a1f5be3fcdbe4e7ce09178104" category="sidebar">고가용성 모드를 활성화합니다</block>
@@ -5548,4 +5545,7 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="e8ae21b110baed89680dca18585c158c" category="section-title">개인 모드에서 Amazon Web Services에 대한 로컬 영역 지원</block>
   <block id="b32702079d81c2fd1e39448319edfa06" category="paragraph">BlueXP 은 이제 프라이빗 모드에서 Cloud Volumes ONTAP HA(고가용성) 구축을 위한 AWS 로컬 영역을 지원합니다. 이전에는 표준 모드에만 제한되었던 지원이 이제 프라이빗 모드까지 포함되도록 확장되었습니다.</block>
   <block id="648169096ce56c8569ce36a4abebe9c7" category="admonition">BlueXP 를 제한된 모드로 사용하는 경우 AWS 로컬 영역은 지원되지 않습니다.</block>
+  <block id="7a73f560e215c4ff952d3384c5435ae9" category="list-text"><block ref="7a73f560e215c4ff952d3384c5435ae9" category="inline-link-rx"></block></block>
+  <block id="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="list-text"><block ref="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="inline-link-rx"></block></block>
+  <block id="448c087351c52cb72f971666e2159491" category="paragraph"><block ref="448c087351c52cb72f971666e2159491" category="inline-link-rx"></block></block>
 </blocks>

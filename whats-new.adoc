@@ -51,7 +51,7 @@ HA 배포가 포함된 AWS Local Zones에 대한 자세한 내용은 을 참조�
 
 이 릴리스부터 BlueXP  알림을 사용하여 Cloud Volumes ONTAP를 업그레이드하려고 하면 사용할 기본, 최신 및 호환 버전에 대한 지침을 받게 됩니다. 또한 이제 Cloud Volumes ONTAP 인스턴스와 호환되는 최신 패치 또는 주요 버전을 선택하거나 업그레이드할 버전을 수동으로 입력할 수 있습니다.
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Cloud Volumes ONTAP 소프트웨어를 업그레이드합니다"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Cloud Volumes ONTAP 소프트웨어를 업그레이드합니다"]
 
 
 
@@ -72,8 +72,8 @@ WORM(Write Once Read Many) 및 ARP(자율적 랜섬웨어 방어)의 내장 데�
 
 다음 기능에 대한 자세한 정보:
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["랜섬웨어에 대한 보호 개선"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM 스토리지"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["랜섬웨어에 대한 보호 개선"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM 스토리지"]
 
 
 
@@ -292,20 +292,14 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9141-relnotes/["이 Cloud
 
 === Azure의 새로운 지역 지원
 
-
-
-==== 단일 가용 영역 지역 지원
-
+.단일 가용 영역 지역 지원
 현재 다음 지역에서는 Cloud Volumes ONTAP 9.12.1 GA 이후 버전용 Azure에서 가용성이 높은 단일 가용 영역 배포를 지원합니다.
 
 * 텔아비브
 * 밀라노
 
 
-
-
-==== 여러 가용 영역 지역 지원
-
+.여러 가용 영역 지역 지원
 현재 다음 지역에서는 Cloud Volumes ONTAP 9.12.1 GA 이후 버전용 Azure에서 가용성이 높은 다중 가용 영역 배포를 지원합니다.
 
 * 중부 인도

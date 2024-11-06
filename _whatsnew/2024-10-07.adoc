@@ -1,0 +1,11 @@
+= 업그레이드를 위한 버전 선택 시 사용자 환경이 향상되었습니다
+:allow-uri-read: 
+
+
+
+
+=== 업그레이드를 위한 버전 선택 시 사용자 환경이 향상되었습니다
+
+이 릴리스부터 BlueXP  알림을 사용하여 Cloud Volumes ONTAP를 업그레이드하려고 하면 사용할 기본, 최신 및 호환 버전에 대한 지침을 받게 됩니다. 또한 이제 Cloud Volumes ONTAP 인스턴스와 호환되는 최신 패치 또는 주요 버전을 선택하거나 업그레이드할 버전을 수동으로 입력할 수 있습니다.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Cloud Volumes ONTAP 소프트웨어를 업그레이드합니다"]

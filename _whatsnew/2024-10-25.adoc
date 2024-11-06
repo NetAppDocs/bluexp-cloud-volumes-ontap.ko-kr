@@ -1,0 +1,22 @@
+= N1 시리즈 장비는 BlueXP 에서 선택할 수 없습니다
+:allow-uri-read: 
+
+
+
+
+=== N1 시리즈 장비는 BlueXP 에서 선택할 수 없습니다
+
+Google Cloud에서 Cloud Volumes ONTAP의 새 인스턴스를 배포할 때 BlueXP 에서 n1 시리즈 머신을 더 이상 선택할 수 없습니다. n1 시리즈 머신은 기존 시스템에서만 유지되고 지원됩니다. Cloud Volumes ONTAP의 새로운 배포는 9.8 릴리스부터 Google Cloud에서만 지원됩니다. Cloud Volumes ONTAP 9.8 이상과 호환되는 n2 시리즈 기계 유형으로 전환하는 것이 좋습니다. 그러나 n1 시리즈 시스템은 API를 통해 수행되는 새로운 구축 환경에서 사용할 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud에서 지원되는 구성"^]..
+
+
+
+=== 개인 모드에서 Amazon Web Services에 대한 로컬 영역 지원
+
+BlueXP 은 이제 프라이빗 모드에서 Cloud Volumes ONTAP HA(고가용성) 구축을 위한 AWS 로컬 영역을 지원합니다. 이전에는 표준 모드에만 제한되었던 지원이 이제 프라이빗 모드까지 포함되도록 확장되었습니다.
+
+
+NOTE: BlueXP 를 제한된 모드로 사용하는 경우 AWS 로컬 영역은 지원되지 않습니다.
+
+HA 배포가 포함된 AWS Local Zones에 대한 자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWS 로컬 영역"^].
