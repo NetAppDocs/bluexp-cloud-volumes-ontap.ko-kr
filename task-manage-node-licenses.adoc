@@ -18,7 +18,7 @@ BlueXP 디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Clo
 
 _ 노드 기반 라이센스 _ 은(는) 이전 세대 라이센스 모델입니다(신규 고객은 사용할 수 없습니다).
 
-* NetApp에서 BYOL 라이센스를 구입함
+* NetApp에서 구매한 BYOL(Bring Your Own License) 라이센스
 * 클라우드 공급자 마켓플레이스에서 시간별 PAYGO(Pay-as-you-go) 구독을 지원합니다
 
 
@@ -231,3 +231,6 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["시
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deleting-working-env.html["Cloud Volumes ONTAP 작업 환경을 삭제하는 방법에 대해 알아봅니다"].
 
 
+
+.관련 항목
+링크: link:concept-licensing.html#end-of-availability-of-node-based-licenses["노드 기반 라이센스의 공급 중지"] link:task-convert-node-capacity.html["노드 기반 라이센스를 용량 기반으로 변환"]

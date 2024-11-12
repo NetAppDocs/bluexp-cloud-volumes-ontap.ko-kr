@@ -204,6 +204,8 @@ sidebar:
         url: "/task-updating-ontap-cloud.html"
       - title: 선불 종량제 시스템을 등록합니다
         url: "/task-registering.html"
+      - title: 노드 기반 라이센스를 변환합니다
+        url: "/task-convert-node-capacity.html"
       - title: 시스템을 중지하고 시작합니다
         url: "/task-managing-state.html"
       - title: 시스템 시간을 동기화합니다
@@ -260,7 +262,11 @@ sidebar:
   - title: 개념
     entries:
     - title: 라이센싱
-      url: "/concept-licensing.html"
+      entries:
+      - title: Cloud Volumes ONTAP에서 라이선스 취득
+        url: "/concept-licensing.html"
+      - title: 용량 기반 라이센스에 대해 자세히 알아보십시오
+        url: "/concept-licensing-charging.html"
     - title: 스토리지
       entries:
       - title: 클라이언트 프로토콜

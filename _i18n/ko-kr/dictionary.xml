@@ -965,7 +965,6 @@
   <block id="bd87106622bcf823ab94ad8e03ed23db" category="inline-link-macro">스토리지 VM 관리에 대해 자세히 알아보십시오</block>
   <block id="f24ce81f056d5acd59788df7f5ab36a1" category="list-text">FlexCache</block>
   <block id="a701f5d044348085ee4f97fef6636845" category="list-text">플랙스클론</block>
-  <block id="1ea97bc51cb5d4c0ad79186aeb4e4775" category="list-text">NetApp 볼륨 암호화(BYOL 또는 등록 PAYGO 시스템에만 해당)</block>
   <block id="794cb725c5631ad99b5b7c000307f0df" category="list-text">SnapMirror를 참조하십시오</block>
   <block id="82ef718f4ebe0c276814ee3d51e33361" category="list-text">SnapRestore</block>
   <block id="5bc075cee240a70af54270621d93765c" category="list-text">SnapVault</block>
@@ -1524,7 +1523,6 @@
   <block id="0a2292629d42074cb011142b9cd8f433" category="list-text">_private_ip_는 cvo_node2의 eth0(e0a)에서 사용되지 않는 보조 전용 IP 주소입니다.</block>
   <block id="de94398a333e3b7bdafad2ddf3232331" category="doc">노드 기반 라이센스 관리</block>
   <block id="4627bd080634e9380c75a1cc04a09486" category="paragraph">_ 노드 기반 라이센스 _ 은(는) 이전 세대 라이센스 모델입니다(신규 고객은 사용할 수 없습니다).</block>
-  <block id="81f9d97336a30fb7be6f8d770fee25eb" category="list-text">NetApp에서 BYOL 라이센스를 구입함</block>
   <block id="17ac9e85cf5b6f7b77acf61fb7721242" category="list-text">클라우드 공급자 마켓플레이스에서 시간별 PAYGO(Pay-as-you-go) 구독을 지원합니다</block>
   <block id="9426b05d2fc423b761e34f9d75b4066d" category="section-title">PAYGO 라이센스를 관리합니다</block>
   <block id="87089bacab591352ad6ad6579e34d93e" category="list-text">PAYGO * 를 클릭합니다.</block>
@@ -1779,7 +1777,6 @@
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="section-title">라이센스 개요</block>
   <block id="f008ecd5469e24eee31eb4e2e4a1e23f" category="paragraph">신규 고객은 다음과 같은 라이선스 옵션을 사용할 수 있습니다.</block>
   <block id="27d0a1d0fc95280fbaf78c65ff6b37fb" category="list-text">Essentials 패키지를 선택합니다</block>
-  <block id="0e1a6eb7eed81777ed9d0610be51df3b" category="paragraph">이전 by-node 라이센스 모델은 이미 라이선스를 구입했거나 현재 마켓플레이스 서브스크립션을 보유하고 있는 기존 고객에게도 계속 사용할 수 있습니다.</block>
   <block id="08598187312665a33ac3ebb5fc060c00" category="paragraph">다음 섹션에서는 이러한 각 옵션에 대해 자세히 설명합니다.</block>
   <block id="d7c357dcc3b8476a2eeba19c87ec383d" category="paragraph">NetApp에서 무료로 모든 Cloud Volumes ONTAP 기능을 제공합니다(클라우드 공급자 요금은 여전히 적용됨).</block>
   <block id="24996c045717f17c4e40ebb44791b2af" category="list-text">라이센스 또는 계약이 필요하지 않습니다.</block>
@@ -1800,7 +1797,6 @@
   <block id="6246af80c9ea9c857c70d2c643fcb249" category="list-text">라이센스 용량을 초과하는 경우</block>
   <block id="fdde7a7f3783aa0ce1e585f8be9c2def" category="list-text">라이센스 기간이 만료된 경우</block>
   <block id="36e4d5ff70cec517180ae18f1c34d2fd" category="list-text">마켓플레이스로부터 연간 계약을 체결한 경우 _ All_Cloud Volumes ONTAP 시스템에 해당 계약이 적용됩니다. BYOL은 연간 마켓플레이스 계약을 혼합하여 사용할 수 없습니다.</block>
-  <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">가격</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">지원되는 구성</block>
   <block id="4e4c431843fe55f93c074808800bf7d0" category="paragraph">용량 기반 라이센스 패키지는 Cloud Volumes ONTAP 9.7 이상에서 사용할 수 있습니다.</block>
   <block id="37040d43404231d8205705e4353af733" category="section-title">용량 제한</block>
@@ -1818,11 +1814,6 @@
   <block id="aad2b08c0103cffcbb5efae0a56ee747" category="paragraph">각 개별 Cloud Volumes ONTAP 시스템은 디스크를 통해 최대 2개의 PiB 용량을 지원하고 오브젝트 스토리지로 계층화합니다.</block>
   <block id="b2e75bbfb9933bc21b7f875e8676641d" category="inline-link">NetApp에 문의하십시오</block>
   <block id="a2f6a3e98ea1849ed1ab07d821bf6a18" category="section-title">노드 기반 라이센스</block>
-  <block id="749b4d71be76e8fee5fe7895ae5ff71d" category="paragraph">기존 고객은 노드 기반 라이센스를 계속 사용할 수 있습니다.</block>
-  <block id="04c40151a6d53f981d0364aef6215bd0" category="list-text">활성 라이센스가 있는 경우 BYOL은 라이센스 갱신에만 사용할 수 있습니다.</block>
-  <block id="358962d4cc759ccb4c98e87cc3396033" category="list-text">유효한 마켓플레이스 가입이 있는 경우에도 해당 구독을 통해 충전할 수 있습니다.</block>
-  <block id="7a216ec4d6977719ed1b40a4322bfd8f" category="section-title">라이선스 변환</block>
-  <block id="7bd090ccc30738cd79592e7431dee17b" category="paragraph">다른 라이센스 방법으로 이전하려는 경우 라이센스를 구입하고 해당 라이센스를 사용하여 새 Cloud Volumes ONTAP 시스템을 배포한 다음 데이터를 새 시스템으로 복제할 수 있습니다.</block>
   <block id="170d227d215fb560bb4c8ad4e345183a" category="section-title">최대 시스템 수</block>
   <block id="0b92442656d83f3067193055685902c8" category="list-text">내부 로드 밸런서</block>
   <block id="bed26a3b752abff1e6e50d64a46ef060" category="paragraph">로드 밸런싱 장치 하나는 클러스터 관리이고, 하나는 SVM(스토리지 VM) 관리이고, 하나는 노드 1에 대한 NAS 트래픽이고, 나머지 하나는 노드 2에 대한 NAS 트래픽입니다.</block>
@@ -2462,7 +2453,6 @@
   <block id="9d43d6f0219326b62a38c7746df96925" category="paragraph"><block ref="c1037565bcb6e1d770690e1d252b358c" category="inline-link-macro-rx"></block>.</block>
   <block id="376c581ebe9ec9aa8853377f8538ebbd" category="section-title">용량 기반 라이센스</block>
   <block id="f63eded59a08a3b3bd8dd4b30f5cd2d8" category="paragraph">용량 기반 라이센스를 통해 Cloud Volumes ONTAP 1TiB 용량 단위로 비용을 지불할 수 있습니다. 용량 기반 라이센스는 Essentials 패키지 또는 Professional 패키지 형태로 제공됩니다.</block>
-  <block id="64e2a2e379eafbf4fdc21f4b5b6b9670" category="list-text">NetApp에서 구입한 라이센스(BYOL</block>
   <block id="fdbbc45fde04fd31543205fa0418c269" category="list-text">Azure Marketplace에서 PAYGO(Pay-as-you-Go) 구독을 통해 시간 단위로 비용을 지불하는 것이 좋습니다</block>
   <block id="e627d7610d38524265b212be19391938" category="list-text">연간 계약입니다</block>
   <block id="3d241a11657521246cf272331a926bbb" category="inline-link-macro">용량 기반 라이센스에 대해 자세히 알아보십시오</block>
@@ -2802,8 +2792,6 @@
   <block id="870789b9d0beec538c84e00432400091" category="list-text">Google Cloud에서 Cloud Volumes ONTAP 인스턴스로 이동하고 각 LIF에 대한 IP 주소를 nic0에 추가합니다.</block>
   <block id="b961ba228f0253598e8fe47f55865219" category="list-text">프런트엔드 IP의 이름을 입력하고, Cloud Volumes ONTAP HA 쌍의 서브넷을 선택하고, * Dynamic * 을 선택한 상태로 두고, 가용성 영역이 있는 지역에서는 * Zone-Redundant * 를 선택된 상태로 두어 존이 실패하는 경우 IP 주소를 계속 사용할 수 있도록 합니다.</block>
   <block id="c00e2d19af360558425fe43036ba7057" category="paragraph"><block ref="c00e2d19af360558425fe43036ba7057" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5505ffcb759fb1c9c3793b2dd386cd82" category="inline-link-macro">PAYGO와 BYOL 간 전환 방법에 대해 알아보십시오</block>
-  <block id="b71c93cf4431b3a81c64a35fe6dbe9cf" category="paragraph">시스템을 PAYGO by-node 라이센싱에서 BYOL by-node 라이센싱으로 변환하는 기능은 지원되지 않습니다. 새 시스템을 구축한 다음 데이터를 해당 시스템으로 복제해야 합니다. <block ref="d81e4230804422351d525c6f4d42f594" category="inline-link-macro-rx"></block>.</block>
   <block id="594cb44c6500d8855ad820b0653e02c7" category="section-title">PAYGO와 BYOL 간 변경</block>
   <block id="a704128156d562fe5860508e9584ee34" category="paragraph">시스템을 PAYGO by-node 라이센싱에서 BYOL by-node 라이센싱으로 변환하는 것은 지원되지 않으며 그 반대의 경우도 마찬가지입니다. 사용한 만큼만 지불하는 가입과 BYOL 가입형 간에 전환하려면 새 시스템을 구축하고 기존 시스템에서 새 시스템으로 데이터를 복제해야 합니다.</block>
   <block id="7f7c7e70efe0e6e29f5d0b207145f30e" category="list-text">새 Cloud Volumes ONTAP 작업 환경을 만듭니다.</block>
@@ -2885,8 +2873,6 @@
   <block id="fdb568933703a9268c5ba46f3208f414" category="list-text">모든 Cloud Volumes ONTAP 구성에 대한 라이센스를 제공합니다</block>
   <block id="2b7a2bda81dcf84ff8d6b600415c5e52" category="paragraph">동일한 속도로 운영 및 2차 볼륨의 용량을 충전하는 단일 노드 또는 HA</block>
   <block id="728fd439c2abdc887c4a5e678d7c8708" category="paragraph">용량 기반 라이센스 패키지는 다음 소비 모델에서 사용할 수 있습니다.</block>
-  <block id="fcbd09a2622ccd7b58495c6277262566" category="list-text">* BYOL *: NetApp에서 구입한 라이센스로 클라우드 공급자에 상관없이 Cloud Volumes ONTAP를 구축할 수 있습니다.</block>
-  <block id="1e101142b61a711e7fbc92238adf9d20" category="list-text">* PAYGO *: 클라우드 공급자 마켓플레이스의 시간별 구독입니다.</block>
   <block id="146cb6145f5238f0a019636047844250" category="list-text">* 연간 *: 클라우드 공급자 마켓플레이스로부터 연간 계약을 체결합니다.</block>
   <block id="e26935ad375965079b7681b616fa96eb" category="paragraph">다음 세부 정보는 용량 기반 라이센싱에서 충전이 어떻게 작동하는지 이해하는 데 도움이 됩니다.</block>
   <block id="10297bdbea13a5f039ea0c228d352388" category="section-title">최소 충전</block>
@@ -3002,8 +2988,6 @@
   <block id="e4bdb4038975db929f91098fe2d7ec12" category="inline-link">Cloud Volumes Edge 캐시</block>
   <block id="acc34707a7642d8ca31b72c25ca50920" category="list-text">* Edge Cache *: 라이센스<block ref="1bc1fd590dd203d9bb10cdd372d8de71" category="inline-link-rx"></block></block>
   <block id="2d66a0b2e45838b2ebcec83efd6c765c" category="inline-link">이러한 라이센스 패키지에 대해 자세히 알아보십시오</block>
-  <block id="c3c41ceeecb96e561c7ec71ffc1c62fe" category="list-text">* 선택한 VNET만 해당 *: 인바운드 트래픽의 소스는 Cloud Volumes ONTAP 시스템에 대한 VNET의 서브넷 범위와 커넥터가 상주하는 VNET의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.</block>
-  <block id="35b1e30bbf7722e3019259ffb8c9f0b7" category="list-text">* All VNets *: 인바운드 트래픽의 소스는 0.0.0.0/0 IP 범위입니다.</block>
   <block id="cfdb32f80009b1e5c5c0468dda9f013d" category="paragraph">클라우드 공급자 마켓플레이스에서 프라이빗 오퍼 또는 계약을 체결한 경우, 계약에 포함되지 않은 충전 방법으로 변경하면 BYOL(NetApp에서 라이센스를 구매한 경우) 또는 PAYGO에 대해 충전이 생성됩니다.</block>
   <block id="4f9ff6137bed641431cf4f88c0e37ba0" category="inline-image-macro">Cloud Volumes ONTAP HA 쌍 및 구성 요소의 개념적 이미지</block>
   <block id="deec4375ad9dbb52932d049564b46c2c" category="paragraph"><block ref="deec4375ad9dbb52932d049564b46c2c" category="inline-image-macro-rx" type="image"></block></block>
@@ -3829,7 +3813,6 @@
   <block id="39c6a1c30ae1faf01f4bd99a4757f7ae" category="paragraph">Azure Private Links를 사용하지 않도록 설정하고 Connector가 프록시 서버를 사용하는 경우 직접 API 트래픽을 활성화해야 합니다.</block>
   <block id="40e86593118ce089551b3691f6bba919" category="inline-link">Connector에서 직접 API 트래픽을 활성화하는 방법에 대해 알아봅니다</block>
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure의 계층화된 데이터에 대한 기본 스토리지 액세스 계층은 _hot_tier입니다. 핫 계층은 용량 계층에서 자주 액세스하는 데이터에 적합합니다.</block>
-  <block id="07524ae3949ffd6bf3d8864e62191d5c" category="paragraph">용량 계층의 비활성 데이터에 액세스할 계획이 없는 경우 _cool_storage 계층으로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 계층을 냉각으로 변경하면 비활성 용량 계층 데이터가 차가운 스토리지 계층으로 직접 이동합니다.</block>
   <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
   <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">이제 BlueXP는 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.13.0을 배포하고 관리할 수 있습니다.</block>
   <block id="12169a51b108f73888655f2a089d493a" category="list-text">중국 지역에서는 BYOL을 사용하는 단일 노드 시스템만 지원됩니다.</block>
@@ -3907,9 +3890,7 @@
   <block id="906b0fc78378feea1883fe721c72e648" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * 기계 유형 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
   <block id="6466b41798117de76beee910171ffc8f" category="inline-image-macro">작업 환경을 볼 때 개요 페이지의 오른쪽 위에 있는 기능 패널 아래에 있는 시스템 유형 설정을 보여 주는 스크린샷.</block>
   <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6ccb38ae114176203c2592f430a889d7" category="list-text">노드 기반 PAYGO 라이센스를 사용하는 경우 * 라이센스 유형 * 옆에 있는 연필 아이콘을 클릭하여 다른 라이센스 및 컴퓨터 유형을 선택할 수 있습니다.</block>
   <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">시스템 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해했는지 확인한 다음 * 변경 * 을 클릭합니다.</block>
-  <block id="def968f0e18d0f7aed6421ac81039272" category="list-text">_Total Prep커밋된 용량 _ 은(는) NetApp에서 구매한 총 라이센스 용량(BYOL 또는 Marketplace 계약)입니다.</block>
   <block id="af61e314a8c2484dfcfef0afc2e5b8b9" category="list-text">_Consumed capacity_는 해당 패키지의 볼륨 용량을 표시합니다. 특정 패키지에 대한 자세한 내용을 보려면 도구 설명 위로 마우스를 가져갑니다.</block>
   <block id="cfc852810f89c13febd473e12117d828" category="list-text">_PreCommitted Capacity_는 NetApp에서 구매한 라이센스 용량(BYOL 또는 마켓플레이스 계약)입니다.</block>
   <block id="b35741916171a2b4d1210c1ccf6e3920" category="list-text">_BYOL_은 이 패키지 유형에 대해 NetApp에서 구입한 라이센스 용량을 보여 줍니다.</block>
@@ -3947,7 +3928,6 @@
   <block id="df8131ce273465a002c95cb0c5cf8a39" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * VM 유형 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
   <block id="838630480d269a60c2c6bb929717f964" category="inline-image-macro">작업 환경을 볼 때 개요 페이지의 오른쪽 위에 있는 기능 패널 아래에 있는 VM 유형 설정을 보여 주는 스크린샷.</block>
   <block id="4782218bc1564550fa76897e159be9bf" category="paragraph"><block ref="4782218bc1564550fa76897e159be9bf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e257ba6100e7f02e04c1d8b474024a3c" category="list-text">노드 기반 PAYGO 라이센스를 사용하는 경우 * 라이센스 유형 * 옆에 있는 연필 아이콘을 클릭하여 다른 라이센스 및 VM 유형을 선택할 수 있습니다.</block>
   <block id="0b52c0f8f311ea5465845d81cc4401f1" category="list-text">VM 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해했는지 확인한 다음 * 변경 * 을 클릭합니다.</block>
   <block id="c529c6170bed402afd9deff05a6b3d0d" category="paragraph">BlueXP의 볼륨 관리 패널의 * 탑재 명령 * 옵션을 통해 BlueXP에서 올바른 IP 주소를 찾을 수 있습니다.</block>
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">* 첨부 파일(선택 사항) *: 한 번에 하나씩 최대 5개의 첨부 파일을 업로드합니다.</block>
@@ -4016,7 +3996,6 @@
   <block id="c6d494ac63d05f0797b17cc4e9b671a5" category="list-text">애그리게이트 타일에서 사용 가능한 용량(프로비저닝된 크기 - 사용된 애그리게이트 용량)을 확인합니다.</block>
   <block id="85cbc8c9d17142818868d0deb987b7d4" category="section-title">FlexGroup 볼륨을 봅니다</block>
   <block id="18f38afc08c122a02d1cef0b8f55b13c" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * 인스턴스 유형 * 옆에 있는 연필 아이콘을 클릭합니다.</block>
-  <block id="e977a40ba12e4cbe82ec5ad1eeca10d3" category="list-text">노드 기반 PAYGO 라이센스를 사용하는 경우 * 라이센스 유형 * 옆에 있는 연필 아이콘을 클릭하여 다른 라이센스 및 인스턴스 유형을 선택할 수도 있습니다.</block>
   <block id="dcee8dbc1dce5317d8cfa6588f8f050e" category="list-text">인스턴스 유형을 선택하고 확인란을 선택하여 변경의 영향을 이해했는지 확인한 다음 * 변경 * 을 클릭합니다.</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">2023년 4월 4일</block>
@@ -4027,7 +4006,6 @@
   <block id="66d5639668d7c3e585771304940a252b" category="paragraph">일반 쓰기 속도를 사용하도록 설정한 경우 Microsoft Azure 또는 Google Cloud에서 Cloud Volumes ONTAP 작업 환경을 구축하는 데 걸리는 시간을 단축했습니다. 배포 시간은 이제 평균 3-4분 더 짧습니다.</block>
   <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">BlueXP 탐색 메뉴에서 * Governance &gt; Digital Wallet * 을 선택합니다.</block>
   <block id="e83a5b2754cd537ac6467dc025115726" category="list-text">Cloud Volumes ONTAP * 탭에서 * 용량 기반 라이센스 * 를 선택한 상태로 유지합니다.</block>
-  <block id="2bd469c6a2a1a44818909050205d416b" category="list-text">사용된 용량, 사전 커밋된 총 용량 및 총 PAYGO 용량을 보여 주는 패키지 요약을 봅니다.</block>
   <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">Keystone * 을 선택합니다.</block>
   <block id="ece137c555d8c53c8378fee53f6273c4" category="paragraph">AKV를 사용하여 보호할 수 있습니다 <block ref="defc94716dcceab396c0509ed7db9366" category="inline-link-macro-rx"></block> 데이터 SVM에만 해당.</block>
   <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">노드 기반 라이센스를 관리하는 방법에 대해 자세히 알아보십시오</block>
@@ -4131,7 +4109,6 @@
   <block id="100bae5c7e0821077de0fde9621000c1" category="list-text"><block ref="bc493c0c6367fdf80f51179db159d9ed" category="inline-link-rx"></block>.</block>
   <block id="73511701791994e2ed3cc40c68089746" category="paragraph">Keystone 구독은 HA 쌍으로 지원됩니다. 현재 단일 노드 시스템에서는 이 라이센스 옵션이 지원되지 않습니다.</block>
   <block id="9a762a1c55d92068610f4f2bc3e42d91" category="paragraph">Keystone 가입을 시작하는 방법 알아보기:</block>
-  <block id="fc757430059ba1c5429f69be6c92e93b" category="paragraph">기존 Cloud Volumes ONTAP 시스템을 다른 라이센스 방식으로 변환하는 것은 지원되지 않습니다. 현재 세 가지 라이센스 방법은 용량 기반 라이센스, Keystone 가입 및 노드 기반 라이센싱입니다. 예를 들어, 시스템을 노드 기반 라이센싱에서 용량 기반 라이센싱으로 전환할 수 없습니다. 반대의 경우도 마찬가지입니다.</block>
   <block id="221a174f8f629fb4aa230caa988c2112" category="summary">BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보십시오.</block>
   <block id="24794b3bdde84ec6ccbec9ca5a92cf43" category="section-title">BlueXP 디지털 지갑 기능 향상</block>
   <block id="ca8d7ad5e36d40f4e29b0a489cf94294" category="paragraph">이제 BlueXP 디지털 지갑에 시장 프라이빗 오퍼와 함께 구입한 라이센스 용량이 표시됩니다.</block>
@@ -4236,13 +4213,6 @@
 <block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>.</block>
   <block id="f55b18eeaddb29e4e968d14603f99e82" category="list-text"><block ref="f55b18eeaddb29e4e968d14603f99e82" category="inline-link-rx"></block></block>
   <block id="d7e4497b251053c3a95e730a472e0f1a" category="list-text"><block ref="d7e4497b251053c3a95e730a472e0f1a" category="inline-link-rx"></block></block>
-  <block id="85c76e0af4d25f0011f167d772dba6ab" category="cell">이 Cloud Volumes ONTAP 시스템에서 사용할 AWS 자격 증명과 마켓플레이스 구독을 선택하십시오.
-
-선택한 자격 증명을 새 AWS Marketplace 구독에 연결하려면 * Add Subscription * 을 클릭합니다. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다.
-
-NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 필요하지 않습니다.
-
-<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>.</block>
   <block id="f647c880dd21951d680e6e9b7ad216f0" category="list-text"><block ref="f647c880dd21951d680e6e9b7ad216f0" category="inline-link-rx"></block></block>
   <block id="31506a250b099663a98d7d365371bda0" category="paragraph">사용 권한은 에 제공됩니다<block ref="7aa097bb85d23c6d9f43a1db610a79f9" category="inline-link-rx"></block>, 그러나 클라우드 키 관리 서비스에 대체 프로젝트를 사용하는 경우에는 적용되지 않을 수 있습니다.</block>
   <block id="f0b4f84896926e6a2dbb48986fffd0a3" category="paragraph">을 참조하십시오<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> "GcpEncryption" 매개 변수 사용에 대한 자세한 내용은 를 참조하십시오.</block>
@@ -4378,7 +4348,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="e22c3a8f0786d359fea7cca144bbee1b" category="inline-link">자율주행 랜섬웨어 보호 활성화</block>
   <block id="9216a2741f7e54826d99a0fcfc0c7c58" category="section-title">WORM 파일을 삭제하는 중입니다</block>
   <block id="728c208823318f76bc30851f92119221" category="paragraph">보존 기간 동안 권한이 있는 삭제 기능을 사용하여 WORM 파일을 삭제할 수 있습니다.</block>
-  <block id="44c48c2759b23de55aafe43a43856a08" category="paragraph">자세한 지침은 을 참조하십시오<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block></block>
   <block id="59e727e0c151e53fa5beabd59871cb88" category="paragraph">대부분의 경우 HA 쌍의 업그레이드는 무중단으로 가능하며 I/O는 중단되지 않습니다. 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.</block>
   <block id="67e0d115b5c2df9254836fd8f762d3dc" category="inline-link">ONTAP 설명서를 참조하십시오</block>
   <block id="ff0dae83f1884b2852a33110d07283d1" category="paragraph">세션 지향 프로토콜은 업그레이드 중 특정 영역의 클라이언트 및 애플리케이션에 부정적인 영향을 미칠 수 있습니다. 자세한 내용은<block ref="69d6ddda693aaf09f72544089a10fab3" category="inline-link-rx"></block></block>
@@ -4687,7 +4656,6 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="9f9a7e011920aed7b91c7f5809cef3df" category="paragraph">Azure HA 단일 가용 영역이 있고 페이지 Blob이 있습니다</block>
   <block id="7df51deb241262b7a30e9f895e6b3b75" category="paragraph">공유 관리 디스크가 있는 Azure HA 단일 가용 영역</block>
   <block id="75b5d41c945fb77a44a02275e5167f03" category="paragraph">Azure HA 공유 관리 디스크가 있는 여러 가용 영역</block>
-  <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다. 생성 중에 스토리지 계정을 암호화하려면 CVO 생성 요청에서 리소스 ID를 생성하고 제공해야 합니다. 이는 모든 유형의 배포에 적용됩니다. 제공하지 않으면 저장소 계정은 여전히 암호화되지만 BlueXP는 먼저 Microsoft 관리 키 암호화를 사용하여 저장소 계정을 만든 다음 고객이 관리하는 키를 사용하도록 저장소 계정을 업데이트합니다.</block>
   <block id="3d398b97e4c42f1072862ca68a5330e0" category="inline-link-macro">기술 문서 "Cloud Volumes ONTAP 업그레이드 실패"</block>
   <block id="73f61210747fe91bea8a184200d3fcc5" category="paragraph">업그레이드 실패 오류가 발생하면 를 참조하십시오 <block ref="60b526b210a3d8d7f028168de61b0c4a" category="inline-link-macro-rx"></block>.</block>
   <block id="9239af3d88d2e7788330e1bb0d8cd044" category="list-text"><block ref="9239af3d88d2e7788330e1bb0d8cd044" category="inline-link-rx"></block></block>
@@ -4703,13 +4671,11 @@ NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 �
   <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Azure 보안 그룹을 만듭니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP는 Cloud Volumes ONTAP의 성공적인 운영에 필요한 인바운드 및 아웃바운드 규칙을 포함하는 AWS 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Google Cloud 방화벽 규칙을 생성합니다. 테스트용으로 또는 자체 방화벽 규칙을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
-  <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">노드 기반 Cloud Volumes ONTAP 라이센스가 있는 ARP 기능의 사용은 현재 디지털 지갑에 반영되지 않습니다. 노드 기반 ARP 사용을 볼 수 있는 기능은 향후 릴리스의 Digital Wallet에서 사용할 수 있습니다.</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">볼륨에 대한 ARP 구성은 ONTAP 시스템 관리자 및 ONTAP CLI를 통해 수행됩니다.</block>
   <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024년 1월 16일</block>
   <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXP의 패치 릴리즈</block>
   <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXP에서 패치 릴리즈는 최신 3가지 버전의 Cloud Volumes ONTAP에 대해서만 사용할 수 있습니다.</block>
   <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
-  <block id="fa8624c42ea6d2ce73d1dbb434c41dc8" category="paragraph">ARP 라이센스는 "유동" 라이센스로 간주되며, 이는 단일 Cloud Volumes ONTAP 인스턴스에 바인딩되지 않고 여러 Cloud Volumes ONTAP 환경에 적용될 수 있음을 의미합니다.</block>
   <block id="677ee5101eb2acd8a357643d03784fa7" category="section-title">패치 릴리스</block>
   <block id="25163e975710186a452c0f2fefe81448" category="inline-xref">ONTAP 이미지를 다운로드하는 중입니다</block>
   <block id="17464ff13145a21ed61cc7a0b9513ce7" category="paragraph">2024년 1월부터 패치 업그레이드는 Cloud Volumes ONTAP의 3가지 최신 버전에 대한 패치 릴리즈인 경우에만 BlueXP에서 사용할 수 있습니다. 최신 GA 릴리즈를 사용하여 BlueXP에 표시할 3가지 최신 버전을 결정합니다. 예를 들어, 현재 GA 릴리즈가 9.13.1인 경우 9.11.1~9.13.1용 패치가 BlueXP에 표시됩니다. 버전 9.11.1 이하의 패치 릴리스로 업그레이드하려면 에서 수동 업그레이드 절차를 사용해야 합니다 <block ref="741f5e59386960528e5ac58506855727" category="inline-xref-macro-rx"></block>.</block>
@@ -4920,13 +4886,11 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="21374a20e08d3e0c8ca328133d8fe5f4" category="list-text">BlueXP 콘솔의 오른쪽 위에서 줄임표 아이콘을 클릭하고 * Remove from workspace * 를 선택합니다.</block>
   <block id="b724364be6320cfd44126523f60ef584" category="inline-link">마켓플레이스 제품의 프로그래밍 방식 배포</block>
   <block id="64d1ac557c8992bc5d65b98a95e0b497" category="section-title">지원되는 로컬 영역을 선택합니다</block>
-  <block id="951d6dba79708fba245b5798bb84dde6" category="paragraph">Cloud Volumes ONTAP는 싱가포르를 포함한 일부 AWS 지역 지역에서 지원됩니다. 로컬 영역 선택은 선택 사항입니다.</block>
   <block id="b1968c5681446da9bdcedadbf7a34131" category="inline-link-macro">로컬 영역의 전체 목록을 봅니다</block>
   <block id="a455e3549f40e60e4a9c2e8c6580a6a2" category="paragraph"><block ref="27bdb425ba8206d688a379332282fbb4" category="inline-link-macro-rx"></block>.
 로컬 영역을 사용하도록 설정해야 해당 영역에서 리소스를 만들고 관리할 수 있습니다.</block>
   <block id="7d273ac4682ff6458339567063ef099c" category="inline-link-macro">로컬 영역을 활성화하는 방법에 대해 알아봅니다</block>
   <block id="9d27b872e974d3d08bf3a26f3677a159" category="paragraph"><block ref="4d81cb3a41369feab014b9955336458e" category="inline-link-macro-rx"></block>.</block>
-  <block id="f5d7776a3ddb7ca1ecdd36a3e71b0903" category="admonition">Phoenix는 지원되는 로컬 영역이 아닙니다.</block>
   <block id="14f93e26a64410a779a8f05ff019c578" category="paragraph">여러 가용 영역(AZ) 또는 단일 가용 영역(AZ)에 HA 구성을 배포하여 데이터의 고가용성을 보장할 수 있습니다. 각 구성에 대한 자세한 내용을 검토하여 요구 사항에 가장 적합한 구성을 선택해야 합니다.</block>
   <block id="086e808bdf46a8027609222c8bc2ae0b" category="section-title">다수의 가용 영역</block>
   <block id="1f0c75dd86d99f8dd501e6ad73083cb9" category="paragraph">AZ(다중 가용 영역)에 HA 구성을 구축하면 AZ 또는 Cloud Volumes ONTAP 노드를 실행하는 인스턴스에서 장애가 발생할 경우 데이터의 고가용성을 보장할 수 있습니다. NAS IP 주소가 데이터 액세스 및 스토리지 페일오버에 미치는 영향을 이해해야 합니다.</block>
@@ -5163,13 +5127,9 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="61631dd1eb0609d79c27c109e55de5c8" category="paragraph">자세한 내용은 을<block ref="f2e318b984927d4781fb278ddc8ba233" category="inline-link-rx"></block> 참조하십시오.</block>
   <block id="5baa1341b4ee5dbbcf72c1bca3fb5576" category="inline-link">Amazon S3 설명서: Amazon S3 스토리지 클래스에 대해 자세히 알아보십시오</block>
   <block id="39298274cceb2a817c0b454941ec8e9a" category="paragraph">데이터에 액세스할 경우 액세스 비용이 더 높으므로 스토리지 클래스를 변경하기 전에 액세스 비용을 고려하십시오.<block ref="0c2470317fad27a81908b0930cf9e62d" category="inline-link-rx"></block>..</block>
-  <block id="f2d057ba2400451d6e60c2bfbcdd515f" category="paragraph">작업 환경을 생성할 때 스토리지 클래스를 선택하면 이후에 언제든지 변경할 수 있습니다. 저장소 클래스 변경에 대한 지침은 을 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="db9ff71bc9bf52beb98f0d113ff7ccbf" category="inline-link">Microsoft Azure 설명서: Azure Blob 스토리지 액세스 계층에 대해 자세히 알아보십시오</block>
-  <block id="3b03939d4e383d03bdf27286fcbfba97" category="paragraph">데이터에 액세스할 경우 액세스 비용이 더 높으므로 스토리지 계층을 변경하기 전에 액세스 비용을 고려하십시오.<block ref="30699d9b3a005c39386e73a7c4627191" category="inline-link-rx"></block>..</block>
-  <block id="dfb39f09588961540489e064238fc85a" category="paragraph">작업 환경을 생성할 때 스토리지 계층을 선택할 수 있으며 그 후에는 언제든지 변경할 수 있습니다. 스토리지 계층 변경에 대한 자세한 내용은 을 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="2071f090de049a0bafd6e8e9ebc886a4" category="inline-link">Google Cloud 설명서: 스토리지 클래스</block>
   <block id="b7394e89ab52c2644e6abe3428b0bdee" category="paragraph">데이터에 액세스하는 경우 액세스 비용이 더 높아지므로 스토리지 클래스를 변경하기 전에 이 점을 고려해야 합니다. 자세한 내용은 을<block ref="3f6491f63b376fc9e505b3fd50e825aa" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="0573e6b6d29f7e14bd02accced1264d7" category="paragraph">작업 환경을 생성할 때 스토리지 계층을 선택할 수 있으며 그 후에는 언제든지 변경할 수 있습니다. 스토리지 클래스 변경에 대한 자세한 내용은 을 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="2fb88c61a4ec945d000763abb10cbd1d" category="paragraph">지원되는 구성 목록 및 지침은 을 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="38850f8a756c82c89e87237ed4f91234" category="inline-image-macro">BlueXP  및 클라이언트에서 들어오는 트래픽을 관리하는 로드 밸런서, VMSS FLEX의 Cloud Volumes ONTAP 노드 2개, 부팅 데이터용 SSD 디스크, 고객 데이터용 페이지 Blob을 보여 주는 개념적 이미지</block>
   <block id="fb33ca393b61decaf86e6a0dccadd3c1" category="paragraph"><block ref="fb33ca393b61decaf86e6a0dccadd3c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -5190,7 +5150,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="a9c5983e35ef10e7675e8d4743ca9b78" category="paragraph">자세한 내용은 을 <block ref="e677af9e7ca6c446fefd39f21658da89" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="13adeba04a9bbea1e4724de79afe951f" category="inline-link-macro">로컬 영역의 EC2 인스턴스 유형</block>
   <block id="973154cd70a812583853f9af98175e4b" category="admonition">HA 쌍에서 노드 간에 볼륨을 이동하는 경우 다른 노드의 IP 주소를 사용하여 볼륨을 다시 마운트해야 합니다. 그렇지 않으면 성능이 저하될 수 있습니다. 클라이언트가 CIFS에 대한 NFSv4 참조 또는 폴더 리디렉션을 지원하는 경우 Cloud Volumes ONTAP 시스템에서 이러한 기능을 설정하여 볼륨을 다시 마운트하지 않도록 할 수 있습니다. 자세한 내용은 ONTAP 설명서를 참조하십시오.</block>
-  <block id="a91a698de1a811c466dcfeeb6a0b5b2c" category="admonition">BlueXP 백업 및 복구를 위해 PAYGO 구독이 필요하지만 이 서비스 사용과 관련하여 비용은 발생하지 않습니다. BlueXP  백업 및 복구의 라이센스 설정에 대한 자세한 내용은 을<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="1598bd897bc443f364d77a0ead2b386d" category="paragraph">자세한 내용은 를 참조하십시오<block ref="07e6a6e4814dabc1a0870a10a70c4b44" category="inline-link-rx"></block></block>
   <block id="e35f4f28f28dcf48ae9d3ccf0f0cefa5" category="paragraph">이 암호화 옵션을 사용하려면 AWS KMS가 적절하게 설정되어 있는지 확인해야 합니다. 자세한 내용은 을 <block ref="01123efe4d08d28ad1b6d58169335a21" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="31bba8b3ba9d8527af7c728ba014c87c" category="paragraph">Vscan에서 지원하는 공급업체, 소프트웨어 및 버전에 대한 자세한 내용은 를<block ref="ae69c67e09c854d61b64be1ef166878d" category="inline-link-rx"></block>참조하십시오.</block>
@@ -5198,7 +5157,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="f9a29c4f12d918677aac4f08102edf1b" category="list-text">단일 노드 시스템에서 다음 유형의 Azure 관리형 디스크를 사용할 수 있습니다.</block>
   <block id="747d4ec445455d90b072fa27bca4895a" category="list-text">_Premium SSD v2 Managed Disks_ Premium SSD Managed Disks에 비해 단일 노드와 HA 쌍 모두에 대해 더 낮은 비용으로 더 높은 성능과 더 낮은 대기 시간을 제공합니다.</block>
   <block id="ae239537955756b1880e92d14a279360" category="list-text">작업 환경을 생성할 때 WORM 스토리지를 활성화하면 BlueXP에서 생성한 모든 볼륨에서 WORM이 활성화됩니다. 그러나 ONTAP System Manager 또는 ONTAP CLI를 사용하여 WORM이 비활성화된 볼륨을 생성할 수 있습니다.</block>
-  <block id="c699841d655c41d53469e8578e8bd3ef" category="list-text">작업 환경을 생성할 때 WORM 스토리지를 사용하지 않도록 설정하는 경우 BlueXP , ONTAP System Manager 또는 ONTAP CLI에서 생성하는 모든 볼륨에서 WORM이 사용되지 않도록 설정됩니다. 생성 중 활성화되지 않은 Cloud Volumes ONTAP 작업 환경에서 WORM을 활성화하려면 NetApp 지원 부서의 지원 티켓을 생성해야 합니다.</block>
   <block id="cd0293a5ac443202995d2747957a273f" category="list-text">BlueXP 는 몇 가지 볼륨 특성을 다른 관리 툴과 다르게 설정합니다(예: ONTAP System Manager 또는 ONTAP CLI).</block>
   <block id="2de4b6feb53ae91459bc42bdf2b868ff" category="paragraph">이러한 속성에 대한 자세한 내용은 을 <block ref="c8a7e79f678b1faddb103e58db2edb75" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="70a45a83881e6b547c9c6dabf0392df4" category="paragraph">Cloud Volumes ONTAP용으로 선택한 가상 시스템에서 Premium SSD v2 관리 디스크를 데이터 디스크로 지원하는 경우, 시스템은 NVRAM용 32GiB Premium SSD v2 관리 디스크를 사용하고, 루트 디스크로 다른 디스크를 사용합니다.</block>
@@ -5359,8 +5317,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="e378925ca7c13e386e5c5d854097dc26" category="inline-link">Cloud Volumes ONTAP에 대한 고지 사항</block>
   <block id="72b3ada156bb3b51f9862f1754d974d2" category="list-text"><block ref="72b3ada156bb3b51f9862f1754d974d2" category="inline-link-rx"></block></block>
   <block id="ea7b4173339bef8c2570812171d360a0" category="paragraph">백업을 사용하여 Cloud Volumes ONTAP 시스템을 재구성할 수 있습니다. 구성 백업에 대한 자세한 내용은 을<block ref="49fe905ea86eeb386daebc5876800d6b" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="26ab4d3fe221f0b273d79d8ce5ebc8bc" category="paragraph">추가 라이센스를 구입하여 디지털 지갑에 추가하면 Cloud Volumes ONTAP를 사용하여 볼륨별로 ARP를 활성화할 수 있습니다.</block>
-  <block id="c728dacf8c5d7e9da86b3512e6ea5301" category="paragraph">ARP가 활성화된 볼륨은 "학습 모드" 또는 "활성" 상태로 지정되어 있습니다.</block>
   <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024년 9월 9일</block>
   <block id="cdd78645b017b927a25b5449e345f823" category="section-title">웜 및 ARP 기능은 더 이상 요금이 부과되지 않습니다</block>
   <block id="8ddfd051601ea88c75625c16c542a149" category="paragraph">BlueXP 은 또한<block ref="891e111023ee3cccd4407be6ddd24c21" prefix=" " category="inline-code"></block> NAS 데이터 LIF에서 다음 서비스를 제거한 후 iSCSI 데이터 LIF에 추가하여 데이터 스토리지 VM의 정책을 수정합니다.</block>
@@ -5443,9 +5399,7 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="bec523fb694fd6fe80736494c1a45a30" category="cell">Google Cloud 서비스와의 커뮤니케이션:</block>
   <block id="958a7d50dde5e697e4e9a16ba64515e6" category="cell">Cloud Volumes ONTAP은 Google Cloud에서 특정 BlueXP  작업을 수행하기 위해 Google Cloud 서비스와 통신할 수 없습니다.</block>
   <block id="12acb6948c0c5fe54c5651d99ff9fd04" category="list-text">로<block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block> 이동하여 다운로드 섹션에서 필요한 소프트웨어 버전을 다운로드합니다.</block>
-  <block id="c3288ce29225fc4244fa01d5aef04aa3" category="paragraph">ARP 기능은 추가 비용 없이 노드 기반 라이센스와 용량 기반 라이센스 모두에 대해 BYOL 및 마켓플레이스 가입과 함께 사용할 수 있습니다. NetApp 영업 담당자에게 문의하여 현재 라이센스에 ARP를 추가하십시오.</block>
   <block id="5ee4faea784afb4b7750a3c91c073449" category="admonition">공간이 충분하지 않으면 Cloud Volumes ONTAP에서 데이터를 이동할 수 없으므로 성능이 저하될 수 있습니다. 모든 변경은 신중하게 수행해야 합니다. 잘 모르는 경우 NetApp 지원에 문의하여 지침을 받으십시오.</block>
-  <block id="becb0288ca83df315765f9f31eb5847f" category="paragraph">이 페이지에 설명된 방법을 사용하여 소프트웨어를 업그레이드하려면 Cloud Volumes ONTAP를 NetApp 지원에 등록해야 합니다. 이 내용은 PAYGO 및 BYOL 모두에 적용됩니다. <block ref="f7029dacbf10b8aa72bca74845a64729" category="inline-link-macro-rx"></block>BYOL 시스템은 기본적으로 등록되지만</block>
   <block id="fd8831656d484b23e386115d7264f056" category="list-text">HA 쌍의 경우:</block>
   <block id="180b275121e0f37251fecae975bf46df" category="list-text">중재자 인스턴스용 st1 EBS 볼륨 2개, 루트 디스크로 약 8GiB 중 하나, 데이터 디스크로 4GiB 중 하나</block>
   <block id="64b03175221d53e202f475eebaa91d75" category="list-text">각 노드에 하나의 140GiB GP3 디스크가 있으며, 다른 노드의 루트 데이터 복제본이 포함됩니다</block>
@@ -5521,9 +5475,7 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="287c693dd0bc6ec48aa0fc3f4b950a9e" category="paragraph">구독이 BlueXP  조직 또는 계정에서 연결 해제되어 Cloud Volumes ONTAP 작업 환경을 만들 때 더 이상 선택할 수 없습니다.</block>
   <block id="bae74b170f7e19d783c68e9e4e5e5a70" category="paragraph">AWS Local Zones 는 스토리지, 컴퓨팅, 데이터베이스 및 기타 엄선된 AWS 서비스가 대도시와 산업 영역에 가깝게 위치하는 인프라 구축입니다. AWS Local Zones를 사용하면 AWS 서비스를 더 가까운 곳으로 가져와 워크로드의 지연 시간을 개선하고 데이터베이스를 로컬에서 유지할 수 있습니다. Cloud Volumes ONTAP에서는</block>
   <block id="12132105a5861c2a904da865554d4e62" category="admonition">AWS 로컬 영역은 표준 및 개인 모드에서 BlueXP 를 사용할 때 지원됩니다. 현재 BlueXP 를 제한된 모드로 사용하는 경우 AWS 로컬 영역은 지원되지 않습니다.</block>
-  <block id="87836512100e1272a8e293d9b1584ca0" category="paragraph">Cloud Volumes ONTAP는 AWS 로컬 영역에서 HA 구축만 지원합니다. 다음은 예제 구성입니다.</block>
   <block id="15c32962b3a74affab8eda8b723d5a9d" category="paragraph">지원되는 유일한 디스크 유형은 GP2입니다. 크기가 xlarge에서 4xlarge인 다음 EC2 인스턴스 유형 제품군이 현재 지원됩니다.</block>
-  <block id="238181028bdcb33e3ea129371a6d2545" category="paragraph">Cloud Volumes ONTAP는 이러한 구성만 지원합니다. Cloud Volumes ONTAP의 AWS 로컬 영역 구성에서 다른 디스크 유형이나 EC2 인스턴스를 선택하면 배포에 실패할 수 있습니다. 의 최신 정보와 전체 세부 정보는 AWS 문서를 참조하십시오<block ref="a4408f4d4cfd81ced6d2ec2b8da89160" category="inline-link-macro-rx"></block>.</block>
   <block id="a02d03fc43afe508f920c7ac72a54af6" category="list-text">고가용성(HA) 쌍을 위한 원활한 하이브리드 클라우드 경험을 제공하는 용량제 구독 기반 서비스입니다.</block>
   <block id="e7c597b04ce35f0f025ccab446eee809" category="paragraph">고객은 다양한 구성으로 용량별로 지불할 수 있습니다.</block>
   <block id="53e6fd574dbf70e62183a00bd6dce317" category="paragraph">라이센스는 전적으로 Cloud Volumes ONTAP 시스템 내에서 생성된 볼륨 유형을 기반으로 합니다.</block>
@@ -5537,7 +5489,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="42a9ff8d7662759290ac08e2ee0929f4" category="list-text">초과 사용: 라이센스가 부여된 용량을 초과하면 다른 라이센스의 가용 용량을 먼저 사용하는 것과 함께 초과 사용 요금이 마켓플레이스로 청구됩니다.</block>
   <block id="f93da9b042a7ade0f4d86a091309ed87" category="list-text">FlexClone 및 FlexCache 볼륨: FlexClone 볼륨이 청구되지 않음 소스 및 타겟 FlexCache 볼륨은 기본 데이터로 간주되며 프로비저닝된 공간에 따라 비용이 청구됩니다.</block>
   <block id="371519ace7adec1f0d1a909854d1cbec" category="list-text">HA 쌍 충전: HA 쌍의 경우 노드의 프로비저닝된 용량만 충전됩니다. 파트너 노드에 동기식으로 미러링되는 데이터는 청구되지 않습니다.</block>
-  <block id="0099e212d78247cd7545328dc1350ae0" category="admonition">NetApp이 곧 노드 기반 라이센스의 가용성을 종료할 예정입니다. 가용성이 종료되면 노드 기반 라이센스를 용량 기반 라이센스로 변환해야 합니다. 자세한 내용은 을<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">2024년 10월 25일</block>
   <block id="dc1815932afdea52f1a4c12d73f2eed0" category="section-title">N1 시리즈 장비는 BlueXP 에서 선택할 수 없습니다</block>
   <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">Google Cloud에서 Cloud Volumes ONTAP의 새 인스턴스를 배포할 때 BlueXP 에서 n1 시리즈 머신을 더 이상 선택할 수 없습니다. n1 시리즈 머신은 기존 시스템에서만 유지되고 지원됩니다. Cloud Volumes ONTAP의 새로운 배포는 9.8 릴리스부터 Google Cloud에서만 지원됩니다. Cloud Volumes ONTAP 9.8 이상과 호환되는 n2 시리즈 기계 유형으로 전환하는 것이 좋습니다. 그러나 n1 시리즈 시스템은 API를 통해 수행되는 새로운 구축 환경에서 사용할 수 있습니다.</block>
@@ -5548,4 +5499,151 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="7a73f560e215c4ff952d3384c5435ae9" category="list-text"><block ref="7a73f560e215c4ff952d3384c5435ae9" category="inline-link-rx"></block></block>
   <block id="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="list-text"><block ref="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="inline-link-rx"></block></block>
   <block id="448c087351c52cb72f971666e2159491" category="paragraph"><block ref="448c087351c52cb72f971666e2159491" category="inline-link-rx"></block></block>
+  <block id="059b6fdd2ea839d9327c322a4c87e168" category="doc">노드 기반 라이센스에 대한 공급 중지</block>
+  <block id="73dfeef5d38f87e4c1d9e4b6417db109" category="paragraph">NetApp은 Cloud Volumes ONTAP 노드 기반 라이센스의 공급 중지(EOA)와 지원 종료(EOS)를 계획했습니다. 2024년 11월 11일부터 노드 기반 라이센스의 제한된 가용성이 종료되었습니다. 노드 기반 라이센스에 대한 지원은 2024년 12월 31일에 종료됩니다. 노드 기반 라이센스의 EOA 후 BlueXP  라이센스 변환 툴을 사용하여 용량 기반 라이센스로 전환해야 합니다.</block>
+  <block id="412842ace3db013f5cc3f99342aac206" category="paragraph">연간 또는 장기 약정의 경우, NetApp은 EOA 날짜 또는 라이센스 만료일 전에 NetApp 담당자에게 연락하여 전환을 위한 사전 요구사항이 충족되는지 확인하는 것이 좋습니다. Cloud Volumes ONTAP 노드에 대한 장기 계약이 없고 온디맨드 PAYGO 구독에 대해 시스템을 실행하는 경우 EOS 날짜 전에 전환을 계획하는 것이 중요합니다. 장기 계약 및 PAYGO 서브스크립션의 경우 BlueXP  라이선스 변환 도구를 사용하여 원활한 전환을 수행할 수 있습니다.</block>
+  <block id="90df487d076cd9295a7192268b4439ee" category="inline-link">노드 기반 라이센스의 공급 중지</block>
+  <block id="342dcce6bda294bb4b60fc9333bcafbe" category="inline-link">노드 기반 라이센스를 용량 기반으로 변환</block>
+  <block id="2293617fe352e42e5a1e5d757463cb39" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="5987d844b1ad687ea551a96a31c7c0df" category="inline-link-rx"></block></block>
+  <block id="a4b4a128b8ea43df8551a18d37b0bfcd" category="section-title">BlueXP 에서 노드 기반 배포를 제거합니다</block>
+  <block id="04b144a0be31129b4ac9a0f2751271d9" category="paragraph">BlueXP 에서는 노드 기반 라이센스를 사용하여 Cloud Volumes ONTAP 시스템을 배포하는 옵션이 더 이상 사용되지 않습니다. 몇 가지 특별한 경우를 제외하고 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP 구축에 노드 기반 라이센스를 사용할 수 없습니다.</block>
+  <block id="11c97a8e296f1428a1d4c9a2253b1bfb" category="paragraph">NetApp은 계약 의무 및 운영 요구 사항에 따라 다음과 같은 고유한 라이센스 요구 사항을 인지하고 있으며, 이러한 상황에서 노드 기반 라이센스를 계속 지원합니다.</block>
+  <block id="57389c1aef6c1264d9ad4bbe74640b2e" category="list-text">USPS 고객</block>
+  <block id="43b1a7bfd4243a44cf321f03e7878ffd" category="list-text">비공개 모드로 배포</block>
+  <block id="bbef1435f544b56bbed0e1c536c2515e" category="list-text">중국 지역에 AWS에서 Cloud Volumes ONTAP를 구축했습니다</block>
+  <block id="e6eb4bcca3ad358d710ea99dd5c577d1" category="list-text">유효하며 만료되지 않은 노드 BYOL 라이센스(BYOL 라이센스)가 있는 경우</block>
+  <block id="677ce77d69762bd9f63d8a2760e6a0c4" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block></block>
+  <block id="02077474df02850d5f691ab4c25f3b7c" category="section-title">Azure Blob 스토리지에서 Cloud Volumes ONTAP 데이터에 대한 콜드 계층 추가</block>
+  <block id="b37931f01938eae6736d1bea8fd72fed" category="paragraph">BlueXP 은 이제 Azure Blob 스토리지에 비활성 용량 계층 데이터를 저장할 콜드 계층을 선택할 수 있도록 지원합니다. 기존 핫 계층과 쿨 계층에 콜드 계층을 추가하면 보다 경제적인 스토리지 옵션과 향상된 비용 효율성을 누릴 수 있습니다.</block>
+  <block id="2ede20fe3152113b3c27cd841c879ccf" category="paragraph"><block ref="2ede20fe3152113b3c27cd841c879ccf" category="inline-link-rx"></block></block>
+  <block id="7a315b4592c0ed57964da376a6b04868" category="section-title">Azure용 저장소 계정에 대한 공용 액세스를 제한하는 옵션입니다</block>
+  <block id="c11ad5eeb4b3088d2c151593e9c1204e" category="paragraph">이제 Azure에서 Cloud Volumes ONTAP 시스템의 저장소 계정에 대한 공용 액세스를 제한할 수 있습니다. 액세스를 비활성화하면 조직의 보안 정책을 준수해야 하는 경우 동일한 VNet 내에서도 개인 IP 주소가 노출되지 않도록 보호할 수 있습니다. 이 옵션은 Cloud Volumes ONTAP 시스템의 데이터 계층화도 비활성화하며 단일 노드와 고가용성 쌍에 모두 적용할 수 있습니다.</block>
+  <block id="69e89afe4b2013c34ff51df883ddc022" category="paragraph"><block ref="9064ea2dae3c9dc76b91a834ab88d8bf" category="inline-link-rx"></block>..</block>
+  <block id="f87269f0bcffd4dd379148db58c41b11" category="section-title">Cloud Volumes ONTAP 구축 후 WORM 지원</block>
+  <block id="8d9d085ab6acd5074907258fafcff341" category="paragraph">이전 버전에서는 BlueXP 에 Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM 스토리지를 활성화할 수 있었습니다. 이제 BlueXP 에서는 생성 중에 WORM이 활성화되지 않은 경우에도 작업 환경에서 WORM을 활성화할 수 있는 옵션을 제공합니다. 활성화한 후에는 WORM을 비활성화할 수 없습니다.</block>
+  <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">Cloud Volumes ONTAP 작업 환경에서 WORM 활성화</block>
+  <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
+  <block id="2db5c6d1af8e977d496e788510cbddd0" category="paragraph">작업 환경을 생성할 때 스토리지 클래스를 선택하고 나중에 언제든지 변경할 수 있습니다. 저장소 클래스 변경에 대한 지침은 을 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="930e999bb64aeb9cc71cdd63d9f4948c" category="paragraph">용량 계층에서 비활성 데이터에 액세스할 계획이 없는 경우 비활성 데이터가 최소 30일 동안 보존되는 _cool_storage 계층을 선택할 수 있습니다. 비활성 데이터가 최소 90일 동안 저장되는 _COLD_TIER 를 선택할 수도 있습니다. 스토리지 요구사항 및 비용 고려 사항에 따라 요구사항에 가장 적합한 계층을 선택할 수 있습니다. 스토리지 계층을 _cool_or_cold_로 변경하면 비활성 용량 계층 데이터가 쿨 또는 콜드 스토리지 계층으로 직접 이동합니다. 냉각 계층 및 콜드 계층은 핫 계층에 비해 스토리지 비용이 낮지만 액세스 비용이 더 높으므로 스토리지 계층을 변경하기 전에 이 점을 고려하십시오. 을<block ref="30699d9b3a005c39386e73a7c4627191" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="3bb51211db193484b68905ef8f68ac0f" category="paragraph">작업 환경을 생성할 때 스토리지 계층을 선택할 수 있으며 나중에 언제든지 변경할 수 있습니다. 스토리지 계층 변경에 대한 자세한 내용은 을 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="546c7b1d0701c3dcea6eb887ba9a499b" category="paragraph">작업 환경을 생성할 때 스토리지 계층을 선택할 수 있으며 나중에 언제든지 변경할 수 있습니다. 스토리지 클래스 변경에 대한 자세한 내용은 을 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="8c26cfdad94fa97c367b921f4702fcea" category="paragraph">HA 쌍을 액티브-액티브 구성으로 사용할 수 있으며, 이 경우 두 노드가 클라이언트에 데이터를 제공하는 액티브-액티브 구성으로 사용하거나, 액티브-패시브 구성으로 사용할 수 있습니다. 패시브 노드는 액티브 노드의 스토리지를 인계한 경우에만 데이터 요청에 응답합니다.</block>
+  <block id="fa317d8412b494ed6cf39e304ca9a341" category="paragraph">AWS의 Cloud Volumes ONTAP는 단일 가용 영역에서 HA(고가용성) 모드만 지원합니다. 단일 노드 구축은 지원되지 않습니다.</block>
+  <block id="eb99da0ddbfd6f5a24a511ef8df7c577" category="paragraph">Cloud Volumes ONTAP은 AWS 로컬 영역에서 데이터 계층화, 클라우드 계층화, 검증되지 않은 인스턴스를 지원하지 않습니다.</block>
+  <block id="19af59a268c506bb19268e318e2e9e5f" category="paragraph">다음은 예제 구성입니다.</block>
+  <block id="02648096bf738946ffc4d338cb4e9d59" category="admonition">Cloud Volumes ONTAP는 이러한 구성만 지원합니다. AWS 로컬 영역 구성에서 지원되지 않는 디스크 유형이나 비정규화된 인스턴스를 선택하면 배포 오류가 발생할 수 있습니다. 연결이 부족하여 AWS 로컬 영역에서 AWS S3에 데이터 계층화를 사용할 수 없습니다.</block>
+  <block id="54a223dbcc3dca4a58e9e5bc292e0c6b" category="paragraph">의 최신 정보와 전체 세부 정보는 AWS 문서를 참조하십시오<block ref="a4408f4d4cfd81ced6d2ec2b8da89160" category="inline-link-macro-rx"></block>.</block>
+  <block id="8d4ac812d0760131bc0db9a92eb2b512" category="paragraph">노드 기반 BYOL(Bring Your Own License)이 있는 각 Cloud Volumes ONTAP 시스템에는 활성 구독과 함께 설치된 시스템 라이센스가 있어야 합니다. BlueXP는 라이선스를 관리하고 만료 전에 경고를 표시하여 프로세스를 간소화합니다.</block>
+  <block id="2316a1561b1b51c9eb0f231cb338cf48" category="summary">용량 기반 라이센스의 충전, 소비 모델, 가격 및 구성을 숙지합니다.</block>
+  <block id="13dba612a4f942a80cbc82c5f678d57c" category="doc">용량 기반 라이센스에 대해 자세히 알아보십시오</block>
+  <block id="24382072604813ac4ccf773eac088de7" category="paragraph">용량 기반 라이센스의 충전 및 용량 사용량을 잘 알고 있어야 합니다</block>
+  <block id="14f508f0826944b504efb176670357e8" category="list-text">* BYOL *: BYOL(Bring Your Own License) 방식 NetApp에서 구매한 라이센스로, 모든 클라우드 공급자에 Cloud Volumes ONTAP를 배포하는 데 사용할 수 있습니다.</block>
+  <block id="3c7a90227f7481790a6d7eb5b1a274ea" category="list-text">* PAYGO *: PAYGO(Pay-as-you-go) 서브스크립션은 클라우드 공급자의 마켓플레이스에서 시간 단위 서브스크립션을 제공합니다.</block>
+  <block id="2b0470da2a26cbbea5d95f4e261d82ee" category="paragraph">노드 기반 라이센스를 용량 기반으로 변환하는 방법에 대한 자세한 내용은 을 참조하십시오</block>
+  <block id="7af9b0ab22150a40b2c1c451de82db3c" category="section-title">가격 및 지원되는 구성</block>
+  <block id="f05f2e524280a4aaf976825a1f6748f6" category="inline-link-macro">용량 기반 라이센스에 대한 비용 청구</block>
+  <block id="6c418172eb2db3f08bae6e40862aa940" category="paragraph">자세한 내용은 을 <block ref="28d08582e43bd81e1450bd514123324f" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="a9949f1e97b05bac6285563868b6954a" category="admonition">BlueXP  백업 및 복구를 위해서는 PAYGO(Pay-as-you-go) 구독이 필요하지만 이 서비스 사용에 따른 비용은 발생하지 않습니다. BlueXP  백업 및 복구의 라이센스 설정에 대한 자세한 내용은 을<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="05e7dd258874d61cb2bb985c9da9a17d" category="paragraph">NetApp은 노드 기반 라이센싱의 EOA(End of Availability) 및 지원(EOS)을 계획했습니다. EOA 및 EOS 후에 노드 기반 라이센스를 용량 기반 라이센스로 변환해야 합니다.</block>
+  <block id="8c6aee7f6d39fa3bea95c2ae09851a7a" category="paragraph">자세한 내용은 을<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="5b4d3df9f94e27cca9f34f152bff2940" category="paragraph">2024년 11월 11일부터 노드 기반 라이센스의 제한된 가용성이 종료되었습니다. 노드 기반 라이센스에 대한 지원은 2024년 12월 31일에 종료됩니다.</block>
+  <block id="f61f8b3c935630ec8f0486cee8916013" category="paragraph">EOA 날짜를 초과하여 연장되는 유효한 노드 기반 계약이 있는 경우 계약이 만료될 때까지 라이센스를 계속 사용할 수 있습니다. 계약이 만료되면 용량 기반 라이센스 모델로 전환해야 합니다. Cloud Volumes ONTAP 노드에 대한 장기 계약이 없는 경우 EOS 날짜 전에 전환을 계획하는 것이 중요합니다.</block>
+  <block id="bf2b1d7970167b534d54bc96e7402716" category="paragraph">다음 표에서 각 라이센스 유형 및 EOA가 라이센스 유형에 미치는 영향에 대해 자세히 알아보십시오.</block>
+  <block id="82060d81b7ce43c57280e879899f9a2c" category="cell">사용권 유형</block>
+  <block id="9278d7740d8ae06ade950cb6b0dd3e8c" category="cell">EOA 이후 영향</block>
+  <block id="614e524d2f2decbb0935ad5876d363a6" category="paragraph">BYOL(Bring Your Own License)을 통해 구매한 유효한 노드 기반 라이센스</block>
+  <block id="478c4f4681eac78a0ac305ec7be4713f" category="paragraph">라이센스는 만료 시까지 유효합니다. 사용되지 않는 기존 노드 기반 라이센스를 사용하여 새로운 Cloud Volumes ONTAP 시스템을 구축할 수 있습니다.</block>
+  <block id="16d5ab209831029745e64e98e66ba23c" category="paragraph">BYOL을 통해 노드 기반 라이센스가 만료되었습니다</block>
+  <block id="d83127b1411e10b0e57743f291048e63" category="paragraph">이 라이센스를 사용하여 새 Cloud Volumes ONTAP 시스템을 배포할 수 없습니다. 기존 시스템은 계속 작동할 수 있지만 EOS 날짜 이후에는 시스템에 대한 지원이나 업데이트를 받지 못합니다.</block>
+  <block id="dddb9d06ec44b2f4783c5cbeb3b3f962" category="paragraph">PAYGO 서브스크립션이 있는 유효한 노드 기반 라이센스입니다</block>
+  <block id="1992166b3e269c648d4c3627fe482fa5" category="paragraph">EOS 날짜 이후에는 용량 기반 라이센스로 전환할 때까지 NetApp 지원을 더 이상 받지 않습니다.</block>
+  <block id="ddbff06fb221c5c1396bb37c09f6f2fb" category="paragraph-title">예외사항</block>
+  <block id="60d1148bddcd69c1238a0b69f45bdaa5" category="paragraph">NetApp은 특정 상황을 특별히 고려해야 함을 인식하며, 노드 기반 라이센스의 EOA 및 EOS는 다음과 같은 경우에 적용되지 않습니다.</block>
+  <block id="0fda23bdfd335df1f36c51b87bc2b780" category="paragraph">이러한 특정 시나리오에서 NetApp은 계약 의무 및 운영 요구 사항을 준수하는 고유한 라이센스 요구 사항을 해결하기 위한 지원을 제공합니다.</block>
+  <block id="913f6cd3e420105c804151f182c6938f" category="admonition">이러한 시나리오에서도 새로운 노드 기반 라이센스와 라이센스 갱신은 승인일로부터 최대 1년 동안 유효합니다.</block>
+  <block id="5be0251ff1848cd4d292e0a684e70539" category="section-title">사용권 변환</block>
+  <block id="a3562fcfc4a85274195b7100a2a26d71" category="paragraph">BlueXP 를 사용하면 라이센스 변환 툴을 통해 노드 기반 라이센스를 용량으로 원활하게 전환할 수 있습니다. 노드 기반 라이센스의 EOA에 대한 자세한 내용은 을 <block ref="1ef8ea114dcf1680f435cb8143e047b7" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="67b50b6cd5ac50e92192638dab47bddc" category="paragraph">전환하기 전에 두 라이센스 모델 간의 차이점을 숙지하는 것이 좋습니다. 노드 기반 라이센스에는 각 ONTAP 인스턴스에 대해 고정 용량이 포함되어 있어 유연성이 제한될 수 있습니다. 반면, 용량 기반 라이센스는 여러 인스턴스에 걸쳐 공유 스토리지 풀을 지원하므로 유연성을 높이고 리소스 활용도를 최적화하며 워크로드를 재배포할 때 재정적 불이익을 받을 가능성을 줄입니다. 용량 기반 충전은 변화하는 스토리지 요구 사항에 맞춰 원활하게 조정됩니다.</block>
+  <block id="9deed5641b081a08e814b22533f5376e" category="paragraph">이 변환을 수행하는 방법은 을 <block ref="431f655d5a9ac309b561fc62a4c619ea" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="2840378978873ef766f1cf65e35e8874" category="admonition">시스템을 용량 기반에서 노드 기반 라이센스로 변환할 수 없습니다.</block>
+  <block id="eb6b8681b70b8bdf10f97c0999d1a166" category="paragraph">WORM 기능은 추가 비용 없이 라이센스 BYOL(Bring Your Own License) 및 마켓플레이스 가입과 함께 사용할 수 있습니다. NetApp 영업 담당자에게 문의하여 현재 라이센스에 WORM를 추가하십시오.</block>
+  <block id="860927af902beb1428465c4ff2b73981" category="list-text">작업 환경을 생성할 때 WORM 스토리지를 사용하지 않도록 설정하는 경우 BlueXP , ONTAP System Manager 또는 ONTAP CLI에서 생성하는 모든 볼륨에서 WORM이 사용되지 않도록 설정됩니다.</block>
+  <block id="584bce636e6a152cb14b10a9d95cc134" category="paragraph">BlueXP 에서 Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM 스토리지를 활성화할 수 있다. 생성 중에 작업 환경에서 WORM이 활성화되지 않은 경우에도 WORM을 활성화할 수 있습니다. 활성화한 후에는 WORM을 비활성화할 수 없습니다.</block>
+  <block id="1cfbcfa88923d0df6b5764e50ce3a549" category="list-text">WORM은 ONTAP 9.10.1 이상에서 지원됩니다.</block>
+  <block id="1b52e286a71c7852e84e0a121bc9874b" category="list-text">ONTAP 9.11.1 이상에서는 백업이 포함된 웜이 지원됩니다.</block>
+  <block id="f3b94705a03d2506d182cf13e262ad27" category="list-text">Canvas 페이지에서 WORM을 활성화할 작업 환경의 이름을 두 번 클릭합니다.</block>
+  <block id="e2ba39c84c604d7eb0a5b7184cab7d68" category="list-text">개요 탭에서 기능 패널을 클릭한 다음 * WORM * 옆에 있는 연필 아이콘을 클릭합니다.</block>
+  <block id="b474fb933ed760adc08677bc4bc42339" category="paragraph">시스템에서 WORM이 이미 활성화되어 있으면 연필 아이콘이 비활성화됩니다.</block>
+  <block id="fe19c26d9707943e3d7c9c5da6083944" category="list-text">WORM * 페이지에서 클러스터 규정 준수 시계의 보존 기간을 설정합니다.</block>
+  <block id="78e3f451c302e6f4fc3497680e508ed4" category="inline-link">ONTAP 설명서: 규정 준수 시계를 초기화합니다</block>
+  <block id="40a4c252d21fe44c5babb5cd38a59474" category="paragraph">자세한 내용은 을<block ref="e2235bff328f7d7d636e45c1db9cf9c0" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="0488bab91fb4582b53a14eb8fc2a032b" category="paragraph">기능 패널에서 * WORM * 의 상태를 확인할 수 있습니다. WORM이 활성화되면 SnapLock 라이센스가 클러스터에 자동으로 설치됩니다. ONTAP System Manager에서 SnapLock 라이센스를 볼 수 있습니다.</block>
+  <block id="b0af18cd69843e047afd09d32ac1cd7f" category="paragraph">자세한 내용은 을<block ref="03bc56e40fb58df28e53112c02ca2ae1" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="560c2ebf5fdf3cdbb830bad54eafda28" category="list-text">NetApp 볼륨 암호화(BYOL(Bring Your Own License) 또는 등록된 용량제(PAYGO) 시스템만 해당)</block>
+  <block id="7f5d518134ff332807df54a0d0660a08" category="list-text">* Selected VNet Only *: 인바운드 트래픽의 소스는 Cloud Volumes ONTAP 시스템의 VNet과 커넥터가 상주하는 VNet의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.</block>
+  <block id="cd8b82367babbe39683e8fb9f0c22ed5" category="list-text">* 모든 VNets *: 인바운드 트래픽의 소스는 0.0.0.0/0 IP 범위입니다.</block>
+  <block id="30b4fbeeeca063d0518f937681d54cb1" category="list-text">* 사용 안 함 *: 이 옵션은 스토리지 계정에 대한 공용 네트워크 액세스를 제한하고 Cloud Volumes ONTAP 시스템의 데이터 계층화를 비활성화합니다. 보안 규정과 정책으로 인해 동일한 VNet 내에서도 프라이빗 IP 주소가 노출되지 않도록 하는 경우 권장되는 옵션입니다.</block>
+  <block id="57c6d237e15f528fad8e3f65f9a16398" category="paragraph">노드 기반 PAYGO(Pay-as-you-go) 라이센스를 사용하는 경우 * License type * 옆에 있는 연필 아이콘을 클릭하여 다른 라이센스 및 VM 유형을 선택할 수도 있습니다.</block>
+  <block id="61f61b36ca3ee8ac47bd8319d6a6da9e" category="paragraph">노드 기반 PAYGO(Pay As You Go) 라이센스를 사용하는 경우 * License type * 옆에 있는 연필 아이콘을 클릭하여 다른 라이센스 및 인스턴스 유형을 선택할 수도 있습니다.</block>
+  <block id="a6ecef7da6963fbad59a3086a2850e01" category="paragraph">노드 기반 PAYGO(Pay-as-you-go) 라이센스를 사용하는 경우 * License type * 옆에 있는 연필 아이콘을 클릭하여 다른 라이센스 및 기계 유형을 선택할 수도 있습니다.</block>
+  <block id="ad7ec214f507336a7e17d120e074d946" category="summary">노드 기반 라이센스의 EOA(End of Availability)가 완료되면 BlueXP  라이센스 변환 툴을 사용하여 용량 기반 라이센스로 전환해야 합니다.</block>
+  <block id="ede3b64e47be4458ec3b083a508317d8" category="paragraph">연간 또는 장기 약정의 경우 NetApp, 전환을 위한 사전 요구사항이 충족되는지 확인하기 위해 EOA 날짜(2024년 11월 11일) 또는 라이센스 만료일 전에 NetApp 담당자에게 연락하는 것이 좋습니다. Cloud Volumes ONTAP 노드에 대한 장기 계약이 없고 온디맨드 용량제(PAYGO) 구독에 대해 시스템을 실행하는 경우, 2024년 12월 31일 EOS(지원 종료) 전에 전환을 계획하는 것이 중요합니다. 두 경우 모두 원활한 전환을 위해 BlueXP  라이센스 변환 도구를 사용하기 전에 시스템이 요구 사항을 충족하는지 확인해야 합니다.</block>
+  <block id="4bedf07f0fb0e4e91062f6c20aefb983" category="paragraph">EOA 및 EOS에 대한 자세한 내용은 을 <block ref="7f9a8649ca2d86db235ba56502d14f92" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="aef6fd472f817709940e55ee0509b06b" category="list-text">라이센스 변환 툴을 사용하면 데이터를 마이그레이션하거나 추가 클라우드 리소스를 프로비저닝할 필요가 없이 노드 기반 라이센스 모델에서 용량 기반 라이센스 모델로 전환할 수 있습니다.</block>
+  <block id="1b740ae810dbba9c533dc649a7e00e1a" category="list-text">무중단 운영이며 서비스 중단이나 애플리케이션 다운타임이 발생하지 않습니다.</block>
+  <block id="ae7204194871107f02073f12fcf8eef4" category="list-text">Cloud Volumes ONTAP 시스템의 계정 및 응용 프로그램 데이터는 그대로 유지됩니다.</block>
+  <block id="0caba03d6443607a5e6317db3c48768b" category="list-text">기본 클라우드 리소스는 변환 후 영향을 받지 않습니다.</block>
+  <block id="c71b87b7ddb6142065c0158af5ec7d67" category="list-text">라이센스 변환 도구는 단일 노드, 단일 가용 영역(AZ)의 HA(고가용성), 다중 AZ의 HA, BYOL(Bring Your Own License) 및 PAYGO와 같은 모든 배포 유형을 지원합니다.</block>
+  <block id="98017309484ea1c630aac29d1d5cde75" category="list-text">이 툴은 모든 노드 기반 라이센스를 소스로, 모든 용량 기반 라이센스를 대상으로 지원합니다. 예를 들어, PAYGO Standard 노드 기반 라이센스가 있는 경우 BYOL 용량 기반 라이센스로 변환할 수 있습니다.</block>
+  <block id="d83716c2cd131d390d1534102b05cd41" category="list-text">변환은 모든 클라우드 공급자, AWS, Azure 및 Google Cloud에서 지원됩니다.</block>
+  <block id="17b44aa5dd5a227e033b4a869774c160" category="list-text">변환 후 노드 기반 라이센스의 일련 번호가 용량 기반 형식으로 교체됩니다. 이 작업은 변환의 일부로 수행되며 NetApp 지원 사이트(NSS) 계정에 반영됩니다.</block>
+  <block id="57badbd9aeb6e5152434b70bdd22ed2e" category="list-text">용량 기반 모델로 전환해도 노드 기반 라이센스와 동일한 위치에 데이터가 계속 유지됩니다. 이런 접근 방식은 데이터 배치의 중단을 보장하고 전환 과정에서 데이터 주권 원칙을 유지합니다.</block>
+  <block id="185df8fc7d6cba2b3dc4ddbb241610fe" category="list-title">시작하기 전에</block>
+  <block id="c89523d65a6a7e4c3fbcb8cbfee5d6e5" category="list-text">고객 액세스 또는 관리자 액세스 권한이 있는 NSS 계정이 있어야 합니다.</block>
+  <block id="6f20448e7fc594c65cbf039bc1158f6e" category="list-text">NSS 계정은 BlueXP  사용자 자격 증명으로 등록해야 합니다.</block>
+  <block id="fe48b2f64d3e692a977f98f771bb114c" category="list-text">작업 환경은 고객 액세스 또는 관리자 액세스 권한이 있는 NSS 계정에 연결되어야 합니다.</block>
+  <block id="2d7b42dafac67ae8d4acec7cdad288fb" category="list-text">BYOL 라이센스 또는 마켓플레이스 가입과 같은 유효한 용량 기반 라이센스가 있어야 합니다.</block>
+  <block id="f45e4501bcc29fe221f7780836d48c71" category="list-text">용량 기반 라이센스는 BlueXP  계정에서 사용할 수 있어야 합니다. 이 라이센스는 마켓플레이스 구독 또는 BlueXP  디지털 지갑의 BYOL/전용 혜택 패키지가 될 수 있습니다.</block>
+  <block id="cbafe80857ccd6774c5a1e53cc912746" category="list-text">대상 패키지를 선택하기 전에 다음 기준을 이해해야 합니다.</block>
+  <block id="a906cad1e2bd71c3fd41efc1424f282e" category="list-text">계정에 용량 기반 BYOL 라이센스가 있는 경우 선택한 대상 패키지가 계정의 BYOL 용량 기반 라이센스와 일치해야 합니다.</block>
+  <block id="6905efe5cff8820565676d6d40bbc083" category="list-text">가 대상 패키지로 선택된 경우<block ref="9e8b160226c9fe22a910c782ce5076e2" prefix=" " category="inline-code"></block> 계정에 Professional 패키지가 있는 BYOL 라이센스가 있어야 합니다.</block>
+  <block id="3074c4231dd896cfd0c588f36eae9ca4" category="list-text">가 대상 패키지로 선택된 경우<block ref="4d55f77f062bf48891bd0f749c36a36d" prefix=" " category="inline-code"></block>, 계정에 Essentials 패키지가 있는 BYOL 라이센스가 있어야 합니다.</block>
+  <block id="a69a8ea18d8053f3a86291dc9d373615" category="list-text">가 대상 패키지로 선택된 경우<block ref="6e539d2ea7d82ed0e31c450e64ff8c04" prefix=" " category="inline-code"></block>, 계정에 최적화된 패키지가 있는 BYOL 라이센스가 있어야 합니다.</block>
+  <block id="bd37a5a3b2ad6bc210a3a7eaa1a44b64" category="list-text">대상 패키지가 계정의 BYOL 라이선스 사용 가능 여부와 일치하지 않는 경우 용량 기반 라이센스에 선택한 패키지가 포함되지 않을 수 있음을 의미합니다. 이 경우 마켓플레이스 가입을 통해 비용이 청구됩니다.</block>
+  <block id="29de10157e38deb8ae7d4bcf417d7bca" category="list-text">용량 기반 BYOL 라이센스는 없지만 마켓플레이스 구독만 있는 경우 선택한 패키지가 용량 기반 마켓플레이스 구독에 포함되어 있는지 확인해야 합니다.</block>
+  <block id="2ff79b1cb99d3f2339a1ba9f8784b183" category="list-text">기존 용량 기반 라이센스에 충분한 용량이 없고 추가 용량 사용을 청구할 수 있는 마켓플레이스 가입이 있는 경우 마켓플레이스 가입을 통해 추가 용량에 대한 요금이 청구됩니다.</block>
+  <block id="7775102e8cdaa249c6e16d91543c875f" category="list-text">기존 용량 기반 라이센스에 충분한 용량이 없고 추가 용량 사용을 청구할 수 있는 마켓플레이스 구독이 없는 경우 변환이 수행되지 않습니다. 마켓플레이스 가입을 추가하여 추가 용량을 청구하거나 사용 가능한 용량을 현재 라이센스로 확장해야 합니다.</block>
+  <block id="400c55906a66dfb0a544082037323a6b" category="list-text">대상 패키지가 계정의 BYOL 라이선스 사용 가능 여부와 기존 용량 기반 라이선스의 용량이 충분하지 않은 경우 마켓플레이스 가입을 통해 비용이 청구됩니다.</block>
+  <block id="0e5c1be9c6aca6c1aaf08bf9ed203110" category="admonition">이러한 요구 사항이 충족되지 않으면 라이센스 변환이 수행되지 않습니다. 특정 경우에는 라이센스가 변환될 수 있지만 사용할 수 없습니다. 정보 아이콘을 클릭하여 문제를 식별하고 수정 조치를 취하십시오.</block>
+  <block id="d196b764b4e42a2a99aacead075f4b58" category="list-text">Canvas 페이지에서 라이센스 유형을 수정하려는 작업 환경의 이름을 두 번 클릭합니다.</block>
+  <block id="ccf71cd219d20a210964977da3ff250e" category="list-text">개요 탭에서 기능 패널을 클릭합니다.</block>
+  <block id="498a7301ce7f11c6c87ae04fa3f52b88" category="list-text">충전 방법 * 옆에 있는 연필 아이콘을 확인합니다. 시스템의 충전 방법이 인 경우<block ref="e71f388bff446d0d83b053510eafc3ce" prefix=" " category="inline-code"></block> 용량 기준 충전으로 전환할 수 있습니다.</block>
+  <block id="1c72b9c278e1ac9dd3d0f1e9d9732d89" category="admonition">Cloud Volumes ONTAP 시스템이 이미 용량 단위로 충전되어 있거나 요구 사항을 충족하지 않는 경우 아이콘이 비활성화됩니다.</block>
+  <block id="b168f6cc04ffcf2dda599d1ba73d94c2" category="list-text">노드 기반 라이센스를 용량 기반으로 변환 * 화면에서 작업 환경 이름 및 소스 라이센스 세부 정보를 확인합니다.</block>
+  <block id="cd2d0eea05654ca89f4d05184b605a3f" category="list-text">기존 라이센스를 변환할 대상 패키지를 선택합니다.</block>
+  <block id="ad55f0eebc5068e31eecc1bc08fae252" category="list-text">필수 요소입니다. 기본값은 입니다<block ref="4d55f77f062bf48891bd0f749c36a36d" prefix=" " category="inline-code"></block>.</block>
+  <block id="954b5977f70cfdad6145a9a16edd2fed" category="list-text">최적화됨(Azure용)</block>
+  <block id="6a9b652c3f19ffc2d3128d21e07dc641" category="list-text">최적화됨(Google Cloud용)</block>
+  <block id="0913524919eac0f6e05917a28ac0868a" category="list-text">BYOL 라이센스가 있는 경우 확인란을 선택하여 BlueXP  디지털 지갑에서 전환 후 노드 기반 라이센스를 삭제할 수 있습니다. 변환이 완료되지 않은 경우 이 확인란을 선택해도 디지털 지갑에서 라이센스가 삭제되지 않습니다. 마켓플레이스 가입이 있는 경우 이 옵션을 사용할 수 없습니다.</block>
+  <block id="a42381ccb4c9b07d94af68aac09b97db" category="list-text">확인란을 선택하여 변경의 의미를 이해했음을 확인한 다음 * Proceed * 를 클릭합니다.</block>
+  <block id="54173685d0a19dc27fc7d74a0b1348f0" category="paragraph">새 라이센스 일련 번호를 확인하고 BlueXP  디지털 지갑의 변경 사항을 확인합니다.</block>
+  <block id="3c3004e9c8348137de8afab1e2968653" category="cell">이 Cloud Volumes ONTAP 시스템에서 사용할 AWS 자격 증명과 마켓플레이스 구독을 선택하십시오. 선택한 자격 증명을 새 AWS Marketplace 구독에 연결하려면 * Add Subscription * 을 클릭합니다. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다. NetApp(BYOL(Bring Your Own License))에서 직접 라이센스를 구매한 경우 AWS 구독이 필요하지 않습니다. <block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>..</block>
+  <block id="4aecb2a001e9ed1c57930cdd68e5a8e2" category="list-text">VNet에서 스토리지 계정에 대한 공개 액세스가 비활성화된 경우 Cloud Volumes ONTAP 시스템에서 데이터 계층화를 활성화할 수 없습니다. 자세한 내용은 을 <block ref="cf7250ba2a63a15ad3b094d85cccecb2" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="ffee78f944ad8168ad943b188f69ad15" category="list-text">소비된 용량, 총 사전 약정 용량 및 총 PAYGO(Pay-as-you-go) 용량을 보여 주는 패키지 요약을 확인합니다.</block>
+  <block id="84d1a8b78e647d328dc1794599f688b4" category="list-text">_Total Preponded capacity_는 NetApp에서 구매한 총 라이센스 용량(BYOL(Bring Your Own License) 또는 마켓플레이스 계약)입니다.</block>
+  <block id="0d4e36aae457a1001b3373de2fd510f1" category="list-text">NetApp에서 구매한 BYOL(Bring Your Own License) 라이센스</block>
+  <block id="83c2a6ded9467f8048f9a53cabd2e783" category="paragraph-title">관련 항목</block>
+  <block id="cb90b48918ed9cd8ea355c04c171177b" category="paragraph">링크: <block ref="7f9a8649ca2d86db235ba56502d14f92" category="inline-link-macro-rx"></block> <block ref="431f655d5a9ac309b561fc62a4c619ea" category="inline-link-macro-rx"></block></block>
+  <block id="829695792a0f96cf880394f0cc741cb2" category="paragraph">로컬 영역 선택은 선택 사항입니다. Cloud Volumes ONTAP는 싱가포르를 포함한 일부 AWS 지역 지역에서 지원됩니다. AWS의 Cloud Volumes ONTAP는 단일 가용 영역에서 HA(고가용성) 모드만 지원합니다. 단일 노드 구축은 지원되지 않습니다.</block>
+  <block id="d5d3ecd60f97415d2a0cea0a8c702e45" category="admonition">Cloud Volumes ONTAP은 AWS 로컬 영역에서 데이터 계층화 및 클라우드 계층화를 지원하지 않습니다. 또한 Cloud Volumes ONTAP에 대해 인증되지 않은 인스턴스가 있는 로컬 영역은 지원되지 않습니다. 예를 들어, 로컬 존으로 사용할 수 없는 마이애미는 지원되지 않는 Gen6 인스턴스만 있기 때문에 로컬 존으로 사용할 수 없습니다.</block>
+  <block id="d7a299bbe372f280000198df797460f2" category="admonition">연결이 부족하여 AWS 로컬 영역에서 AWS S3에 데이터 계층화를 사용할 수 없습니다.</block>
+  <block id="f2f8375eb7b616d452f38372555c4aa8" category="paragraph">ARP 기능은 추가 비용 없이 BYOL(Bring Your Own License) 및 마켓플레이스 가입과 함께 사용할 수 있습니다.</block>
+  <block id="3726a55835255c4aca3d6a6c1c330738" category="paragraph">ARP가 활성화된 볼륨은 "학습 모드" 또는 "활성"으로 지정되어 있습니다.</block>
+  <block id="666b3c5243cbd568acfe4b3a0706b9ea" category="paragraph">NetApp의 지원은 Cloud Volumes ONTAP 용량제(PAYGO) 시스템에 포함되어 있지만 먼저 NetApp에 시스템을 등록하여 지원을 활성화해야 합니다.</block>
+  <block id="a106b22f73b105919cf50f17420fef76" category="paragraph">Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 키를 사용하여 암호화됩니다. 스토리지 계정을 만드는 동안 암호화하려면 Cloud Volumes ONTAP 생성 요청에서 리소스의 ID를 생성하고 제공해야 합니다. 이는 모든 유형의 배포에 적용됩니다. 제공하지 않으면 저장소 계정은 여전히 암호화되지만 BlueXP는 먼저 Microsoft 관리 키 암호화를 사용하여 저장소 계정을 만든 다음 고객이 관리하는 키를 사용하도록 저장소 계정을 업데이트합니다.</block>
+  <block id="07e88f0b5e8f468010f124459e470871" category="list-text">NetApp에서 구매한 라이센스(BYOL(Bring Your Own License)</block>
+  <block id="c1585e9c456b4e2c6743fe20780c5bff" category="paragraph">이 페이지에 설명된 방법을 사용하여 소프트웨어를 업그레이드하려면 Cloud Volumes ONTAP를 NetApp 지원에 등록해야 합니다. 이 제한은 PAYGO(Pay-as-you-go)와 BYOL(Bring Your Own License) 모두에 적용됩니다. <block ref="f7029dacbf10b8aa72bca74845a64729" category="inline-link-macro-rx"></block>BYOL 시스템은 기본적으로 등록되지만</block>
+  <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024년 11월 11일</block>
+  <block id="4eaed4ff800bc18688fff95b8dee6d1e" category="sidebar">노드 기반 라이센스를 변환합니다</block>
+  <block id="b8c05ba27f3f7ff64dca585f43789e57" category="sidebar">Cloud Volumes ONTAP에서 라이선스 취득</block>
 </blocks>

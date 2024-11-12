@@ -170,7 +170,7 @@ Cloud Volumes ONTAP를 이전 릴리즈로 되돌리거나 다운그레이드하
 
 === 지원 등록
 
-이 페이지에 설명된 방법을 사용하여 소프트웨어를 업그레이드하려면 Cloud Volumes ONTAP를 NetApp 지원에 등록해야 합니다. 이 내용은 PAYGO 및 BYOL 모두에 적용됩니다. link:task-registering.html["PAYGO 시스템을 수동으로 등록합니다"]BYOL 시스템은 기본적으로 등록되지만
+이 페이지에 설명된 방법을 사용하여 소프트웨어를 업그레이드하려면 Cloud Volumes ONTAP를 NetApp 지원에 등록해야 합니다. 이 제한은 PAYGO(Pay-as-you-go)와 BYOL(Bring Your Own License) 모두에 적용됩니다. link:task-registering.html["PAYGO 시스템을 수동으로 등록합니다"]BYOL 시스템은 기본적으로 등록되지만
 
 
 TIP: 지원이 등록되지 않은 시스템은 새 버전이 출시되어도 BlueXP에 나타나는 소프트웨어 업데이트 알림을 계속 받게 됩니다. 그러나 소프트웨어를 업그레이드하기 전에 시스템을 등록해야 합니다.

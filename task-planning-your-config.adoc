@@ -38,15 +38,15 @@ Cloud Volumes ONTAP는 대부분의 AWS 지역에서 지원됩니다. https://cl
 
 === 지원되는 로컬 영역을 선택합니다
 
-Cloud Volumes ONTAP는 싱가포르를 포함한 일부 AWS 지역 지역에서 지원됩니다. 로컬 영역 선택은 선택 사항입니다.
+로컬 영역 선택은 선택 사항입니다. Cloud Volumes ONTAP는 싱가포르를 포함한 일부 AWS 지역 지역에서 지원됩니다. AWS의 Cloud Volumes ONTAP는 단일 가용 영역에서 HA(고가용성) 모드만 지원합니다. 단일 노드 구축은 지원되지 않습니다.
+
+
+NOTE: Cloud Volumes ONTAP은 AWS 로컬 영역에서 데이터 계층화 및 클라우드 계층화를 지원하지 않습니다. 또한 Cloud Volumes ONTAP에 대해 인증되지 않은 인스턴스가 있는 로컬 영역은 지원되지 않습니다. 예를 들어, 로컬 존으로 사용할 수 없는 마이애미는 지원되지 않는 Gen6 인스턴스만 있기 때문에 로컬 존으로 사용할 수 없습니다.
 
 link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["로컬 영역의 전체 목록을 봅니다"^].
 로컬 영역을 사용하도록 설정해야 해당 영역에서 리소스를 만들고 관리할 수 있습니다.
 
 link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["로컬 영역을 활성화하는 방법에 대해 알아봅니다"^].
-
-
-NOTE: Phoenix는 지원되는 로컬 영역이 아닙니다.
 
 
 
@@ -102,7 +102,7 @@ Cloud Volumes ONTAP는 iio1 디스크에서 Amazon EBS Elastic Volumes 기능을
 * _Throughput Optimized HDD(st1)_디스크는 낮은 가격으로 빠르고 일관된 처리량을 필요로 하는 자주 액세스되는 워크로드에 적합합니다.
 +
 
-NOTE: 처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오브젝트 스토리지에 계층화하지 않는 것이 좋습니다.
+NOTE: 연결이 부족하여 AWS 로컬 영역에서 AWS S3에 데이터 계층화를 사용할 수 없습니다.
 
 
 

@@ -51,7 +51,7 @@ link:task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP를 시작하는 
 
 Essentials 및 Professional 패키지는 다음 소비 모델과 함께 제공됩니다.
 
-* NetApp에서 구입한 라이센스(BYOL
+* NetApp에서 구매한 라이센스(BYOL(Bring Your Own License)
 * AWS Marketplace에서 PAYGO(Pay-as-you-go) 방식으로 구독을 지원합니다
 * AWS Marketplace에서 연간 계약 체결
 

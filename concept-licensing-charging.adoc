@@ -1,0 +1,203 @@
+---
+sidebar: sidebar 
+permalink: concept-licensing-charging.html 
+keywords: capacity-based license charging, consumption for licenses, pricing for licenses, CVO licensing, CVO charging 
+summary: 용량 기반 라이센스의 충전, 소비 모델, 가격 및 구성을 숙지합니다. 
+---
+= 용량 기반 라이센스에 대해 자세히 알아보십시오
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+용량 기반 라이센스의 충전 및 용량 사용량을 잘 알고 있어야 합니다
+
+
+
+== 소비 모델
+
+용량 기반 라이센스 패키지는 다음 소비 모델에서 사용할 수 있습니다.
+
+* * BYOL *: BYOL(Bring Your Own License) 방식 NetApp에서 구매한 라이센스로, 모든 클라우드 공급자에 Cloud Volumes ONTAP를 배포하는 데 사용할 수 있습니다.
+
+
+ifdef::azure[]
+
++ Optimized 패키지는 BYOL에서 사용할 수 없습니다.
+
+endif::azure[]
+
+* * PAYGO *: PAYGO(Pay-as-you-go) 서브스크립션은 클라우드 공급자의 마켓플레이스에서 시간 단위 서브스크립션을 제공합니다.
+* * 연간 *: 클라우드 공급자 마켓플레이스로부터 연간 계약을 체결합니다.
+
+
+다음 사항에 유의하십시오.
+
+* NetApp(BYOL)에서 라이센스를 구입하는 경우 클라우드 공급자 마켓플레이스의 PAYGO 오퍼링을 구독해야 합니다.
++
+라이센스는 항상 먼저 부과되지만 다음과 같은 경우 마켓플레이스의 시간당 요율로 비용이 청구됩니다.
+
++
+** 라이센스 용량을 초과하는 경우
+** 라이센스 기간이 만료된 경우
+
+
+* 마켓플레이스로부터 연간 계약을 체결한 경우 _ All_Cloud Volumes ONTAP 시스템에 해당 계약이 적용됩니다. BYOL은 연간 마켓플레이스 계약을 혼합하여 사용할 수 없습니다.
+* 중국 지역에서는 BYOL을 사용하는 단일 노드 시스템만 지원됩니다.
+
+
+
+
+== 패키지를 변경하는 중입니다
+
+배포 후에는 용량 기반 라이센스를 사용하는 Cloud Volumes ONTAP 시스템의 패키지를 변경할 수 있습니다. 예를 들어, Essentials 패키지와 함께 Cloud Volumes ONTAP 시스템을 배포한 경우 비즈니스 요구사항이 변경되면 이를 Professional 패키지로 변경할 수 있습니다.
+
+link:task-manage-capacity-licenses.html["충전 방법을 변경하는 방법에 대해 알아보십시오"].
+
+노드 기반 라이센스를 용량 기반으로 변환하는 방법에 대한 자세한 내용은 을 참조하십시오
+
+
+
+== 가격 및 지원되는 구성
+
+가격에 대한 자세한 내용은 를 참조하십시오 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXP 웹 사이트"^].
+
+용량 기반 라이센스 패키지는 Cloud Volumes ONTAP 9.7 이상에서 사용할 수 있습니다.
+
+
+
+=== 스토리지 VM
+
+* 추가 SVM(Data-Serving Storage VM)에 대한 추가 라이센스 비용은 없지만, 데이터 서비스 SVM당 최소 용량 비용은 4TiB입니다.
+* 재해 복구 SVM은 프로비저닝된 용량에 따라 충전됩니다.
+
+
+
+
+=== HA 쌍
+
+HA 쌍의 경우 노드의 프로비저닝된 용량에 대해서만 비용이 청구됩니다. 파트너 노드에 동기식으로 미러링되는 데이터에 대해서는 비용이 청구되지 않습니다.
+
+
+
+=== FlexClone 및 FlexCache 볼륨
+
+* FlexClone 볼륨에 사용된 용량에 대해서는 비용이 청구되지 않습니다.
+* 소스 및 타겟 FlexCache 볼륨은 프로비저닝된 공간에 따라 운영 데이터로 간주되고 충전됩니다.
+
+
+
+
+== 용량 제한
+
+이 라이센스 모델을 통해 각 개별 Cloud Volumes ONTAP 시스템은 디스크를 통해 최대 2개의 PiB 용량을 지원하고 오브젝트 스토리지로 계층화합니다.
+
+라이센스 자체에는 최대 용량 제한이 없습니다.
+
+
+
+== 최대 시스템 수
+
+용량 기반 라이센스는 Cloud Volumes ONTAP 시스템의 최대 수를 NetApp 계정당 20개로 제한합니다. system_은 Cloud Volumes ONTAP HA 쌍, Cloud Volumes ONTAP 단일 노드 시스템 또는 사용자가 생성하는 추가 스토리지 VM입니다. 기본 스토리지 VM은 제한에 대해 계산되지 않습니다. 이 제한은 모든 라이센스 모델에 적용됩니다.
+
+예를 들어, 다음과 같은 세 가지 작업 환경이 있다고 가정해 보겠습니다.
+
+* 스토리지 VM이 1개인 단일 노드 Cloud Volumes ONTAP 시스템(Cloud Volumes ONTAP 구축 시 생성되는 기본 스토리지 VM)
++
+이 작업 환경은 하나의 시스템으로 간주됩니다.
+
+* 스토리지 VM 2개(기본 스토리지 VM과 생성한 추가 스토리지 VM 1개)가 있는 단일 노드 Cloud Volumes ONTAP 시스템
++
+이 작업 환경은 두 시스템으로 계산됩니다. 하나는 단일 노드 시스템이고 다른 하나는 추가 스토리지 VM입니다.
+
+* Cloud Volumes ONTAP HA 2노드: 스토리지 VM 3개(기본 스토리지 VM + 직접 생성한 추가 스토리지 VM 2개)
++
+이 작업 환경은 HA Pair용, 그리고 추가 스토리지 VM용 시스템의 세 가지로 계산됩니다.
+
+
+
+시스템에 대한 총 6개의 시스템이 있습니다. 그러면 계정에 14개의 추가 시스템을 추가할 수 있는 공간이 있습니다.
+
+20대 이상의 시스템이 필요한 대규모 구축 환경의 경우 고객 담당자 또는 세일즈 팀에 문의하십시오.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["NetApp 계정 에 대해 자세히 알아보십시오"^].
+
+
+
+== 충전 관련 참고 사항
+
+다음 세부 정보는 용량 기반 라이센싱에서 충전이 어떻게 작동하는지 이해하는 데 도움이 됩니다.
+
+
+
+=== 최소 충전
+
+기본(읽기-쓰기) 볼륨이 하나 이상 있는 데이터 서비스 스토리지 VM마다 최소 4TiB가 필요합니다. 운영 볼륨의 합계가 4TiB 미만인 경우 BlueXP는 해당 스토리지 VM에 4TiB 최소 요금을 적용합니다.
+
+아직 볼륨을 프로비저닝하지 않은 경우 최소 요금이 적용되지 않습니다.
+
+Essentials 패키지의 경우 4TiB 최소 용량 비용은 보조(데이터 보호) 볼륨만 포함된 스토리지 VM에 적용되지 않습니다. 예를 들어, 1TiB의 보조 데이터를 사용하는 스토리지 VM의 경우 해당 1TiB 데이터에 대한 요금이 청구됩니다. 기타 모든 비 Essentials 패키지 유형(Optimized 및 Professional)에서는 볼륨 유형에 상관없이 4TiB의 최소 용량 충전이 적용됩니다.
+
+
+
+=== 초과
+
+BYOL 용량을 초과하거나 라이센스가 만료된 경우, 마켓플레이스 가입을 기준으로 시간당 요금이 초과됩니다.
+
+
+
+=== Essentials 패키지를 선택합니다
+
+Essentials 패키지를 사용하면 배포 유형(HA 또는 단일 노드) 및 볼륨 유형(기본 또는 보조)으로 비용이 청구됩니다. 가격은 _ Essentials 기본 HA _, _ Essentials 기본 단일 노드 _, _ Essentials 보조 HA _ 및 _ Essentials 보조 단일 노드 _ 순서로 책정됩니다. 또는 마켓플레이스 계약을 구입하거나 전용 혜택을 수락하는 경우 배포 또는 볼륨 유형에 대해 용량 비용이 동일합니다.
+
+라이센스는 전적으로 Cloud Volumes ONTAP 시스템 내에서 생성된 볼륨 유형을 기반으로 합니다.
+
+* Essentials 단일 노드: 하나의 ONTAP 노드만 사용하여 Cloud Volumes ONTAP 시스템에서 생성된 읽기/쓰기 볼륨
+* Essentials HA: 두 개의 ONTAP 노드를 사용하여 무중단 데이터 액세스를 위해 서로 페일오버할 수 있는 읽기/쓰기 볼륨입니다.
+* Essentials 보조 단일 노드: 하나의 ONTAP 노드만 사용하여 Cloud Volumes ONTAP 시스템에 생성된 데이터 보호(DP) 유형 볼륨(일반적으로 읽기 전용 SnapMirror 또는 SnapVault 대상 볼륨)
++
+
+NOTE: 읽기 전용/DP 볼륨이 운영 볼륨이 되는 경우 BlueXP 은 이를 운영 데이터로 간주하고 볼륨이 읽기/쓰기 모드인 시간을 기준으로 청구 비용을 계산합니다. 볼륨이 다시 읽기 전용/DP로 설정되면 BlueXP 는 이를 보조 데이터로 간주하여 디지털 지갑에서 가장 일치하는 라이센스를 사용하여 이에 따라 요금을 부과합니다.
+
+* Essentials 보조 HA: 두 개의 ONTAP 노드를 사용하여 Cloud Volumes ONTAP 시스템에 생성된 데이터 보호(DP) 유형 볼륨(일반적으로 읽기 전용인 SnapMirror 또는 SnapVault 타겟 볼륨)으로, 무중단 데이터 액세스를 위해 서로 페일오버할 수 있습니다.
+
+
+다음 사항에 유의하십시오.
+
+* 최소 비용: 데이터를 제공하는 스토리지 VM당 기본(읽기-쓰기) 볼륨이 하나 이상 있는 경우 최소 요금은 4TiB입니다. Essentials 패키지의 경우 이 최소 요금은 보조(데이터 보호) 볼륨만 있는 스토리지 VM에는 적용되지 않습니다.
+* 초과 사용: 라이센스가 부여된 용량을 초과하면 다른 라이센스의 가용 용량을 먼저 사용하는 것과 함께 초과 사용 요금이 마켓플레이스로 청구됩니다.
+* FlexClone 및 FlexCache 볼륨: FlexClone 볼륨이 청구되지 않음 소스 및 타겟 FlexCache 볼륨은 기본 데이터로 간주되며 프로비저닝된 공간에 따라 비용이 청구됩니다.
+* HA 쌍 충전: HA 쌍의 경우 노드의 프로비저닝된 용량만 충전됩니다. 파트너 노드에 동기식으로 미러링되는 데이터는 청구되지 않습니다.
+
+
+.BYOL
+NetApp(BYOL)에서 Essentials 라이센스를 구매하고 해당 구축 및 볼륨 유형에 대해 라이센스가 있는 용량을 초과하는 경우, BlueXP 디지털 지갑은 더 높은 가격의 Essentials 라이센스(사용 가능한 용량이 있는 경우)에 대해 초과 요금을 부과합니다. 이는 시장에 대해 충전하기 전에 이미 선결제 용량으로 구매한 가용 용량을 처음 사용하기 때문입니다. BYOL 라이센스로 사용할 수 있는 용량이 없는 경우 초과 용량은 시장의 온디맨드 시간당 요금(PAYGO)으로 부과되며 월별 요금제에 비용이 추가됩니다.
+
+예를 들어, Essentials 패키지에 대해 다음 라이선스를 보유하고 있다고 가정해 보겠습니다.
+
+* 500TiB_Essentials 보조 HA_license에 커밋된 용량이 500TiB입니다
+* 100TiB의 커밋된 용량만 있는 500TiB_Essentials 단일 Node_license
+
+
+보조 볼륨이 있는 HA 쌍에서 50TiB가 또 다른 프로비저닝됩니다. BlueXP 디지털 지갑은 50TiB에서 PAYGO로 충전하는 대신 _Essentials Single Node_license에 대해 50TiB 초과를 충전합니다. 이 라이선스의 가격은 _Essentials Secondary HA_보다 높지만 이미 구입한 라이선스를 사용하고 있으며 월별 청구서에 비용이 추가되지 않습니다.
+
+BlueXP 디지털 지갑에서 50TiB가 _Essentials Single Node_license에 대해 청구된 것으로 표시됩니다.
+
+다음은 또 다른 예입니다. Essentials 패키지에 대해 다음 라이선스를 보유하고 있다고 가정해 보겠습니다.
+
+* 500TiB_Essentials 보조 HA_license에 커밋된 용량이 500TiB입니다
+* 100TiB의 커밋된 용량만 있는 500TiB_Essentials 단일 Node_license
+
+
+운영 볼륨의 HA 쌍에서 또 다른 100TiB가 프로비저닝됩니다. 구입한 라이센스에 _Essentials 기본 HA_커밋 용량이 없습니다. _Essentials 기본 HA_라이센스의 가격은 _Essentials 기본 단일 노드_ 및 _Essentials 보조 HA_ 라이센스보다 높습니다.
+
+이 예에서 BlueXP 디지털 지갑은 추가 100TiB에 대한 마켓플레이스의 요율로 초과 요금을 부과합니다. 초과 요금은 월별 청구서에 표시됩니다.
+
+.마켓플레이스 계약 또는 전용 혜택
+마켓플레이스 계약 또는 전용 오퍼의 일부로 Essentials 라이선스를 구입한 경우 BYOL 로직이 적용되지 않으며 해당 사용에 대한 정확한 라이선스 유형이 있어야 합니다. 라이센스 유형에는 볼륨 유형(운영 또는 2차) 및 구축 유형(HA 또는 단일 노드)이 포함됩니다.
+
+예를 들어, Essentials 라이선스를 사용하여 Cloud Volumes ONTAP 인스턴스를 배포한다고 가정해 보겠습니다. 그런 다음 읽기-쓰기 볼륨(운영 단일 노드) 및 읽기 전용(2차 단일 노드) 볼륨을 프로비저닝합니다. 마켓플레이스 계약 또는 전용 오퍼에는 프로비저닝 용량을 충당하기 위해 _Essentials 단일 노드_ 및 _Essentials 보조 단일 노드_ 의 용량이 포함되어야 합니다. 마켓플레이스 계약 또는 프라이빗 오퍼에 포함되지 않은 모든 용량 할당은 온디맨드 시간당 요금(PAYGO)으로 청구되며 월별 청구서에 비용이 추가됩니다.

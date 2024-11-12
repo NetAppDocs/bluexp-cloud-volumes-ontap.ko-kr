@@ -330,13 +330,7 @@ Connector 버전 3.9.36 이하를 실행하는 경우 AWS EC2 콘솔의 AWS Conn
 | 사용자 이름 및 암호 | Cloud Volumes ONTAP 클러스터 관리자 계정의 자격 증명입니다. 이러한 자격 증명을 사용하여 ONTAP System Manager 또는 ONTAP CLI를 통해 Cloud Volumes ONTAP에 연결할 수 있습니다. default_admin_user 이름을 유지하거나 사용자 지정 사용자 이름으로 변경합니다. 
 
 
-| 자격 증명 편집 | 이 Cloud Volumes ONTAP 시스템에서 사용할 AWS 자격 증명과 마켓플레이스 구독을 선택하십시오.
-
-선택한 자격 증명을 새 AWS Marketplace 구독에 연결하려면 * Add Subscription * 을 클릭합니다. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다.
-
-NetApp(BYOL)에서 직접 라이센스를 구입한 경우에는 AWS 가입이 필요하지 않습니다.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXP에 AWS 자격 증명을 추가하는 방법에 대해 알아보십시오"^]. 
+| 자격 증명 편집 | 이 Cloud Volumes ONTAP 시스템에서 사용할 AWS 자격 증명과 마켓플레이스 구독을 선택하십시오. 선택한 자격 증명을 새 AWS Marketplace 구독에 연결하려면 * Add Subscription * 을 클릭합니다. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다. NetApp(BYOL(Bring Your Own License))에서 직접 라이센스를 구매한 경우 AWS 구독이 필요하지 않습니다. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXP에 AWS 자격 증명을 추가하는 방법에 대해 알아보십시오"^].. 
 |===
 +
 다음 비디오에서는 용량제 마켓플레이스 구독을 AWS 자격 증명에 연결하는 방법을 보여줍니다.
