@@ -67,23 +67,28 @@ South Central US          southcentralus       (US) South Central US
 ----
 
 
-. 아래 표에서 해당 VM 배포 유형에 대한 SKU 이름을 검토합니다.
+. 아래 표에서 해당하는 Cloud Volumes ONTAP 버전 및 VM 배포 유형에 대한 SKU 이름을 검토하십시오.
 +
 SKU 이름은 마켓플레이스 이미지의 URN을 설정할 때 "skuName" 변수의 값으로 사용됩니다.
 
 +
-예를 들어, 단일 노드 구축에서는 "ONTAP_CLOUD_BYOL" SKU 이름을 사용해야 합니다.
+예를 들어 Cloud Volumes ONTAP 9.15.0을 사용하는 모든 단일 노드 배포는 SKU 이름으로 사용해야 `ontap_cloud_byol` 합니다.
 
 +
-[cols="1,1"]
+[cols="1,1,1"]
 |===
-| VM 배포 유형 | SKU 이름 
 
 
-| 단일 노드 | ONTAP_CLOUD_BYOL 
+| * Cloud Volumes ONTAP 버전 * | * VM 배포 유형 * | * SKU 이름 * 
 
 
-| 고가용성 | ONTAP_CLOUD_BYOL_ha 
+| 9.15.1 및 9.16.0 | 모든 배포는 BlueXP 를 통해 이루어집니다 | ONTAP_클라우드 
+
+
+| 9.15.0 | 단일 노드 | ONTAP_CLOUD_BYOL 
+
+
+| 9.15.0 | 고가용성 | ONTAP_CLOUD_BYOL_ha 
 |===
 . ONTAP 버전과 Azure 마켓플레이스 이미지가 매핑되면 Azure Cloud Shell 또는 Azure CLI를 통해 Azure 마켓플레이스의 VHD 파일을 내보냅니다.
 
@@ -94,7 +99,7 @@ SKU 이름은 마켓플레이스 이미지의 URN을 설정할 때 "skuName" 변
 
 . Azure 클라우드 셸에서 마켓플레이스 이미지를 VHD(image2, 예: 9150.01000024.05090105.vhd)로 내보내고 로컬 컴퓨터(예: Linux 시스템 또는 Windows PC)로 다운로드합니다.
 +
-.클릭하여 표시합니다
+.단계를 봅니다
 [%collapsible]
 ====
 [source]
@@ -150,7 +155,7 @@ PS /home/user1> Remove-AzDisk -ResourceGroupName $diskRG -DiskName $diskName
 
 . 로컬 Linux 시스템에서 Azure CLI를 통해 마켓플레이스 이미지를 VHD로 내보냅니다.
 +
-.클릭하여 표시합니다
+.단계를 봅니다
 [%collapsible]
 ====
 [source]

@@ -4988,14 +4988,8 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="e03d271d662bcb0fab1d9537df279ef3" category="paragraph">이 지역 이름은 마켓플레이스 이미지의 URN을 설정할 때 "locName" 변수의 값으로 사용됩니다.</block>
   <block id="0bcd35ecf261a40cdfb4cbae00a11aa2" category="list-text">사용 가능한 지역 목록을 받으려면 를 입력합니다<block ref="84ed3d395e738381fb9826cd0e156c91" prefix=" " category="inline-code"></block> 명령.</block>
   <block id="30bf950af492b8ab681c83ec104628f7" category="paragraph">아래 표에서 지역 이름을 "이름" 필드라고 합니다.</block>
-  <block id="5bedba73a6050611e792e12c6329c1dd" category="list-text">아래 표에서 해당 VM 배포 유형에 대한 SKU 이름을 검토합니다.</block>
   <block id="0abd8188de5678bc75e8b9d823375978" category="paragraph">SKU 이름은 마켓플레이스 이미지의 URN을 설정할 때 "skuName" 변수의 값으로 사용됩니다.</block>
-  <block id="81d9630c492a3a15f34b8eb9c8e68a40" category="paragraph">예를 들어, 단일 노드 구축에서는 "ONTAP_CLOUD_BYOL" SKU 이름을 사용해야 합니다.</block>
-  <block id="393d71d9f35267234158498682014c6a" category="cell">VM 배포 유형</block>
-  <block id="045ad270536218882ac46065d2a725a8" category="cell">SKU 이름</block>
-  <block id="5b1c50a57995120cd7360ea46184cdd7" category="cell">단일 노드</block>
   <block id="b2b27ade506086d79b3e7defdb321673" category="cell">ONTAP_CLOUD_BYOL</block>
-  <block id="520b661a272c9e6f55f469cc9c24193d" category="cell">고가용성</block>
   <block id="68593f3fae72dbec1b29acfd76c1aa17" category="cell">ONTAP_CLOUD_BYOL_ha</block>
   <block id="fc7898b425992521a2ae92bc34f6fa79" category="list-text">ONTAP 버전과 Azure 마켓플레이스 이미지가 매핑되면 Azure Cloud Shell 또는 Azure CLI를 통해 Azure 마켓플레이스의 VHD 파일을 내보냅니다.</block>
   <block id="4192872f9b14e75090d91ad3b58d627e" category="section-title">Azure 포털의 Azure Cloud Shell을 통해 VHD 파일을 내보냅니다</block>
@@ -5508,7 +5502,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="a4b4a128b8ea43df8551a18d37b0bfcd" category="section-title">BlueXP 에서 노드 기반 배포를 제거합니다</block>
   <block id="04b144a0be31129b4ac9a0f2751271d9" category="paragraph">BlueXP 에서는 노드 기반 라이센스를 사용하여 Cloud Volumes ONTAP 시스템을 배포하는 옵션이 더 이상 사용되지 않습니다. 몇 가지 특별한 경우를 제외하고 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP 구축에 노드 기반 라이센스를 사용할 수 없습니다.</block>
   <block id="11c97a8e296f1428a1d4c9a2253b1bfb" category="paragraph">NetApp은 계약 의무 및 운영 요구 사항에 따라 다음과 같은 고유한 라이센스 요구 사항을 인지하고 있으며, 이러한 상황에서 노드 기반 라이센스를 계속 지원합니다.</block>
-  <block id="57389c1aef6c1264d9ad4bbe74640b2e" category="list-text">USPS 고객</block>
   <block id="43b1a7bfd4243a44cf321f03e7878ffd" category="list-text">비공개 모드로 배포</block>
   <block id="bbef1435f544b56bbed0e1c536c2515e" category="list-text">중국 지역에 AWS에서 Cloud Volumes ONTAP를 구축했습니다</block>
   <block id="e6eb4bcca3ad358d710ea99dd5c577d1" category="list-text">유효하며 만료되지 않은 노드 BYOL 라이센스(BYOL 라이센스)가 있는 경우</block>
@@ -5646,4 +5639,14 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024년 11월 11일</block>
   <block id="4eaed4ff800bc18688fff95b8dee6d1e" category="sidebar">노드 기반 라이센스를 변환합니다</block>
   <block id="b8c05ba27f3f7ff64dca585f43789e57" category="sidebar">Cloud Volumes ONTAP에서 라이선스 취득</block>
+  <block id="500984bae07aedc6c662b31a3039d462" category="list-text">미국 공공 부문 고객</block>
+  <block id="c1c1c782703499ca8577569137202bf1" category="list-text">아래 표에서 해당하는 Cloud Volumes ONTAP 버전 및 VM 배포 유형에 대한 SKU 이름을 검토하십시오.</block>
+  <block id="90069a3873814503a767070f04f3c286" category="paragraph">예를 들어 Cloud Volumes ONTAP 9.15.0을 사용하는 모든 단일 노드 배포는 SKU 이름으로 사용해야<block ref="b2b27ade506086d79b3e7defdb321673" prefix=" " category="inline-code"></block> 합니다.</block>
+  <block id="d811ca86e147e8cf2239ee377f1dcd50" category="cell">* Cloud Volumes ONTAP 버전 *</block>
+  <block id="a3a1c7f3820a8886078a2878a83c8362" category="cell">* VM 배포 유형 *</block>
+  <block id="aadb6d991e4406b990f6fca8b4c83fd6" category="cell">* SKU 이름 *</block>
+  <block id="30076581de6d5b6ad148c87cd00ad956" category="cell">9.15.1 및 9.16.0</block>
+  <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">모든 배포는 BlueXP 를 통해 이루어집니다</block>
+  <block id="273062411bc731be8028321277142365" category="cell">ONTAP_클라우드</block>
+  <block id="23364a1412324aba4675105eacf57908" category="example-title">단계를 봅니다</block>
 </blocks>
