@@ -384,7 +384,6 @@
   <block id="5031fdddd713681aa180d7bfa60b1f72" category="paragraph">Cloud Volumes ONTAP에 대한 네트워크 보안 그룹 규칙을 통해 로드 밸런서가 위의 4단계에서 만든 상태 탐침에 대한 TCP 탐침을 보낼 수 있는지 확인합니다. 이 작업은 기본적으로 허용됩니다.</block>
   <block id="a094ded8d387643804f456ad69ef9c4e" category="section-title">스토리지 VM 및 LIF 생성</block>
   <block id="9b08db40ecf3304d34c7dadb34a6d2c2" category="list-text">스토리지 VM을 생성하고 스토리지 VM으로 가는 경로를 생성합니다.</block>
-  <block id="120f35ca25d8256725ff2b7eb89df365" category="list-text">데이터 LIF 생성:</block>
   <block id="622931dd0b6724a34dfe5a4f99b9a820" category="list-text">다음 명령을 사용하여 노드 1에 NAS LIF를 생성합니다.</block>
   <block id="604199268b7709a557c60a09df0624bf" category="list-text">다음 명령을 사용하여 노드 1에 iSCSI LIF를 생성합니다.</block>
   <block id="67694021a675f2be09781b9b9c744e99" category="list-text">선택 사항: 노드 1에 스토리지 VM 관리 LIF를 생성합니다.</block>
@@ -2264,7 +2263,6 @@
   <block id="0212110e6e591f399e46a0a33621323b" category="paragraph">이 관리 LIF는 SnapCenter과 같은 관리 툴에 연결할 수 있습니다.</block>
   <block id="3fc61f795c4036debc9bbee70495f5d3" category="list-text">SVM 관리 LIF를 생성하려면 이 단계를 반복하여 추가 IP 주소를 생성합니다.</block>
   <block id="556696d309aaf81ce29c6a76f8f8a503" category="section-title">HA 쌍</block>
-  <block id="8ebc8557356a6ebd39c4dd48a6f84931" category="paragraph">HA 쌍에 대한 IP 주소를 할당하는 방법은 사용 중인 스토리지 프로토콜에 따라 다릅니다.</block>
   <block id="bd88ed594712224b8e3f79251707158b" category="paragraph">다음 IP 주소를 만들어야 합니다.</block>
   <block id="959519864abf23eb751637cd9762312f" category="list-text">노드 1에서 iSCSI 데이터 LIF 액세스를 위한 단일 IP 주소</block>
   <block id="72b179a0d02f32caa6ee9d21826a4a30" category="list-text">노드 2에서 iSCSI 데이터 LIF 액세스를 위한 단일 IP 주소</block>
@@ -2282,7 +2280,6 @@
   <block id="b41808a70de11f6ad8400c22ebe933f1" category="paragraph">HA 쌍에서 스토리지 VM 및 LIF를 생성하는 방법은 사용 중인 스토리지 프로토콜에 따라 다릅니다.</block>
   <block id="83871791a7611e5a981ec0b38a662078" category="list-text">다음 명령을 사용하여 노드 2에 iSCSI LIF를 생성합니다.</block>
   <block id="0cffe85429bb79552ce3607190d9dbad" category="list-text">다음 명령을 사용하여 노드 2에 NAS LIF를 생성합니다.</block>
-  <block id="6c6c472de3f0cea0f21c8e31be81490c" category="list-text">NAS 데이터 LIF 생성:</block>
   <block id="1d690a933c240dda520f6527f56da475" category="paragraph">9.7 릴리즈부터 특정 Cloud Volumes ONTAP 구성에서 여러 스토리지 VM이 지원됩니다. 로 이동합니다<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.</block>
   <block id="62978cf670cdcd284392400fa0cb70a9" category="list-text">* 선택한 VPC만 해당 *: 인바운드 트래픽의 소스 필터는 Cloud Volumes ONTAP 시스템용 VPC의 서브넷 범위와 커넥터가 상주하는 VPC의 서브넷 범위입니다. 이 옵션을 선택하는 것이 좋습니다.</block>
   <block id="ba2e1bf50371835f50d77c05a977d80c" category="list-text">* 모든 VPC *: 인바운드 트래픽의 소스 필터는 0.0.0.0/0 IP 범위입니다.</block>
@@ -3829,7 +3826,6 @@
   <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">단일 노드 시스템이 지원됩니다.</block>
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">NetApp에서 직접 구매한 라이센스가 지원됩니다.</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">Cloud Volumes ONTAP를 위한 글로벌 지역 맵</block>
-  <block id="8a83d5aff252fbe923fc5b8ce4cab9f9" category="paragraph">DNS 통신을 위해 iSCSI LIF가 필요합니다. iSCSI LIF는 페일오버 시 마이그레이션되지 않으므로 이 용도로 사용됩니다.</block>
   <block id="c87f63c179c59eda8579e373c6a25976" category="paragraph">로드 밸런서에 다음 IP 주소를 만들어야 합니다.</block>
   <block id="9b31eba9539b4b373752a1f9efafb8ac" category="list-text">각 VM의 해당 NIC0에 있는 노드 1의 iSCSI LIF에 대한 IP 주소 1개</block>
   <block id="6f2174023153761cdb987311021eaf2b" category="list-text">데이터 및 SVM LIF에 필요한 수의 프런트엔드 IP 구성을 생성합니다.</block>
@@ -3842,7 +3838,6 @@
   <block id="d78a1a202c691ad37ba63488112cab29" category="paragraph"><block ref="d78a1a202c691ad37ba63488112cab29" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">방금 만든 IP 구성의 이름을 클릭하고 Assignment 를 Static 으로 변경한 다음 * Save * 를 클릭합니다.</block>
   <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">다음 명령을 입력하여 고급 모드에 액세스합니다.</block>
-  <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">DNS 통신을 제공하기 위해 iSCSI LIF 생성:</block>
   <block id="b85a0d4dea04769a8ce6e0860eb4c90f" category="paragraph">HA 중재자를 위해 미리 정의된 보안 그룹에는 다음과 같은 인바운드 규칙이 포함됩니다.</block>
   <block id="52554fb81854d42f02280f83a1067574" category="cell">커넥터의 CIDR</block>
   <block id="cdbb82146d412877f64f943229bd9533" category="cell">AWS EC2 인스턴스에 있는 Connector의 IP 주소입니다</block>
@@ -4726,7 +4721,6 @@
   <block id="13cdcbf94ff7381b25ca5784f874a9b6" category="image-alt">설정 아이콘 아래의 Cloud Volumes ONTAP 설정 옵션 스크린샷</block>
   <block id="970af11c442d109ac4d016f7c57f63fb" category="paragraph">용량 기반 라이센스는 _package_ 형식으로 제공됩니다. Cloud Volumes ONTAP 작업 환경을 만들 때 비즈니스 요구 사항에 따라 몇 가지 라이선스 패키지 중에서 선택할 수 있습니다. 작업 환경을 만든 후 요구 사항이 변경되면 언제든지 패키지를 변경할 수 있습니다. 예를 들어, Essentials 패키지에서 Professional 패키지로 변경할 수 있습니다.</block>
   <block id="58dcfad3183b701a8f1b8781a5644d09" category="inline-link">용량 기반 라이센스 패키지에 대해 자세히 알아보십시오</block>
-  <block id="3e4729f0b91cf008c10b8ab719ea9e99" category="list-text">결제 방법을 변경해도 BYOL(NetApp)에서 구매한 라이선스를 통해 청구되는지 아니면 클라우드 공급자의 마켓플레이스(Pay As You Go)에서 청구되었는지에 영향을 미치지 않습니다.</block>
   <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXP는 항상 라이센스에 대해 요금을 청구하려고 합니다. 라이선스를 사용할 수 없는 경우 마켓플레이스 구독에 대해 요금이 부과됩니다. BYOL에서 마켓플레이스 가입으로 또는 그 반대의 경우 "전환"이 필요하지 않습니다.</block>
   <block id="d5f06dc5f98a38b5ccff1592c5d20e76" category="admonition">BlueXP에서 관리되는 제품 및 서비스의 실제 사용량 및 계측은 항상 GiB 및 TiB 단위로 계산되지만 GB/GiB와 TB/TiB라는 용어는 같은 의미로 사용됩니다. 이는 클라우드 마켓플레이스 목록, 가격 견적, 리스팅 설명 및 기타 지원 문서에 반영됩니다</block>
   <block id="2732cf17c6f3094ab514d104cf7ecca1" category="admonition">BlueXP에서 관리되는 제품 및 서비스의 실제 사용량 및 계측은 항상 GiB 및 TiB 단위로 계산되지만 GB/GiB와 TB/TiB라는 용어는 같은 의미로 사용됩니다. 이는 클라우드 마켓플레이스 목록, 가격 견적, 리스팅 설명 및 기타 지원 문서에 반영됩니다.</block>
@@ -5495,7 +5489,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="448c087351c52cb72f971666e2159491" category="paragraph"><block ref="448c087351c52cb72f971666e2159491" category="inline-link-rx"></block></block>
   <block id="059b6fdd2ea839d9327c322a4c87e168" category="doc">노드 기반 라이센스에 대한 공급 중지</block>
   <block id="73dfeef5d38f87e4c1d9e4b6417db109" category="paragraph">NetApp은 Cloud Volumes ONTAP 노드 기반 라이센스의 공급 중지(EOA)와 지원 종료(EOS)를 계획했습니다. 2024년 11월 11일부터 노드 기반 라이센스의 제한된 가용성이 종료되었습니다. 노드 기반 라이센스에 대한 지원은 2024년 12월 31일에 종료됩니다. 노드 기반 라이센스의 EOA 후 BlueXP  라이센스 변환 툴을 사용하여 용량 기반 라이센스로 전환해야 합니다.</block>
-  <block id="412842ace3db013f5cc3f99342aac206" category="paragraph">연간 또는 장기 약정의 경우, NetApp은 EOA 날짜 또는 라이센스 만료일 전에 NetApp 담당자에게 연락하여 전환을 위한 사전 요구사항이 충족되는지 확인하는 것이 좋습니다. Cloud Volumes ONTAP 노드에 대한 장기 계약이 없고 온디맨드 PAYGO 구독에 대해 시스템을 실행하는 경우 EOS 날짜 전에 전환을 계획하는 것이 중요합니다. 장기 계약 및 PAYGO 서브스크립션의 경우 BlueXP  라이선스 변환 도구를 사용하여 원활한 전환을 수행할 수 있습니다.</block>
   <block id="90df487d076cd9295a7192268b4439ee" category="inline-link">노드 기반 라이센스의 공급 중지</block>
   <block id="342dcce6bda294bb4b60fc9333bcafbe" category="inline-link">노드 기반 라이센스를 용량 기반으로 변환</block>
   <block id="2293617fe352e42e5a1e5d757463cb39" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="5987d844b1ad687ea551a96a31c7c0df" category="inline-link-rx"></block></block>
@@ -5513,7 +5506,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="c11ad5eeb4b3088d2c151593e9c1204e" category="paragraph">이제 Azure에서 Cloud Volumes ONTAP 시스템의 저장소 계정에 대한 공용 액세스를 제한할 수 있습니다. 액세스를 비활성화하면 조직의 보안 정책을 준수해야 하는 경우 동일한 VNet 내에서도 개인 IP 주소가 노출되지 않도록 보호할 수 있습니다. 이 옵션은 Cloud Volumes ONTAP 시스템의 데이터 계층화도 비활성화하며 단일 노드와 고가용성 쌍에 모두 적용할 수 있습니다.</block>
   <block id="69e89afe4b2013c34ff51df883ddc022" category="paragraph"><block ref="9064ea2dae3c9dc76b91a834ab88d8bf" category="inline-link-rx"></block>..</block>
   <block id="f87269f0bcffd4dd379148db58c41b11" category="section-title">Cloud Volumes ONTAP 구축 후 WORM 지원</block>
-  <block id="8d9d085ab6acd5074907258fafcff341" category="paragraph">이전 버전에서는 BlueXP 에 Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM 스토리지를 활성화할 수 있었습니다. 이제 BlueXP 에서는 생성 중에 WORM이 활성화되지 않은 경우에도 작업 환경에서 WORM을 활성화할 수 있는 옵션을 제공합니다. 활성화한 후에는 WORM을 비활성화할 수 없습니다.</block>
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">Cloud Volumes ONTAP 작업 환경에서 WORM 활성화</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
   <block id="2db5c6d1af8e977d496e788510cbddd0" category="paragraph">작업 환경을 생성할 때 스토리지 클래스를 선택하고 나중에 언제든지 변경할 수 있습니다. 저장소 클래스 변경에 대한 지침은 을 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>참조하십시오.</block>
@@ -5645,8 +5637,17 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="d811ca86e147e8cf2239ee377f1dcd50" category="cell">* Cloud Volumes ONTAP 버전 *</block>
   <block id="a3a1c7f3820a8886078a2878a83c8362" category="cell">* VM 배포 유형 *</block>
   <block id="aadb6d991e4406b990f6fca8b4c83fd6" category="cell">* SKU 이름 *</block>
-  <block id="30076581de6d5b6ad148c87cd00ad956" category="cell">9.15.1 및 9.16.0</block>
   <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">모든 배포는 BlueXP 를 통해 이루어집니다</block>
   <block id="273062411bc731be8028321277142365" category="cell">ONTAP_클라우드</block>
   <block id="23364a1412324aba4675105eacf57908" category="example-title">단계를 봅니다</block>
+  <block id="ff98fd719f758a17955852024475db39" category="paragraph">연간 또는 장기 약정의 경우, NetApp은 EOA 날짜 또는 라이센스 만료일 전에 NetApp 담당자에게 연락하여 전환을 위한 사전 요구사항이 충족되는지 확인하는 것이 좋습니다. Cloud Volumes ONTAP 노드에 대한 장기 계약이 없는 상태에서 PAYGO(On-Demand Pay-as-you-Go) 서브스크립션에 대해 시스템을 실행하는 경우 EOS 날짜 전에 전환을 계획해야 합니다. 장기 계약 및 PAYGO 서브스크립션의 경우 BlueXP  라이선스 변환 도구를 사용하여 원활한 전환을 수행할 수 있습니다.</block>
+  <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">이제 BlueXP 를 사용하여 기존 Cloud Volumes ONTAP 시스템에서 WORM(Write Once, Read Many) 스토리지를 활성화할 수 있습니다. 이 기능을 사용하면 작업 환경에서 WORM을 생성하는 동안 WORM이 활성화되지 않은 경우에도 작업 환경에서 WORM을 유연하게 활성화할 수 있습니다. WORM을 사용하도록 설정한 후에는 비활성화할 수 없습니다.</block>
+  <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">결제 방법을 변경해도 BYOL(NetApp)에서 구매한 라이선스를 통해 청구되는지 아니면 클라우드 공급자의 PAYGO(Marketplace Pay-as-you-go) 구독에서 청구되는지 여부는 영향을 받지 않습니다.</block>
+  <block id="deeb890dedc65f3ba1539e8c0083a08b" category="paragraph">고가용성(HA) 쌍의 경우, 클러스터의 각 스토리지 VM(SVM)에 액세스하고 각 SVM에 대해 nic0에 따라 해당 IP를 생성해야 합니다. HA 쌍에 대한 IP 주소를 할당하는 방법은 사용 중인 스토리지 프로토콜에 따라 다릅니다. HA 모드에서 사용자는 스토리지 시스템의 고가용성과 안정성을 유지하는 데 필수적인 페일오버 및 이중화를 지원하도록 IP 주소가 올바르게 구성되었는지 확인해야 합니다.</block>
+  <block id="d40f712a330c4835a0ab9b70db06051b" category="list-text">SVM 관리 LIF의 선택적 IP 주소</block>
+  <block id="534113954d7a54ea89ef88fa230b7146" category="paragraph">iSCSI LIF는 iSCSI 프로토콜을 사용하지 않는 경우에도 DNS 통신에 필요합니다. iSCSI LIF는 페일오버 시 마이그레이션되지 않으므로 이 용도로 사용됩니다.</block>
+  <block id="779dc7c57d3ba82d3f1438a241a8770a" category="inline-link-macro">이전 절차</block>
+  <block id="7e5f8351d1e24c2cf0c0d5fbc956ea2b" category="list-text">데이터 LIF 생성 이 단계에서는 에 할당한 IP를 사용하여 <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>데이터 LIF를 사용합니다.</block>
+  <block id="e5da8bd8aa33e128edc30f4d0c6082f4" category="list-text">DNS 통신을 제공하기 위해 iSCSI LIF를 생성합니다. iSCSI LIF는 iSCSI 프로토콜을 사용하지 않는 경우에도 DNS 통신에 필요합니다.</block>
+  <block id="1ea87a95c176e342e1e8fd101628481f" category="list-text">NAS 데이터 LIF를 생성합니다. 이 단계에서는 에 할당한 IP를 사용하여 <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>데이터 LIF를 사용합니다.</block>
 </blocks>

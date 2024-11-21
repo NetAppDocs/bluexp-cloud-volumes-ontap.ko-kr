@@ -82,7 +82,7 @@ SKU 이름은 마켓플레이스 이미지의 URN을 설정할 때 "skuName" 변
 | * Cloud Volumes ONTAP 버전 * | * VM 배포 유형 * | * SKU 이름 * 
 
 
-| 9.15.1 및 9.16.0 | 모든 배포는 BlueXP 를 통해 이루어집니다 | ONTAP_클라우드 
+| 9.15.1 | 모든 배포는 BlueXP 를 통해 이루어집니다 | ONTAP_클라우드 
 
 
 | 9.15.0 | 단일 노드 | ONTAP_CLOUD_BYOL 

@@ -8,7 +8,7 @@
 
 NetApp은 Cloud Volumes ONTAP 노드 기반 라이센스의 공급 중지(EOA)와 지원 종료(EOS)를 계획했습니다. 2024년 11월 11일부터 노드 기반 라이센스의 제한된 가용성이 종료되었습니다. 노드 기반 라이센스에 대한 지원은 2024년 12월 31일에 종료됩니다. 노드 기반 라이센스의 EOA 후 BlueXP  라이센스 변환 툴을 사용하여 용량 기반 라이센스로 전환해야 합니다.
 
-연간 또는 장기 약정의 경우, NetApp은 EOA 날짜 또는 라이센스 만료일 전에 NetApp 담당자에게 연락하여 전환을 위한 사전 요구사항이 충족되는지 확인하는 것이 좋습니다. Cloud Volumes ONTAP 노드에 대한 장기 계약이 없고 온디맨드 PAYGO 구독에 대해 시스템을 실행하는 경우 EOS 날짜 전에 전환을 계획하는 것이 중요합니다. 장기 계약 및 PAYGO 서브스크립션의 경우 BlueXP  라이선스 변환 도구를 사용하여 원활한 전환을 수행할 수 있습니다.
+연간 또는 장기 약정의 경우, NetApp은 EOA 날짜 또는 라이센스 만료일 전에 NetApp 담당자에게 연락하여 전환을 위한 사전 요구사항이 충족되는지 확인하는 것이 좋습니다. Cloud Volumes ONTAP 노드에 대한 장기 계약이 없는 상태에서 PAYGO(On-Demand Pay-as-you-Go) 서브스크립션에 대해 시스템을 실행하는 경우 EOS 날짜 전에 전환을 계획해야 합니다. 장기 계약 및 PAYGO 서브스크립션의 경우 BlueXP  라이선스 변환 도구를 사용하여 원활한 전환을 수행할 수 있습니다.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["노드 기반 라이센스의 공급 중지"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["노드 기반 라이센스를 용량 기반으로 변환"^]
 
@@ -48,6 +48,6 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-az
 
 === Cloud Volumes ONTAP 구축 후 WORM 지원
 
-이전 버전에서는 BlueXP 에 Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM 스토리지를 활성화할 수 있었습니다. 이제 BlueXP 에서는 생성 중에 WORM이 활성화되지 않은 경우에도 작업 환경에서 WORM을 활성화할 수 있는 옵션을 제공합니다. 활성화한 후에는 WORM을 비활성화할 수 없습니다.
+이제 BlueXP 를 사용하여 기존 Cloud Volumes ONTAP 시스템에서 WORM(Write Once, Read Many) 스토리지를 활성화할 수 있습니다. 이 기능을 사용하면 작업 환경에서 WORM을 생성하는 동안 WORM이 활성화되지 않은 경우에도 작업 환경에서 WORM을 유연하게 활성화할 수 있습니다. WORM을 사용하도록 설정한 후에는 비활성화할 수 없습니다.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabling-worm-on-a-cloud-volumes-ontap-working-environment["Cloud Volumes ONTAP 작업 환경에서 WORM 활성화"^]
