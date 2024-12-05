@@ -505,7 +505,6 @@
   <block id="57f882d4d9318a77bccc1fe367a42ab5" category="paragraph">AutoSupport은 능동적으로 시스템 상태를 모니터링하고 NetApp 기술 지원 팀에 메시지를 보냅니다. 기본적으로 AutoSupport는 각 노드에서 HTTPS 전송 프로토콜을 사용하여 기술 지원 부서에 메시지를 보내도록 설정됩니다. AutoSupport에서 이러한 메시지를 보낼 수 있는지 확인하는 것이 가장 좋습니다.</block>
   <block id="c02079af34ef1373b8c0dab638269666" category="inline-link">ONTAP 문서: AutoSupport 설정</block>
   <block id="da66c21006cc6190b5b7b0242c6631b6" category="paragraph">아웃바운드 인터넷 액세스가 가능한지 확인한 후 AutoSupport를 테스트하여 메시지를 보낼 수 있는지 확인할 수 있습니다. 자세한 지침은 을 참조하십시오<block ref="f07c60ff969cb7b0a1c8ac04b7cc5791" category="inline-link-rx"></block>.</block>
-  <block id="499ff401ab7023a3297fee865d79a8f9" category="doc">GCP에서 VPC 서비스 제어 계획</block>
   <block id="51864fc98a7ac79ddec9d933162b734b" category="inline-link">Google Cloud VPC 서비스 컨트롤에 대해 자세히 알아보십시오</block>
   <block id="1ea7fcd26fa8ab32a75247310351f611" category="paragraph">VPC 서비스 제어를 사용하면 신뢰할 수 있는 경계 외부의 Google 관리 서비스에 대한 액세스를 제어하고, 신뢰할 수 없는 위치에서 데이터 액세스를 차단하고, 무단 데이터 전송 위험을 완화할 수 있습니다.<block ref="a3874a083385bdd3c92e9cffcd9eea61" category="inline-link-rx"></block>.</block>
   <block id="17472965181a18d7ed0cb4275177cffe" category="section-title">NetApp 서비스가 VPC 서비스 제어와 통신하는 방법</block>
@@ -5526,8 +5525,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="3c7a90227f7481790a6d7eb5b1a274ea" category="list-text">* PAYGO *: PAYGO(Pay-as-you-go) 서브스크립션은 클라우드 공급자의 마켓플레이스에서 시간 단위 서브스크립션을 제공합니다.</block>
   <block id="2b0470da2a26cbbea5d95f4e261d82ee" category="paragraph">노드 기반 라이센스를 용량 기반으로 변환하는 방법에 대한 자세한 내용은 을 참조하십시오</block>
   <block id="7af9b0ab22150a40b2c1c451de82db3c" category="section-title">가격 및 지원되는 구성</block>
-  <block id="f05f2e524280a4aaf976825a1f6748f6" category="inline-link-macro">용량 기반 라이센스에 대한 비용 청구</block>
-  <block id="6c418172eb2db3f08bae6e40862aa940" category="paragraph">자세한 내용은 을 <block ref="28d08582e43bd81e1450bd514123324f" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="a9949f1e97b05bac6285563868b6954a" category="admonition">BlueXP  백업 및 복구를 위해서는 PAYGO(Pay-as-you-go) 구독이 필요하지만 이 서비스 사용에 따른 비용은 발생하지 않습니다. BlueXP  백업 및 복구의 라이센스 설정에 대한 자세한 내용은 을<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="05e7dd258874d61cb2bb985c9da9a17d" category="paragraph">NetApp은 노드 기반 라이센싱의 EOA(End of Availability) 및 지원(EOS)을 계획했습니다. EOA 및 EOS 후에 노드 기반 라이센스를 용량 기반 라이센스로 변환해야 합니다.</block>
   <block id="8c6aee7f6d39fa3bea95c2ae09851a7a" category="paragraph">자세한 내용은 을<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>참조하십시오.</block>
@@ -5650,4 +5647,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="7e5f8351d1e24c2cf0c0d5fbc956ea2b" category="list-text">데이터 LIF 생성 이 단계에서는 에 할당한 IP를 사용하여 <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>데이터 LIF를 사용합니다.</block>
   <block id="e5da8bd8aa33e128edc30f4d0c6082f4" category="list-text">DNS 통신을 제공하기 위해 iSCSI LIF를 생성합니다. iSCSI LIF는 iSCSI 프로토콜을 사용하지 않는 경우에도 DNS 통신에 필요합니다.</block>
   <block id="1ea87a95c176e342e1e8fd101628481f" category="list-text">NAS 데이터 LIF를 생성합니다. 이 단계에서는 에 할당한 IP를 사용하여 <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>데이터 LIF를 사용합니다.</block>
+  <block id="c023c17ce97ef2fee30e2cb2aa0cd81a" category="paragraph">자세한 내용은 을 <block ref="7e81f0f3d7f6d88b77289e1baaf5eecf" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="c0131b1cf44af0fec95135e45a801bbe" category="doc">Google Cloud에서 VPC 서비스 제어 계획</block>
 </blocks>
