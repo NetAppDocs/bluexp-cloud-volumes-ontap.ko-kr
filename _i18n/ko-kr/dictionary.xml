@@ -257,7 +257,6 @@
   <block id="d200c22f00ca54467dc4ad3823710388" category="inline-link">AWS KMS(키 관리 서비스)</block>
   <block id="b7e9ad250523d385d7738ce667a69f9f" category="admonition">Cloud Volumes ONTAP 시스템을 생성한 후에는 AWS 데이터 암호화 방법을 변경할 수 없습니다.</block>
   <block id="e9993ec838a8efa5cfb29506f884deca" category="inline-link-macro">AWS KMS 설정</block>
-  <block id="475072bb11f16640856f57b85d421c6c" category="paragraph">Azure의 Cloud Volumes ONTAP에서 를 사용하여 데이터가 자동으로 암호화됩니다<block ref="7c6c7ca9180a9433e704ac02b33a8ed3" category="inline-link-rx"></block> Microsoft 관리 키를 사용합니다.</block>
   <block id="6eb233d9be32984c99508cdbee911e24" category="inline-link-macro">Azure에서 고객이 관리하는 키를 사용하도록 Cloud Volumes ONTAP를 설정하는 방법에 대해 알아보십시오</block>
   <block id="7b508b9bd8a6480f631ee870efa39997" category="paragraph">원하는 경우 자체 암호화 키를 사용할 수 있습니다. <block ref="e43138177d6c7f35927888032e05ad84" category="inline-link-macro-rx"></block>.</block>
   <block id="54eb23d0a40b99529340993708b372c4" category="inline-link">Google Cloud Platform 유휴 데이터 암호화</block>
@@ -577,7 +576,6 @@
   <block id="1217a2d42a5d039798ff2ec7be351708" category="section-title">Cloud Volumes ONTAP 9.10.0</block>
   <block id="32f35594134f3fdc6f434e91ec798f50" category="paragraph"><block ref="adde97be46da5fda88041fd113726d44" category="inline-link-rx"></block>.</block>
   <block id="e272f662e26b78ec82fb7603aa62b559" category="section-title">Azure에서 고객이 관리하는 암호화 키</block>
-  <block id="aee0c7bd7ef514bde14e9b9748f71cdb" category="paragraph">Azure의 Cloud Volumes ONTAP에서 를 사용하여 데이터가 자동으로 암호화됩니다<block ref="7c6c7ca9180a9433e704ac02b33a8ed3" category="inline-link-rx"></block> Microsoft 관리 키를 사용합니다. 그러나 이제 다음 단계를 완료하여 고객이 관리하는 암호화 키를 사용할 수 있습니다.</block>
   <block id="a89c0ff0556e15cdcfdad2e0435e60a8" category="list-text">Azure에서 키 볼트를 작성한 다음 해당 볼트에 키를 생성합니다.</block>
   <block id="25fb98f9fcb3127bfe7be5f0a105ca99" category="inline-link-macro">이 단계에 대해 자세히 알아보십시오</block>
   <block id="750fb0c917d909f89ff3aa09a16d9e2e" category="paragraph"><block ref="a8a8a730877a18513c7f6dc517396422" category="inline-link-macro-rx"></block>.</block>
@@ -1928,9 +1926,7 @@
   <block id="95d79008b0be56c31d097e76b7584763" category="doc">Cloud Volumes ONTAP의 암호를 변경합니다</block>
   <block id="aec821c01e23f20e98a9438c7d2dd253" category="summary">Microsoft 관리 키가 있는 Azure 스토리지 서비스 암호화를 사용하여 Azure의 Cloud Volumes ONTAP에서 데이터를 자동으로 암호화합니다. 그러나 이 페이지의 단계를 따르면 사용자 고유의 암호화 키를 사용할 수 있습니다.</block>
   <block id="e76c0365dfa8d6b43992d790f582e6c4" category="doc">Azure에서 고객이 관리하는 키를 사용하도록 Cloud Volumes ONTAP를 설정합니다</block>
-  <block id="4c0f1152ff8e08ad9c86fa100e8f9209" category="paragraph">Azure의 Cloud Volumes ONTAP에서 를 사용하여 데이터가 자동으로 암호화됩니다<block ref="0fb9c094fcac1ef4db7c0b9c1e4ffdfb" category="inline-link-rx"></block> Microsoft 관리 키를 사용합니다. 그러나 이 페이지의 단계를 따르면 사용자 고유의 암호화 키를 사용할 수 있습니다.</block>
   <block id="56d8602584b412c6fa4268dd3cbf0ccb" category="section-title">데이터 암호화 개요</block>
-  <block id="a9048454eade4a62fb2113428b74129f" category="paragraph">Cloud Volumes ONTAP 데이터는 를 사용하여 Azure에서 자동으로 암호화됩니다<block ref="7c6c7ca9180a9433e704ac02b33a8ed3" category="inline-link-rx"></block>. 기본 구현에는 Microsoft 관리 키가 사용됩니다. 설정이 필요하지 않습니다.</block>
   <block id="15a37269c447b60002a307d0f82d2bd4" category="paragraph">Cloud Volumes ONTAP에서 고객 관리 키를 사용하려면 다음 단계를 완료해야 합니다.</block>
   <block id="7c198fa2e871a635fde91e3430fc340b" category="section-title">키 회전</block>
   <block id="552690dff240721c335dffa2d29b8ef8" category="paragraph">새 버전의 키를 만들면 Cloud Volumes ONTAP에서 자동으로 최신 키 버전을 사용합니다.</block>
@@ -5477,7 +5473,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="f93da9b042a7ade0f4d86a091309ed87" category="list-text">FlexClone 및 FlexCache 볼륨: FlexClone 볼륨이 청구되지 않음 소스 및 타겟 FlexCache 볼륨은 기본 데이터로 간주되며 프로비저닝된 공간에 따라 비용이 청구됩니다.</block>
   <block id="371519ace7adec1f0d1a909854d1cbec" category="list-text">HA 쌍 충전: HA 쌍의 경우 노드의 프로비저닝된 용량만 충전됩니다. 파트너 노드에 동기식으로 미러링되는 데이터는 청구되지 않습니다.</block>
   <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">2024년 10월 25일</block>
-  <block id="dc1815932afdea52f1a4c12d73f2eed0" category="section-title">N1 시리즈 장비는 BlueXP 에서 선택할 수 없습니다</block>
   <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">Google Cloud에서 Cloud Volumes ONTAP의 새 인스턴스를 배포할 때 BlueXP 에서 n1 시리즈 머신을 더 이상 선택할 수 없습니다. n1 시리즈 머신은 기존 시스템에서만 유지되고 지원됩니다. Cloud Volumes ONTAP의 새로운 배포는 9.8 릴리스부터 Google Cloud에서만 지원됩니다. Cloud Volumes ONTAP 9.8 이상과 호환되는 n2 시리즈 기계 유형으로 전환하는 것이 좋습니다. 그러나 n1 시리즈 시스템은 API를 통해 수행되는 새로운 구축 환경에서 사용할 수 있습니다.</block>
   <block id="e55067e1e9c0716bdbc0866b4393aa68" category="paragraph"><block ref="55218e2079fe45aad8bd65bcb61a1a9f" category="inline-link-rx"></block>..</block>
   <block id="e8ae21b110baed89680dca18585c158c" category="section-title">개인 모드에서 Amazon Web Services에 대한 로컬 영역 지원</block>
@@ -5649,4 +5644,12 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="1ea87a95c176e342e1e8fd101628481f" category="list-text">NAS 데이터 LIF를 생성합니다. 이 단계에서는 에 할당한 IP를 사용하여 <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block>데이터 LIF를 사용합니다.</block>
   <block id="c023c17ce97ef2fee30e2cb2aa0cd81a" category="paragraph">자세한 내용은 을 <block ref="7e81f0f3d7f6d88b77289e1baaf5eecf" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="c0131b1cf44af0fec95135e45a801bbe" category="doc">Google Cloud에서 VPC 서비스 제어 계획</block>
+  <block id="fa055d94084c7095d6c7ec354ec44857" category="doc">모범 사례에 맞게 Google Cloud에서 업데이트된 지원되는 VM 목록</block>
+  <block id="497e698cad27d6346959de7394ab5df8" category="doc">모범 사례에 맞춰 Azure에 대해 업데이트된 지원되는 VM 목록입니다</block>
+  <block id="a295598082ec4c1c06fb5a3e2ad3e1d1" category="paragraph">Azure에서 Cloud Volumes ONTAP의 새 인스턴스를 배포할 때 BlueXP 에서 DS_v2 및 ES_v3 시스템 제품군을 더 이상 선택할 수 없습니다. 이러한 제품군은 이전 버전의 기존 시스템에서만 유지 및 지원됩니다. Cloud Volumes ONTAP의 새로운 배포는 9.12.1 릴리즈부터 Azure에서만 지원됩니다. ES_v4 또는 Cloud Volumes ONTAP 9.12.1 이상과 호환되는 다른 시리즈로 전환하는 것이 좋습니다. 그러나 DS_v2 및 ES_v3 시리즈 시스템은 API를 통해 새로 배포될 때 사용할 수 있습니다.</block>
+  <block id="ef57b1c89cee8819c5de2b079e4b0640" category="paragraph"><block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
+  <block id="ce26d4172bea0548b2bf56f5493c7190" category="paragraph">Azure의 Cloud Volumes ONTAP에서 Microsoft에서 관리하는 키와 함께 데이터를 자동으로 암호화합니다.<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block></block>
+  <block id="c97a482803062120aadcb028bb25c6d1" category="paragraph">Cloud Volumes ONTAP 데이터는 를 사용하여 Azure에서 자동으로 암호화됩니다.<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block> 기본 구현에는 Microsoft 관리 키가 사용됩니다. 설정이 필요하지 않습니다.</block>
+  <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">2024년 12월 9일</block>
+  <block id="c02b5fa56aae4296da253938ec788b53" category="paragraph">Azure의 Cloud Volumes ONTAP에서 Microsoft에서 관리하는 키와 함께 데이터를 자동으로 암호화합니다.<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block> 그러나 이제 다음 단계를 완료하여 고객이 관리하는 암호화 키를 사용할 수 있습니다.</block>
 </blocks>

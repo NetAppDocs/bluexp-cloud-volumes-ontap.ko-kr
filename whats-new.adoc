@@ -20,6 +20,18 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2024년 12월 9일
+
+
+
+=== 모범 사례에 맞춰 Azure에 대해 업데이트된 지원되는 VM 목록입니다
+
+Azure에서 Cloud Volumes ONTAP의 새 인스턴스를 배포할 때 BlueXP 에서 DS_v2 및 ES_v3 시스템 제품군을 더 이상 선택할 수 없습니다. 이러한 제품군은 이전 버전의 기존 시스템에서만 유지 및 지원됩니다. Cloud Volumes ONTAP의 새로운 배포는 9.12.1 릴리즈부터 Azure에서만 지원됩니다. ES_v4 또는 Cloud Volumes ONTAP 9.12.1 이상과 호환되는 다른 시리즈로 전환하는 것이 좋습니다. 그러나 DS_v2 및 ES_v3 시리즈 시스템은 API를 통해 새로 배포될 때 사용할 수 있습니다.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure에서 지원되는 구성"^]
+
+
+
 == 2024년 11월 11일
 
 
@@ -78,7 +90,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabl
 
 
 
-=== N1 시리즈 장비는 BlueXP 에서 선택할 수 없습니다
+=== 모범 사례에 맞게 Google Cloud에서 업데이트된 지원되는 VM 목록
 
 Google Cloud에서 Cloud Volumes ONTAP의 새 인스턴스를 배포할 때 BlueXP 에서 n1 시리즈 머신을 더 이상 선택할 수 없습니다. n1 시리즈 머신은 기존 시스템에서만 유지되고 지원됩니다. Cloud Volumes ONTAP의 새로운 배포는 9.8 릴리스부터 Google Cloud에서만 지원됩니다. Cloud Volumes ONTAP 9.8 이상과 호환되는 n2 시리즈 기계 유형으로 전환하는 것이 좋습니다. 그러나 n1 시리즈 시스템은 API를 통해 수행되는 새로운 구축 환경에서 사용할 수 있습니다.
 
@@ -1410,7 +1422,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-9100-relnotes["이 Cloud Volum
 
 === Azure에서 고객이 관리하는 암호화 키
 
-Azure의 Cloud Volumes ONTAP에서 를 사용하여 데이터가 자동으로 암호화됩니다 https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Azure 스토리지 서비스 암호화"^] Microsoft 관리 키를 사용합니다. 그러나 이제 다음 단계를 완료하여 고객이 관리하는 암호화 키를 사용할 수 있습니다.
+Azure의 Cloud Volumes ONTAP에서 Microsoft에서 관리하는 키와 함께 데이터를 자동으로 암호화합니다. https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Azure 스토리지 서비스 암호화"^] 그러나 이제 다음 단계를 완료하여 고객이 관리하는 암호화 키를 사용할 수 있습니다.
 
 . Azure에서 키 볼트를 작성한 다음 해당 볼트에 키를 생성합니다.
 . BlueXP에서 API를 사용하여 키를 사용하는 Cloud Volumes ONTAP 작업 환경을 만듭니다.
