@@ -18,26 +18,4 @@ Cloud Volumes ONTAP는 NVE(NetApp Volume Encryption) 및 NAE(NetApp Aggregate En
 
 NVE와 NAE는 모두 외부 키 관리자로 지원됩니다.
 
-ifdef::aws[]
-
-endif::aws[]
-
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
-
-ifdef::aws[]
-
-endif::aws[]
-
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
+ifdef::AWS[] endif::AWS[] ifdef::Azure[] endif::Azure[] ifdef::GCP[] endif::GCP[] ifdef::AWS[] ifdef::Azure[] endif::GCP[] endif:

@@ -3110,7 +3110,6 @@
   <block id="6065260b6e2ca957f806162cf33800f6" category="paragraph">비즈니스 요구 사항에 따라 필요한 경우 비공개 링크 연결을 비활성화할 수도 있습니다. 링크를 사용하지 않도록 설정하면 BlueXP는 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성합니다.</block>
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">Azure 리소스 그룹에 두 번째 Cloud Volumes ONTAP HA 쌍을 배포하려고 하면 BlueXP에서 연결 문제가 발생합니다.</block>
   <block id="4350eea5911affd7e2c237dd5705777c" category="list-text">BlueXP는 Cloud Volumes ONTAP를 배포할 때 데이터 서비스 스토리지 VM을 하나만 생성합니다. 일부 구성은 추가 스토리지 VM을 지원합니다. <block ref="a7cc00a0b341c53959a0ff9bb9ec925b" category="inline-link-macro-rx"></block>.</block>
-  <block id="d3ba63f114f62f143d97434a92eb48a8" category="paragraph">BlueXP 3.9.5 릴리스부터는 초기 스토리지 VM에서 논리적 공간 보고가 활성화됩니다. 공간이 논리적으로 보고되면 ONTAP에서는 스토리지 효율성 기능으로 절약된 모든 물리적 공간이 사용된 것으로 보고하도록 볼륨 공간을 보고합니다.</block>
   <block id="0dbf08a19cabe7472c89a9c1e7157737" category="list-text">BlueXP는 Cloud Volumes ONTAP에 다음과 같은 ONTAP 기능 라이센스를 자동으로 설치합니다.</block>
   <block id="11d111ac1cc9cf65f25ba47f1cd4b23b" category="paragraph">다음 표에는 BlueXP가 기본값과 다르게 설정하는 볼륨 특성이 나열되어 있습니다.</block>
   <block id="8e2921a1922b2a0ecfbeec5648e2a4ab" category="cell">BlueXP에서 설정한 값입니다</block>
@@ -5184,7 +5183,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="a868fdec3895d3124b3057eb37731062" category="paragraph">구성을 선택하고 관리자로부터 AWS 네트워킹 정보를 받아 준비해야 합니다. 자세한 내용은 을 <block ref="b2852d75c9a2b653b1ca3941854c33b3" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="11eabc4c2e02ada201e4f8ce94a56167" category="paragraph">자세한 내용은 을 <block ref="517e0808f26a9b41dd03b24bae4c07de" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="c95e55331ee9ea930a177638f6578513" category="cell">Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 자세한 내용은 을<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.</block>
-  <block id="89a2456bdd5480899e2d6a3ee4ee019c" category="paragraph">자세한 내용은 및 을 <block ref="24fc9da0f00ff5ec38c6b3fffe9cc77c" category="inline-link-macro-rx"></block> <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="66962b0e026c08cab80e01e87da346a8" category="paragraph">구축 모델의 개요는 을 <block ref="ac890ff87988e1f4fe9ed78d7a128a29" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="f83835b81bb53fd1da3358b2d3599219" category="paragraph">IP 주소는 해당 지역의 모든 VPC에 대한 CIDR 블록 외부에 있어야 합니다. 자세한 내용은 을 <block ref="e677af9e7ca6c446fefd39f21658da89" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="597ca2dc5fd01a4decfca37440543f47" category="paragraph">둘 이상의 라우팅 테이블이 있는 경우 올바른 라우팅 테이블을 선택하는 것이 매우 중요합니다. 그렇지 않으면 일부 클라이언트가 Cloud Volumes ONTAP HA 쌍에 액세스하지 못할 수 있습니다. 라우팅 테이블에 대한 자세한 내용은 을<block ref="8ed06851f50fcdbded65cb78f986bfa5" category="inline-link-rx"></block>참조하십시오.</block>
@@ -5202,7 +5200,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft Azure 웹 사이트: 지역별 제품</block>
   <block id="e4eaa3d391d7d55d8c20cbf06dc81915" category="list-text">여러 가용 영역의 경우 지역, VNet, 서브넷, 노드 1의 영역, 노드 2의 영역을 선택합니다.</block>
   <block id="407f144abfa1ac000a5a8035a2a3eb77" category="paragraph">디스크 크기 선택에 대한 자세한 내용은 을 <block ref="693042947faf99c4ded2e1854ea1714d" category="inline-link-macro-rx"></block>참조하십시오.</block>
-  <block id="561bec0387138d2b07f137df6774960c" category="paragraph">자세한 내용은 및 을 <block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block> <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="8f2f3f69e91b562b368312a0d9a50b10" category="admonition">Google Cloud를 통해 이미지를 내보내는 방법에 대한 자세한 내용은 을 참조하십시오<block ref="c7e947f0888e30efd1d729c87ccc8502" category="inline-link-rx"></block>.</block>
   <block id="dffa64286b22863be6fb6ce536cfea25" category="list-text">여러 가용 영역(AZ)에 Cloud Volumes ONTAP HA를 구축할 때는 전송 게이트웨이를 구성해야 합니다. 자세한 내용은 을 <block ref="8ed1c74f676e6267bda3930e176fcde5" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="6242dbff130ee0bc438bfa60a5b4de51" category="paragraph">BlueXP는 워크로드 요구 사항에 맞는 사전 구성된 패키지를 제공하거나 사용자가 직접 구성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다. 자세한 내용은 을 <block ref="01a63aaf870d7f59ca64d1c54c969d0e" category="inline-link-macro-rx"></block>참조하십시오.</block>
@@ -5652,4 +5649,14 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="c97a482803062120aadcb028bb25c6d1" category="paragraph">Cloud Volumes ONTAP 데이터는 를 사용하여 Azure에서 자동으로 암호화됩니다.<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block> 기본 구현에는 Microsoft 관리 키가 사용됩니다. 설정이 필요하지 않습니다.</block>
   <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">2024년 12월 9일</block>
   <block id="c02b5fa56aae4296da253938ec788b53" category="paragraph">Azure의 Cloud Volumes ONTAP에서 Microsoft에서 관리하는 키와 함께 데이터를 자동으로 암호화합니다.<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block> 그러나 이제 다음 단계를 완료하여 고객이 관리하는 암호화 키를 사용할 수 있습니다.</block>
+  <block id="a12f9b162c1d705866995451c3607b7a" category="paragraph">ifdef::Azure[] endif::Azure[] ifdef::GCP[] endif::GCP[]</block>
+  <block id="2da8645e38c3d4f73ccf32db700949e1" category="inline-link">KB: CVO에서 지원되는 인라인 스토리지 효율성 기능은 무엇입니까?</block>
+  <block id="d3f3737cc08ede35a7833c219be7cf96" category="paragraph">BlueXP 3.9.5 릴리스부터는 초기 스토리지 VM에서 논리적 공간 보고가 활성화됩니다. 공간이 논리적으로 보고되면 ONTAP에서는 스토리지 효율성 기능으로 절약된 모든 물리적 공간이 사용된 것으로 보고하도록 볼륨 공간을 보고합니다. 인라인 스토리지 효율성 기능에 대한 자세한 내용은 기술 자료 문서를 참조하십시오<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block></block>
+  <block id="2036e42877d5092c3afda2b202817932" category="list-text">NFS ifdef::AWS[] endif::AWS[] ifdef::Azure[] endif::Azure[]</block>
+  <block id="a9a68a4c2a3e1d9ea3aa0198251e51b3" category="paragraph">자세한 내용은 <block ref="449d1f3dba62fd34c10497ac720687ce" category="inline-link-macro-rx"></block>, <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>및<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block> 을 참조하십시오</block>
+  <block id="ee7f44a3ee50a804694c28101731c80b" category="paragraph">자세한 내용은 <block ref="24fc9da0f00ff5ec38c6b3fffe9cc77c" category="inline-link-macro-rx"></block>, <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>및<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block> 을 참조하십시오</block>
+  <block id="9b5ca9f023a445b9980873fe985b03c2" category="paragraph">자세한 내용은 <block ref="b12f776b16b59fa8d20c1c83946e77ac" category="inline-link-macro-rx"></block>, <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>및<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block> 을 참조하십시오</block>
+  <block id="1d7416ead0f5e395552a7bea35bb1485" category="paragraph">ifdef::AWS[] endif::AWS[] ifdef::Azure[] endif::Azure[] ifdef::GCP[] endif::GCP[] ifdef::AWS[] ifdef::Azure[] endif::GCP[] endif:</block>
+  <block id="86402869cd4d06d1574d76517f21f563" category="paragraph">용량 기반 라이센스를 통해 Cloud Volumes ONTAP 1TiB 용량 단위로 비용을 지불할 수 있습니다. 용량 기반 라이센스는 _ package_: Essentials, Optimized 또는 Professional 패키지의 형태로 제공됩니다.</block>
+  <block id="318162ad2b4d0154510a1c3fe1ca774b" category="paragraph">Essentials, Optimized 및 Professional 패키지는 다음 소비 모델에서 사용할 수 있습니다.</block>
 </blocks>

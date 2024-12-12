@@ -60,13 +60,7 @@ Cloud Volumes ONTAP는 를 https://www.netapp.com/pdf.html?item=/media/17070-ds-
 
 NVE와 NAE는 모두 외부 키 관리자로 지원됩니다.
 
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
+ifdef::Azure[] endif::Azure[] ifdef::GCP[] endif::GCP[]
 
 새 애그리게이트에는 외부 키 관리자를 설정한 후 기본적으로 NAE(NetApp Aggregate Encryption)가 활성화되어 있습니다. NAE 애그리게이트에 속하지 않는 새로운 볼륨은 기본적으로 NetApp Volume Encryption(NVE)이 활성화되어 있습니다(예: 외부 키 관리자를 설정하기 전에 생성된 기존 애그리게이트가 있는 경우).
 
