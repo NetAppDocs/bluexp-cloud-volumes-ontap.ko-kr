@@ -689,7 +689,6 @@
   <block id="2ac4966affb9011f1fb5a6ed61d6f091" category="paragraph">Cloud Volumes ONTAP 시스템에서 WORM 스토리지를 활성화한 후에는 모든 WORM 스토리지 관리에 ONTAP CLI를 사용해야 합니다. 자세한 지침은 을 참조하십시오<block ref="19be2c027fd298807ecd24728f87bdff" category="inline-link-rx"></block>.</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">제한 사항</block>
   <block id="e2d4a517cbcae1c0966d5e478d743531" category="list-text">Cloud Volumes ONTAP의 WORM 스토리지는 "신뢰할 수 있는 스토리지 관리자" 모델로 운영됩니다. WORM 파일은 변경 또는 수정으로부터 보호되지만, 만료되지 않은 WORM 데이터가 포함된 볼륨에도 클러스터 관리자가 볼륨을 삭제할 수 있습니다.</block>
-  <block id="6d0cc0f6b100bdce8cb06276811faff9" category="list-text">신뢰할 수 있는 스토리지 관리자 모델 외에도 Cloud Volumes ONTAP의 WORM 스토리지는 "신뢰할 수 있는 클라우드 관리자" 모델에서도 암시적으로 작동합니다. 클라우드 관리자는 클라우드 공급자에서 직접 클라우드 스토리지를 제거 또는 편집하여 만료 날짜 이전에 WORM 데이터를 삭제할 수 있습니다.</block>
   <block id="c65544a3678422a2d15f8bc1a12dec12" category="doc">FlexVol 볼륨을 생성합니다</block>
   <block id="9a78a69978c460378acf553a1b850e91" category="paragraph">볼륨 프로비저닝에 대한 몇 가지 참고 사항:</block>
   <block id="f6624758e1ac18d59af363d92430c58d" category="inline-xref">IQN을 사용하여 호스트에서 LUN에 연결합니다</block>
@@ -1446,7 +1445,6 @@
   <block id="f591dbc4232b149ea0792178559405f9" category="list-text">라이센스 파일을 업로드합니다.</block>
   <block id="034f6db5181ab87d962e69b9b7b5a995" category="list-text">라이센스 업로드 * 를 클릭합니다.</block>
   <block id="8f79a5bc1b9725ce4036eb2d94c60de9" category="section-title">용량 기반 라이센스를 제거합니다</block>
-  <block id="78a946dc090d511b993ffbe9803dff06" category="paragraph">용량 기반 라이센스가 만료되어 더 이상 사용되지 않는 경우 언제든지 라이센스를 제거할 수 있습니다.</block>
   <block id="40b851aafab82c78484c46169f816fd2" category="list-text">확인하려면 * 제거 * 를 클릭합니다.</block>
   <block id="d39a322c0902d3bf2bf75781b1e1c8ab" category="doc">데이터 계층화 및 백업을 위한 서비스 계정을 생성합니다</block>
   <block id="5632566b6a310163e5233af96d1f233d" category="paragraph">Cloud Volumes ONTAP는 서비스 계정을 사용하여 계층화된 데이터에 대한 하나의 버킷과 백업을 위한 다른 버킷에 액세스하고 관리합니다.</block>
@@ -1535,7 +1533,6 @@
   <block id="82330159ba1b86113008185841af38f9" category="paragraph">라이센스 교환은 Cloud Volumes ONTAP 라이센스를 해지하고 서비스에 대해 달러 상당 라이센스를 생성합니다.</block>
   <block id="9df8e0785445964e646ecf922e67b378" category="list-text">Cloud Volumes ONTAP HA 쌍의 라이센스는 51TiB 데이터 서비스 라이센스로 변환됩니다</block>
   <block id="fc9771c21d913259d9cc1605db9e67fc" category="list-text">Cloud Volumes ONTAP 단일 노드의 라이센스는 32TiB 데이터 서비스 라이센스로 변환됩니다</block>
-  <block id="0f4fe815dba79cae727d101224b259f6" category="paragraph">변환된 라이센스의 만료일은 Cloud Volumes ONTAP 라이센스와 동일합니다.</block>
   <block id="fff69e388498c7da2216c0a49587cbc8" category="list-text">Exchange 라이센스 * 를 클릭합니다.</block>
   <block id="25abdaf706ab9bbfe1775de2626f958f" category="inline-image-macro">할당되지 않은 라이센스 페이지에 나타나는 Exchange 라이센스 옵션 스크린샷</block>
   <block id="59069c86e2c388bcb56b4ec04ba7c1b1" category="paragraph"><block ref="59069c86e2c388bcb56b4ec04ba7c1b1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2829,7 +2826,6 @@
   <block id="d02c51c501566fb6b3f4693ca83b01ea" category="paragraph">"assumeRoleArn" 필드에는 VPC 소유자 계정에서 만든 IAM 역할의 ARN이 포함되어야 합니다(위의 3단계 참조).</block>
   <block id="4b86a9bfe35da8d5b3e1175b8664656d" category="list-text">Cloud Volumes ONTAP HA 쌍의 고가용성에는 문제가 없습니다. 이 Azure 기능은 ONTAP와 함께 작동하여 계획되지 않은 페일오버 이벤트로 인해 NFS 프로토콜에 대해 클라이언트에서 관측된 애플리케이션 중단 시간을 줄입니다.</block>
   <block id="74c86f2714a033254b4bc8058a066937" category="list-text">이 기능을 사용하도록 설정하는 것은 Cloud Volumes ONTAP HA 쌍의 무중단 기능입니다.</block>
-  <block id="7dbbac252a198b9c7c543b30ca9455a6" category="list-text">Azure 구독에서 이 기능을 활성화해도 다른 VM에 문제가 발생하지 않습니다.</block>
   <block id="3a3aee537f8eb946ce95b303a0b0cde6" category="paragraph">"소유자" 권한이 있는 Azure 사용자는 Azure CLI에서 이 기능을 활성화할 수 있습니다.</block>
   <block id="dede8f1d754e5872747fd6fdd219a9da" category="inline-link">Azure Portal에서 Azure Cloud Shell에 액세스합니다</block>
   <block id="826fb3564b49a63adcbf5c36eec58144" category="list-text"><block ref="826fb3564b49a63adcbf5c36eec58144" category="inline-link-rx"></block></block>
@@ -5433,7 +5429,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="cd0f7e99403d8fa2d51f79da8490c871" category="list-text">* 라이센스 *: Cloud Volumes ONTAP 시스템에서 유효한 FlexCache 라이센스가 사용 가능하고 활성화되어 있는지 확인합니다.</block>
   <block id="d2a65c4b3d7d612fe9fcff1cd53a7468" category="summary">계획되지 않은 페일오버 시간을 줄이고 Cloud Volumes ONTAP에 대해 NFSv4를 지원하려면 Microsoft Azure의 고가용성 모드를 활성화해야 합니다.</block>
   <block id="5bc18ee7996a6b2f47f52d9c0d64c84c" category="doc">Azure에서 고가용성 모드를 활성화합니다</block>
-  <block id="f9d5342a5ffe6f23e9e7c99df8a42301" category="paragraph">Cloud Volumes ONTAP 9.10.1 릴리즈부터 Microsoft Azure에서 실행되는 Cloud Volumes ONTAP HA 쌍의 계획되지 않은 페일오버 시간을 줄이고 NFSv4에 대한 지원을 추가했습니다. Cloud Volumes ONTAP에서 이러한 향상된 기능을 사용하려면 Azure 구독에서 고가용성 기능을 활성화해야 합니다.</block>
   <block id="3cad9b9a9f4d8a66f7f9dabc18c3c350" category="list-text">고가용성 모드 기능 등록:</block>
   <block id="55b69e64ede595e0a10eefb4d9199033" category="paragraph">Cloud Volumes ONTAP에서 배치 그룹 생성에 실패할 경우 단일 가용 영역(AZ)에서 AWS HA(고가용성) 구성의 새 배포를 롤백합니다. 필요한 경우 생성에 실패할 때마다 롤백 프로세스를 무시하도록 반 배정 그룹을 구성하여 배포를 성공적으로 완료할 수 있습니다.</block>
   <block id="43c795154e3b7bf74f7abd49f2e26e1a" category="paragraph">BlueXP 를 사용하면 Google Cloud의 고가용성(HA) 쌍을 제외하고 Cloud Volumes ONTAP의 쓰기 속도 설정을 선택할 수 있습니다. 쓰기 속도를 선택하기 전에 고속 쓰기 속도를 사용할 때 정상 및 높음 설정의 차이점과 위험 및 권장 사항을 이해해야 합니다. <block ref="12222f10612c9f092ca31c9e99478649" category="inline-link-macro-rx"></block>..</block>
@@ -5561,7 +5556,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="61f61b36ca3ee8ac47bd8319d6a6da9e" category="paragraph">노드 기반 PAYGO(Pay As You Go) 라이센스를 사용하는 경우 * License type * 옆에 있는 연필 아이콘을 클릭하여 다른 라이센스 및 인스턴스 유형을 선택할 수도 있습니다.</block>
   <block id="a6ecef7da6963fbad59a3086a2850e01" category="paragraph">노드 기반 PAYGO(Pay-as-you-go) 라이센스를 사용하는 경우 * License type * 옆에 있는 연필 아이콘을 클릭하여 다른 라이센스 및 기계 유형을 선택할 수도 있습니다.</block>
   <block id="ad7ec214f507336a7e17d120e074d946" category="summary">노드 기반 라이센스의 EOA(End of Availability)가 완료되면 BlueXP  라이센스 변환 툴을 사용하여 용량 기반 라이센스로 전환해야 합니다.</block>
-  <block id="ede3b64e47be4458ec3b083a508317d8" category="paragraph">연간 또는 장기 약정의 경우 NetApp, 전환을 위한 사전 요구사항이 충족되는지 확인하기 위해 EOA 날짜(2024년 11월 11일) 또는 라이센스 만료일 전에 NetApp 담당자에게 연락하는 것이 좋습니다. Cloud Volumes ONTAP 노드에 대한 장기 계약이 없고 온디맨드 용량제(PAYGO) 구독에 대해 시스템을 실행하는 경우, 2024년 12월 31일 EOS(지원 종료) 전에 전환을 계획하는 것이 중요합니다. 두 경우 모두 원활한 전환을 위해 BlueXP  라이센스 변환 도구를 사용하기 전에 시스템이 요구 사항을 충족하는지 확인해야 합니다.</block>
   <block id="4bedf07f0fb0e4e91062f6c20aefb983" category="paragraph">EOA 및 EOS에 대한 자세한 내용은 을 <block ref="7f9a8649ca2d86db235ba56502d14f92" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="aef6fd472f817709940e55ee0509b06b" category="list-text">라이센스 변환 툴을 사용하면 데이터를 마이그레이션하거나 추가 클라우드 리소스를 프로비저닝할 필요가 없이 노드 기반 라이센스 모델에서 용량 기반 라이센스 모델로 전환할 수 있습니다.</block>
   <block id="1b740ae810dbba9c533dc649a7e00e1a" category="list-text">무중단 운영이며 서비스 중단이나 애플리케이션 다운타임이 발생하지 않습니다.</block>
@@ -5629,7 +5623,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">모든 배포는 BlueXP 를 통해 이루어집니다</block>
   <block id="273062411bc731be8028321277142365" category="cell">ONTAP_클라우드</block>
   <block id="23364a1412324aba4675105eacf57908" category="example-title">단계를 봅니다</block>
-  <block id="ff98fd719f758a17955852024475db39" category="paragraph">연간 또는 장기 약정의 경우, NetApp은 EOA 날짜 또는 라이센스 만료일 전에 NetApp 담당자에게 연락하여 전환을 위한 사전 요구사항이 충족되는지 확인하는 것이 좋습니다. Cloud Volumes ONTAP 노드에 대한 장기 계약이 없는 상태에서 PAYGO(On-Demand Pay-as-you-Go) 서브스크립션에 대해 시스템을 실행하는 경우 EOS 날짜 전에 전환을 계획해야 합니다. 장기 계약 및 PAYGO 서브스크립션의 경우 BlueXP  라이선스 변환 도구를 사용하여 원활한 전환을 수행할 수 있습니다.</block>
   <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">이제 BlueXP 를 사용하여 기존 Cloud Volumes ONTAP 시스템에서 WORM(Write Once, Read Many) 스토리지를 활성화할 수 있습니다. 이 기능을 사용하면 작업 환경에서 WORM을 생성하는 동안 WORM이 활성화되지 않은 경우에도 작업 환경에서 WORM을 유연하게 활성화할 수 있습니다. WORM을 사용하도록 설정한 후에는 비활성화할 수 없습니다.</block>
   <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">결제 방법을 변경해도 BYOL(NetApp)에서 구매한 라이선스를 통해 청구되는지 아니면 클라우드 공급자의 PAYGO(Marketplace Pay-as-you-go) 구독에서 청구되는지 여부는 영향을 받지 않습니다.</block>
   <block id="deeb890dedc65f3ba1539e8c0083a08b" category="paragraph">고가용성(HA) 쌍의 경우, 클러스터의 각 스토리지 VM(SVM)에 액세스하고 각 SVM에 대해 nic0에 따라 해당 IP를 생성해야 합니다. HA 쌍에 대한 IP 주소를 할당하는 방법은 사용 중인 스토리지 프로토콜에 따라 다릅니다. HA 모드에서 사용자는 스토리지 시스템의 고가용성과 안정성을 유지하는 데 필수적인 페일오버 및 이중화를 지원하도록 IP 주소가 올바르게 구성되었는지 확인해야 합니다.</block>
@@ -5659,4 +5652,17 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="1d7416ead0f5e395552a7bea35bb1485" category="paragraph">ifdef::AWS[] endif::AWS[] ifdef::Azure[] endif::Azure[] ifdef::GCP[] endif::GCP[] ifdef::AWS[] ifdef::Azure[] endif::GCP[] endif:</block>
   <block id="86402869cd4d06d1574d76517f21f563" category="paragraph">용량 기반 라이센스를 통해 Cloud Volumes ONTAP 1TiB 용량 단위로 비용을 지불할 수 있습니다. 용량 기반 라이센스는 _ package_: Essentials, Optimized 또는 Professional 패키지의 형태로 제공됩니다.</block>
   <block id="318162ad2b4d0154510a1c3fe1ca774b" category="paragraph">Essentials, Optimized 및 Professional 패키지는 다음 소비 모델에서 사용할 수 있습니다.</block>
+  <block id="c54232d574f50dfd33c3e6ddb7fab829" category="paragraph">연간 또는 장기 약정의 경우, NetApp은 EOA 날짜 또는 라이센스 만료일 전에 NetApp 담당자에게 연락하여 전환을 위한 사전 요구사항이 충족되는지 확인하는 것이 좋습니다. Cloud Volumes ONTAP 노드에 대한 장기 계약이 없는 상태에서 PAYGO(On-Demand Pay-as-you-Go) 서브스크립션에 대해 시스템을 실행하는 경우 EOS 날짜 전에 전환을 계획해야 합니다. 장기 계약 및 PAYGO 서브스크립션의 경우 BlueXP  라이선스 변환 도구를 사용하여 원활한 전환을 수행할 수 있습니다.</block>
+  <block id="4bbac1ba6da1fae98898078ee927d707" category="doc">용량 기반 라이센스에 대해 자세히 알아보십시오</block>
+  <block id="b9ed893da654234e8fac88c7419c277f" category="list-text">신뢰할 수 있는 스토리지 관리자 모델 외에도 Cloud Volumes ONTAP의 WORM 스토리지는 "신뢰할 수 있는 클라우드 관리자" 모델에서도 암시적으로 작동합니다. 클라우드 관리자는 클라우드 공급자에서 직접 클라우드 스토리지를 제거하거나 편집하여 만료 날짜 전에 WORM 데이터를 삭제할 수 있습니다.</block>
+  <block id="b34a5fc19862373955bdfd46a3aadace" category="paragraph">Microsoft Azure의 HA(고가용성) 모드를 사용하여 계획되지 않은 페일오버 시간을 줄이고 Cloud Volumes ONTAP에 대해 NFSv4를 지원해야 합니다. 이 모드에서는 CIFS 및 NFSv4 클라이언트에서 계획되지 않은 페일오버 중에 Cloud Volumes ONTAP HA 노드의 RTO(복구 시간 목표)를 낮게(60초)할 수 있습니다.</block>
+  <block id="3cf5fe492293bbbf3d99776de821b378" category="paragraph">우리는 Cloud Volumes ONTAP 9.10.1부터 Microsoft Azure에서 실행되는 Cloud Volumes ONTAP HA 쌍의 계획되지 않은 페일오버 시간을 줄이고 NFSv4에 대한 지원을 추가했습니다. Cloud Volumes ONTAP에서 이러한 향상된 기능을 사용하려면 Azure 구독에서 고가용성 기능을 활성화해야 합니다.</block>
+  <block id="aede641e1d7acdfda83bae4962f9cad6" category="list-text">Azure 구독에서 이 기능을 활성화해도 다른 VM에 문제가 발생하지 않습니다.</block>
+  <block id="61d250b56c4dbcf65efb9a23e69575b2" category="list-text">Cloud Volumes ONTAP는 클러스터 및 CIFS 및 NFS 클라이언트에서 SVM 관리 LIF의 페일오버 중에 내부 Azure 로드 밸런서를 사용합니다.</block>
+  <block id="c452ee32d2dd6fb7daf5d56449ab25c3" category="list-text">HA 모드가 활성화되면 BlueXP 가 12시간마다 시스템을 검사하여 내부 Azure 부하 분산 규칙을 업데이트합니다.</block>
+  <block id="735e56a5b34e826e0792a73d3b708e4a" category="paragraph">연간 또는 장기 약정의 경우 NetApp, 전환을 위한 사전 요구사항이 충족되는지 확인하기 위해 EOA 날짜(2024년 11월 11일) 또는 라이센스 만료일 전에 NetApp 담당자에게 연락하는 것이 좋습니다. Cloud Volumes ONTAP 노드에 대한 장기 계약이 없고 온디맨드 용량제(PAYGO) 구독에 대해 시스템을 실행하는 경우, 2024년 12월 31일 EOS(지원 종료) 전에 전환을 계획하는 것이 중요합니다. 두 경우 모두 원활한 전환을 위해 BlueXP  라이센스 변환 도구를 사용하기 전에 시스템이 요구 사항을 충족하는지 확인해야 합니다.</block>
+  <block id="2ea847728c17221d3e25691cc360347c" category="paragraph">용량 기반 라이센스가 만료되어 더 이상 사용하지 않는 경우 언제든지 제거할 수 있습니다.</block>
+  <block id="2ee1fa7be03c13720193e0dad8935652" category="inline-link">이 기술 자료(KB) 문서입니다</block>
+  <block id="6e9d07c33afe89ea437bf8c34df37d42" category="paragraph">라이센스 만료 또는 제거 시 Cloud Volumes ONTAP 데이터에 어떤 일이 발생하는지 알아보려면 을 참조하십시오<block ref="388c9f5ba0fdf002c4eb313c08420e05" category="inline-link-rx"></block>.</block>
+  <block id="89f1c05b91f27a0ccc4736c51deee49f" category="paragraph">변환된 라이선스의 만료 날짜는 Cloud Volumes ONTAP 라이선스와 동일합니다.</block>
 </blocks>

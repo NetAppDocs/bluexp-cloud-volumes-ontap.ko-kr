@@ -228,7 +228,9 @@ BlueXP 디지털 지갑은 각 패키지 유형의 소비된 용량을 새로 �
 
 == 용량 기반 라이센스를 제거합니다
 
-용량 기반 라이센스가 만료되어 더 이상 사용되지 않는 경우 언제든지 라이센스를 제거할 수 있습니다.
+용량 기반 라이센스가 만료되어 더 이상 사용하지 않는 경우 언제든지 제거할 수 있습니다.
+
+라이센스 만료 또는 제거 시 Cloud Volumes ONTAP 데이터에 어떤 일이 발생하는지 알아보려면 을 참조하십시오 https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/FAQs_on_Cloud_Volumes_ONTAP_license_expiry["이 기술 자료(KB) 문서입니다"^].
 
 .단계
 . BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
