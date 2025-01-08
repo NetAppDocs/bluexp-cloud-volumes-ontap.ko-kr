@@ -5665,4 +5665,8 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="2ee1fa7be03c13720193e0dad8935652" category="inline-link">이 기술 자료(KB) 문서입니다</block>
   <block id="6e9d07c33afe89ea437bf8c34df37d42" category="paragraph">라이센스 만료 또는 제거 시 Cloud Volumes ONTAP 데이터에 어떤 일이 발생하는지 알아보려면 을 참조하십시오<block ref="388c9f5ba0fdf002c4eb313c08420e05" category="inline-link-rx"></block>.</block>
   <block id="89f1c05b91f27a0ccc4736c51deee49f" category="paragraph">변환된 라이선스의 만료 날짜는 Cloud Volumes ONTAP 라이선스와 동일합니다.</block>
+  <block id="11c433da09cca9cd7d57ed81e1cd6310" category="inline-link-macro">Azure에서 지원되는 구성에 대해 자세히 알아보십시오</block>
+  <block id="9601655a1a70b76faca1edfd7d7dff06" category="admonition">Cloud Volumes ONTAP 9.15.0P1부터 Azure 페이지 Blob은 새로운 고가용성 페어 배포에 더 이상 지원되지 않습니다. 현재 기존 고가용성 페어 배포에서 Azure 페이지 Blob을 사용 중인 경우 Edsv4 시리즈 VM 및 Edsv5 시리즈 VM에서 새로운 VM 인스턴스 유형으로 마이그레이션할 수 있습니다. <block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>..</block>
+  <block id="096eb93e7b28ed2b978956821258d0c8" category="list-text">Cloud Volumes ONTAP 9.15.0P1부터 Azure 페이지 Blob은 새로운 고가용성 페어 배포에 더 이상 지원되지 않습니다. 현재 기존 고가용성 페어 배포에서 Azure 페이지 Blob을 사용 중인 경우 Edsv4 시리즈 VM 및 Edsv5 시리즈 VM에서 새로운 VM 인스턴스 유형으로 마이그레이션할 수 있습니다.</block>
+  <block id="32fc2dbe6ce23818c00cefccab1d6097" category="paragraph"><block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>..</block>
 </blocks>

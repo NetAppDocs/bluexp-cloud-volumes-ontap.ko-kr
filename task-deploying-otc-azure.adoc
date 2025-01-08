@@ -393,6 +393,10 @@ NOTE: 선택한 버전에 대해 최신 출시 후보, 일반 가용성 또는 �
 +
 link:concept-data-tiering.html["데이터 계층화에 대해 자세히 알아보십시오"^].
 
+** Cloud Volumes ONTAP 9.15.0P1부터 Azure 페이지 Blob은 새로운 고가용성 페어 배포에 더 이상 지원되지 않습니다. 현재 기존 고가용성 페어 배포에서 Azure 페이지 Blob을 사용 중인 경우 Edsv4 시리즈 VM 및 Edsv5 시리즈 VM에서 새로운 VM 인스턴스 유형으로 마이그레이션할 수 있습니다.
++
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Azure에서 지원되는 구성에 대해 자세히 알아보십시오"^]..
+
 
 
 . * 쓰기 속도 및 WORM *:
