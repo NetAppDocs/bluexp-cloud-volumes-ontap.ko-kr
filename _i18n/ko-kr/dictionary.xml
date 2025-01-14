@@ -834,7 +834,6 @@
   <block id="907c78338365697be8fd8d4a130503c8" category="admonition">처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오브젝트 스토리지에 계층화하지 않는 것이 좋습니다.</block>
   <block id="f7c94a9d0c1e0feee8c2687a0f8fa5ad" category="list-text">용량 계층</block>
   <block id="7672a092783c4348b96b40ea2dcf6681" category="list-text">스토리지 클래스</block>
-  <block id="31089fb1bcdba9204af0a200bd8dcfab" category="inline-link-macro">비활성 데이터를 저비용 오브젝트 스토리지로 계층화</block>
   <block id="d40a00133c09c6d1518e8f39dc3b963e" category="paragraph">데이터 계층화를 위한 스토리지 클래스는 볼륨이 아니라 시스템 전체에 적용됩니다.</block>
   <block id="176cd61977ca55fd13eff7c7ba3659f5" category="section-title">Azure의 데이터 계층화</block>
   <block id="9f5e7587dc37b317df0faf00f072c5b5" category="paragraph">Azure에서 데이터 계층화를 활성화하면 Cloud Volumes ONTAP는 Azure 관리 디스크를 핫 데이터의 성능 계층으로, Azure Blob 스토리지를 비활성 데이터의 용량 계층으로 사용합니다.</block>
@@ -1881,8 +1880,6 @@
   <block id="afe7022770dc53fd2a2de81727d4343a" category="list-text">고객이 관리하는 암호화 키로 버킷을 암호화하려면 Google Cloud 스토리지 버킷에서 키를 사용할 수 있습니다.</block>
   <block id="030b67ae86ab61438eb6b00a3ade8e7a" category="inline-link-macro">Cloud Volumes ONTAP에서 고객이 관리하는 암호화 키를 사용하는 방법에 대해 알아보십시오</block>
   <block id="d9c32a88801cedef2b665ed828d3ec26" category="paragraph"><block ref="c6d38e0757454a32ebb960ce7a42b88f" category="inline-link-macro-rx"></block>.</block>
-  <block id="350a5f4a5776c36c5a3cd04127fb4fe5" category="section-title">요구사항을 구현한 후 데이터 계층화를 사용하도록 설정</block>
-  <block id="75a38ac7969fd8d12bc86993fd41536a" category="section-title">애그리게이트에서 계층화가 설정되었는지 확인합니다</block>
   <block id="d1795f03cc65928e7e6c681acf520582" category="paragraph">볼륨에서 데이터 계층화를 사용하려면 애그리게이트에서 데이터 계층화를 활성화해야 합니다. 새 볼륨 및 기존 볼륨에 대한 요구사항을 알고 있어야 합니다.</block>
   <block id="a424b516a0915a28d7aed2e00bd7621a" category="list-text">* 새 볼륨 *</block>
   <block id="7837a0921d66e4bb13eaadfbd4e230b5" category="list-text">* 기존 볼륨 *</block>
@@ -1891,30 +1888,25 @@
   <block id="a81d10975a3cf570e21398a50ce230b9" category="list-text">Aggregate에 대한 작업 메뉴를 클릭하고 * Attach Cloud Tiers * 를 선택합니다.</block>
   <block id="d868c846c4dcadf6cfa6658140d5efcf" category="list-text">연결할 클라우드 계층을 선택하고 * 저장 * 을 클릭합니다.</block>
   <block id="a323b1a6695991c4c107a123436089fb" category="paragraph">이제 다음 섹션에 설명된 대로 새 볼륨과 기존 볼륨에 대해 데이터 계층화를 설정할 수 있습니다.</block>
-  <block id="4378a09b2897cb95172610f9ab82105b" category="section-title">읽기-쓰기 볼륨의 데이터 계층화</block>
   <block id="38f85b7b21b44c9b59780ab299932eff" category="paragraph">Cloud Volumes ONTAP는 읽기-쓰기 볼륨의 비활성 데이터를 비용 효율적인 오브젝트 스토리지에 계층화하여 핫 데이터에 대한 성능 계층을 확보할 수 있습니다.</block>
   <block id="39bd65df7752a24493d186f47c1c4bcd" category="cell">새 볼륨을 생성합니다</block>
   <block id="e0e02b01eefffa92ef6dd41ca0bfddaa" category="cell">새 볼륨 추가 * 를 클릭합니다.</block>
   <block id="182706d5a3d41050c9687bc12322e932" category="cell">기존 볼륨을 수정합니다</block>
   <block id="8e18d8c821310741023d16bcccb5aa95" category="list-text">계층화 정책을 선택합니다.</block>
-  <block id="bbef357c8db2518419bffde441df9910" category="section-title">데이터 보호 볼륨에서 데이터 계층화</block>
   <block id="f7ace3ec87f10c0e3afcafcb4cf7b425" category="paragraph">Cloud Volumes ONTAP는 데이터 보호 볼륨의 데이터를 용량 계층으로 계층화할 수 있습니다. 대상 볼륨을 활성화하면 데이터가 읽혀지면서 성능 계층으로 서서히 이동합니다.</block>
   <block id="29e71d65fc647320e822efb6ec422c56" category="list-text">Canvas 페이지에서 소스 볼륨이 포함된 작업 환경을 선택한 다음 볼륨을 복제할 작업 환경으로 끌어다 놓습니다.</block>
   <block id="43d764b69e7c6b24a451e0f6a58ed33d" category="list-text">표시되는 메시지에 따라 계층화 페이지로 이동한 다음 오브젝트 스토리지에 데이터 계층화를 설정합니다.</block>
   <block id="9f873d6c6a1788f5273861c45a8e56fa" category="inline-image-macro">볼륨을 복제할 때 S3 계층화 옵션을 보여 주는 스크린샷</block>
   <block id="b69cef59fd529fdd17b7e8981c791ce2" category="paragraph"><block ref="b69cef59fd529fdd17b7e8981c791ce2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f7a02f565e0f68ea031041e7e890314" category="inline-link">클라우드 간 데이터 복제</block>
-  <block id="d2ceebd2cbebfd9830eac76d28a12b82" category="section-title">계층화된 데이터에 대한 스토리지 클래스 변경</block>
   <block id="685b93acf24fff38428d46b5ddbc90bf" category="paragraph">Cloud Volumes ONTAP를 구축한 후 30일 동안 액세스하지 않은 비활성 데이터의 스토리지 클래스를 변경하여 스토리지 비용을 절감할 수 있습니다. 데이터에 액세스하는 경우 액세스 비용이 더 높아지므로 스토리지 클래스를 변경하기 전에 액세스 비용을 고려해야 합니다.</block>
   <block id="923cfd28dcb7b052c5d38988ebb71dcd" category="paragraph">계층형 데이터를 위한 스토리지 클래스는 시스템 전체에 적용됩니다. 즉, 볼륨을 기준으로 하지 않습니다.</block>
   <block id="6ce76737e6ad455cc49c865bc6d2c466" category="list-text">작업 환경에서 메뉴 아이콘을 클릭한 다음 * 스토리지 클래스 * 또는 * Blob 스토리지 계층화 * 를 클릭합니다.</block>
   <block id="5bb29017b3feae0bd72d137d95ec631c" category="list-text">스토리지 클래스를 선택한 다음 * 저장 * 을 클릭합니다.</block>
-  <block id="2cca3ca6096bf8fb9c832683c582250c" category="section-title">데이터 계층화의 사용 가능한 공간 비율을 변경합니다</block>
   <block id="0f25882e78be6d7c0e2d9cd5c7808fb5" category="paragraph">데이터 계층화를 위한 여유 공간 비율은 데이터를 오브젝트 스토리지로 계층화할 때 Cloud Volumes ONTAP SSD/HDD에 필요한 여유 공간을 정의합니다. 기본 설정은 10%의 여유 공간이지만 요구 사항에 따라 설정을 조정할 수 있습니다.</block>
   <block id="2aa3b7e505c0c56df0a2f60f7d4f87cc" category="paragraph">이 비율은 오브젝트 저장소에서 데이터를 읽을 때 Cloud Volumes ONTAP 더 나은 성능을 제공하기 위해 데이터를 SSD/HDD로 이동하기 때문에 재해 복구 시나리오에 중요합니다. 공간이 부족하면 Cloud Volumes ONTAP에서 데이터를 이동할 수 없습니다. 이 점을 고려하여 비율을 변경하면 비즈니스 요구 사항을 충족할 수 있습니다.</block>
   <block id="804f26a0bc44f8e04d1fb697d33eb4d8" category="list-text">Capacity * 에서 * Aggregate Capacity Thresholds - Free Space Ratio for Data Tiering * 을 클릭합니다.</block>
   <block id="c389556b61d8e54624252a2563fdfc17" category="list-text">요구 사항에 따라 여유 공간 비율을 변경하고 * Save * 를 클릭합니다.</block>
-  <block id="24c979ae168264040ca2c88e59f2902a" category="section-title">자동 계층화 정책의 냉각 기간 변경</block>
   <block id="77ac5bdafcd5300a46db8d23117433c1" category="paragraph">냉각 기간은 볼륨의 사용자 데이터가 "콜드" 상태로 간주되어 오브젝트 스토리지로 이동되기 전에 비활성 상태로 유지해야 하는 일 수입니다.</block>
   <block id="15d3560479839db873ba3a7d6309b50c" category="paragraph">자동 계층화 정책의 기본 냉각 기간은 31일입니다. 냉각 기간을 다음과 같이 변경할 수 있습니다.</block>
   <block id="07c1e6ebf913a40fd18f3f57f20d6d68" category="list-text">9.8 이상: 2일에서 183일</block>
@@ -5108,7 +5100,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="db9ff71bc9bf52beb98f0d113ff7ccbf" category="inline-link">Microsoft Azure 설명서: Azure Blob 스토리지 액세스 계층에 대해 자세히 알아보십시오</block>
   <block id="2071f090de049a0bafd6e8e9ebc886a4" category="inline-link">Google Cloud 설명서: 스토리지 클래스</block>
   <block id="b7394e89ab52c2644e6abe3428b0bdee" category="paragraph">데이터에 액세스하는 경우 액세스 비용이 더 높아지므로 스토리지 클래스를 변경하기 전에 이 점을 고려해야 합니다. 자세한 내용은 을<block ref="3f6491f63b376fc9e505b3fd50e825aa" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="2fb88c61a4ec945d000763abb10cbd1d" category="paragraph">지원되는 구성 목록 및 지침은 을 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="38850f8a756c82c89e87237ed4f91234" category="inline-image-macro">BlueXP  및 클라이언트에서 들어오는 트래픽을 관리하는 로드 밸런서, VMSS FLEX의 Cloud Volumes ONTAP 노드 2개, 부팅 데이터용 SSD 디스크, 고객 데이터용 페이지 Blob을 보여 주는 개념적 이미지</block>
   <block id="fb33ca393b61decaf86e6a0dccadd3c1" category="paragraph"><block ref="fb33ca393b61decaf86e6a0dccadd3c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fff8d8adf9a040085ccf70ab0f209712" category="list-text">단일 가용 영역에 있는 VM</block>
@@ -5369,7 +5360,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">https://management.azure.microsoft.scloud\https://login.microsoftonline.microsoft.scloud\https://blob.core.microsoft.scloud\https://core.microsoft.scloud</block>
   <block id="08c0a2896fee0160c8083277678851f6" category="cell">정부 DoD 지역</block>
   <block id="98179c4c799c9419b4ba6f502cd22783" category="cell">BlueXP  배포 모드</block>
-  <block id="7b8d76983ab84b3978e67a05e145f16e" category="cell">메타데이터 처리를 위해 S3 버킷과 통신하기 위해 Azure Key Vault에서 클라이언트 비밀 키를 검색하는 데 사용됩니다. Cloud Volumes ONTAP 서비스는 내부적으로 이 구성 요소를 사용합니다.</block>
   <block id="f235e1a740b92e59100dda0cf4e3d76b" category="cell">\https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1</block>
   <block id="342804fdcc569427f0c6f21b0757653d" category="cell">Google Cloud(상용).</block>
   <block id="bec523fb694fd6fe80736494c1a45a30" category="cell">Google Cloud 서비스와의 커뮤니케이션:</block>
@@ -5494,10 +5484,7 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="f87269f0bcffd4dd379148db58c41b11" category="section-title">Cloud Volumes ONTAP 구축 후 WORM 지원</block>
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">Cloud Volumes ONTAP 작업 환경에서 WORM 활성화</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
-  <block id="2db5c6d1af8e977d496e788510cbddd0" category="paragraph">작업 환경을 생성할 때 스토리지 클래스를 선택하고 나중에 언제든지 변경할 수 있습니다. 저장소 클래스 변경에 대한 지침은 을 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="930e999bb64aeb9cc71cdd63d9f4948c" category="paragraph">용량 계층에서 비활성 데이터에 액세스할 계획이 없는 경우 비활성 데이터가 최소 30일 동안 보존되는 _cool_storage 계층을 선택할 수 있습니다. 비활성 데이터가 최소 90일 동안 저장되는 _COLD_TIER 를 선택할 수도 있습니다. 스토리지 요구사항 및 비용 고려 사항에 따라 요구사항에 가장 적합한 계층을 선택할 수 있습니다. 스토리지 계층을 _cool_or_cold_로 변경하면 비활성 용량 계층 데이터가 쿨 또는 콜드 스토리지 계층으로 직접 이동합니다. 냉각 계층 및 콜드 계층은 핫 계층에 비해 스토리지 비용이 낮지만 액세스 비용이 더 높으므로 스토리지 계층을 변경하기 전에 이 점을 고려하십시오. 을<block ref="30699d9b3a005c39386e73a7c4627191" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="3bb51211db193484b68905ef8f68ac0f" category="paragraph">작업 환경을 생성할 때 스토리지 계층을 선택할 수 있으며 나중에 언제든지 변경할 수 있습니다. 스토리지 계층 변경에 대한 자세한 내용은 을 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>참조하십시오.</block>
-  <block id="546c7b1d0701c3dcea6eb887ba9a499b" category="paragraph">작업 환경을 생성할 때 스토리지 계층을 선택할 수 있으며 나중에 언제든지 변경할 수 있습니다. 스토리지 클래스 변경에 대한 자세한 내용은 을 <block ref="4fbc08218411ffa53189962e6368b39b" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="8c26cfdad94fa97c367b921f4702fcea" category="paragraph">HA 쌍을 액티브-액티브 구성으로 사용할 수 있으며, 이 경우 두 노드가 클라이언트에 데이터를 제공하는 액티브-액티브 구성으로 사용하거나, 액티브-패시브 구성으로 사용할 수 있습니다. 패시브 노드는 액티브 노드의 스토리지를 인계한 경우에만 데이터 요청에 응답합니다.</block>
   <block id="fa317d8412b494ed6cf39e304ca9a341" category="paragraph">AWS의 Cloud Volumes ONTAP는 단일 가용 영역에서 HA(고가용성) 모드만 지원합니다. 단일 노드 구축은 지원되지 않습니다.</block>
   <block id="eb99da0ddbfd6f5a24a511ef8df7c577" category="paragraph">Cloud Volumes ONTAP은 AWS 로컬 영역에서 데이터 계층화, 클라우드 계층화, 검증되지 않은 인스턴스를 지원하지 않습니다.</block>
@@ -5531,7 +5518,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="0fda23bdfd335df1f36c51b87bc2b780" category="paragraph">이러한 특정 시나리오에서 NetApp은 계약 의무 및 운영 요구 사항을 준수하는 고유한 라이센스 요구 사항을 해결하기 위한 지원을 제공합니다.</block>
   <block id="913f6cd3e420105c804151f182c6938f" category="admonition">이러한 시나리오에서도 새로운 노드 기반 라이센스와 라이센스 갱신은 승인일로부터 최대 1년 동안 유효합니다.</block>
   <block id="5be0251ff1848cd4d292e0a684e70539" category="section-title">사용권 변환</block>
-  <block id="a3562fcfc4a85274195b7100a2a26d71" category="paragraph">BlueXP 를 사용하면 라이센스 변환 툴을 통해 노드 기반 라이센스를 용량으로 원활하게 전환할 수 있습니다. 노드 기반 라이센스의 EOA에 대한 자세한 내용은 을 <block ref="1ef8ea114dcf1680f435cb8143e047b7" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="67b50b6cd5ac50e92192638dab47bddc" category="paragraph">전환하기 전에 두 라이센스 모델 간의 차이점을 숙지하는 것이 좋습니다. 노드 기반 라이센스에는 각 ONTAP 인스턴스에 대해 고정 용량이 포함되어 있어 유연성이 제한될 수 있습니다. 반면, 용량 기반 라이센스는 여러 인스턴스에 걸쳐 공유 스토리지 풀을 지원하므로 유연성을 높이고 리소스 활용도를 최적화하며 워크로드를 재배포할 때 재정적 불이익을 받을 가능성을 줄입니다. 용량 기반 충전은 변화하는 스토리지 요구 사항에 맞춰 원활하게 조정됩니다.</block>
   <block id="9deed5641b081a08e814b22533f5376e" category="paragraph">이 변환을 수행하는 방법은 을 <block ref="431f655d5a9ac309b561fc62a4c619ea" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="2840378978873ef766f1cf65e35e8874" category="admonition">시스템을 용량 기반에서 노드 기반 라이센스로 변환할 수 없습니다.</block>
@@ -5669,4 +5655,25 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="9601655a1a70b76faca1edfd7d7dff06" category="admonition">Cloud Volumes ONTAP 9.15.0P1부터 Azure 페이지 Blob은 새로운 고가용성 페어 배포에 더 이상 지원되지 않습니다. 현재 기존 고가용성 페어 배포에서 Azure 페이지 Blob을 사용 중인 경우 Edsv4 시리즈 VM 및 Edsv5 시리즈 VM에서 새로운 VM 인스턴스 유형으로 마이그레이션할 수 있습니다. <block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>..</block>
   <block id="096eb93e7b28ed2b978956821258d0c8" category="list-text">Cloud Volumes ONTAP 9.15.0P1부터 Azure 페이지 Blob은 새로운 고가용성 페어 배포에 더 이상 지원되지 않습니다. 현재 기존 고가용성 페어 배포에서 Azure 페이지 Blob을 사용 중인 경우 Edsv4 시리즈 VM 및 Edsv5 시리즈 VM에서 새로운 VM 인스턴스 유형으로 마이그레이션할 수 있습니다.</block>
   <block id="32fc2dbe6ce23818c00cefccab1d6097" category="paragraph"><block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>..</block>
+  <block id="a1d3242487e006d5790b1572e34a22f0" category="inline-link-macro">비활성 데이터를 저비용 오브젝트 스토리지에 계층화</block>
+  <block id="c4232fd6e7b3110c40c884976710003f" category="paragraph">작업 환경을 생성할 때 스토리지 클래스를 선택하고 나중에 언제든지 변경할 수 있습니다. 저장소 클래스 변경에 대한 지침은 을 <block ref="689d305972679ec3d62f87ce158f78a1" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="7605a01088a25de348f9b1bf778bb57d" category="paragraph">작업 환경을 생성할 때 스토리지 계층을 선택할 수 있으며 나중에 언제든지 변경할 수 있습니다. 스토리지 계층 변경에 대한 자세한 내용은 을 <block ref="689d305972679ec3d62f87ce158f78a1" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="14eefbeb9f44a2759fdf3f12b232390d" category="paragraph">작업 환경을 생성할 때 스토리지 계층을 선택할 수 있으며 나중에 언제든지 변경할 수 있습니다. 스토리지 클래스 변경에 대한 자세한 내용은 을 <block ref="689d305972679ec3d62f87ce158f78a1" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="e9d2b1ce92a5b5e640b96ff8b087951c" category="paragraph">지원되는 구성 목록 및 지침은 을 <block ref="689d305972679ec3d62f87ce158f78a1" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="e9e29c9db65cd5278aaf851dd73ff92f" category="doc">Cloud Volumes ONTAP용 용량 기반 라이센스에 대해 자세히 알아보십시오</block>
+  <block id="a8c501f77feee17c50fcd08e17a9c892" category="paragraph">BlueXP 를 사용하면 라이센스 변환 툴을 통해 노드 기반 라이센스를 용량으로 원활하게 전환할 수 있습니다. 노드 기반 라이센스의 EOA에 대한 자세한 내용은 을 <block ref="7f9a8649ca2d86db235ba56502d14f92" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="d582c826d3814a85fb4b333a4fe7d017" category="section-title">요구사항을 구현한 후 데이터 계층화를 지원합니다</block>
+  <block id="f405b2e27c94adfd81c23f7e45ff0d6a" category="section-title">애그리게이트에서 계층화가 활성화되어 있는지 확인합니다</block>
+  <block id="dff0c181874d8c9c189ebadee034e447" category="section-title">읽기-쓰기 볼륨의 데이터 계층화</block>
+  <block id="dd8a8744e35ea92bb2b505dcb4f9298a" category="section-title">데이터 보호 볼륨의 데이터 계층화</block>
+  <block id="334c664b1a356000015bfee8f7c166af" category="section-title">계층화된 데이터의 스토리지 클래스를 변경합니다</block>
+  <block id="1fbd47af266b41d696dc1bcb8bd7c267" category="section-title">데이터 계층화의 여유 공간 비율을 변경합니다</block>
+  <block id="39b1c94860491dd4e9c223d992664703" category="section-title">자동 계층화 정책의 냉각 기간을 변경합니다</block>
+  <block id="a746df8d8a8e535afbdb1fa2b85acc7d" category="section-title">작업 환경을 해체할 때 S3 버킷을 제거합니다</block>
+  <block id="56abe7aac633cd3c0025ef3e203a5fcd" category="paragraph">환경을 폐기하는 경우 Cloud Volumes ONTAP 작업 환경에서 계층화된 데이터를 바탕으로 S3 버킷을 삭제할 수 있습니다.</block>
+  <block id="dd29a3dfa7d0b08f5d6c195c15c1198b" category="paragraph">다음과 같은 경우에만 S3 버킷을 삭제할 수 있습니다.</block>
+  <block id="da7394763f52e8449cc5b4cf2cfde0ed" category="list-text">Cloud Volume ONTAP 작업 환경이 BlueXP 에서 삭제됩니다.</block>
+  <block id="d2d3ec1947496479a509e0bb5fb4ff4f" category="list-text">모든 오브젝트가 버킷에서 삭제되고 S3 버킷이 비어 있습니다.</block>
+  <block id="dee6c945054b27877b8f184c2904e708" category="inline-link">ONTAP CLI: vserver object-store-server 버킷 삭제</block>
+  <block id="308afc6d4a9db3e5427a33ad1e32b3be" category="paragraph">Cloud Volumes ONTAP 작업 환경을 해제할 때 해당 환경을 위해 생성된 S3 버킷은 자동으로 삭제되지 않습니다. 대신 사고로 인한 데이터 손실을 방지하기 위해 분리된 상태로 유지됩니다. 버킷에서 오브젝트를 삭제한 후 S3 버킷 자체를 제거하거나 나중에 사용할 수 있도록 보존할 수 있습니다. 을<block ref="68bba29ef3429f4e3e6e1695929c5629" category="inline-link-rx"></block>참조하십시오.</block>
 </blocks>

@@ -4,7 +4,7 @@ permalink: concept-licensing-charging.html
 keywords: capacity-based license charging, consumption for licenses, pricing for licenses, CVO licensing, CVO charging 
 summary: 용량 기반 라이센스의 충전, 소비 모델, 가격 및 구성을 숙지합니다. 
 ---
-= 용량 기반 라이센스에 대해 자세히 알아보십시오
+= Cloud Volumes ONTAP용 용량 기반 라이센스에 대해 자세히 알아보십시오
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

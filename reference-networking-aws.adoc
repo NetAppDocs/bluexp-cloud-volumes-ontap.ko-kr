@@ -53,9 +53,6 @@ BlueXP  인증에 사용됩니다.
 
 
 
-| \https://keyvault-production-aks.vault.azure.net | 키 볼트 | 메타데이터 처리를 위해 S3 버킷과 통신하기 위해 Azure Key Vault에서 클라이언트 비밀 키를 검색하는 데 사용됩니다. Cloud Volumes ONTAP 서비스는 내부적으로 이 구성 요소를 사용합니다. | 표준, 제한 및 개인 모드. | Cloud Volumes ONTAP 서비스를 사용할 수 없습니다. 
-
-
 | https://cloudmanager.cloud.netapp.com/tenancy 으로 문의하십시오 | 테넌시 | BlueXP  테넌시에서 Cloud Volumes ONTAP 리소스를 검색하여 리소스 및 사용자에게 권한을 부여하는 데 사용됩니다. | 표준 및 제한 모드. | Cloud Volumes ONTAP 리소스 및 사용자에게 권한이 없습니다. 
 
 
