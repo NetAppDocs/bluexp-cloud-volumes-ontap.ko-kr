@@ -55,7 +55,7 @@ BlueXP에서 S3 버킷을 생성할 때 다음 기본 설정을 사용합니다.
 --
 비활성 데이터에 액세스할 계획이 없는 경우 스토리지 클래스를 _Intelligent Tiering_, _One-Zone Infrequent Access_, _Standard - Infrequent Access_ 또는 _S3 Glacier Instant Retrieval_ 중 하나로 변경하여 저장소 비용을 줄일 수 있습니다. 스토리지 클래스를 변경하면 비활성 데이터가 표준 스토리지 클래스에서 시작되어 30일 후에 액세스하지 않는 경우 선택한 스토리지 클래스로 전환됩니다.
 
-데이터에 액세스할 경우 액세스 비용이 더 높으므로 스토리지 클래스를 변경하기 전에 액세스 비용을 고려하십시오. https://aws.amazon.com/s3/storage-classes["Amazon S3 설명서: Amazon S3 스토리지 클래스에 대해 자세히 알아보십시오"^]..
+데이터에 액세스하는 경우 액세스 비용이 더 높으므로 스토리지 클래스를 변경하기 전에 이 점을 고려하십시오. https://aws.amazon.com/s3/storage-classes["Amazon S3 설명서: Amazon S3 스토리지 클래스에 대해 자세히 알아보십시오"^]..
 
 작업 환경을 생성할 때 스토리지 클래스를 선택하고 나중에 언제든지 변경할 수 있습니다. 저장소 클래스 변경에 대한 지침은 을 link:task-tiering.html["비활성 데이터를 저비용 오브젝트 스토리지에 계층화"]참조하십시오.
 

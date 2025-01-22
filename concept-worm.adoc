@@ -114,6 +114,6 @@ BlueXP 에서 Cloud Volumes ONTAP 작업 환경을 생성할 때 WORM 스토리
 * 신뢰할 수 있는 스토리지 관리자 모델 외에도 Cloud Volumes ONTAP의 WORM 스토리지는 "신뢰할 수 있는 클라우드 관리자" 모델에서도 암시적으로 작동합니다. 클라우드 관리자는 클라우드 공급자에서 직접 클라우드 스토리지를 제거하거나 편집하여 만료 날짜 전에 WORM 데이터를 삭제할 수 있습니다.
 
 
-.관련 정보
+.관련 링크
 * link:reference-worm-snaplock.html["WORM 스토리지를 위한 변조 방지 스냅샷 복사본을 생성합니다"]
 

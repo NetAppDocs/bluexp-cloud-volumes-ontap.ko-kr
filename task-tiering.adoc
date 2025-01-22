@@ -20,7 +20,7 @@ summary: 사용 빈도가 높은 데이터를 위한 SSD 또는 HDD 성능 계�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] 지원되는 구성을 선택합니다
 [role="quick-margin-para"]
-대부분의 구성은 지원됩니다. 최신 버전을 실행하는 Cloud Volumes ONTAP 시스템이 있는 경우 실행하는 것이 좋습니다. link:task-tiering.html#configurations-that-support-data-tiering["자세한 정보"].
+대부분의 구성은 지원됩니다. 최신 버전을 실행하는 Cloud Volumes ONTAP 시스템이 있는 경우 사용하는 것이 좋습니다. link:task-tiering.html#configurations-that-support-data-tiering["자세한 정보"]..
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] Cloud Volumes ONTAP와 오브젝트 스토리지 간의 연결을 보장합니다
 [role="quick-margin-list"]
@@ -47,7 +47,7 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] 계층화가 설정된 Aggregate가 있는지 확인합니다
 [role="quick-margin-para"]
-볼륨에서 데이터 계층화를 사용하려면 애그리게이트에서 데이터 계층화를 활성화해야 합니다. 새 볼륨 및 기존 볼륨에 대한 요구사항을 알고 있어야 합니다. <<Ensuring that tiering is enabled on aggregates,자세한 정보>>.
+데이터 계층화는 애그리게이트에서 활성화해야 볼륨에서 사용할 수 있습니다. 새 볼륨 및 기존 볼륨에 대한 요구사항을 알고 있어야 합니다. <<Ensuring that tiering is enabled on aggregates,자세한 정보>>..
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["네"] 볼륨을 생성, 수정 또는 복제할 때 계층화 정책을 선택합니다
 [role="quick-margin-para"]
@@ -65,7 +65,7 @@ endif::gcp[]
 * 용량 계층에 대해 오브젝트 저장소를 생성할 필요가 없습니다. BlueXP가 이러한 작업을 수행합니다.
 * 시스템 레벨에서 데이터 계층화를 설정할 필요가 없습니다.
 +
-BlueXP는 시스템이 생성될 때 콜드 데이터에 대한 오브젝트 저장소를 생성합니다. <<Enabling data tiering after implementing the requirements,연결 또는 사용 권한 문제가 없는 경우>>. 그런 다음 볼륨에 대해 데이터 계층화를 활성화해야 합니다. 경우에 따라 <<Ensuring that tiering is enabled on aggregates,애그리게이트>>)를 클릭합니다.
+BlueXP 에서는 시스템을 생성할 때 콜드 데이터에 대한 오브젝트 저장소를 <<Enabling data tiering after implementing the requirements,연결 또는 사용 권한 문제가 없는 경우>>생성합니다. 그 이후에는 볼륨(및 경우에 따라<<Ensuring that tiering is enabled on aggregates,애그리게이트>>)에서 데이터 계층화를 활성화해야 합니다.
 
 
 
@@ -162,7 +162,7 @@ BlueXP에 필요한 권한이 있는 경우 성능 계층과 용량 계층 간�
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-사용 권한은 기본적으로 사용자 지정 역할에 포함됩니다. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Connector에 대한 Azure 권한을 봅니다"^]
+사용자 지정 역할에는 기본적으로 사용 권한이 포함됩니다. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Connector에 대한 Azure 권한을 봅니다"^]
 
 endif::azure[]
 
@@ -212,7 +212,7 @@ NOTE: BlueXP 사용자 인터페이스를 통해 계층화를 활성화하는 �
 
 * * 기존 볼륨 *
 +
-기존 볼륨에서 데이터 계층화를 사용하려면 기본 애그리게이트에 데이터 계층화가 설정되어 있는지 확인해야 합니다. 기존 애그리게이트에 데이터 계층화가 활성화되어 있지 않으면 ONTAP System Manager를 사용하여 기존 애그리게이트를 오브젝트 저장소에 연결해야 합니다.
+기존 볼륨에서 데이터 계층화를 활성화하려면 기본 애그리게이트에서 데이터 계층화를 활성화해야 합니다. 기존 애그리게이트에 데이터 계층화가 활성화되어 있지 않으면 ONTAP System Manager를 사용하여 기존 애그리게이트를 오브젝트 저장소에 연결해야 합니다.
 
 
 
@@ -356,4 +356,4 @@ Cloud Volumes ONTAP 볼륨에서 _auto_Tiering 정책을 사용하여 데이터 
 * 모든 오브젝트가 버킷에서 삭제되고 S3 버킷이 비어 있습니다.
 
 
-Cloud Volumes ONTAP 작업 환경을 해제할 때 해당 환경을 위해 생성된 S3 버킷은 자동으로 삭제되지 않습니다. 대신 사고로 인한 데이터 손실을 방지하기 위해 분리된 상태로 유지됩니다. 버킷에서 오브젝트를 삭제한 후 S3 버킷 자체를 제거하거나 나중에 사용할 수 있도록 보존할 수 있습니다. 을 https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["ONTAP CLI: vserver object-store-server 버킷 삭제"^]참조하십시오.
+Cloud Volumes ONTAP 작업 환경을 해제할 때 해당 환경을 위해 생성된 S3 버킷은 자동으로 삭제되지 않습니다. 대신 사고로 인한 데이터 손실을 방지하기 위해 분리된 상태로 유지됩니다. 버킷에서 오브젝트를 삭제한 다음 S3 버킷 자체를 제거하거나 나중에 사용할 수 있도록 보관할 수 있습니다. 을 https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["ONTAP CLI: vserver object-store-server 버킷 삭제"^]참조하십시오.

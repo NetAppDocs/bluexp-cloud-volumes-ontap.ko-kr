@@ -193,3 +193,8 @@ Category: kms_wrapped_key_status
 
 . 볼륨이 올바르게 생성되고 암호화되었는지 확인합니다. 이 경우 암호화된 매개 변수는 true로 표시됩니다. 'vol show-vserver_SVM_name_-fields is-encrypted'
 
+
+.관련 링크
+* link:task-set-up-azure-encryption.html["Azure에서 고객이 관리하는 키를 사용하도록 Cloud Volumes ONTAP를 설정합니다"]
+* https://learn.microsoft.com/en-us/azure/key-vault/general/overview["Microsoft Azure Docmentation: Azure Key Vault 정보"^]
+
