@@ -26,15 +26,15 @@ Azure에서 다음 네트워킹 요구사항을 충족해야 합니다.
 
 === 아웃바운드 인터넷 액세스
 
-Cloud Volumes ONTAP 노드는 다양한 기능을 위해 외부 엔드포인트에 액세스하기 위해 아웃바운드 인터넷 액세스가 필요합니다. 엄격한 보안 요구 사항이 있는 환경에서 이러한 엔드포인트가 차단되면 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.
+Cloud Volumes ONTAP 시스템은 다양한 기능을 위해 외부 단말 장치에 액세스하기 위해 아웃바운드 인터넷 액세스가 필요합니다. 엄격한 보안 요구 사항이 있는 환경에서 이러한 엔드포인트가 차단되면 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.
+
+또한 BlueXP  커넥터는 BlueXP  웹 기반 콘솔뿐만 아니라 일상적인 작업을 위해 여러 끝점에 연결합니다. BlueXP  끝점에 대한 자세한 내용은 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["커넥터에서 접촉한 끝점을 봅니다"^] 및 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["BlueXP 콘솔을 사용하기 위한 네트워킹을 준비합니다"^]을 참조하십시오.
 
 
 
 ==== Cloud Volumes ONTAP 엔드포인트
 
-Cloud Volumes ONTAP에서는 일상적인 작업을 위해 다양한 엔드포인트에 연결하기 위해 아웃바운드 인터넷 액세스가 필요합니다.
-
-다음 끝점은 Cloud Volumes ONTAP에만 해당됩니다. 커넥터는 또한 BlueXP  웹 기반 콘솔뿐만 아니라 일상적인 작업을 위해 여러 끝점에 연결합니다.  https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["커넥터에서 접촉한 끝점을 봅니다"^]및 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["BlueXP 콘솔을 사용하기 위한 네트워킹을 준비합니다"^]을 참조하십시오.
+Cloud Volumes ONTAP는 이러한 끝점을 사용하여 다양한 서비스와 통신합니다.
 
 [cols="5*"]
 |===
