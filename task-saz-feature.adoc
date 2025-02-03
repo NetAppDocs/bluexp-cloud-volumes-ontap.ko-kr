@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-saz-feature.html 
-keywords: Microsoft Azure feature, HA in SAZ, single availability zone, Azure feature, Virtual Machine Scale Sets in Flexible mode 
+keywords: Microsoft Azure feature, HA in SAZ, single availability zone, Azure feature, Virtual Machine Scale Sets in Flexible mode, VMOrchestratorZonalMultiFD, VM Orchestrator, Zonal, MultiFD, Microsoft.Compute/VMOrchestratorZonalMultiFD feature 
 summary: SAZ에 HA를 배포하려면 이 Microsoft Azure 기능을 활성화하십시오. 
 ---
 = 단일 가용 영역에 대해 VMOrchestrator ZonalMultiFD를 사용하도록 설정합니다
@@ -14,7 +14,7 @@ summary: SAZ에 HA를 배포하려면 이 Microsoft Azure 기능을 활성화하
 
 
 [role="lead"]
-LRS(Local-Redundant Storage) 단일 가용 영역에 VM 인스턴스를 배포하려면 `Microsoft.Compute/VMOrchestratorZonalMultiFD` 구독에 Microsoft 기능을 활성화해야 합니다. HA 모드에서 이 기능은 동일한 가용 영역에 있는 별도의 장애 도메인에 노드를 쉽게 구축할 수 있도록 합니다.
+LRS(Local-Redundant Storage) AZ(Single Availability Zone)에 VM 인스턴스를 배포하려면 구독에 대한 Microsoft 기능을 활성화해야 `Microsoft.Compute/VMOrchestratorZonalMultiFD` 합니다. HA(고가용성) 모드에서 이 기능은 동일한 가용성 영역에 있는 별도의 장애 도메인에 노드를 쉽게 구축할 수 있도록 합니다.
 
 이 기능을 활성화하지 않으면 영역 배포가 수행되지 않고 이전 LRS 비영역 배포가 적용됩니다.
 

@@ -56,6 +56,8 @@ sidebar:
           url: "/task-setting-up-transit-gateway.html"
         - title: 공유 서브넷에 HA 쌍 구축
           url: "/task-deploy-aws-shared-vpc.html"
+        - title: AWS 배치 그룹 생성을 위해 Cloud Volumes ONTAP를 구성합니다
+          url: "/task-configure-placement-group-failure-aws.html"
         - title: AWS의 보안 그룹 규칙
           url: "/reference-security-groups.html"
       - title: AWS KMS를 설정합니다
