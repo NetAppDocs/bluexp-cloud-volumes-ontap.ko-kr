@@ -28,12 +28,12 @@ BlueXP에서 Keystone 구독을 사용 및 관리하기 전에 NetApp에 문의�
 
 .단계
 . BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
-. Keystone * 을 선택합니다.
+. Keystone 구독 * 을 선택합니다.
 . NetApp Keystone* 시작 페이지가 나타나면 페이지에 나열된 주소로 이메일을 보냅니다.
 +
 NetApp 담당자가 사용자 계정에 구독 액세스를 승인하여 요청을 처리합니다.
 
-. 가입을 보려면 * Keystone 가입 * 으로 돌아갑니다.
+. Keystone 구독 * 탭으로 돌아가 구독을 확인하십시오.
 +
 image:screenshot-keystone-overview.png["Keystone 가입 목록을 보여주는 스크린샷"]
 
@@ -47,7 +47,7 @@ NetApp에서 계정을 인증한 후 Keystone 구독을 Cloud Volumes ONTAP와 �
 
 .단계
 . BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
-. Keystone * 을 선택합니다.
+. Keystone 구독 * 을 선택합니다.
 . 연결할 구독의 경우 을 클릭합니다 image:icon-action.png["세 개의 나란히 점이 있는 아이콘입니다"] 링크 * 를 선택합니다.
 +
 image:screenshot-keystone-link.png["구독에 대한 링크 옵션을 보여 주는 스크린샷"]
@@ -65,7 +65,7 @@ image:screenshot-keystone-link.png["구독에 대한 링크 옵션을 보여 주
 
 .단계
 . BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
-. Keystone * 을 선택합니다.
+. Keystone 구독 * 을 선택합니다.
 . 용량을 조정하려는 구독의 경우 을 클릭합니다 image:icon-action.png["세 개의 나란히 점이 있는 아이콘입니다"] 를 선택하고 * 상세 정보 보기 및 편집 * 을 선택합니다.
 . 하나 이상의 구독에 대해 요청된 커밋 용량을 입력합니다.
 +
@@ -89,7 +89,7 @@ https://docs.netapp.com/us-en/keystone-staas/integrations/aiq-keystone-details.h
 
 == 구독 연결을 해제합니다
 
-더 이상 BlueXP에 Keystone 구독을 사용하지 않으려는 경우 구독 링크를 해제할 수 있습니다. 기존 Cloud Volumes ONTAP 구독에 연결되지 않은 구독만 연결 해제할 수 있습니다.
+더 이상 BlueXP 에 Keystone 구독을 사용하지 않으려면 구독 연결을 끊을 수 있습니다. 기존 Cloud Volumes ONTAP 구독에 연결되지 않은 구독만 연결 해제할 수 있습니다.
 
 .단계
 . BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.

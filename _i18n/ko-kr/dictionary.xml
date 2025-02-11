@@ -182,7 +182,6 @@
   <block id="a89897d61f59af926b4d06d06e8b2884" category="summary">Cloud Volumes ONTAP를 구축하면 워크로드 요구사항에 맞게 사전 구성된 시스템을 선택하거나 고유한 구성을 생성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다.</block>
   <block id="70cc6814c68e3ce95f7b70c2f1ea3e9d" category="paragraph">Google Cloud에 Cloud Volumes ONTAP를 배포할 때 워크로드 요구 사항에 맞는 사전 구성된 시스템을 선택하거나 자신만의 구성을 만들 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다.</block>
   <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">지원되는 영역의 전체 목록을 봅니다</block>
-  <block id="cdbc190f457d5caf189142ea336d2259" category="paragraph">Cloud Volumes ONTAP는 대부분의 Google 클라우드 지역에서 지원됩니다.<block ref="b20bc1eb7525b24c91ae87786e46adca" category="inline-link-rx"></block>.</block>
   <block id="34a3fb1f13bd543905a9f22e8469763d" category="inline-link-macro">Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오</block>
   <block id="64efea6517490623e51052b533085d96" category="paragraph">Cloud Volumes ONTAP는 선택한 라이센스 유형에 따라 여러 가지 시스템 유형을 지원합니다.</block>
   <block id="9ee8a2504ba9f03aae4b30973ea35ad4" category="inline-link">GCP에서 Cloud Volumes ONTAP에 지원되는 구성입니다</block>
@@ -1395,7 +1394,6 @@
   <block id="482723983a4f2af954e36ff41e567451" category="doc">알려진 제한 사항</block>
   <block id="53a519b7a61b6af057f2717112606b16" category="inline-link">S3 구성 전원 가이드</block>
   <block id="6d44008242ba7ea63431fdc2a35e3bfd" category="summary">Azure에서 Cloud Volumes ONTAP를 구축할 때 워크로드 요구사항에 맞게 사전 구성된 시스템을 선택하거나 고유한 구성을 생성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다.</block>
-  <block id="88a397c48e684bb909af786b6f5aea86" category="paragraph">Cloud Volumes ONTAP는 대부분의 Microsoft Azure 지역에서 지원됩니다.<block ref="b20bc1eb7525b24c91ae87786e46adca" category="inline-link-rx"></block>.</block>
   <block id="00d6f59010ef5b4445142547ef7725f2" category="paragraph">Cloud Volumes ONTAP는 선택한 라이센스 유형에 따라 여러 VM 유형을 지원합니다.</block>
   <block id="a09c3a7be8e7dc42776a7b03793d536c" category="inline-link">Azure에서 Cloud Volumes ONTAP에 대해 지원되는 구성입니다</block>
   <block id="9f8b4558b07e0b8fb83871b783e78430" category="inline-link">Azure의 Cloud Volumes ONTAP에 대한 스토리지 제한</block>
@@ -1946,9 +1944,6 @@
   <block id="bfb824288ae0c3e5dd2481cb36146ceb" category="list-text">디스크 및 애그리게이트 관리(고급 할당)</block>
   <block id="d510ccf57ef7fde29b73e1d6d9cf5c72" category="paragraph">이러한 작업은 스토리지 반환이 완료되고 작업 환경의 상태가 정상으로 돌아온 후에 다시 사용할 수 있습니다.</block>
   <block id="72d7d9fbd92253175591abfdb19dc6a1" category="summary">AWS에 Cloud Volumes ONTAP를 구축할 때 워크로드 요구사항에 맞게 사전 구성된 시스템을 선택하거나 자체 구성을 생성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다.</block>
-  <block id="af510d6a7a30587243cc07000a8ff59a" category="paragraph">Cloud Volumes ONTAP는 대부분의 AWS 지역에서 지원됩니다.<block ref="b20bc1eb7525b24c91ae87786e46adca" category="inline-link-rx"></block>.</block>
-  <block id="37c70997814f20525df54f05b63b82ef" category="inline-link">지역 활성화 방법을 알아보십시오</block>
-  <block id="20f4e542fc804667ca2377386269841c" category="paragraph">해당 지역에서 리소스를 생성하고 관리하려면 먼저 새로운 AWS 영역을 활성화해야 합니다.<block ref="37189395d1b647ca4eabf700b1185d58" category="inline-link-rx"></block>.</block>
   <block id="63c78fe4096c032cda667cb626771016" category="paragraph">Cloud Volumes ONTAP는 선택한 라이센스 유형에 따라 여러 인스턴스 유형을 지원합니다.</block>
   <block id="d4f1750ecbae7aeb8e4608c6adadf1b3" category="inline-link">AWS에서 Cloud Volumes ONTAP가 지원되는 구성입니다</block>
   <block id="22cb0da70aef15be2f870ac70af6492c" category="inline-link">AWS의 Cloud Volumes ONTAP에 대한 스토리지 제한</block>
@@ -2274,7 +2269,6 @@
   <block id="986ef6cfb21ad2831a7ae053e3f0506e" category="list-text">Milan (Europe-west8) - 단일 노드만 해당</block>
   <block id="00f803da9ac7d98ccbfd2178a95625ee" category="list-text">산티아고(사우스메리카-west1) - 단일 노드만 해당</block>
   <block id="d1ce20099e22fd96c2217da218a20a9e" category="inline-link">Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다</block>
-  <block id="efb1786cdf88244f9480e15cb039f942" category="paragraph"><block ref="efb1786cdf88244f9480e15cb039f942" category="inline-link-rx"></block></block>
   <block id="8184a89f6d67aafd228ddc002e159ce5" category="section-title">Google Cloud에서 n2-standard-16을 지원합니다</block>
   <block id="86a3a073b385c5ae85e4523282be3124" category="paragraph">이제 Google Cloud의 Cloud Volumes ONTAP에서 9.10.1 릴리즈부터 n2-standard-16 머신 유형이 지원됩니다.</block>
   <block id="4994b2bf1bd5c0153c9dc0077a84b5a7" category="inline-link">Google Cloud에서 Cloud Volumes ONTAP에 지원되는 구성을 봅니다</block>
@@ -4047,7 +4041,6 @@
   <block id="62a206849a655c43470ec1fbe25e35c1" category="list-text">이 작업 환경에서 BlueXP 분류를 사용하도록 설정했고 다른 작업 환경에서 이 서비스를 사용하지 않는 경우 서비스 인스턴스를 삭제해야 합니다.</block>
   <block id="a69f417641ff2d2784782a6898f8f2de" category="inline-link">BlueXP 분류 인스턴스에 대해 자세히 알아보십시오</block>
   <block id="ae45517d4d9ba30bece696a3b49d1b3f" category="doc">Keystone 구독 관리</block>
-  <block id="5da6315cfe65abaef2d0e00c90898ddc" category="list-text">가입을 보려면 * Keystone 가입 * 으로 돌아갑니다.</block>
   <block id="3d6aabe991edb10f282fd60995e725ca" category="inline-image-macro">Keystone 가입 목록을 보여주는 스크린샷</block>
   <block id="6fd94fda3665b39867817d4700d184e8" category="paragraph"><block ref="6fd94fda3665b39867817d4700d184e8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c5889acf4592b2ce675b7e0be182268e" category="paragraph">이러한 제한은 BlueXP의 Cloud Volumes ONTAP 관리에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어 자체의 제한 사항을 보려면<block ref="70a3d165b5204ef94ef3f2d7b3d098d2" category="inline-link-rx"></block></block>
@@ -4523,7 +4516,6 @@
   <block id="4bb37917188b518967d0e67a2b819327" category="paragraph">BlueXP 디지털 어드바이저 대시보드를 사용하여 Keystone 구독 사용량을 모니터링하고 보고서를 생성할 수 있습니다.</block>
   <block id="20ea4c62f4c9e4254314fe7fbbef0319" category="inline-link">구독 사용량 모니터링에 대해 자세히 알아보십시오</block>
   <block id="d7105dd212dc96a8b292b6b48f84916f" category="paragraph"><block ref="d7105dd212dc96a8b292b6b48f84916f" category="inline-link-rx"></block></block>
-  <block id="28ca5cda5cdef790c457097830d81ca5" category="paragraph">더 이상 BlueXP에 Keystone 구독을 사용하지 않으려는 경우 구독 링크를 해제할 수 있습니다. 기존 Cloud Volumes ONTAP 구독에 연결되지 않은 구독만 연결 해제할 수 있습니다.</block>
   <block id="499efcb2be11e80e5bdfc003278352e3" category="section-title">2023년 11월 1일</block>
   <block id="992f57af99811ae146ed6df67eccc26f" category="section-title">사우디아라비아 지역은 현재 Google Cloud에서 지원됩니다</block>
   <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">사우디아라비아 지역은 현재 Google Cloud for Cloud Volumes ONTAP 및 Connector for Cloud Volumes ONTAP 9.12.1 GA 이상에서 지원됩니다.</block>
@@ -5701,4 +5693,13 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="d117724162371ab94db86f4cbcd703ae" category="paragraph">볼륨 크기를 조정해야 하는 경우 BlueXP 의 ONTAP System Manager에서 볼륨 크기를 조정할 수 있습니다.</block>
   <block id="41e16b15d9c9cc44372d27b0cfe659ad" category="list-text">ONTAP System Manager 보기를 클릭하여 볼륨 크기를 조정합니다. 을 <block ref="1bf7174b0a06a67edc83de5c18b2bf58" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">2025년 2월 10일</block>
+  <block id="1ce97cc664bad2b8b354b3220e6331e7" category="list-text">Keystone 구독 * 을 선택합니다.</block>
+  <block id="23698106a2d9dc1f2df20e97a71a625c" category="list-text">Keystone 구독 * 탭으로 돌아가 구독을 확인하십시오.</block>
+  <block id="436fa170392050162dd4653f969cf048" category="paragraph">더 이상 BlueXP 에 Keystone 구독을 사용하지 않으려면 구독 연결을 끊을 수 있습니다. 기존 Cloud Volumes ONTAP 구독에 연결되지 않은 구독만 연결 해제할 수 있습니다.</block>
+  <block id="e242baa97428f1acdd0a43c0f27ecf0e" category="paragraph">Cloud Volumes ONTAP는 대부분의 Microsoft Azure 지역에서 지원됩니다.<block ref="0de6b81e82e22001f2c59ffd34a8aeac" category="inline-link-rx"></block>..</block>
+  <block id="c24e9fc1263121db1bb6501931efe09c" category="paragraph">Cloud Volumes ONTAP는 대부분의 Google Cloud 지역에서 지원됩니다.<block ref="0de6b81e82e22001f2c59ffd34a8aeac" category="inline-link-rx"></block>..</block>
+  <block id="77616d628efddeba1fd424b939777229" category="paragraph">Cloud Volumes ONTAP는 대부분의 AWS 지역에서 지원됩니다.<block ref="0de6b81e82e22001f2c59ffd34a8aeac" category="inline-link-rx"></block>..</block>
+  <block id="77ccb62da3cbac8ecfb3dcda7b4635b9" category="inline-link">AWS 설명서: 지역을 활성화하는 방법을 알아보십시오</block>
+  <block id="fef606ad68172c64f478d929b8842876" category="paragraph">최신 AWS 지역을 활성화해야 해당 지역에서 리소스를 생성하고 관리할 수 있습니다.<block ref="b7b79d9a35f355344e562154976e1f3d" category="inline-link-rx"></block>..</block>
+  <block id="c1a328cf0660e851f6654745d3aca99e" category="paragraph"><block ref="c1a328cf0660e851f6654745d3aca99e" category="inline-link-rx"></block></block>
 </blocks>

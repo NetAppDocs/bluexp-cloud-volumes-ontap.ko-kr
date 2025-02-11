@@ -1049,7 +1049,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP�
 
 9.10.1 릴리스부터는 Cloud Volumes ONTAP가 이제 Azure West US 3 지역에서 지원됩니다.
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
 
 
 
@@ -1208,7 +1208,7 @@ Cloud Volumes ONTAP는 이제 9.10.1 릴리스부터 다음 Google 클라우드 
 * 산티아고(사우스메리카-west1) - 단일 노드만 해당
 
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
 
 
 

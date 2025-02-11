@@ -30,9 +30,9 @@ Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 �
 
 == 지원되는 지역을 선택하십시오
 
-Cloud Volumes ONTAP는 대부분의 AWS 지역에서 지원됩니다. https://cloud.netapp.com/cloud-volumes-global-regions["지원되는 영역의 전체 목록을 봅니다"^].
+Cloud Volumes ONTAP는 대부분의 AWS 지역에서 지원됩니다. https://bluexp.netapp.com/cloud-volumes-global-regions["지원되는 영역의 전체 목록을 봅니다"^]..
 
-해당 지역에서 리소스를 생성하고 관리하려면 먼저 새로운 AWS 영역을 활성화해야 합니다. https://docs.aws.amazon.com/general/latest/gr/rande-manage.html["지역 활성화 방법을 알아보십시오"^].
+최신 AWS 지역을 활성화해야 해당 지역에서 리소스를 생성하고 관리할 수 있습니다. https://docs.aws.amazon.com/general/latest/gr/rande-manage.html["AWS 설명서: 지역을 활성화하는 방법을 알아보십시오"^]..
 
 
 
