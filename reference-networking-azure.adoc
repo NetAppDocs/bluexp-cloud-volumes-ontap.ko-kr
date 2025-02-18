@@ -92,7 +92,7 @@ AutoSupport 메시지를 보내는 데 아웃바운드 인터넷 연결을 사�
 
 Cloud Volumes ONTAP에 대해 엄격한 아웃바운드 규칙을 정의한 경우 Cloud Volumes ONTAP 보안 그룹이 포트 3128을 통한 _outbound_connection을 허용하는지 확인해야 합니다.
 
-아웃바운드 인터넷 액세스가 가능한지 확인한 후 AutoSupport를 테스트하여 메시지를 보낼 수 있는지 확인할 수 있습니다. 자세한 지침은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 문서: AutoSupport 설정"^].
+아웃바운드 인터넷 액세스가 가능한지 확인한 후 AutoSupport를 테스트하여 메시지를 보낼 수 있는지 확인할 수 있습니다. 자세한 내용은 을 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 설명서: AutoSupport 설치"^]참조하십시오.
 
 BlueXP에서 AutoSupport 메시지를 보낼 수 없다고 알리는 경우 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 구성 문제를 해결합니다"].
 
@@ -449,7 +449,7 @@ NOTE: 소스는 Cloud Volumes ONTAP 시스템의 인터페이스(IP 주소)입�
 | TCP | 3128 | 노드 관리 LIF | 커넥터 | 아웃바운드 인터넷 연결을 사용할 수 없는 경우 커넥터의 프록시 서버를 통해 AutoSupport 메시지 보내기 
 
 
-| 구성 백업 | HTTP | 80 | 노드 관리 LIF | http://<connector-IP-address>/occm/offboxconfig입니다 | Connector로 구성 백업을 보냅니다. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["구성 백업 파일에 대해 자세히 알아보십시오"^]. 
+| 구성 백업 | HTTP | 80 | 노드 관리 LIF | http://<connector-IP-address>/occm/offboxconfig입니다 | Connector로 구성 백업을 보냅니다. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["ONTAP 설명서"^].. 
 
 
 | DHCP를 선택합니다 | 68 | UDP입니다 | 노드 관리 LIF | DHCP를 선택합니다 | 처음으로 설정하는 DHCP 클라이언트 

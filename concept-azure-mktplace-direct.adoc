@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: concept-azure-mktplace-direct.html 
+keywords: azure marketplace direct, cvo in azure marketplace 
+summary:  
+---
+= Azure의 Cloud Volumes ONTAP 배포 옵션에 대해 알아보십시오
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp은 NetApp BlueXP 를 통해 또는 Azure 마켓플레이스를 통해 Azure에 Cloud Volumes ONTAP을 구축하는 두 가지 옵션을 제공합니다. Cloud Volumes ONTAP는 일반적으로 배포 및 오케스트레이션에 BlueXP 을 사용합니다. Cloud Volumes ONTAP 9.16.1부터 Azure 마켓플레이스 직접 구축은 간소한 프로세스로, 제한적이면서도 강력한 Cloud Volumes ONTAP 기능 및 옵션에 액세스할 수 있습니다.
+
+Azure 마켓플레이스에서 직접 Cloud Volumes ONTAP을 배포하는 경우 BlueXP  커넥터를 설정하거나 BlueXP 를 통해 Cloud Volumes ONTAP를 배포하는 데 필요한 기타 보안 및 온보딩 기준을 충족할 필요가 없습니다. Azure 마켓플레이스에서 클릭 몇 번으로 Cloud Volumes ONTAP을 빠르게 배포하고 해당 환경에서 핵심 기능을 탐색할 수 있습니다.
+
+두 옵션 간의 기능 비교는 다음과 같습니다.
+
+[cols="3*"]
+|===
+|  | Azure 마켓플레이스 | BlueXP 
+
+
+| * 온보딩 * | 직접 전개에 필요한 최소한의 준비로 더 짧고 쉽습니다 | BlueXP  커넥터 설치를 포함하여 온보딩 프로세스가 더 길어집니다 
+
+
+| * 지원되는 SVM(스토리지 가상 머신) 인스턴스 * | Edsv5 및 LsV3 | 폭넓은 스토리지 VM 옵션: https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure에서 지원되는 구성"^] 
+
+
+| * 라이센스 * | 무료 라이센스 | 용량 기반 라이센스 link:concept-licensing.html["Cloud Volumes ONTAP 라이센스"] 
+
+
+| * NetApp 지원 * | 포함되지 않음 | 라이센스 유형에 따라 사용할 수 있습니다 
+
+
+| * 용량 * | 최대 500GiB | 구성에 의해 확장 가능 
+
+
+| * 배포 모델 * | 단일 가용 영역(AZ)에 고가용성(HA) 모드 배포 | 단일 노드 및 HA 모드, 단일 및 다중 AZ 배포를 포함한 모든 지원 구성 
+
+
+| * 지원되는 디스크 유형 * | Premium SSD v2 Managed Disks | 폭넓은 지지력. link:concept-storage.html#azure-storage["Cloud Volumes ONTAP의 기본 구성입니다"] 
+
+
+| * 쓰기 속도 (빠른 쓰기 모드) * | 지원되지 않습니다 | 구성에 따라 지원됩니다. link:concept-write-speed.html["Cloud Volumes ONTAP의 쓰기 속도에 대해 알아보십시오"].. 
+
+
+| * 오케스트레이션 기능 * | 사용할 수 없습니다 | 라이센스 유형에 따라 BlueXP 를 통해 사용할 수 있습니다 
+
+
+| * 지원되는 SVM 수 * | 구축당 1개의 SVM | 구성에 따른 여러 SVM link:task-managing-svms-azure.html#supported-number-of-storage-vms["지원되는 SVM 수입니다"] 
+
+
+| * 인스턴스 유형 변경 * | 지원되지 않습니다 | 지원 
+
+
+| * FabricPool 계층화 * | 지원되지 않습니다 | 지원 
+|===
+앞으로는 BlueXP  Connector가 Cloud Volumes ONTAP의 전체 관리 및 오케스트레이션 기능을 체험할 수 있을 때 Azure Marketplace 직접 배포를 통해 이루어진 배포를 확인할 수 있을 것입니다.
+
+.관련 링크
+* Azure 마켓플레이스 직접 구축: link:task-deploy-cvo-azure-mktplc.html["Azure 마켓플레이스에서 Cloud Volumes ONTAP을 배포합니다"]
+* BlueXP  배포: link:task-getting-started-azure.html["Azure에서 Cloud Volumes ONTAP를 빠르게 시작합니다"]
+* https://docs.netapp.com/us-en/bluexp-family/index.html["BlueXP 설명서"^]
+

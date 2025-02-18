@@ -64,7 +64,7 @@ link:concept-licensing.html#capacity-based-licensing["용량 기반 라이센스
 NetApp에서 BYOL(License)을 구매하여 모든 클라우드 공급자를 통해 Cloud Volumes ONTAP 시스템 구축
 
 .단계
-. https://cloud.netapp.com/contact-cds["라이센스를 획득하려면 NetApp 세일즈 팀에 문의하십시오"^]
+. https://bluexp.netapp.com/contact-cds["라이센스를 획득하려면 NetApp 세일즈 팀에 문의하십시오"^]
 . https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["NetApp Support 사이트 계정을 BlueXP에 추가합니다"^]
 +
 BlueXP는 NetApp의 라이센스 서비스에 자동으로 쿼리하여 NetApp Support 사이트 계정과 관련된 라이센스에 대한 자세한 정보를 확인합니다. 오류가 없으면 BlueXP는 자동으로 디지털 지갑에 라이센스를 추가합니다.

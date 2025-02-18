@@ -64,7 +64,7 @@ link:task-manage-capacity-licenses.html["충전 방법을 변경하는 방법에
 
 == 가격 및 지원되는 구성
 
-가격에 대한 자세한 내용은 를 참조하십시오 https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["NetApp BlueXP 웹 사이트"^].
+가격에 대한 자세한 내용은 을 https://bluexp.netapp.com/pricing/["NetApp BlueXP 웹 사이트"^]참조하십시오.
 
 용량 기반 라이센스 패키지는 Cloud Volumes ONTAP 9.7 이상에서 사용할 수 있습니다.
 

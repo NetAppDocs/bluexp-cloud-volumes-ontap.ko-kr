@@ -69,12 +69,12 @@ indexpage:
     - title: 지원되는 클라우드 영역
       url: https://bluexp.netapp.com/cloud-volumes-global-regions
     - title: 계산기
-      url: https://cloud.netapp.com/calculator-hub
+      url: https://bluexp.netapp.com/calculator-hub
   - title: 블로그 커뮤니티
     links:
     - title: NetApp 커뮤니티
       url: https://community.netapp.com/t5/Cloud-Volumes-ONTAP/bd-p/CloudVolumes
     - title: BlueXP 웹 사이트 블로그
-      url: https://cloud.netapp.com/blog/topic/cloud-volumes-ontap
+      url: https://bluexp.netapp.com/blog/topic/cloud-volumes-ontap
     - title: 클라우드 웨비나
-      url: https://cloud.netapp.com/events
+      url: https://bluexp.netapp.com/events
