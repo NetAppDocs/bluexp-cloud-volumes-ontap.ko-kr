@@ -33,7 +33,7 @@ video::PBNPVRUeT1o[youtube,width=848,height=480]
 
 원본 볼륨이 암호화된 Cloud Volumes ONTAP 시스템에서 FlexCache를 구성할 경우 FlexCache 볼륨이 암호화된 데이터에 올바르게 액세스하고 캐시할 수 있도록 추가 단계가 필요합니다.
 
-.필요한 것
+.시작하기 전에
 . * 암호화 설정 *: 소스 볼륨이 완전히 암호화되어 작동 중인지 확인합니다. Cloud Volumes ONTAP 시스템의 경우 클라우드용 키 관리 서비스와의 통합이 포함됩니다.
 
 

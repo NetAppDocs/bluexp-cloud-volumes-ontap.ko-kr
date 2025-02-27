@@ -1661,7 +1661,6 @@
   <block id="412590af9448ac66459e9c3d686de880" category="doc">Azure의 Cloud Volumes ONTAP에 대한 네트워킹 요구사항</block>
   <block id="72928bd9aacf64df0eb1285c03f5f5c0" category="section-title">Cloud Volumes ONTAP에 대한 요구사항</block>
   <block id="098d8cb8c4a1291e10ee07b333610f24" category="paragraph">Azure에서 다음 네트워킹 요구사항을 충족해야 합니다.</block>
-  <block id="a882b8d486f84abfbb2472c835d49dbf" category="paragraph">라우팅 및 방화벽 정책은 Cloud Volumes ONTAP가 AutoSupport 메시지를 보낼 수 있도록 다음 엔드포인트에 대한 HTTP/HTTPS 트래픽을 허용해야 합니다.</block>
   <block id="1d9e509ddb93a176b7d369a91ad7deaf" category="section-title">IP 주소</block>
   <block id="0af87aead9b1478c9d33afc90cbcbf02" category="section-title">Azure 서비스에 대한 보안 연결</block>
   <block id="87b7d9ff8a42dbb6c0bcd13ae09f6010" category="section-title">다른 ONTAP 시스템에 대한 연결</block>
@@ -1776,7 +1775,6 @@
   <block id="30603aec25d6436b9b4c18f5e88da521" category="paragraph">이 라이센스 모델을 통해 각 개별 Cloud Volumes ONTAP 시스템은 디스크를 통해 최대 2개의 PiB 용량을 지원하고 오브젝트 스토리지로 계층화합니다.</block>
   <block id="28d17a1ec8598824eb0c46f1ef2668af" category="paragraph">라이센스 자체에는 최대 용량 제한이 없습니다.</block>
   <block id="25827e83a178b9b140976a356e0ea48a" category="section-title">충전 관련 참고 사항</block>
-  <block id="c1092325501599c6dcc90500081a2184" category="list-text">BYOL 용량을 초과하거나 라이센스가 만료된 경우, 마켓플레이스 가입을 기준으로 시간당 요금이 초과됩니다.</block>
   <block id="55675f6a5328a3c661aa2daa971f7c76" category="list-text">HA 쌍의 경우 노드의 프로비저닝된 용량에 대해서만 비용이 청구됩니다. 파트너 노드에 동기식으로 미러링되는 데이터에 대해서는 비용이 청구되지 않습니다.</block>
   <block id="e61eacf9a2b260a46a8935478c8a063d" category="list-text">FlexClone 볼륨에 사용된 용량에 대해서는 비용이 청구되지 않습니다.</block>
   <block id="529bcec2b9675b3cb0a81186e626a92b" category="list-text">소스 및 타겟 FlexCache 볼륨은 프로비저닝된 공간에 따라 운영 데이터로 간주되고 충전됩니다.</block>
@@ -3368,7 +3366,6 @@
   <block id="6b2eadbbc64d8760da4136e28da230c2" category="list-text">* 위치 선택 *: * 아마존 웹 서비스 * 및 * Cloud Volumes ONTAP HA * 를 선택합니다.</block>
   <block id="56fe439ee061f5bc2e940368c1d73fa3" category="section-title">BlueXP는 Cloud Volumes ONTAP에서 S3을 지원하지 않습니다</block>
   <block id="9832e39264a34e4e40dca8449efd019e" category="section-title">BlueXP는 스토리지 VM의 재해 복구를 지원하지 않습니다</block>
-  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">필요한 것</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">Google Cloud 권한이 필요합니다</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">Flash Cache란 무엇입니까?</block>
   <block id="78d0efd6b2c71cba47286de0ff16747c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 커넥터를 작성합니다</block>
@@ -5198,9 +5195,7 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="b5f4badb0c4d684d68e611a2bcca58e8" category="list-text">Cloud Volumes ONTAP 서비스</block>
   <block id="437fe4cf0ba94eac0cc14bbc45cbe74f" category="list-text">ONTAP 서비스</block>
   <block id="43ede35f19d46142596efa16b1ee32c5" category="list-text">프로토콜 및 프록시 서비스</block>
-  <block id="f08159fec04f3c63047352bdded5b5ff" category="cell">\https://keyvault-production-aks.vault.azure.net</block>
   <block id="cce8a0225002a3fa8095ed8782f394a3" category="cell">키 볼트</block>
-  <block id="3d41451698b9c800b8f44837a532d5db" category="cell">메타데이터 처리를 위해 S3 버킷과 통신하기 위해 Azure Key Vault에서 클라이언트 비밀 키를 검색하는 데 사용됩니다. Cloud Volumes ONTAP 서비스는 내부적으로 이 구성 요소를 사용합니다.</block>
   <block id="bcf88b7ababd6bfaff375da727117c30" category="cell">표준, 제한 및 개인 모드.</block>
   <block id="f4308ae3bc914b647813d26d0551a6ba" category="cell">Cloud Volumes ONTAP 서비스를 사용할 수 없습니다.</block>
   <block id="648b7f3d6699305c92d33129e6ea00fe" category="cell">https://cloudmanager.cloud.netapp.com/tenancy 으로 문의하십시오</block>
@@ -5328,11 +5323,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="788e4b8f4de48df585a507f6facd4562" category="list-text">Essentials 보조 단일 노드: 하나의 ONTAP 노드만 사용하여 Cloud Volumes ONTAP 시스템에 생성된 데이터 보호(DP) 유형 볼륨(일반적으로 읽기 전용 SnapMirror 또는 SnapVault 대상 볼륨)</block>
   <block id="7d16eeb76acfceb848e2519cce58c471" category="admonition">읽기 전용/DP 볼륨이 운영 볼륨이 되는 경우 BlueXP 은 이를 운영 데이터로 간주하고 볼륨이 읽기/쓰기 모드인 시간을 기준으로 청구 비용을 계산합니다. 볼륨이 다시 읽기 전용/DP로 설정되면 BlueXP 는 이를 보조 데이터로 간주하여 디지털 지갑에서 가장 일치하는 라이센스를 사용하여 이에 따라 요금을 부과합니다.</block>
   <block id="7e634413e3c77c89dba2562f5b7c1937" category="list-text">Essentials 보조 HA: 두 개의 ONTAP 노드를 사용하여 Cloud Volumes ONTAP 시스템에 생성된 데이터 보호(DP) 유형 볼륨(일반적으로 읽기 전용인 SnapMirror 또는 SnapVault 타겟 볼륨)으로, 무중단 데이터 액세스를 위해 서로 페일오버할 수 있습니다.</block>
-  <block id="8bf4a89637b88a17fe1be4dad5d23488" category="paragraph">다음 사항에 유의하십시오.</block>
-  <block id="71f51fd779e6f30ac906929b2dcb02df" category="list-text">최소 비용: 데이터를 제공하는 스토리지 VM당 기본(읽기-쓰기) 볼륨이 하나 이상 있는 경우 최소 요금은 4TiB입니다. Essentials 패키지의 경우 이 최소 요금은 보조(데이터 보호) 볼륨만 있는 스토리지 VM에는 적용되지 않습니다.</block>
-  <block id="42a9ff8d7662759290ac08e2ee0929f4" category="list-text">초과 사용: 라이센스가 부여된 용량을 초과하면 다른 라이센스의 가용 용량을 먼저 사용하는 것과 함께 초과 사용 요금이 마켓플레이스로 청구됩니다.</block>
-  <block id="f93da9b042a7ade0f4d86a091309ed87" category="list-text">FlexClone 및 FlexCache 볼륨: FlexClone 볼륨이 청구되지 않음 소스 및 타겟 FlexCache 볼륨은 기본 데이터로 간주되며 프로비저닝된 공간에 따라 비용이 청구됩니다.</block>
-  <block id="371519ace7adec1f0d1a909854d1cbec" category="list-text">HA 쌍 충전: HA 쌍의 경우 노드의 프로비저닝된 용량만 충전됩니다. 파트너 노드에 동기식으로 미러링되는 데이터는 청구되지 않습니다.</block>
   <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">2024년 10월 25일</block>
   <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">Google Cloud에서 Cloud Volumes ONTAP의 새 인스턴스를 배포할 때 BlueXP 에서 n1 시리즈 머신을 더 이상 선택할 수 없습니다. n1 시리즈 머신은 기존 시스템에서만 유지되고 지원됩니다. Cloud Volumes ONTAP의 새로운 배포는 9.8 릴리스부터 Google Cloud에서만 지원됩니다. Cloud Volumes ONTAP 9.8 이상과 호환되는 n2 시리즈 기계 유형으로 전환하는 것이 좋습니다. 그러나 n1 시리즈 시스템은 API를 통해 수행되는 새로운 구축 환경에서 사용할 수 있습니다.</block>
   <block id="e55067e1e9c0716bdbc0866b4393aa68" category="paragraph"><block ref="55218e2079fe45aad8bd65bcb61a1a9f" category="inline-link-rx"></block>..</block>
@@ -5661,16 +5651,12 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="29a97b99a51928e5b93f84b989f0c2a0" category="list-text"><block ref="29a97b99a51928e5b93f84b989f0c2a0" category="inline-link-rx"></block></block>
   <block id="e94250a733abb8fd0b0ca35ccdcc534f" category="inline-link">Azure 마켓플레이스에서 Cloud Volumes ONTAP을 배포합니다</block>
   <block id="2f3a59a024a5fa5e6d9049c44506f8b0" category="list-text"><block ref="2f3a59a024a5fa5e6d9049c44506f8b0" category="inline-link-rx"></block></block>
-  <block id="a0edf395a381b81009a4d551086625d0" category="paragraph">NetApp은 NetApp BlueXP 를 통해 또는 Azure 마켓플레이스를 통해 Azure에 Cloud Volumes ONTAP을 구축하는 두 가지 옵션을 제공합니다. Cloud Volumes ONTAP는 일반적으로 배포 및 오케스트레이션에 BlueXP 을 사용합니다. Cloud Volumes ONTAP 9.16.1부터 Azure 마켓플레이스 직접 구축은 간소한 프로세스로, 제한적이면서도 강력한 Cloud Volumes ONTAP 기능 및 옵션에 액세스할 수 있습니다.</block>
-  <block id="dbb1a2747246b2326a1cd9883fa179ae" category="paragraph">Azure 마켓플레이스에서 직접 Cloud Volumes ONTAP을 배포하는 경우 BlueXP  커넥터를 설정하거나 BlueXP 를 통해 Cloud Volumes ONTAP를 배포하는 데 필요한 기타 보안 및 온보딩 기준을 충족할 필요가 없습니다. Azure 마켓플레이스에서 클릭 몇 번으로 Cloud Volumes ONTAP을 빠르게 배포하고 해당 환경에서 핵심 기능을 탐색할 수 있습니다.</block>
   <block id="7f307020214b0601581a2750d70801ff" category="paragraph">두 옵션 간의 기능 비교는 다음과 같습니다.</block>
   <block id="e380306ab83464e152f5fd1b794098b0" category="cell">Azure 마켓플레이스</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="cell">BlueXP</block>
   <block id="d001c47858581c979ac478e49c9661c4" category="cell">* 온보딩 *</block>
   <block id="c0245bda3ab2426b357c2f1dbac18fe4" category="cell">직접 전개에 필요한 최소한의 준비로 더 짧고 쉽습니다</block>
   <block id="3629ee21db77809980881173196b6920" category="cell">BlueXP  커넥터 설치를 포함하여 온보딩 프로세스가 더 길어집니다</block>
-  <block id="636c10440b3c39954000427bfee3a509" category="cell">* 지원되는 SVM(스토리지 가상 머신) 인스턴스 *</block>
-  <block id="09a2f54a8d3829f6b3cdbfc1227246d2" category="cell">Edsv5 및 LsV3</block>
   <block id="79bd8865b968021aedfe3ebf1eea0e3b" category="cell">폭넓은 스토리지 VM 옵션: <block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
   <block id="ee998db55a5373c890946748cb8dafeb" category="cell">* 라이센스 *</block>
   <block id="2c99fb634374338e105960f8a1b01571" category="cell">무료 라이센스</block>
@@ -5694,14 +5680,9 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="d9ec06f53e7680c118a0ed4df5b96fb4" category="cell">* 오케스트레이션 기능 *</block>
   <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">사용할 수 없습니다</block>
   <block id="84871953bd62b8893190ef7a6962abe7" category="cell">라이센스 유형에 따라 BlueXP 를 통해 사용할 수 있습니다</block>
-  <block id="9f8a1e65db2a7b7add1c13eab2e7329d" category="cell">* 지원되는 SVM 수 *</block>
-  <block id="48a427743a75b4fdda65b3d4d32ffdb8" category="cell">구축당 1개의 SVM</block>
-  <block id="0e0d07c97eb79ac52552a16c7231cce9" category="inline-link-macro">지원되는 SVM 수입니다</block>
-  <block id="2eb6409010ba79c9ad22a8548be0934e" category="cell">구성에 따른 여러 SVM <block ref="b161301467d6eb73d25f41f1916e22c1" category="inline-link-macro-rx"></block></block>
   <block id="bf20643c9f32bd3279ba875a287ff155" category="cell">* 인스턴스 유형 변경 *</block>
   <block id="eaa4dc5078017a5c5bebf383ab6f5124" category="cell">지원</block>
   <block id="c1ffbcc6fe6835d480213a54893f3a0a" category="cell">* FabricPool 계층화 *</block>
-  <block id="3e829bef915f1e80385b2044bc0d9818" category="paragraph">앞으로는 BlueXP  Connector가 Cloud Volumes ONTAP의 전체 관리 및 오케스트레이션 기능을 체험할 수 있을 때 Azure Marketplace 직접 배포를 통해 이루어진 배포를 확인할 수 있을 것입니다.</block>
   <block id="c86757d7a9f77beb628cb57feb3d6c11" category="list-text">Azure 마켓플레이스 직접 구축: <block ref="1186fe96c0993d10ed337eff0bc3c77c" category="inline-link-macro-rx"></block></block>
   <block id="26e7a962794b94b9597de6c446a143e5" category="list-text">BlueXP  배포: <block ref="be01ed4f242b2cf3f55d254dc6769252" category="inline-link-macro-rx"></block></block>
   <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXP 설명서</block>
@@ -5734,20 +5715,14 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="4215bf476fb5508d2ab2817180f62fbb" category="paragraph">AKV를 사용하면 데이터 SVM에 대해서만 NVE(NetApp 볼륨 암호화) 키를 보호할 수 있습니다. 자세한 내용은 를 <block ref="bcad4305f4f69666b0e9823206c949af" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="abf596ebbf2c64b882e111278a49b1e5" category="inline-link">ONTAP 설명서:EMS 구성 개요</block>
   <block id="f0bf9f15eadaf8491da2934af661a352" category="paragraph">CLI를 이용하여 EMS를 구성할 수 있다. 자세한 내용은 을<block ref="f10f254becd5d3115751852411e7271e" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="1507fff81105771ed80d838ecc7c825f" category="paragraph">Cloud Volumes ONTAP 9.16.1부터는 Azure 마켓플레이스 직접 구축을 사용하여 Azure 마켓플레이스에서 Cloud Volumes ONTAP을 빠르고 쉽게 배포하고 환경 내의 핵심 기능을 탐색할 수 있습니다.</block>
   <block id="530e18594ace7f1432d409c00afc2454" category="inline-link-macro">BlueXP  및 시장에서 Cloud Volumes ONTAP 오퍼링에 대해 자세히 알아보십시오</block>
   <block id="c6291eec01d7eef87347f05c5b6cc5e0" category="paragraph">이 서비스에 대한 자세한 내용은 을 <block ref="1d59ccb0a322b44874ad6d716be992b6" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="b11556db62f78035a974fcf2af350b0c" category="paragraph">Azure Marketplace 직접 배포를 사용하여 구축한 Cloud Volumes ONTAP 인스턴스에는 다음과 같은 속성이 있습니다.</block>
   <block id="307fba28eaa68023634ac12efe78443d" category="list-text">최신 Cloud Volumes ONTAP 버전(9.16.1 이상)</block>
   <block id="87449344416c32f88eeb38f3bd00e092" category="list-text">프로비저닝된 용량이 500GiB로 제한된 Cloud Volumes ONTAP의 무료 라이센스입니다. 이 라이센스에는 NetApp 지원이 포함되어 있지 않으며 만료 날짜가 없습니다.</block>
   <block id="152058aae87c0f08791efa9a9cbd8167" category="inline-link-macro">유연한 오케스트레이션 모드</block>
-  <block id="2d7152ef687c52f17a34fdc2c6507d86" category="list-text">단일 가용 영역(AZ)에서 고가용성(HA) 모드로 구성된 2개의 노드가 기본 일련 번호로 프로비저닝됩니다. 스토리지 가상 머신(SVM)은 에 <block ref="76b8e7a3e49d5a96c336355428b9cbdd" category="inline-link-macro-rx"></block>구축됩니다.</block>
   <block id="860574f2fb3649a1d434d1ed47437a59" category="list-text">기본적으로 생성되는 인스턴스의 Aggregate입니다.</block>
   <block id="c612116a8947c7a85f4c8fb5064a1e13" category="list-text">500GiB의 용량을 프로비저닝한 Premium SSD v2 Managed Disk, 루트 및 데이터 디스크 1개</block>
-  <block id="bd3fadb8d8a7028f57bf2694979cf325" category="list-text">NFS, CIFS, iSCSI, NVMe/TCP 데이터 서비스를 사용하여 단일 데이터 SVM을 구축했습니다. 추가 SVM을 위한 프로비저닝 없음.</block>
-  <block id="92a96188cb68658c1989215bfbbe6ca3" category="list-text">NFS, CIFS(SMB), iSCSI, 안티 랜섬웨어(ARW), SnapLock 및 SnapMirror용 라이센스가 기본 일련 번호에 대해 설치되어 있습니다.</block>
-  <block id="1859d20023fcb6341021ebf7fdf710be" category="inline-link">ONTAP 온도에 민감한 스토리지 효율성(TSSE)</block>
-  <block id="76211bb727300454e196855a3a4cc957" category="list-text"><block ref="71b0933f11acfc38fdafc96583ed09c6" category="inline-link-rx"></block>, 볼륨 암호화 및 외부 키 관리가 기본적으로 활성화됩니다.</block>
   <block id="e028eb7a88e0ab56d3961355b9bc2c4b" category="list-text">다음 기능은 지원되지 않습니다.</block>
   <block id="47f64097ec44c9f18f4025941f2e4436" category="list-text">FabricPool 계층화</block>
   <block id="4bfa0affcddbe689db2e9788d1cf9ade" category="list-text">인스턴스 유형 변경</block>
@@ -5770,9 +5745,7 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="3ad50573794660103eccc594ba3fb4f0" category="list-text">계획을 선택합니다. 계획 * 목록에는 일반적으로 최신 버전의 Cloud Volumes ONTAP가 표시됩니다.</block>
   <block id="37d38a578c31bc624a3f4d4de8fb8daa" category="list-text">기본 * 탭에서 다음 세부 정보를 제공합니다.</block>
   <block id="3bc9feb66cc347505afe61a873233a22" category="list-text">* 가입 * : 가입을 선택하세요. 배포는 구독 번호에 연결됩니다.</block>
-  <block id="7c68030358e9e2caf23b3aab867e6b7d" category="list-text">* 리소스 그룹 *: 기존 리소스 그룹을 사용하거나 새 리소스 그룹을 생성합니다. 리소스 그룹을 사용하면 디스크 및 SVM과 같은 모든 리소스를 단일 그룹 내에서 Cloud Volumes ONTAP 인스턴스에 할당할 수 있습니다.</block>
   <block id="a68271a0eca397a1733f43d9c2db3356" category="list-text">* 지역 * : 단일 AZ에서 Azure HA 배포를 지원하는 지역을 선택합니다. 목록에 사용 가능한 지역만 표시됩니다.</block>
-  <block id="ba0d4387254dca94fa0fcfe4ade5fe3e" category="list-text">* 크기 *: 지원되는 프리미엄 SSD v2 관리 디스크에 대한 SVM 크기를 선택합니다.</block>
   <block id="c2b7578dc59578ac85fb03cf8268371d" category="list-text">* 영역 *: 선택한 지역의 영역을 선택합니다.</block>
   <block id="d238bcae22b45e47039da0f3a61c5465" category="list-text">* 관리자 비밀번호 * : 비밀번호를 설정합니다. 배포 후 이 관리자 암호를 사용하여 시스템에 로그인합니다.</block>
   <block id="3ee712a8a2fc736d7fea56d098428b49" category="list-text">* 암호 확인 *: 확인을 위해 동일한 암호를 다시 입력하십시오.</block>
@@ -5785,8 +5758,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="b445825d2f2ddce17b30d5dbc127bb53" category="list-text">고급 * 탭에서 이 배포에 필요한 두 Azure 기능이 설정되었는지 확인합니다. <block ref="47d2b322282e9494b913fdbd50384f10" category="inline-link-macro-rx"></block>및 <block ref="a99c16252f5b965dd7864967fa4d6812" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="f7dce7f10f1f8cc2b434e0510f469742" category="list-text">태그 * 탭에서 자원 또는 자원 그룹에 대한 이름 및 값 쌍을 정의할 수 있습니다.</block>
   <block id="e5c4df6a4568a2a580b8a3e5b40577b6" category="list-text">검토 + 만들기 * 탭에서 세부 정보를 검토하고 배포를 시작합니다.</block>
-  <block id="cc2ec1706a6cfca4d87ce071f6ae3f37" category="paragraph">배포 진행 상황을 보려면 알림 아이콘을 선택합니다. Cloud Volumes ONTAP을 구축한 후 운영 목록에 나열된 SVM을 볼 수 있습니다.</block>
-  <block id="a981e8fb9c5e87d40185a70a414d57e2" category="paragraph">ONTAP System Manager 또는 ONTAP CLI를 사용하여 설정한 관리자 자격 증명으로 SVM에 로그인합니다. 그런 다음 볼륨, LUN 또는 공유를 생성하고 Cloud Volumes ONTAP의 스토리지 기능을 활용할 수 있습니다.</block>
   <block id="5a8751283cd95032ddf0ec56f5bb1224" category="paragraph">Azure 마켓플레이스를 통해 직접 구축한 Cloud Volumes ONTAP에는 NetApp의 지원이 포함되지 않습니다. 배포 중에 문제가 발생하면 독립적으로 문제를 해결하고 해결할 수 있습니다.</block>
   <block id="e9ad8cb2d3f7ad7951cb5e2ccdf98fcc" category="list-text">Azure 마켓플레이스 사이트에서 * 부팅 진단 &gt; 시리얼 로그 * 로 이동합니다.</block>
   <block id="3473bcdf09ad8e881f1d60433d0651a8" category="list-text">직렬 로그를 다운로드하고 조사합니다.</block>
@@ -5804,7 +5775,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="f2e2a9d8fec39c5ee52d89218d616aa0" category="list-text"><block ref="f2e2a9d8fec39c5ee52d89218d616aa0" category="inline-link-rx"></block></block>
   <block id="5eb1845d8b80c05b8cd63e308b13e96b" category="inline-link">CIFS에 대한 공유를 생성합니다</block>
   <block id="624a019a8e50c4a7143df34f2ca60327" category="list-text"><block ref="624a019a8e50c4a7143df34f2ca60327" category="inline-link-rx"></block></block>
-  <block id="77e31285eee4947e5d6f245a2743d957" category="admonition">중국 지역의 경우 단일 노드 구축은 Cloud Volumes ONTAP 9.12.1 GA 및 9.13.0 GA에서만 지원됩니다. 이러한 버전을 최신 Cloud Volumes ONTAP 패치 및 릴리스로 업그레이드할 수 있습니다. 중국 지역에 최신 Cloud Volumes ONTAP 버전을 배포하려면 NetApp 지원에 문의하십시오. 이러한 지역에서는 NetApp에서 직접 구매한 라이선스만 지원됩니다.</block>
   <block id="c97ed7681a179d7bc87ce8f8eed5c351" category="inline-link">ONTAP 설명서: 자율적 랜섬웨어 방어 지원</block>
   <block id="f508651fe98cc3415eb1f58ed2bed8a0" category="paragraph">ONTAP 시스템 관리자 및 ONTAP CLI에서 ARP를 활성화하는 방법에 대한 자세한 내용은 를<block ref="b15a4c9c991d002f8e900421f382aab3" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="c444f079b1cbf4fc53cc057613986256" category="list-text"><block ref="c444f079b1cbf4fc53cc057613986256" category="inline-link-rx"></block></block>
@@ -5828,9 +5798,33 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="25d5ff4689a1026f322311bc3051ec8f" category="paragraph">NDMP를 구성하고 사용하는 방법에 대한 자세한 내용은 를<block ref="b4c37f031604033056dedb105a470e07" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="f5b6a4f9fa9546ad87a66d4b329c48ca" category="list-text">* Edge Cache *: 라이센스<block ref="750127709cc754e243313cd0fefb37f3" category="inline-link-rx"></block></block>
   <block id="4365e30d77f5d09dc0920c7810111567" category="paragraph"><block ref="413fcdbad34c678371dd9dcd495f514c" category="inline-link-rx"></block>..</block>
-  <block id="ac3d6636314efc1e17f29c3e409b0f9c" category="sidebar">배포 옵션에 대해 자세히 알아봅니다</block>
   <block id="3a02e985ca8f29995c51ae66b1b831f2" category="sidebar">BlueXP 에서 시작하십시오</block>
   <block id="124dec3164ac7246452cc1456ff82f96" category="sidebar">시장에서 시작하십시오</block>
-  <block id="669267b794602d81727aa564e9017e49" category="sidebar">시장에서 Cloud Volumes ONTAP 구축</block>
   <block id="3afa4906e9f87a509c6412a260310879" category="sidebar">AWS에서 EC2 인스턴스 사용</block>
+  <block id="62c9277e75aee50ddfb792de79bd94d3" category="doc">이제 Azure에서 뉴질랜드 북부 지역이 지원됩니다</block>
+  <block id="81ae8423a213b8c9bbcb79aee6ae0af8" category="paragraph">뉴질랜드 북부 지역은 이제 Cloud Volumes ONTAP 9.12.1 GA 이상의 단일 노드 및 고가용성(HA) 구성에 대해 Azure에서 지원됩니다. Lsv3 인스턴스 유형은 이 지역에서 지원되지 않습니다.</block>
+  <block id="b717ddfb2f9a28b7e4673751144693cc" category="paragraph">지원되는 모든 지역 목록은 을<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block> 참조하십시오.</block>
+  <block id="7c2f2acb2655a9e7f8ab7f69bbd0d731" category="paragraph">NetApp는 Azure 기반 Cloud Volumes ONTAP를 구축하기 위한 두 가지 옵션을 제공합니다. Cloud Volumes ONTAP는 일반적으로 배포 및 오케스트레이션에 BlueXP 을 사용합니다. Cloud Volumes ONTAP 9.16.1부터 Azure 마켓플레이스 직접 구축은 간소한 프로세스로, 제한적이면서도 강력한 Cloud Volumes ONTAP 기능 및 옵션에 액세스할 수 있습니다.</block>
+  <block id="89191ae1b044d97b766a182a1727fae4" category="paragraph">Azure 마켓플레이스에서 직접 Cloud Volumes ONTAP을 배포하는 경우 BlueXP  커넥터를 설정하거나 BlueXP 를 통해 Cloud Volumes ONTAP를 배포하는 데 필요한 기타 보안 및 온보딩 기준을 충족할 필요가 없습니다. Azure 마켓플레이스에서 몇 번의 클릭으로 Cloud Volumes ONTAP을 빠르게 배포하고 해당 환경에서 핵심 기능을 탐색할 수 있습니다.</block>
+  <block id="73081e15ff5559e197b273ea471c9aeb" category="cell">* 지원되는 스토리지 가상 머신(스토리지 VM) 인스턴스 *</block>
+  <block id="55f3f90910bdc78c8b57d6f9c6044843" category="cell">Edsv5 및 Lsv3</block>
+  <block id="94302f254b4d602be77fb6e28556ecec" category="cell">* 지원되는 스토리지 VM 수 *</block>
+  <block id="212ecc3006afeac1a27b275b3e8556b8" category="cell">배포당 1개</block>
+  <block id="e3e6a1af04ec174dc41385d29bdd8865" category="cell">구성에 따른 다중 스토리지 VM <block ref="85b54da0356d83997931fab8f38013e5" category="inline-link-macro-rx"></block></block>
+  <block id="ebd233c7db02fa141c56a433554bbe06" category="paragraph">향후 BlueXP  커넥터는 Azure 마켓플레이스의 직접 배포를 통해 이루어진 배포를 식별할 수 있을 것입니다. 이렇게 하면 BlueXP 에서 제공하는 향상된 기능을 활용할 수 있습니다.</block>
+  <block id="dcfe8b86806ea8eca7c3c29e1d2f915c" category="paragraph">BYOL 용량을 초과하거나 라이센스가 만료되는 경우 마켓플레이스 구독에 따라 시간당 초과 요금이 청구됩니다. 초과 사용량은 다른 라이센스의 가용 용량을 먼저 사용하는 것을 선호하면서 마켓플레이스 요율에 따라 부과됩니다.</block>
+  <block id="8683a88ed22af0c318a9eb6a4fb30537" category="paragraph">라우팅 및 방화벽 정책은 Cloud Volumes ONTAP에서 AutoSupport 메시지를 보낼 수 있도록 다음 엔드포인트에 대한 HTTPS 트래픽을 허용해야 합니다.</block>
+  <block id="d5788def9bc230ba887427df9594dd27" category="cell"><block ref="d5788def9bc230ba887427df9594dd27" category="inline-link-rx"></block></block>
+  <block id="b1905fad16d0cb92c82e293f1516f810" category="cell">고객 관리 키(CMK)를 사용할 때 Azure Key Vault에서 클라이언트 비밀 키를 검색하는 데 사용됩니다.</block>
+  <block id="c01c238e45c56b0625dc393a96942f4a" category="paragraph">Cloud Volumes ONTAP 9.16.1부터는 Azure 마켓플레이스 직접 구축을 사용하여 Cloud Volumes ONTAP를 빠르고 쉽게 배포할 수 있습니다. Azure 마켓플레이스에서 몇 번의 클릭으로 Cloud Volumes ONTAP을 빠르게 배포하고 해당 환경에서 핵심 기능을 탐색할 수 있습니다.</block>
+  <block id="35acff494427083599ef0a6b5f200d8d" category="list-text">단일 가용 영역(AZ)에서 고가용성(HA) 모드로 구성된 2개의 노드가 기본 일련 번호로 프로비저닝됩니다. 스토리지 가상 머신(스토리지 VM)은 에 배포됩니다.<block ref="76b8e7a3e49d5a96c336355428b9cbdd" category="inline-link-macro-rx"></block></block>
+  <block id="b7c4cebe2d8448d4f2e4b92843f79d47" category="list-text">NFS, CIFS, iSCSI 및 NVMe/TCP 데이터 서비스를 갖춘 단일 데이터 스토리지 VM이 구축됩니다. 데이터 스토리지 VM을 추가할 수 없습니다.</block>
+  <block id="5d98b60eeef8b1f07d860cd9f9341d93" category="list-text">NFS, CIFS(SMB), iSCSI, 안티 랜섬웨어(ARW), SnapLock 및 SnapMirror에 대해 설치된 라이센스입니다.</block>
+  <block id="5679d39cc8e25e0711af5b5bd3de1661" category="inline-link">ONTAP TSSE(온도에 민감한 스토리지 효율성)</block>
+  <block id="6567e2b7c35d280cea9f3ce8b354c3ae" category="list-text"><block ref="bf02a27a555eff9ad7fe3308b8b66545" category="inline-link-rx"></block>, 볼륨 암호화 및 외부 키 관리가 기본적으로 활성화됩니다.</block>
+  <block id="5858787d64dc0052d6813b6039e8ad5a" category="list-text">* 리소스 그룹 *: 기존 리소스 그룹을 사용하거나 새 리소스 그룹을 생성합니다. 리소스 그룹을 사용하면 디스크 및 스토리지 VM과 같은 모든 리소스를 Cloud Volumes ONTAP 인스턴스에 대해 단일 그룹 내에 할당할 수 있습니다.</block>
+  <block id="00185d9967c9ce9bd7de3a2330aea4ed" category="list-text">* 크기 *: 지원되는 프리미엄 SSD v2 관리 디스크에 대한 스토리지 VM 크기를 선택합니다.</block>
+  <block id="0573433fb185b84611f18e3f6e506cd2" category="paragraph">배포 진행 상황을 보려면 알림 아이콘을 선택합니다. Cloud Volumes ONTAP을 구축한 후 작업에 사용할 스토리지 VM을 확인할 수 있습니다.</block>
+  <block id="20a0bd63dc9b064c0cedc40d649eb29a" category="paragraph">ONTAP System Manager 또는 ONTAP CLI를 사용하여 설정한 관리자 자격 증명으로 스토리지 VM에 로그인합니다. 그런 다음 볼륨, LUN 또는 공유를 생성하고 Cloud Volumes ONTAP의 스토리지 기능을 활용할 수 있습니다.</block>
+  <block id="1c3093638c74eef35618192ff8049216" category="admonition">중국 지역의 경우 단일 노드 구축은 Cloud Volumes ONTAP 9.12.1 GA 및 9.13.0 GA에서만 지원됩니다. 이러한 버전을 최신 Cloud Volumes ONTAP 패치 및 릴리스로 업그레이드할 수 있습니다. 중국 지역에 최신 Cloud Volumes ONTAP 버전을 배포하려면 NetApp 지원에 문의하십시오. 중국 지역에서는 NetApp에서 직접 구매한 라이선스만 지원되며 마켓플레이스 가입은 사용할 수 없습니다.</block>
 </blocks>

@@ -24,7 +24,7 @@ AutoSupport은 능동적으로 시스템 상태를 모니터링하고 NetApp 기
 
 Cloud Volumes ONTAP 노드를 사용하려면 NetApp AutoSupport에 대한 아웃바운드 인터넷 액세스가 필요합니다. 사전 예방적으로 시스템의 상태를 모니터링하고 메시지를 NetApp 기술 지원으로 보냅니다.
 
-라우팅 및 방화벽 정책은 Cloud Volumes ONTAP가 AutoSupport 메시지를 보낼 수 있도록 다음 엔드포인트에 대한 HTTP/HTTPS 트래픽을 허용해야 합니다.
+라우팅 및 방화벽 정책은 Cloud Volumes ONTAP에서 AutoSupport 메시지를 보낼 수 있도록 다음 엔드포인트에 대한 HTTPS 트래픽을 허용해야 합니다.
 
 * https://support.netapp.com/aods/asupmessage 으로 문의하십시오
 * https://support.netapp.com/asupprod/post/1.0/postAsup 으로 문의하십시오

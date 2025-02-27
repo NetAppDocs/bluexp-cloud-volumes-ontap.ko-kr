@@ -16,7 +16,7 @@ summary: Azure 마켓플레이스에서 ONTAP 이미지를 내보내서 VHD 파�
 [role="lead"]
 VHD 이미지가 Azure 클라우드에 게시되면 NetApp에서 이미지를 더 이상 관리할 수 없습니다. 대신 게시된 이미지가 Azure 마켓플레이스에 배치됩니다. Azure가 최고 1MB로 변경되고 512B의 VHD가 종료되는 것은 이미지가 Azure 마켓플레이스에서 스테이징되고 게시될 때 발생합니다. VHD 파일의 서명을 확인하려면 Azure에서 수정한 VHD 이미지를 먼저 Azure 마켓플레이스에서 내보내야 합니다.
 
-.필요한 것
+.시작하기 전에
 시스템에 필요한 프로그램을 설치해야 합니다.
 
 * Azure CLI가 설치되어 있거나 Azure 포털을 통해 Azure Cloud Shell을 바로 사용할 수 있습니다.

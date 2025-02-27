@@ -73,7 +73,7 @@ sidebar:
     - title: Microsoft Azure에서 시작하십시오
       flavor: azure
       entries:
-      - title: 배포 옵션에 대해 자세히 알아봅니다
+      - title: Azure의 Cloud Volumes ONTAP 배포 옵션에 대해 알아보십시오
         url: "/concept-azure-mktplace-direct.html"
       - title: BlueXP 에서 시작하십시오
         entries:
@@ -112,9 +112,7 @@ sidebar:
           - title: 추가 정보
             url: "/reference-image-verification-links.html"
       - title: 시장에서 시작하십시오
-        entries:
-        - title: 시장에서 Cloud Volumes ONTAP 구축
-          url: "/task-deploy-cvo-azure-mktplc.html"
+        url: "/task-deploy-cvo-azure-mktplc.html"
     - title: Google Cloud에서 시작하십시오
       flavor: gcp
       entries:

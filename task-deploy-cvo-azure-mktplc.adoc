@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.16.1부터는 Azure 마켓플레이스 직접 구축을 사용하여 Azure 마켓플레이스에서 Cloud Volumes ONTAP을 빠르고 쉽게 배포하고 환경 내의 핵심 기능을 탐색할 수 있습니다.
+Cloud Volumes ONTAP 9.16.1부터는 Azure 마켓플레이스 직접 구축을 사용하여 Cloud Volumes ONTAP를 빠르고 쉽게 배포할 수 있습니다. Azure 마켓플레이스에서 몇 번의 클릭으로 Cloud Volumes ONTAP을 빠르게 배포하고 해당 환경에서 핵심 기능을 탐색할 수 있습니다.
 
 이 서비스에 대한 자세한 내용은 을 link:concept-azure-mktplace-direct.html["BlueXP  및 시장에서 Cloud Volumes ONTAP 오퍼링에 대해 자세히 알아보십시오"]참조하십시오.
 
@@ -23,12 +23,12 @@ Azure Marketplace 직접 배포를 사용하여 구축한 Cloud Volumes ONTAP �
 
 * 최신 Cloud Volumes ONTAP 버전(9.16.1 이상)
 * 프로비저닝된 용량이 500GiB로 제한된 Cloud Volumes ONTAP의 무료 라이센스입니다. 이 라이센스에는 NetApp 지원이 포함되어 있지 않으며 만료 날짜가 없습니다.
-* 단일 가용 영역(AZ)에서 고가용성(HA) 모드로 구성된 2개의 노드가 기본 일련 번호로 프로비저닝됩니다. 스토리지 가상 머신(SVM)은 에 link:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["유연한 오케스트레이션 모드"]구축됩니다.
+* 단일 가용 영역(AZ)에서 고가용성(HA) 모드로 구성된 2개의 노드가 기본 일련 번호로 프로비저닝됩니다. 스토리지 가상 머신(스토리지 VM)은 에 배포됩니다.link:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["유연한 오케스트레이션 모드"]
 * 기본적으로 생성되는 인스턴스의 Aggregate입니다.
 * 500GiB의 용량을 프로비저닝한 Premium SSD v2 Managed Disk, 루트 및 데이터 디스크 1개
-* NFS, CIFS, iSCSI, NVMe/TCP 데이터 서비스를 사용하여 단일 데이터 SVM을 구축했습니다. 추가 SVM을 위한 프로비저닝 없음.
-* NFS, CIFS(SMB), iSCSI, 안티 랜섬웨어(ARW), SnapLock 및 SnapMirror용 라이센스가 기본 일련 번호에 대해 설치되어 있습니다.
-* https://docs.netapp.com/us-en/ontap/volumes/enable-temperature-sensitive-efficiency-concept.html["ONTAP 온도에 민감한 스토리지 효율성(TSSE)"^], 볼륨 암호화 및 외부 키 관리가 기본적으로 활성화됩니다.
+* NFS, CIFS, iSCSI 및 NVMe/TCP 데이터 서비스를 갖춘 단일 데이터 스토리지 VM이 구축됩니다. 데이터 스토리지 VM을 추가할 수 없습니다.
+* NFS, CIFS(SMB), iSCSI, 안티 랜섬웨어(ARW), SnapLock 및 SnapMirror에 대해 설치된 라이센스입니다.
+* https://docs.netapp.com/us-en/ontap/volumes/enable-temperature-sensitive-efficiency-concept.html["ONTAP TSSE(온도에 민감한 스토리지 효율성)"^], 볼륨 암호화 및 외부 키 관리가 기본적으로 활성화됩니다.
 * 다음 기능은 지원되지 않습니다.
 +
 ** FabricPool 계층화
@@ -67,9 +67,9 @@ NOTE: 리소스 공급자 "microsoft.storage"를 구독에 등록한 경우에�
 . 기본 * 탭에서 다음 세부 정보를 제공합니다.
 +
 ** * 가입 * : 가입을 선택하세요. 배포는 구독 번호에 연결됩니다.
-** * 리소스 그룹 *: 기존 리소스 그룹을 사용하거나 새 리소스 그룹을 생성합니다. 리소스 그룹을 사용하면 디스크 및 SVM과 같은 모든 리소스를 단일 그룹 내에서 Cloud Volumes ONTAP 인스턴스에 할당할 수 있습니다.
+** * 리소스 그룹 *: 기존 리소스 그룹을 사용하거나 새 리소스 그룹을 생성합니다. 리소스 그룹을 사용하면 디스크 및 스토리지 VM과 같은 모든 리소스를 Cloud Volumes ONTAP 인스턴스에 대해 단일 그룹 내에 할당할 수 있습니다.
 ** * 지역 * : 단일 AZ에서 Azure HA 배포를 지원하는 지역을 선택합니다. 목록에 사용 가능한 지역만 표시됩니다.
-** * 크기 *: 지원되는 프리미엄 SSD v2 관리 디스크에 대한 SVM 크기를 선택합니다.
+** * 크기 *: 지원되는 프리미엄 SSD v2 관리 디스크에 대한 스토리지 VM 크기를 선택합니다.
 ** * 영역 *: 선택한 지역의 영역을 선택합니다.
 ** * 관리자 비밀번호 * : 비밀번호를 설정합니다. 배포 후 이 관리자 암호를 사용하여 시스템에 로그인합니다.
 ** * 암호 확인 *: 확인을 위해 동일한 암호를 다시 입력하십시오.
@@ -90,9 +90,9 @@ NOTE: Microsoft Azure 제한을 준수하려면 새 가상 네트워크를 설�
 
 
 .작업을 마친 후
-배포 진행 상황을 보려면 알림 아이콘을 선택합니다. Cloud Volumes ONTAP을 구축한 후 운영 목록에 나열된 SVM을 볼 수 있습니다.
+배포 진행 상황을 보려면 알림 아이콘을 선택합니다. Cloud Volumes ONTAP을 구축한 후 작업에 사용할 스토리지 VM을 확인할 수 있습니다.
 
-ONTAP System Manager 또는 ONTAP CLI를 사용하여 설정한 관리자 자격 증명으로 SVM에 로그인합니다. 그런 다음 볼륨, LUN 또는 공유를 생성하고 Cloud Volumes ONTAP의 스토리지 기능을 활용할 수 있습니다.
+ONTAP System Manager 또는 ONTAP CLI를 사용하여 설정한 관리자 자격 증명으로 스토리지 VM에 로그인합니다. 그런 다음 볼륨, LUN 또는 공유를 생성하고 Cloud Volumes ONTAP의 스토리지 기능을 활용할 수 있습니다.
 
 
 
