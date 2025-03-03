@@ -20,6 +20,18 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2025년 3월 3일
+
+
+
+=== 이제 Azure에서 뉴질랜드 북부 지역이 지원됩니다
+
+뉴질랜드 북부 지역은 이제 Cloud Volumes ONTAP 9.12.1 GA 이상의 단일 노드 및 고가용성(HA) 구성에 대해 Azure에서 지원됩니다. Lsv3 인스턴스 유형은 이 지역에서 지원되지 않습니다.
+
+지원되는 모든 지역 목록은 을 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure 아래의 글로벌 지역 지도"^] 참조하십시오.
+
+
+
 == 2025년 2월 18일
 
 
