@@ -3274,7 +3274,6 @@
   <block id="180565a7b528a090a7dccee0c22a5268" category="paragraph">BlueXP가 특정 작업의 일부로 Azure Private Link를 생성하지 못할 경우 Azure Private Link 연결이 없어도 작업이 완료됩니다. 이는 새 작업 환경(단일 노드 또는 HA 쌍)을 생성하거나 HA 쌍에서 다음 작업이 발생하는 경우, 즉 새 애그리게이트 생성, 기존 애그리게이트에 디스크 추가, 32TiB 이상으로 진행할 때 발생할 수 있습니다.</block>
   <block id="55921e17a2d40b7985abb89a85ec5001" category="paragraph">BlueXP에서 Azure Private Link를 생성하지 못할 경우 롤백을 활성화하여 이 기본 동작을 변경할 수 있습니다. 이를 통해 회사의 보안 규정을 완벽하게 준수할 수 있습니다.</block>
   <block id="3264a736059712e5a8f3a26421bbb400" category="paragraph">롤백을 활성화하면 BlueXP는 작업을 중지하고 작업의 일부로 생성된 모든 리소스를 롤백합니다.</block>
-  <block id="3a293828e70d21dff60d66d4ef2d6993" category="paragraph">이 페이지에 설명된 향상된 기능은 Cloud Volumes ONTAP 관리를 지원하는 BlueXP 기능에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어 자체의 새로운 기능에 대해 알아보려면<block ref="708e09e3f2783926556b9c6d77f63a27" category="inline-link-rx"></block></block>
   <block id="7a8757c8fbb4c1997c5641cf6e4a7489" category="paragraph">Cloud Volumes ONTAP 시스템에서 AutoSupport 메시지를 보낼 수 없는 경우 BlueXP에서 알림을 생성합니다. 이 알림에는 네트워킹 문제를 해결하는 데 사용할 수 있는 지침 링크가 포함되어 있습니다.</block>
   <block id="dd8fbb56db547f79b2c75bf3b4e493be" category="paragraph">이제 AutoSupport 메시지를 보낼 수 있는 아웃바운드 인터넷 연결을 사용할 수 없는 경우 BlueXP는 자동으로 커넥터를 프록시 서버로 사용하도록 Cloud Volumes ONTAP 시스템을 구성합니다.</block>
   <block id="d436efc1bf6c0b48388c41581e509eb2" category="paragraph">이제 BlueXP는 사용자 인터페이스에서 Cloud Volumes ONTAP 작업 환경을 생성할 때 Amazon EBS Elastic Volumes 기능을 지원합니다. GP3 또는 ios1 디스크를 사용하는 경우 Elastic Volumes 기능이 기본적으로 활성화됩니다. 스토리지 요구사항에 따라 초기 용량을 선택하고 Cloud Volumes ONTAP를 구축한 후 수정할 수 있습니다.</block>
@@ -4862,7 +4861,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="e03d271d662bcb0fab1d9537df279ef3" category="paragraph">이 지역 이름은 마켓플레이스 이미지의 URN을 설정할 때 "locName" 변수의 값으로 사용됩니다.</block>
   <block id="0bcd35ecf261a40cdfb4cbae00a11aa2" category="list-text">사용 가능한 지역 목록을 받으려면 를 입력합니다<block ref="84ed3d395e738381fb9826cd0e156c91" prefix=" " category="inline-code"></block> 명령.</block>
   <block id="30bf950af492b8ab681c83ec104628f7" category="paragraph">아래 표에서 지역 이름을 "이름" 필드라고 합니다.</block>
-  <block id="0abd8188de5678bc75e8b9d823375978" category="paragraph">SKU 이름은 마켓플레이스 이미지의 URN을 설정할 때 "skuName" 변수의 값으로 사용됩니다.</block>
   <block id="b2b27ade506086d79b3e7defdb321673" category="cell">ONTAP_CLOUD_BYOL</block>
   <block id="68593f3fae72dbec1b29acfd76c1aa17" category="cell">ONTAP_CLOUD_BYOL_ha</block>
   <block id="fc7898b425992521a2ae92bc34f6fa79" category="list-text">ONTAP 버전과 Azure 마켓플레이스 이미지가 매핑되면 Azure Cloud Shell 또는 Azure CLI를 통해 Azure 마켓플레이스의 VHD 파일을 내보냅니다.</block>
@@ -5052,7 +5050,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="e149ca9f0289610cb8ad6fd5b12512d8" category="admonition">고속 * 쓰기 속도 옵션을 통해 896바이트의 고속 쓰기 속도와 높은 최대 전송 단위(MTU)를 사용할 수 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오<block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>.</block>
   <block id="029f8920d36eb65c171c6c21ac843b04" category="list-text">Google Cloud 계정 추가에 대한 도움말은 을 <block ref="434f9c6247e5841006dab0119a511de9" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="ed5e0eaead7695971d375db73537aede" category="cell">Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. <block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block>자세한 내용은 를 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.</block>
-  <block id="0aa82496785892f71f52a3f25d7a1a11" category="paragraph">자세한 내용은 및 을 <block ref="449d1f3dba62fd34c10497ac720687ce" category="inline-link-macro-rx"></block> <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="0088f6e3d17619bb18cd5df63ad60315" category="list-text">볼륨에 할당량을 적용하려면 ONTAP System Manager 또는 ONTAP CLI를 사용하십시오.</block>
   <block id="f7aba8921828d41f8e11789ea644a8f1" category="admonition">고속 쓰기 속도와 896바이트의 최대 전송 단위(MTU)는 n2-standard-16, n2-standard-32, n2-standard-48 및 n2-standard-64 인스턴스 유형의 * 고속 * 쓰기 속도 옵션을 통해 사용할 수 있습니다. 또한, 8,896의 MTU가 높을수록 구축을 위해 VPC-1, VPC-2 및 VPC-3을 선택해야 합니다. 높은 쓰기 속도 및 8,896의 MTU는 기능에 따라 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다. VPC-1, VPC-2 및 VPC-3에 대한 자세한 내용은 을 참조하십시오<block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>.</block>
   <block id="0b53ba47db58ce07a5d3dfaac21a45f9" category="cell">Active Directory DNS를 사용하여 NTP 서버를 구성하려면 * Active Directory 도메인 사용 * 을 선택합니다. 다른 주소를 사용하여 NTP 서버를 구성해야 하는 경우 API를 사용해야 합니다. 자세한 내용은 을<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> 참조하십시오. CIFS 서버를 생성할 때만 NTP 서버를 구성할 수 있습니다. CIFS 서버를 생성한 후에는 구성할 수 없습니다.</block>
@@ -5246,11 +5243,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="180b275121e0f37251fecae975bf46df" category="list-text">중재자 인스턴스용 st1 EBS 볼륨 2개, 루트 디스크로 약 8GiB 중 하나, 데이터 디스크로 4GiB 중 하나</block>
   <block id="64b03175221d53e202f475eebaa91d75" category="list-text">각 노드에 하나의 140GiB GP3 디스크가 있으며, 다른 노드의 루트 데이터 복제본이 포함됩니다</block>
   <block id="8988458abbc31ee6cea74e936e77a27d" category="list-text">9.15.1 GA</block>
-  <block id="b7c282068681beff1a173d0b12dfaf26" category="paragraph">새 암호는 다음 규칙을 준수해야 합니다.</block>
-  <block id="d35bb0db0465412bf87fad3c0e029c98" category="list-text">사용자 이름은 포함할 수 없습니다</block>
-  <block id="dbc56fe1cd1e248fe5365bf788c671af" category="list-text">8자 이상이어야 합니다</block>
-  <block id="4737ee9042d4511943f8ea991bd211c5" category="list-text">하나 이상의 문자와 숫자를 포함해야 합니다</block>
-  <block id="3f00eb5ab0ade2cfadc9848704073f92" category="list-text">마지막 여섯 개의 암호와 같을 수 없습니다</block>
   <block id="120ae360daecd24b580b71f9f2766bbc" category="cell">9.15.1</block>
   <block id="af4dea59253c9d0600f1101e032482c5" category="section-title">Azure 기반 Flash Cache에 대한 최소 버전 지원</block>
   <block id="8fc1b74aa1cb89da788e1a3b937438ab" category="inline-link">BlueXP  조직 또는 계정과 연결된 NSS 자격 증명을 관리합니다</block>
@@ -5467,7 +5459,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="c1c1c782703499ca8577569137202bf1" category="list-text">아래 표에서 해당하는 Cloud Volumes ONTAP 버전 및 VM 배포 유형에 대한 SKU 이름을 검토하십시오.</block>
   <block id="90069a3873814503a767070f04f3c286" category="paragraph">예를 들어 Cloud Volumes ONTAP 9.15.0을 사용하는 모든 단일 노드 배포는 SKU 이름으로 사용해야<block ref="b2b27ade506086d79b3e7defdb321673" prefix=" " category="inline-code"></block> 합니다.</block>
   <block id="d811ca86e147e8cf2239ee377f1dcd50" category="cell">* Cloud Volumes ONTAP 버전 *</block>
-  <block id="a3a1c7f3820a8886078a2878a83c8362" category="cell">* VM 배포 유형 *</block>
   <block id="aadb6d991e4406b990f6fca8b4c83fd6" category="cell">* SKU 이름 *</block>
   <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">모든 배포는 BlueXP 를 통해 이루어집니다</block>
   <block id="273062411bc731be8028321277142365" category="cell">ONTAP_클라우드</block>
@@ -5657,7 +5648,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="d001c47858581c979ac478e49c9661c4" category="cell">* 온보딩 *</block>
   <block id="c0245bda3ab2426b357c2f1dbac18fe4" category="cell">직접 전개에 필요한 최소한의 준비로 더 짧고 쉽습니다</block>
   <block id="3629ee21db77809980881173196b6920" category="cell">BlueXP  커넥터 설치를 포함하여 온보딩 프로세스가 더 길어집니다</block>
-  <block id="79bd8865b968021aedfe3ebf1eea0e3b" category="cell">폭넓은 스토리지 VM 옵션: <block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
   <block id="ee998db55a5373c890946748cb8dafeb" category="cell">* 라이센스 *</block>
   <block id="2c99fb634374338e105960f8a1b01571" category="cell">무료 라이센스</block>
   <block id="e6e0b8e1dd9ccebda94836b190cc1c77" category="cell">용량 기반 라이센스 <block ref="4fd1dcab53132be8e410673d29b53538" category="inline-link-macro-rx"></block></block>
@@ -5801,12 +5791,10 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="3a02e985ca8f29995c51ae66b1b831f2" category="sidebar">BlueXP 에서 시작하십시오</block>
   <block id="124dec3164ac7246452cc1456ff82f96" category="sidebar">시장에서 시작하십시오</block>
   <block id="3afa4906e9f87a509c6412a260310879" category="sidebar">AWS에서 EC2 인스턴스 사용</block>
-  <block id="62c9277e75aee50ddfb792de79bd94d3" category="doc">이제 Azure에서 뉴질랜드 북부 지역이 지원됩니다</block>
   <block id="81ae8423a213b8c9bbcb79aee6ae0af8" category="paragraph">뉴질랜드 북부 지역은 이제 Cloud Volumes ONTAP 9.12.1 GA 이상의 단일 노드 및 고가용성(HA) 구성에 대해 Azure에서 지원됩니다. Lsv3 인스턴스 유형은 이 지역에서 지원되지 않습니다.</block>
   <block id="b717ddfb2f9a28b7e4673751144693cc" category="paragraph">지원되는 모든 지역 목록은 을<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block> 참조하십시오.</block>
   <block id="7c2f2acb2655a9e7f8ab7f69bbd0d731" category="paragraph">NetApp는 Azure 기반 Cloud Volumes ONTAP를 구축하기 위한 두 가지 옵션을 제공합니다. Cloud Volumes ONTAP는 일반적으로 배포 및 오케스트레이션에 BlueXP 을 사용합니다. Cloud Volumes ONTAP 9.16.1부터 Azure 마켓플레이스 직접 구축은 간소한 프로세스로, 제한적이면서도 강력한 Cloud Volumes ONTAP 기능 및 옵션에 액세스할 수 있습니다.</block>
   <block id="89191ae1b044d97b766a182a1727fae4" category="paragraph">Azure 마켓플레이스에서 직접 Cloud Volumes ONTAP을 배포하는 경우 BlueXP  커넥터를 설정하거나 BlueXP 를 통해 Cloud Volumes ONTAP를 배포하는 데 필요한 기타 보안 및 온보딩 기준을 충족할 필요가 없습니다. Azure 마켓플레이스에서 몇 번의 클릭으로 Cloud Volumes ONTAP을 빠르게 배포하고 해당 환경에서 핵심 기능을 탐색할 수 있습니다.</block>
-  <block id="73081e15ff5559e197b273ea471c9aeb" category="cell">* 지원되는 스토리지 가상 머신(스토리지 VM) 인스턴스 *</block>
   <block id="55f3f90910bdc78c8b57d6f9c6044843" category="cell">Edsv5 및 Lsv3</block>
   <block id="94302f254b4d602be77fb6e28556ecec" category="cell">* 지원되는 스토리지 VM 수 *</block>
   <block id="212ecc3006afeac1a27b275b3e8556b8" category="cell">배포당 1개</block>
@@ -5828,4 +5816,26 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="20a0bd63dc9b064c0cedc40d649eb29a" category="paragraph">ONTAP System Manager 또는 ONTAP CLI를 사용하여 설정한 관리자 자격 증명으로 스토리지 VM에 로그인합니다. 그런 다음 볼륨, LUN 또는 공유를 생성하고 Cloud Volumes ONTAP의 스토리지 기능을 활용할 수 있습니다.</block>
   <block id="1c3093638c74eef35618192ff8049216" category="admonition">중국 지역의 경우 단일 노드 구축은 Cloud Volumes ONTAP 9.12.1 GA 및 9.13.0 GA에서만 지원됩니다. 이러한 버전을 최신 Cloud Volumes ONTAP 패치 및 릴리스로 업그레이드할 수 있습니다. 중국 지역에 최신 Cloud Volumes ONTAP 버전을 배포하려면 NetApp 지원에 문의하십시오. 중국 지역에서는 NetApp에서 직접 구매한 라이선스만 지원되며 마켓플레이스 가입은 사용할 수 없습니다.</block>
   <block id="4fbdcdf3c2d8694d5e358b3175b867da" category="section-title">2025년 3월 3일</block>
+  <block id="e622e2ddfce6c06eca3078953e9e6186" category="doc">Azure에서 뉴질랜드 북부 지역 지원</block>
+  <block id="5781bb449b503c5fcaefb20bfaa81cc4" category="doc">Cloud Volumes ONTAP 9.16.1 GA</block>
+  <block id="efa5e5522cbd4457ef4e551fb5d60491" category="paragraph">이제 BlueXP 를 사용하여 Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.16.1 일반 가용성 릴리즈를 구축 및 관리할 수 있습니다. 그러나 이 버전은 AWS의 배포 및 업그레이드에 사용할 수 없습니다.</block>
+  <block id="df65d9be8ade62cf7505e34c307cecad" category="cell">* 지원되는 가상 머신(VM) 유형 *</block>
+  <block id="b13b643af58b125fac839de04760d5f0" category="cell">VM 유형의 전체 범위 <block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
+  <block id="97c2102867c5b54db1b773f42a540c16" category="list-text">9.16.1 GA</block>
+  <block id="70e23d6e402d67f6f86de0aa757d7bf0" category="paragraph">SKU 이름은 마켓플레이스 이미지의 URN을 설정할 때 "skuName" 변수의 값입니다.</block>
+  <block id="4692723666baa52294f46ef51ee4ec3f" category="cell">* VM 배포 방법 *</block>
+  <block id="95392acbc8522bf81166b3d44b333fca" category="cell">9.16.1 이상</block>
+  <block id="e6c4c5f3851cefbfb1da8daa3aff1fb0" category="cell">시장의 직접 배포 방법을 통해</block>
+  <block id="8c63a56c7facb0a50c8c629b8b10d627" category="cell">ONTAP_CLOUD_DIRECT 를 참조하십시오</block>
+  <block id="3c0acb220a6d083f589c0e9d2c4bb5b9" category="paragraph">암호는 몇 가지 규칙을 준수해야 합니다. 새 암호:</block>
+  <block id="c3b8a6ca2fd73fcdea07816d50da5780" category="list-text">단어를 포함해서는 안 됩니다<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block></block>
+  <block id="381979ed7a4bb72f3b0208ee434d237f" category="list-text">8자에서 50자 사이여야 합니다</block>
+  <block id="035cd612f5f182c28849afc511825894" category="list-text">영문자와 숫자를 하나 이상 포함해야 합니다</block>
+  <block id="823f5f4ed700cc35a2027d5df0c8706e" category="list-text">다음 특수 문자를 포함하지 않아야 합니다.<block ref="172ce81fb34a8026a9711811fececc33" prefix=" " category="inline-code"></block></block>
+  <block id="e574fef1a46f15b3c69233f51519d7cf" category="paragraph">자세한 내용은 <block ref="449d1f3dba62fd34c10497ac720687ce" category="inline-link-macro-rx"></block>, <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>및<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block> 을 참조하십시오</block>
+  <block id="401117ae72e5a93172e8ce8c23c7676d" category="cell">9.16.1(Azure 및 Google Cloud만 해당)</block>
+  <block id="c06b363f3dfd3ad2d628083406a0a1ac" category="paragraph">이 페이지에 설명된 향상된 기능은 Cloud Volumes ONTAP 관리를 지원하는 BlueXP 기능에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어의 새로운 기능에 대해<block ref="708e09e3f2783926556b9c6d77f63a27" category="inline-link-rx"></block> 알아봅니다.</block>
+  <block id="278edfabbac204688aa13f79c6f52497" category="section-title">2025년 3월 6일</block>
+  <block id="47d2a1d0b17f45434982fc698a98f5b6" category="paragraph"><block ref="7f8bbc744b255f0b452653dcd9455a80" category="inline-link-macro-rx"></block>..</block>
+  <block id="306a75aa4b30893090d1c91c8a8b3857" category="paragraph"><block ref="fd20bae6b6edab0a62ec432b47047149" category="inline-link-macro-rx"></block>..</block>
 </blocks>

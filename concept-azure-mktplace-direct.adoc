@@ -28,7 +28,7 @@ Azure 마켓플레이스에서 직접 Cloud Volumes ONTAP을 배포하는 경우
 | * 온보딩 * | 직접 전개에 필요한 최소한의 준비로 더 짧고 쉽습니다 | BlueXP  커넥터 설치를 포함하여 온보딩 프로세스가 더 길어집니다 
 
 
-| * 지원되는 스토리지 가상 머신(스토리지 VM) 인스턴스 * | Edsv5 및 Lsv3 | 폭넓은 스토리지 VM 옵션: https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure에서 지원되는 구성"^] 
+| * 지원되는 가상 머신(VM) 유형 * | Edsv5 및 Lsv3 | VM 유형의 전체 범위 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure에서 지원되는 구성"^] 
 
 
 | * 라이센스 * | 무료 라이센스 | 용량 기반 라이센스 link:concept-licensing.html["Cloud Volumes ONTAP 라이센스"] 

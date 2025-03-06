@@ -69,7 +69,7 @@ South Central US          southcentralus       (US) South Central US
 
 . 아래 표에서 해당하는 Cloud Volumes ONTAP 버전 및 VM 배포 유형에 대한 SKU 이름을 검토하십시오.
 +
-SKU 이름은 마켓플레이스 이미지의 URN을 설정할 때 "skuName" 변수의 값으로 사용됩니다.
+SKU 이름은 마켓플레이스 이미지의 URN을 설정할 때 "skuName" 변수의 값입니다.
 
 +
 예를 들어 Cloud Volumes ONTAP 9.15.0을 사용하는 모든 단일 노드 배포는 SKU 이름으로 사용해야 `ontap_cloud_byol` 합니다.
@@ -79,7 +79,13 @@ SKU 이름은 마켓플레이스 이미지의 URN을 설정할 때 "skuName" 변
 |===
 
 
-| * Cloud Volumes ONTAP 버전 * | * VM 배포 유형 * | * SKU 이름 * 
+| * Cloud Volumes ONTAP 버전 * | * VM 배포 방법 * | * SKU 이름 * 
+
+
+| 9.16.1 이상 | 시장의 직접 배포 방법을 통해 | ONTAP_CLOUD_DIRECT 를 참조하십시오 
+
+
+| 9.16.1 이상 | 모든 배포는 BlueXP 를 통해 이루어집니다 | ONTAP_클라우드 
 
 
 | 9.15.1 | 모든 배포는 BlueXP 를 통해 이루어집니다 | ONTAP_클라우드 

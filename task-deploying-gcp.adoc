@@ -259,7 +259,7 @@ image:screenshot_cot_vol.gif["스크린샷: Cloud Volumes ONTAP 인스턴스에 
 |===
 . * Usage Profile, Disk Type, Tiering Policy *: 스토리지 효율성 기능을 사용하도록 설정하고 필요한 경우 볼륨 계층화 정책을 변경할 것인지 선택합니다.
 +
-자세한 내용은 및 을 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["볼륨 사용 프로필을 선택합니다"^] link:concept-data-tiering.html["데이터 계층화 개요"^]참조하십시오.
+자세한 내용은 link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["볼륨 사용 프로필을 선택합니다"^], link:concept-data-tiering.html["데이터 계층화 개요"^]및 https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/What_Inline_Storage_Efficiency_features_are_supported_with_CVO#["KB: CVO에서 지원되는 인라인 스토리지 효율성 기능은 무엇입니까?"^] 을 참조하십시오
 
 . * 검토 및 승인 *: 선택 사항을 검토 및 확인합니다.
 +

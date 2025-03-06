@@ -16,7 +16,19 @@ summary: BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 �
 [role="lead"]
 BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보십시오.
 
-이 페이지에 설명된 향상된 기능은 Cloud Volumes ONTAP 관리를 지원하는 BlueXP 기능에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어 자체의 새로운 기능에 대해 알아보려면 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트 로 이동합니다"^]
+이 페이지에 설명된 향상된 기능은 Cloud Volumes ONTAP 관리를 지원하는 BlueXP 기능에만 적용됩니다. Cloud Volumes ONTAP 소프트웨어의 새로운 기능에 대해 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트 로 이동합니다"^] 알아봅니다.
+
+
+
+== 2025년 3월 6일
+
+
+
+=== Cloud Volumes ONTAP 9.16.1 GA
+
+이제 BlueXP 를 사용하여 Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.16.1 일반 가용성 릴리즈를 구축 및 관리할 수 있습니다. 그러나 이 버전은 AWS의 배포 및 업그레이드에 사용할 수 없습니다.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
 
 
 
@@ -24,7 +36,7 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
-=== 이제 Azure에서 뉴질랜드 북부 지역이 지원됩니다
+=== Azure에서 뉴질랜드 북부 지역 지원
 
 뉴질랜드 북부 지역은 이제 Cloud Volumes ONTAP 9.12.1 GA 이상의 단일 노드 및 고가용성(HA) 구성에 대해 Azure에서 지원됩니다. Lsv3 인스턴스 유형은 이 지역에서 지원되지 않습니다.
 
@@ -223,7 +235,7 @@ WORM(Write Once Read Many) 및 ARP(자율적 랜섬웨어 방어)의 내장 데�
 
 BlueXP는 이제 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.15.1 일반 가용성 릴리즈를 구축 및 관리할 수 있습니다.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^]..
 
 
 
@@ -259,7 +271,7 @@ Azure에서 Flash Cache를 구성하는 데 필요한 최소 Cloud Volumes ONTAP
 
 BlueXP는 이제 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.15.0을 구축 및 관리할 수 있습니다.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9150-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^]..
 
 
 
