@@ -4,7 +4,7 @@ permalink: reference-default-configs.html
 keywords: svm, LIF, LIFs, configuration backups, attributes, autosize, security style, space guarantee, unix permissions, NTFS, UNIX, boot, root, disks, aggr0, aggr1, svm, svms, storage virtual machine, LIF failover, failover, attributes, volume attributes, boot disk, root disk, licenses, feature licenses, default licenses, ontap licenses, ontap features 
 summary: Cloud Volumes ONTAP가 기본적으로 어떻게 구성되어 있는지 이해하면 시스템을 설정하고 관리하는 데 도움이 됩니다. 특히 ONTAP에 익숙한 경우 Cloud Volumes ONTAP의 기본 설정은 ONTAP와 다르기 때문입니다. 
 ---
-= Cloud Volumes ONTAP의 기본 구성입니다
+= Cloud Volumes ONTAP에 대해 지원되는 기본 구성입니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

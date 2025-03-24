@@ -4,7 +4,7 @@ permalink: task-sync-time.html
 keywords: set up, setting up, ntp, time, synch 
 summary: NTP 서버를 지정하면 네트워크 시스템 간의 시간이 동기화되어 시간 차이로 인한 문제를 방지할 수 있습니다. 
 ---
-= NTP를 사용하여 시스템 시간을 동기화합니다
+= NTP 서버를 사용하여 Cloud Volumes ONTAP 시스템 시간을 동기화합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

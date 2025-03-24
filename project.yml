@@ -50,7 +50,7 @@ sidebar:
         url: "/task-planning-your-config.html"
       - title: 네트워크 설정
         entries:
-        - title: 네트워킹 요구 사항
+        - title: AWS 네트워킹 설정
           url: "/reference-networking-aws.html"
         - title: AWS 전송 게이트웨이를 설정합니다
           url: "/task-setting-up-transit-gateway.html"
@@ -109,8 +109,6 @@ sidebar:
               url: "/task-file-verification-linux.html"
             - title: Mac OS 파일 서명 확인
               url: "/task-file-verification-mac.html"
-          - title: 추가 정보
-            url: "/reference-image-verification-links.html"
       - title: 시장에서 시작하십시오
         url: "/task-deploy-cvo-azure-mktplc.html"
     - title: Google Cloud에서 시작하십시오
@@ -178,13 +176,13 @@ sidebar:
       entries:
       - title: BlueXP에서 스토리지 VM과 작업합니다
         url: "/task-managing-svms.html"
-      - title: AWS에서 스토리지 VM을 생성합니다
+      - title: AWS에서 스토리지 VM 관리
         flavor: aws
         url: "/task-managing-svms-aws.html"
-      - title: Azure에서 스토리지 VM을 생성합니다
+      - title: Azure에서 스토리지 VM 관리
         flavor: azure
         url: "/task-managing-svms-azure.html"
-      - title: Google Cloud에서 스토리지 VM을 생성합니다
+      - title: Google Cloud에서 스토리지 VM을 관리합니다
         flavor: gcp
         url: "/task-managing-svms-gcp.html"
       - title: SVM 재해 복구 설정

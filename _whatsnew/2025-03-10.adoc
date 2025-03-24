@@ -1,0 +1,11 @@
+= Azure에서 API를 통해 스토리지 VM 생성 자동화
+:allow-uri-read: 
+
+
+
+
+=== Azure에서 API를 통해 스토리지 VM 생성 자동화
+
+이제 BlueXP  API를 사용하여 Azure에서 Cloud Volumes ONTAP용 추가 데이터 제공 스토리지 VM을 생성, 이름 변경 및 삭제할 수 있습니다. 이 API를 사용하면 관리에 스토리지 VM을 사용해야 하는 경우 필요한 네트워크 인터페이스, LIF, 관리 LIF의 구성을 비롯하여 스토리지 VM 생성 프로세스가 자동화됩니다.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["Azure에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 관리합니다"^]

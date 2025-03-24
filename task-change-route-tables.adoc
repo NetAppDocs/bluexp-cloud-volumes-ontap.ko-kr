@@ -4,7 +4,7 @@ permalink: task-change-route-tables.html
 keywords: route tables, update route tables, modify route tables, change route table 
 summary: 여러 AWS 가용성 영역에 구축된 HA 쌍의 부동 IP 주소에 대한 라우트가 포함된 AWS 경로 테이블을 수정할 수 있습니다. 새로운 NFS 또는 CIFS 클라이언트가 AWS의 HA 쌍에 액세스해야 하는 경우 이 작업을 수행할 수 있습니다. 
 ---
-= 여러 AZs에서 HA 쌍의 경로 테이블을 변경합니다
+= 여러 AWS AZ에서 Cloud Volumes ONTAP HA 쌍의 라우팅 테이블을 수정합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

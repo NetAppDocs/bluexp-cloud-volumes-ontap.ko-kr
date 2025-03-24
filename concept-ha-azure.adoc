@@ -4,7 +4,7 @@ permalink: concept-ha-azure.html
 keywords: high-availability, HA, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, recovery point objective, recovery time objective, nas, nfs, cifs, iscsi, mpio, alua, failover, failure, azure, shared storage, active, passive, load balancer, storage accounts, page blobs 
 summary: 'Cloud Volumes ONTAP 고가용성(HA) 2노드는 클라우드 환경에서 장애가 발생할 경우에도 엔터프라이즈급 안정성과 지속적인 운영을 제공합니다. Azure에서 스토리지는 두 노드 간에 공유됩니다.' 
 ---
-= Azure의 고가용성 쌍
+= Azure의 Cloud Volumes ONTAP HA Pair에 대해 알아보십시오
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

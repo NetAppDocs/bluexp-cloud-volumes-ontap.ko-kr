@@ -4,7 +4,7 @@ permalink: task-moving-resource-groups-azure.html
 keywords: move resource groups, azure, remove working environment, resource groups, azure console, Azure subscriptions 
 summary: Cloud Volumes ONTAP는 Azure 리소스 그룹 이동을 지원하지만 워크플로는 Azure 콘솔에서만 실행됩니다. 
 ---
-= 리소스 그룹 이동 중
+= Azure 콘솔에서 Cloud Volumes ONTAP의 Azure 리소스 그룹을 이동합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

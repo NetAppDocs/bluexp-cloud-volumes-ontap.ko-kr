@@ -4,7 +4,7 @@ permalink: task-aws-key-management.html
 keywords: aws, amazon, encryption, NVE, NetApp volume encryption, KMIP, kms, key manager service 
 summary: 타사 키 관리 서비스에 AWS의 키 관리 서비스를 활용할 수 있습니다. 
 ---
-= AWS 키 관리 서비스로 키를 관리합니다
+= AWS 키 관리 서비스를 사용하여 Cloud Volumes ONTAP 암호화 키 관리
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

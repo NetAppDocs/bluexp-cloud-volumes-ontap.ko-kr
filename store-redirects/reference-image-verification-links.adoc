@@ -1,0 +1,8 @@
+---
+permalink: reference-image-verification-links.html 
+redirect: bluexp-cloud-volumes-ontap/concept-azure-image-verification.html 
+---
+= 
+:allow-uri-read: 
+
+

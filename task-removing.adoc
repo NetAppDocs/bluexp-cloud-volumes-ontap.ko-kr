@@ -4,7 +4,7 @@ permalink: task-removing.html
 keywords: working environments, removing, remove, rediscover 
 summary: Cloud Volumes ONTAP 작업 환경을 제거하여 다른 시스템으로 이동하거나 검색 문제를 해결할 수 있습니다. 
 ---
-= Cloud Volumes ONTAP 작업 환경 제거
+= BlueXP 에서 Cloud Volumes ONTAP 작업 환경을 제거합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

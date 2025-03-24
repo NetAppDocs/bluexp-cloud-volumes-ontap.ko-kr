@@ -4,7 +4,7 @@ permalink: task-connect-lun.html
 keywords: lun, connect lun, iscsi lun, target iqn, iqn 
 summary: iSCSI 볼륨을 생성할 때 BlueXP에서 자동으로 LUN을 생성합니다. NetApp은 볼륨당 하나의 LUN만 생성하므로 관리가 필요하지 않습니다. 볼륨을 생성한 후 IQN을 사용하여 호스트에서 LUN에 연결합니다. 
 ---
-= LUN을 호스트에 연결합니다
+= 호스트 시스템에서 Cloud Volumes ONTAP의 LUN에 연결합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

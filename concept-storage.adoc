@@ -4,7 +4,7 @@ permalink: concept-storage.html
 keywords: storage, capacity, volumes, aggregates, raw capacity, usable capacity 
 summary: Cloud Volumes ONTAP에서 클라우드 스토리지를 사용하는 방법을 이해하면 스토리지 비용을 이해하는 데 도움이 됩니다. 
 ---
-= 디스크와 애그리게이트
+= Cloud Volumes ONTAP 클러스터에 사용되는 디스크 및 애그리게이트입니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -45,7 +45,7 @@ EBS 스토리지:: AWS에서는 aggregate에 동일한 크기의 디스크를 �
 --
 최대 디스크 크기는 16TiB입니다.
 
-기본 EBS 디스크 유형은 범용 SSD(GP3 또는 GP2), 프로비저닝된 IOPS SSD(i1) 또는 처리량 최적화 HDD(st1)일 수 있습니다. EBS 디스크를 Amazon S3와 에 페어링할 수 있습니다 link:concept-data-tiering.html["비활성 데이터를 저비용 오브젝트 스토리지로 계층화합니다"].
+기본 EBS 디스크 유형은 범용 SSD(GP3 또는 GP2), 프로비저닝된 IOPS SSD(i1) 또는 처리량 최적화 HDD(st1)일 수 있습니다. EBS 디스크를 Amazon S3와 페어링할 수 link:concept-data-tiering.html["경제적인 오브젝트 스토리지"]있습니다.
 
 
 NOTE: 처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오브젝트 스토리지에 계층화하지 않는 것이 좋습니다.
@@ -83,7 +83,7 @@ Azure에서는 aggregate가 동일한 크기의 디스크를 최대 12개까지 
 관리되는 각 디스크 유형의 최대 디스크 크기는 32TiB입니다.
 
 +
-Azure Blob 저장소와 관리되는 디스크를 에 페어링할 수 있습니다 link:concept-data-tiering.html["비활성 데이터를 저비용 오브젝트 스토리지로 계층화합니다"].
+관리형 디스크를 Azure Blob 스토리지와 페어링할 수 link:concept-data-tiering.html["경제적인 오브젝트 스토리지"]있습니다.
 
 
 
@@ -101,7 +101,7 @@ HA 쌍:: HA Pair는 저렴한 비용으로 I/O 집약적인 워크로드에 고�
 * 관련 링크 *
 
 * link:task-planning-your-config-azure.html["Azure에서 시스템의 디스크 유형 및 디스크 크기를 선택하는 방법에 대해 알아보십시오"]
-* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["Azure에서 Cloud Volumes ONTAP HA 쌍 시작"]
+* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["Azure에서 Cloud Volumes ONTAP HA 쌍을 시작합니다"]
 * https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Microsoft Azure 설명서: Azure 관리 디스크 유형"^]
 * https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Microsoft Azure 설명서: Azure 페이지 Blob의 개요"^]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Azure의 Cloud Volumes ONTAP에 대한 스토리지 제한을 검토합니다"^]
@@ -117,7 +117,7 @@ ifdef::gcp[]
 
 Google Cloud에서는 aggregate에 동일한 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 최대 디스크 크기는 64TiB입니다.
 
-디스크 유형은 _ Zonal SSD 영구 디스크 _, _ 균형 조정 영구 디스크 _ 또는 _ Zonal 표준 영구 디스크 _ 일 수 있습니다. 영구 디스크를 Google Storage 버킷과 에 페어링할 수 있습니다 link:concept-data-tiering.html["비활성 데이터를 저비용 오브젝트 스토리지로 계층화합니다"].
+디스크 유형은 _ Zonal SSD 영구 디스크 _, _ 균형 조정 영구 디스크 _ 또는 _ Zonal 표준 영구 디스크 _ 일 수 있습니다. 영구 디스크를 Google 스토리지 버킷과 페어링할 수 있습니다link:concept-data-tiering.html["경제적인 오브젝트 스토리지"].
 
 * 관련 링크 *
 

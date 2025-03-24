@@ -4,7 +4,7 @@ permalink: concept-performance.html
 keywords: performance, technical report, TR, workload, cpu 
 summary: 성능 결과를 검토하여 Cloud Volumes ONTAP에 적합한 워크로드를 결정할 수 있습니다. 
 ---
-= 성능
+= Cloud Volumes ONTAP 워크로드의 성능 모니터링에 대해 알아보십시오
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

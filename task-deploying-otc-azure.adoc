@@ -4,7 +4,7 @@ permalink: task-deploying-otc-azure.html
 keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, azure, BYOL, license key, serial number, tags, azure tags, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, HA pair, associate subscription, azure marketplace, marketplace subscription, cloud data sense, cloud backup 
 summary: BlueXP에서 Cloud Volumes ONTAP 작업 환경을 만들어 Azure에서 단일 Cloud Volumes ONTAP 시스템을 실행할 수 있습니다. 
 ---
-= Azure에서 Cloud Volumes ONTAP 실행
+= Azure에서 Cloud Volumes ONTAP를 실행합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -49,7 +49,7 @@ BlueXP는 Azure에서 Cloud Volumes ONTAP 시스템을 생성할 때 리소스 �
 ====
 
 
-== Azure에서 단일 노드 Cloud Volumes ONTAP 시스템 시작
+== Azure에서 단일 노드 Cloud Volumes ONTAP 시스템을 시작합니다
 
 Azure에서 단일 노드 Cloud Volumes ONTAP 시스템을 실행하려면 BlueXP에서 단일 노드 작업 환경을 만들어야 합니다.
 
@@ -276,7 +276,7 @@ Cloud Volumes ONTAP 시스템을 배포하는 데 문제가 있으면 오류 메
 
 
 
-== Azure에서 Cloud Volumes ONTAP HA 쌍 시작
+== Azure에서 Cloud Volumes ONTAP HA 쌍을 시작합니다
 
 Azure에서 Cloud Volumes ONTAP HA 쌍을 실행하려면 BlueXP에서 HA 작업 환경을 만들어야 합니다.
 

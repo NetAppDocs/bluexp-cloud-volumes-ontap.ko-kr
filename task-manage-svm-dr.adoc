@@ -4,7 +4,7 @@ permalink: task-manage-svm-dr.html
 keywords: storage virtual machine, vserver, svm, storage vm, svm dr, disaster recovery, svm disaster recovery, storage vm dr 
 summary: BlueXP는 스토리지 VM 재해 복구에 대한 설정 또는 조정 지원을 제공하지 않습니다. System Manager 또는 CLI를 사용해야 합니다. 
 ---
-= SVM 재해 복구 설정
+= Cloud Volumes ONTAP용 스토리지 VM 재해 복구 설정
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

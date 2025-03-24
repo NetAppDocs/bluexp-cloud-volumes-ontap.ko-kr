@@ -4,7 +4,7 @@ permalink: reference-networking-azure.html
 keywords: networking, network, requirements, connection, connections, vnet, security group, security groups, subnet, vpn, internet, proxy, HTTP, private, proxy server, routing, firewall, autosupport, connection, jump host, outbound, ports, blob, service endpoint 
 summary: Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Azure 네트워킹을 설정합니다. 
 ---
-= Azure의 Cloud Volumes ONTAP에 대한 네트워킹 요구사항
+= Cloud Volumes ONTAP에 Azure 네트워킹을 설정한다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

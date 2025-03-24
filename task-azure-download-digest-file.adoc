@@ -4,7 +4,7 @@ permalink: task-azure-download-digest-file.html
 keywords: Azure, image, image signature, download, digest file, decompress, Linux, Mac OS, md5, sha256 
 summary: NetApp Support 사이트에서 Azure 이미지 다이제스트 파일을 다운로드할 수 있습니다. 
 ---
-= Azure Image Digest 파일을 다운로드합니다
+= Cloud Volumes ONTAP용 Azure 마켓플레이스 이미지 다이제스트를 다운로드하십시오
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

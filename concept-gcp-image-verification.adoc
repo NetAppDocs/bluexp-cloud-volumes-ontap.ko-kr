@@ -4,7 +4,7 @@ permalink: concept-gcp-image-verification.html
 keywords: Google Cloud, image, VHD, image signature file, 
 summary: Google Cloud 이미지 파일 서명 파일을 확인합니다. 
 ---
-= Google Cloud 이미지 검증 개요
+= Cloud Volumes ONTAP에서 Google Cloud 이미지가 어떻게 검증되었는지 알아보십시오
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

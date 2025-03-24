@@ -4,7 +4,7 @@ permalink: task-create-aggregates.html
 keywords: storage, provisioning, aggregates, provision, create, advanced allocation, creating aggregates, adding an aggregate, add an aggregate, create an aggregate 
 summary: 볼륨을 생성할 때 직접 애그리게이트를 생성하거나 BlueXP에서 자동으로 집계하도록 할 수 있습니다. 애그리게이트를 직접 생성할 때의 이점은 기본 디스크 크기를 선택할 수 있다는 것입니다. 이를 통해 필요한 용량 또는 성능에 맞게 애그리게이트를 크기를 조정할 수 있습니다. 
 ---
-= 애그리게이트 생성
+= Cloud Volumes ONTAP 시스템에 대한 Aggregate를 생성합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

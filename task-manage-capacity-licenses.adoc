@@ -4,7 +4,7 @@ permalink: task-manage-capacity-licenses.html
 keywords: license, licensing, capacity license, capacity based license, add license, install license, digital wallet 
 summary: BlueXP 디지털 지갑에서 용량 기반 라이센스를 관리하여 NetApp 계정의 Cloud Volumes ONTAP 시스템 용량이 충분한지 확인합니다. 
 ---
-= 용량 기반 라이센스 관리
+= Cloud Volumes ONTAP의 용량 기반 라이센스를 관리합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

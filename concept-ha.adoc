@@ -4,7 +4,7 @@ permalink: concept-ha.html
 keywords: high availability, HA, mediator, concepts, understanding, overview, availability zones, AZs, takeover, giveback, rpo, rto, floating ip, nondisruptive, ha pairs, node, nodes, synchronous, resync, recovery point objective, recovery time objective, nas, nfs, cifs, floating ip address, route tables, iscsi, mpio, alua, failover, mount, remount, failure, data access, access, ip address, performance 
 summary: 'Cloud Volumes ONTAP HA(고가용성) 구성은 무중단 운영과 내결함성을 제공합니다. AWS에서는 데이터가 두 노드 간에 동기식으로 미러링됩니다.' 
 ---
-= AWS의 고가용성 쌍
+= AWS의 Cloud Volumes ONTAP HA Pair에 대해 알아보십시오
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

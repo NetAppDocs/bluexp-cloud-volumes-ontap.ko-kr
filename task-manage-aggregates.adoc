@@ -4,7 +4,7 @@ permalink: task-manage-aggregates.html
 keywords: aggregates, delete aggregates, add disks, view aggregates 
 summary: 디스크를 추가하고, 애그리게이트에 대한 정보를 확인하고, 삭제하여 애그리게이트를 직접 관리하십시오. 
 ---
-= 애그리게이트 관리
+= Cloud Volumes ONTAP 클러스터의 애그리게이트를 관리합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

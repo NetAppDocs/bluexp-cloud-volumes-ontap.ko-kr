@@ -17,6 +17,6 @@ WORM(Write Once Read Many) 및 ARP(자율적 랜섬웨어 방어)의 내장 데�
 
 다음 기능에 대한 자세한 정보:
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["랜섬웨어에 대한 보호 개선"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["Cloud Volumes ONTAP용 NetApp 랜섬웨어 방지 솔루션을 살펴보십시오"]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM 스토리지"]
 

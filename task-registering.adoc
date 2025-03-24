@@ -4,7 +4,7 @@ permalink: task-registering.html
 keywords: Cloud Volumes ONTAP, register, registering, paygo, pay-as-you-go, registration, instance id, serial number, account id, support 
 summary: NetApp의 지원은 Cloud Volumes ONTAP PAYGO 시스템에 포함되어 있지만 먼저 NetApp에 시스템을 등록하여 지원을 활성화해야 합니다. 
 ---
-= 선불 종량제 시스템을 등록하는 중입니다
+= Cloud Volumes ONTAP 용량제 시스템을 등록합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

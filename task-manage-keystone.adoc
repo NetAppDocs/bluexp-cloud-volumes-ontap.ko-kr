@@ -4,7 +4,7 @@ permalink: task-manage-keystone.html
 keywords: license, licensing, install, keystone, request capacity, link subscription, add keystone subscription, keystone subscription, digital wallet, keystone flex 
 summary: Cloud Volumes ONTAP에서 사용할 구독을 설정하고 구독의 서비스 수준에 대해 약정 용량의 변경을 요청하여 BlueXP 디지털 지갑에서 Keystone 구독을 관리합니다. 서비스 수준에 대한 추가 용량을 요청하면 온프레미스 ONTAP 클러스터 또는 Cloud Volumes ONTAP 시스템에 대한 더 많은 스토리지를 확보할 수 있습니다. 
 ---
-= Keystone 가입 관리
+= BlueXP 를 통해 Keystone 구독 관리
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

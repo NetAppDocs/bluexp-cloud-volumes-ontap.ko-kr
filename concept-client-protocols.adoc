@@ -4,7 +4,7 @@ permalink: concept-client-protocols.html
 keywords: client protocols, client version, smb version, nfs version, protocol versions, s3, smb, nfs, iscsi, cifs 
 summary: Cloud Volumes ONTAP는 iSCSI, NFS, SMB, NVMe-TCP 및 S3 클라이언트 프로토콜을 지원합니다. 
 ---
-= 클라이언트 프로토콜
+= Cloud Volumes ONTAP에 대해 지원되는 클라이언트 프로토콜
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

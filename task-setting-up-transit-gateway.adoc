@@ -4,7 +4,7 @@ permalink: task-setting-up-transit-gateway.html
 keywords: transit gateway, aws, amazon web services, transit gateway, floating ip, client access, nas, outside, vpc, virtual private cloud, route table 
 summary: Cloud Volumes ONTAP가 상주하는 VPC 외부에서 NAS 클라이언트가 부동 IP 주소에 액세스할 수 있도록 AWS 전송 게이트웨이를 설정합니다. 이는 장애가 발생할 경우 유동 IP가 노드 간에 자동으로 마이그레이션되기 때문에 유용합니다. 
 ---
-= 여러 AZs에서 HA 쌍에 대한 AWS 전송 게이트웨이 설정
+= Cloud Volumes ONTAP HA 쌍을 위한 AWS 전송 게이트웨이 설정
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

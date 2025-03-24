@@ -4,7 +4,7 @@ permalink: reference-networking-aws.html
 keywords: networking, network, requirements, connection, connections, vpc, security group, security groups, subnets, vpn, internet, nat, s3, dns, ad, active directory, az, availability zone, floating IP, floating, SVM, management LIF, route, route tables, proxy, HTTP, private, tier, s3 endpoint, tiering, storage tier, storage tiering, proxy server, nat device, vpn, snapmanager, snapcenter, iscsi, nfs, cifs, nas, san, outbound, inbound, connections, autosupport, ha, ha pair, high availability 
 summary: BlueXP는 IP 주소, 넷마스크 및 라우트와 같은 Cloud Volumes ONTAP용 네트워킹 구성 요소 설정을 처리합니다. 아웃바운드 인터넷 액세스를 사용할 수 있는지, 충분한 전용 IP 주소를 사용할 수 있는지, 올바른 연결이 있는지 등을 확인해야 합니다. 
 ---
-= AWS의 Cloud Volumes ONTAP에 대한 네트워킹 요구사항
+= Cloud Volumes ONTAP에 대한 AWS 네트워킹을 설정한다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,7 +20,7 @@ BlueXP는 IP 주소, 넷마스크 및 라우트와 같은 Cloud Volumes ONTAP용
 
 == 일반 요구 사항
 
-AWS에서 다음 요구사항을 충족해야 합니다.
+AWS에서 다음 요구사항을 충족하는지 확인하십시오.
 
 
 

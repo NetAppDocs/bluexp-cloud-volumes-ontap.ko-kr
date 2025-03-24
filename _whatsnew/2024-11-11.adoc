@@ -10,7 +10,7 @@ NetApp은 Cloud Volumes ONTAP 노드 기반 라이센스의 공급 중지(EOA)�
 
 연간 또는 장기 약정의 경우, NetApp은 EOA 날짜 또는 라이센스 만료일 전에 NetApp 담당자에게 연락하여 전환을 위한 사전 요구사항이 충족되는지 확인하는 것이 좋습니다. Cloud Volumes ONTAP 노드에 대한 장기 계약이 없는 상태에서 PAYGO(On-Demand Pay-as-you-Go) 서브스크립션에 대해 시스템을 실행하는 경우 EOS 날짜 전에 전환을 계획해야 합니다. 장기 계약 및 PAYGO 서브스크립션의 경우 BlueXP  라이선스 변환 도구를 사용하여 원활한 전환을 수행할 수 있습니다.
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["노드 기반 라이센스의 공급 중지"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["노드 기반 라이센스를 용량 기반으로 변환"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["노드 기반 라이센스의 공급 중지"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["Cloud Volumes ONTAP 노드 기반 라이센스를 용량 기반 라이센스로 변환합니다"^]
 
 
 

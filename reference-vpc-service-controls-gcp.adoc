@@ -4,7 +4,7 @@ permalink: reference-vpc-service-controls-gcp.html
 keywords: vpc, service controls, vpc-sc, google, psc, private service connect 
 summary: VPC 서비스 컨트롤로 Google 환경을 잠글 때 BlueXP 및 Cloud Volumes ONTAP가 Google API와 상호 작용하는 방식과 BlueXP 및 Cloud Volumes ONTAP를 배포하기 위해 서비스 매개 변수를 구성하는 방법을 이해해야 합니다. 
 ---
-= Google Cloud에서 VPC 서비스 제어 계획
+= Google Cloud에 Cloud Volumes ONTAP을 구축하기 위한 VPC 서비스 제어를 설정합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

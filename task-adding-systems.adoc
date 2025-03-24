@@ -4,7 +4,7 @@ permalink: task-adding-systems.html
 keywords: discover, discovering, add, adding, existing 
 summary: 기존 Cloud Volumes ONTAP 시스템을 검색하고 BlueXP에 추가할 수 있습니다. 새 BlueXP 시스템을 배포한 경우 이 작업을 수행할 수 있습니다. 
 ---
-= 기존 Cloud Volumes ONTAP 시스템을 BlueXP에 추가
+= 기존 Cloud Volumes ONTAP 시스템을 BlueXP 에 추가합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

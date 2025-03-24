@@ -4,7 +4,7 @@ permalink: task-google-key-manager.html
 keywords: google cloud, encryption, NVE, NetApp volume encryption, KMIP, GCP, GCP KMS, key manager service, encryption 
 summary: 타사 키 관리 서비스를 위해 Google의 키 관리 서비스를 활용합니다. 
 ---
-= Google의 클라우드 키 관리 서비스로 키를 관리합니다
+= Google Cloud KMS를 사용하여 Cloud Volumes ONTAP 암호화 키를 관리합니다
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 타사 키 관리 서비스를 위해 Google의 키 관리 서비스를
 
 
 [role="lead"]
-을 사용할 수 있습니다 link:https://cloud.google.com/kms/docs["Google Cloud Platform의 키 관리 서비스(Cloud KMS)"^] Google Cloud Platform에서 구축한 응용 프로그램에서 ONTAP 암호화 키를 보호합니다.
+를 사용하면 Google Cloud Platform에 구축된 애플리케이션에서 Cloud Volumes ONTAP 암호화 키를 보호할 수 link:https://cloud.google.com/kms/docs["Google Cloud Platform의 키 관리 서비스(Cloud KMS)"^]있습니다.
 
 클라우드 KMS를 이용한 키 관리 기능은 ONTAP CLI 또는 ONTAP REST API를 사용하여 활성화할 수 있습니다.
 

@@ -4,7 +4,7 @@ permalink: concept-azure-image-verification.html
 keywords: Azure, image, VHD, image signature file, 
 summary: Azure VHD 이미지 파일 서명 파일을 확인합니다. 
 ---
-= Azure 이미지 검증 개요
+= Cloud Volumes ONTAP에 대한 Azure 마켓플레이스 이미지 검증
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -28,3 +28,13 @@ Azure에서 앞 1MB(1048576바이트)와 끝 512바이트의 VHD 파일을 수�
 image:screenshot_azure_vhd_10gb.png["Azure의 10GB VHD 파일 변형을 보여 주는 이미지입니다"]
 
 위의 다이어그램은 10GB의 VHD 파일을 보여 줍니다. 그러나 NetApp 서명 부분은 10GB-1MB-512B 크기로 녹색으로 표시됩니다.
+
+.관련 링크
+* https://pagefault.blog/2019/04/22/how-to-sign-and-verify-using-openssl/["페이지 오류 블로그 : 어떻게 서명하고 OpenSSL을 사용하여 확인"^]
+* https://docs.microsoft.com/en-us/azure/databox-online/azure-stack-edge-gpu-create-virtual-machine-marketplace-image["Azure Marketplace 이미지를 사용하여 Azure Stack Edge Pro GPU | Microsoft Learn용 VM 이미지를 만드십시오"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/scripts/copy-managed-disks-vhd-to-storage-account["Azure CLI | Microsoft Learn 을 사용하여 관리되는 디스크를 저장소 계정으로 내보내기/복사합니다"^]
+* https://learn.microsoft.com/en-us/azure/cloud-shell/quickstart["Azure Cloud Shell Quickstart - Bash | Microsoft Learn"^]
+* https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Azure CLI 설치 방법 | Microsoft 알아보기"^]
+* https://learn.microsoft.com/en-us/cli/azure/storage/blob/copy?view=azure-cli-latest#az-storage-blob-copy-start["AZ 저장 blob 사본 | Microsoft learn"^]
+* https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli["Azure CLI로 로그인 - 로그인 및 인증 | Microsoft Learn 을 참조하십시오"^]
+

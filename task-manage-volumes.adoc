@@ -4,7 +4,7 @@ permalink: task-manage-volumes.html
 keywords: volumes, managing, cloning, editing, CIFS server, edit, flexclone, snapshot copy, restore, mount, delete, cifs setup, DNS, active directory, AD, domain, NetBIOS, identify, move, capacity, action required, clone, snapshot copies, restoring, vol move, volume move, move a volume, volume move slow, volume move performance 
 summary: BlueXP를 사용하면 볼륨 및 CIFS 서버를 관리할 수 있습니다. 또한 용량 문제를 방지하기 위해 볼륨을 이동하라는 메시지가 표시됩니다. 
 ---
-= 기존 볼륨 관리
+= Cloud Volumes ONTAP 시스템에서 볼륨을 관리합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

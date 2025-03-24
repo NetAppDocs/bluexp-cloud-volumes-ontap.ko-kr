@@ -4,7 +4,7 @@ permalink: task-accelerate-data-access.html
 keywords: flexcache, flexcache volumes, create a flexcache volume, provision flexcache, create flexcache volume 
 summary: FlexCache 볼륨은 원본 또는 소스 볼륨에서 NFS 읽기 데이터를 캐싱하는 스토리지 볼륨입니다. 이후에 캐싱된 데이터를 읽으면 해당 데이터에 더 빠르게 액세스할 수 있습니다. 
 ---
-= FlexCache 볼륨을 사용하여 데이터 액세스 가속화
+= Cloud Volumes ONTAP 시스템에서 FlexCache 볼륨을 사용하여 데이터 액세스 가속화
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

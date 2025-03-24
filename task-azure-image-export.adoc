@@ -4,7 +4,7 @@ permalink: task-azure-image-export.html
 keywords: Azure, image, VHD, image signature file, export, marketplace, 
 summary: Azure 마켓플레이스에서 ONTAP 이미지를 내보내서 VHD 파일의 서명을 확인할 수 있습니다. 
 ---
-= Azure Marketplace에서 이미지 내보내기
+= Azure 마켓플레이스에서 Cloud Volumes ONTAP용 VHD 이미지를 내보냅니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
