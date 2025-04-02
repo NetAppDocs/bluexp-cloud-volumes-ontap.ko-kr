@@ -5360,11 +5360,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="7fc21546461474a1cc543852dc120330" category="paragraph">Cloud Volumes ONTAP 인스턴스를 시작하는 데 문제가 있는 경우 오류 메시지를 검토합니다. 작업 환경을 선택하고 환경 다시 생성 을 클릭할 수도 있습니다.</block>
   <block id="d036b4a2aa80729ab508e1851458f506" category="cell">이 Cloud Volumes ONTAP 시스템에서 사용할 AWS 자격 증명과 마켓플레이스 구독을 선택하십시오. 선택한 자격 증명을 새 AWS Marketplace 구독에 연결하려면 * Add Subscription * 을 클릭합니다. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다. NetApp(BYOL(Bring Your Own License))에서 직접 라이센스를 구매한 경우에는 AWS 구독이 필요하지 않습니다. <block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>..</block>
   <block id="fc687f57dc8188e5dad217858c078354" category="section-title">Cloud Volumes ONTAP에서 키 회전</block>
-  <block id="c8f70aa37f5c88b6da2024d42bae9616" category="paragraph">새 버전의 키를 만들면 Cloud Volumes ONTAP에서 자동으로 최신 키 버전을 사용하므로 수동으로 업데이트할 필요 없이 데이터를 안전하게 보호할 수 있습니다.</block>
-  <block id="7463254e31b93d5b76992c84139a17de" category="list-text">Azure 포털에서 키 저장소로 이동합니다.</block>
-  <block id="d6cff41b1c8a33920bc46aba04b89485" category="list-text">회전하려는 키를 선택합니다.</block>
-  <block id="38b4782700181268adc6819ae7534a0f" category="list-text">새 버전의 키를 생성하려면 * 새 버전 * 을 클릭합니다.</block>
-  <block id="d35d0e531d2de4587a8bd21e51823f97" category="paragraph">새 버전이 생성되면 Cloud Volumes ONTAP는 자동으로 최신 버전의 키를 검색하여 암호화에 사용합니다.</block>
   <block id="d2a95dd3692cce58be8541add2bc6897" category="paragraph">대부분의 구성은 지원됩니다. 최신 버전을 실행하는 Cloud Volumes ONTAP 시스템이 있는 경우 사용하는 것이 좋습니다. <block ref="f2e6a88e181ee9519c72412b23fc6e17" category="inline-link-macro-rx"></block>..</block>
   <block id="1a59c4cde0b6364677026791f943ea0f" category="paragraph">데이터 계층화는 애그리게이트에서 활성화해야 볼륨에서 사용할 수 있습니다. 새 볼륨 및 기존 볼륨에 대한 요구사항을 알고 있어야 합니다. <block ref="7beee552935977f4dc8f9885d22b65a0" category="inline-xref-macro-rx"></block>..</block>
   <block id="c64796eb83e1bb434daed77e0937d1b4" category="paragraph">BlueXP 에서는 시스템을 생성할 때 콜드 데이터에 대한 오브젝트 저장소를 <block ref="dbb78a2cc39acf14e084217f8235322a" category="inline-xref-macro-rx"></block>생성합니다. 그 이후에는 볼륨(및 경우에 따라<block ref="7f499208f2ff911432bf2cd70bde52dd" category="inline-xref-macro-rx"></block>)에서 데이터 계층화를 활성화해야 합니다.</block>
@@ -5802,4 +5797,17 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="7533d0f4870d29edf1d705a15d4f71e3" category="sidebar">AWS에서 스토리지 VM 관리</block>
   <block id="db5cf7834d39ce63219e28d402aeb9c2" category="sidebar">Azure에서 스토리지 VM 관리</block>
   <block id="137413da40700294b3660243904ade25" category="sidebar">Google Cloud에서 스토리지 VM을 관리합니다</block>
+  <block id="5920daf334ecef8057dd1e1d15f6124e" category="doc">Cloud Volumes ONTAP 9.14.1에 대해 활성화된 개인 모드 배포</block>
+  <block id="f2035db09bb2be2db0508915fa584149" category="paragraph">이제 AWS, Azure 및 Google Cloud의 프라이빗 모드로 Cloud Volumes ONTAP 9.14.1을 구축할 수 있습니다. 프라이빗 모드는 Cloud Volumes ONTAP 9.14.1의 단일 노드 및 고가용성(HA) 구축에 모두 사용할 수 있습니다.</block>
+  <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">BlueXP 배포 모드에 대해 알아보십시오</block>
+  <block id="dc748283e7593515df9e8f2759a85349" category="paragraph">개인 모드 배포에 대한 자세한 내용은 을 <block ref="312f421b6dd5cf62286ecf6a82a8132e" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="210dc676779eae6698e4064fd965bda8" category="paragraph">Azure 포털에서 암호화 키를 구성해야 합니다. 키 구성 및 키 순환 설정에 대한 자세한 내용은 다음 Microsoft Azure 설명서 항목을 참조하십시오.</block>
+  <block id="348c2304e1a6efb529d00b9bacd96a8e" category="inline-link">Azure Key Vault에서 암호화 키 자동 회전을 구성합니다</block>
+  <block id="f4d57411fbf6c0075178b1e3767b496e" category="list-text"><block ref="f4d57411fbf6c0075178b1e3767b496e" category="inline-link-rx"></block></block>
+  <block id="881f8c1da4935c7dbe1f6d696a16cd9c" category="inline-link">Azure PowerShell - 고객 관리 키를 사용합니다</block>
+  <block id="4a9f4b73b48b26dea345a1977b58dd51" category="list-text"><block ref="4a9f4b73b48b26dea345a1977b58dd51" category="inline-link-rx"></block></block>
+  <block id="a15076d8f5fd9af7af6dec9ab282588e" category="inline-link">Azure 포털에서 키 회전을 활성화했습니다</block>
+  <block id="71b5648e677d1a5ebf3d343f3c10eb54" category="admonition">키를 구성한 후 Cloud Volumes ONTAP에서 새 키를 사용할 수 있도록 키를 구성했는지<block ref="7b90d7bac505d4641bd5cd9a13a09c6c" category="inline-link-rx"></block> 확인합니다.</block>
+  <block id="5b41754d54a59a01d58e45b59544d3a6" category="paragraph">새 버전의 키를 만들고 사용할 때 Cloud Volumes ONTAP는 자동으로 최신 버전의 암호화를 검색하여 사용하므로 수동으로 업데이트할 필요 없이 데이터를 안전하게 보호할 수 있습니다.</block>
+  <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025년 3월 28일</block>
 </blocks>
