@@ -40,7 +40,14 @@ Google Cloud에서 다음 요구사항을 충족해야 합니다.
 
 ==== 전용 IP 주소
 
-BlueXP는 Google Cloud의 단일 노드 시스템에 3개 또는 4개의 사설 IP 주소를 할당합니다.
+Google Cloud의 단일 노드 시스템의 경우 BlueXP 는 다음에 프라이빗 IP 주소를 할당합니다.
+
+* 노드
+* 클러스터
+* 스토리지 VM
+* 도입한 기업이 되었습니다
+* 고려해야 합니다
+
 
 API를 사용하여 Cloud Volumes ONTAP를 구축하고 다음 플래그를 지정한 경우 SVM(스토리지 VM) 관리 LIF의 생성을 건너뛸 수 있습니다.
 

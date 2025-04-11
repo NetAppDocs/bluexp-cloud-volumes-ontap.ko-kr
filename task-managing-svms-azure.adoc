@@ -26,9 +26,6 @@ Cloud Volumes ONTAP 9.9.0부터 라이센스에 따라 특정 구성으로 여�
 
 9.9.0 이전의 모든 Cloud Volumes ONTAP 버전은 하나의 데이터 서비스 스토리지 VM과 하나의 대상 스토리지 VM을 재해 복구에 사용합니다. 소스 스토리지 VM에 중단이 발생할 경우 데이터 액세스를 위해 대상 스토리지 VM을 활성화할 수 있습니다.
 
-.시작하기 전에
-Cloud Volumes ONTAP용 스토리지 VM을 생성하고 관리하려면 Connector에 특정 권한이 필요합니다. 필요한 권한은 에 포함되어 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["NetApp에서 제공하는 정책"^] 있습니다.
-
 
 
 == 스토리지 VM을 생성합니다
@@ -45,6 +42,9 @@ API를 사용하여 스토리지 VM을 생성하고 필요한 네트워크 인�
 * `management-nis-client`
 
 
+.시작하기 전에
+Connector에서 Cloud Volumes ONTAP용 스토리지 VM을 생성하려면 특정 권한이 필요합니다. 필요한 권한은 에 포함되어 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["NetApp에서 제공하는 정책"^] 있습니다.
+
 
 
 === 단일 노드 시스템
@@ -53,7 +53,7 @@ API를 사용하여 스토리지 VM을 생성하고 필요한 네트워크 인�
 
 `POST /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
-요청 본문에는 다음이 포함되어야 합니다.
+요청 본문에 다음 매개 변수를 포함합니다.
 
 [source, json]
 ----
@@ -65,11 +65,11 @@ API를 사용하여 스토리지 VM을 생성하고 필요한 네트워크 인�
 
 === HA 쌍
 
-다음 API 호출을 사용하여 Azure HA 구성에서 스토리지 VM을 생성합니다.
+다음 API 호출을 사용하여 HA 쌍에 스토리지 VM을 생성하십시오.
 
 `POST /azure/ha/working-environments/{workingEnvironmentId}/svm`
 
-요청 본문에는 다음이 포함되어야 합니다.
+요청 본문에 다음 매개 변수를 포함합니다.
 
 [source, json]
 ----
@@ -83,6 +83,9 @@ API를 사용하여 스토리지 VM을 생성하고 필요한 네트워크 인�
 
 BlueXP  API를 사용하면 단일 노드 및 HA 구성 모두에서 스토리지 VM의 이름을 바꾸고 삭제할 수 있습니다.
 
+.시작하기 전에
+Connector에서 Cloud Volumes ONTAP용 스토리지 VM을 관리하려면 특정 권한이 필요합니다. 필요한 권한은 에 포함되어 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["NetApp에서 제공하는 정책"^] 있습니다.
+
 
 
 === 스토리지 VM의 이름을 바꿉니다
@@ -95,7 +98,7 @@ BlueXP  API를 사용하면 단일 노드 및 HA 구성 모두에서 스토리�
 `PUT /azure/vsa/working-environments/{workingEnvironmentId}/svm`
 
 +
-요청 본문에는 다음이 포함되어야 합니다.
+요청 본문에 다음 매개 변수를 포함합니다.
 
 +
 [source, json]
@@ -105,12 +108,12 @@ BlueXP  API를 사용하면 단일 노드 및 HA 구성 모두에서 스토리�
   "svmName": "OldSvmName"
 }
 ----
-* HA 구성에서 스토리지 VM의 이름을 바꾸려면 다음 API 호출을 사용합니다.
+* 다음 API 호출을 사용하여 HA 쌍에서 스토리지 VM의 이름을 바꿉니다.
 +
 `PUT /azure/ha/working-environments/{workingEnvironmentId}/svm`
 
 +
-요청 본문에는 다음이 포함되어야 합니다.
+요청 본문에 다음 매개 변수를 포함합니다.
 
 +
 [source, json]
@@ -133,7 +136,7 @@ BlueXP  API를 사용하면 단일 노드 및 HA 구성 모두에서 스토리�
 +
 `DELETE /azure/vsa/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
-* 다음 API 호출을 사용하여 HA 구성에서 스토리지 VM을 삭제합니다.
+* 다음 API 호출을 사용하여 HA 쌍에서 스토리지 VM을 삭제합니다.
 +
 `DELETE /azure/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 

@@ -34,7 +34,7 @@ Flash Cache는 특정 Cloud Volumes ONTAP 구성에서 지원됩니다. 에서 �
 
 ifdef::aws[]
 
-* AWS에서 Cloud Volumes ONTAP 9.12.0 이전 버전용 Flash Cache를 구성할 경우 Flash Cache의 성능 향상을 활용하려면 모든 볼륨에서 압축을 비활성화해야 합니다. Cloud Volumes ONTAP 9.12.1 이상으로 구축하거나 업그레이드할 때 압축을 해제하지 않아도 됩니다.
+* AWS에서 Cloud Volumes ONTAP 9.12.0 이전 버전용 Flash Cache를 구성할 경우 Flash Cache의 향상된 성능을 활용하려면 모든 볼륨에서 압축을 비활성화해야 합니다. Cloud Volumes ONTAP 9.12.1 이상으로 구축하거나 업그레이드할 때 압축을 해제하지 않아도 됩니다.
 +
 BlueXP에서 볼륨을 생성할 때 스토리지 효율성 없음 을 선택하거나 볼륨을 생성한 후 를 선택합니다 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["CLI를 사용하여 데이터 압축을 비활성화합니다"^].
 

@@ -67,7 +67,7 @@ BlueXP  인증에 사용됩니다.
 * 보안 토큰 서비스(STS)
 * S3(Simple Storage Service)
 
-| AWS 서비스와의 커뮤니케이션: | 표준 및 개인 모드. | Cloud Volumes ONTAP는 AWS에서 특정 BlueXP  작업을 수행하기 위해 AWS 서비스와 통신할 수 없습니다. 
+| AWS 서비스와의 커뮤니케이션: | 표준 및 개인 모드. | Cloud Volumes ONTAP은 AWS에서 특정 BlueXP  작업을 수행하기 위해 AWS 서비스와 통신할 수 없습니다. 
 
 
 | AWS 서비스에 대한 정확한 정부 엔드포인트는 사용 중인 AWS 지역에 따라 다릅니다. 끝점에는 `amazonaws.com` 및 접미사가 `c2s.ic.gov` 붙습니다. 	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["AWS SDK를 참조하십시오"] https://docs.aws.amazon.com/general/latest/gr/rande.html["아마존 문서"]자세한 내용은 및 을 참조하십시오.  a| 
@@ -78,7 +78,7 @@ BlueXP  인증에 사용됩니다.
 * 보안 토큰 서비스(STS)
 * S3(Simple Storage Service)
 
-| AWS 서비스와의 커뮤니케이션: | 제한된 모드. | Cloud Volumes ONTAP는 AWS에서 특정 BlueXP  작업을 수행하기 위해 AWS 서비스와 통신할 수 없습니다. 
+| AWS 서비스와의 커뮤니케이션: | 제한된 모드. | Cloud Volumes ONTAP은 AWS에서 특정 BlueXP  작업을 수행하기 위해 AWS 서비스와 통신할 수 없습니다. 
 |===
 
 

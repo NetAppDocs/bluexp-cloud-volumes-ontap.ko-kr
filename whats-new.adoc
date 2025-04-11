@@ -20,6 +20,18 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2025년 4월 14일
+
+
+
+=== Google Cloud의 API를 통해 스토리지 VM 생성을 자동화합니다
+
+이제 BlueXP  API를 사용하여 Google Cloud에서 스토리지 VM 생성을 자동화할 수 있습니다. Cloud Volumes ONTAP 고가용성(HA) 구성에서 이 기능을 사용해왔으며, 이제 단일 노드 구축에서도 사용할 수 있습니다. BlueXP  API를 사용하면 필요한 네트워크 인터페이스, LIF 및 관리 LIF를 수동으로 구성할 필요 없이 Google Cloud 환경에서 데이터 제공 스토리지 VM을 쉽게 생성, 이름 변경 및 삭제할 수 있습니다. 이러한 자동화는 스토리지 VM 관리 프로세스를 간소화합니다.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Google Cloud에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 관리합니다"^]
+
+
+
 == 2025년 3월 28일
 
 
@@ -122,7 +134,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-ad
 
 이제 BlueXP  디지털 지갑의 향상된 탐색 지점을 사용하여 Cloud Volumes ONTAP 라이선스 관리를 간소화할 수 있습니다.
 
-* 거버넌스 > 디지털 지갑 > 개요/데이터 서비스 라이센스 * 탭을 통해 Cloud Volumes ONTAP 라이센스 정보에 쉽게 액세스할 수 있습니다.
+* 거버넌스 > 디지털 지갑 > 개요/직접 라이센스 * 탭을 통해 Cloud Volumes ONTAP 라이센스 정보에 쉽게 액세스할 수 있습니다.
 * 개요 * 탭의 Cloud Volume ONTAP 패널에서 * 보기 * 를 클릭하면 용량 기반 라이센스에 대한 포괄적인 이해를 얻을 수 있습니다. 이 고급 보기는 라이선스 및 구독에 대한 자세한 정보를 제공합니다.
 * 이전 인터페이스를 선호하는 경우 * 레거시 보기로 전환 * 버튼을 클릭하여 유형별로 라이센스 세부 정보를 보고 라이센스에 대한 청구 방법을 수정할 수 있습니다.
 
@@ -289,7 +301,7 @@ Edge Cache 용량 기반 라이센스 패키지는 향후 Cloud Volumes ONTAP �
 
 
 
-=== Azure 기반 Flash Cache에 대한 최소 버전 지원
+=== Azure에서 Flash Cache에 대한 최소 버전 지원
 
 Azure에서 Flash Cache를 구성하는 데 필요한 최소 Cloud Volumes ONTAP 버전은 9.13.1 GA입니다. ONTAP 9.13.1 GA 이상 버전만 사용하여 Azure의 Cloud Volumes ONTAP 시스템에 Flash Cache를 구축할 수 있습니다.
 

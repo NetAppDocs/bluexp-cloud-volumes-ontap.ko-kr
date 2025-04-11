@@ -16,93 +16,24 @@ summary: 스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, �
 [role="lead"]
 스토리지 VM은 ONTAP 내에서 실행되는 가상 머신으로, 클라이언트에 스토리지 및 데이터 서비스를 제공합니다. 이를 _SVM_ 또는 _vserver_로 알고 있을 수 있습니다. Cloud Volumes ONTAP는 기본적으로 하나의 스토리지 VM으로 구성되지만 일부 구성에서는 추가 스토리지 VM을 지원합니다.
 
+Google Cloud에서 데이터 제공 스토리지 VM을 추가로 생성하고 관리하려면 BlueXP  API를 사용해야 합니다. API가 스토리지 VM을 생성하고 필요한 네트워크 인터페이스를 구성하는 프로세스를 자동화하기 때문입니다. 스토리지 VM을 생성할 때 BlueXP 는 필요한 LIF 서비스와 스토리지 VM의 아웃바운드 SMB/CIFS 통신에 필요한 iSCSI LIF를 구성합니다.
+
 
 
 == 지원되는 스토리지 VM 수입니다
 
-9.11.1 릴리즈부터 Google Cloud의 특정 Cloud Volumes ONTAP 구성에서 여러 스토리지 VM이 지원됩니다. 로 이동합니다 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트"^] 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 다음을 수행합니다.
+Cloud Volumes ONTAP 9.11.1부터 라이센스에 따라 특정 구성으로 여러 스토리지 VM이 지원됩니다. 사용 중인 Cloud Volumes ONTAP 버전에 대해 지원되는 스토리지 VM 수를 확인하려면 를 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 릴리즈 노트"^] 참조하십시오.
 
-다른 모든 Cloud Volumes ONTAP 구성에서는 재해 복구에 사용되는 1개의 데이터 서비스 스토리지 VM과 1개의 대상 스토리지 VM을 지원합니다. 소스 스토리지 VM에 중단이 발생할 경우 데이터 액세스를 위해 대상 스토리지 VM을 활성화할 수 있습니다.
+9.11.1 이전의 모든 Cloud Volumes ONTAP 버전은 하나의 데이터 서비스 스토리지 VM과 하나의 대상 스토리지 VM을 재해 복구에 사용합니다. 소스 스토리지 VM에 중단이 발생할 경우 데이터 액세스를 위해 대상 스토리지 VM을 활성화할 수 있습니다.
 
 
 
 == 스토리지 VM을 생성합니다
 
-라이센스로 지원되는 경우 단일 노드 시스템 또는 HA 쌍에서 여러 스토리지 VM을 생성할 수 있습니다. BlueXP  API를 사용하여 HA 쌍에 스토리지 VM을 생성해야 하고, ONTAP System Manager 또는 ONTAP CLI를 사용하여 단일 노드 시스템에 스토리지 VM을 생성할 수 있습니다.
+구성 및 라이센스 유형에 따라 BlueXP  API를 사용하여 단일 노드 시스템 또는 고가용성(HA) 구성에서 여러 스토리지 VM을 생성할 수 있습니다.
 
-
-
-=== 단일 노드 시스템
-
-다음 단계에서는 CLI를 사용하여 단일 노드 시스템에 새 스토리지 VM을 생성합니다. 데이터 LIF를 생성하려면 하나의 프라이빗 IP 주소가 필요하며, 관리 LIF를 생성하려면 또 다른 선택적 프라이빗 IP 주소가 필요합니다.
-
-.단계
-. Google Cloud에서 Cloud Volumes ONTAP 인스턴스로 이동하고 각 LIF에 대한 IP 주소를 nic0에 추가합니다.
-+
-image:screenshot-gcp-add-ip-range.png["IP 범위를 추가하여 Cloud Volumes ONTAP의 네트워크 인터페이스를 편집할 수 있는 Google Cloud 콘솔의 스크린샷."]
-
-+
-스토리지 VM에서 관리 LIF를 생성하려면 데이터 LIF에 하나의 IP 주소와 다른 선택적 IP 주소가 필요합니다.
-
-+
-https://cloud.google.com/vpc/docs/configure-alias-ip-ranges#adding_alias_ip_ranges_to_an_existing_instance["Google Cloud 설명서: 기존 인스턴스에 별칭 IP 범위 추가"^]
-
-. 스토리지 VM을 생성하고 스토리지 VM으로 가는 경로를 생성합니다.
-+
-[source, cli]
-----
-vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-name> -rootvolume-security-style unix
-----
-+
-[source, cli]
-----
-network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-gateway-server>
-----
-. Google Cloud에 추가한 IP 주소를 지정하여 데이터 LIF를 생성합니다.
-+
-[role="tabbed-block"]
-====
-.iSCSI
---
-[source, cli]
-----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
-----
---
-.NFS 또는 SMB
---
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
-----
---
-====
-. 선택 사항: Google Cloud에 추가한 IP 주소를 지정하여 스토리지 VM 관리 LIF를 생성합니다.
-+
-[source, cli]
-----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default
-----
-. 스토리지 VM에 하나 이상의 애그리게이트를 할당합니다.
-+
-[source, cli]
-----
-vserver add-aggregates -vserver <svm-name> -aggregates <aggr1,aggr2>
-----
-+
-스토리지 VM에서 볼륨을 생성하기 전에 새 스토리지 VM이 적어도 하나의 애그리게이트에 액세스해야 하기 때문에 이 단계가 필요합니다.
-
-
-
-
-
-=== HA 쌍
-
-BlueXP API를 사용하여 Google Cloud의 Cloud Volumes ONTAP 시스템에서 스토리지 VM을 생성해야 합니다. BlueXP 이 필요한 LIF 서비스로 스토리지 VM을 구성하고 아웃바운드 SMB/CIFS 통신에 필요한 iSCSI LIF를 사용하여 스토리지 VM을 구성하기 때문에 ONTAP System Manager 또는 ONTAP CLI가 아닌 API를 사용해야 합니다.
-
-BlueXP는 Google Cloud에 필요한 IP 주소를 할당하고 SMB/NFS 액세스를 위한 데이터 LIF와 아웃바운드 SMB 통신을 위한 iSCSI LIF를 사용하여 스토리지 VM을 생성합니다.
-
-BlueXP 은 또한 `default-data-files` NAS 데이터 LIF에서 다음 서비스를 제거한 후 iSCSI 데이터 LIF에 추가하여 데이터 스토리지 VM의 정책을 수정합니다.
+.이 작업에 대해
+API를 사용하여 스토리지 VM을 생성하고 필요한 네트워크 인터페이스를 구성하는 경우 BlueXP 은 `default-data-files` NAS 데이터 LIF에서 다음 서비스를 제거한 후 아웃바운드 관리 연결에 사용되는 iSCSI 데이터 LIF에 추가하여 데이터 스토리지 VM의 정책을 수정합니다.
 
 * `data-fpolicy-client`
 * `management-ad-client`
@@ -111,52 +42,85 @@ BlueXP 은 또한 `default-data-files` NAS 데이터 LIF에서 다음 서비스
 * `management-nis-client`
 
 
-Cloud Volumes ONTAP가 아웃바운드 관리 연결에 iSCSI LIF를 사용할 수 있도록 하기 때문에 서비스를 수정해야 합니다.
+.시작하기 전에
+Connector에서 Cloud Volumes ONTAP HA 쌍용 스토리지 VM을 생성할 때 특정 권한이 필요합니다. 필요한 권한은 에 포함되어 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["NetApp에서 제공하는 정책"^] 있습니다.
 
-.Google Cloud 권한이 필요합니다
-Connector에는 Cloud Volumes ONTAP HA 쌍에 대한 스토리지 VM을 생성하고 관리할 수 있는 특정 권한이 필요합니다. 필요한 권한은 에 포함되어 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["NetApp에서 제공하는 정책"^] 있습니다.
 
-.단계
-. 다음 API 호출을 사용하여 스토리지 VM을 생성합니다.
-+
-`POST /gcp/ha/working-environments/{workingEnvironmentId}/svm/`
 
-+
-요청 본문에는 다음이 포함되어야 합니다.
+=== 단일 노드 시스템
 
-+
+다음 API 호출을 사용하여 단일 노드 시스템에 스토리지 VM을 생성하십시오.
+
+`POST /gcp/vsa/working-environments/{workingEnvironmentId}/svm`
+
+요청 본문에 다음 매개 변수를 포함합니다.
+
 [source, json]
 ----
-{ "svmName": "myNewSvm1" }
+{ "svmName": "NewSvmName"
+   "svmPassword": "optional value, the API takes the cluster password if not provided"
+   "mgmtLif": "optional value, to create an additional management LIF, if you want to use the storage VM for management purposes"}
 ----
 
 
+=== HA 쌍
+
+다음 API 호출을 사용하여 HA 쌍에 스토리지 VM을 생성하십시오.
+
+`POST /gcp/ha/working-environments/{workingEnvironmentId}/svm/`
+
+요청 본문에 다음 매개 변수를 포함합니다.
+
+[source, json]
+----
+{ "svmName": "NewSvmName"
+   "svmPassword": "optional value, the API takes the cluster password if not provided"
+}
+----
 
 
-== HA 쌍에서 스토리지 VM 관리
+== 스토리지 VM 관리
 
-또한 BlueXP API는 HA 쌍에서 스토리지 VM의 이름 변경 및 삭제를 지원합니다.
+BlueXP  API를 사용하면 단일 노드 및 HA 구성 모두에서 스토리지 VM의 이름을 바꾸고 삭제할 수 있습니다.
+
+.시작하기 전에
+Connector에서 Cloud Volumes ONTAP HA 쌍의 스토리지 VM을 관리하기 위한 특정 권한이 필요합니다. 필요한 권한은 에 포함되어 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["NetApp에서 제공하는 정책"^] 있습니다.
 
 
 
 === 스토리지 VM의 이름을 바꿉니다
 
-필요한 경우 언제든지 스토리지 VM의 이름을 변경할 수 있습니다.
+스토리지 VM의 이름을 바꾸려면 기존 스토리지 VM과 새 스토리지 VM의 이름을 매개 변수로 제공해야 합니다.
 
 .단계
-. 다음 API 호출을 사용하여 스토리지 VM의 이름을 바꿉니다.
+* 다음 API 호출을 사용하여 단일 노드 시스템에서 스토리지 VM의 이름을 변경합니다.
 +
-`PUT /gcp/ha/working-environments/{workingEnvironmentId}/svm`
+`PUT /gcp/vsa/working-environments/{workingEnvironmentId}/svm`
 
 +
-요청 본문에는 다음이 포함되어야 합니다.
+요청 본문에 다음 매개 변수를 포함합니다.
 
 +
 [source, json]
 ----
 {
-"svmNewName": "newSvmName",
-"svmName": "oldSvmName"
+  "svmNewName": "NewSvmName",
+  "svmName": "OldSvmName"
+}
+----
+* 다음 API 호출을 사용하여 HA 쌍에서 스토리지 VM의 이름을 바꿉니다.
++
+`PUT /gcp/ha/working-environments/{workingEnvironmentId}/svm`
+
++
+요청 본문에 다음 매개 변수를 포함합니다.
+
++
+[source, json]
+----
+{
+  "svmNewName": "NewSvmName",
+  "svmName": "OldSvmName"
 }
 ----
 
@@ -165,10 +129,14 @@ Connector에는 Cloud Volumes ONTAP HA 쌍에 대한 스토리지 VM을 생성�
 
 === 스토리지 VM을 삭제합니다
 
-스토리지 VM이 더 이상 필요하지 않은 경우 Cloud Volumes ONTAP에서 삭제할 수 있습니다.
+단일 노드 또는 HA 구성에서 액티브 볼륨이 없는 스토리지 VM을 제거할 수 있습니다.
 
 .단계
-. 다음 API 호출을 사용하여 스토리지 VM을 삭제합니다.
+* 다음 API 호출을 사용하여 단일 노드 시스템에서 스토리지 VM을 삭제합니다.
++
+`DELETE /gcp/vsa/working-environments/{workingEnvironmentId}/svm/{svmName}`
+
+* 다음 API 호출을 사용하여 HA 쌍에서 스토리지 VM을 삭제합니다.
 +
 `DELETE /gcp/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
