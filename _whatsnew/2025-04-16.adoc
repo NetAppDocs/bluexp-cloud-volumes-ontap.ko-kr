@@ -1,0 +1,15 @@
+= Azure에서 새로운 영역이 지원됩니다
+:allow-uri-read: 
+
+
+
+
+=== Azure에서 새로운 영역이 지원됩니다
+
+이제 다음 지역에 있는 Azure에서 단일 및 여러 가용 영역에 Cloud Volumes ONTAP 9.12.1 GA 이상을 배포할 수 있습니다. 여기에는 단일 노드 및 고가용성(HA) 구축이 모두 지원됩니다.
+
+* 스페인 중부
+* 멕시코 중부
+
+
+모든 지역의 목록은 을 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure 아래의 글로벌 지역 지도"^]참조하십시오.

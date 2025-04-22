@@ -1473,14 +1473,6 @@
   <block id="9906134ee224bc081497b19c4269cc34" category="paragraph">추가 용량 라이센스가 만료되어 더 이상 사용되지 않는 경우 언제든지 라이센스를 제거할 수 있습니다.</block>
   <block id="c320af21170d1ca43751b7580a1125f4" category="list-text">용량 라이센스 옆에 있는 작업 메뉴를 클릭하고 * 라이센스 제거 * 를 선택합니다.</block>
   <block id="03b194a23dcb353466fbfb7acff64363" category="list-text">제거 * 를 클릭합니다.</block>
-  <block id="b38317f372e5ede5e8e7662a6abf56de" category="section-title">Eval 라이센스를 BYOL로 변환합니다</block>
-  <block id="6f3e45030426e1b86c424d2780111d20" category="paragraph">평가판 라이센스는 30일간 사용할 수 있습니다. 현재 위치 업그레이드에 대한 평가 라이센스 위에 새로운 BYOL 라이센스를 적용할 수 있습니다.</block>
-  <block id="9a640fdf29d0376d44625fbe7757592a" category="list-text">단일 노드 시스템의 경우 재시작 시 재부팅 프로세스 중에 I/O가 중단됩니다.</block>
-  <block id="a1b2198d5e77e52b34a9567f6e8204f9" category="list-text">HA 쌍의 경우, 재시작은 테이크오버 및 반환을 시작하여 클라이언트에 계속 I/O를 제공합니다.</block>
-  <block id="b7c7df7a1f738eeeb402c8feafc80dba" category="list-text">Eval * 을 클릭합니다.</block>
-  <block id="fcb9420dfbbc4a57ba1b1a992a71d207" category="list-text">표에서 Cloud Volumes ONTAP 시스템용 BYOL 라이센스 * 로 변환 을 클릭합니다.</block>
-  <block id="e539cbd6aefe9d1fb7bc951680944206" category="list-text">일련 번호를 입력하거나 라이센스 파일을 업로드하십시오.</block>
-  <block id="b171537681ac6ab38d6353435252c4f1" category="list-text">사용권 변환 * 을 클릭합니다.</block>
   <block id="c165494898bc0fbf27151d6359a27936" category="doc">애그리게이트 생성</block>
   <block id="67ea3f429e13cb33e66f1359eb85cc04" category="list-text">Canvas 페이지에서 집계를 관리할 Cloud Volumes ONTAP 인스턴스의 이름을 두 번 클릭합니다.</block>
   <block id="833ac412ce32368430680596235b2009" category="list-text">Go * 를 클릭한 다음 * Approve and Purchase * 를 클릭합니다.</block>
@@ -3091,8 +3083,6 @@
   <block id="4632dee9f50d24fa16636177719f09ff" category="paragraph">BlueXP는 Cloud Volumes ONTAP 시스템의 라이센스를 업데이트합니다.</block>
   <block id="b4fb827c06226e7a2af35e533d837e28" category="paragraph">BlueXP의 오른쪽 하단에 있는 채팅 아이콘을 통해 문의하여 추가 용량 라이센스를 구입하십시오. 라이센스를 구입한 후 Cloud Volumes ONTAP 시스템에 적용할 수 있습니다.</block>
   <block id="4e1651bb146bb28e944da5ff79e00342" category="paragraph">추가 용량 라이센스 기간을 연장한 경우 BlueXP에서 라이센스를 업데이트해야 합니다.</block>
-  <block id="6e7fc6b7eae0415b78955003531a799e" category="paragraph">평가판 라이센스를 BYOL로 변환하면 BlueXP가 Cloud Volumes ONTAP 시스템을 다시 시작합니다.</block>
-  <block id="629b6ceff1a1b74de909c5f304f623b9" category="paragraph">BlueXP가 변환 프로세스를 시작합니다. 이 프로세스의 일부로 Cloud Volumes ONTAP가 자동으로 다시 시작됩니다. 백업하는 경우 라이센스 정보에 새 라이센스가 반영됩니다.</block>
   <block id="b8825138f3ad417826e664b97b11f43e" category="summary">노드 기반 BYOL을 사용하는 각 Cloud Volumes ONTAP 시스템에는 활성 상태의 시스템 라이센스가 설치되어 있어야 합니다. BlueXP는 라이선스를 관리하고 만료 전에 경고를 표시하여 프로세스를 간소화합니다.</block>
   <block id="bbb99a752c8e900f1b48a90461879503" category="paragraph">노드 기반 BYOL 시스템을 생성하는 경우 BlueXP는 라이센스 및 NetApp Support 사이트 계정의 일련 번호를 묻습니다. BlueXP에서는 계정을 사용하여 NetApp에서 라이센스 파일을 다운로드하고 Cloud Volumes ONTAP 시스템에 설치합니다.</block>
   <block id="4c6af92d0fefe2bc8b47c8e72bf0caf5" category="inline-link">NetApp Support 사이트 계정을 BlueXP에 추가하는 방법에 대해 알아봅니다</block>
@@ -4785,7 +4775,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="882b50ca44d46bfb8d9502390cfeaf96" category="paragraph">Edge Cache 용량 기반 라이센스 패키지는 향후 Cloud Volumes ONTAP 배포에 더 이상 사용할 수 없습니다. 그러나 API를 사용하여 이 기능을 사용할 수 있습니다.</block>
   <block id="2936dc7efe93e6248aca38d21b92cc62" category="paragraph">지원되는 구성은 를 참조하십시오<block ref="10c1bb30d666a83202b9e687d7b06d1b" category="inline-link-rx"></block>.</block>
   <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">마켓플레이스 구독에 대한 무료 평가판은 더 이상 사용되지 않습니다</block>
-  <block id="860dc5e7395e0f2c15a42ffdef98eca4" category="paragraph">클라우드 제공업체의 마켓플레이스에서 선불 종량제 구독에 대한 30일 자동 무료 평가판은 더 이상 Cloud Volumes ONTAP에서 사용할 수 없습니다. 모든 유형의 마켓플레이스 가입(PAYGO 또는 연간 계약)에 대한 청구는 무료 평가판 기간 없이 처음 사용할 때 활성화됩니다.</block>
   <block id="6a42c267e29187643b9edeeabe6a9d85" category="inline-link">AWS 설명서: AWS의 Elastic Volumes에 대해 자세히 알아보십시오</block>
   <block id="5f15094e671a035a778fece655f06e61" category="paragraph"><block ref="5f15094e671a035a778fece655f06e61" category="inline-link-rx"></block></block>
   <block id="32f75f1208336b30711f2ec6de39a1fc" category="paragraph">자세한 내용은 을 <block ref="b7c27672c14c5e155c3668c279ee7b61" category="inline-link-macro-rx"></block> 참조하십시오.</block>
@@ -5801,4 +5790,15 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025년 4월 14일</block>
   <block id="fdcb4cfaa6fda318a31e37ce29a14e92" category="section-title">Azure에서 Flash Cache에 대한 최소 버전 지원</block>
   <block id="d05c6d51d7a4b0bd019498131ff00f16" category="paragraph">Azure에서 Flash Cache를 구성하는 데 필요한 최소 Cloud Volumes ONTAP 버전은 9.13.1 GA입니다. ONTAP 9.13.1 GA 이상 버전만 사용하여 Azure의 Cloud Volumes ONTAP 시스템에 Flash Cache를 구축할 수 있습니다.</block>
+  <block id="b77891a5294c25aca8a6fda943805ecf" category="doc">AWS의 Cloud Volumes ONTAP 9.13.1에 대한 중국 지역 지원</block>
+  <block id="3899c7c0df13a38296f1334779a1dfe7" category="paragraph">이제 중국 지역의 AWS에 Cloud Volumes ONTAP 9.13.1을 배포할 수 있습니다. 여기에는 단일 노드 및 고가용성(HA) 구축이 모두 지원됩니다. Cloud Volumes ONTAP 9.13.1을 배포한 후에는 최신 버전으로 업그레이드할 수 있습니다. NetApp에서 직접 구매한 라이선스만 지원됩니다.</block>
+  <block id="abe88f95b23156cb29c433c9ebe92a00" category="inline-link">Cloud Volumes ONTAP를 위한 글로벌 지역 맵</block>
+  <block id="10df570a0447a18b299f516b2e8498c2" category="paragraph">지역별 이용 가능 여부는 을<block ref="f76c632bc8b9c4e032a9d48fcbfa8dc1" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="aa3bf76b3589430467bef386eaec9486" category="doc">Azure에서 새로운 영역이 지원됩니다</block>
+  <block id="c1ad65632774d8f35681af3ad68ef48e" category="paragraph">이제 다음 지역에 있는 Azure에서 단일 및 여러 가용 영역에 Cloud Volumes ONTAP 9.12.1 GA 이상을 배포할 수 있습니다. 여기에는 단일 노드 및 고가용성(HA) 구축이 모두 지원됩니다.</block>
+  <block id="db0cdd3af654aa7b69312d9b6154a9de" category="list-text">스페인 중부</block>
+  <block id="ef87967149148a309569bd7d04467de6" category="list-text">멕시코 중부</block>
+  <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">2025년 4월 16일</block>
+  <block id="f0d468a1074534e3b37c7322f2e97bb1" category="section-title">2025년 4월 3일</block>
+  <block id="bbe4e5e3881ef8307eb1dd518412cb45" category="paragraph">클라우드 공급자의 마켓플레이스에서 선불 종량제 구독에 대한 30일 자동 무료 평가판 또는 평가판 라이센스는 Cloud Volumes ONTAP에서 더 이상 사용할 수 없습니다. 모든 유형의 마켓플레이스 가입(PAYGO 또는 연간 계약)에 대한 청구는 무료 평가판 기간 없이 처음 사용할 때 활성화됩니다.</block>
 </blocks>

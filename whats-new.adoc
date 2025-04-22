@@ -20,6 +20,22 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2025년 4월 16일
+
+
+
+=== Azure에서 새로운 영역이 지원됩니다
+
+이제 다음 지역에 있는 Azure에서 단일 및 여러 가용 영역에 Cloud Volumes ONTAP 9.12.1 GA 이상을 배포할 수 있습니다. 여기에는 단일 노드 및 고가용성(HA) 구축이 모두 지원됩니다.
+
+* 스페인 중부
+* 멕시코 중부
+
+
+모든 지역의 목록은 을 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure 아래의 글로벌 지역 지도"^]참조하십시오.
+
+
+
 == 2025년 4월 14일
 
 
@@ -29,6 +45,18 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 이제 BlueXP  API를 사용하여 Google Cloud에서 스토리지 VM 생성을 자동화할 수 있습니다. Cloud Volumes ONTAP 고가용성(HA) 구성에서 이 기능을 사용해왔으며, 이제 단일 노드 구축에서도 사용할 수 있습니다. BlueXP  API를 사용하면 필요한 네트워크 인터페이스, LIF 및 관리 LIF를 수동으로 구성할 필요 없이 Google Cloud 환경에서 데이터 제공 스토리지 VM을 쉽게 생성, 이름 변경 및 삭제할 수 있습니다. 이러한 자동화는 스토리지 VM 관리 프로세스를 간소화합니다.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Google Cloud에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 관리합니다"^]
+
+
+
+== 2025년 4월 3일
+
+
+
+=== AWS의 Cloud Volumes ONTAP 9.13.1에 대한 중국 지역 지원
+
+이제 중국 지역의 AWS에 Cloud Volumes ONTAP 9.13.1을 배포할 수 있습니다. 여기에는 단일 노드 및 고가용성(HA) 구축이 모두 지원됩니다. Cloud Volumes ONTAP 9.13.1을 배포한 후에는 최신 버전으로 업그레이드할 수 있습니다. NetApp에서 직접 구매한 라이선스만 지원됩니다.
+
+지역별 이용 가능 여부는 을 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP를 위한 글로벌 지역 맵"^]참조하십시오.
 
 
 
@@ -311,7 +339,7 @@ Azure에서 Flash Cache를 구성하는 데 필요한 최소 Cloud Volumes ONTAP
 
 === 마켓플레이스 구독에 대한 무료 평가판은 더 이상 사용되지 않습니다
 
-클라우드 제공업체의 마켓플레이스에서 선불 종량제 구독에 대한 30일 자동 무료 평가판은 더 이상 Cloud Volumes ONTAP에서 사용할 수 없습니다. 모든 유형의 마켓플레이스 가입(PAYGO 또는 연간 계약)에 대한 청구는 무료 평가판 기간 없이 처음 사용할 때 활성화됩니다.
+클라우드 공급자의 마켓플레이스에서 선불 종량제 구독에 대한 30일 자동 무료 평가판 또는 평가판 라이센스는 Cloud Volumes ONTAP에서 더 이상 사용할 수 없습니다. 모든 유형의 마켓플레이스 가입(PAYGO 또는 연간 계약)에 대한 청구는 무료 평가판 기간 없이 처음 사용할 때 활성화됩니다.
 
 
 
