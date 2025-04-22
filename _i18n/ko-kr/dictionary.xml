@@ -1674,12 +1674,9 @@
   <block id="f008ecd5469e24eee31eb4e2e4a1e23f" category="paragraph">신규 고객은 다음과 같은 라이선스 옵션을 사용할 수 있습니다.</block>
   <block id="27d0a1d0fc95280fbaf78c65ff6b37fb" category="list-text">Essentials 패키지를 선택합니다</block>
   <block id="08598187312665a33ac3ebb5fc060c00" category="paragraph">다음 섹션에서는 이러한 각 옵션에 대해 자세히 설명합니다.</block>
-  <block id="d7c357dcc3b8476a2eeba19c87ec383d" category="paragraph">NetApp에서 무료로 모든 Cloud Volumes ONTAP 기능을 제공합니다(클라우드 공급자 요금은 여전히 적용됨).</block>
   <block id="24996c045717f17c4e40ebb44791b2af" category="list-text">라이센스 또는 계약이 필요하지 않습니다.</block>
   <block id="cc3b16b51bb72e66b8f103fef83035d9" category="list-text">NetApp의 지원은 포함되지 않습니다.</block>
   <block id="895dacd81cbc05951744c0bce981546c" category="list-text">Cloud Volumes ONTAP 시스템당 프로비저닝된 용량 500GiB로 제한됩니다.</block>
-  <block id="46cb473c7acee70e9be90113f3acce9d" category="list-text">모든 클라우드 공급자가 NetApp 계정 하나당 Freemium 제품을 사용하면 최대 10대의 Cloud Volumes ONTAP 시스템을 사용할 수 있습니다.</block>
-  <block id="2b5b1f6feb7719bc282a3518f33b1784" category="paragraph">프로비저닝된 용량이 500GiB 미만인 다른 모든 시스템은 Freemium에 그대로 유지됩니다(Freemium 제품을 사용하여 구축한 경우).</block>
   <block id="68935a38790e91889cd56742a47079f3" category="paragraph">예를 들어, 20TiB 라이센스 1개를 구입하고 Cloud Volumes ONTAP 시스템 4개를 배포한 다음 각 시스템에 5TiB 볼륨을 할당하여 총 20TiB를 할당할 수 있습니다. 용량은 해당 계정에 구축된 각 Cloud Volumes ONTAP 시스템의 볼륨에 사용할 수 있습니다.</block>
   <block id="6cc9f034206d1e740ca9a065330721b4" category="list-text">Cloud Volumes ONTAP 구성 선택:</block>
   <block id="d7a4c9387784a4f0820a7a6500b673bc" category="list-text">단일 노드 또는 HA 시스템</block>
@@ -2995,7 +2992,6 @@
   <block id="af97eb7a8d1a683de73e48cc402e070d" category="paragraph">System Manager에서는 애그리게이트 관리(로컬 계층 및 클라우드 계층 포함)가 지원되지 않습니다. BlueXP의 표준 보기에서 직접 애그리게이트를 관리해야 합니다.</block>
   <block id="e7b3f56c45c6705f279b059a9274225d" category="list-text">필요한 경우 * 표준 보기로 전환 * 을 클릭하여 BlueXP를 통한 표준 관리로 돌아갑니다.</block>
   <block id="0828553b7174743f116345861b5c6bc0" category="summary">기존 Cloud Volumes ONTAP 시스템을 검색하고 BlueXP에 추가할 수 있습니다. 새 BlueXP 시스템을 배포한 경우 이 작업을 수행할 수 있습니다.</block>
-  <block id="16c274138bfaf739b851a1b611d4cdb0" category="list-text">Cloud Volumes ONTAP 시스템에 대해 프로비저닝된 용량이 500GiB를 초과하면 BlueXP는 시스템을 Essentials 패키지로 변환합니다.</block>
   <block id="2cfe7b7de2a1df6b585bf1321d37fb8a" category="inline-link">NetApp BlueXP 웹 사이트</block>
   <block id="4f6ffa2529265a9e4fcff29a28a16ebe" category="paragraph">기본(읽기-쓰기) 볼륨이 하나 이상 있는 데이터 서비스 스토리지 VM마다 최소 4TiB가 필요합니다. 운영 볼륨의 합계가 4TiB 미만인 경우 BlueXP는 해당 스토리지 VM에 4TiB 최소 요금을 적용합니다.</block>
   <block id="3116f8acc3e396f2ab1859f3fbe8234e" category="summary">BlueXP에서 Cloud Volumes ONTAP를 중지하고 시작하여 클라우드 컴퓨팅 비용을 관리할 수 있습니다.</block>
@@ -5625,7 +5621,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="95b5ae6b0af18840a3741634cd325668" category="list-text">프로비저닝된 용량을 기준으로 NetApp 계정의 여러 Cloud Volumes ONTAP 시스템에 대한 비용 지불 애드온 클라우드 데이터 서비스를 구매할 수 있는 기능이 포함되어 있습니다. 용량 기반 라이센스의 소비 모델에 대한 자세한 내용은 을 <block ref="800c64ac20219346d421e96b28656701" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="c3f0a05442b6c8a72739ff963cfeed7f" category="paragraph">Cloud Volumes ONTAP에 사용할 수 있는 용량 기반 패키지는 다음과 같습니다. 용량 기반 라이센스 패키지에 대한 자세한 내용은 을 <block ref="800c64ac20219346d421e96b28656701" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="19a5330bf6f5eac370d1103981c5a834" category="inline-link-macro">최소 충전</block>
-  <block id="b0890bcc109876c5e12a5adec396926f" category="paragraph">시스템이 Essentials 패키지로 변환되는 즉시 이 <block ref="7af77c30f2eff63b0d18155ad569ed75" category="inline-link-macro-rx"></block>적용됩니다.</block>
   <block id="f6d538cae99e0f8fa45e7e8780358583" category="paragraph">이 변환을 수행하는 방법은 을 <block ref="3fdaa70059ad7f9b695791d3dfebbc25" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="1a7468dd02c2c074fc65d2ee7db41483" category="doc">Cloud Volumes ONTAP 워크로드의 성능 모니터링에 대해 알아보십시오</block>
   <block id="554a0d7666ec33e45169ab1eed7eb037" category="doc">Cloud Volumes ONTAP 데이터 암호화 및 랜섬웨어 보호에 대해 알아보십시오</block>
@@ -5801,4 +5796,9 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">2025년 4월 16일</block>
   <block id="f0d468a1074534e3b37c7322f2e97bb1" category="section-title">2025년 4월 3일</block>
   <block id="bbe4e5e3881ef8307eb1dd518412cb45" category="paragraph">클라우드 공급자의 마켓플레이스에서 선불 종량제 구독에 대한 30일 자동 무료 평가판 또는 평가판 라이센스는 Cloud Volumes ONTAP에서 더 이상 사용할 수 없습니다. 모든 유형의 마켓플레이스 가입(PAYGO 또는 연간 계약)에 대한 청구는 무료 평가판 기간 없이 처음 사용할 때 활성화됩니다.</block>
+  <block id="f10f9d69e12a045fa89f83322880ee7c" category="paragraph">NetApp에서 무료로 모든 Cloud Volumes ONTAP 기능을 제공합니다(클라우드 공급자 요금은 여전히 적용됨). Freemium 패키지는 다음과 같은 특징을 가지고 있습니다.</block>
+  <block id="4e2db8f84e83acbb3ce91109a9eef20e" category="list-text">NetApp 계정당 Freemium 오퍼링으로 모든 클라우드 공급자에 대해 최대 10대의 Cloud Volumes ONTAP 시스템을 사용할 수 있습니다.</block>
+  <block id="84befd86706fa21112c130084b373991" category="list-text">Cloud Volumes ONTAP 시스템의 프로비저닝된 용량이 500GiB를 초과하면 BlueXP 는 시스템을 Essentials 패키지로 변환합니다.</block>
+  <block id="a0f8f1341588aae4d56d3b5fb0fde3de" category="paragraph">시스템이 Essentials 패키지로 변환되는 즉시 해당 패키지에 <block ref="7af77c30f2eff63b0d18155ad569ed75" category="inline-link-macro-rx"></block>적용됩니다.</block>
+  <block id="0551862e260539a3a516b4868d9bcead" category="paragraph">Essentials 패키지로 변환된 Cloud Volumes ONTAP 시스템은 프로비저닝된 용량이 500GiB 미만으로 줄어든 경우에도 Freemium으로 다시 전환할 수 없습니다. 용량 용량이 500GiB 미만인 다른 시스템은 Freemium에 남아 있습니다(Freemium 오퍼링을 사용하여 구축한 경우).</block>
 </blocks>
