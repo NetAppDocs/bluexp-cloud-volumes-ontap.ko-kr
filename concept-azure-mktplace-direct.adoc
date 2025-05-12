@@ -18,7 +18,9 @@ NetApp는 Azure 기반 Cloud Volumes ONTAP를 구축하기 위한 두 가지 옵
 
 Azure 마켓플레이스에서 직접 Cloud Volumes ONTAP을 배포하는 경우 BlueXP  커넥터를 설정하거나 BlueXP 를 통해 Cloud Volumes ONTAP를 배포하는 데 필요한 기타 보안 및 온보딩 기준을 충족할 필요가 없습니다. Azure 마켓플레이스에서 몇 번의 클릭으로 Cloud Volumes ONTAP을 빠르게 배포하고 해당 환경에서 핵심 기능을 탐색할 수 있습니다.
 
-두 옵션 간의 기능 비교는 다음과 같습니다.
+Azure 마켓플레이스의 배포를 완료하면 BlueXP 에서 이러한 시스템을 확인할 수 있습니다. 검색 후에 이들을 작업 환경으로 관리하고 모든 BlueXP  기능을 활용할 수 있습니다. 을 link:task-deploy-cvo-azure-mktplc.html["BlueXP 에서 배포된 시스템을 검색합니다"]참조하십시오.
+
+두 옵션 간의 기능 비교는 다음과 같습니다. Azure 마켓플레이스를 통해 배포된 독립 실행형 인스턴스의 기능은 BlueXP 에서 검색될 때 변경됩니다.
 
 [cols="3*"]
 |===
@@ -28,7 +30,12 @@ Azure 마켓플레이스에서 직접 Cloud Volumes ONTAP을 배포하는 경우
 | * 온보딩 * | 직접 전개에 필요한 최소한의 준비로 더 짧고 쉽습니다 | BlueXP  커넥터 설치를 포함하여 온보딩 프로세스가 더 길어집니다 
 
 
-| * 지원되는 가상 머신(VM) 유형 * | Edsv5 및 Lsv3 | VM 유형의 전체 범위 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure에서 지원되는 구성"^] 
+| * 지원되는 가상 머신(VM) 유형 *  a| 
+EDS_v5 및 LS_v3 인스턴스 유형
+
+
+NOTE: L8s_v3 인스턴스 유형은 HA 구성을 위한 Azure 마켓플레이스에서 지원되지만 BlueXP 에서는 지원되지 않습니다. BlueXP 는 검색 중에 이를 올바르게 감지할 수 없습니다.
+| VM 유형의 전체 범위 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure에서 지원되는 구성"^] 
 
 
 | * 라이센스 * | 무료 라이센스 | 용량 기반 라이센스 link:concept-licensing.html["Cloud Volumes ONTAP 라이센스"] 
@@ -60,8 +67,6 @@ Azure 마켓플레이스에서 직접 Cloud Volumes ONTAP을 배포하는 경우
 
 | * FabricPool 계층화 * | 지원되지 않습니다 | 지원 
 |===
-향후 BlueXP  커넥터는 Azure 마켓플레이스의 직접 배포를 통해 이루어진 배포를 식별할 수 있을 것입니다. 이렇게 하면 BlueXP 에서 제공하는 향상된 기능을 활용할 수 있습니다.
-
 .관련 링크
 * Azure 마켓플레이스 직접 구축: link:task-deploy-cvo-azure-mktplc.html["Azure 마켓플레이스에서 Cloud Volumes ONTAP을 배포합니다"]
 * BlueXP  배포: link:task-getting-started-azure.html["Azure에서 Cloud Volumes ONTAP를 빠르게 시작합니다"]

@@ -14,12 +14,12 @@ summary:
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.16.1부터는 Azure 마켓플레이스 직접 구축을 사용하여 Cloud Volumes ONTAP를 빠르고 쉽게 배포할 수 있습니다. Azure 마켓플레이스에서 몇 번의 클릭으로 Cloud Volumes ONTAP을 빠르게 배포하고 해당 환경에서 핵심 기능을 탐색할 수 있습니다.
+Azure 마켓플레이스 직접 배포를 사용하여 Cloud Volumes ONTAP를 빠르고 쉽게 배포할 수 있습니다. Azure 마켓플레이스에서 몇 번의 클릭으로 Cloud Volumes ONTAP을 빠르게 배포하고 해당 환경에서 핵심 기능을 탐색할 수 있습니다.
 
 이 서비스에 대한 자세한 내용은 을 link:concept-azure-mktplace-direct.html["BlueXP  및 시장에서 Cloud Volumes ONTAP 오퍼링에 대해 자세히 알아보십시오"]참조하십시오.
 
 .이 작업에 대해
-Azure Marketplace 직접 배포를 사용하여 구축한 Cloud Volumes ONTAP 인스턴스에는 다음과 같은 속성이 있습니다.
+Azure Marketplace 직접 배포를 사용하여 구축한 Cloud Volumes ONTAP 시스템에는 이러한 속성이 있습니다. Azure 마켓플레이스를 통해 배포된 독립 실행형 인스턴스의 기능은 BlueXP 에서 검색될 때 변경됩니다.
 
 * 최신 Cloud Volumes ONTAP 버전(9.16.1 이상)
 * 프로비저닝된 용량이 500GiB로 제한된 Cloud Volumes ONTAP의 무료 라이센스입니다. 이 라이센스에는 NetApp 지원이 포함되어 있지 않으며 만료 날짜가 없습니다.
@@ -27,12 +27,12 @@ Azure Marketplace 직접 배포를 사용하여 구축한 Cloud Volumes ONTAP �
 * 기본적으로 생성되는 인스턴스의 Aggregate입니다.
 * 500GiB의 용량을 프로비저닝한 Premium SSD v2 Managed Disk, 루트 및 데이터 디스크 1개
 * NFS, CIFS, iSCSI 및 NVMe/TCP 데이터 서비스를 갖춘 단일 데이터 스토리지 VM이 구축됩니다. 데이터 스토리지 VM을 추가할 수 없습니다.
-* NFS, CIFS(SMB), iSCSI, 안티 랜섬웨어(ARW), SnapLock 및 SnapMirror에 대해 설치된 라이센스입니다.
+* NFS, CIFS(SMB), iSCSI, ARP(자율적 랜섬웨어 방어), SnapLock 및 SnapMirror용으로 설치된 라이센스입니다.
 * https://docs.netapp.com/us-en/ontap/volumes/enable-temperature-sensitive-efficiency-concept.html["ONTAP TSSE(온도에 민감한 스토리지 효율성)"^], 볼륨 암호화 및 외부 키 관리가 기본적으로 활성화됩니다.
 * 다음 기능은 지원되지 않습니다.
 +
 ** FabricPool 계층화
-** 인스턴스 유형 변경
+** 스토리지 VM 유형을 변경하는 중입니다
 ** 빠른 쓰기 모드입니다
 
 
@@ -67,7 +67,7 @@ NOTE: 리소스 공급자 "microsoft.storage"를 구독에 등록한 경우에�
 . 기본 * 탭에서 다음 세부 정보를 제공합니다.
 +
 ** * 가입 * : 가입을 선택하세요. 배포는 구독 번호에 연결됩니다.
-** * 리소스 그룹 *: 기존 리소스 그룹을 사용하거나 새 리소스 그룹을 생성합니다. 리소스 그룹을 사용하면 디스크 및 스토리지 VM과 같은 모든 리소스를 Cloud Volumes ONTAP 인스턴스에 대해 단일 그룹 내에 할당할 수 있습니다.
+** * 리소스 그룹 *: 기존 리소스 그룹을 사용하거나 새 리소스 그룹을 생성합니다. 리소스 그룹은 디스크 및 스토리지 VM과 같은 모든 리소스를 Cloud Volumes ONTAP 시스템에 대한 단일 그룹 내에 할당하는 데 도움이 됩니다.
 ** * 지역 * : 단일 AZ에서 Azure HA 배포를 지원하는 지역을 선택합니다. 목록에 사용 가능한 지역만 표시됩니다.
 ** * 크기 *: 지원되는 프리미엄 SSD v2 관리 디스크에 대한 스토리지 VM 크기를 선택합니다.
 ** * 영역 *: 선택한 지역의 영역을 선택합니다.
@@ -96,9 +96,9 @@ ONTAP System Manager 또는 ONTAP CLI를 사용하여 설정한 관리자 자격
 
 
 
-== 문제 해결
+== 배포 문제를 해결합니다
 
-Azure 마켓플레이스를 통해 직접 구축한 Cloud Volumes ONTAP에는 NetApp의 지원이 포함되지 않습니다. 배포 중에 문제가 발생하면 독립적으로 문제를 해결하고 해결할 수 있습니다.
+Azure 마켓플레이스를 통해 직접 구축된 Cloud Volumes ONTAP 시스템에는 NetApp 지원이 포함되지 않습니다. 배포 중에 문제가 발생하면 독립적으로 문제를 해결하고 해결할 수 있습니다.
 
 .단계
 . Azure 마켓플레이스 사이트에서 * 부팅 진단 > 시리얼 로그 * 로 이동합니다.
@@ -111,6 +111,38 @@ Azure 마켓플레이스를 통해 직접 구축한 Cloud Volumes ONTAP에는 Ne
 
 
 
+
+
+
+== BlueXP 에서 배포된 시스템을 검색합니다
+
+Azure Marketplace 직접 배포를 사용하여 구축한 Cloud Volumes ONTAP 시스템을 BlueXP 에서 작업 환경으로 관리할 수 있습니다. BlueXP  커넥터는 시스템을 검색하여 작업 환경으로 추가하고, 필요한 BlueXP  라이센스를 적용하고, 이러한 시스템에 대한 BlueXP 의 모든 기능을 활용할 수 있도록 합니다. PSSD v2 관리되는 디스크가 있는 단일 AZ의 원래 HA 구성은 유지되며 시스템은 원래 구현과 동일한 Azure 구독 및 리소스 그룹에 등록됩니다.
+
+.이 작업에 대해
+BlueXP  Connector는 Azure Marketplace 직접 배포를 사용하여 배포된 Cloud Volumes ONTAP 시스템을 검색할 때 다음 작업을 수행합니다.
+
+* 검색된 시스템의 무료 라이센스를 일반적인 용량 기반으로 link:concept-licensing.html#packages["Freemium 라이센스"]대체합니다.
+* 배포된 시스템의 기존 기능을 유지하고 데이터 보호, 데이터 관리 및 보안 기능과 같은 BlueXP 의 추가 기능을 추가합니다.
+* 노드에 설치된 라이센스를 NFS, CIFS(SMB), iSCSI, ARP, SnapLock 및 SnapMirror에 대한 새 ONTAP 라이센스로 교체합니다.
+* 일반 노드 일련 번호를 고유 일련 번호로 변환합니다.
+* 필요에 따라 리소스에 새 시스템 태그를 할당합니다.
+* 인스턴스의 동적 IP 주소를 정적 IP 주소로 변환합니다.
+* 구축된 시스템에서link:task-tiering.html["FabricPool 계층화"], link:task-verify-autosupport.html["AutoSupport"]및 link:concept-worm.html["Write-once-read-many"] (WORM) 스토리지의 기능을 지원합니다. 필요한 경우 BlueXP  콘솔에서 이러한 기능을 활성화할 수 있습니다.
+* 인스턴스를 검색하는 데 사용되는 NSS 계정에 인스턴스를 등록합니다.
+* 검색된 시스템에 대해 의 용량 관리 기능을 link:concept-storage-management.html#capacity-management["자동 및 수동 모드"]활성화합니다.
+
+
+.시작하기 전에
+Azure 마켓플레이스에서 배포가 완료되었는지 확인합니다. BlueXP  커넥터는 구축이 완료되고 검색이 가능한 경우에만 시스템을 검색할 수 있습니다.
+
+
+NOTE: Azure 마켓플레이스 직접 구축은 L8s_v3 인스턴스 유형을 지원합니다. 하지만 BlueXP 는 HA 구성에 대해 이 인스턴스 유형을 지원하지 않으며, 검색 중에 정확히 감지할 수 없습니다.
+
+.단계
+BlueXP 에서는 기존 시스템을 검색하기 위한 표준 절차를 따릅니다. 을 link:task-adding-systems.html["기존 Cloud Volumes ONTAP 시스템을 BlueXP 에 추가합니다"]참조하십시오.
+
+.작업을 마친 후
+검색이 완료되면 BlueXP 에서 작업 환경으로 나열된 시스템을 볼 수 있습니다. link:task-manage-aggregates.html["Aggregate 확장"],link:task-create-volumes.html["볼륨 추가"], link:task-managing-svms-azure.html["추가 스토리지 VM 프로비저닝"]및 등의 다양한 관리 작업을 수행할 수 link:task-change-azure-vm.html["인스턴스 유형 변경"]있습니다.
 
 .관련 링크
 스토리지 생성에 대한 자세한 내용은 ONTAP 설명서를 참조하십시오.

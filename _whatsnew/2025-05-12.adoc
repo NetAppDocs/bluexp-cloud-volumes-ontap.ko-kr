@@ -1,0 +1,19 @@
+= BlueXP 에서 Azure 마켓플레이스를 통해 이루어진 배포를 검색합니다
+:allow-uri-read: 
+
+
+
+
+=== BlueXP 에서 Azure 마켓플레이스를 통해 이루어진 배포를 검색합니다
+
+BlueXP 에는 이제 Azure 마켓플레이스를 통해 직접 배포된 Cloud Volumes ONTAP 시스템을 검색할 수 있는 기능이 있습니다. 즉, 다른 모든 Cloud Volumes ONTAP 시스템과 마찬가지로 이제 이러한 시스템을 BlueXP 의 작업 환경으로 추가하고 관리할 수 있습니다.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["Azure 마켓플레이스에서 Cloud Volumes ONTAP을 배포합니다"^]
+
+
+
+=== Azure 테넌트의 데이터를 계층화하는 기능
+
+이제 한 테넌트에 의해 Cloud Volumes ONTAP 작업 환경이 생성되고 다른 테넌트에 의해 BlueXP  커넥터가 생성되는 시나리오에서 Azure 테넌트에 대한 계층화를 활성화할 수 있습니다. 이 기능을 사용하면 동일한 Connector를 사용하여 여러 Azure 테넌트의 데이터를 계층화할 수 있습니다.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#requirements-to-tier-data-for-an-azure-tenant["Azure 테넌트의 데이터를 계층화하기 위한 요구사항"^]

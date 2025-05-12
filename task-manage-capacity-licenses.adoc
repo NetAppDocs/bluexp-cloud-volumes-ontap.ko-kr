@@ -82,9 +82,13 @@ Cloud Volumes ONTAP 페이지에서 레거시 모드로 전환하여 패키지�
 . BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
 . 개요 * 탭의 Cloud Volumes ONTAP 타일에는 계정에 대해 프로비저닝된 현재 용량이 표시됩니다.
 . 각 라이센스 패키지의 프로비저닝된 용량을 보려면 * 보기 * 를 선택하십시오.
-. 레거시 보기로 전환 * 을 선택합니다.
+. 고급 보기로 전환 * 을 선택합니다.
 +
-image:screenshot_digital_wallet_legacy_view.png["레거시 보기로 전환 단추의 스크린샷"]
+image:screenshot_digital_wallet_legacy_view.png["고급 보기로 전환 단추의 스크린샷"]
+
+. 보려는 패키지의 세부 정보를 봅니다.
++
+image:screenshot_digital_wallet_standard_view.png["표준 보기로 전환 단추의 스크린샷"]
 
 
 
@@ -108,7 +112,7 @@ BlueXP는 항상 라이센스에 대해 요금을 청구하려고 합니다. 라
 . BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.
 . 개요 * 탭을 선택합니다.
 . Cloud Volumes ONTAP 타일에서 * 보기 * 를 선택합니다.
-. 레거시 보기로 전환 * 을 선택합니다.
+. 고급 보기로 전환 * 을 선택합니다.
 +
 image:screenshot_digital_wallet_legacy_view.png["레거시 보기로 전환 단추의 스크린샷"]
 
