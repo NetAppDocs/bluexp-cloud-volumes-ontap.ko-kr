@@ -52,17 +52,40 @@ endif::gcp[]
 
 === NetApp 암호화 솔루션(NVE 및 NAE)
 
-Cloud Volumes ONTAP는 를 https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NVE(NetApp Volume Encryption) 및 NetApp NAE(Aggregate Encryption)"^]지원합니다. NVE와 NAE는 볼륨의 유휴 데이터 암호화를 FIPS(140-2를 준수하는 소프트웨어 기반 솔루션입니다. NVE와 NAE는 모두 AES 256비트 암호화를 사용합니다.
+Cloud Volumes ONTAP는 를 https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NVE(NetApp Volume Encryption) 및 NetApp NAE(Aggregate Encryption)"^]지원합니다. NVE와 NAE는 볼륨의 저장 데이터 암호화(FIPS) 140-2 규격을 준수하는 소프트웨어 기반 솔루션입니다. NVE와 NAE는 모두 AES 256비트 암호화를 사용합니다.
 
 * NVE는 유휴 데이터를 한 번에 한 볼륨씩 암호화합니다. 각 데이터 볼륨에는 고유한 암호화 키가 있습니다.
 * NAE는 NVE의 확장판이며 각 볼륨의 데이터를 암호화하고 애그리게이트 전체에서 볼륨을 공유합니다. NAE는 또한 애그리게이트의 모든 볼륨 전반에서 공통 블록을 중복제거할 수 있습니다.
 
 
-NVE와 NAE는 모두 외부 키 관리자로 지원됩니다.
+Cloud Volumes ONTAP은 AWS, Azure, Google Cloud에서 제공하는 외부 키 관리 서비스(EKM)를 통해 NVE와 NAE를 모두 지원하며, Fortanix와 같은 타사 솔루션도 포함됩니다. ONTAP과 달리 Cloud Volumes ONTAP의 암호화 키는 ONTAP이 아닌 클라우드 제공업체 측에서 생성됩니다.
 
-ifdef::Azure[] endif::Azure[] ifdef::GCP[] endif::GCP[]
+Cloud Volumes ONTAP은 ONTAP에서 사용하는 표준 키 관리 상호 운용성 프로토콜(KMIP) 서비스를 사용합니다. 지원되는 서비스에 대한 자세한 내용은 다음을 참조하십시오.  https://imt.netapp.com/imt/#welcome["상호 운용성 매트릭스 툴"^] .
 
-새 애그리게이트에는 외부 키 관리자를 설정한 후 기본적으로 NAE(NetApp Aggregate Encryption)가 활성화되어 있습니다. NAE 애그리게이트에 속하지 않는 새로운 볼륨은 기본적으로 NetApp Volume Encryption(NVE)이 활성화되어 있습니다(예: 외부 키 관리자를 설정하기 전에 생성된 기존 애그리게이트가 있는 경우).
+NVE를 사용하는 경우 클라우드 공급자의 키 보관소를 사용하여 ONTAP 암호화 키를 보호하는 옵션이 있습니다.
+
+ifdef::aws[]
+
+* AWS KMS(키 관리 서비스)
+
+
+endif::aws[]
+
+ifdef::azure[]
+
+* Azure 키 저장소(AKV)
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloud 키 관리 서비스
+
+
+endif::gcp[]
+
+새 애그리게이트에는 외부 키 관리자를 설정한 후 기본적으로 NAE(NetApp Aggregate Encryption)가 활성화되어 있습니다. NAE 집계에 포함되지 않은 새 볼륨에는 기본적으로 NVE가 활성화되어 있습니다(예: 외부 키 관리자를 설정하기 전에 생성된 기존 집계가 있는 경우).
 
 지원되는 키 관리자를 설정하는 것은 필요한 유일한 단계입니다. 설정 지침은 을 link:task-encrypting-volumes.html["NetApp 암호화 솔루션을 사용하여 볼륨을 암호화합니다"]참조하십시오.
 

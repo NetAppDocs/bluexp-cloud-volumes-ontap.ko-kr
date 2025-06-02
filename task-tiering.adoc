@@ -82,12 +82,13 @@ ifdef::aws[]
 
 === AWS 지원
 
-* Cloud Volumes ONTAP 9.2부터 AWS에서 데이터 계층화가 지원됩니다.
+* AWS에서는 Cloud Volumes ONTAP 9.2부터 데이터 계층화가 지원됩니다.
 * 성능 계층은 범용 SSD(GP3 또는 GP2) 또는 프로비저닝된 IOPS SSD(io1)일 수 있습니다.
 +
 
-NOTE: 처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오브젝트 스토리지에 계층화하지 않는 것이 좋습니다.
+NOTE: 처리량 최적화 HDD(st1)를 사용할 때는 개체 스토리지에 데이터를 계층화하지 않는 것이 좋습니다.
 
+* 비활성 데이터는 Amazon S3 버킷에 계층화됩니다. 다른 제공업체로의 계층화는 지원되지 않습니다.
 
 
 endif::aws[]
@@ -105,6 +106,7 @@ ifdef::azure[]
 
 
 * 성능 계층은 프리미엄 SSD 관리 디스크, 표준 SSD 관리 디스크 또는 표준 HDD 관리 디스크일 수 있습니다.
+* 비활성 데이터는 Microsoft Azure Blob에 계층화됩니다. 다른 공급자로의 계층화는 지원되지 않습니다.
 
 
 endif::azure[]
@@ -115,8 +117,9 @@ ifdef::gcp[]
 
 === Google Cloud 지원
 
-* 데이터 계층화는 Cloud Volumes ONTAP 9.6부터 Google Cloud에서 지원됩니다.
+* Google Cloud에서는 Cloud Volumes ONTAP 9.6부터 데이터 계층화가 지원됩니다.
 * 성능 계층은 SSD 영구 디스크, 균형 잡힌 영구 디스크 또는 표준 영구 디스크일 수 있습니다.
+* 비활성 데이터는 Google Cloud Storage에 계층화됩니다. 다른 제공업체로의 계층화는 지원되지 않습니다.
 
 
 endif::gcp[]

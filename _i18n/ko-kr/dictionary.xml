@@ -247,7 +247,6 @@
   <block id="1948af9c9d5426628760bb0ef4a35cdf" category="inline-link">NVE(NetApp Volume Encryption) 및 NetApp NAE(Aggregate Encryption)</block>
   <block id="0bf3330853877ab4b76b4f1e00d3ace2" category="list-text">NVE는 유휴 데이터를 한 번에 한 볼륨씩 암호화합니다. 각 데이터 볼륨에는 고유한 암호화 키가 있습니다.</block>
   <block id="988d5e992ea371904581e6f8ad13bac7" category="list-text">NAE는 NVE의 확장판이며 각 볼륨의 데이터를 암호화하고 애그리게이트 전체에서 볼륨을 공유합니다. NAE는 또한 애그리게이트의 모든 볼륨 전반에서 공통 블록을 중복제거할 수 있습니다.</block>
-  <block id="e1bf87c98edd3bee07d170ae8b118aeb" category="paragraph">새 애그리게이트에는 외부 키 관리자를 설정한 후 기본적으로 NAE(NetApp Aggregate Encryption)가 활성화되어 있습니다. NAE 애그리게이트에 속하지 않는 새로운 볼륨은 기본적으로 NetApp Volume Encryption(NVE)이 활성화되어 있습니다(예: 외부 키 관리자를 설정하기 전에 생성된 기존 애그리게이트가 있는 경우).</block>
   <block id="d200c22f00ca54467dc4ad3823710388" category="inline-link">AWS KMS(키 관리 서비스)</block>
   <block id="b7e9ad250523d385d7738ce667a69f9f" category="admonition">Cloud Volumes ONTAP 시스템을 생성한 후에는 AWS 데이터 암호화 방법을 변경할 수 없습니다.</block>
   <block id="e9993ec838a8efa5cfb29506f884deca" category="inline-link-macro">AWS KMS 설정</block>
@@ -2209,14 +2208,12 @@
   <block id="c64a8243194a73e3972f291aa54a6a53" category="list-text">Google Cloud의 경우, 전용 Google Access에 대한 서브넷을 구성하고 서비스 계정을 설정해야 합니다. <block ref="ae7c1d949803baa5d291fbd909b9d2e1" category="inline-xref-macro-rx"></block>.</block>
   <block id="aac3150f303991246792d1b76e543f1f" category="paragraph">특정 구성 및 기능을 사용할 때 데이터 계층화를 설정할 수 있습니다.</block>
   <block id="ec4c1907e0b1b3ab9bfe34d9898d0723" category="section-title">AWS 지원</block>
-  <block id="9a546a1baaebd3e2af69af4e1f807ea9" category="list-text">Cloud Volumes ONTAP 9.2부터 AWS에서 데이터 계층화가 지원됩니다.</block>
   <block id="049a56718afb4bc754cebf8a5567c3c8" category="section-title">Azure에서 지원</block>
   <block id="f16872b2bf28c8dcda252e8197cc1a5e" category="list-text">데이터 계층화는 다음과 같이 Azure에서 지원됩니다.</block>
   <block id="c7f6ec5d95cafd0132e2322cbdca7f47" category="list-text">단일 노드 시스템의 경우 버전 9.4인치</block>
   <block id="146aae59b5e422bc518402fc01301883" category="list-text">HA 쌍이 포함된 버전 9.6인치</block>
   <block id="c22e6c8e140bb405c574c67bff9bd946" category="list-text">성능 계층은 프리미엄 SSD 관리 디스크, 표준 SSD 관리 디스크 또는 표준 HDD 관리 디스크일 수 있습니다.</block>
   <block id="783e44882ef395447a1b422181ebb3d4" category="section-title">Google Cloud 지원</block>
-  <block id="c0a92ff7cf6e8a1570f1775a4a7c563d" category="list-text">데이터 계층화는 Cloud Volumes ONTAP 9.6부터 Google Cloud에서 지원됩니다.</block>
   <block id="0285440088a9a63b47028bcc1bccb076" category="section-title">기능 상호 운용성</block>
   <block id="6c30ec25f9c157f6acd5cb63a6abee29" category="list-text">애그리게이트 중 하나에서 객체에 대해 이전 명명 체계를 사용합니다. 두 애그리게이트 모두에서 같은 이름 형식을 사용해야 합니다.</block>
   <block id="181e3299a212253d089ee23c58a37a10" category="list-text">이제 Essentials 패키지와 Professional 패키지를 모든 클라우드 공급자 마켓플레이스에서 사용할 수 있습니다.</block>
@@ -3946,7 +3943,6 @@
   <block id="4c1dfec10f54a14c066eb4fde624e32b" category="paragraph"><block ref="4c1dfec10f54a14c066eb4fde624e32b" category="inline-link-rx"></block></block>
   <block id="de6c35943505135e58a4af4389b1768d" category="list-text"><block ref="de6c35943505135e58a4af4389b1768d" category="inline-link-rx"></block></block>
   <block id="9ae78035ef81aaff6187ef9a11cd1f03" category="list-text"><block ref="9ae78035ef81aaff6187ef9a11cd1f03" category="inline-link-rx"></block></block>
-  <block id="08922f23ed9079ed0750935efad792c1" category="admonition">커넥터에 대한 정보를 찾고 계십니까?<block ref="a05739e7bce05bd7a830b46920675255" category="inline-link-rx"></block></block>
   <block id="081496cbc3abd2aa45670e7415b9b307" category="list-text"><block ref="081496cbc3abd2aa45670e7415b9b307" category="inline-link-rx"></block></block>
   <block id="72a0c1f7935cbaab164295a8fac378d8" category="list-text"><block ref="72a0c1f7935cbaab164295a8fac378d8" category="inline-link-rx"></block></block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
@@ -4342,7 +4338,6 @@
   <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="list-text">L64s_v3을 참조하십시오</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link-macro">Azure에서 지원되는 구성</block>
   <block id="22342037237200e034fd29c9cfd5bfd4" category="paragraph"><block ref="22342037237200e034fd29c9cfd5bfd4" category="inline-link-macro-rx"></block></block>
-  <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Azure 보안 그룹을 만듭니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP는 Cloud Volumes ONTAP의 성공적인 운영에 필요한 인바운드 및 아웃바운드 규칙을 포함하는 AWS 보안 그룹을 생성합니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Google Cloud 방화벽 규칙을 생성합니다. 테스트용으로 또는 자체 방화벽 규칙을 사용하려는 경우 포트를 참조할 수 있습니다.</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">볼륨에 대한 ARP 구성은 ONTAP 시스템 관리자 및 ONTAP CLI를 통해 수행됩니다.</block>
@@ -4755,7 +4750,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">Kubernetes 탭은 이전 릴리즈에서 더 이상 사용되지 않으며 이제 제거되었습니다.</block>
   <block id="526b16be728da42dd3eb25f5c378e218" category="list-text">NAE는 AKV를 사용하여 사용할 수 없습니다. NAE는 외부 지원 KMIP 서버가 필요합니다.</block>
   <block id="70004026f1ac6c7f08784ebf0a55c142" category="list-text">Cloud Volumes ONTAP 노드는 AKV를 15분마다 폴링하여 접근성과 키 가용성을 확인합니다. 이 폴링 기간은 구성할 수 없으며 폴링 시도에서 4회 연속 실패(총 1시간)가 발생하면 볼륨이 오프라인 상태로 전환됩니다.</block>
-  <block id="368b5e8e02b8134e8d1009fff74bf2bc" category="paragraph">Cloud Volumes ONTAP는 를<block ref="09aecd5417a289ba24f2f00949971fbc" category="inline-link-rx"></block>지원합니다. NVE와 NAE는 볼륨의 유휴 데이터 암호화를 FIPS(140-2를 준수하는 소프트웨어 기반 솔루션입니다. NVE와 NAE는 모두 AES 256비트 암호화를 사용합니다.</block>
   <block id="f21def4319b19574f5ca7ab45389822b" category="paragraph">+ Optimized 패키지는 BYOL에서 사용할 수 없습니다.</block>
   <block id="e2299e8e355a9b503858d1f8d800ccaa" category="paragraph">Essentials 패키지의 경우 4TiB 최소 용량 비용은 보조(데이터 보호) 볼륨만 포함된 스토리지 VM에 적용되지 않습니다. 예를 들어, 1TiB의 보조 데이터를 사용하는 스토리지 VM의 경우 해당 1TiB 데이터에 대한 요금이 청구됩니다. 기타 모든 비 Essentials 패키지 유형(Optimized 및 Professional)에서는 볼륨 유형에 상관없이 4TiB의 최소 용량 충전이 적용됩니다.</block>
   <block id="ea4ba4158f6b2b895b0418072f2ba06d" category="paragraph">노드 기반 라이센스는 이전 세대 라이센스 모델로, 노드별로 Cloud Volumes ONTAP에 대한 라이센스를 부여할 수 있도록 지원합니다. 신규 고객은 이 라이센스 모델을 사용할 수 없습니다. 노드별 충전은 위에서 설명한 용량 기준 충전 방법으로 대체되었습니다.</block>
@@ -5243,7 +5237,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="c97a482803062120aadcb028bb25c6d1" category="paragraph">Cloud Volumes ONTAP 데이터는 를 사용하여 Azure에서 자동으로 암호화됩니다.<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block> 기본 구현에는 Microsoft 관리 키가 사용됩니다. 설정이 필요하지 않습니다.</block>
   <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">2024년 12월 9일</block>
   <block id="c02b5fa56aae4296da253938ec788b53" category="paragraph">Azure의 Cloud Volumes ONTAP에서 Microsoft에서 관리하는 키와 함께 데이터를 자동으로 암호화합니다.<block ref="840493a517ea59018e3217960e80e550" category="inline-link-rx"></block> 그러나 이제 다음 단계를 완료하여 고객이 관리하는 암호화 키를 사용할 수 있습니다.</block>
-  <block id="a12f9b162c1d705866995451c3607b7a" category="paragraph">ifdef::Azure[] endif::Azure[] ifdef::GCP[] endif::GCP[]</block>
   <block id="2da8645e38c3d4f73ccf32db700949e1" category="inline-link">KB: CVO에서 지원되는 인라인 스토리지 효율성 기능은 무엇입니까?</block>
   <block id="d3f3737cc08ede35a7833c219be7cf96" category="paragraph">BlueXP 3.9.5 릴리스부터는 초기 스토리지 VM에서 논리적 공간 보고가 활성화됩니다. 공간이 논리적으로 보고되면 ONTAP에서는 스토리지 효율성 기능으로 절약된 모든 물리적 공간이 사용된 것으로 보고하도록 볼륨 공간을 보고합니다. 인라인 스토리지 효율성 기능에 대한 자세한 내용은 기술 자료 문서를 참조하십시오<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block></block>
   <block id="2036e42877d5092c3afda2b202817932" category="list-text">NFS ifdef::AWS[] endif::AWS[] ifdef::Azure[] endif::Azure[]</block>
@@ -5850,4 +5843,26 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="5dc4c869682b55bd825dbd766c5a91c6" category="inline-link-macro">Azure 개인 링크를 비활성화했습니다</block>
   <block id="56942c64ec21bc5186a25c20b4c9231e" category="list-text"><block ref="d1486d850c17a7ded1dee71bca015a76" category="inline-link-macro-rx"></block>서브넷 서비스 끝점을 사용해야 합니다.</block>
   <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025년 5월 12일</block>
+  <block id="389d4c98e2d0499c2e4e750430434afb" category="doc">Cloud Volumes ONTAP 9.15.1에 대해 활성화된 개인 모드 배포</block>
+  <block id="bce4906e9d915e525cd382b520b71325" category="paragraph">이제 AWS, Azure 및 Google Cloud의 프라이빗 모드로 Cloud Volumes ONTAP 9.15.1을 구축할 수 있습니다. 프라이빗 모드는 Cloud Volumes ONTAP 9.15.1의 단일 노드 및 고가용성(HA) 구축에 모두 사용할 수 있습니다.</block>
+  <block id="8d85a6720847d90489976db4cc2c4e48" category="paragraph">Cloud Volumes ONTAP는 를<block ref="09aecd5417a289ba24f2f00949971fbc" category="inline-link-rx"></block>지원합니다. NVE와 NAE는 볼륨의 저장 데이터 암호화(FIPS) 140-2 규격을 준수하는 소프트웨어 기반 솔루션입니다. NVE와 NAE는 모두 AES 256비트 암호화를 사용합니다.</block>
+  <block id="3d9f78a1ff8b79063296498224874e6c" category="paragraph">Cloud Volumes ONTAP은 AWS, Azure, Google Cloud에서 제공하는 외부 키 관리 서비스(EKM)를 통해 NVE와 NAE를 모두 지원하며, Fortanix와 같은 타사 솔루션도 포함됩니다. ONTAP과 달리 Cloud Volumes ONTAP의 암호화 키는 ONTAP이 아닌 클라우드 제공업체 측에서 생성됩니다.</block>
+  <block id="918d32b75f0ab883abba3a8dc0c3ae8d" category="inline-link">상호 운용성 매트릭스 툴</block>
+  <block id="fc018227cf021b5cfd4d7696a41f346a" category="paragraph">Cloud Volumes ONTAP은 ONTAP에서 사용하는 표준 키 관리 상호 운용성 프로토콜(KMIP) 서비스를 사용합니다. 지원되는 서비스에 대한 자세한 내용은 다음을 참조하십시오. <block ref="728e4ee339d5763542973002d2a82dc7" category="inline-link-rx"></block> .</block>
+  <block id="37368004332f325820087f73466f8e6c" category="paragraph">NVE를 사용하는 경우 클라우드 공급자의 키 보관소를 사용하여 ONTAP 암호화 키를 보호하는 옵션이 있습니다.</block>
+  <block id="35b16ddf568bd70f42e0bcb19f2a533c" category="list-text">Azure 키 저장소(AKV)</block>
+  <block id="f0daa22edb6ee8b88bae0e5a21b552ec" category="list-text">Google Cloud 키 관리 서비스</block>
+  <block id="81f72afb3ba5f2e16cf373b5ea887aec" category="paragraph">새 애그리게이트에는 외부 키 관리자를 설정한 후 기본적으로 NAE(NetApp Aggregate Encryption)가 활성화되어 있습니다. NAE 집계에 포함되지 않은 새 볼륨에는 기본적으로 NVE가 활성화되어 있습니다(예: 외부 키 관리자를 설정하기 전에 생성된 기존 집계가 있는 경우).</block>
+  <block id="9d7d08ead80432c8e527b130cf457a7d" category="paragraph">BlueXP는 Cloud Volumes ONTAP이 성공적으로 작동할 수 있도록 인바운드 및 아웃바운드 규칙을 포함하는 Azure 보안 그룹을 만듭니다. <block ref="a05739e7bce05bd7a830b46920675255" category="inline-link-rx"></block> .</block>
+  <block id="52fa9133415c22fe3227f02c5bdc7bdb" category="inline-link">ONTAP 내부 포트에 대해 알아봅니다</block>
+  <block id="72cb359256f1b923869ffe5643075163" category="paragraph">Cloud Volumes ONTAP용 Azure 보안 그룹에는 노드 간 내부 통신을 위해 적절한 포트가 열려 있어야 합니다. <block ref="9235b6a724dccf5c41be51f4736123ae" category="inline-link-rx"></block> .</block>
+  <block id="e3f7f3a3bb47d39a7fd58de8d5070b2b" category="paragraph">미리 정의된 보안 그룹을 수정하거나 사용자 지정 보안 그룹을 사용하는 것은 권장하지 않습니다. 하지만 꼭 사용해야 하는 경우, 배포 프로세스에서 Cloud Volumes ONTAP 시스템이 자체 서브넷 내에서 전체 액세스 권한을 가져야 합니다. 배포가 완료된 후 네트워크 보안 그룹을 수정하려면 클러스터 포트와 HA 네트워크 포트를 열어 두어야 합니다. 이렇게 하면 Cloud Volumes ONTAP 클러스터 내에서 원활한 통신(노드 간 임의 대 임의 통신)이 보장됩니다.</block>
+  <block id="552d4863308abc19f380cc04022d6ad3" category="admonition">소스는 Cloud Volumes ONTAP 시스템의 인터페이스(IP 주소)입니다.</block>
+  <block id="8dbd909e72408c020853ce0f323f1faa" category="list-text">AWS에서는 Cloud Volumes ONTAP 9.2부터 데이터 계층화가 지원됩니다.</block>
+  <block id="bb76865f22c7023c27866da2d50e30b0" category="admonition">처리량 최적화 HDD(st1)를 사용할 때는 개체 스토리지에 데이터를 계층화하지 않는 것이 좋습니다.</block>
+  <block id="0baa9fabb663d0426d677bdef48cab76" category="list-text">비활성 데이터는 Amazon S3 버킷에 계층화됩니다. 다른 제공업체로의 계층화는 지원되지 않습니다.</block>
+  <block id="9d04d4aae5bc77b320eddf498e3e1a4c" category="list-text">비활성 데이터는 Microsoft Azure Blob에 계층화됩니다. 다른 공급자로의 계층화는 지원되지 않습니다.</block>
+  <block id="4fa4358b6bad8118578db6b5c02a52db" category="list-text">Google Cloud에서는 Cloud Volumes ONTAP 9.6부터 데이터 계층화가 지원됩니다.</block>
+  <block id="bae7cc0d7e8eb757103bffb3f43417c4" category="list-text">비활성 데이터는 Google Cloud Storage에 계층화됩니다. 다른 제공업체로의 계층화는 지원되지 않습니다.</block>
+  <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">2025년 5월 29일</block>
 </blocks>

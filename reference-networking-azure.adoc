@@ -212,12 +212,11 @@ Azure 리소스 그룹에 두 번째 Cloud Volumes ONTAP HA 쌍을 배포하려�
 
 === 보안 그룹 규칙
 
-BlueXP는 Cloud Volumes ONTAP가 성공적으로 운영하는 데 필요한 인바운드 및 아웃바운드 규칙을 포함하는 Azure 보안 그룹을 만듭니다. 테스트 목적으로 또는 자체 보안 그룹을 사용하려는 경우 포트를 참조할 수 있습니다.
+BlueXP는 Cloud Volumes ONTAP이 성공적으로 작동할 수 있도록 인바운드 및 아웃바운드 규칙을 포함하는 Azure 보안 그룹을 만듭니다.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Connector에 대한 보안 그룹 규칙을 봅니다"^] .
 
-Cloud Volumes ONTAP의 보안 그룹에는 인바운드 및 아웃바운드 규칙이 모두 필요합니다.
+Cloud Volumes ONTAP용 Azure 보안 그룹에는 노드 간 내부 통신을 위해 적절한 포트가 열려 있어야 합니다.  https://docs.netapp.com/us-en/ontap/networking/ontap_internal_ports.html["ONTAP 내부 포트에 대해 알아봅니다"^] .
 
-
-TIP: 커넥터에 대한 정보를 찾고 계십니까? https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Connector에 대한 보안 그룹 규칙을 봅니다"^]
+미리 정의된 보안 그룹을 수정하거나 사용자 지정 보안 그룹을 사용하는 것은 권장하지 않습니다. 하지만 꼭 사용해야 하는 경우, 배포 프로세스에서 Cloud Volumes ONTAP 시스템이 자체 서브넷 내에서 전체 액세스 권한을 가져야 합니다. 배포가 완료된 후 네트워크 보안 그룹을 수정하려면 클러스터 포트와 HA 네트워크 포트를 열어 두어야 합니다. 이렇게 하면 Cloud Volumes ONTAP 클러스터 내에서 원활한 통신(노드 간 임의 대 임의 통신)이 보장됩니다.
 
 
 

@@ -20,6 +20,18 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2025년 5월 29일
+
+
+
+=== Cloud Volumes ONTAP 9.15.1에 대해 활성화된 개인 모드 배포
+
+이제 AWS, Azure 및 Google Cloud의 프라이빗 모드로 Cloud Volumes ONTAP 9.15.1을 구축할 수 있습니다. 프라이빗 모드는 Cloud Volumes ONTAP 9.15.1의 단일 노드 및 고가용성(HA) 구축에 모두 사용할 수 있습니다.
+
+개인 모드 배포에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#restricted-mode["BlueXP 배포 모드에 대해 알아보십시오"^]참조하십시오.
+
+
+
 == 2025년 5월 12일
 
 
