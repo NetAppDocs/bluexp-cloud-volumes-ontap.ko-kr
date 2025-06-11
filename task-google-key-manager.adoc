@@ -19,15 +19,12 @@ summary: 타사 키 관리 서비스를 위해 Google의 키 관리 서비스를
 Cloud KMS를 사용할 때는 기본적으로 데이터 SVM의 LIF가 클라우드 키 관리 엔드포인트와 통신하는 데 사용됩니다. 노드 관리 네트워크는 클라우드 공급자의 인증 서비스(oauth2.googleapis.com 통신하는 데 사용됩니다. 클러스터 네트워크가 올바르게 구성되지 않은 경우 클러스터는 키 관리 서비스를 제대로 사용하지 않습니다.
 
 .시작하기 전에
-* Cloud Volumes ONTAP에서 버전 9.10.1 이상을 실행해야 합니다
-* VE(Volume Encryption) 라이센스가 설치되었습니다
-* 멀티 테넌트 암호화 키 관리(MTEKM) 라이센스가 설치되어 있으며 Cloud Volumes ONTAP 9.12.1 GA부터 시작합니다.
+* 시스템에서는 Cloud Volumes ONTAP 9.10.1 이상을 실행해야 합니다.
+* 데이터 SVM을 사용해야 합니다. Cloud KMS는 데이터 SVM에서만 구성할 수 있습니다.
 * 클러스터 또는 SVM 관리자여야 합니다
-* Google Cloud Platform의 활성 서브스크립션입니다
-
-
-.제한 사항
-* 클라우드 KMS는 데이터 SVM에서만 구성할 수 있습니다
+* SVM에 볼륨 암호화(VE) 라이선스를 설치해야 합니다.
+* Cloud Volumes ONTAP 9.12.1 GA부터 다중 테넌트 암호화 키 관리(MTEKM) 라이선스도 설치해야 합니다.
+* 활성화된 Google Cloud Platform 구독이 필요합니다.
 
 
 
@@ -36,7 +33,9 @@ Cloud KMS를 사용할 때는 기본적으로 데이터 SVM의 LIF가 클라우�
 
 .Google 클라우드
 . Google Cloud 환경에서는 link:https://cloud.google.com/kms/docs/creating-keys["대칭 GCP 키 링 및 키를 생성합니다"^].
-. Cloud Volumes ONTAP 서비스 계정에 대한 사용자 지정 역할을 만듭니다.
+. Cloud KMS 키와 Cloud Volumes ONTAP 서비스 계정에 사용자 지정 역할을 할당합니다.
++
+.. 사용자 지정 역할을 만듭니다.
 +
 [listing]
 ----
@@ -47,7 +46,14 @@ gcloud iam roles create kmsCustomRole
     --permissions=cloudkms.cryptoKeyVersions.get,cloudkms.cryptoKeyVersions.list,cloudkms.cryptoKeyVersions.useToDecrypt,cloudkms.cryptoKeyVersions.useToEncrypt,cloudkms.cryptoKeys.get,cloudkms.keyRings.get,cloudkms.locations.get,cloudkms.locations.list,resourcemanager.projects.get
     --stage=GA
 ----
-. 사용자 지정 역할을 클라우드 KMS 키 및 Cloud Volumes ONTAP 서비스 계정에 할당합니다. "gcloud kms keys add-iam-policy-binding_key_name_--keyring_key_ring_name_--location_location_member ServiceAccount:_service_account_Name_--role projects/_customer_id_/kCustomRole"
+.. 생성한 사용자 지정 역할을 할당합니다. 
+`gcloud kms keys add-iam-policy-binding _key_name_ --keyring _key_ring_name_ --location _key_location_ --member serviceAccount:_service_account_Name_ --role projects/_customer_project_id_/roles/kmsCustomRole`
++
+
+NOTE: Cloud Volumes ONTAP 9.13.0 이상을 사용하는 경우 사용자 지정 역할을 만들 필요가 없습니다. [`cloudkms.cryptoKeyEncrypterDecrypter` ^] 역할.
+
+
+
 . 서비스 계정 JSON 키 다운로드:'gcloud iam service-accounts key create key-file --iam-account=_sa-name_@_project-id_.iam.gserviceaccount.com
 
 

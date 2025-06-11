@@ -84,7 +84,12 @@ BlueXP는 다음과 같은 설정으로 저장소 계정을 만듭니다.
 
 * 액세스 계층: 핫
 * 성능: 표준
-* 이중화: LRS(Locally-Redundant Storage)
+* 중복성: Cloud Volume ONTAP 배포에 따라
++
+** 단일 가용성 영역: 로컬 중복 스토리지(LRS)
+** 다중 가용성 영역: 영역 중복 스토리지(ZRS)
+
+
 * 계정:StorageV2(범용 v2)
 * REST API 작업을 위한 보안 전송 필요: 사용
 * 스토리지 계정 키 액세스: 사용

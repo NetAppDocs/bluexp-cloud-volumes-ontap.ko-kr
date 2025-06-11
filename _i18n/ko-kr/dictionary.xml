@@ -2251,7 +2251,6 @@
   <block id="98084fb337b1b2cf4cb9e5af0b0ef9b1" category="list-text">Cloud Volumes ONTAP 시스템은 비활성 데이터를 단일 Blob 컨테이너에 계층화합니다.</block>
   <block id="f7c5c3f829ba75eb23b7c60381fd4f74" category="list-text">액세스 계층: 핫</block>
   <block id="c89729007f1266a456e5a1133a9f58e9" category="list-text">성능: 표준</block>
-  <block id="dc4d23da133e198d425564262ad6976b" category="list-text">이중화: LRS(Locally-Redundant Storage)</block>
   <block id="2f546189dda4bc24c6d8f6ed71c57a36" category="list-text">계정:StorageV2(범용 v2)</block>
   <block id="e0d679a04a2c140c65cff67ffbfd8444" category="list-text">REST API 작업을 위한 보안 전송 필요: 사용</block>
   <block id="4fbd5770a6fd5de01bbbcf2a407118d7" category="list-text">스토리지 계정 키 액세스: 사용</block>
@@ -2355,7 +2354,6 @@
   <block id="b80b61bef9c57d9979c8a0a11310d79b" category="paragraph">AKV를 사용한 키 관리는 CLI 또는 ONTAP REST API를 사용하여 활성화할 수 있습니다.</block>
   <block id="e99dab450e193aa16ab181a9cbb70701" category="paragraph">AKV를 사용할 때는 기본적으로 데이터 SVM LIF가 클라우드 키 관리 엔드포인트와 통신하는 데 사용됩니다. 노드 관리 네트워크는 클라우드 공급자의 인증 서비스(login.microsoftonline.com 통신하는 데 사용됩니다. 클러스터 네트워크가 올바르게 구성되지 않은 경우 클러스터는 키 관리 서비스를 제대로 사용하지 않습니다.</block>
   <block id="0dbc3b305b67f45cc077782f1bde33be" category="list-text">Cloud Volumes ONTAP에서 버전 9.10.1 이상을 실행해야 합니다</block>
-  <block id="3db7729c3f93b51e237e9f64f77736ce" category="list-text">VE(Volume Encryption) 라이센스가 설치되었습니다</block>
   <block id="941d09f50e1c95a1d21454ff759fc757" category="list-text">클러스터 또는 SVM 관리자여야 합니다</block>
   <block id="4da5254130066f3f3262c3aa07f10759" category="list-text">Active Azure 구독</block>
   <block id="0c7af18d6ac0bf65ef1d6aec6f629263" category="list-text">AKV는 데이터 SVM에서만 구성할 수 있습니다</block>
@@ -2367,8 +2365,6 @@
   <block id="68f0035d3c55f26e0ec12ed454908a6e" category="list-text">Key Manager의 상태를 확인한다. '보안 Key-manager external Azure check' 출력 내용은 다음과 같다.</block>
   <block id="776c67d51f3f1c503c9062c9d812c2b7" category="list-text">볼륨이 올바르게 생성되고 암호화되었는지 확인합니다. 이 경우 암호화된 매개 변수는 true로 표시됩니다. 'vol show-vserver_SVM_name_-fields is-encrypted'</block>
   <block id="0dbdff8ed1ef0e78c4dc84ace48205d6" category="inline-link-macro">Google Cloud Platform의 키 관리 서비스(Cloud KMS)</block>
-  <block id="41a2c826f6f02a44a93533524c99b84e" category="list-text">클라우드 KMS는 데이터 SVM에서만 구성할 수 있습니다</block>
-  <block id="105e3d12938c631bc5d8ab6f6b628e1c" category="list-text">Google Cloud Platform의 활성 서브스크립션입니다</block>
   <block id="d21cbe89c10e8cddec31594493146dcf" category="list-text">서비스 계정 JSON 키 다운로드:'gcloud iam service-accounts key create key-file --iam-account=_sa-name_@_project-id_.iam.gserviceaccount.com</block>
   <block id="82e39d2f55f4956d1929bbcff0b210aa" category="list-text">고급 권한 수준 설정 고급 으로 전환합니다</block>
   <block id="6deefebfd83493611afe8675c6d1ce7b" category="list-text">CMEK 항목 생성:'Security key-manager external GCP enable-vserver_SVM_name_-project-id_project_-key-ring-name_key_ring_name_-key-ring-location_location_-key-name_key_key_key_key_name_'입니다</block>
@@ -2413,8 +2409,6 @@
   <block id="254f642527b45bc260048e30704edb39" category="section-title">구성</block>
   <block id="d8cc118193ca8f7de894de3aa3760c8b" category="inline-link-macro">대칭 GCP 키 링 및 키를 생성합니다</block>
   <block id="f510135977c794727163a8e714df5b99" category="list-text">Google Cloud 환경에서는 <block ref="7ea8c432087c9eb8393041b63739b4b6" category="inline-link-macro-rx"></block>.</block>
-  <block id="43b2c0508e829808a52d205609043890" category="list-text">Cloud Volumes ONTAP 서비스 계정에 대한 사용자 지정 역할을 만듭니다.</block>
-  <block id="df877e8ddc7d9aae543dcf9650ab2c34" category="list-text">사용자 지정 역할을 클라우드 KMS 키 및 Cloud Volumes ONTAP 서비스 계정에 할당합니다. "gcloud kms keys add-iam-policy-binding_key_name_--keyring_key_ring_name_--location_location_member ServiceAccount:_service_account_Name_--role projects/_customer_id_/kCustomRole"</block>
   <block id="d8787bda3ae35a469afc376610816a6a" category="list-text">데이터 SVM을 위한 DNS를 생성합니다. dns create-domain c._&lt;project&gt;_.internal -name-servers_server_address_-vserver_SVM_name_'을 선택합니다</block>
   <block id="1601dadf3d75da8ab487484480cbf4ef" category="list-text">선택 사항: 암호화 'vol create_volume_name_-aggregate_aggregate_-vserver_vserver_name_-size 10G'를 테스트할 볼륨을 생성합니다</block>
   <block id="401a8aaa330fe64d45395192c047e1ed" category="paragraph">Cloud Volumes ONTAP는 NVE(NetApp Volume Encryption) 및 NAE(NetApp Aggregate Encryption)를 지원합니다. NVE와 NAE는 FIPS 140-2를 준수하는 볼륨 유휴 데이터 암호화를 지원하는 소프트웨어 기반 솔루션입니다. <block ref="d36456219fc3d98cd4133816e30fd33f" category="inline-link-macro-rx"></block>.</block>
@@ -3486,7 +3480,6 @@
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">* 사례 보기 *: 특정 케이스에 대한 전체 세부 정보를 봅니다.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷</block>
   <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.13.0 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.</block>
-  <block id="436ea77bab9d72d8fe71dbccf1dd6613" category="list-text">멀티 테넌트 암호화 키 관리(MTEKM) 라이센스가 설치되어 있으며 Cloud Volumes ONTAP 9.12.1 GA부터 시작합니다.</block>
   <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">Cloud Volumes ONTAP 이미지 다이제스트 파일 도구를 통해 내보낸 Google 클라우드 이미지 파일 서명을 확인합니다.</block>
   <block id="019892a31385e7fb7670de88abfcf3cd" category="paragraph">내보낸 Google Cloud 서명 이미지를 확인하려면 NSS에서 이미지 다이제스트 파일을 다운로드하여 disk.raw 파일의 유효성을 검사하고 파일 내용을 다이제해야 합니다.</block>
   <block id="c81429443fac6104f46abd88cff6840a" category="section-title">서명된 이미지 검증 워크플로 요약</block>
@@ -5865,4 +5858,17 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="4fa4358b6bad8118578db6b5c02a52db" category="list-text">Google Cloud에서는 Cloud Volumes ONTAP 9.6부터 데이터 계층화가 지원됩니다.</block>
   <block id="bae7cc0d7e8eb757103bffb3f43417c4" category="list-text">비활성 데이터는 Google Cloud Storage에 계층화됩니다. 다른 제공업체로의 계층화는 지원되지 않습니다.</block>
   <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">2025년 5월 29일</block>
+  <block id="af06b9862164f62f5ee6325272d44053" category="list-text">중복성: Cloud Volume ONTAP 배포에 따라</block>
+  <block id="9a5070a4f48a9f2a4059c8b0f6fabc0f" category="list-text">단일 가용성 영역: 로컬 중복 스토리지(LRS)</block>
+  <block id="c43f742471855ab4046c8e23e0d8fe4e" category="list-text">다중 가용성 영역: 영역 중복 스토리지(ZRS)</block>
+  <block id="76246533f5983ea5fd5d33c0515bcb4d" category="list-text">시스템에서는 Cloud Volumes ONTAP 9.10.1 이상을 실행해야 합니다.</block>
+  <block id="7f41679ba0e676db7de59363a178d7d6" category="list-text">데이터 SVM을 사용해야 합니다. Cloud KMS는 데이터 SVM에서만 구성할 수 있습니다.</block>
+  <block id="6c167007d611da9626ecac9c168c7e8a" category="list-text">SVM에 볼륨 암호화(VE) 라이선스를 설치해야 합니다.</block>
+  <block id="26a7c42662e416d13cb36f80c1950dfa" category="list-text">Cloud Volumes ONTAP 9.12.1 GA부터 다중 테넌트 암호화 키 관리(MTEKM) 라이선스도 설치해야 합니다.</block>
+  <block id="843cdd13756df08efb884f520d2add09" category="list-text">활성화된 Google Cloud Platform 구독이 필요합니다.</block>
+  <block id="7c10ba4172019b4730c14e61275bafac" category="list-text">Cloud KMS 키와 Cloud Volumes ONTAP 서비스 계정에 사용자 지정 역할을 할당합니다.</block>
+  <block id="2428f19901807b70d43261121dafcf93" category="list-text">사용자 지정 역할을 만듭니다.</block>
+  <block id="f193581eeaf23b712b81e0023faf5954" category="list-text">생성한 사용자 지정 역할을 할당합니다. <block ref="1bc6114e9ddb3402400afe0f18264312" prefix=" " category="inline-code"></block></block>
+  <block id="2ca4641842d5ce20115dfc5ed991df9a" category="admonition">Cloud Volumes ONTAP 9.13.0 이상을 사용하는 경우 사용자 지정 역할을 만들 필요가 없습니다. <block ref="73ac35632bb1fe345fd295d7683fcbee" category="inline-link-rx"></block><block ref="8f1f4fa398a38c70f01951f69f3c2a1f" prefix="[" category="inline-code"></block> ^] 역할.</block>
+  <block id="07bc73dbf27c2d6ca6dd4dcbb64687bf" category="paragraph">BlueXP는 스토리지 VM(SVM) 재해 복구에 대한 설정 또는 오케스트레이션 지원을 제공하지 않습니다. 이러한 작업을 수행하려면 ONTAP System Manager 또는 ONTAP CLI를 사용하십시오.</block>
 </blocks>
