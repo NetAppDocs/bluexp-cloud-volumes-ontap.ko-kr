@@ -76,21 +76,17 @@ AWS에서 Cloud Volumes ONTAP을 시작하려면 BlueXP 에서 새로운 작업
 | 사용자 이름 및 암호 | Cloud Volumes ONTAP 클러스터 관리자 계정의 자격 증명입니다. 이러한 자격 증명을 사용하여 ONTAP System Manager 또는 ONTAP CLI를 통해 Cloud Volumes ONTAP에 연결할 수 있습니다. default_admin_user 이름을 유지하거나 사용자 지정 사용자 이름으로 변경합니다. 
 
 
-| 자격 증명 편집 | 이 시스템을 구축할 계정과 연결된 AWS 자격 증명을 선택합니다. AWS Marketplace 구독을 연결하여 이 Cloud Volumes ONTAP 시스템에 사용할 수도 있습니다.
-
-선택한 자격 증명을 새 AWS Marketplace 구독에 연결하려면 * Add Subscription * 을 클릭합니다. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXP에 AWS 자격 증명을 추가하는 방법에 대해 알아보십시오"^]. 
+| 자격 증명 편집 | 이 시스템을 구축할 계정과 연결된 AWS 자격 증명을 선택합니다. AWS 마켓플레이스 구독을 연결하여 이 Cloud Volumes ONTAP 시스템에 사용할 수도 있습니다. 선택한 자격 증명을 새 AWS 마켓플레이스 구독에 연결하려면 *구독 추가*를 클릭하세요. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXP에 AWS 자격 증명을 추가하는 방법에 대해 알아보십시오"^].. 
 |===
 +
-다음 비디오에서는 용량제 마켓플레이스 구독을 AWS 자격 증명에 연결하는 방법을 보여줍니다.
+다음 비디오에서는 AWS 자격 증명에 사용량에 따른 결제 방식 마켓플레이스 구독을 연결하는 방법을 보여줍니다.
 
 +
-.AWS 마켓플레이스에서 BlueXP를 구독하십시오
+.AWS 마켓플레이스에서 BlueXP 구독
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
-TIP: 여러 IAM 사용자가 동일한 AWS 계정으로 작업하는 경우 각 사용자는 가입해야 합니다. 첫 번째 사용자가 구독한 후 AWS Marketplace는 아래 이미지에 표시된 것처럼 후속 사용자에게 이미 구독했음을 알립니다. AWS_ACCOUNT_에 가입되어 있는 동안 각 IAM 사용자는 자신을 해당 구독과 연결해야 합니다. 아래 메시지가 표시되면 * 여기를 클릭 * 링크를 클릭하여 BlueXP 웹 사이트로 이동하여 프로세스를 완료합니다.image:screenshot_aws_marketplace.gif["AWS 계정에 이미 가입되어 있지만 특정 IAM 사용자가 아닐 수 있는 경우 BlueXP for Cloud Volumes ONTAP의 가입 페이지를 보여주는 스크린샷."]
+TIP: 여러 IAM 사용자가 동일한 AWS 계정으로 작업하는 경우 각 사용자는 가입해야 합니다. 첫 번째 사용자가 구독하면 AWS 마켓플레이스는 아래 이미지와 같이 이후 사용자에게 이미 구독되었음을 알립니다. AWS_ACCOUNT_에 가입되어 있는 동안 각 IAM 사용자는 자신을 해당 구독과 연결해야 합니다. 아래 메시지가 표시되면 *여기를 클릭* 링크를 클릭하여 BlueXP 웹사이트로 이동하여 구독 절차를 완료하세요. image:screenshot_aws_marketplace.gif["AWS 계정에 이미 가입되어 있지만 특정 IAM 사용자가 아닐 수 있는 경우 BlueXP for Cloud Volumes ONTAP의 가입 페이지를 보여주는 스크린샷."]
 
 . * 서비스 *: Cloud Volumes ONTAP에서 사용하지 않을 개별 서비스를 활성화 또는 비활성화합니다.
 +
@@ -146,7 +142,7 @@ link:concept-security.html#encryption-of-data-at-rest["지원되는 암호화 �
 ** link:task-set-up-licensing-aws.html["라이센스 설정 방법에 대해 알아보십시오"^].
 
 
-. * Cloud Volumes ONTAP 구성 * (연간 AWS 마켓플레이스 계약만 해당): 기본 구성을 검토하고 * 계속 * 을 클릭하거나 * 구성 변경 * 을 클릭하여 원하는 구성을 선택합니다.
+. *Cloud Volumes ONTAP 구성* (연간 AWS 마켓플레이스 계약에만 해당): 기본 구성을 검토하고 *계속*을 클릭하거나 *구성 변경*을 클릭하여 원하는 구성을 선택합니다.
 +
 기본 구성을 유지하는 경우 볼륨을 지정한 다음 구성을 검토 및 승인하기만 하면 됩니다.
 
@@ -330,17 +326,17 @@ Connector 버전 3.9.36 이하를 실행하는 경우 AWS EC2 콘솔의 AWS Conn
 | 사용자 이름 및 암호 | Cloud Volumes ONTAP 클러스터 관리자 계정의 자격 증명입니다. 이러한 자격 증명을 사용하여 ONTAP System Manager 또는 ONTAP CLI를 통해 Cloud Volumes ONTAP에 연결할 수 있습니다. default_admin_user 이름을 유지하거나 사용자 지정 사용자 이름으로 변경합니다. 
 
 
-| 자격 증명 편집 | 이 Cloud Volumes ONTAP 시스템에서 사용할 AWS 자격 증명과 마켓플레이스 구독을 선택하십시오. 선택한 자격 증명을 새 AWS Marketplace 구독에 연결하려면 * Add Subscription * 을 클릭합니다. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다. NetApp(BYOL(Bring Your Own License))에서 직접 라이센스를 구매한 경우에는 AWS 구독이 필요하지 않습니다. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXP에 AWS 자격 증명을 추가하는 방법에 대해 알아보십시오"^].. 
+| 자격 증명 편집 | 이 Cloud Volumes ONTAP 시스템에서 사용할 AWS 자격 증명과 마켓플레이스 구독을 선택하십시오. *구독 추가*를 클릭하여 선택한 자격 증명을 새로운 AWS 마켓플레이스 구독과 연결합니다. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다. NetApp(BYOL(Bring Your Own License))에서 직접 라이센스를 구매한 경우에는 AWS 구독이 필요하지 않습니다. https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["BlueXP에 AWS 자격 증명을 추가하는 방법에 대해 알아보십시오"^].. 
 |===
 +
-다음 비디오에서는 용량제 마켓플레이스 구독을 AWS 자격 증명에 연결하는 방법을 보여줍니다.
+다음 비디오에서는 AWS 자격 증명에 사용량에 따른 결제 방식 마켓플레이스 구독을 연결하는 방법을 보여줍니다.
 
 +
-.AWS 마켓플레이스에서 BlueXP를 구독하십시오
+.AWS 마켓플레이스에서 BlueXP 구독
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
-TIP: 여러 IAM 사용자가 동일한 AWS 계정으로 작업하는 경우 각 사용자는 가입해야 합니다. 첫 번째 사용자가 구독한 후 AWS Marketplace는 아래 이미지에 표시된 것처럼 후속 사용자에게 이미 구독했음을 알립니다. AWS_ACCOUNT_에 가입되어 있는 동안 각 IAM 사용자는 자신을 해당 구독과 연결해야 합니다. 아래 메시지가 표시되면 * 여기를 클릭 * 링크를 클릭하여 BlueXP 웹 사이트로 이동하여 프로세스를 완료합니다.image:screenshot_aws_marketplace.gif["AWS 계정에 이미 가입되어 있지만 특정 IAM 사용자가 아닐 수 있는 경우 BlueXP for Cloud Volumes ONTAP의 가입 페이지를 보여주는 스크린샷."]
+TIP: 여러 IAM 사용자가 동일한 AWS 계정으로 작업하는 경우 각 사용자는 가입해야 합니다. 첫 번째 사용자가 구독하면 AWS 마켓플레이스는 아래 이미지와 같이 이후 사용자에게 이미 구독되었음을 알립니다. AWS_ACCOUNT_에 가입되어 있는 동안 각 IAM 사용자는 자신을 해당 구독과 연결해야 합니다. 아래 메시지가 표시되면 *여기를 클릭* 링크를 클릭하여 BlueXP 웹사이트로 이동하여 구독 절차를 완료하세요. image:screenshot_aws_marketplace.gif["AWS 계정에 이미 가입되어 있지만 특정 IAM 사용자가 아닐 수 있는 경우 BlueXP for Cloud Volumes ONTAP의 가입 페이지를 보여주는 스크린샷."]
 
 . * 서비스 *: 이 Cloud Volumes ONTAP 시스템에서 사용하지 않을 개별 서비스를 활성화 또는 비활성화합니다.
 +

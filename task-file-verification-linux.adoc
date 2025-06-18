@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-file-verification-linux.html 
 keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, Linux 
-summary: Linux에서 Cloud Volumes ONTAP 이미지 요약 파일 도구를 통해 내보낸 VHD 파일 서명을 확인합니다 
+summary: Linux에서 Cloud Volumes ONTAP 이미지 다이제스트 파일 도구를 통해 내보낸 VHD 파일 서명 확인 
 ---
 = Linux 기반 Cloud Volumes ONTAP에 대한 Azure 마켓플레이스 이미지 서명을 확인합니다
 :hardbreaks:
@@ -14,38 +14,34 @@ summary: Linux에서 Cloud Volumes ONTAP 이미지 요약 파일 도구를 통�
 
 
 [role="lead"]
-다음 단계에 따라 내보낸 Linux용 VHD 파일 서명을 확인할 수 있습니다.
+Linux에서 내보낸 VHD 파일 서명을 검증하려면 신뢰 체인을 검증하고, 파일을 편집하고, 서명을 검증하는 작업이 포함됩니다.
 
 .단계
-. 에서 Azure Image Digest 파일을 다운로드합니다 https://mysupport.netapp.com/site/["NetApp Support 사이트"^] 다이제스트 파일(.sig), 공개 키 인증서 파일(.pem) 및 체인 인증서 파일(.pem)의 압축을 풉니다.
+. Azure 이미지 파일을 다운로드하세요.  https://mysupport.netapp.com/site/["NetApp Support 사이트"^] 그리고 다이제스트(.sig) 파일, 공개 키 인증서(.pem) 파일, 체인 인증서(.pem) 파일을 추출합니다.
 +
-을 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["Azure Image Digest 파일을 다운로드합니다"^] 를 참조하십시오.
+자세한 내용은 을 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["Azure 이미지 다이제스트 파일 다운로드"^] 참조하십시오.
 
 . 신뢰 체인을 확인합니다.
 +
-[listing]
+[source, cli]
 ----
 % openssl verify -CAfile Certificate-Chain-9.15.0P1_azure.pem Certificate-9.15.0P1_azure.pem
 Certificate-9.15.0P1_azure.pem: OK
 ----
-. 앞의 1MB(1048576바이트)와 끝 512바이트의 VHD 파일을 제거합니다.
+. VHD 파일의 시작 부분에서 1MB(1,048,576바이트)를 제거하고 끝 부분에서 512바이트를 제거합니다 .  `tail` , 그  `-c +K` 옵션은 파일의 K번째 바이트부터 바이트를 생성합니다. 따라서 1048577을 다음 바이트로 전달합니다.  `tail -c` .
 +
-'tail'을 사용하는 경우 '-c+K' 옵션은 지정된 파일의 Kth 바이트로 시작하는 바이트를 출력합니다. 따라서 1048577은 'tail -c'로 전달됩니다.
-
-+
-[listing]
+[source, cli]
 ----
 % tail -c +1048577 ./9150.01000024.05090105.vhd > ./sign.tmp.tail
 % head -c -512 ./sign.tmp.tail > sign.tmp
 % rm ./sign.tmp.tail
 ----
-. openssl을 사용하여 인증서에서 공개 키를 추출하고 서명 파일과 공개 키로 스트라이프 파일(sign.tmp)을 확인합니다.
+. OpenSSL을 사용하여 인증서에서 공개 키를 추출하고, 스트립된 파일(sign.tmp)을 서명 파일과 공개 키로 검증합니다.
 +
-입력 파일이 확인을 통과하면 명령이 표시됩니다
-"확인 정상". 그렇지 않으면 "Verification Failure(확인 실패)"가 표시됩니다.
+명령 프롬프트는 검증 결과에 따라 성공 또는 실패를 나타내는 메시지를 표시합니다.
 
 +
-[listing]
+[source, cli]
 ----
 % openssl x509 -pubkey -noout -in ./Certificate-9.15.0P1_azure.pem > ./Code-Sign-Cert-Public-key.pub
 
@@ -57,7 +53,7 @@ Verification Failure
 ----
 . 작업 영역을 정리합니다.
 +
-[listing]
+[source, cli]
 ----
 % rm ./9150.01000024.05090105.vhd ./sign.tmp
 % rm *.sig *.pub *.pem

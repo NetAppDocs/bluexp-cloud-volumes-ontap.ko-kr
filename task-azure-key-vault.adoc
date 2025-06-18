@@ -179,7 +179,7 @@ Category: kms_wrapped_key_status
 3 entries were displayed.
 ----
 +
-를 누릅니다 `service_reachability` 상태가 아닙니다 `OK`SVM은 필요한 모든 연결 및 사용 권한으로 Azure Key Vault 서비스에 연결할 수 없습니다. Azure 네트워크 정책 및 라우팅으로 인해 프라이빗 VNET가 Azure KeyVault Public 엔드포인트에 도달하지 못하도록 차단하지 않는지 확인합니다. 이러한 경우, VNET 내에서 키 볼트에 액세스하기 위해 Azure 프라이빗 끝점을 사용하는 것이 좋습니다. 또한 종점의 전용 IP 주소를 확인하기 위해 SVM에 정적 호스트 항목을 추가해야 할 수도 있습니다.
+만약  `service_reachability` 상태가 아닙니다  `OK` SVM이 필요한 모든 연결 및 권한을 사용하여 Azure Key Vault 서비스에 연결할 수 없습니다. Azure 네트워크 정책 및 라우팅이 프라이빗 vNet이 Azure Key Vault 퍼블릭 엔드포인트에 연결하는 것을 차단하지 않는지 확인하세요. 이러한 경우, VNET 내에서 키 볼트에 액세스하기 위해 Azure 프라이빗 끝점을 사용하는 것이 좋습니다. 또한 종점의 전용 IP 주소를 확인하기 위해 SVM에 정적 호스트 항목을 추가해야 할 수도 있습니다.
 
 +
 를 클릭합니다 `kms_wrapped_key_status` 보고합니다 `UNKNOWN` 초기 구성 시 상태가 로 변경됩니다 `OK` 첫 번째 볼륨이 암호화된 후
@@ -192,9 +192,12 @@ Category: kms_wrapped_key_status
 올바르게 구성된 경우 Cloud Volumes ONTAP는 자동으로 볼륨을 생성하고 볼륨 암호화를 활성화합니다.
 
 . 볼륨이 올바르게 생성되고 암호화되었는지 확인합니다. 이 경우 암호화된 매개 변수는 true로 표시됩니다. 'vol show-vserver_SVM_name_-fields is-encrypted'
+. 선택 사항: Azure Key Vault 인증 인증서의 자격 증명을 업데이트하려면 다음 명령을 사용하세요. 
+`security key-manager external azure update-credentials -vserver v1 -authentication-method certificate`
 
 
 .관련 링크
 * link:task-set-up-azure-encryption.html["Azure에서 고객이 관리하는 키를 사용하도록 Cloud Volumes ONTAP를 설정합니다"]
 * https://learn.microsoft.com/en-us/azure/key-vault/general/overview["Microsoft Azure Docmentation: Azure Key Vault 정보"^]
+* https://docs.netapp.com/us-en/ontap-cli/index.html["ONTAP 명령 참조 가이드"^]
 

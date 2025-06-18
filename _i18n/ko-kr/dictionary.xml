@@ -1895,7 +1895,6 @@
   <block id="130d74c3ba60e43c646b8d2ae2e189f7" category="cell">태그 추가</block>
   <block id="ab2bc7358191e02d5aacdd2ddaa4233d" category="inline-link">AWS 문서: Amazon EC2 리소스에 태그 달기</block>
   <block id="6fc1b99ffd833c6c5570d86706e4dda3" category="cell">자격 증명 편집</block>
-  <block id="966af22a27db9cf9c8aed1bfaa29bceb" category="paragraph">다음 비디오에서는 용량제 마켓플레이스 구독을 AWS 자격 증명에 연결하는 방법을 보여줍니다.</block>
   <block id="6101eef8fd3b11affed5baa0379eb7b5" category="inline-link-macro">AWS 워크시트</block>
   <block id="6f27ddf091b10f1dfd4ab13be0759ec7" category="paragraph">AWS 아웃포스트가 있는 경우 아웃포스트 VPC를 선택하여 해당 아웃포스트에 단일 노드 Cloud Volumes ONTAP 시스템을 구축할 수 있습니다. 이러한 경험은 AWS에 상주하는 다른 VPC와 동일합니다.</block>
   <block id="94b720129da1fad395a78adb9dd8004f" category="list-text">* 데이터 암호화 *: 데이터 암호화 또는 AWS로 관리되는 암호화를 선택하지 않습니다.</block>
@@ -2965,12 +2964,10 @@
   <block id="d44d4a8594e5151de6fa4ee089278b67" category="cell">AWS 태그는 AWS 리소스에 대한 메타데이터입니다. BlueXP는 Cloud Volumes ONTAP 인스턴스 및 인스턴스와 연관된 각 AWS 리소스에 태그를 추가합니다. 작업 환경을 만들 때 사용자 인터페이스에서 최대 4개의 태그를 추가할 수 있으며, 생성된 후에는 더 많은 태그를 추가할 수 있습니다. API는 작업 환경을 생성할 때 태그를 4개로 제한하지 않습니다. 태그에 대한 자세한 내용은 을 참조하십시오<block ref="9bd250e03cdf80384a24635f16673602" category="inline-link-rx"></block>.</block>
   <block id="2549a5df32120cf6ac614914f42ef32c" category="inline-link">BlueXP에 AWS 자격 증명을 추가하는 방법에 대해 알아보십시오</block>
   <block id="355c7a22767b9f2dd149515d08cc5490" category="inline-image-macro">AWS 계정에 이미 가입되어 있지만 특정 IAM 사용자가 아닐 수 있는 경우 BlueXP for Cloud Volumes ONTAP의 가입 페이지를 보여주는 스크린샷.</block>
-  <block id="074d1b398f4753f3d064cfd562af4ed8" category="admonition">여러 IAM 사용자가 동일한 AWS 계정으로 작업하는 경우 각 사용자는 가입해야 합니다. 첫 번째 사용자가 구독한 후 AWS Marketplace는 아래 이미지에 표시된 것처럼 후속 사용자에게 이미 구독했음을 알립니다. AWS_ACCOUNT_에 가입되어 있는 동안 각 IAM 사용자는 자신을 해당 구독과 연결해야 합니다. 아래 메시지가 표시되면 * 여기를 클릭 * 링크를 클릭하여 BlueXP 웹 사이트로 이동하여 프로세스를 완료합니다.<block ref="42077b282858282a6d1d166f9467abaf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="87ef523f982611ded33c8785ffdd2634" category="list-text">* IAM Role *: BlueXP가 역할을 생성할 수 있도록 기본 옵션을 유지하는 것이 가장 좋습니다.</block>
   <block id="9f2afa6e18a40ed2f547b1e2d13fee8e" category="list-text">GP2 또는 st1 디스크를 선택하는 경우 초기 애그리게이트의 모든 디스크와 간단한 프로비저닝 옵션을 사용할 때 BlueXP가 생성하는 추가 애그리게이트에서 디스크 크기를 선택할 수 있습니다. 고급 할당 옵션을 사용하여 다른 디스크 크기를 사용하는 애그리게이트를 생성할 수 있습니다.</block>
   <block id="de39a020e8e0c1962c8c0dfa6467fd71" category="list-text">BlueXP가 구매할 지원 및 AWS 리소스에 대한 세부 정보를 검토하려면 * 추가 정보 * 를 클릭합니다.</block>
   <block id="e1bc841e2651c6522307e17c20df7a4d" category="paragraph">AWS에서 Cloud Volumes ONTAP HA 쌍을 실행하려면 BlueXP에서 HA 작업 환경을 만들어야 합니다.</block>
-  <block id="3a03e3e7da257bcd5d5826004cd5b227" category="admonition">여러 IAM 사용자가 동일한 AWS 계정으로 작업하는 경우 각 사용자는 가입해야 합니다. 첫 번째 사용자가 구독한 후 AWS Marketplace는 아래 이미지에 표시된 것처럼 후속 사용자에게 이미 구독했음을 알립니다. AWS_ACCOUNT_에 가입되어 있는 동안 각 IAM 사용자는 자신을 해당 구독과 연결해야 합니다. 아래 메시지가 표시되면 * 여기를 클릭 * 링크를 클릭하여 BlueXP 웹 사이트로 이동하여 프로세스를 완료합니다.<block ref="5176b925004072644ad0f4d50d425bc9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="08716c56b69c38a1d4f3bf5e2aa2e5c8" category="paragraph">BlueXP에서 Cloud Volumes ONTAP HA 쌍을 시작합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.</block>
   <block id="e8d7251c93bb0bbd59e5b2aca177a1a6" category="summary">Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우, ONTAP 시스템과 함께 제공되는 관리 인터페이스인 ONTAP System Manager를 사용하면 됩니다. BlueXP에 System Manager 인터페이스를 직접 포함하므로 고급 관리를 위해 BlueXP를 떠날 필요가 없습니다.</block>
   <block id="af97eb7a8d1a683de73e48cc402e070d" category="paragraph">System Manager에서는 애그리게이트 관리(로컬 계층 및 클라우드 계층 포함)가 지원되지 않습니다. BlueXP의 표준 보기에서 직접 애그리게이트를 관리해야 합니다.</block>
@@ -3292,8 +3289,6 @@
   <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">최적화된 에지 캐시 용량 기반 라이센스 패키지는 Google Cloud Marketplace에서 Cloud Volumes ONTAP에 대해 용량제 오퍼링을 제공하거나 연간 계약으로 제공됩니다.</block>
   <block id="fced3090ff990434831b838f07c6a3a7" category="paragraph">MTEKM(멀티 테넌트 암호화 키 관리) 라이센스는 새 Cloud Volumes ONTAP 배포에 더 이상 포함되지 않습니다.</block>
   <block id="a1299d36f8821164c4414c1a5ab986dd" category="inline-link-macro">Cloud Volumes ONTAP의 기본 구성</block>
-  <block id="d4a6e54c4d6405336cdeb07c50490008" category="list-text">Azure Marketplace에서 용량제 오퍼링을 제공하거나 연간 계약으로 사용할 수 있습니다</block>
-  <block id="18daf9881514241d393343911b3c6b0d" category="list-text">Google Cloud Marketplace에서 선불 종량제 또는 연간 계약으로 제공됩니다</block>
   <block id="3ee54ac340ad12860ef4b993b12b351c" category="summary">BlueXP를 사용하면 새로운 Cloud Volumes ONTAP 작업 환경을 만들 때 여러 ONTAP 버전 중에서 선택할 수 있습니다.</block>
   <block id="94a06e39ad7d8a5f30a29ceb12e0cf9d" category="list-text">9.12.1 RC1</block>
   <block id="b783301cf6b68b7d026b486472da6add" category="list-text">9.12.0 P1</block>
@@ -3411,7 +3406,6 @@
   <block id="a329f820fccae25ebe98d73c85c8006c" category="inline-image-macro">선택한 서비스 세 개를 보여 주는 서비스 엔드포인트 스크린샷</block>
   <block id="892728a8cb7d01d3a80f6c63ad7a3b1a" category="paragraph"><block ref="892728a8cb7d01d3a80f6c63ad7a3b1a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b430d19ce10cad3c93da5d1a58ae5da" category="list-text">ONTAP에서 고급 권한 모드로 들어갑니다.<block ref="b18455e94f1f10f091d6cc4ad2e0507e" prefix=" " category="inline-code"></block></block>
-  <block id="2b92b9eae444abb7f44aa96b856847a4" category="paragraph">를 누릅니다<block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> 상태가 아닙니다<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>SVM은 필요한 모든 연결 및 사용 권한으로 Azure Key Vault 서비스에 연결할 수 없습니다. Azure 네트워크 정책 및 라우팅으로 인해 프라이빗 VNET가 Azure KeyVault Public 엔드포인트에 도달하지 못하도록 차단하지 않는지 확인합니다. 이러한 경우, VNET 내에서 키 볼트에 액세스하기 위해 Azure 프라이빗 끝점을 사용하는 것이 좋습니다. 또한 종점의 전용 IP 주소를 확인하기 위해 SVM에 정적 호스트 항목을 추가해야 할 수도 있습니다.</block>
   <block id="840b18b97e1e55325d94f00b965a31cf" category="paragraph">를 클릭합니다<block ref="5fb243bae51d7320aff8e09d0bb56325" prefix=" " category="inline-code"></block> 보고합니다<block ref="696b031073e74bf2cb98e5ef201d4aa3" prefix=" " category="inline-code"></block> 초기 구성 시 상태가 로 변경됩니다<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> 첫 번째 볼륨이 암호화된 후</block>
   <block id="dd1852694a70af4fe454fcf679ab1071" category="inline-link-macro">Azure 지역 쌍</block>
   <block id="ab83b37918dd75da5385d47425e5a41b" category="paragraph">회사에서 요구하는 경우, BlueXP에서 Azure Private Link 대신 서비스 끝점을 사용하도록 Cloud Volumes ONTAP를 구성하도록 설정을 변경할 수 있습니다. 이 설정을 변경하면 새로 만든 Cloud Volumes ONTAP 시스템에 적용됩니다. 서비스 끝점은 에서만 지원됩니다 <block ref="143d2b52aa05d0c2b5e02a98661c9a57" category="inline-link-macro-rx"></block> 커넥터와 Cloud Volumes ONTAP VNets 사이.</block>
@@ -3480,7 +3474,6 @@
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">* 사례 보기 *: 특정 케이스에 대한 전체 세부 정보를 봅니다.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">표의 마지막 열에서 메뉴를 선택한 후 수행할 수 있는 작업을 보여 주는 스크린샷</block>
   <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">HA 쌍을 사용하는 경우 Cloud Volumes ONTAP는 9.13.0 릴리즈부터 시작하여 여러 VM 유형에서 높은 쓰기 속도를 지원합니다. 로 이동합니다<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> 고속 쓰기 속도를 지원하는 VM 유형을 확인합니다.</block>
-  <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">Cloud Volumes ONTAP 이미지 다이제스트 파일 도구를 통해 내보낸 Google 클라우드 이미지 파일 서명을 확인합니다.</block>
   <block id="019892a31385e7fb7670de88abfcf3cd" category="paragraph">내보낸 Google Cloud 서명 이미지를 확인하려면 NSS에서 이미지 다이제스트 파일을 다운로드하여 disk.raw 파일의 유효성을 검사하고 파일 내용을 다이제해야 합니다.</block>
   <block id="c81429443fac6104f46abd88cff6840a" category="section-title">서명된 이미지 검증 워크플로 요약</block>
   <block id="89367ca4743c16d95c687430c6a0d9cc" category="paragraph">다음은 Google Cloud 서명 이미지 검증 워크플로 프로세스에 대한 개요입니다.</block>
@@ -3505,7 +3498,6 @@
   <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">할당되지 않은 라이센스를 추가합니다</block>
   <block id="44579e142f1f753a153dbb19dac8125c" category="summary">OpenSSL을 사용하여 Google Cloud에서 digest 파일 컨텐츠와 비교하여 disk.raw 파일을 다운로드했는지 확인합니다.</block>
   <block id="9790936d7b09c3cf187b770347ee60d1" category="paragraph">Google Cloud에서 다운로드한 disk.raw 파일을 을 통해 사용 가능한 다이제스트 파일 내용과 비교하여 확인할 수 있습니다<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> OpenSSL 사용.</block>
-  <block id="64bba92e74e274ead8d4e951ad8c9d3a" category="admonition">이미지의 유효성을 검사하는 OpenSSL 명령은 Linux, Mac OS 및 Windows 시스템과 호환됩니다.</block>
   <block id="c275ec11ecf674a6672183664681e98f" category="list-text">OpenSSL을 사용하여 인증서를 확인합니다.</block>
   <block id="72d3302ad6fe92c7f4d817235e6ec413" category="list-text">다운로드한 disk.raw 파일, 서명 및 인증서를 디렉터리에 넣습니다.</block>
   <block id="f059e79846663b1827b8520855050095" category="list-text">OpenSSL을 사용하여 인증서에서 공개 키를 추출합니다.</block>
@@ -3842,9 +3834,7 @@
   <block id="4d0d11f252798b1130fe9f60f2d2e318" category="list-text">Connector와 연결된 서비스 계정입니다<block ref="5646254c2ac34b48f56ed296d6fb66e7" category="inline-link-rx"></block></block>
   <block id="d84cee0d6767da802f9effadbbc51142" category="list-text">메시지가 표시되면<block ref="1ca84fde12203c4cfd29d288d7a6cf61" category="inline-link-rx"></block>.</block>
   <block id="422d2c91120cb9ddd1c3fd41a284e77a" category="admonition">BlueXP에 대해 설정한 서비스 계정입니다. <block ref="d8e8dd577fee44652d34a1d1f4c2ce4b" category="inline-link-macro-rx"></block>.</block>
-  <block id="703803ff5402f92147fbc2904ced4f23" category="paragraph">다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다. 또는 에 있는 구독 단계를 따릅니다<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> 섹션을 참조하십시오.</block>
   <block id="dabcd93c47c69ecf7688c43957686bb7" category="cell">를 사용할 계획인 경우 <block ref="b0493934baf26f9529eb4214b9de6c71" category="inline-link-macro-rx"></block> 또는<block ref="9a17952183455df523c977039b4fb285" category="inline-link-rx"></block> 서비스를 사용하려면 * 서비스 계정 * 스위치를 활성화한 다음 미리 정의된 스토리지 관리자 역할이 있는 서비스 계정을 선택해야 합니다.</block>
-  <block id="5355322e972163adefa502954b34d25c" category="paragraph">다음 비디오에서는 선불 종량제 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여 줍니다.  또는 에 있는 구독 단계를 따릅니다<block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> 섹션을 참조하십시오.</block>
   <block id="200bfa431a059f9cb12bdce777845a7e" category="admonition">커넥터에는 시스템 디스크도 필요합니다.<block ref="d20acabc118cd0226229fe484509d871" category="inline-link-rx"></block>.</block>
   <block id="3e15a93b8abafd714d90153ac66e4e82" category="paragraph">인터넷에 액세스할 수 없는 서브넷에 Cloud Volumes ONTAP를 배포하려는 경우 수동으로 커넥터를 설치하고 해당 커넥터에서 실행 중인 BlueXP 사용자 인터페이스에 액세스해야 합니다.<block ref="dfc982bbe2dfabd644ac809e4b468ae7" category="inline-link-rx"></block></block>
   <block id="687a1e66717978102d4e4948c08968d3" category="list-text"><block ref="687a1e66717978102d4e4948c08968d3" category="inline-link-rx"></block></block>
@@ -3879,11 +3869,6 @@
   <block id="882d5f98206dd8157654127073c920f2" category="paragraph"><block ref="882d5f98206dd8157654127073c920f2" category="inline-link-rx"></block></block>
   <block id="f870932f389b07a18c35e61ebc668c91" category="paragraph"><block ref="161ab28684c427e4961f0c360c1dbce7" category="inline-link-rx"></block>.</block>
   <block id="0a878535ad1a6e2ef955aba255e762cd" category="list-text">메시지가 표시되면<block ref="b03d5bfc016d24f5269c25486d5c5105" category="inline-link-rx"></block>.</block>
-  <block id="d4632b36f41d4764afe08f6aac9dbe34" category="cell">이 시스템을 구축할 계정과 연결된 AWS 자격 증명을 선택합니다. AWS Marketplace 구독을 연결하여 이 Cloud Volumes ONTAP 시스템에 사용할 수도 있습니다.
-
-선택한 자격 증명을 새 AWS Marketplace 구독에 연결하려면 * Add Subscription * 을 클릭합니다. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다.
-
-<block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>.</block>
   <block id="f55b18eeaddb29e4e968d14603f99e82" category="list-text"><block ref="f55b18eeaddb29e4e968d14603f99e82" category="inline-link-rx"></block></block>
   <block id="d7e4497b251053c3a95e730a472e0f1a" category="list-text"><block ref="d7e4497b251053c3a95e730a472e0f1a" category="inline-link-rx"></block></block>
   <block id="f647c880dd21951d680e6e9b7ad216f0" category="list-text"><block ref="f647c880dd21951d680e6e9b7ad216f0" category="inline-link-rx"></block></block>
@@ -4254,9 +4239,7 @@
   <block id="20d3f54acd662a128694ddf527ea22fb" category="list-text">규칙 저장 * 을 클릭하여 변경 사항을 적용합니다.</block>
   <block id="2fd1ee72a12db129de96b6606fbce188" category="list-text">소스 및 대상 클러스터는 동일한 VNet(Virtual Network)에 액세스할 수 있어야 합니다. 대상 클러스터는 Azure의 Cloud Volumes ONTAP 시스템입니다. 소스 클러스터는 Azure의 Cloud Volumes ONTAP 시스템 또는 ONTAP 시스템이 될 수 있습니다.</block>
   <block id="53dbdce3b901c59c8d3bbdae0e91364c" category="paragraph">기존 SnapMirror 복제 관계를 이동하려면 새 SnapMirror 복제 관계를 생성하기 전에 먼저 기존 SnapMirror 복제 관계를 해제해야 합니다.</block>
-  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Google Cloud 마켓플레이스에서 BlueXP를 구독하십시오</block>
   <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Azure 마켓플레이스에서 BlueXP를 구독하십시오</block>
-  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">AWS 마켓플레이스에서 BlueXP를 구독하십시오</block>
   <block id="c27b8e6a4f797d237583ca6d38a92cd6" category="summary">Cloud Volumes ONTAP에서 사용할 구독을 설정하고 구독의 서비스 수준에 대해 약정 용량의 변경을 요청하여 BlueXP 디지털 지갑에서 Keystone 구독을 관리합니다. 서비스 수준에 대한 추가 용량을 요청하면 온프레미스 ONTAP 클러스터 또는 Cloud Volumes ONTAP 시스템에 대한 더 많은 스토리지를 확보할 수 있습니다.</block>
   <block id="52ba144dbaac8239e9b6d8e287db93dc" category="doc">Keystone 가입 관리</block>
   <block id="a3b1d6e06d4fd8ccc20c61ce51e45853" category="paragraph">NetApp Keystone는 유연한 종량제 구독 기반 서비스로, OpEx를 CapEx 또는 리스보다 선호하는 고객에게 하이브리드 클라우드 경험을 제공합니다.</block>
@@ -4389,7 +4372,6 @@
   <block id="58dcfad3183b701a8f1b8781a5644d09" category="inline-link">용량 기반 라이센스 패키지에 대해 자세히 알아보십시오</block>
   <block id="07456d1e170e8be27eaff1e39e1ccdf6" category="paragraph">BlueXP는 항상 라이센스에 대해 요금을 청구하려고 합니다. 라이선스를 사용할 수 없는 경우 마켓플레이스 구독에 대해 요금이 부과됩니다. BYOL에서 마켓플레이스 가입으로 또는 그 반대의 경우 "전환"이 필요하지 않습니다.</block>
   <block id="d5f06dc5f98a38b5ccff1592c5d20e76" category="admonition">BlueXP에서 관리되는 제품 및 서비스의 실제 사용량 및 계측은 항상 GiB 및 TiB 단위로 계산되지만 GB/GiB와 TB/TiB라는 용어는 같은 의미로 사용됩니다. 이는 클라우드 마켓플레이스 목록, 가격 견적, 리스팅 설명 및 기타 지원 문서에 반영됩니다</block>
-  <block id="2732cf17c6f3094ab514d104cf7ecca1" category="admonition">BlueXP에서 관리되는 제품 및 서비스의 실제 사용량 및 계측은 항상 GiB 및 TiB 단위로 계산되지만 GB/GiB와 TB/TiB라는 용어는 같은 의미로 사용됩니다. 이는 클라우드 마켓플레이스 목록, 가격 견적, 리스팅 설명 및 기타 지원 문서에 반영됩니다.</block>
   <block id="1a09137ca087e36b72504f4276c7cd08" category="list-text">계층화된 데이터에 대한 기본 스토리지 클래스는 _Standard Storage_class입니다. 데이터에 자주 액세스하지 않는 경우 _Nearline Storage_ 또는 _Coldline Storage_ 로 변경하여 스토리지 비용을 절감할 수 있습니다. 스토리지 클래스를 변경하면 이후의 비활성 데이터가 선택한 클래스로 직접 이동합니다.</block>
   <block id="0d79695d01dd236a00fcb17dec14227f" category="admonition">스토리지 클래스를 변경할 때 기존의 비활성 데이터는 기본 스토리지 클래스를 유지합니다. 기존 비활성 데이터의 스토리지 클래스를 변경하려면 수동으로 지정을 수행해야 합니다.</block>
   <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
@@ -4585,82 +4567,24 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="d3f932730561572a0dc4f8911dc7b758" category="paragraph">Connector 버전 3.9.36 이하를 실행하는 경우 AWS EC2 콘솔의 AWS Connector 역할에 다음 권한을 추가해야 합니다. DescripbeAvailabilityZones</block>
   <block id="d4cffcdfb4fe4fc69dc234950d0f4151" category="admonition">AWS 로컬 영역은 표준 모드에서 BlueXP를 사용하는 경우 지원됩니다. 현재 BlueXP를 제한된 모드 또는 프라이빗 모드로 사용하는 경우 AWS 로컬 영역이 지원되지 않습니다.</block>
   <block id="dd9c0a56896702fcd7616d8a05a5734b" category="example-title">클릭하여 표시합니다</block>
-  <block id="66477356c169bae503b8e5b68efae8f9" category="summary">Mac OS에서 Cloud Volumes ONTAP 이미지 요약 파일 도구를 통해 내보낸 VHD 파일 서명을 확인합니다</block>
-  <block id="7dfe290ea310f3175330a9ea2e3f87f9" category="paragraph">다음 단계에 따라 Mac OS에 대해 내보낸 VHD 파일 서명을 확인할 수 있습니다.</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp Support 사이트</block>
-  <block id="182f014f4c613a2ea00430b0555c0cfe" category="list-text">에서 Azure Image Digest 파일을 다운로드합니다<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block> 다이제스트 파일(.sig), 공개 키 인증서 파일(.pem) 및 체인 인증서 파일(.pem)의 압축을 풉니다.</block>
-  <block id="3ea81971526171c18d55f5c21b99575c" category="inline-link">Azure Image Digest 파일을 다운로드합니다</block>
-  <block id="448e33b68aea58b7fecc024d2c2b5dc4" category="paragraph">을 참조하십시오<block ref="5fc79e069847e547e3ea31d52f49c511" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="1c70ba48a8faaae47a72ab185f6f3572" category="list-text">신뢰 체인을 확인합니다.</block>
-  <block id="cd01d0f8e467738f2625378653bc8d43" category="list-text">앞의 1MB(1048576바이트)와 끝 512바이트의 VHD 파일을 제거합니다.</block>
-  <block id="a7997886de4e4c54fffe826bcd17411e" category="paragraph">'tail'을 사용하는 경우 '-c+K' 옵션은 Kth 바이트로 시작하는 바이트를 출력합니다
-지정된 파일의 이름을 변경합니다. 따라서 1048577은 'tail -c'로 전달됩니다. 약 13m 정도 걸립니다
-Mac OS에서 tail 명령을 완료합니다.</block>
-  <block id="eb7e6b99b56676dfe5f808750410e68a" category="list-text">openssl을 사용하여 인증서에서 공개 키를 추출하고 스트라이핑된 키를 확인합니다
-서명 파일과 공개 키가 있는 파일(sign.tmp)입니다.</block>
-  <block id="ccde39ff9aff3f514ac48f4d13e6d0f5" category="paragraph">입력 파일이 확인을 통과하면 명령이 "Verification OK(확인 확인 확인)"를 표시합니다.
-그렇지 않으면 "Verification Failure(확인 실패)"가 표시됩니다.</block>
   <block id="7c00abf63371811634839eb405ec4038" category="list-text">작업 영역을 정리합니다.</block>
   <block id="4f366ac6c42231f45c88efd5aa987abb" category="cell">9.15.0</block>
-  <block id="e7e9a24e123538eed11a70e0eeb566a1" category="summary">Cloud Volumes ONTAP 이미지 다이제스트 파일 도구를 통해 내보낸 VHD 파일 서명을 확인하는 방법 이해</block>
-  <block id="a781d076243f95e28ab486d8c31b6ba4" category="doc">파일 서명 확인</block>
-  <block id="437beb58ba8cb874df3b92dce25308d4" category="paragraph">Azure 이미지 확인 프로세스는 해시 기능을 사용하여 선행 1MB로 VHD 파일에서 다이제스트를 생성하고 512B 스트라이프를 종료합니다. 서명 프로시저와 일치시키기 위해 SHA256을 해시에 사용합니다. VHD 파일에서 선행 1MB 및 최종 512B를 제거한 다음 VHD 파일의 나머지 부분을 확인해야 합니다.</block>
   <block id="f98e4b86cca760be2447f72ea72c4f88" category="section-title">파일 서명 확인 워크플로 요약</block>
   <block id="9454f651ecd65349c0f152b92965f048" category="paragraph">다음은 파일 서명 확인 워크플로 프로세스의 개요입니다.</block>
   <block id="7c00934b1da44ca90cfaed118a5c7000" category="image-alt">그래픽 Azure 서명 확인</block>
-  <block id="1e34d13948b6b17e50f7142a37354bd7" category="list-text">공개 키 인증서(.pem)에서 공개 키(.pub)를 추출합니다.</block>
-  <block id="7879ab866e35c7b7f3b9fad5b096f64f" category="list-text">추출된 공개 키는 다이제스트 파일을 해독하는 데 사용됩니다. 그런 다음 이미지 파일에서 생성된 임시 파일의 암호화되지 않은 새 다이제스트와 선행 1MB를 제거하고 512바이트가 제거된 새 다이제스트를 비교합니다.</block>
-  <block id="561627cfa40a818097c26ee0df685e81" category="paragraph">이 단계는 다음 openssl 명령을 통해 수행됩니다.</block>
-  <block id="43d4aabb0efd580944e1beb8c4db11b8" category="list-text">일반 CLI 문은 다음과 같이 나타납니다.</block>
-  <block id="c9fd91db7f23dc5a00305ec8fc9ab1fe" category="list-text">OpenSSL CLI 도구는 두 파일이 일치하면 "확인 완료" 메시지와 일치하지 않을 경우 "확인 실패"를 표시합니다.</block>
-  <block id="ab1fa593a9d1b960b00310273793f399" category="summary">Linux에서 Cloud Volumes ONTAP 이미지 요약 파일 도구를 통해 내보낸 VHD 파일 서명을 확인합니다</block>
-  <block id="81a109e7e4df0170a877c862452626e0" category="paragraph">다음 단계에 따라 내보낸 Linux용 VHD 파일 서명을 확인할 수 있습니다.</block>
-  <block id="99f6987f9f2f12754bef6acd4538d2b1" category="list-text">앞의 1MB(1048576바이트)와 끝 512바이트의 VHD 파일을 제거합니다.</block>
-  <block id="3b31a12051ccfe742940ab733efa90d2" category="paragraph">'tail'을 사용하는 경우 '-c+K' 옵션은 지정된 파일의 Kth 바이트로 시작하는 바이트를 출력합니다. 따라서 1048577은 'tail -c'로 전달됩니다.</block>
-  <block id="4ca7d41e605902966252c31ef2c1bc50" category="list-text">openssl을 사용하여 인증서에서 공개 키를 추출하고 서명 파일과 공개 키로 스트라이프 파일(sign.tmp)을 확인합니다.</block>
-  <block id="e4127a353155a2ad0d83da1e1edcbaa5" category="paragraph">입력 파일이 확인을 통과하면 명령이 표시됩니다
-"확인 정상". 그렇지 않으면 "Verification Failure(확인 실패)"가 표시됩니다.</block>
   <block id="51bbda97c30ecb8962c4be9cf6e522a3" category="doc">새로운 배포를 위해 지원되는 ONTAP 버전</block>
   <block id="e6e83b7fc493536990c5a90ed0363355" category="list-text">9.15.0 P1</block>
   <block id="bc7b48cc8cbeb831f1e1c92e4edd2a73" category="summary">Azure VHD 이미지 파일 서명 파일을 확인합니다.</block>
-  <block id="855546822713dfa86f90e0f04d628460" category="paragraph">Azure 이미지 검증은 향상된 NetApp 보안 요구사항을 준수합니다. 이미지 파일을 검증하는 것은 간단한 프로세스이지만 Azure 마켓플레이스의 변경 사항으로 인해 Azure 이미지 서명 확인을 위해 잘 알려진 Azure VHD 이미지 파일에 특별한 필링이 필요합니다.</block>
-  <block id="dc9332f8d6da3cf29879331701e1392b" category="admonition">Azure 이미지 검증은 Cloud Volumes ONTAP 소프트웨어 버전 9.15.0 이상에서 지원됩니다.</block>
   <block id="87a09a86dbf9477334c237c696cbf41c" category="section-title">게시된 VHD 파일에 대한 Azure의 변경</block>
-  <block id="69819291c7392ee878ca4ba0d8250573" category="paragraph">Azure에서 앞 1MB(1048576바이트)와 끝 512바이트의 VHD 파일을 수정합니다. NetApp 이미지 서명은 선행 1MB를 건너뛰고 512바이트를 종료하고 나머지 VHD 이미지 부분을 서명합니다.</block>
   <block id="a1d8f8fd0a1ed092e3a32c903199e6fe" category="inline-image-macro">Azure의 10GB VHD 파일 변형을 보여 주는 이미지입니다</block>
   <block id="8d1e285a8c66f27a66a5b99050840700" category="paragraph"><block ref="8d1e285a8c66f27a66a5b99050840700" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8c0945efb6cfc754835754066079f778" category="paragraph">위의 다이어그램은 10GB의 VHD 파일을 보여 줍니다. 그러나 NetApp 서명 부분은 10GB-1MB-512B 크기로 녹색으로 표시됩니다.</block>
   <block id="489b496cbe75299f2e7a58a43404a586" category="summary">Azure 마켓플레이스에서 ONTAP 이미지를 내보내서 VHD 파일의 서명을 확인할 수 있습니다.</block>
-  <block id="7aa3d9edd6d375ddf241b7e3af36818a" category="paragraph">VHD 이미지가 Azure 클라우드에 게시되면 NetApp에서 이미지를 더 이상 관리할 수 없습니다. 대신 게시된 이미지가 Azure 마켓플레이스에 배치됩니다. Azure가 최고 1MB로 변경되고 512B의 VHD가 종료되는 것은 이미지가 Azure 마켓플레이스에서 스테이징되고 게시될 때 발생합니다. VHD 파일의 서명을 확인하려면 Azure에서 수정한 VHD 이미지를 먼저 Azure 마켓플레이스에서 내보내야 합니다.</block>
-  <block id="05cd2a2bb059643c43d9e767a4032a24" category="paragraph">시스템에 필요한 프로그램을 설치해야 합니다.</block>
-  <block id="0bcf8212654f6e73defd0e810da79d80" category="list-text">Azure CLI가 설치되어 있거나 Azure 포털을 통해 Azure Cloud Shell을 바로 사용할 수 있습니다.</block>
-  <block id="1d03b797e238252da705789b819d0d7c" category="inline-link">Azure 설명서: Azure CLI 설치 방법</block>
-  <block id="995134c4eafdfb0af4373db79dfb90cf" category="list-text">version_readme 파일의 내용을 사용하여 ONTAP 버전을 Azure 마켓플레이스 이미지 버전에 매핑합니다.</block>
-  <block id="a10146f718ca1ae9de28501f0472cee1" category="paragraph">version_readme 파일에 나열된 각 버전 매핑에 대해 ONTAP 버전은 "buildname"으로 표시되고 Azure 마켓플레이스 이미지 버전은 "version"으로 표시됩니다.</block>
-  <block id="03340c307e6a7221016970d046db2a97" category="paragraph">예를 들어 다음 version_readme 파일에서 ONTAP 버전 "9.15.0P1"은 Azure 마켓플레이스 이미지 버전 "9150.01000024.05090105"에 매핑되어 있습니다. 이 Azure 마켓플레이스 이미지 버전은 나중에 이미지 URN을 설정하는 데 사용됩니다.</block>
-  <block id="756c97654f989d1a779d50abe0847e31" category="list-text">VM을 생성할 지역 이름을 식별합니다.</block>
-  <block id="e03d271d662bcb0fab1d9537df279ef3" category="paragraph">이 지역 이름은 마켓플레이스 이미지의 URN을 설정할 때 "locName" 변수의 값으로 사용됩니다.</block>
-  <block id="0bcd35ecf261a40cdfb4cbae00a11aa2" category="list-text">사용 가능한 지역 목록을 받으려면 를 입력합니다<block ref="84ed3d395e738381fb9826cd0e156c91" prefix=" " category="inline-code"></block> 명령.</block>
-  <block id="30bf950af492b8ab681c83ec104628f7" category="paragraph">아래 표에서 지역 이름을 "이름" 필드라고 합니다.</block>
   <block id="b2b27ade506086d79b3e7defdb321673" category="cell">ONTAP_CLOUD_BYOL</block>
   <block id="68593f3fae72dbec1b29acfd76c1aa17" category="cell">ONTAP_CLOUD_BYOL_ha</block>
-  <block id="fc7898b425992521a2ae92bc34f6fa79" category="list-text">ONTAP 버전과 Azure 마켓플레이스 이미지가 매핑되면 Azure Cloud Shell 또는 Azure CLI를 통해 Azure 마켓플레이스의 VHD 파일을 내보냅니다.</block>
-  <block id="4192872f9b14e75090d91ad3b58d627e" category="section-title">Azure 포털의 Azure Cloud Shell을 통해 VHD 파일을 내보냅니다</block>
-  <block id="7809e31621ae0deb07b629189d23bb1f" category="list-text">Azure 클라우드 셸에서 마켓플레이스 이미지를 VHD(image2, 예: 9150.01000024.05090105.vhd)로 내보내고 로컬 컴퓨터(예: Linux 시스템 또는 Windows PC)로 다운로드합니다.</block>
-  <block id="ce9805281812d5566785ffa90edc97c3" category="section-title">로컬 Linux 시스템에서 Azure CLI를 통해 VHD 파일을 내보냅니다</block>
-  <block id="39ed6293eab956c9455664d389299103" category="list-text">로컬 Linux 시스템에서 Azure CLI를 통해 마켓플레이스 이미지를 VHD로 내보냅니다.</block>
-  <block id="96bd5fbfab590d16a7e4f221d5efbe02" category="summary">NetApp Support 사이트에서 Azure 이미지 다이제스트 파일을 다운로드할 수 있습니다.</block>
-  <block id="c94570a50f1ce2dc5922d4591072ac73" category="paragraph">Azure Image Digest 파일은 에서 다운로드할 수 있습니다<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block>. 다운로드는 tar.gz 형식으로 이미지 서명 확인을 위한 파일이 포함되어 있습니다.</block>
   <block id="d3722e7531fbbcdfe3ca8955ec26bed2" category="inline-link">NetApp Support 사이트의 Cloud Volumes ONTAP 제품 페이지 를 참조하십시오</block>
-  <block id="27363a072eabeaf6d8f44930f92fec72" category="list-text">Cloud Volumes ONTAP 다운로드 페이지에서 Azure 이미지 다이제스트 파일에 대한 * 다운로드 버튼 * 을 클릭하여 TAR을 다운로드합니다. GZ 파일.</block>
   <block id="697ac446273be6ad7395fbb843a37765" category="image-alt">스크린샷 Cloud Volumes ONTAP tar.gz</block>
-  <block id="5b7b593c571013e3aad0faa73cd02227" category="list-text">Linux 및 MacOS의 경우 다운로드한 Azure Image Digest 파일에 대한 md5sum 및 sha256sum을 얻으려면 다음을 수행해야 합니다.</block>
-  <block id="719b12f978ea8563ea430f99e4edbe65" category="list-text">md5sum 의 경우 을 입력합니다<block ref="c8f1ee9a7c5fd4b3c66d7559e99807d0" prefix=" " category="inline-code"></block> 명령.</block>
-  <block id="1bdb05c72c1193c8d7770deac3a7119c" category="list-text">sha256sum 의 경우 을 입력합니다<block ref="948bfc754ae7f359e9d17a0a0efcb325" prefix=" " category="inline-code"></block> 명령.</block>
-  <block id="074df801eea148714f051719110d791a" category="list-text">를 확인합니다<block ref="c8f1ee9a7c5fd4b3c66d7559e99807d0" prefix=" " category="inline-code"></block> 및<block ref="948bfc754ae7f359e9d17a0a0efcb325" prefix=" " category="inline-code"></block> 값은 Azure Image Digest File 다운로드와 일치합니다.</block>
-  <block id="d25f22bb422f625ed7957622cda0ccdf" category="list-text">Linux 및 Mac OS에서 를 수행합니다<block ref="b83523a8ca29d91ebd710492f899931c" prefix=" " category="inline-code"></block> tar.gz 파일의 압축을 푸는 명령입니다.</block>
-  <block id="db1a854223ab47e95d5013d13683efbb" category="paragraph">추출된 TAR입니다. GZ 파일에는 다이제스트 파일(.sig), 공개 키 인증서 파일(.pem) 및 체인 인증서 파일(.pem)이 포함되어 있습니다.</block>
-  <block id="73443c640d5252fdbab1820bcca19262" category="paragraph">*untar tar.gz 파일의 결과를 나열합니다</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="section-title">2024년 6월 10일</block>
   <block id="1601188d2b39087206296933e9255990" category="section-title">Cloud Volumes ONTAP 9.15.0</block>
   <block id="c6ee0c74323b0d984d764b4be950bd87" category="paragraph">BlueXP는 이제 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.15.0을 구축 및 관리할 수 있습니다.</block>
@@ -4684,11 +4608,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="9510056d5bb6540c58fdbfa856eb74cb" category="list-text"><block ref="9510056d5bb6540c58fdbfa856eb74cb" category="inline-link-rx"></block></block>
   <block id="bc3bc1db6420b2b20ed5fd575461af53" category="inline-link">Azure CLI로 로그인 - 로그인 및 인증 | Microsoft Learn 을 참조하십시오</block>
   <block id="c49d114e973270aafd10c3c90200f635" category="list-text"><block ref="c49d114e973270aafd10c3c90200f635" category="inline-link-rx"></block></block>
-  <block id="3ce3a6bc20350062d124e844899c78cb" category="sidebar">Azure 플랫폼 이미지 검증</block>
-  <block id="df87714369784ad20a87cf1ecab656c0" category="sidebar">Azure Image Digest File을 다운로드합니다</block>
-  <block id="e15cc8414d8d61bbcd5fd0d0eccda0f7" category="sidebar">이미지 내보내기</block>
-  <block id="ea676e4072617197b2e26d0a11c13554" category="sidebar">Linux 파일 서명 확인</block>
-  <block id="088e8318708fce80162f63284a86929f" category="sidebar">Mac OS 파일 서명 확인</block>
   <block id="c803b37d9c2a34c73d0b86de8cae9ac8" category="paragraph"><block ref="c803b37d9c2a34c73d0b86de8cae9ac8" category="inline-link-rx"></block></block>
   <block id="bbe2b5062d2c900ca465f9eb12592a92" category="paragraph">보안 정책에서 요구하는 경우 IMDSv2를 사용하도록 EC2 인스턴스를 구성할 수 있습니다. 자세한 지침은 을 참조하십시오<block ref="a1765820625d1912b35ab79a3305fdea" category="inline-link-rx"></block>.</block>
   <block id="59232a2e0b92b4018a48415d0d13c3b4" category="list-text"><block ref="59232a2e0b92b4018a48415d0d13c3b4" category="inline-link-rx"></block></block>
@@ -4753,7 +4672,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">마켓플레이스 구독에 대한 무료 평가판은 더 이상 사용되지 않습니다</block>
   <block id="6a42c267e29187643b9edeeabe6a9d85" category="inline-link">AWS 설명서: AWS의 Elastic Volumes에 대해 자세히 알아보십시오</block>
   <block id="5f15094e671a035a778fece655f06e61" category="paragraph"><block ref="5f15094e671a035a778fece655f06e61" category="inline-link-rx"></block></block>
-  <block id="32f75f1208336b30711f2ec6de39a1fc" category="paragraph">자세한 내용은 을 <block ref="b7c27672c14c5e155c3668c279ee7b61" category="inline-link-macro-rx"></block> 참조하십시오.</block>
   <block id="394af58b8754c06314d43b854dc5006f" category="inline-link">이 FAQ입니다</block>
   <block id="9c89822027b6c9736a75d3187c897d4d" category="admonition">2021년 12월 3일 현재 NetApp은 NSS 계정에 대한 자격 증명을 등록하는 새로운 방법론으로 전환했습니다. 자세한 내용은 을<block ref="e276cbae6a7bedd32258cb1ce27fb2ac" category="inline-link-rx"></block>참조하십시오. NSS 계정이 이전 자격 증명 세트를 사용하는 경우 계정을 새 자격 증명으로 업데이트해야 합니다.</block>
   <block id="61631dd1eb0609d79c27c109e55de5c8" category="paragraph">자세한 내용은 을<block ref="f2e318b984927d4781fb278ddc8ba233" category="inline-link-rx"></block> 참조하십시오.</block>
@@ -4807,7 +4725,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="06dc2fe279cba2e4225b7ea669e09ba6" category="cell">클러스터 관리 LIF의 IP 주소를 사용하여 ONTAP System Manager 웹 콘솔에 대한 HTTP 액세스</block>
   <block id="bf56103f759b88ed509d0a67caf77918" category="cell">커넥터 및 HTTPS로 연결 클러스터 관리 LIF의 IP 주소를 사용하여 ONTAP System Manager 웹 콘솔에 액세스합니다</block>
   <block id="60c74fca932643a72ec9d1ed478cb2dd" category="paragraph">여기에 나열된 버전 이외의 Cloud Volumes ONTAP 버전은 새 배포에서 사용할 수 없습니다. 업그레이드에 대한 자세한 내용은 을 <block ref="edc516954278e6b04bf6c1ef0d737956" category="inline-link-macro-rx"></block>참조하십시오.</block>
-  <block id="57330f26a1386f42b08aa33e8679785d" category="admonition">Azure CLI 설치 방법에 대한 자세한 내용은 을<block ref="bb8fb2fba9b918c590d549f3c97582d7" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="bd2041168f280dc42522d734d91fff47" category="admonition">BlueXP 는 테이크오버를 시작하고 반환을 기다리면서 한 번에 하나의 노드를 변경합니다. NetApp의 품질 보증 팀은 이 프로세스 동안 파일 쓰기 및 읽기 모두를 테스트했으며 클라이언트 측에서 아무런 문제가 발견되지 않았습니다. 연결이 변경됨에 따라 입출력 레벨에서 일부 재시도가 관찰되었지만 애플리케이션 계층이 NFS/CIFS 연결의 재배선을 극복했습니다.</block>
   <block id="5a6ab212605c11d29ddee412db34c72e" category="paragraph">AWS에서 지원되는 인스턴스 유형 목록은 을 <block ref="ab5d2be79e0f4831293646ade5590437" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="4b0969e2624ba8ba6a454be2d5629d7b" category="paragraph">C4, M4 또는 R4 인스턴스에서 인스턴스 유형을 변경할 수 없는 경우 KB 문서를 <block ref="609c7ea2ea8625480f6266b3b7e7b947" category="inline-link-macro-rx"></block>참조하십시오.</block>
@@ -5001,7 +4918,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="f235e1a740b92e59100dda0cf4e3d76b" category="cell">\https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1</block>
   <block id="342804fdcc569427f0c6f21b0757653d" category="cell">Google Cloud(상용).</block>
   <block id="bec523fb694fd6fe80736494c1a45a30" category="cell">Google Cloud 서비스와의 커뮤니케이션:</block>
-  <block id="12acb6948c0c5fe54c5651d99ff9fd04" category="list-text">로<block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block> 이동하여 다운로드 섹션에서 필요한 소프트웨어 버전을 다운로드합니다.</block>
   <block id="5ee4faea784afb4b7750a3c91c073449" category="admonition">공간이 충분하지 않으면 Cloud Volumes ONTAP에서 데이터를 이동할 수 없으므로 성능이 저하될 수 있습니다. 모든 변경은 신중하게 수행해야 합니다. 잘 모르는 경우 NetApp 지원에 문의하여 지침을 받으십시오.</block>
   <block id="fd8831656d484b23e386115d7264f056" category="list-text">HA 쌍의 경우:</block>
   <block id="180b275121e0f37251fecae975bf46df" category="list-text">중재자 인스턴스용 st1 EBS 볼륨 2개, 루트 디스크로 약 8GiB 중 하나, 데이터 디스크로 4GiB 중 하나</block>
@@ -5213,13 +5129,11 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="4eaed4ff800bc18688fff95b8dee6d1e" category="sidebar">노드 기반 라이센스를 변환합니다</block>
   <block id="b8c05ba27f3f7ff64dca585f43789e57" category="sidebar">Cloud Volumes ONTAP에서 라이선스 취득</block>
   <block id="500984bae07aedc6c662b31a3039d462" category="list-text">미국 공공 부문 고객</block>
-  <block id="c1c1c782703499ca8577569137202bf1" category="list-text">아래 표에서 해당하는 Cloud Volumes ONTAP 버전 및 VM 배포 유형에 대한 SKU 이름을 검토하십시오.</block>
   <block id="90069a3873814503a767070f04f3c286" category="paragraph">예를 들어 Cloud Volumes ONTAP 9.15.0을 사용하는 모든 단일 노드 배포는 SKU 이름으로 사용해야<block ref="b2b27ade506086d79b3e7defdb321673" prefix=" " category="inline-code"></block> 합니다.</block>
   <block id="d811ca86e147e8cf2239ee377f1dcd50" category="cell">* Cloud Volumes ONTAP 버전 *</block>
   <block id="aadb6d991e4406b990f6fca8b4c83fd6" category="cell">* SKU 이름 *</block>
   <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">모든 배포는 BlueXP 를 통해 이루어집니다</block>
   <block id="273062411bc731be8028321277142365" category="cell">ONTAP_클라우드</block>
-  <block id="23364a1412324aba4675105eacf57908" category="example-title">단계를 봅니다</block>
   <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">이제 BlueXP 를 사용하여 기존 Cloud Volumes ONTAP 시스템에서 WORM(Write Once, Read Many) 스토리지를 활성화할 수 있습니다. 이 기능을 사용하면 작업 환경에서 WORM을 생성하는 동안 WORM이 활성화되지 않은 경우에도 작업 환경에서 WORM을 유연하게 활성화할 수 있습니다. WORM을 사용하도록 설정한 후에는 비활성화할 수 없습니다.</block>
   <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">결제 방법을 변경해도 BYOL(NetApp)에서 구매한 라이선스를 통해 청구되는지 아니면 클라우드 공급자의 PAYGO(Marketplace Pay-as-you-go) 구독에서 청구되는지 여부는 영향을 받지 않습니다.</block>
   <block id="fa055d94084c7095d6c7ec354ec44857" category="doc">모범 사례에 맞게 Google Cloud에서 업데이트된 지원되는 VM 목록</block>
@@ -5282,7 +5196,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="19fc50e68ea13a6ad812df240a74e5fb" category="list-text"><block ref="19fc50e68ea13a6ad812df240a74e5fb" category="inline-link-rx"></block></block>
   <block id="926bfb189ee8c4179f7f53993b777d90" category="paragraph">AWS에서 Cloud Volumes ONTAP을 시작하려면 BlueXP 에서 새로운 작업 환경을 생성해야 합니다.</block>
   <block id="7fc21546461474a1cc543852dc120330" category="paragraph">Cloud Volumes ONTAP 인스턴스를 시작하는 데 문제가 있는 경우 오류 메시지를 검토합니다. 작업 환경을 선택하고 환경 다시 생성 을 클릭할 수도 있습니다.</block>
-  <block id="d036b4a2aa80729ab508e1851458f506" category="cell">이 Cloud Volumes ONTAP 시스템에서 사용할 AWS 자격 증명과 마켓플레이스 구독을 선택하십시오. 선택한 자격 증명을 새 AWS Marketplace 구독에 연결하려면 * Add Subscription * 을 클릭합니다. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다. NetApp(BYOL(Bring Your Own License))에서 직접 라이센스를 구매한 경우에는 AWS 구독이 필요하지 않습니다. <block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>..</block>
   <block id="fc687f57dc8188e5dad217858c078354" category="section-title">Cloud Volumes ONTAP에서 키 회전</block>
   <block id="d2a95dd3692cce58be8541add2bc6897" category="paragraph">대부분의 구성은 지원됩니다. 최신 버전을 실행하는 Cloud Volumes ONTAP 시스템이 있는 경우 사용하는 것이 좋습니다. <block ref="f2e6a88e181ee9519c72412b23fc6e17" category="inline-link-macro-rx"></block>..</block>
   <block id="8ce366e694d5c3c3c27249c7cedf502e" category="paragraph">사용자 지정 역할에는 기본적으로 사용 권한이 포함됩니다.<block ref="b7d06976ba0f29792527e383824a0357" category="inline-link-rx"></block></block>
@@ -5547,7 +5460,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="df65d9be8ade62cf7505e34c307cecad" category="cell">* 지원되는 가상 머신(VM) 유형 *</block>
   <block id="b13b643af58b125fac839de04760d5f0" category="cell">VM 유형의 전체 범위 <block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
   <block id="97c2102867c5b54db1b773f42a540c16" category="list-text">9.16.1 GA</block>
-  <block id="70e23d6e402d67f6f86de0aa757d7bf0" category="paragraph">SKU 이름은 마켓플레이스 이미지의 URN을 설정할 때 "skuName" 변수의 값입니다.</block>
   <block id="4692723666baa52294f46ef51ee4ec3f" category="cell">* VM 배포 방법 *</block>
   <block id="95392acbc8522bf81166b3d44b333fca" category="cell">9.16.1 이상</block>
   <block id="e6c4c5f3851cefbfb1da8daa3aff1fb0" category="cell">시장의 직접 배포 방법을 통해</block>
@@ -5575,7 +5487,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="36b957c17f5c2834f27a8de7ecccad90" category="doc">Cloud Volumes ONTAP에 AutoSupport 및 Digital Advisor가 어떻게 사용되는지 알아보십시오</block>
   <block id="a813237b7fa0fd426e65b5e81ab565df" category="doc">Cloud Volumes ONTAP 및 AWS Elastic Volumes 지원에 대해 자세히 알아보십시오</block>
   <block id="367721c6da74417e71470676fd55bfec" category="doc">Cloud Volumes ONTAP를 위한 Azure 마켓플레이스 이미지 서명 인증</block>
-  <block id="7e2d94ca440b9c349d09b9e01c8c90ab" category="doc">Cloud Volumes ONTAP에 대한 Azure 마켓플레이스 이미지 검증</block>
   <block id="b3b8964875bb6d67dab64d2f1d39b3aa" category="doc">Cloud Volumes ONTAP에 대해 지원되는 클라이언트 프로토콜</block>
   <block id="84fbe7f88bb3a63bec3ffcbda024a860" category="doc">AWS, Azure 또는 Google Cloud에서 Cloud Volumes ONTAP를 사용한 데이터 계층화에 대해 알아보십시오</block>
   <block id="46d42323928c4276f41709f7eacfb86f" category="doc">Cloud Volumes ONTAP HA 쌍의 노드가 오프라인일 때는 작업을 사용할 수 없습니다</block>
@@ -5613,7 +5524,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="816ad715f74514ea0e194c106b673bf0" category="doc">Cloud Volumes ONTAP 시스템에서 FlexCache 볼륨을 사용하여 데이터 액세스 가속화</block>
   <block id="e1d184508c5a07e34d4799a6df05b20e" category="doc">기존 Cloud Volumes ONTAP 시스템을 BlueXP 에 추가합니다</block>
   <block id="bd38f10049f751a48716a3340ced5706" category="doc">AWS 키 관리 서비스를 사용하여 Cloud Volumes ONTAP 암호화 키 관리</block>
-  <block id="ec50d6cbb7b13703598a5b1e88bc013b" category="doc">Cloud Volumes ONTAP용 Azure 마켓플레이스 이미지 다이제스트를 다운로드하십시오</block>
   <block id="cd77a4de9d5cef0b54e9b8a8803001ee" category="doc">Azure 마켓플레이스에서 Cloud Volumes ONTAP용 VHD 이미지를 내보냅니다</block>
   <block id="890da2408e0505fbcfccbfee39ec96e9" category="doc">Azure Key Vault를 사용하여 Cloud Volumes ONTAP 암호화 키를 관리합니다</block>
   <block id="733ed8eca6d49536d616b96f190c0f55" category="doc">AWS에서 Cloud Volumes ONTAP 시스템의 EC2 인스턴스 유형을 수정합니다</block>
@@ -5642,7 +5552,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="815c7816169ce0181021470fc851ad75" category="doc">Cloud Volumes ONTAP 시스템에 Azure 프라이빗 링크 또는 서비스 엔드포인트를 사용합니다</block>
   <block id="3f8a964f1b4371b109b271e17740eb42" category="doc">NetApp 암호화 솔루션을 사용하여 Cloud Volumes ONTAP의 볼륨을 암호화합니다</block>
   <block id="7e2f4ea87cd4ef2400c67d3a6b35c0e4" category="doc">Linux 기반 Cloud Volumes ONTAP에 대한 Azure 마켓플레이스 이미지 서명을 확인합니다</block>
-  <block id="eb0bf51905bf265524b4344e372f0021" category="doc">MAC OS에서 Cloud Volumes ONTAP에 대한 Azure 마켓플레이스 이미지 서명을 확인합니다</block>
   <block id="a6c30282f56568ee9b5729642207a5b5" category="doc">Google Cloud 이미지를 Cloud Volumes ONTAP용 RAW 형식으로 변환합니다</block>
   <block id="240de91fb65f5d6acac3d891ccd57289" category="doc">AWS Secret Cloud 또는 AWS Top Secret Cloud에 Cloud Volumes ONTAP을 구현합니다</block>
   <block id="e35e4a3b0dde1d61e0fbd30f69e261c0" category="doc">Google Cloud KMS를 사용하여 Cloud Volumes ONTAP 암호화 키를 관리합니다</block>
@@ -5828,13 +5737,6 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="0b62bc8ec3e3c99207707d34c04bf762" category="list-text"><block ref="0b62bc8ec3e3c99207707d34c04bf762" category="inline-link-macro-rx"></block></block>
   <block id="feeb4931d6047ef8e401159d1c8fda09" category="list-text"><block ref="feeb4931d6047ef8e401159d1c8fda09" category="inline-link-macro-rx"></block></block>
   <block id="b2f263166e90b59fbacbe6b5ead0ba84" category="paragraph">BlueXP 에서는 시스템을 생성할 때 콜드 데이터에 대한 오브젝트 저장소를 <block ref="2bc42c273736fc8d1c1cbc5e39b01160" category="inline-xref-macro-rx"></block>생성합니다. 그 이후에는 볼륨(및 경우에 따라<block ref="20c714206be4f432619a9d0394b388bc" category="inline-xref-macro-rx"></block>)에서 데이터 계층화를 활성화해야 합니다.</block>
-  <block id="fdcb7ccb26d6b4864ac844c920b0f5d5" category="paragraph">동일한 Connector를 사용하여 여러 Azure 테넌트의 데이터를 계층화할 수 있습니다. Cloud Volumes ONTAP 작업 환경이 한 테넌트에 의해 생성되고 커넥터가 다른 테넌트에 의해 생성된 시나리오에서 Azure 테넌트에 대한 계층화를 활성화하려면 다음을 확인합니다.</block>
-  <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="inline-link">BlueXP의 Azure 자격 증명 및 마켓플레이스 가입을 관리합니다</block>
-  <block id="ef83b75206a21def8410676276978aac" category="list-text">교차 검증을 위해 BlueXP 에서 두 테넌트에 대한 자격 증명을 입력했습니다. 을<block ref="6ee6fc101b8550f56fdf56dce6277e28" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="c307dc26cbb58ad7fba2664c17cb4d16" category="inline-link">Insight 설문조사에 응답해 주세요</block>
-  <block id="953bd3af818813e12a62ff4db4f175eb" category="list-text">두 테넌트 간에 가상 네트워크(VNet) 피어링을 활성화했습니다<block ref="2f75b24d24389585ccc23662dba8f117" category="inline-link-rx"></block>. 이는 커넥터가 다른 테넌트의 저장소 계정에 액세스할 수 있도록 하기 위해 필요합니다.</block>
-  <block id="5dc4c869682b55bd825dbd766c5a91c6" category="inline-link-macro">Azure 개인 링크를 비활성화했습니다</block>
-  <block id="56942c64ec21bc5186a25c20b4c9231e" category="list-text"><block ref="d1486d850c17a7ded1dee71bca015a76" category="inline-link-macro-rx"></block>서브넷 서비스 끝점을 사용해야 합니다.</block>
   <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025년 5월 12일</block>
   <block id="389d4c98e2d0499c2e4e750430434afb" category="doc">Cloud Volumes ONTAP 9.15.1에 대해 활성화된 개인 모드 배포</block>
   <block id="bce4906e9d915e525cd382b520b71325" category="paragraph">이제 AWS, Azure 및 Google Cloud의 프라이빗 모드로 Cloud Volumes ONTAP 9.15.1을 구축할 수 있습니다. 프라이빗 모드는 Cloud Volumes ONTAP 9.15.1의 단일 노드 및 고가용성(HA) 구축에 모두 사용할 수 있습니다.</block>
@@ -5871,4 +5773,97 @@ Mac OS에서 tail 명령을 완료합니다.</block>
   <block id="f193581eeaf23b712b81e0023faf5954" category="list-text">생성한 사용자 지정 역할을 할당합니다. <block ref="1bc6114e9ddb3402400afe0f18264312" prefix=" " category="inline-code"></block></block>
   <block id="2ca4641842d5ce20115dfc5ed991df9a" category="admonition">Cloud Volumes ONTAP 9.13.0 이상을 사용하는 경우 사용자 지정 역할을 만들 필요가 없습니다. <block ref="73ac35632bb1fe345fd295d7683fcbee" category="inline-link-rx"></block><block ref="8f1f4fa398a38c70f01951f69f3c2a1f" prefix="[" category="inline-code"></block> ^] 역할.</block>
   <block id="07bc73dbf27c2d6ca6dd4dcbb64687bf" category="paragraph">BlueXP는 스토리지 VM(SVM) 재해 복구에 대한 설정 또는 오케스트레이션 지원을 제공하지 않습니다. 이러한 작업을 수행하려면 ONTAP System Manager 또는 ONTAP CLI를 사용하십시오.</block>
+  <block id="335f4b4c3f32d7fd5ea619fa6dbe4204" category="summary">Cloud Volumes ONTAP 이미지 다이제스트 파일 도구를 사용하여 내보낸 VHD 파일 서명을 확인하는 방법을 알아봅니다.</block>
+  <block id="58b845122330da91119b6688c036350d" category="paragraph">Azure 이미지 검증 프로세스는 VHD 파일에서 시작 부분 1MB, 끝 부분 512바이트를 제거한 후 해시 함수를 적용하여 다이제스트 파일을 생성합니다. 서명 절차와 일치하도록 _sha256_ 해싱 알고리즘을 사용합니다.</block>
+  <block id="1fa20f0746983bcbf7a88c87a81e70e0" category="inline-link-macro">Azure 이미지 다이제스트 파일 다운로드</block>
+  <block id="e95fe530af34929abac0d194b5a233d9" category="list-text">Azure 이미지를 다운로드합니다. <block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block> 그리고 다이제스트(.sig) 파일, 공개 키 인증서(.pem) 파일, 체인 인증서(.pem) 파일을 추출합니다. 자세한 내용은 을 <block ref="9e172761773546c07c07e8a2bfa3e401" category="inline-link-macro-rx"></block> 참조하십시오.</block>
+  <block id="8d0322cf231d5afd998204b4188ce3b5" category="list-text">신뢰 사슬의 검증.</block>
+  <block id="c5f313eb33e695440bf645428b6dc2b0" category="list-text">공개 키 인증서(.pem)에서 공개 키(.pub)를 추출합니다.</block>
+  <block id="0d4eaa3a100ccc68da9883a9e3662eec" category="list-text">추출된 공개 키를 사용하여 다이제스트 파일을 해독합니다.</block>
+  <block id="e42e2d7653b106c46ae319b6738643c5" category="list-text">이미지 파일에서 시작 부분 1MB와 끝 부분 512바이트를 제거하여 생성된 임시 파일의 새로 생성된 다이제스트와 결과를 비교합니다. 이 단계는 OpenSSL 명령줄 도구를 사용하여 수행됩니다. OpenSSL CLI 도구는 파일 일치 성공 또는 실패 시 적절한 메시지를 표시합니다.</block>
+  <block id="adbd61b9b9edef58fd97573b9668d615" category="doc">Cloud Volumes ONTAP에 대한 Azure 마켓플레이스 이미지 검증</block>
+  <block id="ac4d6cdfd4bd3593fdc2c0bf74279483" category="paragraph">Azure 이미지 검증은 향상된 NetApp 보안 요구사항을 준수합니다. 이미지 파일 검증은 간단한 과정입니다. 그러나 Azure 이미지 서명 검증은 Azure VHD 이미지 파일이 Azure 마켓플레이스에서 변경되기 때문에 특정 사항을 고려해야 합니다.</block>
+  <block id="2525830fb09d21a48ca7521979921f9f" category="admonition">Azure 이미지 검증은 Cloud Volumes ONTAP 9.15.0 이상에서 지원됩니다.</block>
+  <block id="8594c4075962a59740e91f8f6cfa48a6" category="paragraph">VHD 파일의 시작 부분인 1MB(1048576바이트)와 끝 부분인 512바이트는 Azure에서 수정됩니다. NetApp은 나머지 VHD 파일에 서명합니다.</block>
+  <block id="2449165dac49eeffc4339a03758e395d" category="paragraph">예시에서 VHD 파일은 10GB입니다. NetApp에서 서명한 부분은 녹색으로 표시되어 있습니다(10GB - 1MB - 512바이트).</block>
+  <block id="b844697174ebc8c2c2eaadf0ae1954ea" category="summary">Cloud Volumes ONTAP 이미지 다이제스트 파일 도구를 사용하여 내보낸 Google Cloud 이미지 파일 서명을 확인합니다.</block>
+  <block id="916ff508220cd0f9544ff8e1a1538bc5" category="admonition">BlueXP에서 관리되는 제품 및 서비스의 실제 사용량 및 계측은 항상 GiB 및 TiB 단위로 계산되지만 GB/GiB와 TB/TiB라는 용어는 같은 의미로 사용됩니다. 이는 클라우드 마켓플레이스 목록, 가격 견적, 목록 설명 및 기타 지원 문서에 반영되어 있습니다.</block>
+  <block id="1718fe47f5ecc10fa0621d52cd8fcb44" category="list-text">Azure Marketplace에서 사용량에 따른 요금제 또는 연간 계약으로 제공됨</block>
+  <block id="2def4bff61cd7bfa9062cc47d2c7968d" category="list-text">Google Cloud 마켓플레이스에서 사용량에 따른 요금제 또는 연간 계약으로 제공됩니다.</block>
+  <block id="b510d73bf4b9be5f22afae8b4d44a0c8" category="summary">NetApp 지원 사이트에서 Azure 이미지 다이제스트 파일을 다운로드할 수 있습니다.</block>
+  <block id="6638f6b622b4f4b4d37c4f1a1fe019bb" category="doc">Cloud Volumes ONTAP용 Azure 이미지 파일 다운로드</block>
+  <block id="8092c5aca0172beb3a5b74f7c0b1d012" category="paragraph">Azure 이미지 파일은 다음에서 다운로드할 수 있습니다. <block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block> .</block>
+  <block id="6df1f64f45848c0bb0631283ed27ce27" category="paragraph">_tar.gz_ 파일에는 이미지 서명 확인에 필요한 파일이 포함되어 있습니다. _tar.gz_ 파일과 함께 이미지의 _checksum_ 파일도 다운로드해야 합니다. 체크섬 파일에는 <block ref="1bc29b36f623ba82aaf6724fd3b16718" prefix=" " category="inline-code"></block> 그리고 <block ref="d8d8a6d2e9e1fb99302b479a8fe540d4" prefix=" " category="inline-code"></block> _tar.gz_ 파일의 체크섬.</block>
+  <block id="0072ec12983477b835402f6aaa07db5f" category="list-text">로 가다 <block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block> *다운로드* 섹션에서 필요한 소프트웨어 버전을 다운로드하세요.</block>
+  <block id="4a7a4b5d2dd7a22744be0851c16f8194" category="list-text">Cloud Volumes ONTAP 다운로드 페이지에서 Azure 이미지에 대한 다운로드 가능한 파일을 클릭하고 _tar.gz_ 파일을 다운로드합니다.</block>
+  <block id="4cc94736b8108164bde72adbfd5fb5bd" category="list-text">Linux에서는 다음을 실행합니다. <block ref="c3c22e8fbfdb4097ebad5fae427aec4a" prefix=" " category="inline-code"></block> .</block>
+  <block id="91deda3d344b61592f9e7c5ad458786d" category="paragraph">macOS에서는 다음을 실행합니다. <block ref="8bf5a287562075c8e1f0e1e06d0227bc" prefix=" " category="inline-code"></block> .</block>
+  <block id="05a6c4db607bd3e72790cf5b1ad82f1f" category="list-text">다음을 확인하십시오. <block ref="c8f1ee9a7c5fd4b3c66d7559e99807d0" prefix=" " category="inline-code"></block> 그리고 <block ref="948bfc754ae7f359e9d17a0a0efcb325" prefix=" " category="inline-code"></block> 값이 다운로드한 Azure 이미지의 값과 일치합니다.</block>
+  <block id="5db71480b0c9dda6718c57c9a1b66d0e" category="list-text">Linux 및 macOS에서는 다음을 사용하여 _tar.gz_ 파일을 추출합니다. <block ref="b83523a8ca29d91ebd710492f899931c" prefix=" " category="inline-code"></block> 명령.</block>
+  <block id="8ae7ff53b84fa20c2ff41ba7151a0bb8" category="paragraph">추출된 _tar.gz_ 파일에는 다이제스트(_.sig_) 파일, 공개 키 인증서(_.pem_) 파일, 체인 인증서(_.pem_) 파일이 포함되어 있습니다.</block>
+  <block id="7926415a130a1678f0dd302e6e12b7fc" category="paragraph">*tar.gz 파일을 추출한 후의 출력 예:*</block>
+  <block id="f6dba46e078f9386beb8a4a79d76549a" category="paragraph">VHD 이미지가 Azure 클라우드에 게시되면 더 이상 NetApp에서 관리하지 않습니다. 대신 게시된 이미지가 Azure 마켓플레이스에 배치됩니다. 이미지가 스테이징되어 Azure 마켓플레이스에 게시되면 Azure는 VHD 파일의 시작 부분 1MB, 끝 부분 512바이트를 수정합니다. VHD 파일의 서명을 확인하려면 Azure 마켓플레이스에서 Azure가 수정한 VHD 이미지를 내보내야 합니다.</block>
+  <block id="ec16213617a829ae3210a6b9c0b740b9" category="inline-link">Azure 설명서: Azure CLI 설치 방법</block>
+  <block id="9c3f5558b03dabe44a3407603bd410c6" category="paragraph">시스템에 Azure CLI가 설치되어 있는지, 또는 Azure Portal을 통해 Azure Cloud Shell을 사용할 수 있는지 확인하세요. Azure CLI 설치 방법에 대한 자세한 내용은 다음을 참조하세요. <block ref="4f331e0f89427a8f7dcdb4a3b7e4c417" category="inline-link-rx"></block> .</block>
+  <block id="face343931d4059b6c3dd78d56fb0143" category="list-text">_version_readme_ 파일의 내용을 사용하여 시스템의 Cloud Volumes ONTAP 버전을 Azure Marketplace 이미지 버전에 매핑합니다. Cloud Volumes ONTAP 버전은 다음과 같이 표시됩니다. <block ref="b5a3173cd3a7260f087f1a3b6ce8b253" prefix=" " category="inline-code"></block> Azure Marketplace 이미지 버전은 다음과 같이 표현됩니다. <block ref="2af72f100c356273d46284f6fd1dfc08" prefix=" " category="inline-code"></block> 버전 매핑에서.</block>
+  <block id="673621cd6c54925a5835c76a491a7692" category="paragraph">다음 예에서는 Cloud Volumes ONTAP 버전 <block ref="d9df468f7ec059062fe27406e7e15237" prefix=" " category="inline-code"></block> Azure Marketplace 이미지 버전에 매핑됨 <block ref="c9ad1fa1b8f10cec0a814f0e5a67040c" prefix=" " category="inline-code"></block> . 이 Azure 마켓플레이스 이미지 버전은 나중에 이미지 URN을 설정하는 데 사용됩니다.</block>
+  <block id="fc9e8de3d55cd0dcb193d83ed767262a" category="list-text">VM을 생성할 지역을 식별합니다. 지역 이름은 값으로 사용됩니다. <block ref="2c490d0ef82a3afb83c6ec1d8db95215" prefix=" " category="inline-code"></block> 마켓플레이스 이미지의 URN을 설정할 때 변수를 사용합니다. 사용 가능한 지역을 나열하려면 다음 명령을 실행하세요.</block>
+  <block id="cdffbd57236bcf08f44921f8f58c219a" category="paragraph">이 표에서는 지역 이름이 다음과 같이 나타납니다. <block ref="49ee3087348e8d44e1feda1917443987" prefix=" " category="inline-code"></block> 필드.</block>
+  <block id="6b3d18349c55e7fe18acf14ca16f6283" category="list-text">아래 표에서 해당 Cloud Volumes ONTAP 버전 및 VM 배포 유형에 대한 SKU 이름을 검토하세요. SKU 이름은 다음 값의 값으로 사용됩니다. <block ref="54a8f9e3abd62e4fb1e4dcd2e2af6f84" prefix=" " category="inline-code"></block> 마켓플레이스 이미지의 URN을 설정할 때 변수입니다.</block>
+  <block id="f9e2290e145374e5b1637c66fa12a846" category="list-text">ONTAP 버전과 Azure 마켓플레이스 이미지를 매핑한 후 Azure Cloud Shell이나 Azure CLI를 사용하여 Azure 마켓플레이스에서 VHD 파일을 내보냅니다.</block>
+  <block id="dd0bd5034b076be810a4df7b017f2255" category="section-title">Linux에서 Azure Cloud Shell을 사용하여 VHD 파일 내보내기</block>
+  <block id="676b9ff7477545bf846f27485d8e5e26" category="paragraph">Azure Cloud Shell에서 마켓플레이스 이미지를 VHD 파일(예: _9150.01000024.05090105.vhd_)로 내보내고 로컬 Linux 시스템에 다운로드합니다. Azure 마켓플레이스에서 VHD 이미지를 가져오려면 다음 단계를 수행하세요.</block>
+  <block id="12a72006cb63e1b4defb45de48564692" category="list-text">마켓플레이스 이미지의 URN 및 기타 매개변수를 설정합니다. URN 형식은 다음과 같습니다. <block ref="32c001f242bba1a2f81974a7f26f0e64" prefix=" " category="inline-code"></block> . 선택적으로 NetApp 마켓플레이스 이미지를 나열하여 올바른 이미지 버전을 확인할 수 있습니다.</block>
+  <block id="d65e638e11d00fc79443255884da16db" category="list-text">마켓플레이스 이미지에서 일치하는 이미지 버전으로 새 관리 디스크를 만듭니다.</block>
+  <block id="0088c78e043b70edf9579595a2ee25d7" category="list-text">관리 디스크에서 Azure Storage로 VHD 파일을 내보냅니다. 적절한 액세스 수준을 가진 컨테이너를 만듭니다. 이 예에서는 다음과 같은 이름의 컨테이너를 사용했습니다. <block ref="58aaa54fc7b24aa9f47628c9303e6032" prefix=" " category="inline-code"></block> ~와 함께 <block ref="0e7278cda02a9c0446dcc75a4df34eb2" prefix=" " category="inline-code"></block> 액세스 수준. Azure Portal에서 저장소 계정 액세스 키를 가져옵니다. *저장소 계정 &gt; _examplesaname_ &gt; 액세스 키 &gt; _key1_ &gt; _key_ &gt; 표시 &gt; _&lt;복사본&gt;_*</block>
+  <block id="d58ff5368da0a9e07116d0914b0e100f" category="list-text">생성된 이미지를 Linux 시스템에 다운로드 <block ref="af9d83836ecf1f49c598bcb1995b3c98" prefix=" " category="inline-code"></block> VHD 파일을 다운로드하는 명령:</block>
+  <block id="080f4e725b29a35d5b454c3ef51a6ece" category="paragraph">URL은 표준 형식을 따릅니다. 자동화를 위해 아래와 같이 URL 문자열을 생성할 수 있습니다. 또는 Azure CLI를 사용할 수도 있습니다. <block ref="cc8c0a97c2dfcd73caff160b65aa39e2" prefix=" " category="inline-code"></block> URL을 가져오는 명령입니다. URL 예시: <block ref="57f052fbd2c31b00951e080c2b038e9f" category="inline-link-rx"></block></block>
+  <block id="e29c7c72ff42387a45d366d92342fa54" category="list-text">관리되는 디스크 정리</block>
+  <block id="7f38ba9b55c53cbc26b23634ed761a33" category="section-title">Linux에서 Azure CLI를 사용하여 VHD 파일 내보내기</block>
+  <block id="de4a72dd00c713fbc81776255cd85070" category="paragraph">로컬 Linux 시스템에서 Azure CLI를 사용하여 마켓플레이스 이미지를 VHD 파일로 내보냅니다.</block>
+  <block id="f253a8188a73f633062457efd8293f1e" category="list-text">Azure CLI에 로그인하고 마켓플레이스 이미지를 나열합니다.</block>
+  <block id="1a3e043d34cb5c7950d868f9a58de344" category="list-text">로그인하려면 웹 브라우저를 사용하여 페이지를 엽니다. <block ref="7e6daf26208029492cb7d0605bc1fe16" category="inline-link-rx"></block> 인증코드를 입력하세요.</block>
+  <block id="5db94423edb9919ea9ed6a600ca8e454" category="list-text">마켓플레이스 이미지와 일치하는 이미지 버전에서 새로운 관리 디스크를 만듭니다.</block>
+  <block id="b003c34a5effea0208f8242b4df557b8" category="paragraph">프로세스를 자동화하려면 표준 출력에서 SAS를 추출해야 합니다. 자세한 내용은 관련 문서를 참조하십시오.</block>
+  <block id="4f9c7172d5d5be7c41a3647575453a14" category="list-text">관리되는 디스크에서 VHD 파일을 내보냅니다.</block>
+  <block id="b6002e5678a3cdd8ad75bf1a31e1bcc5" category="list-text">적절한 액세스 수준을 가진 컨테이너를 생성합니다. 이 예에서는 <block ref="58aaa54fc7b24aa9f47628c9303e6032" prefix=" " category="inline-code"></block> ~와 함께 <block ref="0e7278cda02a9c0446dcc75a4df34eb2" prefix=" " category="inline-code"></block> 접근 수준이 사용됩니다.</block>
+  <block id="ddba27390d0c0fbbe854c9b12fcdf284" category="list-text">Azure Portal에서 저장소 계정 액세스 키를 가져옵니다. *저장소 계정 &gt; _examplesaname_ &gt; 액세스 키 &gt; _key1_ &gt; _key_ &gt; 표시 &gt; _&lt;복사&gt;_*</block>
+  <block id="13ddcbd747245998f2d13d87aea141a5" category="paragraph">또한 다음을 사용할 수도 있습니다. <block ref="cc8c0a97c2dfcd73caff160b65aa39e2" prefix=" " category="inline-code"></block> 이 단계에 대한 명령입니다.</block>
+  <block id="83576ac06da530b4b3d474992ffac159" category="list-text">Blob 복사본의 상태를 확인합니다.</block>
+  <block id="d9dfb532ad5d179e3b40189fde3f4248" category="list-text">생성된 이미지를 Linux 서버로 다운로드합니다.</block>
+  <block id="7788afc9b025c22557e447eaf4dffa93" category="paragraph">만약 <block ref="c02e65ef2be24722283d91b62774dd3d" prefix=" " category="inline-code"></block> 상태가 아닙니다 <block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block> SVM이 필요한 모든 연결 및 권한을 사용하여 Azure Key Vault 서비스에 연결할 수 없습니다. Azure 네트워크 정책 및 라우팅이 프라이빗 vNet이 Azure Key Vault 퍼블릭 엔드포인트에 연결하는 것을 차단하지 않는지 확인하세요. 이러한 경우, VNET 내에서 키 볼트에 액세스하기 위해 Azure 프라이빗 끝점을 사용하는 것이 좋습니다. 또한 종점의 전용 IP 주소를 확인하기 위해 SVM에 정적 호스트 항목을 추가해야 할 수도 있습니다.</block>
+  <block id="772cd21b67a339599db9c9999d2ea60c" category="list-text">선택 사항: Azure Key Vault 인증 인증서의 자격 증명을 업데이트하려면 다음 명령을 사용하세요. <block ref="a645f9ebef79ef42b1f3131cb6174f32" prefix=" " category="inline-code"></block></block>
+  <block id="ce7feeb9696e4acc1fcbb1add1f03816" category="inline-link">ONTAP 명령 참조 가이드</block>
+  <block id="fb572fa6aa049e4489436824a209a185" category="list-text"><block ref="fb572fa6aa049e4489436824a209a185" category="inline-link-rx"></block></block>
+  <block id="0b36bcb395ebb665af56da483fd99834" category="paragraph">사용량에 따라 요금을 지불하는 Cloud Volumes ONTAP 시스템을 만들려면 Google Cloud 마켓플레이스에서 Cloud Volumes ONTAP 구독과 연결된 Google Cloud 프로젝트를 선택해야 합니다.</block>
+  <block id="d902c674e6ba950d8402617e90996b0e" category="paragraph">다음 동영상에서는 사용량 기반 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여줍니다. 또는 다음 링크에 있는 구독 단계를 따르세요. <block ref="d9f7e6ae4bc0528c4df5fe3f1a811c3e" category="inline-link-rx"></block> 부분.</block>
+  <block id="1500dd80d4cc6d09d5133f1b625193db" category="video-title">Google Cloud 마켓플레이스에서 BlueXP 구독</block>
+  <block id="60f8e11854532d0b25fd528a7475e02d" category="inline-link">마켓플레이스 구독을 Google Cloud 자격 증명과 연결</block>
+  <block id="3582172f990671e5c9b9847ca2466e47" category="paragraph">다음 동영상에서는 사용량 기반 마켓플레이스 구독을 Google Cloud 프로젝트에 연결하는 방법을 보여줍니다. 또는 다음 링크에 있는 구독 단계를 따르세요. <block ref="26858d2411615dac691c2981d5338917" category="inline-link-rx"></block> 부분.</block>
+  <block id="9603e35668bf73569f7fb7d8ede35b73" category="cell">이 시스템을 구축할 계정과 연결된 AWS 자격 증명을 선택합니다. AWS 마켓플레이스 구독을 연결하여 이 Cloud Volumes ONTAP 시스템에 사용할 수도 있습니다. 선택한 자격 증명을 새 AWS 마켓플레이스 구독에 연결하려면 *구독 추가*를 클릭하세요. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다. <block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>..</block>
+  <block id="46339f2ff186a945840b15ba0f6b2973" category="paragraph">다음 비디오에서는 AWS 자격 증명에 사용량에 따른 결제 방식 마켓플레이스 구독을 연결하는 방법을 보여줍니다.</block>
+  <block id="e649338f42e9d4b6232876c6fb010f0c" category="video-title">AWS 마켓플레이스에서 BlueXP 구독</block>
+  <block id="d066267408b0996a7030fb9e612bc93c" category="admonition">여러 IAM 사용자가 동일한 AWS 계정으로 작업하는 경우 각 사용자는 가입해야 합니다. 첫 번째 사용자가 구독하면 AWS 마켓플레이스는 아래 이미지와 같이 이후 사용자에게 이미 구독되었음을 알립니다. AWS_ACCOUNT_에 가입되어 있는 동안 각 IAM 사용자는 자신을 해당 구독과 연결해야 합니다. 아래 메시지가 표시되면 *여기를 클릭* 링크를 클릭하여 BlueXP 웹사이트로 이동하여 구독 절차를 완료하세요. <block ref="42077b282858282a6d1d166f9467abaf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab15dd8600113904e0e4998b2fb7bd69" category="list-text">*Cloud Volumes ONTAP 구성* (연간 AWS 마켓플레이스 계약에만 해당): 기본 구성을 검토하고 *계속*을 클릭하거나 *구성 변경*을 클릭하여 원하는 구성을 선택합니다.</block>
+  <block id="1726cdada46786ec07f15648484f3688" category="cell">이 Cloud Volumes ONTAP 시스템에서 사용할 AWS 자격 증명과 마켓플레이스 구독을 선택하십시오. *구독 추가*를 클릭하여 선택한 자격 증명을 새로운 AWS 마켓플레이스 구독과 연결합니다. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다. NetApp(BYOL(Bring Your Own License))에서 직접 라이센스를 구매한 경우에는 AWS 구독이 필요하지 않습니다. <block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>..</block>
+  <block id="e242ae1daadb676e4a23b48a94c4619d" category="admonition">여러 IAM 사용자가 동일한 AWS 계정으로 작업하는 경우 각 사용자는 가입해야 합니다. 첫 번째 사용자가 구독하면 AWS 마켓플레이스는 아래 이미지와 같이 이후 사용자에게 이미 구독되었음을 알립니다. AWS_ACCOUNT_에 가입되어 있는 동안 각 IAM 사용자는 자신을 해당 구독과 연결해야 합니다. 아래 메시지가 표시되면 *여기를 클릭* 링크를 클릭하여 BlueXP 웹사이트로 이동하여 구독 절차를 완료하세요. <block ref="5176b925004072644ad0f4d50d425bc9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="80e0ce0662b2846621d1355a00843d7d" category="summary">Linux에서 Cloud Volumes ONTAP 이미지 다이제스트 파일 도구를 통해 내보낸 VHD 파일 서명 확인</block>
+  <block id="11e81e6e3ef9958c0f8028f9c79e5dbe" category="paragraph">Linux에서 내보낸 VHD 파일 서명을 검증하려면 신뢰 체인을 검증하고, 파일을 편집하고, 서명을 검증하는 작업이 포함됩니다.</block>
+  <block id="6339f94a77b583074840fe198737cc13" category="list-text">Azure 이미지 파일을 다운로드하세요. <block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block> 그리고 다이제스트(.sig) 파일, 공개 키 인증서(.pem) 파일, 체인 인증서(.pem) 파일을 추출합니다.</block>
+  <block id="c85b78e9ee53945bf5a3b15edfff0b5d" category="paragraph">자세한 내용은 을<block ref="2a14363ee7293feb0b6b6ce81efa6b91" category="inline-link-rx"></block> 참조하십시오.</block>
+  <block id="21dadf74c218571a8ed71c1234029549" category="list-text">VHD 파일의 시작 부분에서 1MB(1,048,576바이트)를 제거하고 끝 부분에서 512바이트를 제거합니다 . <block ref="7aea2552dfe7eb84b9443b6fc9ba6e01" prefix=" " category="inline-code"></block> , 그 <block ref="2040875c59e5bf4043fe4cfb86322cb2" prefix=" " category="inline-code"></block> 옵션은 파일의 K번째 바이트부터 바이트를 생성합니다. 따라서 1048577을 다음 바이트로 전달합니다. <block ref="f7803ce2a90e2cf20bc01f7ab2c60c5c" prefix=" " category="inline-code"></block> .</block>
+  <block id="836d55dad864fd03171b45683d3f0afe" category="list-text">OpenSSL을 사용하여 인증서에서 공개 키를 추출하고, 스트립된 파일(sign.tmp)을 서명 파일과 공개 키로 검증합니다.</block>
+  <block id="b40380aca2b7f94b6fd1739f23b3c19b" category="paragraph">명령 프롬프트는 검증 결과에 따라 성공 또는 실패를 나타내는 메시지를 표시합니다.</block>
+  <block id="a821b3210026c1d21c89671c2d45b1a4" category="summary">macOS에서 Cloud Volumes ONTAP 이미지 다이제스트 파일 도구를 통해 내보낸 VHD 파일 서명 확인</block>
+  <block id="a7cfd7b86c7190536d50b4749e7aadf1" category="doc">macOS에서 Cloud Volumes ONTAP에 대한 Azure 마켓플레이스 이미지 서명 확인</block>
+  <block id="15b1d6274a4b31b0d3be9a3bcbe74b84" category="list-text">VHD 파일의 시작 부분에서 1MB(1,048,576바이트)를 제거하고 끝 부분에서 512바이트를 제거합니다 . <block ref="7aea2552dfe7eb84b9443b6fc9ba6e01" prefix=" " category="inline-code"></block> , 그 <block ref="2040875c59e5bf4043fe4cfb86322cb2" prefix=" " category="inline-code"></block> 옵션은 파일의 K번째 바이트부터 바이트를 생성합니다. . macOS에서는 tail 명령을 완료하는 데 약 10분이 걸릴 수 있습니다</block>
+  <block id="965eb67c5c4b0c477e47cea94faa6e75" category="list-text">OpenSSL을 사용하여 인증서에서 공개 키를 추출하고, 스트립된 파일(sign.tmp)을 서명 파일과 공개 키로 검증합니다. 명령 프롬프트는 검증 결과에 따라 성공 또는 실패를 나타내는 메시지를 표시합니다.</block>
+  <block id="d8272d492d8b39dd1ed365f53be37911" category="admonition">이미지를 검증하는 OpenSSL 명령은 Linux, macOS, Windows 시스템과 호환됩니다.</block>
+  <block id="3e751f18a3082d45e1a90f2be8a0d29b" category="sidebar">Azure 플랫폼 이미지 확인</block>
+  <block id="ca0e21a7800019b9e65f270d55f99cb6" category="sidebar">Azure 이미지 파일 다운로드</block>
+  <block id="c099cdaa5ee05ab15401993690590a92" category="sidebar">Azure 이미지 파일 내보내기</block>
+  <block id="33dce177865d6e8dd6005e4540d1d852" category="sidebar">파일 서명 확인</block>
+  <block id="6e4a8826a7235b545d2d29f084c73624" category="sidebar">파일 서명 확인에 대해 알아보세요</block>
+  <block id="56f9ff2318475a5d2c7b23d83297197e" category="sidebar">Linux에서 파일 서명 확인</block>
+  <block id="408c48907cb6a04176683305086c1ce2" category="sidebar">macOS에서 파일 서명 확인</block>
 </blocks>
