@@ -100,16 +100,16 @@ Cloud Volumes ONTAP의 모든 Azure 저장소 계정은 고객이 관리하는 �
 
 == Cloud Volumes ONTAP에서 키 회전
 
-Azure 포털에서 암호화 키를 구성해야 합니다. 키 구성 및 키 순환 설정에 대한 자세한 내용은 다음 Microsoft Azure 설명서 항목을 참조하십시오.
+암호화 키를 구성할 때는 Azure Portal을 사용하여 자동 키 순환을 설정하고 활성화해야 합니다. 새 버전의 암호화 키를 만들고 활성화하면 Cloud Volumes ONTAP이 암호화에 최신 키 버전을 자동으로 감지하고 사용할 수 있으므로, 수동 작업 없이도 데이터를 안전하게 보호할 수 있습니다.
+
+키 구성 및 키 순환 설정에 대한 자세한 내용은 다음 Microsoft Azure 설명서 항목을 참조하십시오.
 
 * https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation["Azure Key Vault에서 암호화 키 자동 회전을 구성합니다"^]
 * https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-customer-managed-keys-powershell#set-up-an-azure-key-vault-and-diskencryptionset-with-automatic-key-rotation-preview["Azure PowerShell - 고객 관리 키를 사용합니다"^]
 
 
 
-NOTE: 키를 구성한 후 Cloud Volumes ONTAP에서 새 키를 사용할 수 있도록 키를 구성했는지 https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption#customer-managed-keys["Azure 포털에서 키 회전을 활성화했습니다"^] 확인합니다.
-
-새 버전의 키를 만들고 사용할 때 Cloud Volumes ONTAP는 자동으로 최신 버전의 암호화를 검색하여 사용하므로 수동으로 업데이트할 필요 없이 데이터를 안전하게 보호할 수 있습니다.
+NOTE: 키를 구성한 후 다음을 선택했는지 확인하십시오.  https://learn.microsoft.com/en-us/azure/key-vault/keys/how-to-configure-key-rotation#key-rotation-policy["_자동 회전 활성화_"^] , 이전 키가 만료될 때 Cloud Volumes ONTAP이 새 키를 사용할 수 있도록 합니다. Azure Portal에서 이 옵션을 활성화하지 않으면 Cloud Volumes ONTAP이 새 키를 자동으로 감지하지 못해 스토리지 프로비저닝에 문제가 발생할 수 있습니다.
 
 
 

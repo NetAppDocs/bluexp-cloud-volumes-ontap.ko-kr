@@ -5609,14 +5609,10 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="f2035db09bb2be2db0508915fa584149" category="paragraph">이제 AWS, Azure 및 Google Cloud의 프라이빗 모드로 Cloud Volumes ONTAP 9.14.1을 구축할 수 있습니다. 프라이빗 모드는 Cloud Volumes ONTAP 9.14.1의 단일 노드 및 고가용성(HA) 구축에 모두 사용할 수 있습니다.</block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">BlueXP 배포 모드에 대해 알아보십시오</block>
   <block id="dc748283e7593515df9e8f2759a85349" category="paragraph">개인 모드 배포에 대한 자세한 내용은 을 <block ref="312f421b6dd5cf62286ecf6a82a8132e" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="210dc676779eae6698e4064fd965bda8" category="paragraph">Azure 포털에서 암호화 키를 구성해야 합니다. 키 구성 및 키 순환 설정에 대한 자세한 내용은 다음 Microsoft Azure 설명서 항목을 참조하십시오.</block>
   <block id="348c2304e1a6efb529d00b9bacd96a8e" category="inline-link">Azure Key Vault에서 암호화 키 자동 회전을 구성합니다</block>
   <block id="f4d57411fbf6c0075178b1e3767b496e" category="list-text"><block ref="f4d57411fbf6c0075178b1e3767b496e" category="inline-link-rx"></block></block>
   <block id="881f8c1da4935c7dbe1f6d696a16cd9c" category="inline-link">Azure PowerShell - 고객 관리 키를 사용합니다</block>
   <block id="4a9f4b73b48b26dea345a1977b58dd51" category="list-text"><block ref="4a9f4b73b48b26dea345a1977b58dd51" category="inline-link-rx"></block></block>
-  <block id="a15076d8f5fd9af7af6dec9ab282588e" category="inline-link">Azure 포털에서 키 회전을 활성화했습니다</block>
-  <block id="71b5648e677d1a5ebf3d343f3c10eb54" category="admonition">키를 구성한 후 Cloud Volumes ONTAP에서 새 키를 사용할 수 있도록 키를 구성했는지<block ref="7b90d7bac505d4641bd5cd9a13a09c6c" category="inline-link-rx"></block> 확인합니다.</block>
-  <block id="5b41754d54a59a01d58e45b59544d3a6" category="paragraph">새 버전의 키를 만들고 사용할 때 Cloud Volumes ONTAP는 자동으로 최신 버전의 암호화를 검색하여 사용하므로 수동으로 업데이트할 필요 없이 데이터를 안전하게 보호할 수 있습니다.</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025년 3월 28일</block>
   <block id="636ef76d7d40e5ba70916ad429d2aeae" category="paragraph">이제 Azure에서 Cloud Volumes ONTAP 시스템의 저장소 계정에 대한 공용 액세스를 제한할 수 있습니다. 액세스를 비활성화하면 조직의 보안 정책을 준수해야 하는 경우 동일한 VNet 내에서도 개인 IP 주소가 노출되지 않도록 보호할 수 있습니다. 이 옵션은 Cloud Volumes ONTAP 시스템의 데이터 계층화도 비활성화하며 단일 노드와 고가용성 쌍에 모두 적용할 수 있습니다.</block>
   <block id="523a76885920f04b0204fea8be782600" category="list-text">거버넌스 &gt; 디지털 지갑 &gt; 개요/직접 라이센스 * 탭을 통해 Cloud Volumes ONTAP 라이센스 정보에 쉽게 액세스할 수 있습니다.</block>
@@ -5866,4 +5862,8 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="6e4a8826a7235b545d2d29f084c73624" category="sidebar">파일 서명 확인에 대해 알아보세요</block>
   <block id="56f9ff2318475a5d2c7b23d83297197e" category="sidebar">Linux에서 파일 서명 확인</block>
   <block id="408c48907cb6a04176683305086c1ce2" category="sidebar">macOS에서 파일 서명 확인</block>
+  <block id="16af504cff5f9ca785ae3fbcae2c3d7b" category="paragraph">암호화 키를 구성할 때는 Azure Portal을 사용하여 자동 키 순환을 설정하고 활성화해야 합니다. 새 버전의 암호화 키를 만들고 활성화하면 Cloud Volumes ONTAP이 암호화에 최신 키 버전을 자동으로 감지하고 사용할 수 있으므로, 수동 작업 없이도 데이터를 안전하게 보호할 수 있습니다.</block>
+  <block id="6505562134574bd5ec457f8041b5b41b" category="paragraph">키 구성 및 키 순환 설정에 대한 자세한 내용은 다음 Microsoft Azure 설명서 항목을 참조하십시오.</block>
+  <block id="f630598948a04f18a70fded14127468d" category="inline-link">_자동 회전 활성화_</block>
+  <block id="57d9892a3d271d27b26e51e3f7d04d90" category="admonition">키를 구성한 후 다음을 선택했는지 확인하십시오. <block ref="864eb32f5dc808f575a1395e038bf9e3" category="inline-link-rx"></block> , 이전 키가 만료될 때 Cloud Volumes ONTAP이 새 키를 사용할 수 있도록 합니다. Azure Portal에서 이 옵션을 활성화하지 않으면 Cloud Volumes ONTAP이 새 키를 자동으로 감지하지 못해 스토리지 프로비저닝에 문제가 발생할 수 있습니다.</block>
 </blocks>
