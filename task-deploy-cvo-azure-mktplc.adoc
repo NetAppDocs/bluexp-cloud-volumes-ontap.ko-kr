@@ -135,9 +135,6 @@ BlueXP  Connector는 Azure Marketplace 직접 배포를 사용하여 배포된 
 .시작하기 전에
 Azure 마켓플레이스에서 배포가 완료되었는지 확인합니다. BlueXP  커넥터는 구축이 완료되고 검색이 가능한 경우에만 시스템을 검색할 수 있습니다.
 
-
-NOTE: Azure 마켓플레이스 직접 구축은 L8s_v3 인스턴스 유형을 지원합니다. 하지만 BlueXP 는 HA 구성에 대해 이 인스턴스 유형을 지원하지 않으며, 검색 중에 정확히 감지할 수 없습니다.
-
 .단계
 BlueXP 에서는 기존 시스템을 검색하기 위한 표준 절차를 따릅니다. 을 link:task-adding-systems.html["기존 Cloud Volumes ONTAP 시스템을 BlueXP 에 추가합니다"]참조하십시오.
 

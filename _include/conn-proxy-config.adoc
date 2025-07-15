@@ -1,0 +1,15 @@
+= 커넥터 프록시를 지원하는 네트워크 구성
+:allow-uri-read: 
+
+
+
+
+=== 커넥터 프록시를 지원하는 네트워크 구성
+
+BlueXP 커넥터에 구성된 프록시 서버를 사용하여 Cloud Volumes ONTAP 에서 아웃바운드 인터넷 액세스를 활성화할 수 있습니다. BlueXP 두 가지 유형의 프록시를 지원합니다.
+
+* *명시적 프록시*: Cloud Volumes ONTAP 의 아웃바운드 트래픽은 커넥터 프록시 구성 시 지정된 프록시 서버의 HTTP 주소를 사용합니다. 커넥터 관리자는 추가 인증을 위해 사용자 자격 증명과 루트 CA 인증서를 구성했을 수도 있습니다. 명시적 프록시에 대한 루트 CA 인증서를 사용할 수 있는 경우, 다음을 사용하여 동일한 인증서를 Cloud Volumes ONTAP 작업 환경에 업로드하십시오.  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI: 보안 인증서 설치"^] 명령.
+* *투명 프록시*: 네트워크는 Cloud Volumes ONTAP 에서 커넥터 프록시를 통해 아웃바운드 트래픽을 자동 라우팅하도록 구성되어 있습니다. 투명 프록시를 설정할 때 커넥터 관리자는 프록시 서버의 HTTP 주소가 아닌 Cloud Volumes ONTAP 연결을 위한 루트 CA 인증서만 제공하면 됩니다. 다음을 사용하여 동일한 루트 CA 인증서를 Cloud Volumes ONTAP 작업 환경에 업로드해야 합니다.  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI: 보안 인증서 설치"^] 명령.
+
+
+BlueXP Connector에 대한 프록시 서버 구성에 대한 정보는 다음을 참조하십시오.  https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["프록시 서버를 사용하도록 Connector를 구성합니다"^] .

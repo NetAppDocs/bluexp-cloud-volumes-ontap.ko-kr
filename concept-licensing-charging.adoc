@@ -102,7 +102,7 @@ HA 쌍의 경우 노드의 프로비저닝된 용량에 대해서만 비용이 �
 
 == 최대 시스템 수
 
-용량 기반 라이센스는 Cloud Volumes ONTAP 시스템의 최대 수를 NetApp 계정당 20개로 제한합니다. system_은 Cloud Volumes ONTAP HA 쌍, Cloud Volumes ONTAP 단일 노드 시스템 또는 사용자가 생성하는 추가 스토리지 VM입니다. 기본 스토리지 VM은 제한에 대해 계산되지 않습니다. 이 제한은 모든 라이센스 모델에 적용됩니다.
+용량 기반 라이선싱을 사용하는 경우, Cloud Volumes ONTAP 시스템의 최대 수는 BlueXP 계정당 24개로 제한됩니다. system_은 Cloud Volumes ONTAP HA 쌍, Cloud Volumes ONTAP 단일 노드 시스템 또는 사용자가 생성하는 추가 스토리지 VM입니다. 기본 스토리지 VM은 제한에 대해 계산되지 않습니다. 이 제한은 모든 라이센스 모델에 적용됩니다.
 
 예를 들어, 다음과 같은 세 가지 작업 환경이 있다고 가정해 보겠습니다.
 
@@ -122,9 +122,11 @@ HA 쌍의 경우 노드의 프로비저닝된 용량에 대해서만 비용이 �
 
 시스템에 대한 총 6개의 시스템이 있습니다. 그러면 계정에 14개의 추가 시스템을 추가할 수 있는 공간이 있습니다.
 
-20대 이상의 시스템이 필요한 대규모 구축 환경의 경우 고객 담당자 또는 세일즈 팀에 문의하십시오.
+24대 이상의 시스템이 필요한 대규모 구축 환경의 경우 고객 담당자 또는 세일즈 팀에 문의하십시오.
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["NetApp 계정 에 대해 자세히 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["BlueXP 계정에 대해 자세히 알아보세요"^]..
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["AWS, Azure 및 Google Cloud의 저장 용량 한도에 대해 알아보세요."^]..
 
 
 

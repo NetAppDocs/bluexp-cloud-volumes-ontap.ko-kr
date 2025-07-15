@@ -78,23 +78,15 @@ BlueXP  인증에 사용됩니다.
 |===
 
 
-==== NetApp AutoSupport의 아웃바운드 인터넷 액세스
+=== 커넥터 프록시를 지원하는 네트워크 구성
 
-Cloud Volumes ONTAP 노드를 사용하려면 NetApp AutoSupport에 대한 아웃바운드 인터넷 액세스가 필요합니다. 사전 예방적으로 시스템의 상태를 모니터링하고 메시지를 NetApp 기술 지원으로 보냅니다.
+BlueXP 커넥터에 구성된 프록시 서버를 사용하여 Cloud Volumes ONTAP 에서 아웃바운드 인터넷 액세스를 활성화할 수 있습니다. BlueXP 두 가지 유형의 프록시를 지원합니다.
 
-라우팅 및 방화벽 정책은 Cloud Volumes ONTAP에서 AutoSupport 메시지를 보낼 수 있도록 다음 엔드포인트에 대한 HTTPS 트래픽을 허용해야 합니다.
-
-* https://support.netapp.com/aods/asupmessage 으로 문의하십시오
-* https://support.netapp.com/asupprod/post/1.0/postAsup 으로 문의하십시오
+* *명시적 프록시*: Cloud Volumes ONTAP 의 아웃바운드 트래픽은 커넥터 프록시 구성 시 지정된 프록시 서버의 HTTP 주소를 사용합니다. 커넥터 관리자는 추가 인증을 위해 사용자 자격 증명과 루트 CA 인증서를 구성했을 수도 있습니다. 명시적 프록시에 대한 루트 CA 인증서를 사용할 수 있는 경우, 다음을 사용하여 동일한 인증서를 Cloud Volumes ONTAP 작업 환경에 업로드하십시오.  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI: 보안 인증서 설치"^] 명령.
+* *투명 프록시*: 네트워크는 Cloud Volumes ONTAP 에서 커넥터 프록시를 통해 아웃바운드 트래픽을 자동 라우팅하도록 구성되어 있습니다. 투명 프록시를 설정할 때 커넥터 관리자는 프록시 서버의 HTTP 주소가 아닌 Cloud Volumes ONTAP 연결을 위한 루트 CA 인증서만 제공하면 됩니다. 다음을 사용하여 동일한 루트 CA 인증서를 Cloud Volumes ONTAP 작업 환경에 업로드해야 합니다.  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI: 보안 인증서 설치"^] 명령.
 
 
-AutoSupport 메시지를 보내는 데 아웃바운드 인터넷 연결을 사용할 수 없는 경우 BlueXP는 자동으로 Cloud Volumes ONTAP 시스템에서 커넥터를 프록시 서버로 사용하도록 구성합니다. 유일한 요구 사항은 커넥터의 보안 그룹이 포트 3128을 통한 _IN인바운드_연결을 허용하는지 확인하는 것입니다. Connector를 배포한 후 이 포트를 열어야 합니다.
-
-Cloud Volumes ONTAP에 대해 엄격한 아웃바운드 규칙을 정의한 경우 Cloud Volumes ONTAP 보안 그룹이 포트 3128을 통한 _outbound_connection을 허용하는지 확인해야 합니다.
-
-아웃바운드 인터넷 액세스가 가능한지 확인한 후 AutoSupport를 테스트하여 메시지를 보낼 수 있는지 확인할 수 있습니다. 자세한 내용은 을 https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["ONTAP 설명서: AutoSupport 설치"^]참조하십시오.
-
-BlueXP에서 AutoSupport 메시지를 보낼 수 없다고 알리는 경우 link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["AutoSupport 구성 문제를 해결합니다"].
+BlueXP Connector에 대한 프록시 서버 구성에 대한 정보는 다음을 참조하십시오.  https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["프록시 서버를 사용하도록 Connector를 구성합니다"^] .
 
 
 
@@ -494,4 +486,9 @@ NOTE: 소스는 Cloud Volumes ONTAP 시스템의 인터페이스(IP 주소)입�
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["커넥터에 대한 네트워킹 요구 사항을 봅니다"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure의 보안 그룹 규칙"^]
+
+
+.관련 항목
+* link:task-verify-autosupport.html["Cloud Volumes ONTAP에 대한 AutoSupport 설정을 확인합니다"]
+* https://docs.netapp.com/us-en/ontap/networking/ontap_internal_ports.html["ONTAP 내부 포트에 대해 알아봅니다"^]..
 

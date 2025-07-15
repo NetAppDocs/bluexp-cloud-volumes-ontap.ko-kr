@@ -32,9 +32,6 @@ Azure 마켓플레이스의 배포를 완료하면 BlueXP 에서 이러한 시�
 
 | * 지원되는 가상 머신(VM) 유형 *  a| 
 EDS_v5 및 LS_v3 인스턴스 유형
-
-
-NOTE: L8s_v3 인스턴스 유형은 HA 구성을 위한 Azure 마켓플레이스에서 지원되지만 BlueXP 에서는 지원되지 않습니다. BlueXP 는 검색 중에 이를 올바르게 감지할 수 없습니다.
 | VM 유형의 전체 범위 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure에서 지원되는 구성"^] 
 
 

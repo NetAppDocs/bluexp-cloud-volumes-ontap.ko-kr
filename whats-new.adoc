@@ -20,6 +20,31 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2025년 7월 14일
+
+
+
+=== 투명 프록시 지원
+
+BlueXP 이제 기존 명시적 프록시 연결 외에도 투명 프록시 서버를 지원합니다. BlueXP 커넥터를 생성하거나 수정할 때 Cloud Volumes ONTAP 과의 네트워크 트래픽을 안전하게 관리하도록 투명 프록시 서버를 구성할 수 있습니다.
+
+Cloud Volumes ONTAP 에서 프록시 서버를 사용하는 방법에 대한 자세한 내용은 다음을 참조하세요.
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#network-configurations-to-support-connector-proxy-servers["AWS에서 커넥터 프록시를 지원하는 네트워크 구성"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/azure/reference-networking-azure.html#network-configurations-to-support-connector["Azure에서 커넥터 프록시를 지원하는 네트워크 구성"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#network-configurations-to-support-connector-proxy["Google Cloud에서 커넥터 프록시를 지원하는 네트워크 구성"^]
+
+
+
+
+=== Azure의 Cloud Volumes ONTAP 에 대해 지원되는 새로운 VM 유형
+
+Cloud Volumes ONTAP 9.13.1부터 L8s_v3는 새 고가용성(HA) 쌍 배포와 기존 고가용성(HA) 쌍 배포 모두에 대해 Azure 단일 및 다중 가용성 영역에서 VM 유형으로 지원됩니다.
+
+자세한 내용은 을 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure에서 지원되는 구성"^]참조하십시오.
+
+
+
 == 2025년 5월 29일
 
 

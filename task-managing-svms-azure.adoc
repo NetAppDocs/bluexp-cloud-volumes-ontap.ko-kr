@@ -147,4 +147,6 @@ Connector에서 Cloud Volumes ONTAP용 스토리지 VM을 관리하려면 특정
 .관련 정보
 * https://docs.netapp.com/us-en/bluexp-automation/cm/prepare.html["API 사용을 준비합니다"^]
 * https://docs.netapp.com/us-en/bluexp-automation/cm/workflow_processes.html#organization-of-cloud-volumes-ontap-workflows["Cloud Volumes ONTAP 워크플로우"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-connector-identifier["필수 식별자 가져오기"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/use_rest_apis.html["BlueXP REST API를 사용하세요"^]
 
