@@ -153,12 +153,9 @@
   <block id="bb7e6cfdc4746a614a2674f0e2c56e43" category="list-text">끄기 * 를 클릭합니다.</block>
   <block id="5f2e3fd1b057bcc33ab14fddf0b6d211" category="paragraph">시스템을 중지하는 데 몇 분 정도 걸릴 수 있습니다. 나중에 작업 환경 페이지에서 시스템을 다시 시작할 수 있습니다.</block>
   <block id="d54e90705b6f981f2dddcd2ff35fb04d" category="doc">노드 기반 BYOL의 라이센스 관리</block>
-  <block id="c107aa9c7f1986528d490f27d95b988a" category="admonition">노드 기반 라이센스는 이전 세대 BYOL for Cloud Volumes ONTAP입니다. 노드 기반 라이센스는 라이센스 갱신에만 사용할 수 있습니다.</block>
   <block id="e07eb134ad924b232e18458cc84dc66b" category="inline-link-macro">Cloud Volumes ONTAP 라이센스 옵션에 대해 자세히 알아보십시오</block>
   <block id="87532760c18cf2755f84ddcef810ab40" category="paragraph"><block ref="24d16f8081660231e599b2fb5963c02d" category="inline-link-macro-rx"></block>.</block>
   <block id="fef06ca11f3dec6f0be51962fd93388c" category="section-title">BYOL 시스템 라이센스</block>
-  <block id="f9402b876a835ea0ecd00da4d201433a" category="paragraph">노드 기반 라이센스는 단일 노드 또는 HA 쌍에 대해 최대 368TiB의 용량을 제공합니다.</block>
-  <block id="7bf9d9c18215351b0d16f4f9343c9700" category="paragraph">Cloud Volumes ONTAP BYOL 시스템에 여러 개의 라이센스를 구매하여 368TiB 이상의 용량을 할당할 수 있습니다. 예를 들어, 2개의 라이센스를 구입하여 최대 736TiB의 용량을 Cloud Volumes ONTAP에 할당할 수 있습니다. 또는 4개의 라이센스를 구입하여 최대 1.4개의 PiB를 구입할 수 있습니다.</block>
   <block id="5e26587c8f074cc4f0455ff005cb744c" category="paragraph">단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다.</block>
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link-macro">비활성 데이터를 오브젝트 스토리지로 계층화</block>
   <block id="255a885478279e7778252b0fbb8e555b" category="inline-link">Cloud Volumes ONTAP 릴리즈 노트의 저장 용량 제한</block>
@@ -1676,7 +1673,6 @@
   <block id="3c5e979087ecb3ead1e8ace0120e5cb6" category="list-text">NetApp의 클라우드 데이터 서비스를 추가 비용으로 이용할 수 있습니다</block>
   <block id="26e0cffca193fe47b1c5c8f73ea3c3e1" category="section-title">소비 모델</block>
   <block id="3cc132ecf0523f86195d2baf263bfdba" category="paragraph">Essentials 및 Professional 패키지는 다음 소비 모델과 함께 제공됩니다.</block>
-  <block id="743cd9f94465042cc1367604dce1ec22" category="list-text">NetApp(BYOL)에서 라이센스를 구입하는 경우 클라우드 공급자 마켓플레이스의 PAYGO 오퍼링을 구독해야 합니다.</block>
   <block id="0956d25698d6ea6e452e1cd574ab1eea" category="paragraph">라이센스는 항상 먼저 부과되지만 다음과 같은 경우 마켓플레이스의 시간당 요율로 비용이 청구됩니다.</block>
   <block id="6246af80c9ea9c857c70d2c643fcb249" category="list-text">라이센스 용량을 초과하는 경우</block>
   <block id="fdde7a7f3783aa0ce1e585f8be9c2def" category="list-text">라이센스 기간이 만료된 경우</block>
@@ -2446,21 +2442,8 @@
   <block id="e683d2190ea99600c0a7bda058b93d36" category="paragraph">'vol create-vserver_SVM_name_-volume_volume_name_-aggregate_aggr_-size_size_-state online-policy default'</block>
   <block id="652f5bb57cb09b4930d22c8b8241e77c" category="summary">Cloud Volumes ONTAP CLI를 사용하면 모든 관리 명령을 실행할 수 있으며 고급 작업에 이상적이고 CLI를 사용하는 것이 더 편할 경우 적합합니다. SSH를 사용하여 CLI에 연결할 수 있습니다.</block>
   <block id="f92c0062f5f51f34505c72b0a5c9b3be" category="doc">CLI에서 Cloud Volumes ONTAP를 관리합니다</block>
-  <block id="f3c3ee89c80d32726f5f937c07631d1c" category="list-text">고급 스토리지 관리</block>
-  <block id="81988711ef6c9af40c8e8973f25c0bed" category="paragraph">일관성 그룹, 공유, Qtree, 할당량 및 스토리지 VM을 관리합니다.</block>
-  <block id="62735a856683757bf28f1f02f97c151c" category="list-text">네트워킹 관리</block>
-  <block id="90aa7b1e6da20918b753d835fd9d28fb" category="paragraph">IPspace, 네트워크 인터페이스, 포트 세트 및 이더넷 포트 관리</block>
-  <block id="5da3380058f326675f5268466ae0c24f" category="list-text">이벤트 및 작업</block>
-  <block id="59536015b2a8a8d499cbe947387acb5e" category="paragraph">이벤트 로그, 시스템 경고, 작업 및 감사 로그를 봅니다.</block>
-  <block id="3f20b3134627198be1e0ff879a88cd8f" category="list-text">고급 데이터 보호</block>
-  <block id="18edb92cf2cbf5a1d60be48cff4de617" category="paragraph">스토리지 VM, LUN 및 일관성 그룹을 보호합니다.</block>
-  <block id="f17e729a409e6c0faa3ddab50e856b07" category="list-text">호스트 관리</block>
-  <block id="36eae32729ecc4b53ba38b252bc6b356" category="paragraph">SAN 이니시에이터 그룹 및 NFS 클라이언트를 설정합니다.</block>
   <block id="0f1ca4e2133610fdc8b23e4db3f7cb0c" category="paragraph">GovCloud 지역 또는 아웃바운드 인터넷 액세스가 없는 지역에서는 System Manager 통합이 지원되지 않습니다.</block>
   <block id="b03c3f1292327857639de1cd1434567b" category="paragraph">Cloud Volumes ONTAP에서는 System Manager 인터페이스에 표시되는 몇 가지 기능을 지원하지 않습니다.</block>
-  <block id="fe925ee04a93d96abc7adb5118b5ccc3" category="list-text">계층</block>
-  <block id="405e2b58413610be532a001334e7a862" category="list-text">펌웨어 업그레이드</block>
-  <block id="f4e1c06a7a7ddbaea4c2d3349dc0b815" category="paragraph">또한 System Manager의 역할 기반 액세스 제어가 지원되지 않습니다.</block>
   <block id="74d668d6c47cd0c55c4ff8f77ad621bd" category="list-text">확인 메시지가 나타나면 메시지를 읽고 * 닫기 * 를 클릭합니다.</block>
   <block id="f0da217269d7f8fb37fd503f586df2ef" category="list-text">시스템 관리자를 사용하여 Cloud Volumes ONTAP를 관리합니다.</block>
   <block id="9091c5cdacecb3d4082594d5d5a31855" category="section-title">System Manager 사용에 대한 도움말</block>
@@ -2668,9 +2651,6 @@
   <block id="5844b24c31c1897efda5443d984702f8" category="list-text">Cloud Volumes ONTAP * 탭의 드롭다운에서 * 노드 기반 라이센스 * 를 선택합니다.</block>
   <block id="8152540df51584ebf79193211a381d46" category="paragraph">ONTAP S3 라이센스는 이제 AWS 버전 9.11.0 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 포함되어 있습니다.</block>
   <block id="f225a4f57ea32da8b983d7bffd20b6eb" category="paragraph">ONTAP S3 라이센스는 이제 Azure에서 버전 9.9.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 포함됩니다.</block>
-  <block id="21f6d246225534dc3444037c83f109c3" category="list-text">"user-private-dns-zone-settings" 매개 변수를 다음 키워드 값 쌍으로 추가하여 app.conf를 편집합니다.</block>
-  <block id="b5544a18e847192d0e5a82658b3e0f92" category="paragraph">아래와 같이 "system-id"와 동일한 수준으로 매개 변수를 입력해야 합니다.</block>
-  <block id="ff9fcf498a74a638ff2a01da3cae4468" category="paragraph">전용 DNS 영역이 Connector와 다른 구독에 있는 경우에만 subscription 키워드가 필요합니다.</block>
   <block id="3bc8827b2b8b4b47a25fb21994526d52" category="paragraph">빠른 쓰기 속도로 인해 데이터가 손실되면 EMS(Event Management System)에서 다음 두 이벤트를 보고합니다.</block>
   <block id="7cd42532925d5e610a9d3694b57652da" category="list-text">Cloud Volumes ONTAP 9.8 ~ 9.10.1</block>
   <block id="deae9d093dee266b166a3693474231a9" category="paragraph">이 경우 Cloud Volumes ONTAP는 사용자 개입 없이 부팅하여 데이터를 계속 제공할 수 있어야 합니다.</block>
@@ -2959,7 +2939,6 @@
   <block id="e1bc841e2651c6522307e17c20df7a4d" category="paragraph">AWS에서 Cloud Volumes ONTAP HA 쌍을 실행하려면 BlueXP에서 HA 작업 환경을 만들어야 합니다.</block>
   <block id="08716c56b69c38a1d4f3bf5e2aa2e5c8" category="paragraph">BlueXP에서 Cloud Volumes ONTAP HA 쌍을 시작합니다. 타임라인에서 진행 상황을 추적할 수 있습니다.</block>
   <block id="e8d7251c93bb0bbd59e5b2aca177a1a6" category="summary">Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우, ONTAP 시스템과 함께 제공되는 관리 인터페이스인 ONTAP System Manager를 사용하면 됩니다. BlueXP에 System Manager 인터페이스를 직접 포함하므로 고급 관리를 위해 BlueXP를 떠날 필요가 없습니다.</block>
-  <block id="af97eb7a8d1a683de73e48cc402e070d" category="paragraph">System Manager에서는 애그리게이트 관리(로컬 계층 및 클라우드 계층 포함)가 지원되지 않습니다. BlueXP의 표준 보기에서 직접 애그리게이트를 관리해야 합니다.</block>
   <block id="e7b3f56c45c6705f279b059a9274225d" category="list-text">필요한 경우 * 표준 보기로 전환 * 을 클릭하여 BlueXP를 통한 표준 관리로 돌아갑니다.</block>
   <block id="0828553b7174743f116345861b5c6bc0" category="summary">기존 Cloud Volumes ONTAP 시스템을 검색하고 BlueXP에 추가할 수 있습니다. 새 BlueXP 시스템을 배포한 경우 이 작업을 수행할 수 있습니다.</block>
   <block id="2cfe7b7de2a1df6b585bf1321d37fb8a" category="inline-link">NetApp BlueXP 웹 사이트</block>
@@ -3044,8 +3023,6 @@
   <block id="3c133f4bc8bc3ebf4d10cf6cfdf4d97f" category="paragraph">BlueXP는 시스템을 NetApp에 등록합니다.</block>
   <block id="e366d9a0e89a88ec47c46ef7e75a1620" category="paragraph">BlueXP는 할당되지 않은 라이센스를 선택한 서비스로 변환합니다. 데이터 서비스 라이센스 * 탭에서 새 라이센스를 볼 수 있습니다.</block>
   <block id="6177b41ef17c0f5a67f9964d589c26a6" category="paragraph">대부분의 경우 BlueXP는 NetApp Support 사이트 계정을 사용하여 라이센스 파일을 자동으로 가져올 수 있습니다. 그러나 그렇지 않으면 라이센스 파일을 수동으로 업로드해야 합니다. 라이센스 파일이 없는 경우 netapp.com 에서 얻을 수 있습니다.</block>
-  <block id="34a3a4e91ba83bf9b417b1453a1dbdc6" category="paragraph">NetApp 담당자에게 연락하여 BYOL 구독을 갱신하면, BlueXP는 NetApp에서 새로운 라이센스를 자동으로 얻어 Cloud Volumes ONTAP 시스템에 설치합니다.</block>
-  <block id="579ed3178fe639cd20c8874360f7ff2f" category="paragraph">보안 인터넷 연결을 통해 BlueXP에서 라이센스 파일에 액세스할 수 없는 경우 직접 파일을 얻은 다음 파일을 BlueXP에 수동으로 업로드할 수 있습니다.</block>
   <block id="4632dee9f50d24fa16636177719f09ff" category="paragraph">BlueXP는 Cloud Volumes ONTAP 시스템의 라이센스를 업데이트합니다.</block>
   <block id="b4fb827c06226e7a2af35e533d837e28" category="paragraph">BlueXP의 오른쪽 하단에 있는 채팅 아이콘을 통해 문의하여 추가 용량 라이센스를 구입하십시오. 라이센스를 구입한 후 Cloud Volumes ONTAP 시스템에 적용할 수 있습니다.</block>
   <block id="4e1651bb146bb28e944da5ff79e00342" category="paragraph">추가 용량 라이센스 기간을 연장한 경우 BlueXP에서 라이센스를 업데이트해야 합니다.</block>
@@ -3055,7 +3032,6 @@
   <block id="06ee8b77544c5bac42bd6a3cee53faa8" category="inline-link-macro">파일을 직접 얻은 다음 파일을 BlueXP에 수동으로 업로드합니다</block>
   <block id="f6d8831894dd9ceec3499ea4cc9471a5" category="paragraph">보안 인터넷 연결을 통해 BlueXP에서 라이센스 파일에 액세스할 수 없는 경우 <block ref="84fd371027e1f6d314f08a99e74bc5ec" category="inline-link-macro-rx"></block>.</block>
   <block id="4a0b3afafb018d6588148939edd762fb" category="paragraph">BlueXP는 노드 기반 라이센스가 만료되기 30일 전과 라이센스가 만료되면 경고를 표시합니다. 다음 이미지는 사용자 인터페이스에 표시되는 30일 만료 경고입니다.</block>
-  <block id="d2563fcd4b4b3ec541ca3e59420d1fc7" category="paragraph">NetApp 담당자에게 연락하여 노드 기반 BYOL 가입을 갱신하면, BlueXP는 NetApp에서 새로운 라이센스를 자동으로 얻어 Cloud Volumes ONTAP 시스템에 설치합니다.</block>
   <block id="c8ce4a03cda52de4d81a6d52e83dcfc7" category="paragraph">BlueXP는 워크로드 요구 사항에 맞는 사전 구성된 패키지를 제공하거나 사용자가 직접 구성할 수 있습니다. 자신의 구성을 선택하는 경우 사용 가능한 옵션을 이해해야 합니다.</block>
   <block id="7dfb6c2c87a3491ee04b30bc313e53c5" category="summary">BlueXP를 사용하면 볼륨 및 CIFS 서버를 관리할 수 있습니다. 또한 용량 문제를 방지하기 위해 볼륨을 이동하라는 메시지가 표시됩니다.</block>
   <block id="56b02e9e8848ef5443c7bdbcb313ec2c" category="admonition">BlueXP는 볼륨을 선택한 디스크 유형을 사용하는 기존 Aggregate로 이동하거나 볼륨에 대한 새 Aggregate를 생성합니다.</block>
@@ -3303,7 +3279,6 @@
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">버전 9.10.0 이하</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP용 Amazon FSx</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
-  <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Google Cloud용 Cloud Volumes Service</block>
   <block id="806bf55e3fada643423a5e8b443a821f" category="summary">Cloud Volumes ONTAP 시스템이 올바르게 작동할 수 있도록 Google Cloud 네트워킹을 설정합니다.</block>
   <block id="589257f6242e3a6232a5f72f7867c4b6" category="inline-link-macro">HA 쌍이 Google Cloud에서 어떻게 작동하는지를 알아보십시오</block>
   <block id="c8e39b92d04aae2c3a6d3e6f428d480e" category="paragraph">HA 쌍을 구축하려는 경우 <block ref="135d51832239d75e9eff2c1e7574765f" category="inline-link-macro-rx"></block>.</block>
@@ -3515,7 +3490,6 @@
   <block id="aa036f3aad369ff5710a7a7d5043dcbc" category="list-text">Azure의 계층화된 데이터에 대한 기본 스토리지 액세스 계층은 _hot_tier입니다. 핫 계층은 용량 계층에서 자주 액세스하는 데이터에 적합합니다.</block>
   <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
   <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">이제 BlueXP는 AWS, Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.13.0을 배포하고 관리할 수 있습니다.</block>
-  <block id="12169a51b108f73888655f2a089d493a" category="list-text">중국 지역에서는 BYOL을 사용하는 단일 노드 시스템만 지원됩니다.</block>
   <block id="ac1c722990c18687e956d9488b59bd3d" category="admonition">새로운 Google Cloud HA 쌍 구축에 빠른 쓰기 속도를 사용하려면 VPC-1, VPC-2 및 VPC-3에 최소 8,896바이트의 최대 전송 단위(MTU)가 필요합니다. 기존 VPC-1, VPC-2 및 VPC-3을 MTU가 8,896바이트인 경우 구성 프로세스 중에 이러한 VPC를 사용하여 모든 기존 HA 시스템을 종료해야 합니다.</block>
   <block id="8ffbbcac612c8285be31d80ec1c1454d" category="admonition">고속 * 쓰기 속도 옵션은 버전 9.13.0부터 Google Cloud의 Cloud Volumes ONTAP HA 쌍에서 지원됩니다.</block>
   <block id="98f6dc87e7c206ec16da559a2af45beb" category="section-title">Google Cloud의 Flash Cache 및 빠른 쓰기 속도</block>
@@ -3838,7 +3812,6 @@
   <block id="52ba8ac12050d2494572b940a0d65b25" category="list-text"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
-  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
   <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">이 ID는 이메일에 매핑되는 시스템 생성 ID입니다. NSS 관리 * 페이지의 에서 이메일을 표시할 수 있습니다 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
   <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">로그인 자격 증명 토큰을 새로 고쳐야 하는 경우 에 * 자격 증명 업데이트 * 옵션이 있습니다 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
@@ -5066,7 +5039,6 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="ae7204194871107f02073f12fcf8eef4" category="list-text">Cloud Volumes ONTAP 시스템의 계정 및 응용 프로그램 데이터는 그대로 유지됩니다.</block>
   <block id="0caba03d6443607a5e6317db3c48768b" category="list-text">기본 클라우드 리소스는 변환 후 영향을 받지 않습니다.</block>
   <block id="c71b87b7ddb6142065c0158af5ec7d67" category="list-text">라이센스 변환 도구는 단일 노드, 단일 가용 영역(AZ)의 HA(고가용성), 다중 AZ의 HA, BYOL(Bring Your Own License) 및 PAYGO와 같은 모든 배포 유형을 지원합니다.</block>
-  <block id="98017309484ea1c630aac29d1d5cde75" category="list-text">이 툴은 모든 노드 기반 라이센스를 소스로, 모든 용량 기반 라이센스를 대상으로 지원합니다. 예를 들어, PAYGO Standard 노드 기반 라이센스가 있는 경우 BYOL 용량 기반 라이센스로 변환할 수 있습니다.</block>
   <block id="d83716c2cd131d390d1534102b05cd41" category="list-text">변환은 모든 클라우드 공급자, AWS, Azure 및 Google Cloud에서 지원됩니다.</block>
   <block id="17b44aa5dd5a227e033b4a869774c160" category="list-text">변환 후 노드 기반 라이센스의 일련 번호가 용량 기반 형식으로 교체됩니다. 이 작업은 변환의 일부로 수행되며 NetApp 지원 사이트(NSS) 계정에 반영됩니다.</block>
   <block id="57badbd9aeb6e5152434b70bdd22ed2e" category="list-text">용량 기반 모델로 전환해도 노드 기반 라이센스와 동일한 위치에 데이터가 계속 유지됩니다. 이런 접근 방식은 데이터 배치의 중단을 보장하고 전환 과정에서 데이터 주권 원칙을 유지합니다.</block>
@@ -5205,10 +5177,6 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="e174e60d72b9816750ae5ea0588ea579" category="list-text">개요 * 탭의 Cloud Volume ONTAP 패널에서 * 보기 * 를 클릭하면 용량 기반 라이센스에 대한 포괄적인 이해를 얻을 수 있습니다. 이 고급 보기는 라이선스 및 구독에 대한 자세한 정보를 제공합니다.</block>
   <block id="210fb26ce941226a0e2a9726db671e8a" category="list-text">이전 인터페이스를 선호하는 경우 * 레거시 보기로 전환 * 버튼을 클릭하여 유형별로 라이센스 세부 정보를 보고 라이센스에 대한 청구 방법을 수정할 수 있습니다.</block>
   <block id="62c835233e6bcf50084b7f7f3bfe8ee0" category="paragraph"><block ref="5aa81dcb1871cc4d565005ce5abe331d" category="inline-link-macro-rx"></block>..</block>
-  <block id="bd1c6ca245a93f151a4e1d8f31ab58d7" category="paragraph">다음과 같은 관리 기능을 수행할 수 있습니다.</block>
-  <block id="41c1e7f7c0e4a38357f38e56f0674a36" category="paragraph">Cloud Volumes ONTAP 9.10.0 이상은 표준 클라우드 지역에서 ONTAP System Manager를 통한 고급 관리를 지원합니다.</block>
-  <block id="4b5929aaa3b4a7fa5e44b6d9c08c635b" category="paragraph">Cloud Volumes ONTAP는 BlueXP  계층화 서비스를 지원하지 않는다. 볼륨을 생성할 때 BlueXP 의 표준 보기에서 오브젝트 스토리지로 직접 데이터 계층화를 설정해야 합니다.</block>
-  <block id="b804c0c7ade9eff376226d3e8a82b055" category="paragraph">Cloud Volumes ONTAP은 클러스터 &gt; 설정 * 페이지에서 자동 펌웨어 업데이트를 지원하지 않습니다.</block>
   <block id="da9942a1ffd7ca2e423a96e21bc4f59e" category="section-title">System Manager 액세스에 대한 인증을 구성합니다</block>
   <block id="4aed1a655fc01f95c780a2dc68f91326" category="paragraph">관리자는 BlueXP 에서 ONTAP System Manager에 액세스하는 사용자에 대해 인증을 활성화할 수 있습니다. ONTAP 사용자 역할에 따라 적절한 액세스 권한 수준을 결정하고 필요에 따라 인증을 활성화 또는 비활성화할 수 있습니다. 인증을 사용하도록 설정한 경우 사용자는 BlueXP 에서 System Manager에 액세스할 때마다 또는 페이지가 다시 로드될 때 BlueXP 에서 자격 증명을 내부적으로 저장하지 않으므로 ONTAP 사용자 자격 증명을 입력해야 합니다. 인증을 사용하지 않도록 설정하면 사용자가 BlueXP  관리자 자격 증명을 사용하여 System Manager에 액세스할 수 있습니다.</block>
   <block id="bdebe06ba6da78f84b128a1809978137" category="admonition">이 설정은 Cloud Volumes ONTAP 작업 환경 또는 BlueXP  프로젝트와 관계없이 조직 또는 계정의 ONTAP 사용자에 대해 BlueXP  커넥터별로 적용할 수 있습니다.</block>
@@ -5427,7 +5395,6 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="94302f254b4d602be77fb6e28556ecec" category="cell">* 지원되는 스토리지 VM 수 *</block>
   <block id="212ecc3006afeac1a27b275b3e8556b8" category="cell">배포당 1개</block>
   <block id="e3e6a1af04ec174dc41385d29bdd8865" category="cell">구성에 따른 다중 스토리지 VM <block ref="85b54da0356d83997931fab8f38013e5" category="inline-link-macro-rx"></block></block>
-  <block id="dcfe8b86806ea8eca7c3c29e1d2f915c" category="paragraph">BYOL 용량을 초과하거나 라이센스가 만료되는 경우 마켓플레이스 구독에 따라 시간당 초과 요금이 청구됩니다. 초과 사용량은 다른 라이센스의 가용 용량을 먼저 사용하는 것을 선호하면서 마켓플레이스 요율에 따라 부과됩니다.</block>
   <block id="8683a88ed22af0c318a9eb6a4fb30537" category="paragraph">라우팅 및 방화벽 정책은 Cloud Volumes ONTAP에서 AutoSupport 메시지를 보낼 수 있도록 다음 엔드포인트에 대한 HTTPS 트래픽을 허용해야 합니다.</block>
   <block id="d5788def9bc230ba887427df9594dd27" category="cell"><block ref="d5788def9bc230ba887427df9594dd27" category="inline-link-rx"></block></block>
   <block id="b1905fad16d0cb92c82e293f1516f810" category="cell">고객 관리 키(CMK)를 사용할 때 Azure Key Vault에서 클라이언트 비밀 키를 검색하는 데 사용됩니다.</block>
@@ -5825,7 +5792,6 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="e649338f42e9d4b6232876c6fb010f0c" category="video-title">AWS 마켓플레이스에서 BlueXP 구독</block>
   <block id="d066267408b0996a7030fb9e612bc93c" category="admonition">여러 IAM 사용자가 동일한 AWS 계정으로 작업하는 경우 각 사용자는 가입해야 합니다. 첫 번째 사용자가 구독하면 AWS 마켓플레이스는 아래 이미지와 같이 이후 사용자에게 이미 구독되었음을 알립니다. AWS_ACCOUNT_에 가입되어 있는 동안 각 IAM 사용자는 자신을 해당 구독과 연결해야 합니다. 아래 메시지가 표시되면 *여기를 클릭* 링크를 클릭하여 BlueXP 웹사이트로 이동하여 구독 절차를 완료하세요. <block ref="42077b282858282a6d1d166f9467abaf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ab15dd8600113904e0e4998b2fb7bd69" category="list-text">*Cloud Volumes ONTAP 구성* (연간 AWS 마켓플레이스 계약에만 해당): 기본 구성을 검토하고 *계속*을 클릭하거나 *구성 변경*을 클릭하여 원하는 구성을 선택합니다.</block>
-  <block id="1726cdada46786ec07f15648484f3688" category="cell">이 Cloud Volumes ONTAP 시스템에서 사용할 AWS 자격 증명과 마켓플레이스 구독을 선택하십시오. *구독 추가*를 클릭하여 선택한 자격 증명을 새로운 AWS 마켓플레이스 구독과 연결합니다. 이 구독은 연간 계약을 기준으로 하거나 시간당 요율로 Cloud Volumes ONTAP에 대한 비용을 지불할 수 있습니다. NetApp(BYOL(Bring Your Own License))에서 직접 라이센스를 구매한 경우에는 AWS 구독이 필요하지 않습니다. <block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block>..</block>
   <block id="e242ae1daadb676e4a23b48a94c4619d" category="admonition">여러 IAM 사용자가 동일한 AWS 계정으로 작업하는 경우 각 사용자는 가입해야 합니다. 첫 번째 사용자가 구독하면 AWS 마켓플레이스는 아래 이미지와 같이 이후 사용자에게 이미 구독되었음을 알립니다. AWS_ACCOUNT_에 가입되어 있는 동안 각 IAM 사용자는 자신을 해당 구독과 연결해야 합니다. 아래 메시지가 표시되면 *여기를 클릭* 링크를 클릭하여 BlueXP 웹사이트로 이동하여 구독 절차를 완료하세요. <block ref="5176b925004072644ad0f4d50d425bc9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="80e0ce0662b2846621d1355a00843d7d" category="summary">Linux에서 Cloud Volumes ONTAP 이미지 다이제스트 파일 도구를 통해 내보낸 VHD 파일 서명 확인</block>
   <block id="11e81e6e3ef9958c0f8028f9c79e5dbe" category="paragraph">Linux에서 내보낸 VHD 파일 서명을 검증하려면 신뢰 체인을 검증하고, 파일을 편집하고, 서명을 검증하는 작업이 포함됩니다.</block>
@@ -5889,4 +5855,44 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="646a7d74ffd7db2bf6c623751ea66299" category="inline-link">BlueXP REST API를 사용하세요</block>
   <block id="1f41c0bf5c8ffc7560d3000ed0d0cd1c" category="list-text"><block ref="1f41c0bf5c8ffc7560d3000ed0d0cd1c" category="inline-link-rx"></block></block>
   <block id="f2673d4a3fe0162a501d43f5168ae950" category="section-title">2025년 7월 14일</block>
+  <block id="6bcfb67e751fc7a3d8dba22f37cbb570" category="doc">Cloud Volumes ONTAP 에 대한 BYOL 라이선싱의 제한된 가용성</block>
+  <block id="94aa7f0bf110a253866678fe039b7133" category="paragraph">2025년 6월 25일부터 NetApp Cloud Volumes ONTAP 의 BYOL(Bring Your Own License) 라이선스 모델을 제한했습니다. 이 제한은 AWS, Azure, Google Cloud의 모든 고객 및 Cloud Volumes ONTAP 배포에 적용됩니다. 미국 공공 부문 고객과 중국 리전 배포는 예외입니다.</block>
+  <block id="7b775530465bfc8e5ecd3d0244e8847c" category="paragraph">NetApp 지원 및 서비스는 BYOL 계약이 만료될 때까지 계속되지만, 만료된 라이선스는 갱신 또는 연장되지 않습니다. BYOL 라이선스가 만료되면 클라우드 마켓플레이스 구독을 통해 구매한 용량 기반 라이선스로 교체해야 합니다. 하이퍼스케일러 마켓플레이스를 통한 용량 기반 라이선스 모델은 라이선스 경험을 간소화하고 더 큰 비즈니스 이점을 제공합니다. 전환 옵션에 대해 논의하려면 NetApp 계정 팀 또는 고객 성공 담당자에게 문의하십시오.</block>
+  <block id="b902c393ae9091d227b03ac188f61f92" category="inline-link">CPC-00661: Cloud Volumes ONTAP BYOL 정책 변경</block>
+  <block id="37e719f908b04fc23a8be8447926a507" category="paragraph">자세한 내용은 다음 고객 공지문을 참조하세요. <block ref="4276341cf7737eb343f72d4388b5947d" category="inline-link-rx"></block> .</block>
+  <block id="0905e7cc76af3709233c8e684440e143" category="admonition">노드 기반 라이선스는 Cloud Volumes ONTAP 의 이전 세대 라이선스입니다. 노드 기반 라이선스는 NetApp (BYOL)에서 구매할 수 있으며, 특정 경우에만 라이선스를 갱신할 수 있습니다.</block>
+  <block id="13bc5b36f2853d26966d43f29d5709ae" category="paragraph">노드 기반 라이선스는 NetApp 에서 구매할 수 있습니다. 단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이선스 수는 무제한입니다.</block>
+  <block id="4c8074825211e5f0b13a055b38d5253c" category="inline-link">Cloud Volumes ONTAPP 에 대한 BYOL 라이선싱의 제한된 가용성</block>
+  <block id="1a601f71075caa78fa676a54aaa4509e" category="admonition">NetApp BYOL 라이선스 구매, 연장 및 갱신을 제한했습니다. 자세한 내용은 <block ref="9772ad4d3eb9076586a06f6039d490f0" category="inline-link-rx"></block> .</block>
+  <block id="0e0d96905201a406bbeb8592f92f311c" category="paragraph">노드 기반 라이선스는 단일 노드 또는 HA 쌍에 최대 368TiB의 용량을 제공합니다. Cloud Volumes ONTAP BYOL 시스템에 368TiB 이상의 용량을 할당하기 위해 여러 라이선스를 구매했을 수 있습니다. 예를 들어, Cloud Volumes ONTAP 에 최대 736TiB의 용량을 할당하기 위해 두 개의 라이선스를 구매할 수 있습니다. 또는 최대 1.4PiB의 용량을 확보하기 위해 네 개의 라이선스를 구매할 수도 있습니다.</block>
+  <block id="d58973f592199f5b1afd43cf5ebfc3bd" category="paragraph">NetApp 담당자에게 연락하여 노드 기반 BYOL 구독을 갱신하는 경우 BlueXP 자동으로 NetApp 에서 새 라이선스를 받아 Cloud Volumes ONTAP 시스템에 설치합니다.</block>
+  <block id="ceb2294714463ec73c3bb76a991ef103" category="admonition">NetApp BYOL 라이선스 구매, 연장 및 갱신을 제한했습니다. 자세한 내용은 <block ref="73dc1b5468c2405a47da63a28335f079" category="inline-link-rx"></block> .</block>
+  <block id="fb8439ec6848d4c09164235309706a2e" category="list-text">NetApp (BYOL)에서 라이선스를 구매하는 경우, 클라우드 제공업체의 마켓플레이스에서 PAYGO 상품도 구독해야 합니다. NetApp BYOL 라이선스를 제한적으로 제공합니다. BYOL 라이선스가 만료되면 클라우드 마켓플레이스 구독으로 교체해야 합니다.</block>
+  <block id="3492eb16df3715b7fba9675a44852d3e" category="list-text">중국 리전에서는 BYOL을 지원하는 단일 노드 시스템만 지원됩니다. 중국 리전 배포는 BYOL 라이선스 제한에서 제외됩니다.</block>
+  <block id="145dc431f070d09fef788d43a0448ec2" category="paragraph">BYOL 용량을 초과하는 경우, 마켓플레이스 구독에 따라 시간당 요금으로 초과 요금이 부과됩니다. 초과 요금은 마켓플레이스 요금으로 부과되며, 다른 라이선스의 가용 용량을 먼저 사용하는 것을 우선시합니다. BYOL 라이선스가 만료되면 클라우드 마켓플레이스를 통해 용량 기반 라이선스 모델로 전환해야 합니다.</block>
+  <block id="9a850ed77b4d9af636bc79ce3eda474d" category="paragraph">Cloud Volumes ONTAP 의 고급 스토리지 관리 기능은 ONTAP 시스템과 함께 제공되는 관리 인터페이스인 ONTAP System Manager를 통해 제공됩니다. BlueXP 에서 System Manager에 바로 액세스할 수 있습니다.</block>
+  <block id="668fbec13ce99f04a80a224ff2149c6a" category="paragraph">BlueXP 의 ONTAP System Manager를 사용하면 다양한 스토리지 관리 기능을 수행할 수 있습니다. 다음 목록에는 일부 기능이 포함되어 있지만, 전체 목록은 아닙니다.</block>
+  <block id="0faa0aa2aceec6fbd2f5366ec85f934b" category="list-text">고급 스토리지 관리: 일관성 그룹, 공유, Q트리, 할당량 및 스토리지 VM을 관리합니다.</block>
+  <block id="891e8b17825dda9e20a69ab69a652e02" category="inline-link-macro">볼륨을 다른 집계로 이동합니다.</block>
+  <block id="3772ed2d138258ccb55e93c349a21376" category="list-text">볼륨 이동: <block ref="bf3cf2bbf15c2ea97c3d5129a2f16fe9" category="inline-link-macro-rx"></block></block>
+  <block id="276558d38344729d79388dbfaa52bd1d" category="list-text">네트워킹 관리: IP 공간, 네트워크 인터페이스, 포트셋, 이더넷 포트를 관리합니다.</block>
+  <block id="3a717dd42761d1fe8024d53c2e68d6b0" category="list-text">FlexGroup 볼륨 관리: FlexGroup 볼륨은 System Manager를 통해서만 생성하고 관리할 수 있습니다. BlueXP FlexGroup 볼륨 생성을 지원하지 않습니다.</block>
+  <block id="d14fd727d6676081518cbc2777f71510" category="list-text">이벤트 및 작업: 이벤트 로그, 시스템 알림, 작업 및 감사 로그를 확인합니다.</block>
+  <block id="8eb43cfa74c50eb1e03cd9fca36f1feb" category="list-text">고급 데이터 보호: 스토리지 VM, LUN 및 일관성 그룹을 보호합니다.</block>
+  <block id="18fb111bc25b1d08182b3aaab28b1107" category="list-text">호스트 관리: SAN 이니시에이터 그룹과 NFS 클라이언트를 설정합니다.</block>
+  <block id="2c23f8e0751bba658dbeec0363d560cd" category="list-text">S3 개체 스토리지 관리: Cloud Volumes ONTAP 의 S3 스토리지 관리 기능은 System Manager에서만 사용할 수 있으며 BlueXP 에서는 사용할 수 없습니다.</block>
+  <block id="d3353d9a07f8e3de719e409e616a3382" category="list-text">ONTAP System Manager를 통한 고급 스토리지 관리 기능은 표준 클라우드 지역에서 Cloud Volumes ONTAP 9.10.0 이상에서 사용할 수 있습니다.</block>
+  <block id="a2e5a4afce0418ead1f01787577f8a98" category="list-text">BlueXP tiering: Cloud Volumes ONTAP BlueXP tiering 서비스를 지원하지 않습니다. 볼륨을 생성할 때 BlueXP의 표준 뷰에서 직접 개체 스토리지로의 데이터 계층화를 설정해야 합니다.</block>
+  <block id="bb587f24623bbcbe09f222539e61729a" category="list-text">계층: System Manager에서는 집계 관리(로컬 계층 및 클라우드 계층 포함)가 지원되지 않습니다. BlueXP의 표준 보기에서 직접 집계를 관리해야 합니다.</block>
+  <block id="c0b6471c370f095de8f7815c6a50ada5" category="list-text">펌웨어 업그레이드: Cloud Volumes ONTAP *클러스터 &gt; 설정* 페이지에서 자동 펌웨어 업데이트를 지원하지 않습니다.</block>
+  <block id="7196ec9993568bf7a21b31d059c5737f" category="list-text">역할 기반 액세스 제어: System Manager의 역할 기반 액세스 제어는 지원되지 않습니다.</block>
+  <block id="a555fa04b2345d39f8fdfff081afbc14" category="list-text">이 도구는 모든 노드 기반 라이선스를 소스로, 모든 용량 기반 라이선스를 대상으로 지원합니다. 예를 들어 PAYGO Standard 노드 기반 라이선스가 있는 경우 마켓플레이스를 통해 구매한 모든 용량 기반 라이선스로 변환할 수 있습니다. NetApp BYOL 라이선스의 구매, 연장 및 갱신을 제한하고 있습니다. <block ref="73dc1b5468c2405a47da63a28335f079" category="inline-link-rx"></block> .</block>
+  <block id="f71c10d580a870ae6708b975ac6048bb" category="cell">이 Cloud Volumes ONTAP 시스템에 사용할 AWS 자격 증명과 마켓플레이스 구독을 선택하세요. 선택한 자격 증명을 새 AWS 마켓플레이스 구독과 연결하려면 *구독 추가*를 클릭하세요. 구독은 연간 계약 또는 시간당 요금으로 Cloud Volumes ONTAP 결제할 수 있습니다. NetApp 에서 직접 라이선스를 구매한 경우(BYOL(Bring Your Own License)), AWS 구독은 필요하지 않습니다. NetApp BYOL 라이선스 구매, 연장 및 갱신을 제한하고 있습니다. 자세한 내용은 다음을 참조하세요. <block ref="73dc1b5468c2405a47da63a28335f079" category="inline-link-rx"></block> . <block ref="2ae6dc7cea05e6172a8f0e381f70d632" category="inline-link-rx"></block> .</block>
+  <block id="6a28bdfe0a0ce8e3299098557d101e68" category="list-text">로 이동합니다 <block ref="678ffe0122c1675f1a5ee93c014ea09c" prefix=" " category="inline-code"></block> 예배 규칙서.</block>
+  <block id="9fe049effcb48a9fc7a03ea7d4a73eda" category="list-text">편집하다 <block ref="578c313f5cd6eb30b5ac7297c331bb28" prefix=" " category="inline-code"></block> 추가하여 <block ref="9a3ea99df7286277e8c69a78dfda3ccd" prefix=" " category="inline-code"></block> 다음 키워드-값 쌍을 포함하는 매개변수:</block>
+  <block id="9efea3fb9d848977f782f99d1ba269ea" category="paragraph">그만큼 <block ref="b48b13e73a6ac2a86dc54425dd24d9ff" prefix=" " category="inline-code"></block> 키워드는 개인 DNS 영역이 커넥터와 다른 구독에 있는 경우에만 필요합니다.</block>
+  <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
+  <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
+  <block id="1001b88d8ff7d289c57c8816aa6ffa49" category="paragraph">NetApp 담당자에게 연락하여 BYOL 구독을 갱신하면 BlueXP NetApp 에서 자동으로 새 라이선스를 받아 Cloud Volumes ONTAP 시스템에 설치합니다. BlueXP 보안 인터넷 연결을 통해 라이선스 파일에 액세스할 수 없는 경우, 직접 파일을 받아 BlueXP 에 수동으로 업로드할 수 있습니다.</block>
+  <block id="98d06a8873f74ad318a67a8dee1dcd5f" category="section-title">2025년 6월 25일</block>
 </blocks>

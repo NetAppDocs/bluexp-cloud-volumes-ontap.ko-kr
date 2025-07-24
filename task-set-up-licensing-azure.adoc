@@ -66,6 +66,9 @@ link:concept-licensing.html["용량 기반 라이센스에 대해 자세히 알�
 
 NetApp에서 BYOL(License)을 구매하여 모든 클라우드 공급자를 통해 Cloud Volumes ONTAP 시스템 구축
 
+
+NOTE: NetApp BYOL 라이선스 구매, 연장 및 갱신을 제한했습니다. 자세한 내용은  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAP 에 대한 BYOL 라이선싱의 제한된 가용성"^] .
+
 .단계
 . https://bluexp.netapp.com/contact-cds["라이센스를 획득하려면 NetApp 세일즈 팀에 문의하십시오"^]
 . https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#add-an-nss-account["NetApp Support 사이트 계정을 BlueXP에 추가합니다"^]

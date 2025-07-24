@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-manage-node-licenses.html 
-keywords: license, licensing, install, updating license, system license, add system license, adding a system license, byol license, add byol license, update byol license, nlf, license generator, extra, by-node, digital wallet, cloud backup, cloud data sense, cloud tiering 
+keywords: license, licensing, install, updating license, system license, add system license, adding a system license,  update byol license, nlf, license generator, extra, by-node, digital wallet, cloud backup, cloud data sense, cloud tiering 
 summary: BlueXP 디지털 지갑에서 노드 기반 라이센스를 관리하여 각 Cloud Volumes ONTAP 시스템에 필요한 용량의 유효한 라이센스가 있는지 확인합니다. 
 ---
 = Cloud Volumes ONTAP에 대한 노드 기반 라이센스를 관리합니다
@@ -51,6 +51,9 @@ image:screenshot_paygo_licenses.png["세 개의 페이고 라이센스가 있는
 == BYOL 라이센스 관리
 
 시스템 라이센스 및 추가 용량 라이센스를 추가 및 제거하여 NetApp에서 직접 구매한 라이센스를 관리합니다.
+
+
+NOTE: NetApp BYOL 라이선스 구매, 연장 및 갱신을 제한했습니다. 자세한 내용은  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Cloud Volumes ONTAP 에 대한 BYOL 라이선싱의 제한된 가용성"^] .
 
 
 
@@ -131,9 +134,7 @@ image:screenshot-license-generator.png["스크린샷: 사용 가능한 제품군
 
 === 시스템 라이센스를 업데이트합니다
 
-NetApp 담당자에게 연락하여 BYOL 구독을 갱신하면, BlueXP는 NetApp에서 새로운 라이센스를 자동으로 얻어 Cloud Volumes ONTAP 시스템에 설치합니다.
-
-보안 인터넷 연결을 통해 BlueXP에서 라이센스 파일에 액세스할 수 없는 경우 직접 파일을 얻은 다음 파일을 BlueXP에 수동으로 업로드할 수 있습니다.
+NetApp 담당자에게 연락하여 BYOL 구독을 갱신하면 BlueXP NetApp 에서 자동으로 새 라이선스를 받아 Cloud Volumes ONTAP 시스템에 설치합니다. BlueXP 보안 인터넷 연결을 통해 라이선스 파일에 액세스할 수 없는 경우, 직접 파일을 받아 BlueXP 에 수동으로 업로드할 수 있습니다.
 
 .단계
 . BlueXP 탐색 메뉴에서 * Governance > Digital Wallet * 을 선택합니다.

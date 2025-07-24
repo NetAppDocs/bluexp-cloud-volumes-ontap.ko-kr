@@ -1,0 +1,13 @@
+= Cloud Volumes ONTAP 에 대한 BYOL 라이선싱의 제한된 가용성
+:allow-uri-read: 
+
+
+
+
+=== Cloud Volumes ONTAP 에 대한 BYOL 라이선싱의 제한된 가용성
+
+2025년 6월 25일부터 NetApp Cloud Volumes ONTAP 의 BYOL(Bring Your Own License) 라이선스 모델을 제한했습니다. 이 제한은 AWS, Azure, Google Cloud의 모든 고객 및 Cloud Volumes ONTAP 배포에 적용됩니다. 미국 공공 부문 고객과 중국 리전 배포는 예외입니다.
+
+NetApp 지원 및 서비스는 BYOL 계약이 만료될 때까지 계속되지만, 만료된 라이선스는 갱신 또는 연장되지 않습니다. BYOL 라이선스가 만료되면 클라우드 마켓플레이스 구독을 통해 구매한 용량 기반 라이선스로 교체해야 합니다. 하이퍼스케일러 마켓플레이스를 통한 용량 기반 라이선스 모델은 라이선스 경험을 간소화하고 더 큰 비즈니스 이점을 제공합니다. 전환 옵션에 대해 논의하려면 NetApp 계정 팀 또는 고객 성공 담당자에게 문의하십시오.
+
+자세한 내용은 다음 고객 공지문을 참조하세요.  https://mysupport.netapp.com/info/communications/CPC-00661.html["CPC-00661: Cloud Volumes ONTAP BYOL 정책 변경"^] .

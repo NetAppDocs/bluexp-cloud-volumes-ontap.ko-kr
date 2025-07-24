@@ -14,43 +14,31 @@ summary: Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우, ONT
 
 
 [role="lead"]
-Cloud Volumes ONTAP의 고급 관리를 수행해야 하는 경우, ONTAP 시스템과 함께 제공되는 관리 인터페이스인 ONTAP System Manager를 사용하면 됩니다. BlueXP에 System Manager 인터페이스를 직접 포함하므로 고급 관리를 위해 BlueXP를 떠날 필요가 없습니다.
+Cloud Volumes ONTAP 의 고급 스토리지 관리 기능은 ONTAP 시스템과 함께 제공되는 관리 인터페이스인 ONTAP System Manager를 통해 제공됩니다. BlueXP 에서 System Manager에 바로 액세스할 수 있습니다.
 
 
 
 == 피처
 
-다음과 같은 관리 기능을 수행할 수 있습니다.
+BlueXP 의 ONTAP System Manager를 사용하면 다양한 스토리지 관리 기능을 수행할 수 있습니다. 다음 목록에는 일부 기능이 포함되어 있지만, 전체 목록은 아닙니다.
 
-* 고급 스토리지 관리
-+
-일관성 그룹, 공유, Qtree, 할당량 및 스토리지 VM을 관리합니다.
-
-* 네트워킹 관리
-+
-IPspace, 네트워크 인터페이스, 포트 세트 및 이더넷 포트 관리
-
-* 이벤트 및 작업
-+
-이벤트 로그, 시스템 경고, 작업 및 감사 로그를 봅니다.
-
-* 고급 데이터 보호
-+
-스토리지 VM, LUN 및 일관성 그룹을 보호합니다.
-
-* 호스트 관리
-+
-SAN 이니시에이터 그룹 및 NFS 클라이언트를 설정합니다.
-
+* 고급 스토리지 관리: 일관성 그룹, 공유, Q트리, 할당량 및 스토리지 VM을 관리합니다.
+* 볼륨 이동: link:task-manage-volumes.html#move-a-volume["볼륨을 다른 집계로 이동합니다."]
+* 네트워킹 관리: IP 공간, 네트워크 인터페이스, 포트셋, 이더넷 포트를 관리합니다.
+* FlexGroup 볼륨 관리: FlexGroup 볼륨은 System Manager를 통해서만 생성하고 관리할 수 있습니다. BlueXP FlexGroup 볼륨 생성을 지원하지 않습니다.
+* 이벤트 및 작업: 이벤트 로그, 시스템 알림, 작업 및 감사 로그를 확인합니다.
+* 고급 데이터 보호: 스토리지 VM, LUN 및 일관성 그룹을 보호합니다.
+* 호스트 관리: SAN 이니시에이터 그룹과 NFS 클라이언트를 설정합니다.
+* S3 개체 스토리지 관리: Cloud Volumes ONTAP 의 S3 스토리지 관리 기능은 System Manager에서만 사용할 수 있으며 BlueXP 에서는 사용할 수 없습니다.
 
 
 
 
 == 지원되는 구성
 
-Cloud Volumes ONTAP 9.10.0 이상은 표준 클라우드 지역에서 ONTAP System Manager를 통한 고급 관리를 지원합니다.
+* ONTAP System Manager를 통한 고급 스토리지 관리 기능은 표준 클라우드 지역에서 Cloud Volumes ONTAP 9.10.0 이상에서 사용할 수 있습니다.
+* GovCloud 지역 또는 아웃바운드 인터넷 액세스가 없는 지역에서는 System Manager 통합이 지원되지 않습니다.
 
-GovCloud 지역 또는 아웃바운드 인터넷 액세스가 없는 지역에서는 System Manager 통합이 지원되지 않습니다.
 
 
 
@@ -58,21 +46,11 @@ GovCloud 지역 또는 아웃바운드 인터넷 액세스가 없는 지역에�
 
 Cloud Volumes ONTAP에서는 System Manager 인터페이스에 표시되는 몇 가지 기능을 지원하지 않습니다.
 
-* BlueXP 계층화
-+
-Cloud Volumes ONTAP는 BlueXP  계층화 서비스를 지원하지 않는다. 볼륨을 생성할 때 BlueXP 의 표준 보기에서 오브젝트 스토리지로 직접 데이터 계층화를 설정해야 합니다.
+* BlueXP tiering: Cloud Volumes ONTAP BlueXP tiering 서비스를 지원하지 않습니다. 볼륨을 생성할 때 BlueXP의 표준 뷰에서 직접 개체 스토리지로의 데이터 계층화를 설정해야 합니다.
+* 계층: System Manager에서는 집계 관리(로컬 계층 및 클라우드 계층 포함)가 지원되지 않습니다. BlueXP의 표준 보기에서 직접 집계를 관리해야 합니다.
+* 펌웨어 업그레이드: Cloud Volumes ONTAP *클러스터 > 설정* 페이지에서 자동 펌웨어 업데이트를 지원하지 않습니다.
+* 역할 기반 액세스 제어: System Manager의 역할 기반 액세스 제어는 지원되지 않습니다.
 
-* 계층
-+
-System Manager에서는 애그리게이트 관리(로컬 계층 및 클라우드 계층 포함)가 지원되지 않습니다. BlueXP의 표준 보기에서 직접 애그리게이트를 관리해야 합니다.
-
-* 펌웨어 업그레이드
-+
-Cloud Volumes ONTAP은 클러스터 > 설정 * 페이지에서 자동 펌웨어 업데이트를 지원하지 않습니다.
-
-
-
-또한 System Manager의 역할 기반 액세스 제어가 지원되지 않습니다.
 
 
 
