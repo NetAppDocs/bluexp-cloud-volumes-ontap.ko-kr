@@ -83,14 +83,6 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-m
 
 
 
-=== Azure 테넌트의 데이터를 계층화하는 기능
-
-이제 한 테넌트에 의해 Cloud Volumes ONTAP 작업 환경이 생성되고 다른 테넌트에 의해 BlueXP  커넥터가 생성되는 시나리오에서 Azure 테넌트에 대한 계층화를 활성화할 수 있습니다. 이 기능을 사용하면 동일한 Connector를 사용하여 여러 Azure 테넌트의 데이터를 계층화할 수 있습니다.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#requirements-to-tier-data-for-an-azure-tenant["Azure 테넌트의 데이터를 계층화하기 위한 요구사항"^]
-
-
-
 == 2025년 4월 16일
 
 
