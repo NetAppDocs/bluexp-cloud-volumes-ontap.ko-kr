@@ -2839,7 +2839,6 @@
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">NSS 계정을 가지고 있는 NetApp 고객은 BlueXP를 통해 지원을 받기 위해 등록하기만 하면 됩니다.</block>
   <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">위에 사용된 BlueXP 계정 일련 번호(960xxxx)를 일련 번호 필드에 복사해야 합니다. 이렇게 하면 계정 처리 속도가 빨라집니다.</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp은 다양한 방법으로 BlueXP를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
-  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp은 다양한 방법으로 BlueXP 및 클라우드 서비스를 지원합니다. 기술 자료(KB) 기사 및 커뮤니티 포럼과 같은 광범위한 무료 셀프 지원 옵션이 24x7 제공됩니다. 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">문제를 해결하는 데 도움이 되는 문서를 찾으려면 BlueXP 기술 자료를 검색하십시오.</block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXP 커뮤니티에 가입하여 진행 중인 토론을 팔로우하거나 새 토론을 만드십시오.</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">현재 보고 있는 BlueXP 문서입니다.</block>
@@ -3900,8 +3899,6 @@
   <block id="25c3dcdd6e2c69b30eba973a10e656d8" category="paragraph">Cloud Volumes ONTAP 업그레이드 페이지를 통해 최신 버전의 Cloud Volumes ONTAP 또는 이전 버전으로 업그레이드할 수 있습니다.</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">두 가지 유형의 일련 번호를 등록하면 지원 티켓 열기와 자동 케이스 생성 등의 기능을 사용할 수 있습니다. 아래 설명과 같이 BlueXP에 NetApp Support 사이트(NSS) 계정을 추가하여 등록을 완료합니다.</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">NSS 자격 증명 추가 * 를 선택하고 NetApp Support 사이트(NSS) 인증 프롬프트를 따릅니다.</block>
-  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">계정 일련 번호와 녹색 확인란이 표시된 스크린샷 및 지원을 위해 등록된 텍스트.</block>
-  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">기존 사용권 및 제품 번호가 _NO_NSS인 기존 NetApp 고객인 경우 NSS 계정을 만들어 BlueXP 로그인과 연결해야 합니다.</block>
   <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">의 단계를 완료하여 새 NSS 계정을 BlueXP 로그인에 연결합니다 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">NetApp Support 사이트 계정이 있으면 의 단계를 완료하여 계정을 BlueXP 로그인에 연결합니다 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
@@ -5895,4 +5892,11 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
   <block id="1001b88d8ff7d289c57c8816aa6ffa49" category="paragraph">NetApp 담당자에게 연락하여 BYOL 구독을 갱신하면 BlueXP NetApp 에서 자동으로 새 라이선스를 받아 Cloud Volumes ONTAP 시스템에 설치합니다. BlueXP 보안 인터넷 연결을 통해 라이선스 파일에 액세스할 수 없는 경우, 직접 파일을 받아 BlueXP 에 수동으로 업로드할 수 있습니다.</block>
   <block id="98d06a8873f74ad318a67a8dee1dcd5f" category="section-title">2025년 6월 25일</block>
+  <block id="b28e17a832bc8e68788cc78dfac834c6" category="inline-link">지속적으로 이용 가능한 SMB 주식</block>
+  <block id="2d16ba999fad830caa372d4b033671ac" category="list-text">SMB 지속적 가용성(CA): Cloud Volumes ONTAP 지원하지 않습니다. <block ref="4426c61d85afebe3004ecaea7b6795d6" category="inline-link-rx"></block> 중단 없는 운영을 위해.</block>
+  <block id="9d3b47003b8e5970426abfe5a07a9c53" category="inline-link">지속적으로 사용 가능한 SMB 공유 생성</block>
+  <block id="4c47e334b7cc175e1cb9081ba027f23e" category="list-text"><block ref="4c47e334b7cc175e1cb9081ba027f23e" category="inline-link-rx"></block></block>
+  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetApp BlueXP 와 클라우드 서비스에 대한 다양한 지원을 제공합니다. 지식 베이스(KB) 문서 및 커뮤니티 포럼 등 다양한 무료 셀프 지원 옵션을 연중무휴 24시간 이용하실 수 있습니다. 지원 등록 시 웹 티켓팅을 통한 원격 기술 지원이 제공됩니다.</block>
+  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">계정 일련번호, 녹색 확인란, 지원 등록이라는 텍스트가 표시된 스크린샷입니다.</block>
+  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

@@ -50,6 +50,7 @@ Cloud Volumes ONTAP에서는 System Manager 인터페이스에 표시되는 몇 
 * 계층: System Manager에서는 집계 관리(로컬 계층 및 클라우드 계층 포함)가 지원되지 않습니다. BlueXP의 표준 보기에서 직접 집계를 관리해야 합니다.
 * 펌웨어 업그레이드: Cloud Volumes ONTAP *클러스터 > 설정* 페이지에서 자동 펌웨어 업데이트를 지원하지 않습니다.
 * 역할 기반 액세스 제어: System Manager의 역할 기반 액세스 제어는 지원되지 않습니다.
+* SMB 지속적 가용성(CA): Cloud Volumes ONTAP 지원하지 않습니다.  https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares["지속적으로 이용 가능한 SMB 주식"^] 중단 없는 운영을 위해.
 
 
 
@@ -103,4 +104,5 @@ System Manager와 Cloud Volumes ONTAP를 사용하는 데 도움이 필요한 �
 * https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["볼륨 및 LUN 관리"^]
 * https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["네트워크 관리"^]
 * https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["데이터 보호"^]
+* https://docs.netapp.com/us-en/ontap/smb-hyper-v-sql/create-continuously-available-shares-task.html["지속적으로 사용 가능한 SMB 공유 생성"^]
 
