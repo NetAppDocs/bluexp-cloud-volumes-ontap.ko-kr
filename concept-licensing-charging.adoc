@@ -31,8 +31,6 @@ NOTE: NetApp BYOL 라이선스 구매, 연장 및 갱신을 제한했습니다. 
 
 ifdef::azure[]
 
-+ Optimized 패키지는 BYOL에서 사용할 수 없습니다.
-
 endif::azure[]
 
 * * PAYGO *: PAYGO(Pay-as-you-go) 서브스크립션은 클라우드 공급자의 마켓플레이스에서 시간 단위 서브스크립션을 제공합니다.
@@ -68,7 +66,7 @@ link:task-manage-capacity-licenses.html["충전 방법을 변경하는 방법에
 
 == 가격 및 지원되는 구성
 
-가격에 대한 자세한 내용은 을 https://bluexp.netapp.com/pricing/["NetApp BlueXP 웹 사이트"^]참조하십시오.
+가격에 대한 자세한 내용은 다음을 참조하세요. https://bluexp.netapp.com/pricing/["NetApp BlueXP 웹 사이트"^] .
 
 용량 기반 라이센스 패키지는 Cloud Volumes ONTAP 9.7 이상에서 사용할 수 있습니다.
 
@@ -146,7 +144,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["AWS, Azur
 
 아직 볼륨을 프로비저닝하지 않은 경우 최소 요금이 적용되지 않습니다.
 
-Essentials 패키지의 경우 4TiB 최소 용량 비용은 보조(데이터 보호) 볼륨만 포함된 스토리지 VM에 적용되지 않습니다. 예를 들어, 1TiB의 보조 데이터를 사용하는 스토리지 VM의 경우 해당 1TiB 데이터에 대한 요금이 청구됩니다. 기타 모든 비 Essentials 패키지 유형(Optimized 및 Professional)에서는 볼륨 유형에 상관없이 4TiB의 최소 용량 충전이 적용됩니다.
+Essentials 패키지의 경우, 최소 4TiB 용량 요금은 보조(데이터 보호) 볼륨만 포함된 스토리지 VM에는 적용되지 않습니다.  예를 들어, 1TiB의 보조 데이터가 있는 스토리지 VM이 있는 경우 해당 1TiB의 데이터에 대해서만 요금이 청구됩니다.  Professional 패키지 유형의 경우 볼륨 유형에 관계없이 최소 4TiB 용량 충전이 적용됩니다.
 
 
 

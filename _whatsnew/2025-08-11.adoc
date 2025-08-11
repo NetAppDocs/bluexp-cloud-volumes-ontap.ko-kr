@@ -1,0 +1,15 @@
+= 최적화된 라이선스의 사용 가능 기간이 종료되었습니다.
+:allow-uri-read: 
+
+
+
+
+=== 최적화된 라이선스의 사용 가능 기간이 종료되었습니다.
+
+2025년 8월 11일부터 Cloud Volumes ONTAP Optimized 라이선스는 더 이상 사용되지 않으며 Azure 및 Google Cloud 마켓플레이스에서 PAYGO(종량제) 구독을 구매하거나 갱신할 수 없습니다.  최적화된 라이선스에 대한 기존 연간 계약이 있는 경우, 계약 기간이 끝날 때까지 라이선스를 계속 사용할 수 있습니다.  최적화된 라이선스가 만료되면 Cloud Volumes ONTAP Essentials 또는 Professional 라이선스를 선택할 수 있습니다.
+
+하지만 최적화된 라이선스를 추가하거나 갱신하는 기능은 API를 통해 제공될 예정입니다.
+
+라이센스 패키지에 대한 정보는 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP에 대한 라이센싱입니다"^] .
+
+다른 충전 방법으로 전환하는 방법에 대한 정보는 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["용량 기반 라이선싱 관리"^] .

@@ -18,10 +18,10 @@ summary: 클라우드 공급자의 콘솔이 아닌 BlueXP에서 Cloud Volumes O
 
 작업 환경을 삭제하면 BlueXP에서 Cloud Volumes ONTAP 인스턴스를 종료하고 디스크 및 스냅샷을 삭제합니다.
 
-BlueXP 백업 및 복구, BlueXP 분류 인스턴스 등과 같은 다른 서비스에서 관리하는 리소스는 작업 환경을 삭제할 때 삭제되지 않습니다. 수동으로 삭제해야 합니다. 그렇지 않으면 이러한 리소스에 대한 비용을 계속 받게 됩니다.
 
+NOTE: BlueXP backup and recovery 에서 관리하는 백업, BlueXP classification 위한 인스턴스와 같은 기타 리소스는 작업 환경을 삭제해도 삭제되지 않습니다.  수동으로 삭제해야 합니다.  그렇지 않으면 이러한 리소스에 대한 요금이 계속 부과됩니다.
 
-NOTE: BlueXP가 클라우드 공급업체에 Cloud Volumes ONTAP를 배포할 때 인스턴스에 대한 종료 보호를 활성화합니다. 이 옵션은 우발적인 종료를 방지하는 데 도움이 됩니다.
+BlueXP가 클라우드 공급업체에 Cloud Volumes ONTAP를 배포할 때 인스턴스에 대한 종료 보호를 활성화합니다. 이 옵션은 우발적인 종료를 방지하는 데 도움이 됩니다.
 
 .단계
 . 작업 환경에서 BlueXP 백업 및 복구를 활성화한 경우 백업된 데이터가 여전히 필요한지 확인한 다음 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-manage-backups-ontap.html#deleting-backups["필요한 경우 백업을 삭제합니다"^].
@@ -46,3 +46,6 @@ image:screenshot_settings_delete.png["삭제 작업이 포함된 작업 환경�
 
 
 
+
+
+NOTE: BlueXP backup and recovery Cloud Volumes ONTAP Professional 라이선스에 대해서만 무료로 제공됩니다.  이 무료 혜택은 삭제된 환경에는 적용되지 않습니다.  Cloud Volumes ONTAP 환경의 백업된 사본이 BlueXP backup and recovery 인스턴스에 보관되는 경우, 해당 사본이 삭제될 때까지 백업된 사본에 대한 요금이 청구됩니다.

@@ -143,7 +143,7 @@ image:screenshot-digital-wallet-usage-report.png["스크린샷은 Digital Wallet
 ** 총 PAYGO 용량
 
 
-* * Cloud Volumes ONTAP package usage *: 이 보고서에는 최적화된 I/O 패키지를 제외한 각 패키지에 대한 다음 정보가 포함됩니다.
+* * Cloud Volumes ONTAP 패키지 사용*: 이 보고서에는 각 패키지에 대한 다음 정보가 포함되어 있습니다.
 +
 ** 사용된 총 용량입니다
 ** 사전 커밋된 총 용량입니다
