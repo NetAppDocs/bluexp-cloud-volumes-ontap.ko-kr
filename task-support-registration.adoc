@@ -7,7 +7,7 @@ summary: NetApp 기술 지원 팀과 지원 케이스를 생성하기 전에 Net
 = 지원을 위해 등록하십시오
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

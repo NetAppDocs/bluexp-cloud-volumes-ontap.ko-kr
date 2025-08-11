@@ -7,7 +7,7 @@ summary:
 = 법적 고지
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

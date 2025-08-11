@@ -8,7 +8,7 @@ summary: 타사 키 관리 서비스에 AWS의 키 관리 서비스를 활용할
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

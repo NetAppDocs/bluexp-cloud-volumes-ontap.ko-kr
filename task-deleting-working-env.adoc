@@ -39,10 +39,7 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 +
 image:screenshot_settings_delete.png["삭제 작업이 포함된 작업 환경에서 사용할 수 있는 메뉴를 보여 주는 스크린샷"]
 
-.. 작업 환경 삭제 창에서 작업 환경의 이름을 입력한 다음 * 삭제 * 를 클릭합니다.
-+
-작업 환경을 삭제하는 데 최대 5분이 걸릴 수 있습니다.
-
+.. 작업 환경 삭제 창에서 작업 환경의 이름을 입력한 다음 *삭제*를 클릭합니다.  작업 환경을 삭제하는 데 최대 5분이 걸릴 수 있습니다.
 
 
 

@@ -7,7 +7,7 @@ summary: 'NetApp은 다양한 방법으로 BlueXP를 지원합니다. 기술 자
 = 도움을 받으십시오
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

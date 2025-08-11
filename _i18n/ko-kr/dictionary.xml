@@ -296,7 +296,6 @@
   <block id="57cbefe39109ab51b31e818f9ce6d9c4" category="list-text">Cloud Volumes ONTAP 작업 환경을 삭제합니다.</block>
   <block id="deacec910b77251dad4f11490aa93221" category="list-text">Canvas 페이지에서 삭제할 Cloud Volumes ONTAP 작업 환경의 이름을 두 번 클릭합니다.</block>
   <block id="4a9ee4aa88ebf38223ea447fe291d222" category="inline-image-macro">삭제 작업이 포함된 작업 환경에서 사용할 수 있는 메뉴를 보여 주는 스크린샷</block>
-  <block id="7d73be13421466d5cf5d832329f74c79" category="paragraph">작업 환경을 삭제하는 데 최대 5분이 걸릴 수 있습니다.</block>
   <block id="bfd15aa26ba0ced782240c4a8b7e517e" category="doc">스토리지 관리</block>
   <block id="6ba6ceafe8bda6d338b883b2b39f45f1" category="section-title">스토리지 프로비저닝</block>
   <block id="4b5003aeb61c493667398318fcd5d2c9" category="section-title">간소화된 프로비저닝</block>
@@ -2042,7 +2041,6 @@
   <block id="06c86f2b2f40c7b5ae916f820dace6f3" category="inline-link">Cloud Volumes ONTAP 릴리즈 노트 로 이동합니다</block>
   <block id="eaae0996b48caf454deb2608523a1af2" category="paragraph"><block ref="a3830f1e68e521753c115aa90de96c67" category="inline-link-rx"></block>.</block>
   <block id="cd46020b2ca09f66f5c79bd35fe2da2e" category="paragraph"><block ref="4107f790de2a45bc9a00a9b75db49bc5" category="inline-link-rx"></block>.</block>
-  <block id="17f0fae3c5e44f9a095562194f423343" category="paragraph"><block ref="17f0fae3c5e44f9a095562194f423343" category="inline-link-rx"></block></block>
   <block id="82defe4f45724f0ce17f1a11c6980420" category="paragraph"><block ref="82defe4f45724f0ce17f1a11c6980420" category="inline-link-rx"></block></block>
   <block id="96e9eb313ea17571fd2fc456a82b6862" category="list-text"><block ref="96e9eb313ea17571fd2fc456a82b6862" category="inline-link-rx"></block></block>
   <block id="ff9c48728746d281c6db8cc1fcc3bbc0" category="list-text"><block ref="ff9c48728746d281c6db8cc1fcc3bbc0" category="inline-link-rx"></block></block>
@@ -3585,7 +3583,6 @@
   <block id="78cffa6560689ac98432ba58e17e78ff" category="inline-image-macro">볼륨에 대한 계층화 정책을 변경하는 데 사용할 수 있는 옵션을 보여 주는 스크린샷</block>
   <block id="e0e0725f5ef956857b33c008a39af157" category="paragraph"><block ref="e0e0725f5ef956857b33c008a39af157" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec8e04c7758ae04f1375383b387929a1" category="paragraph"><block ref="ec8e04c7758ae04f1375383b387929a1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e46b959133eadbb0d00ac0a308843f30" category="list-text">작업 환경 삭제 창에서 작업 환경의 이름을 입력한 다음 * 삭제 * 를 클릭합니다.</block>
   <block id="c4bd89564dafc82c9b2027b549fa45f2" category="list-text">작업 환경에서 * Volumes * 탭을 클릭합니다.</block>
   <block id="31fe088c17d984a78f5027d2b8428e18" category="list-text">Volumes(볼륨) 탭에서 원하는 볼륨 제목으로 이동한 다음 * Manage volume(볼륨 관리) * 을 클릭하여 Manage Volumes(볼륨 관리) 오른쪽 패널에 액세스합니다.</block>
   <block id="2142690a2d1ae8bd820983b7911914d5" category="list-text">대상 IQN * 을 클릭합니다.</block>
@@ -5413,7 +5410,6 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="cded3209819889817786a4170eb0e49c" category="inline-link">Cloud Volumes ONTAP용 NetApp 랜섬웨어 방지 솔루션을 살펴보십시오</block>
   <block id="d2675df83ff2fbafe199fb06a1fd5d56" category="list-text"><block ref="d2675df83ff2fbafe199fb06a1fd5d56" category="inline-link-rx"></block></block>
   <block id="c2e10e9222f5db93eded2cefa02c0ef5" category="inline-link">Cloud Volumes ONTAP 노드 기반 라이센스를 용량 기반 라이센스로 변환합니다</block>
-  <block id="0fc6c6e7c7c886fe493ee21e8e7be67d" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="b3c563b157608d2aec77c4e8d2c32e61" category="inline-link-rx"></block></block>
   <block id="322a339b221056f32120ffd18077d44d" category="doc">Azure에서 API를 통해 스토리지 VM 생성 자동화</block>
   <block id="aa1c2167957b1092da7e43e77867748c" category="paragraph">이제 BlueXP  API를 사용하여 Azure에서 Cloud Volumes ONTAP용 추가 데이터 제공 스토리지 VM을 생성, 이름 변경 및 삭제할 수 있습니다. 이 API를 사용하면 관리에 스토리지 VM을 사용해야 하는 경우 필요한 네트워크 인터페이스, LIF, 관리 LIF의 구성을 비롯하여 스토리지 VM 생성 프로세스가 자동화됩니다.</block>
   <block id="4a688a36b1b8761ed6587867f87a2cc3" category="inline-link">Azure에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 관리합니다</block>
@@ -5879,7 +5875,6 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9def883103b7b964dcbb0993e3f8a065" category="doc">최적화된 라이선스의 사용 가능 기간이 종료되었습니다.</block>
   <block id="cf4dd05cf065c9ae01bc836c5033bb63" category="paragraph">2025년 8월 11일부터 Cloud Volumes ONTAP Optimized 라이선스는 더 이상 사용되지 않으며 Azure 및 Google Cloud 마켓플레이스에서 PAYGO(종량제) 구독을 구매하거나 갱신할 수 없습니다.  최적화된 라이선스에 대한 기존 연간 계약이 있는 경우, 계약 기간이 끝날 때까지 라이선스를 계속 사용할 수 있습니다.  최적화된 라이선스가 만료되면 Cloud Volumes ONTAP Essentials 또는 Professional 라이선스를 선택할 수 있습니다.</block>
-  <block id="4e106c84c3dd2cbdc5b24d055fe09562" category="paragraph">하지만 최적화된 라이선스를 추가하거나 갱신하는 기능은 API를 통해 제공될 예정입니다.</block>
   <block id="2b8e43c95c1d15bc0824064c3dc0f993" category="paragraph">라이센스 패키지에 대한 정보는 다음을 참조하세요.<block ref="4b2776d787a70224c2441f63d3888380" category="inline-link-rx"></block> .</block>
   <block id="ed1f600d01a229b43b3196dd2f2e48ca" category="inline-link">용량 기반 라이선싱 관리</block>
   <block id="1d4a9a37e700957e9d79664f032cf5ec" category="paragraph">다른 충전 방법으로 전환하는 방법에 대한 정보는 다음을 참조하세요.<block ref="eeeecd1116eaf4db26e064552c04366d" category="inline-link-rx"></block> .</block>
@@ -5897,4 +5892,9 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="219fa750a13ad456df1d25524d9f6ad9" category="list-text">* Cloud Volumes ONTAP 패키지 사용*: 이 보고서에는 각 패키지에 대한 다음 정보가 포함되어 있습니다.</block>
   <block id="cfba7e7177c8f36e5c073175ecdcec93" category="paragraph">용량 기반 라이선싱을 사용하면 TiB 용량당 Cloud Volumes ONTAP 비용을 지불할 수 있습니다.  용량 기반 라이선싱은 패키지(Essentials 또는 Professional 패키지) 형태로 제공됩니다.</block>
   <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">2025년 8월 11일</block>
+  <block id="d7541fdf3e0094adec62a7042b5512d9" category="inline-link">Cloud Volumes ONTAP 노드 기반 라이선스를 용량 기반 라이선스로 변환</block>
+  <block id="249c33a7057b26f2c17f912ee1675174" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="c718c65e9665241afe238019ab334376" category="inline-link-rx"></block></block>
+  <block id="09027718866a8a3a2edb0bb0eb53c926" category="paragraph">하지만 최적화된 라이선스를 추가하거나 갱신하는 기능은 API를 통해 제공될 예정입니다.</block>
+  <block id="064c8585f26a6a9766e55da306b39425" category="paragraph"><block ref="064c8585f26a6a9766e55da306b39425" category="inline-link-rx"></block></block>
+  <block id="42f21a40b3b95c1fc1fe699b458d9f4f" category="list-text">작업 환경 삭제 창에서 작업 환경의 이름을 입력한 다음 *삭제*를 클릭합니다.  작업 환경을 삭제하는 데 최대 5분이 걸릴 수 있습니다.</block>
 </blocks>

@@ -4,7 +4,7 @@ permalink: task-convert-node-capacity.html
 keywords: license conversion, convert node-based to capacity based, by-node to by-capacity, bluexp license conversion for node based 
 summary: '노드 기반 라이센스의 EOA(End of Availability)가 완료되면 BlueXP  라이센스 변환 툴을 사용하여 용량 기반 라이센스로 전환해야 합니다.' 
 ---
-= Cloud Volumes ONTAP 노드 기반 라이센스를 용량 기반 라이센스로 변환합니다
+= Cloud Volumes ONTAP 노드 기반 라이선스를 용량 기반 라이선스로 변환
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
