@@ -43,10 +43,9 @@ Cloud Volumes ONTAP는 대부분의 AWS 지역에서 지원됩니다. https://bl
 
 NOTE: Cloud Volumes ONTAP은 AWS 로컬 영역에서 데이터 계층화 및 클라우드 계층화를 지원하지 않습니다. 또한 Cloud Volumes ONTAP에 대해 인증되지 않은 인스턴스가 있는 로컬 영역은 지원되지 않습니다. 예를 들어, 로컬 존으로 사용할 수 없는 마이애미는 지원되지 않는 Gen6 인스턴스만 있기 때문에 로컬 존으로 사용할 수 없습니다.
 
-link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["로컬 영역의 전체 목록을 봅니다"^].
-로컬 영역을 사용하도록 설정해야 해당 영역에서 리소스를 만들고 관리할 수 있습니다.
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["AWS 문서: 로컬 영역 전체 목록 보기"^] . 로컬 영역을 활성화해야만 해당 영역에서 리소스를 만들고 관리할 수 있습니다.
 
-link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["로컬 영역을 활성화하는 방법에 대해 알아봅니다"^].
+link:https://docs.aws.amazon.com/local-zones/latest/ug/getting-started.html["AWS 설명서: AWS 로컬 영역 시작하기"^] .
 
 
 
@@ -78,7 +77,7 @@ Cloud Volumes ONTAP 시스템을 사이징하면 성능 및 용량 요구사항�
 * 대부분 읽혀지는 응용 프로그램이 있는 경우 충분한 RAM이 있는 시스템을 선택합니다.
 +
 ** https://aws.amazon.com/ec2/instance-types/["AWS 문서: Amazon EC2 인스턴스 유형"^]
-** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["AWS 문서: Amazon EBS – 최적화된 인스턴스"^]
+** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["AWS 설명서: Amazon EBS 최적화 인스턴스"^]
 
 
 
@@ -89,7 +88,7 @@ EBS 디스크 유형입니다:: EBS 디스크 유형의 차이점은 다음과 �
 --
 * _GP3(General Purpose SSD)_디스크는 광범위한 워크로드에 대해 비용과 성능의 균형을 유지하는 가장 저렴한 SSD입니다. 성능은 IOPS 및 처리량 측면에서 정의됩니다. GP3 디스크는 Cloud Volumes ONTAP 9.7 이상에서 지원됩니다.
 +
-GP3 디스크를 선택할 때 BlueXP는 기본 IOPS와 처리량 값을 채워 선택한 디스크 크기를 기준으로 GP2 디스크와 동일한 성능을 제공합니다. 더 높은 비용으로 더 나은 성능을 얻기 위해 값을 늘릴 수 있지만 성능이 저하될 수 있으므로 더 낮은 값을 지원하지 않습니다. 즉, 기본값을 그대로 사용하거나 값을 늘립니다. 낮추지 마십시오. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["GP3 디스크 및 성능에 대해 자세히 알아보십시오"^].
+gp3 디스크를 선택하면 BlueXP 선택한 디스크 크기를 기준으로 gp2 디스크와 동등한 성능을 제공하는 기본 IOPS 및 처리량 값을 채웁니다.  더 높은 비용으로 더 나은 성능을 얻으려면 값을 늘릴 수 있지만, 낮은 값은 성능이 저하될 수 있으므로 지원하지 않습니다.  간단히 말해, 기본값을 고수하거나 기본값을 늘리세요.  낮추지 마세요. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["AWS 문서: gp3 디스크와 성능에 대해 자세히 알아보세요"^] .
 
 +
 Cloud Volumes ONTAP는 GP3 디스크를 사용하는 Amazon EBS Elastic Volumes 기능을 지원합니다. link:concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"].

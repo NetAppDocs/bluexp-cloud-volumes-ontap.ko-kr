@@ -96,9 +96,14 @@ HA 쌍의 경우 노드의 프로비저닝된 용량에 대해서만 비용이 �
 
 == 용량 제한
 
-이 라이센스 모델을 통해 각 개별 Cloud Volumes ONTAP 시스템은 디스크를 통해 최대 2개의 PiB 용량을 지원하고 오브젝트 스토리지로 계층화합니다.
+용량 기반 라이선싱 모델에서 각 Cloud Volumes ONTAP 시스템은 개체 스토리지에 대한 계층화를 지원하며, 전체 계층화 용량은 클라우드 공급자의 버킷 한도까지 확장될 수 있습니다.  라이센스에는 용량 제한이 부과되지 않지만 다음을 따르십시오. https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["FabricPool 모범 사례"^] 계층화를 구성하고 관리할 때 최적의 성능, 안정성 및 비용 효율성을 보장합니다.
 
-라이센스 자체에는 최대 용량 제한이 없습니다.
+각 클라우드 공급자의 용량 제한에 대한 자세한 내용은 해당 문서를 참조하세요.
+
+* https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html["AWS 문서"^]
+* https://learn.microsoft.com/en-us/azure/storage/common/scalability-targets-standard-account["관리 디스크에 대한 Azure 설명서"^]그리고 https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets["Blob 저장소에 대한 Azure 설명서"^]
+* https://cloud.google.com/storage/docs/buckets["Google Cloud 문서"^]
+
 
 
 

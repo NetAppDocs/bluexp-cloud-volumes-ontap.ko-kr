@@ -69,7 +69,7 @@ BlueXP는 Azure에 Cloud Volumes ONTAP를 배포할 때 리소스 그룹에 개�
 
 클라이언트가 Cloud Volumes ONTAP와 동일한 VNET 내에 있거나, 피어링된 VNets 내에 있거나, VNET에 대한 전용 VPN 또는 ExpressRoute 연결을 사용할 때 사내 네트워크에 있는 경우 클라이언트 액세스는 개인 링크를 통해 이루어집니다.
 
-이 예에서는 동일한 VNET 내의 전용 링크와 전용 VPN 또는 ExpressRoute 연결이 있는 온프레미스 네트워크에서 클라이언트 액세스를 보여 줍니다.
+다음은 동일한 VNet 내부와 개인 VPN 또는 ExpressRoute 연결이 있는 온프레미스 네트워크에서 개인 링크를 통해 클라이언트 액세스를 보여주는 예입니다.
 
 image:diagram_azure_private_link.png["Cloud Volumes ONTAP로 이동하는 데이터 액세스와 스토리지 계정에 대한 개인 끝점 및 개인 링크를 통한 데이터 액세스를 보여 주는 개념적 이미지입니다."]
 

@@ -126,7 +126,7 @@ image:diagram_takeover_giveback.png["Cloud Volumes ONTAP HA 쌍의 스토리지 
 AZ(단일 가용 영역)에 HA 구성을 구축하면 Cloud Volumes ONTAP 노드를 실행하는 인스턴스에 장애가 발생할 경우 데이터의 고가용성을 보장할 수 있습니다. 모든 데이터는 VPC 외부에서 기본적으로 액세스할 수 있습니다.
 
 
-NOTE: BlueXP는 을 생성합니다 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 배치 그룹 분산"^] 그런 다음 해당 배치 그룹에서 2개의 HA 노드를 시작합니다. 배치 그룹은 서로 다른 기본 하드웨어에 인스턴스를 분산하여 동시 오류 위험을 줄입니다. 이 기능은 디스크 장애 관점이 아니라 컴퓨팅 측면에서 중복성을 향상시킵니다.
+NOTE: BlueXP 다음을 생성합니다. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 문서: AWS 스프레드 배치 그룹"^] 그리고 해당 배치 그룹에서 두 개의 HA 노드를 시작합니다.  배치 그룹은 인스턴스를 여러 기본 하드웨어에 분산하여 동시 장애가 발생할 위험을 줄입니다.  이 기능은 디스크 오류 관점이 아닌 컴퓨팅 관점에서 중복성을 향상시킵니다.
 
 
 
@@ -200,7 +200,7 @@ Cloud Volumes ONTAP은 AWS 로컬 영역에서 데이터 계층화, 클라우드
 
 NOTE: Cloud Volumes ONTAP는 이러한 구성만 지원합니다. AWS 로컬 영역 구성에서 지원되지 않는 디스크 유형이나 비정규화된 인스턴스를 선택하면 배포 오류가 발생할 수 있습니다. 연결이 부족하여 AWS 로컬 영역에서 AWS S3에 데이터 계층화를 사용할 수 없습니다.
 
-의 최신 정보와 전체 세부 정보는 AWS 문서를 참조하십시오link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["로컬 영역의 EC2 인스턴스 유형"^].
+최신 및 전체 세부 정보는 AWS 설명서를 참조하세요.link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["AWS 설명서: 로컬 영역의 EC2 인스턴스 유형"^] .
 
 
 

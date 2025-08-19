@@ -26,7 +26,7 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 === 최적화된 라이선스의 사용 가능 기간이 종료되었습니다.
 
-2025년 8월 11일부터 Cloud Volumes ONTAP Optimized 라이선스는 더 이상 사용되지 않으며 Azure 및 Google Cloud 마켓플레이스에서 PAYGO(종량제) 구독을 구매하거나 갱신할 수 없습니다.  최적화된 라이선스에 대한 기존 연간 계약이 있는 경우, 계약 기간이 끝날 때까지 라이선스를 계속 사용할 수 있습니다.  최적화된 라이선스가 만료되면 Cloud Volumes ONTAP Essentials 또는 Professional 라이선스를 선택할 수 있습니다.
+2025년 8월 11일부터 Cloud Volumes ONTAP Optimized 라이선스는 더 이상 사용되지 않으며 Azure 및 Google Cloud 마켓플레이스에서 PAYGO(종량제) 구독을 구매하거나 갱신할 수 없습니다. 최적화된 라이선스에 대한 기존 연간 계약이 있는 경우, 계약 기간이 끝날 때까지 라이선스를 계속 사용할 수 있습니다. 최적화된 라이선스가 만료되면 BlueXP 에서 Cloud Volumes ONTAP Essentials 또는 Professional 라이선스를 선택할 수 있습니다.
 
 하지만 최적화된 라이선스를 추가하거나 갱신하는 기능은 API를 통해 제공될 예정입니다.
 
@@ -1762,7 +1762,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 
 === AWS의 새로운 프로페셔널 패키지
 
-새로운 프로페셔널 패키지를 이용하면 AWS 마켓플레이스의 연간 계약을 활용하여 Cloud Volumes ONTAP와 Cloud Backup Service를 번들로 제공할 수 있습니다. 지급은 TiB당. 이 구독을 통해 온프레미스 데이터를 백업할 수 없습니다.
+새로운 Professional 패키지를 이용하면 AWS Marketplace에서 연간 계약을 통해 Cloud Volumes ONTAP 과 Cloud Backup Service 번들로 구매할 수 있습니다.  결제는 TiB 단위로 이루어집니다.  이 구독에서는 온프레미스 데이터를 백업할 수 없습니다.
 
 이 지불 옵션을 선택하면 EBS 디스크를 통해 Cloud Volumes ONTAP 시스템당 최대 2개의 PiB를 프로비저닝하고 S3 오브젝트 스토리지(단일 노드 또는 HA)로 계층화할 수 있습니다.
 
