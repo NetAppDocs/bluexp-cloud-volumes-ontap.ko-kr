@@ -20,6 +20,18 @@ BlueXP에서 Cloud Volumes ONTAP 관리의 새로운 기능에 대해 알아보�
 
 
 
+== 2025년 9월 4일
+
+
+
+=== Cloud Volumes ONTAP 9.17.1 RC
+
+이제 BlueXP 사용하여 Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.17.1 릴리스 후보 1을 배포하고 관리할 수 있습니다.  하지만 이 버전은 AWS에 배포하고 업그레이드할 수 없습니다.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Cloud Volumes ONTAP 의 이 릴리스에 대해 자세히 알아보세요."^] .
+
+
+
 == 2025년 8월 11일
 
 
@@ -187,7 +199,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azur
 
 이제 BlueXP 를 사용하여 Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.16.1 일반 가용성 릴리즈를 구축 및 관리할 수 있습니다. 그러나 이 버전은 AWS의 배포 및 업그레이드에 사용할 수 없습니다.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^].
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-9161-relnotes/["이 Cloud Volumes ONTAP 릴리스에 포함된 새로운 기능에 대해 자세히 알아보십시오"^] .
 
 
 

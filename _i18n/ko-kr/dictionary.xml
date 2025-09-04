@@ -3985,7 +3985,6 @@
   <block id="26f51c309f5237522421f24bf4df04e0" category="list-text">이제 스토리지 VM 및 볼륨 사용 보고서에 작업 환경 이름이 포함됩니다.</block>
   <block id="fa3abcbc43662c93139af3f3f6421a6f" category="list-text">볼륨 유형 “파일”은 이제 “기본(읽기/쓰기)”으로 표시됩니다.</block>
   <block id="b259e22e76e27ad956b503941804b4c6" category="list-text">볼륨 유형 “보조”는 이제 “보조(DP)”로 표시됩니다.</block>
-  <block id="c2282365523aa8fbb305c5432e90d5d7" category="paragraph"><block ref="6f9b2ccd962907ef2c43f6fa9517a053" category="inline-link-macro-rx"></block>.</block>
   <block id="5e167ef814cd8fe02fd01be002ffa235" category="list-text"><block ref="5e167ef814cd8fe02fd01be002ffa235" category="inline-link-macro-rx"></block></block>
   <block id="4a9ebfe4f0e3302083955176f47a9519" category="list-text">작업 환경 ID 및 이름(UUID로 표시됨)</block>
   <block id="427af860f9733f0c5427a1408195bb2b" category="list-text">워크로드 유형</block>
@@ -5052,7 +5051,6 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="90069a3873814503a767070f04f3c286" category="paragraph">예를 들어 Cloud Volumes ONTAP 9.15.0을 사용하는 모든 단일 노드 배포는 SKU 이름으로 사용해야<block ref="b2b27ade506086d79b3e7defdb321673" prefix=" " category="inline-code"></block> 합니다.</block>
   <block id="d811ca86e147e8cf2239ee377f1dcd50" category="cell">* Cloud Volumes ONTAP 버전 *</block>
   <block id="aadb6d991e4406b990f6fca8b4c83fd6" category="cell">* SKU 이름 *</block>
-  <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">모든 배포는 BlueXP 를 통해 이루어집니다</block>
   <block id="273062411bc731be8028321277142365" category="cell">ONTAP_클라우드</block>
   <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">이제 BlueXP 를 사용하여 기존 Cloud Volumes ONTAP 시스템에서 WORM(Write Once, Read Many) 스토리지를 활성화할 수 있습니다. 이 기능을 사용하면 작업 환경에서 WORM을 생성하는 동안 WORM이 활성화되지 않은 경우에도 작업 환경에서 WORM을 유연하게 활성화할 수 있습니다. WORM을 사용하도록 설정한 후에는 비활성화할 수 없습니다.</block>
   <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">결제 방법을 변경해도 BYOL(NetApp)에서 구매한 라이선스를 통해 청구되는지 아니면 클라우드 공급자의 PAYGO(Marketplace Pay-as-you-go) 구독에서 청구되는지 여부는 영향을 받지 않습니다.</block>
@@ -5371,9 +5369,6 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="df65d9be8ade62cf7505e34c307cecad" category="cell">* 지원되는 가상 머신(VM) 유형 *</block>
   <block id="b13b643af58b125fac839de04760d5f0" category="cell">VM 유형의 전체 범위 <block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
   <block id="97c2102867c5b54db1b773f42a540c16" category="list-text">9.16.1 GA</block>
-  <block id="4692723666baa52294f46ef51ee4ec3f" category="cell">* VM 배포 방법 *</block>
-  <block id="95392acbc8522bf81166b3d44b333fca" category="cell">9.16.1 이상</block>
-  <block id="e6c4c5f3851cefbfb1da8daa3aff1fb0" category="cell">시장의 직접 배포 방법을 통해</block>
   <block id="8c63a56c7facb0a50c8c629b8b10d627" category="cell">ONTAP_CLOUD_DIRECT 를 참조하십시오</block>
   <block id="3c0acb220a6d083f589c0e9d2c4bb5b9" category="paragraph">암호는 몇 가지 규칙을 준수해야 합니다. 새 암호:</block>
   <block id="c3b8a6ca2fd73fcdea07816d50da5780" category="list-text">단어를 포함해서는 안 됩니다<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block></block>
@@ -5902,4 +5897,20 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="e0770826536ddaadf0db71e22667d483" category="inline-link">AWS 문서: gp3 디스크와 성능에 대해 자세히 알아보세요</block>
   <block id="2fdd250d12304ba30564106a823a4d07" category="paragraph">gp3 디스크를 선택하면 BlueXP 선택한 디스크 크기를 기준으로 gp2 디스크와 동등한 성능을 제공하는 기본 IOPS 및 처리량 값을 채웁니다.  더 높은 비용으로 더 나은 성능을 얻으려면 값을 늘릴 수 있지만, 낮은 값은 성능이 저하될 수 있으므로 지원하지 않습니다.  간단히 말해, 기본값을 고수하거나 기본값을 늘리세요.  낮추지 마세요.<block ref="7f8ffa6c4a580a433518ebbbf51360b2" category="inline-link-rx"></block> .</block>
   <block id="556df0c07cbea0b78af68a3a3c052441" category="paragraph">새로운 Professional 패키지를 이용하면 AWS Marketplace에서 연간 계약을 통해 Cloud Volumes ONTAP 과 Cloud Backup Service 번들로 구매할 수 있습니다.  결제는 TiB 단위로 이루어집니다.  이 구독에서는 온프레미스 데이터를 백업할 수 없습니다.</block>
+  <block id="d12fe68c4b1ba1d58975f9611e832d67" category="paragraph"><block ref="24db39f20f36cadeb40fc6fee7aff51e" category="inline-link-macro-rx"></block> .</block>
+  <block id="186b3997de3027cf87a351ba0a1f9bf4" category="doc">Cloud Volumes ONTAP 9.17.1 RC</block>
+  <block id="2a0942c706fe1023b055df5cfc6720d2" category="paragraph">이제 BlueXP 사용하여 Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.17.1 릴리스 후보 1을 배포하고 관리할 수 있습니다.  하지만 이 버전은 AWS에 배포하고 업그레이드할 수 없습니다.</block>
+  <block id="1794b1ebac03efdd38e24eb28c47629a" category="inline-link-macro">Cloud Volumes ONTAP 의 이 릴리스에 대해 자세히 알아보세요.</block>
+  <block id="e0a027f4bdcd16cda78c830ace94fc76" category="paragraph"><block ref="539cae97b36c04420caaf667f01300c8" category="inline-link-macro-rx"></block> .</block>
+  <block id="ae76d7929a27ed322b88161e71bfa161" category="list-text">9.17.1 RC1</block>
+  <block id="159b2c36e92d08f58049110227f49823" category="cell">*VM 배포를 통해*</block>
+  <block id="ce2276d280ca79bc5d0b33e7903a7d49" category="cell">9.17.1 이상</block>
+  <block id="88c8462e1641cb3eee755100b508a86d" category="cell">Azure 마켓플레이스</block>
+  <block id="b8f95e1a74252a7c5089e349f29275e8" category="cell">ontap_cloud_direct_gen2</block>
+  <block id="b8e6637325f666227e9b7e79a403ca80" category="cell">ontap_cloud_gen2</block>
+  <block id="0bd0e673df4c14cae45a11fac30c530b" category="cell">9.16.1</block>
+  <block id="652e1c6e403bbb45f405f8e8b424f73f" category="cell">BlueXP, 단일 노드 배포</block>
+  <block id="eeea8782a887558399361aec836b75d0" category="cell">BlueXP, 고가용성(HA) 배포</block>
+  <block id="36991a14fecff3acb300e7240e20124a" category="cell">9.17.1(Azure 및 Google Cloud에만 해당)</block>
+  <block id="ba3c0cba3a3d15ce8426fc737476a59c" category="section-title">2025년 9월 4일</block>
 </blocks>

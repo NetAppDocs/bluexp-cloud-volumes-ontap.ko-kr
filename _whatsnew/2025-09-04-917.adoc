@@ -1,0 +1,11 @@
+= Cloud Volumes ONTAP 9.17.1 RC
+:allow-uri-read: 
+
+
+
+
+=== Cloud Volumes ONTAP 9.17.1 RC
+
+이제 BlueXP 사용하여 Azure 및 Google Cloud에서 Cloud Volumes ONTAP 9.17.1 릴리스 후보 1을 배포하고 관리할 수 있습니다.  하지만 이 버전은 AWS에 배포하고 업그레이드할 수 없습니다.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Cloud Volumes ONTAP 의 이 릴리스에 대해 자세히 알아보세요."^] .

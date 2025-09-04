@@ -63,22 +63,28 @@ South Central US          southcentralus       (US) South Central US
 |===
 
 
-| * Cloud Volumes ONTAP 버전 * | * VM 배포 방법 * | * SKU 이름 * 
+| * Cloud Volumes ONTAP 버전 * | *VM 배포를 통해* | * SKU 이름 * 
 
 
-| 9.16.1 이상 | 시장의 직접 배포 방법을 통해 | ONTAP_CLOUD_DIRECT 를 참조하십시오 
+| 9.17.1 이상 | Azure 마켓플레이스 | ontap_cloud_direct_gen2 
 
 
-| 9.16.1 이상 | 모든 배포는 BlueXP 를 통해 이루어집니다 | ONTAP_클라우드 
+| 9.17.1 이상 | BlueXP | ontap_cloud_gen2 
 
 
-| 9.15.1 | 모든 배포는 BlueXP 를 통해 이루어집니다 | ONTAP_클라우드 
+| 9.16.1 | Azure 마켓플레이스 | ONTAP_CLOUD_DIRECT 를 참조하십시오 
 
 
-| 9.15.0 | 단일 노드 | ONTAP_CLOUD_BYOL 
+| 9.16.1 | BlueXP | ONTAP_클라우드 
 
 
-| 9.15.0 | 고가용성 | ONTAP_CLOUD_BYOL_ha 
+| 9.15.1 | BlueXP | ONTAP_클라우드 
+
+
+| 9.15.0 | BlueXP, 단일 노드 배포 | ONTAP_CLOUD_BYOL 
+
+
+| 9.15.0 | BlueXP, 고가용성(HA) 배포 | ONTAP_CLOUD_BYOL_ha 
 |===
 . ONTAP 버전과 Azure 마켓플레이스 이미지를 매핑한 후 Azure Cloud Shell이나 Azure CLI를 사용하여 Azure 마켓플레이스에서 VHD 파일을 내보냅니다.
 
