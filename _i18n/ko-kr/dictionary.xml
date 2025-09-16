@@ -5563,7 +5563,6 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="fdcb4cfaa6fda318a31e37ce29a14e92" category="section-title">Azure에서 Flash Cache에 대한 최소 버전 지원</block>
   <block id="d05c6d51d7a4b0bd019498131ff00f16" category="paragraph">Azure에서 Flash Cache를 구성하는 데 필요한 최소 Cloud Volumes ONTAP 버전은 9.13.1 GA입니다. ONTAP 9.13.1 GA 이상 버전만 사용하여 Azure의 Cloud Volumes ONTAP 시스템에 Flash Cache를 구축할 수 있습니다.</block>
   <block id="b77891a5294c25aca8a6fda943805ecf" category="doc">AWS의 Cloud Volumes ONTAP 9.13.1에 대한 중국 지역 지원</block>
-  <block id="3899c7c0df13a38296f1334779a1dfe7" category="paragraph">이제 중국 지역의 AWS에 Cloud Volumes ONTAP 9.13.1을 배포할 수 있습니다. 여기에는 단일 노드 및 고가용성(HA) 구축이 모두 지원됩니다. Cloud Volumes ONTAP 9.13.1을 배포한 후에는 최신 버전으로 업그레이드할 수 있습니다. NetApp에서 직접 구매한 라이선스만 지원됩니다.</block>
   <block id="abe88f95b23156cb29c433c9ebe92a00" category="inline-link">Cloud Volumes ONTAP를 위한 글로벌 지역 맵</block>
   <block id="10df570a0447a18b299f516b2e8498c2" category="paragraph">지역별 이용 가능 여부는 을<block ref="f76c632bc8b9c4e032a9d48fcbfa8dc1" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="aa3bf76b3589430467bef386eaec9486" category="doc">Azure에서 새로운 영역이 지원됩니다</block>
@@ -5913,4 +5912,5 @@ HA 쌍의 경우 BlueXP에서 Cloud Volumes ONTAP 작업 환경을 생성할 때
   <block id="eeea8782a887558399361aec836b75d0" category="cell">BlueXP, 고가용성(HA) 배포</block>
   <block id="36991a14fecff3acb300e7240e20124a" category="cell">9.17.1(Azure 및 Google Cloud에만 해당)</block>
   <block id="ba3c0cba3a3d15ce8426fc737476a59c" category="section-title">2025년 9월 4일</block>
+  <block id="a3f77d8413628b40c09a649cd79a6e02" category="paragraph">이제 중국 지역의 AWS에 Cloud Volumes ONTAP 9.13.1을 배포할 수 있습니다.  여기에는 단일 노드와 고가용성(HA) 배포에 대한 지원이 포함됩니다.  NetApp 에서 직접 구매한 라이선스만 지원됩니다.</block>
 </blocks>
